@@ -1,0 +1,24 @@
+{
+  "contains_flags": [
+    "pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "gluten",
+    "peanuts", "tree-nuts", "sesame", "mustard", "celery", "lupin", "sulphites", "alcohol",
+    "caffeine", "added-sugar", "high-fodmap", "gelatin-non-halal", "gelatin-non-kosher", "honey"
+  ],
+  "compound_avoid_flags": {
+    "vegan": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "gelatin-non-halal", "gelatin-non-kosher", "honey"],
+    "vegetarian": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"],
+    "pescatarian": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal", "gelatin-non-kosher"],
+    "halal": ["pork", "alcohol", "gelatin-non-halal"],
+    "kosher": ["pork", "shellfish", "meat-dairy-combo", "gelatin-non-kosher"],
+    "sugar-free": ["added-sugar"],
+    "gluten-free": ["gluten"],
+    "lactose-free": ["dairy"],
+    "low-fodmap": ["high-fodmap"]
+  },
+  "attributes": {
+    "effort": ["easy", "medium", "hard"],
+    "time_bucket": ["≤15", "≤30", "≤60", ">60"],
+    "calorie_bucket": ["≤400", "≤600", "≤800", ">800"],
+    "techniques": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"]
+  }
+}

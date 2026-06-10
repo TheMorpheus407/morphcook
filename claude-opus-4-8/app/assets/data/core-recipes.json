@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "partition_id": "core-recipes",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "name": { "en": "Classic Döner", "de": "Klassischer Döner" },
+      "blurb": { "en": "lamb, beef, garlic-yogurt, all in warm bread", "de": "lamm, rind, knoblauchjoghurt, im warmen brot" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["gluten", "dairy", "beef", "lamb"],
+      "attributes": ["medium", "t30", "c800p", "grill", "saute"],
+      "variant_axes": { "diet": "classic", "effort": "medium", "calorie": "c800p" },
+      "macros": { "calories": 820, "protein": 42, "carbs": 60, "fat": 38 },
+      "ingredients": [
+        { "ingredient_id": "flatbread", "qty": 2, "unit": "piece", "name": { "en": "flatbread", "de": "Fladenbrot" } },
+        { "ingredient_id": "lamb", "qty": 150, "unit": "g", "name": { "en": "lamb strips", "de": "Lammstreifen" } },
+        { "ingredient_id": "beef", "qty": 150, "unit": "g", "name": { "en": "beef strips", "de": "Rindstreifen" } },
+        { "ingredient_id": "yogurt", "qty": 120, "unit": "g", "name": { "en": "yogurt", "de": "Joghurt" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "cabbage", "qty": 100, "unit": "g", "name": { "en": "shredded cabbage", "de": "Weißkohl, gehobelt" } },
+        { "ingredient_id": "tomato", "qty": 1, "unit": "piece", "name": { "en": "tomato", "de": "Tomate" } }
+      ],
+      "steps": {
+        "en": [
+          "Stir grated garlic and a pinch of salt into the yogurt and set aside.",
+          "Season the lamb and beef strips with cumin, paprika, salt and pepper.",
+          "Grill the meat over high heat until charred at the edges, about 8 minutes.",
+          "Warm the flatbreads in a dry pan until soft and pliable.",
+          "Fill with meat, cabbage, sliced tomato and a generous spoon of garlic yogurt."
+        ],
+        "de": [
+          "Geriebenen Knoblauch und eine Prise Salz unter den Joghurt rühren, beiseitestellen.",
+          "Lamm- und Rindstreifen mit Kreuzkümmel, Paprika, Salz und Pfeffer würzen.",
+          "Das Fleisch bei großer Hitze grillen, bis es an den Rändern röstet, etwa 8 Minuten.",
+          "Die Fladenbrote in einer trockenen Pfanne weich und biegsam erwärmen.",
+          "Mit Fleisch, Kohl, Tomatenscheiben und einem großzügigen Löffel Knoblauchjoghurt füllen."
+        ]
+      },
+      "step_timers": [null, null, 480, null, null]
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "name": { "en": "Vegan Döner", "de": "Veganer Döner" },
+      "blurb": { "en": "spiced seitan that fools everyone", "de": "gewürztes seitan, das alle täuscht" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["gluten", "soy"],
+      "attributes": ["medium", "t30", "c600", "grill", "saute"],
+      "variant_axes": { "diet": "vegan", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 540, "protein": 34, "carbs": 58, "fat": 16 },
+      "ingredients": [
+        { "ingredient_id": "flatbread", "qty": 2, "unit": "piece", "name": { "en": "flatbread", "de": "Fladenbrot" } },
+        { "ingredient_id": "seitan", "qty": 250, "unit": "g", "name": { "en": "seitan strips", "de": "Seitanstreifen" } },
+        { "ingredient_id": "soy-sauce", "qty": 2, "unit": "tbsp", "name": { "en": "soy sauce", "de": "Sojasauce" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "cabbage", "qty": 120, "unit": "g", "name": { "en": "shredded cabbage", "de": "Weißkohl, gehobelt" } },
+        { "ingredient_id": "tomato", "qty": 1, "unit": "piece", "name": { "en": "tomato", "de": "Tomate" } },
+        { "ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Whisk olive oil with a squeeze of lemon, grated garlic and salt into a bright dressing.",
+          "Toss seitan strips with soy sauce, cumin and paprika.",
+          "Grill the seitan over high heat until crisp and browned, about 7 minutes.",
+          "Warm the flatbreads in a dry pan until soft.",
+          "Fill with seitan, cabbage and tomato, then drizzle with the lemon-garlic dressing."
+        ],
+        "de": [
+          "Olivenöl mit einem Spritzer Zitrone, geriebenem Knoblauch und Salz zu einem frischen Dressing verrühren.",
+          "Seitanstreifen mit Sojasauce, Kreuzkümmel und Paprika vermengen.",
+          "Das Seitan bei großer Hitze knusprig und braun grillen, etwa 7 Minuten.",
+          "Die Fladenbrote in einer trockenen Pfanne weich erwärmen.",
+          "Mit Seitan, Kohl und Tomate füllen, dann mit dem Zitronen-Knoblauch-Dressing beträufeln."
+        ]
+      },
+      "step_timers": [null, null, 420, null, null]
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "name": { "en": "Keto Döner Bowl", "de": "Keto Döner Bowl" },
+      "blurb": { "en": "all the filling, none of the bread", "de": "die ganze füllung, ohne das brot" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["dairy", "beef", "lamb"],
+      "attributes": ["easy", "t15", "c600", "grill"],
+      "variant_axes": { "diet": "keto", "effort": "easy", "calorie": "c600" },
+      "macros": { "calories": 560, "protein": 40, "carbs": 12, "fat": 40 },
+      "ingredients": [
+        { "ingredient_id": "lamb", "qty": 150, "unit": "g", "name": { "en": "lamb strips", "de": "Lammstreifen" } },
+        { "ingredient_id": "beef", "qty": 150, "unit": "g", "name": { "en": "beef strips", "de": "Rindstreifen" } },
+        { "ingredient_id": "yogurt", "qty": 120, "unit": "g", "name": { "en": "full-fat yogurt", "de": "Vollfettjoghurt" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "cucumber", "qty": 1, "unit": "piece", "name": { "en": "cucumber", "de": "Gurke" } },
+        { "ingredient_id": "lettuce", "qty": 80, "unit": "g", "name": { "en": "lettuce", "de": "Salat" } },
+        { "ingredient_id": "olive-oil", "qty": 1, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Stir grated garlic and salt into the yogurt to make the dressing.",
+          "Season lamb and beef strips with cumin, paprika, salt and pepper.",
+          "Grill the meat in olive oil over high heat until charred, about 8 minutes.",
+          "Build the bowl with chopped lettuce and diced cucumber.",
+          "Top with the grilled meat and spoon over the garlic yogurt."
+        ],
+        "de": [
+          "Geriebenen Knoblauch und Salz unter den Joghurt rühren, das ergibt das Dressing.",
+          "Lamm- und Rindstreifen mit Kreuzkümmel, Paprika, Salz und Pfeffer würzen.",
+          "Das Fleisch in Olivenöl bei großer Hitze grillen, bis es röstet, etwa 8 Minuten.",
+          "Die Bowl mit gehacktem Salat und gewürfelter Gurke anrichten.",
+          "Mit dem gegrillten Fleisch belegen und den Knoblauchjoghurt darüber geben."
+        ]
+      },
+      "step_timers": [null, null, 480, null, null]
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "name": { "en": "Halal-style Döner", "de": "Halal-Döner" },
+      "blurb": { "en": "marinated chicken, crisp and juicy", "de": "mariniertes hähnchen, knusprig und saftig" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["gluten", "dairy", "poultry"],
+      "attributes": ["medium", "t30", "c800", "grill", "saute"],
+      "variant_axes": { "diet": "halal", "effort": "medium", "calorie": "c800" },
+      "macros": { "calories": 760, "protein": 48, "carbs": 62, "fat": 30 },
+      "ingredients": [
+        { "ingredient_id": "flatbread", "qty": 2, "unit": "piece", "name": { "en": "flatbread", "de": "Fladenbrot" } },
+        { "ingredient_id": "chicken", "qty": 300, "unit": "g", "name": { "en": "chicken thigh strips", "de": "Hähnchenschenkel-Streifen" } },
+        { "ingredient_id": "yogurt", "qty": 120, "unit": "g", "name": { "en": "yogurt", "de": "Joghurt" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "lettuce", "qty": 80, "unit": "g", "name": { "en": "lettuce", "de": "Salat" } },
+        { "ingredient_id": "tomato", "qty": 1, "unit": "piece", "name": { "en": "tomato", "de": "Tomate" } },
+        { "ingredient_id": "onion", "qty": 1, "unit": "piece", "name": { "en": "onion", "de": "Zwiebel" } }
+      ],
+      "steps": {
+        "en": [
+          "Marinate the chicken in half the yogurt with cumin, paprika, salt and pepper.",
+          "Stir grated garlic into the remaining yogurt for the sauce.",
+          "Grill the chicken over high heat until cooked through and charred, about 10 minutes.",
+          "Warm the flatbreads in a dry pan until soft.",
+          "Fill with chicken, lettuce, tomato, sliced onion and the garlic yogurt."
+        ],
+        "de": [
+          "Das Hähnchen in der Hälfte des Joghurts mit Kreuzkümmel, Paprika, Salz und Pfeffer marinieren.",
+          "Geriebenen Knoblauch unter den restlichen Joghurt rühren, das ergibt die Sauce.",
+          "Das Hähnchen bei großer Hitze grillen, bis es durch und geröstet ist, etwa 10 Minuten.",
+          "Die Fladenbrote in einer trockenen Pfanne weich erwärmen.",
+          "Mit Hähnchen, Salat, Tomate, Zwiebelringen und dem Knoblauchjoghurt füllen."
+        ]
+      },
+      "step_timers": [null, null, 600, null, null]
+    },
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "name": { "en": "Classic Fettuccine Alfredo", "de": "Klassische Fettuccine Alfredo" },
+      "blurb": { "en": "butter, parmesan, pasta water — that's the trick", "de": "butter, parmesan, nudelwasser — das ist der trick" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 20,
+      "contains": ["gluten", "dairy"],
+      "attributes": ["easy", "t30", "c800p", "simmer"],
+      "variant_axes": { "diet": "classic", "effort": "easy", "calorie": "c800p" },
+      "macros": { "calories": 860, "protein": 24, "carbs": 78, "fat": 50 },
+      "ingredients": [
+        { "ingredient_id": "pasta", "qty": 200, "unit": "g", "name": { "en": "fettuccine", "de": "Fettuccine" } },
+        { "ingredient_id": "butter", "qty": 60, "unit": "g", "name": { "en": "butter", "de": "Butter" } },
+        { "ingredient_id": "parmesan", "qty": 80, "unit": "g", "name": { "en": "parmesan", "de": "Parmesan" } },
+        { "ingredient_id": "cream", "qty": 100, "unit": "ml", "name": { "en": "cream", "de": "Sahne" } },
+        { "ingredient_id": "garlic", "qty": 1, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } }
+      ],
+      "steps": {
+        "en": [
+          "Boil the fettuccine in well-salted water until just al dente, about 9 minutes.",
+          "Melt the butter with the crushed garlic over low heat.",
+          "Stir in the cream and warm gently without boiling.",
+          "Add the drained pasta and grated parmesan, tossing with a splash of pasta water.",
+          "Toss until the sauce clings silkily, then season with pepper and serve."
+        ],
+        "de": [
+          "Die Fettuccine in gut gesalzenem Wasser knapp al dente kochen, etwa 9 Minuten.",
+          "Die Butter mit dem zerdrückten Knoblauch bei kleiner Hitze schmelzen.",
+          "Die Sahne einrühren und sanft erwärmen, ohne sie zu kochen.",
+          "Die abgetropften Nudeln und den geriebenen Parmesan zugeben, mit einem Schuss Nudelwasser schwenken.",
+          "Schwenken, bis die Sauce seidig haftet, mit Pfeffer würzen und servieren."
+        ]
+      },
+      "step_timers": [540, null, null, null, null]
+    },
+    {
+      "id": "alfredo-glutenfree",
+      "dish_id": "alfredo",
+      "name": { "en": "Gluten-Free Alfredo", "de": "Glutenfreie Alfredo" },
+      "blurb": { "en": "same silky sauce, gluten-free pasta", "de": "dieselbe seidige sauce, glutenfreie pasta" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 20,
+      "contains": ["dairy"],
+      "attributes": ["easy", "t30", "c800", "simmer"],
+      "variant_axes": { "diet": "glutenfree", "effort": "easy", "calorie": "c800" },
+      "macros": { "calories": 790, "protein": 22, "carbs": 72, "fat": 46 },
+      "ingredients": [
+        { "ingredient_id": "gf-pasta", "qty": 200, "unit": "g", "name": { "en": "gluten-free fettuccine", "de": "Glutenfreie Fettuccine" } },
+        { "ingredient_id": "butter", "qty": 50, "unit": "g", "name": { "en": "butter", "de": "Butter" } },
+        { "ingredient_id": "parmesan", "qty": 80, "unit": "g", "name": { "en": "parmesan", "de": "Parmesan" } },
+        { "ingredient_id": "cream", "qty": 100, "unit": "ml", "name": { "en": "cream", "de": "Sahne" } },
+        { "ingredient_id": "garlic", "qty": 1, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } }
+      ],
+      "steps": {
+        "en": [
+          "Boil the gluten-free pasta in salted water until tender, about 10 minutes.",
+          "Melt the butter with the crushed garlic over low heat.",
+          "Stir in the cream and warm gently without boiling.",
+          "Add the drained pasta and grated parmesan with a splash of pasta water.",
+          "Toss until glossy, season with pepper and serve at once."
+        ],
+        "de": [
+          "Die glutenfreie Pasta in gesalzenem Wasser zart kochen, etwa 10 Minuten.",
+          "Die Butter mit dem zerdrückten Knoblauch bei kleiner Hitze schmelzen.",
+          "Die Sahne einrühren und sanft erwärmen, ohne sie zu kochen.",
+          "Die abgetropfte Pasta und den geriebenen Parmesan mit einem Schuss Nudelwasser zugeben.",
+          "Schwenken, bis es glänzt, mit Pfeffer würzen und sofort servieren."
+        ]
+      },
+      "step_timers": [600, null, null, null, null]
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "name": { "en": "Vegan Cashew Alfredo", "de": "Veganer Cashew-Alfredo" },
+      "blurb": { "en": "blended cashews do the creamy work", "de": "pürierte cashews machen die cremigkeit" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 30,
+      "contains": ["gluten", "tree-nuts"],
+      "attributes": ["medium", "t30", "c600", "simmer", "saute"],
+      "variant_axes": { "diet": "vegan", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 580, "protein": 18, "carbs": 74, "fat": 24 },
+      "ingredients": [
+        { "ingredient_id": "pasta", "qty": 200, "unit": "g", "name": { "en": "fettuccine", "de": "Fettuccine" } },
+        { "ingredient_id": "cashews", "qty": 80, "unit": "g", "name": { "en": "cashews", "de": "Cashews" } },
+        { "ingredient_id": "nutritional-yeast", "qty": 2, "unit": "tbsp", "name": { "en": "nutritional yeast", "de": "Hefeflocken" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "vegetable-broth", "qty": 200, "unit": "ml", "name": { "en": "vegetable broth", "de": "Gemüsebrühe" } },
+        { "ingredient_id": "lemon", "qty": 1, "unit": "piece", "name": { "en": "lemon", "de": "Zitrone" } }
+      ],
+      "steps": {
+        "en": [
+          "Soak the cashews in hot water for 15 minutes, then drain.",
+          "Blend cashews with broth, nutritional yeast, garlic, lemon juice and salt until smooth.",
+          "Boil the fettuccine in salted water until al dente, about 9 minutes.",
+          "Warm the cashew sauce gently in a pan, loosening with pasta water.",
+          "Toss the drained pasta through the sauce and serve with pepper."
+        ],
+        "de": [
+          "Die Cashews 15 Minuten in heißem Wasser einweichen, dann abgießen.",
+          "Cashews mit Brühe, Hefeflocken, Knoblauch, Zitronensaft und Salz glatt pürieren.",
+          "Die Fettuccine in gesalzenem Wasser al dente kochen, etwa 9 Minuten.",
+          "Die Cashew-Sauce in einer Pfanne sanft erwärmen, mit Nudelwasser lockern.",
+          "Die abgetropfte Pasta unter die Sauce schwenken und mit Pfeffer servieren."
+        ]
+      },
+      "step_timers": [900, null, 540, null, null]
+    },
+    {
+      "id": "padthai-classic",
+      "dish_id": "pad-thai",
+      "name": { "en": "Classic Pad Thai", "de": "Klassisches Pad Thai" },
+      "blurb": { "en": "shrimp, egg, peanuts, that tamarind hit", "de": "garnelen, ei, erdnüsse, dieser tamarinde-kick" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["shellfish", "egg", "peanuts", "soy", "fish"],
+      "attributes": ["medium", "t30", "c600", "stir-fry"],
+      "variant_axes": { "diet": "classic", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 590, "protein": 30, "carbs": 70, "fat": 20 },
+      "ingredients": [
+        { "ingredient_id": "rice-noodles", "qty": 180, "unit": "g", "name": { "en": "rice noodles", "de": "Reisnudeln" } },
+        { "ingredient_id": "shrimp", "qty": 150, "unit": "g", "name": { "en": "shrimp", "de": "Garnelen" } },
+        { "ingredient_id": "egg", "qty": 2, "unit": "piece", "name": { "en": "eggs", "de": "Eier" } },
+        { "ingredient_id": "peanuts", "qty": 40, "unit": "g", "name": { "en": "crushed peanuts", "de": "gehackte Erdnüsse" } },
+        { "ingredient_id": "soy-sauce", "qty": 2, "unit": "tbsp", "name": { "en": "soy sauce", "de": "Sojasauce" } },
+        { "ingredient_id": "fish-fillet", "qty": 1, "unit": "tbsp", "name": { "en": "fish sauce", "de": "Fischsauce" } },
+        { "ingredient_id": "lime", "qty": 1, "unit": "piece", "name": { "en": "lime", "de": "Limette" } }
+      ],
+      "steps": {
+        "en": [
+          "Soak the rice noodles in warm water until pliable, about 10 minutes, then drain.",
+          "Stir-fry the shrimp in hot oil until pink, then push to one side.",
+          "Crack in the eggs and scramble lightly before mixing into the shrimp.",
+          "Add noodles, soy sauce, fish sauce, a little sugar and lime juice; toss over high heat.",
+          "Fold in most of the peanuts and toss through, then plate.",
+          "Top with remaining peanuts and a lime wedge."
+        ],
+        "de": [
+          "Die Reisnudeln in warmem Wasser biegsam einweichen, etwa 10 Minuten, dann abgießen.",
+          "Die Garnelen in heißem Öl rosa braten, dann an den Rand schieben.",
+          "Die Eier aufschlagen, locker verrühren und unter die Garnelen mischen.",
+          "Nudeln, Sojasauce, Fischsauce, etwas Zucker und Limettensaft zugeben; bei großer Hitze schwenken.",
+          "Die meisten Erdnüsse unterheben und durchschwenken, dann anrichten.",
+          "Mit restlichen Erdnüssen und einer Limettenspalte garnieren."
+        ]
+      },
+      "step_timers": [600, null, null, null, null, null]
+    },
+    {
+      "id": "padthai-vegan",
+      "dish_id": "pad-thai",
+      "name": { "en": "Vegan Pad Thai", "de": "Veganes Pad Thai" },
+      "blurb": { "en": "crisp tofu instead of shrimp, tamari for soy", "de": "knuspriger tofu statt garnelen, tamari für soja" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["peanuts", "soy"],
+      "attributes": ["medium", "t30", "c600", "stir-fry", "fry"],
+      "variant_axes": { "diet": "vegan", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 560, "protein": 24, "carbs": 66, "fat": 22 },
+      "ingredients": [
+        { "ingredient_id": "rice-noodles", "qty": 180, "unit": "g", "name": { "en": "rice noodles", "de": "Reisnudeln" } },
+        { "ingredient_id": "tofu", "qty": 200, "unit": "g", "name": { "en": "firm tofu", "de": "Fester Tofu" } },
+        { "ingredient_id": "tamari", "qty": 2, "unit": "tbsp", "name": { "en": "tamari", "de": "Tamari" } },
+        { "ingredient_id": "peanuts", "qty": 40, "unit": "g", "name": { "en": "crushed peanuts", "de": "gehackte Erdnüsse" } },
+        { "ingredient_id": "bean-sprouts", "qty": 100, "unit": "g", "name": { "en": "bean sprouts", "de": "Sojasprossen" } },
+        { "ingredient_id": "lime", "qty": 1, "unit": "piece", "name": { "en": "lime", "de": "Limette" } },
+        { "ingredient_id": "spring-onion", "qty": 2, "unit": "piece", "name": { "en": "spring onions", "de": "Frühlingszwiebeln" } }
+      ],
+      "steps": {
+        "en": [
+          "Soak the rice noodles in warm water until pliable, about 10 minutes, then drain.",
+          "Fry the cubed tofu in hot oil until golden and crisp on all sides.",
+          "Add noodles, tamari, a little sugar and lime juice; toss over high heat.",
+          "Fold in bean sprouts, spring onion and most of the peanuts.",
+          "Plate and top with remaining peanuts and a lime wedge."
+        ],
+        "de": [
+          "Die Reisnudeln in warmem Wasser biegsam einweichen, etwa 10 Minuten, dann abgießen.",
+          "Den gewürfelten Tofu in heißem Öl rundum goldbraun und knusprig braten.",
+          "Nudeln, Tamari, etwas Zucker und Limettensaft zugeben; bei großer Hitze schwenken.",
+          "Sojasprossen, Frühlingszwiebeln und die meisten Erdnüsse unterheben.",
+          "Anrichten und mit restlichen Erdnüssen und einer Limettenspalte garnieren."
+        ]
+      },
+      "step_timers": [600, null, null, null, null]
+    },
+    {
+      "id": "padthai-glutenfree",
+      "dish_id": "pad-thai",
+      "name": { "en": "Gluten-Free Pad Thai", "de": "Glutenfreies Pad Thai" },
+      "blurb": { "en": "egg, peanuts, tamari — naturally gf", "de": "ei, erdnüsse, tamari — von natur aus gf" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["egg", "peanuts", "soy"],
+      "attributes": ["medium", "t30", "c600", "stir-fry"],
+      "variant_axes": { "diet": "glutenfree", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 600, "protein": 26, "carbs": 72, "fat": 22 },
+      "ingredients": [
+        { "ingredient_id": "rice-noodles", "qty": 180, "unit": "g", "name": { "en": "rice noodles", "de": "Reisnudeln" } },
+        { "ingredient_id": "egg", "qty": 2, "unit": "piece", "name": { "en": "eggs", "de": "Eier" } },
+        { "ingredient_id": "tamari", "qty": 2, "unit": "tbsp", "name": { "en": "tamari", "de": "Tamari" } },
+        { "ingredient_id": "peanuts", "qty": 40, "unit": "g", "name": { "en": "crushed peanuts", "de": "gehackte Erdnüsse" } },
+        { "ingredient_id": "bean-sprouts", "qty": 100, "unit": "g", "name": { "en": "bean sprouts", "de": "Sojasprossen" } },
+        { "ingredient_id": "lime", "qty": 1, "unit": "piece", "name": { "en": "lime", "de": "Limette" } },
+        { "ingredient_id": "carrot", "qty": 1, "unit": "piece", "name": { "en": "carrot", "de": "Karotte" } }
+      ],
+      "steps": {
+        "en": [
+          "Soak the rice noodles in warm water until pliable, about 10 minutes, then drain.",
+          "Scramble the eggs lightly in hot oil, then push aside.",
+          "Add grated carrot, noodles, tamari, a little sugar and lime juice; toss over high heat.",
+          "Fold in bean sprouts and most of the peanuts.",
+          "Plate and finish with remaining peanuts and a lime wedge."
+        ],
+        "de": [
+          "Die Reisnudeln in warmem Wasser biegsam einweichen, etwa 10 Minuten, dann abgießen.",
+          "Die Eier in heißem Öl locker rühren, dann an den Rand schieben.",
+          "Geriebene Karotte, Nudeln, Tamari, etwas Zucker und Limettensaft zugeben; bei großer Hitze schwenken.",
+          "Sojasprossen und die meisten Erdnüsse unterheben.",
+          "Anrichten und mit restlichen Erdnüssen und einer Limettenspalte abschließen."
+        ]
+      },
+      "step_timers": [600, null, null, null, null]
+    },
+    {
+      "id": "pancakes-classic",
+      "dish_id": "pancakes",
+      "name": { "en": "Classic Pancakes", "de": "Klassische Pfannkuchen" },
+      "blurb": { "en": "fluffy stacks, a little butter melting in", "de": "fluffige stapel, etwas butter schmilzt hinein" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["gluten", "dairy", "egg"],
+      "attributes": ["easy", "t15", "c400", "pan-fry"],
+      "variant_axes": { "diet": "classic", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 380, "protein": 12, "carbs": 52, "fat": 13 },
+      "ingredients": [
+        { "ingredient_id": "wheat-flour", "qty": 150, "unit": "g", "name": { "en": "flour", "de": "Mehl" } },
+        { "ingredient_id": "whole-milk", "qty": 200, "unit": "ml", "name": { "en": "milk", "de": "Milch" } },
+        { "ingredient_id": "egg", "qty": 1, "unit": "piece", "name": { "en": "egg", "de": "Ei" } },
+        { "ingredient_id": "baking-powder", "qty": 1, "unit": "tsp", "name": { "en": "baking powder", "de": "Backpulver" } },
+        { "ingredient_id": "butter", "qty": 15, "unit": "g", "name": { "en": "butter", "de": "Butter" } },
+        { "ingredient_id": "vanilla", "qty": 1, "unit": "tsp", "name": { "en": "vanilla", "de": "Vanille" } }
+      ],
+      "steps": {
+        "en": [
+          "Whisk flour, baking powder, vanilla and a pinch of salt together.",
+          "Beat in the milk and egg until you have a smooth, thick batter.",
+          "Melt a little butter in a pan over medium heat.",
+          "Ladle in rounds and cook until bubbles form, about 2 minutes, then flip.",
+          "Cook the second side until golden and serve warm."
+        ],
+        "de": [
+          "Mehl, Backpulver, Vanille und eine Prise Salz verquirlen.",
+          "Milch und Ei einrühren, bis ein glatter, dicker Teig entsteht.",
+          "Etwas Butter in einer Pfanne bei mittlerer Hitze schmelzen.",
+          "Teigkreise hineingeben und backen, bis Blasen entstehen, etwa 2 Minuten, dann wenden.",
+          "Die zweite Seite goldbraun backen und warm servieren."
+        ]
+      },
+      "step_timers": [null, null, null, 120, null]
+    },
+    {
+      "id": "pancakes-vegan",
+      "dish_id": "pancakes",
+      "name": { "en": "Vegan Pancakes", "de": "Vegane Pfannkuchen" },
+      "blurb": { "en": "no egg, no milk, still cloud-soft", "de": "ohne ei, ohne milch, trotzdem wolkenweich" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["gluten"],
+      "attributes": ["easy", "t15", "c400", "pan-fry"],
+      "variant_axes": { "diet": "vegan", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 360, "protein": 8, "carbs": 56, "fat": 11 },
+      "ingredients": [
+        { "ingredient_id": "wheat-flour", "qty": 150, "unit": "g", "name": { "en": "flour", "de": "Mehl" } },
+        { "ingredient_id": "banana", "qty": 1, "unit": "piece", "name": { "en": "ripe banana", "de": "reife Banane" } },
+        { "ingredient_id": "baking-powder", "qty": 1, "unit": "tsp", "name": { "en": "baking powder", "de": "Backpulver" } },
+        { "ingredient_id": "vegetable-oil", "qty": 1, "unit": "tbsp", "name": { "en": "oil", "de": "Öl" } },
+        { "ingredient_id": "maple-syrup", "qty": 2, "unit": "tbsp", "name": { "en": "maple syrup", "de": "Ahornsirup" } }
+      ],
+      "steps": {
+        "en": [
+          "Mash the banana smooth in a bowl.",
+          "Whisk in flour, baking powder, a pinch of salt and enough water for a thick batter.",
+          "Heat a little oil in a pan over medium heat.",
+          "Ladle in rounds and cook until bubbles form, about 2 minutes, then flip.",
+          "Cook until golden and serve with maple syrup."
+        ],
+        "de": [
+          "Die Banane in einer Schüssel glatt zerdrücken.",
+          "Mehl, Backpulver, eine Prise Salz und genug Wasser für einen dicken Teig einrühren.",
+          "Etwas Öl in einer Pfanne bei mittlerer Hitze erhitzen.",
+          "Teigkreise hineingeben und backen, bis Blasen entstehen, etwa 2 Minuten, dann wenden.",
+          "Goldbraun backen und mit Ahornsirup servieren."
+        ]
+      },
+      "step_timers": [null, null, null, 120, null]
+    },
+    {
+      "id": "pancakes-glutenfree",
+      "dish_id": "pancakes",
+      "name": { "en": "Gluten-Free Pancakes", "de": "Glutenfreie Pfannkuchen" },
+      "blurb": { "en": "gf flour, just as tender", "de": "gf-mehl, genauso zart" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["dairy", "egg"],
+      "attributes": ["easy", "t15", "c400", "pan-fry"],
+      "variant_axes": { "diet": "glutenfree", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 390, "protein": 11, "carbs": 54, "fat": 14 },
+      "ingredients": [
+        { "ingredient_id": "gf-flour", "qty": 150, "unit": "g", "name": { "en": "gluten-free flour", "de": "Glutenfreies Mehl" } },
+        { "ingredient_id": "whole-milk", "qty": 200, "unit": "ml", "name": { "en": "milk", "de": "Milch" } },
+        { "ingredient_id": "egg", "qty": 1, "unit": "piece", "name": { "en": "egg", "de": "Ei" } },
+        { "ingredient_id": "baking-powder", "qty": 1, "unit": "tsp", "name": { "en": "baking powder", "de": "Backpulver" } },
+        { "ingredient_id": "butter", "qty": 15, "unit": "g", "name": { "en": "butter", "de": "Butter" } },
+        { "ingredient_id": "vanilla", "qty": 1, "unit": "tsp", "name": { "en": "vanilla", "de": "Vanille" } }
+      ],
+      "steps": {
+        "en": [
+          "Whisk gluten-free flour, baking powder, vanilla and a pinch of salt together.",
+          "Beat in the milk and egg until smooth, then let it rest 3 minutes.",
+          "Melt a little butter in a pan over medium heat.",
+          "Ladle in rounds and cook until set at the edges, about 2 minutes, then flip.",
+          "Cook the second side until golden and serve warm."
+        ],
+        "de": [
+          "Glutenfreies Mehl, Backpulver, Vanille und eine Prise Salz verquirlen.",
+          "Milch und Ei glatt einrühren, dann 3 Minuten ruhen lassen.",
+          "Etwas Butter in einer Pfanne bei mittlerer Hitze schmelzen.",
+          "Teigkreise hineingeben und backen, bis die Ränder fest sind, etwa 2 Minuten, dann wenden.",
+          "Die zweite Seite goldbraun backen und warm servieren."
+        ]
+      },
+      "step_timers": [null, 180, null, 120, null]
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "name": { "en": "Classic Shakshuka", "de": "Klassische Schakschuka" },
+      "blurb": { "en": "eggs poached in spiced tomato", "de": "eier in würziger tomate pochiert" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["egg"],
+      "attributes": ["medium", "t30", "c400", "simmer", "poach"],
+      "variant_axes": { "diet": "vegetarian", "effort": "medium", "calorie": "c400" },
+      "macros": { "calories": 340, "protein": 18, "carbs": 22, "fat": 20 },
+      "ingredients": [
+        { "ingredient_id": "egg", "qty": 4, "unit": "piece", "name": { "en": "eggs", "de": "Eier" } },
+        { "ingredient_id": "tomato-sauce", "qty": 400, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "onion", "qty": 1, "unit": "piece", "name": { "en": "onion", "de": "Zwiebel" } },
+        { "ingredient_id": "bell-pepper", "qty": 1, "unit": "piece", "name": { "en": "bell pepper", "de": "Paprika" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Soften the chopped onion and pepper in olive oil over medium heat.",
+          "Add garlic, cumin and paprika and cook until fragrant.",
+          "Pour in the tomato sauce and simmer until thickened, about 8 minutes.",
+          "Make four wells and crack an egg into each.",
+          "Cover and cook until the whites set but the yolks stay soft, about 6 minutes.",
+          "Season with salt and pepper and serve from the pan."
+        ],
+        "de": [
+          "Gehackte Zwiebel und Paprika in Olivenöl bei mittlerer Hitze andünsten.",
+          "Knoblauch, Kreuzkümmel und Paprikapulver zugeben und duftend anbraten.",
+          "Die Tomatensauce angießen und eindicken lassen, etwa 8 Minuten.",
+          "Vier Mulden formen und je ein Ei hineinschlagen.",
+          "Zugedeckt garen, bis das Eiweiß stockt, das Eigelb aber weich bleibt, etwa 6 Minuten.",
+          "Mit Salz und Pfeffer würzen und aus der Pfanne servieren."
+        ]
+      },
+      "step_timers": [null, null, 480, null, 360, null]
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "name": { "en": "Vegan Shakshuka", "de": "Vegane Schakschuka" },
+      "blurb": { "en": "silky tofu scramble in the tomato", "de": "seidiges tofu-rührei in der tomate" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 25,
+      "contains": ["soy"],
+      "attributes": ["medium", "t30", "c400", "simmer", "saute"],
+      "variant_axes": { "diet": "vegan", "effort": "medium", "calorie": "c400" },
+      "macros": { "calories": 300, "protein": 16, "carbs": 24, "fat": 16 },
+      "ingredients": [
+        { "ingredient_id": "tofu", "qty": 200, "unit": "g", "name": { "en": "soft tofu", "de": "Seidentofu" } },
+        { "ingredient_id": "tomato-sauce", "qty": 400, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "onion", "qty": 1, "unit": "piece", "name": { "en": "onion", "de": "Zwiebel" } },
+        { "ingredient_id": "bell-pepper", "qty": 1, "unit": "piece", "name": { "en": "bell pepper", "de": "Paprika" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "nutritional-yeast", "qty": 1, "unit": "tbsp", "name": { "en": "nutritional yeast", "de": "Hefeflocken" } }
+      ],
+      "steps": {
+        "en": [
+          "Soften the chopped onion and pepper in oil over medium heat.",
+          "Add garlic, cumin and paprika and cook until fragrant.",
+          "Pour in the tomato sauce and simmer until thickened, about 8 minutes.",
+          "Crumble in the tofu with the nutritional yeast and stir to warm through.",
+          "Make shallow wells, let the scramble set briefly, then season and serve."
+        ],
+        "de": [
+          "Gehackte Zwiebel und Paprika in Öl bei mittlerer Hitze andünsten.",
+          "Knoblauch, Kreuzkümmel und Paprikapulver zugeben und duftend anbraten.",
+          "Die Tomatensauce angießen und eindicken lassen, etwa 8 Minuten.",
+          "Den Tofu mit den Hefeflocken hineinbröseln und unterrühren, bis er heiß ist.",
+          "Flache Mulden formen, das Rührei kurz stocken lassen, dann würzen und servieren."
+        ]
+      },
+      "step_timers": [null, null, 480, null, null]
+    },
+    {
+      "id": "margherita-classic",
+      "dish_id": "margherita",
+      "name": { "en": "Classic Margherita", "de": "Klassische Margherita" },
+      "blurb": { "en": "san marzano, mozzarella, basil — the holy three", "de": "san marzano, mozzarella, basilikum — die heilige drei" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 90,
+      "contains": ["gluten", "dairy"],
+      "attributes": ["hard", "t60p", "c800", "bake"],
+      "variant_axes": { "diet": "vegetarian", "effort": "hard", "calorie": "c800" },
+      "macros": { "calories": 720, "protein": 28, "carbs": 96, "fat": 24 },
+      "ingredients": [
+        { "ingredient_id": "pizza-dough", "qty": 1, "unit": "piece", "name": { "en": "pizza dough", "de": "Pizzateig" } },
+        { "ingredient_id": "tomato-sauce", "qty": 120, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "mozzarella", "qty": 125, "unit": "g", "name": { "en": "mozzarella", "de": "Mozzarella" } },
+        { "ingredient_id": "basil", "qty": 8, "unit": "piece", "name": { "en": "basil leaves", "de": "Basilikumblätter" } },
+        { "ingredient_id": "olive-oil", "qty": 1, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Let the dough rest at room temperature for 45 minutes, then stretch it thin.",
+          "Heat the oven as hot as it goes with a stone or tray inside.",
+          "Spread tomato sauce over the base and tear the mozzarella on top.",
+          "Bake until the crust is blistered and the cheese bubbles, about 8 minutes.",
+          "Finish with fresh basil and a drizzle of olive oil."
+        ],
+        "de": [
+          "Den Teig 45 Minuten bei Raumtemperatur ruhen lassen, dann dünn ausziehen.",
+          "Den Ofen mit Stein oder Blech so heiß wie möglich vorheizen.",
+          "Tomatensauce auf dem Boden verteilen und den Mozzarella darüber zupfen.",
+          "Backen, bis der Rand blasig ist und der Käse blubbert, etwa 8 Minuten.",
+          "Mit frischem Basilikum und einem Schuss Olivenöl vollenden."
+        ]
+      },
+      "step_timers": [2700, null, null, 480, null]
+    },
+    {
+      "id": "margherita-glutenfree",
+      "dish_id": "margherita",
+      "name": { "en": "Gluten-Free Margherita", "de": "Glutenfreie Margherita" },
+      "blurb": { "en": "crisp gf base, same classic top", "de": "knuspriger gf-boden, derselbe klassische belag" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 90,
+      "contains": ["dairy"],
+      "attributes": ["hard", "t60p", "c800", "bake"],
+      "variant_axes": { "diet": "glutenfree", "effort": "hard", "calorie": "c800" },
+      "macros": { "calories": 700, "protein": 26, "carbs": 90, "fat": 24 },
+      "ingredients": [
+        { "ingredient_id": "gf-pizza-dough", "qty": 1, "unit": "piece", "name": { "en": "gluten-free pizza dough", "de": "Glutenfreier Pizzateig" } },
+        { "ingredient_id": "tomato-sauce", "qty": 120, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "mozzarella", "qty": 125, "unit": "g", "name": { "en": "mozzarella", "de": "Mozzarella" } },
+        { "ingredient_id": "basil", "qty": 8, "unit": "piece", "name": { "en": "basil leaves", "de": "Basilikumblätter" } },
+        { "ingredient_id": "olive-oil", "qty": 1, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Let the gluten-free dough rest 45 minutes, then press it into a thin round.",
+          "Heat the oven as hot as it goes with a tray inside.",
+          "Spread tomato sauce over the base and tear the mozzarella on top.",
+          "Bake until the base is crisp and the cheese bubbles, about 10 minutes.",
+          "Finish with fresh basil and a drizzle of olive oil."
+        ],
+        "de": [
+          "Den glutenfreien Teig 45 Minuten ruhen lassen, dann zu einem dünnen Rund drücken.",
+          "Den Ofen mit Blech so heiß wie möglich vorheizen.",
+          "Tomatensauce auf dem Boden verteilen und den Mozzarella darüber zupfen.",
+          "Backen, bis der Boden knusprig ist und der Käse blubbert, etwa 10 Minuten.",
+          "Mit frischem Basilikum und einem Schuss Olivenöl vollenden."
+        ]
+      },
+      "step_timers": [2700, null, null, 600, null]
+    },
+    {
+      "id": "margherita-vegan",
+      "dish_id": "margherita",
+      "name": { "en": "Vegan Margherita", "de": "Vegane Margherita" },
+      "blurb": { "en": "tomato, basil, no cheese needed", "de": "tomate, basilikum, kein käse nötig" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 90,
+      "contains": ["gluten"],
+      "attributes": ["hard", "t60p", "c600", "bake"],
+      "variant_axes": { "diet": "vegan", "effort": "hard", "calorie": "c600" },
+      "macros": { "calories": 560, "protein": 16, "carbs": 92, "fat": 14 },
+      "ingredients": [
+        { "ingredient_id": "pizza-dough", "qty": 1, "unit": "piece", "name": { "en": "pizza dough", "de": "Pizzateig" } },
+        { "ingredient_id": "tomato-sauce", "qty": 120, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "tomato", "qty": 2, "unit": "piece", "name": { "en": "tomatoes", "de": "Tomaten" } },
+        { "ingredient_id": "basil", "qty": 8, "unit": "piece", "name": { "en": "basil leaves", "de": "Basilikumblätter" } },
+        { "ingredient_id": "nutritional-yeast", "qty": 2, "unit": "tbsp", "name": { "en": "nutritional yeast", "de": "Hefeflocken" } },
+        { "ingredient_id": "olive-oil", "qty": 1, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Let the dough rest 45 minutes, then stretch it thin.",
+          "Heat the oven as hot as it goes with a stone or tray inside.",
+          "Spread tomato sauce and lay over thin tomato slices, then scatter nutritional yeast.",
+          "Bake until the crust is blistered, about 9 minutes.",
+          "Finish with fresh basil and a drizzle of olive oil."
+        ],
+        "de": [
+          "Den Teig 45 Minuten ruhen lassen, dann dünn ausziehen.",
+          "Den Ofen mit Stein oder Blech so heiß wie möglich vorheizen.",
+          "Tomatensauce verteilen, dünne Tomatenscheiben auflegen, dann Hefeflocken darüberstreuen.",
+          "Backen, bis der Rand blasig ist, etwa 9 Minuten.",
+          "Mit frischem Basilikum und einem Schuss Olivenöl vollenden."
+        ]
+      },
+      "step_timers": [2700, null, null, 540, null]
+    },
+    {
+      "id": "caesar-classic",
+      "dish_id": "caesar-salad",
+      "name": { "en": "Classic Caesar Salad", "de": "Klassischer Caesar Salat" },
+      "blurb": { "en": "anchovy dressing, parmesan, crunchy croutons", "de": "sardellen-dressing, parmesan, knusprige croutons" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["fish", "egg", "dairy", "gluten"],
+      "attributes": ["easy", "t15", "c400", "raw", "bake"],
+      "variant_axes": { "diet": "classic", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 390, "protein": 16, "carbs": 18, "fat": 28 },
+      "ingredients": [
+        { "ingredient_id": "lettuce", "qty": 200, "unit": "g", "name": { "en": "romaine lettuce", "de": "Römersalat" } },
+        { "ingredient_id": "parmesan", "qty": 40, "unit": "g", "name": { "en": "parmesan", "de": "Parmesan" } },
+        { "ingredient_id": "bread", "qty": 2, "unit": "slice", "name": { "en": "bread for croutons", "de": "Brot für Croutons" } },
+        { "ingredient_id": "egg", "qty": 1, "unit": "piece", "name": { "en": "egg yolk", "de": "Eigelb" } },
+        { "ingredient_id": "fish-fillet", "qty": 20, "unit": "g", "name": { "en": "anchovy fillets", "de": "Sardellenfilets" } },
+        { "ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } },
+        { "ingredient_id": "lemon", "qty": 1, "unit": "piece", "name": { "en": "lemon", "de": "Zitrone" } }
+      ],
+      "steps": {
+        "en": [
+          "Toss cubed bread in a little olive oil and bake until crisp, about 8 minutes.",
+          "Mash the anchovies, then whisk with egg yolk, lemon juice and olive oil into a dressing.",
+          "Tear the romaine into a bowl.",
+          "Toss the leaves with the dressing until well coated.",
+          "Top with croutons and grated parmesan, finishing with pepper."
+        ],
+        "de": [
+          "Brotwürfel in etwas Olivenöl wenden und knusprig backen, etwa 8 Minuten.",
+          "Die Sardellen zerdrücken, dann mit Eigelb, Zitronensaft und Olivenöl zu einem Dressing verrühren.",
+          "Den Römersalat in eine Schüssel zupfen.",
+          "Die Blätter mit dem Dressing gut durchschwenken.",
+          "Mit Croutons und geriebenem Parmesan belegen, mit Pfeffer abschließen."
+        ]
+      },
+      "step_timers": [480, null, null, null, null]
+    },
+    {
+      "id": "caesar-vegan",
+      "dish_id": "caesar-salad",
+      "name": { "en": "Vegan Caesar Salad", "de": "Veganer Caesar Salat" },
+      "blurb": { "en": "creamy cashew dressing, all the crunch", "de": "cremiges cashew-dressing, der volle crunch" },
+      "meal_type": "lunch",
+      "servings": 2,
+      "time_minutes": 15,
+      "contains": ["gluten", "tree-nuts"],
+      "attributes": ["easy", "t15", "c400", "raw", "bake"],
+      "variant_axes": { "diet": "vegan", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 320, "protein": 10, "carbs": 24, "fat": 20 },
+      "ingredients": [
+        { "ingredient_id": "lettuce", "qty": 200, "unit": "g", "name": { "en": "romaine lettuce", "de": "Römersalat" } },
+        { "ingredient_id": "cashews", "qty": 60, "unit": "g", "name": { "en": "cashews", "de": "Cashews" } },
+        { "ingredient_id": "bread", "qty": 2, "unit": "slice", "name": { "en": "bread for croutons", "de": "Brot für Croutons" } },
+        { "ingredient_id": "nutritional-yeast", "qty": 2, "unit": "tbsp", "name": { "en": "nutritional yeast", "de": "Hefeflocken" } },
+        { "ingredient_id": "garlic", "qty": 1, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "lemon", "qty": 1, "unit": "piece", "name": { "en": "lemon", "de": "Zitrone" } },
+        { "ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp", "name": { "en": "olive oil", "de": "Olivenöl" } }
+      ],
+      "steps": {
+        "en": [
+          "Toss cubed bread in olive oil and bake until crisp, about 8 minutes.",
+          "Soak the cashews in hot water for 10 minutes, then drain.",
+          "Blend cashews with garlic, nutritional yeast, lemon juice, water and salt until creamy.",
+          "Tear the romaine into a bowl and toss with the dressing.",
+          "Top with croutons and a little extra nutritional yeast."
+        ],
+        "de": [
+          "Brotwürfel in Olivenöl wenden und knusprig backen, etwa 8 Minuten.",
+          "Die Cashews 10 Minuten in heißem Wasser einweichen, dann abgießen.",
+          "Cashews mit Knoblauch, Hefeflocken, Zitronensaft, Wasser und Salz cremig pürieren.",
+          "Den Römersalat in eine Schüssel zupfen und mit dem Dressing schwenken.",
+          "Mit Croutons und etwas extra Hefeflocken belegen."
+        ]
+      },
+      "step_timers": [480, 600, null, null, null]
+    }
+  ]
+}

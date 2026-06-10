@@ -1,0 +1,117 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:morphcook/data/app_state.dart';
+import 'package:morphcook/data/store.dart';
+import 'package:morphcook/main.dart';
+import 'package:morphcook/models/profile.dart';
+import 'package:morphcook/ui/screens/dish_detail_screen.dart';
+import 'package:morphcook/ui/screens/home_screen.dart';
+import 'package:morphcook/ui/screens/onboarding_screen.dart';
+import 'package:morphcook/ui/theme.dart';
+import 'package:morphcook/ui/widgets/decor.dart';
+import 'package:provider/provider.dart';
+
+import 'helpers.dart';
+
+Future<AppState> onboardedState() async {
+  final corpus = await loadRealCorpus();
+  final state = AppState(store: MemoryStore(), corpus: corpus);
+  await state.load();
+  await state.completeOnboarding(
+      const Profile(name: 'cedric', lang: 'en'));
+  return state;
+}
+
+Widget app(AppState state, Widget child) => ChangeNotifierProvider.value(
+      value: state,
+      child: MaterialApp(theme: morphTheme(), home: child),
+    );
+
+void main() {
+  testWidgets('home masthead renders and dish cards open the detail page',
+      (tester) async {
+    // Corpus loading does real file I/O, which never completes inside the
+    // FakeAsync zone — run it on the real event loop.
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(app(state, const RootShell()));
+    await tester.pumpAndSettle();
+
+    expect(find.text('morphcook'), findsOneWidget);
+    expect(find.text('edition for cedric'), findsOneWidget);
+
+    // The grid sits below the fold in the test viewport — scroll to it,
+    // then tap a card to open the dish detail.
+    final homeScrollable = find
+        .descendant(
+            of: find.byType(HomeScreen), matching: find.byType(Scrollable))
+        .first;
+    await tester.drag(homeScrollable, const Offset(0, -700));
+    await tester.pumpAndSettle();
+    expect(find.byType(PolaroidCard), findsWidgets);
+    await tester.tap(find.byType(PolaroidCard).first);
+    await tester.pumpAndSettle();
+    expect(find.byType(DishDetailScreen), findsOneWidget);
+  });
+
+  testWidgets('dish detail shows dimension rows and switches variants',
+      (tester) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester
+        .pumpWidget(app(state, const DishDetailScreen(dishId: 'doener')));
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('— diet'), findsOneWidget);
+    expect(find.textContaining('— effort'), findsOneWidget);
+    expect(find.textContaining('— calorie'), findsOneWidget);
+
+    // Expand the diet row and pick vegan.
+    await tester.tap(find.textContaining('— diet'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('vegan').first);
+    await tester.pumpAndSettle();
+    expect(find.text('vegan döner'), findsWidgets);
+  });
+
+  testWidgets('onboarding completes into the shell', (tester) async {
+    final state = (await tester.runAsync(() async {
+      final corpus = await loadRealCorpus();
+      final s = AppState(store: MemoryStore(), corpus: corpus);
+      await s.load();
+      return s;
+    }))!;
+    await tester.pumpWidget(ChangeNotifierProvider.value(
+      value: state,
+      child: MaterialApp(
+        theme: morphTheme(),
+        home: Builder(
+          builder: (context) => state.onboarded
+              ? const RootShell()
+              : const OnboardingScreen(),
+        ),
+      ),
+    ));
+    await tester.pumpAndSettle();
+    expect(find.byType(OnboardingScreen), findsOneWidget);
+
+    // language -> name -> diet -> targets -> confirm
+    for (var i = 0; i < 4; i++) {
+      await tester.ensureVisible(find.text('next'));
+      await tester.tap(find.text('next'));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(find.text('open my cookbook'));
+    await tester.tap(find.text('open my cookbook'));
+    await tester.pumpAndSettle();
+    expect(state.onboarded, isTrue);
+  });
+
+  testWidgets('cookbook shows a saved variant', (tester) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await state.toggleSaved('doener-vegan');
+    await tester.pumpWidget(app(state, const RootShell()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('cookbook'));
+    await tester.pumpAndSettle();
+    expect(find.text('vegan döner'), findsOneWidget);
+  });
+}

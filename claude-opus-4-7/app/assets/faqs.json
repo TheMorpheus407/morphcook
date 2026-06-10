@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "categories": {
+    "dietary": {"en":"Dietary & matching","de":"Ernährung & Filter"},
+    "recipes": {"en":"Recipes & variants","de":"Rezepte & Varianten"},
+    "features": {"en":"Features","de":"Funktionen"},
+    "trouble": {"en":"Troubleshooting","de":"Fehlerbehebung"}
+  },
+  "faqs": [
+    {
+      "id":"why-cant-i-see",
+      "category":"dietary",
+      "question":{"en":"Why don't I see some recipes in search?","de":"Warum sehe ich manche Rezepte nicht in der Suche?"},
+      "answer":{"en":"Search respects your profile filters: any contains-flag matching an avoid-flag, any avoided ingredient, and your time/calorie budget all hide a recipe. Adjust filters in Settings → Dietary, or toggle 'show outside my profile' on a dish to see all variants.","de":"Die Suche berücksichtigt dein Profil: Inhaltsstoffe, vermiedene Zutaten, Zeit- und Kalorienlimits können Rezepte ausblenden. Passe das in Einstellungen → Ernährung an oder aktiviere 'außerhalb meines Profils zeigen' auf einem Gericht."},
+      "linked_contexts":["search","dish_detail"]
+    },
+    {
+      "id":"variant-design",
+      "category":"recipes",
+      "question":{"en":"Why a separate recipe for each variant?","de":"Warum eine eigene Datei pro Variante?"},
+      "answer":{"en":"Each variant is its own recipe linked to a dish concept. A vegan Döner isn't a swap-list — it's a separate, fully authored recipe designed for that way of eating. No watered-down substitutions.","de":"Jede Variante ist ein eigenes Rezept, das mit einem Gerichts-Konzept verknüpft ist. Ein veganer Döner ist keine Tausch­liste — sondern ein eigenständiges, vollständig geschriebenes Rezept für diese Ernährungs­weise. Keine verwässerten Ersatz­zutaten."},
+      "linked_contexts":["dish_detail"]
+    },
+    {
+      "id":"halal-cert",
+      "category":"dietary",
+      "question":{"en":"Are halal/kosher recipes certified?","de":"Sind halal/koschere Rezepte zertifiziert?"},
+      "answer":{"en":"No — and we'd never claim to be. We surface halal-compatible and kosher-compatible ingredients only. Certification is a property of sourcing (slaughter, supervision), not of a recipe text. The sourcing call is yours.","de":"Nein — und wir würden das auch nie behaupten. Wir zeigen halal-kompatible und koscher-kompatible Zutaten an. Zertifizierung betrifft die Beschaffung (Schlachtung, Aufsicht), nicht den Rezept­text. Die Beschaffung liegt bei dir."},
+      "linked_contexts":["settings"]
+    },
+    {
+      "id":"calorie-override",
+      "category":"dietary",
+      "question":{"en":"Can I see recipes outside my calorie target?","de":"Kann ich Rezepte außerhalb meines Kalorienziels sehen?"},
+      "answer":{"en":"Yes. The calorie target is a hard filter by default, but each dish has a 'show all calorie levels' switch that overrides it locally.","de":"Ja. Das Kalorienziel ist standard­mäßig ein hartes Filter, aber jedes Gericht hat einen 'alle Kalorien­stufen zeigen' Schalter, der das lokal aufhebt."},
+      "linked_contexts":["dish_detail","settings"]
+    },
+    {
+      "id":"shopping-units",
+      "category":"features",
+      "question":{"en":"How does the shopping list aggregate units?","de":"Wie aggregiert die Einkaufsliste Einheiten?"},
+      "answer":{"en":"Same ingredient & same unit → summed. ml ↔ tbsp ↔ tsp convert for liquid units, g stays g. 'garlic 2 cloves' + 'garlic 3 cloves' = '5 cloves'. Sorted by aisle.","de":"Gleiche Zutat & gleiche Einheit → addiert. ml ↔ EL ↔ TL werden umgerechnet, g bleibt g. 'Knoblauch 2 Zehen' + 'Knoblauch 3 Zehen' = '5 Zehen'. Sortiert nach Gang."},
+      "linked_contexts":["shopping_list"]
+    },
+    {
+      "id":"backup-encrypt",
+      "category":"features",
+      "question":{"en":"How does the encrypted backup work?","de":"Wie funktioniert der verschlüsselte Backup?"},
+      "answer":{"en":"AES-256-GCM with PBKDF2-SHA256 (10,000 iterations). A unique salt and IV per export. Magic bytes 'ENC' identify encrypted files. Lose the password and the data is gone — there's no recovery.","de":"AES-256-GCM mit PBKDF2-SHA256 (10.000 Iterationen). Pro Export ein einzigartiges Salt und IV. Die Magic-Bytes 'ENC' kennzeichnen verschlüsselte Dateien. Passwort verloren = Daten verloren — keine Wieder­herstellung."},
+      "linked_contexts":["settings","backup"]
+    },
+    {
+      "id":"meal-plan-export",
+      "category":"features",
+      "question":{"en":"Can I send my week to the shopping list?","de":"Kann ich meine Woche zur Einkaufsliste schicken?"},
+      "answer":{"en":"Yes — on the meal plan, tap 'add week to shopping list'. Items deduplicate against what's already there.","de":"Ja — im Wochenplan auf 'Woche zur Einkaufsliste hinzufügen' tippen. Doppelte Einträge werden zusammen­geführt."},
+      "linked_contexts":["meal_plan"]
+    },
+    {
+      "id":"no-account",
+      "category":"features",
+      "question":{"en":"Is there a cloud sync or account?","de":"Gibt es Cloud-Sync oder ein Konto?"},
+      "answer":{"en":"No. MorphCook is offline-only. Your data lives on your device. Backup/restore uses the OS share sheet — no servers, no telemetry, no account.","de":"Nein. MorphCook arbeitet ausschließlich offline. Deine Daten leben auf deinem Gerät. Backup/Wieder­herstellung über das System-Teilen-Menü — keine Server, keine Telemetrie, kein Konto."},
+      "linked_contexts":["settings"]
+    },
+    {
+      "id":"cook-mode-tap",
+      "category":"features",
+      "question":{"en":"Why didn't my tap advance to the next step?","de":"Warum hat mein Tap mich nicht zum nächsten Schritt gebracht?"},
+      "answer":{"en":"Quick-tap-next is off by default. Enable it in Settings → Cook mode. There's a 300 ms debounce so accidental taps don't skip steps.","de":"Quick-Tap-Next ist standard­mäßig aus. Aktiviere es in Einstellungen → Kochmodus. Eine 300-ms-Sperre verhindert versehentliches Skippen."},
+      "linked_contexts":["cook_mode","settings"]
+    },
+    {
+      "id":"visual-alert",
+      "category":"features",
+      "question":{"en":"My timer is hard to hear. Can I get a visual alert?","de":"Mein Timer ist schwer zu hören. Gibt es eine visuelle Anzeige?"},
+      "answer":{"en":"Yes — visual alert flashes coral/teal across the whole screen at timer end. It's on by default; toggle in Settings → Accessibility. Respects 'Reduce motion'.","de":"Ja — der visuelle Alarm blitzt am Timer-Ende in Korall/Türkis über den ganzen Bildschirm. Standard­mäßig an; umschaltbar in Einstellungen → Barrierefreiheit. Berücksichtigt 'Bewegung reduzieren'."},
+      "linked_contexts":["cook_mode","settings"]
+    },
+    {
+      "id":"content-request",
+      "category":"recipes",
+      "question":{"en":"What if my search returns nothing?","de":"Was, wenn meine Suche nichts findet?"},
+      "answer":{"en":"That query is logged locally as a content request. You can export the list with your backup — it helps the corpus team prioritise. No request leaves your device on its own.","de":"Diese Suchanfrage wird lokal als Inhalts­wunsch gespeichert. Du kannst die Liste mit deinem Backup exportieren — das hilft dem Korpus-Team. Nichts verlässt automatisch dein Gerät."},
+      "linked_contexts":["search"]
+    },
+    {
+      "id":"restore-stuck",
+      "category":"trouble",
+      "question":{"en":"Import fails with 'incorrect password'","de":"Import schlägt mit 'falsches Passwort' fehl"},
+      "answer":{"en":"PBKDF2 cannot verify keys directly. The decryption was attempted but the auth tag didn't validate. Check capitalisation, then verify the file isn't truncated.","de":"PBKDF2 kann Schlüssel nicht direkt prüfen. Die Entschlüsselung wurde versucht, aber der Auth-Tag stimmt nicht. Prüfe Groß-/Klein­schreibung und ob die Datei vollständig ist."},
+      "linked_contexts":["backup"]
+    }
+  ]
+}

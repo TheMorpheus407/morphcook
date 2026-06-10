@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "contains_flags": [
+    {"id": "pork", "name": {"en": "pork", "de": "Schweinefleisch"}},
+    {"id": "beef", "name": {"en": "beef", "de": "Rindfleisch"}},
+    {"id": "lamb", "name": {"en": "lamb", "de": "Lammfleisch"}},
+    {"id": "poultry", "name": {"en": "poultry", "de": "Geflügel"}},
+    {"id": "fish", "name": {"en": "fish", "de": "Fisch"}},
+    {"id": "shellfish", "name": {"en": "shellfish", "de": "Schalentiere"}},
+    {"id": "molluscs", "name": {"en": "molluscs", "de": "Weichtiere"}},
+    {"id": "egg", "name": {"en": "egg", "de": "Ei"}},
+    {"id": "dairy", "name": {"en": "dairy", "de": "Milchprodukte"}},
+    {"id": "gluten", "name": {"en": "gluten", "de": "Gluten"}},
+    {"id": "soy", "name": {"en": "soy", "de": "Soja"}},
+    {"id": "peanuts", "name": {"en": "peanuts", "de": "Erdnüsse"}},
+    {"id": "tree-nuts", "name": {"en": "tree nuts", "de": "Schalenfrüchte"}},
+    {"id": "almonds", "name": {"en": "almonds", "de": "Mandeln"}},
+    {"id": "walnuts", "name": {"en": "walnuts", "de": "Walnüsse"}},
+    {"id": "cashews", "name": {"en": "cashews", "de": "Cashewkerne"}},
+    {"id": "hazelnuts", "name": {"en": "hazelnuts", "de": "Haselnüsse"}},
+    {"id": "pistachios", "name": {"en": "pistachios", "de": "Pistazien"}},
+    {"id": "pine-nuts", "name": {"en": "pine nuts", "de": "Pinienkerne"}},
+    {"id": "sesame", "name": {"en": "sesame", "de": "Sesam"}},
+    {"id": "mustard", "name": {"en": "mustard", "de": "Senf"}},
+    {"id": "celery", "name": {"en": "celery", "de": "Sellerie"}},
+    {"id": "lupin", "name": {"en": "lupin", "de": "Lupinen"}},
+    {"id": "sulphites", "name": {"en": "sulphites", "de": "Sulfite"}},
+    {"id": "alcohol", "name": {"en": "alcohol", "de": "Alkohol"}},
+    {"id": "caffeine", "name": {"en": "caffeine", "de": "Koffein"}},
+    {"id": "added-sugar", "name": {"en": "added sugar", "de": "zugesetzter Zucker"}},
+    {"id": "high-fodmap", "name": {"en": "high FODMAP", "de": "FODMAP-reich"}},
+    {"id": "gelatin-non-halal", "name": {"en": "gelatin (non-halal)", "de": "Gelatine (nicht halal)"}},
+    {"id": "gelatin-non-kosher", "name": {"en": "gelatin (non-kosher)", "de": "Gelatine (nicht koscher)"}},
+    {"id": "honey", "name": {"en": "honey", "de": "Honig"}}
+  ],
+  "compound_flags": [
+    {
+      "id": "vegan",
+      "name": {"en": "vegan", "de": "vegan"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "gelatin-non-halal", "gelatin-non-kosher", "honey"]
+    },
+    {
+      "id": "vegetarian",
+      "name": {"en": "vegetarian", "de": "vegetarisch"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "pescatarian",
+      "name": {"en": "pescatarian", "de": "pescetarisch"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal"]
+    },
+    {
+      "id": "halal",
+      "name": {"en": "halal-compatible", "de": "halal-kompatibel"},
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    {
+      "id": "kosher",
+      "name": {"en": "kosher-compatible", "de": "koscher-kompatibel"},
+      "expands_to": ["pork", "shellfish", "molluscs", "gelatin-non-kosher"]
+    },
+    {
+      "id": "low-fodmap",
+      "name": {"en": "low FODMAP", "de": "FODMAP-arm"},
+      "expands_to": ["high-fodmap"]
+    },
+    {
+      "id": "sugar-free",
+      "name": {"en": "sugar-free", "de": "zuckerfrei"},
+      "expands_to": ["added-sugar"]
+    },
+    {
+      "id": "lactose-free",
+      "name": {"en": "lactose-free", "de": "laktosefrei"},
+      "expands_to": ["dairy"]
+    }
+  ],
+  "attributes": {
+    "effort": ["easy", "medium", "hard"],
+    "time_bucket": ["le15", "le30", "le60", "gt60"],
+    "calorie_bucket": ["le400", "le600", "le800", "gt800"],
+    "technique": ["bake", "saute", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"]
+  },
+  "diet_labels": ["classic", "vegetarian", "vegan", "pescatarian", "halal", "kosher", "keto", "gluten-free", "low-fodmap", "sugar-free", "high-protein", "light", "nut-free"],
+  "diet_label_names": {
+    "classic": {"en": "classic", "de": "klassisch"},
+    "vegetarian": {"en": "vegetarian", "de": "vegetarisch"},
+    "vegan": {"en": "vegan", "de": "vegan"},
+    "pescatarian": {"en": "pescatarian", "de": "pescetarisch"},
+    "halal": {"en": "halal", "de": "halal"},
+    "kosher": {"en": "kosher", "de": "koscher"},
+    "keto": {"en": "keto", "de": "keto"},
+    "gluten-free": {"en": "gluten-free", "de": "glutenfrei"},
+    "low-fodmap": {"en": "low FODMAP", "de": "FODMAP-arm"},
+    "sugar-free": {"en": "sugar-free", "de": "zuckerfrei"},
+    "high-protein": {"en": "high-protein", "de": "proteinreich"},
+    "light": {"en": "light", "de": "leicht"},
+    "nut-free": {"en": "nut-free", "de": "nussfrei"}
+  },
+  "attribute_names": {
+    "easy": {"en": "easy", "de": "einfach"},
+    "medium": {"en": "medium", "de": "mittel"},
+    "hard": {"en": "involved", "de": "aufwendig"},
+    "le15": {"en": "≤ 15 min", "de": "≤ 15 Min."},
+    "le30": {"en": "≤ 30 min", "de": "≤ 30 Min."},
+    "le60": {"en": "≤ 60 min", "de": "≤ 60 Min."},
+    "gt60": {"en": "> 60 min", "de": "> 60 Min."},
+    "le400": {"en": "≤ 400 kcal", "de": "≤ 400 kcal"},
+    "le600": {"en": "≤ 600 kcal", "de": "≤ 600 kcal"},
+    "le800": {"en": "≤ 800 kcal", "de": "≤ 800 kcal"},
+    "gt800": {"en": "> 800 kcal", "de": "> 800 kcal"},
+    "bake": {"en": "bake", "de": "backen"},
+    "saute": {"en": "sauté", "de": "anbraten"},
+    "simmer": {"en": "simmer", "de": "köcheln"},
+    "raw": {"en": "raw", "de": "roh"},
+    "grill": {"en": "grill", "de": "grillen"},
+    "fry": {"en": "fry", "de": "braten"},
+    "steam": {"en": "steam", "de": "dämpfen"},
+    "roast": {"en": "roast", "de": "rösten"},
+    "broil": {"en": "broil", "de": "überbacken"},
+    "pan-fry": {"en": "pan-fry", "de": "in der Pfanne braten"},
+    "deep-fry": {"en": "deep-fry", "de": "frittieren"},
+    "stir-fry": {"en": "stir-fry", "de": "pfannenrühren"},
+    "poach": {"en": "poach", "de": "pochieren"},
+    "blanch": {"en": "blanch", "de": "blanchieren"}
+  }
+}

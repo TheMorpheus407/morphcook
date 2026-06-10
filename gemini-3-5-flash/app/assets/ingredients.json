@@ -1,0 +1,144 @@
+[
+  {
+    "id": "dairy",
+    "name": { "en": "Dairy", "de": "Milchprodukte" },
+    "children": [
+      {
+        "id": "cow-milk",
+        "name": { "en": "Cow's Milk", "de": "Kuhmilch" },
+        "children": [
+          {
+            "id": "whole-milk",
+            "name": { "en": "Whole Milk", "de": "Vollmilch" }
+          },
+          {
+            "id": "skim-milk",
+            "name": { "en": "Skim Milk", "de": "Magermilch" }
+          }
+        ]
+      },
+      {
+        "id": "cheese",
+        "name": { "en": "Cheese", "de": "Käse" },
+        "children": [
+          {
+            "id": "parmesan",
+            "name": { "en": "Parmesan", "de": "Parmesan" }
+          },
+          {
+            "id": "feta",
+            "name": { "en": "Feta", "de": "Feta" }
+          },
+          {
+            "id": "cheddar",
+            "name": { "en": "Cheddar", "de": "Cheddar" }
+          }
+        ]
+      },
+      {
+        "id": "butter",
+        "name": { "en": "Butter", "de": "Butter" }
+      }
+    ]
+  },
+  {
+    "id": "nuts",
+    "name": { "en": "Nuts", "de": "Nüsse" },
+    "children": [
+      {
+        "id": "tree-nuts",
+        "name": { "en": "Tree Nuts", "de": "Baumnüsse" },
+        "children": [
+          {
+            "id": "walnuts",
+            "name": { "en": "Walnuts", "de": "Walnüsse" }
+          },
+          {
+            "id": "almonds",
+            "name": { "en": "Almonds", "de": "Mandeln" }
+          },
+          {
+            "id": "pistachios",
+            "name": { "en": "Pistachios", "de": "Pistazien" }
+          }
+        ]
+      },
+      {
+        "id": "peanuts",
+        "name": { "en": "Peanuts", "de": "Erdnüsse" }
+      }
+    ]
+  },
+  {
+    "id": "herbs",
+    "name": { "en": "Herbs", "de": "Kräuter" },
+    "children": [
+      {
+        "id": "cilantro",
+        "name": { "en": "Cilantro", "de": "Koriander" }
+      },
+      {
+        "id": "parsley",
+        "name": { "en": "Parsley", "de": "Petersilie" }
+      }
+    ]
+  },
+  {
+    "id": "vegetables",
+    "name": { "en": "Vegetables", "de": "Gemüse" },
+    "children": [
+      {
+        "id": "bell-peppers",
+        "name": { "en": "Bell Peppers", "de": "Paprika" }
+      },
+      {
+        "id": "garlic",
+        "name": { "en": "Garlic", "de": "Knoblauch" }
+      },
+      {
+        "id": "onions",
+        "name": { "en": "Onions", "de": "Zwiebeln" }
+      },
+      {
+        "id": "cabbage",
+        "name": { "en": "Cabbage", "de": "Kohl" }
+      }
+    ]
+  },
+  {
+    "id": "poultry",
+    "name": { "en": "Poultry", "de": "Geflügel" },
+    "children": [
+      {
+        "id": "chicken",
+        "name": { "en": "Chicken", "de": "Hähnchen" }
+      }
+    ]
+  },
+  {
+    "id": "pork",
+    "name": { "en": "Pork", "de": "Schweinefleisch" }
+  },
+  {
+    "id": "beef",
+    "name": { "en": "Beef", "de": "Rindfleisch" }
+  },
+  {
+    "id": "grains",
+    "name": { "en": "Grains & Gluten", "de": "Getreide & Gluten" },
+    "children": [
+      {
+        "id": "wheat-flour",
+        "name": { "en": "Wheat Flour", "de": "Weizenmehl" }
+      },
+      {
+        "id": "rice-noodles",
+        "name": { "en": "Rice Noodles", "de": "Reisnudeln" }
+      },
+      {
+        "id": "pasta",
+        "name": { "en": "Pasta", "de": "Nudeln" }
+      }
+    ]
+  }
+]

@@ -1,0 +1,542 @@
+{
+  "version": 1,
+  "partition_id": "extended",
+  "description": "Less-frequently used recipes, loaded on demand.",
+  "recipes": [
+    {
+      "id": "r-hummus-classic",
+      "dish_id": "hummus",
+      "name": {"en": "Smooth Hummus", "de": "Cremiger Hummus"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "the trick is peeled chickpeas and a lot of tahini.",
+        "de": "der trick: geschälte kichererbsen und viel tahini."
+      },
+      "contains": ["sesame"],
+      "attributes": ["easy"],
+      "technique_tags": ["raw"],
+      "time_minutes": 25,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 4,
+      "calories_per_serving": 240,
+      "protein_g": 8,
+      "carbs_g": 22,
+      "fat_g": 14,
+      "ingredients": [
+        {"id": "chickpea", "qty": 400, "unit": "g", "name": {"en": "cooked chickpeas", "de": "gekochte Kichererbsen"}},
+        {"id": "tahini", "qty": 6, "unit": "tbsp", "name": {"en": "tahini", "de": "Tahini"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon, juiced", "de": "Zitronensaft"}},
+        {"id": "garlic", "qty": 1, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "cumin", "qty": 0.5, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Peel chickpeas — pinch each one. Slow. Worth it.", "de": "Kichererbsen schälen — jede einzeln. Langsam. Es lohnt sich."}, "time_minutes": 10},
+        {"text": {"en": "Blend tahini + lemon + 2 tbsp ice water until pale.", "de": "Tahini + Zitrone + 2 EL Eiswasser hellig pürieren."}, "time_minutes": 2},
+        {"text": {"en": "Add chickpeas, garlic, cumin, salt. Blend 4 min, scrape.", "de": "Kichererbsen, Knoblauch, Kreuzkümmel, Salz dazu. 4 Min pürieren, schaben."}, "time_minutes": 4},
+        {"text": {"en": "Bowl, swirl, oil, paprika.", "de": "Anrichten, Mulde, Öl, Paprika."}}
+      ]
+    },
+    {
+      "id": "r-hummus-lowfodmap",
+      "dish_id": "hummus",
+      "name": {"en": "Low-FODMAP Garlic-Free Hummus", "de": "FODMAP-armer knoblauchfreier Hummus"},
+      "variant_label": {"en": "low-fodmap", "de": "FODMAP-arm"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "garlic-infused oil, smaller chickpea portion — gentle on guts.",
+        "de": "knoblauchöl, kleinere kichererbsen-portion — sanft zum bauch."
+      },
+      "contains": ["sesame"],
+      "attributes": ["easy"],
+      "technique_tags": ["raw"],
+      "time_minutes": 20,
+      "active_minutes": 15,
+      "effort": "easy",
+      "servings": 4,
+      "calories_per_serving": 200,
+      "protein_g": 7,
+      "carbs_g": 18,
+      "fat_g": 14,
+      "ingredients": [
+        {"id": "chickpea", "qty": 250, "unit": "g", "name": {"en": "cooked chickpeas (smaller portion)", "de": "gekochte Kichererbsen (kleinere Menge)"}},
+        {"id": "tahini", "qty": 6, "unit": "tbsp", "name": {"en": "tahini", "de": "Tahini"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}},
+        {"id": "garlic-oil", "qty": 2, "unit": "tbsp", "name": {"en": "garlic-infused oil", "de": "Knoblauchöl"}},
+        {"id": "cumin", "qty": 0.5, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}}
+      ],
+      "steps": [
+        {"text": {"en": "Blend tahini + lemon + ice water until pale.", "de": "Tahini + Zitrone + Eiswasser hellig pürieren."}, "time_minutes": 2},
+        {"text": {"en": "Add chickpeas, garlic-oil, cumin, salt. Blend 4 min.", "de": "Kichererbsen, Knoblauchöl, Kreuzkümmel, Salz dazu. 4 Min pürieren."}, "time_minutes": 4},
+        {"text": {"en": "Serve.", "de": "Servieren."}}
+      ]
+    },
+    {
+      "id": "r-falafel-classic",
+      "dish_id": "falafel",
+      "name": {"en": "Herb Falafel", "de": "Kräuter-Falafel"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "dried chickpeas only — soaked, never canned. herbs make it green inside.",
+        "de": "nur getrocknete kichererbsen — eingeweicht, nie aus der dose. kräuter machen das innere grün."
+      },
+      "contains": ["sesame"],
+      "attributes": ["medium"],
+      "technique_tags": ["deep-fry"],
+      "time_minutes": 45,
+      "active_minutes": 35,
+      "effort": "medium",
+      "servings": 3,
+      "calories_per_serving": 420,
+      "protein_g": 18,
+      "carbs_g": 38,
+      "fat_g": 22,
+      "ingredients": [
+        {"id": "chickpea", "qty": 250, "unit": "g", "name": {"en": "dried chickpeas, soaked 12h", "de": "getrocknete Kichererbsen, 12h eingeweicht"}},
+        {"id": "cilantro", "qty": 1, "unit": "bunch", "name": {"en": "cilantro", "de": "Koriander"}},
+        {"id": "parsley", "qty": 1, "unit": "bunch", "name": {"en": "parsley", "de": "Petersilie"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "coriander", "qty": 1, "unit": "tsp", "name": {"en": "ground coriander", "de": "Koriander gemahlen"}},
+        {"id": "baking-powder", "qty": 1, "unit": "tsp", "name": {"en": "baking powder", "de": "Backpulver"}},
+        {"id": "sunflower-oil", "qty": 500, "unit": "ml", "name": {"en": "oil for frying", "de": "Öl zum Frittieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Blitz chickpeas, herbs, garlic, onion, spices until couscous-fine.", "de": "Kichererbsen, Kräuter, Knoblauch, Zwiebel, Gewürze fein wie Couscous mixen."}, "time_minutes": 3},
+        {"text": {"en": "Fold in baking powder + salt. Rest 30 min in fridge.", "de": "Backpulver + Salz unterheben. 30 Min im Kühlschrank ruhen."}, "time_minutes": 30},
+        {"text": {"en": "Heat oil to 175°C. Shape balls.", "de": "Öl auf 175°C erhitzen. Bällchen formen."}, "time_minutes": 4},
+        {"text": {"en": "Fry in batches, 3 min per side, drain on rack.", "de": "Portionsweise frittieren, je 3 Min, auf Rost abtropfen."}, "time_minutes": 8}
+      ]
+    },
+    {
+      "id": "r-burger-classic",
+      "dish_id": "burger",
+      "name": {"en": "Smashburger", "de": "Smashburger"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "80/20 beef, hot cast iron, smashed thin, holy crust.",
+        "de": "80/20 rind, heißes gusseisen, dünn gepresst, heilige kruste."
+      },
+      "contains": ["beef", "dairy", "gluten", "lactose"],
+      "attributes": ["easy"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 15,
+      "active_minutes": 15,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 680,
+      "protein_g": 38,
+      "carbs_g": 32,
+      "fat_g": 42,
+      "ingredients": [
+        {"id": "ground-beef", "qty": 300, "unit": "g", "name": {"en": "ground beef (80/20)", "de": "Hackfleisch (80/20)"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "brioche buns", "de": "Brioche-Brötchen"}},
+        {"id": "cheddar", "qty": 60, "unit": "g", "name": {"en": "cheddar slices", "de": "Cheddar-Scheiben"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion, thinly sliced", "de": "Zwiebel, dünn"}},
+        {"id": "ketchup", "qty": 2, "unit": "tbsp", "name": {"en": "ketchup", "de": "Ketchup"}},
+        {"id": "mustard-condiment", "qty": 1, "unit": "tbsp", "name": {"en": "mustard", "de": "Senf"}}
+      ],
+      "steps": [
+        {"text": {"en": "Form loose balls (~150 g each). Salt only the outside.", "de": "Lockere Bällchen formen (~150 g). Nur außen salzen."}},
+        {"text": {"en": "Cast iron screaming hot. Drop, smash flat with spatula.", "de": "Gusseisen extrem heiß. Auflegen, mit Spatel platt drücken."}, "time_minutes": 2},
+        {"text": {"en": "After 90 sec, flip, cheese, lid 30 sec.", "de": "Nach 90 Sek wenden, Käse drauf, Deckel 30 Sek."}, "time_minutes": 2},
+        {"text": {"en": "Toast buns in beef fat. Assemble: bottom, sauce, patty, onion, top.", "de": "Buns im Rinderfett toasten. Aufbauen: unten, Sauce, Patty, Zwiebel, oben."}}
+      ]
+    },
+    {
+      "id": "r-burger-vegan",
+      "dish_id": "burger",
+      "name": {"en": "Black Bean & Beet Burger", "de": "Bohnen-Rote-Bete-Burger"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "earthy, holds together, no soy-cheese cosplay.",
+        "de": "erdig, hält zusammen, kein soja-käse-cosplay."
+      },
+      "contains": ["gluten", "soy"],
+      "attributes": ["medium"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 30,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 520,
+      "protein_g": 20,
+      "carbs_g": 70,
+      "fat_g": 16,
+      "ingredients": [
+        {"id": "black-bean", "qty": 300, "unit": "g", "name": {"en": "black beans, drained", "de": "schwarze Bohnen, abgetropft"}},
+        {"id": "beet", "qty": 1, "unit": "piece", "name": {"en": "roasted beet, grated", "de": "gebackene rote Bete, gerieben"}},
+        {"id": "oats", "qty": 50, "unit": "g", "name": {"en": "rolled oats", "de": "Haferflocken"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "vegan burger buns", "de": "vegane Burger-Brötchen"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "soy-sauce", "qty": 1, "unit": "tbsp", "name": {"en": "soy sauce", "de": "Sojasauce"}}
+      ],
+      "steps": [
+        {"text": {"en": "Mash beans coarsely. Add beet, oats, cumin, soy.", "de": "Bohnen grob zerdrücken. Bete, Hafer, Kreuzkümmel, Soja dazu."}, "time_minutes": 4},
+        {"text": {"en": "Rest 15 min so oats absorb moisture.", "de": "15 Min ruhen, damit Hafer Feuchtigkeit aufnimmt."}, "time_minutes": 15},
+        {"text": {"en": "Form 2 patties. Pan-fry 4 min per side.", "de": "2 Patties formen. Je 4 Min braten."}, "time_minutes": 8},
+        {"text": {"en": "Toast bun, assemble.", "de": "Bun toasten, zusammensetzen."}}
+      ]
+    },
+    {
+      "id": "r-burger-halal",
+      "dish_id": "burger",
+      "name": {"en": "Halal-Compatible Smashburger", "de": "Halal-kompatibler Smashburger"},
+      "variant_label": {"en": "halal", "de": "halal"},
+      "diet_label": "halal-compatible",
+      "summary": {
+        "en": "beef from a halal butcher, no alcohol in the bun.",
+        "de": "rind vom halal-metzger, kein alkohol im brötchen."
+      },
+      "contains": ["beef", "dairy", "gluten", "lactose"],
+      "attributes": ["easy", "halal-friendly"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 15,
+      "active_minutes": 15,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 680,
+      "protein_g": 38,
+      "carbs_g": 32,
+      "fat_g": 42,
+      "ingredients": [
+        {"id": "ground-beef", "qty": 300, "unit": "g", "name": {"en": "ground beef (halal-source)", "de": "Hackfleisch (halal-Quelle)"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "alcohol-free brioche buns", "de": "alkoholfreie Brioche-Brötchen"}},
+        {"id": "cheddar", "qty": 60, "unit": "g", "name": {"en": "cheddar", "de": "Cheddar"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}}
+      ],
+      "steps": [
+        {"text": {"en": "Identical method to classic, ingredient sourcing differs.", "de": "Gleiche Methode wie klassisch, nur die Beschaffung der Zutaten unterscheidet sich."}, "time_minutes": 15}
+      ]
+    },
+    {
+      "id": "r-ramen-classic",
+      "dish_id": "ramen",
+      "name": {"en": "Pork Shoyu Ramen", "de": "Schweine-Shoyu-Ramen"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "slow-cooked broth, chashu, soft egg, scallions.",
+        "de": "langsam gekochte brühe, chashu, weiches ei, frühlingszwiebeln."
+      },
+      "contains": ["pork", "egg", "gluten", "soy"],
+      "attributes": ["hard"],
+      "technique_tags": ["simmer", "poach"],
+      "time_minutes": 240,
+      "active_minutes": 60,
+      "effort": "hard",
+      "servings": 2,
+      "calories_per_serving": 720,
+      "protein_g": 38,
+      "carbs_g": 76,
+      "fat_g": 26,
+      "ingredients": [
+        {"id": "pork-belly", "qty": 400, "unit": "g", "name": {"en": "pork belly", "de": "Schweinebauch"}},
+        {"id": "soy-sauce", "qty": 6, "unit": "tbsp", "name": {"en": "soy sauce", "de": "Sojasauce"}},
+        {"id": "egg", "qty": 2, "unit": "piece", "name": {"en": "eggs", "de": "Eier"}},
+        {"id": "ramen-noodles", "qty": 200, "unit": "g", "name": {"en": "ramen noodles", "de": "Ramen-Nudeln"}},
+        {"id": "scallion", "qty": 4, "unit": "piece", "name": {"en": "scallions", "de": "Frühlingszwiebeln"}},
+        {"id": "ginger", "qty": 1, "unit": "tbsp", "name": {"en": "ginger", "de": "Ingwer"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}}
+      ],
+      "steps": [
+        {"text": {"en": "Simmer pork belly with ginger, garlic, scallions, 3h.", "de": "Schweinebauch mit Ingwer, Knoblauch, Frühlingszwiebeln 3h köcheln."}, "time_minutes": 180},
+        {"text": {"en": "Marinate eggs in soy + broth, 6h.", "de": "Eier in Soja + Brühe 6h marinieren."}, "time_minutes": 30},
+        {"text": {"en": "Slice pork, sear edges.", "de": "Schweinebauch schneiden, Ränder anbraten."}, "time_minutes": 5},
+        {"text": {"en": "Cook noodles. Bowl: noodles, broth, pork, egg, scallions.", "de": "Nudeln kochen. Anrichten: Nudeln, Brühe, Schwein, Ei, Frühlingszwiebeln."}, "time_minutes": 6}
+      ]
+    },
+    {
+      "id": "r-ramen-vegan",
+      "dish_id": "ramen",
+      "name": {"en": "Shiitake Miso Ramen", "de": "Shiitake-Miso-Ramen"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "shiitake-kombu broth, miso depth, charred tofu.",
+        "de": "shiitake-kombu-brühe, miso-tiefe, angebratener tofu."
+      },
+      "contains": ["soy", "gluten"],
+      "attributes": ["medium"],
+      "technique_tags": ["simmer"],
+      "time_minutes": 50,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 520,
+      "protein_g": 26,
+      "carbs_g": 70,
+      "fat_g": 14,
+      "ingredients": [
+        {"id": "mushroom", "qty": 50, "unit": "g", "name": {"en": "dried shiitake", "de": "getrocknete Shiitake"}},
+        {"id": "kombu", "qty": 10, "unit": "g", "name": {"en": "kombu", "de": "Kombu"}},
+        {"id": "miso", "qty": 3, "unit": "tbsp", "name": {"en": "miso", "de": "Miso"}},
+        {"id": "tofu", "qty": 200, "unit": "g", "name": {"en": "firm tofu", "de": "fester Tofu"}},
+        {"id": "ramen-noodles", "qty": 200, "unit": "g", "name": {"en": "ramen noodles", "de": "Ramen-Nudeln"}},
+        {"id": "scallion", "qty": 3, "unit": "piece", "name": {"en": "scallions", "de": "Frühlingszwiebeln"}},
+        {"id": "ginger", "qty": 1, "unit": "tbsp", "name": {"en": "ginger", "de": "Ingwer"}}
+      ],
+      "steps": [
+        {"text": {"en": "Soak shiitake + kombu in 1L cold water, 30 min.", "de": "Shiitake + Kombu in 1L Kaltwasser 30 Min einweichen."}, "time_minutes": 30},
+        {"text": {"en": "Heat slowly to 60°C, hold 10 min. Strain broth.", "de": "Langsam auf 60°C erwärmen, 10 Min halten. Brühe abseihen."}, "time_minutes": 10},
+        {"text": {"en": "Whisk miso into hot (not boiling) broth.", "de": "Miso in heiße (nicht kochende) Brühe einrühren."}},
+        {"text": {"en": "Pan-fry tofu hot. Cook noodles. Bowl + scallions.", "de": "Tofu heiß anbraten. Nudeln kochen. Anrichten + Frühlingszwiebeln."}, "time_minutes": 10}
+      ]
+    },
+    {
+      "id": "r-avotoast-classic",
+      "dish_id": "avocado-toast",
+      "name": {"en": "Avocado Toast", "de": "Avocado-Toast"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "good bread, ripe avocado, salt, lemon, that's it.",
+        "de": "gutes brot, reife avocado, salz, zitrone, das war's."
+      },
+      "contains": ["gluten"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["raw"],
+      "time_minutes": 8,
+      "active_minutes": 8,
+      "effort": "easy",
+      "servings": 1,
+      "calories_per_serving": 320,
+      "protein_g": 8,
+      "carbs_g": 32,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "avocado", "qty": 1, "unit": "piece", "name": {"en": "ripe avocado", "de": "reife Avocado"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "sourdough", "de": "Sauerteig"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}},
+        {"id": "salt", "qty": 1, "unit": "pinch", "name": {"en": "flaky salt", "de": "Salzflocken"}},
+        {"id": "chili", "qty": 1, "unit": "pinch", "name": {"en": "chili flakes", "de": "Chiliflocken"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast bread until edges sing.", "de": "Brot toasten, bis die Ränder singen."}, "time_minutes": 3},
+        {"text": {"en": "Mash avocado coarsely with salt, lemon.", "de": "Avocado grob mit Salz und Zitrone zerdrücken."}, "time_minutes": 2},
+        {"text": {"en": "Pile on toast. Chili over the top.", "de": "Auf den Toast geben. Chili obenauf."}}
+      ]
+    },
+    {
+      "id": "r-avotoast-glutenfree",
+      "dish_id": "avocado-toast",
+      "name": {"en": "GF Avocado Toast", "de": "Glutenfreier Avocado-Toast"},
+      "variant_label": {"en": "gluten-free", "de": "glutenfrei"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "buckwheat bread, ripe avocado, the rest unchanged.",
+        "de": "buchweizenbrot, reife avocado, der rest unverändert."
+      },
+      "contains": [],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["raw"],
+      "time_minutes": 8,
+      "active_minutes": 8,
+      "effort": "easy",
+      "servings": 1,
+      "calories_per_serving": 300,
+      "protein_g": 7,
+      "carbs_g": 30,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "avocado", "qty": 1, "unit": "piece", "name": {"en": "avocado", "de": "Avocado"}},
+        {"id": "gf-bread", "qty": 2, "unit": "piece", "name": {"en": "gluten-free bread", "de": "glutenfreies Brot"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}},
+        {"id": "salt", "qty": 1, "unit": "pinch", "name": {"en": "salt", "de": "Salz"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast, mash, top, salt, eat.", "de": "Toasten, zerdrücken, drauf, salzen, essen."}, "time_minutes": 5}
+      ]
+    },
+    {
+      "id": "r-caesar-classic",
+      "dish_id": "caesar",
+      "name": {"en": "Caesar Salad", "de": "Caesar Salat"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "pescatarian",
+      "summary": {
+        "en": "anchovy-garlic dressing, hot croutons, romaine cold.",
+        "de": "anchovis-knoblauch-dressing, heiße croûtons, kalter römersalat."
+      },
+      "contains": ["fish", "dairy", "gluten", "egg", "lactose"],
+      "attributes": ["easy"],
+      "technique_tags": ["raw"],
+      "time_minutes": 20,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 460,
+      "protein_g": 14,
+      "carbs_g": 26,
+      "fat_g": 32,
+      "ingredients": [
+        {"id": "lettuce", "qty": 2, "unit": "piece", "name": {"en": "romaine hearts", "de": "Römersalatherzen"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "stale bread, cubed", "de": "altes Brot, gewürfelt"}},
+        {"id": "parmesan", "qty": 40, "unit": "g", "name": {"en": "parmesan", "de": "Parmesan"}},
+        {"id": "anchovy", "qty": 4, "unit": "piece", "name": {"en": "anchovy fillets", "de": "Anchovi-Filets"}},
+        {"id": "garlic", "qty": 1, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "egg", "qty": 1, "unit": "piece", "name": {"en": "egg yolk", "de": "Eigelb"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}},
+        {"id": "olive-oil", "qty": 6, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast bread cubes with garlic oil until crisp.", "de": "Brotwürfel mit Knoblauchöl knusprig rösten."}, "time_minutes": 6},
+        {"text": {"en": "Mash anchovies + garlic + yolk. Stream in oil whisking. Lemon.", "de": "Anchovis + Knoblauch + Eigelb zerdrücken. Öl unter Rühren einlaufen lassen. Zitrone."}, "time_minutes": 5},
+        {"text": {"en": "Toss romaine with dressing, parmesan, croutons.", "de": "Römersalat mit Dressing, Parmesan, Croûtons vermengen."}}
+      ]
+    },
+    {
+      "id": "r-caesar-vegan",
+      "dish_id": "caesar",
+      "name": {"en": "Vegan Caesar", "de": "Veganer Caesar"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "capers carry the briny note, cashews the cream.",
+        "de": "kapern bringen die salzige note, cashews die cremigkeit."
+      },
+      "contains": ["gluten", "tree-nuts"],
+      "attributes": ["easy"],
+      "technique_tags": ["raw"],
+      "time_minutes": 20,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 400,
+      "protein_g": 12,
+      "carbs_g": 30,
+      "fat_g": 24,
+      "ingredients": [
+        {"id": "lettuce", "qty": 2, "unit": "piece", "name": {"en": "romaine hearts", "de": "Römersalatherzen"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "stale bread", "de": "altes Brot"}},
+        {"id": "cashews", "qty": 60, "unit": "g", "name": {"en": "cashews, soaked", "de": "Cashews, eingeweicht"}},
+        {"id": "capers", "qty": 2, "unit": "tbsp", "name": {"en": "capers", "de": "Kapern"}},
+        {"id": "nutritional-yeast", "qty": 2, "unit": "tbsp", "name": {"en": "nutritional yeast", "de": "Hefeflocken"}},
+        {"id": "garlic", "qty": 1, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast bread cubes with garlic oil.", "de": "Brotwürfel mit Knoblauchöl rösten."}, "time_minutes": 6},
+        {"text": {"en": "Blend cashews + capers + yeast + garlic + lemon + water.", "de": "Cashews + Kapern + Hefe + Knoblauch + Zitrone + Wasser pürieren."}, "time_minutes": 3},
+        {"text": {"en": "Toss with romaine + croutons.", "de": "Mit Römersalat + Croûtons vermengen."}}
+      ]
+    },
+    {
+      "id": "r-pizza-classic",
+      "dish_id": "pizza-margherita",
+      "name": {"en": "Margherita Napoletana", "de": "Margherita Napoletana"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "long-cold-rise dough, san marzano, mozzarella di bufala, basil at the end.",
+        "de": "langer kalter teig, san marzano, mozzarella di bufala, basilikum zum schluss."
+      },
+      "contains": ["dairy", "gluten", "lactose"],
+      "attributes": ["hard"],
+      "technique_tags": ["bake"],
+      "time_minutes": 1500,
+      "active_minutes": 40,
+      "effort": "hard",
+      "servings": 2,
+      "calories_per_serving": 620,
+      "protein_g": 28,
+      "carbs_g": 78,
+      "fat_g": 22,
+      "ingredients": [
+        {"id": "wheat-flour", "qty": 300, "unit": "g", "name": {"en": "00 flour", "de": "Mehl Tipo 00"}},
+        {"id": "yeast", "qty": 0.5, "unit": "g", "name": {"en": "fresh yeast", "de": "frische Hefe"}},
+        {"id": "salt", "qty": 8, "unit": "g", "name": {"en": "salt", "de": "Salz"}},
+        {"id": "tomato", "qty": 200, "unit": "g", "name": {"en": "San Marzano tomatoes", "de": "San-Marzano-Tomaten"}},
+        {"id": "mozzarella", "qty": 200, "unit": "g", "name": {"en": "mozzarella di bufala", "de": "Mozzarella di Bufala"}},
+        {"id": "basil", "qty": 1, "unit": "bunch", "name": {"en": "basil", "de": "Basilikum"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Dissolve yeast in 200 ml water. Mix with flour, salt. Knead 10 min.", "de": "Hefe in 200 ml Wasser auflösen. Mit Mehl und Salz mischen. 10 Min kneten."}, "time_minutes": 12},
+        {"text": {"en": "Cold-ferment 24h covered in fridge.", "de": "Im Kühlschrank 24h kalt fermentieren."}, "time_minutes": 1440},
+        {"text": {"en": "Crush tomatoes by hand, salt them.", "de": "Tomaten mit den Händen zerdrücken, salzen."}, "time_minutes": 3},
+        {"text": {"en": "Stretch dough by hand, top with tomato + torn mozzarella.", "de": "Teig von Hand strecken, mit Tomate + zerrissenem Mozzarella belegen."}, "time_minutes": 5},
+        {"text": {"en": "Bake at the hottest your oven offers, on stone, 6–8 min.", "de": "Im heißesten Ofen auf Stein 6–8 Min backen."}, "time_minutes": 7},
+        {"text": {"en": "Basil + oil out of the oven.", "de": "Basilikum + Öl nach dem Backen."}}
+      ]
+    },
+    {
+      "id": "r-pizza-vegan",
+      "dish_id": "pizza-margherita",
+      "name": {"en": "Vegan Margherita", "de": "Vegane Margherita"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "cashew-mozz, the san marzano stays.",
+        "de": "cashew-mozzarella, die san marzano bleibt."
+      },
+      "contains": ["gluten", "tree-nuts"],
+      "attributes": ["hard"],
+      "technique_tags": ["bake"],
+      "time_minutes": 1500,
+      "active_minutes": 40,
+      "effort": "hard",
+      "servings": 2,
+      "calories_per_serving": 560,
+      "protein_g": 18,
+      "carbs_g": 80,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "wheat-flour", "qty": 300, "unit": "g", "name": {"en": "00 flour", "de": "Mehl Tipo 00"}},
+        {"id": "yeast", "qty": 0.5, "unit": "g", "name": {"en": "fresh yeast", "de": "frische Hefe"}},
+        {"id": "tomato", "qty": 200, "unit": "g", "name": {"en": "San Marzano tomatoes", "de": "San-Marzano-Tomaten"}},
+        {"id": "cashews", "qty": 120, "unit": "g", "name": {"en": "cashews, soaked", "de": "Cashews, eingeweicht"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}},
+        {"id": "basil", "qty": 1, "unit": "bunch", "name": {"en": "basil", "de": "Basilikum"}}
+      ],
+      "steps": [
+        {"text": {"en": "Dough as classic. Cold-rise 24h.", "de": "Teig wie klassisch. 24h kalt gehen lassen."}, "time_minutes": 1452},
+        {"text": {"en": "Blend cashews + lemon + 4 tbsp water + salt — moz-substitute.", "de": "Cashews + Zitrone + 4 EL Wasser + Salz pürieren — Mozzarella-Ersatz."}, "time_minutes": 3},
+        {"text": {"en": "Stretch dough, tomato + dollops of cashew-moz. Bake hot.", "de": "Teig strecken, Tomate + Tupfer Cashew-Moz. Heiß backen."}, "time_minutes": 8},
+        {"text": {"en": "Basil + oil after baking.", "de": "Basilikum + Öl nach dem Backen."}}
+      ]
+    },
+    {
+      "id": "r-pizza-glutenfree",
+      "dish_id": "pizza-margherita",
+      "name": {"en": "Gluten-Free Margherita", "de": "Glutenfreie Margherita"},
+      "variant_label": {"en": "gluten-free", "de": "glutenfrei"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "rice-flour dough, hot stone, fast bake.",
+        "de": "reismehlteig, heißer stein, schnell gebacken."
+      },
+      "contains": ["dairy", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["bake"],
+      "time_minutes": 60,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 540,
+      "protein_g": 22,
+      "carbs_g": 70,
+      "fat_g": 20,
+      "ingredients": [
+        {"id": "gf-flour", "qty": 250, "unit": "g", "name": {"en": "gluten-free flour blend", "de": "glutenfreie Mehlmischung"}},
+        {"id": "psyllium", "qty": 2, "unit": "tsp", "name": {"en": "psyllium husk", "de": "Flohsamenschalen"}},
+        {"id": "yeast", "qty": 5, "unit": "g", "name": {"en": "dry yeast", "de": "Trockenhefe"}},
+        {"id": "tomato", "qty": 200, "unit": "g", "name": {"en": "tomatoes", "de": "Tomaten"}},
+        {"id": "mozzarella", "qty": 180, "unit": "g", "name": {"en": "mozzarella", "de": "Mozzarella"}},
+        {"id": "basil", "qty": 1, "unit": "bunch", "name": {"en": "basil", "de": "Basilikum"}}
+      ],
+      "steps": [
+        {"text": {"en": "Mix dry, add 200 ml warm water, knead briefly. Rest 30 min.", "de": "Trocken vermengen, 200 ml lauwarmes Wasser dazu, kurz kneten. 30 Min ruhen."}, "time_minutes": 30},
+        {"text": {"en": "Spread dough on parchment — GF dough doesn't stretch by hand.", "de": "Teig auf Backpapier ausstreichen — GF-Teig dehnt nicht."}, "time_minutes": 3},
+        {"text": {"en": "Top, bake at 250°C, 12 min on hot stone.", "de": "Belegen, bei 250°C auf heißem Stein 12 Min backen."}, "time_minutes": 12}
+      ]
+    }
+  ]
+}

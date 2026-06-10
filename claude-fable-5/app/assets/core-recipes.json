@@ -1,0 +1,4501 @@
+{
+  "partition_id": "core",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "classic lamb döner",
+        "de": "Klassischer Lamm-Döner"
+      },
+      "caption": {
+        "en": "thin-shaved lamb, late-night energy",
+        "de": "hauchdünnes Lamm, Spätschicht-Energie"
+      },
+      "intro": {
+        "en": "the one the kebab shop guards with its life. spiced lamb seared hard, folded into warm pita with garlic yogurt and too many vegetables, on purpose. eat it leaning forward. you know why.",
+        "de": "Das Original, das jeder Dönerladen wie einen Schatz hütet. Gewürztes Lamm, scharf angebraten, mit Knoblauchjoghurt und reichlich Gemüse ins warme Pita gepackt. Iss ihn leicht vornübergebeugt — du weißt schon, warum."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "lamb",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le800",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {
+        "calories": 720,
+        "protein_g": 42,
+        "carbs_g": 55,
+        "fat_g": 36
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "lamb-shoulder",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "in very thin strips",
+            "de": "in sehr dünnen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "pita",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in half-moons",
+            "de": "in Halbringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in wedges",
+            "de": "in Spalten"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "in thin coins",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the lamb strips with 1 tbsp of the olive oil, the cumin, the smoked paprika and a good pinch of salt. let it sit at room temperature — the wait does half the work.",
+            "de": "Vermenge die Lammstreifen mit 1 EL Olivenöl, dem Kreuzkümmel, dem geräucherten Paprika und einer kräftigen Prise Salz. Lass alles bei Zimmertemperatur ziehen — die Wartezeit macht die halbe Arbeit."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "grate one garlic clove into the yogurt, season with salt, stir until smooth. park it in the fridge.",
+            "de": "Reibe eine Knoblauchzehe in den Joghurt, salze, rühre glatt. Ab damit in den Kühlschrank."
+          }
+        },
+        {
+          "text": {
+            "en": "while the lamb marinates, slice the onion, tomatoes and cucumber. grate the second garlic clove over the onion and scrunch it together with your hands.",
+            "de": "Während das Lamm zieht, schneide Zwiebel, Tomaten und Gurke. Reibe die zweite Knoblauchzehe über die Zwiebeln und knete alles kurz mit den Händen durch."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the remaining oil in a heavy pan until it shimmers. sear the lamb in two batches over high heat, about 4 minutes each — crowd the pan and it steams instead of charring.",
+            "de": "Erhitze das restliche Öl in einer schweren Pfanne, bis es flirrt. Brate das Lamm in zwei Portionen bei hoher Hitze scharf an, etwa 4 Minuten pro Runde — zu viel auf einmal, und es dünstet statt zu rösten."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "warm the pitas in a dry pan or a 180 °c oven until soft and just puffed.",
+            "de": "Wärme die Pitas in einer trockenen Pfanne oder im Ofen bei 180 °C, bis sie weich und leicht aufgegangen sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "split the pitas, spread garlic yogurt on both sides, pile in lamb and vegetables, finish with more sauce. wrap the bottom in paper if you value your sleeves.",
+            "de": "Schneide die Pitas auf, bestreiche beide Seiten mit Knoblauchjoghurt, schichte Lamm und Gemüse hinein und gib noch einen Klecks Sauce obendrauf. Unten in Papier wickeln, wenn dir deine Ärmel lieb sind."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "turkish",
+          "wrap"
+        ],
+        "de": [
+          "Streetfood",
+          "Türkisch",
+          "Wrap"
+        ]
+      }
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "vegan döner",
+        "de": "Veganer Döner"
+      },
+      "caption": {
+        "en": "smoky seitan, warm pita",
+        "de": "rauchiger Seitan, warmes Pita"
+      },
+      "intro": {
+        "en": "seitan was built for this — it chars at the edges and stays chewy in the middle, exactly like the spit. soy yogurt with garlic does the rest. nobody at the table will pause to ask questions.",
+        "de": "Seitan ist wie gemacht dafür: außen röstet er an, innen bleibt er bissfest, genau wie vom Spieß. Sojajoghurt mit Knoblauch erledigt den Rest. Am Tisch fragt garantiert niemand nach."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 28,
+        "carbs_g": 62,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "seitan",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "in thin strips",
+            "de": "in dünnen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "soy-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "pita",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in half-moons",
+            "de": "in Halbringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in wedges",
+            "de": "in Spalten"
+          }
+        },
+        {
+          "ingredient_id": "red-cabbage",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "grate the garlic into the soy yogurt, season with salt, stir, set aside. the sauce wants a few minutes to find itself.",
+            "de": "Reibe den Knoblauch in den Sojajoghurt, salze und rühre um. Stell die Sauce beiseite — sie braucht ein paar Minuten, um zu sich zu finden."
+          }
+        },
+        {
+          "text": {
+            "en": "toss the seitan strips with the smoked paprika, cumin, a pinch of salt and 1 tbsp olive oil until every piece is rust-colored.",
+            "de": "Vermenge die Seitanstreifen mit geräuchertem Paprika, Kreuzkümmel, einer Prise Salz und 1 EL Olivenöl, bis jedes Stück rostrot ist."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the remaining oil in a wide pan over high heat. fry the seitan without moving it much — you want crisp, charred edges, not a stir.",
+            "de": "Erhitze das restliche Öl in einer großen Pfanne bei hoher Hitze. Brate den Seitan an und rühre dabei möglichst wenig — du willst knusprige, angeröstete Kanten, kein Gemüsepfannen-Gefühl."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "warm the pitas in a dry pan until soft and lightly puffed.",
+            "de": "Wärme die Pitas in einer trockenen Pfanne, bis sie weich sind und sich leicht aufplustern."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "split the pitas, sauce both sides, load with seitan, cabbage, onion and tomato. finish with another spoon of sauce and eat immediately, standing up if you must.",
+            "de": "Schneide die Pitas auf, bestreiche beide Seiten mit Sauce, fülle sie mit Seitan, Rotkohl, Zwiebel und Tomate. Noch ein Löffel Sauce obendrauf — und sofort essen, notfalls im Stehen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "wrap",
+          "plant-based"
+        ],
+        "de": [
+          "Streetfood",
+          "Wrap",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "halal chicken döner",
+        "de": "Halal-Hähnchen-Döner"
+      },
+      "caption": {
+        "en": "juicy chicken thighs, garlic yogurt",
+        "de": "saftige Hähnchenschenkel, Knoblauchjoghurt"
+      },
+      "intro": {
+        "en": "chicken thighs are the secret here — they forgive, they caramelize, they stay juicy long after breast meat would have given up. marinated in paprika and cumin, seared until the edges crackle.",
+        "de": "Hähnchenschenkel sind hier das Geheimnis: Sie verzeihen alles, karamellisieren schön und bleiben saftig, wenn Brustfleisch längst aufgegeben hätte. In Paprika und Kreuzkümmel mariniert, gebraten, bis die Ränder knistern."
+      },
+      "variant": {
+        "diet": "halal",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 41,
+        "carbs_g": 50,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 450,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in thin strips",
+            "de": "ohne Knochen, in dünnen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "pita",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in half-moons",
+            "de": "in Halbringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in wedges",
+            "de": "in Spalten"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "in thin coins",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "paprika-powder",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the chicken strips with 1 tbsp olive oil, the paprika, the cumin, a grated garlic clove and a generous pinch of salt. let it marinate while you prep the rest.",
+            "de": "Vermenge die Hähnchenstreifen mit 1 EL Olivenöl, Paprika, Kreuzkümmel, einer geriebenen Knoblauchzehe und einer ordentlichen Prise Salz. Lass alles marinieren, während du den Rest vorbereitest."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "grate the second garlic clove into the yogurt, season with salt, stir until silky. into the fridge it goes.",
+            "de": "Reibe die zweite Knoblauchzehe in den Joghurt, salze und rühre seidig glatt. Ab in den Kühlschrank damit."
+          }
+        },
+        {
+          "text": {
+            "en": "slice the onion, tomatoes and cucumber. salt the onion lightly and let it soften while the chicken finishes marinating.",
+            "de": "Schneide Zwiebel, Tomaten und Gurke. Salze die Zwiebel leicht und lass sie weich werden, während das Hähnchen zu Ende mariniert."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the remaining oil in a wide pan over high heat. sear the chicken in two batches until deeply browned and cooked through — about 5 minutes per batch, edges crisp.",
+            "de": "Erhitze das restliche Öl in einer großen Pfanne bei hoher Hitze. Brate das Hähnchen in zwei Portionen, bis es tief gebräunt und durchgegart ist — etwa 5 Minuten pro Runde, die Ränder schön knusprig."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "warm the pitas in a dry pan or a 180 °c oven until soft.",
+            "de": "Wärme die Pitas in einer trockenen Pfanne oder im Ofen bei 180 °C, bis sie weich sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "split, sauce, fill: yogurt first, then chicken, then vegetables, then more yogurt. press gently closed and commit.",
+            "de": "Aufschneiden, bestreichen, füllen: erst Joghurt, dann Hähnchen, dann Gemüse, dann noch mal Joghurt. Sanft zudrücken und durchziehen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "halal",
+          "wrap"
+        ],
+        "de": [
+          "Streetfood",
+          "Halal",
+          "Wrap"
+        ]
+      }
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "title": {
+        "en": "keto döner bowl",
+        "de": "Keto-Döner-Bowl"
+      },
+      "caption": {
+        "en": "everything but the bread",
+        "de": "alles außer dem Brot"
+      },
+      "intro": {
+        "en": "all the loud, spiced, garlicky joy of a döner, rearranged into a bowl. crisp romaine where the pita used to be, and honestly the sauce-to-everything ratio improves. nobody misses the bread by bite three.",
+        "de": "Die ganze laute, würzige Knoblauch-Freude eines Döners, neu sortiert in eine Schüssel. Knackiger Römersalat statt Pita — und das Verhältnis von Sauce zu allem anderen wird ehrlich gesagt besser. Spätestens beim dritten Bissen vermisst niemand das Brot."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "keto",
+        "medium",
+        "le60",
+        "le600",
+        "pan-fry",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 38,
+        "carbs_g": 12,
+        "fat_g": 30
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in strips",
+            "de": "ohne Knochen, in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "full-fat",
+            "de": "Vollfettstufe"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "romaine",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "1 head, shredded",
+            "de": "1 Kopf, in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cherry-tomato",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "halved",
+            "de": "halbiert"
+          }
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "in thin half-moons",
+            "de": "in feinen Halbringen"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the chicken with 1 tbsp olive oil, the smoked paprika and a big pinch of salt. let it marinate while you build the rest of the bowl.",
+            "de": "Vermenge das Hähnchen mit 1 EL Olivenöl, dem geräucherten Paprika und einer großen Prise Salz. Lass es marinieren, während du den Rest der Bowl baust."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "grate the garlic into the greek yogurt, add a squeeze of lemon and a pinch of salt, stir until thick and glossy.",
+            "de": "Reibe den Knoblauch in den griechischen Joghurt, gib einen Spritzer Zitrone und eine Prise Salz dazu und rühre, bis er dick und glänzend ist."
+          }
+        },
+        {
+          "text": {
+            "en": "shred the romaine, dice the cucumber, halve the tomatoes, slice the onion. arrange everything in two wide bowls like you mean it.",
+            "de": "Schneide den Römersalat in Streifen, würfle die Gurke, halbiere die Tomaten, schneide die Zwiebel. Richte alles in zwei großen Schüsseln an, als wäre es ernst."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the remaining oil over high heat and sear the chicken until deeply browned and cooked through, edges crisp — about 6 minutes per batch, two batches.",
+            "de": "Erhitze das restliche Öl bei hoher Hitze und brate das Hähnchen, bis es kräftig gebräunt und durchgegart ist, mit knusprigen Rändern — etwa 6 Minuten pro Portion, zwei Portionen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "pile the hot chicken onto the salad, spoon the garlic yogurt over everything, finish with the rest of the lemon. eat while the contrast of hot and cold is still loud.",
+            "de": "Gib das heiße Hähnchen auf den Salat, verteile den Knoblauchjoghurt großzügig darüber und beträufle alles mit dem Rest der Zitrone. Iss, solange der Kontrast aus heiß und kalt noch laut ist."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bowl",
+          "low-carb",
+          "street food"
+        ],
+        "de": [
+          "Bowl",
+          "Low Carb",
+          "Streetfood"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-classic",
+      "dish_id": "pasta-alfredo",
+      "title": {
+        "en": "fettuccine alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "caption": {
+        "en": "butter, cream, parmesan. that's it.",
+        "de": "Butter, Sahne, Parmesan. Mehr nicht."
+      },
+      "intro": {
+        "en": "three ingredients holding hands in a warm pan. the trick is the pasta water — starchy, salty, the glue that turns cream and cheese into silk. stir like you have nowhere else to be.",
+        "de": "Drei Zutaten, die sich in einer warmen Pfanne an den Händen halten. Der Trick ist das Nudelwasser: stärkehaltig, salzig, der Kleber, der aus Sahne und Käse Seide macht. Rühre, als hättest du nirgendwo sonst zu sein."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le800",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 760,
+      "macros": {
+        "calories": 760,
+        "protein_g": 24,
+        "carbs_g": 76,
+        "fat_g": 32
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "fettuccine",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "cold, cubed",
+            "de": "kalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly ground",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water — be generous",
+            "de": "fürs Nudelwasser — sei großzügig"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "freshly grated",
+            "de": "frisch gerieben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring a big pot of water to a rolling boil and salt it like the sea. drop in the fettuccine and cook 2 minutes short of the package time.",
+            "de": "Bring einen großen Topf Wasser zum sprudelnden Kochen und salze es wie Meerwasser. Gib die Fettuccine hinein und koch sie 2 Minuten kürzer als auf der Packung angegeben."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "meanwhile, warm the cream and butter in a wide pan over low heat until the butter melts. let it barely simmer — bubbles at the edge, nothing dramatic.",
+            "de": "Erwärme währenddessen Sahne und Butter in einer großen Pfanne bei niedriger Hitze, bis die Butter geschmolzen ist. Lass alles nur ganz leise köcheln — kleine Bläschen am Rand, kein Drama."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "scoop out a cup of pasta water, then drag the fettuccine straight into the pan, still dripping. toss over low heat for a minute so the pasta finishes cooking in the sauce.",
+            "de": "Schöpfe eine Tasse Nudelwasser ab und zieh die Fettuccine dann tropfnass direkt in die Pfanne. Schwenke sie eine Minute bei niedriger Hitze, damit die Pasta in der Sauce fertig gart."
+          }
+        },
+        {
+          "text": {
+            "en": "pull the pan off the heat. add the parmesan in three handfuls, tossing between each, loosening with splashes of pasta water until the sauce coats every strand like silk.",
+            "de": "Nimm die Pfanne vom Herd. Gib den Parmesan in drei Portionen dazu, schwenke zwischendurch und verdünne mit Schlückchen Nudelwasser, bis die Sauce jede Nudel wie Seide umhüllt."
+          }
+        },
+        {
+          "text": {
+            "en": "finish with black pepper and the smallest whisper of nutmeg. serve in warm bowls — alfredo waits for no one.",
+            "de": "Vollende mit schwarzem Pfeffer und einem Hauch Muskat. In vorgewärmten Schüsseln servieren — Alfredo wartet auf niemanden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "comfort food",
+          "italian"
+        ],
+        "de": [
+          "Pasta",
+          "Soulfood",
+          "Italienisch"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "pasta-alfredo",
+      "title": {
+        "en": "gluten-free alfredo",
+        "de": "Glutenfreier Alfredo"
+      },
+      "caption": {
+        "en": "same silk, different noodle",
+        "de": "gleiche Seide, andere Nudel"
+      },
+      "intro": {
+        "en": "gluten-free pasta has one rule: do not overcook it, not even a little. catch it two minutes early, finish it in the cream, and a whisper of lemon zest keeps everything bright. the sauce never knows the difference.",
+        "de": "Glutenfreie Pasta hat genau eine Regel: nicht verkochen, kein bisschen. Hol sie zwei Minuten zu früh raus, lass sie in der Sahne fertig garen, und ein Hauch Zitronenabrieb hält alles frisch. Die Sauce merkt den Unterschied nie."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le800",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {
+        "calories": 720,
+        "protein_g": 18,
+        "carbs_g": 76,
+        "fat_g": 31
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-pasta",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "tagliatelle shape if you can find it",
+            "de": "am besten in Tagliatelle-Form"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "cold, cubed",
+            "de": "kalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "zest only",
+            "de": "nur der Abrieb"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly ground",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil a big pot of well-salted water. cook the gluten-free pasta 2 minutes short of the package time — set the timer, this is the step that decides everything.",
+            "de": "Bring einen großen Topf kräftig gesalzenes Wasser zum Kochen. Koch die glutenfreie Pasta 2 Minuten kürzer als auf der Packung steht — stell den Timer, dieser Schritt entscheidet alles."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "meanwhile, melt the butter into the cream in a wide pan over low heat and let it barely simmer.",
+            "de": "Lass währenddessen die Butter in einer großen Pfanne bei niedriger Hitze in der Sahne schmelzen und das Ganze nur sanft köcheln."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "save a cup of pasta water, then lift the pasta straight into the sauce. toss gently over low heat for a minute — gluten-free noodles bruise easily, be kind.",
+            "de": "Bewahre eine Tasse Nudelwasser auf und hebe die Pasta dann direkt in die Sauce. Schwenke sie eine Minute behutsam bei niedriger Hitze — glutenfreie Nudeln sind empfindlich, sei nett zu ihnen."
+          }
+        },
+        {
+          "text": {
+            "en": "off the heat, add the parmesan in handfuls, tossing and loosening with pasta water until glossy.",
+            "de": "Vom Herd nehmen, den Parmesan portionsweise dazugeben und mit Nudelwasser locker rühren, bis alles glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "finish with lemon zest, black pepper and a pinch of nutmeg. serve immediately, in warm bowls.",
+            "de": "Mit Zitronenabrieb, schwarzem Pfeffer und einer Prise Muskat vollenden. Sofort servieren, in vorgewärmten Schüsseln."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "gluten-free",
+          "comfort food"
+        ],
+        "de": [
+          "Pasta",
+          "glutenfrei",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "pasta-alfredo",
+      "title": {
+        "en": "vegan cashew alfredo",
+        "de": "Veganer Cashew-Alfredo"
+      },
+      "caption": {
+        "en": "cashews doing their best cream impression",
+        "de": "Cashews in ihrer besten Sahne-Rolle"
+      },
+      "intro": {
+        "en": "soaked cashews blend into something so close to cream it feels like a magic trick. nutritional yeast brings the savory depth, lemon keeps it honest. this one converts skeptics on the first forkful.",
+        "de": "Eingeweichte Cashews lassen sich zu etwas pürieren, das Sahne so nah kommt, dass es sich wie ein Zaubertrick anfühlt. Hefeflocken bringen die herzhafte Tiefe, Zitrone hält alles ehrlich. Diese Version überzeugt Skeptiker mit der ersten Gabel."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts",
+        "cashews",
+        "celery"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "saute"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 18,
+        "carbs_g": 70,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cashews-ing",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cover the cashews with just-boiled water and let them soak — they need the time to go properly soft, no shortcuts.",
+            "de": "Übergieße die Cashews mit kochend heißem Wasser und lass sie einweichen — sie brauchen die Zeit, um richtig weich zu werden, keine Abkürzungen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "warm the olive oil in a small pan over medium-low heat and sauté the garlic until fragrant and just golden — pull it before it browns, bitter garlic ruins moods.",
+            "de": "Erwärme das Olivenöl in einer kleinen Pfanne bei mittlerer bis niedriger Hitze und brate den Knoblauch an, bis er duftet und gerade goldgelb wird — runter damit, bevor er braun wird, bitterer Knoblauch verdirbt die Stimmung."
+          }
+        },
+        {
+          "text": {
+            "en": "drain the cashews and blend them with the garlic and its oil, the stock, the nutritional yeast, the lemon juice and a pinch of salt until completely smooth — a full 2 minutes in the blender.",
+            "de": "Gieße die Cashews ab und püriere sie mit dem Knoblauch samt Öl, der Brühe, den Hefeflocken, dem Zitronensaft und einer Prise Salz vollkommen glatt — volle 2 Minuten im Mixer."
+          }
+        },
+        {
+          "text": {
+            "en": "cook the spaghetti in well-salted boiling water until just shy of al dente. save a cup of pasta water before draining.",
+            "de": "Koch die Spaghetti in kräftig gesalzenem Wasser, bis sie knapp al dente sind. Bewahre vor dem Abgießen eine Tasse Nudelwasser auf."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "return the spaghetti to the warm pot, pour in the cashew cream and toss over the lowest heat, loosening with pasta water until it clings like the real thing. finish with black pepper.",
+            "de": "Gib die Spaghetti zurück in den warmen Topf, gieße die Cashewcreme dazu und schwenke alles bei kleinster Hitze. Mit Nudelwasser verdünnen, bis die Sauce wie das Original an den Nudeln hängt. Mit schwarzem Pfeffer abschließen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "plant-based",
+          "comfort food"
+        ],
+        "de": [
+          "Pasta",
+          "pflanzlich",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-light",
+      "dish_id": "pasta-alfredo",
+      "title": {
+        "en": "light yogurt alfredo",
+        "de": "Leichter Joghurt-Alfredo"
+      },
+      "caption": {
+        "en": "creamy on a tuesday-night budget",
+        "de": "cremig, auch am Dienstagabend"
+      },
+      "intro": {
+        "en": "greek yogurt steps in for the cream and brings a gentle tang the heavy version never had. the trick is tempering it with pasta water so it never splits. weeknight pasta that still feels like a small event.",
+        "de": "Griechischer Joghurt springt für die Sahne ein und bringt eine feine Säure mit, die die schwere Version nie hatte. Der Trick: mit Nudelwasser temperieren, damit er nicht gerinnt. Feierabend-Pasta, die sich trotzdem wie ein kleines Ereignis anfühlt."
+      },
+      "variant": {
+        "diet": "light",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "light",
+        "easy",
+        "le30",
+        "le400",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 20,
+        "carbs_g": 52,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 140,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "at room temperature",
+            "de": "zimmerwarm"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "zest and a squeeze",
+            "de": "Abrieb und ein Spritzer"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the spaghetti in well-salted boiling water until al dente. save a generous cup of pasta water before you drain.",
+            "de": "Koch die Spaghetti in kräftig gesalzenem Wasser al dente. Bevor du abgießt, eine großzügige Tasse Nudelwasser abschöpfen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "while the pasta cooks, stir the yogurt with the grated garlic, lemon zest, olive oil, most of the parmesan and a pinch of salt in a big bowl.",
+            "de": "Während die Pasta kocht, verrühre den Joghurt mit dem geriebenen Knoblauch, Zitronenabrieb, Olivenöl, dem Großteil des Parmesans und einer Prise Salz in einer großen Schüssel."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk a few tablespoons of hot pasta water into the yogurt, one at a time, to warm it gently — this is what keeps it from splitting later.",
+            "de": "Rühre ein paar Esslöffel heißes Nudelwasser einzeln in den Joghurt, um ihn sanft zu erwärmen — genau das verhindert später das Gerinnen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "tip the hot spaghetti into the bowl and toss until coated, adding pasta water until the sauce flows like cream.",
+            "de": "Gib die heißen Spaghetti in die Schüssel und schwenke sie, bis alles überzogen ist. Mit Nudelwasser nachhelfen, bis die Sauce wie Sahne fließt."
+          }
+        },
+        {
+          "text": {
+            "en": "finish with the remaining parmesan, a squeeze of lemon and plenty of black pepper. eat while it shines.",
+            "de": "Mit dem restlichen Parmesan, einem Spritzer Zitrone und reichlich schwarzem Pfeffer abschließen. Essen, solange es glänzt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "light",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "leicht",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "pancakes-classic",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "classic buttermilk-style pancakes",
+        "de": "Klassische Pancakes"
+      },
+      "caption": {
+        "en": "stack them like you mean it",
+        "de": "stapeln, als wäre es ernst"
+      },
+      "intro": {
+        "en": "fluffy, golden, slightly too many. the batter wants ten quiet minutes of rest — that's where the fluff comes from, not from you whisking harder. flip when the bubbles tell you to.",
+        "de": "Fluffig, golden, leicht zu viele. Der Teig will zehn ruhige Minuten Pause — daher kommt die Fluffigkeit, nicht vom härteren Rühren. Gewendet wird, wenn die Bläschen es dir sagen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "dairy",
+        "egg",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 11,
+        "carbs_g": 52,
+        "fat_g": 14
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 180,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "baking-powder",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 15,
+          "unit": "g",
+          "note": {
+            "en": "melted, plus a little for the pan",
+            "de": "geschmolzen, plus etwas für die Pfanne"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the flour, baking powder, sugar and salt in one bowl. in another, whisk the milk, egg, melted butter and vanilla.",
+            "de": "Verquirle Mehl, Backpulver, Zucker und Salz in einer Schüssel. In einer zweiten Milch, Ei, geschmolzene Butter und Vanille."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the wet into the dry and stir until just combined — lumps are fine, lumps are friends. overmixing makes tough pancakes.",
+            "de": "Gieße die flüssigen Zutaten zu den trockenen und rühre nur so lange, bis sich alles gerade eben verbindet — Klümpchen sind okay, Klümpchen sind Freunde. Zu viel Rühren macht zähe Pancakes."
+          }
+        },
+        {
+          "text": {
+            "en": "let the batter rest. it will thicken and quietly fill with tiny bubbles — this is the whole secret.",
+            "de": "Lass den Teig ruhen. Er wird dicker und füllt sich still mit kleinen Bläschen — das ist das ganze Geheimnis."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat a nonstick pan over medium heat, brush with a little butter. pour small ladles of batter and cook until bubbles pop on the surface and stay open, about 2 minutes. flip and give the second side another minute.",
+            "de": "Erhitze eine beschichtete Pfanne bei mittlerer Hitze und pinsle sie mit etwas Butter aus. Gib kleine Kellen Teig hinein und backe, bis Bläschen an der Oberfläche aufplatzen und offen bleiben, etwa 2 Minuten. Wenden, der zweiten Seite noch eine Minute geben."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "stack high, keep warm under a clean towel, repeat until the batter is gone. serve while the kitchen still smells like sunday.",
+            "de": "Hoch stapeln, unter einem sauberen Tuch warmhalten, weitermachen, bis der Teig alle ist. Servieren, solange die Küche noch nach Sonntag riecht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "sweet",
+          "weekend"
+        ],
+        "de": [
+          "Frühstück",
+          "süß",
+          "Wochenende"
+        ]
+      }
+    },
+    {
+      "id": "pancakes-vegan",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "vegan banana pancakes",
+        "de": "Vegane Bananen-Pancakes"
+      },
+      "caption": {
+        "en": "no egg, no milk, no problem",
+        "de": "ohne Ei, ohne Milch, trotzdem fluffig"
+      },
+      "intro": {
+        "en": "a flax egg and a ripe banana do everything an egg ever did, plus they make the whole stack smell faintly of caramel. oat milk keeps the batter soft. the browner the banana, the better the pancake.",
+        "de": "Ein Leinsamen-Ei und eine reife Banane übernehmen alles, was ein Ei je konnte — und der ganze Stapel duftet dazu leicht nach Karamell. Hafermilch hält den Teig weich. Je brauner die Banane, desto besser der Pancake."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 350,
+      "macros": {
+        "calories": 350,
+        "protein_g": 7,
+        "carbs_g": 60,
+        "fat_g": 9
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "flaxseeds",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "ground",
+            "de": "geschrotet"
+          }
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "ingredient_id": "baking-powder",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pan",
+            "de": "für die Pfanne"
+          }
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "to serve",
+            "de": "zum Servieren"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the ground flaxseeds with 3 tbsp of water and let the mixture sit until it turns gloopy — that's your egg now.",
+            "de": "Verrühre die geschroteten Leinsamen mit 3 EL Wasser und lass die Mischung stehen, bis sie glibberig wird — das ist jetzt dein Ei."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "mash the banana in a big bowl until almost smooth. whisk in the oat milk and the flax egg.",
+            "de": "Zerdrücke die Banane in einer großen Schüssel fast glatt. Rühre Hafermilch und Leinsamen-Ei unter."
+          }
+        },
+        {
+          "text": {
+            "en": "add the flour, baking powder, cinnamon and salt and fold until just combined. let the batter rest for 5 minutes while the pan heats.",
+            "de": "Gib Mehl, Backpulver, Zimt und Salz dazu und hebe alles nur kurz unter. Lass den Teig 5 Minuten ruhen, während die Pfanne heiß wird."
+          }
+        },
+        {
+          "text": {
+            "en": "heat a nonstick pan over medium heat with a little oil. cook small pancakes about 2-3 minutes per side — vegan batter sets slower, wait for properly dry edges before flipping.",
+            "de": "Erhitze eine beschichtete Pfanne mit etwas Öl bei mittlerer Hitze. Backe kleine Pancakes, etwa 2-3 Minuten pro Seite — veganer Teig stockt langsamer, warte mit dem Wenden, bis die Ränder richtig trocken sind."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stack, drizzle with maple syrup, eat while they're still steaming. they don't keep — not because they can't, but because they won't survive that long.",
+            "de": "Stapeln, mit Ahornsirup beträufeln und essen, solange sie noch dampfen. Aufheben lohnt nicht — nicht weil es nicht ginge, sondern weil sie so lange schlicht nicht überleben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "plant-based",
+          "sweet"
+        ],
+        "de": [
+          "Frühstück",
+          "pflanzlich",
+          "süß"
+        ]
+      }
+    },
+    {
+      "id": "pancakes-gluten-free",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "buckwheat pancakes",
+        "de": "Buchweizen-Pancakes"
+      },
+      "caption": {
+        "en": "nutty, golden, secretly gluten-free",
+        "de": "nussig, golden, ganz nebenbei glutenfrei"
+      },
+      "intro": {
+        "en": "buckwheat isn't a stand-in here, it's an upgrade — toasty and a little wild, like the pancake grew up in the mountains. the batter looks darker than you expect. trust it.",
+        "de": "Buchweizen ist hier kein Ersatz, sondern ein Upgrade — röstig und ein bisschen wild, als wäre der Pancake in den Bergen aufgewachsen. Der Teig sieht dunkler aus als erwartet. Vertrau ihm."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "egg",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 12,
+        "carbs_g": 48,
+        "fat_g": 13
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "buckwheat-flour",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "baking-powder",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 15,
+          "unit": "g",
+          "note": {
+            "en": "melted, plus more for the pan",
+            "de": "geschmolzen, plus etwas für die Pfanne"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the buckwheat flour, baking powder, sugar and salt together. in a second bowl, whisk the milk, egg, melted butter and vanilla.",
+            "de": "Verquirle Buchweizenmehl, Backpulver, Zucker und Salz. In einer zweiten Schüssel Milch, Ei, geschmolzene Butter und Vanille."
+          }
+        },
+        {
+          "text": {
+            "en": "combine wet and dry with a few lazy strokes — buckwheat has no gluten to toughen, but the batter still likes gentle hands.",
+            "de": "Verbinde nass und trocken mit ein paar gemächlichen Rührbewegungen — Buchweizen hat kein Gluten, das zäh werden könnte, aber der Teig mag trotzdem sanfte Hände."
+          }
+        },
+        {
+          "text": {
+            "en": "rest the batter so the flour can fully drink the milk. it thickens noticeably — that's good.",
+            "de": "Lass den Teig ruhen, damit das Mehl die Milch ganz aufnehmen kann. Er wird spürbar dicker — genau richtig."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "cook on a buttered nonstick pan over medium heat, about 2 minutes per side, until deep golden with crisp lacy edges.",
+            "de": "Backe die Pancakes in einer gebutterten beschichteten Pfanne bei mittlerer Hitze, etwa 2 Minuten pro Seite, bis sie tiefgolden sind und feine knusprige Ränder haben."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "stack and serve warm. these carry berries and yogurt beautifully, if you're the topping type.",
+            "de": "Stapeln und warm servieren. Beeren und Joghurt stehen ihnen ausgezeichnet, falls du der Topping-Typ bist."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "gluten-free",
+          "sweet"
+        ],
+        "de": [
+          "Frühstück",
+          "glutenfrei",
+          "süß"
+        ]
+      }
+    },
+    {
+      "id": "pancakes-protein",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "protein oat pancakes",
+        "de": "Protein-Hafer-Pancakes"
+      },
+      "caption": {
+        "en": "gym fuel that tastes like dessert",
+        "de": "Gym-Treibstoff, der nach Nachtisch schmeckt"
+      },
+      "intro": {
+        "en": "oats blitzed into flour, a scoop of protein, erythritol instead of sugar — and somehow it still tastes like a treat. thirty grams of protein hiding in a pancake stack. nobody needs to know it's sensible.",
+        "de": "Haferflocken zu Mehl gemixt, ein Scoop Protein, Erythrit statt Zucker — und es schmeckt trotzdem nach Belohnung. Dreißig Gramm Protein, versteckt in einem Pancake-Stapel. Dass er vernünftig ist, muss ja niemand wissen."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "high-protein",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 320,
+      "macros": {
+        "calories": 320,
+        "protein_g": 28,
+        "carbs_g": 32,
+        "fat_g": 9
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "protein-powder",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "vanilla works best",
+            "de": "Vanille passt am besten"
+          }
+        },
+        {
+          "ingredient_id": "skim-milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "erythritol",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "baking-powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "for the pan",
+            "de": "für die Pfanne"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "blitz the oats in a blender until they look like flour. add the protein powder, baking powder, cinnamon and erythritol and pulse once to combine.",
+            "de": "Mixe die Haferflocken im Mixer, bis sie wie Mehl aussehen. Gib Proteinpulver, Backpulver, Zimt und Erythrit dazu und pulse einmal kurz durch."
+          }
+        },
+        {
+          "text": {
+            "en": "add the milk and egg and blend just until smooth. the batter should pour slowly — if it's stiff, loosen with a splash more milk.",
+            "de": "Gib Milch und Ei dazu und mixe nur kurz glatt. Der Teig sollte träge fließen — ist er zu fest, hilf mit einem Schluck Milch nach."
+          }
+        },
+        {
+          "text": {
+            "en": "rest the batter so the oats can hydrate. protein batter thickens fast; this pause keeps the insides tender.",
+            "de": "Lass den Teig ruhen, damit der Hafer quellen kann. Proteinteig dickt schnell ein — diese Pause hält das Innere zart."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "cook small pancakes in a lightly oiled nonstick pan over medium-low heat, about 2 minutes per side. protein burns sooner than flour — keep the heat gentle and the flips early.",
+            "de": "Backe kleine Pancakes in einer leicht geölten beschichteten Pfanne bei mittlerer bis niedriger Hitze, etwa 2 Minuten pro Seite. Protein verbrennt schneller als Mehl — halte die Hitze sanft und wende lieber früher."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stack and top however your macros allow. greek yogurt and berries if you're being good, all of the above if you earned it.",
+            "de": "Stapeln und toppen, was deine Makros hergeben. Griechischer Joghurt und Beeren, wenn du brav bist — alles zusammen, wenn du es dir verdient hast."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "high-protein",
+          "fitness"
+        ],
+        "de": [
+          "Frühstück",
+          "proteinreich",
+          "Fitness"
+        ]
+      }
+    },
+    {
+      "id": "curry-chicken",
+      "dish_id": "curry",
+      "title": {
+        "en": "coconut chicken curry",
+        "de": "Kokos-Hähnchen-Curry"
+      },
+      "caption": {
+        "en": "golden, gentle, simmered slow",
+        "de": "golden, mild, langsam geköchelt"
+      },
+      "intro": {
+        "en": "the kind of curry that fills the whole flat with warmth before you've even tasted it. onions cooked properly soft, spices bloomed in oil, coconut milk doing the quiet heavy lifting. rice underneath, catching everything.",
+        "de": "Die Sorte Curry, die die ganze Wohnung mit Wärme füllt, bevor du überhaupt probiert hast. Zwiebeln richtig weich geschmort, Gewürze im Öl geweckt, Kokosmilch erledigt still die Schwerstarbeit. Darunter Reis, der alles auffängt."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 38,
+        "carbs_g": 52,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "in bite-size pieces",
+            "de": "in mundgerechten Stücken"
+          }
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, grated",
+            "de": "daumengroß, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "curry-powder",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the basmati until the water runs clear, then cook it with a pinch of salt in 1.5 times its volume of water: bring to a boil, lid on, lowest heat, 12 minutes. leave the lid alone.",
+            "de": "Wasche den Basmati, bis das Wasser klar bleibt, und koch ihn mit einer Prise Salz in der anderthalbfachen Menge Wasser: aufkochen, Deckel drauf, kleinste Hitze, 12 Minuten. Und lass den Deckel in Ruhe."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "heat the oil in a deep pan over medium heat. cook the onion with a pinch of salt until properly soft and golden — let the onions take their time. they always do.",
+            "de": "Erhitze das Öl in einer tiefen Pfanne bei mittlerer Hitze. Schmore die Zwiebel mit einer Prise Salz, bis sie richtig weich und goldgelb ist — gib ihr die Zeit. Zwiebeln nehmen sie sich sowieso."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "add the garlic, ginger and curry powder and stir for one fragrant minute — the spices need to toast in the oil, not just float in liquid.",
+            "de": "Gib Knoblauch, Ingwer und Currypulver dazu und rühre eine duftende Minute lang — die Gewürze müssen im Öl rösten, nicht nur in Flüssigkeit schwimmen."
+          }
+        },
+        {
+          "text": {
+            "en": "add the chicken and stir until every piece is coated and the outside has gone pale. pour in the coconut milk, scrape the bottom of the pan, and bring to a gentle simmer.",
+            "de": "Gib das Hähnchen dazu und rühre, bis jedes Stück überzogen und außen blass geworden ist. Gieße die Kokosmilch an, kratze den Bratensatz vom Pfannenboden und bring alles sanft zum Köcheln."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer uncovered until the chicken is cooked through and the sauce has thickened enough to coat a spoon. season with salt and half the lime.",
+            "de": "Lass alles offen köcheln, bis das Hähnchen durchgegart ist und die Sauce dick genug ist, um am Löffel zu haften. Mit Salz und einer halben Limette abschmecken."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "fluff the rice, ladle the curry over it, shower with cilantro and serve with the remaining lime in wedges.",
+            "de": "Lockere den Reis auf, gib das Curry darüber, bestreue alles großzügig mit Koriander und serviere die restliche Limette in Spalten dazu."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "one-pot",
+          "comfort food"
+        ],
+        "de": [
+          "Curry",
+          "One-Pot",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "curry-chickpea",
+      "dish_id": "curry",
+      "title": {
+        "en": "chickpea coconut curry",
+        "de": "Kichererbsen-Kokos-Curry"
+      },
+      "caption": {
+        "en": "pantry magic, thirty minutes flat",
+        "de": "Vorratsschrank-Magie in dreißig Minuten"
+      },
+      "intro": {
+        "en": "two cans and an onion become dinner. chickpeas go creamy in the coconut milk, tomatoes bring the backbone, spinach folds in at the end like it was always meant to be there. this is the recipe you make when the fridge says no.",
+        "de": "Zwei Dosen und eine Zwiebel werden zu Abendessen. Die Kichererbsen werden in der Kokosmilch cremig, die Tomaten geben das Rückgrat, und der Spinat schmiegt sich am Ende hinein, als hätte er nie woanders hingehört. Das ist das Rezept für Tage, an denen der Kühlschrank Nein sagt."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 16,
+        "carbs_g": 70,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chickpeas",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, grated",
+            "de": "daumengroß, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "curry-powder",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 120,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "start the rice first: rinsed basmati, pinch of salt, 1.5 times the water. boil, lid on, lowest heat, 12 minutes, no peeking.",
+            "de": "Setz zuerst den Reis auf: gewaschener Basmati, Prise Salz, anderthalbfache Menge Wasser. Aufkochen, Deckel drauf, kleinste Hitze, 12 Minuten, nicht reinschauen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "melt the coconut oil in a deep pan over medium heat and cook the onion with a pinch of salt until soft and golden at the edges.",
+            "de": "Lass das Kokosöl in einer tiefen Pfanne bei mittlerer Hitze schmelzen und schmore die Zwiebel mit einer Prise Salz, bis sie weich ist und an den Rändern goldgelb."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir in the garlic, ginger and curry powder for one loud, fragrant minute.",
+            "de": "Rühre Knoblauch, Ingwer und Currypulver ein — eine laute, duftende Minute lang."
+          }
+        },
+        {
+          "text": {
+            "en": "add the chickpeas, tomatoes and coconut milk. simmer until the sauce thickens and the chickpeas turn creamy, crushing a few against the side of the pan to help it along.",
+            "de": "Gib Kichererbsen, Tomaten und Kokosmilch dazu. Lass alles köcheln, bis die Sauce eindickt und die Kichererbsen cremig werden — zerdrücke ein paar am Pfannenrand, um nachzuhelfen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "fold in the spinach until it wilts, season with salt, and serve over the rice. tastes even better tomorrow, if it survives that long.",
+            "de": "Hebe den Spinat unter, bis er zusammenfällt, schmecke mit Salz ab und serviere alles auf dem Reis. Schmeckt morgen noch besser — falls es so lange überlebt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "plant-based",
+          "pantry"
+        ],
+        "de": [
+          "Curry",
+          "pflanzlich",
+          "Vorratsküche"
+        ]
+      }
+    },
+    {
+      "id": "curry-keto",
+      "dish_id": "curry",
+      "title": {
+        "en": "keto curry with cauliflower rice",
+        "de": "Keto-Curry mit Blumenkohlreis"
+      },
+      "caption": {
+        "en": "all the warmth, none of the carbs",
+        "de": "die ganze Wärme, kaum Kohlenhydrate"
+      },
+      "intro": {
+        "en": "cauliflower pulsed into rice does something unexpected here — it drinks the curry sauce in a way real rice never quite manages. chicken thighs keep everything rich. you'll forget what this is supposed to be replacing.",
+        "de": "Blumenkohl, zu Reis gehäckselt, kann hier etwas Unerwartetes: Er saugt die Currysauce auf, wie echter Reis es nie ganz schafft. Hähnchenschenkel halten alles schön gehaltvoll. Du wirst vergessen, was das hier eigentlich ersetzen sollte."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "poultry",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "keto",
+        "medium",
+        "le60",
+        "le400",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 32,
+        "carbs_g": 12,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "about half a head",
+            "de": "etwa ein halber Kopf"
+          }
+        },
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in chunks",
+            "de": "ohne Knochen, in Stücken"
+          }
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, grated",
+            "de": "daumengroß, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "curry-powder",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "pulse the cauliflower florets in a food processor until they look like rice — short bursts, don't let it turn to mush. set aside.",
+            "de": "Häcksle die Blumenkohlröschen im Mixer, bis sie wie Reis aussehen — kurze Impulse, kein Brei. Beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "melt half the coconut oil in a deep pan over medium-high heat. brown the chicken thighs in one layer until golden on both sides.",
+            "de": "Lass die Hälfte des Kokosöls in einer tiefen Pfanne bei mittelhoher Hitze schmelzen. Brate die Hähnchenstücke in einer Lage an, bis sie auf beiden Seiten golden sind."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "add the garlic, ginger and curry powder and stir for a fragrant minute, then pour in the coconut milk and scrape up the browned bits.",
+            "de": "Gib Knoblauch, Ingwer und Currypulver dazu, rühre eine duftende Minute lang, gieße dann die Kokosmilch an und löse den Bratensatz vom Boden."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer gently until the chicken is cooked through and the sauce coats a spoon. fold in the spinach at the end and season with salt and half the lime.",
+            "de": "Lass alles sanft köcheln, bis das Hähnchen gar ist und die Sauce am Löffel haftet. Hebe zum Schluss den Spinat unter und schmecke mit Salz und einer halben Limette ab."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "meanwhile, heat the remaining coconut oil in a second pan and stir-fry the cauliflower rice with a pinch of salt until just tender — 4 minutes, no more. it should still have a little bite.",
+            "de": "Erhitze währenddessen das restliche Kokosöl in einer zweiten Pfanne und brate den Blumenkohlreis mit einer Prise Salz, bis er gerade zart ist — 4 Minuten, nicht länger. Er soll noch Biss haben."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "pile the curry onto the cauliflower rice and finish with the remaining lime in wedges.",
+            "de": "Gib das Curry auf den Blumenkohlreis und serviere die restliche Limette in Spalten dazu."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "low-carb",
+          "comfort food"
+        ],
+        "de": [
+          "Curry",
+          "Low Carb",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "burger-classic",
+      "dish_id": "burger",
+      "title": {
+        "en": "classic cheeseburger",
+        "de": "Klassischer Cheeseburger"
+      },
+      "caption": {
+        "en": "seared hard, stacked tall",
+        "de": "scharf angebraten, hoch gestapelt"
+      },
+      "intro": {
+        "en": "a good burger asks very little of you. decent beef, a screaming hot pan, and the nerve to leave the patty alone while it builds a crust. everything else is decoration — important decoration.",
+        "de": "Ein guter Burger verlangt nicht viel von dir. Ordentliches Rinderhack, eine richtig heiße Pfanne und die Nerven, das Patty in Ruhe zu lassen, während es Kruste bildet. Alles andere ist Deko — aber wichtige Deko."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "mustard",
+        "added-sugar"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "nut-free",
+        "medium",
+        "le60",
+        "le800",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 780,
+      "macros": {
+        "calories": 780,
+        "protein_g": 40,
+        "carbs_g": 44,
+        "fat_g": 48
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 360,
+          "unit": "g",
+          "note": {
+            "en": "20% fat, not lean",
+            "de": "20 % Fett, bloß nicht mager"
+          }
+        },
+        {
+          "ingredient_id": "burger-bun",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "soft, with sesame",
+            "de": "weich, mit Sesam"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient_id": "mayonnaise",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ketchup",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pickles",
+          "qty": 4,
+          "unit": "slice"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "thin rings",
+            "de": "in dünnen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thick slices",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "divide the beef into two loose 180 g balls. press them into patties a little wider than your buns — they shrink — and dimple the centers with your thumb. salt and pepper both sides like you mean it.",
+            "de": "Teile das Hack in zwei lockere Kugeln à 180 g. Drücke sie zu Patties, etwas breiter als deine Brötchen — sie schrumpfen — und drücke mit dem Daumen eine Mulde in die Mitte. Beide Seiten kräftig salzen und pfeffern."
+          }
+        },
+        {
+          "text": {
+            "en": "get a heavy skillet smoking hot, no oil needed. lay the patties in and don't touch them. let the crust happen.",
+            "de": "Eine schwere Pfanne richtig heiß werden lassen, kein Öl nötig. Patties hineinlegen und nicht anfassen. Die Kruste braucht ihre Ruhe."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "flip, lay a slice of cheddar on each patty, and cook until the cheese droops over the edges.",
+            "de": "Wenden, je eine Scheibe Cheddar auflegen und braten, bis der Käse über die Ränder schmilzt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "toast the buns cut-side down in the same pan, in all that beef fat. this step is not optional.",
+            "de": "Die Brötchen mit der Schnittfläche nach unten in derselben Pfanne rösten, im ganzen Bratfett. Dieser Schritt ist nicht verhandelbar."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "stir the mayo and ketchup together. slice the tomato thick and the onion thin while the buns toast.",
+            "de": "Mayo und Ketchup verrühren. Tomate dick und Zwiebel dünn schneiden, während die Brötchen rösten."
+          }
+        },
+        {
+          "text": {
+            "en": "build: sauce on the bottom bun, patty, pickles, onion, tomato, more sauce, lid. press gently. eat over the plate, not the keyboard.",
+            "de": "Bauen: Sauce aufs untere Brötchen, Patty, Gurken, Zwiebel, Tomate, noch mal Sauce, Deckel. Sanft andrücken. Über dem Teller essen, nicht über der Tastatur."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "comfort food",
+          "weeknight",
+          "american"
+        ],
+        "de": [
+          "Soulfood",
+          "Feierabend",
+          "amerikanisch"
+        ]
+      }
+    },
+    {
+      "id": "burger-veggie",
+      "dish_id": "burger",
+      "title": {
+        "en": "black bean burger",
+        "de": "Schwarze-Bohnen-Burger"
+      },
+      "caption": {
+        "en": "smoky beans, proper crust",
+        "de": "rauchige Bohnen, richtige Kruste"
+      },
+      "intro": {
+        "en": "black beans make a patty with actual personality — smoky, deeply savory, crisp at the edges. the secret is squeezing the beans dry and letting the mix chill before it hits the pan. rushed patties fall apart. so do we all.",
+        "de": "Schwarze Bohnen ergeben ein Patty mit echtem Charakter — rauchig, herzhaft, knusprig am Rand. Der Trick: Die Bohnen gut abtropfen lassen und die Masse vor dem Braten kühlen. Gehetzte Patties zerfallen. Wie wir alle."
+      },
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "mustard"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 590,
+      "macros": {
+        "calories": 590,
+        "protein_g": 22,
+        "carbs_g": 70,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained well, about 240 g",
+            "de": "gut abgetropft, ca. 240 g"
+          }
+        },
+        {
+          "ingredient_id": "breadcrumbs",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "burger-bun",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "mayonnaise",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "iceberg",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "large leaves",
+            "de": "große Blätter"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté the diced onion in a splash of oil over medium heat until soft and sweet. onions never hurry. neither should you.",
+            "de": "Die Zwiebelwürfel in etwas Öl bei mittlerer Hitze glasig dünsten, bis sie weich und süß sind. Zwiebeln haben es nie eilig. Du auch nicht."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "mash the beans in a bowl with a fork — mostly smashed, some whole for texture. stir in the onion, breadcrumbs, egg, cumin, smoked paprika and a good pinch of salt.",
+            "de": "Die Bohnen in einer Schüssel mit der Gabel zerdrücken — größtenteils fein, ein paar ganze für den Biss. Zwiebel, Semmelbrösel, Ei, Kreuzkümmel, Rauchpaprika und eine gute Prise Salz unterrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "shape two thick patties and park them in the fridge. cold patties hold together; warm ones betray you.",
+            "de": "Zwei dicke Patties formen und ab damit in den Kühlschrank. Kalte Patties halten zusammen, warme lassen dich im Stich."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "pan-fry the patties in a little oil over medium heat, 4 minutes per side, until deeply browned. flip once, gently, like you're turning a page.",
+            "de": "Die Patties in wenig Öl bei mittlerer Hitze braten, 4 Minuten pro Seite, bis sie tief gebräunt sind. Nur einmal wenden, vorsichtig, wie beim Umblättern."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "toast the buns cut-side down in the pan until golden.",
+            "de": "Die Brötchen mit der Schnittfläche nach unten in der Pfanne goldbraun rösten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "build: mayo on both halves, lettuce, patty, tomato, lid. hold with both hands, as the law requires.",
+            "de": "Bauen: Mayo auf beide Hälften, Salat, Patty, Tomate, Deckel. Mit beiden Händen halten, wie es das Gesetz verlangt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "vegetarian",
+          "comfort food",
+          "beans"
+        ],
+        "de": [
+          "vegetarisch",
+          "Soulfood",
+          "Bohnen"
+        ]
+      }
+    },
+    {
+      "id": "burger-vegan",
+      "dish_id": "burger",
+      "title": {
+        "en": "vegan burger",
+        "de": "Veganer Burger"
+      },
+      "caption": {
+        "en": "everything a burger should be",
+        "de": "alles, was ein Burger sein muss"
+      },
+      "intro": {
+        "en": "a vegan burger built with conviction: a good patty seared until properly crusted, cool crisp toppings, and enough sauce to require a napkin. nobody at this table is missing anything.",
+        "de": "Ein veganer Burger mit Überzeugung: ein gutes Patty mit richtiger Kruste, kühle knackige Toppings und genug Sauce, dass du eine Serviette brauchst. An diesem Tisch fehlt niemandem irgendwas."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "medium",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 24,
+        "carbs_g": 58,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "vegan-patty",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "burger-bun",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "vegan-mayo",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ketchup",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "thin rings",
+            "de": "in dünnen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "iceberg",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "large leaves",
+            "de": "große Blätter"
+          }
+        },
+        {
+          "ingredient_id": "pickles",
+          "qty": 4,
+          "unit": "slice"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the vegan mayo and ketchup together. slice the tomato, peel the onion into thin rings, rinse the lettuce. mise en place, but make it burger.",
+            "de": "Vegane Mayo und Ketchup verrühren. Tomate aufschneiden, Zwiebel in dünne Ringe teilen, Salat waschen. Mise en Place, aber in Burgerform."
+          }
+        },
+        {
+          "text": {
+            "en": "heat a little oil in a heavy pan over medium-high. sear the patties without moving them — they need that undisturbed time to build a crust.",
+            "de": "Etwas Öl in einer schweren Pfanne bei mittelhoher Hitze erhitzen. Die Patties anbraten, ohne sie zu bewegen — die Kruste entsteht nur, wenn du sie in Ruhe lässt."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "flip and give the second side the same respect, until both sides are deeply browned and the middle is hot through.",
+            "de": "Wenden und der zweiten Seite denselben Respekt gönnen, bis beide Seiten tief gebräunt und die Mitte heiß ist."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "toast the buns cut-side down in the pan until golden at the edges.",
+            "de": "Die Brötchen mit der Schnittfläche nach unten in der Pfanne rösten, bis die Ränder golden sind."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "build: sauce, lettuce, patty, pickles, onion, tomato, more sauce, lid. press down gently and commit.",
+            "de": "Bauen: Sauce, Salat, Patty, Gurken, Zwiebel, Tomate, noch mal Sauce, Deckel. Sanft andrücken und durchziehen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "vegan",
+          "comfort food",
+          "weeknight"
+        ],
+        "de": [
+          "vegan",
+          "Soulfood",
+          "Feierabend"
+        ]
+      }
+    },
+    {
+      "id": "burger-lowcarb",
+      "dish_id": "burger",
+      "title": {
+        "en": "lettuce-wrapped burger",
+        "de": "Burger im Salatblatt"
+      },
+      "caption": {
+        "en": "the bun was holding you back",
+        "de": "das Brötchen hat dich nur aufgehalten"
+      },
+      "intro": {
+        "en": "strip a burger down to what actually matters — hot beef, melted cheddar, cold crunchy lettuce — and it turns out you lose nothing. crisp iceberg cups hold everything together and stay cold against the warm patty. it's a very good trade.",
+        "de": "Reduziere einen Burger auf das, was wirklich zählt — heißes Rind, geschmolzener Cheddar, kalter knackiger Salat — und plötzlich fehlt dir nichts. Knackige Eisbergblätter halten alles zusammen und bleiben kühl am warmen Patty. Ein sehr guter Tausch."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "egg",
+        "mustard"
+      ],
+      "attributes": [
+        "keto",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 28,
+        "carbs_g": 6,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 2,
+          "unit": "slice"
+        },
+        {
+          "ingredient_id": "iceberg",
+          "qty": 8,
+          "unit": "piece",
+          "note": {
+            "en": "large outer leaves, kept whole",
+            "de": "große äußere Blätter, ganz lassen"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pickles",
+          "qty": 4,
+          "unit": "slice"
+        },
+        {
+          "ingredient_id": "mayonnaise",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "shape the beef into two patties, dimple the centers, season both sides with salt and pepper. peel the big iceberg leaves carefully and pat them dry — they're your buns now.",
+            "de": "Aus dem Hack zwei Patties formen, in die Mitte eine Mulde drücken, beide Seiten salzen und pfeffern. Die großen Eisbergblätter vorsichtig ablösen und trocken tupfen — sie sind jetzt deine Brötchen."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the patties in a hot, dry pan without moving them.",
+            "de": "Die Patties in einer heißen, trockenen Pfanne scharf anbraten, ohne sie zu bewegen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "flip, lay the cheddar on top, and cook until the cheese is fully melted and the patty is done to your liking.",
+            "de": "Wenden, den Cheddar auflegen und braten, bis der Käse komplett geschmolzen und das Patty nach deinem Geschmack durch ist."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "let the patties rest a moment on a plate so the lettuce doesn't wilt on contact.",
+            "de": "Die Patties kurz auf einem Teller ruhen lassen, damit der Salat beim Kontakt nicht sofort zusammenfällt."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "stack 3–4 lettuce leaves into two sturdy cups. mayo, patty, tomato, pickles, fold the leaves over and grip it like you've done this before.",
+            "de": "Je 3–4 Salatblätter zu zwei stabilen Schalen stapeln. Mayo, Patty, Tomate, Gurken, Blätter darüberklappen und zupacken, als hättest du das schon hundertmal gemacht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "keto",
+          "low-carb",
+          "quick"
+        ],
+        "de": [
+          "Keto",
+          "Low Carb",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "porridge-classic",
+      "dish_id": "porridge",
+      "title": {
+        "en": "classic porridge",
+        "de": "Klassisches Porridge"
+      },
+      "caption": {
+        "en": "warm milk, honey, no rush",
+        "de": "warme Milch, Honig, keine Eile"
+      },
+      "intro": {
+        "en": "porridge is the breakfast equivalent of a weighted blanket. oats simmered slow in whole milk, finished with banana and a ribbon of honey. it asks for ten quiet minutes and gives you back the whole morning.",
+        "de": "Porridge ist das Frühstücks-Äquivalent einer Gewichtsdecke. Haferflocken, langsam in Vollmilch geköchelt, mit Banane und einem Faden Honig obendrauf. Es will zehn ruhige Minuten und schenkt dir dafür den ganzen Morgen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "honey",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "simmer"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 340,
+      "macros": {
+        "calories": 340,
+        "protein_g": 12,
+        "carbs_g": 55,
+        "fat_g": 9
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "honey-ing",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "tip the oats, milk and salt into a small pot. bring it just to a simmer over medium heat, stirring so nothing catches on the bottom.",
+            "de": "Haferflocken, Milch und Salz in einen kleinen Topf geben. Bei mittlerer Hitze gerade so zum Köcheln bringen und dabei rühren, damit nichts ansetzt."
+          }
+        },
+        {
+          "text": {
+            "en": "turn the heat to low and let it simmer, stirring now and then, until thick and creamy. slow stirring. this is the meditative part.",
+            "de": "Hitze auf klein stellen und sanft köcheln lassen, ab und zu rühren, bis es dick und cremig ist. Langsam rühren. Das ist der meditative Teil."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "pull the pot off the heat and let it sit with the lid on. porridge finishes thickening on its own time.",
+            "de": "Topf vom Herd ziehen und mit Deckel kurz stehen lassen. Porridge dickt in seinem eigenen Tempo nach."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "spoon into bowls. top with banana slices, a ribbon of honey and a dusting of cinnamon. eat warm, ideally near a window.",
+            "de": "In Schüsseln füllen. Mit Bananenscheiben, einem Faden Honig und etwas Zimt toppen. Warm essen, am besten am Fenster."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "cozy",
+          "quick"
+        ],
+        "de": [
+          "Frühstück",
+          "gemütlich",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "porridge-vegan",
+      "dish_id": "porridge",
+      "title": {
+        "en": "vegan berry porridge",
+        "de": "Veganes Beeren-Porridge"
+      },
+      "caption": {
+        "en": "oats on oats, berries on top",
+        "de": "Hafer auf Hafer, Beeren obendrauf"
+      },
+      "intro": {
+        "en": "oats cooked in oat milk is the kind of doubling-down this bowl deserves. chia seeds make it silky, maple syrup keeps it gentle, and a handful of blueberries collapses into little jammy pockets. breakfast that holds your hand.",
+        "de": "Hafer in Hafermilch gekocht — diese Schüssel verdient genau diese Konsequenz. Chiasamen machen sie seidig, Ahornsirup hält sie sanft, und eine Handvoll Heidelbeeren zerfällt zu kleinen marmeladigen Inseln. Frühstück, das dich an die Hand nimmt."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "simmer"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 9,
+        "carbs_g": 60,
+        "fat_g": 8
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "blueberry",
+          "qty": 125,
+          "unit": "g",
+          "note": {
+            "en": "fresh or frozen",
+            "de": "frisch oder TK"
+          }
+        },
+        {
+          "ingredient_id": "chia-seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "combine the oats, oat milk and salt in a small pot and bring to a gentle simmer over medium heat, stirring as it warms.",
+            "de": "Haferflocken, Hafermilch und Salz in einem kleinen Topf verrühren und bei mittlerer Hitze sanft zum Köcheln bringen, dabei rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer on low, stirring occasionally, until creamy. drop in half the blueberries near the end and let them burst into the oats.",
+            "de": "Auf kleiner Flamme köcheln lassen und gelegentlich rühren, bis es cremig ist. Gegen Ende die Hälfte der Heidelbeeren hineingeben und in den Hafer hineinplatzen lassen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir in the chia seeds, take the pot off the heat and let it stand with the lid on — the chia thickens everything into silk.",
+            "de": "Chiasamen einrühren, Topf vom Herd nehmen und mit Deckel stehen lassen — die Chiasamen machen alles seidig dick."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "spoon into bowls, top with the remaining berries, drizzle with maple syrup and dust with cinnamon. soft landing achieved.",
+            "de": "In Schüsseln füllen, mit den restlichen Beeren toppen, Ahornsirup darüberziehen und mit Zimt bestäuben. Weiche Landung geglückt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "vegan",
+          "breakfast",
+          "berries"
+        ],
+        "de": [
+          "vegan",
+          "Frühstück",
+          "Beeren"
+        ]
+      }
+    },
+    {
+      "id": "porridge-sugarfree",
+      "dish_id": "porridge",
+      "title": {
+        "en": "banana-sweetened porridge",
+        "de": "Porridge mit Bananensüße"
+      },
+      "caption": {
+        "en": "the banana does the sweetening",
+        "de": "die Banane übernimmt das Süßen"
+      },
+      "intro": {
+        "en": "no syrup, no sugar, no tricks — just a very ripe banana mashed straight into the pot, where it melts and sweetens everything from the inside. cinnamon and vanilla do the rest. the spottier the banana, the better this gets.",
+        "de": "Kein Sirup, kein Zucker, keine Tricks — nur eine sehr reife Banane, direkt in den Topf zerdrückt, wo sie schmilzt und alles von innen süßt. Zimt und Vanille machen den Rest. Je fleckiger die Banane, desto besser wird das hier."
+      },
+      "variant": {
+        "diet": "sugar-free",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "tree-nuts",
+        "almonds"
+      ],
+      "attributes": [
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "easy",
+        "le15",
+        "le400",
+        "simmer"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 300,
+      "macros": {
+        "calories": 300,
+        "protein_g": 8,
+        "carbs_g": 50,
+        "fat_g": 9
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "almond-milk",
+          "qty": 500,
+          "unit": "ml",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "very ripe — spotty is perfect",
+            "de": "sehr reif — fleckig ist perfekt"
+          }
+        },
+        {
+          "ingredient_id": "flaxseeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mash three quarters of the banana right in the pot with a fork. save the rest for slicing on top — you've earned a garnish.",
+            "de": "Drei Viertel der Banane direkt im Topf mit der Gabel zerdrücken. Den Rest für Scheiben obendrauf aufheben — eine Deko hast du dir verdient."
+          }
+        },
+        {
+          "text": {
+            "en": "add the oats, almond milk, flaxseeds and salt. bring to a gentle simmer over medium heat, stirring so the banana dissolves into the milk.",
+            "de": "Haferflocken, Mandelmilch, Leinsamen und Salz dazugeben. Bei mittlerer Hitze sanft zum Köcheln bringen und rühren, bis sich die Banane in der Milch auflöst."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer on low, stirring now and then, until thick and creamy.",
+            "de": "Auf kleiner Flamme köcheln lassen, ab und zu rühren, bis es dick und cremig ist."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir in the vanilla, take the pot off the heat and let it rest, lid on.",
+            "de": "Vanille einrühren, Topf vom Herd nehmen und mit Deckel ruhen lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "bowl it up, top with the reserved banana slices and a generous dusting of cinnamon. sweet enough. it always was.",
+            "de": "In Schüsseln füllen, mit den restlichen Bananenscheiben und ordentlich Zimt toppen. Süß genug. War es schon immer."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "sugar-free",
+          "vegan",
+          "breakfast"
+        ],
+        "de": [
+          "zuckerfrei",
+          "vegan",
+          "Frühstück"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "classic shakshuka",
+        "de": "Klassische Shakshuka"
+      },
+      "caption": {
+        "en": "eggs sinking into red",
+        "de": "Eier, versunken in Rot"
+      },
+      "intro": {
+        "en": "one pan, a pile of softened peppers and onions, tomatoes cooked down until they go sweet, and eggs poached right in the sauce. crumble feta over the top, hand everyone a piece of warm pita, and let the table fight over the runniest yolk.",
+        "de": "Eine Pfanne, weich geschmorte Paprika und Zwiebeln, Tomaten, die einkochen, bis sie süß werden, und Eier, die direkt in der Sauce pochieren. Feta darüberbröseln, jedem ein Stück warmes Pita in die Hand drücken und den Tisch um das weichste Eigelb streiten lassen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "saute",
+        "simmer",
+        "poach"
+      ],
+      "meal": [
+        "breakfast",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 17,
+        "carbs_g": 32,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red, in strips",
+            "de": "rot, in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, chopped",
+            "de": "400 g, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "feta",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pita",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "warmed",
+            "de": "aufgewärmt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "warm the olive oil in a wide pan over medium heat. add the onion with a pinch of salt and let it soften properly. let the onions take their time. they always do.",
+            "de": "Olivenöl in einer weiten Pfanne bei mittlerer Hitze erwärmen. Zwiebel mit einer Prise Salz dazugeben und richtig weich werden lassen. Gib den Zwiebeln ihre Zeit. Die nehmen sie sich sowieso."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "stir in the garlic, bell pepper, cumin and smoked paprika. cook until the pepper bends without breaking and the kitchen smells like somewhere you'd rather live.",
+            "de": "Knoblauch, Paprika, Kreuzkümmel und Rauchpaprika einrühren. Braten, bis die Paprikastreifen weich werden und die Küche so duftet, dass du am liebsten einziehen würdest."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "pour in the tomatoes, season with salt and pepper, and simmer uncovered until the sauce thickens enough to hold a spoon trail.",
+            "de": "Tomaten dazugießen, mit Salz und Pfeffer würzen und offen köcheln lassen, bis die Sauce so dick ist, dass eine Löffelspur stehen bleibt."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "make four little wells with the back of a spoon, crack an egg into each, lid on, and poach gently until the whites are set but the yolks still tremble.",
+            "de": "Mit dem Löffelrücken vier kleine Mulden formen, in jede ein Ei schlagen, Deckel drauf und sanft pochieren, bis das Eiweiß gestockt ist, das Eigelb aber noch zittert."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "crumble the feta over everything and bring the whole pan to the table with the warm pita. no plates required, just spoons and loyalty.",
+            "de": "Feta über alles bröseln und die ganze Pfanne mit dem warmen Pita auf den Tisch stellen. Teller braucht es nicht, nur Löffel und Loyalität."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "one-pan",
+          "brunch",
+          "middle eastern"
+        ],
+        "de": [
+          "One-Pan",
+          "Brunch",
+          "orientalisch"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-green",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "green shakshuka",
+        "de": "Grüne Shakshuka"
+      },
+      "caption": {
+        "en": "the gentle green one",
+        "de": "die sanfte grüne"
+      },
+      "intro": {
+        "en": "a shakshuka for sensitive stomachs that doesn't apologize for itself: a deep green base of spinach and zucchini, brightened with lemon and dill, eggs poached on top. only the green parts of the spring onions go in — no onion, no garlic, and nothing missing.",
+        "de": "Eine Shakshuka für empfindliche Mägen, die sich für nichts entschuldigt: eine tiefgrüne Basis aus Spinat und Zucchini, aufgehellt mit Zitrone und Dill, obendrauf pochierte Eier. Von den Frühlingszwiebeln kommt nur das Grün hinein — keine Zwiebel, kein Knoblauch, und trotzdem fehlt nichts."
+      },
+      "variant": {
+        "diet": "low-fodmap",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le400",
+        "saute",
+        "poach"
+      ],
+      "meal": [
+        "breakfast",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 350,
+      "macros": {
+        "calories": 350,
+        "protein_g": 19,
+        "carbs_g": 12,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "green parts only — strictly",
+            "de": "nur das Grün — wirklich nur das Grün"
+          }
+        },
+        {
+          "ingredient_id": "zucchini",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "small dice",
+            "de": "klein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "fresh, washed",
+            "de": "frisch, gewaschen"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice and a little zest",
+            "de": "Saft und etwas Abrieb"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "feta",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dill",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the spring onion greens into rings — greens only, the white bulb stays in the fridge for someone else's recipe. warm the olive oil in a wide pan over medium heat.",
+            "de": "Das Grün der Frühlingszwiebeln in Ringe schneiden — nur das Grün, das weiße Ende bleibt im Kühlschrank für das Rezept von jemand anderem. Olivenöl in einer weiten Pfanne bei mittlerer Hitze erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "sauté the zucchini with a pinch of salt until golden at the edges, then add the spring onion greens for the last minute.",
+            "de": "Die Zucchini mit einer Prise Salz anbraten, bis die Ränder golden sind, dann für die letzte Minute das Frühlingszwiebelgrün dazugeben."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "add the spinach in big handfuls, letting each one collapse before the next goes in. season with cumin, chili flakes, salt, pepper and the lemon juice.",
+            "de": "Den Spinat in großen Handvoll-Portionen dazugeben und jede zusammenfallen lassen, bevor die nächste kommt. Mit Kreuzkümmel, Chiliflocken, Salz, Pfeffer und dem Zitronensaft abschmecken."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "press four wells into the greens, crack an egg into each, lid on, and poach over low heat until the whites are just set.",
+            "de": "Vier Mulden ins Grün drücken, in jede ein Ei schlagen, Deckel drauf und bei kleiner Hitze pochieren, bis das Eiweiß gerade gestockt ist."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "crumble the feta over the top, scatter the dill and a little lemon zest, and serve straight from the pan while everything is still glossy.",
+            "de": "Feta darüberbröseln, Dill und etwas Zitronenabrieb darüberstreuen und direkt aus der Pfanne servieren, solange noch alles glänzt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "low fodmap",
+          "one-pan",
+          "greens"
+        ],
+        "de": [
+          "FODMAP-arm",
+          "One-Pan",
+          "grünes Gemüse"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "vegan shakshuka",
+        "de": "Vegane Shakshuka"
+      },
+      "caption": {
+        "en": "golden tofu in red sauce",
+        "de": "goldener Tofu in roter Sauce"
+      },
+      "intro": {
+        "en": "the same lush, smoky tomato base — but instead of eggs, soft pillows of tofu turned golden with turmeric, nestled into the sauce to soak it all up. it's its own dish, and it's a good one. bring spoons.",
+        "de": "Dieselbe üppige, rauchige Tomatenbasis — aber statt Eiern weiche Tofu-Inseln, mit Kurkuma golden gefärbt und in die Sauce gebettet, damit sie alles aufsaugen. Das ist ein eigenes Gericht, und ein richtig gutes. Löffel mitbringen."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "breakfast",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 20,
+        "carbs_g": 18,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in strips",
+            "de": "in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, chopped",
+            "de": "400 g, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "broken into rough chunks",
+            "de": "in grobe Stücke gebrochen"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "warm the olive oil in a wide pan over medium heat and soften the onion with a pinch of salt until sweet and translucent.",
+            "de": "Olivenöl in einer weiten Pfanne bei mittlerer Hitze erwärmen und die Zwiebel mit einer Prise Salz glasig und süß dünsten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "add the garlic, bell pepper, cumin and smoked paprika and cook until the pepper softens and the spices bloom in the oil.",
+            "de": "Knoblauch, Paprika, Kreuzkümmel und Rauchpaprika dazugeben und braten, bis die Paprika weich wird und die Gewürze im Öl aufblühen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "pour in the tomatoes, season, and simmer uncovered until the sauce is thick and a shade darker.",
+            "de": "Tomaten dazugießen, würzen und offen köcheln lassen, bis die Sauce dick und eine Nuance dunkler ist."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "toss the tofu chunks with the turmeric and a pinch of salt, then nestle them into the sauce. lid on, low heat, let the tofu warm through and drink up the sauce.",
+            "de": "Die Tofustücke mit Kurkuma und einer Prise Salz vermengen und in die Sauce betten. Deckel drauf, kleine Hitze, den Tofu durchwärmen und Sauce aufsaugen lassen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "shower with parsley and serve from the pan, with whatever you like for scooping. the sauce will not survive the night. it never does.",
+            "de": "Mit Petersilie bestreuen und aus der Pfanne servieren, mit allem, was du zum Dippen magst. Die Sauce überlebt die Nacht nicht. Tut sie nie."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "vegan",
+          "one-pan",
+          "middle eastern"
+        ],
+        "de": [
+          "vegan",
+          "One-Pan",
+          "orientalisch"
+        ]
+      }
+    },
+    {
+      "id": "caesar-classic",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "classic chicken caesar",
+        "de": "Klassischer Caesar mit Hähnchen"
+      },
+      "caption": {
+        "en": "the dressing is the main character",
+        "de": "das Dressing ist die Hauptfigur"
+      },
+      "intro": {
+        "en": "romaine that snaps, golden chicken, and a dressing whisked from anchovy, garlic, egg yolk and lemon — salty, sharp, quietly addictive. make the dressing from scratch once and the bottled stuff becomes a stranger to you.",
+        "de": "Römersalat, der knackt, goldenes Hähnchen und ein Dressing aus Sardellen, Knoblauch, Eigelb und Zitrone — salzig, scharf, leise süchtig machend. Mach das Dressing einmal selbst, und das Zeug aus der Flasche wird dir fremd."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 42,
+        "carbs_g": 26,
+        "fat_g": 30
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "romaine",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "1 large head, torn",
+            "de": "1 großer Kopf, gezupft"
+          }
+        },
+        {
+          "ingredient_id": "anchovy",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "fillets — don't be scared",
+            "de": "Filets — keine Angst"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "very fresh, yolk only",
+            "de": "ganz frisch, nur das Eigelb"
+          }
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "croutons",
+          "qty": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "season the chicken with salt and pepper. pan-fry in a little oil over medium-high heat until golden and cooked through, about 5–6 minutes per side depending on thickness.",
+            "de": "Das Hähnchen salzen und pfeffern. In wenig Öl bei mittelhoher Hitze goldbraun braten, je nach Dicke etwa 5–6 Minuten pro Seite, bis es durch ist."
+          },
+          "timer_minutes": 11
+        },
+        {
+          "text": {
+            "en": "let the chicken rest on a board. resting is where the juiciness lives.",
+            "de": "Das Hähnchen auf einem Brett ruhen lassen. In der Ruhe steckt die Saftigkeit."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "meanwhile, mash the anchovies and garlic to a paste with the flat of your knife. whisk with the egg yolk, mustard and lemon juice in a big bowl.",
+            "de": "Währenddessen Sardellen und Knoblauch mit der flachen Messerklinge zu einer Paste zerdrücken. In einer großen Schüssel mit Eigelb, Senf und Zitronensaft verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk in the olive oil in a thin, patient stream until the dressing turns thick and glossy. taste — it should be salty, sharp, a little outrageous.",
+            "de": "Das Olivenöl in einem dünnen, geduldigen Strahl einrühren, bis das Dressing dick und glänzend wird. Probieren — es soll salzig sein, scharf, ein bisschen unverschämt."
+          }
+        },
+        {
+          "text": {
+            "en": "tear the romaine into the bowl and toss until every leaf is coated. fold in most of the parmesan and the croutons.",
+            "de": "Den Römersalat in die Schüssel zupfen und durchschwenken, bis jedes Blatt überzogen ist. Den Großteil des Parmesans und die Croûtons unterheben."
+          }
+        },
+        {
+          "text": {
+            "en": "slice the chicken and lay it over the top. finish with the remaining parmesan and a crack of pepper. serve immediately — caesar waits for no one.",
+            "de": "Das Hähnchen aufschneiden und obenauf legen. Mit dem restlichen Parmesan und frisch gemahlenem Pfeffer abrunden. Sofort servieren — ein Caesar wartet auf niemanden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "salad",
+          "classic",
+          "high protein"
+        ],
+        "de": [
+          "Salat",
+          "Klassiker",
+          "proteinreich"
+        ]
+      }
+    },
+    {
+      "id": "caesar-vegetarian",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "vegetarian caesar",
+        "de": "Vegetarischer Caesar"
+      },
+      "caption": {
+        "en": "capers doing the anchovy's job",
+        "de": "Kapern machen den Sardellen-Job"
+      },
+      "intro": {
+        "en": "chopped capers bring the briny punch this dressing needs, and greek yogurt makes it creamy without weighing the leaves down. lighter, faster, and the croutons still get re-crisped in a hot pan, because standards are standards.",
+        "de": "Gehackte Kapern liefern genau den salzigen Punch, den dieses Dressing braucht, und griechischer Joghurt macht es cremig, ohne die Blätter zu beschweren. Leichter, schneller — und die Croûtons werden trotzdem in der heißen Pfanne nachgeröstet, denn Standards sind Standards."
+      },
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "raw",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 15,
+        "carbs_g": 30,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "romaine",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "1 large head, torn",
+            "de": "1 großer Kopf, gezupft"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "capers",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "finely chopped, brine reserved",
+            "de": "fein gehackt, Lake aufheben"
+          }
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "croutons",
+          "qty": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the croutons in a dry pan over medium heat until they're warm and aggressively crunchy again.",
+            "de": "Die Croûtons in einer trockenen Pfanne bei mittlerer Hitze schwenken, bis sie wieder warm und kompromisslos knusprig sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "whisk the yogurt with the chopped capers, a teaspoon of their brine, the mustard, garlic, lemon juice and olive oil. season with pepper — the capers handle most of the salt.",
+            "de": "Den Joghurt mit den gehackten Kapern, einem Teelöffel Kapernlake, Senf, Knoblauch, Zitronensaft und Olivenöl verquirlen. Mit Pfeffer abschmecken — das Salz erledigen größtenteils die Kapern."
+          }
+        },
+        {
+          "text": {
+            "en": "let the dressing sit so the garlic and capers can get to know each other.",
+            "de": "Das Dressing kurz stehen lassen, damit Knoblauch und Kapern sich kennenlernen können."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "tear the romaine into a big bowl and toss with the dressing until every leaf is glossy.",
+            "de": "Den Römersalat in eine große Schüssel zupfen und mit dem Dressing schwenken, bis jedes Blatt glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "fold in the croutons, shower with parmesan, finish with black pepper. eat while it still crunches.",
+            "de": "Die Croûtons unterheben, mit Parmesan überschütten, mit schwarzem Pfeffer vollenden. Essen, solange es noch knackt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "salad",
+          "vegetarian",
+          "quick"
+        ],
+        "de": [
+          "Salat",
+          "vegetarisch",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "caesar-vegan",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "vegan caesar",
+        "de": "Veganer Caesar"
+      },
+      "caption": {
+        "en": "cashews, blended into velvet",
+        "de": "Cashews, zu Samt gemixt"
+      },
+      "intro": {
+        "en": "soaked cashews blend into a dressing so creamy it feels like a magic trick. capers and their brine bring the salt, nutritional yeast brings the savory depth, lemon brings the argument. the croutons remain non-negotiable.",
+        "de": "Eingeweichte Cashews werden zu einem Dressing, so cremig, dass es sich wie ein Zaubertrick anfühlt. Kapern und ihre Lake bringen das Salz, Hefeflocken die herzhafte Tiefe, Zitrone die nötige Schärfe im Ton. Die Croûtons bleiben nicht verhandelbar."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "tree-nuts",
+        "cashews",
+        "gluten",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "easy",
+        "le30",
+        "le400",
+        "raw",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 13,
+        "carbs_g": 34,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cashews-ing",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "capers",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "plus a teaspoon of brine",
+            "de": "plus ein Teelöffel Lake"
+          }
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        },
+        {
+          "ingredient_id": "romaine",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "1 large head, torn",
+            "de": "1 großer Kopf, gezupft"
+          }
+        },
+        {
+          "ingredient_id": "croutons",
+          "qty": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cover the cashews with boiling water and let them soak. they need this time to go soft enough to blend into silk.",
+            "de": "Die Cashews mit kochendem Wasser bedecken und einweichen lassen. Diese Zeit brauchen sie, um weich genug für seidiges Mixen zu werden."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "drain the cashews and blend with the nutritional yeast, half the capers, the brine, mustard, garlic, lemon juice and about 100 ml fresh water until completely smooth. it should pour slowly, like it has somewhere to be but isn't rushing.",
+            "de": "Die Cashews abgießen und mit Hefeflocken, der Hälfte der Kapern, der Lake, Senf, Knoblauch, Zitronensaft und etwa 100 ml frischem Wasser ganz glatt mixen. Es soll langsam fließen — wie jemand, der ein Ziel hat, aber sich nicht hetzen lässt."
+          }
+        },
+        {
+          "text": {
+            "en": "toss the croutons in a dry pan over medium heat until they crackle.",
+            "de": "Die Croûtons in einer trockenen Pfanne bei mittlerer Hitze rösten, bis sie knistern."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "tear the romaine into a big bowl, pour over most of the dressing and toss with your hands until every leaf is coated.",
+            "de": "Den Römersalat in eine große Schüssel zupfen, den Großteil des Dressings darübergeben und mit den Händen mischen, bis jedes Blatt überzogen ist."
+          }
+        },
+        {
+          "text": {
+            "en": "top with the croutons, the remaining capers and a final dusting of nutritional yeast. taste it. then quietly admit the cashews pulled it off.",
+            "de": "Mit den Croûtons, den restlichen Kapern und einer letzten Schicht Hefeflocken toppen. Probieren. Und dann leise zugeben, dass die Cashews das wirklich hingekriegt haben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "vegan",
+          "salad",
+          "cashew"
+        ],
+        "de": [
+          "vegan",
+          "Salat",
+          "Cashew"
+        ]
+      }
+    }
+  ]
+}

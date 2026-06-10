@@ -1,0 +1,160 @@
+{
+  "partition_id": "extended",
+  "recipes": [
+    {
+      "id": "wellington-classic",
+      "dish_id": "beef-wellington",
+      "title": {"en": "classic beef wellington", "de": "Klassisches Beef Wellington"},
+      "caption": {"en": "the centerpiece. breathe. you've got this.", "de": "das Herzstück. atmen. du schaffst das."},
+      "intro": {
+        "en": "this is the project recipe — the one you clear an afternoon for. seared fillet, a deep madeira duxelles, and pastry that shatters when the knife goes in. every chill step exists for a reason. skip none of them, and the first slice will be the best thing you've ever pulled off.",
+        "de": "Das hier ist das Projekt-Rezept — das, für das du dir einen Nachmittag freihältst. Scharf angebratenes Filet, eine tiefe Madeira-Duxelles und Blätterteig, der unter dem Messer splittert. Jeder Kühlschritt hat seinen Grund. Lass keinen aus, und der erste Anschnitt wird das Beste, was du je hinbekommen hast."
+      },
+      "variant": {"diet": "classic", "effort": "hard", "calorie": "gt800"},
+      "contains": ["beef", "gluten", "dairy", "egg", "mustard", "alcohol", "sulphites", "high-fodmap"],
+      "attributes": ["kosher", "sugar-free", "nut-free", "hard", "gt60", "gt800", "pan-fry", "saute", "bake"],
+      "meal": ["dinner"],
+      "time_minutes": 150,
+      "servings": 6,
+      "calories_per_serving": 880,
+      "macros": {"calories": 880, "protein_g": 48, "carbs_g": 42, "fat_g": 52},
+      "ingredients": [
+        {"ingredient_id": "beef-fillet", "qty": 800, "unit": "g", "note": {"en": "center-cut, even thickness", "de": "Mittelstück, gleichmäßig dick"}},
+        {"ingredient_id": "puff-pastry", "qty": 500, "unit": "g", "note": {"en": "all-butter, cold", "de": "mit Butter, gut gekühlt"}},
+        {"ingredient_id": "button-mushroom", "qty": 500, "unit": "g"},
+        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely chopped", "de": "fein gewürfelt"}},
+        {"ingredient_id": "madeira", "qty": 80, "unit": "ml"},
+        {"ingredient_id": "dijon-mustard", "qty": 2, "unit": "tbsp"},
+        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}},
+        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"},
+        {"ingredient_id": "butter", "qty": 30, "unit": "g"},
+        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "pat the fillet bone-dry and season it hard with salt and pepper. sear it in screaming-hot olive oil, about ninety seconds per side, until every surface is deep brown. brush it all over with the dijon while it's still warm, then set it aside to cool completely.", "de": "Das Filet richtig trocken tupfen und kräftig mit Salz und Pfeffer würzen. In rauchend heißem Olivenöl rundherum scharf anbraten, etwa neunzig Sekunden pro Seite, bis jede Fläche tief gebräunt ist. Noch warm rundum mit Dijon-Senf bestreichen und vollständig abkühlen lassen."}},
+        {"text": {"en": "blitz the mushrooms and shallots to fine crumbs. cook them in the butter with the thyme leaves over medium-high heat until every drop of moisture is gone, then pour in the madeira and keep cooking until the pan is dry again. this is the duxelles — it should be a dark, intense paste.", "de": "Champignons und Schalotten fein häckseln. Mit den Thymianblättchen in der Butter bei mittelhoher Hitze braten, bis jeder Tropfen Flüssigkeit verschwunden ist, dann den Madeira angießen und weiterkochen, bis die Pfanne wieder trocken ist. Das ist die Duxelles — eine dunkle, intensive Paste."}, "timer_minutes": 20},
+        {"text": {"en": "spread the cooled duxelles over the cooled fillet and wrap the whole thing tightly in cling film into a neat log. the butter must stay cold and so must the beef.", "de": "Die abgekühlte Duxelles auf dem abgekühlten Filet verteilen und alles straff in Frischhaltefolie zu einer sauberen Rolle wickeln. Die Butter muss kalt bleiben, das Fleisch auch."}},
+        {"text": {"en": "roll the pastry to a rectangle big enough to wrap the log with overlap. unwrap the beef, set it in the middle, fold the pastry around it and seal the seam underneath. chill the whole parcel — cold pastry is the difference between shatter and sog.", "de": "Den Teig zu einem Rechteck ausrollen, das die Rolle mit Überlappung umschließt. Das Filet auswickeln, in die Mitte legen, den Teig darum falten und die Naht nach unten verschließen. Das ganze Paket kühlen — kalter Teig entscheidet zwischen Splittern und Durchweichen."}, "timer_minutes": 30},
+        {"text": {"en": "heat the oven to 210°C. brush the parcel generously with the beaten egg, score a light pattern into the top with the back of a knife and sprinkle with flaky salt.", "de": "Den Ofen auf 210 °C vorheizen. Das Paket großzügig mit dem verquirlten Ei bestreichen, mit dem Messerrücken ein feines Muster in die Oberfläche ritzen und mit etwas grobem Salz bestreuen."}},
+        {"text": {"en": "bake until the pastry is deep golden and the core reads 48–50°C on a thermometer for rosy medium-rare.", "de": "Backen, bis der Teig tief goldbraun ist und das Thermometer im Kern 48–50 °C zeigt — für ein rosiges Medium Rare."}, "timer_minutes": 35},
+        {"text": {"en": "rest it on a board before you even think about slicing. then cut thick slices with your longest knife and accept the applause.", "de": "Auf einem Brett ruhen lassen, bevor du auch nur ans Anschneiden denkst. Dann mit deinem längsten Messer dicke Scheiben schneiden und den Applaus annehmen."}, "timer_minutes": 15}
+      ],
+      "tags": {"en": ["celebration", "project bake", "showstopper"], "de": ["Festessen", "Projekt", "Showstopper"]}
+    },
+    {
+      "id": "wellington-mushroom",
+      "dish_id": "beef-wellington",
+      "title": {"en": "mushroom wellington", "de": "Pilz-Wellington"},
+      "caption": {"en": "the forest, wrapped in gold", "de": "der Wald, in Gold gewickelt"},
+      "intro": {
+        "en": "roasted portobellos stacked over a deep lentil-walnut filling, all of it wrapped in pastry like a present. this isn't the understudy — it's its own headliner, savory and dark and worth every fold. bring it to the table whole and cut it where everyone can see.",
+        "de": "Geröstete Portobellos auf einer kräftigen Linsen-Walnuss-Füllung, alles in Blätterteig gewickelt wie ein Geschenk. Das hier ist keine Zweitbesetzung — es ist ein eigener Hauptact, würzig und dunkel und jede Falte wert. Bring es im Ganzen an den Tisch und schneide es an, wo alle zusehen können."
+      },
+      "variant": {"diet": "vegetarian", "effort": "hard", "calorie": "le800"},
+      "contains": ["gluten", "dairy", "egg", "tree-nuts", "walnuts", "sulphites", "high-fodmap"],
+      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "hard", "gt60", "le800", "roast", "saute", "bake"],
+      "meal": ["dinner"],
+      "time_minutes": 120,
+      "servings": 4,
+      "calories_per_serving": 640,
+      "macros": {"calories": 640, "protein_g": 22, "carbs_g": 58, "fat_g": 35},
+      "ingredients": [
+        {"ingredient_id": "portobello", "qty": 4, "unit": "piece", "note": {"en": "stems removed", "de": "Stiele entfernt"}},
+        {"ingredient_id": "red-lentils", "qty": 150, "unit": "g"},
+        {"ingredient_id": "puff-pastry", "qty": 400, "unit": "g", "note": {"en": "all-butter, cold", "de": "mit Butter, gut gekühlt"}},
+        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "garlic", "qty": 2, "unit": "clove"},
+        {"ingredient_id": "walnuts-ing", "qty": 60, "unit": "g", "note": {"en": "toasted, chopped", "de": "geröstet, gehackt"}},
+        {"ingredient_id": "thyme", "qty": 3, "unit": "sprig"},
+        {"ingredient_id": "balsamic-vinegar", "qty": 1, "unit": "tbsp"},
+        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}},
+        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "heat the oven to 220°C. rub the portobellos with olive oil and salt and roast them gill-side down until they've given up their water. drain them on a kitchen towel — a wet mushroom is the enemy of crisp pastry.", "de": "Den Ofen auf 220 °C vorheizen. Die Portobellos mit Olivenöl und Salz einreiben und mit den Lamellen nach unten rösten, bis sie ihr Wasser abgegeben haben. Auf einem Küchentuch abtropfen lassen — ein nasser Pilz ist der Feind von knusprigem Teig."}, "timer_minutes": 15},
+        {"text": {"en": "simmer the red lentils in lightly salted water until soft, then drain them very well.", "de": "Die roten Linsen in leicht gesalzenem Wasser weich köcheln, dann sehr gut abtropfen lassen."}, "timer_minutes": 15},
+        {"text": {"en": "sauté the onion and garlic in olive oil until golden, then stir in the lentils, walnuts, thyme leaves and balsamic. cook until it's a thick, spoonable paste, season boldly, and let it cool completely.", "de": "Zwiebel und Knoblauch in Olivenöl goldgelb anbraten, dann Linsen, Walnüsse, Thymianblättchen und Balsamico einrühren. Zu einer dicken, streichfähigen Paste einkochen, mutig abschmecken und vollständig abkühlen lassen."}},
+        {"text": {"en": "roll the pastry into a rectangle. spread the lentil filling down the middle, stack the portobellos on top like a roof, then fold the pastry over and seal the seam underneath. chill the parcel so it holds its nerve in the oven.", "de": "Den Teig zu einem Rechteck ausrollen. Die Linsenfüllung mittig aufstreichen, die Portobellos wie ein Dach daraufschichten, dann den Teig darüber falten und die Naht nach unten verschließen. Das Paket kühlen, damit es im Ofen die Nerven behält."}, "timer_minutes": 20},
+        {"text": {"en": "brush with the beaten egg, score a pattern in the top and bake at 200°C until deeply golden.", "de": "Mit dem verquirlten Ei bestreichen, ein Muster in die Oberfläche ritzen und bei 200 °C tief goldbraun backen."}, "timer_minutes": 30},
+        {"text": {"en": "rest for ten minutes, then slice thick. the layers — pastry, lentil, mushroom — should read like geology.", "de": "Zehn Minuten ruhen lassen, dann in dicke Scheiben schneiden. Die Schichten — Teig, Linsen, Pilz — sollten lesbar sein wie Gesteinsschichten."}}
+      ],
+      "tags": {"en": ["celebration", "vegetarian centerpiece", "project bake"], "de": ["Festessen", "vegetarisches Herzstück", "Projekt"]}
+    },
+    {
+      "id": "croissants-classic",
+      "dish_id": "croissants",
+      "title": {"en": "classic butter croissants", "de": "Klassische Buttercroissants"},
+      "caption": {"en": "cold butter, warm heart, many layers", "de": "kalte Butter, warmes Herz, viele Schichten"},
+      "intro": {
+        "en": "most of these four hours are waiting, and the waiting is the recipe. you fold butter into dough three times, you keep everything cold, and one morning your kitchen smells like a street in paris. the first one you eat standing at the oven. that one doesn't count.",
+        "de": "Die meisten dieser vier Stunden sind Warten, und das Warten ist das Rezept. Du faltest dreimal Butter in den Teig, hältst alles kalt, und eines Morgens riecht deine Küche wie eine Straße in Paris. Das erste isst du im Stehen direkt am Ofen. Das zählt nicht."
+      },
+      "variant": {"diet": "classic", "effort": "hard", "calorie": "le400"},
+      "contains": ["gluten", "dairy", "egg", "added-sugar", "high-fodmap"],
+      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "nut-free", "hard", "gt60", "le400", "bake"],
+      "meal": ["breakfast"],
+      "time_minutes": 240,
+      "servings": 12,
+      "calories_per_serving": 310,
+      "macros": {"calories": 310, "protein_g": 6, "carbs_g": 31, "fat_g": 18},
+      "ingredients": [
+        {"ingredient_id": "wheat-flour", "qty": 500, "unit": "g", "note": {"en": "plus more for rolling", "de": "plus etwas zum Ausrollen"}},
+        {"ingredient_id": "butter", "qty": 280, "unit": "g", "note": {"en": "30 g soft for the dough, 250 g cold for laminating", "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"}},
+        {"ingredient_id": "whole-milk", "qty": 140, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
+        {"ingredient_id": "sugar", "qty": 50, "unit": "g"},
+        {"ingredient_id": "yeast", "qty": 20, "unit": "g"},
+        {"ingredient_id": "salt", "qty": 2, "unit": "tsp"},
+        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}}
+      ],
+      "steps": [
+        {"text": {"en": "dissolve the yeast in the cold milk plus 140 ml cold water. mix with the flour, sugar, salt and the 30 g of soft butter into a smooth dough — knead only until it comes together. flatten into a rectangle, wrap, and chill for an hour.", "de": "Die Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen. Mit Mehl, Zucker, Salz und den 30 g weicher Butter zu einem glatten Teig mischen — nur so lange kneten, bis er zusammenkommt. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."}, "timer_minutes": 60},
+        {"text": {"en": "pound the 250 g of cold butter between two sheets of baking paper into a 20 cm square. it should bend without breaking and stay cold. back into the fridge with it.", "de": "Die 250 g kalte Butter zwischen zwei Lagen Backpapier zu einem 20-cm-Quadrat klopfen. Sie soll sich biegen lassen, ohne zu brechen, und kalt bleiben. Ab zurück in den Kühlschrank damit."}},
+        {"text": {"en": "roll the dough into a rectangle twice the size of the butter square, set the butter in the middle and fold the dough over it like closing a book. roll out to 60 cm long, fold in thirds like a letter. that's fold one. chill.", "de": "Den Teig zu einem Rechteck doppelt so groß wie die Butterplatte ausrollen, die Butter in die Mitte legen und den Teig darüberklappen wie ein Buch. Auf 60 cm Länge ausrollen, wie einen Brief in Drittel falten. Das war Tour eins. Kühlen."}, "timer_minutes": 30},
+        {"text": {"en": "repeat the roll-and-letter-fold two more times, with a 30-minute chill between each. if the butter ever feels soft or smears, stop and chill — the layers are worth your patience.", "de": "Das Ausrollen und Brieffalten noch zweimal wiederholen, dazwischen jeweils 30 Minuten kühlen. Wenn die Butter weich wird oder schmiert: sofort aufhören und kühlen — die Schichten sind deine Geduld wert."}, "timer_minutes": 30},
+        {"text": {"en": "roll the dough out to about 4 mm thick and cut long triangles with a 9 cm base. stretch each one gently, then roll from base to tip and set on lined trays, tips tucked under.", "de": "Den Teig etwa 4 mm dick ausrollen und lange Dreiecke mit 9 cm Basis schneiden. Jedes sanft in die Länge ziehen, dann von der Basis zur Spitze aufrollen und mit der Spitze nach unten auf Bleche mit Backpapier setzen."}},
+        {"text": {"en": "proof at warm room temperature until they wobble like little waterbeds when you nudge the tray. do not rush this. they're sleeping.", "de": "Bei warmer Raumtemperatur gehen lassen, bis sie wackeln wie kleine Wasserbetten, wenn du das Blech anstupst. Nicht hetzen. Sie schlafen."}, "timer_minutes": 120},
+        {"text": {"en": "heat the oven to 200°C, brush the croissants gently with the beaten egg and bake until deep mahogany and audibly crisp.", "de": "Den Ofen auf 200 °C vorheizen, die Croissants vorsichtig mit dem verquirlten Ei bestreichen und backen, bis sie tief mahagonibraun und hörbar knusprig sind."}, "timer_minutes": 18},
+        {"text": {"en": "cool on a rack for ten minutes if you can stand it. the crackle when you tear one open is the whole reward.", "de": "Zehn Minuten auf einem Gitter abkühlen lassen, falls du es aushältst. Das Knistern beim Aufreißen ist die ganze Belohnung."}}
+      ],
+      "tags": {"en": ["lamination", "weekend project", "bakery at home"], "de": ["Tourieren", "Wochenendprojekt", "Bäckerei zuhause"]}
+    },
+    {
+      "id": "croissants-chocolate",
+      "dish_id": "croissants",
+      "title": {"en": "pain au chocolat", "de": "Pain au Chocolat"},
+      "caption": {"en": "two chocolate bars, hiding in bed", "de": "zwei Schokoriegel, versteckt im Bett"},
+      "intro": {
+        "en": "the same laminated dough, the same long patient afternoon — but rolled into rectangles around batons of dark chocolate. when they come out of the oven the chocolate is still molten, and there is no version of you that waits for it to set. plan accordingly.",
+        "de": "Derselbe tourierte Teig, derselbe lange, geduldige Nachmittag — aber zu Rechtecken um Stangen aus Zartbitterschokolade gerollt. Wenn sie aus dem Ofen kommen, ist die Schokolade noch flüssig, und es gibt keine Version von dir, die wartet, bis sie fest wird. Plane entsprechend."
+      },
+      "variant": {"diet": "classic", "effort": "hard", "calorie": "le600"},
+      "contains": ["gluten", "dairy", "egg", "added-sugar", "caffeine", "high-fodmap"],
+      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "nut-free", "hard", "gt60", "le600", "bake"],
+      "meal": ["breakfast"],
+      "time_minutes": 240,
+      "servings": 12,
+      "calories_per_serving": 420,
+      "macros": {"calories": 420, "protein_g": 7, "carbs_g": 42, "fat_g": 24},
+      "ingredients": [
+        {"ingredient_id": "wheat-flour", "qty": 500, "unit": "g", "note": {"en": "plus more for rolling", "de": "plus etwas zum Ausrollen"}},
+        {"ingredient_id": "butter", "qty": 280, "unit": "g", "note": {"en": "30 g soft for the dough, 250 g cold for laminating", "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"}},
+        {"ingredient_id": "whole-milk", "qty": 140, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
+        {"ingredient_id": "sugar", "qty": 50, "unit": "g"},
+        {"ingredient_id": "yeast", "qty": 20, "unit": "g"},
+        {"ingredient_id": "salt", "qty": 2, "unit": "tsp"},
+        {"ingredient_id": "dark-chocolate", "qty": 200, "unit": "g", "note": {"en": "cut into 24 thin batons", "de": "in 24 dünne Stangen geschnitten"}},
+        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}}
+      ],
+      "steps": [
+        {"text": {"en": "make the dough: dissolve the yeast in the cold milk plus 140 ml cold water, then mix with the flour, sugar, salt and the 30 g of soft butter until smooth. flatten into a rectangle, wrap, and chill for an hour.", "de": "Den Teig ansetzen: Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen, dann mit Mehl, Zucker, Salz und den 30 g weicher Butter glatt verkneten. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."}, "timer_minutes": 60},
+        {"text": {"en": "pound the 250 g of cold butter into a 20 cm square between baking paper, lock it into the rolled-out dough, and give the dough three letter folds, chilling 30 minutes between each. cold hands, cold butter, no shortcuts.", "de": "Die 250 g kalte Butter zwischen Backpapier zu einem 20-cm-Quadrat klopfen, in den ausgerollten Teig einschlagen und dem Teig drei Brieftouren geben, dazwischen jeweils 30 Minuten kühlen. Kalte Hände, kalte Butter, keine Abkürzungen."}, "timer_minutes": 30},
+        {"text": {"en": "roll the finished dough to about 4 mm and cut it into twelve rectangles, roughly 8 by 15 cm.", "de": "Den fertigen Teig auf etwa 4 mm ausrollen und in zwölf Rechtecke schneiden, ungefähr 8 mal 15 cm."}},
+        {"text": {"en": "lay one chocolate baton across the short end of each rectangle, roll once to cover it, place the second baton in front of the seam and keep rolling into a snug little log. seam down on the tray.", "de": "Eine Schokostange ans kurze Ende jedes Rechtecks legen, einmal darüberrollen, die zweite Stange vor die Naht legen und zu einer kompakten kleinen Rolle weiterrollen. Mit der Naht nach unten aufs Blech."}},
+        {"text": {"en": "proof at warm room temperature until visibly puffed and wobbly when nudged.", "de": "Bei warmer Raumtemperatur gehen lassen, bis sie sichtbar aufgegangen sind und beim Anstupsen wackeln."}, "timer_minutes": 120},
+        {"text": {"en": "heat the oven to 200°C, brush with the beaten egg and bake until deep golden with chocolate just peeking out the ends.", "de": "Den Ofen auf 200 °C vorheizen, mit dem verquirlten Ei bestreichen und backen, bis sie tief goldbraun sind und die Schokolade gerade so an den Enden hervorschaut."}, "timer_minutes": 17},
+        {"text": {"en": "let them cool just long enough that the chocolate stops being lava. five minutes. maybe four.", "de": "Nur so lange abkühlen lassen, bis die Schokolade aufhört, Lava zu sein. Fünf Minuten. Vielleicht vier."}}
+      ],
+      "tags": {"en": ["lamination", "weekend project", "chocolate"], "de": ["Tourieren", "Wochenendprojekt", "Schokolade"]}
+    }
+  ]
+}

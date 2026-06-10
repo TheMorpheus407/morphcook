@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "categories": [
+    {"id": "dietary-matching", "name": {"en": "dietary matching", "de": "Ernährungs-Matching"}},
+    {"id": "recipe-visibility", "name": {"en": "recipe visibility", "de": "Rezept-Sichtbarkeit"}},
+    {"id": "features", "name": {"en": "features", "de": "Funktionen"}},
+    {"id": "troubleshooting", "name": {"en": "troubleshooting", "de": "Problemlösung"}}
+  ],
+  "entries": [
+    {
+      "id": "how-matching-works",
+      "category": "dietary-matching",
+      "question": {
+        "en": "how does morphcook know which recipes fit me?",
+        "de": "Woher weiß MorphCook, welche Rezepte zu mir passen?"
+      },
+      "answer": {
+        "en": "every recipe is honest about what's in it — a little list of contains-flags like dairy, gluten or pork. your profile keeps a list of things you avoid, and a recipe only shows up if the two lists don't overlap, plus it has to fit your time budget and calorie target. there's no ai guessing at runtime and nothing is improvised on your phone; it's simple set logic over carefully authored recipes. that's why you can actually trust what you see.",
+        "de": "Jedes Rezept trägt eine ehrliche Liste von Enthält-Markierungen wie Milchprodukte, Gluten oder Schweinefleisch. Dein Profil enthält eine Liste der Dinge, die du meidest — ein Rezept wird dir nur angezeigt, wenn sich die beiden Listen nicht überschneiden und es zusätzlich in dein Zeitbudget und Kalorienziel passt. Es gibt keine KI, die zur Laufzeit rät, und nichts wird auf deinem Handy improvisiert: nur einfache Mengenlogik über sorgfältig geschriebene Rezepte. Deshalb kannst du dem, was du siehst, wirklich vertrauen."
+      },
+      "keywords": {
+        "en": ["matching", "filter", "how it works", "profile", "flags", "algorithm"],
+        "de": ["Matching", "Filter", "Funktionsweise", "Profil", "Markierungen", "Algorithmus"]
+      }
+    },
+    {
+      "id": "compound-diets",
+      "category": "dietary-matching",
+      "question": {
+        "en": "what happens when i pick \"vegan\" or \"halal\" — is that one big filter?",
+        "de": "Was passiert, wenn ich „vegan“ oder „halal“ auswähle — ist das ein einziger großer Filter?"
+      },
+      "answer": {
+        "en": "it's a shortcut that quietly expands into the individual flags underneath. \"vegan\" unpacks into all the animal-derived stuff — meat, fish, egg, dairy, gelatin, honey — and \"halal\" unpacks into pork, alcohol and non-halal gelatin. you can also combine shortcuts or add single flags on top, like vegan plus nut-free. the matching always happens on the expanded list, so nothing slips through the cracks.",
+        "de": "Das ist eine Abkürzung, die sich im Hintergrund in einzelne Markierungen auffächert. „Vegan“ entfaltet sich in alles Tierische — Fleisch, Fisch, Ei, Milchprodukte, Gelatine, Honig — und „halal“ in Schweinefleisch, Alkohol und nicht-halal Gelatine. Du kannst Abkürzungen auch kombinieren oder einzelne Markierungen ergänzen, etwa vegan plus nussfrei. Das Matching läuft immer über die ausgepackte Liste, damit nichts durchrutscht."
+      },
+      "keywords": {
+        "en": ["vegan", "halal", "kosher", "vegetarian", "compound", "diet", "combine"],
+        "de": ["vegan", "halal", "koscher", "vegetarisch", "Kombination", "Ernährungsform"]
+      }
+    },
+    {
+      "id": "specific-avoidance",
+      "category": "dietary-matching",
+      "question": {
+        "en": "can i avoid one single ingredient, like cilantro or apples?",
+        "de": "Kann ich eine einzelne Zutat meiden, zum Beispiel Koriander oder Äpfel?"
+      },
+      "answer": {
+        "en": "yes — that's exactly what the specific-avoidance typeahead in your profile is for. type \"cilantro\" and every recipe containing it disappears from your world, no broad category needed. the ingredient dictionary is a tree, so avoiding a parent like \"cheese\" automatically covers parmesan, feta and all its other children. class avoidances and specific ones combine; any match hides the recipe.",
+        "de": "Ja — genau dafür gibt es die Zutaten-Suche in deinem Profil. Tipp „Koriander“ ein, und jedes Rezept damit verschwindet aus deiner Welt, ganz ohne grobe Kategorie. Das Zutatenverzeichnis ist ein Baum: Wenn du einen Oberbegriff wie „Käse“ meidest, sind Parmesan, Feta und alle anderen Unterzutaten automatisch mit abgedeckt. Klassen-Vermeidungen und einzelne Zutaten wirken zusammen — jeder Treffer blendet das Rezept aus."
+      },
+      "keywords": {
+        "en": ["avoid ingredient", "cilantro", "typeahead", "specific", "single ingredient", "exclude"],
+        "de": ["Zutat meiden", "Koriander", "einzelne Zutat", "ausschließen", "Suche"]
+      }
+    },
+    {
+      "id": "halal-kosher-note",
+      "category": "dietary-matching",
+      "question": {
+        "en": "are the halal and kosher recipes certified?",
+        "de": "Sind die Halal- und Koscher-Rezepte zertifiziert?"
+      },
+      "answer": {
+        "en": "no, and we're deliberate about the wording: we only ever say \"halal-compatible ingredients\" or \"kosher-compatible ingredients\", never \"certified\". certification is a property of sourcing — how an animal was slaughtered, who supervised production — and a recipe text on your phone can't promise any of that. what we can promise is that these recipes avoid the relevant flags, like pork, alcohol or non-halal gelatin. whether your actual groceries are certified is between you and your shop.",
+        "de": "Nein, und die Formulierung ist bewusst gewählt: Wir sprechen ausschließlich von „halal-kompatiblen Zutaten“ bzw. „koscher-kompatiblen Zutaten“, nie von „zertifiziert“. Zertifizierung ist eine Eigenschaft der Beschaffung — wie ein Tier geschlachtet wurde, wer die Herstellung beaufsichtigt hat — und ein Rezepttext auf deinem Handy kann das nicht garantieren. Was wir garantieren können: Diese Rezepte vermeiden die relevanten Markierungen wie Schweinefleisch, Alkohol oder nicht-halal Gelatine. Ob deine tatsächlichen Einkäufe zertifiziert sind, liegt zwischen dir und deinem Laden."
+      },
+      "keywords": {
+        "en": ["halal", "kosher", "certified", "certification", "compatible", "religious"],
+        "de": ["halal", "koscher", "zertifiziert", "Zertifizierung", "kompatibel", "religiös"]
+      }
+    },
+    {
+      "id": "lactose-vs-dairy",
+      "category": "dietary-matching",
+      "question": {
+        "en": "what's the difference between \"lactose-free\" and avoiding all dairy?",
+        "de": "Was ist der Unterschied zwischen „laktosefrei“ und dem Meiden aller Milchprodukte?"
+      },
+      "answer": {
+        "en": "in real life they're different things — lactose intolerance is about milk sugar, while a dairy allergy is about milk proteins, and plenty of aged cheeses are naturally almost lactose-free. in the app, honestly, the lactose-free shortcut currently errs on the safe side and hides everything flagged as dairy, hard parmesan included. we'd rather hide a cheese you could eat than show you one you can't. if that's too strict for you, skip the shortcut and avoid specific ingredients like milk and cream instead.",
+        "de": "Im echten Leben sind das zwei verschiedene Dinge — bei Laktoseintoleranz geht es um Milchzucker, bei einer Milchallergie um Milcheiweiß, und viele lang gereifte Käse sind von Natur aus fast laktosefrei. In der App geht die Abkürzung „laktosefrei“ ehrlich gesagt momentan auf Nummer sicher und blendet alles mit der Markierung Milchprodukte aus, harten Parmesan eingeschlossen. Lieber verstecken wir einen Käse, den du essen könntest, als dir einen zu zeigen, den du nicht verträgst. Wenn dir das zu streng ist, lass die Abkürzung weg und meide stattdessen gezielt Zutaten wie Milch und Sahne."
+      },
+      "keywords": {
+        "en": ["lactose", "dairy", "intolerance", "allergy", "milk", "cheese"],
+        "de": ["Laktose", "Milchprodukte", "Intoleranz", "Allergie", "Milch", "Käse"]
+      }
+    },
+    {
+      "id": "why-recipe-hidden",
+      "category": "recipe-visibility",
+      "question": {
+        "en": "why can't i see a recipe i know exists?",
+        "de": "Warum sehe ich ein Rezept nicht, von dem ich weiß, dass es existiert?"
+      },
+      "answer": {
+        "en": "a recipe stays hidden when any of four checks fails: it contains a flag you avoid, it uses a specific ingredient you've excluded, it takes longer than your time budget, or its calories sit too far from your target. the usual suspects are the quiet ones — a stock with celery, a sauce with a splash of wine. peek into your profile in settings and loosen the rule that's biting, or use the per-dish calorie override if that's the blocker.",
+        "de": "Ein Rezept bleibt verborgen, wenn eine von vier Prüfungen fehlschlägt: Es enthält eine Markierung, die du meidest, es nutzt eine gezielt ausgeschlossene Zutat, es dauert länger als dein Zeitbudget, oder seine Kalorien liegen zu weit von deinem Ziel entfernt. Die üblichen Verdächtigen sind die leisen — eine Brühe mit Sellerie, eine Sauce mit einem Schuss Wein. Schau in den Einstellungen in dein Profil und lockere die Regel, die gerade greift, oder nutze den Kalorien-Schalter direkt am Gericht, falls es daran liegt."
+      },
+      "keywords": {
+        "en": ["hidden", "missing", "can't find", "invisible", "recipe gone", "filtered"],
+        "de": ["versteckt", "fehlt", "nicht finden", "unsichtbar", "Rezept weg", "gefiltert"]
+      }
+    },
+    {
+      "id": "calorie-filter-override",
+      "category": "recipe-visibility",
+      "question": {
+        "en": "can i see versions of a dish outside my calorie target?",
+        "de": "Kann ich Varianten eines Gerichts außerhalb meines Kalorienziels sehen?"
+      },
+      "answer": {
+        "en": "yes. your calorie target is a hard filter by default, but every dish page has an override switch that reveals the versions sitting outside your range — for the days you want the rich one, no judgment. the override is per dish and doesn't change your profile, so the rest of the app keeps filtering as usual. flip it back off and the dish returns to your normal view.",
+        "de": "Ja. Dein Kalorienziel ist standardmäßig ein harter Filter, aber jede Gerichtseite hat einen Schalter, der die Varianten außerhalb deines Bereichs einblendet — für die Tage, an denen es die üppige Version sein soll, ganz ohne Urteil. Der Schalter gilt nur für dieses eine Gericht und ändert dein Profil nicht; der Rest der App filtert weiter wie gewohnt. Schalte ihn wieder aus, und das Gericht zeigt sich wie sonst."
+      },
+      "keywords": {
+        "en": ["calories", "override", "calorie target", "show all", "outside range"],
+        "de": ["Kalorien", "Schalter", "Kalorienziel", "alle anzeigen", "außerhalb"]
+      }
+    },
+    {
+      "id": "time-budget",
+      "category": "recipe-visibility",
+      "question": {
+        "en": "how does the time budget affect what i see?",
+        "de": "Wie wirkt sich das Zeitbudget darauf aus, was ich sehe?"
+      },
+      "answer": {
+        "en": "your time budget is a hard filter: recipes that take longer than it simply don't appear in your feed or search. that's on purpose — a recipe you don't have time for is just decoration. if your evenings suddenly got roomier, raise the budget in settings and the slower, lovelier things come back. many dishes also have a quicker sibling variant, so a tight budget often swaps the version rather than losing the dish.",
+        "de": "Dein Zeitbudget ist ein harter Filter: Rezepte, die länger dauern, tauchen in Feed und Suche schlicht nicht auf. Das ist Absicht — ein Rezept, für das dir die Zeit fehlt, ist nur Dekoration. Wenn deine Abende plötzlich mehr Luft haben, erhöh das Budget in den Einstellungen, und die langsameren, schöneren Dinge kommen zurück. Viele Gerichte haben außerdem eine schnellere Schwester-Variante — ein knappes Budget tauscht also oft nur die Version, statt das Gericht zu verlieren."
+      },
+      "keywords": {
+        "en": ["time", "budget", "minutes", "quick", "too long", "duration"],
+        "de": ["Zeit", "Budget", "Minuten", "schnell", "zu lang", "Dauer"]
+      }
+    },
+    {
+      "id": "unreachable-combos",
+      "category": "recipe-visibility",
+      "question": {
+        "en": "why is a variant option greyed out instead of just gone?",
+        "de": "Warum ist eine Varianten-Option ausgegraut statt einfach weg?"
+      },
+      "answer": {
+        "en": "because every variant is a fully written recipe, not a math trick — and some combinations simply haven't been written yet. when you've picked vegan and tap effort, a combo like vegan × pro might show disabled with a little note like \"no vegan × keto version yet\". we keep it visible so you know the gap is real and not a bug on your end. those gaps tell us what to author next.",
+        "de": "Weil jede Variante ein vollständig geschriebenes Rezept ist und kein Rechentrick — und manche Kombinationen schlicht noch nicht geschrieben wurden. Hast du etwa vegan gewählt und tippst auf Aufwand, kann eine Kombination wie vegan × aufwendig deaktiviert erscheinen, mit einem Hinweis wie „noch keine vegane Keto-Version“. Wir lassen sie sichtbar, damit du weißt, dass die Lücke echt ist und kein Fehler bei dir. Solche Lücken zeigen uns, was wir als Nächstes schreiben sollten."
+      },
+      "keywords": {
+        "en": ["greyed out", "disabled", "combination", "unavailable", "variant missing"],
+        "de": ["ausgegraut", "deaktiviert", "Kombination", "nicht verfügbar", "Variante fehlt"]
+      }
+    },
+    {
+      "id": "variant-switching",
+      "category": "features",
+      "question": {
+        "en": "how do i switch between versions of a dish?",
+        "de": "Wie wechsle ich zwischen Versionen eines Gerichts?"
+      },
+      "answer": {
+        "en": "on any dish page you'll see one slim row per dimension — diet, effort, calorie level — each collapsed to show the version you're currently on, which starts from your profile. tap a row and the alternatives unfold as chips; pick one and the ingredients and method morph in place, with the changed lines flashing briefly so you can see what moved. it's the same dish the whole time, just rewritten for a different body or a different evening.",
+        "de": "Auf jeder Gerichtseite siehst du eine schmale Zeile pro Dimension — Ernährungsform, Aufwand, Kalorienstufe — jeweils eingeklappt auf die Version, die du gerade hast und die aus deinem Profil kommt. Tipp auf eine Zeile, und die Alternativen klappen als Chips auf; wähl eine aus, und Zutaten und Zubereitung verwandeln sich an Ort und Stelle, wobei die geänderten Zeilen kurz aufleuchten. Es bleibt die ganze Zeit dasselbe Gericht — nur neu geschrieben für einen anderen Körper oder einen anderen Abend."
+      },
+      "keywords": {
+        "en": ["variant", "switch", "version", "diet", "effort", "dimension"],
+        "de": ["Variante", "wechseln", "Version", "Ernährungsform", "Aufwand", "Dimension"]
+      }
+    },
+    {
+      "id": "cookbook-saving",
+      "category": "features",
+      "question": {
+        "en": "when i save a recipe, what exactly gets saved?",
+        "de": "Wenn ich ein Rezept speichere, was genau wird gespeichert?"
+      },
+      "answer": {
+        "en": "you save the specific variant you were looking at — your vegan döner, not döner-in-general. that's the whole point of the cookbook: it should read like a book of your recipes, not a pile of dishes you'd still have to configure every time. if you later fall for a different variant of the same dish, save that one too; they can live side by side.",
+        "de": "Du speicherst genau die Variante, die du gerade angesehen hast — deinen veganen Döner, nicht Döner im Allgemeinen. Genau das ist die Idee des Kochbuchs: Es soll sich wie ein Buch deiner Rezepte lesen, nicht wie ein Stapel Gerichte, die du jedes Mal neu einstellen müsstest. Verliebst du dich später in eine andere Variante desselben Gerichts, speichere die einfach dazu — sie können nebeneinander leben."
+      },
+      "keywords": {
+        "en": ["save", "cookbook", "favorite", "bookmark", "variant", "saved recipes"],
+        "de": ["speichern", "Kochbuch", "Favorit", "merken", "Variante", "gespeicherte Rezepte"]
+      }
+    },
+    {
+      "id": "shopping-aggregation",
+      "category": "features",
+      "question": {
+        "en": "how does the shopping list combine ingredients from several recipes?",
+        "de": "Wie fasst die Einkaufsliste Zutaten aus mehreren Rezepten zusammen?"
+      },
+      "answer": {
+        "en": "it does the boring arithmetic for you: garlic 2 cloves from one recipe plus garlic 3 cloves from another becomes one line saying 5 cloves. when units are compatible it converts them too — milliliters and tablespoons of the same liquid get merged instead of listed twice. everything is deduped and grouped by aisle, so you walk the store once instead of zigzagging. you just pick the recipes; the list sorts itself out.",
+        "de": "Sie übernimmt das langweilige Rechnen für dich: 2 Zehen Knoblauch aus einem Rezept plus 3 Zehen aus einem anderen werden zu einer Zeile mit 5 Zehen. Bei kompatiblen Einheiten rechnet sie auch um — Milliliter und Esslöffel derselben Flüssigkeit werden zusammengeführt statt doppelt gelistet. Alles wird dedupliziert und nach Supermarkt-Gang gruppiert, damit du den Laden einmal abläufst statt im Zickzack. Du wählst nur die Rezepte; die Liste sortiert sich selbst."
+      },
+      "keywords": {
+        "en": ["shopping list", "aggregate", "combine", "units", "conversion", "aisle"],
+        "de": ["Einkaufsliste", "zusammenfassen", "kombinieren", "Einheiten", "Umrechnung", "Gang"]
+      }
+    },
+    {
+      "id": "meal-planning",
+      "category": "features",
+      "question": {
+        "en": "how does the weekly meal planner work?",
+        "de": "Wie funktioniert der Wochenplaner?"
+      },
+      "answer": {
+        "en": "it's a simple grid — monday through sunday, breakfast, lunch and dinner. tap any slot to drop in a recipe from your cookbook or search, drag things between slots when the week changes its mind, and export the whole plan to the shopping list with one tap. there's no auto-planning and no macro spreadsheet hiding underneath; it's a planner, not a coach.",
+        "de": "Es ist ein einfaches Raster — Montag bis Sonntag, Frühstück, Mittag- und Abendessen. Tipp auf ein Feld, um ein Rezept aus deinem Kochbuch oder der Suche einzusetzen, zieh Einträge zwischen den Feldern hin und her, wenn die Woche es sich anders überlegt, und exportiere den ganzen Plan mit einem Tipp in die Einkaufsliste. Es gibt keine automatische Planung und keine versteckte Makro-Tabelle darunter — es ist ein Planer, kein Coach."
+      },
+      "keywords": {
+        "en": ["meal plan", "weekly", "planner", "grid", "drag", "export"],
+        "de": ["Wochenplan", "Essensplan", "Planer", "Raster", "verschieben", "exportieren"]
+      }
+    },
+    {
+      "id": "cook-mode",
+      "category": "features",
+      "question": {
+        "en": "what does cook mode do?",
+        "de": "Was macht der Kochmodus?"
+      },
+      "answer": {
+        "en": "cook mode turns the recipe into a dark, full-screen, one-step-at-a-time view built for messy hands — big text, prev/next, a servings scaler, and a timer on the steps that need one. you can pause mid-cooking and the app remembers exactly where you were. when a timer finishes, the screen can flash coral and teal as a visual alert, made for deaf and hard-of-hearing cooks; you can turn it on or off in settings, and it respects your reduce-motion preference. there's also an optional quick-tap gesture to advance steps with one thumb.",
+        "de": "Der Kochmodus verwandelt das Rezept in eine dunkle Vollbild-Ansicht, ein Schritt nach dem anderen, gebaut für klebrige Hände — große Schrift, vor und zurück, ein Portionsregler und ein Timer bei den Schritten, die einen brauchen. Du kannst mitten im Kochen pausieren, und die App merkt sich genau, wo du warst. Wenn ein Timer abläuft, kann der Bildschirm in Koralle und Petrol aufblinken — ein visueller Alarm für gehörlose und schwerhörige Köch:innen; das schaltest du in den Einstellungen ein oder aus, und es respektiert deine Einstellung für reduzierte Bewegung. Optional gibt es auch eine Tipp-Geste, um mit einem Daumen zum nächsten Schritt zu springen."
+      },
+      "keywords": {
+        "en": ["cook mode", "timer", "steps", "flash alert", "accessibility", "deaf", "hands-free"],
+        "de": ["Kochmodus", "Timer", "Schritte", "Blinkalarm", "Barrierefreiheit", "gehörlos"]
+      }
+    },
+    {
+      "id": "backup-export",
+      "category": "features",
+      "question": {
+        "en": "how do i back up my data?",
+        "de": "Wie sichere ich meine Daten?"
+      },
+      "answer": {
+        "en": "go to settings → backup and the app writes two files side by side: morphcook-backup.json, which is human-readable, and morphcook-backup.json.gz, which is the same thing gzip-compressed to a fraction of the size. both go through your phone's share sheet, so you can save them to files, a drive folder, an email to yourself — wherever you trust. import handles either file and auto-detects the format. since morphcook has no cloud and no account, this file is your data; keeping a copy somewhere safe is genuinely worth the thirty seconds.",
+        "de": "Geh zu Einstellungen → Backup, und die App erzeugt zwei Dateien nebeneinander: morphcook-backup.json, gut lesbar, und morphcook-backup.json.gz — dasselbe, nur per GZip auf einen Bruchteil der Größe komprimiert. Beide laufen über das Teilen-Menü deines Handys, du kannst sie also in Dateien, einen Cloud-Ordner oder eine Mail an dich selbst legen — wohin auch immer du vertraust. Der Import nimmt beide Dateien und erkennt das Format automatisch. Da MorphCook keine Cloud und kein Konto hat, ist diese Datei deine Daten — eine Kopie an einem sicheren Ort ist die dreißig Sekunden wirklich wert."
+      },
+      "keywords": {
+        "en": ["backup", "export", "share", "file", "json", "save data"],
+        "de": ["Backup", "Sicherung", "exportieren", "teilen", "Datei", "Daten sichern"]
+      }
+    },
+    {
+      "id": "backup-encryption",
+      "category": "features",
+      "question": {
+        "en": "is my backup encrypted?",
+        "de": "Ist mein Backup verschlüsselt?"
+      },
+      "answer": {
+        "en": "it can be: set a password when exporting and the .json file gets encrypted with aes-256-gcm, a properly strong standard — your dietary profile and plans are worth that. one thing to know: the compressed .json.gz file stays unencrypted for compatibility, so if you want everything locked, share only the encrypted .json. and please write your password down somewhere real, because there is no recovery — no account, no reset email, no backdoor. a forgotten password means that backup stays sealed forever.",
+        "de": "Es kann: Setz beim Export ein Passwort, und die .json-Datei wird mit AES-256-GCM verschlüsselt — einem richtig starken Standard, und dein Ernährungsprofil ist das wert. Eines solltest du wissen: Die komprimierte .json.gz-Datei bleibt aus Kompatibilitätsgründen unverschlüsselt — wenn alles abgeschlossen sein soll, teile nur die verschlüsselte .json. Und bitte schreib dir das Passwort irgendwo wirklich auf, denn es gibt keine Wiederherstellung — kein Konto, keine Reset-Mail, keine Hintertür. Ein vergessenes Passwort heißt: Dieses Backup bleibt für immer versiegelt."
+      },
+      "keywords": {
+        "en": ["encryption", "password", "aes", "secure", "backup", "privacy"],
+        "de": ["Verschlüsselung", "Passwort", "AES", "sicher", "Backup", "Privatsphäre"]
+      }
+    },
+    {
+      "id": "shopping-insights",
+      "category": "features",
+      "question": {
+        "en": "what are shopping insights?",
+        "de": "Was sind die Einkaufs-Einblicke?"
+      },
+      "answer": {
+        "en": "it's a little dashboard tucked into settings that looks at what you've been adding to your shopping lists over time. you get a variety score (how many unique ingredients you actually cook with), your most-added ingredients with counts, and a seasonal breakdown by month. it's surprisingly good at gentle truths — like discovering you've bought garlic forty times but a vegetable only twice. everything is computed on your phone from your own lists; nothing leaves the device.",
+        "de": "Das ist ein kleines Dashboard in den Einstellungen, das anschaut, was du über die Zeit auf deine Einkaufslisten gesetzt hast. Du bekommst einen Vielfalts-Wert (mit wie vielen verschiedenen Zutaten du wirklich kochst), deine meistgekauften Zutaten mit Häufigkeit und eine saisonale Aufschlüsselung nach Monat. Es ist erstaunlich gut in sanften Wahrheiten — etwa der Entdeckung, dass du vierzigmal Knoblauch gekauft hast, ein bestimmtes Gemüse aber nur zweimal. Alles wird auf deinem Handy aus deinen eigenen Listen berechnet; nichts verlässt das Gerät."
+      },
+      "keywords": {
+        "en": ["insights", "analytics", "variety score", "statistics", "shopping patterns"],
+        "de": ["Einblicke", "Statistik", "Vielfalt", "Auswertung", "Einkaufsverhalten"]
+      }
+    },
+    {
+      "id": "ingredient-guide-feature",
+      "category": "features",
+      "question": {
+        "en": "what's the \"learn more\" button next to some ingredients?",
+        "de": "Was ist der „Mehr erfahren“-Knopf neben manchen Zutaten?"
+      },
+      "answer": {
+        "en": "that opens the ingredient guide — a small kitchen reference for the ingredients that tend to raise eyebrows, like tahini, miso paste or shirataki noodles. each entry tells you what the thing actually is, how to use it well, how to store it, and where in a store you'll realistically find it. it lives in the app like everything else, so it works offline. recipes shouldn't quietly assume you already know everything.",
+        "de": "Der öffnet den Zutaten-Guide — ein kleines Küchen-Nachschlagewerk für die Zutaten, die gern Stirnrunzeln auslösen, etwa Tahin, Misopaste oder Shirataki-Nudeln. Jeder Eintrag erklärt dir, was das Ding eigentlich ist, wie du es gut einsetzt, wie du es lagerst und wo du es im Laden realistischerweise findest. Er steckt wie alles andere in der App und funktioniert offline. Rezepte sollten nicht stillschweigend voraussetzen, dass du schon alles kennst."
+      },
+      "keywords": {
+        "en": ["ingredient guide", "learn more", "reference", "unknown ingredient", "what is"],
+        "de": ["Zutaten-Guide", "mehr erfahren", "Nachschlagewerk", "unbekannte Zutat", "was ist"]
+      }
+    },
+    {
+      "id": "restore-failed",
+      "category": "troubleshooting",
+      "question": {
+        "en": "my backup won't restore — what now?",
+        "de": "Mein Backup lässt sich nicht wiederherstellen — was nun?"
+      },
+      "answer": {
+        "en": "first, read the message the app gives you, because it tries to be specific: \"this file is not a valid morphcook backup.\" means you picked the wrong file, while \"backup file is corrupted and cannot be restored.\" means the file got damaged somewhere along the way — cloud sync and messengers occasionally mangle files. remember that export always created two siblings, a .json and a .json.gz; if one fails, try the other copy from wherever you saved it. if the backup is encrypted, the app will ask for your password before anything else. restoring never touches the built-in recipes, so the worst case is your saved data, not the app itself.",
+        "de": "Lies zuerst die Meldung, die die App dir gibt — sie versucht, konkret zu sein: „Diese Datei ist kein gültiges MorphCook-Backup.“ heißt, du hast die falsche Datei erwischt, während „Die Backup-Datei ist beschädigt und kann nicht wiederhergestellt werden.“ bedeutet, dass die Datei unterwegs Schaden genommen hat — Cloud-Sync und Messenger verstümmeln gelegentlich Dateien. Denk daran, dass der Export immer zwei Geschwister erzeugt hat, eine .json und eine .json.gz; wenn eine scheitert, probier die andere Kopie von dort, wo du sie abgelegt hast. Ist das Backup verschlüsselt, fragt die App zuerst nach deinem Passwort. Die Wiederherstellung rührt die mitgelieferten Rezepte nie an — im schlimmsten Fall geht es um deine gespeicherten Daten, nicht um die App selbst."
+      },
+      "keywords": {
+        "en": ["restore", "import", "failed", "corrupted", "invalid", "backup error"],
+        "de": ["wiederherstellen", "Import", "fehlgeschlagen", "beschädigt", "ungültig", "Backup-Fehler"]
+      }
+    },
+    {
+      "id": "wrong-password",
+      "category": "troubleshooting",
+      "question": {
+        "en": "it says \"Incorrect password. Please try again.\" but i'm sure it's right",
+        "de": "Es heißt „Falsches Passwort. Bitte versuche es erneut.“ — aber ich bin sicher, dass es stimmt"
+      },
+      "answer": {
+        "en": "that exact message — \"Incorrect password. Please try again.\" — means the file opened fine but the password didn't unlock it. check the quiet saboteurs first: caps lock, a trailing space your keyboard auto-added, a different keyboard layout, or autocorrect having opinions. also make sure this is the password you set for this particular backup; older exports may have used an earlier one. we have to be straight with you: there's no recovery if it's truly forgotten — but the unencrypted .json.gz that was exported alongside might still save your day.",
+        "de": "Genau diese Meldung — „Falsches Passwort. Bitte versuche es erneut.“ — heißt: Die Datei ließ sich öffnen, aber das Passwort hat sie nicht entsperrt. Prüf zuerst die leisen Saboteure: Feststelltaste, ein Leerzeichen, das deine Tastatur angehängt hat, ein anderes Tastaturlayout oder eine Autokorrektur mit eigener Meinung. Stell auch sicher, dass es das Passwort für genau dieses Backup ist — ältere Exporte können ein früheres gehabt haben. Wir müssen ehrlich sein: Wenn es wirklich vergessen ist, gibt es keine Wiederherstellung — aber die unverschlüsselte .json.gz, die beim Export mit erzeugt wurde, kann dir den Tag noch retten."
+      },
+      "keywords": {
+        "en": ["wrong password", "incorrect password", "decrypt", "locked", "forgot password"],
+        "de": ["falsches Passwort", "entschlüsseln", "gesperrt", "Passwort vergessen"]
+      }
+    },
+    {
+      "id": "search-no-results",
+      "category": "troubleshooting",
+      "question": {
+        "en": "why does my search come up empty?",
+        "de": "Warum liefert meine Suche keine Treffer?"
+      },
+      "answer": {
+        "en": "two possible reasons. either the dish genuinely isn't in the corpus yet — in that case your search is quietly noted on your device as a content request, so empty searches actually help us decide what to write next. or the dish exists but every variant is filtered out by your profile: avoid-flags, an excluded ingredient, time budget or calorie target. try the search again after loosening a filter in settings, and check your spelling in the language you're searching in.",
+        "de": "Zwei mögliche Gründe. Entweder gibt es das Gericht im Bestand wirklich noch nicht — dann wird deine Suche lokal auf deinem Gerät als Inhaltswunsch vermerkt, leere Suchen helfen uns also tatsächlich bei der Entscheidung, was wir als Nächstes schreiben. Oder das Gericht existiert, aber jede Variante wird von deinem Profil ausgefiltert: Vermeidungs-Markierungen, eine ausgeschlossene Zutat, Zeitbudget oder Kalorienziel. Probier die Suche noch einmal, nachdem du in den Einstellungen einen Filter gelockert hast, und prüf die Schreibweise in der Sprache, in der du suchst."
+      },
+      "keywords": {
+        "en": ["search", "no results", "empty", "not found", "missing dish"],
+        "de": ["Suche", "keine Treffer", "leer", "nicht gefunden", "Gericht fehlt"]
+      }
+    },
+    {
+      "id": "reset-profile",
+      "category": "troubleshooting",
+      "question": {
+        "en": "how do i reset or redo my dietary profile?",
+        "de": "Wie setze ich mein Ernährungsprofil zurück oder stelle es neu ein?"
+      },
+      "answer": {
+        "en": "settings holds the full profile editor — every diet shortcut, every avoided ingredient, your calorie target and time budget, all editable any time, no need to redo onboarding. changes apply instantly, so recipes appear or disappear the moment you flip something. clearing your avoidances doesn't touch your cookbook, meal plan or history; those are yours and stay put. if you want a safety net before a big rework, export a backup first.",
+        "de": "In den Einstellungen findest du den vollständigen Profil-Editor — jede Ernährungs-Abkürzung, jede gemiedene Zutat, dein Kalorienziel und Zeitbudget, alles jederzeit änderbar, ganz ohne neues Onboarding. Änderungen wirken sofort: Rezepte tauchen auf oder verschwinden in dem Moment, in dem du etwas umstellst. Das Leeren deiner Vermeidungen rührt Kochbuch, Wochenplan und Verlauf nicht an — die gehören dir und bleiben, wo sie sind. Wenn du vor einem großen Umbau ein Sicherheitsnetz willst, exportiere vorher ein Backup."
+      },
+      "keywords": {
+        "en": ["reset", "profile", "edit", "change diet", "start over", "settings"],
+        "de": ["zurücksetzen", "Profil", "bearbeiten", "Ernährung ändern", "neu anfangen", "Einstellungen"]
+      }
+    }
+  ]
+}

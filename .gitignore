@@ -1,0 +1,36 @@
+# Flutter / Dart
+**/build/
+**/.dart_tool/
+**/.pub-cache/
+**/.pub/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/doc/api/
+
+# Android
+**/android/local.properties
+**/android/.gradle/
+**/android/captures/
+**/android/key.properties
+**/*.keystore
+**/*.jks
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/.last_build_id
+
+# IDE
+**/.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit; rotate if it ever happens
+**/.env
+**/.env.*

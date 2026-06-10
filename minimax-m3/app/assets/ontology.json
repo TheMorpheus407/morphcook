@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "contains_flags": [
+    {"id": "pork", "label": {"en": "pork", "de": "Schweinefleisch"}, "category": "meat"},
+    {"id": "beef", "label": {"en": "beef", "de": "Rindfleisch"}, "category": "meat"},
+    {"id": "lamb", "label": {"en": "lamb", "de": "Lamm"}, "category": "meat"},
+    {"id": "poultry", "label": {"en": "poultry", "de": "Geflügel"}, "category": "meat"},
+    {"id": "fish", "label": {"en": "fish", "de": "Fisch"}, "category": "seafood"},
+    {"id": "shellfish", "label": {"en": "shellfish", "de": "Schalentiere"}, "category": "seafood"},
+    {"id": "molluscs", "label": {"en": "molluscs", "de": "Weichtiere"}, "category": "seafood"},
+    {"id": "egg", "label": {"en": "egg", "de": "Ei"}, "category": "animal"},
+    {"id": "dairy", "label": {"en": "dairy", "de": "Milchprodukte"}, "category": "animal"},
+    {"id": "gluten", "label": {"en": "gluten", "de": "Gluten"}, "category": "grain"},
+    {"id": "soy", "label": {"en": "soy", "de": "Soja"}, "category": "legume"},
+    {"id": "peanuts", "label": {"en": "peanuts", "de": "Erdnüsse"}, "category": "nut"},
+    {"id": "tree-nuts", "label": {"en": "tree nuts", "de": "Schalenfrüchte"}, "category": "nut"},
+    {"id": "almonds", "label": {"en": "almonds", "de": "Mandeln"}, "category": "nut", "parent": "tree-nuts"},
+    {"id": "walnuts", "label": {"en": "walnuts", "de": "Walnüsse"}, "category": "nut", "parent": "tree-nuts"},
+    {"id": "pistachios", "label": {"en": "pistachios", "de": "Pistazien"}, "category": "nut", "parent": "tree-nuts"},
+    {"id": "sesame", "label": {"en": "sesame", "de": "Sesam"}, "category": "seed"},
+    {"id": "mustard", "label": {"en": "mustard", "de": "Senf"}, "category": "spice"},
+    {"id": "celery", "label": {"en": "celery", "de": "Sellerie"}, "category": "vegetable"},
+    {"id": "lupin", "label": {"en": "lupin", "de": "Lupinen"}, "category": "legume"},
+    {"id": "sulphites", "label": {"en": "sulphites", "de": "Sulfite"}, "category": "additive"},
+    {"id": "alcohol", "label": {"en": "alcohol", "de": "Alkohol"}, "category": "additive"},
+    {"id": "caffeine", "label": {"en": "caffeine", "de": "Koffein"}, "category": "additive"},
+    {"id": "added-sugar", "label": {"en": "added sugar", "de": "Zugesetzter Zucker"}, "category": "additive"},
+    {"id": "high-fodmap", "label": {"en": "high FODMAP", "de": "Hoher FODMAP-Gehalt"}, "category": "digestive"},
+    {"id": "gelatin-non-halal", "label": {"en": "non-halal gelatin", "de": "Nicht-halal Gelatine"}, "category": "animal"},
+    {"id": "gelatin-non-kosher", "label": {"en": "non-kosher gelatin", "de": "Nicht-koschere Gelatine"}, "category": "animal"},
+    {"id": "honey", "label": {"en": "honey", "de": "Honig"}, "category": "animal"},
+    {"id": "lactose", "label": {"en": "lactose", "de": "Laktose"}, "category": "animal"}
+  ],
+  "compound_flags": {
+    "vegan": {
+      "label": {"en": "vegan", "de": "vegan"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "lactose", "gelatin-non-halal", "gelatin-non-kosher", "honey"]
+    },
+    "vegetarian": {
+      "label": {"en": "vegetarian", "de": "vegetarisch"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    "pescatarian": {
+      "label": {"en": "pescatarian", "de": "pescetarisch"},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal"]
+    },
+    "halal": {
+      "label": {"en": "halal-compatible", "de": "halal-kompatibel"},
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    "kosher": {
+      "label": {"en": "kosher-compatible", "de": "koscher-kompatibel"},
+      "expands_to": ["pork", "shellfish", "gelatin-non-kosher"]
+    },
+    "low-fodmap": {
+      "label": {"en": "low FODMAP", "de": "FODMAP-arm"},
+      "expands_to": ["high-fodmap"]
+    },
+    "sugar-free": {
+      "label": {"en": "sugar-free", "de": "zuckerfrei"},
+      "expands_to": ["added-sugar"]
+    },
+    "lactose-free": {
+      "label": {"en": "lactose-free", "de": "laktosefrei"},
+      "expands_to": ["lactose"]
+    },
+    "nut-free": {
+      "label": {"en": "nut-free", "de": "nussfrei"},
+      "expands_to": ["peanuts", "tree-nuts", "almonds", "walnuts", "pistachios"]
+    },
+    "gluten-free": {
+      "label": {"en": "gluten-free", "de": "glutenfrei"},
+      "expands_to": ["gluten"]
+    }
+  },
+  "attributes": {
+    "effort": {
+      "values": ["easy", "medium", "hard"],
+      "labels": {
+        "easy": {"en": "easy", "de": "einfach"},
+        "medium": {"en": "medium", "de": "mittel"},
+        "hard": {"en": "hard", "de": "anspruchsvoll"}
+      }
+    },
+    "time_bucket": {
+      "values": ["≤15", "≤30", "≤60", ">60"],
+      "labels": {
+        "≤15": {"en": "under 15 min", "de": "unter 15 Min"},
+        "≤30": {"en": "under 30 min", "de": "unter 30 Min"},
+        "≤60": {"en": "under 60 min", "de": "unter 60 Min"},
+        ">60": {"en": "over 60 min", "de": "über 60 Min"}
+      }
+    },
+    "calorie_bucket": {
+      "values": ["≤400", "≤600", "≤800", ">800"],
+      "labels": {
+        "≤400": {"en": "light (≤400)", "de": "leicht (≤400)"},
+        "≤600": {"en": "moderate (≤600)", "de": "mittel (≤600)"},
+        "≤800": {"en": "hearty (≤800)", "de": "kräftig (≤800)"},
+        ">800": {"en": "indulgent (>800)", "de": "üppig (>800)"}
+      }
+    },
+    "meal_slot": {
+      "values": ["breakfast", "lunch", "dinner", "snack", "dessert"],
+      "labels": {
+        "breakfast": {"en": "breakfast", "de": "Frühstück"},
+        "lunch": {"en": "lunch", "de": "Mittagessen"},
+        "dinner": {"en": "dinner", "de": "Abendessen"},
+        "snack": {"en": "snack", "de": "Snack"},
+        "dessert": {"en": "dessert", "de": "Nachtisch"}
+      }
+    }
+  },
+  "techniques": [
+    {"id": "bake", "label": {"en": "baked", "de": "gebacken"}},
+    {"id": "sauté", "label": {"en": "sautéed", "de": "sautiert"}},
+    {"id": "simmer", "label": {"en": "simmered", "de": "geköchelt"}},
+    {"id": "raw", "label": {"en": "raw", "de": "roh"}},
+    {"id": "grill", "label": {"en": "grilled", "de": "gegrillt"}},
+    {"id": "fry", "label": {"en": "fried", "de": "frittiert"}},
+    {"id": "steam", "label": {"en": "steamed", "de": "gedämpft"}},
+    {"id": "roast", "label": {"en": "roasted", "de": "geröstet"}},
+    {"id": "broil", "label": {"en": "broiled", "de": "übergrillt"}},
+    {"id": "pan-fry", "label": {"en": "pan-fried", "de": "pfannengebraten"}},
+    {"id": "deep-fry", "label": {"en": "deep-fried", "de": "frittiert"}},
+    {"id": "stir-fry", "label": {"en": "stir-fried", "de": "kurz gebraten"}},
+    {"id": "poach", "label": {"en": "poached", "de": "pochiert"}},
+    {"id": "blanch", "label": {"en": "blanched", "de": "blanchiert"}}
+  ]
+}

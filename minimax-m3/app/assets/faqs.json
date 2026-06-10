@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "categories": [
+    {"id": "matching", "label": {"en": "matching & filters", "de": "matching & filter"}},
+    {"id": "visibility", "label": {"en": "what you see", "de": "was du siehst"}},
+    {"id": "cooking", "label": {"en": "cooking", "de": "kochen"}},
+    {"id": "shopping", "label": {"en": "shopping", "de": "einkaufen"}},
+    {"id": "backup", "label": {"en": "backup", "de": "backup"}},
+    {"id": "philosophy", "label": {"en": "philosophy", "de": "philosophie"}}
+  ],
+  "entries": [
+    {
+      "id": "why-no-substitutions",
+      "category": "philosophy",
+      "question": {"en": "Why no substitutions, just separate recipes?", "de": "Warum keine Substitutionen, sondern eigene Rezepte?"},
+      "answer": {
+        "en": "Substitutions punish you for how you eat. A swap is rarely as good as a recipe designed for that body from the start. Each variant here is its own recipe — fully written, fully balanced, fully yours.",
+        "de": "Substitutionen bestrafen dich für deine Ernährung. Ein Ersatz ist selten so gut wie ein von Anfang an dafür entworfenes Rezept. Jede Variante hier ist ein eigenes Rezept — vollständig geschrieben, ausbalanciert, ganz deins."
+      },
+      "related_topics": ["matching", "visibility"]
+    },
+    {
+      "id": "how-matching-works",
+      "category": "matching",
+      "question": {"en": "How does matching work?", "de": "Wie funktioniert das matching?"},
+      "answer": {
+        "en": "Each recipe carries flags for what it contains. Your profile carries flags for what to avoid. If they don't intersect, the recipe is visible to you. Same for specific ingredients you've added by name.",
+        "de": "Jedes Rezept trägt Flags für seine Zutaten. Dein Profil trägt Flags für das, was du meidest. Wenn diese sich nicht überschneiden, ist das Rezept für dich sichtbar. Gleiches gilt für Zutaten, die du namentlich vermeidest."
+      },
+      "related_topics": ["visibility"]
+    },
+    {
+      "id": "why-no-results",
+      "category": "matching",
+      "question": {"en": "Why don't I see any recipes for this dish?", "de": "Warum sehe ich für dieses Gericht keine Rezepte?"},
+      "answer": {
+        "en": "No variant of that dish currently passes all your filters. Loosen your effort cap or your time budget, or remove a specific ingredient avoidance. If a variant has never been written, we mark the combination as disabled with a note.",
+        "de": "Aktuell besteht keine Variante dieses Gerichts deine Filter. Lockere die Aufwandsgrenze, erhöhe das Zeitbudget oder entferne eine spezifische Zutatenvermeidung. Falls eine Variante nie geschrieben wurde, kennzeichnen wir die Kombination als deaktiviert mit Hinweis."
+      },
+      "related_topics": ["visibility", "matching"]
+    },
+    {
+      "id": "calorie-override",
+      "category": "matching",
+      "question": {"en": "I want to ignore my calorie target for one dish.", "de": "Ich möchte mein Kalorienziel für ein einzelnes Gericht ignorieren."},
+      "answer": {
+        "en": "On any dish detail, tap the calorie chip in the variant row to switch off the filter for just that page. Your overall target stays the same.",
+        "de": "Tippe in der Variantenleiste eines Gerichts auf das Kalorien-Chip, um den Filter nur für diese Seite zu deaktivieren. Dein globales Ziel bleibt unverändert."
+      },
+      "related_topics": ["visibility"]
+    },
+    {
+      "id": "halal-certification",
+      "category": "matching",
+      "question": {"en": "Is the halal label a certification?", "de": "Ist das Halal-Label eine Zertifizierung?"},
+      "answer": {
+        "en": "No. We only surface recipes whose ingredients are halal-compatible. Actual halal certification depends on sourcing — supervision, slaughter — and is the responsibility of the cook and supplier.",
+        "de": "Nein. Wir zeigen nur Rezepte mit halal-kompatiblen Zutaten an. Echte Halal-Zertifizierung hängt von der Herkunft ab — Aufsicht, Schlachtung — und liegt bei Koch und Lieferant."
+      },
+      "related_topics": ["philosophy"]
+    },
+    {
+      "id": "cook-mode-tap",
+      "category": "cooking",
+      "question": {"en": "Does cook mode have a one-tap advance?", "de": "Hat der Kochmodus ein Ein-Tipp-Weiter?"},
+      "answer": {
+        "en": "Yes. Enable quick-tap in settings; a single tap on the step content advances to the next step with a brief haptic confirmation. There's a 300ms debounce so accidental taps don't skip ahead.",
+        "de": "Ja. Aktiviere Schnell-Tipp in den Einstellungen; ein einzelner Tipp auf den Schritt wechselt zum nächsten mit kurzer Haptik. Es gibt eine 300-ms-Entprellung, damit versehentliche Tipps nichts überspringen."
+      },
+      "related_topics": ["cooking"]
+    },
+    {
+      "id": "cook-mode-visual",
+      "category": "cooking",
+      "question": {"en": "Why does the screen flash when a timer ends?", "de": "Warum blinkt der Bildschirm, wenn ein Timer endet?"},
+      "answer": {
+        "en": "It's a visual accessibility alert for deaf and hard-of-hearing cooks. The flash respects your reduce-motion preference, and you can turn it off in settings.",
+        "de": "Es ist ein visueller Hinweis für gehörlose und schwerhörige Köche. Der Blitz respektiert deine Reduzierte-Bewegung-Einstellung und lässt sich in den Einstellungen abschalten."
+      },
+      "related_topics": ["cooking"]
+    },
+    {
+      "id": "shopping-aggregate",
+      "category": "shopping",
+      "question": {"en": "How does the shopping list combine ingredients?", "de": "Wie kombiniert die Einkaufsliste Zutaten?"},
+      "answer": {
+        "en": "Same ingredient, same compatible unit family: we add. 2 cloves garlic + 3 cloves garlic = 5 cloves. ml and tbsp convert. g and lb convert. Incompatible units stay separate.",
+        "de": "Gleiche Zutat, gleiche kompatible Einheit: wir addieren. 2 Zehen Knoblauch + 3 Zehen = 5 Zehen. ml und EL werden umgerechnet, g und lb ebenfalls. Inkompatible Einheiten bleiben getrennt."
+      },
+      "related_topics": ["shopping"]
+    },
+    {
+      "id": "shopping-aisles",
+      "category": "shopping",
+      "question": {"en": "Why are items grouped that way?", "de": "Warum sind die Artikel so gruppiert?"},
+      "answer": {
+        "en": "By aisle, based on the ingredient dictionary. Produce together, dairy together, pantry together. The walk through the store is shorter.",
+        "de": "Nach Regalbereich, basierend auf dem Zutatenverzeichnis. Obst & Gemüse zusammen, Milch zusammen, Trockenwaren zusammen. So wird der Weg im Laden kürzer."
+      },
+      "related_topics": ["shopping"]
+    },
+    {
+      "id": "backup-encryption",
+      "category": "backup",
+      "question": {"en": "What does the backup password protect?", "de": "Was schützt das Backup-Passwort?"},
+      "answer": {
+        "en": "Your profile, dietary preferences, meal plans, and history. Encryption uses AES-256-GCM with a key derived from your password via PBKDF2 (10,000 SHA-256 iterations). Lose the password, lose the data — there is no recovery.",
+        "de": "Dein Profil, deine Ernährungspräferenzen, Mahlzeitenpläne und Verlauf. Verschlüsselung mit AES-256-GCM, Schlüssel aus deinem Passwort per PBKDF2 (10 000 SHA-256-Iterationen). Passwort verloren — Daten verloren; es gibt keine Wiederherstellung."
+      },
+      "related_topics": ["backup"]
+    },
+    {
+      "id": "backup-formats",
+      "category": "backup",
+      "question": {"en": "Why does export create two files?", "de": "Warum erzeugt der Export zwei Dateien?"},
+      "answer": {
+        "en": "morphcook-backup.json is human-readable for debugging; morphcook-backup.json.gz is GZip-compressed for sharing (70–90% smaller). Save whichever fits your workflow. Import auto-detects both formats.",
+        "de": "morphcook-backup.json ist lesbar zur Fehleranalyse; morphcook-backup.json.gz ist GZip-komprimiert (70–90% kleiner) zum Teilen. Speichere, was zu deinem Workflow passt. Der Import erkennt beide Formate automatisch."
+      },
+      "related_topics": ["backup"]
+    },
+    {
+      "id": "no-cloud",
+      "category": "philosophy",
+      "question": {"en": "Where is my data stored?", "de": "Wo werden meine Daten gespeichert?"},
+      "answer": {
+        "en": "Only on your device. No account, no server, no telemetry. Sync between devices happens only by exporting a backup file and importing it on the other device.",
+        "de": "Nur auf deinem Gerät. Kein Konto, kein Server, keine Telemetrie. Sync zwischen Geräten geht ausschließlich über Backup-Dateiexport und -import."
+      },
+      "related_topics": ["backup", "philosophy"]
+    },
+    {
+      "id": "content-requests",
+      "category": "philosophy",
+      "question": {"en": "What happens when I search for a dish that's missing?", "de": "Was passiert, wenn ich nach einem fehlenden Gericht suche?"},
+      "answer": {
+        "en": "Your zero-result query is logged locally (only on your device). When you export a backup, those queries travel with it — handy if you want to share what the corpus is missing.",
+        "de": "Deine Null-Treffer-Suche wird lokal (nur auf deinem Gerät) festgehalten. Beim Backup-Export reisen diese Suchen mit — nützlich, wenn du teilen willst, was im Korpus fehlt."
+      },
+      "related_topics": ["philosophy", "backup"]
+    },
+    {
+      "id": "saved-vs-history",
+      "category": "visibility",
+      "question": {"en": "What's the difference between saved and history?", "de": "Was ist der Unterschied zwischen gespeichert und Verlauf?"},
+      "answer": {
+        "en": "Saved is your cookbook — recipes you've consciously kept. History is what you've actually cooked, ordered by recency, so you can revisit (or rediscover after a long break).",
+        "de": "Gespeichert ist dein Kochbuch — bewusst behaltene Rezepte. Verlauf ist, was du tatsächlich gekocht hast, nach Aktualität — zum Wiederfinden (oder Wiederentdecken nach langer Pause)."
+      },
+      "related_topics": ["visibility"]
+    },
+    {
+      "id": "ingredient-learn-more",
+      "category": "shopping",
+      "question": {"en": "What does the 'learn more' link in an ingredient list do?", "de": "Was macht der „mehr erfahren\"-Link in der Zutatenliste?"},
+      "answer": {
+        "en": "Opens the kitchen-reference card for that ingredient: what it is, how to store it, where to find it, and a tip or two for first-timers.",
+        "de": "Öffnet die Küchen-Referenzkarte für diese Zutat: was sie ist, wie man sie lagert, wo es sie gibt, und ein paar Tipps für Erstanwender:innen."
+      },
+      "related_topics": ["shopping"]
+    }
+  ]
+}

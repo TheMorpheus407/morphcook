@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "name": {"en": "Döner", "de": "Döner"},
+      "hero_caption": {
+        "en": "the late-night standard, written four ways.",
+        "de": "der späte abend, viermal aufgeschrieben."
+      },
+      "cap_caption": {
+        "en": "street food, every body.",
+        "de": "straßenküche, jeder körper."
+      },
+      "stripe_color": "#C26B5C",
+      "variant_recipe_ids": ["r-doener-classic", "r-doener-vegan", "r-doener-keto", "r-doener-halal"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["turkish", "german-street"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "alfredo",
+      "name": {"en": "Fettuccine Alfredo", "de": "Fettuccine Alfredo"},
+      "hero_caption": {
+        "en": "butter, parmesan, pasta — comfort with three commas.",
+        "de": "butter, parmesan, pasta — trost mit drei kommata."
+      },
+      "cap_caption": {
+        "en": "creamy, every body.",
+        "de": "cremig, jeder körper."
+      },
+      "stripe_color": "#E8C770",
+      "variant_recipe_ids": ["r-alfredo-classic", "r-alfredo-glutenfree", "r-alfredo-vegan"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "padthai",
+      "name": {"en": "Pad Thai", "de": "Pad Thai"},
+      "hero_caption": {
+        "en": "tamarind & lime, noodles that remember a wok.",
+        "de": "tamarinde & limette, nudeln, die einen wok kennen."
+      },
+      "cap_caption": {
+        "en": "bright, every body.",
+        "de": "leuchtend, jeder körper."
+      },
+      "stripe_color": "#D88A4E",
+      "variant_recipe_ids": ["r-padthai-classic", "r-padthai-vegan", "r-padthai-peanutfree"],
+      "partition_id": "core",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["thai"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "carbonara",
+      "name": {"en": "Spaghetti Carbonara", "de": "Spaghetti Carbonara"},
+      "hero_caption": {
+        "en": "guanciale, egg, pecorino — no cream, never cream.",
+        "de": "guanciale, ei, pecorino — keine sahne, niemals sahne."
+      },
+      "cap_caption": {
+        "en": "roman, every body.",
+        "de": "römisch, jeder körper."
+      },
+      "stripe_color": "#B8956A",
+      "variant_recipe_ids": ["r-carbonara-classic", "r-carbonara-vegetarian"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "roman"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "tikkamasala",
+      "name": {"en": "Chicken Tikka Masala", "de": "Chicken Tikka Masala"},
+      "hero_caption": {
+        "en": "tomato, ginger, garam masala — the english-indian standard.",
+        "de": "tomate, ingwer, garam masala — der englisch-indische standard."
+      },
+      "cap_caption": {
+        "en": "spiced & soft, every body.",
+        "de": "würzig & weich, jeder körper."
+      },
+      "stripe_color": "#C8593E",
+      "variant_recipe_ids": ["r-tikka-classic", "r-tikka-vegan", "r-tikka-dairyfree"],
+      "partition_id": "core",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["indian"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "pancakes",
+      "name": {"en": "Pancakes", "de": "Pfannkuchen"},
+      "hero_caption": {
+        "en": "sunday morning, stacked.",
+        "de": "sonntagmorgen, gestapelt."
+      },
+      "cap_caption": {
+        "en": "fluffy, every body.",
+        "de": "luftig, jeder körper."
+      },
+      "stripe_color": "#E8B57A",
+      "variant_recipe_ids": ["r-pancakes-classic", "r-pancakes-vegan", "r-pancakes-glutenfree"],
+      "partition_id": "core",
+      "cuisine_tags": ["american", "breakfast"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "shakshuka",
+      "name": {"en": "Shakshuka", "de": "Schakschuka"},
+      "hero_caption": {
+        "en": "eggs poached in spiced tomato, bread for mopping.",
+        "de": "eier pochiert in würziger tomate, brot zum tunken."
+      },
+      "cap_caption": {
+        "en": "morning warmth, every body.",
+        "de": "morgenwärme, jeder körper."
+      },
+      "stripe_color": "#D26544",
+      "variant_recipe_ids": ["r-shakshuka-classic", "r-shakshuka-vegan"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["israeli", "north-african"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "hummus",
+      "name": {"en": "Hummus", "de": "Hummus"},
+      "hero_caption": {
+        "en": "chickpeas, tahini, lemon, garlic — patience, mostly.",
+        "de": "kichererbsen, tahini, zitrone, knoblauch — vor allem geduld."
+      },
+      "cap_caption": {
+        "en": "creamy beans, every body.",
+        "de": "cremige bohnen, jeder körper."
+      },
+      "stripe_color": "#C9B07A",
+      "variant_recipe_ids": ["r-hummus-classic", "r-hummus-lowfodmap"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["levantine"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "falafel",
+      "name": {"en": "Falafel", "de": "Falafel"},
+      "hero_caption": {
+        "en": "soaked chickpeas, herbs, hot oil. nothing canned, ever.",
+        "de": "eingeweichte kichererbsen, kräuter, heißes öl. nichts aus der dose, niemals."
+      },
+      "cap_caption": {
+        "en": "crisp herb balls, every body.",
+        "de": "krosse kräuterbällchen, jeder körper."
+      },
+      "stripe_color": "#9CB36F",
+      "variant_recipe_ids": ["r-falafel-classic"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["levantine", "egyptian"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "burger",
+      "name": {"en": "Burger", "de": "Burger"},
+      "hero_caption": {
+        "en": "a hot bun, a hotter patty, no ketchup discussion here.",
+        "de": "warmes brötchen, heißeres patty, keine ketchup-debatte hier."
+      },
+      "cap_caption": {
+        "en": "the standard, every body.",
+        "de": "der standard, jeder körper."
+      },
+      "stripe_color": "#A86443",
+      "variant_recipe_ids": ["r-burger-classic", "r-burger-vegan", "r-burger-halal"],
+      "partition_id": "core",
+      "cuisine_tags": ["american"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "ramen",
+      "name": {"en": "Shoyu Ramen", "de": "Shoyu Ramen"},
+      "hero_caption": {
+        "en": "broth that took its time, noodles that didn't.",
+        "de": "brühe, die sich zeit ließ; nudeln, die das nicht taten."
+      },
+      "cap_caption": {
+        "en": "deep bowl, every body.",
+        "de": "tiefe schüssel, jeder körper."
+      },
+      "stripe_color": "#8B6F47",
+      "variant_recipe_ids": ["r-ramen-classic", "r-ramen-vegan"],
+      "partition_id": "extended",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["japanese"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "avocado-toast",
+      "name": {"en": "Avocado Toast", "de": "Avocado-Brot"},
+      "hero_caption": {
+        "en": "two ingredients, infinite opinions.",
+        "de": "zwei zutaten, unendlich viele meinungen."
+      },
+      "cap_caption": {
+        "en": "easy mornings, every body.",
+        "de": "leichter morgen, jeder körper."
+      },
+      "stripe_color": "#8FAE6E",
+      "variant_recipe_ids": ["r-avotoast-classic", "r-avotoast-glutenfree"],
+      "partition_id": "core",
+      "cuisine_tags": ["breakfast", "modern"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "caesar",
+      "name": {"en": "Caesar Salad", "de": "Caesar Salat"},
+      "hero_caption": {
+        "en": "anchovies in the dressing, garlic on the croutons.",
+        "de": "anchovis im dressing, knoblauch auf den croûtons."
+      },
+      "cap_caption": {
+        "en": "crunchy lunch, every body.",
+        "de": "knuspriger mittag, jeder körper."
+      },
+      "stripe_color": "#C0BC7E",
+      "variant_recipe_ids": ["r-caesar-classic", "r-caesar-vegan"],
+      "partition_id": "core",
+      "cuisine_tags": ["american", "salad"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "pizza-margherita",
+      "name": {"en": "Pizza Margherita", "de": "Pizza Margherita"},
+      "hero_caption": {
+        "en": "tomato, basil, mozzarella — the trio that started everything.",
+        "de": "tomate, basilikum, mozzarella — das trio, das alles begann."
+      },
+      "cap_caption": {
+        "en": "stone-oven warmth, every body.",
+        "de": "ofenwärme, jeder körper."
+      },
+      "stripe_color": "#D14A3D",
+      "variant_recipe_ids": ["r-pizza-classic", "r-pizza-vegan", "r-pizza-glutenfree"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "neapolitan"],
+      "frequency_tier": 1
+    }
+  ]
+}

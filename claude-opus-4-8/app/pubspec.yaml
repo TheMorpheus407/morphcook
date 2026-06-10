@@ -1,0 +1,70 @@
+name: morphcook
+description: "MorphCook — a cookbook where every body gets the whole recipe book."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Local persistence
+  shared_preferences: ^2.5.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # Backup: file share + encryption
+  share_plus: ^13.1.0
+  crypto: ^3.0.7
+  encrypt: ^5.0.3
+
+  # Typography & motion
+  google_fonts: ^8.1.0
+  flutter_animate: ^4.5.2
+
+  # i18n + misc
+  intl: ^0.20.2
+  uuid: ^4.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/dishes.json
+    - assets/data/core-recipes.json
+    - assets/data/extended-recipes.json
+    - assets/data/cuisine-italian.json
+    - assets/data/cuisine-asian.json
+    - assets/data/cuisine-middle-eastern.json
+    - assets/data/ontology.json
+    - assets/data/ingredients.json
+    - assets/data/ingredient-guide.json
+    - assets/data/faqs.json
+    - assets/data/partition-manifest.json
+
+  fonts:
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay.ttf
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          style: italic
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat.ttf
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          style: italic

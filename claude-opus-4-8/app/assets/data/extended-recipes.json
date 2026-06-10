@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "partition_id": "extended-recipes",
+  "recipes": [
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "name": { "en": "Classic Pork Ramen", "de": "Klassische Schweine-Ramen" },
+      "blurb": { "en": "rich broth, jammy egg, springy noodles", "de": "kräftige brühe, wachsweiches ei, federnde nudeln" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 75,
+      "contains": ["gluten", "egg", "pork", "soy"],
+      "attributes": ["hard", "t60p", "c800", "simmer", "poach"],
+      "variant_axes": { "diet": "classic", "effort": "hard", "calorie": "c800" },
+      "macros": { "calories": 780, "protein": 40, "carbs": 78, "fat": 32 },
+      "ingredients": [
+        { "ingredient_id": "pasta", "qty": 180, "unit": "g", "name": { "en": "wheat ramen noodles", "de": "Weizen-Ramen-Nudeln" } },
+        { "ingredient_id": "pork", "qty": 200, "unit": "g", "name": { "en": "pork belly", "de": "Schweinebauch" } },
+        { "ingredient_id": "egg", "qty": 2, "unit": "piece", "name": { "en": "eggs", "de": "Eier" } },
+        { "ingredient_id": "soy-sauce", "qty": 3, "unit": "tbsp", "name": { "en": "soy sauce", "de": "Sojasauce" } },
+        { "ingredient_id": "vegetable-broth", "qty": 800, "unit": "ml", "name": { "en": "broth", "de": "Brühe" } },
+        { "ingredient_id": "garlic", "qty": 3, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "spring-onion", "qty": 2, "unit": "piece", "name": { "en": "spring onions", "de": "Frühlingszwiebeln" } }
+      ],
+      "steps": {
+        "en": [
+          "Sear the pork belly on all sides, then simmer it in the broth with garlic and soy for 45 minutes.",
+          "Soft-boil the eggs for 7 minutes, then chill and peel.",
+          "Lift out the pork, slice it, and skim the broth.",
+          "Cook the ramen noodles in boiling water until springy, about 3 minutes.",
+          "Divide noodles between bowls and ladle over the hot broth.",
+          "Top with sliced pork, halved eggs and spring onion."
+        ],
+        "de": [
+          "Den Schweinebauch rundum anbraten, dann mit Knoblauch und Soja 45 Minuten in der Brühe köcheln.",
+          "Die Eier 7 Minuten wachsweich kochen, dann abschrecken und pellen.",
+          "Das Fleisch herausnehmen, in Scheiben schneiden und die Brühe entfetten.",
+          "Die Ramen-Nudeln in kochendem Wasser federnd garen, etwa 3 Minuten.",
+          "Die Nudeln auf Schüsseln verteilen und die heiße Brühe darübergießen.",
+          "Mit Fleischscheiben, halbierten Eiern und Frühlingszwiebeln belegen."
+        ]
+      },
+      "step_timers": [2700, 420, null, 180, null, null]
+    },
+    {
+      "id": "ramen-vegetarian",
+      "dish_id": "ramen",
+      "name": { "en": "Vegetarian Miso Ramen", "de": "Vegetarische Miso-Ramen" },
+      "blurb": { "en": "miso-rich broth, jammy egg, no meat", "de": "miso-kräftige brühe, weiches ei, ohne fleisch" },
+      "meal_type": "dinner",
+      "servings": 2,
+      "time_minutes": 30,
+      "contains": ["gluten", "egg", "soy"],
+      "attributes": ["medium", "t30", "c600", "simmer", "poach"],
+      "variant_axes": { "diet": "vegetarian", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 560, "protein": 24, "carbs": 80, "fat": 16 },
+      "ingredients": [
+        { "ingredient_id": "pasta", "qty": 180, "unit": "g", "name": { "en": "wheat ramen noodles", "de": "Weizen-Ramen-Nudeln" } },
+        { "ingredient_id": "egg", "qty": 2, "unit": "piece", "name": { "en": "eggs", "de": "Eier" } },
+        { "ingredient_id": "soy-sauce", "qty": 3, "unit": "tbsp", "name": { "en": "soy sauce & miso", "de": "Sojasauce & Miso" } },
+        { "ingredient_id": "vegetable-broth", "qty": 800, "unit": "ml", "name": { "en": "broth", "de": "Brühe" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "spinach", "qty": 80, "unit": "g", "name": { "en": "spinach", "de": "Spinat" } },
+        { "ingredient_id": "spring-onion", "qty": 2, "unit": "piece", "name": { "en": "spring onions", "de": "Frühlingszwiebeln" } }
+      ],
+      "steps": {
+        "en": [
+          "Soft-boil the eggs for 7 minutes, then chill and peel.",
+          "Simmer the broth with garlic, then whisk in the soy and miso.",
+          "Wilt the spinach in the broth for a minute.",
+          "Cook the ramen noodles in boiling water until springy, about 3 minutes.",
+          "Divide noodles between bowls and ladle over the broth and spinach.",
+          "Top with halved eggs and spring onion."
+        ],
+        "de": [
+          "Die Eier 7 Minuten wachsweich kochen, dann abschrecken und pellen.",
+          "Die Brühe mit Knoblauch köcheln, dann Soja und Miso einrühren.",
+          "Den Spinat eine Minute in der Brühe zusammenfallen lassen.",
+          "Die Ramen-Nudeln in kochendem Wasser federnd garen, etwa 3 Minuten.",
+          "Die Nudeln auf Schüsseln verteilen und Brühe samt Spinat darübergeben.",
+          "Mit halbierten Eiern und Frühlingszwiebeln belegen."
+        ]
+      },
+      "step_timers": [420, null, 60, 180, null, null]
+    },
+    {
+      "id": "oats-classic",
+      "dish_id": "overnight-oats",
+      "name": { "en": "Classic Overnight Oats", "de": "Klassische Overnight Oats" },
+      "blurb": { "en": "yogurt, oats, a handful of almonds", "de": "joghurt, haferflocken, eine handvoll mandeln" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 10,
+      "contains": ["dairy", "tree-nuts", "almonds"],
+      "attributes": ["easy", "t15", "c400", "raw"],
+      "variant_axes": { "diet": "vegetarian", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 340, "protein": 14, "carbs": 44, "fat": 12 },
+      "ingredients": [
+        { "ingredient_id": "oats", "qty": 100, "unit": "g", "name": { "en": "rolled oats", "de": "Haferflocken" } },
+        { "ingredient_id": "yogurt", "qty": 150, "unit": "g", "name": { "en": "yogurt", "de": "Joghurt" } },
+        { "ingredient_id": "whole-milk", "qty": 150, "unit": "ml", "name": { "en": "milk", "de": "Milch" } },
+        { "ingredient_id": "almonds", "qty": 30, "unit": "g", "name": { "en": "almonds", "de": "Mandeln" } },
+        { "ingredient_id": "berries", "qty": 80, "unit": "g", "name": { "en": "berries", "de": "Beeren" } },
+        { "ingredient_id": "maple-syrup", "qty": 1, "unit": "tbsp", "name": { "en": "maple syrup", "de": "Ahornsirup" } }
+      ],
+      "steps": {
+        "en": [
+          "Stir the oats, yogurt and milk together in a jar.",
+          "Sweeten with maple syrup and a pinch of salt.",
+          "Cover and chill overnight so the oats soften.",
+          "In the morning, loosen with a splash of milk if thick.",
+          "Top with berries and chopped almonds and serve."
+        ],
+        "de": [
+          "Haferflocken, Joghurt und Milch in einem Glas verrühren.",
+          "Mit Ahornsirup und einer Prise Salz süßen.",
+          "Abgedeckt über Nacht kalt stellen, damit die Flocken weich werden.",
+          "Am Morgen bei Bedarf mit einem Schuss Milch lockern.",
+          "Mit Beeren und gehackten Mandeln belegen und servieren."
+        ]
+      },
+      "step_timers": [null, null, null, null, null]
+    },
+    {
+      "id": "oats-vegan",
+      "dish_id": "overnight-oats",
+      "name": { "en": "Vegan Overnight Oats", "de": "Vegane Overnight Oats" },
+      "blurb": { "en": "plant milk, banana, no nuts", "de": "pflanzenmilch, banane, ohne nüsse" },
+      "meal_type": "breakfast",
+      "servings": 2,
+      "time_minutes": 10,
+      "contains": [],
+      "attributes": ["easy", "t15", "c400", "raw"],
+      "variant_axes": { "diet": "vegan", "effort": "easy", "calorie": "c400" },
+      "macros": { "calories": 330, "protein": 9, "carbs": 56, "fat": 8 },
+      "ingredients": [
+        { "ingredient_id": "oats", "qty": 100, "unit": "g", "name": { "en": "rolled oats", "de": "Haferflocken" } },
+        { "ingredient_id": "coconut-milk", "qty": 250, "unit": "ml", "name": { "en": "coconut milk", "de": "Kokosmilch" } },
+        { "ingredient_id": "banana", "qty": 1, "unit": "piece", "name": { "en": "banana", "de": "Banane" } },
+        { "ingredient_id": "berries", "qty": 80, "unit": "g", "name": { "en": "berries", "de": "Beeren" } },
+        { "ingredient_id": "maple-syrup", "qty": 1, "unit": "tbsp", "name": { "en": "maple syrup", "de": "Ahornsirup" } }
+      ],
+      "steps": {
+        "en": [
+          "Stir the oats and coconut milk together in a jar.",
+          "Mash in half the banana and sweeten with maple syrup.",
+          "Cover and chill overnight so the oats soften.",
+          "In the morning, loosen with a little water if thick.",
+          "Top with the remaining banana, sliced, and the berries."
+        ],
+        "de": [
+          "Haferflocken und Kokosmilch in einem Glas verrühren.",
+          "Die halbe Banane untermischen und mit Ahornsirup süßen.",
+          "Abgedeckt über Nacht kalt stellen, damit die Flocken weich werden.",
+          "Am Morgen bei Bedarf mit etwas Wasser lockern.",
+          "Mit der restlichen Banane in Scheiben und den Beeren belegen."
+        ]
+      },
+      "step_timers": [null, null, null, null, null]
+    },
+    {
+      "id": "chili-classic",
+      "dish_id": "chili",
+      "name": { "en": "Chili con Carne", "de": "Chili con Carne" },
+      "blurb": { "en": "beef and beans, deep and smoky", "de": "rind und bohnen, tief und rauchig" },
+      "meal_type": "dinner",
+      "servings": 4,
+      "time_minutes": 45,
+      "contains": ["beef"],
+      "attributes": ["medium", "t60", "c600", "simmer", "saute"],
+      "variant_axes": { "diet": "classic", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 560, "protein": 34, "carbs": 48, "fat": 24 },
+      "ingredients": [
+        { "ingredient_id": "ground-beef", "qty": 400, "unit": "g", "name": { "en": "ground beef", "de": "Rinderhack" } },
+        { "ingredient_id": "kidney-beans", "qty": 1, "unit": "can", "name": { "en": "kidney beans", "de": "Kidneybohnen" } },
+        { "ingredient_id": "tomato-sauce", "qty": 400, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "onion", "qty": 1, "unit": "piece", "name": { "en": "onion", "de": "Zwiebel" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "bell-pepper", "qty": 1, "unit": "piece", "name": { "en": "bell pepper", "de": "Paprika" } },
+        { "ingredient_id": "chili", "qty": 1, "unit": "piece", "name": { "en": "chili", "de": "Chili" } }
+      ],
+      "steps": {
+        "en": [
+          "Brown the ground beef in a hot pot, breaking it up well.",
+          "Add chopped onion, garlic, pepper and chili and soften.",
+          "Stir in cumin and paprika and cook until fragrant.",
+          "Pour in the tomato sauce and drained beans.",
+          "Simmer gently until thick and deep, about 25 minutes.",
+          "Season with salt and pepper and serve hot."
+        ],
+        "de": [
+          "Das Rinderhack im heißen Topf krümelig anbraten.",
+          "Gehackte Zwiebel, Knoblauch, Paprika und Chili zugeben und andünsten.",
+          "Kreuzkümmel und Paprikapulver einrühren und duftend anbraten.",
+          "Die Tomatensauce und die abgetropften Bohnen zugeben.",
+          "Sanft köcheln, bis es dick und kräftig ist, etwa 25 Minuten.",
+          "Mit Salz und Pfeffer würzen und heiß servieren."
+        ]
+      },
+      "step_timers": [null, null, null, null, 1500, null]
+    },
+    {
+      "id": "chili-vegan",
+      "dish_id": "chili",
+      "name": { "en": "Chili sin Carne", "de": "Chili sin Carne" },
+      "blurb": { "en": "all beans, all flavour, no meat", "de": "nur bohnen, voller geschmack, ohne fleisch" },
+      "meal_type": "dinner",
+      "servings": 4,
+      "time_minutes": 45,
+      "contains": [],
+      "attributes": ["medium", "t60", "c600", "simmer", "saute"],
+      "variant_axes": { "diet": "vegan", "effort": "medium", "calorie": "c600" },
+      "macros": { "calories": 520, "protein": 22, "carbs": 78, "fat": 12 },
+      "ingredients": [
+        { "ingredient_id": "kidney-beans", "qty": 1, "unit": "can", "name": { "en": "kidney beans", "de": "Kidneybohnen" } },
+        { "ingredient_id": "chickpeas", "qty": 1, "unit": "can", "name": { "en": "chickpeas", "de": "Kichererbsen" } },
+        { "ingredient_id": "tomato-sauce", "qty": 400, "unit": "g", "name": { "en": "tomato sauce", "de": "Tomatensauce" } },
+        { "ingredient_id": "onion", "qty": 1, "unit": "piece", "name": { "en": "onion", "de": "Zwiebel" } },
+        { "ingredient_id": "garlic", "qty": 2, "unit": "clove", "name": { "en": "garlic", "de": "Knoblauch" } },
+        { "ingredient_id": "bell-pepper", "qty": 1, "unit": "piece", "name": { "en": "bell pepper", "de": "Paprika" } },
+        { "ingredient_id": "carrot", "qty": 1, "unit": "piece", "name": { "en": "carrot", "de": "Karotte" } }
+      ],
+      "steps": {
+        "en": [
+          "Soften chopped onion, garlic, pepper and carrot in oil.",
+          "Stir in cumin and paprika and cook until fragrant.",
+          "Pour in the tomato sauce with the drained beans and chickpeas.",
+          "Simmer gently until thick and rich, about 25 minutes.",
+          "Season with salt and pepper and serve hot."
+        ],
+        "de": [
+          "Gehackte Zwiebel, Knoblauch, Paprika und Karotte in Öl andünsten.",
+          "Kreuzkümmel und Paprikapulver einrühren und duftend anbraten.",
+          "Die Tomatensauce mit den abgetropften Bohnen und Kichererbsen zugeben.",
+          "Sanft köcheln, bis es dick und kräftig ist, etwa 25 Minuten.",
+          "Mit Salz und Pfeffer würzen und heiß servieren."
+        ]
+      },
+      "step_timers": [null, null, null, 1500, null]
+    }
+  ]
+}

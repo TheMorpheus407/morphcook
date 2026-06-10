@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.06.0",
+  "generated_by": "morphcook pipeline",
+  "loading_strategy": {
+    "at_launch": ["core"],
+    "on_demand": ["extended", "cuisine-italian", "cuisine-asian", "cuisine-middle-eastern"]
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "description": "Top 80% most-used recipes, loaded at launch.",
+      "dish_ids": ["doener", "pasta-alfredo", "pancakes", "curry", "burger", "porridge", "shakshuka", "caesar-salad"]
+    },
+    {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "description": "Rarely-used long-tail dishes, loaded on demand.",
+      "dish_ids": ["beef-wellington", "croissants"]
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "description": "Italian cuisine partition for discovery.",
+      "dish_ids": ["risotto", "lasagna"]
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "description": "Asian cuisine partition for discovery.",
+      "dish_ids": ["pad-thai", "ramen"]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "description": "Middle-Eastern cuisine partition for discovery.",
+      "dish_ids": ["falafel", "hummus-bowl"]
+    }
+  ],
+  "cross_references": [
+    {"partition_id": "cuisine-italian", "dish_ids": ["pasta-alfredo"]},
+    {"partition_id": "cuisine-asian", "dish_ids": ["curry"]},
+    {"partition_id": "cuisine-middle-eastern", "dish_ids": ["doener", "shakshuka"]}
+  ]
+}

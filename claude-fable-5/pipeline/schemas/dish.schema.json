@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook dish concept",
+  "type": "object",
+  "required": ["id", "name", "hero", "caption", "stripe", "recipes",
+               "partition_id", "secondary_partitions", "cuisine_tags",
+               "frequency_tier"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "name": {"$ref": "#/$defs/localized"},
+    "hero": {"$ref": "#/$defs/localized"},
+    "caption": {"$ref": "#/$defs/localized"},
+    "stripe": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+    "recipes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "partition_id": {"type": "string"},
+    "secondary_partitions": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "cuisine_tags": {"type": "array", "items": {"type": "string"}},
+    "frequency_tier": {"enum": ["high", "medium", "low"]}
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "de": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string"}
+    }
+  }
+}

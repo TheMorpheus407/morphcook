@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "generated_at": "2026-05-21T00:00:00Z",
+  "strategy": "core-on-launch-extended-on-demand",
+  "partitions": [
+    { "id": "core",     "file": "assets/core-recipes.json",     "load": "eager", "description": {"en":"Top 80% most-used recipes","de":"Top 80% meistgenutzte Rezepte"} },
+    { "id": "extended", "file": "assets/extended-recipes.json", "load": "lazy",  "description": {"en":"Less-common dishes","de":"Selten genutzte Gerichte"} }
+  ],
+  "cuisine_partitions": [
+    { "id": "cuisine-italian",         "file": "assets/cuisine-italian.json"         },
+    { "id": "cuisine-asian",           "file": "assets/cuisine-asian.json"           },
+    { "id": "cuisine-middle-eastern",  "file": "assets/cuisine-middle-eastern.json"  }
+  ],
+  "metadata_files": {
+    "dishes":            "assets/dishes.json",
+    "ontology":          "assets/ontology.json",
+    "ingredients":       "assets/ingredients.json",
+    "ingredient_guide":  "assets/ingredient-guide.json",
+    "faqs":              "assets/faqs.json"
+  }
+}

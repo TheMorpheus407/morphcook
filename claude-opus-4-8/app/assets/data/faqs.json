@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "categories": [
+    { "id": "matching", "label": { "en": "Dietary matching", "de": "Ernährungs-Filter" } },
+    { "id": "recipes", "label": { "en": "Recipes & variants", "de": "Rezepte & Varianten" } },
+    { "id": "features", "label": { "en": "Features", "de": "Funktionen" } },
+    { "id": "troubleshooting", "label": { "en": "Troubleshooting", "de": "Fehlerbehebung" } },
+    { "id": "privacy", "label": { "en": "Privacy & offline", "de": "Datenschutz & Offline" } }
+  ],
+  "entries": [
+    {
+      "id": "why-hidden",
+      "category": "matching",
+      "question": { "en": "Why don't I see some recipes?", "de": "Warum sehe ich manche Rezepte nicht?" },
+      "answer": {
+        "en": "A recipe stays hidden when its \"contains\" flags overlap something you've chosen to avoid, or when it doesn't fit your time or calorie budget. Nothing is deleted, it's just filtered out for you right now. Loosen an avoidance or a budget in your profile and the matching recipes reappear instantly.",
+        "de": "Ein Rezept bleibt verborgen, wenn seine \"Enthält\"-Markierungen etwas treffen, das du meidest, oder wenn es nicht in dein Zeit- oder Kalorienbudget passt. Nichts wird gelöscht, es wird nur gerade für dich ausgeblendet. Lockere eine Vermeidung oder ein Budget im Profil und die passenden Rezepte erscheinen sofort wieder."
+      }
+    },
+    {
+      "id": "diets-never-remove-dishes",
+      "category": "matching",
+      "question": { "en": "Do my dietary needs remove whole dishes?", "de": "Entfernen meine Ernährungsbedürfnisse ganze Gerichte?" },
+      "answer": {
+        "en": "No, a dish never disappears just because of your diet. Every dish carries fully written variants, so a vegan or gluten-free version is its own complete recipe rather than a stripped-down one. You always get a real dish to cook, never an empty space where one used to be.",
+        "de": "Nein, ein Gericht verschwindet nie nur wegen deiner Ernährung. Jedes Gericht trägt vollständig ausgearbeitete Varianten, sodass eine vegane oder glutenfreie Fassung ein eigenes komplettes Rezept ist statt einer abgespeckten Version. Du bekommst immer ein echtes Gericht zum Kochen, nie eine Leerstelle, wo früher eines war."
+      }
+    },
+    {
+      "id": "class-vs-specific-avoidance",
+      "category": "matching",
+      "question": { "en": "How do class avoidances and specific-ingredient avoidances combine?", "de": "Wie wirken Klassen-Vermeidung und Zutaten-Vermeidung zusammen?" },
+      "answer": {
+        "en": "A class avoidance like \"no dairy\" hides any recipe flagged with that whole category at once. A specific avoidance like \"no cilantro\" hides only recipes that list that one ingredient. The two stack together, so a recipe has to clear both checks before it shows up for you.",
+        "de": "Eine Klassen-Vermeidung wie \"keine Milchprodukte\" blendet jedes Rezept aus, das mit dieser ganzen Kategorie markiert ist. Eine konkrete Vermeidung wie \"kein Koriandergrün\" blendet nur Rezepte aus, die genau diese eine Zutat führen. Beide wirken zusammen, ein Rezept muss also beide Prüfungen bestehen, bevor es bei dir erscheint."
+      }
+    },
+    {
+      "id": "calorie-target-filter",
+      "category": "matching",
+      "question": { "en": "What does the calorie target do?", "de": "Was bewirkt das Kalorienziel?" },
+      "answer": {
+        "en": "Your calorie target is a hard filter: recipes above it are hidden so the feed only shows dishes that fit your day. It applies per serving, the same way the recipe states its values. If you want one dish to ignore the limit, use the per-dish override below.",
+        "de": "Dein Kalorienziel ist ein harter Filter: Rezepte darüber werden ausgeblendet, sodass der Feed nur Gerichte zeigt, die in deinen Tag passen. Es gilt pro Portion, so wie das Rezept seine Werte angibt. Wenn ein Gericht das Limit ignorieren soll, nutze die Ausnahme pro Gericht weiter unten."
+      }
+    },
+    {
+      "id": "per-dish-calorie-override",
+      "category": "matching",
+      "question": { "en": "What does the per-dish calorie override do?", "de": "Was bewirkt die Kalorien-Ausnahme pro Gericht?" },
+      "answer": {
+        "en": "The override lets one specific dish appear even when it sits above your calorie target. It's a deliberate exception for a treat or a special occasion, not a change to your overall limit. Every other dish keeps respecting the target, so the rest of your feed stays on plan.",
+        "de": "Die Ausnahme lässt ein bestimmtes Gericht auftauchen, auch wenn es über deinem Kalorienziel liegt. Es ist eine bewusste Ausnahme für einen Genuss oder einen besonderen Anlass, keine Änderung deines Gesamtlimits. Jedes andere Gericht hält sich weiter an das Ziel, sodass dein restlicher Feed im Plan bleibt."
+      }
+    },
+    {
+      "id": "diet-effort-unavailable",
+      "category": "matching",
+      "question": { "en": "Why are some diet and effort combinations unavailable?", "de": "Warum sind manche Diät-und-Aufwand-Kombinationen nicht verfügbar?" },
+      "answer": {
+        "en": "Each variant is hand-authored, so a combination only exists once someone has actually written and tested that recipe. A quick 10-minute keto version of a slow-braised dish might simply not have been created yet. We'd rather leave a gap than show you a fake recipe that doesn't really work.",
+        "de": "Jede Variante ist von Hand geschrieben, daher gibt es eine Kombination erst, wenn jemand dieses Rezept tatsächlich verfasst und getestet hat. Eine schnelle 10-Minuten-Keto-Fassung eines langsam geschmorten Gerichts wurde vielleicht einfach noch nicht erstellt. Lieber lassen wir eine Lücke, als dir ein Schein-Rezept zu zeigen, das gar nicht funktioniert."
+      }
+    },
+    {
+      "id": "variant-switchers",
+      "category": "recipes",
+      "question": { "en": "How do the variant switchers work?", "de": "Wie funktionieren die Varianten-Umschalter?" },
+      "answer": {
+        "en": "On a dish you'll see a switcher for each dimension, such as diet, effort, or spice. Tap one and the recipe swaps to the matching authored variant, with its own ingredients, steps, and nutrition. The dimensions are independent, so you can mix and match freely as long as that exact combination exists.",
+        "de": "Bei einem Gericht siehst du für jede Dimension einen Umschalter, etwa Ernährung, Aufwand oder Schärfe. Tippe einen an und das Rezept wechselt zur passenden ausgearbeiteten Variante, mit eigenen Zutaten, Schritten und Nährwerten. Die Dimensionen sind unabhängig, du kannst also frei kombinieren, solange genau diese Kombination existiert."
+      }
+    },
+    {
+      "id": "save-specific-variant",
+      "category": "recipes",
+      "question": { "en": "Can I save a specific variant to my cookbook?", "de": "Kann ich eine bestimmte Variante in mein Kochbuch speichern?" },
+      "answer": {
+        "en": "Yes, the cookbook saves the exact variant you're looking at, not just the dish. So if you save the gluten-free, mild version of a curry, that's precisely what you'll reopen later. You can save several variants of the same dish if you like them all.",
+        "de": "Ja, das Kochbuch speichert genau die Variante, die du gerade ansiehst, nicht nur das Gericht. Speicherst du die glutenfreie, milde Fassung eines Currys, ist das genau das, was du später wieder öffnest. Du kannst mehrere Varianten desselben Gerichts speichern, wenn dir alle gefallen."
+      }
+    },
+    {
+      "id": "halal-kosher-compatible",
+      "category": "recipes",
+      "question": { "en": "Are halal and kosher recipes certified?", "de": "Sind Halal- und Koscher-Rezepte zertifiziert?" },
+      "answer": {
+        "en": "No. We surface these as \"compatible ingredients\", meaning the recipe avoids ingredients that wouldn't fit, but that is not the same as a certification. Actual halal or kosher status depends on sourcing, preparation, and supervision that an app can't verify. Always check the certification on the products you buy.",
+        "de": "Nein. Wir zeigen das als \"kompatible Zutaten\", das heißt das Rezept meidet unpassende Zutaten, aber das ist nicht dasselbe wie eine Zertifizierung. Der tatsächliche Halal- oder Koscher-Status hängt von Bezug, Zubereitung und Aufsicht ab, die eine App nicht prüfen kann. Achte immer auf die Zertifizierung der Produkte, die du kaufst."
+      }
+    },
+    {
+      "id": "shopping-list-aggregation",
+      "category": "features",
+      "question": { "en": "How does the smart shopping list aggregate amounts?", "de": "Wie fasst die smarte Einkaufsliste Mengen zusammen?" },
+      "answer": {
+        "en": "When several recipes need the same ingredient, the list adds the amounts together and converts compatible units so you get one tidy entry. Volumes line up (it knows a tablespoon is about 15 ml) and countable things like garlic cloves stay as cloves. You end up with a single line per ingredient instead of a dozen scattered ones.",
+        "de": "Wenn mehrere Rezepte dieselbe Zutat brauchen, addiert die Liste die Mengen und rechnet kompatible Einheiten um, sodass du einen sauberen Eintrag bekommst. Volumen passen zusammen (sie weiß, dass ein Esslöffel etwa 15 ml sind) und zählbare Dinge wie Knoblauchzehen bleiben Zehen. Am Ende hast du eine Zeile pro Zutat statt eines Dutzends verstreuter."
+      }
+    },
+    {
+      "id": "shopping-insights",
+      "category": "features",
+      "question": { "en": "What do shopping insights show me?", "de": "Was zeigen mir die Einkaufs-Einblicke?" },
+      "answer": {
+        "en": "Shopping insights summarize your list, like which ingredients you buy most often and how your planned meals group by aisle or category. They help you spot what's worth buying in bulk and plan a faster trip through the store. It's a quick overview, not a price tracker.",
+        "de": "Die Einkaufs-Einblicke fassen deine Liste zusammen, etwa welche Zutaten du am häufigsten kaufst und wie sich deine geplanten Mahlzeiten nach Gang oder Kategorie gruppieren. Sie helfen dir zu erkennen, was sich in größeren Mengen lohnt, und einen schnelleren Weg durch den Laden zu planen. Es ist ein schneller Überblick, kein Preis-Tracker."
+      }
+    },
+    {
+      "id": "meal-planning",
+      "category": "features",
+      "question": { "en": "How does weekly meal planning work?", "de": "Wie funktioniert die Wochenplanung?" },
+      "answer": {
+        "en": "Drop the variants you want onto days of the week to build your plan. The shopping list then pulls from everything you've scheduled and aggregates it for you. Change a day and the list updates, so your groceries always match your plan.",
+        "de": "Ziehe die gewünschten Varianten auf die Wochentage, um deinen Plan zu bauen. Die Einkaufsliste zieht dann aus allem, was du eingeplant hast, und fasst es für dich zusammen. Änderst du einen Tag, aktualisiert sich die Liste, sodass dein Einkauf immer zu deinem Plan passt."
+      }
+    },
+    {
+      "id": "cook-mode-visual-alerts",
+      "category": "features",
+      "question": { "en": "Does cook mode work without sound?", "de": "Funktioniert der Kochmodus ohne Ton?" },
+      "answer": {
+        "en": "Yes. Cook mode runs a timer per step and signals with clear on-screen visual alerts and flashes, not only sound, so it works for deaf and hard-of-hearing cooks. You'll see the alert even if your phone is muted or across the kitchen. Sound is just an optional extra on top.",
+        "de": "Ja. Der Kochmodus läuft mit einem Timer pro Schritt und signalisiert mit klaren visuellen Hinweisen und Blitzen auf dem Bildschirm, nicht nur per Ton, sodass er auch für gehörlose und schwerhörige Köchinnen und Köche funktioniert. Du siehst den Hinweis selbst wenn dein Handy stummgeschaltet oder quer durch die Küche steht. Ton ist nur ein optionales Extra obendrauf."
+      }
+    },
+    {
+      "id": "one-handed-quick-tap",
+      "category": "features",
+      "question": { "en": "Can I use cook mode with one hand?", "de": "Kann ich den Kochmodus einhändig bedienen?" },
+      "answer": {
+        "en": "Yes, cook mode is built for messy hands. Large tap zones let you advance steps and start or stop timers with a single thumb, no precise aiming needed. That way you can keep one hand on the pan and still move through the recipe.",
+        "de": "Ja, der Kochmodus ist für schmutzige Hände gemacht. Große Tippflächen lassen dich Schritte weiterschalten und Timer mit einem Daumen starten oder stoppen, ohne genaues Zielen. So bleibt eine Hand an der Pfanne und du kommst trotzdem durchs Rezept."
+      }
+    },
+    {
+      "id": "fully-offline",
+      "category": "privacy",
+      "question": { "en": "Does the app need an account or internet?", "de": "Braucht die App ein Konto oder Internet?" },
+      "answer": {
+        "en": "No. MorphCook is fully offline with no account, no sign-up, and no telemetry. All your recipes, plans, and lists live on your device and nothing is sent anywhere. You can cook on a plane, in a basement kitchen, or with the connection switched off entirely.",
+        "de": "Nein. MorphCook ist vollständig offline, ohne Konto, ohne Anmeldung und ohne Telemetrie. Alle deine Rezepte, Pläne und Listen liegen auf deinem Gerät und nichts wird irgendwohin gesendet. Du kannst im Flugzeug kochen, in einer Kellerküche oder mit komplett abgeschalteter Verbindung."
+      }
+    },
+    {
+      "id": "backup-restore",
+      "category": "privacy",
+      "question": { "en": "How do backup and restore work?", "de": "Wie funktionieren Sicherung und Wiederherstellung?" },
+      "answer": {
+        "en": "Backup writes your data to a file you keep yourself, and restore reads it back in. A plain backup is a .json file; a compressed one is .json.gz, which is just smaller. You can optionally set a password, and then the file is encrypted with AES-256 so only someone with that password can read it.",
+        "de": "Die Sicherung schreibt deine Daten in eine Datei, die du selbst behältst, und die Wiederherstellung liest sie wieder ein. Eine einfache Sicherung ist eine .json-Datei; eine komprimierte ist .json.gz und einfach nur kleiner. Du kannst optional ein Passwort setzen, dann wird die Datei mit AES-256 verschlüsselt, sodass sie nur mit diesem Passwort lesbar ist."
+      }
+    },
+    {
+      "id": "import-failed",
+      "category": "troubleshooting",
+      "question": { "en": "What should I do if an import fails?", "de": "Was tun, wenn ein Import fehlschlägt?" },
+      "answer": {
+        "en": "If the file is encrypted, a failed import almost always means a wrong password, so try again carefully. If the password is right but it still fails, the file may be corrupted or not a MorphCook backup, in which case use another copy. Your existing data stays untouched until an import succeeds, so a failed attempt never harms what's already there.",
+        "de": "Ist die Datei verschlüsselt, bedeutet ein gescheiterter Import fast immer ein falsches Passwort, versuch es also sorgfältig erneut. Stimmt das Passwort und es scheitert trotzdem, ist die Datei womöglich beschädigt oder keine MorphCook-Sicherung, dann nimm eine andere Kopie. Deine vorhandenen Daten bleiben unangetastet, bis ein Import gelingt, ein Fehlversuch schadet dem Bestehenden also nie."
+      }
+    },
+    {
+      "id": "recipe-still-shows-avoided",
+      "category": "troubleshooting",
+      "question": { "en": "A recipe still shows an ingredient I avoid, why?", "de": "Ein Rezept zeigt noch eine Zutat, die ich meide, warum?" },
+      "answer": {
+        "en": "Matching works on the flags and ingredient list the recipe declares, so check that your avoidance is set exactly for that class or ingredient in your profile. A garnish or optional item may be listed without triggering a class flag. If something looks wrong, switch to a variant that's authored for your need, or tighten the specific avoidance.",
+        "de": "Der Filter arbeitet mit den Markierungen und der Zutatenliste, die das Rezept angibt, prüfe also, ob deine Vermeidung genau für diese Klasse oder Zutat im Profil gesetzt ist. Eine Garnitur oder ein optionaler Posten kann gelistet sein, ohne eine Klassen-Markierung auszulösen. Wirkt etwas falsch, wechsle zu einer für deinen Bedarf ausgearbeiteten Variante oder verschärfe die konkrete Vermeidung."
+      }
+    }
+  ]
+}

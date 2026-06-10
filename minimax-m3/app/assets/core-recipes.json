@@ -1,0 +1,766 @@
+{
+  "version": 1,
+  "partition_id": "core",
+  "description": "Top 80% most-used recipes, loaded at app launch.",
+  "recipes": [
+    {
+      "id": "r-doener-classic",
+      "dish_id": "doener",
+      "name": {"en": "Classic Lamb Döner", "de": "Klassischer Lamm-Döner"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "warm bread, marinated lamb shaved hot, garlic-yogurt, sumac onions, pickles.",
+        "de": "warmes brot, mariniertes lamm heiß gehobelt, knoblauch-joghurt, sumach-zwiebeln, gewürzgurken."
+      },
+      "contains": ["lamb", "dairy", "gluten", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["grill", "roast"],
+      "time_minutes": 45,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 720,
+      "protein_g": 38,
+      "carbs_g": 60,
+      "fat_g": 32,
+      "ingredients": [
+        {"id": "lamb", "qty": 300, "unit": "g", "name": {"en": "lamb shoulder, sliced", "de": "Lammschulter, gehobelt"}},
+        {"id": "yogurt", "qty": 4, "unit": "tbsp", "name": {"en": "thick yogurt", "de": "dickflüssiger Joghurt"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "flatbread", "de": "Fladenbrot"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "red onion, thinly sliced", "de": "rote Zwiebel, dünn gehobelt"}},
+        {"id": "tomato", "qty": 1, "unit": "piece", "name": {"en": "tomato", "de": "Tomate"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "smoked paprika", "de": "geräuchertes Paprikapulver"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}}
+      ],
+      "steps": [
+        {"text": {"en": "Marinate lamb with cumin, paprika, salt, lemon juice for 30 minutes.", "de": "Lamm 30 Min in Kreuzkümmel, Paprika, Salz und Zitronensaft marinieren."}, "time_minutes": 30},
+        {"text": {"en": "Whisk yogurt with grated garlic and a pinch of salt.", "de": "Joghurt mit geriebenem Knoblauch und einer Prise Salz verrühren."}},
+        {"text": {"en": "Sear lamb on a very hot pan, in batches, until edges crisp.", "de": "Lamm in heißer Pfanne portionsweise scharf anbraten, bis die Ränder krossen."}, "time_minutes": 8},
+        {"text": {"en": "Warm the bread briefly in the same pan.", "de": "Brot in derselben Pfanne kurz erwärmen."}, "time_minutes": 2},
+        {"text": {"en": "Fill: garlic-yogurt, lamb, onion, tomato. Fold and eat hot.", "de": "Füllen: Knoblauch-Joghurt, Lamm, Zwiebel, Tomate. Falten und heiß essen."}}
+      ]
+    },
+    {
+      "id": "r-doener-vegan",
+      "dish_id": "doener",
+      "name": {"en": "Seitan Vegan Döner", "de": "Veganer Seitan-Döner"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "spiced seitan, cashew-garlic sauce, sumac onions, pickles, warm flatbread.",
+        "de": "würziges seitan, cashew-knoblauch-sauce, sumach-zwiebeln, gewürzgurken, warmes fladenbrot."
+      },
+      "contains": ["gluten", "tree-nuts", "soy"],
+      "attributes": ["medium"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 35,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 580,
+      "protein_g": 34,
+      "carbs_g": 64,
+      "fat_g": 20,
+      "ingredients": [
+        {"id": "seitan", "qty": 250, "unit": "g", "name": {"en": "seitan, sliced", "de": "Seitan, in Streifen"}},
+        {"id": "cashews", "qty": 60, "unit": "g", "name": {"en": "cashews, soaked", "de": "Cashews, eingeweicht"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "flatbread", "de": "Fladenbrot"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "red onion", "de": "rote Zwiebel"}},
+        {"id": "tomato", "qty": 1, "unit": "piece", "name": {"en": "tomato", "de": "Tomate"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "smoked paprika", "de": "geräuchertes Paprikapulver"}},
+        {"id": "soy-sauce", "qty": 1, "unit": "tbsp", "name": {"en": "soy sauce", "de": "Sojasauce"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}}
+      ],
+      "steps": [
+        {"text": {"en": "Blend soaked cashews with garlic, lemon juice, 3 tbsp water — silky.", "de": "Eingeweichte Cashews mit Knoblauch, Zitronensaft und 3 EL Wasser cremig pürieren."}, "time_minutes": 3},
+        {"text": {"en": "Toss seitan with cumin, paprika, soy sauce, oil.", "de": "Seitan mit Kreuzkümmel, Paprika, Sojasauce und Öl vermengen."}},
+        {"text": {"en": "Pan-fry seitan in a hot pan until edges char, 6–8 min.", "de": "Seitan in heißer Pfanne 6–8 Min anbraten, bis die Ränder kross werden."}, "time_minutes": 8},
+        {"text": {"en": "Warm the bread briefly.", "de": "Brot kurz erwärmen."}, "time_minutes": 2},
+        {"text": {"en": "Layer: cashew sauce, seitan, onion, tomato. Eat immediately.", "de": "Schichten: Cashew-Sauce, Seitan, Zwiebel, Tomate. Sofort essen."}}
+      ]
+    },
+    {
+      "id": "r-doener-keto",
+      "dish_id": "doener",
+      "name": {"en": "Keto Lamb Döner Bowl", "de": "Keto Lamm-Döner-Bowl"},
+      "variant_label": {"en": "keto", "de": "keto"},
+      "diet_label": "low-carb",
+      "summary": {
+        "en": "no bread, all bowl. lamb, cabbage slaw, garlic yogurt, olives.",
+        "de": "kein brot, alles in der schüssel. lamm, kohlsalat, knoblauch-joghurt, oliven."
+      },
+      "contains": ["lamb", "dairy", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["grill"],
+      "time_minutes": 40,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 540,
+      "protein_g": 38,
+      "carbs_g": 12,
+      "fat_g": 38,
+      "ingredients": [
+        {"id": "lamb", "qty": 300, "unit": "g", "name": {"en": "lamb shoulder, sliced", "de": "Lammschulter, gehobelt"}},
+        {"id": "yogurt", "qty": 4, "unit": "tbsp", "name": {"en": "Greek yogurt", "de": "griechischer Joghurt"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "cabbage", "qty": 200, "unit": "g", "name": {"en": "red cabbage, shredded", "de": "Rotkohl, gehobelt"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "smoked paprika", "de": "geräuchertes Paprikapulver"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}}
+      ],
+      "steps": [
+        {"text": {"en": "Marinate lamb in spices and lemon juice for 30 min.", "de": "Lamm 30 Min in Gewürzen und Zitronensaft marinieren."}, "time_minutes": 30},
+        {"text": {"en": "Toss cabbage with olive oil, salt, a squeeze of lemon.", "de": "Kohl mit Olivenöl, Salz und etwas Zitronensaft mischen."}},
+        {"text": {"en": "Whisk yogurt with garlic.", "de": "Joghurt mit Knoblauch verrühren."}},
+        {"text": {"en": "Sear lamb until crisp at the edges.", "de": "Lamm scharf anbraten, bis die Ränder krossen."}, "time_minutes": 8},
+        {"text": {"en": "Bowl it: slaw, lamb, yogurt, olives.", "de": "Schichten: Kohl, Lamm, Joghurt, Oliven."}}
+      ]
+    },
+    {
+      "id": "r-doener-halal",
+      "dish_id": "doener",
+      "name": {"en": "Halal-Compatible Beef Döner", "de": "Halal-Kompatibler Rind-Döner"},
+      "variant_label": {"en": "halal", "de": "halal"},
+      "diet_label": "halal-compatible",
+      "summary": {
+        "en": "beef in place of lamb, no alcohol, the rest is as it should be.",
+        "de": "rind statt lamm, kein alkohol, der rest, wie es sein soll."
+      },
+      "contains": ["beef", "dairy", "gluten", "lactose"],
+      "attributes": ["medium", "halal-friendly"],
+      "technique_tags": ["grill"],
+      "time_minutes": 45,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 700,
+      "protein_g": 40,
+      "carbs_g": 60,
+      "fat_g": 30,
+      "ingredients": [
+        {"id": "beef", "qty": 300, "unit": "g", "name": {"en": "beef, sliced thin", "de": "Rindfleisch, dünn geschnitten"}},
+        {"id": "yogurt", "qty": 4, "unit": "tbsp", "name": {"en": "thick yogurt", "de": "dickflüssiger Joghurt"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "bread", "qty": 2, "unit": "piece", "name": {"en": "flatbread", "de": "Fladenbrot"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "red onion", "de": "rote Zwiebel"}},
+        {"id": "tomato", "qty": 1, "unit": "piece", "name": {"en": "tomato", "de": "Tomate"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "smoked paprika", "de": "geräuchertes Paprikapulver"}},
+        {"id": "lemon", "qty": 1, "unit": "piece", "name": {"en": "lemon", "de": "Zitrone"}}
+      ],
+      "steps": [
+        {"text": {"en": "Marinate beef with spices, garlic, lemon juice for 30 min.", "de": "Rindfleisch 30 Min in Gewürzen, Knoblauch und Zitrone marinieren."}, "time_minutes": 30},
+        {"text": {"en": "Whisk yogurt with garlic, salt.", "de": "Joghurt mit Knoblauch und Salz verrühren."}},
+        {"text": {"en": "Sear beef in batches in a very hot pan.", "de": "Rind in heißer Pfanne portionsweise anbraten."}, "time_minutes": 6},
+        {"text": {"en": "Warm bread, assemble.", "de": "Brot erwärmen, zusammensetzen."}}
+      ]
+    },
+    {
+      "id": "r-alfredo-classic",
+      "dish_id": "alfredo",
+      "name": {"en": "Fettuccine Alfredo", "de": "Fettuccine Alfredo"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "butter, parmesan, pasta water. nothing else.",
+        "de": "butter, parmesan, nudelwasser. nichts anderes."
+      },
+      "contains": ["dairy", "gluten", "egg", "lactose"],
+      "attributes": ["easy"],
+      "technique_tags": ["simmer"],
+      "time_minutes": 20,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 720,
+      "protein_g": 24,
+      "carbs_g": 72,
+      "fat_g": 38,
+      "ingredients": [
+        {"id": "pasta", "qty": 250, "unit": "g", "name": {"en": "fettuccine", "de": "Fettuccine"}},
+        {"id": "butter", "qty": 80, "unit": "g", "name": {"en": "butter", "de": "Butter"}},
+        {"id": "parmesan", "qty": 80, "unit": "g", "name": {"en": "parmesan, grated", "de": "Parmesan, gerieben"}},
+        {"id": "black-pepper", "qty": 1, "unit": "tsp", "name": {"en": "black pepper", "de": "schwarzer Pfeffer"}}
+      ],
+      "steps": [
+        {"text": {"en": "Boil fettuccine in well-salted water until al dente.", "de": "Fettuccine in reichlich Salzwasser al dente kochen."}, "time_minutes": 10},
+        {"text": {"en": "Melt butter in a wide pan. Add 4 tbsp pasta water.", "de": "Butter in breiter Pfanne schmelzen. 4 EL Nudelwasser dazu."}, "time_minutes": 2},
+        {"text": {"en": "Drain pasta, toss in pan. Off heat, snow with parmesan.", "de": "Pasta abgießen, schwenken. Vom Herd nehmen, mit Parmesan überdecken."}, "time_minutes": 2},
+        {"text": {"en": "Toss vigorously until creamy. Crack pepper, serve.", "de": "Kräftig schwenken, bis cremig. Pfeffer drüber, servieren."}}
+      ]
+    },
+    {
+      "id": "r-alfredo-glutenfree",
+      "dish_id": "alfredo",
+      "name": {"en": "Gluten-Free Fettuccine Alfredo", "de": "Glutenfreie Fettuccine Alfredo"},
+      "variant_label": {"en": "gluten-free", "de": "glutenfrei"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "rice-corn pasta, same emulsion, same comfort.",
+        "de": "reis-mais-pasta, gleiche emulsion, gleicher trost."
+      },
+      "contains": ["dairy", "lactose"],
+      "attributes": ["easy"],
+      "technique_tags": ["simmer"],
+      "time_minutes": 22,
+      "active_minutes": 22,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 700,
+      "protein_g": 18,
+      "carbs_g": 76,
+      "fat_g": 36,
+      "ingredients": [
+        {"id": "gf-pasta", "qty": 250, "unit": "g", "name": {"en": "gluten-free fettuccine", "de": "glutenfreie Fettuccine"}},
+        {"id": "butter", "qty": 80, "unit": "g", "name": {"en": "butter", "de": "Butter"}},
+        {"id": "parmesan", "qty": 80, "unit": "g", "name": {"en": "parmesan, grated", "de": "Parmesan, gerieben"}},
+        {"id": "black-pepper", "qty": 1, "unit": "tsp", "name": {"en": "black pepper", "de": "schwarzer Pfeffer"}}
+      ],
+      "steps": [
+        {"text": {"en": "Cook GF pasta — it cooks faster, watch closely.", "de": "GF-Pasta kochen — geht schneller, gut beobachten."}, "time_minutes": 8},
+        {"text": {"en": "Reserve more pasta water than usual; GF starches differently.", "de": "Mehr Nudelwasser aufheben als sonst; GF-Stärke verhält sich anders."}},
+        {"text": {"en": "Melt butter, add water, toss pasta, snow parmesan, emulsify.", "de": "Butter schmelzen, Wasser zugeben, Pasta schwenken, Parmesan drüber, emulgieren."}, "time_minutes": 3},
+        {"text": {"en": "Pepper, serve immediately — GF pasta firms fast.", "de": "Pfeffern, sofort servieren — GF-Pasta wird schnell fest."}}
+      ]
+    },
+    {
+      "id": "r-alfredo-vegan",
+      "dish_id": "alfredo",
+      "name": {"en": "Cashew Alfredo", "de": "Cashew Alfredo"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "cashew cream, nutritional yeast, pasta water — silky, no dairy.",
+        "de": "cashew-creme, hefeflocken, nudelwasser — seidig, ohne milch."
+      },
+      "contains": ["gluten", "tree-nuts"],
+      "attributes": ["easy"],
+      "technique_tags": ["simmer"],
+      "time_minutes": 25,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 620,
+      "protein_g": 20,
+      "carbs_g": 82,
+      "fat_g": 22,
+      "ingredients": [
+        {"id": "pasta", "qty": 250, "unit": "g", "name": {"en": "fettuccine", "de": "Fettuccine"}},
+        {"id": "cashews", "qty": 120, "unit": "g", "name": {"en": "cashews, soaked", "de": "Cashews, eingeweicht"}},
+        {"id": "garlic", "qty": 1, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "nutritional-yeast", "qty": 3, "unit": "tbsp", "name": {"en": "nutritional yeast", "de": "Hefeflocken"}},
+        {"id": "lemon", "qty": 0.5, "unit": "piece", "name": {"en": "lemon juice", "de": "Zitronensaft"}},
+        {"id": "black-pepper", "qty": 1, "unit": "tsp", "name": {"en": "black pepper", "de": "schwarzer Pfeffer"}}
+      ],
+      "steps": [
+        {"text": {"en": "Soak cashews 20 min in hot water (or overnight cold).", "de": "Cashews 20 Min in heißem Wasser einweichen (oder über Nacht kalt)."}, "time_minutes": 20},
+        {"text": {"en": "Blend cashews with garlic, yeast, lemon, 200ml water until silken.", "de": "Cashews mit Knoblauch, Hefe, Zitrone und 200 ml Wasser seidig pürieren."}, "time_minutes": 3},
+        {"text": {"en": "Boil pasta al dente. Reserve pasta water.", "de": "Pasta al dente kochen. Nudelwasser aufheben."}, "time_minutes": 10},
+        {"text": {"en": "Warm sauce in pan, add pasta + a splash of pasta water, toss.", "de": "Sauce in der Pfanne erwärmen, Pasta und etwas Nudelwasser dazu, schwenken."}, "time_minutes": 2},
+        {"text": {"en": "Pepper, serve immediately.", "de": "Pfeffern, sofort servieren."}}
+      ]
+    },
+    {
+      "id": "r-padthai-classic",
+      "dish_id": "padthai",
+      "name": {"en": "Pad Thai with Shrimp", "de": "Pad Thai mit Garnelen"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "pescatarian",
+      "summary": {
+        "en": "tamarind, fish sauce, palm sugar — the balance is the point.",
+        "de": "tamarinde, fischsauce, palmzucker — die balance ist alles."
+      },
+      "contains": ["shellfish", "fish", "egg", "peanuts", "soy"],
+      "attributes": ["medium"],
+      "technique_tags": ["stir-fry"],
+      "time_minutes": 30,
+      "active_minutes": 20,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 620,
+      "protein_g": 30,
+      "carbs_g": 78,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "rice-noodles", "qty": 200, "unit": "g", "name": {"en": "rice noodles", "de": "Reisnudeln"}},
+        {"id": "shrimp", "qty": 200, "unit": "g", "name": {"en": "shrimp", "de": "Garnelen"}},
+        {"id": "egg", "qty": 2, "unit": "piece", "name": {"en": "eggs", "de": "Eier"}},
+        {"id": "scallion", "qty": 3, "unit": "piece", "name": {"en": "scallions", "de": "Frühlingszwiebeln"}},
+        {"id": "peanuts", "qty": 30, "unit": "g", "name": {"en": "peanuts, crushed", "de": "Erdnüsse, gehackt"}},
+        {"id": "tamarind", "qty": 2, "unit": "tbsp", "name": {"en": "tamarind paste", "de": "Tamarindenpaste"}},
+        {"id": "fish-sauce", "qty": 2, "unit": "tbsp", "name": {"en": "fish sauce", "de": "Fischsauce"}},
+        {"id": "sugar", "qty": 1, "unit": "tbsp", "name": {"en": "palm sugar", "de": "Palmzucker"}},
+        {"id": "lime", "qty": 1, "unit": "piece", "name": {"en": "lime", "de": "Limette"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}}
+      ],
+      "steps": [
+        {"text": {"en": "Soak rice noodles in hot water 8 min until pliable.", "de": "Reisnudeln 8 Min in heißem Wasser einweichen, bis biegsam."}, "time_minutes": 8},
+        {"text": {"en": "Mix tamarind, fish sauce, palm sugar — the sauce.", "de": "Tamarinde, Fischsauce und Palmzucker mischen — die Sauce."}},
+        {"text": {"en": "Wok-hot oil, sear shrimp 1 min per side, remove.", "de": "Wok heiß ölen, Garnelen 1 Min pro Seite anbraten, herausnehmen."}, "time_minutes": 3},
+        {"text": {"en": "Garlic in. Push aside. Crack eggs, scramble.", "de": "Knoblauch dazu. Beiseite schieben. Eier hineinschlagen, rühren."}, "time_minutes": 2},
+        {"text": {"en": "Noodles + sauce + shrimp. Toss hard, scallions in.", "de": "Nudeln + Sauce + Garnelen. Kräftig schwenken, Frühlingszwiebeln dazu."}, "time_minutes": 3},
+        {"text": {"en": "Plate, peanuts on top, lime wedge on the side.", "de": "Anrichten, Erdnüsse oben, Limettenspalte daneben."}}
+      ]
+    },
+    {
+      "id": "r-padthai-vegan",
+      "dish_id": "padthai",
+      "name": {"en": "Tofu Pad Thai", "de": "Tofu Pad Thai"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "tofu instead of shrimp, soy sauce instead of fish sauce.",
+        "de": "tofu statt garnelen, sojasauce statt fischsauce."
+      },
+      "contains": ["soy", "peanuts"],
+      "attributes": ["medium"],
+      "technique_tags": ["stir-fry"],
+      "time_minutes": 30,
+      "active_minutes": 20,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 580,
+      "protein_g": 22,
+      "carbs_g": 78,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "rice-noodles", "qty": 200, "unit": "g", "name": {"en": "rice noodles", "de": "Reisnudeln"}},
+        {"id": "tofu", "qty": 200, "unit": "g", "name": {"en": "firm tofu, cubed", "de": "fester Tofu, gewürfelt"}},
+        {"id": "scallion", "qty": 3, "unit": "piece", "name": {"en": "scallions", "de": "Frühlingszwiebeln"}},
+        {"id": "peanuts", "qty": 30, "unit": "g", "name": {"en": "peanuts, crushed", "de": "Erdnüsse, gehackt"}},
+        {"id": "tamarind", "qty": 2, "unit": "tbsp", "name": {"en": "tamarind paste", "de": "Tamarindenpaste"}},
+        {"id": "soy-sauce", "qty": 2, "unit": "tbsp", "name": {"en": "soy sauce", "de": "Sojasauce"}},
+        {"id": "sugar", "qty": 1, "unit": "tbsp", "name": {"en": "palm sugar", "de": "Palmzucker"}},
+        {"id": "lime", "qty": 1, "unit": "piece", "name": {"en": "lime", "de": "Limette"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}}
+      ],
+      "steps": [
+        {"text": {"en": "Press tofu 15 min between paper towels.", "de": "Tofu 15 Min zwischen Küchenpapier pressen."}, "time_minutes": 15},
+        {"text": {"en": "Soak noodles in hot water 8 min.", "de": "Nudeln 8 Min in heißem Wasser einweichen."}, "time_minutes": 8},
+        {"text": {"en": "Mix tamarind, soy, palm sugar — the sauce.", "de": "Tamarinde, Sojasauce, Palmzucker mischen — die Sauce."}},
+        {"text": {"en": "Pan-fry tofu hot until golden, remove.", "de": "Tofu heiß anbraten bis golden, herausnehmen."}, "time_minutes": 5},
+        {"text": {"en": "Garlic, noodles, sauce, tofu — toss.", "de": "Knoblauch, Nudeln, Sauce, Tofu — schwenken."}, "time_minutes": 3},
+        {"text": {"en": "Scallions, peanuts, lime.", "de": "Frühlingszwiebeln, Erdnüsse, Limette."}}
+      ]
+    },
+    {
+      "id": "r-padthai-peanutfree",
+      "dish_id": "padthai",
+      "name": {"en": "Peanut-Free Pad Thai (Sunflower)", "de": "Erdnussfreie Pad Thai (Sonnenblume)"},
+      "variant_label": {"en": "peanut-free", "de": "erdnussfrei"},
+      "diet_label": "pescatarian",
+      "summary": {
+        "en": "toasted sunflower seeds carry the crunch.",
+        "de": "geröstete sonnenblumenkerne übernehmen den biss."
+      },
+      "contains": ["shellfish", "fish", "egg", "soy"],
+      "attributes": ["medium"],
+      "technique_tags": ["stir-fry"],
+      "time_minutes": 30,
+      "active_minutes": 20,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 600,
+      "protein_g": 28,
+      "carbs_g": 76,
+      "fat_g": 17,
+      "ingredients": [
+        {"id": "rice-noodles", "qty": 200, "unit": "g", "name": {"en": "rice noodles", "de": "Reisnudeln"}},
+        {"id": "shrimp", "qty": 200, "unit": "g", "name": {"en": "shrimp", "de": "Garnelen"}},
+        {"id": "egg", "qty": 2, "unit": "piece", "name": {"en": "eggs", "de": "Eier"}},
+        {"id": "scallion", "qty": 3, "unit": "piece", "name": {"en": "scallions", "de": "Frühlingszwiebeln"}},
+        {"id": "sunflower-seeds", "qty": 30, "unit": "g", "name": {"en": "sunflower seeds, toasted", "de": "Sonnenblumenkerne, geröstet"}},
+        {"id": "tamarind", "qty": 2, "unit": "tbsp", "name": {"en": "tamarind paste", "de": "Tamarindenpaste"}},
+        {"id": "fish-sauce", "qty": 2, "unit": "tbsp", "name": {"en": "fish sauce", "de": "Fischsauce"}},
+        {"id": "sugar", "qty": 1, "unit": "tbsp", "name": {"en": "palm sugar", "de": "Palmzucker"}},
+        {"id": "lime", "qty": 1, "unit": "piece", "name": {"en": "lime", "de": "Limette"}},
+        {"id": "garlic", "qty": 2, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast sunflower seeds dry in a hot pan until amber. Set aside.", "de": "Sonnenblumenkerne in heißer Pfanne ohne Öl bernsteinfarben rösten. Beiseite."}, "time_minutes": 3},
+        {"text": {"en": "Proceed as classic pad thai but use seeds instead of peanuts.", "de": "Wie klassisches Pad Thai vorgehen, aber Kerne statt Erdnüsse verwenden."}, "time_minutes": 22}
+      ]
+    },
+    {
+      "id": "r-carbonara-classic",
+      "dish_id": "carbonara",
+      "name": {"en": "Spaghetti alla Carbonara", "de": "Spaghetti alla Carbonara"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "guanciale rendered, egg-yolk-pecorino sauce off heat.",
+        "de": "guanciale ausgelassen, eigelb-pecorino-sauce ohne hitze."
+      },
+      "contains": ["pork", "dairy", "gluten", "egg", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 25,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 820,
+      "protein_g": 34,
+      "carbs_g": 78,
+      "fat_g": 42,
+      "ingredients": [
+        {"id": "pasta", "qty": 250, "unit": "g", "name": {"en": "spaghetti", "de": "Spaghetti"}},
+        {"id": "guanciale", "qty": 120, "unit": "g", "name": {"en": "guanciale, diced", "de": "Guanciale, gewürfelt"}},
+        {"id": "egg", "qty": 3, "unit": "piece", "name": {"en": "egg yolks + 1 whole egg", "de": "Eigelb + 1 ganzes Ei"}},
+        {"id": "parmesan", "qty": 80, "unit": "g", "name": {"en": "pecorino romano, grated", "de": "Pecorino Romano, gerieben"}},
+        {"id": "black-pepper", "qty": 2, "unit": "tsp", "name": {"en": "black pepper, coarse", "de": "schwarzer Pfeffer, grob"}}
+      ],
+      "steps": [
+        {"text": {"en": "Render guanciale slowly until fat is golden, 6 min.", "de": "Guanciale langsam auslassen, bis das Fett golden ist, 6 Min."}, "time_minutes": 6},
+        {"text": {"en": "Boil spaghetti in salted water.", "de": "Spaghetti in Salzwasser kochen."}, "time_minutes": 10},
+        {"text": {"en": "Whisk yolks + egg with pecorino, ¼ tsp pepper.", "de": "Eigelb + Ei mit Pecorino und ¼ TL Pfeffer verrühren."}},
+        {"text": {"en": "Drain pasta, reserve cup of pasta water. Off-heat the guanciale.", "de": "Pasta abgießen, eine Tasse Nudelwasser aufheben. Guanciale vom Herd."}},
+        {"text": {"en": "Toss pasta in guanciale fat. Off heat, stream in egg mix + pasta water until creamy.", "de": "Pasta im Guanciale-Fett schwenken. Vom Herd, Eimischung + Nudelwasser einrühren, bis cremig."}, "time_minutes": 2},
+        {"text": {"en": "More pepper, more pecorino, serve immediately.", "de": "Mehr Pfeffer, mehr Pecorino, sofort servieren."}}
+      ]
+    },
+    {
+      "id": "r-carbonara-vegetarian",
+      "dish_id": "carbonara",
+      "name": {"en": "Mushroom Carbonara", "de": "Pilz-Carbonara"},
+      "variant_label": {"en": "vegetarian", "de": "vegetarisch"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "shiitake stand in for guanciale; the rest is sacred.",
+        "de": "shiitake an stelle von guanciale; der rest ist heilig."
+      },
+      "contains": ["dairy", "gluten", "egg", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 25,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 2,
+      "calories_per_serving": 680,
+      "protein_g": 28,
+      "carbs_g": 78,
+      "fat_g": 26,
+      "ingredients": [
+        {"id": "pasta", "qty": 250, "unit": "g", "name": {"en": "spaghetti", "de": "Spaghetti"}},
+        {"id": "mushroom", "qty": 200, "unit": "g", "name": {"en": "shiitake mushrooms, sliced", "de": "Shiitake-Pilze, in Scheiben"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}},
+        {"id": "egg", "qty": 3, "unit": "piece", "name": {"en": "egg yolks + 1 whole", "de": "Eigelb + 1 ganzes Ei"}},
+        {"id": "parmesan", "qty": 80, "unit": "g", "name": {"en": "pecorino, grated", "de": "Pecorino, gerieben"}},
+        {"id": "black-pepper", "qty": 2, "unit": "tsp", "name": {"en": "black pepper", "de": "schwarzer Pfeffer"}}
+      ],
+      "steps": [
+        {"text": {"en": "Pan-fry mushrooms hard in olive oil until deeply golden.", "de": "Pilze in Olivenöl stark anbraten, bis tief golden."}, "time_minutes": 8},
+        {"text": {"en": "Boil spaghetti al dente.", "de": "Spaghetti al dente kochen."}, "time_minutes": 10},
+        {"text": {"en": "Whisk eggs + pecorino + pepper.", "de": "Eier, Pecorino und Pfeffer verrühren."}},
+        {"text": {"en": "Toss pasta in mushroom pan off heat. Stream in egg mix + pasta water.", "de": "Pasta in der Pilzpfanne vom Herd schwenken. Ei-Mix + Nudelwasser einrühren."}, "time_minutes": 2}
+      ]
+    },
+    {
+      "id": "r-tikka-classic",
+      "dish_id": "tikkamasala",
+      "name": {"en": "Chicken Tikka Masala", "de": "Chicken Tikka Masala"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "yogurt-marinated chicken, charred, drowned in tomato-cream.",
+        "de": "in joghurt marinierte hähnchenstücke, angeflammt, in tomatensahne ertränkt."
+      },
+      "contains": ["poultry", "dairy", "lactose"],
+      "attributes": ["medium"],
+      "technique_tags": ["grill", "simmer"],
+      "time_minutes": 55,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 3,
+      "calories_per_serving": 560,
+      "protein_g": 36,
+      "carbs_g": 30,
+      "fat_g": 30,
+      "ingredients": [
+        {"id": "chicken", "qty": 500, "unit": "g", "name": {"en": "chicken thighs, cubed", "de": "Hähnchenschenkel, gewürfelt"}},
+        {"id": "yogurt", "qty": 150, "unit": "g", "name": {"en": "yogurt", "de": "Joghurt"}},
+        {"id": "garam-masala", "qty": 2, "unit": "tsp", "name": {"en": "garam masala", "de": "Garam Masala"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "turmeric", "qty": 1, "unit": "tsp", "name": {"en": "turmeric", "de": "Kurkuma"}},
+        {"id": "ginger", "qty": 1, "unit": "tbsp", "name": {"en": "ginger, grated", "de": "Ingwer, gerieben"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "tomato", "qty": 400, "unit": "g", "name": {"en": "crushed tomatoes", "de": "passierte Tomaten"}},
+        {"id": "cream", "qty": 150, "unit": "ml", "name": {"en": "cream", "de": "Sahne"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion, diced", "de": "Zwiebel, gewürfelt"}}
+      ],
+      "steps": [
+        {"text": {"en": "Marinate chicken in yogurt + spices + ginger + garlic, ≥1h.", "de": "Hähnchen in Joghurt + Gewürzen + Ingwer + Knoblauch ≥1h marinieren."}, "time_minutes": 60},
+        {"text": {"en": "Broil chicken under high heat until charred at edges, ~10 min.", "de": "Hähnchen unter starker Hitze ~10 Min anflammen, bis Ränder ankohlen."}, "time_minutes": 10},
+        {"text": {"en": "Sauté onion in butter until golden. Add tomatoes, simmer 15 min.", "de": "Zwiebel in Butter golden anbraten. Tomaten dazu, 15 Min köcheln."}, "time_minutes": 18},
+        {"text": {"en": "Stir in chicken and cream. Simmer 5 min. Serve with rice.", "de": "Hähnchen und Sahne einrühren. 5 Min köcheln. Mit Reis servieren."}, "time_minutes": 5}
+      ]
+    },
+    {
+      "id": "r-tikka-vegan",
+      "dish_id": "tikkamasala",
+      "name": {"en": "Cauliflower Tikka Masala", "de": "Blumenkohl Tikka Masala"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "roasted cauliflower in coconut-tomato sauce, same spice signature.",
+        "de": "gerösteter blumenkohl in kokos-tomaten-sauce, gleiche gewürzschrift."
+      },
+      "contains": [],
+      "attributes": ["medium"],
+      "technique_tags": ["roast", "simmer"],
+      "time_minutes": 50,
+      "active_minutes": 25,
+      "effort": "medium",
+      "servings": 3,
+      "calories_per_serving": 420,
+      "protein_g": 10,
+      "carbs_g": 38,
+      "fat_g": 26,
+      "ingredients": [
+        {"id": "cauliflower", "qty": 1, "unit": "piece", "name": {"en": "cauliflower head, in florets", "de": "Blumenkohl, in Röschen"}},
+        {"id": "garam-masala", "qty": 2, "unit": "tsp", "name": {"en": "garam masala", "de": "Garam Masala"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "turmeric", "qty": 1, "unit": "tsp", "name": {"en": "turmeric", "de": "Kurkuma"}},
+        {"id": "ginger", "qty": 1, "unit": "tbsp", "name": {"en": "ginger, grated", "de": "Ingwer, gerieben"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "tomato", "qty": 400, "unit": "g", "name": {"en": "crushed tomatoes", "de": "passierte Tomaten"}},
+        {"id": "coconut-milk", "qty": 200, "unit": "ml", "name": {"en": "coconut milk", "de": "Kokosmilch"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toss cauliflower with oil + half the spices. Roast 25 min at 220°C.", "de": "Blumenkohl mit Öl + halben Gewürzen mischen. 25 Min bei 220°C rösten."}, "time_minutes": 25},
+        {"text": {"en": "Sauté onion until soft. Add ginger, garlic, rest of spices.", "de": "Zwiebel weich anbraten. Ingwer, Knoblauch, restliche Gewürze dazu."}, "time_minutes": 5},
+        {"text": {"en": "Tomatoes + coconut milk. Simmer 15 min.", "de": "Tomaten + Kokosmilch. 15 Min köcheln."}, "time_minutes": 15},
+        {"text": {"en": "Fold in cauliflower. 3 min. Rice on the side.", "de": "Blumenkohl unterheben. 3 Min. Reis dazu."}, "time_minutes": 3}
+      ]
+    },
+    {
+      "id": "r-tikka-dairyfree",
+      "dish_id": "tikkamasala",
+      "name": {"en": "Dairy-Free Chicken Tikka", "de": "Milchfreies Chicken Tikka"},
+      "variant_label": {"en": "dairy-free", "de": "milchfrei"},
+      "diet_label": "omnivore",
+      "summary": {
+        "en": "coconut yogurt marinade, coconut cream sauce, same masala backbone.",
+        "de": "kokos-joghurt-marinade, kokos-creme-sauce, gleicher masala-rücken."
+      },
+      "contains": ["poultry"],
+      "attributes": ["medium"],
+      "technique_tags": ["grill", "simmer"],
+      "time_minutes": 55,
+      "active_minutes": 30,
+      "effort": "medium",
+      "servings": 3,
+      "calories_per_serving": 540,
+      "protein_g": 35,
+      "carbs_g": 28,
+      "fat_g": 30,
+      "ingredients": [
+        {"id": "chicken", "qty": 500, "unit": "g", "name": {"en": "chicken thighs", "de": "Hähnchenschenkel"}},
+        {"id": "coconut-yogurt", "qty": 150, "unit": "g", "name": {"en": "coconut yogurt", "de": "Kokos-Joghurt"}},
+        {"id": "garam-masala", "qty": 2, "unit": "tsp", "name": {"en": "garam masala", "de": "Garam Masala"}},
+        {"id": "ginger", "qty": 1, "unit": "tbsp", "name": {"en": "ginger", "de": "Ingwer"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "tomato", "qty": 400, "unit": "g", "name": {"en": "crushed tomatoes", "de": "passierte Tomaten"}},
+        {"id": "coconut-milk", "qty": 200, "unit": "ml", "name": {"en": "coconut milk", "de": "Kokosmilch"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}}
+      ],
+      "steps": [
+        {"text": {"en": "Marinate chicken in coconut yogurt + spices ≥1h.", "de": "Hähnchen ≥1h in Kokos-Joghurt + Gewürzen marinieren."}, "time_minutes": 60},
+        {"text": {"en": "Broil chicken hot until charred.", "de": "Hähnchen heiß übergrillen, bis Ränder ankohlen."}, "time_minutes": 10},
+        {"text": {"en": "Sauté onion. Tomatoes + coconut milk. Simmer 15 min.", "de": "Zwiebel anbraten. Tomaten + Kokosmilch. 15 Min köcheln."}, "time_minutes": 18},
+        {"text": {"en": "Add chicken. Simmer 5 min.", "de": "Hähnchen dazu. 5 Min köcheln."}, "time_minutes": 5}
+      ]
+    },
+    {
+      "id": "r-pancakes-classic",
+      "dish_id": "pancakes",
+      "name": {"en": "Buttermilk Pancakes", "de": "Buttermilch-Pfannkuchen"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "lift from buttermilk + baking soda. don't overmix.",
+        "de": "auftrieb aus buttermilch + natron. nicht zu lange rühren."
+      },
+      "contains": ["dairy", "gluten", "egg", "lactose", "added-sugar"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 20,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 480,
+      "protein_g": 14,
+      "carbs_g": 70,
+      "fat_g": 16,
+      "ingredients": [
+        {"id": "wheat-flour", "qty": 200, "unit": "g", "name": {"en": "flour", "de": "Mehl"}},
+        {"id": "buttermilk", "qty": 250, "unit": "ml", "name": {"en": "buttermilk", "de": "Buttermilch"}},
+        {"id": "egg", "qty": 1, "unit": "piece", "name": {"en": "egg", "de": "Ei"}},
+        {"id": "sugar", "qty": 2, "unit": "tbsp", "name": {"en": "sugar", "de": "Zucker"}},
+        {"id": "baking-soda", "qty": 1, "unit": "tsp", "name": {"en": "baking soda", "de": "Natron"}},
+        {"id": "butter", "qty": 30, "unit": "g", "name": {"en": "butter, melted", "de": "Butter, geschmolzen"}}
+      ],
+      "steps": [
+        {"text": {"en": "Whisk dry: flour, sugar, baking soda, pinch salt.", "de": "Trocken vermengen: Mehl, Zucker, Natron, Prise Salz."}},
+        {"text": {"en": "Whisk wet: buttermilk, egg, butter.", "de": "Flüssig verrühren: Buttermilch, Ei, Butter."}},
+        {"text": {"en": "Fold together — lumps are ok. Rest 5 min.", "de": "Vorsichtig vermengen — Klümpchen sind ok. 5 Min ruhen."}, "time_minutes": 5},
+        {"text": {"en": "Ladle onto medium-hot greased pan. Flip when bubbles pop.", "de": "Auf mittelheiße, gefettete Pfanne portionieren. Wenden, wenn Blasen platzen."}, "time_minutes": 12}
+      ]
+    },
+    {
+      "id": "r-pancakes-vegan",
+      "dish_id": "pancakes",
+      "name": {"en": "Oat Milk Pancakes", "de": "Hafermilch-Pfannkuchen"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "oat milk + vinegar mimics buttermilk; flax egg holds it together.",
+        "de": "hafermilch + essig imitiert buttermilch; lein-ei hält alles zusammen."
+      },
+      "contains": ["gluten", "added-sugar"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 25,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 420,
+      "protein_g": 9,
+      "carbs_g": 72,
+      "fat_g": 12,
+      "ingredients": [
+        {"id": "wheat-flour", "qty": 200, "unit": "g", "name": {"en": "flour", "de": "Mehl"}},
+        {"id": "oat-milk", "qty": 260, "unit": "ml", "name": {"en": "oat milk", "de": "Haferdrink"}},
+        {"id": "vinegar", "qty": 1, "unit": "tbsp", "name": {"en": "apple-cider vinegar", "de": "Apfelessig"}},
+        {"id": "flax", "qty": 1, "unit": "tbsp", "name": {"en": "ground flax + 3 tbsp water", "de": "geschrotete Leinsamen + 3 EL Wasser"}},
+        {"id": "sugar", "qty": 2, "unit": "tbsp", "name": {"en": "sugar", "de": "Zucker"}},
+        {"id": "baking-soda", "qty": 1, "unit": "tsp", "name": {"en": "baking soda", "de": "Natron"}}
+      ],
+      "steps": [
+        {"text": {"en": "Mix oat milk + vinegar; rest 5 min until thickened.", "de": "Hafermilch + Essig mischen; 5 Min stehen lassen, bis dicker."}, "time_minutes": 5},
+        {"text": {"en": "Mix flax + water; rest 5 min until gel.", "de": "Lein + Wasser mischen; 5 Min stehen lassen, bis gelartig."}, "time_minutes": 5},
+        {"text": {"en": "Whisk dry. Add wet + flax gel. Fold gently.", "de": "Trocken vermengen. Flüssig + Lein-Gel dazu. Vorsichtig falten."}},
+        {"text": {"en": "Ladle onto pan. Flip when bubbles pop.", "de": "Auf Pfanne portionieren. Wenden, wenn Blasen platzen."}, "time_minutes": 12}
+      ]
+    },
+    {
+      "id": "r-pancakes-glutenfree",
+      "dish_id": "pancakes",
+      "name": {"en": "Buckwheat Pancakes", "de": "Buchweizen-Pfannkuchen"},
+      "variant_label": {"en": "gluten-free", "de": "glutenfrei"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "100% buckwheat — earthy, nutty, gluten-free by birth.",
+        "de": "100% buchweizen — erdig, nussig, glutenfrei von geburt."
+      },
+      "contains": ["dairy", "egg", "lactose", "added-sugar"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["pan-fry"],
+      "time_minutes": 20,
+      "active_minutes": 20,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 420,
+      "protein_g": 14,
+      "carbs_g": 60,
+      "fat_g": 14,
+      "ingredients": [
+        {"id": "buckwheat-flour", "qty": 180, "unit": "g", "name": {"en": "buckwheat flour", "de": "Buchweizenmehl"}},
+        {"id": "whole-milk", "qty": 240, "unit": "ml", "name": {"en": "milk", "de": "Milch"}},
+        {"id": "egg", "qty": 1, "unit": "piece", "name": {"en": "egg", "de": "Ei"}},
+        {"id": "sugar", "qty": 1, "unit": "tbsp", "name": {"en": "sugar", "de": "Zucker"}},
+        {"id": "baking-soda", "qty": 1, "unit": "tsp", "name": {"en": "baking soda", "de": "Natron"}},
+        {"id": "butter", "qty": 30, "unit": "g", "name": {"en": "butter, melted", "de": "Butter, geschmolzen"}}
+      ],
+      "steps": [
+        {"text": {"en": "Whisk dry, whisk wet, fold together.", "de": "Trocken vermengen, flüssig verrühren, zusammen falten."}},
+        {"text": {"en": "Cook on medium-hot pan, flip when bubbles pop.", "de": "Auf mittelheißer Pfanne backen, wenden, wenn Blasen platzen."}, "time_minutes": 12}
+      ]
+    },
+    {
+      "id": "r-shakshuka-classic",
+      "dish_id": "shakshuka",
+      "name": {"en": "Classic Shakshuka", "de": "Klassische Schakschuka"},
+      "variant_label": {"en": "classic", "de": "klassisch"},
+      "diet_label": "vegetarian",
+      "summary": {
+        "en": "eggs poached in a fragrant tomato-pepper sauce, eaten from the pan.",
+        "de": "eier pochiert in duftender tomaten-paprika-sauce, aus der pfanne gegessen."
+      },
+      "contains": ["egg"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["simmer", "poach"],
+      "time_minutes": 30,
+      "active_minutes": 25,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 380,
+      "protein_g": 18,
+      "carbs_g": 24,
+      "fat_g": 22,
+      "ingredients": [
+        {"id": "egg", "qty": 4, "unit": "piece", "name": {"en": "eggs", "de": "Eier"}},
+        {"id": "tomato", "qty": 400, "unit": "g", "name": {"en": "crushed tomatoes", "de": "passierte Tomaten"}},
+        {"id": "bell-pepper", "qty": 1, "unit": "piece", "name": {"en": "red bell pepper, diced", "de": "rote Paprika, gewürfelt"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion, diced", "de": "Zwiebel, gewürfelt"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "paprika", "de": "Paprikapulver"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Sauté onion + pepper in oil until soft.", "de": "Zwiebel + Paprika in Öl weich anbraten."}, "time_minutes": 6},
+        {"text": {"en": "Garlic, cumin, paprika — 30 sec.", "de": "Knoblauch, Kreuzkümmel, Paprika — 30 Sek."}},
+        {"text": {"en": "Tomatoes in. Simmer 12 min, salt to taste.", "de": "Tomaten dazu. 12 Min köcheln, mit Salz abschmecken."}, "time_minutes": 12},
+        {"text": {"en": "Make wells, crack eggs in, cover. 5–7 min until whites set.", "de": "Vertiefungen machen, Eier hineinschlagen, Deckel drauf. 5–7 Min, bis Eiweiß stockt."}, "time_minutes": 6},
+        {"text": {"en": "Eat from the pan with bread.", "de": "Aus der Pfanne mit Brot essen."}}
+      ]
+    },
+    {
+      "id": "r-shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "name": {"en": "Tofu Shakshuka", "de": "Tofu Schakschuka"},
+      "variant_label": {"en": "vegan", "de": "vegan"},
+      "diet_label": "vegan",
+      "summary": {
+        "en": "silken tofu rounds replace the eggs; same poached softness.",
+        "de": "seidentofu-runde ersetzen die eier; gleiche pochierte zartheit."
+      },
+      "contains": ["soy"],
+      "attributes": ["easy", "breakfast"],
+      "technique_tags": ["simmer"],
+      "time_minutes": 30,
+      "active_minutes": 25,
+      "effort": "easy",
+      "servings": 2,
+      "calories_per_serving": 340,
+      "protein_g": 18,
+      "carbs_g": 24,
+      "fat_g": 18,
+      "ingredients": [
+        {"id": "tofu", "qty": 300, "unit": "g", "name": {"en": "silken tofu, sliced", "de": "Seidentofu, in Scheiben"}},
+        {"id": "tomato", "qty": 400, "unit": "g", "name": {"en": "crushed tomatoes", "de": "passierte Tomaten"}},
+        {"id": "bell-pepper", "qty": 1, "unit": "piece", "name": {"en": "red bell pepper", "de": "rote Paprika"}},
+        {"id": "onion", "qty": 1, "unit": "piece", "name": {"en": "onion", "de": "Zwiebel"}},
+        {"id": "garlic", "qty": 3, "unit": "clove", "name": {"en": "garlic", "de": "Knoblauch"}},
+        {"id": "cumin", "qty": 1, "unit": "tsp", "name": {"en": "cumin", "de": "Kreuzkümmel"}},
+        {"id": "paprika", "qty": 1, "unit": "tsp", "name": {"en": "paprika", "de": "Paprikapulver"}},
+        {"id": "olive-oil", "qty": 2, "unit": "tbsp", "name": {"en": "olive oil", "de": "Olivenöl"}}
+      ],
+      "steps": [
+        {"text": {"en": "Sauté onion + pepper until soft.", "de": "Zwiebel + Paprika weich anbraten."}, "time_minutes": 6},
+        {"text": {"en": "Garlic, cumin, paprika — 30 sec.", "de": "Knoblauch, Kreuzkümmel, Paprika — 30 Sek."}},
+        {"text": {"en": "Tomatoes. Simmer 12 min.", "de": "Tomaten. 12 Min köcheln."}, "time_minutes": 12},
+        {"text": {"en": "Nestle tofu in, spoon sauce over, simmer 5 min.", "de": "Tofu hineinlegen, Sauce darüber löffeln, 5 Min köcheln."}, "time_minutes": 5}
+      ]
+    }
+  ]
+}

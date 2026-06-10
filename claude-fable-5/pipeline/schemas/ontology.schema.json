@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook ontology",
+  "type": "object",
+  "required": ["version", "contains_flags", "compound_flags", "attributes",
+               "diet_labels"],
+  "properties": {
+    "version": {"type": "integer"},
+    "contains_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"$ref": "#/$defs/localized"}
+        }
+      }
+    },
+    "compound_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "expands_to"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"$ref": "#/$defs/localized"},
+          "expands_to": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["effort", "time_bucket", "calorie_bucket", "technique"],
+      "additionalProperties": {
+        "type": "array",
+        "items": {"type": "string"}
+      }
+    },
+    "diet_labels": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-05-21T12:00:00Z",
+  "partitions": [
+    {
+      "id": "core-recipes",
+      "file_path": "assets/core-recipes.json",
+      "autoload": true,
+      "description": "Core recipes loaded at launch (approx 80% most common)"
+    },
+    {
+      "id": "extended-recipes",
+      "file_path": "assets/extended-recipes.json",
+      "autoload": false,
+      "description": "Rare or extended variants loaded on-demand"
+    }
+  ],
+  "cuisine_partitions": [
+    {
+      "id": "cuisine-italian",
+      "file_path": "assets/extended-recipes.json",
+      "cuisine_tag": "italian"
+    },
+    {
+      "id": "cuisine-asian",
+      "file_path": "assets/core-recipes.json",
+      "cuisine_tag": "asian"
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file_path": "assets/core-recipes.json",
+      "cuisine_tag": "middle-eastern"
+    }
+  ]
+}

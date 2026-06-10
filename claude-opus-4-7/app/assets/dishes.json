@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "name": {"en":"Döner","de":"Döner"},
+      "hero_text": {
+        "en":"Berlin's quiet rebellion, written for every body. The vegan, the halal, the keto, all the same dish at heart — folded, sauced, eaten on the curb.",
+        "de":"Berlins leiser Aufstand, für jeden Körper geschrieben. Der vegane, der halal, der Keto — alle dasselbe Gericht im Kern, gerollt, gesaucet, am Bordstein gegessen."
+      },
+      "cap_caption": {"en":"berlin's quiet rebellion","de":"berlins leiser aufstand"},
+      "stripe_color": "#D86F5A",
+      "variant_ids": ["doener-classic","doener-vegan","doener-halal"],
+      "partition_id": "core",
+      "secondary_partitions": ["cuisine-middle-eastern"],
+      "cuisine_tags": ["middle-eastern","german"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "alfredo",
+      "name": {"en":"Pasta Alfredo","de":"Pasta Alfredo"},
+      "hero_text": {
+        "en":"Roman kitchen elegance, three ingredients done right. Or four, if you swap. Or none of them, if you're vegan — the soul stays.",
+        "de":"Römische Küchen­eleganz, drei Zutaten richtig gemacht. Oder vier, wenn du tauschst. Oder keine, wenn du vegan bist — die Seele bleibt."
+      },
+      "cap_caption": {"en":"three things, done well","de":"drei zutaten, ehrlich"},
+      "stripe_color": "#D9A85A",
+      "variant_ids": ["alfredo-classic","alfredo-gf","alfredo-vegan"],
+      "partition_id": "core",
+      "secondary_partitions": ["cuisine-italian"],
+      "cuisine_tags": ["italian"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "pad-thai",
+      "name": {"en":"Pad Thai","de":"Pad Thai"},
+      "hero_text": {
+        "en":"Sour-sweet-savoury balance, your version. Tamarind shines whether the protein's shrimp or tofu — both are right, both are Pad Thai.",
+        "de":"Sauer-süß-würzige Balance, in deiner Version. Tamarinde leuchtet, egal ob Garnele oder Tofu — beides ist richtig, beides ist Pad Thai."
+      },
+      "cap_caption": {"en":"tamarind tells the truth","de":"tamarinde sagt die wahrheit"},
+      "stripe_color": "#5A8B8B",
+      "variant_ids": ["pad-thai-classic","pad-thai-vegetarian","pad-thai-gf"],
+      "partition_id": "core",
+      "secondary_partitions": ["cuisine-asian"],
+      "cuisine_tags": ["thai","asian"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "risotto",
+      "name": {"en":"Risotto","de":"Risotto"},
+      "hero_text": {
+        "en":"Patience as a method. Stir, ladle, stir. Mushroom or saffron, dairy or cashew cream — the wrist remembers.",
+        "de":"Geduld als Methode. Rühren, schöpfen, rühren. Pilz oder Safran, Sahne oder Cashew­creme — das Handgelenk erinnert sich."
+      },
+      "cap_caption": {"en":"the wrist remembers","de":"das handgelenk erinnert sich"},
+      "stripe_color": "#8FA177",
+      "variant_ids": ["risotto-classic","risotto-vegan","risotto-mushroom"],
+      "partition_id": "core",
+      "secondary_partitions": ["cuisine-italian"],
+      "cuisine_tags": ["italian"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "falafel",
+      "name": {"en":"Falafel","de":"Falafel"},
+      "hero_text": {
+        "en":"Chickpea, herb, spice, heat — a coin-sized world. Baked when the oven calls, fried when the friends do.",
+        "de":"Kichererbse, Kraut, Gewürz, Hitze — eine Welt in Münzgröße. Gebacken wenn der Ofen ruft, frittiert wenn Freunde da sind."
+      },
+      "cap_caption": {"en":"a coin-sized world","de":"welt in münzgröße"},
+      "stripe_color": "#8B5C7A",
+      "variant_ids": ["falafel-baked","falafel-fried","falafel-low-fodmap"],
+      "partition_id": "core",
+      "secondary_partitions": ["cuisine-middle-eastern"],
+      "cuisine_tags": ["middle-eastern","levantine"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "pancakes",
+      "name": {"en":"Pancakes","de":"Pfannkuchen"},
+      "hero_text": {
+        "en":"Saturday morning's whole architecture. Stack, syrup, slow coffee. Egg or no egg, wheat or no wheat — the morning still arrives.",
+        "de":"Die ganze Architektur eines Samstag­morgens. Stapel, Sirup, langsamer Kaffee. Ei oder kein Ei, Weizen oder nicht — der Morgen kommt trotzdem."
+      },
+      "cap_caption": {"en":"saturday's architecture","de":"samstags architektur"},
+      "stripe_color": "#B48C5C",
+      "variant_ids": ["pancakes-classic","pancakes-vegan","pancakes-gf"],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": ["american","breakfast"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "caesar",
+      "name": {"en":"Caesar Salad","de":"Caesar Salat"},
+      "hero_text": {
+        "en":"Tijuana 1924, by way of every kitchen since. Anchovy or no anchovy, raw yolk or aquafaba — the dressing speaks the same language.",
+        "de":"Tijuana 1924, über jede Küche seitdem. Sardelle oder nicht, rohes Eigelb oder Aquafaba — das Dressing spricht dieselbe Sprache."
+      },
+      "cap_caption": {"en":"dressing speaks the same","de":"das dressing spricht gleich"},
+      "stripe_color": "#5A8B8B",
+      "variant_ids": ["caesar-classic","caesar-vegan"],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": ["american","classic"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "ramen",
+      "name": {"en":"Ramen","de":"Ramen"},
+      "hero_text": {
+        "en":"Broth as a doctrine. Hours of patience reduced to twelve minutes once a stock is in the freezer. Pork or shiitake — the bowl is hot, the spoon is yours.",
+        "de":"Brühe als Lehre. Stunden Geduld, reduziert auf zwölf Minuten sobald eine Brühe im Gefrierfach liegt. Schwein oder Shiitake — die Schale ist heiß, der Löffel gehört dir."
+      },
+      "cap_caption": {"en":"broth as doctrine","de":"brühe als lehre"},
+      "stripe_color": "#2A2520",
+      "variant_ids": ["ramen-classic","ramen-vegetarian"],
+      "partition_id": "extended",
+      "secondary_partitions": ["cuisine-asian"],
+      "cuisine_tags": ["japanese","asian"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "schnitzel",
+      "name": {"en":"Schnitzel","de":"Schnitzel"},
+      "hero_text": {
+        "en":"A cutlet, thin as a magazine cover, golden as the late sun. Veal, pork, seitan — your kitchen, your call.",
+        "de":"Ein Schnitzel, dünn wie ein Magazin, golden wie die späte Sonne. Kalb, Schwein, Seitan — deine Küche, deine Entscheidung."
+      },
+      "cap_caption": {"en":"thin as a magazine cover","de":"dünn wie magazinpapier"},
+      "stripe_color": "#D9A85A",
+      "variant_ids": ["schnitzel-classic","schnitzel-vegan"],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": ["german","austrian"],
+      "frequency_tier": 2
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "loading_strategy": {
+    "description": "Core recipes load eagerly at launch (top ~80% by use). Extended and cuisine partitions load on demand.",
+    "eager": ["core-recipes"],
+    "lazy": ["extended-recipes", "cuisine-italian", "cuisine-asian", "cuisine-middle-eastern"]
+  },
+  "partitions": [
+    { "id": "core-recipes",     "file": "core-recipes.json",     "kind": "recipes",  "load_strategy": "eager", "recipe_count": 20 },
+    { "id": "extended-recipes", "file": "extended-recipes.json", "kind": "recipes",  "load_strategy": "lazy",  "recipe_count": 6 },
+    { "id": "cuisine-italian",        "file": "cuisine-italian.json",        "kind": "crossref", "load_strategy": "lazy", "recipe_count": 6 },
+    { "id": "cuisine-asian",          "file": "cuisine-asian.json",          "kind": "crossref", "load_strategy": "lazy", "recipe_count": 5 },
+    { "id": "cuisine-middle-eastern", "file": "cuisine-middle-eastern.json", "kind": "crossref", "load_strategy": "lazy", "recipe_count": 6 }
+  ],
+  "cross_references": {
+    "cuisine-italian": ["alfredo-classic", "alfredo-glutenfree", "alfredo-vegan", "margherita-classic", "margherita-glutenfree", "margherita-vegan"],
+    "cuisine-asian": ["padthai-classic", "padthai-vegan", "padthai-glutenfree", "ramen-classic", "ramen-vegetarian"],
+    "cuisine-middle-eastern": ["doener-classic", "doener-vegan", "doener-keto", "doener-halal", "shakshuka-classic", "shakshuka-vegan"]
+  }
+}

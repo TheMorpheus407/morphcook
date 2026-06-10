@@ -1,0 +1,157 @@
+{
+  "partition_id": "cuisine-middle-eastern",
+  "recipes": [
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {"en": "classic falafel", "de": "Klassische Falafel"},
+      "caption": {"en": "golden outside, impossibly green inside", "de": "außen golden, innen unverschämt grün"},
+      "intro": {
+        "en": "the secret is dried chickpeas, soaked overnight — canned ones will betray you in the hot oil. blend them with an unreasonable amount of herbs and trust the green. when they hit the fryer and bloom golden, you'll understand why whole streets are built around this.",
+        "de": "Das Geheimnis sind getrocknete Kichererbsen, über Nacht eingeweicht — Dosenware lässt dich im heißen Öl im Stich. Mixe sie mit einer unvernünftigen Menge Kräuter und vertrau dem Grün. Wenn sie in der Fritteuse golden aufblühen, verstehst du, warum ganze Straßen um dieses Essen herum gebaut sind."
+      },
+      "variant": {"diet": "classic", "effort": "medium", "calorie": "le600"},
+      "contains": ["gluten", "sesame", "high-fodmap"],
+      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "nut-free", "medium", "le60", "le600", "deep-fry"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 520,
+      "macros": {"calories": 520, "protein_g": 18, "carbs_g": 62, "fat_g": 22},
+      "ingredients": [
+        {"ingredient_id": "chickpeas", "qty": 250, "unit": "g", "note": {"en": "dried, soaked overnight — not canned", "de": "getrocknet, über Nacht eingeweicht — keine Dose"}},
+        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "roughly chopped", "de": "grob gehackt"}},
+        {"ingredient_id": "garlic", "qty": 3, "unit": "clove"},
+        {"ingredient_id": "parsley", "qty": 1, "unit": "bunch", "note": {"en": "stems and all", "de": "mit Stielen"}},
+        {"ingredient_id": "cilantro", "qty": 1, "unit": "bunch"},
+        {"ingredient_id": "cumin", "qty": 2, "unit": "tsp"},
+        {"ingredient_id": "lemon", "qty": 1, "unit": "piece", "note": {"en": "juiced, for the tahini sauce", "de": "ausgepresst, für die Tahin-Sauce"}},
+        {"ingredient_id": "tahini", "qty": 4, "unit": "tbsp"},
+        {"ingredient_id": "pita", "qty": 4, "unit": "piece", "note": {"en": "warmed", "de": "aufgewärmt"}},
+        {"ingredient_id": "vegetable-oil", "qty": 1, "unit": "l", "note": {"en": "for deep-frying", "de": "zum Frittieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "drain the soaked chickpeas really well and pat them dry. pulse them in a food processor with the onion, garlic, parsley, cilantro, cumin and a big pinch of salt until you get a coarse, bright green crumb that holds together when squeezed. stop before it becomes a paste.", "de": "Die eingeweichten Kichererbsen sehr gut abtropfen lassen und trocken tupfen. Mit Zwiebel, Knoblauch, Petersilie, Koriander, Kreuzkümmel und einer großen Prise Salz im Mixer zu einem groben, leuchtend grünen Bröselteig pulsieren, der zusammenhält, wenn du ihn drückst. Aufhören, bevor er zur Paste wird."}},
+        {"text": {"en": "rest the mixture in the fridge so it firms up and the flavors get to know each other.", "de": "Die Masse im Kühlschrank ruhen lassen, damit sie fester wird und die Aromen sich kennenlernen."}, "timer_minutes": 30},
+        {"text": {"en": "meanwhile, whisk the tahini with the lemon juice, a pinch of salt and cold water, a spoonful at a time, until it seizes and then relaxes into a pourable cream.", "de": "Währenddessen das Tahin mit Zitronensaft, einer Prise Salz und kaltem Wasser löffelweise verrühren, bis es erst stockt und dann zu einer gießfähigen Creme wird."}},
+        {"text": {"en": "heat the oil in a deep pot to 175°C. shape the mixture into walnut-sized balls with wet hands, pressing them firmly.", "de": "Das Öl in einem tiefen Topf auf 175 °C erhitzen. Mit nassen Händen walnussgroße Bällchen formen und fest andrücken."}},
+        {"text": {"en": "fry in batches until deep golden brown and crisp — don't crowd the pot, the oil needs room to do its work.", "de": "Portionsweise frittieren, bis sie tief goldbraun und knusprig sind — nicht zu viele auf einmal, das Öl braucht Platz für seine Arbeit."}, "timer_minutes": 4},
+        {"text": {"en": "stuff the warm pitas with falafel and drown everything in tahini sauce. eat standing up, like it's meant to be.", "de": "Die warmen Pitas mit Falafel füllen und alles großzügig mit Tahin-Sauce übergießen. Im Stehen essen, so wie es gedacht ist."}}
+      ],
+      "tags": {"en": ["street food", "herby", "naturally vegan"], "de": ["Streetfood", "Kräuter", "von Natur aus vegan"]}
+    },
+    {
+      "id": "falafel-baked",
+      "dish_id": "falafel",
+      "title": {"en": "baked falafel salad", "de": "Ofen-Falafel auf Salat"},
+      "caption": {"en": "the oven does the heavy lifting", "de": "der Ofen macht die Arbeit"},
+      "intro": {
+        "en": "no pot of oil, no anxiety, same green heart. these bake up crisp at the edges and tender inside, then land on a cool crunchy salad with lemony tahini. lighter, yes — lesser, absolutely not.",
+        "de": "Kein Topf voll Öl, kein Stress, dasselbe grüne Herz. Diese Falafel werden im Ofen an den Rändern knusprig und bleiben innen zart, dann landen sie auf kühlem, knackigem Salat mit Zitronen-Tahin. Leichter, ja — weniger gut, auf keinen Fall."
+      },
+      "variant": {"diet": "light", "effort": "easy", "calorie": "le400"},
+      "contains": ["sesame", "high-fodmap"],
+      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "sugar-free", "nut-free", "light", "easy", "le60", "le400", "bake"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 40,
+      "servings": 4,
+      "calories_per_serving": 380,
+      "macros": {"calories": 380, "protein_g": 16, "carbs_g": 44, "fat_g": 15},
+      "ingredients": [
+        {"ingredient_id": "chickpeas", "qty": 250, "unit": "g", "note": {"en": "dried, soaked overnight", "de": "getrocknet, über Nacht eingeweicht"}},
+        {"ingredient_id": "parsley", "qty": 1, "unit": "bunch"},
+        {"ingredient_id": "cilantro", "qty": 0.5, "unit": "bunch"},
+        {"ingredient_id": "garlic", "qty": 2, "unit": "clove"},
+        {"ingredient_id": "cumin", "qty": 1.5, "unit": "tsp"},
+        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp", "note": {"en": "for brushing", "de": "zum Bestreichen"}},
+        {"ingredient_id": "tahini", "qty": 3, "unit": "tbsp"},
+        {"ingredient_id": "lemon", "qty": 1, "unit": "piece"},
+        {"ingredient_id": "cucumber", "qty": 1, "unit": "piece"},
+        {"ingredient_id": "romaine", "qty": 1, "unit": "piece", "note": {"en": "one head, torn", "de": "ein Kopf, gezupft"}}
+      ],
+      "steps": [
+        {"text": {"en": "heat the oven to 200°C. drain and dry the soaked chickpeas, then pulse them with parsley, cilantro, garlic, cumin and salt to a coarse green crumb.", "de": "Den Ofen auf 200 °C vorheizen. Die eingeweichten Kichererbsen abtropfen lassen und trocknen, dann mit Petersilie, Koriander, Knoblauch, Kreuzkümmel und Salz zu groben grünen Bröseln pulsieren."}},
+        {"text": {"en": "let the mixture rest so it holds its shape better. it needs the pause. you might too.", "de": "Die Masse kurz ruhen lassen, damit sie besser in Form bleibt. Sie braucht die Pause. Du vielleicht auch."}, "timer_minutes": 15},
+        {"text": {"en": "shape into small patties, set them on a lined tray and brush both sides with olive oil. bake until golden and crisp, flipping halfway through.", "de": "Kleine Taler formen, auf ein Blech mit Backpapier setzen und beidseitig mit Olivenöl bestreichen. Goldbraun und knusprig backen, nach der Hälfte wenden."}, "timer_minutes": 25},
+        {"text": {"en": "whisk the tahini with the juice of the lemon, a pinch of salt and cold water until it turns pale and pourable.", "de": "Das Tahin mit dem Saft der Zitrone, einer Prise Salz und kaltem Wasser glatt rühren, bis es hell und gießfähig wird."}},
+        {"text": {"en": "pile the romaine and sliced cucumber into bowls, land the warm falafel on top and ribbon the tahini over everything.", "de": "Römersalat und Gurkenscheiben in Schüsseln schichten, die warmen Falafel daraufsetzen und das Tahin in Bahnen darübergeben."}}
+      ],
+      "tags": {"en": ["oven-baked", "salad", "naturally vegan", "gluten-free"], "de": ["aus dem Ofen", "Salat", "von Natur aus vegan", "glutenfrei"]}
+    },
+    {
+      "id": "hummus-bowl-classic",
+      "dish_id": "hummus-bowl",
+      "title": {"en": "classic hummus bowl", "de": "Klassische Hummus Bowl"},
+      "caption": {"en": "swoosh first, ask questions later", "de": "erst schwungvoll streichen, dann fragen"},
+      "intro": {
+        "en": "silky hummus, a pile of cold crunchy vegetables, and za'atar over everything like confetti. the trick is ice water in the blender — it whips the tahini into something cloudlike. twenty minutes, no stove, all comfort.",
+        "de": "Seidiger Hummus, ein Berg kaltes, knackiges Gemüse und Za'atar über allem wie Konfetti. Der Trick ist Eiswasser im Mixer — es schlägt das Tahin wolkig auf. Zwanzig Minuten, kein Herd, pures Wohlfühlen."
+      },
+      "variant": {"diet": "classic", "effort": "easy", "calorie": "le400"},
+      "contains": ["sesame", "high-fodmap"],
+      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "sugar-free", "nut-free", "easy", "le30", "le400", "raw"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {"calories": 390, "protein_g": 13, "carbs_g": 36, "fat_g": 21},
+      "ingredients": [
+        {"ingredient_id": "chickpeas", "qty": 1, "unit": "can", "note": {"en": "drained, liquid saved", "de": "abgetropft, Flüssigkeit aufheben"}},
+        {"ingredient_id": "tahini", "qty": 3, "unit": "tbsp"},
+        {"ingredient_id": "lemon", "qty": 1, "unit": "piece", "note": {"en": "juiced", "de": "ausgepresst"}},
+        {"ingredient_id": "garlic", "qty": 1, "unit": "clove"},
+        {"ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp", "note": {"en": "your good bottle", "de": "dein gutes Öl"}},
+        {"ingredient_id": "cucumber", "qty": 1, "unit": "piece"},
+        {"ingredient_id": "cherry-tomato", "qty": 200, "unit": "g"},
+        {"ingredient_id": "radish", "qty": 4, "unit": "piece"},
+        {"ingredient_id": "zaatar", "qty": 2, "unit": "tsp"},
+        {"ingredient_id": "parsley", "qty": 0.5, "unit": "bunch"}
+      ],
+      "steps": [
+        {"text": {"en": "blend the chickpeas with tahini, lemon juice, garlic, salt and a few spoonfuls of ice-cold water until completely smooth and a shade paler — scrape down the sides and keep going longer than feels necessary.", "de": "Kichererbsen mit Tahin, Zitronensaft, Knoblauch, Salz und ein paar Löffeln eiskaltem Wasser komplett glatt mixen, bis der Hummus eine Spur heller wird — Ränder runterschieben und länger mixen, als sich nötig anfühlt."}, "timer_minutes": 3},
+        {"text": {"en": "let the hummus sit so the garlic mellows from sharp to friendly. taste, then adjust salt and lemon.", "de": "Den Hummus kurz stehen lassen, damit der Knoblauch von scharf auf freundlich umschaltet. Probieren, dann Salz und Zitrone nachjustieren."}, "timer_minutes": 10},
+        {"text": {"en": "meanwhile slice the cucumber, halve the tomatoes, shave the radishes thin and chop the parsley.", "de": "Währenddessen die Gurke in Scheiben schneiden, Tomaten halbieren, Radieschen fein hobeln und die Petersilie hacken."}},
+        {"text": {"en": "swoosh the hummus around each bowl with the back of a spoon, pile the vegetables in the middle, then finish with olive oil, za'atar and parsley. no cutlery judgment here.", "de": "Den Hummus mit dem Löffelrücken schwungvoll in jeder Schüssel verstreichen, das Gemüse in die Mitte häufen, dann mit Olivenöl, Za'atar und Petersilie vollenden. Besteck ist Verhandlungssache."}}
+      ],
+      "tags": {"en": ["no-cook", "bowl", "naturally vegan", "lunch break"], "de": ["ohne Kochen", "Bowl", "von Natur aus vegan", "Mittagspause"]}
+    },
+    {
+      "id": "hummus-bowl-chicken",
+      "dish_id": "hummus-bowl",
+      "title": {"en": "hummus bowl with grilled chicken", "de": "Hummus Bowl mit gegrilltem Hähnchen"},
+      "caption": {"en": "the protein upgrade, still soft inside", "de": "das Protein-Upgrade, innen immer noch weich"},
+      "intro": {
+        "en": "everything you love about the hummus bowl, plus smoky paprika chicken sliced warm over the top. it grills in ten minutes while the hummus rests, so the whole thing lands together. the kind of lunch that holds your afternoon up.",
+        "de": "Alles, was du an der Hummus Bowl liebst, plus rauchiges Paprika-Hähnchen, warm aufgeschnitten obendrauf. Es grillt in zehn Minuten, während der Hummus ruht — am Ende ist alles gleichzeitig fertig. Die Art Mittagessen, die deinen Nachmittag trägt."
+      },
+      "variant": {"diet": "high-protein", "effort": "easy", "calorie": "le600"},
+      "contains": ["poultry", "sesame", "high-fodmap"],
+      "attributes": ["halal", "kosher", "gluten-free", "sugar-free", "nut-free", "high-protein", "easy", "le30", "le600", "grill", "raw"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {"calories": 560, "protein_g": 46, "carbs_g": 36, "fat_g": 24},
+      "ingredients": [
+        {"ingredient_id": "chicken-breast", "qty": 300, "unit": "g"},
+        {"ingredient_id": "smoked-paprika", "qty": 1, "unit": "tsp"},
+        {"ingredient_id": "chickpeas", "qty": 1, "unit": "can", "note": {"en": "drained", "de": "abgetropft"}},
+        {"ingredient_id": "tahini", "qty": 3, "unit": "tbsp"},
+        {"ingredient_id": "lemon", "qty": 1, "unit": "piece", "note": {"en": "half for the marinade, half for the hummus", "de": "halb für die Marinade, halb für den Hummus"}},
+        {"ingredient_id": "garlic", "qty": 1, "unit": "clove"},
+        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"},
+        {"ingredient_id": "cucumber", "qty": 1, "unit": "piece"},
+        {"ingredient_id": "cherry-tomato", "qty": 150, "unit": "g"},
+        {"ingredient_id": "zaatar", "qty": 2, "unit": "tsp"}
+      ],
+      "steps": [
+        {"text": {"en": "press the chicken breasts flat with your palm, then rub them with olive oil, smoked paprika, half the lemon's juice and a good pinch of salt. let them sit while you do everything else.", "de": "Die Hähnchenbrüste mit der Handfläche flach drücken, dann mit Olivenöl, geräuchertem Paprika, dem Saft einer halben Zitrone und einer guten Prise Salz einreiben. Ziehen lassen, während du den Rest machst."}, "timer_minutes": 10},
+        {"text": {"en": "blend the chickpeas with tahini, the rest of the lemon juice, garlic, salt and ice-cold water until smooth and fluffy.", "de": "Kichererbsen mit Tahin, dem restlichen Zitronensaft, Knoblauch, Salz und eiskaltem Wasser glatt und fluffig mixen."}, "timer_minutes": 3},
+        {"text": {"en": "grill the chicken on a hot grill pan, about five minutes per side, until charred at the edges and just cooked through. resist poking it.", "de": "Das Hähnchen in einer heißen Grillpfanne grillen, etwa fünf Minuten pro Seite, bis es an den Rändern Röstspuren hat und gerade durch ist. Nicht dauernd reinstechen."}, "timer_minutes": 10},
+        {"text": {"en": "let the chicken rest for five minutes — this is non-negotiable — then slice it against the grain.", "de": "Das Hähnchen fünf Minuten ruhen lassen — nicht verhandelbar — dann quer zur Faser aufschneiden."}, "timer_minutes": 5},
+        {"text": {"en": "swoosh the hummus into bowls, fan the chicken over it, scatter cucumber and tomatoes around, then finish with za'atar and a thread of olive oil.", "de": "Den Hummus in Schüsseln verstreichen, das Hähnchen fächerförmig darauflegen, Gurke und Tomaten drumherum verteilen, dann mit Za'atar und einem feinen Faden Olivenöl abschließen."}}
+      ],
+      "tags": {"en": ["high-protein", "bowl", "meal prep friendly"], "de": ["proteinreich", "Bowl", "gut vorzubereiten"]}
+    }
+  ]
+}

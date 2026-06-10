@@ -1,0 +1,379 @@
+{
+  "partition_id": "cuisine-italian",
+  "recipes": [
+    {
+      "id": "risotto-mushroom",
+      "dish_id": "risotto",
+      "title": {"en": "classic mushroom risotto", "de": "Klassisches Pilzrisotto"},
+      "caption": {"en": "stirred until your arm complains", "de": "gerührt, bis der Arm meckert"},
+      "intro": {
+        "en": "this is the risotto that teaches you patience. one ladle of stock at a time, a glass of wine for the pot (maybe one for you), and twenty minutes of slow stirring. the mushrooms go in seared and golden, because they deserve it.",
+        "de": "Dieses Risotto bringt dir Geduld bei. Eine Kelle Brühe nach der anderen, ein Glas Wein für den Topf (und vielleicht eins für dich), dazu zwanzig Minuten ruhiges Rühren. Die Pilze kommen goldbraun angebraten dazu – das haben sie sich verdient."
+      },
+      "variant": {"diet": "classic", "effort": "medium", "calorie": "le600"},
+      "contains": ["dairy", "alcohol", "sulphites", "celery", "high-fodmap"],
+      "attributes": ["vegetarian", "pescatarian", "kosher", "gluten-free", "sugar-free", "nut-free", "medium", "le60", "le600", "saute", "simmer"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 580,
+      "macros": {"calories": 580, "protein_g": 16, "carbs_g": 78, "fat_g": 21},
+      "ingredients": [
+        {"ingredient_id": "arborio-rice", "qty": 320, "unit": "g"},
+        {"ingredient_id": "button-mushroom", "qty": 400, "unit": "g", "note": {"en": "thickly sliced", "de": "in dicken Scheiben"}},
+        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "white-wine", "qty": 150, "unit": "ml", "note": {"en": "dry", "de": "trocken"}},
+        {"ingredient_id": "vegetable-stock", "qty": 1.2, "unit": "l"},
+        {"ingredient_id": "butter", "qty": 60, "unit": "g", "note": {"en": "cold, cubed", "de": "kalt, gewürfelt"}},
+        {"ingredient_id": "parmesan", "qty": 60, "unit": "g", "note": {"en": "finely grated", "de": "fein gerieben"}},
+        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"},
+        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"}
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "pour the stock into a small pot and keep it at a bare simmer on the back burner. cold stock shocks the rice; warm stock keeps everything moving.",
+            "de": "Gieß die Brühe in einen kleinen Topf und halte sie auf der hinteren Platte knapp unter dem Siedepunkt. Kalte Brühe schockt den Reis – warme hält alles im Fluss."
+          }
+        },
+        {
+          "text": {
+            "en": "heat 1 tbsp olive oil in a wide pan over high heat. sear the mushrooms in one layer until deeply golden, about 8 minutes — don't crowd them, don't rush them. salt them, strip in the leaves of two thyme sprigs, set aside.",
+            "de": "Erhitze 1 EL Olivenöl in einer weiten Pfanne auf hoher Stufe. Brate die Pilze in einer Schicht tief goldbraun an, etwa 8 Minuten – nicht stapeln, nicht hetzen. Salzen, die Blättchen von zwei Thymianzweigen dazu, beiseitestellen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "in the same pan, soften the shallots in the remaining olive oil over medium heat for 3 minutes. add the rice and toast it, stirring, until the edges turn translucent, about 2 minutes.",
+            "de": "Dünste in derselben Pfanne die Schalotten im restlichen Olivenöl bei mittlerer Hitze 3 Minuten glasig. Gib den Reis dazu und röste ihn unter Rühren an, bis die Ränder durchscheinend werden, etwa 2 Minuten."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the white wine and stir until it has evaporated completely. it will smell fantastic. that's the point.",
+            "de": "Gieß den Weißwein an und rühre, bis er vollständig verkocht ist. Es wird großartig duften. Genau darum geht's."
+          }
+        },
+        {
+          "text": {
+            "en": "add the hot stock one ladle at a time, stirring often, waiting until each ladle is almost absorbed before adding the next. after about 18 minutes the rice should be creamy with a gentle bite left in the middle.",
+            "de": "Gib die heiße Brühe Kelle für Kelle dazu, rühre oft und warte jeweils, bis sie fast aufgesogen ist. Nach etwa 18 Minuten ist der Reis cremig, mit einem sanften Biss in der Mitte."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "pull the pan off the heat. stir in the cold butter, the parmesan and the mushrooms. lid on, 2 minutes of rest — this is the part that turns it to silk. serve immediately, remaining thyme on top.",
+            "de": "Zieh die Pfanne vom Herd. Rühre die kalte Butter, den Parmesan und die Pilze unter. Deckel drauf, 2 Minuten Ruhe – das ist der Moment, der alles seidig macht. Sofort servieren, restlicher Thymian obendrauf."
+          },
+          "timer_minutes": 2
+        }
+      ],
+      "tags": {"en": ["risotto", "comfort food", "date night"], "de": ["Risotto", "Soulfood", "Date Night"]}
+    },
+    {
+      "id": "risotto-vegan",
+      "dish_id": "risotto",
+      "title": {"en": "vegan mushroom risotto", "de": "Veganes Pilzrisotto"},
+      "caption": {"en": "no wine, no dairy, all silk", "de": "ohne Wein, ohne Milch, trotzdem Samt"},
+      "intro": {
+        "en": "this risotto stands on its own two feet: two kinds of mushrooms, nutritional yeast for depth, lemon for brightness where the wine used to live. it gets creamy from technique, not from cream. stir like you mean it.",
+        "de": "Dieses Risotto steht auf eigenen Beinen: zwei Sorten Pilze, Hefeflocken für die Tiefe, Zitrone für die Frische, wo sonst der Wein wohnt. Cremig wird es durch Technik, nicht durch Sahne. Also: rühren, als wäre es ernst."
+      },
+      "variant": {"diet": "vegan", "effort": "medium", "calorie": "le600"},
+      "contains": ["celery", "high-fodmap"],
+      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "sugar-free", "nut-free", "medium", "le60", "le600", "saute", "simmer"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 510,
+      "macros": {"calories": 510, "protein_g": 13, "carbs_g": 82, "fat_g": 14},
+      "ingredients": [
+        {"ingredient_id": "arborio-rice", "qty": 320, "unit": "g"},
+        {"ingredient_id": "button-mushroom", "qty": 300, "unit": "g", "note": {"en": "thickly sliced", "de": "in dicken Scheiben"}},
+        {"ingredient_id": "shiitake", "qty": 150, "unit": "g", "note": {"en": "stems removed, sliced", "de": "ohne Stiele, in Scheiben"}},
+        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "vegetable-stock", "qty": 1.3, "unit": "l"},
+        {"ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp"},
+        {"ingredient_id": "vegan-butter", "qty": 40, "unit": "g", "note": {"en": "cold", "de": "kalt"}},
+        {"ingredient_id": "nutritional-yeast", "qty": 4, "unit": "tbsp"},
+        {"ingredient_id": "lemon", "qty": 1, "unit": "piece", "note": {"en": "zest and juice", "de": "Abrieb und Saft"}},
+        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"}
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring the stock to a bare simmer in a small pot and keep it there. zest the lemon, then juice it — both go in at the end, so park them somewhere safe.",
+            "de": "Bring die Brühe in einem kleinen Topf knapp unter den Siedepunkt und halte sie dort. Reibe die Zitronenschale ab und press den Saft aus – beides kommt erst am Ende rein, also gut beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "heat 2 tbsp olive oil in a wide pan over high heat. sear the button mushrooms and shiitake until deeply golden, about 8 minutes. salt them, add the leaves of two thyme sprigs, set aside.",
+            "de": "Erhitze 2 EL Olivenöl in einer weiten Pfanne auf hoher Stufe. Brate Champignons und Shiitake tief goldbraun an, etwa 8 Minuten. Salzen, die Blättchen von zwei Thymianzweigen dazu, beiseitestellen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "soften the shallots in the remaining oil over medium heat, 3 minutes. add the rice and toast, stirring, until the edges turn translucent, about 2 minutes. deglaze with a ladle of stock.",
+            "de": "Dünste die Schalotten im restlichen Öl bei mittlerer Hitze 3 Minuten glasig. Reis dazu und unter Rühren anrösten, bis die Ränder durchscheinend sind, etwa 2 Minuten. Mit einer Kelle Brühe ablöschen."
+          }
+        },
+        {
+          "text": {
+            "en": "add the hot stock one ladle at a time, stirring often, letting each ladle almost vanish before the next. about 18 minutes until creamy with a gentle bite.",
+            "de": "Gib die heiße Brühe Kelle für Kelle dazu, rühre oft und lass jede Kelle fast verschwinden, bevor die nächste kommt. Nach etwa 18 Minuten ist der Reis cremig mit sanftem Biss."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "off the heat: stir in the cold vegan butter, the nutritional yeast, the lemon zest and 2 tbsp of the juice, then the mushrooms. lid on, rest 2 minutes. taste, adjust, serve — remaining thyme on top.",
+            "de": "Weg vom Herd: kalte vegane Butter, Hefeflocken, Zitronenabrieb und 2 EL Saft unterrühren, dann die Pilze. Deckel drauf, 2 Minuten ruhen lassen. Abschmecken, servieren – restlicher Thymian obendrauf."
+          },
+          "timer_minutes": 2
+        }
+      ],
+      "tags": {"en": ["risotto", "plant-based", "comfort food"], "de": ["Risotto", "pflanzlich", "Soulfood"]}
+    },
+    {
+      "id": "lasagna-classic",
+      "dish_id": "lasagna",
+      "title": {"en": "classic beef lasagna", "de": "Klassische Lasagne"},
+      "caption": {"en": "sunday afternoon, in nine layers", "de": "Sonntagnachmittag in neun Schichten"},
+      "intro": {
+        "en": "a proper lasagna is a commitment: a ragù that simmers for most of an hour, a béchamel you whisk by hand, layers built like you're tucking someone in. make it on a slow sunday. eat it all week, if it survives that long.",
+        "de": "Eine richtige Lasagne ist ein Versprechen: ein Ragù, das fast eine Stunde köchelt, eine Béchamel, die du von Hand rührst, Schichten gebaut wie ein frisch gemachtes Bett. Koch sie an einem ruhigen Sonntag. Sie hält die ganze Woche – falls sie so lange überlebt."
+      },
+      "variant": {"diet": "classic", "effort": "hard", "calorie": "le800"},
+      "contains": ["beef", "dairy", "gluten", "high-fodmap"],
+      "attributes": ["halal", "kosher", "sugar-free", "nut-free", "hard", "gt60", "le800", "saute", "simmer", "bake"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 100,
+      "servings": 6,
+      "calories_per_serving": 740,
+      "macros": {"calories": 740, "protein_g": 38, "carbs_g": 58, "fat_g": 38},
+      "ingredients": [
+        {"ingredient_id": "ground-beef", "qty": 600, "unit": "g"},
+        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "carrot", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "garlic", "qty": 2, "unit": "clove", "note": {"en": "minced", "de": "fein gehackt"}},
+        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
+        {"ingredient_id": "lasagna-sheets", "qty": 250, "unit": "g", "note": {"en": "no pre-cooking needed", "de": "ohne Vorkochen"}},
+        {"ingredient_id": "butter", "qty": 50, "unit": "g"},
+        {"ingredient_id": "wheat-flour", "qty": 50, "unit": "g"},
+        {"ingredient_id": "whole-milk", "qty": 800, "unit": "ml"},
+        {"ingredient_id": "parmesan", "qty": 80, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the ground beef in a large dry pot over high heat, breaking it up as you go — let it actually brown, not just turn grey. about 6 minutes.",
+            "de": "Brate das Hackfleisch in einem großen Topf ohne Fett bei hoher Hitze krümelig an – es soll wirklich bräunen, nicht nur grau werden. Etwa 6 Minuten."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "turn the heat to medium, add onion, carrot and garlic, and cook in the rendered fat until soft, about 5 minutes.",
+            "de": "Schalte auf mittlere Hitze, gib Zwiebel, Karotte und Knoblauch dazu und dünste alles im ausgetretenen Fett weich, etwa 5 Minuten."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the passata plus 200 ml water, season well with salt and pepper, and simmer with the lid ajar for 45 minutes, stirring now and then. the ragù should end up thick and glossy.",
+            "de": "Gieß die Passata plus 200 ml Wasser an, würze kräftig mit Salz und Pfeffer und lass alles 45 Minuten mit halb aufgelegtem Deckel köcheln, ab und zu umrühren. Das Ragù soll am Ende dick und glänzend sein."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "meanwhile, the béchamel: melt the butter in a saucepan, whisk in the flour and cook it for 1 minute. add the milk gradually, whisking the whole time, then simmer about 5 minutes until it coats a spoon. season generously.",
+            "de": "Währenddessen die Béchamel: Butter in einem Topf schmelzen, Mehl einrühren und 1 Minute anschwitzen. Milch nach und nach unter ständigem Rühren angießen, dann etwa 5 Minuten köcheln, bis sie einen Löffel überzieht. Großzügig würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 180°C. in a 20×30 cm dish: a thin layer of ragù, then sheets, ragù, béchamel — repeat until everything is used, finishing with béchamel and all of the parmesan.",
+            "de": "Heiz den Ofen auf 180 °C vor. In eine Form (20×30 cm): eine dünne Schicht Ragù, dann Platten, Ragù, Béchamel – wiederholen, bis alles aufgebraucht ist. Zum Schluss Béchamel und der ganze Parmesan obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for 35 minutes, until bubbling at the edges and deeply browned at the corners. the corners are the prize. everyone knows it.",
+            "de": "35 Minuten backen, bis es an den Rändern blubbert und die Ecken tief gebräunt sind. Die Ecken sind der Hauptgewinn. Das wissen alle."
+          },
+          "timer_minutes": 35
+        },
+        {
+          "text": {
+            "en": "rest 10 minutes before cutting — it needs to set, and you need it to not be lava.",
+            "de": "Vor dem Anschneiden 10 Minuten ruhen lassen – die Lasagne muss sich setzen, und du willst keine Lava essen."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {"en": ["lasagna", "baked pasta", "family dinner"], "de": ["Lasagne", "Ofenpasta", "Familienessen"]}
+    },
+    {
+      "id": "lasagna-vegetarian",
+      "dish_id": "lasagna",
+      "title": {"en": "lentil & mushroom lasagna", "de": "Linsen-Pilz-Lasagne"},
+      "caption": {"en": "the ragù nobody questions", "de": "ein Ragù, das niemand hinterfragt"},
+      "intro": {
+        "en": "red lentils and seared mushrooms make a ragù with real spine — savory, deep, a little smoky at the edges. the béchamel does the rest. nobody at the table will ask where the meat went.",
+        "de": "Rote Linsen und scharf angebratene Pilze ergeben ein Ragù mit Rückgrat – herzhaft, tief, an den Rändern leicht rauchig. Den Rest erledigt die Béchamel. Am Tisch fragt niemand, wo das Fleisch geblieben ist."
+      },
+      "variant": {"diet": "vegetarian", "effort": "hard", "calorie": "le600"},
+      "contains": ["dairy", "gluten", "high-fodmap"],
+      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "nut-free", "hard", "gt60", "le600", "saute", "simmer", "bake"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 95,
+      "servings": 6,
+      "calories_per_serving": 580,
+      "macros": {"calories": 580, "protein_g": 27, "carbs_g": 76, "fat_g": 19},
+      "ingredients": [
+        {"ingredient_id": "red-lentils", "qty": 220, "unit": "g", "note": {"en": "rinsed", "de": "abgespült"}},
+        {"ingredient_id": "button-mushroom", "qty": 400, "unit": "g", "note": {"en": "finely chopped", "de": "fein gehackt"}},
+        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp"},
+        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
+        {"ingredient_id": "lasagna-sheets", "qty": 250, "unit": "g", "note": {"en": "no pre-cooking needed", "de": "ohne Vorkochen"}},
+        {"ingredient_id": "butter", "qty": 40, "unit": "g"},
+        {"ingredient_id": "wheat-flour", "qty": 40, "unit": "g"},
+        {"ingredient_id": "whole-milk", "qty": 700, "unit": "ml"},
+        {"ingredient_id": "parmesan", "qty": 60, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the olive oil in a large pot over high heat and sear the chopped mushrooms until golden and their water is gone, about 8 minutes. this is where the ragù gets its depth — don't shortcut it.",
+            "de": "Erhitze das Olivenöl in einem großen Topf auf hoher Stufe und brate die gehackten Pilze goldbraun, bis ihr Wasser verkocht ist, etwa 8 Minuten. Hier holt sich das Ragù seine Tiefe – nicht abkürzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "add the onion, turn the heat to medium and soften it for 5 minutes.",
+            "de": "Gib die Zwiebel dazu, schalte auf mittlere Hitze und dünste sie 5 Minuten weich."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in the lentils, the passata and 400 ml water. season with salt and pepper and simmer for 25 minutes, stirring occasionally, until the lentils are soft and the ragù is thick.",
+            "de": "Rühre Linsen, Passata und 400 ml Wasser ein. Mit Salz und Pfeffer würzen und 25 Minuten köcheln lassen, gelegentlich umrühren, bis die Linsen weich sind und das Ragù dick ist."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "meanwhile, the béchamel: melt the butter, whisk in the flour, cook 1 minute. add the milk gradually, whisking, then simmer about 5 minutes until it coats a spoon. season well.",
+            "de": "Währenddessen die Béchamel: Butter schmelzen, Mehl einrühren, 1 Minute anschwitzen. Milch nach und nach unter Rühren angießen, dann etwa 5 Minuten köcheln, bis sie einen Löffel überzieht. Gut würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 180°C. layer in a 20×30 cm dish: ragù, sheets, ragù, béchamel, repeat — finish with béchamel and all of the parmesan.",
+            "de": "Heiz den Ofen auf 180 °C vor. In einer Form (20×30 cm) schichten: Ragù, Platten, Ragù, Béchamel, wiederholen – zum Schluss Béchamel und der ganze Parmesan."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for 35 minutes until bubbling and browned. resist opening the oven door. it knows what it's doing.",
+            "de": "35 Minuten backen, bis alles blubbert und gebräunt ist. Widersteh dem Drang, die Ofentür zu öffnen. Der Ofen weiß, was er tut."
+          },
+          "timer_minutes": 35
+        },
+        {
+          "text": {
+            "en": "rest 10 minutes before cutting. the layers will thank you by staying layers.",
+            "de": "Vor dem Anschneiden 10 Minuten ruhen lassen. Die Schichten danken es dir, indem sie Schichten bleiben."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {"en": ["lasagna", "vegetarian", "baked pasta"], "de": ["Lasagne", "vegetarisch", "Ofenpasta"]}
+    },
+    {
+      "id": "lasagna-gluten-free",
+      "dish_id": "lasagna",
+      "title": {"en": "gluten-free beef lasagna", "de": "Glutenfreie Lasagne"},
+      "caption": {"en": "all the layers, none of the gluten", "de": "alle Schichten, null Gluten"},
+      "intro": {
+        "en": "same slow ragù, same silky béchamel, zero compromises. gluten-free sheets just drink a little more sauce, so the béchamel is generous and the rest is non-negotiable. nobody will know unless you tell them.",
+        "de": "Dasselbe langsame Ragù, dieselbe seidige Béchamel, null Kompromisse. Glutenfreie Platten trinken nur etwas mehr Sauce, deshalb fällt die Béchamel großzügig aus und die Ruhezeit ist Pflicht. Merkt keiner – außer du erzählst es."
+      },
+      "variant": {"diet": "gluten-free", "effort": "hard", "calorie": "le800"},
+      "contains": ["beef", "dairy", "high-fodmap"],
+      "attributes": ["halal", "kosher", "gluten-free", "sugar-free", "nut-free", "hard", "gt60", "le800", "saute", "simmer", "bake"],
+      "meal": ["lunch", "dinner"],
+      "time_minutes": 100,
+      "servings": 6,
+      "calories_per_serving": 720,
+      "macros": {"calories": 720, "protein_g": 38, "carbs_g": 54, "fat_g": 37},
+      "ingredients": [
+        {"ingredient_id": "ground-beef", "qty": 600, "unit": "g"},
+        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "carrot", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"ingredient_id": "garlic", "qty": 2, "unit": "clove", "note": {"en": "minced", "de": "fein gehackt"}},
+        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
+        {"ingredient_id": "gluten-free-lasagna-sheets", "qty": 250, "unit": "g"},
+        {"ingredient_id": "butter", "qty": 50, "unit": "g"},
+        {"ingredient_id": "gluten-free-flour", "qty": 50, "unit": "g"},
+        {"ingredient_id": "whole-milk", "qty": 800, "unit": "ml"},
+        {"ingredient_id": "parmesan", "qty": 80, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the ground beef in a large dry pot over high heat, breaking it up — proper browning, not grey steaming. about 6 minutes.",
+            "de": "Brate das Hackfleisch in einem großen Topf ohne Fett bei hoher Hitze krümelig an – richtig bräunen, nicht grau dämpfen. Etwa 6 Minuten."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "add onion, carrot and garlic, drop to medium heat and cook until soft, about 5 minutes.",
+            "de": "Zwiebel, Karotte und Knoblauch dazugeben, auf mittlere Hitze schalten und etwa 5 Minuten weich dünsten."
+          }
+        },
+        {
+          "text": {
+            "en": "add the passata and 250 ml water — a touch more liquid than usual, the gluten-free sheets will drink it. season, then simmer with the lid ajar for 45 minutes, stirring now and then.",
+            "de": "Passata und 250 ml Wasser angießen – etwas mehr Flüssigkeit als sonst, die glutenfreien Platten trinken sie weg. Würzen, dann 45 Minuten mit halb aufgelegtem Deckel köcheln lassen, ab und zu umrühren."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "the béchamel: melt the butter, whisk in the gluten-free flour, cook 1 minute. add the milk gradually, whisking constantly, and simmer about 5 minutes until it coats a spoon. season generously.",
+            "de": "Die Béchamel: Butter schmelzen, glutenfreies Mehl einrühren, 1 Minute anschwitzen. Milch nach und nach unter ständigem Rühren angießen und etwa 5 Minuten köcheln, bis sie einen Löffel überzieht. Großzügig würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 180°C. layer in a 20×30 cm dish: ragù, sheets, ragù, béchamel, repeat — and make sure every single sheet is covered in sauce, no dry corners. finish with béchamel and the parmesan.",
+            "de": "Heiz den Ofen auf 180 °C vor. In einer Form (20×30 cm) schichten: Ragù, Platten, Ragù, Béchamel, wiederholen – und wirklich jede Platte komplett mit Sauce bedecken, keine trockenen Ecken. Zum Schluss Béchamel und Parmesan."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for 40 minutes until bubbling and deeply browned. gluten-free sheets like the extra five minutes.",
+            "de": "40 Minuten backen, bis alles blubbert und tief gebräunt ist. Glutenfreie Platten mögen die fünf Minuten extra."
+          },
+          "timer_minutes": 40
+        },
+        {
+          "text": {
+            "en": "rest 10 minutes before cutting. this one really needs it — the sheets finish softening in their own steam.",
+            "de": "Vor dem Anschneiden 10 Minuten ruhen lassen. Diese Lasagne braucht das wirklich – die Platten garen im eigenen Dampf fertig."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {"en": ["lasagna", "gluten-free", "baked pasta"], "de": ["Lasagne", "glutenfrei", "Ofenpasta"]}
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook recipe",
+  "type": "object",
+  "required": [
+    "id", "dish_id", "title", "caption", "intro", "variant", "contains",
+    "attributes", "meal", "time_minutes", "servings",
+    "calories_per_serving", "macros", "ingredients", "steps", "tags"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "de": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string"}
+    },
+    "localizedList": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": {
+        "type": "array",
+        "items": {"type": "string"}
+      }
+    }
+  },
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "dish_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "title": {"$ref": "#/$defs/localized"},
+    "caption": {"$ref": "#/$defs/localized"},
+    "intro": {"$ref": "#/$defs/localized"},
+    "variant": {
+      "type": "object",
+      "required": ["diet", "effort", "calorie"],
+      "additionalProperties": false,
+      "properties": {
+        "diet": {"type": "string"},
+        "effort": {"enum": ["easy", "medium", "hard"]},
+        "calorie": {"enum": ["le400", "le600", "le800", "gt800"]}
+      }
+    },
+    "contains": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "attributes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true,
+      "minItems": 3
+    },
+    "meal": {
+      "type": "array",
+      "items": {"enum": ["breakfast", "lunch", "dinner"]},
+      "minItems": 1
+    },
+    "time_minutes": {"type": "integer", "minimum": 1},
+    "servings": {"type": "integer", "minimum": 1},
+    "calories_per_serving": {"type": "integer", "minimum": 1},
+    "macros": {
+      "type": "object",
+      "required": ["calories", "protein_g", "carbs_g", "fat_g"],
+      "additionalProperties": false,
+      "properties": {
+        "calories": {"type": "integer", "minimum": 1},
+        "protein_g": {"type": "integer", "minimum": 0},
+        "carbs_g": {"type": "integer", "minimum": 0},
+        "fat_g": {"type": "integer", "minimum": 0}
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["ingredient_id", "qty", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "ingredient_id": {"type": "string"},
+          "qty": {"type": "number", "exclusiveMinimum": 0},
+          "unit": {
+            "enum": ["g", "kg", "ml", "l", "tsp", "tbsp", "cup", "piece",
+                     "clove", "slice", "can", "bunch", "pinch", "sprig"]
+          },
+          "note": {"$ref": "#/$defs/localized"}
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": {"$ref": "#/$defs/localized"},
+          "timer_minutes": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "tags": {"$ref": "#/$defs/localizedList"}
+  }
+}

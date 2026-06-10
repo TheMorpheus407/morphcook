@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dietary-matching",
+    "category": { "en": "Dietary Matching", "de": "Ernährungsanpassung" },
+    "question": {
+      "en": "How does MorphCook adapt recipes for my dietary needs?",
+      "de": "Wie passt MorphCook Rezepte an meine Ernährungsbedürfnisse an?"
+    },
+    "answer": {
+      "en": "MorphCook uses strict logic. Each recipe variant is fully-written rather than substituted dynamically. The app checks your avoided allergens and dietary restrictions against a recipe's contains-flags. If there is a clash, that specific variant is filtered out, and a compatible sibling variant (e.g., vegan, gluten-free) is selected for you automatically.",
+      "de": "MorphCook nutzt strikte Logik. Jede Rezeptvariante ist vollständig ausformuliert statt dynamisch ersetzt. Die App gleicht Ihre vermiedenen Allergene und Einschränkungen mit den Flaggen eines Rezepts ab. Bei einem Konflikt wird diese Variante gefiltert und automatisch eine kompatible Schwestervariante (z. B. vegan, glutenfrei) ausgewählt."
+    }
+  },
+  {
+    "id": "recipe-visibility",
+    "category": { "en": "Recipe Visibility", "de": "Rezept-Sichtbarkeit" },
+    "question": {
+      "en": "Why do some recipe combinations show as disabled?",
+      "de": "Warum werden manche Rezeptkombinationen als deaktiviert angezeigt?"
+    },
+    "answer": {
+      "en": "If a specific combination of criteria (for example, Vegan + Pro Effort) does not have a fully authored recipe sibling in the database, we disable that combination with a note rather than hiding it or guessing a substitution. Every visible recipe variant is fully authored and checked.",
+      "de": "Wenn für eine bestimmte Kombination von Kriterien (z. B. Vegan + Profi-Aufwand) kein fertig geschriebenes Rezept in der Datenbank existiert, deaktivieren wir diese Option mit einem Hinweis, anstatt sie auszublenden oder eine Ersetzung zu raten. Jede sichtbare Variante ist voll ausformuliert."
+    }
+  },
+  {
+    "id": "backup-restore",
+    "category": { "en": "Data & Backup", "de": "Daten & Backup" },
+    "question": {
+      "en": "How does the file-based backup and restore work?",
+      "de": "Wie funktioniert die dateibasierte Sicherung und Wiederherstellung?"
+    },
+    "answer": {
+      "en": "You can export your profile, saved recipes, history, and meal plans as a JSON file or a smaller GZip compressed file. If you supply a password, the JSON file will be encrypted securely using AES-256-GCM. The GZip file is always saved unencrypted for quick sharing. Both can be restored at any time.",
+      "de": "Sie können Ihr Profil, gespeicherte Rezepte, Historie und Essenspläne als JSON-Datei oder als kleinere komprimierte GZip-Datei exportieren. Wenn Sie ein Passwort eingeben, wird die JSON-Datei sicher mit AES-256-GCM verschlüsselt. Die GZip-Datei wird immer unverschlüsselt für schnelles Teilen gespeichert. Beide können jederzeit wiederhergestellt werden."
+    }
+  },
+  {
+    "id": "offline-access",
+    "category": { "en": "General", "de": "Allgemein" },
+    "question": {
+      "en": "Does MorphCook require an internet connection?",
+      "de": "Benötigt MorphCook eine Internetverbindung?"
+    },
+    "answer": {
+      "en": "No, MorphCook is 100% offline-only. There are no backend servers, tracking, or telemetry. All recipes, guides, and FAQs are bundled inside the app's files. Your personal data stays on your device and is never shared.",
+      "de": "Nein, MorphCook ist zu 100 % offline. Es gibt keine Backend-Server, Tracking oder Telemetrie. Alle Rezepte, Anleitungen und FAQs sind in den Dateien der App gebündelt. Ihre persönlichen Daten verbleiben auf Ihrem Gerät und werden niemals geteilt."
+    }
+  }
+]

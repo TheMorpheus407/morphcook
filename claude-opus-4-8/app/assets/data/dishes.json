@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "name": { "en": "Döner", "de": "Döner" },
+      "hero": { "en": "the 3am classic, made on purpose this time", "de": "der 3-uhr-klassiker, diesmal mit absicht" },
+      "cap_caption": { "en": "wrapped in foil, eaten standing up", "de": "in folie gewickelt, im stehen gegessen" },
+      "stripe_color": "#C97B5A",
+      "variant_recipe_ids": ["doener-classic", "doener-vegan", "doener-keto", "doener-halal"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": ["cuisine-middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "turkish"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "alfredo",
+      "name": { "en": "Fettuccine Alfredo", "de": "Fettuccine Alfredo" },
+      "hero": { "en": "butter, cheese, pasta — a love letter to doing less", "de": "butter, käse, pasta — eine liebeserklärung ans weniger" },
+      "cap_caption": { "en": "the bowl you eat in pyjamas", "de": "die schüssel im schlafanzug" },
+      "stripe_color": "#D8B36A",
+      "variant_recipe_ids": ["alfredo-classic", "alfredo-glutenfree", "alfredo-vegan"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": ["cuisine-italian"],
+      "cuisine_tags": ["italian"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "pad-thai",
+      "name": { "en": "Pad Thai", "de": "Pad Thai" },
+      "hero": { "en": "sweet, sour, a little smoky from the wok", "de": "süß, sauer, ein bisschen rauch aus dem wok" },
+      "cap_caption": { "en": "lime on the side, always", "de": "limette daneben, immer" },
+      "stripe_color": "#B98A4B",
+      "variant_recipe_ids": ["padthai-classic", "padthai-vegan", "padthai-glutenfree"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": ["cuisine-asian"],
+      "cuisine_tags": ["asian", "thai"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "pancakes",
+      "name": { "en": "Pancakes", "de": "Pfannkuchen" },
+      "hero": { "en": "sunday morning even on a tuesday", "de": "sonntagmorgen, auch dienstags" },
+      "cap_caption": { "en": "stacked and slightly uneven", "de": "gestapelt und leicht schief" },
+      "stripe_color": "#C99A6B",
+      "variant_recipe_ids": ["pancakes-classic", "pancakes-vegan", "pancakes-glutenfree"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": [],
+      "cuisine_tags": ["american", "comfort"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "shakshuka",
+      "name": { "en": "Shakshuka", "de": "Schakschuka" },
+      "hero": { "en": "eggs nestled in tomatoes, eaten straight from the pan", "de": "eier im tomatenbett, direkt aus der pfanne" },
+      "cap_caption": { "en": "bread for dunking, no plates", "de": "brot zum tunken, keine teller" },
+      "stripe_color": "#A8654A",
+      "variant_recipe_ids": ["shakshuka-classic", "shakshuka-vegan"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": ["cuisine-middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "north-african"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "margherita",
+      "name": { "en": "Pizza Margherita", "de": "Pizza Margherita" },
+      "hero": { "en": "three things done well, nothing more", "de": "drei dinge, gut gemacht, sonst nichts" },
+      "cap_caption": { "en": "blistered edges, basil on top", "de": "blasige ränder, basilikum obenauf" },
+      "stripe_color": "#8FA06B",
+      "variant_recipe_ids": ["margherita-classic", "margherita-glutenfree", "margherita-vegan"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": ["cuisine-italian"],
+      "cuisine_tags": ["italian"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "caesar-salad",
+      "name": { "en": "Caesar Salad", "de": "Caesar Salat" },
+      "hero": { "en": "the salad that thinks it's a main", "de": "der salat, der sich für ein hauptgericht hält" },
+      "cap_caption": { "en": "extra croutons, no apologies", "de": "extra croutons, keine entschuldigung" },
+      "stripe_color": "#9CA47A",
+      "variant_recipe_ids": ["caesar-classic", "caesar-vegan"],
+      "partition_id": "core-recipes",
+      "secondary_partitions": [],
+      "cuisine_tags": ["american", "comfort"],
+      "frequency_tier": "top"
+    },
+    {
+      "id": "ramen",
+      "name": { "en": "Ramen", "de": "Ramen" },
+      "hero": { "en": "a bowl you lean over and breathe in first", "de": "eine schüssel, über die man sich erst mal beugt" },
+      "cap_caption": { "en": "slurp, that's the rule", "de": "schlürfen, so die regel" },
+      "stripe_color": "#7E8A9C",
+      "variant_recipe_ids": ["ramen-classic", "ramen-vegetarian"],
+      "partition_id": "extended-recipes",
+      "secondary_partitions": ["cuisine-asian"],
+      "cuisine_tags": ["asian", "japanese"],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "overnight-oats",
+      "name": { "en": "Overnight Oats", "de": "Overnight Oats" },
+      "hero": { "en": "tomorrow-you will be so grateful", "de": "das morgen-ich wird dir danken" },
+      "cap_caption": { "en": "made tired, eaten happy", "de": "müde gemacht, glücklich gegessen" },
+      "stripe_color": "#B0A07E",
+      "variant_recipe_ids": ["oats-classic", "oats-vegan"],
+      "partition_id": "extended-recipes",
+      "secondary_partitions": [],
+      "cuisine_tags": ["comfort"],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "chili",
+      "name": { "en": "Chili", "de": "Chili" },
+      "hero": { "en": "better the next day, and the day after that", "de": "am nächsten tag besser, und am übernächsten erst recht" },
+      "cap_caption": { "en": "one pot, all evening", "de": "ein topf, der ganze abend" },
+      "stripe_color": "#A85C3E",
+      "variant_recipe_ids": ["chili-classic", "chili-vegan"],
+      "partition_id": "extended-recipes",
+      "secondary_partitions": [],
+      "cuisine_tags": ["american", "comfort"],
+      "frequency_tier": "extended"
+    }
+  ]
+}

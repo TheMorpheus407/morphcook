@@ -1,0 +1,56 @@
+[
+  {
+    "id": "doener",
+    "canonical_name": { "en": "Döner Kebab", "de": "Döner Kebab" },
+    "hero_text": {
+      "en": "The legendary Berlin street food, made exactly how you want it.",
+      "de": "Das legendäre Berliner Streetfood, genau so zubereitet, wie du es willst."
+    },
+    "cap_caption": {
+      "en": "Toasted flatbread stuffed with savory protein and crisp red cabbage.",
+      "de": "Getoastetes Fladenbrot, gefüllt mit herzhaftem Protein und knackigem Rotkohl."
+    },
+    "stripe_color": "0xFFE76F51",
+    "variant_ids": ["doener-classic", "doener-vegan", "doener-keto", "doener-halal"],
+    "partition_id": "core-recipes",
+    "secondary_partitions": ["cuisine-middle-eastern"],
+    "cuisine_tags": ["middle-eastern"],
+    "frequency_tier": "high"
+  },
+  {
+    "id": "alfredo",
+    "canonical_name": { "en": "Fettuccine Alfredo", "de": "Fettuccine Alfredo" },
+    "hero_text": {
+      "en": "Velvety, rich Roman comfort in a bowl.",
+      "de": "Samtiger, reichhaltiger römischer Seelenschmeichler in einer Schüssel."
+    },
+    "cap_caption": {
+      "en": "Silky pasta coated in an emulsion of butter and aged parmesan.",
+      "de": "Seidige Pasta, umhüllt von einer Emulsion aus Butter und gereiftem Parmesan."
+    },
+    "stripe_color": "0xFFF4A261",
+    "variant_ids": ["alfredo-classic", "alfredo-gf", "alfredo-easy"],
+    "partition_id": "core-recipes",
+    "secondary_partitions": ["cuisine-italian"],
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "high"
+  },
+  {
+    "id": "padthai",
+    "canonical_name": { "en": "Pad Thai", "de": "Pad Thai" },
+    "hero_text": {
+      "en": "Sweet, sour, and savory street-style rice noodles.",
+      "de": "Süße, saure und herzhafte Reisnudeln im Street-Food-Stil."
+    },
+    "cap_caption": {
+      "en": "Flash-fried noodles tossed with tofu, tamarind, and chopped peanuts.",
+      "de": "Schnell gebratene Nudeln mit Tofu, Tamarinde und gehackten Erdnüssen."
+    },
+    "stripe_color": "0xFF2A9D8F",
+    "variant_ids": ["padthai-classic", "padthai-nutfree"],
+    "partition_id": "core-recipes",
+    "secondary_partitions": ["cuisine-asian"],
+    "cuisine_tags": ["asian"],
+    "frequency_tier": "high"
+  }
+]

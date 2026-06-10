@@ -1,0 +1,159 @@
+[
+  {
+    "id": "doener-keto",
+    "dish_id": "doener",
+    "name": { "en": "Keto Döner Bowl", "de": "Keto Döner-Bowl" },
+    "description": {
+      "en": "Gluten-free, low-carb variant. Shaved seasoned beef served inside crisp romaine lettuce wraps with cabbage and garlic yogurt sauce.",
+      "de": "Glutenfreie, kohlenhydratarme Variante. Gewürztes Rindergeschnetzeltes, serviert in knackigen Salatblättern mit Rotkohl und Knoblauchjoghurt."
+    },
+    "contains_flags": ["beef", "dairy", "egg"],
+    "attributes": ["medium", "≤30", "≤600", "pan-fry"],
+    "time_minutes": 20,
+    "calories_per_serving": 490,
+    "nutrition": {
+      "calories": 490,
+      "protein": 34,
+      "carbs": 8,
+      "fat": 36
+    },
+    "ingredient_ids": ["beef", "whole-milk", "egg", "garlic", "onions", "cabbage"],
+    "ingredients": [
+      { "id": "beef", "amount": 150, "unit": "g", "name": { "en": "Seasoned Shaved Beef", "de": "Gewürztes Rindergeschnetzeltes" }, "aisle": "meat" },
+      { "id": "lettuce", "amount": 4, "unit": "pieces", "name": { "en": "Romaine Lettuce Leaves", "de": "Römersalat-Blätter" }, "aisle": "produce" },
+      { "id": "whole-milk", "amount": 100, "unit": "ml", "name": { "en": "Yogurt Sauce Base", "de": "Joghurt-Soßenbasis" }, "aisle": "dairy" },
+      { "id": "garlic", "amount": 2, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" },
+      { "id": "onions", "amount": 0.5, "unit": "pieces", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "aisle": "produce" },
+      { "id": "cabbage", "amount": 50, "unit": "g", "name": { "en": "Red Cabbage, shredded", "de": "Rotkohl, geraspelt" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Brown the beef in a pan with olive oil until crisp.",
+          "de": "Das Fleisch in einer Pfanne mit Olivenöl anbraten, bis es knusprig ist."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "text": {
+          "en": "Prepare garlic yogurt by combining yogurt, garlic paste, salt, and pepper.",
+          "de": "Das Knoblauchjoghurt durch Vermengen von Joghurt, gepresstem Knoblauch, Salz und Pfeffer zubereiten."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Wash and dry large, sturdy romaine lettuce leaves. Use them as boats, packing with beef, cabbage, red onion, and yogurt drizzle.",
+          "de": "Große, feste Salatblätter waschen und trocken tupfen. Als Schiffchen verwenden und mit Fleisch, Rotkohl, Zwiebeln und Joghurt füllen."
+        },
+        "timer_seconds": 180
+      }
+    ]
+  },
+  {
+    "id": "alfredo-easy",
+    "dish_id": "alfredo",
+    "name": { "en": "Quick 12-Min Fettuccine Alfredo", "de": "Schnelle 12-Minuten Fettuccine Alfredo" },
+    "description": {
+      "en": "An ultra-fast, beginner-friendly Alfredo using a splash of cream and butter for a foolproof, luxurious sauce in minutes.",
+      "de": "Eine extrem schnelle, einsteigerfreundliche Alfredo-Version mit etwas Sahne und Butter für eine gelingsichere, luxuriöse Soße."
+    },
+    "contains_flags": ["dairy", "gluten"],
+    "attributes": ["easy", "≤15", "≤800", "sauté", "simmer"],
+    "time_minutes": 12,
+    "calories_per_serving": 790,
+    "nutrition": {
+      "calories": 790,
+      "protein": 22,
+      "carbs": 66,
+      "fat": 44
+    },
+    "ingredient_ids": ["pasta", "parmesan", "butter", "cream"],
+    "ingredients": [
+      { "id": "pasta", "amount": 100, "unit": "g", "name": { "en": "Fettuccine Pasta", "de": "Fettuccine-Nudeln" }, "aisle": "pantry" },
+      { "id": "butter", "amount": 20, "unit": "g", "name": { "en": "Unsalted Butter", "de": "Ungesalzene Butter" }, "aisle": "dairy" },
+      { "id": "cream", "amount": 50, "unit": "ml", "name": { "en": "Heavy Cream", "de": "Sahne" }, "aisle": "dairy" },
+      { "id": "parmesan", "amount": 30, "unit": "g", "name": { "en": "Parmesan, grated", "de": "Parmesan, gerieben" }, "aisle": "dairy" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Boil fettuccine pasta for 8 minutes in heavily salted water.",
+          "de": "Fettuccine-Nudeln 8 Minuten in reichlich gesalzenem Wasser kochen."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "text": {
+          "en": "In a saucepan, heat butter and heavy cream together until boiling slightly. Remove from heat and stir in grated Parmesan.",
+          "de": "In einem kleinen Topf Butter und Sahne erhitzen, bis es leicht köchelt. Vom Herd nehmen und geraspelten Parmesan einrühren."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Toss the drained hot noodles directly into the cream sauce until fully coated and creamy.",
+          "de": "Die abgegossenen, heißen Nudeln direkt in die Sahnesoße geben und schwenken, bis sie cremig umhüllt sind."
+        },
+        "timer_seconds": 60
+      }
+    ]
+  },
+  {
+    "id": "padthai-nutfree",
+    "dish_id": "padthai",
+    "name": { "en": "Nut-Free Pad Thai", "de": "Nussfreies Pad Thai" },
+    "description": {
+      "en": "A peanut-safe, school-friendly variant of Pad Thai. Subbed roasted sesame seeds for peanuts to give a delicious crunch.",
+      "de": "Eine erdnussfreie Variante von Pad Thai. Gerösteter Sesam ersetzt die Erdnüsse für einen leckeren Crunch."
+    },
+    "contains_flags": ["soy", "egg", "sesame"],
+    "attributes": ["medium", "≤30", "≤600", "stir-fry"],
+    "time_minutes": 25,
+    "calories_per_serving": 550,
+    "nutrition": {
+      "calories": 550,
+      "protein": 18,
+      "carbs": 80,
+      "fat": 15
+    },
+    "ingredient_ids": ["rice-noodles", "tofu", "egg", "sesame", "garlic"],
+    "ingredients": [
+      { "id": "rice-noodles", "amount": 100, "unit": "g", "name": { "en": "Rice Noodles", "de": "Reisnudeln" }, "aisle": "pantry" },
+      { "id": "tofu", "amount": 80, "unit": "g", "name": { "en": "Firm Tofu, cubed", "de": "Fester Tofu, gewürfelt" }, "aisle": "pantry" },
+      { "id": "egg", "amount": 1, "unit": "pieces", "name": { "en": "Egg", "de": "Ei" }, "aisle": "dairy" },
+      { "id": "sesame", "amount": 2, "unit": "tbsp", "name": { "en": "Toasted Sesame Seeds", "de": "Gerösteter Sesam" }, "aisle": "pantry" },
+      { "id": "garlic", "amount": 2, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Soak rice noodles in warm water for 15 minutes until soft.",
+          "de": "Reisnudeln 15 Minuten in warmem Wasser einweichen."
+        },
+        "timer_seconds": 900
+      },
+      {
+        "text": {
+          "en": "Sauté cubed tofu and minced garlic in oil in a hot pan.",
+          "de": "Gewürfelten Tofu und gehackten Knoblauch in Öl anbraten."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "text": {
+          "en": "Scramble the egg to the side, then mix with tofu. Toss with noodles and sweet-sour tamarind sauce.",
+          "de": "Das Ei an der Seite stocken lassen und mit Tofu vermengen. Nudeln und süß-saure Tamarindensauce unterrühren."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Plate your Pad Thai and garnish generously with toasted sesame seeds.",
+          "de": "Das Pad Thai anrichten und großzügig mit geröstetem Sesam garnieren."
+        },
+        "timer_seconds": 0
+      }
+    ]
+  }
+]

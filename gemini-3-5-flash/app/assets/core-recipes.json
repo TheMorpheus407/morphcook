@@ -1,0 +1,316 @@
+[
+  {
+    "id": "doener-classic",
+    "dish_id": "doener",
+    "name": { "en": "Classic Beef Döner", "de": "Klassischer Rinder-Döner" },
+    "description": {
+      "en": "Toasted flatbread stuffed with shaved seasoned beef, red cabbage, tomatoes, onion, and garlic-yogurt sauce.",
+      "de": "Getoastetes Fladenbrot gefüllt mit fein geschnittenem Rindfleisch, Rotkohl, Tomaten, Zwiebeln und Knoblauch-Joghurt-Soße."
+    },
+    "contains_flags": ["beef", "dairy", "gluten", "high-fodmap"],
+    "attributes": ["medium", "≤30", "≤800", "pan-fry"],
+    "time_minutes": 25,
+    "calories_per_serving": 650,
+    "nutrition": {
+      "calories": 650,
+      "protein": 38,
+      "carbs": 58,
+      "fat": 28
+    },
+    "ingredient_ids": ["beef", "whole-milk", "wheat-flour", "garlic", "onions", "cabbage"],
+    "ingredients": [
+      { "id": "beef", "amount": 150, "unit": "g", "name": { "en": "Seasoned Shaved Beef", "de": "Gewürztes Rindergeschnetzeltes" }, "aisle": "meat" },
+      { "id": "wheat-flour", "amount": 1, "unit": "pieces", "name": { "en": "Flatbread Pocket", "de": "Fladenbrottasche" }, "aisle": "pantry" },
+      { "id": "whole-milk", "amount": 100, "unit": "ml", "name": { "en": "Yogurt Sauce Base", "de": "Joghurt-Soßenbasis" }, "aisle": "dairy" },
+      { "id": "garlic", "amount": 2, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" },
+      { "id": "onions", "amount": 0.5, "unit": "pieces", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "aisle": "produce" },
+      { "id": "cabbage", "amount": 50, "unit": "g", "name": { "en": "Red Cabbage, shredded", "de": "Rotkohl, geraspelt" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Sauté the shaved beef in a hot pan with a splash of oil until deeply browned and crispy.",
+          "de": "Das Rindergeschnetzelte in einer heißen Pfanne mit etwas Öl scharf anbraten, bis es braun und knusprig ist."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "text": {
+          "en": "Prepare the garlic sauce: crush garlic cloves into the yogurt base and stir with a pinch of salt.",
+          "de": "Knoblauchsoße zubereiten: Knoblauchzehen in die Joghurtbasis pressen, eine Prise Salz hinzufügen und verrühren."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Toast the flatbread pocket in a toaster or pan until crisp on the outside.",
+          "de": "Die Fladenbrottasche im Toaster oder in der Pfanne knusprig anbacken."
+        },
+        "timer_seconds": 180
+      },
+      {
+        "text": {
+          "en": "Assemble your Döner: Spread sauce inside the pocket, then stuff with cabbage, onion, tomatoes, and the crispy beef. Enjoy immediately!",
+          "de": "Döner zusammenbauen: Soße in der Tasche verteilen, dann mit Rotkohl, Zwiebeln, Tomaten und dem knusprigen Fleisch füllen. Sofort genießen!"
+        },
+        "timer_seconds": 0
+      }
+    ]
+  },
+  {
+    "id": "doener-vegan",
+    "dish_id": "doener",
+    "name": { "en": "Vegan Tofu-Seitan Döner", "de": "Veganer Tofu-Seitan-Döner" },
+    "description": {
+      "en": "A 100% plant-based version using spiced tofu/seitan strips and a creamy herbal soy-based sauce in toasted bread.",
+      "de": "Eine 100 % pflanzliche Version mit würzigen Tofu-Seitan-Streifen und einer cremigen Kräuter-Sojasoße im getoasteten Brot."
+    },
+    "contains_flags": ["gluten", "soy"],
+    "attributes": ["easy", "≤30", "≤600", "pan-fry"],
+    "time_minutes": 20,
+    "calories_per_serving": 520,
+    "nutrition": {
+      "calories": 520,
+      "protein": 28,
+      "carbs": 62,
+      "fat": 18
+    },
+    "ingredient_ids": ["wheat-flour", "onions", "cabbage"],
+    "ingredients": [
+      { "id": "tofu-strips", "amount": 120, "unit": "g", "name": { "en": "Spiced Tofu-Seitan Strips", "de": "Gewürzte Tofu-Seitan-Streifen" }, "aisle": "pantry" },
+      { "id": "wheat-flour", "amount": 1, "unit": "pieces", "name": { "en": "Flatbread Pocket", "de": "Fladenbrottasche" }, "aisle": "pantry" },
+      { "id": "soy-yogurt", "amount": 100, "unit": "ml", "name": { "en": "Herbal Soy Yogurt", "de": "Kräuter-Sojajoghurt" }, "aisle": "dairy" },
+      { "id": "onions", "amount": 0.5, "unit": "pieces", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "aisle": "produce" },
+      { "id": "cabbage", "amount": 50, "unit": "g", "name": { "en": "Red Cabbage, shredded", "de": "Rotkohl, geraspelt" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Pan-fry the tofu-seitan strips in oil for 6 minutes until crispy.",
+          "de": "Die Tofu-Seitan-Streifen in Öl ca. 6 Minuten knusprig anbraten."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "text": {
+          "en": "Warm up the flatbread pocket until light and toasted.",
+          "de": "Die Fladenbrottasche erwärmen, bis sie leicht getoastet ist."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Assemble the vegan Döner with herbs, cabbage, onions, crispy tofu-seitan, and soy yogurt sauce.",
+          "de": "Den veganen Döner mit Kräutern, Rotkohl, Zwiebeln, knusprigem Tofu-Seitan und Sojajoghurt-Soße füllen."
+        },
+        "timer_seconds": 0
+      }
+    ]
+  },
+  {
+    "id": "doener-halal",
+    "dish_id": "doener",
+    "name": { "en": "Halal Chicken Döner", "de": "Halal Hähnchen-Döner" },
+    "description": {
+      "en": "Juicy, spiced halal chicken strips, paired with crisp salad and yogurt garlic sauce inside fresh toasted pocket bread.",
+      "de": "Saftige, gewürzte Halal-Hähnchenstreifen, serviert mit knackigem Salat und Joghurt-Knoblauch-Soße im frischen Fladenbrot."
+    },
+    "contains_flags": ["poultry", "dairy", "gluten", "high-fodmap"],
+    "attributes": ["medium", "≤30", "≤800", "pan-fry"],
+    "time_minutes": 25,
+    "calories_per_serving": 610,
+    "nutrition": {
+      "calories": 610,
+      "protein": 42,
+      "carbs": 56,
+      "fat": 22
+    },
+    "ingredient_ids": ["chicken", "whole-milk", "wheat-flour", "garlic", "onions", "cabbage"],
+    "ingredients": [
+      { "id": "chicken", "amount": 150, "unit": "g", "name": { "en": "Halal Chicken Strips", "de": "Halal-Hähnchenbruststreifen" }, "aisle": "meat" },
+      { "id": "wheat-flour", "amount": 1, "unit": "pieces", "name": { "en": "Flatbread Pocket", "de": "Fladenbrottasche" }, "aisle": "pantry" },
+      { "id": "whole-milk", "amount": 100, "unit": "ml", "name": { "en": "Yogurt Sauce Base", "de": "Joghurt-Soßenbasis" }, "aisle": "dairy" },
+      { "id": "garlic", "amount": 2, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" },
+      { "id": "onions", "amount": 0.5, "unit": "pieces", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "aisle": "produce" },
+      { "id": "cabbage", "amount": 50, "unit": "g", "name": { "en": "Red Cabbage, shredded", "de": "Rotkohl, geraspelt" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Sear the halal chicken strips in a skillet until fully cooked and golden brown.",
+          "de": "Die Halal-Hähnchenstreifen in einer Pfanne scharf anbraten, bis sie durchgegart und goldbraun sind."
+        },
+        "timer_seconds": 420
+      },
+      {
+        "text": {
+          "en": "Prepare yogurt sauce with crushed garlic, lemon juice, and salt.",
+          "de": "Joghurtsoße mit gepresstem Knoblauch, Zitronensaft und Salz anrühren."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Toast flatbread pocket and stuff with crispy chicken, salad, cabbage, onions, and garlic sauce.",
+          "de": "Fladenbrot toasten und mit knusprigem Hähnchen, Salat, Rotkohl, Zwiebeln und Knoblauchsoße füllen."
+        },
+        "timer_seconds": 0
+      }
+    ]
+  },
+  {
+    "id": "alfredo-classic",
+    "dish_id": "alfredo",
+    "name": { "en": "Classic Fettuccine Alfredo", "de": "Klassische Fettuccine Alfredo" },
+    "description": {
+      "en": "Rich Roman pasta made with bronze-cut fettuccine, fresh butter, and finely grated aged Parmesan cheese.",
+      "de": "Reichhaltige römische Pasta mit Fettuccine, frischer Butter und fein geriebenem, gereiftem Parmesan."
+    },
+    "contains_flags": ["dairy", "gluten"],
+    "attributes": ["medium", "≤30", "≤800", "sauté", "simmer"],
+    "time_minutes": 20,
+    "calories_per_serving": 780,
+    "nutrition": {
+      "calories": 780,
+      "protein": 24,
+      "carbs": 68,
+      "fat": 42
+    },
+    "ingredient_ids": ["pasta", "parmesan", "butter", "garlic"],
+    "ingredients": [
+      { "id": "pasta", "amount": 100, "unit": "g", "name": { "en": "Fettuccine Pasta", "de": "Fettuccine-Nudeln" }, "aisle": "pantry" },
+      { "id": "butter", "amount": 30, "unit": "g", "name": { "en": "Unsalted Butter", "de": "Ungesalzene Butter" }, "aisle": "dairy" },
+      { "id": "parmesan", "amount": 40, "unit": "g", "name": { "en": "Aged Parmesan, grated", "de": "Gereifter Parmesan, gerieben" }, "aisle": "dairy" },
+      { "id": "garlic", "amount": 1, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Cook the fettuccine pasta in a pot of salted boiling water for 10 minutes until al dente. Reserve 1/2 cup of pasta water.",
+          "de": "Die Fettuccine-Nudeln in einem Topf mit gesalzenem, kochendem Wasser 10 Minuten al dente kochen. 1/2 Tasse Nudelwasser aufbewahren."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "text": {
+          "en": "While cooking, melt butter in a large skillet over low heat. Cook minced garlic gently for 2 minutes.",
+          "de": "Währenddessen die Butter in einer großen Pfanne bei schwacher Hitze schmelzen lassen. Den gehackten Knoblauch vorsichtig 2 Minuten darin andünsten."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Transfer drained pasta into the skillet. Gradually add grated Parmesan and some pasta water, tossing continuously to emulsify into a silky, smooth sauce.",
+          "de": "Die abgegossenen Nudeln in die Pfanne geben. Nach und nach geraspelten Parmesan und etwas Nudelwasser hinzufügen, dabei kontinuierlich schwenken, um eine seidige, glatte Soße zu binden."
+        },
+        "timer_seconds": 180
+      }
+    ]
+  },
+  {
+    "id": "alfredo-gf",
+    "dish_id": "alfredo",
+    "name": { "en": "Gluten-Free Fettuccine Alfredo", "de": "Glutenfreie Fettuccine Alfredo" },
+    "description": {
+      "en": "The same silky creaminess of Roman Alfredo, crafted using bronze-cut corn and rice-based gluten-free pasta.",
+      "de": "Die gleiche seidige Cremigkeit wie das römische Original, zubereitet mit glutenfreien Nudeln auf Mais- und Reisbasis."
+    },
+    "contains_flags": ["dairy"],
+    "attributes": ["medium", "≤30", "≤800", "sauté", "simmer"],
+    "time_minutes": 20,
+    "calories_per_serving": 740,
+    "nutrition": {
+      "calories": 740,
+      "protein": 21,
+      "carbs": 64,
+      "fat": 40
+    },
+    "ingredient_ids": ["parmesan", "butter", "garlic"],
+    "ingredients": [
+      { "id": "gf-pasta", "amount": 100, "unit": "g", "name": { "en": "Gluten-Free Fettuccine", "de": "Glutenfreie Fettuccine" }, "aisle": "pantry" },
+      { "id": "butter", "amount": 30, "unit": "g", "name": { "en": "Unsalted Butter", "de": "Ungesalzene Butter" }, "aisle": "dairy" },
+      { "id": "parmesan", "amount": 40, "unit": "g", "name": { "en": "Aged Parmesan, grated", "de": "Gereifter Parmesan, gerieben" }, "aisle": "dairy" },
+      { "id": "garlic", "amount": 1, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Boil gluten-free fettuccine in abundant salted water for 9 minutes. Stir carefully to prevent breaking. Save 1/2 cup pasta water.",
+          "de": "Glutenfreie Fettuccine in reichlich Salzwasser 9 Minuten kochen. Vorsichtig umrühren, um ein Brechen zu verhindern. 1/2 Tasse Nudelwasser aufheben."
+        },
+        "timer_seconds": 540
+      },
+      {
+        "text": {
+          "en": "In a skillet, melt butter and cook minced garlic gently for 2 minutes.",
+          "de": "In einer Pfanne Butter schmelzen und den gehackten Knoblauch 2 Minuten sanft andünsten."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "text": {
+          "en": "Toss the noodles in the pan with butter and grated parmesan. Add reserved water splash by splash until a rich cream forms.",
+          "de": "Die Nudeln mit Butter und geraspeltem Parmesan in die Pfanne schwenken. Schluckweise Nudelwasser hinzufügen, bis eine cremige Emulsion entsteht."
+        },
+        "timer_seconds": 180
+      }
+    ]
+  },
+  {
+    "id": "padthai-classic",
+    "dish_id": "padthai",
+    "name": { "en": "Classic Street Pad Thai", "de": "Klassisches Street Pad Thai" },
+    "description": {
+      "en": "Authentic street-style stir-fried rice noodles with tofu, fresh bean sprouts, scrambled egg, tamarind pulp, and crunchy crushed peanuts.",
+      "de": "Authentisch gebratene Reisnudeln im Streetfood-Stil mit Tofu, frischen Sprossen, Ei, Tamarindenpaste und knackigen Erdnüssen."
+    },
+    "contains_flags": ["peanuts", "soy", "egg"],
+    "attributes": ["medium", "≤30", "≤600", "stir-fry"],
+    "time_minutes": 25,
+    "calories_per_serving": 590,
+    "nutrition": {
+      "calories": 590,
+      "protein": 19,
+      "carbs": 82,
+      "fat": 19
+    },
+    "ingredient_ids": ["rice-noodles", "tofu", "egg", "peanuts", "garlic"],
+    "ingredients": [
+      { "id": "rice-noodles", "amount": 100, "unit": "g", "name": { "en": "Rice Noodles", "de": "Reisnudeln" }, "aisle": "pantry" },
+      { "id": "tofu", "amount": 80, "unit": "g", "name": { "en": "Firm Tofu, cubed", "de": "Fester Tofu, gewürfelt" }, "aisle": "pantry" },
+      { "id": "egg", "amount": 1, "unit": "pieces", "name": { "en": "Egg", "de": "Ei" }, "aisle": "dairy" },
+      { "id": "peanuts", "amount": 2, "unit": "tbsp", "name": { "en": "Roasted Peanuts, crushed", "de": "Geröstete Erdnüsse, gehackt" }, "aisle": "pantry" },
+      { "id": "garlic", "amount": 2, "unit": "cloves", "name": { "en": "Garlic", "de": "Knoblauch" }, "aisle": "produce" }
+    ],
+    "steps": [
+      {
+        "text": {
+          "en": "Soak rice noodles in warm water for 15 minutes until soft and pliable.",
+          "de": "Die Reisnudeln 15 Minuten in warmem Wasser einweichen, bis sie weich und biegsam sind."
+        },
+        "timer_seconds": 900
+      },
+      {
+        "text": {
+          "en": "In a very hot wok or skillet, stir-fry garlic and firm tofu cubes until the tofu turns golden brown on all sides.",
+          "de": "In einem sehr heißen Wok oder einer Pfanne Knoblauch und feste Tofuwürfel anbraten, bis der Tofu rundherum goldbraun ist."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "text": {
+          "en": "Push ingredients to the side, crack in the egg, scramble lightly until cooked, then toss everything together.",
+          "de": "Zutaten beiseite schieben, Ei in die Pfanne schlagen, leicht verrühren, bis es stockt, und alles vermengen."
+        },
+        "timer_seconds": 90
+      },
+      {
+        "text": {
+          "en": "Add drained noodles, tamarind seasoning, and flash fry for 3 minutes. Top with crushed peanuts before serving.",
+          "de": "Abgetropfte Nudeln und Tamarindensauce hinzufügen und 3 Minuten unter Rühren anbraten. Vor dem Servieren mit gehackten Erdnüssen bestreuen."
+        },
+        "timer_seconds": 180
+      }
+    ]
+  }
+]

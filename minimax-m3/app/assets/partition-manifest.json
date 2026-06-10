@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "schema_version": 1,
+  "generated_at": "2026-06-03T00:00:00Z",
+  "partitions": [
+    {
+      "id": "core",
+      "asset_path": "assets/core-recipes.json",
+      "description": "Top 80% most-used recipes, loaded at launch.",
+      "load_strategy": "eager",
+      "frequency_tier": 1,
+      "estimated_size_kb": 80
+    },
+    {
+      "id": "extended",
+      "asset_path": "assets/extended-recipes.json",
+      "description": "Remaining 20% rarely-used dishes.",
+      "load_strategy": "lazy",
+      "frequency_tier": 2,
+      "estimated_size_kb": 60
+    },
+    {
+      "id": "italian",
+      "asset_path": "assets/cuisine-italian.json",
+      "description": "Italian cuisine cross-reference.",
+      "load_strategy": "on-demand",
+      "estimated_size_kb": 1
+    },
+    {
+      "id": "asian",
+      "asset_path": "assets/cuisine-asian.json",
+      "description": "Asian cuisine cross-reference.",
+      "load_strategy": "on-demand",
+      "estimated_size_kb": 1
+    },
+    {
+      "id": "middle-eastern",
+      "asset_path": "assets/cuisine-middle-eastern.json",
+      "description": "Middle-Eastern cuisine cross-reference.",
+      "load_strategy": "on-demand",
+      "estimated_size_kb": 1
+    }
+  ],
+  "cross_references": {
+    "dishes_to_partitions": "Each dish in dishes.json carries partition_id + secondary_partitions fields.",
+    "recipe_to_partition": "Recipes live in core or extended; cuisine partitions reference them by id."
+  },
+  "loading_strategy": {
+    "launch": ["core"],
+    "post_launch_background": ["extended"],
+    "on_demand": ["italian", "asian", "middle-eastern"]
+  }
+}
