@@ -167,19 +167,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 : profile.copyWith(maxTimeMinutes: v.round())),
           ),
           const SizedBox(height: 10),
-          Row(
+          Text(s('preferredEffort'), style: MorphText.label()),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
             children: [
-              Text(s('preferredEffort'), style: MorphText.label()),
-              const Spacer(),
-              for (final effort in const ['easy', 'medium', 'hard']) ...[
+              for (final effort in const ['easy', 'medium', 'hard'])
                 MonoChip(
                   label: ontology.nameOf(effort, lang),
                   selected: profile.preferredEffort == effort,
                   onTap: () => state.updateProfile(
                       profile.copyWith(preferredEffort: effort)),
                 ),
-                const SizedBox(width: 6),
-              ],
             ],
           ),
           const SizedBox(height: 8),
