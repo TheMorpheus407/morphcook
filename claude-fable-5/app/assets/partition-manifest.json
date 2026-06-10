@@ -1,46 +1,128 @@
 {
   "schema_version": 1,
-  "corpus_version": "2026.06.0",
+  "corpus_version": "2026.06.1",
   "generated_by": "morphcook pipeline",
   "loading_strategy": {
-    "at_launch": ["core"],
-    "on_demand": ["extended", "cuisine-italian", "cuisine-asian", "cuisine-middle-eastern"]
+    "at_launch": [
+      "core"
+    ],
+    "on_demand": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern",
+      "cuisine-indian",
+      "cuisine-mexican"
+    ]
   },
   "partitions": [
     {
       "id": "core",
       "file": "assets/core-recipes.json",
       "description": "Top 80% most-used recipes, loaded at launch.",
-      "dish_ids": ["doener", "pasta-alfredo", "pancakes", "curry", "burger", "porridge", "shakshuka", "caesar-salad"]
+      "dish_ids": [
+        "doener",
+        "pasta-alfredo",
+        "pancakes",
+        "curry",
+        "burger",
+        "porridge",
+        "shakshuka",
+        "caesar-salad",
+        "omelette",
+        "smoothie-bowl"
+      ]
     },
     {
       "id": "extended",
       "file": "assets/extended-recipes.json",
       "description": "Rarely-used long-tail dishes, loaded on demand.",
-      "dish_ids": ["beef-wellington", "croissants"]
+      "dish_ids": [
+        "beef-wellington",
+        "croissants",
+        "paella",
+        "goulash",
+        "brownies",
+        "apple-pie"
+      ]
     },
     {
       "id": "cuisine-italian",
       "file": "assets/cuisine-italian.json",
       "description": "Italian cuisine partition for discovery.",
-      "dish_ids": ["risotto", "lasagna"]
+      "dish_ids": [
+        "risotto",
+        "lasagna",
+        "pizza",
+        "bolognese",
+        "carbonara",
+        "tiramisu"
+      ]
     },
     {
       "id": "cuisine-asian",
       "file": "assets/cuisine-asian.json",
       "description": "Asian cuisine partition for discovery.",
-      "dish_ids": ["pad-thai", "ramen"]
+      "dish_ids": [
+        "pad-thai",
+        "ramen",
+        "sushi",
+        "fried-rice",
+        "pho"
+      ]
     },
     {
       "id": "cuisine-middle-eastern",
       "file": "assets/cuisine-middle-eastern.json",
       "description": "Middle-Eastern cuisine partition for discovery.",
-      "dish_ids": ["falafel", "hummus-bowl"]
+      "dish_ids": [
+        "falafel",
+        "hummus-bowl",
+        "shawarma",
+        "lentil-soup",
+        "tabbouleh"
+      ]
+    },
+    {
+      "id": "cuisine-indian",
+      "file": "assets/cuisine-indian.json",
+      "description": "Indian cuisine partition for discovery.",
+      "dish_ids": [
+        "butter-chicken",
+        "dal",
+        "biryani"
+      ]
+    },
+    {
+      "id": "cuisine-mexican",
+      "file": "assets/cuisine-mexican.json",
+      "description": "Mexican cuisine partition for discovery.",
+      "dish_ids": [
+        "tacos",
+        "burrito-bowl",
+        "quesadilla"
+      ]
     }
   ],
   "cross_references": [
-    {"partition_id": "cuisine-italian", "dish_ids": ["pasta-alfredo"]},
-    {"partition_id": "cuisine-asian", "dish_ids": ["curry"]},
-    {"partition_id": "cuisine-middle-eastern", "dish_ids": ["doener", "shakshuka"]}
+    {
+      "partition_id": "cuisine-italian",
+      "dish_ids": [
+        "pasta-alfredo"
+      ]
+    },
+    {
+      "partition_id": "cuisine-asian",
+      "dish_ids": [
+        "curry"
+      ]
+    },
+    {
+      "partition_id": "cuisine-middle-eastern",
+      "dish_ids": [
+        "doener",
+        "shakshuka"
+      ]
+    }
   ]
 }

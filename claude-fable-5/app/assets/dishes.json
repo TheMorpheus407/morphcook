@@ -3,194 +3,1095 @@
   "dishes": [
     {
       "id": "doener",
-      "name": {"en": "döner", "de": "Döner"},
-      "hero": {"en": "the late-night legend, rebuilt for every body", "de": "die Legende der Spätschicht, neu gebaut für jeden Körper"},
-      "caption": {"en": "wrapped warm & a little messy", "de": "warm gewickelt & ein bisschen chaotisch"},
+      "name": {
+        "en": "döner",
+        "de": "Döner"
+      },
+      "hero": {
+        "en": "the late-night legend, rebuilt for every body",
+        "de": "die Legende der Spätschicht, neu gebaut für jeden Körper"
+      },
+      "caption": {
+        "en": "wrapped warm & a little messy",
+        "de": "warm gewickelt & ein bisschen chaotisch"
+      },
       "stripe": "#C96F4A",
-      "recipes": ["doener-classic", "doener-vegan", "doener-halal", "doener-keto"],
+      "recipes": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-halal",
+        "doener-keto"
+      ],
       "partition_id": "core",
-      "secondary_partitions": ["cuisine-middle-eastern"],
-      "cuisine_tags": ["turkish", "street-food"],
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish",
+        "street-food"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "pasta-alfredo",
-      "name": {"en": "pasta alfredo", "de": "Pasta Alfredo"},
-      "hero": {"en": "silk in a bowl, four ways", "de": "Seide in der Schüssel, auf vier Arten"},
-      "caption": {"en": "twirl slowly, think of rome", "de": "langsam aufdrehen, an Rom denken"},
+      "name": {
+        "en": "pasta alfredo",
+        "de": "Pasta Alfredo"
+      },
+      "hero": {
+        "en": "silk in a bowl, four ways",
+        "de": "Seide in der Schüssel, auf vier Arten"
+      },
+      "caption": {
+        "en": "twirl slowly, think of rome",
+        "de": "langsam aufdrehen, an Rom denken"
+      },
       "stripe": "#D9B44A",
-      "recipes": ["alfredo-classic", "alfredo-gluten-free", "alfredo-vegan", "alfredo-light"],
+      "recipes": [
+        "alfredo-classic",
+        "alfredo-gluten-free",
+        "alfredo-vegan",
+        "alfredo-light"
+      ],
       "partition_id": "core",
-      "secondary_partitions": ["cuisine-italian"],
-      "cuisine_tags": ["italian", "pasta"],
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "pasta"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "pancakes",
-      "name": {"en": "pancakes", "de": "Pancakes"},
-      "hero": {"en": "sunday morning, stacked high", "de": "Sonntagmorgen, hoch gestapelt"},
-      "caption": {"en": "syrup optional, joy mandatory", "de": "Sirup optional, Freude Pflicht"},
+      "name": {
+        "en": "pancakes",
+        "de": "Pancakes"
+      },
+      "hero": {
+        "en": "sunday morning, stacked high",
+        "de": "Sonntagmorgen, hoch gestapelt"
+      },
+      "caption": {
+        "en": "syrup optional, joy mandatory",
+        "de": "Sirup optional, Freude Pflicht"
+      },
       "stripe": "#E0A899",
-      "recipes": ["pancakes-classic", "pancakes-vegan", "pancakes-gluten-free", "pancakes-protein"],
+      "recipes": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-protein"
+      ],
       "partition_id": "core",
       "secondary_partitions": [],
-      "cuisine_tags": ["breakfast", "american"],
+      "cuisine_tags": [
+        "breakfast",
+        "american"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "curry",
-      "name": {"en": "coconut curry", "de": "Kokos-Curry"},
-      "hero": {"en": "a warm pot of somewhere else", "de": "ein warmer Topf von woanders"},
-      "caption": {"en": "simmered until the kitchen smells like rain", "de": "geköchelt, bis die Küche nach Regen duftet"},
+      "name": {
+        "en": "coconut curry",
+        "de": "Kokos-Curry"
+      },
+      "hero": {
+        "en": "a warm pot of somewhere else",
+        "de": "ein warmer Topf von woanders"
+      },
+      "caption": {
+        "en": "simmered until the kitchen smells like rain",
+        "de": "geköchelt, bis die Küche nach Regen duftet"
+      },
       "stripe": "#B8862D",
-      "recipes": ["curry-chicken", "curry-chickpea", "curry-keto"],
+      "recipes": [
+        "curry-chicken",
+        "curry-chickpea",
+        "curry-keto"
+      ],
       "partition_id": "core",
-      "secondary_partitions": ["cuisine-asian"],
-      "cuisine_tags": ["asian", "indian", "one-pot"],
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "indian",
+        "one-pot"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "burger",
-      "name": {"en": "burger", "de": "Burger"},
-      "hero": {"en": "two hands required, no exceptions", "de": "zwei Hände nötig, keine Ausnahmen"},
-      "caption": {"en": "napkins are for quitters", "de": "Servietten sind was für Anfänger"},
+      "name": {
+        "en": "burger",
+        "de": "Burger"
+      },
+      "hero": {
+        "en": "two hands required, no exceptions",
+        "de": "zwei Hände nötig, keine Ausnahmen"
+      },
+      "caption": {
+        "en": "napkins are for quitters",
+        "de": "Servietten sind was für Anfänger"
+      },
       "stripe": "#8C5E58",
-      "recipes": ["burger-classic", "burger-veggie", "burger-vegan", "burger-lowcarb"],
+      "recipes": [
+        "burger-classic",
+        "burger-veggie",
+        "burger-vegan",
+        "burger-lowcarb"
+      ],
       "partition_id": "core",
       "secondary_partitions": [],
-      "cuisine_tags": ["american", "comfort-food"],
+      "cuisine_tags": [
+        "american",
+        "comfort-food"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "porridge",
-      "name": {"en": "porridge", "de": "Porridge"},
-      "hero": {"en": "the quiet bowl that starts the day", "de": "die stille Schüssel, mit der der Tag beginnt"},
-      "caption": {"en": "stirred slow, eaten slower", "de": "langsam gerührt, noch langsamer gegessen"},
+      "name": {
+        "en": "porridge",
+        "de": "Porridge"
+      },
+      "hero": {
+        "en": "the quiet bowl that starts the day",
+        "de": "die stille Schüssel, mit der der Tag beginnt"
+      },
+      "caption": {
+        "en": "stirred slow, eaten slower",
+        "de": "langsam gerührt, noch langsamer gegessen"
+      },
       "stripe": "#A9B39A",
-      "recipes": ["porridge-classic", "porridge-vegan", "porridge-sugarfree"],
+      "recipes": [
+        "porridge-classic",
+        "porridge-vegan",
+        "porridge-sugarfree"
+      ],
       "partition_id": "core",
       "secondary_partitions": [],
-      "cuisine_tags": ["breakfast"],
+      "cuisine_tags": [
+        "breakfast"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "shakshuka",
-      "name": {"en": "shakshuka", "de": "Shakshuka"},
-      "hero": {"en": "eggs poached in a sunset", "de": "Eier pochiert im Sonnenuntergang"},
-      "caption": {"en": "bring bread. bring everyone.", "de": "Brot mitbringen. Alle mitbringen."},
+      "name": {
+        "en": "shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero": {
+        "en": "eggs poached in a sunset",
+        "de": "Eier pochiert im Sonnenuntergang"
+      },
+      "caption": {
+        "en": "bring bread. bring everyone.",
+        "de": "Brot mitbringen. Alle mitbringen."
+      },
       "stripe": "#B5483A",
-      "recipes": ["shakshuka-classic", "shakshuka-green", "shakshuka-vegan"],
+      "recipes": [
+        "shakshuka-classic",
+        "shakshuka-green",
+        "shakshuka-vegan"
+      ],
       "partition_id": "core",
-      "secondary_partitions": ["cuisine-middle-eastern"],
-      "cuisine_tags": ["middle-eastern", "breakfast", "one-pan"],
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "breakfast",
+        "one-pan"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "caesar-salad",
-      "name": {"en": "caesar salad", "de": "Caesar Salad"},
-      "hero": {"en": "crisp, cool, quietly dramatic", "de": "knackig, kühl, leise dramatisch"},
-      "caption": {"en": "the dressing is the whole point", "de": "das Dressing ist der eigentliche Punkt"},
+      "name": {
+        "en": "caesar salad",
+        "de": "Caesar Salad"
+      },
+      "hero": {
+        "en": "crisp, cool, quietly dramatic",
+        "de": "knackig, kühl, leise dramatisch"
+      },
+      "caption": {
+        "en": "the dressing is the whole point",
+        "de": "das Dressing ist der eigentliche Punkt"
+      },
       "stripe": "#7E9B6E",
-      "recipes": ["caesar-classic", "caesar-vegetarian", "caesar-vegan"],
+      "recipes": [
+        "caesar-classic",
+        "caesar-vegetarian",
+        "caesar-vegan"
+      ],
       "partition_id": "core",
       "secondary_partitions": [],
-      "cuisine_tags": ["salad", "american"],
+      "cuisine_tags": [
+        "salad",
+        "american"
+      ],
       "frequency_tier": "high"
     },
     {
       "id": "risotto",
-      "name": {"en": "mushroom risotto", "de": "Pilzrisotto"},
-      "hero": {"en": "patience, ladled one spoon at a time", "de": "Geduld, Kelle für Kelle"},
-      "caption": {"en": "stir like you mean it", "de": "rühren, als wäre es ernst"},
+      "name": {
+        "en": "mushroom risotto",
+        "de": "Pilzrisotto"
+      },
+      "hero": {
+        "en": "patience, ladled one spoon at a time",
+        "de": "Geduld, Kelle für Kelle"
+      },
+      "caption": {
+        "en": "stir like you mean it",
+        "de": "rühren, als wäre es ernst"
+      },
       "stripe": "#9A8C7A",
-      "recipes": ["risotto-mushroom", "risotto-vegan"],
+      "recipes": [
+        "risotto-mushroom",
+        "risotto-vegan"
+      ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
-      "cuisine_tags": ["italian", "rice", "comfort-food"],
+      "cuisine_tags": [
+        "italian",
+        "rice",
+        "comfort-food"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "lasagna",
-      "name": {"en": "lasagna", "de": "Lasagne"},
-      "hero": {"en": "layers of sunday afternoon", "de": "Schichten aus Sonntagnachmittag"},
-      "caption": {"en": "worth every single dish in the sink", "de": "jeden Teller im Spülbecken wert"},
+      "name": {
+        "en": "lasagna",
+        "de": "Lasagne"
+      },
+      "hero": {
+        "en": "layers of sunday afternoon",
+        "de": "Schichten aus Sonntagnachmittag"
+      },
+      "caption": {
+        "en": "worth every single dish in the sink",
+        "de": "jeden Teller im Spülbecken wert"
+      },
       "stripe": "#A6543F",
-      "recipes": ["lasagna-classic", "lasagna-vegetarian", "lasagna-gluten-free"],
+      "recipes": [
+        "lasagna-classic",
+        "lasagna-vegetarian",
+        "lasagna-gluten-free"
+      ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
-      "cuisine_tags": ["italian", "pasta", "baked"],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "baked"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "pad-thai",
-      "name": {"en": "pad thai", "de": "Pad Thai"},
-      "hero": {"en": "sweet, sour, loud, perfect", "de": "süß, sauer, laut, perfekt"},
-      "caption": {"en": "wok hot enough to scare you", "de": "Wok so heiß, dass es dich kurz erschreckt"},
+      "name": {
+        "en": "pad thai",
+        "de": "Pad Thai"
+      },
+      "hero": {
+        "en": "sweet, sour, loud, perfect",
+        "de": "süß, sauer, laut, perfekt"
+      },
+      "caption": {
+        "en": "wok hot enough to scare you",
+        "de": "Wok so heiß, dass es dich kurz erschreckt"
+      },
       "stripe": "#C77B3E",
-      "recipes": ["pad-thai-classic", "pad-thai-vegan", "pad-thai-nut-free"],
+      "recipes": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-nut-free"
+      ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
-      "cuisine_tags": ["thai", "noodles", "street-food"],
+      "cuisine_tags": [
+        "thai",
+        "noodles",
+        "street-food"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "ramen",
-      "name": {"en": "ramen", "de": "Ramen"},
-      "hero": {"en": "a bowl you can disappear into", "de": "eine Schüssel zum Drinverschwinden"},
-      "caption": {"en": "slurping is a love language", "de": "Schlürfen ist eine Liebessprache"},
+      "name": {
+        "en": "ramen",
+        "de": "Ramen"
+      },
+      "hero": {
+        "en": "a bowl you can disappear into",
+        "de": "eine Schüssel zum Drinverschwinden"
+      },
+      "caption": {
+        "en": "slurping is a love language",
+        "de": "Schlürfen ist eine Liebessprache"
+      },
       "stripe": "#5E6B73",
-      "recipes": ["ramen-classic", "ramen-vegan", "ramen-quick"],
+      "recipes": [
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-quick"
+      ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
-      "cuisine_tags": ["japanese", "soup", "noodles"],
+      "cuisine_tags": [
+        "japanese",
+        "soup",
+        "noodles"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "falafel",
-      "name": {"en": "falafel", "de": "Falafel"},
-      "hero": {"en": "green inside, golden outside", "de": "innen grün, außen golden"},
-      "caption": {"en": "herbs first, everything else second", "de": "erst die Kräuter, dann der Rest"},
+      "name": {
+        "en": "falafel",
+        "de": "Falafel"
+      },
+      "hero": {
+        "en": "green inside, golden outside",
+        "de": "innen grün, außen golden"
+      },
+      "caption": {
+        "en": "herbs first, everything else second",
+        "de": "erst die Kräuter, dann der Rest"
+      },
       "stripe": "#6F8F4F",
-      "recipes": ["falafel-classic", "falafel-baked"],
+      "recipes": [
+        "falafel-classic",
+        "falafel-baked"
+      ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
-      "cuisine_tags": ["middle-eastern", "street-food"],
+      "cuisine_tags": [
+        "middle-eastern",
+        "street-food"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "hummus-bowl",
-      "name": {"en": "hummus bowl", "de": "Hummus Bowl"},
-      "hero": {"en": "a soft place to land at lunch", "de": "ein weicher Ort zum Landen am Mittag"},
-      "caption": {"en": "swoosh the hummus like you've seen on tv", "de": "den Hummus schwungvoll verstreichen wie im Fernsehen"},
+      "name": {
+        "en": "hummus bowl",
+        "de": "Hummus Bowl"
+      },
+      "hero": {
+        "en": "a soft place to land at lunch",
+        "de": "ein weicher Ort zum Landen am Mittag"
+      },
+      "caption": {
+        "en": "swoosh the hummus like you've seen on tv",
+        "de": "den Hummus schwungvoll verstreichen wie im Fernsehen"
+      },
       "stripe": "#C9A227",
-      "recipes": ["hummus-bowl-classic", "hummus-bowl-chicken"],
+      "recipes": [
+        "hummus-bowl-classic",
+        "hummus-bowl-chicken"
+      ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
-      "cuisine_tags": ["middle-eastern", "bowl", "lunch"],
+      "cuisine_tags": [
+        "middle-eastern",
+        "bowl",
+        "lunch"
+      ],
       "frequency_tier": "medium"
     },
     {
       "id": "beef-wellington",
-      "name": {"en": "wellington", "de": "Wellington"},
-      "hero": {"en": "the project. the centerpiece. the legend.", "de": "das Projekt. das Herzstück. die Legende."},
-      "caption": {"en": "clear your afternoon, preheat your courage", "de": "Nachmittag freihalten, Mut vorheizen"},
+      "name": {
+        "en": "wellington",
+        "de": "Wellington"
+      },
+      "hero": {
+        "en": "the project. the centerpiece. the legend.",
+        "de": "das Projekt. das Herzstück. die Legende."
+      },
+      "caption": {
+        "en": "clear your afternoon, preheat your courage",
+        "de": "Nachmittag freihalten, Mut vorheizen"
+      },
       "stripe": "#704238",
-      "recipes": ["wellington-classic", "wellington-mushroom"],
+      "recipes": [
+        "wellington-classic",
+        "wellington-mushroom"
+      ],
       "partition_id": "extended",
       "secondary_partitions": [],
-      "cuisine_tags": ["british", "celebration", "project"],
+      "cuisine_tags": [
+        "british",
+        "celebration",
+        "project"
+      ],
       "frequency_tier": "low"
     },
     {
       "id": "croissants",
-      "name": {"en": "croissants", "de": "Croissants"},
-      "hero": {"en": "thirty-six layers of stubbornness", "de": "sechsunddreißig Schichten Sturheit"},
-      "caption": {"en": "the butter must stay cold. so must you.", "de": "die Butter muss kalt bleiben. du auch."},
+      "name": {
+        "en": "croissants",
+        "de": "Croissants"
+      },
+      "hero": {
+        "en": "thirty-six layers of stubbornness",
+        "de": "sechsunddreißig Schichten Sturheit"
+      },
+      "caption": {
+        "en": "the butter must stay cold. so must you.",
+        "de": "die Butter muss kalt bleiben. du auch."
+      },
       "stripe": "#D4A86A",
-      "recipes": ["croissants-classic", "croissants-chocolate"],
+      "recipes": [
+        "croissants-classic",
+        "croissants-chocolate"
+      ],
       "partition_id": "extended",
       "secondary_partitions": [],
-      "cuisine_tags": ["french", "breakfast", "baking", "project"],
+      "cuisine_tags": [
+        "french",
+        "breakfast",
+        "baking",
+        "project"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "omelette",
+      "name": {
+        "en": "omelette",
+        "de": "Omelett"
+      },
+      "hero": {
+        "en": "three eggs and a quiet morning",
+        "de": "drei Eier und ein stiller Morgen"
+      },
+      "caption": {
+        "en": "folded, not flipped",
+        "de": "gefaltet, nicht gewendet"
+      },
+      "stripe": "#D9A23B",
+      "recipes": [
+        "omelette-classic",
+        "omelette-vegan",
+        "omelette-protein"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "french"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "smoothie-bowl",
+      "name": {
+        "en": "smoothie bowl",
+        "de": "Smoothie Bowl"
+      },
+      "hero": {
+        "en": "breakfast you can decorate",
+        "de": "Frühstück zum Dekorieren"
+      },
+      "caption": {
+        "en": "eat the pretty before it melts",
+        "de": "iss das Hübsche, bevor es schmilzt"
+      },
+      "stripe": "#B4527A",
+      "recipes": [
+        "smoothie-bowl-classic",
+        "smoothie-bowl-vegan",
+        "smoothie-bowl-protein"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "fruit"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "pizza",
+      "name": {
+        "en": "pizza margherita",
+        "de": "Pizza Margherita"
+      },
+      "hero": {
+        "en": "flour, water, patience, fire",
+        "de": "Mehl, Wasser, Geduld, Feuer"
+      },
+      "caption": {
+        "en": "the crust is the main character",
+        "de": "der Rand ist die Hauptfigur"
+      },
+      "stripe": "#C24B33",
+      "recipes": [
+        "pizza-classic",
+        "pizza-vegan",
+        "pizza-gluten-free",
+        "pizza-keto"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "baked",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "bolognese",
+      "name": {
+        "en": "spaghetti bolognese",
+        "de": "Spaghetti Bolognese"
+      },
+      "hero": {
+        "en": "the sauce that raised us all",
+        "de": "die Sauce, mit der wir alle groß wurden"
+      },
+      "caption": {
+        "en": "simmer low, stir rarely, taste often",
+        "de": "leise köcheln, selten rühren, oft probieren"
+      },
+      "stripe": "#9E3B2B",
+      "recipes": [
+        "bolognese-classic",
+        "bolognese-lentil",
+        "bolognese-lowfodmap"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "carbonara",
+      "name": {
+        "en": "carbonara",
+        "de": "Carbonara"
+      },
+      "hero": {
+        "en": "four ingredients, zero cream, all nerve",
+        "de": "vier Zutaten, null Sahne, viel Nerven"
+      },
+      "caption": {
+        "en": "the pan is off when the egg goes in",
+        "de": "die Pfanne ist aus, wenn das Ei reinkommt"
+      },
+      "stripe": "#C9A227",
+      "recipes": [
+        "carbonara-classic",
+        "carbonara-veggie",
+        "carbonara-gluten-free"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "pasta"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tiramisu",
+      "name": {
+        "en": "tiramisu",
+        "de": "Tiramisu"
+      },
+      "hero": {
+        "en": "coffee, cushioned",
+        "de": "Kaffee, weich gebettet"
+      },
+      "caption": {
+        "en": "needs a night in the fridge. so do you.",
+        "de": "braucht eine Nacht im Kühlschrank. du auch."
+      },
+      "stripe": "#8A6B4F",
+      "recipes": [
+        "tiramisu-classic",
+        "tiramisu-vegan",
+        "tiramisu-light"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "dessert"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "sushi",
+      "name": {
+        "en": "sushi rolls",
+        "de": "Sushi-Rollen"
+      },
+      "hero": {
+        "en": "rice you can be proud of",
+        "de": "Reis, auf den du stolz sein kannst"
+      },
+      "caption": {
+        "en": "the first roll is for practicing",
+        "de": "die erste Rolle ist zum Üben"
+      },
+      "stripe": "#3F6E63",
+      "recipes": [
+        "sushi-classic",
+        "sushi-vegan",
+        "sushi-protein"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "japanese",
+        "rice"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "fried-rice",
+      "name": {
+        "en": "fried rice",
+        "de": "gebratener Reis"
+      },
+      "hero": {
+        "en": "yesterday's rice, today's dinner",
+        "de": "der Reis von gestern, das Abendessen von heute"
+      },
+      "caption": {
+        "en": "cold rice only. promise.",
+        "de": "nur kalter Reis. versprochen."
+      },
+      "stripe": "#B8862D",
+      "recipes": [
+        "fried-rice-classic",
+        "fried-rice-vegan",
+        "fried-rice-lowfodmap"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian",
+        "rice",
+        "quick"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "pho",
+      "name": {
+        "en": "phở",
+        "de": "Phở"
+      },
+      "hero": {
+        "en": "a broth with a long memory",
+        "de": "eine Brühe mit langem Gedächtnis"
+      },
+      "caption": {
+        "en": "herbs on top, elbows on table",
+        "de": "Kräuter oben drauf, Ellbogen auf den Tisch"
+      },
+      "stripe": "#6B7D5E",
+      "recipes": [
+        "pho-classic",
+        "pho-vegan",
+        "pho-quick"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "vietnamese",
+        "soup",
+        "noodles"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "butter-chicken",
+      "name": {
+        "en": "butter chicken",
+        "de": "Butter Chicken"
+      },
+      "hero": {
+        "en": "velvet in a copper pot",
+        "de": "Samt im Kupfertopf"
+      },
+      "caption": {
+        "en": "tear the naan, don't cut it",
+        "de": "reiß das Naan, schneid es nicht"
+      },
+      "stripe": "#C26A2D",
+      "recipes": [
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-light"
+      ],
+      "partition_id": "cuisine-indian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "indian",
+        "curry",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "dal",
+      "name": {
+        "en": "dal",
+        "de": "Dal"
+      },
+      "hero": {
+        "en": "lentils that hold you together",
+        "de": "Linsen, die dich zusammenhalten"
+      },
+      "caption": {
+        "en": "tempered spices go on last, loudly",
+        "de": "das heiße Gewürzöl kommt zuletzt, mit Zisch"
+      },
+      "stripe": "#B8862D",
+      "recipes": [
+        "dal-classic",
+        "dal-makhani",
+        "dal-paneer"
+      ],
+      "partition_id": "cuisine-indian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "indian",
+        "lentils",
+        "one-pot"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "biryani",
+      "name": {
+        "en": "biryani",
+        "de": "Biryani"
+      },
+      "hero": {
+        "en": "rice, layered like a secret",
+        "de": "Reis, geschichtet wie ein Geheimnis"
+      },
+      "caption": {
+        "en": "do not lift the lid. not once.",
+        "de": "den Deckel nicht heben. kein einziges Mal."
+      },
+      "stripe": "#A65E2E",
+      "recipes": [
+        "biryani-chicken",
+        "biryani-veg",
+        "biryani-vegan"
+      ],
+      "partition_id": "cuisine-indian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "indian",
+        "rice",
+        "celebration"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tacos",
+      "name": {
+        "en": "tacos",
+        "de": "Tacos"
+      },
+      "hero": {
+        "en": "two bites of somewhere sunnier",
+        "de": "zwei Bissen von einem sonnigeren Ort"
+      },
+      "caption": {
+        "en": "double the tortilla, double the faith",
+        "de": "doppelte Tortilla, doppeltes Vertrauen"
+      },
+      "stripe": "#C77B3E",
+      "recipes": [
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-fish",
+        "tacos-keto"
+      ],
+      "partition_id": "cuisine-mexican",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican",
+        "street-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "burrito-bowl",
+      "name": {
+        "en": "burrito bowl",
+        "de": "Burrito Bowl"
+      },
+      "hero": {
+        "en": "everything good, in layers",
+        "de": "alles Gute, in Schichten"
+      },
+      "caption": {
+        "en": "the lime at the end is not optional",
+        "de": "die Limette am Ende ist nicht optional"
+      },
+      "stripe": "#7E9B6E",
+      "recipes": [
+        "burrito-bowl-classic",
+        "burrito-bowl-vegan",
+        "burrito-bowl-protein"
+      ],
+      "partition_id": "cuisine-mexican",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican",
+        "bowl",
+        "meal-prep"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "quesadilla",
+      "name": {
+        "en": "quesadilla",
+        "de": "Quesadilla"
+      },
+      "hero": {
+        "en": "a grilled cheese that went traveling",
+        "de": "ein Käsebrot auf Reisen"
+      },
+      "caption": {
+        "en": "cut into triangles. it's the law.",
+        "de": "in Dreiecke schneiden. das ist Gesetz."
+      },
+      "stripe": "#D9A23B",
+      "recipes": [
+        "quesadilla-classic",
+        "quesadilla-vegan",
+        "quesadilla-gluten-free"
+      ],
+      "partition_id": "cuisine-mexican",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican",
+        "quick",
+        "comfort-food"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "shawarma",
+      "name": {
+        "en": "shawarma",
+        "de": "Shawarma"
+      },
+      "hero": {
+        "en": "spice-stained fingers, no regrets",
+        "de": "Gewürzfinger, keine Reue"
+      },
+      "caption": {
+        "en": "marinate longer than feels reasonable",
+        "de": "länger marinieren, als vernünftig wirkt"
+      },
+      "stripe": "#8C5E58",
+      "recipes": [
+        "shawarma-classic",
+        "shawarma-vegan",
+        "shawarma-keto"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern",
+        "street-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "lentil-soup",
+      "name": {
+        "en": "red lentil soup",
+        "de": "rote Linsensuppe"
+      },
+      "hero": {
+        "en": "the soup that asks nothing of you",
+        "de": "die Suppe, die nichts von dir verlangt"
+      },
+      "caption": {
+        "en": "lemon at the end wakes it up",
+        "de": "Zitrone am Ende weckt sie auf"
+      },
+      "stripe": "#C26A2D",
+      "recipes": [
+        "lentil-soup-classic",
+        "lentil-soup-vegetarian"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern",
+        "soup",
+        "quick"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tabbouleh",
+      "name": {
+        "en": "tabbouleh",
+        "de": "Taboulé"
+      },
+      "hero": {
+        "en": "a salad that is mostly herbs, correctly",
+        "de": "ein Salat, der zu Recht fast nur aus Kräutern besteht"
+      },
+      "caption": {
+        "en": "parsley is the lettuce here",
+        "de": "Petersilie ist hier der Salat"
+      },
+      "stripe": "#6F8F4F",
+      "recipes": [
+        "tabbouleh-classic",
+        "tabbouleh-quinoa"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern",
+        "salad",
+        "fresh"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "paella",
+      "name": {
+        "en": "paella",
+        "de": "Paella"
+      },
+      "hero": {
+        "en": "saffron, smoke, one wide pan",
+        "de": "Safran, Rauch, eine weite Pfanne"
+      },
+      "caption": {
+        "en": "the crust on the bottom is the prize",
+        "de": "die Kruste am Boden ist der Hauptgewinn"
+      },
+      "stripe": "#C9A227",
+      "recipes": [
+        "paella-classic",
+        "paella-vegan",
+        "paella-chicken"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "spanish",
+        "rice",
+        "celebration"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "goulash",
+      "name": {
+        "en": "goulash",
+        "de": "Gulasch"
+      },
+      "hero": {
+        "en": "an afternoon in a heavy pot",
+        "de": "ein Nachmittag im schweren Topf"
+      },
+      "caption": {
+        "en": "paprika by the spoon, not the pinch",
+        "de": "Paprika löffelweise, nicht prisenweise"
+      },
+      "stripe": "#704238",
+      "recipes": [
+        "goulash-classic",
+        "goulash-vegan"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "hungarian",
+        "stew",
+        "comfort-food"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "brownies",
+      "name": {
+        "en": "brownies",
+        "de": "Brownies"
+      },
+      "hero": {
+        "en": "corner pieces for the brave",
+        "de": "Eckstücke für die Mutigen"
+      },
+      "caption": {
+        "en": "underbake them. trust the wobble.",
+        "de": "lieber zu kurz backen. dem Wackeln vertrauen."
+      },
+      "stripe": "#5C4033",
+      "recipes": [
+        "brownies-classic",
+        "brownies-vegan",
+        "brownies-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american",
+        "dessert",
+        "baking"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "apple-pie",
+      "name": {
+        "en": "apple pie",
+        "de": "Apfelkuchen"
+      },
+      "hero": {
+        "en": "autumn, regardless of season",
+        "de": "Herbst, egal zu welcher Jahreszeit"
+      },
+      "caption": {
+        "en": "serve warm or answer for it",
+        "de": "warm servieren oder sich verantworten"
+      },
+      "stripe": "#A6543F",
+      "recipes": [
+        "apple-pie-classic",
+        "apple-pie-vegan"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american",
+        "dessert",
+        "baking"
+      ],
       "frequency_tier": "low"
     }
   ]

@@ -1,0 +1,1632 @@
+{
+  "partition_id": "cuisine-indian",
+  "recipes": [
+    {
+      "id": "butter-chicken-classic",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "butter chicken with naan",
+        "de": "Butter Chicken mit Naan"
+      },
+      "caption": {
+        "en": "velvet sauce, torn naan, no regrets",
+        "de": "samtige Sauce, gerissenes Naan, null Reue"
+      },
+      "intro": {
+        "en": "this is the curry that made a thousand people fall in love with indian food, and it earns it. yogurt-marinated thighs, a tomato sauce mounted with butter and cream until it glows. don't rush the simmer — that's where the velvet happens.",
+        "de": "Das ist das Curry, mit dem sich tausend Leute in die indische Küche verliebt haben – und das völlig zu Recht. In Joghurt marinierte Hähnchenschenkel, eine Tomatensauce, die mit Butter und Sahne montiert wird, bis sie glänzt. Lass dem Köcheln Zeit, genau da entsteht der Samt."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le800",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 680,
+      "macros": {
+        "calories": 680,
+        "protein_g": 38,
+        "carbs_g": 42,
+        "fat_g": 40
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in bite-sized pieces",
+            "de": "ohne Knochen, in mundgerechten Stücken"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "for the marinade",
+            "de": "für die Marinade"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "cold, cubed",
+            "de": "kalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "naan",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "warmed just before serving",
+            "de": "kurz vor dem Servieren erwärmt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the yogurt with half the garlic, half the ginger, 1 tbsp garam masala and the turmeric. coat the chicken and let it sit at least 20 minutes. longer is better. fridge if longer.",
+            "de": "Verrühre den Joghurt mit der Hälfte von Knoblauch und Ingwer, 1 EL Garam Masala und dem Kurkuma. Hähnchen darin wenden und mindestens 20 Minuten ziehen lassen. Länger ist besser. Ab in den Kühlschrank, wenn länger."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "melt a third of the butter in a wide pan over high heat. sear the chicken in two batches until charred at the edges, about 3 minutes per batch. it finishes cooking in the sauce — set it aside.",
+            "de": "Schmilz ein Drittel der Butter in einer weiten Pfanne bei hoher Hitze. Brate das Hähnchen in zwei Portionen scharf an, bis die Ränder dunkel sind, etwa 3 Minuten pro Portion. Es gart in der Sauce fertig – erst mal beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "turn the heat to medium, add another third of the butter and the remaining garlic, ginger and garam masala. let the spices bloom for one fragrant minute — don't let the garlic brown.",
+            "de": "Hitze auf mittel, das zweite Drittel Butter dazu, dann restlicher Knoblauch, Ingwer und Garam Masala. Lass die Gewürze eine duftende Minute aufblühen – der Knoblauch darf nicht braun werden."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the passata, scrape up everything stuck to the pan, and simmer uncovered for 15 minutes until it darkens and thickens. stir now and then. this is the velvet step.",
+            "de": "Passata angießen, alles Angesetzte vom Pfannenboden lösen und offen 15 Minuten köcheln lassen, bis die Sauce dunkler und dicker wird. Ab und zu umrühren. Hier entsteht der Samt."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "stir in the cream, return the chicken with its juices and simmer gently for 8 minutes until cooked through. off the heat, whisk in the last of the cold butter until the sauce shines.",
+            "de": "Sahne einrühren, Hähnchen samt Saft zurück in die Pfanne und 8 Minuten sanft köcheln, bis es durch ist. Vom Herd ziehen und die restliche kalte Butter unterrühren, bis die Sauce glänzt."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "warm the naan in a dry pan or over the flame. serve the curry in bowls, naan on the side. tear, dip, repeat.",
+            "de": "Naan in einer trockenen Pfanne oder über der Flamme erwärmen. Curry in Schalen, Naan daneben. Reißen, dippen, wiederholen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "comfort food",
+          "indian"
+        ],
+        "de": [
+          "Curry",
+          "Soulfood",
+          "Indisch"
+        ]
+      }
+    },
+    {
+      "id": "butter-chicken-vegan",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "butter cauliflower",
+        "de": "Butter-Blumenkohl"
+      },
+      "caption": {
+        "en": "roasted florets in a glowing sauce",
+        "de": "geröstete Röschen in leuchtender Sauce"
+      },
+      "intro": {
+        "en": "cauliflower roasted until the edges catch, then folded into a tomato–coconut sauce that does everything butter and cream usually do. it's rich, it's orange, it's gone before the rice cools down.",
+        "de": "Blumenkohl wird geröstet, bis die Ränder Farbe nehmen, und dann in eine Tomaten-Kokos-Sauce gehoben, die alles kann, was Butter und Sahne sonst können. Sie ist reichhaltig, sie leuchtet orange, und sie ist weg, bevor der Reis abkühlt."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "roast",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 12,
+        "carbs_g": 70,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "large, cut into florets",
+            "de": "groß, in Röschen geteilt"
+          }
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 250,
+          "unit": "ml",
+          "note": {
+            "en": "full-fat, the thick part first",
+            "de": "Vollfett, zuerst den festen Teil"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 280,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 220 °c. toss the florets with half the vegan butter (melted) and 1 tbsp garam masala, spread on a tray and roast for 25 minutes until the edges char. those edges are flavor — let them happen.",
+            "de": "Heiz den Ofen auf 220 °C vor. Röschen mit der Hälfte der veganen Butter (geschmolzen) und 1 EL Garam Masala mischen, auf ein Blech verteilen und 25 Minuten rösten, bis die Ränder dunkel werden. Diese Ränder sind Geschmack – lass sie zu."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "rinse the basmati until the water runs clear, then cook it in plenty of salted water for 12 minutes. drain, lid on, let it steam itself fluffy.",
+            "de": "Basmati waschen, bis das Wasser klar bleibt, dann in reichlich Salzwasser 12 Minuten kochen. Abgießen, Deckel drauf, im eigenen Dampf locker ziehen lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "meanwhile melt the rest of the vegan butter in a pot over medium heat. add garlic, ginger and the remaining garam masala and let them bloom for one minute, stirring, until your kitchen smells like a good decision.",
+            "de": "Währenddessen die restliche vegane Butter in einem Topf bei mittlerer Hitze schmelzen. Knoblauch, Ingwer und das restliche Garam Masala dazugeben und unter Rühren eine Minute aufblühen lassen, bis deine Küche nach einer guten Entscheidung riecht."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the passata and simmer for 10 minutes until thick and brick-red. stir in the coconut milk and let it come back to a lazy bubble.",
+            "de": "Passata angießen und 10 Minuten köcheln, bis die Sauce dick und ziegelrot ist. Kokosmilch einrühren und wieder ganz sanft blubbern lassen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "fold in the roasted cauliflower and warm it through for 2–3 minutes. finish with lemon juice, taste for salt.",
+            "de": "Den gerösteten Blumenkohl unterheben und 2–3 Minuten warm werden lassen. Mit Zitronensaft abschmecken, Salz prüfen."
+          }
+        },
+        {
+          "text": {
+            "en": "serve over the rice. spoon extra sauce on top. there is no such thing as too much sauce here.",
+            "de": "Auf dem Reis servieren. Extra Sauce darüberlöffeln. Zu viel Sauce gibt es bei diesem Gericht nicht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "plant-based",
+          "indian"
+        ],
+        "de": [
+          "Curry",
+          "pflanzlich",
+          "Indisch"
+        ]
+      }
+    },
+    {
+      "id": "butter-chicken-light",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "light butter chicken",
+        "de": "Leichtes Butter Chicken"
+      },
+      "caption": {
+        "en": "all the glow, half the heaviness",
+        "de": "der ganze Glanz, halb so schwer"
+      },
+      "intro": {
+        "en": "same spices, same glow, but the sauce leans on greek yogurt instead of butter and cream. the trick is stirring it in off the heat so it stays silky instead of splitting. light enough for a tuesday, good enough for a saturday.",
+        "de": "Gleiche Gewürze, gleicher Glanz, aber die Sauce setzt auf griechischen Joghurt statt Butter und Sahne. Der Trick: abseits der Hitze einrühren, damit sie seidig bleibt und nicht gerinnt. Leicht genug für einen Dienstag, gut genug für einen Samstag."
+      },
+      "variant": {
+        "diet": "light",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "light",
+        "medium",
+        "le60",
+        "le400",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 42,
+        "carbs_g": 18,
+        "fat_g": 15
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "in bite-sized pieces",
+            "de": "in mundgerechten Stücken"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "half for marinating, half for the sauce",
+            "de": "halb zum Marinieren, halb für die Sauce"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix half the yogurt with the garlic, ginger, 1 tbsp garam masala and the turmeric. coat the chicken and let it marinate for 15 minutes while you tidy up or stare out the window.",
+            "de": "Die Hälfte des Joghurts mit Knoblauch, Ingwer, 1 EL Garam Masala und Kurkuma verrühren. Hähnchen darin wenden und 15 Minuten marinieren lassen, während du aufräumst oder aus dem Fenster schaust."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "heat the oil in a wide pan over high heat and sear the chicken for 3–4 minutes until it picks up color. it doesn't need to be cooked through yet.",
+            "de": "Öl in einer weiten Pfanne stark erhitzen und das Hähnchen 3–4 Minuten anbraten, bis es Farbe nimmt. Es muss noch nicht durch sein."
+          }
+        },
+        {
+          "text": {
+            "en": "add the remaining garam masala, stir for 30 seconds, then pour in the passata. simmer for 10 minutes until the sauce thickens and the chicken is just cooked.",
+            "de": "Das restliche Garam Masala dazu, 30 Sekunden rühren, dann die Passata angießen. 10 Minuten köcheln lassen, bis die Sauce eindickt und das Hähnchen gerade gar ist."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "pull the pan off the heat and wait a minute. stir in the rest of the yogurt one spoonful at a time — off the heat it stays silky, on the heat it splits. patience pays.",
+            "de": "Pfanne vom Herd ziehen und eine Minute warten. Den restlichen Joghurt löffelweise einrühren – abseits der Hitze bleibt er seidig, auf der Hitze gerinnt er. Geduld zahlt sich aus."
+          }
+        },
+        {
+          "text": {
+            "en": "brighten with lemon juice, shower with cilantro, taste for salt. eat from a bowl, spoon in one hand, evening sorted.",
+            "de": "Mit Zitronensaft auffrischen, Koriander darüberstreuen, Salz abschmecken. Aus der Schüssel essen, Löffel in der Hand, Abend gerettet."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "light",
+          "high-protein"
+        ],
+        "de": [
+          "Curry",
+          "leicht",
+          "proteinreich"
+        ]
+      }
+    },
+    {
+      "id": "dal-classic",
+      "dish_id": "dal",
+      "title": {
+        "en": "everyday red lentil dal",
+        "de": "Rotes Linsen-Dal für jeden Tag"
+      },
+      "caption": {
+        "en": "the tempering goes on last, loudly",
+        "de": "das Gewürzöl kommt zuletzt, mit Zisch"
+      },
+      "intro": {
+        "en": "red lentils collapse into a golden, spoonable comfort in half an hour. the magic move is the tarka: cumin, garlic and chili crackled in hot coconut oil, poured over at the very end. it should hiss. that hiss is the whole point.",
+        "de": "Rote Linsen zerfallen in einer halben Stunde zu goldenem, löffelbarem Trost. Der Zaubertrick ist das Tarka: Kreuzkümmel, Knoblauch und Chili, in heißem Kokosöl geknistert und ganz zum Schluss darübergegossen. Es soll zischen. Dieses Zischen ist der ganze Sinn der Sache."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le60",
+        "le400",
+        "simmer",
+        "fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 4,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 18,
+        "carbs_g": 50,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "rinsed until the water runs clear",
+            "de": "gewaschen, bis das Wasser klar bleibt"
+          }
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "chopped",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1.5,
+          "unit": "tsp",
+          "note": {
+            "en": "whole seeds, not ground",
+            "de": "ganze Samen, nicht gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "put the lentils in a pot with 900 ml water, the turmeric and the ginger. bring to a boil, skim the foam, then simmer uncovered for 20 minutes, stirring occasionally so nothing sticks.",
+            "de": "Linsen mit 900 ml Wasser, Kurkuma und Ingwer in einen Topf geben. Aufkochen, den Schaum abschöpfen, dann offen 20 Minuten köcheln lassen. Ab und zu umrühren, damit nichts ansetzt."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "add the tomatoes and a good pinch of salt and cook for 5 more minutes, until the lentils have collapsed into a soft, golden porridge. add a splash of water if it gets too thick — dal should fall off the spoon.",
+            "de": "Tomaten und eine gute Prise Salz dazu und weitere 5 Minuten kochen, bis die Linsen zu einem weichen, goldenen Brei zerfallen sind. Wird es zu dick, ein Schluck Wasser dazu – Dal soll vom Löffel fließen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "now the tarka: heat the coconut oil in a small pan until it shimmers. add the cumin seeds — they should sizzle on contact — then the garlic and chili flakes. fry for about a minute until the garlic is pale gold. no further. burnt garlic ruins everything.",
+            "de": "Jetzt das Tarka: Kokosöl in einer kleinen Pfanne erhitzen, bis es flirrt. Kreuzkümmelsamen hinein – sie sollen sofort brutzeln – dann Knoblauch und Chiliflocken. Etwa eine Minute braten, bis der Knoblauch hellgolden ist. Keinen Moment länger. Verbrannter Knoblauch ruiniert alles."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the hot tarka over the dal. it will hiss dramatically. that's correct. stir it in halfway so golden pools remain on top.",
+            "de": "Das heiße Tarka über das Dal gießen. Es wird dramatisch zischen. So soll das. Nur halb unterrühren, damit goldene Inseln oben bleiben."
+          }
+        },
+        {
+          "text": {
+            "en": "finish with lemon juice and cilantro. eat with rice, with flatbread, or straight from the pot at the stove. all three are traditions somewhere.",
+            "de": "Mit Zitronensaft und Koriander abschließen. Mit Reis essen, mit Fladenbrot oder direkt aus dem Topf am Herd. Alle drei Varianten sind irgendwo Tradition."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "lentils",
+          "one-pot",
+          "weeknight"
+        ],
+        "de": [
+          "Linsen",
+          "Eintopf",
+          "Feierabend"
+        ]
+      }
+    },
+    {
+      "id": "dal-makhani",
+      "dish_id": "dal",
+      "title": {
+        "en": "dal makhani",
+        "de": "Dal Makhani"
+      },
+      "caption": {
+        "en": "slow, buttery, worth every minute",
+        "de": "langsam, buttrig, jede Minute wert"
+      },
+      "intro": {
+        "en": "the sunday dal: lentils and kidney beans simmered low and slow with butter, tomato and cream until they stop being ingredients and become one thing. it asks for an hour of mostly unattended bubbling and repays you tenfold.",
+        "de": "Das Sonntags-Dal: Linsen und Kidneybohnen schmoren langsam mit Butter, Tomate und Sahne, bis sie aufhören, Zutaten zu sein, und eins werden. Es verlangt eine Stunde fast unbeaufsichtigtes Blubbern und zahlt es dir zehnfach zurück."
+      },
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 70,
+      "servings": 4,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 22,
+        "carbs_g": 56,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "rinsed well",
+            "de": "gut gewaschen"
+          }
+        },
+        {
+          "ingredient_id": "kidney-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 120,
+          "unit": "ml",
+          "note": {
+            "en": "plus a swirl for serving",
+            "de": "plus ein Klecks zum Servieren"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "whole seeds",
+            "de": "ganze Samen"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer the lentils in 800 ml of water for 25 minutes until completely soft. don't drain — that starchy liquid is the body of the dish.",
+            "de": "Linsen in 800 ml Wasser 25 Minuten köcheln, bis sie ganz weich sind. Nicht abgießen – diese stärkehaltige Flüssigkeit ist der Körper des Gerichts."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "meanwhile melt two thirds of the butter in a heavy pot over medium heat. crackle the cumin seeds for 30 seconds, then add garlic and ginger and cook until fragrant, about a minute.",
+            "de": "Währenddessen zwei Drittel der Butter in einem schweren Topf bei mittlerer Hitze schmelzen. Kreuzkümmelsamen 30 Sekunden knistern lassen, dann Knoblauch und Ingwer dazu und etwa eine Minute braten, bis es duftet."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in the tomato paste and garam masala and fry for 2 minutes until the paste darkens a shade — raw tomato paste tastes flat, cooked tomato paste tastes deep.",
+            "de": "Tomatenmark und Garam Masala einrühren und 2 Minuten anrösten, bis das Mark eine Spur dunkler wird – rohes Tomatenmark schmeckt flach, geröstetes schmeckt tief."
+          }
+        },
+        {
+          "text": {
+            "en": "add the lentils with their liquid and the kidney beans. simmer on the lowest heat, partly covered, for 30 minutes, stirring every now and then and mashing some beans against the side of the pot. low and slow is the whole recipe.",
+            "de": "Linsen samt Flüssigkeit und die Kidneybohnen dazugeben. Auf kleinster Flamme halb zugedeckt 30 Minuten schmoren, dabei gelegentlich umrühren und ein paar Bohnen am Topfrand zerdrücken. Langsam und sanft – das ist das ganze Rezept."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "stir in the cream and the rest of the butter and let it melt through. salt to taste. it should be thick, glossy and slightly indecent.",
+            "de": "Sahne und die restliche Butter einrühren und schmelzen lassen. Mit Salz abschmecken. Es soll dick, glänzend und leicht unanständig sein."
+          }
+        },
+        {
+          "text": {
+            "en": "rest for 5 minutes off the heat, then serve with a swirl of cream on top. rice or flatbread on the side, blanket optional.",
+            "de": "Abseits der Hitze 5 Minuten ruhen lassen, dann mit einem Sahneklecks servieren. Reis oder Fladenbrot dazu, Kuscheldecke optional."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "lentils",
+          "slow-cooked",
+          "comfort food"
+        ],
+        "de": [
+          "Linsen",
+          "geschmort",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "dal-paneer",
+      "dish_id": "dal",
+      "title": {
+        "en": "dal with seared paneer",
+        "de": "Dal mit gebratenem Paneer"
+      },
+      "caption": {
+        "en": "golden cubes on golden lentils",
+        "de": "goldene Würfel auf goldenen Linsen"
+      },
+      "intro": {
+        "en": "everyday dal, upgraded: cubes of paneer seared in ghee until they're golden and squeaky, piled onto turmeric lentils with wilted spinach. the protein math works out beautifully and so does dinner.",
+        "de": "Alltags-Dal, eine Stufe höher: Paneer-Würfel, in Ghee goldbraun und quietschig gebraten, auf Kurkuma-Linsen mit zusammengefallenem Spinat. Die Protein-Rechnung geht wunderbar auf, das Abendessen auch."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "high-protein",
+        "easy",
+        "le60",
+        "le600",
+        "simmer",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 34,
+        "carbs_g": 44,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "rinsed well",
+            "de": "gut gewaschen"
+          }
+        },
+        {
+          "ingredient_id": "paneer",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "in 2 cm cubes, patted dry",
+            "de": "in 2-cm-Würfeln, trocken getupft"
+          }
+        },
+        {
+          "ingredient_id": "ghee",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "whole seeds",
+            "de": "ganze Samen"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 15,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "chopped",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "fresh leaves",
+            "de": "frische Blätter"
+          }
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer the lentils with the turmeric, ginger and 500 ml water for 18 minutes until soft and golden. stir occasionally; add a splash of water if it thickens too fast.",
+            "de": "Linsen mit Kurkuma, Ingwer und 500 ml Wasser 18 Minuten köcheln, bis sie weich und golden sind. Gelegentlich umrühren; wird es zu schnell dick, einen Schluck Wasser dazu."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "stir the tomato into the dal with a good pinch of salt and let it melt in for 5 minutes. then fold in the spinach until it just wilts. keep warm.",
+            "de": "Tomate mit einer guten Prise Salz ins Dal rühren und 5 Minuten mitschmelzen lassen. Dann den Spinat unterheben, bis er gerade zusammenfällt. Warm halten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "heat 1 tbsp ghee in a nonstick pan over medium-high heat. sear the paneer cubes for 2 minutes per side until golden and crisp at the edges. dry paneer browns; wet paneer steams — pat it dry first.",
+            "de": "1 EL Ghee in einer beschichteten Pfanne bei mittelhoher Hitze erhitzen. Paneer-Würfel pro Seite 2 Minuten braten, bis sie golden sind und knusprige Kanten haben. Trockener Paneer bräunt, nasser dampft – vorher trocken tupfen."
+          }
+        },
+        {
+          "text": {
+            "en": "push the paneer aside, add the last tbsp of ghee, the cumin seeds and the garlic. let them sizzle for about a minute until the garlic turns pale gold, then toss everything together.",
+            "de": "Paneer zur Seite schieben, den letzten EL Ghee, Kreuzkümmelsamen und Knoblauch dazu. Etwa eine Minute brutzeln lassen, bis der Knoblauch hellgolden ist, dann alles durchschwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "ladle the dal into bowls, pile the sizzling paneer and its ghee on top, finish with cilantro. eat while the paneer still squeaks.",
+            "de": "Dal in Schalen füllen, den brutzelnden Paneer samt Ghee obendrauf, mit Koriander abschließen. Essen, solange der Paneer noch quietscht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "lentils",
+          "high-protein",
+          "weeknight"
+        ],
+        "de": [
+          "Linsen",
+          "proteinreich",
+          "Feierabend"
+        ]
+      }
+    },
+    {
+      "id": "biryani-chicken",
+      "dish_id": "biryani",
+      "title": {
+        "en": "chicken biryani",
+        "de": "Hähnchen-Biryani"
+      },
+      "caption": {
+        "en": "do not lift the lid. trust.",
+        "de": "Deckel zulassen. Vertrau mir."
+      },
+      "intro": {
+        "en": "biryani is a ceremony you can do at home: marinated chicken on the bottom, half-cooked saffron rice on top, fried onions in between, and then the hardest part — a sealed pot you are not allowed to open for 25 minutes. the wait is the recipe.",
+        "de": "Biryani ist eine Zeremonie für zu Hause: mariniertes Hähnchen unten, halbgarer Safranreis oben, Röstzwiebeln dazwischen – und dann der schwerste Teil: ein verschlossener Topf, den du 25 Minuten nicht öffnen darfst. Das Warten ist das Rezept."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "fry",
+        "simmer",
+        "steam"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 90,
+      "servings": 4,
+      "calories_per_serving": 720,
+      "macros": {
+        "calories": 720,
+        "protein_g": 40,
+        "carbs_g": 78,
+        "fat_g": 28
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in large chunks",
+            "de": "ohne Knochen, in großen Stücken"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "soaked 20 minutes, drained",
+            "de": "20 Minuten eingeweicht, abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced into thin half-moons",
+            "de": "in dünne Halbmonde geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "steeped in 3 tbsp warm water",
+            "de": "in 3 EL warmem Wasser eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "ghee",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix the yogurt with the garlic, ginger and garam masala and a big pinch of salt. coat the chicken and marinate for at least 30 minutes. start the saffron steeping in warm water now too.",
+            "de": "Joghurt mit Knoblauch, Ingwer, Garam Masala und einer großen Prise Salz verrühren. Hähnchen darin wenden und mindestens 30 Minuten marinieren. Den Safran jetzt schon in warmem Wasser einweichen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "heat the ghee in your biryani pot and fry the onions over medium heat for 12–15 minutes until deep mahogany brown — not blond, not burnt. lift out half and set aside; they're the crown later.",
+            "de": "Ghee im Biryani-Topf erhitzen und die Zwiebeln bei mittlerer Hitze 12–15 Minuten braten, bis sie tief mahagonibraun sind – nicht blond, nicht verbrannt. Die Hälfte herausheben und beiseitelegen; das ist später die Krone."
+          },
+          "timer_minutes": 14
+        },
+        {
+          "text": {
+            "en": "boil the soaked rice in plenty of heavily salted water for exactly 6 minutes — it should still have a hard core. drain immediately. it finishes in the steam, not in the water.",
+            "de": "Den eingeweichten Reis in reichlich kräftig gesalzenem Wasser genau 6 Minuten kochen – er soll noch einen harten Kern haben. Sofort abgießen. Er gart im Dampf fertig, nicht im Wasser."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "add the chicken with all its marinade to the onions in the pot and sear over high heat for 4–5 minutes, just until the yogurt clings and starts to color.",
+            "de": "Das Hähnchen samt Marinade zu den Zwiebeln in den Topf geben und bei hoher Hitze 4–5 Minuten anbraten, bis der Joghurt anliegt und Farbe zu nehmen beginnt."
+          }
+        },
+        {
+          "text": {
+            "en": "now build it: rice over the chicken in an even layer, the reserved onions and half the cilantro on top, the saffron water zigzagged over everything so the rice stains gold in streaks, not uniformly. uniform is boring.",
+            "de": "Jetzt wird geschichtet: Reis gleichmäßig über das Hähnchen, die beiseitegelegten Zwiebeln und die Hälfte des Korianders darauf, das Safranwasser im Zickzack über alles, damit der Reis in goldenen Streifen färbt, nicht gleichmäßig. Gleichmäßig ist langweilig."
+          }
+        },
+        {
+          "text": {
+            "en": "seal the pot with a tight lid (foil under the lid if it wobbles). 2 minutes on high to build steam, then the lowest heat your stove has for 25 minutes. do not lift the lid. not once. not even a peek.",
+            "de": "Topf fest verschließen (Alufolie unter den Deckel, wenn er wackelt). 2 Minuten auf höchster Stufe Dampf aufbauen, dann 25 Minuten auf der kleinsten Flamme, die dein Herd kann. Deckel nicht heben. Kein einziges Mal. Auch nicht kurz."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "off the heat, rest the sealed pot for 10 minutes. then open it at the table — the steam cloud is part of dinner — and fold gently from the side with a flat spoon to keep the grains whole. finish with the rest of the cilantro.",
+            "de": "Vom Herd ziehen und den verschlossenen Topf 10 Minuten ruhen lassen. Dann erst am Tisch öffnen – die Dampfwolke gehört zum Essen – und mit einem flachen Löffel vorsichtig vom Rand her durchheben, damit die Körner ganz bleiben. Mit dem restlichen Koriander abschließen."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {
+        "en": [
+          "rice",
+          "celebration",
+          "layered"
+        ],
+        "de": [
+          "Reis",
+          "Festessen",
+          "geschichtet"
+        ]
+      }
+    },
+    {
+      "id": "biryani-veg",
+      "dish_id": "biryani",
+      "title": {
+        "en": "vegetable biryani with paneer",
+        "de": "Gemüse-Biryani mit Paneer"
+      },
+      "caption": {
+        "en": "roasted veg, saffron streaks, sealed pot",
+        "de": "Röstgemüse, Safranstreifen, verschlossener Topf"
+      },
+      "intro": {
+        "en": "cauliflower, carrots and peas get the full biryani treatment: a yogurt-spice coat, a hot oven, and then a sealed pot with saffron rice where everything mingles in the steam. paneer goes in too, because it deserves to.",
+        "de": "Blumenkohl, Karotten und Erbsen bekommen die volle Biryani-Behandlung: ein Mantel aus Joghurt und Gewürzen, ein heißer Ofen und dann ein verschlossener Topf mit Safranreis, in dem sich alles im Dampf vermählt. Paneer kommt auch rein, weil er es verdient hat."
+      },
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le600",
+        "roast",
+        "simmer",
+        "steam"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 70,
+      "servings": 4,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 24,
+        "carbs_g": 72,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 280,
+          "unit": "g",
+          "note": {
+            "en": "soaked 20 minutes, drained",
+            "de": "20 Minuten eingeweicht, abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "in small florets",
+            "de": "in kleinen Röschen"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in thick coins",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "peas",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "frozen is fine",
+            "de": "tiefgekühlt ist völlig okay"
+          }
+        },
+        {
+          "ingredient_id": "paneer",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "in 2 cm cubes",
+            "de": "in 2-cm-Würfeln"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "steeped in 3 tbsp warm water",
+            "de": "in 3 EL warmem Wasser eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "ghee",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "melted",
+            "de": "geschmolzen"
+          }
+        },
+        {
+          "ingredient_id": "mint",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves picked",
+            "de": "Blätter abgezupft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 220 °c. toss cauliflower, carrots and paneer with the yogurt, garam masala, half the ghee and a big pinch of salt. spread on a tray and roast for 20 minutes until charred in places. set the saffron steeping meanwhile.",
+            "de": "Ofen auf 220 °C vorheizen. Blumenkohl, Karotten und Paneer mit Joghurt, Garam Masala, der Hälfte des Ghee und einer großen Prise Salz mischen. Auf einem Blech verteilen und 20 Minuten rösten, bis stellenweise dunkle Röststellen entstehen. Währenddessen den Safran einweichen."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "boil the soaked rice in plenty of heavily salted water for 6 minutes — still firm at the core. drain right away. underdone now means perfect later.",
+            "de": "Den eingeweichten Reis in reichlich kräftig gesalzenem Wasser 6 Minuten kochen – im Kern noch fest. Sofort abgießen. Jetzt zu bissfest heißt nachher perfekt."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "layer in a heavy pot: roasted vegetables and paneer (with all their juices) on the bottom, peas scattered over, then the rice. drizzle with the remaining ghee, zigzag the saffron water over the top, scatter half the mint.",
+            "de": "In einem schweren Topf schichten: Röstgemüse und Paneer (samt Saft) nach unten, Erbsen darüberstreuen, dann der Reis. Mit dem restlichen Ghee beträufeln, das Safranwasser im Zickzack darübergeben, die Hälfte der Minze darüberstreuen."
+          }
+        },
+        {
+          "text": {
+            "en": "seal the pot tightly — foil under the lid if needed. one minute on high heat to get the steam going, then 20 minutes on the lowest setting. the lid stays on. that rule is the dish.",
+            "de": "Topf fest verschließen – notfalls Alufolie unter den Deckel. Eine Minute auf höchster Stufe Dampf erzeugen, dann 20 Minuten auf kleinster Stufe. Der Deckel bleibt zu. Diese Regel ist das Gericht."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "rest off the heat for 10 minutes, still sealed. open, breathe in, then fold gently from the edge so every scoop has gold rice, white rice, vegetables and paneer. finish with the rest of the mint.",
+            "de": "Vom Herd nehmen und noch verschlossen 10 Minuten ruhen lassen. Öffnen, tief einatmen, dann vorsichtig vom Rand her durchheben, sodass jede Portion goldenen Reis, weißen Reis, Gemüse und Paneer hat. Mit der restlichen Minze abschließen."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {
+        "en": [
+          "rice",
+          "vegetarian",
+          "celebration"
+        ],
+        "de": [
+          "Reis",
+          "vegetarisch",
+          "Festessen"
+        ]
+      }
+    },
+    {
+      "id": "biryani-vegan",
+      "dish_id": "biryani",
+      "title": {
+        "en": "chickpea biryani",
+        "de": "Kichererbsen-Biryani"
+      },
+      "caption": {
+        "en": "saffron rice, chickpeas, zero compromises",
+        "de": "Safranreis, Kichererbsen, null Kompromisse"
+      },
+      "intro": {
+        "en": "chickpeas and vegetables in a coconut-yogurt spice coat, fried onions, saffron rice, sealed pot. it follows every biryani rule — the parboil, the layers, the forbidden lid — and proves the ceremony never needed meat to begin with.",
+        "de": "Kichererbsen und Gemüse im Gewürzmantel aus Kokosjoghurt, Röstzwiebeln, Safranreis, verschlossener Topf. Es folgt jeder Biryani-Regel – das Vorkochen, die Schichten, der verbotene Deckel – und beweist, dass die Zeremonie nie Fleisch gebraucht hat."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le600",
+        "fry",
+        "simmer",
+        "steam"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 70,
+      "servings": 4,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 16,
+        "carbs_g": 82,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 280,
+          "unit": "g",
+          "note": {
+            "en": "soaked 20 minutes, drained",
+            "de": "20 Minuten eingeweicht, abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "in small florets",
+            "de": "in kleinen Röschen"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in thick coins",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "coconut-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced into thin half-moons",
+            "de": "in dünne Halbmonde geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "steeped in 3 tbsp warm water",
+            "de": "in 3 EL warmem Wasser eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the coconut yogurt with the garam masala and a big pinch of salt, then fold in the chickpeas, cauliflower and carrots. let them sit while the onions fry. start the saffron steeping in warm water now.",
+            "de": "Kokosjoghurt mit Garam Masala und einer großen Prise Salz verrühren, dann Kichererbsen, Blumenkohl und Karotten unterheben. Ziehen lassen, während die Zwiebeln braten. Den Safran jetzt in warmem Wasser einweichen."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the oil in a heavy pot and fry the onions over medium heat for 10–12 minutes until deeply browned and sweet. lift out half for the top layer later.",
+            "de": "Öl in einem schweren Topf erhitzen und die Zwiebeln bei mittlerer Hitze 10–12 Minuten braten, bis sie tiefbraun und süß sind. Die Hälfte für die oberste Schicht herausheben."
+          },
+          "timer_minutes": 11
+        },
+        {
+          "text": {
+            "en": "boil the soaked rice in plenty of heavily salted water for 6 minutes — firm core, no exceptions. drain immediately.",
+            "de": "Den eingeweichten Reis in reichlich kräftig gesalzenem Wasser 6 Minuten kochen – fester Kern, keine Ausnahmen. Sofort abgießen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "tip the marinated chickpeas and vegetables onto the onions in the pot and cook over high heat for 4–5 minutes until the coating starts to catch. then layer the rice on top, scatter the reserved onions and half the cilantro, and zigzag the saffron water over it all.",
+            "de": "Die marinierten Kichererbsen und das Gemüse zu den Zwiebeln in den Topf geben und 4–5 Minuten bei hoher Hitze braten, bis der Gewürzmantel anzusetzen beginnt. Dann den Reis darüberschichten, die beiseitegelegten Zwiebeln und die Hälfte des Korianders darüberstreuen und das Safranwasser im Zickzack darübergeben."
+          }
+        },
+        {
+          "text": {
+            "en": "seal the pot tightly, one minute on high to build steam, then 20 minutes on the lowest heat. the lid does not come off. go set the table instead.",
+            "de": "Topf fest verschließen, eine Minute auf höchster Stufe Dampf aufbauen, dann 20 Minuten auf kleinster Flamme. Der Deckel bleibt drauf. Deck stattdessen den Tisch."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "rest sealed for 10 minutes off the heat, then open at the table and fold gently from the edge. finish with the rest of the cilantro and accept the compliments.",
+            "de": "Vom Herd ziehen und verschlossen 10 Minuten ruhen lassen, dann am Tisch öffnen und vorsichtig vom Rand her durchheben. Mit dem restlichen Koriander abschließen und die Komplimente annehmen."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {
+        "en": [
+          "rice",
+          "plant-based",
+          "celebration"
+        ],
+        "de": [
+          "Reis",
+          "pflanzlich",
+          "Festessen"
+        ]
+      }
+    }
+  ]
+}

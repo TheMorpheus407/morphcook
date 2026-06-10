@@ -71,7 +71,7 @@ void main() {
 
     test('unknown query returns nothing (content-gap case)', () async {
       final corpus = await loadRealCorpus();
-      expect(corpus.searchIndex.query('sushi'), isEmpty);
+      expect(corpus.searchIndex.query('cheesecake'), isEmpty);
     });
 
     test('partitions index incrementally', () async {
@@ -93,17 +93,20 @@ void main() {
       final page1 = await fetch(null, 20);
       expect(page1.items, hasLength(20));
       expect(page1.nextCursor, '20');
-      final page2 = await fetch(page1.nextCursor, 20);
-      expect(page2.items, hasLength(20));
-      final page3 = await fetch(page2.nextCursor, 20);
-      expect(page3.items, hasLength(results.length - 40));
-      expect(page3.nextCursor, isNull);
-      // No overlap between pages.
-      final ids = {
-        ...page1.items.map((r) => r.id),
-        ...page2.items.map((r) => r.id),
-        ...page3.items.map((r) => r.id),
-      };
+
+      // Walk every page: full pages until the remainder, no overlaps.
+      final ids = <String>{...page1.items.map((r) => r.id)};
+      var cursor = page1.nextCursor;
+      var fetched = page1.items.length;
+      while (cursor != null) {
+        final page = await fetch(cursor, 20);
+        final remaining = results.length - fetched;
+        expect(page.items, hasLength(remaining >= 20 ? 20 : remaining));
+        ids.addAll(page.items.map((r) => r.id));
+        fetched += page.items.length;
+        cursor = page.nextCursor;
+      }
+      expect(fetched, results.length);
       expect(ids.length, results.length);
     });
   });

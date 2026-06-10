@@ -4,30 +4,122 @@
     {
       "id": "risotto-mushroom",
       "dish_id": "risotto",
-      "title": {"en": "classic mushroom risotto", "de": "Klassisches Pilzrisotto"},
-      "caption": {"en": "stirred until your arm complains", "de": "gerührt, bis der Arm meckert"},
+      "title": {
+        "en": "classic mushroom risotto",
+        "de": "Klassisches Pilzrisotto"
+      },
+      "caption": {
+        "en": "stirred until your arm complains",
+        "de": "gerührt, bis der Arm meckert"
+      },
       "intro": {
         "en": "this is the risotto that teaches you patience. one ladle of stock at a time, a glass of wine for the pot (maybe one for you), and twenty minutes of slow stirring. the mushrooms go in seared and golden, because they deserve it.",
         "de": "Dieses Risotto bringt dir Geduld bei. Eine Kelle Brühe nach der anderen, ein Glas Wein für den Topf (und vielleicht eins für dich), dazu zwanzig Minuten ruhiges Rühren. Die Pilze kommen goldbraun angebraten dazu – das haben sie sich verdient."
       },
-      "variant": {"diet": "classic", "effort": "medium", "calorie": "le600"},
-      "contains": ["dairy", "alcohol", "sulphites", "celery", "high-fodmap"],
-      "attributes": ["vegetarian", "pescatarian", "kosher", "gluten-free", "sugar-free", "nut-free", "medium", "le60", "le600", "saute", "simmer"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 45,
       "servings": 4,
       "calories_per_serving": 580,
-      "macros": {"calories": 580, "protein_g": 16, "carbs_g": 78, "fat_g": 21},
+      "macros": {
+        "calories": 580,
+        "protein_g": 16,
+        "carbs_g": 78,
+        "fat_g": 21
+      },
       "ingredients": [
-        {"ingredient_id": "arborio-rice", "qty": 320, "unit": "g"},
-        {"ingredient_id": "button-mushroom", "qty": 400, "unit": "g", "note": {"en": "thickly sliced", "de": "in dicken Scheiben"}},
-        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "white-wine", "qty": 150, "unit": "ml", "note": {"en": "dry", "de": "trocken"}},
-        {"ingredient_id": "vegetable-stock", "qty": 1.2, "unit": "l"},
-        {"ingredient_id": "butter", "qty": 60, "unit": "g", "note": {"en": "cold, cubed", "de": "kalt, gewürfelt"}},
-        {"ingredient_id": "parmesan", "qty": 60, "unit": "g", "note": {"en": "finely grated", "de": "fein gerieben"}},
-        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"}
+        {
+          "ingredient_id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "button-mushroom",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "thickly sliced",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "shallot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "white-wine",
+          "qty": 150,
+          "unit": "ml",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "cold, cubed",
+            "de": "kalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        }
       ],
       "steps": [
         {
@@ -70,36 +162,142 @@
           "timer_minutes": 2
         }
       ],
-      "tags": {"en": ["risotto", "comfort food", "date night"], "de": ["Risotto", "Soulfood", "Date Night"]}
+      "tags": {
+        "en": [
+          "risotto",
+          "comfort food",
+          "date night"
+        ],
+        "de": [
+          "Risotto",
+          "Soulfood",
+          "Date Night"
+        ]
+      }
     },
     {
       "id": "risotto-vegan",
       "dish_id": "risotto",
-      "title": {"en": "vegan mushroom risotto", "de": "Veganes Pilzrisotto"},
-      "caption": {"en": "no wine, no dairy, all silk", "de": "ohne Wein, ohne Milch, trotzdem Samt"},
+      "title": {
+        "en": "vegan mushroom risotto",
+        "de": "Veganes Pilzrisotto"
+      },
+      "caption": {
+        "en": "no wine, no dairy, all silk",
+        "de": "ohne Wein, ohne Milch, trotzdem Samt"
+      },
       "intro": {
         "en": "this risotto stands on its own two feet: two kinds of mushrooms, nutritional yeast for depth, lemon for brightness where the wine used to live. it gets creamy from technique, not from cream. stir like you mean it.",
         "de": "Dieses Risotto steht auf eigenen Beinen: zwei Sorten Pilze, Hefeflocken für die Tiefe, Zitrone für die Frische, wo sonst der Wein wohnt. Cremig wird es durch Technik, nicht durch Sahne. Also: rühren, als wäre es ernst."
       },
-      "variant": {"diet": "vegan", "effort": "medium", "calorie": "le600"},
-      "contains": ["celery", "high-fodmap"],
-      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "sugar-free", "nut-free", "medium", "le60", "le600", "saute", "simmer"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 45,
       "servings": 4,
       "calories_per_serving": 510,
-      "macros": {"calories": 510, "protein_g": 13, "carbs_g": 82, "fat_g": 14},
+      "macros": {
+        "calories": 510,
+        "protein_g": 13,
+        "carbs_g": 82,
+        "fat_g": 14
+      },
       "ingredients": [
-        {"ingredient_id": "arborio-rice", "qty": 320, "unit": "g"},
-        {"ingredient_id": "button-mushroom", "qty": 300, "unit": "g", "note": {"en": "thickly sliced", "de": "in dicken Scheiben"}},
-        {"ingredient_id": "shiitake", "qty": 150, "unit": "g", "note": {"en": "stems removed, sliced", "de": "ohne Stiele, in Scheiben"}},
-        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "vegetable-stock", "qty": 1.3, "unit": "l"},
-        {"ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "vegan-butter", "qty": 40, "unit": "g", "note": {"en": "cold", "de": "kalt"}},
-        {"ingredient_id": "nutritional-yeast", "qty": 4, "unit": "tbsp"},
-        {"ingredient_id": "lemon", "qty": 1, "unit": "piece", "note": {"en": "zest and juice", "de": "Abrieb und Saft"}},
-        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"}
+        {
+          "ingredient_id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "button-mushroom",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "thickly sliced",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "shiitake",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "stems removed, sliced",
+            "de": "ohne Stiele, in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "shallot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 1.3,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "cold",
+            "de": "kalt"
+          }
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "zest and juice",
+            "de": "Abrieb und Saft"
+          }
+        },
+        {
+          "ingredient_id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        }
       ],
       "steps": [
         {
@@ -136,36 +334,141 @@
           "timer_minutes": 2
         }
       ],
-      "tags": {"en": ["risotto", "plant-based", "comfort food"], "de": ["Risotto", "pflanzlich", "Soulfood"]}
+      "tags": {
+        "en": [
+          "risotto",
+          "plant-based",
+          "comfort food"
+        ],
+        "de": [
+          "Risotto",
+          "pflanzlich",
+          "Soulfood"
+        ]
+      }
     },
     {
       "id": "lasagna-classic",
       "dish_id": "lasagna",
-      "title": {"en": "classic beef lasagna", "de": "Klassische Lasagne"},
-      "caption": {"en": "sunday afternoon, in nine layers", "de": "Sonntagnachmittag in neun Schichten"},
+      "title": {
+        "en": "classic beef lasagna",
+        "de": "Klassische Lasagne"
+      },
+      "caption": {
+        "en": "sunday afternoon, in nine layers",
+        "de": "Sonntagnachmittag in neun Schichten"
+      },
       "intro": {
         "en": "a proper lasagna is a commitment: a ragù that simmers for most of an hour, a béchamel you whisk by hand, layers built like you're tucking someone in. make it on a slow sunday. eat it all week, if it survives that long.",
         "de": "Eine richtige Lasagne ist ein Versprechen: ein Ragù, das fast eine Stunde köchelt, eine Béchamel, die du von Hand rührst, Schichten gebaut wie ein frisch gemachtes Bett. Koch sie an einem ruhigen Sonntag. Sie hält die ganze Woche – falls sie so lange überlebt."
       },
-      "variant": {"diet": "classic", "effort": "hard", "calorie": "le800"},
-      "contains": ["beef", "dairy", "gluten", "high-fodmap"],
-      "attributes": ["halal", "kosher", "sugar-free", "nut-free", "hard", "gt60", "le800", "saute", "simmer", "bake"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 100,
       "servings": 6,
       "calories_per_serving": 740,
-      "macros": {"calories": 740, "protein_g": 38, "carbs_g": 58, "fat_g": 38},
+      "macros": {
+        "calories": 740,
+        "protein_g": 38,
+        "carbs_g": 58,
+        "fat_g": 38
+      },
       "ingredients": [
-        {"ingredient_id": "ground-beef", "qty": 600, "unit": "g"},
-        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "carrot", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "garlic", "qty": 2, "unit": "clove", "note": {"en": "minced", "de": "fein gehackt"}},
-        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
-        {"ingredient_id": "lasagna-sheets", "qty": 250, "unit": "g", "note": {"en": "no pre-cooking needed", "de": "ohne Vorkochen"}},
-        {"ingredient_id": "butter", "qty": 50, "unit": "g"},
-        {"ingredient_id": "wheat-flour", "qty": 50, "unit": "g"},
-        {"ingredient_id": "whole-milk", "qty": 800, "unit": "ml"},
-        {"ingredient_id": "parmesan", "qty": 80, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "lasagna-sheets",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "no pre-cooking needed",
+            "de": "ohne Vorkochen"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 800,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 80,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        }
       ],
       "steps": [
         {
@@ -215,36 +518,142 @@
           "timer_minutes": 10
         }
       ],
-      "tags": {"en": ["lasagna", "baked pasta", "family dinner"], "de": ["Lasagne", "Ofenpasta", "Familienessen"]}
+      "tags": {
+        "en": [
+          "lasagna",
+          "baked pasta",
+          "family dinner"
+        ],
+        "de": [
+          "Lasagne",
+          "Ofenpasta",
+          "Familienessen"
+        ]
+      }
     },
     {
       "id": "lasagna-vegetarian",
       "dish_id": "lasagna",
-      "title": {"en": "lentil & mushroom lasagna", "de": "Linsen-Pilz-Lasagne"},
-      "caption": {"en": "the ragù nobody questions", "de": "ein Ragù, das niemand hinterfragt"},
+      "title": {
+        "en": "lentil & mushroom lasagna",
+        "de": "Linsen-Pilz-Lasagne"
+      },
+      "caption": {
+        "en": "the ragù nobody questions",
+        "de": "ein Ragù, das niemand hinterfragt"
+      },
       "intro": {
         "en": "red lentils and seared mushrooms make a ragù with real spine — savory, deep, a little smoky at the edges. the béchamel does the rest. nobody at the table will ask where the meat went.",
         "de": "Rote Linsen und scharf angebratene Pilze ergeben ein Ragù mit Rückgrat – herzhaft, tief, an den Rändern leicht rauchig. Den Rest erledigt die Béchamel. Am Tisch fragt niemand, wo das Fleisch geblieben ist."
       },
-      "variant": {"diet": "vegetarian", "effort": "hard", "calorie": "le600"},
-      "contains": ["dairy", "gluten", "high-fodmap"],
-      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "nut-free", "hard", "gt60", "le600", "saute", "simmer", "bake"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le600",
+        "saute",
+        "simmer",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 95,
       "servings": 6,
       "calories_per_serving": 580,
-      "macros": {"calories": 580, "protein_g": 27, "carbs_g": 76, "fat_g": 19},
+      "macros": {
+        "calories": 580,
+        "protein_g": 27,
+        "carbs_g": 76,
+        "fat_g": 19
+      },
       "ingredients": [
-        {"ingredient_id": "red-lentils", "qty": 220, "unit": "g", "note": {"en": "rinsed", "de": "abgespült"}},
-        {"ingredient_id": "button-mushroom", "qty": 400, "unit": "g", "note": {"en": "finely chopped", "de": "fein gehackt"}},
-        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "olive-oil", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
-        {"ingredient_id": "lasagna-sheets", "qty": 250, "unit": "g", "note": {"en": "no pre-cooking needed", "de": "ohne Vorkochen"}},
-        {"ingredient_id": "butter", "qty": 40, "unit": "g"},
-        {"ingredient_id": "wheat-flour", "qty": 40, "unit": "g"},
-        {"ingredient_id": "whole-milk", "qty": 700, "unit": "ml"},
-        {"ingredient_id": "parmesan", "qty": 60, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 220,
+          "unit": "g",
+          "note": {
+            "en": "rinsed",
+            "de": "abgespült"
+          }
+        },
+        {
+          "ingredient_id": "button-mushroom",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "lasagna-sheets",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "no pre-cooking needed",
+            "de": "ohne Vorkochen"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        }
       ],
       "steps": [
         {
@@ -294,36 +703,137 @@
           "timer_minutes": 10
         }
       ],
-      "tags": {"en": ["lasagna", "vegetarian", "baked pasta"], "de": ["Lasagne", "vegetarisch", "Ofenpasta"]}
+      "tags": {
+        "en": [
+          "lasagna",
+          "vegetarian",
+          "baked pasta"
+        ],
+        "de": [
+          "Lasagne",
+          "vegetarisch",
+          "Ofenpasta"
+        ]
+      }
     },
     {
       "id": "lasagna-gluten-free",
       "dish_id": "lasagna",
-      "title": {"en": "gluten-free beef lasagna", "de": "Glutenfreie Lasagne"},
-      "caption": {"en": "all the layers, none of the gluten", "de": "alle Schichten, null Gluten"},
+      "title": {
+        "en": "gluten-free beef lasagna",
+        "de": "Glutenfreie Lasagne"
+      },
+      "caption": {
+        "en": "all the layers, none of the gluten",
+        "de": "alle Schichten, null Gluten"
+      },
       "intro": {
         "en": "same slow ragù, same silky béchamel, zero compromises. gluten-free sheets just drink a little more sauce, so the béchamel is generous and the rest is non-negotiable. nobody will know unless you tell them.",
         "de": "Dasselbe langsame Ragù, dieselbe seidige Béchamel, null Kompromisse. Glutenfreie Platten trinken nur etwas mehr Sauce, deshalb fällt die Béchamel großzügig aus und die Ruhezeit ist Pflicht. Merkt keiner – außer du erzählst es."
       },
-      "variant": {"diet": "gluten-free", "effort": "hard", "calorie": "le800"},
-      "contains": ["beef", "dairy", "high-fodmap"],
-      "attributes": ["halal", "kosher", "gluten-free", "sugar-free", "nut-free", "hard", "gt60", "le800", "saute", "simmer", "bake"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 100,
       "servings": 6,
       "calories_per_serving": 720,
-      "macros": {"calories": 720, "protein_g": 38, "carbs_g": 54, "fat_g": 37},
+      "macros": {
+        "calories": 720,
+        "protein_g": 38,
+        "carbs_g": 54,
+        "fat_g": 37
+      },
       "ingredients": [
-        {"ingredient_id": "ground-beef", "qty": 600, "unit": "g"},
-        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "carrot", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "garlic", "qty": 2, "unit": "clove", "note": {"en": "minced", "de": "fein gehackt"}},
-        {"ingredient_id": "passata", "qty": 700, "unit": "ml"},
-        {"ingredient_id": "gluten-free-lasagna-sheets", "qty": 250, "unit": "g"},
-        {"ingredient_id": "butter", "qty": 50, "unit": "g"},
-        {"ingredient_id": "gluten-free-flour", "qty": 50, "unit": "g"},
-        {"ingredient_id": "whole-milk", "qty": 800, "unit": "ml"},
-        {"ingredient_id": "parmesan", "qty": 80, "unit": "g", "note": {"en": "grated", "de": "gerieben"}}
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "gluten-free-lasagna-sheets",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "gluten-free-flour",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 800,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 80,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        }
       ],
       "steps": [
         {
@@ -373,7 +883,2142 @@
           "timer_minutes": 10
         }
       ],
-      "tags": {"en": ["lasagna", "gluten-free", "baked pasta"], "de": ["Lasagne", "glutenfrei", "Ofenpasta"]}
+      "tags": {
+        "en": [
+          "lasagna",
+          "gluten-free",
+          "baked pasta"
+        ],
+        "de": [
+          "Lasagne",
+          "glutenfrei",
+          "Ofenpasta"
+        ]
+      }
+    },
+    {
+      "id": "pizza-classic",
+      "dish_id": "pizza",
+      "title": {
+        "en": "classic pizza margherita",
+        "de": "Klassische Pizza Margherita"
+      },
+      "caption": {
+        "en": "blistered crust, molten cheese, no notes",
+        "de": "knuspriger Rand, geschmolzener Käse, perfekt"
+      },
+      "intro": {
+        "en": "real pizza is mostly waiting. the dough does the work while you do something else, and the oven gets so hot it scares the smoke alarm a little. flour, water, tomato, mozzarella, basil — five honest things, one perfect dinner.",
+        "de": "Echte Pizza ist vor allem Warten. Der Teig arbeitet, während du etwas anderes machst, und der Ofen wird so heiß, dass der Rauchmelder kurz nervös wird. Mehl, Wasser, Tomate, Mozzarella, Basilikum – fünf ehrliche Dinge, ein perfektes Abendessen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le800",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 110,
+      "servings": 2,
+      "calories_per_serving": 680,
+      "macros": {
+        "calories": 680,
+        "protein_g": 26,
+        "carbs_g": 92,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "plus more for dusting",
+            "de": "plus etwas zum Bestäuben"
+          }
+        },
+        {
+          "ingredient_id": "yeast",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "torn into pieces, well drained",
+            "de": "in Stücke gezupft, gut abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "dissolve the yeast in 220 ml lukewarm water. mix with the flour and salt, add 1 tbsp olive oil, then knead for 10 minutes until the dough is smooth and springs back when you poke it. it should feel like an earlobe. yes, really.",
+            "de": "Löse die Hefe in 220 ml lauwarmem Wasser auf. Vermische sie mit Mehl und Salz, gib 1 EL Olivenöl dazu und knete 10 Minuten, bis der Teig glatt ist und zurückfedert, wenn du ihn drückst. Er soll sich wie ein Ohrläppchen anfühlen. Ja, wirklich."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "shape into a ball, oil the bowl lightly, cover, and let it rise somewhere warm for 90 minutes until doubled. go live your life. the dough has this.",
+            "de": "Forme eine Kugel, öle die Schüssel leicht, decke sie ab und lass den Teig 90 Minuten an einem warmen Ort gehen, bis er sich verdoppelt hat. Mach was Schönes – der Teig schafft das allein."
+          },
+          "timer_minutes": 90
+        },
+        {
+          "text": {
+            "en": "half an hour before baking, put a baking sheet or pizza stone on the top rack and crank the oven to 250 °c. it cannot be too hot. it can only be not hot enough.",
+            "de": "Schieb eine halbe Stunde vor dem Backen ein Blech oder einen Pizzastein auf die oberste Schiene und heize den Ofen auf 250 °C. Zu heiß gibt es nicht. Nur nicht heiß genug."
+          }
+        },
+        {
+          "text": {
+            "en": "divide the dough in two and stretch each piece on floured parchment into a thin round, leaving the rim a little thicker. stretch with your fingertips, never a rolling pin — the bubbles are the whole point.",
+            "de": "Teile den Teig in zwei Hälften und zieh jede auf bemehltem Backpapier zu einem dünnen Kreis, der Rand darf etwas dicker bleiben. Mit den Fingerspitzen ziehen, nie mit dem Nudelholz – die Luftblasen sind der ganze Sinn der Sache."
+          }
+        },
+        {
+          "text": {
+            "en": "season the passata with a pinch of salt and spread a thin layer over each base. less than you think. scatter the mozzarella on top and drizzle with the remaining olive oil.",
+            "de": "Würze die Passata mit einer Prise Salz und verteile eine dünne Schicht auf jedem Boden. Weniger, als du denkst. Verteile den Mozzarella darauf und beträufle alles mit dem restlichen Olivenöl."
+          }
+        },
+        {
+          "text": {
+            "en": "slide the pizza onto the hot sheet and bake for about 9 minutes, until the rim is blistered and the cheese has gone molten with golden spots. repeat with the second one.",
+            "de": "Zieh die Pizza aufs heiße Blech und backe sie etwa 9 Minuten, bis der Rand Blasen wirft und der Käse geschmolzen ist und goldene Flecken hat. Dann die zweite hinterher."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "tear the basil over the pizza after it comes out of the oven, never before. cut, eat hot, repeat next week.",
+            "de": "Zupfe das Basilikum erst nach dem Ofen über die Pizza, nie davor. Schneiden, heiß essen, nächste Woche wiederholen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pizza",
+          "weekend project",
+          "baking"
+        ],
+        "de": [
+          "Pizza",
+          "Wochenendprojekt",
+          "Backen"
+        ]
+      }
+    },
+    {
+      "id": "pizza-vegan",
+      "dish_id": "pizza",
+      "title": {
+        "en": "vegan pizza margherita",
+        "de": "Vegane Pizza Margherita"
+      },
+      "caption": {
+        "en": "same fire, same crust, plant cheese",
+        "de": "gleiches Feuer, gleicher Rand, Pflanzenkäse"
+      },
+      "intro": {
+        "en": "the secret nobody tells you: pizza was always mostly about the dough. give it a long rise and a screaming hot oven and the vegan cheese just has to show up and melt. oregano in the sauce carries the rest.",
+        "de": "Das Geheimnis, das dir niemand verrät: Bei Pizza ging es schon immer vor allem um den Teig. Gib ihm Zeit zum Gehen und einen glühend heißen Ofen, dann muss der vegane Käse nur noch auftauchen und schmelzen. Den Rest erledigt der Oregano in der Sauce."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le600",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 110,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 18,
+        "carbs_g": 84,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "plus more for dusting",
+            "de": "plus etwas zum Bestäuben"
+          }
+        },
+        {
+          "ingredient_id": "yeast",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegan-cheese",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "the melting kind, grated",
+            "de": "die schmelzende Sorte, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the yeast into 220 ml lukewarm water. add to the flour and salt with 1 tbsp olive oil and knead for 10 minutes until smooth and elastic. a stand mixer counts. your arms also count.",
+            "de": "Rühre die Hefe in 220 ml lauwarmes Wasser. Gib alles mit 1 EL Olivenöl zu Mehl und Salz und knete 10 Minuten, bis der Teig glatt und elastisch ist. Küchenmaschine zählt. Deine Arme zählen auch."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "cover and let the dough rise in a warm spot for 90 minutes, until doubled and a little wobbly. patience is the only ingredient you can't buy.",
+            "de": "Decke den Teig ab und lass ihn 90 Minuten an einem warmen Ort gehen, bis er sich verdoppelt hat und leicht wabbelig ist. Geduld ist die einzige Zutat, die du nicht kaufen kannst."
+          },
+          "timer_minutes": 90
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 250 °c with a baking sheet on the top rack. stir the oregano and a pinch of salt into the passata while you wait.",
+            "de": "Heize den Ofen auf 250 °C vor, mit einem Blech auf der obersten Schiene. Rühre währenddessen Oregano und eine Prise Salz in die Passata."
+          }
+        },
+        {
+          "text": {
+            "en": "divide the dough in two and stretch each half into a thin round on floured parchment. spread a thin layer of sauce, leaving a bare rim.",
+            "de": "Teile den Teig in zwei Hälften und zieh jede auf bemehltem Backpapier zu einem dünnen Kreis. Bestreiche ihn dünn mit Sauce und lass einen freien Rand."
+          }
+        },
+        {
+          "text": {
+            "en": "bake the first pizza for 5 minutes with just the sauce — vegan cheese likes a head start on the crust, not a head start on burning.",
+            "de": "Backe die erste Pizza 5 Minuten nur mit Sauce – veganer Käse mag einen Vorsprung beim Boden, aber keinen Vorsprung beim Verbrennen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "pull the pizza out, scatter half the vegan cheese over it, drizzle with olive oil and bake for another 5 minutes until melted and golden at the edges. repeat with pizza number two.",
+            "de": "Hol die Pizza raus, verteile die Hälfte des veganen Käses darauf, beträufle sie mit Olivenöl und backe sie weitere 5 Minuten, bis alles geschmolzen ist und die Ränder golden sind. Dann Pizza Nummer zwei."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "finish with torn basil and a last thread of olive oil. eat standing at the counter like it's a secret.",
+            "de": "Zum Schluss gezupftes Basilikum und noch ein feiner Faden Olivenöl darüber. Iss sie im Stehen an der Küchenzeile, als wäre es ein Geheimnis."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pizza",
+          "plant-based",
+          "baking"
+        ],
+        "de": [
+          "Pizza",
+          "pflanzlich",
+          "Backen"
+        ]
+      }
+    },
+    {
+      "id": "pizza-gluten-free",
+      "dish_id": "pizza",
+      "title": {
+        "en": "gluten-free pizza margherita",
+        "de": "Glutenfreie Pizza Margherita"
+      },
+      "caption": {
+        "en": "crisp base, zero gluten, full joy",
+        "de": "knuspriger Boden, null Gluten, volle Freude"
+      },
+      "intro": {
+        "en": "gluten-free dough plays by different rules — it's softer, stickier, more of a thick batter with ambitions. so we give it a head start in the oven before the toppings arrive, and it comes out crisp enough to fold. nobody at the table will ask questions.",
+        "de": "Glutenfreier Teig spielt nach eigenen Regeln – er ist weicher, klebriger, eher ein dicker Teig mit Ambitionen. Deshalb bekommt er im Ofen einen Vorsprung, bevor der Belag kommt, und wird so knusprig, dass man ihn falten kann. Am Tisch wird niemand Fragen stellen."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le600",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 80,
+      "servings": 2,
+      "calories_per_serving": 590,
+      "macros": {
+        "calories": 590,
+        "protein_g": 24,
+        "carbs_g": 78,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-flour",
+          "qty": 320,
+          "unit": "g",
+          "note": {
+            "en": "a blend made for baking",
+            "de": "eine Mischung zum Backen"
+          }
+        },
+        {
+          "ingredient_id": "yeast",
+          "qty": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "qty": 220,
+          "unit": "g",
+          "note": {
+            "en": "torn, well drained",
+            "de": "gezupft, gut abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "dissolve the yeast in 260 ml lukewarm water. stir into the flour and salt with 2 tbsp olive oil until you have a thick, sticky dough. don't expect it to feel like wheat dough — it won't, and that's fine.",
+            "de": "Löse die Hefe in 260 ml lauwarmem Wasser auf. Verrühre sie mit Mehl, Salz und 2 EL Olivenöl zu einem dicken, klebrigen Teig. Erwarte nicht, dass er sich wie Weizenteig anfühlt – tut er nicht, und das ist völlig okay."
+          }
+        },
+        {
+          "text": {
+            "en": "cover and let it rest in a warm spot for 45 minutes. it won't double dramatically, but it will loosen and get bubbly around the edges.",
+            "de": "Decke den Teig ab und lass ihn 45 Minuten an einem warmen Ort ruhen. Er verdoppelt sich nicht spektakulär, aber er lockert sich und wirft am Rand kleine Blasen."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 230 °c. spread the dough onto two parchment-lined trays with oiled hands or a wet spatula, about half a centimeter thick, slightly thicker at the rim.",
+            "de": "Heize den Ofen auf 230 °C vor. Streiche den Teig mit geölten Händen oder einem nassen Teigschaber auf zwei Bleche mit Backpapier, etwa einen halben Zentimeter dick, am Rand etwas dicker."
+          }
+        },
+        {
+          "text": {
+            "en": "pre-bake the bare bases for 8 minutes until set and just starting to color. this is the move that keeps gluten-free pizza from going soggy in the middle.",
+            "de": "Backe die Böden ohne Belag 8 Minuten vor, bis sie fest sind und gerade anfangen, Farbe zu nehmen. Genau dieser Schritt bewahrt glutenfreie Pizza davor, in der Mitte durchzuweichen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "spread a thin layer of salted passata over the bases, top with the mozzarella and drizzle with the remaining olive oil.",
+            "de": "Bestreiche die Böden dünn mit gesalzener Passata, verteile den Mozzarella darauf und beträufle alles mit dem restlichen Olivenöl."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for another 8 minutes, until the cheese is molten and the rim is deeply golden and crisp.",
+            "de": "Backe die Pizzen weitere 8 Minuten, bis der Käse geschmolzen und der Rand tief golden und knusprig ist."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "scatter the basil over the hot pizza, cut, and serve immediately — gluten-free crusts are at their absolute best in the first ten minutes.",
+            "de": "Verteile das Basilikum auf der heißen Pizza, schneide sie an und serviere sofort – glutenfreie Böden sind in den ersten zehn Minuten am allerbesten."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pizza",
+          "gluten-free",
+          "baking"
+        ],
+        "de": [
+          "Pizza",
+          "glutenfrei",
+          "Backen"
+        ]
+      }
+    },
+    {
+      "id": "pizza-keto",
+      "dish_id": "pizza",
+      "title": {
+        "en": "keto cauliflower crust pizza",
+        "de": "Keto-Pizza mit Blumenkohlboden"
+      },
+      "caption": {
+        "en": "the crust is secretly a vegetable",
+        "de": "der Boden ist heimlich ein Gemüse"
+      },
+      "intro": {
+        "en": "cauliflower crust gets a bad reputation from people who didn't squeeze it dry. squeeze it like it owes you money and it bakes into something genuinely crisp, sturdy enough to pick up, with all the tomato-cheese-basil comfort and almost none of the carbs.",
+        "de": "Blumenkohlboden hat einen schlechten Ruf – wegen der Leute, die ihn nicht trocken ausgedrückt haben. Drück ihn aus, als würde er dir Geld schulden, dann backt er wirklich knusprig und stabil genug zum Anheben. Mit dem ganzen Tomate-Käse-Basilikum-Trost und fast ohne Kohlenhydrate."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "keto",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 25,
+        "carbs_g": 12,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "one small head, riced",
+            "de": "ein kleiner Kopf, fein geraspelt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "finely grated, for the crust",
+            "de": "fein gerieben, für den Boden"
+          }
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "qty": 180,
+          "unit": "g",
+          "note": {
+            "en": "half for the crust, half on top",
+            "de": "die Hälfte für den Boden, die Hälfte obendrauf"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "preheat the oven to 200 °c. pulse the cauliflower in a food processor (or grate it) until it looks like rice, then steam or microwave it for 5 minutes until tender.",
+            "de": "Heize den Ofen auf 200 °C vor. Zerkleinere den Blumenkohl in der Küchenmaschine (oder reibe ihn), bis er wie Reis aussieht, und gare ihn dann 5 Minuten in der Mikrowelle oder im Dampf, bis er weich ist."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "let it cool until you can handle it, then wrap it in a clean kitchen towel and squeeze out as much water as you possibly can. then squeeze again. this is the entire trick.",
+            "de": "Lass ihn abkühlen, bis du ihn anfassen kannst, wickle ihn dann in ein sauberes Küchentuch und drück so viel Wasser raus, wie du irgendwie kannst. Dann noch mal drücken. Das ist der ganze Trick."
+          }
+        },
+        {
+          "text": {
+            "en": "mix the dry cauliflower with the egg, the parmesan, half the mozzarella, the oregano and a good pinch of salt. press onto a parchment-lined tray into a round about 1 cm thick.",
+            "de": "Vermenge den trockenen Blumenkohl mit dem Ei, dem Parmesan, der Hälfte des Mozzarellas, dem Oregano und einer guten Prise Salz. Drücke die Masse auf einem Blech mit Backpapier zu einem etwa 1 cm dicken Kreis."
+          }
+        },
+        {
+          "text": {
+            "en": "bake the crust for 20 minutes until golden brown and set at the edges. it should release from the parchment without protest.",
+            "de": "Backe den Boden 20 Minuten, bis er goldbraun ist und die Ränder fest sind. Er sollte sich ohne Widerstand vom Backpapier lösen."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "spread the passata thinly over the crust, scatter the remaining mozzarella on top and bake for another 8 minutes until bubbling.",
+            "de": "Bestreiche den Boden dünn mit Passata, verteile den restlichen Mozzarella darauf und backe alles weitere 8 Minuten, bis es blubbert."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "top with fresh basil, slice, and lift a piece — it holds. that's the whole victory lap.",
+            "de": "Verteile frisches Basilikum darauf, schneide die Pizza an und heb ein Stück hoch – es hält. Das ist die ganze Ehrenrunde."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pizza",
+          "low-carb",
+          "keto"
+        ],
+        "de": [
+          "Pizza",
+          "Low Carb",
+          "Keto"
+        ]
+      }
+    },
+    {
+      "id": "bolognese-classic",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "classic spaghetti bolognese",
+        "de": "Klassische Spaghetti Bolognese"
+      },
+      "caption": {
+        "en": "an hour of simmering, worth every minute",
+        "de": "eine Stunde Köcheln, jede Minute wert"
+      },
+      "intro": {
+        "en": "this is the sauce that needs nothing from you except time. brown the beef properly, let the wine cook all the way down, then walk away while it simmers into something deeper than the sum of its parts. the smell alone is dinner's opening act.",
+        "de": "Diese Sauce will nichts von dir außer Zeit. Brate das Hackfleisch richtig an, lass den Wein komplett verkochen und geh dann einfach weg, während alles zu etwas zusammenköchelt, das größer ist als die Summe seiner Teile. Allein der Duft ist schon der Auftakt zum Abendessen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "alcohol",
+        "sulphites",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 75,
+      "servings": 4,
+      "calories_per_serving": 640,
+      "macros": {
+        "calories": 640,
+        "protein_g": 32,
+        "carbs_g": 68,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-wine",
+          "qty": 150,
+          "unit": "ml",
+          "note": {
+            "en": "dry, one you'd drink",
+            "de": "trocken, einer, den du auch trinken würdest"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, whole or chopped",
+            "de": "400 g, ganz oder gehackt"
+          }
+        },
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 50,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "warm the olive oil in a heavy pot over medium heat. add the onion, carrot and celery and cook gently for 8 minutes until soft and sweet. let the onions take their time. they always do.",
+            "de": "Erwärme das Olivenöl in einem schweren Topf bei mittlerer Hitze. Gib Zwiebel, Karotte und Sellerie hinein und lass sie 8 Minuten sanft weich und süß werden. Gib den Zwiebeln ihre Zeit. Die nehmen sie sich sowieso."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "turn the heat up, push the vegetables aside and add the beef. break it apart and let it brown properly for 8 minutes — you want crusty bits on the bottom of the pot, not gray meat in its own juice.",
+            "de": "Dreh die Hitze hoch, schieb das Gemüse beiseite und gib das Hackfleisch dazu. Zerteile es und lass es 8 Minuten richtig braun werden – du willst Röststellen am Topfboden, kein graues Fleisch im eigenen Saft."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "stir in the tomato paste and cook it for a minute until it darkens. pour in the red wine and let it bubble until almost completely evaporated, scraping up everything stuck to the bottom.",
+            "de": "Rühre das Tomatenmark ein und röste es eine Minute an, bis es dunkler wird. Gieße den Rotwein an und lass ihn fast vollständig verkochen, dabei alles vom Topfboden lösen."
+          }
+        },
+        {
+          "text": {
+            "en": "add the canned tomatoes and 200 ml water, crush the tomatoes with your spoon, season with salt and pepper, and bring to a bare simmer. lid half on, lowest heat, 45 minutes. stir occasionally and apologize to no one for the wait.",
+            "de": "Gib die Dosentomaten und 200 ml Wasser dazu, zerdrücke die Tomaten mit dem Löffel, würze mit Salz und Pfeffer und bring alles auf ein leises Köcheln. Deckel halb drauf, kleinste Stufe, 45 Minuten. Ab und zu umrühren – und keine Entschuldigung für die Wartezeit."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "towards the end, cook the spaghetti in well-salted boiling water for 9 minutes until al dente. save a cup of pasta water before draining.",
+            "de": "Koche gegen Ende die Spaghetti 9 Minuten in kräftig gesalzenem, kochendem Wasser al dente. Heb eine Tasse Nudelwasser auf, bevor du abgießt."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "toss the spaghetti through the sauce with a splash of pasta water until everything is glossy and clinging. serve with the parmesan and accept the compliments quietly.",
+            "de": "Schwenke die Spaghetti mit einem Schuss Nudelwasser durch die Sauce, bis alles glänzt und schön bindet. Mit Parmesan servieren und die Komplimente still entgegennehmen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "comfort food",
+          "sunday sauce"
+        ],
+        "de": [
+          "Pasta",
+          "Soulfood",
+          "Sonntagssauce"
+        ]
+      }
+    },
+    {
+      "id": "bolognese-lentil",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "red lentil bolognese",
+        "de": "Bolognese aus roten Linsen"
+      },
+      "caption": {
+        "en": "lentils doing their best beef impression",
+        "de": "Linsen in ihrer besten Hackfleisch-Rolle"
+      },
+      "intro": {
+        "en": "red lentils collapse into the tomato as they cook, and what you get is a ragù with real body — rich, savory, spoon-coating. no wine, no tricks, just a soffritto that did its job and tomato paste that got properly toasted.",
+        "de": "Rote Linsen zerfallen beim Kochen in die Tomate, und übrig bleibt ein Ragù mit echtem Körper – sämig, würzig, löffelfest. Kein Wein, keine Tricks, nur ein Soffritto, das seinen Job gemacht hat, und Tomatenmark, das richtig angeröstet wurde."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 22,
+        "carbs_g": 88,
+        "fat_g": 11
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "rinsed",
+            "de": "abgespült"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the olive oil in a wide pot over medium heat and cook the onion, carrot and celery for 8 minutes until soft and starting to catch a little color at the edges.",
+            "de": "Erhitze das Olivenöl in einem weiten Topf bei mittlerer Hitze und dünste Zwiebel, Karotte und Sellerie 8 Minuten, bis alles weich ist und an den Rändern leicht Farbe nimmt."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "stir in the tomato paste and oregano and toast for a minute or two until the paste darkens and smells sweet. this is where the depth comes from — don't skip it.",
+            "de": "Rühre Tomatenmark und Oregano ein und röste beides ein bis zwei Minuten an, bis das Mark dunkler wird und süßlich duftet. Hier kommt die Tiefe her – nicht überspringen."
+          }
+        },
+        {
+          "text": {
+            "en": "add the lentils, the canned tomatoes and 600 ml water. crush the tomatoes, season with salt and pepper, and simmer uncovered over low heat for 25 minutes, stirring now and then, until the lentils have gone soft and saucy.",
+            "de": "Gib Linsen, Dosentomaten und 600 ml Wasser dazu. Zerdrücke die Tomaten, würze mit Salz und Pfeffer und lass alles offen bei niedriger Hitze 25 Minuten köcheln, ab und zu rühren, bis die Linsen weich und die Sauce sämig ist."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "meanwhile cook the spaghetti in well-salted boiling water for 9 minutes until al dente. keep a cup of the pasta water.",
+            "de": "Koche währenddessen die Spaghetti 9 Minuten in kräftig gesalzenem, kochendem Wasser al dente. Heb eine Tasse Nudelwasser auf."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "loosen the ragù with a splash of pasta water if it's gotten thick, taste, and be generous with the pepper. lentils reward seasoning.",
+            "de": "Verdünne das Ragù mit einem Schuss Nudelwasser, falls es zu dick geworden ist, probiere und sei großzügig mit dem Pfeffer. Linsen danken dir jede Würze."
+          }
+        },
+        {
+          "text": {
+            "en": "toss the spaghetti through the sauce and serve with a thread of good olive oil on top. nobody will ask where the meat went.",
+            "de": "Schwenke die Spaghetti durch die Sauce und serviere mit einem feinen Faden gutem Olivenöl obendrauf. Niemand wird fragen, wo das Fleisch hin ist."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "plant-based",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "pflanzlich",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "bolognese-lowfodmap",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "low FODMAP bolognese",
+        "de": "FODMAP-arme Bolognese"
+      },
+      "caption": {
+        "en": "all the comfort, none of the regret",
+        "de": "der ganze Trost, ohne das Bauchweh"
+      },
+      "intro": {
+        "en": "bolognese without onion and garlic sounds like a punishment until you taste it. spring onion greens go in at the end for freshness, the beef and tomato do the heavy lifting, and your stomach files zero complaints. comfort food that actually comforts.",
+        "de": "Bolognese ohne Zwiebel und Knoblauch klingt nach Strafe, bis du sie probierst. Das Grün der Frühlingszwiebeln kommt am Ende für die Frische dazu, Hackfleisch und Tomate stemmen den Rest – und dein Bauch reicht null Beschwerden ein. Soulfood, das wirklich gut tut."
+      },
+      "variant": {
+        "diet": "low-fodmap",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "dairy"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 600,
+      "macros": {
+        "calories": 600,
+        "protein_g": 34,
+        "carbs_g": 62,
+        "fat_g": 25
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "green parts only, sliced",
+            "de": "nur das Grün, in Ringen"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "gluten-free-pasta",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "spaghetti shape",
+            "de": "am besten Spaghetti"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 50,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the olive oil in a heavy pot over medium-high heat. brown the beef hard for 8 minutes, breaking it up, until you get real crusty edges. flavor lives in those edges.",
+            "de": "Erhitze das Olivenöl in einem schweren Topf bei mittelhoher Hitze. Brate das Hackfleisch 8 Minuten kräftig an und zerteile es dabei, bis richtig braune Röstkanten entstehen. In diesen Kanten wohnt der Geschmack."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "add the carrots and cook for 3 more minutes, then stir in the tomato paste and oregano and toast briefly until the paste darkens.",
+            "de": "Gib die Karotten dazu und brate sie 3 Minuten mit, rühre dann Tomatenmark und Oregano ein und röste alles kurz an, bis das Mark dunkler wird."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the canned tomatoes and 200 ml water, crush the tomatoes, season with salt and pepper, and simmer half-covered over low heat for 30 minutes until thick and rich.",
+            "de": "Gieße die Dosentomaten und 200 ml Wasser an, zerdrücke die Tomaten, würze mit Salz und Pfeffer und lass alles halb zugedeckt bei niedriger Hitze 30 Minuten köcheln, bis die Sauce dick und kräftig ist."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "cook the gluten-free pasta in well-salted boiling water for 10 minutes until al dente — check the packet, gluten-free shapes vary. save some pasta water, then drain.",
+            "de": "Koche die glutenfreie Pasta 10 Minuten in kräftig gesalzenem, kochendem Wasser al dente – wirf einen Blick auf die Packung, glutenfreie Sorten sind unterschiedlich. Etwas Nudelwasser aufheben, dann abgießen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "stir most of the spring onion greens into the sauce and toss with the pasta, loosening with pasta water as needed.",
+            "de": "Rühre den Großteil des Frühlingszwiebelgrüns in die Sauce und schwenke die Pasta darin, bei Bedarf mit Nudelwasser geschmeidig machen."
+          }
+        },
+        {
+          "text": {
+            "en": "serve with parmesan and the last of the greens scattered on top. tastes like the original. feels much better an hour later.",
+            "de": "Mit Parmesan und dem restlichen Grün obendrauf servieren. Schmeckt wie das Original. Fühlt sich eine Stunde später deutlich besser an."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "low fodmap",
+          "comfort food"
+        ],
+        "de": [
+          "Pasta",
+          "FODMAP-arm",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "classic carbonara",
+        "de": "Klassische Carbonara"
+      },
+      "caption": {
+        "en": "egg, cheese, bacon, nerve. no cream.",
+        "de": "Ei, Käse, Speck, Nerven. Keine Sahne."
+      },
+      "intro": {
+        "en": "carbonara is a timing exercise disguised as dinner. crisp bacon, a whisked bowl of egg and parmesan, and the single rule that matters: the pan comes off the heat before the egg goes in. get that right and the sauce turns to silk.",
+        "de": "Carbonara ist eine Timing-Übung, die sich als Abendessen verkleidet. Knuspriger Speck, eine Schüssel mit verquirltem Ei und Parmesan, und die einzige Regel, die zählt: Die Pfanne ist vom Herd, bevor das Ei reinkommt. Triff diesen Moment, und die Sauce wird zu Seide."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "pork",
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le800",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {
+        "calories": 720,
+        "protein_g": 32,
+        "carbs_g": 80,
+        "fat_g": 30
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "bacon",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "cut into small strips",
+            "de": "in kleine Streifen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "1 whole + 2 yolks",
+            "de": "1 ganzes + 2 Eigelb"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated, plus extra",
+            "de": "fein gerieben, plus etwas extra"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "coarsely ground, no shortcuts",
+            "de": "grob gemahlen, keine Abkürzungen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring a large pot of water to a boil and salt it like you mean it. whisk the whole egg, the yolks, the parmesan and the pepper in a bowl until thick and uniform.",
+            "de": "Bring einen großen Topf Wasser zum Kochen und salze es ordentlich. Verquirle das ganze Ei, die Eigelbe, den Parmesan und den Pfeffer in einer Schüssel zu einer dicken, gleichmäßigen Creme."
+          }
+        },
+        {
+          "text": {
+            "en": "put the bacon in a cold, wide pan, then set it over medium heat. let it render slowly for 6 minutes until golden and crisp — the fat in that pan is half your sauce.",
+            "de": "Gib den Speck in eine kalte, weite Pfanne und stell sie dann auf mittlere Hitze. Lass ihn 6 Minuten langsam auslassen, bis er golden und knusprig ist – das Fett in der Pfanne ist die halbe Sauce."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "cook the spaghetti for 9 minutes until just al dente. before draining, scoop out a full cup of the starchy pasta water. that water is non-negotiable.",
+            "de": "Koche die Spaghetti 9 Minuten, bis sie gerade al dente sind. Bevor du abgießt, schöpfe eine volle Tasse vom stärkehaltigen Nudelwasser ab. Dieses Wasser ist nicht verhandelbar."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "tip the drained spaghetti into the bacon pan and toss for half a minute so every strand is coated in fat. then take the pan off the heat. completely. count to twenty.",
+            "de": "Gib die abgegossenen Spaghetti in die Speckpfanne und schwenke sie eine halbe Minute, bis jede Nudel mit Fett überzogen ist. Dann nimm die Pfanne vom Herd. Ganz runter. Zähl bis zwanzig."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk a splash of hot pasta water into the egg mixture, then pour it over the pasta, tossing constantly. add pasta water spoon by spoon until the sauce is glossy and coats every strand — it should flow, not scramble.",
+            "de": "Rühre einen Schuss heißes Nudelwasser in die Eimasse und gieße sie dann unter ständigem Schwenken über die Pasta. Gib löffelweise Nudelwasser dazu, bis die Sauce glänzt und jede Nudel umhüllt – sie soll fließen, nicht stocken."
+          }
+        },
+        {
+          "text": {
+            "en": "serve immediately with more parmesan and another grind of pepper. carbonara waits for no one.",
+            "de": "Sofort servieren, mit mehr Parmesan und noch einer Runde Pfeffer. Carbonara wartet auf niemanden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "roman classic",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "römischer Klassiker",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-veggie",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "mushroom carbonara",
+        "de": "Pilz-Carbonara"
+      },
+      "caption": {
+        "en": "golden mushrooms standing in for bacon",
+        "de": "goldene Champignons übernehmen für den Speck"
+      },
+      "intro": {
+        "en": "mushrooms seared hard in olive oil bring the savory depth that bacon usually does, and the egg-parmesan silk works exactly the same. same rules apply: pan off the heat, pasta water at the ready, no cream anywhere near the kitchen.",
+        "de": "Scharf in Olivenöl angebratene Champignons bringen die würzige Tiefe, die sonst der Speck liefert – und die Ei-Parmesan-Seide funktioniert genau gleich. Dieselben Regeln gelten: Pfanne vom Herd, Nudelwasser griffbereit, Sahne kommt der Küche nicht zu nahe."
+      },
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 26,
+        "carbs_g": 76,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "button-mushroom",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "thickly sliced",
+            "de": "in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "1 whole + 2 yolks",
+            "de": "1 ganzes + 2 Eigelb"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated, plus extra",
+            "de": "fein gerieben, plus etwas extra"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "coarsely ground",
+            "de": "grob gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "set a large pot of well-salted water to boil. whisk the whole egg, yolks, parmesan and pepper into a thick cream and set it next to the stove where you can reach it fast.",
+            "de": "Setz einen großen Topf gut gesalzenes Wasser auf. Verquirle das ganze Ei, die Eigelbe, den Parmesan und den Pfeffer zu einer dicken Creme und stell sie griffbereit neben den Herd."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in a wide pan over high heat and sear the mushrooms in one layer for 8 minutes, without stirring too much, until deeply golden. salt them only at the end so they brown instead of steam.",
+            "de": "Erhitze das Olivenöl in einer weiten Pfanne auf hoher Stufe und brate die Pilze 8 Minuten in einer Schicht, ohne viel zu rühren, bis sie tief goldbraun sind. Erst am Ende salzen, damit sie braten statt dämpfen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "cook the spaghetti for 9 minutes until al dente. scoop out a cup of pasta water before draining — the mushrooms give no fat, so the starchy water matters even more here.",
+            "de": "Koche die Spaghetti 9 Minuten al dente. Schöpfe vor dem Abgießen eine Tasse Nudelwasser ab – die Pilze geben kein Fett ab, also zählt das stärkehaltige Wasser hier doppelt."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "toss the drained pasta with the mushrooms in the pan, then pull the pan off the heat and let it sit for a moment.",
+            "de": "Schwenke die abgegossene Pasta mit den Pilzen in der Pfanne, nimm die Pfanne dann vom Herd und lass sie einen Moment stehen."
+          }
+        },
+        {
+          "text": {
+            "en": "loosen the egg mixture with a splash of hot pasta water, pour it over the pasta and toss constantly, adding water spoonful by spoonful until the sauce is glossy and clings to every strand.",
+            "de": "Verdünne die Eimasse mit einem Schuss heißem Nudelwasser, gieße sie über die Pasta und schwenke ständig, dabei löffelweise Wasser zugeben, bis die Sauce glänzt und an jeder Nudel haftet."
+          }
+        },
+        {
+          "text": {
+            "en": "plate immediately, more parmesan, more pepper. the mushrooms earned top billing tonight.",
+            "de": "Sofort anrichten, mehr Parmesan, mehr Pfeffer. Die Pilze haben sich die Hauptrolle heute Abend verdient."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "vegetarian",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "vegetarisch",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-gluten-free",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "gluten-free carbonara",
+        "de": "Glutenfreie Carbonara"
+      },
+      "caption": {
+        "en": "the silk works on any noodle",
+        "de": "die Seide funktioniert auf jeder Nudel"
+      },
+      "intro": {
+        "en": "good news: carbonara never needed wheat. the sauce is egg, cheese and bacon fat, and gluten-free spaghetti carries it beautifully — you just watch the pot a little closer, because gluten-free pasta goes from perfect to sad faster than the original.",
+        "de": "Gute Nachricht: Carbonara hat Weizen nie gebraucht. Die Sauce besteht aus Ei, Käse und Speckfett, und glutenfreie Spaghetti tragen sie wunderbar – du musst nur etwas genauer auf den Topf schauen, denn glutenfreie Pasta kippt schneller von perfekt zu traurig als das Original."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "pork",
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le800",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 700,
+      "macros": {
+        "calories": 700,
+        "protein_g": 31,
+        "carbs_g": 78,
+        "fat_g": 29
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-pasta",
+          "qty": 220,
+          "unit": "g",
+          "note": {
+            "en": "spaghetti shape",
+            "de": "am besten Spaghetti"
+          }
+        },
+        {
+          "ingredient_id": "bacon",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "cut into small strips",
+            "de": "in kleine Streifen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "1 whole + 2 yolks",
+            "de": "1 ganzes + 2 Eigelb"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated, plus extra",
+            "de": "fein gerieben, plus etwas extra"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "coarsely ground",
+            "de": "grob gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water",
+            "de": "fürs Nudelwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring a large pot of generously salted water to a boil. whisk the whole egg, yolks, parmesan and pepper together until thick and smooth.",
+            "de": "Bring einen großen Topf großzügig gesalzenes Wasser zum Kochen. Verquirle das ganze Ei, die Eigelbe, den Parmesan und den Pfeffer zu einer dicken, glatten Creme."
+          }
+        },
+        {
+          "text": {
+            "en": "start the bacon in a cold, wide pan over medium heat and let it render for 6 minutes until crisp and golden. keep all that fat in the pan — it's the backbone of the sauce.",
+            "de": "Gib den Speck in eine kalte, weite Pfanne und lass ihn bei mittlerer Hitze 6 Minuten auslassen, bis er knusprig und golden ist. Das ganze Fett bleibt in der Pfanne – es ist das Rückgrat der Sauce."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "cook the gluten-free spaghetti for 10 minutes, tasting at 8 — packet times lie, your teeth don't. save a big cup of pasta water, then drain and don't rinse.",
+            "de": "Koche die glutenfreien Spaghetti 10 Minuten und probiere schon bei 8 – Packungsangaben lügen, deine Zähne nicht. Heb eine große Tasse Nudelwasser auf, gieß dann ab und spüle nicht."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "toss the pasta through the bacon and its fat, then take the pan off the heat and let the temperature fall for a few breaths.",
+            "de": "Schwenke die Pasta durch den Speck und sein Fett, nimm die Pfanne dann vom Herd und lass die Temperatur ein paar Atemzüge sinken."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk a splash of hot pasta water into the egg cream, pour it over the pasta and toss without stopping, loosening with more water until the sauce is glossy and hugs every strand.",
+            "de": "Rühre einen Schuss heißes Nudelwasser in die Eicreme, gieße sie über die Pasta und schwenke ohne Pause, dabei mit mehr Wasser verdünnen, bis die Sauce glänzt und jede Nudel umarmt."
+          }
+        },
+        {
+          "text": {
+            "en": "serve right away with extra parmesan and a final crack of pepper. eat before it tightens — gluten-free pasta drinks its sauce fast.",
+            "de": "Sofort servieren, mit extra Parmesan und einer letzten Runde Pfeffer. Iss, bevor die Sauce anzieht – glutenfreie Pasta trinkt ihre Sauce schnell."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "gluten-free",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "glutenfrei",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "tiramisu-classic",
+      "dish_id": "tiramisu",
+      "title": {
+        "en": "classic tiramisu",
+        "de": "Klassisches Tiramisu"
+      },
+      "caption": {
+        "en": "coffee, mascarpone, and a long nap",
+        "de": "Kaffee, Mascarpone und ein langer Schlaf"
+      },
+      "intro": {
+        "en": "tiramisu is the rare dessert that gets better while you sleep. you build it in half an hour — espresso-dipped ladyfingers, clouds of mascarpone — and then the fridge does the real work overnight, turning layers into one soft, coffee-soaked whole.",
+        "de": "Tiramisu ist das seltene Dessert, das besser wird, während du schläfst. Du baust es in einer halben Stunde zusammen – in Espresso getauchte Löffelbiskuits, Wolken aus Mascarpone – und dann erledigt der Kühlschrank über Nacht die eigentliche Arbeit und verwandelt Schichten in ein weiches, kaffeegetränktes Ganzes."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "caffeine",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "raw"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 6,
+      "calories_per_serving": 450,
+      "macros": {
+        "calories": 450,
+        "protein_g": 9,
+        "carbs_g": 42,
+        "fat_g": 27
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "mascarpone",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "cold from the fridge",
+            "de": "kalt aus dem Kühlschrank"
+          }
+        },
+        {
+          "ingredient_id": "ladyfingers",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "espresso",
+          "qty": 300,
+          "unit": "ml",
+          "note": {
+            "en": "freshly brewed, cooled",
+            "de": "frisch gebrüht, abgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "very fresh, separated",
+            "de": "ganz frisch, getrennt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "unsweetened, for dusting",
+            "de": "ungesüßt, zum Bestäuben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brew the espresso, pour it into a shallow dish and let it cool completely. warm espresso melts mascarpone cream, and we are not doing that today.",
+            "de": "Brüh den Espresso, gieß ihn in eine flache Schale und lass ihn vollständig abkühlen. Warmer Espresso schmilzt die Mascarponecreme, und das passiert uns heute nicht."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk the egg yolks with the sugar for 5 minutes until pale, thick and ribbon-like. this is where the cream gets its lightness — don't cut it short.",
+            "de": "Schlage die Eigelbe mit dem Zucker 5 Minuten, bis die Masse hell, dick und cremig vom Schneebesen läuft. Hier bekommt die Creme ihre Leichtigkeit – nicht abkürzen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "fold the mascarpone into the yolk mixture until just smooth. overmixing makes it grainy, so stop the moment it comes together.",
+            "de": "Hebe den Mascarpone unter die Eigelbmasse, bis sie gerade glatt ist. Zu viel Rühren macht die Creme grießig, also hör auf, sobald sie sich verbindet."
+          }
+        },
+        {
+          "text": {
+            "en": "beat the egg whites with a pinch of salt for 3 minutes until they hold soft peaks, then fold them into the cream in two batches, gently, keeping all the air in.",
+            "de": "Schlage die Eiweiße mit einer Prise Salz 3 Minuten, bis sie weiche Spitzen halten, und hebe sie dann in zwei Portionen vorsichtig unter die Creme, ohne die Luft rauszurühren."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "dip each ladyfinger into the espresso for just one second per side — they should be soaked outside, still firm inside. line the bottom of a 20 x 25 cm dish with half of them.",
+            "de": "Tauche jeden Löffelbiskuit nur eine Sekunde pro Seite in den Espresso – außen getränkt, innen noch fest. Lege mit der Hälfte den Boden einer Form von etwa 20 x 25 cm aus."
+          }
+        },
+        {
+          "text": {
+            "en": "spread half the cream over the ladyfingers, add a second layer of dipped biscuits, then the rest of the cream. smooth the top like you mean it.",
+            "de": "Verteile die Hälfte der Creme auf den Biskuits, schichte eine zweite Lage getauchter Biskuits darauf und dann den Rest der Creme. Streich die Oberfläche schön glatt."
+          }
+        },
+        {
+          "text": {
+            "en": "cover and refrigerate at least 4 hours, ideally overnight. dust thickly with cocoa just before serving — never earlier, or it weeps.",
+            "de": "Abdecken und mindestens 4 Stunden kalt stellen, am besten über Nacht. Erst direkt vor dem Servieren dick mit Kakao bestäuben – nie früher, sonst wird er feucht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "make ahead",
+          "coffee"
+        ],
+        "de": [
+          "Dessert",
+          "vorbereitbar",
+          "Kaffee"
+        ]
+      }
+    },
+    {
+      "id": "tiramisu-vegan",
+      "dish_id": "tiramisu",
+      "title": {
+        "en": "vegan tiramisu",
+        "de": "Veganes Tiramisu"
+      },
+      "caption": {
+        "en": "cashew clouds over coffee-soaked sponge",
+        "de": "Cashew-Wolken auf kaffeegetränktem Biskuit"
+      },
+      "intro": {
+        "en": "blended cashews and coconut milk make a cream so rich nobody thinks to ask what's in it. underneath: a quick homemade sponge, baked thin and drowned in espresso. it's built from scratch and it tastes like it, in the best way.",
+        "de": "Pürierte Cashews und Kokosmilch ergeben eine Creme, die so reichhaltig ist, dass niemand fragt, was drin ist. Darunter: ein schneller selbst gebackener Biskuit, dünn gebacken und in Espresso ertränkt. Alles von Grund auf gemacht – und genau so schmeckt es auch, im besten Sinne."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "tree-nuts",
+        "cashews",
+        "caffeine",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "medium",
+        "le60",
+        "le400",
+        "bake",
+        "raw"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 6,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 7,
+        "carbs_g": 48,
+        "fat_g": 17
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cashews-ing",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 200,
+          "unit": "ml",
+          "note": {
+            "en": "the thick part of a chilled can",
+            "de": "der feste Teil einer gekühlten Dose"
+          }
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "espresso",
+          "qty": 250,
+          "unit": "ml",
+          "note": {
+            "en": "freshly brewed, cooled",
+            "de": "frisch gebrüht, abgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 70,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "baking-powder",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "unsweetened, for dusting",
+            "de": "ungesüßt, zum Bestäuben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cover the cashews with boiling water and let them soak for 15 minutes while you do everything else. hot water gets them blender-soft fast.",
+            "de": "Übergieße die Cashews mit kochendem Wasser und lass sie 15 Minuten einweichen, während du alles andere erledigst. Heißes Wasser macht sie schnell weich genug für den Mixer."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "preheat the oven to 180 °c. whisk the flour, sugar and baking powder, then stir in the oat milk and oil until just combined. spread the batter about 1 cm thick on a parchment-lined tray.",
+            "de": "Heize den Ofen auf 180 °C vor. Verrühre Mehl, Zucker und Backpulver, dann Hafermilch und Öl nur kurz unterrühren. Streiche den Teig etwa 1 cm dick auf ein Blech mit Backpapier."
+          }
+        },
+        {
+          "text": {
+            "en": "bake the sponge for 12 minutes until springy and lightly golden. lift it off the tray and let it cool completely.",
+            "de": "Backe den Biskuit 12 Minuten, bis er federnd und leicht golden ist. Heb ihn vom Blech und lass ihn vollständig auskühlen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "drain the cashews and blend them with the thick coconut milk and maple syrup until completely smooth — give the blender a full two minutes, scrape down, blend again. no grit allowed.",
+            "de": "Gieß die Cashews ab und püriere sie mit der festen Kokosmilch und dem Ahornsirup, bis die Creme vollkommen glatt ist – gönn dem Mixer volle zwei Minuten, Rand abschaben, nochmal mixen. Körnig gilt nicht."
+          }
+        },
+        {
+          "text": {
+            "en": "cut the cooled sponge to fit a 20 x 20 cm dish in two layers. lay in the first layer and spoon half the espresso evenly over it — be generous, the sponge should be properly soaked.",
+            "de": "Schneide den ausgekühlten Biskuit so zu, dass er in zwei Lagen in eine Form von etwa 20 x 20 cm passt. Lege die erste Lage hinein und verteile die Hälfte des Espressos gleichmäßig darüber – sei großzügig, der Biskuit soll richtig getränkt sein."
+          }
+        },
+        {
+          "text": {
+            "en": "spread half the cashew cream over the soaked sponge, add the second layer, soak it with the rest of the espresso and finish with the remaining cream.",
+            "de": "Verstreiche die Hälfte der Cashewcreme auf dem getränkten Biskuit, lege die zweite Lage darauf, tränke sie mit dem restlichen Espresso und schließe mit der übrigen Creme ab."
+          }
+        },
+        {
+          "text": {
+            "en": "chill for at least 2 hours, then dust with cocoa right before serving. it slices cleaner the longer it waits.",
+            "de": "Mindestens 2 Stunden kalt stellen und erst direkt vor dem Servieren mit Kakao bestäuben. Je länger es wartet, desto sauberer lässt es sich schneiden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "plant-based",
+          "coffee"
+        ],
+        "de": [
+          "Dessert",
+          "pflanzlich",
+          "Kaffee"
+        ]
+      }
+    },
+    {
+      "id": "tiramisu-light",
+      "dish_id": "tiramisu",
+      "title": {
+        "en": "light tiramisu",
+        "de": "Leichtes Tiramisu"
+      },
+      "caption": {
+        "en": "all the coffee, half the heaviness",
+        "de": "der ganze Kaffee, halb so schwer"
+      },
+      "intro": {
+        "en": "greek yogurt and cream cheese whip into something that tastes shockingly close to mascarpone, with a fresh edge the original doesn't have. same espresso-soaked ladyfingers, same cocoa snowfall, noticeably lighter spoon.",
+        "de": "Griechischer Joghurt und Frischkäse ergeben aufgeschlagen etwas, das erstaunlich nah an Mascarpone herankommt – mit einer Frische, die das Original nicht hat. Dieselben espressogetränkten Löffelbiskuits, derselbe Kakao-Schneefall, spürbar leichterer Löffel."
+      },
+      "variant": {
+        "diet": "light",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "caffeine",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "light",
+        "easy",
+        "le30",
+        "le400",
+        "raw"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 6,
+      "calories_per_serving": 300,
+      "macros": {
+        "calories": 300,
+        "protein_g": 14,
+        "carbs_g": 38,
+        "fat_g": 9
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "thick, full-fat works best",
+            "de": "stichfest, Vollfett funktioniert am besten"
+          }
+        },
+        {
+          "ingredient_id": "cream-cheese",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "powdered-sugar",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ladyfingers",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "espresso",
+          "qty": 250,
+          "unit": "ml",
+          "note": {
+            "en": "freshly brewed",
+            "de": "frisch gebrüht"
+          }
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "unsweetened, for dusting",
+            "de": "ungesüßt, zum Bestäuben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brew the espresso, pour it into a shallow dish and let it cool for 10 minutes. lukewarm is fine, hot is not.",
+            "de": "Brüh den Espresso, gieß ihn in eine flache Schale und lass ihn 10 Minuten abkühlen. Lauwarm ist okay, heiß nicht."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "whisk the greek yogurt, cream cheese, powdered sugar and vanilla for 3 minutes until thick, smooth and glossy. it should hold its shape on the whisk.",
+            "de": "Schlage griechischen Joghurt, Frischkäse, Puderzucker und Vanille 3 Minuten, bis die Creme dick, glatt und glänzend ist. Sie sollte am Schneebesen ihre Form halten."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "dip half the ladyfingers briefly into the espresso — one second per side — and line the bottom of a 20 x 20 cm dish with them.",
+            "de": "Tauche die Hälfte der Löffelbiskuits kurz in den Espresso – eine Sekunde pro Seite – und lege damit den Boden einer Form von etwa 20 x 20 cm aus."
+          }
+        },
+        {
+          "text": {
+            "en": "spread half the cream over the biscuits, repeat with the remaining dipped ladyfingers, then finish with the rest of the cream and smooth the top.",
+            "de": "Verteile die Hälfte der Creme auf den Biskuits, wiederhole das Ganze mit den restlichen getauchten Löffelbiskuits und schließe mit der übrigen Creme ab. Oberfläche glatt streichen."
+          }
+        },
+        {
+          "text": {
+            "en": "chill for at least 30 minutes — longer if you can stand it — and dust with cocoa just before serving. lighter, yes. lesser, absolutely not.",
+            "de": "Mindestens 30 Minuten kalt stellen – länger, wenn du es aushältst – und erst kurz vor dem Servieren mit Kakao bestäuben. Leichter, ja. Weniger gut? Auf keinen Fall."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "light",
+          "coffee"
+        ],
+        "de": [
+          "Dessert",
+          "leicht",
+          "Kaffee"
+        ]
+      }
     }
   ]
 }

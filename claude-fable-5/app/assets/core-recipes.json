@@ -4496,6 +4496,807 @@
           "Cashew"
         ]
       }
+    },
+    {
+      "id": "omelette-classic",
+      "dish_id": "omelette",
+      "title": {
+        "en": "classic french omelette",
+        "de": "Klassisches Omelett"
+      },
+      "caption": {
+        "en": "soft middle, pale outside, ninety seconds",
+        "de": "innen weich, außen blass, neunzig Sekunden"
+      },
+      "intro": {
+        "en": "three eggs, a knob of butter, a pan you trust. once the butter foams the whole thing takes about ninety seconds — low heat, small circles, no color. and if it tears, congratulations, you've made very good scrambled eggs. still breakfast.",
+        "de": "Drei Eier, ein Stück Butter, eine Pfanne, der du vertraust. Sobald die Butter schäumt, dauert das Ganze keine zwei Minuten — niedrige Hitze, kleine Kreise, bloß keine Farbe. Und falls es reißt: Glückwunsch, du hast sehr gutes Rührei gemacht. Frühstück bleibt es trotzdem."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 15,
+      "servings": 1,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 19,
+        "carbs_g": 2,
+        "fat_g": 27
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chives",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "finely snipped",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crack the eggs into a bowl with the salt and whisk until completely smooth — no streaks of white left. then let them sit. salted eggs turn silkier, and silkier is the whole point.",
+            "de": "Schlag die Eier mit dem Salz in eine Schüssel und verquirle sie, bis keine Eiweißschlieren mehr zu sehen sind. Dann lass sie kurz stehen. Gesalzene Eier werden seidiger, und seidig ist hier der ganze Sinn."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "melt the butter in a small nonstick pan over medium-low heat until it foams. it should never brown — turn the heat down if it threatens to.",
+            "de": "Schmilz die Butter in einer kleinen beschichteten Pfanne bei mittlerer bis niedriger Hitze, bis sie schäumt. Sie darf auf keinen Fall bräunen — dreh runter, sobald sie es versucht."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the eggs and stir gently with a spatula in small circles while shaking the pan, until they are softly set but still glossy on top — about 2 minutes. trust the wobble.",
+            "de": "Gieß die Eier hinein und rühre mit dem Spatel in kleinen Kreisen, während du die Pfanne leicht bewegst, bis sie weich gestockt sind, aber oben noch glänzen — etwa 2 Minuten. Vertrau dem Wackeln."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "off the heat, scatter the chives and a little pepper over the middle, then fold the omelette in thirds with the spatula.",
+            "de": "Nimm die Pfanne vom Herd, streu Schnittlauch und etwas Pfeffer über die Mitte und falte das Omelett mit dem Spatel in Drittel."
+          }
+        },
+        {
+          "text": {
+            "en": "roll it onto a warm plate, seam-side down. eat immediately — an omelette waits for no one.",
+            "de": "Roll es mit der Naht nach unten auf einen vorgewärmten Teller. Sofort essen — ein Omelett wartet auf niemanden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "french",
+          "eggs"
+        ],
+        "de": [
+          "Frühstück",
+          "französisch",
+          "Eier"
+        ]
+      }
+    },
+    {
+      "id": "omelette-vegan",
+      "dish_id": "omelette",
+      "title": {
+        "en": "chickpea flour omelette",
+        "de": "Kichererbsen-Omelett"
+      },
+      "caption": {
+        "en": "gram flour, quietly doing egg things",
+        "de": "Kichererbsenmehl kann auch Omelett"
+      },
+      "intro": {
+        "en": "gram flour whisked with turmeric and nutritional yeast sets up just like egg — tender in the middle, golden at the edges, sunshine yellow all the way through. give the batter its ten minutes of rest. the flour drinks the water and stops tasting raw, and that pause is the whole recipe.",
+        "de": "Kichererbsenmehl, mit Kurkuma und Hefeflocken verquirlt, stockt fast wie Ei — zart in der Mitte, golden am Rand, durch und durch sonnengelb. Gönn dem Teig seine zehn Minuten Ruhe. Das Mehl trinkt das Wasser und verliert den rohen Geschmack, und diese Pause ist eigentlich das ganze Rezept."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 310,
+      "macros": {
+        "calories": 310,
+        "protein_g": 14,
+        "carbs_g": 33,
+        "fat_g": 11
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gram-flour",
+          "qty": 110,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "green parts, finely sliced",
+            "de": "das Grün, in feine Ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "seeded and diced",
+            "de": "entkernt und gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the gram flour, nutritional yeast, turmeric, salt and pepper with 240 ml water until completely smooth — it should pour like pancake batter.",
+            "de": "Verquirle Kichererbsenmehl, Hefeflocken, Kurkuma, Salz und Pfeffer mit 240 ml Wasser, bis der Teig ganz glatt ist — er sollte wie Pfannkuchenteig fließen."
+          }
+        },
+        {
+          "text": {
+            "en": "let the batter rest. the flour needs this to soften and lose its raw edge — skip it and you'll taste the difference.",
+            "de": "Lass den Teig ruhen. Das Mehl braucht diese Zeit, um zu quellen und den rohen Beigeschmack zu verlieren — wenn du sie überspringst, schmeckst du es."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "stir the spring onion greens and tomato into the batter.",
+            "de": "Rühre das Frühlingszwiebelgrün und die Tomate unter den Teig."
+          }
+        },
+        {
+          "text": {
+            "en": "heat half the oil in a nonstick pan over medium heat. pour in half the batter, swirl it flat, put a lid on and cook until the top looks set and the underside is golden, 3-4 minutes.",
+            "de": "Erhitze die Hälfte des Öls in einer beschichteten Pfanne bei mittlerer Hitze. Gieß die Hälfte des Teigs hinein, verteile ihn flach, Deckel drauf und backen, bis die Oberseite gestockt und die Unterseite golden ist, 3-4 Minuten."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "fold in half, slide onto a plate, and repeat with the remaining oil and batter. the second one is always prettier. that's just how it goes.",
+            "de": "Zusammenklappen, auf einen Teller gleiten lassen und mit dem restlichen Öl und Teig wiederholen. Das zweite wird immer schöner. Das ist einfach so."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "vegan",
+          "chickpea"
+        ],
+        "de": [
+          "Frühstück",
+          "vegan",
+          "Kichererbse"
+        ]
+      }
+    },
+    {
+      "id": "omelette-protein",
+      "dish_id": "omelette",
+      "title": {
+        "en": "cottage cheese & spinach omelette",
+        "de": "Omelett mit Hüttenkäse und Spinat"
+      },
+      "caption": {
+        "en": "breakfast that lifts back",
+        "de": "Frühstück, das mittrainiert"
+      },
+      "intro": {
+        "en": "three eggs, a generous spoonful of cottage cheese, a handful of wilted spinach — over thirty grams of protein folded into something that still feels like a soft sunday morning. the cottage cheese melts into little creamy pockets. keep them.",
+        "de": "Drei Eier, ein großzügiger Löffel Hüttenkäse, eine Handvoll Spinat — über dreißig Gramm Protein, eingefaltet in etwas, das sich trotzdem nach einem weichen Sonntagmorgen anfühlt. Der Hüttenkäse schmilzt zu kleinen cremigen Inseln. Lass sie ihm."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "high-protein",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 15,
+      "servings": 1,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 33,
+        "carbs_g": 5,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cottage-cheese",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "drained if watery",
+            "de": "abgetropft, falls wässrig"
+          }
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chives",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "finely snipped",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "wilt the spinach in half the butter over medium heat until it collapses, about 2 minutes. tip it onto a plate and wipe the pan dry.",
+            "de": "Lass den Spinat in der Hälfte der Butter bei mittlerer Hitze zusammenfallen, etwa 2 Minuten. Auf einen Teller geben und die Pfanne trocken wischen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "whisk the eggs with the salt and pepper until smooth, no streaks of white.",
+            "de": "Verquirle die Eier mit Salz und Pfeffer, bis keine Eiweißschlieren mehr zu sehen sind."
+          }
+        },
+        {
+          "text": {
+            "en": "melt the remaining butter over medium-low heat, pour in the eggs and stir in small circles until softly set but still glossy on top, about 2 minutes.",
+            "de": "Schmilz die restliche Butter bei mittlerer bis niedriger Hitze, gieß die Eier hinein und rühre in kleinen Kreisen, bis sie weich gestockt sind, aber oben noch glänzen — etwa 2 Minuten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "spoon the cottage cheese and spinach down the middle, then fold the omelette over. the residual heat warms the filling without melting it flat.",
+            "de": "Verteile Hüttenkäse und Spinat in der Mitte und klappe das Omelett darüber. Die Restwärme wärmt die Füllung, ohne sie platt zu schmelzen."
+          }
+        },
+        {
+          "text": {
+            "en": "slide onto a plate, shower with chives, eat while it still trembles.",
+            "de": "Auf einen Teller gleiten lassen, mit Schnittlauch bestreuen und essen, solange es noch zittert."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "high-protein",
+          "fitness"
+        ],
+        "de": [
+          "Frühstück",
+          "proteinreich",
+          "Fitness"
+        ]
+      }
+    },
+    {
+      "id": "smoothie-bowl-classic",
+      "dish_id": "smoothie-bowl",
+      "title": {
+        "en": "berry yogurt smoothie bowl",
+        "de": "Smoothie Bowl mit Beeren und Joghurt"
+      },
+      "caption": {
+        "en": "thick enough to hold its toppings",
+        "de": "so dick, dass die Toppings halten"
+      },
+      "intro": {
+        "en": "the secret is less liquid than feels reasonable. frozen berries, a banana, thick greek yogurt and just a splash of milk — blend until the machine complains a little, then stop. honey on top, toasted oats for crunch, spoon required.",
+        "de": "Das Geheimnis ist weniger Flüssigkeit, als sich vernünftig anfühlt. Gefrorene Beeren, eine Banane, dicker griechischer Joghurt und nur ein Schluck Milch — mixen, bis der Mixer ein bisschen meckert, dann aufhören. Honig obendrauf, geröstete Haferflocken für den Crunch, Löffel zwingend nötig."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "honey",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "raw"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 10,
+      "servings": 1,
+      "calories_per_serving": 340,
+      "macros": {
+        "calories": 340,
+        "protein_g": 12,
+        "carbs_g": 55,
+        "fat_g": 8
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "berries",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "frozen",
+            "de": "tiefgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "honey-ing",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oats",
+          "qty": 20,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "take the berries out of the freezer and let them soften slightly while your serving bowl chills in their place. a cold bowl buys you minutes before everything melts.",
+            "de": "Nimm die Beeren aus dem Gefrierfach und lass sie leicht antauen, während deine Servierschüssel an ihrer Stelle kalt wird. Eine kalte Schüssel schenkt dir Minuten, bevor alles schmilzt."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "toast the oats in a dry pan over medium heat, stirring, until they smell nutty and turn a shade darker.",
+            "de": "Röste die Haferflocken in einer trockenen Pfanne bei mittlerer Hitze unter Rühren, bis sie nussig duften und eine Spur dunkler sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "blend the berries, banana, yogurt, milk and 1 teaspoon of the honey until thick and smooth. scrape down the sides and be patient — patience beats more milk every time.",
+            "de": "Mixe Beeren, Banane, Joghurt, Milch und 1 Teelöffel vom Honig dick und glatt. Schieb die Masse zwischendurch mit dem Spatel nach unten und bleib geduldig — Geduld schlägt mehr Milch, jedes Mal."
+          }
+        },
+        {
+          "text": {
+            "en": "pour into the cold bowl, drizzle with the remaining honey, scatter the toasted oats on top and eat before the pretty part melts.",
+            "de": "In die kalte Schüssel füllen, mit dem restlichen Honig beträufeln, die gerösteten Haferflocken darüberstreuen und essen, bevor der hübsche Teil schmilzt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "fruity",
+          "bowl"
+        ],
+        "de": [
+          "Frühstück",
+          "fruchtig",
+          "Bowl"
+        ]
+      }
+    },
+    {
+      "id": "smoothie-bowl-vegan",
+      "dish_id": "smoothie-bowl",
+      "title": {
+        "en": "coconut berry smoothie bowl",
+        "de": "Kokos-Beeren Smoothie Bowl"
+      },
+      "caption": {
+        "en": "pink enough to photograph first",
+        "de": "rosa genug fürs Foto vorher"
+      },
+      "intro": {
+        "en": "coconut yogurt makes this one rich without any dairy doing the work, and chia seeds soaked in oat milk thicken it into proper spoon territory. maple syrup goes on at the end where you can actually taste it. ten minutes, most of them waiting.",
+        "de": "Kokosjoghurt macht diese Bowl cremig, ganz ohne Milchprodukte, und in Hafermilch gequollene Chiasamen dicken sie in echtes Löffel-Terrain ein. Der Ahornsirup kommt zum Schluss obendrauf, da, wo du ihn wirklich schmeckst. Zehn Minuten, die meisten davon Warten."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "raw"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 10,
+      "servings": 1,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 5,
+        "carbs_g": 50,
+        "fat_g": 12
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "berries",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "frozen",
+            "de": "tiefgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "coconut-yogurt",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "chia-seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the chia seeds into the oat milk and let them swell. they'll turn the milk slightly gel-like — that's the thickener for the whole bowl.",
+            "de": "Rühre die Chiasamen in die Hafermilch und lass sie quellen. Die Milch wird dabei leicht gelartig — das ist das Bindemittel für die ganze Bowl."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "meanwhile, let the frozen berries sit out so the blender won't have to fight them.",
+            "de": "Lass währenddessen die gefrorenen Beeren antauen, damit der Mixer nicht gegen sie ankämpfen muss."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "blend the berries, banana and coconut yogurt, then add the chia milk and blend again until thick and smooth. it should mound on a spoon, not pour off it.",
+            "de": "Mixe Beeren, Banane und Kokosjoghurt, gib dann die Chia-Milch dazu und mixe weiter, bis alles dick und glatt ist. Die Masse sollte sich auf dem Löffel türmen, statt herunterzulaufen."
+          }
+        },
+        {
+          "text": {
+            "en": "scrape into a bowl, drizzle with the maple syrup and top with whatever is pretty — a few saved berries, a banana coin or three. photograph fast, eat faster.",
+            "de": "In eine Schüssel füllen, mit dem Ahornsirup beträufeln und mit allem toppen, was hübsch ist — ein paar zurückbehaltene Beeren, zwei, drei Bananenscheiben. Schnell fotografieren, schneller essen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "vegan",
+          "bowl"
+        ],
+        "de": [
+          "Frühstück",
+          "vegan",
+          "Bowl"
+        ]
+      }
+    },
+    {
+      "id": "smoothie-bowl-protein",
+      "dish_id": "smoothie-bowl",
+      "title": {
+        "en": "protein smoothie bowl",
+        "de": "Protein Smoothie Bowl"
+      },
+      "caption": {
+        "en": "tastes like ice cream, counts as protein",
+        "de": "schmeckt wie Eis, zählt als Protein"
+      },
+      "intro": {
+        "en": "a frozen banana does all the sweetening here — there's no syrup anywhere in this bowl and you won't miss it. whey, greek yogurt and a splash of milk blend into something suspiciously close to soft serve. thirty-five grams of protein before your coffee is even cold.",
+        "de": "Eine gefrorene Banane übernimmt hier das komplette Süßen — in dieser Bowl steckt nirgendwo Sirup, und er fehlt dir auch nicht. Whey, griechischer Joghurt und ein Schluck Milch werden zusammen verdächtig nah an Softeis. Fünfunddreißig Gramm Protein, bevor dein Kaffee überhaupt kalt ist."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "high-protein",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le15",
+        "le400",
+        "raw"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 10,
+      "servings": 1,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 35,
+        "carbs_g": 45,
+        "fat_g": 7
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "frozen in chunks",
+            "de": "in Stücken eingefroren"
+          }
+        },
+        {
+          "ingredient_id": "protein-powder",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "vanilla works best",
+            "de": "Vanille passt am besten"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "skim-milk",
+          "qty": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "oats",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toast the oats in a dry pan over medium heat, stirring, until golden and nutty. set aside to cool — they're the crunch later.",
+            "de": "Röste die Haferflocken in einer trockenen Pfanne bei mittlerer Hitze unter Rühren, bis sie golden und nussig sind. Beiseitestellen und abkühlen lassen — sie sind später der Crunch."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "let the frozen banana chunks sit at room temperature so the blender can actually get through them.",
+            "de": "Lass die gefrorenen Bananenstücke kurz bei Zimmertemperatur antauen, damit der Mixer überhaupt durchkommt."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "blend the banana, protein powder, yogurt and milk until thick and creamy, scraping down the sides as needed. aim for soft-serve, stop before milkshake.",
+            "de": "Mixe Banane, Proteinpulver, Joghurt und Milch dick und cremig, schieb die Masse zwischendurch mit dem Spatel nach unten. Ziel ist Softeis — hör auf, bevor es Milchshake wird."
+          }
+        },
+        {
+          "text": {
+            "en": "spoon into a bowl, dust with cinnamon and scatter the toasted oats on top. the banana did all the sweetening. give it some credit.",
+            "de": "In eine Schüssel füllen, mit Zimt bestäuben und die gerösteten Haferflocken darüberstreuen. Die Banane hat das ganze Süßen übernommen. Gönn ihr die Anerkennung."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "high-protein",
+          "fitness"
+        ],
+        "de": [
+          "Frühstück",
+          "proteinreich",
+          "Fitness"
+        ]
+      }
     }
   ]
 }

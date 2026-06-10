@@ -4,157 +4,2469 @@
     {
       "id": "wellington-classic",
       "dish_id": "beef-wellington",
-      "title": {"en": "classic beef wellington", "de": "Klassisches Beef Wellington"},
-      "caption": {"en": "the centerpiece. breathe. you've got this.", "de": "das Herzstück. atmen. du schaffst das."},
+      "title": {
+        "en": "classic beef wellington",
+        "de": "Klassisches Beef Wellington"
+      },
+      "caption": {
+        "en": "the centerpiece. breathe. you've got this.",
+        "de": "das Herzstück. atmen. du schaffst das."
+      },
       "intro": {
         "en": "this is the project recipe — the one you clear an afternoon for. seared fillet, a deep madeira duxelles, and pastry that shatters when the knife goes in. every chill step exists for a reason. skip none of them, and the first slice will be the best thing you've ever pulled off.",
         "de": "Das hier ist das Projekt-Rezept — das, für das du dir einen Nachmittag freihältst. Scharf angebratenes Filet, eine tiefe Madeira-Duxelles und Blätterteig, der unter dem Messer splittert. Jeder Kühlschritt hat seinen Grund. Lass keinen aus, und der erste Anschnitt wird das Beste, was du je hinbekommen hast."
       },
-      "variant": {"diet": "classic", "effort": "hard", "calorie": "gt800"},
-      "contains": ["beef", "gluten", "dairy", "egg", "mustard", "alcohol", "sulphites", "high-fodmap"],
-      "attributes": ["kosher", "sugar-free", "nut-free", "hard", "gt60", "gt800", "pan-fry", "saute", "bake"],
-      "meal": ["dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "gt800"
+      },
+      "contains": [
+        "beef",
+        "gluten",
+        "dairy",
+        "egg",
+        "mustard",
+        "alcohol",
+        "sulphites",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "gt800",
+        "pan-fry",
+        "saute",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
       "time_minutes": 150,
       "servings": 6,
       "calories_per_serving": 880,
-      "macros": {"calories": 880, "protein_g": 48, "carbs_g": 42, "fat_g": 52},
+      "macros": {
+        "calories": 880,
+        "protein_g": 48,
+        "carbs_g": 42,
+        "fat_g": 52
+      },
       "ingredients": [
-        {"ingredient_id": "beef-fillet", "qty": 800, "unit": "g", "note": {"en": "center-cut, even thickness", "de": "Mittelstück, gleichmäßig dick"}},
-        {"ingredient_id": "puff-pastry", "qty": 500, "unit": "g", "note": {"en": "all-butter, cold", "de": "mit Butter, gut gekühlt"}},
-        {"ingredient_id": "button-mushroom", "qty": 500, "unit": "g"},
-        {"ingredient_id": "shallot", "qty": 2, "unit": "piece", "note": {"en": "finely chopped", "de": "fein gewürfelt"}},
-        {"ingredient_id": "madeira", "qty": 80, "unit": "ml"},
-        {"ingredient_id": "dijon-mustard", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}},
-        {"ingredient_id": "thyme", "qty": 4, "unit": "sprig"},
-        {"ingredient_id": "butter", "qty": 30, "unit": "g"},
-        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"}
+        {
+          "ingredient_id": "beef-fillet",
+          "qty": 800,
+          "unit": "g",
+          "note": {
+            "en": "center-cut, even thickness",
+            "de": "Mittelstück, gleichmäßig dick"
+          }
+        },
+        {
+          "ingredient_id": "puff-pastry",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "all-butter, cold",
+            "de": "mit Butter, gut gekühlt"
+          }
+        },
+        {
+          "ingredient_id": "button-mushroom",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shallot",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "madeira",
+          "qty": 80,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "beaten, for the wash",
+            "de": "verquirlt, zum Bestreichen"
+          }
+        },
+        {
+          "ingredient_id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
       ],
       "steps": [
-        {"text": {"en": "pat the fillet bone-dry and season it hard with salt and pepper. sear it in screaming-hot olive oil, about ninety seconds per side, until every surface is deep brown. brush it all over with the dijon while it's still warm, then set it aside to cool completely.", "de": "Das Filet richtig trocken tupfen und kräftig mit Salz und Pfeffer würzen. In rauchend heißem Olivenöl rundherum scharf anbraten, etwa neunzig Sekunden pro Seite, bis jede Fläche tief gebräunt ist. Noch warm rundum mit Dijon-Senf bestreichen und vollständig abkühlen lassen."}},
-        {"text": {"en": "blitz the mushrooms and shallots to fine crumbs. cook them in the butter with the thyme leaves over medium-high heat until every drop of moisture is gone, then pour in the madeira and keep cooking until the pan is dry again. this is the duxelles — it should be a dark, intense paste.", "de": "Champignons und Schalotten fein häckseln. Mit den Thymianblättchen in der Butter bei mittelhoher Hitze braten, bis jeder Tropfen Flüssigkeit verschwunden ist, dann den Madeira angießen und weiterkochen, bis die Pfanne wieder trocken ist. Das ist die Duxelles — eine dunkle, intensive Paste."}, "timer_minutes": 20},
-        {"text": {"en": "spread the cooled duxelles over the cooled fillet and wrap the whole thing tightly in cling film into a neat log. the butter must stay cold and so must the beef.", "de": "Die abgekühlte Duxelles auf dem abgekühlten Filet verteilen und alles straff in Frischhaltefolie zu einer sauberen Rolle wickeln. Die Butter muss kalt bleiben, das Fleisch auch."}},
-        {"text": {"en": "roll the pastry to a rectangle big enough to wrap the log with overlap. unwrap the beef, set it in the middle, fold the pastry around it and seal the seam underneath. chill the whole parcel — cold pastry is the difference between shatter and sog.", "de": "Den Teig zu einem Rechteck ausrollen, das die Rolle mit Überlappung umschließt. Das Filet auswickeln, in die Mitte legen, den Teig darum falten und die Naht nach unten verschließen. Das ganze Paket kühlen — kalter Teig entscheidet zwischen Splittern und Durchweichen."}, "timer_minutes": 30},
-        {"text": {"en": "heat the oven to 210°C. brush the parcel generously with the beaten egg, score a light pattern into the top with the back of a knife and sprinkle with flaky salt.", "de": "Den Ofen auf 210 °C vorheizen. Das Paket großzügig mit dem verquirlten Ei bestreichen, mit dem Messerrücken ein feines Muster in die Oberfläche ritzen und mit etwas grobem Salz bestreuen."}},
-        {"text": {"en": "bake until the pastry is deep golden and the core reads 48–50°C on a thermometer for rosy medium-rare.", "de": "Backen, bis der Teig tief goldbraun ist und das Thermometer im Kern 48–50 °C zeigt — für ein rosiges Medium Rare."}, "timer_minutes": 35},
-        {"text": {"en": "rest it on a board before you even think about slicing. then cut thick slices with your longest knife and accept the applause.", "de": "Auf einem Brett ruhen lassen, bevor du auch nur ans Anschneiden denkst. Dann mit deinem längsten Messer dicke Scheiben schneiden und den Applaus annehmen."}, "timer_minutes": 15}
+        {
+          "text": {
+            "en": "pat the fillet bone-dry and season it hard with salt and pepper. sear it in screaming-hot olive oil, about ninety seconds per side, until every surface is deep brown. brush it all over with the dijon while it's still warm, then set it aside to cool completely.",
+            "de": "Das Filet richtig trocken tupfen und kräftig mit Salz und Pfeffer würzen. In rauchend heißem Olivenöl rundherum scharf anbraten, etwa neunzig Sekunden pro Seite, bis jede Fläche tief gebräunt ist. Noch warm rundum mit Dijon-Senf bestreichen und vollständig abkühlen lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "blitz the mushrooms and shallots to fine crumbs. cook them in the butter with the thyme leaves over medium-high heat until every drop of moisture is gone, then pour in the madeira and keep cooking until the pan is dry again. this is the duxelles — it should be a dark, intense paste.",
+            "de": "Champignons und Schalotten fein häckseln. Mit den Thymianblättchen in der Butter bei mittelhoher Hitze braten, bis jeder Tropfen Flüssigkeit verschwunden ist, dann den Madeira angießen und weiterkochen, bis die Pfanne wieder trocken ist. Das ist die Duxelles — eine dunkle, intensive Paste."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "spread the cooled duxelles over the cooled fillet and wrap the whole thing tightly in cling film into a neat log. the butter must stay cold and so must the beef.",
+            "de": "Die abgekühlte Duxelles auf dem abgekühlten Filet verteilen und alles straff in Frischhaltefolie zu einer sauberen Rolle wickeln. Die Butter muss kalt bleiben, das Fleisch auch."
+          }
+        },
+        {
+          "text": {
+            "en": "roll the pastry to a rectangle big enough to wrap the log with overlap. unwrap the beef, set it in the middle, fold the pastry around it and seal the seam underneath. chill the whole parcel — cold pastry is the difference between shatter and sog.",
+            "de": "Den Teig zu einem Rechteck ausrollen, das die Rolle mit Überlappung umschließt. Das Filet auswickeln, in die Mitte legen, den Teig darum falten und die Naht nach unten verschließen. Das ganze Paket kühlen — kalter Teig entscheidet zwischen Splittern und Durchweichen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "heat the oven to 210°C. brush the parcel generously with the beaten egg, score a light pattern into the top with the back of a knife and sprinkle with flaky salt.",
+            "de": "Den Ofen auf 210 °C vorheizen. Das Paket großzügig mit dem verquirlten Ei bestreichen, mit dem Messerrücken ein feines Muster in die Oberfläche ritzen und mit etwas grobem Salz bestreuen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake until the pastry is deep golden and the core reads 48–50°C on a thermometer for rosy medium-rare.",
+            "de": "Backen, bis der Teig tief goldbraun ist und das Thermometer im Kern 48–50 °C zeigt — für ein rosiges Medium Rare."
+          },
+          "timer_minutes": 35
+        },
+        {
+          "text": {
+            "en": "rest it on a board before you even think about slicing. then cut thick slices with your longest knife and accept the applause.",
+            "de": "Auf einem Brett ruhen lassen, bevor du auch nur ans Anschneiden denkst. Dann mit deinem längsten Messer dicke Scheiben schneiden und den Applaus annehmen."
+          },
+          "timer_minutes": 15
+        }
       ],
-      "tags": {"en": ["celebration", "project bake", "showstopper"], "de": ["Festessen", "Projekt", "Showstopper"]}
+      "tags": {
+        "en": [
+          "celebration",
+          "project bake",
+          "showstopper"
+        ],
+        "de": [
+          "Festessen",
+          "Projekt",
+          "Showstopper"
+        ]
+      }
     },
     {
       "id": "wellington-mushroom",
       "dish_id": "beef-wellington",
-      "title": {"en": "mushroom wellington", "de": "Pilz-Wellington"},
-      "caption": {"en": "the forest, wrapped in gold", "de": "der Wald, in Gold gewickelt"},
+      "title": {
+        "en": "mushroom wellington",
+        "de": "Pilz-Wellington"
+      },
+      "caption": {
+        "en": "the forest, wrapped in gold",
+        "de": "der Wald, in Gold gewickelt"
+      },
       "intro": {
         "en": "roasted portobellos stacked over a deep lentil-walnut filling, all of it wrapped in pastry like a present. this isn't the understudy — it's its own headliner, savory and dark and worth every fold. bring it to the table whole and cut it where everyone can see.",
         "de": "Geröstete Portobellos auf einer kräftigen Linsen-Walnuss-Füllung, alles in Blätterteig gewickelt wie ein Geschenk. Das hier ist keine Zweitbesetzung — es ist ein eigener Hauptact, würzig und dunkel und jede Falte wert. Bring es im Ganzen an den Tisch und schneide es an, wo alle zusehen können."
       },
-      "variant": {"diet": "vegetarian", "effort": "hard", "calorie": "le800"},
-      "contains": ["gluten", "dairy", "egg", "tree-nuts", "walnuts", "sulphites", "high-fodmap"],
-      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "hard", "gt60", "le800", "roast", "saute", "bake"],
-      "meal": ["dinner"],
+      "variant": {
+        "diet": "vegetarian",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "tree-nuts",
+        "walnuts",
+        "sulphites",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "hard",
+        "gt60",
+        "le800",
+        "roast",
+        "saute",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
       "time_minutes": 120,
       "servings": 4,
       "calories_per_serving": 640,
-      "macros": {"calories": 640, "protein_g": 22, "carbs_g": 58, "fat_g": 35},
+      "macros": {
+        "calories": 640,
+        "protein_g": 22,
+        "carbs_g": 58,
+        "fat_g": 35
+      },
       "ingredients": [
-        {"ingredient_id": "portobello", "qty": 4, "unit": "piece", "note": {"en": "stems removed", "de": "Stiele entfernt"}},
-        {"ingredient_id": "red-lentils", "qty": 150, "unit": "g"},
-        {"ingredient_id": "puff-pastry", "qty": 400, "unit": "g", "note": {"en": "all-butter, cold", "de": "mit Butter, gut gekühlt"}},
-        {"ingredient_id": "onion", "qty": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
-        {"ingredient_id": "garlic", "qty": 2, "unit": "clove"},
-        {"ingredient_id": "walnuts-ing", "qty": 60, "unit": "g", "note": {"en": "toasted, chopped", "de": "geröstet, gehackt"}},
-        {"ingredient_id": "thyme", "qty": 3, "unit": "sprig"},
-        {"ingredient_id": "balsamic-vinegar", "qty": 1, "unit": "tbsp"},
-        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}},
-        {"ingredient_id": "olive-oil", "qty": 2, "unit": "tbsp"}
+        {
+          "ingredient_id": "portobello",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "stems removed",
+            "de": "Stiele entfernt"
+          }
+        },
+        {
+          "ingredient_id": "red-lentils",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "puff-pastry",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "all-butter, cold",
+            "de": "mit Butter, gut gekühlt"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "walnuts-ing",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "toasted, chopped",
+            "de": "geröstet, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "thyme",
+          "qty": 3,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "balsamic-vinegar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "beaten, for the wash",
+            "de": "verquirlt, zum Bestreichen"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
       ],
       "steps": [
-        {"text": {"en": "heat the oven to 220°C. rub the portobellos with olive oil and salt and roast them gill-side down until they've given up their water. drain them on a kitchen towel — a wet mushroom is the enemy of crisp pastry.", "de": "Den Ofen auf 220 °C vorheizen. Die Portobellos mit Olivenöl und Salz einreiben und mit den Lamellen nach unten rösten, bis sie ihr Wasser abgegeben haben. Auf einem Küchentuch abtropfen lassen — ein nasser Pilz ist der Feind von knusprigem Teig."}, "timer_minutes": 15},
-        {"text": {"en": "simmer the red lentils in lightly salted water until soft, then drain them very well.", "de": "Die roten Linsen in leicht gesalzenem Wasser weich köcheln, dann sehr gut abtropfen lassen."}, "timer_minutes": 15},
-        {"text": {"en": "sauté the onion and garlic in olive oil until golden, then stir in the lentils, walnuts, thyme leaves and balsamic. cook until it's a thick, spoonable paste, season boldly, and let it cool completely.", "de": "Zwiebel und Knoblauch in Olivenöl goldgelb anbraten, dann Linsen, Walnüsse, Thymianblättchen und Balsamico einrühren. Zu einer dicken, streichfähigen Paste einkochen, mutig abschmecken und vollständig abkühlen lassen."}},
-        {"text": {"en": "roll the pastry into a rectangle. spread the lentil filling down the middle, stack the portobellos on top like a roof, then fold the pastry over and seal the seam underneath. chill the parcel so it holds its nerve in the oven.", "de": "Den Teig zu einem Rechteck ausrollen. Die Linsenfüllung mittig aufstreichen, die Portobellos wie ein Dach daraufschichten, dann den Teig darüber falten und die Naht nach unten verschließen. Das Paket kühlen, damit es im Ofen die Nerven behält."}, "timer_minutes": 20},
-        {"text": {"en": "brush with the beaten egg, score a pattern in the top and bake at 200°C until deeply golden.", "de": "Mit dem verquirlten Ei bestreichen, ein Muster in die Oberfläche ritzen und bei 200 °C tief goldbraun backen."}, "timer_minutes": 30},
-        {"text": {"en": "rest for ten minutes, then slice thick. the layers — pastry, lentil, mushroom — should read like geology.", "de": "Zehn Minuten ruhen lassen, dann in dicke Scheiben schneiden. Die Schichten — Teig, Linsen, Pilz — sollten lesbar sein wie Gesteinsschichten."}}
+        {
+          "text": {
+            "en": "heat the oven to 220°C. rub the portobellos with olive oil and salt and roast them gill-side down until they've given up their water. drain them on a kitchen towel — a wet mushroom is the enemy of crisp pastry.",
+            "de": "Den Ofen auf 220 °C vorheizen. Die Portobellos mit Olivenöl und Salz einreiben und mit den Lamellen nach unten rösten, bis sie ihr Wasser abgegeben haben. Auf einem Küchentuch abtropfen lassen — ein nasser Pilz ist der Feind von knusprigem Teig."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "simmer the red lentils in lightly salted water until soft, then drain them very well.",
+            "de": "Die roten Linsen in leicht gesalzenem Wasser weich köcheln, dann sehr gut abtropfen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "sauté the onion and garlic in olive oil until golden, then stir in the lentils, walnuts, thyme leaves and balsamic. cook until it's a thick, spoonable paste, season boldly, and let it cool completely.",
+            "de": "Zwiebel und Knoblauch in Olivenöl goldgelb anbraten, dann Linsen, Walnüsse, Thymianblättchen und Balsamico einrühren. Zu einer dicken, streichfähigen Paste einkochen, mutig abschmecken und vollständig abkühlen lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "roll the pastry into a rectangle. spread the lentil filling down the middle, stack the portobellos on top like a roof, then fold the pastry over and seal the seam underneath. chill the parcel so it holds its nerve in the oven.",
+            "de": "Den Teig zu einem Rechteck ausrollen. Die Linsenfüllung mittig aufstreichen, die Portobellos wie ein Dach daraufschichten, dann den Teig darüber falten und die Naht nach unten verschließen. Das Paket kühlen, damit es im Ofen die Nerven behält."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "brush with the beaten egg, score a pattern in the top and bake at 200°C until deeply golden.",
+            "de": "Mit dem verquirlten Ei bestreichen, ein Muster in die Oberfläche ritzen und bei 200 °C tief goldbraun backen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "rest for ten minutes, then slice thick. the layers — pastry, lentil, mushroom — should read like geology.",
+            "de": "Zehn Minuten ruhen lassen, dann in dicke Scheiben schneiden. Die Schichten — Teig, Linsen, Pilz — sollten lesbar sein wie Gesteinsschichten."
+          }
+        }
       ],
-      "tags": {"en": ["celebration", "vegetarian centerpiece", "project bake"], "de": ["Festessen", "vegetarisches Herzstück", "Projekt"]}
+      "tags": {
+        "en": [
+          "celebration",
+          "vegetarian centerpiece",
+          "project bake"
+        ],
+        "de": [
+          "Festessen",
+          "vegetarisches Herzstück",
+          "Projekt"
+        ]
+      }
     },
     {
       "id": "croissants-classic",
       "dish_id": "croissants",
-      "title": {"en": "classic butter croissants", "de": "Klassische Buttercroissants"},
-      "caption": {"en": "cold butter, warm heart, many layers", "de": "kalte Butter, warmes Herz, viele Schichten"},
+      "title": {
+        "en": "classic butter croissants",
+        "de": "Klassische Buttercroissants"
+      },
+      "caption": {
+        "en": "cold butter, warm heart, many layers",
+        "de": "kalte Butter, warmes Herz, viele Schichten"
+      },
       "intro": {
         "en": "most of these four hours are waiting, and the waiting is the recipe. you fold butter into dough three times, you keep everything cold, and one morning your kitchen smells like a street in paris. the first one you eat standing at the oven. that one doesn't count.",
         "de": "Die meisten dieser vier Stunden sind Warten, und das Warten ist das Rezept. Du faltest dreimal Butter in den Teig, hältst alles kalt, und eines Morgens riecht deine Küche wie eine Straße in Paris. Das erste isst du im Stehen direkt am Ofen. Das zählt nicht."
       },
-      "variant": {"diet": "classic", "effort": "hard", "calorie": "le400"},
-      "contains": ["gluten", "dairy", "egg", "added-sugar", "high-fodmap"],
-      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "nut-free", "hard", "gt60", "le400", "bake"],
-      "meal": ["breakfast"],
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "breakfast"
+      ],
       "time_minutes": 240,
       "servings": 12,
       "calories_per_serving": 310,
-      "macros": {"calories": 310, "protein_g": 6, "carbs_g": 31, "fat_g": 18},
+      "macros": {
+        "calories": 310,
+        "protein_g": 6,
+        "carbs_g": 31,
+        "fat_g": 18
+      },
       "ingredients": [
-        {"ingredient_id": "wheat-flour", "qty": 500, "unit": "g", "note": {"en": "plus more for rolling", "de": "plus etwas zum Ausrollen"}},
-        {"ingredient_id": "butter", "qty": 280, "unit": "g", "note": {"en": "30 g soft for the dough, 250 g cold for laminating", "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"}},
-        {"ingredient_id": "whole-milk", "qty": 140, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
-        {"ingredient_id": "sugar", "qty": 50, "unit": "g"},
-        {"ingredient_id": "yeast", "qty": 20, "unit": "g"},
-        {"ingredient_id": "salt", "qty": 2, "unit": "tsp"},
-        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}}
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "plus more for rolling",
+            "de": "plus etwas zum Ausrollen"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 280,
+          "unit": "g",
+          "note": {
+            "en": "30 g soft for the dough, 250 g cold for laminating",
+            "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"
+          }
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 140,
+          "unit": "ml",
+          "note": {
+            "en": "cold",
+            "de": "kalt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "yeast",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "beaten, for the wash",
+            "de": "verquirlt, zum Bestreichen"
+          }
+        }
       ],
       "steps": [
-        {"text": {"en": "dissolve the yeast in the cold milk plus 140 ml cold water. mix with the flour, sugar, salt and the 30 g of soft butter into a smooth dough — knead only until it comes together. flatten into a rectangle, wrap, and chill for an hour.", "de": "Die Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen. Mit Mehl, Zucker, Salz und den 30 g weicher Butter zu einem glatten Teig mischen — nur so lange kneten, bis er zusammenkommt. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."}, "timer_minutes": 60},
-        {"text": {"en": "pound the 250 g of cold butter between two sheets of baking paper into a 20 cm square. it should bend without breaking and stay cold. back into the fridge with it.", "de": "Die 250 g kalte Butter zwischen zwei Lagen Backpapier zu einem 20-cm-Quadrat klopfen. Sie soll sich biegen lassen, ohne zu brechen, und kalt bleiben. Ab zurück in den Kühlschrank damit."}},
-        {"text": {"en": "roll the dough into a rectangle twice the size of the butter square, set the butter in the middle and fold the dough over it like closing a book. roll out to 60 cm long, fold in thirds like a letter. that's fold one. chill.", "de": "Den Teig zu einem Rechteck doppelt so groß wie die Butterplatte ausrollen, die Butter in die Mitte legen und den Teig darüberklappen wie ein Buch. Auf 60 cm Länge ausrollen, wie einen Brief in Drittel falten. Das war Tour eins. Kühlen."}, "timer_minutes": 30},
-        {"text": {"en": "repeat the roll-and-letter-fold two more times, with a 30-minute chill between each. if the butter ever feels soft or smears, stop and chill — the layers are worth your patience.", "de": "Das Ausrollen und Brieffalten noch zweimal wiederholen, dazwischen jeweils 30 Minuten kühlen. Wenn die Butter weich wird oder schmiert: sofort aufhören und kühlen — die Schichten sind deine Geduld wert."}, "timer_minutes": 30},
-        {"text": {"en": "roll the dough out to about 4 mm thick and cut long triangles with a 9 cm base. stretch each one gently, then roll from base to tip and set on lined trays, tips tucked under.", "de": "Den Teig etwa 4 mm dick ausrollen und lange Dreiecke mit 9 cm Basis schneiden. Jedes sanft in die Länge ziehen, dann von der Basis zur Spitze aufrollen und mit der Spitze nach unten auf Bleche mit Backpapier setzen."}},
-        {"text": {"en": "proof at warm room temperature until they wobble like little waterbeds when you nudge the tray. do not rush this. they're sleeping.", "de": "Bei warmer Raumtemperatur gehen lassen, bis sie wackeln wie kleine Wasserbetten, wenn du das Blech anstupst. Nicht hetzen. Sie schlafen."}, "timer_minutes": 120},
-        {"text": {"en": "heat the oven to 200°C, brush the croissants gently with the beaten egg and bake until deep mahogany and audibly crisp.", "de": "Den Ofen auf 200 °C vorheizen, die Croissants vorsichtig mit dem verquirlten Ei bestreichen und backen, bis sie tief mahagonibraun und hörbar knusprig sind."}, "timer_minutes": 18},
-        {"text": {"en": "cool on a rack for ten minutes if you can stand it. the crackle when you tear one open is the whole reward.", "de": "Zehn Minuten auf einem Gitter abkühlen lassen, falls du es aushältst. Das Knistern beim Aufreißen ist die ganze Belohnung."}}
+        {
+          "text": {
+            "en": "dissolve the yeast in the cold milk plus 140 ml cold water. mix with the flour, sugar, salt and the 30 g of soft butter into a smooth dough — knead only until it comes together. flatten into a rectangle, wrap, and chill for an hour.",
+            "de": "Die Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen. Mit Mehl, Zucker, Salz und den 30 g weicher Butter zu einem glatten Teig mischen — nur so lange kneten, bis er zusammenkommt. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."
+          },
+          "timer_minutes": 60
+        },
+        {
+          "text": {
+            "en": "pound the 250 g of cold butter between two sheets of baking paper into a 20 cm square. it should bend without breaking and stay cold. back into the fridge with it.",
+            "de": "Die 250 g kalte Butter zwischen zwei Lagen Backpapier zu einem 20-cm-Quadrat klopfen. Sie soll sich biegen lassen, ohne zu brechen, und kalt bleiben. Ab zurück in den Kühlschrank damit."
+          }
+        },
+        {
+          "text": {
+            "en": "roll the dough into a rectangle twice the size of the butter square, set the butter in the middle and fold the dough over it like closing a book. roll out to 60 cm long, fold in thirds like a letter. that's fold one. chill.",
+            "de": "Den Teig zu einem Rechteck doppelt so groß wie die Butterplatte ausrollen, die Butter in die Mitte legen und den Teig darüberklappen wie ein Buch. Auf 60 cm Länge ausrollen, wie einen Brief in Drittel falten. Das war Tour eins. Kühlen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "repeat the roll-and-letter-fold two more times, with a 30-minute chill between each. if the butter ever feels soft or smears, stop and chill — the layers are worth your patience.",
+            "de": "Das Ausrollen und Brieffalten noch zweimal wiederholen, dazwischen jeweils 30 Minuten kühlen. Wenn die Butter weich wird oder schmiert: sofort aufhören und kühlen — die Schichten sind deine Geduld wert."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "roll the dough out to about 4 mm thick and cut long triangles with a 9 cm base. stretch each one gently, then roll from base to tip and set on lined trays, tips tucked under.",
+            "de": "Den Teig etwa 4 mm dick ausrollen und lange Dreiecke mit 9 cm Basis schneiden. Jedes sanft in die Länge ziehen, dann von der Basis zur Spitze aufrollen und mit der Spitze nach unten auf Bleche mit Backpapier setzen."
+          }
+        },
+        {
+          "text": {
+            "en": "proof at warm room temperature until they wobble like little waterbeds when you nudge the tray. do not rush this. they're sleeping.",
+            "de": "Bei warmer Raumtemperatur gehen lassen, bis sie wackeln wie kleine Wasserbetten, wenn du das Blech anstupst. Nicht hetzen. Sie schlafen."
+          },
+          "timer_minutes": 120
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°C, brush the croissants gently with the beaten egg and bake until deep mahogany and audibly crisp.",
+            "de": "Den Ofen auf 200 °C vorheizen, die Croissants vorsichtig mit dem verquirlten Ei bestreichen und backen, bis sie tief mahagonibraun und hörbar knusprig sind."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "cool on a rack for ten minutes if you can stand it. the crackle when you tear one open is the whole reward.",
+            "de": "Zehn Minuten auf einem Gitter abkühlen lassen, falls du es aushältst. Das Knistern beim Aufreißen ist die ganze Belohnung."
+          }
+        }
       ],
-      "tags": {"en": ["lamination", "weekend project", "bakery at home"], "de": ["Tourieren", "Wochenendprojekt", "Bäckerei zuhause"]}
+      "tags": {
+        "en": [
+          "lamination",
+          "weekend project",
+          "bakery at home"
+        ],
+        "de": [
+          "Tourieren",
+          "Wochenendprojekt",
+          "Bäckerei zuhause"
+        ]
+      }
     },
     {
       "id": "croissants-chocolate",
       "dish_id": "croissants",
-      "title": {"en": "pain au chocolat", "de": "Pain au Chocolat"},
-      "caption": {"en": "two chocolate bars, hiding in bed", "de": "zwei Schokoriegel, versteckt im Bett"},
+      "title": {
+        "en": "pain au chocolat",
+        "de": "Pain au Chocolat"
+      },
+      "caption": {
+        "en": "two chocolate bars, hiding in bed",
+        "de": "zwei Schokoriegel, versteckt im Bett"
+      },
       "intro": {
         "en": "the same laminated dough, the same long patient afternoon — but rolled into rectangles around batons of dark chocolate. when they come out of the oven the chocolate is still molten, and there is no version of you that waits for it to set. plan accordingly.",
         "de": "Derselbe tourierte Teig, derselbe lange, geduldige Nachmittag — aber zu Rechtecken um Stangen aus Zartbitterschokolade gerollt. Wenn sie aus dem Ofen kommen, ist die Schokolade noch flüssig, und es gibt keine Version von dir, die wartet, bis sie fest wird. Plane entsprechend."
       },
-      "variant": {"diet": "classic", "effort": "hard", "calorie": "le600"},
-      "contains": ["gluten", "dairy", "egg", "added-sugar", "caffeine", "high-fodmap"],
-      "attributes": ["vegetarian", "pescatarian", "halal", "kosher", "nut-free", "hard", "gt60", "le600", "bake"],
-      "meal": ["breakfast"],
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "added-sugar",
+        "caffeine",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le600",
+        "bake"
+      ],
+      "meal": [
+        "breakfast"
+      ],
       "time_minutes": 240,
       "servings": 12,
       "calories_per_serving": 420,
-      "macros": {"calories": 420, "protein_g": 7, "carbs_g": 42, "fat_g": 24},
+      "macros": {
+        "calories": 420,
+        "protein_g": 7,
+        "carbs_g": 42,
+        "fat_g": 24
+      },
       "ingredients": [
-        {"ingredient_id": "wheat-flour", "qty": 500, "unit": "g", "note": {"en": "plus more for rolling", "de": "plus etwas zum Ausrollen"}},
-        {"ingredient_id": "butter", "qty": 280, "unit": "g", "note": {"en": "30 g soft for the dough, 250 g cold for laminating", "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"}},
-        {"ingredient_id": "whole-milk", "qty": 140, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
-        {"ingredient_id": "sugar", "qty": 50, "unit": "g"},
-        {"ingredient_id": "yeast", "qty": 20, "unit": "g"},
-        {"ingredient_id": "salt", "qty": 2, "unit": "tsp"},
-        {"ingredient_id": "dark-chocolate", "qty": 200, "unit": "g", "note": {"en": "cut into 24 thin batons", "de": "in 24 dünne Stangen geschnitten"}},
-        {"ingredient_id": "egg", "qty": 1, "unit": "piece", "note": {"en": "beaten, for the wash", "de": "verquirlt, zum Bestreichen"}}
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "plus more for rolling",
+            "de": "plus etwas zum Ausrollen"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 280,
+          "unit": "g",
+          "note": {
+            "en": "30 g soft for the dough, 250 g cold for laminating",
+            "de": "30 g weich für den Teig, 250 g kalt zum Tourieren"
+          }
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 140,
+          "unit": "ml",
+          "note": {
+            "en": "cold",
+            "de": "kalt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "yeast",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "cut into 24 thin batons",
+            "de": "in 24 dünne Stangen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "beaten, for the wash",
+            "de": "verquirlt, zum Bestreichen"
+          }
+        }
       ],
       "steps": [
-        {"text": {"en": "make the dough: dissolve the yeast in the cold milk plus 140 ml cold water, then mix with the flour, sugar, salt and the 30 g of soft butter until smooth. flatten into a rectangle, wrap, and chill for an hour.", "de": "Den Teig ansetzen: Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen, dann mit Mehl, Zucker, Salz und den 30 g weicher Butter glatt verkneten. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."}, "timer_minutes": 60},
-        {"text": {"en": "pound the 250 g of cold butter into a 20 cm square between baking paper, lock it into the rolled-out dough, and give the dough three letter folds, chilling 30 minutes between each. cold hands, cold butter, no shortcuts.", "de": "Die 250 g kalte Butter zwischen Backpapier zu einem 20-cm-Quadrat klopfen, in den ausgerollten Teig einschlagen und dem Teig drei Brieftouren geben, dazwischen jeweils 30 Minuten kühlen. Kalte Hände, kalte Butter, keine Abkürzungen."}, "timer_minutes": 30},
-        {"text": {"en": "roll the finished dough to about 4 mm and cut it into twelve rectangles, roughly 8 by 15 cm.", "de": "Den fertigen Teig auf etwa 4 mm ausrollen und in zwölf Rechtecke schneiden, ungefähr 8 mal 15 cm."}},
-        {"text": {"en": "lay one chocolate baton across the short end of each rectangle, roll once to cover it, place the second baton in front of the seam and keep rolling into a snug little log. seam down on the tray.", "de": "Eine Schokostange ans kurze Ende jedes Rechtecks legen, einmal darüberrollen, die zweite Stange vor die Naht legen und zu einer kompakten kleinen Rolle weiterrollen. Mit der Naht nach unten aufs Blech."}},
-        {"text": {"en": "proof at warm room temperature until visibly puffed and wobbly when nudged.", "de": "Bei warmer Raumtemperatur gehen lassen, bis sie sichtbar aufgegangen sind und beim Anstupsen wackeln."}, "timer_minutes": 120},
-        {"text": {"en": "heat the oven to 200°C, brush with the beaten egg and bake until deep golden with chocolate just peeking out the ends.", "de": "Den Ofen auf 200 °C vorheizen, mit dem verquirlten Ei bestreichen und backen, bis sie tief goldbraun sind und die Schokolade gerade so an den Enden hervorschaut."}, "timer_minutes": 17},
-        {"text": {"en": "let them cool just long enough that the chocolate stops being lava. five minutes. maybe four.", "de": "Nur so lange abkühlen lassen, bis die Schokolade aufhört, Lava zu sein. Fünf Minuten. Vielleicht vier."}}
+        {
+          "text": {
+            "en": "make the dough: dissolve the yeast in the cold milk plus 140 ml cold water, then mix with the flour, sugar, salt and the 30 g of soft butter until smooth. flatten into a rectangle, wrap, and chill for an hour.",
+            "de": "Den Teig ansetzen: Hefe in der kalten Milch plus 140 ml kaltem Wasser auflösen, dann mit Mehl, Zucker, Salz und den 30 g weicher Butter glatt verkneten. Zu einem Rechteck flach drücken, einwickeln und eine Stunde kühlen."
+          },
+          "timer_minutes": 60
+        },
+        {
+          "text": {
+            "en": "pound the 250 g of cold butter into a 20 cm square between baking paper, lock it into the rolled-out dough, and give the dough three letter folds, chilling 30 minutes between each. cold hands, cold butter, no shortcuts.",
+            "de": "Die 250 g kalte Butter zwischen Backpapier zu einem 20-cm-Quadrat klopfen, in den ausgerollten Teig einschlagen und dem Teig drei Brieftouren geben, dazwischen jeweils 30 Minuten kühlen. Kalte Hände, kalte Butter, keine Abkürzungen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "roll the finished dough to about 4 mm and cut it into twelve rectangles, roughly 8 by 15 cm.",
+            "de": "Den fertigen Teig auf etwa 4 mm ausrollen und in zwölf Rechtecke schneiden, ungefähr 8 mal 15 cm."
+          }
+        },
+        {
+          "text": {
+            "en": "lay one chocolate baton across the short end of each rectangle, roll once to cover it, place the second baton in front of the seam and keep rolling into a snug little log. seam down on the tray.",
+            "de": "Eine Schokostange ans kurze Ende jedes Rechtecks legen, einmal darüberrollen, die zweite Stange vor die Naht legen und zu einer kompakten kleinen Rolle weiterrollen. Mit der Naht nach unten aufs Blech."
+          }
+        },
+        {
+          "text": {
+            "en": "proof at warm room temperature until visibly puffed and wobbly when nudged.",
+            "de": "Bei warmer Raumtemperatur gehen lassen, bis sie sichtbar aufgegangen sind und beim Anstupsen wackeln."
+          },
+          "timer_minutes": 120
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°C, brush with the beaten egg and bake until deep golden with chocolate just peeking out the ends.",
+            "de": "Den Ofen auf 200 °C vorheizen, mit dem verquirlten Ei bestreichen und backen, bis sie tief goldbraun sind und die Schokolade gerade so an den Enden hervorschaut."
+          },
+          "timer_minutes": 17
+        },
+        {
+          "text": {
+            "en": "let them cool just long enough that the chocolate stops being lava. five minutes. maybe four.",
+            "de": "Nur so lange abkühlen lassen, bis die Schokolade aufhört, Lava zu sein. Fünf Minuten. Vielleicht vier."
+          }
+        }
       ],
-      "tags": {"en": ["lamination", "weekend project", "chocolate"], "de": ["Tourieren", "Wochenendprojekt", "Schokolade"]}
+      "tags": {
+        "en": [
+          "lamination",
+          "weekend project",
+          "chocolate"
+        ],
+        "de": [
+          "Tourieren",
+          "Wochenendprojekt",
+          "Schokolade"
+        ]
+      }
+    },
+    {
+      "id": "paella-classic",
+      "dish_id": "paella",
+      "title": {
+        "en": "classic paella",
+        "de": "Klassische Paella"
+      },
+      "caption": {
+        "en": "listen for the crackle. that's it.",
+        "de": "hör auf das Knistern. das ist es."
+      },
+      "intro": {
+        "en": "shrimp and chicken in one wide pan, rice stained gold with saffron. the rule is simple and non-negotiable: once the broth goes in, you do not stir. the crust that forms on the bottom — the socarrat — is the whole point, and stirring kills it.",
+        "de": "Garnelen und Hähnchen in einer weiten Pfanne, der Reis goldgelb vom Safran. Die Regel ist einfach und nicht verhandelbar: Sobald die Brühe drin ist, wird nicht mehr gerührt. Die Kruste am Boden — der Socarrat — ist der ganze Sinn der Sache, und Rühren macht sie kaputt."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "shellfish",
+        "poultry",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "sugar-free",
+        "gluten-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 70,
+      "servings": 4,
+      "calories_per_serving": 680,
+      "macros": {
+        "calories": 680,
+        "protein_g": 38,
+        "carbs_g": 72,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in big chunks",
+            "de": "ohne Knochen, in groben Stücken"
+          }
+        },
+        {
+          "ingredient_id": "shrimp",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "shell on if you can get them",
+            "de": "mit Schale, wenn du sie bekommst"
+          }
+        },
+        {
+          "ingredient_id": "arborio-rice",
+          "qty": 320,
+          "unit": "g",
+          "note": {
+            "en": "bomba if you find it",
+            "de": "Bomba, falls du ihn findest"
+          }
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "a generous one",
+            "de": "eine großzügige Prise"
+          }
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 900,
+          "unit": "ml",
+          "note": {
+            "en": "hot",
+            "de": "heiß"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, grated",
+            "de": "reif, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "green-beans",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "halved",
+            "de": "halbiert"
+          }
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crumble the saffron into the hot stock and let it steep. the broth should turn the color of late afternoon.",
+            "de": "Den Safran in die heiße Brühe bröseln und ziehen lassen. Die Brühe sollte die Farbe eines späten Nachmittags annehmen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in your widest pan over medium-high. salt the chicken and brown it properly on all sides — color now is flavor later. push it to the edges.",
+            "de": "Das Olivenöl in deiner breitesten Pfanne bei mittelhoher Hitze erhitzen. Das Hähnchen salzen und rundherum richtig braun anbraten — Farbe jetzt ist Geschmack später. An den Rand schieben."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "sear the shrimp in the same oil, one minute per side, then take them out. they come back at the end.",
+            "de": "Die Garnelen im selben Öl scharf anbraten, eine Minute pro Seite, dann herausnehmen. Sie kommen am Ende zurück."
+          }
+        },
+        {
+          "text": {
+            "en": "make the sofrito in the middle of the pan: garlic, grated tomato and smoked paprika, cooked down until thick and jammy and dark red.",
+            "de": "In der Mitte der Pfanne das Sofrito ansetzen: Knoblauch, geriebene Tomate und geräuchertes Paprikapulver, eingekocht, bis alles dick, sämig und dunkelrot ist."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "stir in the rice and the green beans until every grain is coated and glossy. then pour in the saffron stock, shake the pan once to level everything — and from this moment on, do not stir. not once.",
+            "de": "Den Reis und die grünen Bohnen einrühren, bis jedes Korn glänzend überzogen ist. Dann die Safranbrühe angießen, die Pfanne einmal rütteln, damit sich alles verteilt — und ab jetzt nicht mehr rühren. Kein einziges Mal."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer uncovered over medium heat. rotate the pan occasionally so it cooks evenly, but keep your spoon away from it.",
+            "de": "Offen bei mittlerer Hitze köcheln lassen. Die Pfanne ab und zu drehen, damit alles gleichmäßig gart — aber der Löffel bleibt draußen."
+          },
+          "timer_minutes": 14
+        },
+        {
+          "text": {
+            "en": "lay the shrimp on top, raise the heat to high for the last stretch and listen: a dry crackle from the bottom means the socarrat is forming. then off the heat, cover with a clean towel and rest for five minutes before anyone gets a plate.",
+            "de": "Die Garnelen obenauf legen, für den letzten Abschnitt die Hitze hochdrehen und hinhören: Ein trockenes Knistern vom Boden heißt, der Socarrat entsteht. Dann vom Herd ziehen, mit einem sauberen Tuch abdecken und fünf Minuten ruhen lassen, bevor irgendwer einen Teller bekommt."
+          },
+          "timer_minutes": 7
+        }
+      ],
+      "tags": {
+        "en": [
+          "spanish",
+          "one-pan",
+          "celebration"
+        ],
+        "de": [
+          "spanisch",
+          "eine Pfanne",
+          "Festessen"
+        ]
+      }
+    },
+    {
+      "id": "paella-vegan",
+      "dish_id": "paella",
+      "title": {
+        "en": "vegan paella",
+        "de": "Vegane Paella"
+      },
+      "caption": {
+        "en": "artichokes earn their place here",
+        "de": "Artischocken verdienen sich hier ihren Platz"
+      },
+      "intro": {
+        "en": "this is the garden version and it stands on its own: artichokes going crisp at the edges, sweet peas, green beans, and rice that drank a whole pan of saffron broth. the no-stirring rule still applies. the socarrat doesn't care whether there's meat in the pan.",
+        "de": "Das hier ist die Gemüse-Version, und sie steht für sich: Artischocken mit knusprigen Rändern, süße Erbsen, grüne Bohnen und Reis, der eine ganze Pfanne Safranbrühe getrunken hat. Die Nicht-rühren-Regel gilt trotzdem. Dem Socarrat ist egal, ob Fleisch in der Pfanne liegt."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap",
+        "celery"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "gluten-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 55,
+      "servings": 4,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 14,
+        "carbs_g": 88,
+        "fat_g": 13
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "artichoke",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "hearts, drained and quartered",
+            "de": "Herzen, abgetropft und geviertelt"
+          }
+        },
+        {
+          "ingredient_id": "green-beans",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "halved",
+            "de": "halbiert"
+          }
+        },
+        {
+          "ingredient_id": "peas",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "frozen is fine",
+            "de": "tiefgekühlt ist völlig okay"
+          }
+        },
+        {
+          "ingredient_id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "a generous one",
+            "de": "eine großzügige Prise"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 900,
+          "unit": "ml",
+          "note": {
+            "en": "hot",
+            "de": "heiß"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, grated",
+            "de": "reif, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crumble the saffron into the hot stock and let it steep while you prep the vegetables.",
+            "de": "Den Safran in die heiße Brühe bröseln und ziehen lassen, während du das Gemüse vorbereitest."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in your widest pan and fry the artichoke quarters cut-side down until the edges go deep golden and crisp. don't rush them — this is where the flavor lives.",
+            "de": "Das Olivenöl in deiner breitesten Pfanne erhitzen und die Artischockenviertel mit der Schnittfläche nach unten braten, bis die Ränder tief goldbraun und knusprig sind. Nicht hetzen — genau hier sitzt der Geschmack."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "add the garlic, grated tomato and smoked paprika and cook the sofrito down until thick, dark and jammy.",
+            "de": "Knoblauch, geriebene Tomate und geräuchertes Paprikapulver dazugeben und das Sofrito einkochen lassen, bis es dick, dunkel und sämig ist."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "stir in the rice and green beans until coated, scatter the peas over, then pour in the saffron stock. one shake to level the pan. from now on the spoon stays out.",
+            "de": "Den Reis und die grünen Bohnen einrühren, bis alles überzogen ist, die Erbsen darüberstreuen, dann die Safranbrühe angießen. Einmal rütteln, damit alles eben liegt. Ab jetzt bleibt der Löffel draußen."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer uncovered over medium heat without stirring, rotating the pan now and then for an even crust.",
+            "de": "Offen bei mittlerer Hitze köcheln lassen, ohne zu rühren. Die Pfanne ab und zu drehen, damit die Kruste gleichmäßig wird."
+          },
+          "timer_minutes": 16
+        },
+        {
+          "text": {
+            "en": "crank the heat for the final two minutes until you hear the crackle of the socarrat, then pull the pan off, cover with a towel and let it rest before serving straight from the pan.",
+            "de": "Für die letzten zwei Minuten die Hitze hochdrehen, bis du das Knistern des Socarrat hörst. Dann vom Herd ziehen, mit einem Tuch abdecken und ruhen lassen — serviert wird direkt aus der Pfanne."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "tags": {
+        "en": [
+          "spanish",
+          "one-pan",
+          "plant-based"
+        ],
+        "de": [
+          "spanisch",
+          "eine Pfanne",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "paella-chicken",
+      "dish_id": "paella",
+      "title": {
+        "en": "chicken paella",
+        "de": "Hähnchen-Paella"
+      },
+      "caption": {
+        "en": "all chicken, all crust, no compromise",
+        "de": "nur Hähnchen, volle Kruste, kein Kompromiss"
+      },
+      "intro": {
+        "en": "a paella built entirely around chicken thighs — no shellfish, no wine, nothing to second-guess at the table. the thighs braise right in the rice, the saffron does its quiet golden work, and the socarrat forms underneath like it always does. share the corners fairly.",
+        "de": "Eine Paella, die ganz auf Hähnchenschenkeln aufbaut — keine Meeresfrüchte, kein Wein, nichts, worüber am Tisch diskutiert werden muss. Die Schenkel schmoren direkt im Reis, der Safran macht still seine goldene Arbeit, und der Socarrat bildet sich am Boden wie immer. Die Eckstücke werden fair geteilt."
+      },
+      "variant": {
+        "diet": "halal",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "gluten-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 70,
+      "servings": 4,
+      "calories_per_serving": 700,
+      "macros": {
+        "calories": 700,
+        "protein_g": 42,
+        "carbs_g": 70,
+        "fat_g": 28
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "boneless, in big chunks",
+            "de": "ohne Knochen, in groben Stücken"
+          }
+        },
+        {
+          "ingredient_id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "saffron",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "a generous one",
+            "de": "eine großzügige Prise"
+          }
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 900,
+          "unit": "ml",
+          "note": {
+            "en": "hot",
+            "de": "heiß"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red, in strips",
+            "de": "rot, in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "green-beans",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "halved",
+            "de": "halbiert"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, grated",
+            "de": "reif, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crumble the saffron into the hot stock and let it steep until the broth turns deep gold.",
+            "de": "Den Safran in die heiße Brühe bröseln und ziehen lassen, bis die Brühe tiefgolden ist."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat the oil in your widest pan over medium-high. salt the chicken and brown it hard on all sides — it finishes cooking in the rice, so all you want here is color and crust.",
+            "de": "Das Öl in deiner breitesten Pfanne bei mittelhoher Hitze erhitzen. Das Hähnchen salzen und rundherum kräftig anbraten — fertig gart es später im Reis, hier geht es nur um Farbe und Kruste."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "push the chicken to the edges and fry the pepper strips in the middle until they soften and char a little at the edges.",
+            "de": "Das Hähnchen an den Rand schieben und die Paprikastreifen in der Mitte braten, bis sie weich werden und an den Rändern leicht Röststellen bekommen."
+          }
+        },
+        {
+          "text": {
+            "en": "add the garlic, grated tomato and smoked paprika and cook the sofrito down to a thick, dark paste.",
+            "de": "Knoblauch, geriebene Tomate und geräuchertes Paprikapulver dazugeben und das Sofrito zu einer dicken, dunklen Paste einkochen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "stir in the rice and green beans, distribute everything evenly, then pour in the saffron stock. shake the pan once to settle it — and now stop stirring. completely.",
+            "de": "Den Reis und die grünen Bohnen einrühren, alles gleichmäßig verteilen, dann die Safranbrühe angießen. Die Pfanne einmal rütteln, damit sich alles setzt — und jetzt aufhören zu rühren. Komplett."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer uncovered over medium heat, rotating the pan occasionally, until the rice has drunk the broth.",
+            "de": "Offen bei mittlerer Hitze köcheln lassen und die Pfanne gelegentlich drehen, bis der Reis die Brühe aufgesogen hat."
+          },
+          "timer_minutes": 16
+        },
+        {
+          "text": {
+            "en": "turn the heat to high for the last two minutes until the bottom crackles — that's the socarrat announcing itself. rest under a towel for five minutes, then bring the whole pan to the table.",
+            "de": "Für die letzten zwei Minuten die Hitze hochdrehen, bis es am Boden knistert — so kündigt sich der Socarrat an. Fünf Minuten unter einem Tuch ruhen lassen, dann die ganze Pfanne auf den Tisch stellen."
+          },
+          "timer_minutes": 7
+        }
+      ],
+      "tags": {
+        "en": [
+          "spanish",
+          "one-pan",
+          "family dinner"
+        ],
+        "de": [
+          "spanisch",
+          "eine Pfanne",
+          "Familienessen"
+        ]
+      }
+    },
+    {
+      "id": "goulash-classic",
+      "dish_id": "goulash",
+      "title": {
+        "en": "classic beef goulash",
+        "de": "Klassisches Rindergulasch"
+      },
+      "caption": {
+        "en": "paprika by the spoon, time by the hour",
+        "de": "Paprika löffelweise, Zeit stundenweise"
+      },
+      "intro": {
+        "en": "as many onions as beef, paprika measured in tablespoons, and then the only ingredient that actually matters: hours. the meat is done when it stops resisting the spoon, not when the clock says so. make it a day ahead if you can — goulash is one of those dishes that gets smug overnight.",
+        "de": "So viele Zwiebeln wie Fleisch, Paprika in Esslöffeln gemessen, und dann die einzige Zutat, die wirklich zählt: Stunden. Das Fleisch ist fertig, wenn es dem Löffel keinen Widerstand mehr leistet, nicht wenn die Uhr es sagt. Koch es am besten einen Tag vorher — Gulasch gehört zu den Gerichten, die über Nacht selbstgefällig werden."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "high-fodmap",
+        "celery"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "gluten-free",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 150,
+      "servings": 4,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 46,
+        "carbs_g": 18,
+        "fat_g": 36
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "beef-meat",
+          "qty": 800,
+          "unit": "g",
+          "note": {
+            "en": "chuck, in 3 cm cubes",
+            "de": "aus der Schulter, in 3-cm-Würfeln"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "yes, that much. finely diced",
+            "de": "ja, so viel. fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "paprika-powder",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "sweet hungarian, fresh jar if possible",
+            "de": "edelsüß, am besten aus einem frischen Glas"
+          }
+        },
+        {
+          "ingredient_id": "caraway",
+          "qty": 1.5,
+          "unit": "tsp",
+          "note": {
+            "en": "lightly crushed",
+            "de": "leicht angemörsert"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "bay-leaf",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 800,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oil in a heavy pot and brown the beef in batches — crowd the pot and it steams instead of searing. set the meat aside as it's done.",
+            "de": "Das Öl in einem schweren Topf erhitzen und das Fleisch portionsweise scharf anbraten — zu viel auf einmal, und es dünstet statt zu rösten. Fertige Stücke beiseitelegen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "drop the heat to medium-low and cook the onions in the same pot until soft, sweet and golden. let the onions take their time. they always do.",
+            "de": "Die Hitze auf mittel-niedrig stellen und die Zwiebeln im selben Topf weich, süß und goldgelb schmoren. Lass den Zwiebeln ihre Zeit. Die nehmen sie sich sowieso."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "stir in the garlic, tomato paste and caraway for a minute. then pull the pot off the heat before the paprika goes in — it burns bitter in seconds. stir the three tablespoons through the onions off the heat.",
+            "de": "Knoblauch, Tomatenmark und Kümmel eine Minute mitrösten. Dann den Topf vom Herd ziehen, bevor das Paprikapulver reinkommt — es verbrennt in Sekunden und wird bitter. Die drei Esslöffel abseits der Hitze unter die Zwiebeln rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "return the beef with its juices, add the bay leaves and pour in just enough stock to barely cover. bring it to the gentlest possible simmer.",
+            "de": "Das Fleisch samt Saft zurück in den Topf geben, die Lorbeerblätter dazu und gerade so viel Brühe angießen, dass alles knapp bedeckt ist. Auf die sanfteste mögliche Stufe zum Köcheln bringen."
+          }
+        },
+        {
+          "text": {
+            "en": "lid half on, barely bubbling, stirring maybe twice an hour. it's ready when a cube of beef gives up at the touch of a spoon — usually around the two-hour mark.",
+            "de": "Deckel halb aufgelegt, kaum blubbernd, höchstens zweimal pro Stunde umrühren. Fertig ist es, wenn ein Fleischwürfel beim Druck mit dem Löffel einfach nachgibt — meist nach etwa zwei Stunden."
+          },
+          "timer_minutes": 110
+        },
+        {
+          "text": {
+            "en": "fish out the bay leaves, season with salt, and let it sit ten minutes off the heat so the sauce settles. serve in deep bowls, ideally tomorrow.",
+            "de": "Die Lorbeerblätter herausfischen, mit Salz abschmecken und zehn Minuten abseits der Hitze stehen lassen, damit sich die Sauce setzt. In tiefen Tellern servieren, idealerweise erst morgen."
+          },
+          "timer_minutes": 10
+        }
+      ],
+      "tags": {
+        "en": [
+          "hungarian",
+          "stew",
+          "make ahead"
+        ],
+        "de": [
+          "ungarisch",
+          "Schmorgericht",
+          "vorkochen"
+        ]
+      }
+    },
+    {
+      "id": "goulash-vegan",
+      "dish_id": "goulash",
+      "title": {
+        "en": "vegan mushroom goulash",
+        "de": "Veganes Pilzgulasch"
+      },
+      "caption": {
+        "en": "the heavy pot, one hour, all heart",
+        "de": "der schwere Topf, eine Stunde, ganz viel Herz"
+      },
+      "intro": {
+        "en": "mushrooms browned until they're almost meaty, waxy potatoes, kidney beans, and the same unapologetic wall of paprika as the original. it gets everything a slow-cooked goulash has — depth, color, that paprika-stained sheen — in a single hour instead of an afternoon.",
+        "de": "Pilze, die so lange braten, bis sie fast fleischig sind, festkochende Kartoffeln, Kidneybohnen und dieselbe kompromisslose Paprika-Wand wie im Original. Es bekommt alles, was ein langsam geschmortes Gulasch hat — Tiefe, Farbe, diesen paprikaroten Glanz — in einer Stunde statt eines Nachmittags."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap",
+        "celery"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "gluten-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 16,
+        "carbs_g": 70,
+        "fat_g": 15
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "mushroom",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "mixed if you can, thickly sliced",
+            "de": "gern gemischt, in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "potato",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "waxy, in chunks",
+            "de": "festkochend, in groben Stücken"
+          }
+        },
+        {
+          "ingredient_id": "kidney-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "paprika-powder",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "sweet hungarian — yes, tablespoons",
+            "de": "edelsüß — ja, Esslöffel"
+          }
+        },
+        {
+          "ingredient_id": "caraway",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "lightly crushed",
+            "de": "leicht angemörsert"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat half the oil in a heavy pot over high heat and brown the mushrooms in two batches until deeply golden — don't salt them yet, salt pulls their water and stops the sear. set aside.",
+            "de": "Die Hälfte des Öls in einem schweren Topf stark erhitzen und die Pilze in zwei Portionen tief goldbraun anbraten — noch nicht salzen, Salz zieht Wasser und verhindert die Röstung. Beiseitestellen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "add the rest of the oil and cook the onions over medium heat until soft and golden. patience here pays out in the bowl.",
+            "de": "Das restliche Öl dazugeben und die Zwiebeln bei mittlerer Hitze weich und goldgelb schmoren. Geduld an dieser Stelle zahlt sich später im Teller aus."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "stir in the garlic, tomato paste and caraway for a minute, then pull the pot off the heat and stir in the paprika — off the heat, always, or it turns bitter.",
+            "de": "Knoblauch, Tomatenmark und Kümmel eine Minute mitrösten, dann den Topf vom Herd ziehen und das Paprikapulver einrühren — immer abseits der Hitze, sonst wird es bitter."
+          }
+        },
+        {
+          "text": {
+            "en": "return the pot to the stove, add the potatoes and stock, and simmer with the lid half on until the potatoes are just tender.",
+            "de": "Den Topf zurück auf den Herd stellen, Kartoffeln und Brühe dazugeben und mit halb aufgelegtem Deckel köcheln lassen, bis die Kartoffeln gerade gar sind."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "add the mushrooms and beans and let everything simmer together so the flavors agree with each other. season with salt and a crack of pepper.",
+            "de": "Pilze und Bohnen dazugeben und alles zusammen köcheln lassen, bis sich die Aromen geeinigt haben. Mit Salz und einer ordentlichen Portion Pfeffer abschmecken."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "rest it five minutes off the heat — the sauce thickens as it settles. deep bowls, big spoons.",
+            "de": "Fünf Minuten abseits der Hitze ruhen lassen — die Sauce dickt beim Setzen nach. Tiefe Teller, große Löffel."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "hungarian",
+          "stew",
+          "plant-based"
+        ],
+        "de": [
+          "ungarisch",
+          "Schmorgericht",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "brownies-classic",
+      "dish_id": "brownies",
+      "title": {
+        "en": "classic walnut brownies",
+        "de": "Klassische Walnuss-Brownies"
+      },
+      "caption": {
+        "en": "shiny top, fudgy middle, brave corners",
+        "de": "glänzend oben, weich in der Mitte, mutige Ecken"
+      },
+      "intro": {
+        "en": "real chocolate melted with too much butter, eggs whipped until the sugar gives up its grit, and walnuts for the people who know. the only way to ruin these is to bake them all the way through. pull them while the middle still wobbles. trust the wobble.",
+        "de": "Echte Schokolade mit reichlich Butter geschmolzen, Eier so lange aufgeschlagen, bis der Zucker seinen Widerstand aufgibt, und Walnüsse für die, die Bescheid wissen. Ruinieren kann man sie nur, indem man sie ganz durchbäckt. Hol sie raus, solange die Mitte noch wackelt. Vertrau dem Wackeln."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "added-sugar",
+        "caffeine",
+        "tree-nuts",
+        "walnuts",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 16,
+      "calories_per_serving": 310,
+      "macros": {
+        "calories": 310,
+        "protein_g": 4,
+        "carbs_g": 33,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 225,
+          "unit": "g",
+          "note": {
+            "en": "70%, roughly chopped",
+            "de": "70 %, grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 175,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 275,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "room temperature",
+            "de": "zimmerwarm"
+          }
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "walnuts-ing",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 175°C and line a 23 cm square tin with baking paper, leaving handles hanging over the sides. melt the chocolate and butter together over a gentle water bath, then let it cool slightly.",
+            "de": "Den Ofen auf 175 °C vorheizen und eine quadratische 23-cm-Form mit Backpapier auslegen, mit überstehenden Rändern als Griffe. Schokolade und Butter über einem sanften Wasserbad zusammen schmelzen, dann leicht abkühlen lassen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "whisk the eggs, sugar and vanilla hard for a few minutes until pale, thick and ribbon-y. this is where the shiny crackly top comes from — don't shortcut it.",
+            "de": "Eier, Zucker und Vanille ein paar Minuten kräftig aufschlagen, bis die Masse hell, dick und cremig vom Schneebesen läuft. Daher kommt die glänzende Knusperdecke — hier nicht abkürzen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "fold the warm chocolate into the egg mixture, then sift in the flour, cocoa and salt and fold until just combined. last in: the walnuts.",
+            "de": "Die warme Schokolade unter die Eimasse ziehen, dann Mehl, Kakao und Salz darübersieben und nur so lange unterheben, bis alles gerade verbunden ist. Zum Schluss: die Walnüsse."
+          }
+        },
+        {
+          "text": {
+            "en": "scrape the batter into the tin and bake until the edges are set but the center still wobbles slightly when you nudge the tin — a skewer should come out with moist crumbs, never clean.",
+            "de": "Den Teig in die Form streichen und backen, bis die Ränder fest sind, die Mitte beim Anstoßen der Form aber noch leicht wackelt — ein Holzstäbchen soll mit feuchten Krümeln herauskommen, niemals sauber."
+          },
+          "timer_minutes": 24
+        },
+        {
+          "text": {
+            "en": "cool completely in the tin before cutting into 16 squares. yes, completely. the corners go to whoever waited.",
+            "de": "Vollständig in der Form abkühlen lassen, bevor du 16 Quadrate schneidest. Ja, vollständig. Die Eckstücke gehen an die, die gewartet haben."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "baking",
+          "chocolate"
+        ],
+        "de": [
+          "Dessert",
+          "Backen",
+          "Schokolade"
+        ]
+      }
+    },
+    {
+      "id": "brownies-vegan",
+      "dish_id": "brownies",
+      "title": {
+        "en": "vegan brownies",
+        "de": "Vegane Brownies"
+      },
+      "caption": {
+        "en": "nobody at the table will ask",
+        "de": "am Tisch fragt garantiert niemand nach"
+      },
+      "intro": {
+        "en": "flax does the egg's job, good dark chocolate does everything else. these come out dense, dark and fudgy — the kind of brownie that sticks to the roof of your mouth in the best way. underbake them like you mean it.",
+        "de": "Leinsamen übernehmen den Job vom Ei, gute Zartbitterschokolade erledigt den ganzen Rest. Sie werden dicht, dunkel und saftig — die Sorte Brownie, die auf die beste Art am Gaumen klebt. Und: lieber mutig zu kurz backen."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "added-sugar",
+        "caffeine",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 16,
+      "calories_per_serving": 290,
+      "macros": {
+        "calories": 290,
+        "protein_g": 3,
+        "carbs_g": 38,
+        "fat_g": 14
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "flaxseeds",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "ground, for the flax eggs",
+            "de": "geschrotet, für die Leinsamen-Eier"
+          }
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "70%, dairy-free, roughly chopped",
+            "de": "70 %, milchfrei, grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the ground flax into 6 tablespoons of water and let it sit until it turns gloopy — that's your egg. meanwhile heat the oven to 175°C and line a 23 cm square tin.",
+            "de": "Die geschroteten Leinsamen in 6 Esslöffel Wasser einrühren und stehen lassen, bis die Mischung dicklich wird — das ist dein Ei. Währenddessen den Ofen auf 175 °C vorheizen und eine quadratische 23-cm-Form mit Backpapier auslegen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "melt the vegan butter with the chocolate over a gentle water bath, then whisk in the sugar and vanilla and let it cool a few minutes.",
+            "de": "Die vegane Butter mit der Schokolade über einem sanften Wasserbad schmelzen, dann Zucker und Vanille einrühren und ein paar Minuten abkühlen lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk the flax egg into the chocolate, then sift in the flour, cocoa and salt and fold until the last streak of flour disappears. the batter will be thick — that's correct.",
+            "de": "Das Leinsamen-Ei in die Schokolade rühren, dann Mehl, Kakao und Salz darübersieben und unterheben, bis der letzte Mehlstreifen verschwindet. Der Teig ist dick — genau richtig so."
+          }
+        },
+        {
+          "text": {
+            "en": "spread the batter into the tin, smooth the top and bake until the edges pull away but the middle still feels soft under a fingertip.",
+            "de": "Den Teig in die Form streichen, glätten und backen, bis sich die Ränder lösen, die Mitte sich unter der Fingerspitze aber noch weich anfühlt."
+          },
+          "timer_minutes": 24
+        },
+        {
+          "text": {
+            "en": "cool completely in the tin — vegan brownies set as they cool, so cutting early means eating them with a spoon. which, honestly, is also fine.",
+            "de": "Vollständig in der Form abkühlen lassen — vegane Brownies werden erst beim Abkühlen fest. Wer zu früh schneidet, isst sie mit dem Löffel. Was, ehrlich gesagt, auch okay ist."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "baking",
+          "plant-based"
+        ],
+        "de": [
+          "Dessert",
+          "Backen",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "brownies-gluten-free",
+      "dish_id": "brownies",
+      "title": {
+        "en": "gluten-free almond brownies",
+        "de": "Glutenfreie Mandel-Brownies"
+      },
+      "caption": {
+        "en": "almond flour was made for this",
+        "de": "Mandelmehl wurde genau dafür gemacht"
+      },
+      "intro": {
+        "en": "almond flour doesn't imitate wheat here — it improves on it. these bake up extra fudgy with a faint marzipan warmth underneath all that chocolate, and there's no gluten to overdevelop, so you genuinely cannot overmix them. one less thing to worry about.",
+        "de": "Mandelmehl imitiert hier keinen Weizen — es macht es besser. Diese Brownies werden besonders saftig, mit einer leisen Marzipanwärme unter all der Schokolade, und ohne Gluten kann man den Teig schlicht nicht überrühren. Eine Sorge weniger."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "tree-nuts",
+        "almonds",
+        "dairy",
+        "egg",
+        "added-sugar",
+        "caffeine",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 12,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 6,
+        "carbs_g": 28,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "almond-flour",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "finely ground",
+            "de": "fein gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "70%, roughly chopped",
+            "de": "70 %, grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "room temperature",
+            "de": "zimmerwarm"
+          }
+        },
+        {
+          "ingredient_id": "cocoa-powder",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 170°C and line a 20 cm square tin with baking paper. melt the chocolate and butter over a gentle water bath and set aside to cool slightly.",
+            "de": "Den Ofen auf 170 °C vorheizen und eine quadratische 20-cm-Form mit Backpapier auslegen. Schokolade und Butter über einem sanften Wasserbad schmelzen und etwas abkühlen lassen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "whisk the eggs, sugar and vanilla until pale and thick — a solid three minutes by hand. the shiny top depends on it.",
+            "de": "Eier, Zucker und Vanille hell und dickcremig aufschlagen — gute drei Minuten von Hand. Die glänzende Oberfläche hängt genau daran."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "fold the chocolate into the eggs, then add the almond flour, cocoa and salt and stir until smooth. no gluten means no toughness — mix with a clear conscience.",
+            "de": "Die Schokolade unter die Eimasse ziehen, dann Mandelmehl, Kakao und Salz dazugeben und glatt rühren. Ohne Gluten wird nichts zäh — rühr mit gutem Gewissen."
+          }
+        },
+        {
+          "text": {
+            "en": "pour into the tin and bake until the top is set and crackled but the center still gives slightly — moist crumbs on the skewer, not clean.",
+            "de": "In die Form füllen und backen, bis die Oberfläche fest und rissig ist, die Mitte aber noch leicht nachgibt — feuchte Krümel am Stäbchen, nicht sauber."
+          },
+          "timer_minutes": 22
+        },
+        {
+          "text": {
+            "en": "cool fully in the tin, then cut into 12 squares with a hot knife for clean edges. they keep for days. theoretically.",
+            "de": "Vollständig in der Form abkühlen lassen, dann mit einem heißen Messer in 12 Quadrate schneiden, damit die Kanten sauber werden. Sie halten sich tagelang. Theoretisch."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "baking",
+          "gluten-free"
+        ],
+        "de": [
+          "Dessert",
+          "Backen",
+          "glutenfrei"
+        ]
+      }
+    },
+    {
+      "id": "apple-pie-classic",
+      "dish_id": "apple-pie",
+      "title": {
+        "en": "classic apple pie",
+        "de": "Klassischer Apple Pie"
+      },
+      "caption": {
+        "en": "butter crust, cinnamon, no shortcuts",
+        "de": "Butterteig, Zimt, keine Abkürzungen"
+      },
+      "intro": {
+        "en": "a proper double-crust pie: cold butter rubbed into flour, a mountain of cinnamon apples, and a lid that bakes to deep gold. the crust asks for exactly two things — cold hands and patience while it chills. give it both and it pays you back in flakes.",
+        "de": "Ein richtiger Pie mit Deckel: kalte Butter ins Mehl gerieben, ein Berg Zimtäpfel und eine Haube, die tief goldbraun bäckt. Der Teig verlangt genau zwei Dinge — kalte Hände und Geduld beim Kühlen. Gib ihm beides, und er zahlt es dir in Blättern zurück."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 75,
+      "servings": 8,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 4,
+        "carbs_g": 52,
+        "fat_g": 17
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "plus more for rolling",
+            "de": "plus etwas zum Ausrollen"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 180,
+          "unit": "g",
+          "note": {
+            "en": "fridge-cold, cubed",
+            "de": "kühlschrankkalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 130,
+          "unit": "g",
+          "note": {
+            "en": "a little for the crust, the rest for the apples",
+            "de": "etwas für den Teig, der Rest für die Äpfel"
+          }
+        },
+        {
+          "ingredient_id": "apple",
+          "qty": 1,
+          "unit": "kg",
+          "note": {
+            "en": "tart ones — boskoop or granny smith",
+            "de": "säuerliche — Boskoop oder Granny Smith"
+          }
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "juice and zest",
+            "de": "Saft und Abrieb"
+          }
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "beaten, for the wash",
+            "de": "verquirlt, zum Bestreichen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rub the cold butter into the flour, salt and 2 tablespoons of the sugar until it looks like coarse crumbs with some pea-sized butter bits left. add 6–8 tablespoons of ice water, bring it together fast, split into two discs.",
+            "de": "Die kalte Butter mit Mehl, Salz und 2 Esslöffeln Zucker zwischen den Fingern verreiben, bis grobe Streusel mit ein paar erbsengroßen Butterstücken entstehen. 6–8 Esslöffel Eiswasser dazu, zügig zu einem Teig bringen, in zwei Scheiben teilen."
+          }
+        },
+        {
+          "text": {
+            "en": "wrap the discs and chill them — the butter has to be cold again before it sees the oven, that's where the flake comes from.",
+            "de": "Die Scheiben einwickeln und kühlen — die Butter muss wieder richtig kalt sein, bevor sie in den Ofen darf. Genau daher kommt das Blättrige."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "peel and slice the apples, toss them with the remaining sugar, cinnamon, cornstarch, lemon juice and zest. taste a slice — it should make you a little impatient.",
+            "de": "Die Äpfel schälen, in Spalten schneiden und mit dem restlichen Zucker, Zimt, Stärke, Zitronensaft und -abrieb vermengen. Probier eine Spalte — sie sollte dich ein bisschen ungeduldig machen."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°C. roll the first disc, line a 24 cm pie dish, pile in the apples. roll the second disc into a lid, seal and crimp the edge, cut a few slits for steam and brush the whole thing with beaten egg.",
+            "de": "Den Ofen auf 200 °C vorheizen. Die erste Teigscheibe ausrollen, eine 24-cm-Pieform damit auslegen, die Äpfel hineinschichten. Die zweite Scheibe zum Deckel ausrollen, Rand verschließen und kneifen, ein paar Schlitze für den Dampf schneiden und alles mit verquirltem Ei bestreichen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake until the crust is deep golden and the filling bubbles thickly through the slits. if the edge browns too fast, shield it with a strip of foil.",
+            "de": "Backen, bis die Kruste tief goldbraun ist und die Füllung dick durch die Schlitze blubbert. Wird der Rand zu schnell dunkel, mit einem Streifen Alufolie abdecken."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "rest at least fifteen minutes so the filling sets. serve warm. this is non-negotiable.",
+            "de": "Mindestens fünfzehn Minuten ruhen lassen, damit die Füllung fest wird. Warm servieren. Das ist nicht verhandelbar."
+          },
+          "timer_minutes": 15
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "baking",
+          "autumn"
+        ],
+        "de": [
+          "Dessert",
+          "Backen",
+          "Herbst"
+        ]
+      }
+    },
+    {
+      "id": "apple-pie-vegan",
+      "dish_id": "apple-pie",
+      "title": {
+        "en": "vegan apple pie",
+        "de": "Veganer Apple Pie"
+      },
+      "caption": {
+        "en": "the apples never needed the dairy",
+        "de": "die Äpfel haben die Butter nie gebraucht"
+      },
+      "intro": {
+        "en": "good vegan butter laminates into the flour exactly like the dairy kind, as long as you keep it cold and keep your nerve. the filling was always vegan anyway — apples, cinnamon, lemon, sugar. brushed with oat milk, the lid still bakes to a quiet gold.",
+        "de": "Gute vegane Butter verbindet sich mit dem Mehl genauso blättrig wie die aus Milch — solange du sie kalt hältst und die Nerven behältst. Die Füllung war sowieso schon immer vegan: Äpfel, Zimt, Zitrone, Zucker. Mit Hafermilch bestrichen bäckt der Deckel trotzdem leise golden."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "medium",
+        "gt60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 75,
+      "servings": 8,
+      "calories_per_serving": 350,
+      "macros": {
+        "calories": 350,
+        "protein_g": 3,
+        "carbs_g": 50,
+        "fat_g": 14
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "plus more for rolling",
+            "de": "plus etwas zum Ausrollen"
+          }
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 180,
+          "unit": "g",
+          "note": {
+            "en": "block-style, fridge-cold, cubed",
+            "de": "in Blockform, kühlschrankkalt, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "a little for the crust, the rest for the apples",
+            "de": "etwas für den Teig, der Rest für die Äpfel"
+          }
+        },
+        {
+          "ingredient_id": "apple",
+          "qty": 1,
+          "unit": "kg",
+          "note": {
+            "en": "tart ones — boskoop or granny smith",
+            "de": "säuerliche — Boskoop oder Granny Smith"
+          }
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "juice and zest",
+            "de": "Saft und Abrieb"
+          }
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "for brushing the lid",
+            "de": "zum Bestreichen des Deckels"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rub the cold vegan butter into the flour, salt and 2 tablespoons of the sugar until coarse and crumbly with pea-sized bits remaining. add 6–8 tablespoons of ice water, bring it together quickly, split into two discs.",
+            "de": "Die kalte vegane Butter mit Mehl, Salz und 2 Esslöffeln Zucker verreiben, bis grobe Streusel mit erbsengroßen Stücken entstehen. 6–8 Esslöffel Eiswasser dazugeben, zügig zu einem Teig bringen, in zwei Scheiben teilen."
+          }
+        },
+        {
+          "text": {
+            "en": "wrap and chill the discs thoroughly. vegan butter softens faster than dairy butter, so cold matters even more here.",
+            "de": "Die Scheiben einwickeln und gründlich kühlen. Vegane Butter wird schneller weich als Milchbutter — Kälte zählt hier also noch mehr."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "peel and slice the apples and toss them with the remaining sugar, cinnamon, cornstarch, lemon juice and zest.",
+            "de": "Die Äpfel schälen, in Spalten schneiden und mit dem restlichen Zucker, Zimt, Stärke, Zitronensaft und -abrieb vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°C. roll out the first disc and line a 24 cm pie dish, fill with the apples, top with the second disc. seal the edge, cut steam slits and brush the lid with oat milk and a sprinkle of sugar.",
+            "de": "Den Ofen auf 200 °C vorheizen. Die erste Teigscheibe ausrollen und eine 24-cm-Pieform damit auslegen, die Äpfel einfüllen, die zweite Scheibe als Deckel auflegen. Rand verschließen, Dampfschlitze schneiden und den Deckel mit Hafermilch und etwas Zucker bestreichen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake until golden and bubbling through the slits — vegan crusts color a touch later, so judge by the bubble, not just the brown.",
+            "de": "Backen, bis der Deckel golden ist und die Füllung durch die Schlitze blubbert — veganer Teig bräunt etwas später, also lieber nach dem Blubbern gehen als nur nach der Farbe."
+          },
+          "timer_minutes": 45
+        },
+        {
+          "text": {
+            "en": "rest at least fifteen minutes before slicing so the filling holds its shape. warm, always warm.",
+            "de": "Vor dem Anschneiden mindestens fünfzehn Minuten ruhen lassen, damit die Füllung ihre Form hält. Warm, immer warm."
+          },
+          "timer_minutes": 15
+        }
+      ],
+      "tags": {
+        "en": [
+          "dessert",
+          "baking",
+          "plant-based"
+        ],
+        "de": [
+          "Dessert",
+          "Backen",
+          "pflanzlich"
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,1578 @@
+{
+  "partition_id": "cuisine-mexican",
+  "recipes": [
+    {
+      "id": "tacos-classic",
+      "dish_id": "tacos",
+      "title": {
+        "en": "beef street tacos",
+        "de": "Beef-Tacos wie vom Straßenstand"
+      },
+      "caption": {
+        "en": "small tortillas, big feelings",
+        "de": "kleine Tortillas, große Gefühle"
+      },
+      "intro": {
+        "en": "street tacos keep it honest: spiced beef, warm corn tortillas, cilantro, lime. no shredded iceberg, no apology cheese. the corn tortilla is the whole point — and yes, that makes these gluten-free by accident, the best way to be anything.",
+        "de": "Street Tacos bleiben ehrlich: gewürztes Rindfleisch, warme Mais-Tortillas, Koriander, Limette. Kein Eisbergsalat-Konfetti, kein Entschuldigungskäse. Die Mais-Tortilla ist der eigentliche Star – und ganz nebenbei sind diese Tacos dadurch glutenfrei, ohne sich anzustrengen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 32,
+        "carbs_g": 48,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 8,
+          "unit": "piece",
+          "note": {
+            "en": "small, about 12 cm",
+            "de": "klein, etwa 12 cm"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "dice the onion fine and stir the cumin and smoked paprika together with a good pinch of salt. having the spices ready means they hit the pan at the right second, not thirty seconds late.",
+            "de": "Würfle die Zwiebel fein und mische Kreuzkümmel, geräuchertes Paprikapulver und eine gute Prise Salz. Wenn die Gewürze bereitstehen, landen sie in der richtigen Sekunde in der Pfanne – nicht dreißig zu spät."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in a wide pan over high heat. add the beef and leave it alone for 2 minutes before breaking it up — you want browned crust, not grey steam. cook about 6 minutes total.",
+            "de": "Erhitze das Olivenöl in einer weiten Pfanne auf hoher Stufe. Gib das Hackfleisch hinein und lass es 2 Minuten unangetastet, bevor du es zerteilst – du willst braune Kruste, keinen grauen Dampf. Insgesamt etwa 6 Minuten braten."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir in the onion, spices and tomato paste, add a splash of water and turn the heat to medium. let it simmer about 8 minutes until the onion is soft and the pan looks saucy, not soupy.",
+            "de": "Rühre Zwiebel, Gewürze und Tomatenmark unter, gib einen Schluck Wasser dazu und stell die Hitze auf mittel. Etwa 8 Minuten köcheln lassen, bis die Zwiebel weich ist und die Pfanne saucig aussieht, nicht suppig."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "warm the corn tortillas in a dry pan, about 30 seconds per side, and stack them under a kitchen towel so they stay soft and bendy.",
+            "de": "Erwärme die Mais-Tortillas in einer trockenen Pfanne, etwa 30 Sekunden pro Seite, und stapel sie unter einem Küchentuch, damit sie weich und biegsam bleiben."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "build: two tortillas per taco if you're serious, a spoon of beef, cilantro on top, lime squeezed over at the table. eat standing up at least once.",
+            "de": "Bauen: zwei Tortillas pro Taco, wenn du es ernst meinst, ein Löffel Fleisch, Koriander obendrauf, Limette erst am Tisch darüber. Mindestens einen im Stehen essen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "mexican",
+          "weeknight"
+        ],
+        "de": [
+          "Streetfood",
+          "Mexikanisch",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "tacos-vegan",
+      "dish_id": "tacos",
+      "title": {
+        "en": "black bean & walnut tacos",
+        "de": "Tacos mit Bohnen-Walnuss-Crumble"
+      },
+      "caption": {
+        "en": "the crumble that fools everyone",
+        "de": "das Crumble, das alle täuscht"
+      },
+      "intro": {
+        "en": "toasted walnuts and black beans, fried until the edges crisp, taste meaty in a way that needs no defending. tamari does the savory heavy lifting. pile it into warm corn tortillas and let the avocado be the cool part.",
+        "de": "Geröstete Walnüsse und schwarze Bohnen, gebraten bis die Ränder knuspern, schmecken so herzhaft, dass sie sich für nichts rechtfertigen müssen. Tamari übernimmt die Umami-Arbeit. Ab damit in warme Mais-Tortillas – die Avocado ist der kühle Gegenpart."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "tree-nuts",
+        "walnuts",
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "easy",
+        "le30",
+        "le600",
+        "saute",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 18,
+        "carbs_g": 52,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "walnuts-ing",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 8,
+          "unit": "piece",
+          "note": {
+            "en": "small, about 12 cm",
+            "de": "klein, etwa 12 cm"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "avocado",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "ripe",
+            "de": "reif"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toast the walnuts in a dry pan over medium heat for about 3 minutes, until they smell like a bakery decided to be a forest. tip them out before they burn — they will, the second you look away.",
+            "de": "Röste die Walnüsse in einer trockenen Pfanne bei mittlerer Hitze etwa 3 Minuten, bis sie duften, als hätte eine Bäckerei beschlossen, Wald zu sein. Kipp sie raus, bevor sie verbrennen – das tun sie in der Sekunde, in der du wegguckst."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "chop the walnuts fine and mash them roughly with the beans, cumin, smoked paprika and tamari. leave texture in it — crumble, not paste.",
+            "de": "Hacke die Walnüsse fein und zerdrücke sie grob mit den Bohnen, Kreuzkümmel, Paprikapulver und Tamari. Lass Struktur drin – Crumble, kein Brei."
+          }
+        },
+        {
+          "text": {
+            "en": "spread the mixture in the hot pan and fry about 7 minutes, stirring only every couple of minutes so the edges can crisp up properly.",
+            "de": "Verteile die Mischung in der heißen Pfanne und brate sie etwa 7 Minuten. Nur alle paar Minuten rühren, damit die Ränder richtig knusprig werden können."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "warm the corn tortillas in a second dry pan, 30 seconds per side, and keep them under a towel.",
+            "de": "Erwärme die Mais-Tortillas in einer zweiten trockenen Pfanne, 30 Sekunden pro Seite, und halte sie unter einem Tuch warm."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "smash the avocado with half the lime juice and a pinch of salt.",
+            "de": "Zerdrücke die Avocado mit der Hälfte des Limettensafts und einer Prise Salz."
+          }
+        },
+        {
+          "text": {
+            "en": "build: avocado first, crumble on top, cilantro, the rest of the lime in wedges on the side. two tortillas per taco is faith, not excess.",
+            "de": "Bauen: erst Avocado, dann Crumble, Koriander, der Rest der Limette in Spalten daneben. Zwei Tortillas pro Taco ist Vertrauenssache, keine Verschwendung."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "plant-based",
+          "mexican"
+        ],
+        "de": [
+          "Streetfood",
+          "pflanzlich",
+          "Mexikanisch"
+        ]
+      }
+    },
+    {
+      "id": "tacos-fish",
+      "dish_id": "tacos",
+      "title": {
+        "en": "baja fish tacos",
+        "de": "Fisch-Tacos mit Rotkohl-Slaw"
+      },
+      "caption": {
+        "en": "crunchy slaw, soft fish, loud lime",
+        "de": "knackiger Slaw, zarter Fisch, laute Limette"
+      },
+      "intro": {
+        "en": "baja-style without the deep fryer: cod dusted in smoky spices, pan-fried until it flakes, balanced by a sharp red cabbage slaw and a lime crema that ties the whole thing together. the slaw needs ten quiet minutes with salt. give it those minutes.",
+        "de": "Baja-Style ohne Fritteuse: Kabeljau in rauchigen Gewürzen, in der Pfanne gebraten, bis er zerfällt, dazu ein säuerlicher Rotkohl-Slaw und eine Limetten-Crema, die alles zusammenhält. Der Slaw braucht zehn ruhige Minuten mit Salz. Gönn ihm die."
+      },
+      "variant": {
+        "diet": "pescatarian",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "fish",
+        "dairy"
+      ],
+      "attributes": [
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "pan-fry",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 38,
+        "carbs_g": 50,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cod",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "skinless fillet",
+            "de": "Filet ohne Haut"
+          }
+        },
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 8,
+          "unit": "piece",
+          "note": {
+            "en": "small, about 12 cm",
+            "de": "klein, etwa 12 cm"
+          }
+        },
+        {
+          "ingredient_id": "red-cabbage",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "shredded as fine as you can",
+            "de": "so fein wie möglich gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the shredded cabbage with a big pinch of salt and the juice of one lime. let it sit for 10 minutes — the salt softens it just enough while it keeps the crunch.",
+            "de": "Vermenge den gehobelten Rotkohl mit einer großen Prise Salz und dem Saft einer Limette. 10 Minuten stehen lassen – das Salz macht ihn gerade weich genug, ohne dass er den Biss verliert."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "stir the greek yogurt with the zest and half the juice of the second lime and a pinch of salt. taste — it should be bright enough to make you blink.",
+            "de": "Verrühre den griechischen Joghurt mit dem Abrieb und dem halben Saft der zweiten Limette und einer Prise Salz. Probieren – die Crema darf so frisch sein, dass du kurz blinzelst."
+          }
+        },
+        {
+          "text": {
+            "en": "pat the cod dry, cut into chunky fingers and dust all over with cumin, smoked paprika and salt.",
+            "de": "Tupfe den Kabeljau trocken, schneide ihn in dicke Streifen und bestäube ihn rundum mit Kreuzkümmel, geräuchertem Paprikapulver und Salz."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in a nonstick pan over medium-high heat and fry the fish about 3 minutes per side, until it flakes when nudged. don't move it before it releases on its own.",
+            "de": "Erhitze das Olivenöl in einer beschichteten Pfanne auf mittelhoher Stufe und brate den Fisch etwa 3 Minuten pro Seite, bis er auf sanften Druck zerfällt. Nicht bewegen, bevor er sich von selbst löst."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "warm the tortillas in a dry pan, 30 seconds per side, and stack them under a towel.",
+            "de": "Erwärme die Tortillas in einer trockenen Pfanne, 30 Sekunden pro Seite, und stapel sie unter einem Tuch."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "build: crema on the tortilla, fish, a generous tangle of slaw, cilantro. the slaw goes on top, never underneath — soggy tortillas are a preventable tragedy.",
+            "de": "Bauen: Crema auf die Tortilla, Fisch, eine großzügige Portion Slaw, Koriander. Der Slaw kommt obendrauf, nie darunter – durchgeweichte Tortillas sind eine vermeidbare Tragödie."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "street food",
+          "fish",
+          "fresh"
+        ],
+        "de": [
+          "Streetfood",
+          "Fisch",
+          "frisch"
+        ]
+      }
+    },
+    {
+      "id": "tacos-keto",
+      "dish_id": "tacos",
+      "title": {
+        "en": "lettuce shell tacos",
+        "de": "Tacos im Salatblatt"
+      },
+      "caption": {
+        "en": "the tortilla is a leaf now",
+        "de": "die Tortilla ist jetzt ein Blatt"
+      },
+      "intro": {
+        "en": "romaine leaves are the most underrated taco shell: they snap, they cup, they don't fall apart. spiced beef, cool avocado, sharp cheddar — everything a taco promises, nothing it doesn't need. dinner in 25 minutes with one pan to wash.",
+        "de": "Römersalat ist die am meisten unterschätzte Taco-Schale: knackt, hält die Form, fällt nicht auseinander. Gewürztes Rindfleisch, kühle Avocado, kräftiger Cheddar – alles, was ein Taco verspricht, nichts, was er nicht braucht. Abendessen in 25 Minuten, eine Pfanne im Spülbecken."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "keto",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 28,
+        "carbs_g": 8,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "romaine",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "you need 8 sturdy leaves",
+            "de": "du brauchst 8 stabile Blätter"
+          }
+        },
+        {
+          "ingredient_id": "avocado",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, diced",
+            "de": "reif, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "coarsely grated",
+            "de": "grob gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "separate 8 good romaine leaves and drop them into a bowl of ice water for 5 minutes. cold water is what makes them snap instead of bend.",
+            "de": "Löse 8 schöne Römersalat-Blätter und leg sie 5 Minuten in eine Schüssel Eiswasser. Das kalte Wasser sorgt dafür, dass sie knacken statt knicken."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "heat the olive oil in a pan over high heat and brown the beef with cumin, smoked paprika and salt, about 7 minutes. let it catch a little on the bottom — those dark bits are flavor, not failure.",
+            "de": "Erhitze das Olivenöl in einer Pfanne auf hoher Stufe und brate das Hackfleisch mit Kreuzkümmel, Paprikapulver und Salz an, etwa 7 Minuten. Lass es ruhig leicht ansetzen – die dunklen Stellen sind Geschmack, kein Versagen."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "dice the avocado and toss it with half the lime juice and a pinch of salt.",
+            "de": "Würfle die Avocado und vermenge sie mit dem halben Limettensaft und einer Prise Salz."
+          }
+        },
+        {
+          "text": {
+            "en": "dry the leaves well. fill each with beef, avocado and a flurry of cheddar, squeeze the rest of the lime over the top. eat with both hands, no regrets.",
+            "de": "Trockne die Blätter gut ab. Fülle jedes mit Fleisch, Avocado und einer Handvoll Cheddar, presse den Rest der Limette darüber. Mit beiden Händen essen, ohne Reue."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "low-carb",
+          "keto",
+          "quick"
+        ],
+        "de": [
+          "Low Carb",
+          "Keto",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "burrito-bowl-classic",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "chicken burrito bowl",
+        "de": "Burrito Bowl mit Hähnchen"
+      },
+      "caption": {
+        "en": "layers first, chaos later",
+        "de": "erst Schichten, dann Chaos"
+      },
+      "intro": {
+        "en": "everything a burrito holds, unwrapped and stacked: fluffy rice, smoky seared chicken, warm black beans, sweet corn, cool avocado. the lime at the end pulls the layers into one dish. build it pretty, then stir it ruinously. both stages matter.",
+        "de": "Alles, was ein Burrito hergibt, ausgepackt und gestapelt: lockerer Reis, rauchig gebratenes Hähnchen, warme schwarze Bohnen, süßer Mais, kühle Avocado. Die Limette am Ende zieht die Schichten zu einem Gericht zusammen. Hübsch aufbauen, dann rücksichtslos verrühren. Beide Phasen zählen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le60",
+        "le800",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 680,
+      "macros": {
+        "calories": 680,
+        "protein_g": 42,
+        "carbs_g": 70,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "avocado",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, sliced",
+            "de": "reif, in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water runs clear, then simmer it covered with a pinch of salt for 12 minutes. leave the lid on and let it steam off the heat while you cook the rest.",
+            "de": "Spüle den Reis, bis das Wasser klar bleibt, dann mit einer Prise Salz zugedeckt 12 Minuten köcheln. Deckel drauflassen und abseits der Hitze ausdämpfen lassen, während du den Rest kochst."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "rub the chicken breasts with cumin, smoked paprika, salt and a little of the oil. let them sit while the pan heats — a dry rub needs a minute to become a crust.",
+            "de": "Reibe die Hähnchenbrust mit Kreuzkümmel, geräuchertem Paprikapulver, Salz und etwas Öl ein. Lass sie kurz liegen, während die Pfanne heiß wird – ein Rub braucht eine Minute, um Kruste zu werden."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the chicken in the remaining oil over medium-high heat, about 6 minutes per side, until the inside is no longer pink. rest it 5 minutes on a board before slicing — the juices need to settle.",
+            "de": "Brate das Hähnchen im restlichen Öl auf mittelhoher Stufe etwa 6 Minuten pro Seite, bis es innen nicht mehr rosa ist. Vor dem Aufschneiden 5 Minuten auf dem Brett ruhen lassen – der Saft muss sich setzen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "warm the beans and corn in the empty chicken pan with a splash of water for about 4 minutes, scraping up the spiced brown bits as you go.",
+            "de": "Erwärme Bohnen und Mais in der leeren Hähnchenpfanne mit einem Schluck Wasser etwa 4 Minuten und kratze dabei die würzigen Röststellen vom Boden mit."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "build the bowls: rice, beans and corn, sliced chicken, avocado, cilantro. squeeze the lime over everything at the very end. it is not optional.",
+            "de": "Baue die Bowls: Reis, Bohnen und Mais, aufgeschnittenes Hähnchen, Avocado, Koriander. Ganz zum Schluss die Limette über alles pressen. Das ist nicht optional."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bowl",
+          "meal prep",
+          "mexican"
+        ],
+        "de": [
+          "Bowl",
+          "Meal Prep",
+          "Mexikanisch"
+        ]
+      }
+    },
+    {
+      "id": "burrito-bowl-vegan",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "crispy tofu burrito bowl",
+        "de": "Burrito Bowl mit Knusper-Tofu"
+      },
+      "caption": {
+        "en": "torn tofu, golden edges, no notes",
+        "de": "gerupfter Tofu, goldene Ränder, nichts auszusetzen"
+      },
+      "intro": {
+        "en": "tear the tofu instead of cubing it — ragged edges turn golden and chewy in ways that knife-cut blocks never learn. with spiced black beans, rice, corn and avocado, this bowl carries a whole weeknight on its shoulders without breaking stride.",
+        "de": "Rupf den Tofu, statt ihn zu würfeln – die rauen Kanten werden goldbraun und herrlich zäh, das lernen glatt geschnittene Würfel nie. Mit würzigen schwarzen Bohnen, Reis, Mais und Avocado trägt diese Bowl einen ganzen Feierabend, ohne aus dem Tritt zu kommen."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 26,
+        "carbs_g": 62,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "avocado",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "ripe, sliced",
+            "de": "reif, in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "press the tofu between two plates with something heavy on top for 10 minutes. less water in means more crisp out — this step is the whole secret.",
+            "de": "Presse den Tofu 10 Minuten zwischen zwei Tellern mit etwas Schwerem obendrauf. Weniger Wasser drin heißt mehr Knusper draußen – dieser Schritt ist das ganze Geheimnis."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "meanwhile rinse the rice and simmer it covered with a pinch of salt for 12 minutes, then let it steam off the heat with the lid on.",
+            "de": "Spüle währenddessen den Reis und lass ihn mit einer Prise Salz zugedeckt 12 Minuten köcheln, dann abseits der Hitze mit Deckel ausdämpfen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "tear the tofu into rough bite-size pieces. fry them in the olive oil over high heat for about 8 minutes, turning rarely, until deeply golden. add the tamari, cumin and half the paprika for the last minute — it will hiss and glaze. let it.",
+            "de": "Rupf den Tofu in grobe, mundgerechte Stücke. Brate sie im Olivenöl auf hoher Stufe etwa 8 Minuten, selten wenden, bis sie tief goldbraun sind. Tamari, Kreuzkümmel und die Hälfte des Paprikapulvers in der letzten Minute dazu – es zischt und glasiert. Lass es."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "warm the beans and corn in a small pot with the rest of the paprika and a splash of water.",
+            "de": "Erwärme Bohnen und Mais in einem kleinen Topf mit dem restlichen Paprikapulver und einem Schluck Wasser."
+          }
+        },
+        {
+          "text": {
+            "en": "build: rice, beans and corn, tofu, avocado. lime over everything, generously. the bowl looks calm. it isn't.",
+            "de": "Bauen: Reis, Bohnen und Mais, Tofu, Avocado. Limette großzügig über alles. Die Bowl sieht ruhig aus. Ist sie nicht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bowl",
+          "plant-based",
+          "meal prep"
+        ],
+        "de": [
+          "Bowl",
+          "pflanzlich",
+          "Meal Prep"
+        ]
+      }
+    },
+    {
+      "id": "burrito-bowl-protein",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "double chicken burrito bowl",
+        "de": "Protein-Burrito-Bowl mit doppelt Hähnchen"
+      },
+      "caption": {
+        "en": "twice the chicken, crema does cardio",
+        "de": "doppelt Hähnchen, Crema macht den Rest"
+      },
+      "intro": {
+        "en": "for the days when the gym bag is still by the door: double the chicken, a little less rice, and a whipped cottage-cheese crema that tastes far richer than its label admits. nearly sixty grams of protein hiding inside an actually good dinner.",
+        "de": "Für die Tage, an denen die Sporttasche noch an der Tür steht: doppelt Hähnchen, etwas weniger Reis und eine aufgeschlagene Hüttenkäse-Crema, die viel reicher schmeckt, als ihr Etikett zugibt. Fast sechzig Gramm Protein, versteckt in einem richtig guten Abendessen."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "high-protein",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le60",
+        "le800",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 700,
+      "macros": {
+        "calories": 700,
+        "protein_g": 58,
+        "carbs_g": 60,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cottage-cheese",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice and simmer it covered with a pinch of salt for 12 minutes, then let it steam off the heat, lid on.",
+            "de": "Spüle den Reis und lass ihn mit einer Prise Salz zugedeckt 12 Minuten köcheln, dann abseits der Hitze mit Deckel ausdämpfen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "blend the cottage cheese with the lime zest, half the lime juice and a pinch of salt until completely smooth. it becomes a crema. nobody will guess.",
+            "de": "Püriere den Hüttenkäse mit dem Limettenabrieb, dem halben Limettensaft und einer Prise Salz, bis er ganz glatt ist. Er wird zur Crema. Niemand wird es erraten."
+          }
+        },
+        {
+          "text": {
+            "en": "halve the chicken breasts horizontally into thin cutlets, rub with cumin, smoked paprika, salt and the oil, and pan-fry over medium-high heat about 4 minutes per side until cooked through. rest a few minutes, then slice.",
+            "de": "Halbiere die Hähnchenbrüste waagerecht zu dünnen Schnitzeln, reibe sie mit Kreuzkümmel, Paprikapulver, Salz und dem Öl ein und brate sie auf mittelhoher Stufe etwa 4 Minuten pro Seite durch. Kurz ruhen lassen, dann aufschneiden."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "warm the beans and corn in the chicken pan with a splash of water for about 4 minutes, scraping the spice crust into them.",
+            "de": "Erwärme Bohnen und Mais in der Hähnchenpfanne mit einem Schluck Wasser etwa 4 Minuten und kratze die Gewürzkruste dabei mit hinein."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "build: rice, beans and corn, the full pile of chicken, crema in fat ribbons over the top, the rest of the lime squeezed over. eat like you earned it. you did.",
+            "de": "Bauen: Reis, Bohnen und Mais, der ganze Berg Hähnchen, Crema in dicken Streifen darüber, der Rest der Limette obendrauf. Iss, als hättest du es dir verdient. Hast du."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bowl",
+          "high-protein",
+          "meal prep"
+        ],
+        "de": [
+          "Bowl",
+          "proteinreich",
+          "Meal Prep"
+        ]
+      }
+    },
+    {
+      "id": "quesadilla-classic",
+      "dish_id": "quesadilla",
+      "title": {
+        "en": "cheddar & black bean quesadilla",
+        "de": "Quesadilla mit Cheddar & schwarzen Bohnen"
+      },
+      "caption": {
+        "en": "golden outside, molten inside",
+        "de": "außen golden, innen geschmolzen"
+      },
+      "intro": {
+        "en": "the quesadilla rewards patience at exactly one moment: the two minutes after the pan, when the cheese sets from lava to silk. everything before that is twenty easy minutes of mashing beans and grating cheddar. cut into triangles. it's the law.",
+        "de": "Die Quesadilla belohnt Geduld an genau einer Stelle: in den zwei Minuten nach der Pfanne, wenn der Käse von Lava zu Seide wird. Alles davor sind zwanzig entspannte Minuten Bohnen zerdrücken und Cheddar reiben. In Dreiecke schneiden. Das ist Gesetz."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 24,
+        "carbs_g": 58,
+        "fat_g": 28
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-tortilla",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "large, about 25 cm",
+            "de": "groß, etwa 25 cm"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 140,
+          "unit": "g",
+          "note": {
+            "en": "coarsely grated",
+            "de": "grob gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feine Ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mash half the beans with the cumin and a pinch of salt into a rough paste, then fold in the whole beans, corn and spring onion. the paste is the glue that keeps the filling from staging an escape.",
+            "de": "Zerdrücke die Hälfte der Bohnen mit Kreuzkümmel und einer Prise Salz zu einer groben Paste, dann hebe die ganzen Bohnen, den Mais und die Frühlingszwiebeln unter. Die Paste ist der Kleber, der die Füllung an der Flucht hindert."
+          }
+        },
+        {
+          "text": {
+            "en": "lay out two tortillas. cheese first, then bean filling, then more cheese, then the second tortilla. cheese on both sides of the filling is structural engineering, not greed.",
+            "de": "Leg zwei Tortillas aus. Erst Käse, dann Bohnenfüllung, dann wieder Käse, dann die zweite Tortilla obendrauf. Käse auf beiden Seiten der Füllung ist Statik, keine Gier."
+          }
+        },
+        {
+          "text": {
+            "en": "brush a pan with a little of the oil and toast the first quesadilla over medium heat for about 3 minutes, pressing gently with a spatula, until the underside is golden and spotty.",
+            "de": "Pinsle eine Pfanne mit etwas Öl aus und backe die erste Quesadilla bei mittlerer Hitze etwa 3 Minuten, dabei sanft mit dem Pfannenwender andrücken, bis die Unterseite goldbraun gefleckt ist."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "flip with confidence — one motion, no hovering — and toast the other side about 3 minutes until the cheese is fully molten. repeat with the second quesadilla.",
+            "de": "Mit Überzeugung wenden – eine Bewegung, kein Zögern – und die andere Seite etwa 3 Minuten backen, bis der Käse komplett geschmolzen ist. Mit der zweiten Quesadilla wiederholen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "rest 2 minutes on a board before cutting into triangles. the cheese needs that moment to go from runaway to glorious.",
+            "de": "Vor dem Schneiden 2 Minuten auf dem Brett ruhen lassen, dann in Dreiecke teilen. Der Käse braucht diesen Moment, um von flüchtig zu großartig zu werden."
+          },
+          "timer_minutes": 2
+        }
+      ],
+      "tags": {
+        "en": [
+          "quick",
+          "comfort food",
+          "mexican"
+        ],
+        "de": [
+          "schnell",
+          "Soulfood",
+          "Mexikanisch"
+        ]
+      }
+    },
+    {
+      "id": "quesadilla-vegan",
+      "dish_id": "quesadilla",
+      "title": {
+        "en": "vegan quesadilla",
+        "de": "Vegane Quesadilla"
+      },
+      "caption": {
+        "en": "melty, smoky, entirely plants",
+        "de": "schmelzend, rauchig, komplett pflanzlich"
+      },
+      "intro": {
+        "en": "vegan cheese melts on its own schedule, so this quesadilla cooks under a lid — trapped steam does what dairy does for free. the smoky mashed beans and sweet corn carry so much flavor that the cheese only has to do one job: stretch.",
+        "de": "Veganer Käse schmilzt nach eigenem Zeitplan, also gart diese Quesadilla unter einem Deckel – der eingeschlossene Dampf erledigt, was Milchkäse umsonst macht. Die rauchigen Bohnen und der süße Mais bringen so viel Geschmack mit, dass der Käse nur einen Job hat: Fäden ziehen."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 16,
+        "carbs_g": 62,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-tortilla",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "large, about 25 cm",
+            "de": "groß, etwa 25 cm"
+          }
+        },
+        {
+          "ingredient_id": "vegan-cheese",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "the grated melty kind",
+            "de": "die geriebene Schmelz-Sorte"
+          }
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feine Ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mash half the beans with the cumin, smoked paprika and a pinch of salt, then fold in the rest of the beans, the corn and the spring onion.",
+            "de": "Zerdrücke die Hälfte der Bohnen mit Kreuzkümmel, geräuchertem Paprikapulver und einer Prise Salz, dann hebe die restlichen Bohnen, den Mais und die Frühlingszwiebeln unter."
+          }
+        },
+        {
+          "text": {
+            "en": "assemble two quesadillas: vegan cheese on the bottom tortilla, bean filling, more cheese, second tortilla on top. press down gently so the layers hold hands.",
+            "de": "Baue zwei Quesadillas: veganer Käse auf die untere Tortilla, Bohnenfüllung, noch mal Käse, zweite Tortilla obendrauf. Sanft andrücken, damit sich die Schichten festhalten."
+          }
+        },
+        {
+          "text": {
+            "en": "brush a pan with oil and cook the first quesadilla over medium heat with a lid on for about 4 minutes. the lid is non-negotiable — vegan cheese melts from steam, not wishes.",
+            "de": "Pinsle eine Pfanne mit Öl aus und backe die erste Quesadilla bei mittlerer Hitze mit Deckel etwa 4 Minuten. Der Deckel ist nicht verhandelbar – veganer Käse schmilzt durch Dampf, nicht durch Wünsche."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "flip, lid back on, and give it 3 more minutes until both sides are golden and the middle gives when pressed. repeat with the second one.",
+            "de": "Wenden, Deckel wieder drauf, weitere 3 Minuten, bis beide Seiten goldbraun sind und die Mitte auf Druck nachgibt. Mit der zweiten wiederholen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "rest 2 minutes, cut into triangles, count how many people suddenly appear in the kitchen.",
+            "de": "2 Minuten ruhen lassen, in Dreiecke schneiden und zählen, wie viele Leute plötzlich in der Küche stehen."
+          },
+          "timer_minutes": 2
+        }
+      ],
+      "tags": {
+        "en": [
+          "quick",
+          "plant-based",
+          "comfort food"
+        ],
+        "de": [
+          "schnell",
+          "pflanzlich",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "quesadilla-gluten-free",
+      "dish_id": "quesadilla",
+      "title": {
+        "en": "corn tortilla quesadilla",
+        "de": "Mais-Quesadilla"
+      },
+      "caption": {
+        "en": "half-moons of melted cheddar",
+        "de": "Halbmonde aus geschmolzenem Cheddar"
+      },
+      "intro": {
+        "en": "corn tortillas make a quesadilla with more flavor and zero gluten — they just ask for one courtesy: warm them first so they fold instead of crack. fold-over half-moons, sharp cheddar, a little jalapeño heat. twenty minutes, start to triangle.",
+        "de": "Mais-Tortillas machen die Quesadilla aromatischer und ganz ohne Gluten – sie bitten nur um eine Höflichkeit: vorher anwärmen, damit sie sich falten lassen statt zu brechen. Halbmonde zum Umklappen, kräftiger Cheddar, etwas Jalapeño-Schärfe. Zwanzig Minuten von Anfang bis Dreieck."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 24,
+        "carbs_g": 50,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 6,
+          "unit": "piece",
+          "note": {
+            "en": "the larger ones if you can find them",
+            "de": "die größeren, wenn du sie findest"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 160,
+          "unit": "g",
+          "note": {
+            "en": "coarsely grated",
+            "de": "grob gerieben"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jalapeno",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "deseeded, finely sliced",
+            "de": "entkernt, in feine Ringe"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feine Ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "warm the corn tortillas in a dry pan, 30 seconds per side, until soft and bendable. cold corn tortillas crack when folded — warm ones forgive you everything.",
+            "de": "Erwärme die Mais-Tortillas in einer trockenen Pfanne, 30 Sekunden pro Seite, bis sie weich und biegsam sind. Kalte Mais-Tortillas brechen beim Falten – warme verzeihen dir alles."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "toss the cheddar with the corn, jalapeño, spring onion and cumin in a bowl. one mix, even filling, no cheese politics.",
+            "de": "Vermenge Cheddar, Mais, Jalapeño, Frühlingszwiebeln und Kreuzkümmel in einer Schüssel. Einmal mischen, gleichmäßige Füllung, keine Käse-Diskussionen."
+          }
+        },
+        {
+          "text": {
+            "en": "spoon the filling onto one half of each tortilla and fold into half-moons. press the edges lightly — melted cheddar will seal them shut on its own.",
+            "de": "Verteile die Füllung auf je eine Tortilla-Hälfte und klappe sie zu Halbmonden. Die Ränder leicht andrücken – geschmolzener Cheddar versiegelt sie dann von selbst."
+          }
+        },
+        {
+          "text": {
+            "en": "brush the pan with oil and fry the half-moons in batches over medium heat, about 3 minutes on the first side, until crisp and freckled brown.",
+            "de": "Pinsle die Pfanne mit Öl aus und brate die Halbmonde portionsweise bei mittlerer Hitze, etwa 3 Minuten auf der ersten Seite, bis sie knusprig und braun gesprenkelt sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "flip carefully and give the second side about 2 minutes. rest a minute, cut each half-moon in two, eat hot — corn tortillas are at their best in the first ten minutes of their new life.",
+            "de": "Vorsichtig wenden und die zweite Seite etwa 2 Minuten braten. Eine Minute ruhen lassen, jeden Halbmond halbieren und heiß essen – Mais-Tortillas sind in den ersten zehn Minuten ihres neuen Lebens am besten."
+          },
+          "timer_minutes": 2
+        }
+      ],
+      "tags": {
+        "en": [
+          "quick",
+          "gluten-free",
+          "mexican"
+        ],
+        "de": [
+          "schnell",
+          "glutenfrei",
+          "Mexikanisch"
+        ]
+      }
+    }
+  ]
+}

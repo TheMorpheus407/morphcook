@@ -245,8 +245,11 @@ void main() {
             reason:
                 'dish ${dish.id} missing from partition ${dish.partitionId}');
       }
-      // Every recipe's variant plan rows exist: spot-check counts.
-      expect(corpus.loadedRecipes.length, 47);
+      // Corpus size must equal the dish routing — no orphans, no strays.
+      final expectedTotal =
+          corpus.dishes.fold<int>(0, (sum, d) => sum + d.recipeIds.length);
+      expect(corpus.loadedRecipes.length, expectedTotal);
+      expect(corpus.loadedRecipes.length, greaterThanOrEqualTo(100));
     });
 
     test('meal values are valid', () async {

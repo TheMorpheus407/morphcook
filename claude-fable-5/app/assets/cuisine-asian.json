@@ -4,31 +4,120 @@
     {
       "id": "pad-thai-classic",
       "dish_id": "pad-thai",
-      "title": {"en": "pad thai with shrimp", "de": "Pad Thai mit Garnelen"},
-      "caption": {"en": "sweet, sour, salty, slightly on fire", "de": "süß, sauer, salzig, leicht in Flammen"},
+      "title": {
+        "en": "pad thai with shrimp",
+        "de": "Pad Thai mit Garnelen"
+      },
+      "caption": {
+        "en": "sweet, sour, salty, slightly on fire",
+        "de": "süß, sauer, salzig, leicht in Flammen"
+      },
       "intro": {
         "en": "real pad thai is fast and a little violent: the wok stays screaming hot, the sauce is already mixed, the noodles are only mostly soft. get everything ready before you light the stove. after that it's three minutes of glory.",
         "de": "Echtes Pad Thai ist schnell und ein bisschen brutal: Der Wok bleibt brüllend heiß, die Sauce ist fertig gemischt, die Nudeln sind nur fast weich. Stell alles bereit, bevor du den Herd anmachst. Danach sind es drei Minuten Ruhm."
       },
-      "variant": {"diet": "classic", "effort": "medium", "calorie": "le600"},
-      "contains": ["shellfish", "fish", "egg", "peanuts", "added-sugar"],
-      "attributes": ["pescatarian", "halal", "gluten-free", "low-fodmap", "medium", "le30", "le600", "stir-fry"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "shellfish",
+        "fish",
+        "egg",
+        "peanuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "pescatarian",
+        "halal",
+        "gluten-free",
+        "low-fodmap",
+        "medium",
+        "le30",
+        "le600",
+        "stir-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 30,
       "servings": 2,
       "calories_per_serving": 560,
-      "macros": {"calories": 560, "protein_g": 35, "carbs_g": 62, "fat_g": 20},
+      "macros": {
+        "calories": 560,
+        "protein_g": 35,
+        "carbs_g": 62,
+        "fat_g": 20
+      },
       "ingredients": [
-        {"ingredient_id": "rice-noodles", "qty": 125, "unit": "g", "note": {"en": "flat, about 5 mm wide", "de": "flach, etwa 5 mm breit"}},
-        {"ingredient_id": "shrimp", "qty": 200, "unit": "g", "note": {"en": "peeled and deveined", "de": "geschält und entdarmt"}},
-        {"ingredient_id": "egg", "qty": 2, "unit": "piece"},
-        {"ingredient_id": "peanuts-ing", "qty": 30, "unit": "g", "note": {"en": "roasted, roughly chopped", "de": "geröstet, grob gehackt"}},
-        {"ingredient_id": "beansprouts", "qty": 150, "unit": "g"},
-        {"ingredient_id": "fish-sauce", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "tamarind-paste", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "brown-sugar", "qty": 1.5, "unit": "tbsp"},
-        {"ingredient_id": "vegetable-oil", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "lime", "qty": 1, "unit": "piece", "note": {"en": "cut into wedges", "de": "in Spalten geschnitten"}}
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 125,
+          "unit": "g",
+          "note": {
+            "en": "flat, about 5 mm wide",
+            "de": "flach, etwa 5 mm breit"
+          }
+        },
+        {
+          "ingredient_id": "shrimp",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "peeled and deveined",
+            "de": "geschält und entdarmt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "peanuts-ing",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "roasted, roughly chopped",
+            "de": "geröstet, grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "beansprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
       ],
       "steps": [
         {
@@ -70,36 +159,142 @@
           }
         }
       ],
-      "tags": {"en": ["pad thai", "wok", "street food"], "de": ["Pad Thai", "Wok", "Streetfood"]}
+      "tags": {
+        "en": [
+          "pad thai",
+          "wok",
+          "street food"
+        ],
+        "de": [
+          "Pad Thai",
+          "Wok",
+          "Streetfood"
+        ]
+      }
     },
     {
       "id": "pad-thai-vegan",
       "dish_id": "pad-thai",
-      "title": {"en": "vegan pad thai", "de": "Veganes Pad Thai"},
-      "caption": {"en": "crispy tofu, loud wok energy", "de": "knuspriger Tofu, lauter Wok"},
+      "title": {
+        "en": "vegan pad thai",
+        "de": "Veganes Pad Thai"
+      },
+      "caption": {
+        "en": "crispy tofu, loud wok energy",
+        "de": "knuspriger Tofu, lauter Wok"
+      },
       "intro": {
         "en": "the tofu gets the star treatment here: pressed dry, fried until properly crisp, then tossed through tamarind and tamari at the last second so it stays crunchy. the wok does the rest. dinner, faster than the argument about dinner.",
         "de": "Hier bekommt der Tofu den großen Auftritt: trocken gepresst, richtig knusprig gebraten und erst in letzter Sekunde durch Tamarinde und Tamari geschwenkt, damit er knusprig bleibt. Den Rest erledigt der Wok. Abendessen, schneller als die Diskussion darüber."
       },
-      "variant": {"diet": "vegan", "effort": "medium", "calorie": "le600"},
-      "contains": ["soy", "peanuts", "added-sugar"],
-      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "low-fodmap", "medium", "le30", "le600", "stir-fry", "pan-fry"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "peanuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "medium",
+        "le30",
+        "le600",
+        "stir-fry",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 30,
       "servings": 2,
       "calories_per_serving": 520,
-      "macros": {"calories": 520, "protein_g": 26, "carbs_g": 64, "fat_g": 18},
+      "macros": {
+        "calories": 520,
+        "protein_g": 26,
+        "carbs_g": 64,
+        "fat_g": 18
+      },
       "ingredients": [
-        {"ingredient_id": "rice-noodles", "qty": 125, "unit": "g", "note": {"en": "flat, about 5 mm wide", "de": "flach, etwa 5 mm breit"}},
-        {"ingredient_id": "firm-tofu", "qty": 300, "unit": "g", "note": {"en": "pressed dry, cubed", "de": "trocken gepresst, gewürfelt"}},
-        {"ingredient_id": "peanuts-ing", "qty": 30, "unit": "g", "note": {"en": "roasted, roughly chopped", "de": "geröstet, grob gehackt"}},
-        {"ingredient_id": "beansprouts", "qty": 150, "unit": "g"},
-        {"ingredient_id": "spring-onion", "qty": 3, "unit": "piece", "note": {"en": "green parts, in 3 cm lengths", "de": "das Grün, in 3-cm-Stücken"}},
-        {"ingredient_id": "tamari", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "tamarind-paste", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "brown-sugar", "qty": 1.5, "unit": "tbsp"},
-        {"ingredient_id": "vegetable-oil", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "lime", "qty": 1, "unit": "piece", "note": {"en": "cut into wedges", "de": "in Spalten geschnitten"}}
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 125,
+          "unit": "g",
+          "note": {
+            "en": "flat, about 5 mm wide",
+            "de": "flach, etwa 5 mm breit"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry, cubed",
+            "de": "trocken gepresst, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "peanuts-ing",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "roasted, roughly chopped",
+            "de": "geröstet, grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "beansprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "green parts, in 3 cm lengths",
+            "de": "das Grün, in 3-cm-Stücken"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
       ],
       "steps": [
         {
@@ -142,36 +337,132 @@
           }
         }
       ],
-      "tags": {"en": ["pad thai", "plant-based", "wok"], "de": ["Pad Thai", "pflanzlich", "Wok"]}
+      "tags": {
+        "en": [
+          "pad thai",
+          "plant-based",
+          "wok"
+        ],
+        "de": [
+          "Pad Thai",
+          "pflanzlich",
+          "Wok"
+        ]
+      }
     },
     {
       "id": "pad-thai-nut-free",
       "dish_id": "pad-thai",
-      "title": {"en": "nut-free pad thai with chicken", "de": "Nussfreies Pad Thai mit Hähnchen"},
-      "caption": {"en": "all the crunch, zero nuts", "de": "voller Crunch, ganz ohne Nüsse"},
+      "title": {
+        "en": "nut-free pad thai with chicken",
+        "de": "Nussfreies Pad Thai mit Hähnchen"
+      },
+      "caption": {
+        "en": "all the crunch, zero nuts",
+        "de": "voller Crunch, ganz ohne Nüsse"
+      },
       "intro": {
         "en": "toasted sunflower seeds do the crunch work peanuts usually take credit for — and honestly? they're great at it. thin-sliced chicken, a screaming-hot wok, the same sweet-sour-salty sauce. nobody at the table goes without.",
         "de": "Geröstete Sonnenblumenkerne übernehmen den Crunch, für den sonst die Erdnüsse den Applaus kassieren – und ehrlich? Sie können das. Dünn geschnittenes Hähnchen, ein brüllend heißer Wok, dieselbe süß-sauer-salzige Sauce. Am Tisch geht niemand leer aus."
       },
-      "variant": {"diet": "nut-free", "effort": "medium", "calorie": "le600"},
-      "contains": ["poultry", "fish", "egg", "added-sugar"],
-      "attributes": ["nut-free", "halal", "kosher", "gluten-free", "low-fodmap", "medium", "le30", "le600", "stir-fry"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "nut-free",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "egg",
+        "added-sugar"
+      ],
+      "attributes": [
+        "nut-free",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "medium",
+        "le30",
+        "le600",
+        "stir-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 30,
       "servings": 2,
       "calories_per_serving": 540,
-      "macros": {"calories": 540, "protein_g": 42, "carbs_g": 60, "fat_g": 16},
+      "macros": {
+        "calories": 540,
+        "protein_g": 42,
+        "carbs_g": 60,
+        "fat_g": 16
+      },
       "ingredients": [
-        {"ingredient_id": "rice-noodles", "qty": 125, "unit": "g", "note": {"en": "flat, about 5 mm wide", "de": "flach, etwa 5 mm breit"}},
-        {"ingredient_id": "chicken-breast", "qty": 250, "unit": "g", "note": {"en": "in thin strips", "de": "in dünnen Streifen"}},
-        {"ingredient_id": "egg", "qty": 2, "unit": "piece"},
-        {"ingredient_id": "sunflower-seeds", "qty": 30, "unit": "g"},
-        {"ingredient_id": "beansprouts", "qty": 150, "unit": "g"},
-        {"ingredient_id": "fish-sauce", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "tamarind-paste", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "brown-sugar", "qty": 1.5, "unit": "tbsp"},
-        {"ingredient_id": "vegetable-oil", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "lime", "qty": 1, "unit": "piece", "note": {"en": "cut into wedges", "de": "in Spalten geschnitten"}}
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 125,
+          "unit": "g",
+          "note": {
+            "en": "flat, about 5 mm wide",
+            "de": "flach, etwa 5 mm breit"
+          }
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "in thin strips",
+            "de": "in dünnen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "sunflower-seeds",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "beansprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
       ],
       "steps": [
         {
@@ -214,36 +505,142 @@
           }
         }
       ],
-      "tags": {"en": ["pad thai", "nut-free", "wok"], "de": ["Pad Thai", "nussfrei", "Wok"]}
+      "tags": {
+        "en": [
+          "pad thai",
+          "nut-free",
+          "wok"
+        ],
+        "de": [
+          "Pad Thai",
+          "nussfrei",
+          "Wok"
+        ]
+      }
     },
     {
       "id": "ramen-classic",
       "dish_id": "ramen",
-      "title": {"en": "miso ramen with braised pork belly", "de": "Miso-Ramen mit geschmortem Schweinebauch"},
-      "caption": {"en": "a saturday in a bowl", "de": "ein Samstag in einer Schüssel"},
+      "title": {
+        "en": "miso ramen with braised pork belly",
+        "de": "Miso-Ramen mit geschmortem Schweinebauch"
+      },
+      "caption": {
+        "en": "a saturday in a bowl",
+        "de": "ein Samstag in einer Schüssel"
+      },
       "intro": {
         "en": "this is the long way around, and the long way is the point: pork belly braised for two hours in ginger, soy and mirin, eggs jammy and marinated, miso whisked in at the end like a secret. clear your afternoon. the bowl pays you back.",
         "de": "Das hier ist der lange Weg, und der lange Weg ist der Sinn: Schweinebauch, zwei Stunden in Ingwer, Soja und Mirin geschmort, wachsweiche marinierte Eier, Miso zum Schluss eingerührt wie ein Geheimnis. Halt dir den Nachmittag frei. Die Schüssel zahlt es dir zurück."
       },
-      "variant": {"diet": "classic", "effort": "hard", "calorie": "le800"},
-      "contains": ["pork", "poultry", "egg", "gluten", "soy", "alcohol", "added-sugar", "celery", "high-fodmap"],
-      "attributes": ["nut-free", "hard", "gt60", "le800", "saute", "simmer"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le800"
+      },
+      "contains": [
+        "pork",
+        "poultry",
+        "egg",
+        "gluten",
+        "soy",
+        "alcohol",
+        "added-sugar",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "nut-free",
+        "hard",
+        "gt60",
+        "le800",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 150,
       "servings": 4,
       "calories_per_serving": 760,
-      "macros": {"calories": 760, "protein_g": 38, "carbs_g": 68, "fat_g": 36},
+      "macros": {
+        "calories": 760,
+        "protein_g": 38,
+        "carbs_g": 68,
+        "fat_g": 36
+      },
       "ingredients": [
-        {"ingredient_id": "pork-belly", "qty": 500, "unit": "g", "note": {"en": "skinless, in one piece", "de": "ohne Schwarte, am Stück"}},
-        {"ingredient_id": "ramen-noodles", "qty": 400, "unit": "g", "note": {"en": "fresh", "de": "frisch"}},
-        {"ingredient_id": "egg", "qty": 4, "unit": "piece"},
-        {"ingredient_id": "chicken-stock", "qty": 1.5, "unit": "l"},
-        {"ingredient_id": "miso-paste", "qty": 4, "unit": "tbsp"},
-        {"ingredient_id": "mirin", "qty": 4, "unit": "tbsp"},
-        {"ingredient_id": "soy-sauce", "qty": 5, "unit": "tbsp"},
-        {"ingredient_id": "ginger", "qty": 30, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
-        {"ingredient_id": "garlic", "qty": 3, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
-        {"ingredient_id": "spring-onion", "qty": 4, "unit": "piece", "note": {"en": "in fine rings", "de": "in feinen Ringen"}}
+        {
+          "ingredient_id": "pork-belly",
+          "qty": 500,
+          "unit": "g",
+          "note": {
+            "en": "skinless, in one piece",
+            "de": "ohne Schwarte, am Stück"
+          }
+        },
+        {
+          "ingredient_id": "ramen-noodles",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "fresh",
+            "de": "frisch"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "smashed",
+            "de": "angedrückt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 4,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        }
       ],
       "steps": [
         {
@@ -293,36 +690,148 @@
           }
         }
       ],
-      "tags": {"en": ["ramen", "project cooking", "soup"], "de": ["Ramen", "Projektküche", "Suppe"]}
+      "tags": {
+        "en": [
+          "ramen",
+          "project cooking",
+          "soup"
+        ],
+        "de": [
+          "Ramen",
+          "Projektküche",
+          "Suppe"
+        ]
+      }
     },
     {
       "id": "ramen-vegan",
       "dish_id": "ramen",
-      "title": {"en": "shiitake miso ramen", "de": "Shiitake-Miso-Ramen"},
-      "caption": {"en": "broth with main character energy", "de": "Brühe mit Hauptrollen-Energie"},
+      "title": {
+        "en": "shiitake miso ramen",
+        "de": "Shiitake-Miso-Ramen"
+      },
+      "caption": {
+        "en": "broth with main character energy",
+        "de": "Brühe mit Hauptrollen-Energie"
+      },
       "intro": {
         "en": "shiitake and ginger build a broth that doesn't apologize for anything, crisp-fried tofu rides on top, and sesame oil ties the whole room together. fifty minutes, most of them just the pot talking quietly to itself.",
         "de": "Shiitake und Ingwer bauen eine Brühe, die sich für nichts entschuldigt, obendrauf knusprig gebratener Tofu, und Sesamöl hält den ganzen Laden zusammen. Fünfzig Minuten, in den meisten davon redet der Topf nur leise mit sich selbst."
       },
-      "variant": {"diet": "vegan", "effort": "medium", "calorie": "le600"},
-      "contains": ["soy", "gluten", "sesame", "celery", "high-fodmap"],
-      "attributes": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "sugar-free", "nut-free", "medium", "le60", "le600", "simmer", "pan-fry"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "sesame",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 50,
       "servings": 2,
       "calories_per_serving": 540,
-      "macros": {"calories": 540, "protein_g": 28, "carbs_g": 66, "fat_g": 18},
+      "macros": {
+        "calories": 540,
+        "protein_g": 28,
+        "carbs_g": 66,
+        "fat_g": 18
+      },
       "ingredients": [
-        {"ingredient_id": "ramen-noodles", "qty": 200, "unit": "g", "note": {"en": "fresh", "de": "frisch"}},
-        {"ingredient_id": "firm-tofu", "qty": 200, "unit": "g", "note": {"en": "pressed dry, cubed", "de": "trocken gepresst, gewürfelt"}},
-        {"ingredient_id": "shiitake", "qty": 150, "unit": "g", "note": {"en": "stems and caps separated", "de": "Stiele und Hüte getrennt"}},
-        {"ingredient_id": "vegetable-stock", "qty": 1.2, "unit": "l"},
-        {"ingredient_id": "miso-paste", "qty": 3, "unit": "tbsp"},
-        {"ingredient_id": "soy-sauce", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "ginger", "qty": 20, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
-        {"ingredient_id": "garlic", "qty": 2, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
-        {"ingredient_id": "sesame-oil", "qty": 1, "unit": "tbsp"},
-        {"ingredient_id": "spring-onion", "qty": 3, "unit": "piece", "note": {"en": "in fine rings", "de": "in feinen Ringen"}}
+        {
+          "ingredient_id": "ramen-noodles",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "fresh",
+            "de": "frisch"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry, cubed",
+            "de": "trocken gepresst, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "shiitake",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "stems and caps separated",
+            "de": "Stiele und Hüte getrennt"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "smashed",
+            "de": "angedrückt"
+          }
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        }
       ],
       "steps": [
         {
@@ -359,36 +868,135 @@
           }
         }
       ],
-      "tags": {"en": ["ramen", "plant-based", "soup"], "de": ["Ramen", "pflanzlich", "Suppe"]}
+      "tags": {
+        "en": [
+          "ramen",
+          "plant-based",
+          "soup"
+        ],
+        "de": [
+          "Ramen",
+          "pflanzlich",
+          "Suppe"
+        ]
+      }
     },
     {
       "id": "ramen-quick",
       "dish_id": "ramen",
-      "title": {"en": "20-minute chicken ramen", "de": "20-Minuten-Hähnchen-Ramen"},
-      "caption": {"en": "weeknight rescue, noodle edition", "de": "Feierabend-Rettung in Nudelform"},
+      "title": {
+        "en": "20-minute chicken ramen",
+        "de": "20-Minuten-Hähnchen-Ramen"
+      },
+      "caption": {
+        "en": "weeknight rescue, noodle edition",
+        "de": "Feierabend-Rettung in Nudelform"
+      },
       "intro": {
         "en": "for the nights when you want ramen and you want it now: chicken poached right in the broth so it stays soft, noodles cooked in the same pot, and a jammy egg if you can wait seven minutes. you can wait seven minutes.",
         "de": "Für die Abende, an denen du Ramen willst, und zwar sofort: Hähnchen direkt in der Brühe pochiert, damit es zart bleibt, Nudeln im selben Topf, dazu ein wachsweiches Ei, falls du sieben Minuten warten kannst. Du kannst sieben Minuten warten."
       },
-      "variant": {"diet": "classic", "effort": "easy", "calorie": "le600"},
-      "contains": ["poultry", "egg", "gluten", "soy", "sesame", "celery", "high-fodmap"],
-      "attributes": ["halal", "kosher", "sugar-free", "nut-free", "easy", "le30", "le600", "simmer", "poach"],
-      "meal": ["lunch", "dinner"],
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "gluten",
+        "soy",
+        "sesame",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "simmer",
+        "poach"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
       "time_minutes": 20,
       "servings": 2,
       "calories_per_serving": 520,
-      "macros": {"calories": 520, "protein_g": 42, "carbs_g": 56, "fat_g": 15},
+      "macros": {
+        "calories": 520,
+        "protein_g": 42,
+        "carbs_g": 56,
+        "fat_g": 15
+      },
       "ingredients": [
-        {"ingredient_id": "ramen-noodles", "qty": 200, "unit": "g", "note": {"en": "fresh", "de": "frisch"}},
-        {"ingredient_id": "chicken-breast", "qty": 250, "unit": "g"},
-        {"ingredient_id": "chicken-stock", "qty": 1, "unit": "l"},
-        {"ingredient_id": "miso-paste", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "soy-sauce", "qty": 2, "unit": "tbsp"},
-        {"ingredient_id": "ginger", "qty": 15, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
-        {"ingredient_id": "spinach", "qty": 100, "unit": "g"},
-        {"ingredient_id": "egg", "qty": 2, "unit": "piece"},
-        {"ingredient_id": "spring-onion", "qty": 2, "unit": "piece", "note": {"en": "in fine rings", "de": "in feinen Ringen"}},
-        {"ingredient_id": "sesame-oil", "qty": 1, "unit": "tsp"}
+        {
+          "ingredient_id": "ramen-noodles",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "fresh",
+            "de": "frisch"
+          }
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 1,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 15,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
       ],
       "steps": [
         {
@@ -425,7 +1033,1566 @@
           }
         }
       ],
-      "tags": {"en": ["ramen", "weeknight", "one pot"], "de": ["Ramen", "Feierabend", "One Pot"]}
+      "tags": {
+        "en": [
+          "ramen",
+          "weeknight",
+          "one pot"
+        ],
+        "de": [
+          "Ramen",
+          "Feierabend",
+          "One Pot"
+        ]
+      }
+    },
+    {
+      "id": "sushi-classic",
+      "dish_id": "sushi",
+      "title": {
+        "en": "salmon maki & nigiri",
+        "de": "Lachs-Maki & Nigiri"
+      },
+      "caption": {
+        "en": "the rice is the whole point",
+        "de": "der Reis ist die halbe Wahrheit"
+      },
+      "intro": {
+        "en": "sushi at home is mostly a rice ritual with a fish reward at the end. wash it, cook it, season it warm, fan it like you mean it. the salmon just has to be very fresh and very thin — the rice carries everything else.",
+        "de": "Sushi zu Hause ist vor allem ein Reis-Ritual mit Fisch als Belohnung. Waschen, kochen, warm würzen, fächeln, als wärst du in einer Doku. Der Lachs muss nur sehr frisch und sehr dünn sein – alles andere trägt der Reis."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": [
+        "pescatarian",
+        "halal",
+        "kosher",
+        "low-fodmap",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 24,
+        "carbs_g": 78,
+        "fat_g": 8
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sushi-rice",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salmon",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "sashimi-grade, very cold",
+            "de": "Sashimi-Qualität, gut gekühlt"
+          }
+        },
+        {
+          "ingredient_id": "nori",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "cut into thin batons",
+            "de": "in dünne Stifte geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "rice-vinegar",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "for dipping",
+            "de": "zum Dippen"
+          }
+        },
+        {
+          "ingredient_id": "wasabi",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pickled-ginger",
+          "qty": 30,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice in cold water until it runs almost clear — five or six changes, no shortcuts. cook it with 330 ml water: bring to a boil, lid on, lowest heat, 12 minutes. do not lift the lid. not even a peek.",
+            "de": "Wasche den Reis in kaltem Wasser, bis es fast klar bleibt – fünf, sechs Durchgänge, keine Abkürzung. Koch ihn mit 330 ml Wasser: aufkochen, Deckel drauf, kleinste Stufe, 12 Minuten. Deckel bleibt zu. Auch nicht kurz."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "pull the pot off the heat and let it rest, still covered, for 10 minutes. meanwhile stir the rice vinegar, sugar and salt together until dissolved.",
+            "de": "Zieh den Topf vom Herd und lass den Reis zugedeckt 10 Minuten ruhen. Verrühre währenddessen Reisessig, Zucker und Salz, bis sich alles aufgelöst hat."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "tip the rice into a wide bowl, drizzle the seasoned vinegar over and fold it in with a cutting motion while fanning. you want glossy, body-temperature rice — not mashed, not hot.",
+            "de": "Kipp den Reis in eine breite Schüssel, träufle den gewürzten Essig darüber und hebe ihn mit schneidenden Bewegungen unter, während du fächelst. Ziel: glänzender, körperwarmer Reis – nicht zermatscht, nicht heiß."
+          }
+        },
+        {
+          "text": {
+            "en": "slice two thirds of the salmon into pencil-thick strips for maki, the rest into 8 thin slices for nigiri. keep it cold until the last second.",
+            "de": "Schneide zwei Drittel vom Lachs in bleistiftdicke Streifen für Maki, den Rest in 8 dünne Scheiben für Nigiri. Bis zur letzten Sekunde kalt halten."
+          }
+        },
+        {
+          "text": {
+            "en": "lay a nori sheet shiny-side down on a mat, spread a thin layer of rice with wet fingers, leave a 2 cm border at the top. line up salmon and cucumber, roll firmly, seal the edge with a wet finger. slice each roll into 8 with a wet knife.",
+            "de": "Leg ein Nori-Blatt mit der glänzenden Seite nach unten auf eine Matte, verteile mit nassen Fingern eine dünne Schicht Reis, lass oben 2 cm Rand. Lachs und Gurke auflegen, fest rollen, die Kante mit einem nassen Finger verschließen. Jede Rolle mit nassem Messer in 8 Stücke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "for the nigiri, press small ovals of rice in a wet palm, dab on a whisper of wasabi, lay the salmon over and press gently. serve with soy sauce, pickled ginger and the remaining wasabi. the first roll is for practicing. eat it anyway.",
+            "de": "Für die Nigiri formst du in der nassen Handfläche kleine Reis-Ovale, tupfst einen Hauch Wasabi darauf, legst den Lachs darüber und drückst sanft an. Mit Sojasauce, eingelegtem Ingwer und dem restlichen Wasabi servieren. Die erste Rolle ist zum Üben. Iss sie trotzdem."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "sushi",
+          "japanese",
+          "rice"
+        ],
+        "de": [
+          "Sushi",
+          "japanisch",
+          "Reis"
+        ]
+      }
+    },
+    {
+      "id": "sushi-vegan",
+      "dish_id": "sushi",
+      "title": {
+        "en": "avocado cucumber maki",
+        "de": "Avocado-Gurken-Maki"
+      },
+      "caption": {
+        "en": "green, cool, quietly perfect",
+        "de": "grün, kühl, leise perfekt"
+      },
+      "intro": {
+        "en": "no fish, no problem — avocado brings the richness, cucumber brings the crunch, and toasted sesame does the thing sesame always does. the rice still gets the full ceremony. it deserves it.",
+        "de": "Kein Fisch, kein Drama – die Avocado bringt die Cremigkeit, die Gurke den Biss, und gerösteter Sesam macht das, was Sesam eben macht. Der Reis bekommt trotzdem die volle Zeremonie. Er hat sie verdient."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "soy",
+        "sesame",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le400",
+        "simmer",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 360,
+      "macros": {
+        "calories": 360,
+        "protein_g": 8,
+        "carbs_g": 64,
+        "fat_g": 8
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sushi-rice",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nori",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "avocado",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "ripe but firm",
+            "de": "reif, aber fest"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "cut into thin batons",
+            "de": "in dünne Stifte geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "rice-vinegar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "white-sesame",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "for dipping",
+            "de": "zum Dippen"
+          }
+        },
+        {
+          "ingredient_id": "wasabi",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pickled-ginger",
+          "qty": 30,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water runs nearly clear. cook with 275 ml water: boil, lid on, lowest heat, 12 minutes. the lid stays on. trust the steam.",
+            "de": "Wasche den Reis, bis das Wasser fast klar bleibt. Mit 275 ml Wasser kochen: aufkochen, Deckel drauf, kleinste Stufe, 12 Minuten. Der Deckel bleibt drauf. Vertrau dem Dampf."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "rest the rice off the heat for 10 minutes, covered. stir the vinegar and sugar with a pinch of the tamari until dissolved, then fold into the rice in a wide bowl while fanning it cool.",
+            "de": "Lass den Reis zugedeckt 10 Minuten neben dem Herd ruhen. Verrühre Essig und Zucker mit einem Spritzer Tamari, bis sich alles gelöst hat, dann in einer breiten Schüssel unter den Reis heben und dabei kühl fächeln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "halve the avocado, slice it into thin crescents. line them up next to the cucumber batons so the rolling goes fast — warm hands and avocado are not friends.",
+            "de": "Halbiere die Avocado und schneide sie in dünne Spalten. Leg sie neben die Gurkenstifte, damit das Rollen schnell geht – warme Hände und Avocado sind keine Freunde."
+          }
+        },
+        {
+          "text": {
+            "en": "spread rice thinly over each nori sheet with wet fingers, leaving a 2 cm border. lay in avocado and cucumber, roll firmly, seal the edge with a wet fingertip.",
+            "de": "Verteile den Reis mit nassen Fingern dünn auf den Nori-Blättern, oben 2 cm Rand lassen. Avocado und Gurke einlegen, fest rollen, die Kante mit einem nassen Finger verschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "slice each roll into 8 pieces with a wet, sharp knife — wipe the blade between cuts. scatter the toasted sesame over the cut sides.",
+            "de": "Schneide jede Rolle mit einem nassen, scharfen Messer in 8 Stücke – die Klinge zwischendurch abwischen. Den gerösteten Sesam über die Schnittflächen streuen."
+          }
+        },
+        {
+          "text": {
+            "en": "arrange on a plate with tamari, wasabi and pickled ginger. eat the wonky end pieces straight from the board. cook's privilege.",
+            "de": "Auf einem Teller mit Tamari, Wasabi und eingelegtem Ingwer anrichten. Die schiefen Endstücke isst du direkt vom Brett. Das ist dein gutes Recht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "sushi",
+          "japanese",
+          "plant-based"
+        ],
+        "de": [
+          "Sushi",
+          "japanisch",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "sushi-protein",
+      "dish_id": "sushi",
+      "title": {
+        "en": "tuna edamame sushi plate",
+        "de": "Sushi-Teller mit Thunfisch & Edamame"
+      },
+      "caption": {
+        "en": "gym day, but make it elegant",
+        "de": "Trainingstag, aber in elegant"
+      },
+      "intro": {
+        "en": "tuna is the quiet overachiever of the sushi counter: lean, firm, absurdly high in protein. rolled with edamame folded into the rice, this plate feeds the muscles without skipping the ritual. tamari keeps the whole thing gluten-free.",
+        "de": "Thunfisch ist der stille Überflieger der Sushi-Theke: mager, fest, absurd proteinreich. Zusammen mit Edamame im Reis wird daraus ein Teller, der die Muskeln füttert, ohne das Ritual zu überspringen. Tamari hält das Ganze glutenfrei."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "added-sugar"
+      ],
+      "attributes": [
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "high-protein",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "raw"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 42,
+        "carbs_g": 70,
+        "fat_g": 8
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sushi-rice",
+          "qty": 280,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tuna",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "sashimi-grade",
+            "de": "Sashimi-Qualität"
+          }
+        },
+        {
+          "ingredient_id": "edamame",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "shelled",
+            "de": "ohne Schale"
+          }
+        },
+        {
+          "ingredient_id": "nori",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "rice-vinegar",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "for dipping",
+            "de": "zum Dippen"
+          }
+        },
+        {
+          "ingredient_id": "wasabi",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "green part, finely sliced",
+            "de": "das Grün, fein geschnitten"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water is nearly clear, then cook with 310 ml water: boil, lid on, lowest heat, 12 minutes. no peeking, the steam is working.",
+            "de": "Wasche den Reis, bis das Wasser fast klar bleibt, dann mit 310 ml Wasser kochen: aufkochen, Deckel drauf, kleinste Stufe, 12 Minuten. Nicht reingucken, der Dampf arbeitet."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "rest the rice 10 minutes off the heat, covered. meanwhile boil the edamame in salted water for 4 minutes, drain and let them cool.",
+            "de": "Lass den Reis zugedeckt 10 Minuten abseits vom Herd ruhen. Koch währenddessen die Edamame 4 Minuten in Salzwasser, abgießen und abkühlen lassen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "dissolve the sugar in the rice vinegar, fold it into the rice while fanning, then fold in half the edamame. green-studded sushi rice. you're welcome.",
+            "de": "Löse den Zucker im Reisessig, hebe ihn fächelnd unter den Reis und dann die Hälfte der Edamame. Reis mit grünen Sprenkeln. Gern geschehen."
+          }
+        },
+        {
+          "text": {
+            "en": "slice half the tuna into pencil-thick strips for rolls, the rest into 8 thin slices for nigiri. cold fish cuts cleaner — work fast.",
+            "de": "Schneide die Hälfte vom Thunfisch in bleistiftdicke Streifen für die Rollen, den Rest in 8 dünne Scheiben für Nigiri. Kalter Fisch schneidet sich sauberer – arbeite zügig."
+          }
+        },
+        {
+          "text": {
+            "en": "roll the maki: nori shiny-side down, thin layer of rice, tuna strips down the middle, roll firmly and slice into 8 with a wet knife. shape the remaining rice into ovals and top with the tuna slices.",
+            "de": "Roll die Maki: Nori mit der glänzenden Seite nach unten, dünne Reisschicht, Thunfischstreifen in die Mitte, fest rollen und mit nassem Messer in 8 Stücke schneiden. Aus dem restlichen Reis Ovale formen und mit den Thunfischscheiben belegen."
+          }
+        },
+        {
+          "text": {
+            "en": "plate with the remaining edamame on the side, scatter the spring onion greens over the nigiri, serve with tamari and wasabi. forty-plus grams of protein that look like a date night.",
+            "de": "Mit den restlichen Edamame anrichten, das Frühlingszwiebelgrün über die Nigiri streuen, mit Tamari und Wasabi servieren. Über vierzig Gramm Protein, die aussehen wie ein Date-Abend."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "sushi",
+          "japanese",
+          "high-protein"
+        ],
+        "de": [
+          "Sushi",
+          "japanisch",
+          "proteinreich"
+        ]
+      }
+    },
+    {
+      "id": "fried-rice-classic",
+      "dish_id": "fried-rice",
+      "title": {
+        "en": "chicken fried rice",
+        "de": "gebratener Reis mit Hähnchen"
+      },
+      "caption": {
+        "en": "cold rice, hot pan, ten minutes",
+        "de": "kalter Reis, heiße Pfanne, zehn Minuten"
+      },
+      "intro": {
+        "en": "fried rice is what yesterday's rice dreams of becoming. the rules are short: the rice must be cold, the pan must be screaming, and nothing sits still for more than a few seconds. everything else is negotiable.",
+        "de": "Gebratener Reis ist das, wovon der Reis von gestern träumt. Die Regeln sind kurz: Der Reis muss kalt sein, die Pfanne muss brüllen, und nichts bleibt länger als ein paar Sekunden liegen. Alles andere ist Verhandlungssache."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "soy",
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "stir-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 38,
+        "carbs_g": 58,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "cooked and chilled, ideally day-old",
+            "de": "gekocht und gekühlt, am besten vom Vortag"
+          }
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "in bite-sized cubes",
+            "de": "in mundgerechten Würfeln"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "whites and greens separated",
+            "de": "Weißes und Grünes getrennt"
+          }
+        },
+        {
+          "ingredient_id": "peas",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "frozen is fine",
+            "de": "tiefgekühlt ist völlig okay"
+          }
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat half the oil in a wok or your biggest pan until it shimmers. sear the chicken cubes for about 5 minutes until golden and just cooked, then scoop them out.",
+            "de": "Erhitze die Hälfte vom Öl in einem Wok oder deiner größten Pfanne, bis es flirrt. Brate die Hähnchenwürfel etwa 5 Minuten, bis sie goldbraun und gerade durch sind, dann raus damit."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "add the rest of the oil, crack in the eggs and scramble for 30 seconds — soft curds, not rubber. push them to one side.",
+            "de": "Restliches Öl rein, Eier hineinschlagen und 30 Sekunden verrühren – weiche Flocken, kein Gummi. An den Rand schieben."
+          }
+        },
+        {
+          "text": {
+            "en": "throw in the garlic and spring onion whites for 20 seconds, then add the cold rice. break up the clumps and stir-fry for 3 minutes until every grain hisses against the pan.",
+            "de": "Knoblauch und das Weiße der Frühlingszwiebeln 20 Sekunden anbraten, dann den kalten Reis dazu. Klumpen zerdrücken und 3 Minuten pfannenrühren, bis jedes Korn an der Pfanne zischt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "return the chicken, add the peas and the soy sauce around the edge of the pan so it sizzles before it soaks. toss everything for 2 more minutes.",
+            "de": "Hähnchen zurück in die Pfanne, Erbsen dazu und die Sojasauce am Pfannenrand entlang angießen, damit sie zischt, bevor sie einzieht. Alles noch 2 Minuten schwenken."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "off the heat: sesame oil, spring onion greens, one last toss. taste, adjust, eat straight from the wok if no one is watching.",
+            "de": "Herd aus: Sesamöl, Frühlingszwiebelgrün, einmal durchschwenken. Probieren, nachwürzen, und wenn niemand hinschaut, direkt aus dem Wok essen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "fried rice",
+          "wok",
+          "weeknight"
+        ],
+        "de": [
+          "gebratener Reis",
+          "Wok",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "fried-rice-vegan",
+      "dish_id": "fried-rice",
+      "title": {
+        "en": "crispy tofu fried rice",
+        "de": "gebratener Reis mit knusprigem Tofu"
+      },
+      "caption": {
+        "en": "the tofu earns its crunch",
+        "de": "der Tofu verdient sich seinen Crunch"
+      },
+      "intro": {
+        "en": "the secret here is patience with the tofu and impatience with everything else. let it sit in the hot pan until it's properly golden, then the rest of the dish happens in about five loud minutes. tamari instead of soy sauce keeps it gluten-free.",
+        "de": "Das Geheimnis: Geduld mit dem Tofu, Ungeduld mit allem anderen. Lass ihn in der heißen Pfanne liegen, bis er richtig goldbraun ist – danach passiert der Rest in fünf lauten Minuten. Tamari statt Sojasauce hält das Gericht glutenfrei."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "stir-fry",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 500,
+      "macros": {
+        "calories": 500,
+        "protein_g": 24,
+        "carbs_g": 55,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "cooked and chilled, ideally day-old",
+            "de": "gekocht und gekühlt, am besten vom Vortag"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry, torn into chunks",
+            "de": "trocken gepresst, in Stücke gezupft"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, grated",
+            "de": "daumengroß, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in small dice",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "whites and greens separated",
+            "de": "Weißes und Grünes getrennt"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat half the oil in a wok over high heat. add the tofu chunks and leave them alone for 6 minutes, turning only twice, until deeply golden on most sides. torn edges crisp better than neat cubes.",
+            "de": "Erhitze die Hälfte vom Öl im Wok auf hoher Stufe. Tofu rein und 6 Minuten in Ruhe lassen, nur zweimal wenden, bis er fast rundum tief goldbraun ist. Gezupfte Kanten werden knuspriger als ordentliche Würfel."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "scoop the tofu out. add the remaining oil, then the garlic, ginger, carrot and spring onion whites. stir-fry for about a minute until it smells like a good decision.",
+            "de": "Tofu rausnehmen. Restliches Öl rein, dann Knoblauch, Ingwer, Karotte und das Weiße der Frühlingszwiebeln. Etwa eine Minute pfannenrühren, bis es nach einer guten Entscheidung riecht."
+          }
+        },
+        {
+          "text": {
+            "en": "add the cold rice, break up the clumps and stir-fry for 3 minutes. every grain should touch the hot metal at least once. those toasty bits are the whole point.",
+            "de": "Kalten Reis dazu, Klumpen zerdrücken und 3 Minuten pfannenrühren. Jedes Korn soll mindestens einmal das heiße Metall berühren. Diese gerösteten Stellen sind der ganze Sinn der Sache."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "return the tofu, pour the tamari around the edge of the pan and toss for another minute until everything is glossy and brown.",
+            "de": "Tofu zurück, Tamari am Pfannenrand angießen und noch eine Minute schwenken, bis alles glänzend und braun ist."
+          }
+        },
+        {
+          "text": {
+            "en": "kill the heat, add the sesame oil and the spring onion greens, toss once more. serve hot, preferably immediately, preferably to yourself.",
+            "de": "Herd aus, Sesamöl und Frühlingszwiebelgrün dazu, einmal durchschwenken. Heiß servieren, am besten sofort, am besten an dich selbst."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "fried rice",
+          "wok",
+          "plant-based"
+        ],
+        "de": [
+          "gebratener Reis",
+          "Wok",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "fried-rice-lowfodmap",
+      "dish_id": "fried-rice",
+      "title": {
+        "en": "gentle fried rice with chicken & egg",
+        "de": "magenfreundlicher Bratreis mit Hähnchen & Ei"
+      },
+      "caption": {
+        "en": "all the comfort, none of the regret",
+        "de": "der ganze Trost, ohne Reue"
+      },
+      "intro": {
+        "en": "fried rice without onion or garlic sounds like a punishment until you taste what ginger and spring onion greens can do with a hot pan. all the smoke and comfort, nothing that picks a fight with your gut. tamari keeps it gluten-free too.",
+        "de": "Bratreis ohne Zwiebel und Knoblauch klingt nach Strafe – bis du probierst, was Ingwer und Frühlingszwiebelgrün in einer heißen Pfanne können. Der ganze Rauch, der ganze Trost, und nichts, was sich mit deinem Bauch anlegt. Tamari hält das Ganze obendrein glutenfrei."
+      },
+      "variant": {
+        "diet": "low-fodmap",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "stir-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 36,
+        "carbs_g": 54,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "cooked and chilled, ideally day-old",
+            "de": "gekocht und gekühlt, am besten vom Vortag"
+          }
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 220,
+          "unit": "g",
+          "note": {
+            "en": "in bite-sized cubes",
+            "de": "in mundgerechten Würfeln"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, grated",
+            "de": "daumengroß, gerieben"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in small dice",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "green parts only — this matters here",
+            "de": "nur das Grün – genau darauf kommt es hier an"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat half the oil in a wok until it shimmers. sear the chicken cubes for about 5 minutes until golden and just cooked through, then set them aside.",
+            "de": "Erhitze die Hälfte vom Öl im Wok, bis es flirrt. Brate die Hähnchenwürfel etwa 5 Minuten, bis sie goldbraun und gerade durch sind, dann beiseitestellen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "add the rest of the oil, scramble the eggs for 30 seconds into soft curds and push them to the side of the pan.",
+            "de": "Restliches Öl rein, die Eier 30 Sekunden zu weichen Flocken verrühren und an den Pfannenrand schieben."
+          }
+        },
+        {
+          "text": {
+            "en": "add the ginger and carrot, stir for 30 seconds, then tip in the cold rice. break up the clumps and stir-fry for 3 minutes until the grains hop and hiss.",
+            "de": "Ingwer und Karotte dazu, 30 Sekunden rühren, dann den kalten Reis hinein. Klumpen zerdrücken und 3 Minuten pfannenrühren, bis die Körner hüpfen und zischen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "return the chicken, pour the tamari around the hot edge of the pan and toss everything for another 2 minutes.",
+            "de": "Hähnchen zurück in die Pfanne, Tamari am heißen Rand angießen und alles noch 2 Minuten schwenken."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "off the heat, finish with sesame oil and a big handful of spring onion greens. they bring everything onion promises and your stomach can actually keep the promise.",
+            "de": "Vom Herd nehmen, mit Sesamöl und einer großen Handvoll Frühlingszwiebelgrün abschließen. Das Grün liefert alles, was Zwiebeln versprechen – nur dass dein Magen das Versprechen auch halten kann."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "fried rice",
+          "wok",
+          "low fodmap"
+        ],
+        "de": [
+          "gebratener Reis",
+          "Wok",
+          "FODMAP-arm"
+        ]
+      }
+    },
+    {
+      "id": "pho-classic",
+      "dish_id": "pho",
+      "title": {
+        "en": "beef phở with star anise broth",
+        "de": "Rinder-Phở mit Sternanis-Brühe"
+      },
+      "caption": {
+        "en": "the broth remembers everything",
+        "de": "die Brühe vergisst nichts"
+      },
+      "intro": {
+        "en": "phở is a soup you build like a slow argument: char the aromatics, toast the spices, then let the broth simmer until it has nothing left to prove. the beef goes in raw, sliced paper-thin, and the boiling broth cooks it in the bowl. that moment is the whole dish.",
+        "de": "Phở baust du auf wie ein langes Gespräch: Erst röstest du die Aromaten an, dann die Gewürze, dann köchelt die Brühe, bis sie nichts mehr beweisen muss. Das Rindfleisch kommt hauchdünn und roh in die Schüssel – die kochende Brühe gart es direkt vor deinen Augen. Dieser Moment ist das ganze Gericht."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "poultry",
+        "fish",
+        "soy",
+        "gluten",
+        "celery",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le600",
+        "simmer",
+        "poach"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 150,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 40,
+        "carbs_g": 62,
+        "fat_g": 17
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "beef-fillet",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "briefly frozen, sliced paper-thin",
+            "de": "kurz angefroren, hauchdünn aufgeschnitten"
+          }
+        },
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "flat phở noodles",
+            "de": "flache Phở-Nudeln"
+          }
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "halved, skin on",
+            "de": "halbiert, mit Schale"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "a big thumb, halved lengthwise",
+            "de": "ein großer Daumen, längs halbiert"
+          }
+        },
+        {
+          "ingredient_id": "star-anise",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "hoisin-sauce",
+          "qty": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the table",
+            "de": "für den Tisch"
+          }
+        },
+        {
+          "ingredient_id": "beansprouts",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "char the onion halves and ginger in a dry pan over high heat for about 8 minutes, turning now and then, until the cut sides are properly blackened. this is not burning. this is flavor with commitment.",
+            "de": "Röste Zwiebelhälften und Ingwer in einer trockenen Pfanne bei hoher Hitze etwa 8 Minuten an, ab und zu wenden, bis die Schnittflächen richtig schwarz sind. Das ist nicht verbrannt. Das ist Geschmack mit Haltung."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "toast the star anise in the same pan for a minute until fragrant. combine stock, charred onion, ginger and star anise in a big pot and bring to a bare simmer.",
+            "de": "Röste den Sternanis in derselben Pfanne eine Minute, bis er duftet. Brühe, geröstete Zwiebel, Ingwer und Sternanis in einen großen Topf geben und ganz sanft zum Köcheln bringen."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer the broth, uncovered and barely moving, for 120 minutes. skim occasionally. it should reduce by about a third and smell like a vietnamese street corner by the end.",
+            "de": "Lass die Brühe offen und kaum sichtbar 120 Minuten köcheln. Ab und zu abschäumen. Am Ende sollte sie um etwa ein Drittel eingekocht sein und wie eine Straßenecke in Hanoi duften."
+          },
+          "timer_minutes": 120
+        },
+        {
+          "text": {
+            "en": "meanwhile, freeze the beef fillet for 20 minutes, then slice it across the grain as thinly as you possibly can. lay the slices out flat and keep them cold.",
+            "de": "Friere währenddessen das Rinderfilet 20 Minuten an und schneide es dann quer zur Faser so dünn wie irgend möglich auf. Die Scheiben flach auslegen und kalt halten."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "soak the rice noodles in hot water for about 6 minutes until just tender, then drain and divide between two deep bowls.",
+            "de": "Weiche die Reisnudeln etwa 6 Minuten in heißem Wasser ein, bis sie gerade zart sind, dann abgießen und auf zwei tiefe Schüsseln verteilen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "strain the broth, season it with the fish sauce and bring it back to a rolling boil. fan the raw beef over the noodles.",
+            "de": "Brühe abseihen, mit der Fischsauce abschmecken und noch einmal sprudelnd aufkochen. Das rohe Rindfleisch fächerförmig auf den Nudeln verteilen."
+          }
+        },
+        {
+          "text": {
+            "en": "ladle the boiling broth directly over the beef — watch it blush from red to rosy. top with beansprouts, serve with lime wedges and hoisin on the side. slurp loudly; it's tradition.",
+            "de": "Gieße die kochende Brühe direkt über das Fleisch – sieh zu, wie es von Rot zu Rosa wechselt. Mit Sojasprossen toppen, Limettenspalten und Hoisin dazu servieren. Laut schlürfen gehört dazu."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pho",
+          "vietnamese",
+          "soup"
+        ],
+        "de": [
+          "Phở",
+          "vietnamesisch",
+          "Suppe"
+        ]
+      }
+    },
+    {
+      "id": "pho-vegan",
+      "dish_id": "pho",
+      "title": {
+        "en": "shiitake miso phở",
+        "de": "Shiitake-Miso-Phở"
+      },
+      "caption": {
+        "en": "umami, but make it gentle",
+        "de": "Umami, aber sanft"
+      },
+      "intro": {
+        "en": "this broth gets its depth from seared shiitake and a spoonful of miso instead of bones — fifty minutes instead of a whole afternoon, and it still tastes like patience. the tofu goes in golden and crisp, because it can.",
+        "de": "Ihre Tiefe holt sich diese Brühe aus angebratenen Shiitake und einem Löffel Miso statt aus Knochen – fünfzig Minuten statt eines ganzen Nachmittags, und sie schmeckt trotzdem nach Geduld. Der Tofu kommt goldbraun und knusprig hinein, einfach weil er es kann."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 26,
+        "carbs_g": 56,
+        "fat_g": 16
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "flat phở noodles",
+            "de": "flache Phở-Nudeln"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry, in thick slabs",
+            "de": "trocken gepresst, in dicken Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "shiitake",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "stems and caps separated, caps sliced",
+            "de": "Stiele und Hüte getrennt, Hüte in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "star-anise",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "a big thumb, sliced",
+            "de": "ein großer Daumen, in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "greens finely sliced",
+            "de": "das Grün fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oil in a large pot and sear the shiitake caps for about 6 minutes until browned and squeaky. take half of them out and save them for the bowls.",
+            "de": "Erhitze das Öl in einem großen Topf und brate die Shiitake-Hüte etwa 6 Minuten, bis sie gebräunt sind und quietschen. Die Hälfte herausnehmen und für die Schüsseln aufheben."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "add 1.4 liters of water, the mushroom stems, ginger and star anise. simmer gently, uncovered, for 25 minutes while the broth turns deep and woodsy.",
+            "de": "1,4 Liter Wasser, Pilzstiele, Ingwer und Sternanis dazugeben. Offen 25 Minuten sanft köcheln lassen, bis die Brühe tief und waldig schmeckt."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "meanwhile, pan-fry the tofu slabs in a nonstick pan until golden on both sides, about 4 minutes per side. splash with the tamari at the end and let it caramelize. cut into thick strips.",
+            "de": "Brate währenddessen die Tofuscheiben in einer beschichteten Pfanne goldbraun, etwa 4 Minuten pro Seite. Am Ende mit dem Tamari ablöschen und karamellisieren lassen. In dicke Streifen schneiden."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "soak the rice noodles in hot water for about 6 minutes until just tender. drain and divide between two deep bowls.",
+            "de": "Weiche die Reisnudeln etwa 6 Minuten in heißem Wasser ein, bis sie gerade zart sind. Abgießen und auf zwei tiefe Schüsseln verteilen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "strain the broth, then whisk the miso into a ladleful before stirring it back in — never boil miso, it sulks. taste and adjust.",
+            "de": "Brühe abseihen, dann das Miso in einer Kelle Brühe glatt rühren und zurück in den Topf geben – Miso nie kochen, es ist nachtragend. Abschmecken."
+          }
+        },
+        {
+          "text": {
+            "en": "ladle the hot broth over the noodles, top with tofu, the reserved shiitake and the spring onion greens. lime wedges on the side. breathe in first. then eat.",
+            "de": "Heiße Brühe über die Nudeln schöpfen, mit Tofu, den aufgehobenen Shiitake und dem Frühlingszwiebelgrün toppen. Limettenspalten dazu. Erst tief einatmen. Dann essen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pho",
+          "vietnamese",
+          "plant-based"
+        ],
+        "de": [
+          "Phở",
+          "vietnamesisch",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "pho-quick",
+      "dish_id": "pho",
+      "title": {
+        "en": "weeknight chicken phở",
+        "de": "Feierabend-Phở mit Hähnchen"
+      },
+      "caption": {
+        "en": "tuesday-night soup with big ambitions",
+        "de": "Dienstagssuppe mit großen Ambitionen"
+      },
+      "intro": {
+        "en": "real phở takes an afternoon. this one takes half an hour and gets you eighty percent of the way there, which on a tuesday is a hundred percent. good stock, star anise and ginger do the heavy lifting; the chicken poaches gently right in the broth.",
+        "de": "Echte Phở braucht einen Nachmittag. Diese hier braucht eine halbe Stunde und bringt dich achtzig Prozent ans Ziel – was an einem Dienstag hundert Prozent sind. Gute Brühe, Sternanis und Ingwer machen die Schwerarbeit; das Hähnchen gart sanft direkt darin."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "celery"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "simmer",
+        "poach"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 42,
+        "carbs_g": 60,
+        "fat_g": 12
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "sliced thinly across the grain",
+            "de": "quer zur Faser dünn aufgeschnitten"
+          }
+        },
+        {
+          "ingredient_id": "rice-noodles",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "flat phở noodles",
+            "de": "flache Phở-Nudeln"
+          }
+        },
+        {
+          "ingredient_id": "star-anise",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thumb-sized, sliced",
+            "de": "daumengroß, in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "beansprouts",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "greens finely sliced",
+            "de": "das Grün fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in Spalten geschnitten"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring the stock to a simmer with the star anise and ginger and let it bubble gently for 15 minutes. this is where the shortcut earns its keep — taste it at minute 5 and again at 15 and notice the difference.",
+            "de": "Bring die Brühe mit Sternanis und Ingwer zum Köcheln und lass sie 15 Minuten sanft blubbern. Hier verdient sich die Abkürzung ihr Geld – probier bei Minute 5 und nochmal bei 15 und merk dir den Unterschied."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "meanwhile soak the rice noodles in hot water for about 6 minutes until just tender. drain and divide between two deep bowls.",
+            "de": "Weiche währenddessen die Reisnudeln etwa 6 Minuten in heißem Wasser ein, bis sie gerade zart sind. Abgießen und auf zwei tiefe Schüsseln verteilen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "fish the star anise and ginger out of the broth, season with the fish sauce, then drop in the chicken slices. poach at the gentlest simmer for 4 minutes — just until opaque and silky. do not boil them into shoe leather.",
+            "de": "Sternanis und Ingwer aus der Brühe fischen, mit der Fischsauce abschmecken, dann die Hähnchenscheiben hineingeben. Bei sanftestem Köcheln 4 Minuten pochieren – nur bis sie eben durch und seidig sind. Nicht zu Schuhsohlen kochen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "ladle chicken and steaming broth over the noodles in the bowls.",
+            "de": "Hähnchen und dampfende Brühe über die Nudeln in die Schüsseln schöpfen."
+          }
+        },
+        {
+          "text": {
+            "en": "pile on the beansprouts and spring onion greens, squeeze lime over everything. eat hot, ideally with your face in the steam.",
+            "de": "Sojasprossen und Frühlingszwiebelgrün darauf häufen, Limette über alles drücken. Heiß essen, am besten mit dem Gesicht im Dampf."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pho",
+          "vietnamese",
+          "weeknight"
+        ],
+        "de": [
+          "Phở",
+          "vietnamesisch",
+          "Feierabendküche"
+        ]
+      }
     }
   ]
 }
