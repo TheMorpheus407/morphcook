@@ -88,9 +88,10 @@ dein Gerät nie.
 
 - App icon 512×512: `docs/store-assets/play-icon-512.png`
 - Feature graphic 1024×500: `docs/store-assets/feature-graphic-1024x500.png`
-- Phone screenshots (2–8, 16:9 or 9:16): **take on a device** — suggested
-  set: home masthead, döner variant switcher expanded, cook mode with
-  timer, shopping list, meal plan week, onboarding diet page (DE).
+- Phone screenshots (1080×2400): `docs/store-assets/screenshots/01..07`
+  — onboarding diet page, home (EN), variant switcher, cook mode with
+  running timer, shopping list, meal plan, home (DE). Use 07 for the
+  German listing.
 
 ## Console questionnaires (answers)
 
