@@ -34,3 +34,10 @@ Thumbs.db
 # Secrets — never commit; rotate if it ever happens
 **/.env
 **/.env.*
+
+# Android signing secrets (never commit)
+**/key.properties
+**/*.jks
+**/*.keystore
+# Play publishing service account
+**/play-service-account.json
