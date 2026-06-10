@@ -17,7 +17,7 @@ val keystoreProperties = Properties().apply {
 }
 
 android {
-    namespace = "com.morphcook.app"
+    namespace = "de.themorpheus.morphcook"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -32,7 +32,7 @@ android {
 
     defaultConfig {
         // Permanent once published — do not change after the first Play upload.
-        applicationId = "com.morphcook.app"
+        applicationId = "de.themorpheus.morphcook"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

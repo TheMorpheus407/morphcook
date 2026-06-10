@@ -8,7 +8,7 @@ descriptions; Play requires normal casing only for the app title.
 | Field | Value |
 |---|---|
 | App name (30 chars max) | `MorphCook` |
-| Package | `com.morphcook.app` (permanent) |
+| Package | `de.themorpheus.morphcook` (permanent) |
 | Category | Food & Drink |
 | Price | Free, no ads, no in-app purchases |
 | Privacy policy URL | `https://github.com/TheMorpheus407/morphcook/blob/main/claude-fable-5/PRIVACY.md` (or a morphcook.com page later) |

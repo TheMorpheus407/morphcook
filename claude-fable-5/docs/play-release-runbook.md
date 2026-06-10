@@ -6,9 +6,9 @@
    verification (can take a day or two for new accounts).
 2. **Create the app**: All apps → Create app → name `MorphCook`,
    default language English (US), App, Free. This binds the package name
-   on first upload — ours is `com.morphcook.app`.
+   on first upload — ours is `de.themorpheus.morphcook`.
 3. **Play App Signing**: accept the default (Google manages the signing
-   key; our `upload-keystore.jks` is only the upload key — losing it is
+   key; our `morph-release-key.jks` is only the upload key — losing it is
    recoverable via support).
 4. **Store listing**: paste from `docs/play-store-listing.md`; upload
    icon + feature graphic from `docs/store-assets/`; add 2+ phone
@@ -52,5 +52,5 @@ rollout).
 
 | File | What | If lost |
 |---|---|---|
-| `app/android/upload-keystore.jks` + `key.properties` | upload signing key | recoverable: request upload-key reset in Play Console |
+| `app/android/morph-release-key.jks` + `key.properties` | upload signing key | recoverable: request upload-key reset in Play Console |
 | `play-service-account.json` | API publishing credential | revoke + reissue in Cloud Console |

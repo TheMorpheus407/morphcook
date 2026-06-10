@@ -1,4 +1,4 @@
-package com.morphcook.app
+package de.themorpheus.morphcook
 
 import io.flutter.embedding.android.FlutterActivity
 

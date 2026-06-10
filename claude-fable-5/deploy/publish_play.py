@@ -5,7 +5,7 @@ Dependency-free: Python stdlib + the `openssl` binary for JWT signing.
 
 Prereqs (one-time, done by a human in the Play Console UI):
   1. Play Console developer account; app created with package name
-     `com.morphcook.app`.
+     `de.themorpheus.morphcook`.
   2. Play App Signing enabled (default for new apps).
   3. A Google Cloud service account linked under Play Console → API access,
      granted "Release to testing tracks" / "Manage production releases".
@@ -29,7 +29,7 @@ import time
 import urllib.error
 import urllib.request
 
-PACKAGE = "com.morphcook.app"
+PACKAGE = "de.themorpheus.morphcook"
 SCOPE = "https://www.googleapis.com/auth/androidpublisher"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 BASE = f"https://androidpublisher.googleapis.com/androidpublisher/v3/applications/{PACKAGE}"
