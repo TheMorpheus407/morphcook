@@ -5297,6 +5297,1408 @@
           "Fitness"
         ]
       }
+    },
+    {
+      "id": "french-toast-classic",
+      "dish_id": "french-toast",
+      "title": {
+        "en": "french toast",
+        "de": "French Toast"
+      },
+      "caption": {
+        "en": "yesterday's bread, golden again",
+        "de": "das Brot von gestern, goldgebraten"
+      },
+      "intro": {
+        "en": "stale sourdough is the whole trick — it drinks the cinnamon custard deep without falling apart, then fries up custardy inside and crisp at the edges. weekend breakfast for the price of yesterday's bread.",
+        "de": "Altbackenes Sauerteigbrot ist der ganze Trick – es saugt den Zimt-Guss tief auf, ohne zu zerfallen, und brät dann innen cremig und am Rand knusprig. Wochenendfrühstück zum Preis von gestrigem Brot."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 440,
+      "macros": {
+        "calories": 440,
+        "protein_g": 16,
+        "carbs_g": 54,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sourdough",
+          "qty": 4,
+          "unit": "slice",
+          "note": {
+            "en": "thick-cut, a day or two old",
+            "de": "dick geschnitten, ein bis zwei Tage alt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "ground",
+            "de": "gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the eggs with the milk, vanilla, cinnamon and the pinch of salt in a shallow dish until fully combined — that pinch of salt keeps the sweetness from going flat.",
+            "de": "Eier mit Milch, Vanille, Zimt und der Prise Salz in einer flachen Form gründlich verquirlen – die Prise Salz hält die Süße wach."
+          }
+        },
+        {
+          "text": {
+            "en": "lay the bread slices in the custard and soak for 2 minutes per side. stale sourdough takes its time and rewards it — the middle should feel heavy.",
+            "de": "Brotscheiben in den Guss legen und pro Seite 2 Minuten einweichen. Altbackenes Brot braucht diesen Moment und dankt es dir – die Mitte soll sich schwer anfühlen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "melt half the butter in a pan over medium heat. fry two slices at a time for 3 minutes per side, until deep golden with crisp edges. medium heat, no hotter — the inside needs time to set.",
+            "de": "Die Hälfte der Butter in einer Pfanne bei mittlerer Hitze schmelzen. Zwei Scheiben gleichzeitig pro Seite 3 Minuten braten, bis sie tief goldbraun sind und die Ränder knuspern. Mittlere Hitze, nicht mehr – das Innere braucht Zeit zum Stocken."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "keep the first batch warm in a low oven while the second fries in the remaining butter.",
+            "de": "Die erste Ladung im Ofen bei niedriger Temperatur warmhalten, während die zweite in der restlichen Butter brät."
+          }
+        },
+        {
+          "text": {
+            "en": "stack, pour the maple syrup over while everything is hot, and eat before the crisp edges soften.",
+            "de": "Stapeln, den Ahornsirup über die heißen Scheiben gießen und essen, solange die Ränder noch knusprig sind."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "sweet",
+          "weekend"
+        ],
+        "de": [
+          "Frühstück",
+          "süß",
+          "Wochenende"
+        ]
+      }
+    },
+    {
+      "id": "french-toast-vegan",
+      "dish_id": "french-toast",
+      "title": {
+        "en": "vegan french toast",
+        "de": "Veganer French Toast"
+      },
+      "caption": {
+        "en": "chickpea custard, proper golden crust",
+        "de": "Kichererbsen-Guss, richtig goldene Kruste"
+      },
+      "intro": {
+        "en": "gram flour and oat milk whisk into a custard that sets golden in the pan — chickpea flour browns and crisps like it was made for exactly this. cinnamon, vanilla, maple: the whole sunday lineup.",
+        "de": "Kichererbsenmehl und Hafermilch ergeben einen Guss, der in der Pfanne goldbraun stockt – als wäre das Mehl genau dafür gemacht. Zimt, Vanille, Ahornsirup: das volle Sonntagsprogramm."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 11,
+        "carbs_g": 60,
+        "fat_g": 11
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sourdough",
+          "qty": 4,
+          "unit": "slice",
+          "note": {
+            "en": "thick-cut, a day or two old",
+            "de": "dick geschnitten, ein bis zwei Tage alt"
+          }
+        },
+        {
+          "ingredient_id": "gram-flour",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "ground",
+            "de": "gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 25,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the gram flour with a splash of the oat milk to a smooth paste, then whisk in the rest along with the cinnamon, vanilla and the pinch of salt. let the custard stand for 5 minutes — it thickens as the flour swells.",
+            "de": "Kichererbsenmehl mit einem Schluck Hafermilch glatt rühren, dann den Rest zusammen mit Zimt, Vanille und der Prise Salz unterrühren. Den Guss 5 Minuten stehen lassen – er dickt an, während das Mehl quillt."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "soak the bread slices for 2 minutes per side. stale sourdough holds together and pulls the custard deep into the crumb.",
+            "de": "Brotscheiben pro Seite 2 Minuten einweichen. Altbackenes Sauerteigbrot hält zusammen und zieht den Guss tief in die Krume."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "melt half the vegan butter in a pan over medium heat and fry two slices at a time for 4 minutes per side — gram flour wants the extra minute to set golden and crisp.",
+            "de": "Die Hälfte der veganen Butter in einer Pfanne bei mittlerer Hitze schmelzen und zwei Scheiben gleichzeitig pro Seite 4 Minuten braten – Kichererbsenmehl braucht die Extra-Minute, um goldbraun zu stocken."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "fry the second batch in the remaining vegan butter while the first keeps warm in a low oven.",
+            "de": "Die zweite Ladung in der restlichen veganen Butter braten, während die erste im Ofen bei niedriger Temperatur wartet."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the maple syrup over the hot stack. the edges crackle for about five minutes — be there for it.",
+            "de": "Ahornsirup über den heißen Stapel gießen. Die Ränder knuspern etwa fünf Minuten lang – sei dabei."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "sweet",
+          "plant-based"
+        ],
+        "de": [
+          "Frühstück",
+          "süß",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "french-toast-protein",
+      "dish_id": "french-toast",
+      "title": {
+        "en": "protein french toast",
+        "de": "Proteinreicher French Toast"
+      },
+      "caption": {
+        "en": "soaked, seared, stacked with cottage cheese",
+        "de": "getränkt, gebraten, mit Hüttenkäse getürmt"
+      },
+      "intro": {
+        "en": "the custard carries a full scoop of protein powder, the top carries cottage cheese and berries — a breakfast that actually holds you until lunch. keep an eye on the pan, though: protein browns fast and burns faster.",
+        "de": "Im Guss steckt ein voller Löffel Proteinpulver, obendrauf kommen Hüttenkäse und Beeren – ein Frühstück, das dich wirklich bis zum Mittag trägt. Aber behalte die Pfanne im Blick: Protein bräunt schnell und verbrennt schneller."
+      },
+      "variant": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "high-protein",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 460,
+      "macros": {
+        "calories": 460,
+        "protein_g": 38,
+        "carbs_g": 48,
+        "fat_g": 13
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "sourdough",
+          "qty": 4,
+          "unit": "slice",
+          "note": {
+            "en": "thick-cut, a day or two old",
+            "de": "dick geschnitten, ein bis zwei Tage alt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "skim-milk",
+          "qty": 120,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "protein-powder",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "vanilla or unflavored",
+            "de": "Vanille oder neutral"
+          }
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "ground",
+            "de": "gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cottage-cheese",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "berries",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "fresh or thawed",
+            "de": "frisch oder aufgetaut"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the eggs with the milk, protein powder, cinnamon and the pinch of salt until no lumps remain — the powder likes to settle at the bottom, so scrape as you whisk.",
+            "de": "Eier mit Milch, Proteinpulver, Zimt und der Prise Salz klümpchenfrei verquirlen – das Pulver setzt sich gern am Boden ab, also beim Rühren bis ganz nach unten kommen."
+          }
+        },
+        {
+          "text": {
+            "en": "soak the bread slices for 2 minutes per side, until the custard reaches the middle.",
+            "de": "Brotscheiben pro Seite 2 Minuten einweichen, bis der Guss die Mitte erreicht."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "melt half the butter in a pan over medium heat and fry two slices at a time for 3 minutes per side until deep golden — protein powder browns faster than plain custard, so turn the heat down if the first side races ahead.",
+            "de": "Die Hälfte der Butter in einer Pfanne bei mittlerer Hitze schmelzen und zwei Scheiben gleichzeitig pro Seite 3 Minuten goldbraun braten – Proteinpulver bräunt schneller als normaler Guss, also die Hitze runterdrehen, wenn die erste Seite zu schnell dunkel wird."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "second batch into the remaining butter — a low oven keeps the first one warm and crisp in the meantime.",
+            "de": "Die zweite Ladung kommt in die restliche Butter — im niedrig geheizten Ofen bleibt die erste währenddessen warm und knusprig."
+          }
+        },
+        {
+          "text": {
+            "en": "top each stack with cottage cheese and a handful of berries. the cold-creamy-on-warm-crisp moment is the whole reason this recipe exists.",
+            "de": "Jeden Stapel mit Hüttenkäse und einer Handvoll Beeren krönen. Dieses Kalt-cremig-auf-warm-knusprig ist der eigentliche Grund für dieses Rezept."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "high-protein",
+          "sweet"
+        ],
+        "de": [
+          "Frühstück",
+          "proteinreich",
+          "süß"
+        ]
+      }
+    },
+    {
+      "id": "granola-classic",
+      "dish_id": "granola",
+      "title": {
+        "en": "classic honey granola",
+        "de": "Klassisches Honig-Granola"
+      },
+      "caption": {
+        "en": "pressed flat, baked golden, broken loud",
+        "de": "flach gedrückt, goldbraun gebacken, laut gebrochen"
+      },
+      "intro": {
+        "en": "honey and toasted almonds, baked into a sheet you get to smash. the whole secret is pressure: pack it flat, stir it once — exactly once — and the oven hands you clusters. a jar of this on the counter makes 7 a.m. negotiable.",
+        "de": "Honig und geröstete Mandeln, gebacken zu einer Platte, die du zerbrechen darfst. Das ganze Geheimnis ist Druck: flach andrücken, einmal wenden — genau einmal — und der Ofen schenkt dir Cluster. Ein Glas davon auf der Arbeitsplatte macht 7 Uhr morgens verhandelbar."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "honey",
+        "added-sugar",
+        "high-fodmap",
+        "tree-nuts",
+        "almonds"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 40,
+      "servings": 8,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 10,
+        "carbs_g": 40,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "almonds-ing",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "pumpkin-seeds",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "honey-ing",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 160°c and line your biggest tray with baking paper. toss the oats, chopped almonds, pumpkin seeds, cinnamon and salt together in a large bowl.",
+            "de": "Den Ofen auf 160 °C vorheizen und dein größtes Blech mit Backpapier auslegen. Haferflocken, gehackte Mandeln, Kürbiskerne, Zimt und Salz in einer großen Schüssel mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the honey and coconut oil in a small pot over low heat until they pour easily, then stir in the vanilla off the heat. pour over the dry mix and fold until every flake glistens.",
+            "de": "Honig und Kokosöl in einem kleinen Topf bei schwacher Hitze erwärmen, bis alles dünnflüssig ist, dann den Topf vom Herd ziehen und die Vanille einrühren. Über die trockene Mischung gießen und unterheben, bis jede Flocke glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "tip everything onto the tray and press it flat with the back of a spoon. really lean on it — flat and packed is where clusters come from.",
+            "de": "Alles auf das Blech kippen und mit der Rückseite eines Löffels flach drücken. Ruhig kräftig — flach und fest gepackt, daraus werden später die Cluster."
+          }
+        },
+        {
+          "text": {
+            "en": "bake on the middle rack until the edges turn golden.",
+            "de": "Auf der mittleren Schiene backen, bis die Ränder goldgelb sind."
+          },
+          "timer_minutes": 18
+        },
+        {
+          "text": {
+            "en": "stir once — this is the only stir it gets — then press flat again and bake until it smells like a bakery and the edges are deep amber.",
+            "de": "Einmal wenden — das ist das einzige Mal — dann wieder flach drücken und weiterbacken, bis es wie in einer Bäckerei duftet und die Ränder tief bernsteinfarben sind."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "let it cool completely on the tray without touching it. it crisps as it cools. then break it into clusters and jar them — the big pieces are yours by right.",
+            "de": "Komplett auf dem Blech auskühlen lassen, ohne es anzufassen. Beim Abkühlen wird es knusprig. Dann in Cluster brechen und ins Glas füllen — die großen Stücke stehen dir zu."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "baking",
+          "make-ahead"
+        ],
+        "de": [
+          "Frühstück",
+          "Backen",
+          "auf Vorrat"
+        ]
+      }
+    },
+    {
+      "id": "granola-vegan",
+      "dish_id": "granola",
+      "title": {
+        "en": "maple hazelnut granola",
+        "de": "Ahorn-Haselnuss-Granola"
+      },
+      "caption": {
+        "en": "maple caramel, hazelnuts, amber edges",
+        "de": "Ahornkaramell, Haselnüsse, bernsteinfarbene Ränder"
+      },
+      "intro": {
+        "en": "maple syrup bakes into a thin caramel shell here, and hazelnuts were born for it. press the mix flat, stir once, and let the oven do the lacquering. it makes the kitchen smell like a forest in october.",
+        "de": "Ahornsirup backt hier zu einer dünnen Karamellschicht, und Haselnüsse sind dafür wie gemacht. Die Mischung flach andrücken, einmal wenden, den Rest erledigt der Ofen. Die Küche riecht danach wie ein Wald im Oktober."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "added-sugar",
+        "tree-nuts",
+        "hazelnuts"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 40,
+      "servings": 8,
+      "calories_per_serving": 370,
+      "macros": {
+        "calories": 370,
+        "protein_g": 8,
+        "carbs_g": 37,
+        "fat_g": 21
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "hazelnuts-ing",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "sunflower-seeds",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "maple-syrup",
+          "qty": 80,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 160°c and line a large tray with baking paper. mix the oats, chopped hazelnuts, sunflower seeds, cinnamon and salt in a big bowl.",
+            "de": "Den Ofen auf 160 °C vorheizen und ein großes Blech mit Backpapier auslegen. Haferflocken, gehackte Haselnüsse, Sonnenblumenkerne, Zimt und Salz in einer großen Schüssel mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "melt the coconut oil in a small pot over low heat, take it off the stove and stir in the maple syrup and vanilla. pour over the oats and fold until everything is coated and faintly shiny.",
+            "de": "Das Kokosöl in einem kleinen Topf bei schwacher Hitze schmelzen, vom Herd nehmen und Ahornsirup und Vanille einrühren. Über die Haferflocken gießen und unterheben, bis alles überzogen ist und leicht glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "spread the mix on the tray and press it down hard with the back of a spoon. a packed layer bakes into clusters; a loose one bakes into dust.",
+            "de": "Die Mischung auf dem Blech verteilen und mit der Rückseite eines Löffels fest andrücken. Eine kompakte Schicht backt zu Clustern, eine lockere zu Krümeln."
+          }
+        },
+        {
+          "text": {
+            "en": "bake on the middle rack. maple browns faster than you expect, so check the edges at the timer, not after it.",
+            "de": "Auf der mittleren Schiene backen. Ahornsirup bräunt schneller als gedacht, also die Ränder beim Klingeln kontrollieren, nicht erst danach."
+          },
+          "timer_minutes": 16
+        },
+        {
+          "text": {
+            "en": "stir once, press flat again, and bake until the whole tray is deep amber and the hazelnuts smell toasted.",
+            "de": "Einmal wenden, wieder flach drücken und weiterbacken, bis das ganze Blech tief bernsteinfarben ist und die Haselnüsse geröstet duften."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "cool completely on the tray — the caramel needs the time to set. break into pieces and store in a jar, where it will not last the week.",
+            "de": "Komplett auf dem Blech auskühlen lassen — das Karamell braucht die Zeit zum Festwerden. In Stücke brechen und im Glas aufbewahren, wo es keine Woche überlebt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "baking",
+          "make-ahead"
+        ],
+        "de": [
+          "Frühstück",
+          "Backen",
+          "auf Vorrat"
+        ]
+      }
+    },
+    {
+      "id": "granola-sugarfree",
+      "dish_id": "granola",
+      "title": {
+        "en": "banana-bound granola",
+        "de": "Bananen-Granola"
+      },
+      "caption": {
+        "en": "one ripe banana holds everything together",
+        "de": "eine reife Banane hält alles zusammen"
+      },
+      "intro": {
+        "en": "one very ripe banana does all the binding and all the sweetening here, mashed into melted coconut oil and worked through oats, walnuts and seeds. it bakes a little lower and a little longer, and comes out toasty with a gentle, fruity sweetness. the spottier the banana, the better the granola.",
+        "de": "Eine sehr reife Banane übernimmt hier das Binden und das Süßen — zerdrückt in geschmolzenem Kokosöl und untergemischt in Haferflocken, Walnüsse und Kerne. Es backt etwas niedriger und etwas länger und kommt röstig aus dem Ofen, mit einer sanften, fruchtigen Süße. Je fleckiger die Banane, desto besser das Granola."
+      },
+      "variant": {
+        "diet": "sugar-free",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "tree-nuts",
+        "walnuts"
+      ],
+      "attributes": [
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "easy",
+        "le60",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "time_minutes": 40,
+      "servings": 8,
+      "calories_per_serving": 330,
+      "macros": {
+        "calories": 330,
+        "protein_g": 9,
+        "carbs_g": 28,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "oats",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "banana",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "very ripe — the spottier, the better",
+            "de": "sehr reif — je fleckiger, desto besser"
+          }
+        },
+        {
+          "ingredient_id": "walnuts-ing",
+          "qty": 80,
+          "unit": "g",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "pumpkin-seeds",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sunflower-seeds",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "coconut-oil",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cinnamon",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 150°c and line a large tray with baking paper. the mix is wetter than other granolas, so it gets a gentler oven.",
+            "de": "Den Ofen auf 150 °C vorheizen und ein großes Blech mit Backpapier auslegen. Die Mischung ist feuchter als andere Granolas, deshalb bekommt sie einen sanfteren Ofen."
+          }
+        },
+        {
+          "text": {
+            "en": "melt the coconut oil in a small pot, then mash the banana straight into it with a fork until you have a smooth, fragrant slurry.",
+            "de": "Das Kokosöl in einem kleinen Topf schmelzen, dann die Banane mit einer Gabel direkt hineindrücken und zerquetschen, bis ein glatter, duftender Brei entsteht."
+          }
+        },
+        {
+          "text": {
+            "en": "combine the oats, chopped walnuts, pumpkin seeds, sunflower seeds, cinnamon and salt in a big bowl. pour in the banana mix and work it through with your hands until nothing looks dry.",
+            "de": "Haferflocken, gehackte Walnüsse, Kürbiskerne, Sonnenblumenkerne, Zimt und Salz in einer großen Schüssel mischen. Die Bananenmasse dazugeben und mit den Händen einarbeiten, bis nichts mehr trocken aussieht."
+          }
+        },
+        {
+          "text": {
+            "en": "spread on the tray and press flat with the back of a spoon. bake on the middle rack until the surface feels dry to the touch.",
+            "de": "Auf dem Blech verteilen und mit der Rückseite eines Löffels flach drücken. Auf der mittleren Schiene backen, bis sich die Oberfläche trocken anfühlt."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "stir once, press flat again, and bake until golden brown all over. the banana means it browns from the inside out, so trust the color, not the clock.",
+            "de": "Einmal wenden, wieder flach drücken und weiterbacken, bis alles goldbraun ist. Durch die Banane bräunt es von innen heraus — also der Farbe vertrauen, nicht der Uhr."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "cool completely on the tray. it goes from chewy to crisp as it cools, and the clusters firm up last. break, jar, feel smug at breakfast.",
+            "de": "Komplett auf dem Blech auskühlen lassen. Beim Abkühlen wird es erst zäh, dann knusprig, und die Cluster werden zuletzt fest. Brechen, ins Glas füllen, beim Frühstück zufrieden grinsen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "breakfast",
+          "sugar-free",
+          "baking"
+        ],
+        "de": [
+          "Frühstück",
+          "zuckerfrei",
+          "Backen"
+        ]
+      }
+    },
+    {
+      "id": "mac-and-cheese-classic",
+      "dish_id": "mac-and-cheese",
+      "title": {
+        "en": "baked mac & cheese",
+        "de": "Mac & Cheese aus dem Ofen"
+      },
+      "caption": {
+        "en": "the corner piece causes arguments",
+        "de": "um die Knusperecke wird gestritten"
+      },
+      "intro": {
+        "en": "macaroni folded through a cheddar béchamel, finished under the broiler until the top blisters. the one rule that matters: the cheese goes in off the heat, a handful at a time, so the sauce stays silky instead of splitting. everything else is just stirring.",
+        "de": "Makkaroni, untergehoben in eine Cheddar-Béchamel, zum Schluss unter dem Ofengrill, bis die Oberfläche Blasen wirft. Die eine Regel, die zählt: Der Käse kommt erst hinein, wenn der Topf vom Herd ist, handvollweise, damit die Soße seidig bleibt und nicht gerinnt. Der Rest ist nur Rühren."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "le60",
+        "le800",
+        "simmer",
+        "broil"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 4,
+      "calories_per_serving": 720,
+      "macros": {
+        "calories": 720,
+        "protein_g": 29,
+        "carbs_g": 79,
+        "fat_g": 29
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "macaroni",
+          "qty": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 35,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 35,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "freshly grated — it melts smoother than pre-grated",
+            "de": "frisch gerieben — schmilzt glatter als Fertiggeriebener"
+          }
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "plus more for the pasta water",
+            "de": "plus mehr für das Nudelwasser"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring a big pot of generously salted water to a boil and cook the macaroni two minutes short of the packet time — it finishes in the sauce. drain and set aside.",
+            "de": "Einen großen Topf mit großzügig gesalzenem Wasser zum Kochen bringen und die Makkaroni zwei Minuten kürzer garen, als auf der Packung steht — sie ziehen in der Soße fertig. Abgießen und beiseitestellen."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "in the same pot, melt the butter over medium heat and whisk in the flour. cook the roux, whisking, until it smells faintly of biscuits.",
+            "de": "Im selben Topf die Butter bei mittlerer Hitze schmelzen und das Mehl mit dem Schneebesen einrühren. Die Mehlschwitze unter Rühren anschwitzen, bis sie leicht nach Gebäck duftet."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "whisk in the milk in three additions, letting each one smooth out before the next. simmer, whisking, until the sauce coats the back of a spoon. season with the mustard, nutmeg, salt and pepper.",
+            "de": "Die Milch in drei Portionen einrühren und jede glatt rühren, bevor die nächste dazukommt. Unter Rühren köcheln lassen, bis die Soße den Löffelrücken überzieht. Mit Senf, Muskat, Salz und Pfeffer abschmecken."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "take the pot off the heat. now the cheddar, one handful at a time, stirring each in fully before the next — keep one handful back for the top. off the heat the cheese stays silky; on the heat it splits, and there is no way back.",
+            "de": "Den Topf vom Herd ziehen. Jetzt der Cheddar, eine Handvoll nach der anderen, jede ganz einrühren, bevor die nächste folgt — eine Handvoll für oben zurückbehalten. Abseits der Hitze bleibt der Käse seidig; auf der Hitze gerinnt er, und dann gibt es kein Zurück."
+          }
+        },
+        {
+          "text": {
+            "en": "fold the macaroni through the sauce until every tube is coated inside and out.",
+            "de": "Die Makkaroni unter die Soße heben, bis jede Nudel innen und außen überzogen ist."
+          }
+        },
+        {
+          "text": {
+            "en": "scrape into a baking dish, scatter the reserved cheddar on top and slide under a hot broiler until blistered and bronzed. or eat it straight from the pot — also a valid life.",
+            "de": "In eine Auflaufform füllen, den zurückbehaltenen Cheddar darüberstreuen und unter den heißen Ofengrill schieben, bis die Oberfläche Blasen wirft und bronzefarben ist. Oder direkt aus dem Topf essen — auch ein gutes Leben."
+          },
+          "timer_minutes": 4
+        }
+      ],
+      "tags": {
+        "en": [
+          "comfort food",
+          "pasta",
+          "family dinner"
+        ],
+        "de": [
+          "Seelenfutter",
+          "Pasta",
+          "Familienessen"
+        ]
+      }
+    },
+    {
+      "id": "mac-and-cheese-vegan",
+      "dish_id": "mac-and-cheese",
+      "title": {
+        "en": "cashew mac & cheese",
+        "de": "Cashew-Mac & Cheese"
+      },
+      "caption": {
+        "en": "the blender does the heavy lifting",
+        "de": "der Mixer macht die Hauptarbeit"
+      },
+      "intro": {
+        "en": "soaked cashews blend into a sauce with real body — rich, golden from smoked paprika, savory from nutritional yeast, bright from lemon. it clings to macaroni the way a sauce should and reheats like a dream. the blender earns its counter space tonight.",
+        "de": "Eingeweichte Cashewkerne werden im Mixer zu einer Soße mit richtig Körper — sämig, golden durch Räucherpaprika, herzhaft durch Hefeflocken, frisch durch Zitrone. Sie schmiegt sich an die Makkaroni, wie es sich gehört, und lässt sich traumhaft aufwärmen. Heute verdient sich der Mixer seinen Platz auf der Arbeitsplatte."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts",
+        "cashews",
+        "mustard"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "easy",
+        "le60",
+        "le600",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 4,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 22,
+        "carbs_g": 83,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "macaroni",
+          "qty": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cashews-ing",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "oat-milk",
+          "qty": 250,
+          "unit": "ml",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic-powder",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 0.5,
+          "unit": "tsp",
+          "note": {
+            "en": "plus a dusting to serve",
+            "de": "plus etwas zum Servieren"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "plus more for the pasta water",
+            "de": "plus mehr für das Nudelwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "put the cashews in a bowl and cover them with boiling water. let them soak while everything else happens — they need the time to blend smooth.",
+            "de": "Die Cashewkerne in eine Schüssel geben und mit kochendem Wasser bedecken. Einweichen lassen, während der Rest passiert — die Zeit brauchen sie, um cremig zu werden."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "meanwhile, bring a big pot of well-salted water to a boil and cook the macaroni until just al dente. scoop out a cup of pasta water before you drain.",
+            "de": "Währenddessen einen großen Topf mit gut gesalzenem Wasser zum Kochen bringen und die Makkaroni bissfest garen. Vor dem Abgießen eine Tasse Nudelwasser abschöpfen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "drain the cashews and blend them with the oat milk, nutritional yeast, mustard, garlic powder, smoked paprika, lemon juice and salt. keep blending a full minute past the point where it looks done — grainy sauce is a blender that gave up early.",
+            "de": "Die Cashewkerne abgießen und mit Hafermilch, Hefeflocken, Senf, Knoblauchpulver, Räucherpaprika, Zitronensaft und Salz mixen. Eine volle Minute länger mixen, als nötig aussieht — körnige Soße heißt, der Mixer hat zu früh aufgegeben."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the sauce into the empty pasta pot and warm it over low heat, stirring, until it thickens to a glossy coat.",
+            "de": "Die Soße in den leeren Nudeltopf gießen und bei schwacher Hitze unter Rühren erwärmen, bis sie glänzend andickt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "fold in the macaroni and loosen with pasta water, a splash at a time, until the sauce flows lazily off the spoon.",
+            "de": "Die Makkaroni unterheben und mit dem Nudelwasser schluckweise verdünnen, bis die Soße träge vom Löffel fließt."
+          }
+        },
+        {
+          "text": {
+            "en": "taste — it probably wants a little more salt or lemon. serve with a dusting of smoked paprika over the top.",
+            "de": "Abschmecken — wahrscheinlich will es noch etwas Salz oder Zitrone. Mit etwas Räucherpaprika bestäubt servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "comfort food",
+          "pasta",
+          "weeknight"
+        ],
+        "de": [
+          "Seelenfutter",
+          "Pasta",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "mac-and-cheese-gluten-free",
+      "dish_id": "mac-and-cheese",
+      "title": {
+        "en": "gluten-free mac & cheese",
+        "de": "Glutenfreies Mac & Cheese"
+      },
+      "caption": {
+        "en": "cornstarch keeps the sauce glossy",
+        "de": "Speisestärke hält die Soße seidig"
+      },
+      "intro": {
+        "en": "a cheese sauce thickened with a cornstarch slurry — glossier and lighter on its feet than a roux, and ready in the time the pasta takes. gluten-free pasta wants slight undercooking and your full attention for two minutes; give it both and it rewards you.",
+        "de": "Eine Käsesoße, gebunden mit angerührter Speisestärke — glänzender und leichtfüßiger als eine Mehlschwitze, und fertig, während die Nudeln kochen. Glutenfreie Pasta will leicht untergart werden und zwei Minuten deine volle Aufmerksamkeit; gib ihr beides, und sie belohnt dich."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "le60",
+        "le800",
+        "simmer",
+        "broil"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 4,
+      "calories_per_serving": 700,
+      "macros": {
+        "calories": 700,
+        "protein_g": 26,
+        "carbs_g": 78,
+        "fat_g": 30
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-pasta",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "short shapes — elbows or penne",
+            "de": "kurze Sorten — Hörnchen oder Penne"
+          }
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "freshly grated",
+            "de": "frisch gerieben"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "plus more for the pasta water",
+            "de": "plus mehr für das Nudelwasser"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil a big pot of well-salted water and cook the pasta two minutes short of the packet time. gluten-free pasta keeps cooking in the sauce and forgives nothing past al dente. drain.",
+            "de": "Einen großen Topf mit gut gesalzenem Wasser aufkochen und die Nudeln zwei Minuten kürzer garen, als auf der Packung steht. Glutenfreie Pasta gart in der Soße nach und verzeiht nichts jenseits von bissfest. Abgießen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "whisk the cornstarch into a few tablespoons of the cold milk until smooth. this little cup is your insurance against lumps.",
+            "de": "Die Speisestärke mit ein paar Esslöffeln der kalten Milch glatt rühren. Diese kleine Tasse ist deine Versicherung gegen Klümpchen."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the rest of the milk with the butter in the empty pasta pot. when it steams, whisk in the slurry and let it simmer, whisking, until it thickens enough to coat a spoon.",
+            "de": "Die restliche Milch mit der Butter im leeren Nudeltopf erwärmen. Sobald sie dampft, die angerührte Stärke einrühren und unter Rühren köcheln lassen, bis die Soße den Löffel überzieht."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "off the heat: add the cheddar a handful at a time, stirring each one in completely — keep a handful back for the top. season with the mustard, nutmeg, salt and pepper.",
+            "de": "Weg von der Hitze: Den Cheddar handvollweise dazugeben und jede Portion ganz einrühren — eine Handvoll für oben zurückbehalten. Mit Senf, Muskat, Salz und Pfeffer abschmecken."
+          }
+        },
+        {
+          "text": {
+            "en": "fold the pasta through the sauce until everything is coated and glossy.",
+            "de": "Die Nudeln unter die Soße heben, bis alles überzogen ist und glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "for the crust: tip into a baking dish, scatter the reserved cheddar over and broil until bubbling and bronzed at the edges.",
+            "de": "Für die Kruste: in eine Auflaufform geben, den restlichen Cheddar darüberstreuen und unter dem Ofengrill überbacken, bis es blubbert und die Ränder bronzefarben sind."
+          },
+          "timer_minutes": 4
+        }
+      ],
+      "tags": {
+        "en": [
+          "comfort food",
+          "pasta",
+          "gluten-free"
+        ],
+        "de": [
+          "Seelenfutter",
+          "Pasta",
+          "glutenfrei"
+        ]
+      }
     }
   ]
 }

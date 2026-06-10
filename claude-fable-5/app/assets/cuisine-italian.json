@@ -3019,6 +3019,817 @@
           "Kaffee"
         ]
       }
+    },
+    {
+      "id": "pesto-pasta-classic",
+      "dish_id": "pesto-pasta",
+      "title": {
+        "en": "classic basil pesto pasta",
+        "de": "Klassische Pesto-Pasta"
+      },
+      "caption": {
+        "en": "the pasta water does the rest",
+        "de": "das Nudelwasser macht den Rest"
+      },
+      "intro": {
+        "en": "basil, pine nuts, parmesan, good olive oil — pounded into something louder than its parts. the trick happens off the heat: a splash of starchy pasta water turns the pesto into a sauce that hugs every strand. taste it, then add more parmesan. you were going to anyway.",
+        "de": "Basilikum, Pinienkerne, Parmesan, gutes Olivenöl – zusammen mehr als die Summe ihrer Teile. Der eigentliche Trick passiert abseits vom Herd: Ein Schluck stärkehaltiges Nudelwasser macht aus dem Pesto eine Sauce, die sich an jede Nudel legt. Schmeck ab und gib dann noch Parmesan dazu. Hättest du sowieso gemacht."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts",
+        "pine-nuts",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "easy",
+        "le30",
+        "le800",
+        "roast",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 4,
+      "calories_per_serving": 680,
+      "macros": {
+        "calories": 680,
+        "protein_g": 18,
+        "carbs_g": 62,
+        "fat_g": 38
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 2,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        },
+        {
+          "ingredient_id": "pine-nuts-ing",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated, plus more for serving",
+            "de": "fein gerieben, plus etwas zum Servieren"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 80,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water, plus a pinch for the pesto",
+            "de": "fürs Nudelwasser, plus eine Prise fürs Pesto"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly ground",
+            "de": "frisch gemahlen"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toast the pine nuts in a dry pan over medium heat until golden, about 3 minutes. shake the pan often — they go from perfect to burnt while your back is turned.",
+            "de": "Röste die Pinienkerne in einer trockenen Pfanne bei mittlerer Hitze goldbraun, etwa 3 Minuten. Schwenk die Pfanne oft – die Kerne verbrennen schneller, als du gucken kannst."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "bring a big pot of water to a boil and salt it with the full tablespoon. cook the spaghetti one minute short of the package time, about 9 minutes. before draining, scoop out a full cup of the cloudy pasta water.",
+            "de": "Bring einen großen Topf Wasser zum Kochen und salze ihn mit dem ganzen Esslöffel. Koch die Spaghetti eine Minute kürzer als auf der Packung angegeben, etwa 9 Minuten. Bevor du abgießt: eine große Tasse vom trüben Nudelwasser abschöpfen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "meanwhile, the pesto: pound the basil leaves, garlic, most of the pine nuts and a pinch of salt in a mortar, or blitz in short pulses. work in the olive oil bit by bit, then fold in the parmesan last.",
+            "de": "Währenddessen das Pesto: Basilikumblätter, Knoblauch, den Großteil der Pinienkerne und eine Prise Salz im Mörser zerstoßen oder im Mixer in kurzen Stößen zerkleinern. Das Olivenöl nach und nach einarbeiten, zum Schluss den Parmesan unterheben."
+          }
+        },
+        {
+          "text": {
+            "en": "off the heat: spaghetti and pesto into a warm bowl, then splash in pasta water a little at a time, tossing, until a glossy sauce clings to every strand. the pasta's own warmth is all the cooking this basil should ever see.",
+            "de": "Weg vom Herd: Spaghetti und Pesto in eine warme Schüssel geben und schluckweise Nudelwasser unterheben, bis eine glänzende Sauce jede Nudel umhüllt. Die Restwärme der Pasta reicht völlig – auf der heißen Platte würde das Basilikum stumpf und dunkel."
+          }
+        },
+        {
+          "text": {
+            "en": "plates. black pepper, the reserved pine nuts, and more parmesan if you're being honest with yourself.",
+            "de": "Auf Teller damit. Schwarzer Pfeffer drüber, die restlichen Pinienkerne dazu – und mehr Parmesan, wenn du ehrlich zu dir bist."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "summer",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "Sommer",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "pesto-pasta-vegan",
+      "dish_id": "pesto-pasta",
+      "title": {
+        "en": "vegan pesto pasta",
+        "de": "Vegane Pesto-Pasta"
+      },
+      "caption": {
+        "en": "green, savory, gone too fast",
+        "de": "grün, würzig, viel zu schnell weg"
+      },
+      "intro": {
+        "en": "this pesto runs on toasted pine nuts, two fistfuls of basil and nutritional yeast, which brings a deep savory saltiness all of its own. a squeeze of lemon keeps it bright, and the starchy pasta water pulls everything into a sauce off the heat. green, loud, on the table in 25 minutes.",
+        "de": "Dieses Pesto lebt von gerösteten Pinienkernen, zwei Handvoll Basilikum und Hefeflocken, die eine tiefe, herzhafte Würze ganz aus eigener Kraft mitbringen. Ein Spritzer Zitrone hält alles frisch, und das stärkehaltige Nudelwasser bindet die Sauce abseits vom Herd. Grün, intensiv, in 25 Minuten auf dem Tisch."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts",
+        "pine-nuts"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "easy",
+        "le30",
+        "le600",
+        "roast",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 4,
+      "calories_per_serving": 600,
+      "macros": {
+        "calories": 600,
+        "protein_g": 17,
+        "carbs_g": 63,
+        "fat_g": 29
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 2,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        },
+        {
+          "ingredient_id": "pine-nuts-ing",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "plus more for serving",
+            "de": "plus etwas zum Servieren"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 70,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "zest and juice",
+            "de": "Abrieb und Saft"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water, plus a pinch for the pesto",
+            "de": "fürs Nudelwasser, plus eine Prise fürs Pesto"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toast the pine nuts in a dry pan over medium heat until golden and fragrant, about 3 minutes. keep them moving — the small ones tan fast.",
+            "de": "Röste die Pinienkerne in einer trockenen Pfanne bei mittlerer Hitze goldbraun und duftend, etwa 3 Minuten. Halt sie in Bewegung – die kleinen bräunen schnell."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "boil a big pot of water, salt it with the full tablespoon, and cook the spaghetti about 9 minutes, one minute shy of the package time. scoop out a cup of the starchy water before you drain.",
+            "de": "Bring einen großen Topf Wasser zum Kochen, salze ihn mit dem ganzen Esslöffel und koch die Spaghetti etwa 9 Minuten, eine Minute kürzer als auf der Packung. Vor dem Abgießen eine Tasse vom stärkehaltigen Wasser abschöpfen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "blitz the basil, garlic, most of the pine nuts, the nutritional yeast and a pinch of salt in short pulses, streaming in the olive oil. finish with the lemon zest and juice and taste — it should make you blink a little.",
+            "de": "Mixe Basilikum, Knoblauch, den Großteil der Pinienkerne, die Hefeflocken und eine Prise Salz in kurzen Stößen und lass dabei das Olivenöl einlaufen. Zum Schluss Zitronenabrieb und -saft dazu und abschmecken – es darf dich kurz blinzeln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "off the heat, toss the spaghetti with the pesto in a warm bowl, adding pasta water splash by splash until the sauce turns glossy and coats every strand. heat would flatten the basil, so let the pasta's warmth do the work.",
+            "de": "Vermenge die Spaghetti abseits vom Herd in einer warmen Schüssel mit dem Pesto und gib schluckweise Nudelwasser dazu, bis die Sauce glänzt und jede Nudel überzieht. Hitze würde das Basilikum plattmachen – die Wärme der Pasta erledigt das von allein."
+          }
+        },
+        {
+          "text": {
+            "en": "serve with the last pine nuts and an extra dusting of nutritional yeast over the top.",
+            "de": "Mit den letzten Pinienkernen servieren und noch eine Schicht Hefeflocken darüberstreuen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "plant-based",
+          "weeknight"
+        ],
+        "de": [
+          "Pasta",
+          "pflanzlich",
+          "Feierabendküche"
+        ]
+      }
+    },
+    {
+      "id": "pesto-pasta-nut-free",
+      "dish_id": "pesto-pasta",
+      "title": {
+        "en": "sunflower seed pesto pasta",
+        "de": "Pesto-Pasta mit Sonnenblumenkernen"
+      },
+      "caption": {
+        "en": "toasted seeds, big basil energy",
+        "de": "geröstete Kerne, ganz viel Basilikum"
+      },
+      "intro": {
+        "en": "toasted sunflower seeds grind into the creamiest pesto on this page — sweet, earthy, almost butterscotch at the edges. parmesan and lemon sharpen it, pasta water turns it into a sauce. make more than you think you need. forkfuls wander.",
+        "de": "Geröstete Sonnenblumenkerne ergeben das cremigste Pesto auf dieser Seite – süßlich, erdig, mit einer fast karamelligen Kante. Parmesan und Zitrone schärfen es, Nudelwasser macht daraus eine Sauce. Mach lieber mehr, als du brauchst. Hier wandern Gabeln."
+      },
+      "variant": {
+        "diet": "nut-free",
+        "effort": "easy",
+        "calorie": "le800"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le30",
+        "le800",
+        "roast",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 4,
+      "calories_per_serving": 660,
+      "macros": {
+        "calories": 660,
+        "protein_g": 19,
+        "carbs_g": 62,
+        "fat_g": 36
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 2,
+          "unit": "bunch",
+          "note": {
+            "en": "leaves only",
+            "de": "nur die Blätter"
+          }
+        },
+        {
+          "ingredient_id": "sunflower-seeds",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 80,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "zest and a squeeze of juice",
+            "de": "Abrieb und ein Spritzer Saft"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for the pasta water, plus a pinch for the pesto",
+            "de": "fürs Nudelwasser, plus eine Prise fürs Pesto"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toast the sunflower seeds in a dry pan over medium heat until golden and popping quietly, about 4 minutes. tip them onto a plate to cool a moment — hot seeds turn to paste too early.",
+            "de": "Röste die Sonnenblumenkerne in einer trockenen Pfanne bei mittlerer Hitze goldbraun, bis sie leise knistern, etwa 4 Minuten. Kipp sie zum kurzen Abkühlen auf einen Teller – heiße Kerne werden zu früh zu Paste."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "boil a big pot of water, salt it with the full tablespoon, and cook the spaghetti about 9 minutes, one minute under the package time. set aside a cup of the cloudy pasta water before draining.",
+            "de": "Bring einen großen Topf Wasser zum Kochen, salze ihn mit dem ganzen Esslöffel und koch die Spaghetti etwa 9 Minuten, eine Minute unter der Packungsangabe. Vor dem Abgießen eine Tasse vom trüben Nudelwasser zur Seite stellen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "grind the seeds with the basil, garlic and a pinch of salt in short pulses, streaming in the olive oil until it loosens into a thick green cream. fold in the parmesan, then the lemon zest and a squeeze of juice.",
+            "de": "Zerkleinere die Kerne mit Basilikum, Knoblauch und einer Prise Salz in kurzen Stößen und lass das Olivenöl einlaufen, bis eine dicke grüne Creme entsteht. Den Parmesan unterheben, dann Zitronenabrieb und einen Spritzer Saft."
+          }
+        },
+        {
+          "text": {
+            "en": "pull everything off the heat and toss spaghetti and pesto in a warm bowl, loosening with pasta water until the sauce shines and clings. the starch does the binding — your job is just the tossing.",
+            "de": "Zieh alles vom Herd und vermenge Spaghetti und Pesto in einer warmen Schüssel. Mit Nudelwasser lockern, bis die Sauce glänzt und haftet. Die Stärke übernimmt das Binden – du übernimmst nur das Schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "serve straight away, with the rest of the parmesan over the top and more lemon zest if the day calls for it.",
+            "de": "Sofort servieren, mit dem restlichen Parmesan obendrauf und mehr Zitronenabrieb, wenn der Tag danach verlangt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pasta",
+          "seeds",
+          "family table"
+        ],
+        "de": [
+          "Pasta",
+          "Kerne",
+          "Familienküche"
+        ]
+      }
+    },
+    {
+      "id": "gnocchi-classic",
+      "dish_id": "gnocchi",
+      "title": {
+        "en": "potato gnocchi with sage butter",
+        "de": "Kartoffelgnocchi mit Salbeibutter"
+      },
+      "caption": {
+        "en": "light hands make light pillows",
+        "de": "leichte Hände, leichte Kissen"
+      },
+      "intro": {
+        "en": "floury potatoes, just enough flour to hold them together, one egg. the less you knead, the lighter they land — gnocchi punish ambition. then brown butter with crisp sage, which is the oldest reward in the italian playbook.",
+        "de": "Mehligkochende Kartoffeln, gerade so viel Mehl, dass alles zusammenhält, ein Ei. Je weniger du knetest, desto leichter werden sie – Gnocchi bestrafen Übereifer. Danach braune Butter mit knusprigem Salbei, die älteste Belohnung der italienischen Küche."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "pan-fry"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 14,
+        "carbs_g": 76,
+        "fat_g": 21
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "potato",
+          "qty": 800,
+          "unit": "g",
+          "note": {
+            "en": "floury variety",
+            "de": "mehligkochend"
+          }
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "plus more for the board",
+            "de": "plus etwas für die Arbeitsfläche"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "for dough and cooking water",
+            "de": "für Teig und Kochwasser"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch",
+          "note": {
+            "en": "freshly grated",
+            "de": "frisch gerieben"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sage",
+          "qty": 12,
+          "unit": "piece",
+          "note": {
+            "en": "whole leaves",
+            "de": "ganze Blätter"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "qty": 40,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil the potatoes whole and in their skins until a knife slides through without resistance, about 25 minutes. the skin keeps water out, and dry potato is the whole secret here.",
+            "de": "Koch die Kartoffeln im Ganzen und mit Schale, bis ein Messer ohne Widerstand durchgleitet, etwa 25 Minuten. Die Schale hält das Wasser draußen – und trockene Kartoffeln sind hier das ganze Geheimnis."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "peel them while hot (a fork to hold, a tea towel to grip) and press through a ricer onto a big board. spread the fluff out and let it steam off for 5 minutes.",
+            "de": "Pell sie noch heiß (eine Gabel zum Festhalten, ein Küchentuch zum Anfassen) und drück sie durch die Presse auf ein großes Brett. Verteil die Masse und lass sie 5 Minuten ausdampfen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "scatter the flour, a teaspoon of salt and the nutmeg over the warm potato, crack the egg on top and bring it together with a few quick strokes. stop the moment it holds — kneading wakes the gluten and turns pillows into dumplings.",
+            "de": "Streu Mehl, einen Teelöffel Salz und die Muskatnuss über die warmen Kartoffeln, schlag das Ei darüber auf und arbeite alles mit wenigen schnellen Bewegungen zusammen. Hör auf, sobald der Teig hält – Kneten weckt das Gluten und macht aus Kissen Klöße."
+          }
+        },
+        {
+          "text": {
+            "en": "quarter the dough and roll each piece into a thumb-thick rope on the floured board. cut into 2 cm pieces; press a fork into each one if you want ridges for the butter to hide in.",
+            "de": "Viertel den Teig und roll jedes Stück auf dem bemehlten Brett zu einer daumendicken Rolle. In 2 cm große Stücke schneiden; wer Rillen für die Butter will, drückt mit einer Gabel hinein."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer the gnocchi in well-salted, gently bubbling water in two batches. they float when they're done — give them 30 seconds after they rise, about 2 minutes per batch, then lift them out with a slotted spoon.",
+            "de": "Lass die Gnocchi in gut gesalzenem, leise blubberndem Wasser in zwei Portionen garen. Sie schwimmen oben, wenn sie fertig sind – gib ihnen danach noch 30 Sekunden, etwa 2 Minuten pro Portion, und heb sie mit der Schaumkelle heraus."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "melt the butter in a wide pan over medium heat and let it foam, smell nutty and turn hazel, about 4 minutes — the sage leaves go in for the last 2, until crisp. toss the gnocchi through to glaze, then plate with parmesan and black pepper.",
+            "de": "Lass die Butter in einer weiten Pfanne bei mittlerer Hitze aufschäumen, bis sie nussig duftet und haselnussbraun wird, etwa 4 Minuten – die Salbeiblätter kommen für die letzten 2 dazu, bis sie knusprig sind. Die Gnocchi darin schwenken und mit Parmesan und schwarzem Pfeffer anrichten."
+          },
+          "timer_minutes": 4
+        }
+      ],
+      "tags": {
+        "en": [
+          "gnocchi",
+          "from scratch",
+          "comfort food"
+        ],
+        "de": [
+          "Gnocchi",
+          "selbst gemacht",
+          "Soulfood"
+        ]
+      }
+    },
+    {
+      "id": "gnocchi-vegan",
+      "dish_id": "gnocchi",
+      "title": {
+        "en": "vegan gnocchi in tomato-basil sauce",
+        "de": "Vegane Gnocchi in Tomaten-Basilikum-Sauce"
+      },
+      "caption": {
+        "en": "pillows in a slow tomato sauce",
+        "de": "Kissen in sämiger Tomatensauce"
+      },
+      "intro": {
+        "en": "these gnocchi are pure potato and flour, which keeps them the lightest in the book — as long as your hands stay gentle. they land in a tomato sauce that simmers glossy with garlic, chili and basil. tastes like sunday at nonna's, even on a tuesday.",
+        "de": "Diese Gnocchi sind pure Kartoffel und Mehl – das macht sie zu den leichtesten im Buch, solange deine Hände sanft bleiben. Sie landen in einer Tomatensauce, die mit Knoblauch, Chili und Basilikum glänzend einkocht. Schmeckt nach Sonntag bei der Nonna, auch an einem Dienstag."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "simmer",
+        "saute"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 12,
+        "carbs_g": 84,
+        "fat_g": 14
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "potato",
+          "qty": 800,
+          "unit": "g",
+          "note": {
+            "en": "floury variety",
+            "de": "mehligkochend"
+          }
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 220,
+          "unit": "g",
+          "note": {
+            "en": "plus more for the board",
+            "de": "plus etwas für die Arbeitsfläche"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 3,
+          "unit": "tsp",
+          "note": {
+            "en": "for dough, sauce and the pot",
+            "de": "für Teig, Sauce und Kochwasser"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "qty": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil the potatoes whole, skins on, until a knife meets zero resistance, about 25 minutes. dry potatoes carry this dough, so keep that skin sealed.",
+            "de": "Koch die Kartoffeln im Ganzen mit Schale, bis ein Messer ohne jeden Widerstand durchgeht, etwa 25 Minuten. Trockene Kartoffeln tragen diesen Teig – also bleibt die Schale dran."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "peel while hot, press through a ricer onto a board, spread out and let the steam escape for a few minutes. season with a teaspoon of the salt.",
+            "de": "Heiß pellen, durch die Kartoffelpresse aufs Brett drücken, ausbreiten und den Dampf ein paar Minuten entweichen lassen. Mit einem Teelöffel Salz würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "scatter the flour over the warm potato and fold it in with a few quick strokes. warm potato and flour bind this dough on their own — stop the second it comes together, even if it looks shaggy. shaggy cooks light.",
+            "de": "Streu das Mehl über die warmen Kartoffeln und arbeite es mit wenigen schnellen Bewegungen ein. Warme Kartoffeln und Mehl binden diesen Teig von ganz allein – hör auf, sobald er zusammenkommt, auch wenn er noch zottelig aussieht. Zottelig kocht sich locker."
+          }
+        },
+        {
+          "text": {
+            "en": "for the sauce, warm 3 tbsp olive oil in a wide pan over low heat and let the garlic slices turn pale gold, about 2 minutes. add the chili flakes, the passata and the rest of the salt and simmer until thick and glossy, about 10 minutes. tear in most of the basil at the end.",
+            "de": "Für die Sauce 3 EL Olivenöl in einer weiten Pfanne bei niedriger Hitze erwärmen und die Knoblauchscheiben in etwa 2 Minuten hellgolden werden lassen. Chiliflocken, Passata und das restliche Salz dazu und etwa 10 Minuten dicklich und glänzend einköcheln. Am Ende den Großteil des Basilikums hineinzupfen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "roll the dough into thumb-thick ropes on a floured board and cut into 2 cm pieces. simmer in well-salted water in two batches: they float when they're ready, about 2 minutes per batch.",
+            "de": "Roll den Teig auf dem bemehlten Brett zu daumendicken Strängen und schneide 2 cm große Stücke. In gut gesalzenem Wasser in zwei Portionen garen: Sie schwimmen oben, wenn sie fertig sind, etwa 2 Minuten pro Portion."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "lift the gnocchi straight into the sauce with a splash of their cooking water and fold gently for a minute until everything clings. finish with the last basil leaves and the remaining olive oil.",
+            "de": "Heb die Gnocchi direkt aus dem Topf in die Sauce, gib einen Schluck Kochwasser dazu und schwenke alles eine Minute vorsichtig durch, bis die Sauce haftet. Mit den letzten Basilikumblättern und dem restlichen Olivenöl abrunden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "gnocchi",
+          "tomato sauce",
+          "comfort food"
+        ],
+        "de": [
+          "Gnocchi",
+          "Tomatensauce",
+          "Soulfood"
+        ]
+      }
     }
   ]
 }

@@ -71,7 +71,7 @@ void main() {
 
     test('unknown query returns nothing (content-gap case)', () async {
       final corpus = await loadRealCorpus();
-      expect(corpus.searchIndex.query('cheesecake'), isEmpty);
+      expect(corpus.searchIndex.query('schweinshaxe'), isEmpty);
     });
 
     test('partitions index incrementally', () async {

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "corpus_version": "2026.06.1",
+  "corpus_version": "2026.06.2",
   "generated_by": "morphcook pipeline",
   "loading_strategy": {
     "at_launch": [
@@ -12,7 +12,8 @@
       "cuisine-asian",
       "cuisine-middle-eastern",
       "cuisine-indian",
-      "cuisine-mexican"
+      "cuisine-mexican",
+      "cuisine-european"
     ]
   },
   "partitions": [
@@ -30,7 +31,10 @@
         "shakshuka",
         "caesar-salad",
         "omelette",
-        "smoothie-bowl"
+        "smoothie-bowl",
+        "french-toast",
+        "granola",
+        "mac-and-cheese"
       ]
     },
     {
@@ -43,7 +47,9 @@
         "paella",
         "goulash",
         "brownies",
-        "apple-pie"
+        "apple-pie",
+        "cookies",
+        "cheesecake"
       ]
     },
     {
@@ -56,7 +62,9 @@
         "pizza",
         "bolognese",
         "carbonara",
-        "tiramisu"
+        "tiramisu",
+        "pesto-pasta",
+        "gnocchi"
       ]
     },
     {
@@ -68,7 +76,10 @@
         "ramen",
         "sushi",
         "fried-rice",
-        "pho"
+        "pho",
+        "teriyaki",
+        "gyoza",
+        "green-curry"
       ]
     },
     {
@@ -80,7 +91,9 @@
         "hummus-bowl",
         "shawarma",
         "lentil-soup",
-        "tabbouleh"
+        "tabbouleh",
+        "couscous-bowl",
+        "tagine"
       ]
     },
     {
@@ -90,7 +103,9 @@
       "dish_ids": [
         "butter-chicken",
         "dal",
-        "biryani"
+        "biryani",
+        "palak-paneer",
+        "tikka-masala"
       ]
     },
     {
@@ -100,7 +115,22 @@
       "dish_ids": [
         "tacos",
         "burrito-bowl",
-        "quesadilla"
+        "quesadilla",
+        "chili",
+        "enchiladas"
+      ]
+    },
+    {
+      "id": "cuisine-european",
+      "file": "assets/cuisine-european.json",
+      "description": "European cuisine partition for discovery.",
+      "dish_ids": [
+        "schnitzel",
+        "kaesespaetzle",
+        "meatballs",
+        "crepes",
+        "quiche",
+        "tomato-soup"
       ]
     }
   ],

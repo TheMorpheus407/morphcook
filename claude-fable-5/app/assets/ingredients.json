@@ -466,6 +466,17 @@
           "flags": [
             "sulphites"
           ]
+        },
+        {
+          "id": "dried-apricots",
+          "name": {
+            "en": "dried apricots",
+            "de": "getrocknete Aprikosen"
+          },
+          "flags": [
+            "high-fodmap",
+            "sulphites"
+          ]
         }
       ]
     },
@@ -538,6 +549,13 @@
           "name": {
             "en": "bay leaf",
             "de": "Lorbeerblatt"
+          }
+        },
+        {
+          "id": "sage",
+          "name": {
+            "en": "sage",
+            "de": "Salbei"
           }
         }
       ]
@@ -856,6 +874,16 @@
               "name": {
                 "en": "pork belly",
                 "de": "Schweinebauch"
+              },
+              "flags": [
+                "pork"
+              ]
+            },
+            {
+              "id": "pork-cutlet",
+              "name": {
+                "en": "pork cutlets",
+                "de": "Schweineschnitzel"
               },
               "flags": [
                 "pork"
@@ -1323,6 +1351,38 @@
           "flags": [
             "gluten",
             "high-fodmap"
+          ]
+        },
+        {
+          "id": "couscous",
+          "name": {
+            "en": "couscous",
+            "de": "Couscous"
+          },
+          "flags": [
+            "gluten",
+            "high-fodmap"
+          ]
+        },
+        {
+          "id": "macaroni",
+          "name": {
+            "en": "macaroni",
+            "de": "Makkaroni"
+          },
+          "flags": [
+            "gluten",
+            "high-fodmap"
+          ]
+        },
+        {
+          "id": "dumpling-wrappers",
+          "name": {
+            "en": "dumpling wrappers",
+            "de": "Dumpling-Teigblätter"
+          },
+          "flags": [
+            "gluten"
           ]
         }
       ]
@@ -2075,6 +2135,13 @@
           "flags": [
             "caffeine"
           ]
+        },
+        {
+          "id": "green-curry-paste",
+          "name": {
+            "en": "green curry paste",
+            "de": "grüne Currypaste"
+          }
         }
       ]
     },

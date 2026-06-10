@@ -1093,6 +1093,634 @@
         "baking"
       ],
       "frequency_tier": "low"
+    },
+    {
+      "id": "schnitzel",
+      "name": {
+        "en": "schnitzel",
+        "de": "Schnitzel"
+      },
+      "hero": {
+        "en": "golden, thin, bigger than the plate",
+        "de": "golden, dünn, größer als der Teller"
+      },
+      "caption": {
+        "en": "the crust must wave, not cling",
+        "de": "die Panade soll wellen schlagen"
+      },
+      "stripe": "#C9A227",
+      "recipes": [
+        "schnitzel-classic",
+        "schnitzel-chicken",
+        "schnitzel-vegan"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "austrian",
+        "german",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "kaesespaetzle",
+      "name": {
+        "en": "käsespätzle",
+        "de": "Käsespätzle"
+      },
+      "hero": {
+        "en": "alpine comfort, strand by strand",
+        "de": "Alpentrost, Faden für Faden"
+      },
+      "caption": {
+        "en": "the onions on top are not optional",
+        "de": "die Zwiebeln obendrauf sind Pflicht"
+      },
+      "stripe": "#D9A23B",
+      "recipes": [
+        "kaesespaetzle-classic",
+        "kaesespaetzle-vegan"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german",
+        "alpine",
+        "comfort-food"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "meatballs",
+      "name": {
+        "en": "meatballs",
+        "de": "Hackbällchen"
+      },
+      "hero": {
+        "en": "little spheres of sunday",
+        "de": "kleine Kugeln Sonntag"
+      },
+      "caption": {
+        "en": "brown them properly. all sides.",
+        "de": "richtig anbraten. von allen Seiten."
+      },
+      "stripe": "#8C5E58",
+      "recipes": [
+        "meatballs-classic",
+        "meatballs-vegan",
+        "meatballs-gluten-free"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "swedish",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "crepes",
+      "name": {
+        "en": "crêpes",
+        "de": "Crêpes"
+      },
+      "hero": {
+        "en": "paper-thin and endlessly forgiving",
+        "de": "hauchdünn und unendlich verzeihend"
+      },
+      "caption": {
+        "en": "the first one belongs to the cook",
+        "de": "der erste gehört der Köchin"
+      },
+      "stripe": "#E0A899",
+      "recipes": [
+        "crepes-classic",
+        "crepes-vegan",
+        "crepes-buckwheat"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "french",
+        "breakfast",
+        "sweet"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "quiche",
+      "name": {
+        "en": "quiche",
+        "de": "Quiche"
+      },
+      "hero": {
+        "en": "custard with a backbone",
+        "de": "Eierguss mit Rückgrat"
+      },
+      "caption": {
+        "en": "blind-bake or regret it",
+        "de": "blindbacken oder bereuen"
+      },
+      "stripe": "#B8862D",
+      "recipes": [
+        "quiche-classic",
+        "quiche-spinach",
+        "quiche-keto"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "french",
+        "baked",
+        "brunch"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tomato-soup",
+      "name": {
+        "en": "tomato soup",
+        "de": "Tomatensuppe"
+      },
+      "hero": {
+        "en": "a red so familiar it hums",
+        "de": "ein Rot, so vertraut, dass es summt"
+      },
+      "caption": {
+        "en": "grilled cheese on the side, always",
+        "de": "Käsebrot dazu, immer"
+      },
+      "stripe": "#B5483A",
+      "recipes": [
+        "tomato-soup-classic",
+        "tomato-soup-vegan",
+        "tomato-soup-lowfodmap"
+      ],
+      "partition_id": "cuisine-european",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "soup",
+        "comfort-food",
+        "quick"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "teriyaki",
+      "name": {
+        "en": "teriyaki",
+        "de": "Teriyaki"
+      },
+      "hero": {
+        "en": "lacquer you can eat",
+        "de": "essbarer Lack"
+      },
+      "caption": {
+        "en": "the glaze decides when it's done",
+        "de": "die Glasur entscheidet, wann Schluss ist"
+      },
+      "stripe": "#704238",
+      "recipes": [
+        "teriyaki-chicken",
+        "teriyaki-tofu",
+        "teriyaki-salmon"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "japanese",
+        "quick",
+        "rice"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "gyoza",
+      "name": {
+        "en": "gyoza",
+        "de": "Gyoza"
+      },
+      "hero": {
+        "en": "pleated, seared, steamed, gone",
+        "de": "gefaltet, gebraten, gedämpft, weg"
+      },
+      "caption": {
+        "en": "crisp bottom, soft top, no compromise",
+        "de": "knuspriger Boden, weiches Dach"
+      },
+      "stripe": "#5E6B73",
+      "recipes": [
+        "gyoza-classic",
+        "gyoza-vegan"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "japanese",
+        "dumplings",
+        "street-food"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "green-curry",
+      "name": {
+        "en": "green curry",
+        "de": "grünes Curry"
+      },
+      "hero": {
+        "en": "heat that smells like herbs",
+        "de": "Schärfe, die nach Kräutern duftet"
+      },
+      "caption": {
+        "en": "fry the paste until it sings",
+        "de": "die Paste rösten, bis sie duftet"
+      },
+      "stripe": "#6F8F4F",
+      "recipes": [
+        "green-curry-classic",
+        "green-curry-vegan",
+        "green-curry-shrimp"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "thai",
+        "curry",
+        "one-pot"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "pesto-pasta",
+      "name": {
+        "en": "pesto pasta",
+        "de": "Pesto-Pasta"
+      },
+      "hero": {
+        "en": "summer, crushed and tossed",
+        "de": "Sommer, zerstoßen und untergehoben"
+      },
+      "caption": {
+        "en": "save the pasta water. always.",
+        "de": "das Nudelwasser aufheben. immer."
+      },
+      "stripe": "#7E9B6E",
+      "recipes": [
+        "pesto-pasta-classic",
+        "pesto-pasta-vegan",
+        "pesto-pasta-nut-free"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "quick"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "gnocchi",
+      "name": {
+        "en": "gnocchi",
+        "de": "Gnocchi"
+      },
+      "hero": {
+        "en": "pillows that earn their name",
+        "de": "Kissen, die ihren Namen verdienen"
+      },
+      "caption": {
+        "en": "they float when they're ready",
+        "de": "sie schwimmen oben, wenn sie fertig sind"
+      },
+      "stripe": "#C9A227",
+      "recipes": [
+        "gnocchi-classic",
+        "gnocchi-vegan"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "potato",
+        "comfort-food"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "chili",
+      "name": {
+        "en": "chili",
+        "de": "Chili"
+      },
+      "hero": {
+        "en": "a pot that gets better overnight",
+        "de": "ein Topf, der über Nacht besser wird"
+      },
+      "caption": {
+        "en": "tomorrow's chili thanks today's patience",
+        "de": "das Chili von morgen dankt der Geduld von heute"
+      },
+      "stripe": "#9E3B2B",
+      "recipes": [
+        "chili-classic",
+        "chili-vegan",
+        "chili-keto"
+      ],
+      "partition_id": "cuisine-mexican",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "tex-mex",
+        "stew",
+        "meal-prep"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "enchiladas",
+      "name": {
+        "en": "enchiladas",
+        "de": "Enchiladas"
+      },
+      "hero": {
+        "en": "rolled, sauced, blistered",
+        "de": "gerollt, übergossen, überbacken"
+      },
+      "caption": {
+        "en": "more sauce than seems wise",
+        "de": "mehr Sauce, als vernünftig wirkt"
+      },
+      "stripe": "#C77B3E",
+      "recipes": [
+        "enchiladas-classic",
+        "enchiladas-vegan"
+      ],
+      "partition_id": "cuisine-mexican",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican",
+        "baked",
+        "comfort-food"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "couscous-bowl",
+      "name": {
+        "en": "couscous bowl",
+        "de": "Couscous Bowl"
+      },
+      "hero": {
+        "en": "five minutes of grain, an hour of credit",
+        "de": "fünf Minuten Couscous, eine Stunde Applaus"
+      },
+      "caption": {
+        "en": "fluff with a fork, never a spoon",
+        "de": "mit der Gabel auflockern, nie mit dem Löffel"
+      },
+      "stripe": "#C9A227",
+      "recipes": [
+        "couscous-bowl-classic",
+        "couscous-bowl-chicken"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "north-african",
+        "bowl",
+        "quick"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tagine",
+      "name": {
+        "en": "tagine",
+        "de": "Tajine"
+      },
+      "hero": {
+        "en": "sweet, spiced, slow by design",
+        "de": "süß, gewürzt, absichtlich langsam"
+      },
+      "caption": {
+        "en": "lift the lid only at the table",
+        "de": "den Deckel erst am Tisch heben"
+      },
+      "stripe": "#A65E2E",
+      "recipes": [
+        "tagine-chicken",
+        "tagine-vegetable"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "moroccan",
+        "stew",
+        "celebration"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "palak-paneer",
+      "name": {
+        "en": "palak paneer",
+        "de": "Palak Paneer"
+      },
+      "hero": {
+        "en": "green velvet, golden cubes",
+        "de": "grüner Samt, goldene Würfel"
+      },
+      "caption": {
+        "en": "blanch the spinach, keep the color",
+        "de": "Spinat blanchieren, Farbe behalten"
+      },
+      "stripe": "#556B2F",
+      "recipes": [
+        "palak-paneer-classic",
+        "palak-tofu"
+      ],
+      "partition_id": "cuisine-indian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "indian",
+        "curry",
+        "vegetarian"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "tikka-masala",
+      "name": {
+        "en": "tikka masala",
+        "de": "Tikka Masala"
+      },
+      "hero": {
+        "en": "char first, sauce second",
+        "de": "erst Röstung, dann Sauce"
+      },
+      "caption": {
+        "en": "the marinade does the heavy lifting",
+        "de": "die Marinade macht die schwere Arbeit"
+      },
+      "stripe": "#C26A2D",
+      "recipes": [
+        "tikka-masala-classic",
+        "tikka-masala-vegan",
+        "tikka-masala-light"
+      ],
+      "partition_id": "cuisine-indian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "indian",
+        "curry",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "french-toast",
+      "name": {
+        "en": "french toast",
+        "de": "French Toast"
+      },
+      "hero": {
+        "en": "yesterday's bread, today's excuse",
+        "de": "das Brot von gestern, die Ausrede von heute"
+      },
+      "caption": {
+        "en": "stale bread is the secret",
+        "de": "altbackenes Brot ist das Geheimnis"
+      },
+      "stripe": "#D4A86A",
+      "recipes": [
+        "french-toast-classic",
+        "french-toast-vegan",
+        "french-toast-protein"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "sweet"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "granola",
+      "name": {
+        "en": "granola",
+        "de": "Granola"
+      },
+      "hero": {
+        "en": "the jar that makes mornings easier",
+        "de": "das Glas, das den Morgen leichter macht"
+      },
+      "caption": {
+        "en": "stir once, then trust the oven",
+        "de": "einmal wenden, dann dem Ofen vertrauen"
+      },
+      "stripe": "#A9B39A",
+      "recipes": [
+        "granola-classic",
+        "granola-vegan",
+        "granola-sugarfree"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "baking",
+        "meal-prep"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "mac-and-cheese",
+      "name": {
+        "en": "mac & cheese",
+        "de": "Mac & Cheese"
+      },
+      "hero": {
+        "en": "a hug with a crust",
+        "de": "eine Umarmung mit Kruste"
+      },
+      "caption": {
+        "en": "the corner scoop is the best scoop",
+        "de": "die Ecke ist die beste Portion"
+      },
+      "stripe": "#D9A23B",
+      "recipes": [
+        "mac-and-cheese-classic",
+        "mac-and-cheese-vegan",
+        "mac-and-cheese-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american",
+        "pasta",
+        "comfort-food"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "cookies",
+      "name": {
+        "en": "chocolate chip cookies",
+        "de": "Schokoladenkekse"
+      },
+      "hero": {
+        "en": "warm, bent, slightly underdone",
+        "de": "warm, biegsam, leicht unterbacken"
+      },
+      "caption": {
+        "en": "rest the dough. fight the urge.",
+        "de": "den Teig ruhen lassen. widersteh."
+      },
+      "stripe": "#8A6B4F",
+      "recipes": [
+        "cookies-classic",
+        "cookies-vegan",
+        "cookies-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american",
+        "dessert",
+        "baking"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "cheesecake",
+      "name": {
+        "en": "cheesecake",
+        "de": "Käsekuchen"
+      },
+      "hero": {
+        "en": "patience, set in cream",
+        "de": "Geduld, in Creme gegossen"
+      },
+      "caption": {
+        "en": "the wobble in the middle is correct",
+        "de": "das Wackeln in der Mitte gehört so"
+      },
+      "stripe": "#E0C9A6",
+      "recipes": [
+        "cheesecake-classic",
+        "cheesecake-vegan"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "dessert",
+        "baking",
+        "celebration"
+      ],
+      "frequency_tier": "low"
     }
   ]
 }

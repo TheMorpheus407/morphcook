@@ -2593,6 +2593,1419 @@
           "Feierabendküche"
         ]
       }
+    },
+    {
+      "id": "teriyaki-chicken",
+      "dish_id": "teriyaki",
+      "title": {
+        "en": "chicken teriyaki",
+        "de": "Teriyaki-Hähnchen"
+      },
+      "caption": {
+        "en": "glossy thighs, patient rice",
+        "de": "glänzende Glasur, geduldiger Reis"
+      },
+      "intro": {
+        "en": "teriyaki is a negotiation between soy sauce, mirin and sugar, and the pan settles it. the chicken thighs go in plain and come out lacquered. underneath, the rice does the quiet work.",
+        "de": "Teriyaki ist eine Verhandlung zwischen Sojasauce, Mirin und Zucker – und die Pfanne entscheidet sie. Die Hähnchenschenkel gehen blank hinein und kommen lackiert wieder raus. Darunter macht der Reis die stille Arbeit."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "soy",
+        "gluten",
+        "alcohol",
+        "added-sugar",
+        "sesame"
+      ],
+      "attributes": [
+        "kosher",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 38,
+        "carbs_g": 62,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 400,
+          "unit": "g",
+          "note": {
+            "en": "boneless, skin off",
+            "de": "ausgelöst, ohne Haut"
+          }
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 10,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "white-sesame",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water runs nearly clear. bring it to a boil with 225 ml water, clap the lid on, lowest heat, 12 minutes. then off the heat — and leave the lid alone.",
+            "de": "Wasch den Reis, bis das Wasser fast klar bleibt. Mit 225 ml Wasser aufkochen, Deckel drauf, kleinste Stufe, 12 Minuten. Dann vom Herd ziehen – und den Deckel in Ruhe lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "stir the soy sauce, mirin, sugar and grated ginger together until the sugar dissolves. that's the whole glaze.",
+            "de": "Verrühre Sojasauce, Mirin, Zucker und den geriebenen Ingwer, bis sich der Zucker aufgelöst hat. Das ist schon die ganze Glasur."
+          }
+        },
+        {
+          "text": {
+            "en": "pat the thighs dry and season them with the salt. heat the oil in a wide pan over medium-high, lay the thighs in and leave them alone for 6 minutes — color is flavor.",
+            "de": "Tupf die Schenkel trocken und würze sie mit dem Salz. Erhitze das Öl in einer weiten Pfanne auf mittelhoher Stufe, leg die Schenkel hinein und lass sie 6 Minuten ungestört braten – Bräune ist Geschmack."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "flip and give the other side 4 minutes.",
+            "de": "Wenden und der anderen Seite 4 Minuten geben."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "pour in the glaze and let it bubble hard, turning the thighs through it, about 4 minutes — until it reduces to a lacquer that coats the chicken. stay close at the end. sugar goes from lacquer to bitter fast.",
+            "de": "Gieß die Glasur dazu und lass sie kräftig blubbern, dabei die Schenkel immer wieder darin wenden, etwa 4 Minuten – bis sie zu einem Lack einkocht, der am Hähnchen haftet. Bleib am Ende dabei. Zucker kippt schnell von Lack zu bitter."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "slice the thighs, pile them on the rice, spoon over what's left in the pan. spring onion and sesame on top.",
+            "de": "Schneide die Schenkel in Scheiben, schichte sie auf den Reis und löffle den Rest aus der Pfanne darüber. Frühlingszwiebeln und Sesam obendrauf."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "teriyaki",
+          "weeknight",
+          "rice bowl"
+        ],
+        "de": [
+          "Teriyaki",
+          "Feierabendküche",
+          "Reisschüssel"
+        ]
+      }
+    },
+    {
+      "id": "teriyaki-tofu",
+      "dish_id": "teriyaki",
+      "title": {
+        "en": "tofu teriyaki",
+        "de": "Teriyaki-Tofu"
+      },
+      "caption": {
+        "en": "torn tofu, tamari lacquer",
+        "de": "gerupfter Tofu, Tamari-Lack"
+      },
+      "intro": {
+        "en": "torn tofu has craggy edges, and glaze lives for craggy edges. a dusting of cornstarch fries into a thin shell, then tamari, ginger and rice vinegar cook down to a dark lacquer that grips every corner. the rice underneath catches whatever escapes.",
+        "de": "Gerupfter Tofu hat raue Kanten, und genau an rauen Kanten hält sich Glasur fest. Eine dünne Schicht Speisestärke brät zu einer feinen Kruste, dann kochen Tamari, Ingwer und Reisessig zu einem dunklen Lack ein, der jede Ecke packt. Der Reis darunter fängt auf, was daneben geht."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "added-sugar",
+        "sesame"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 500,
+      "macros": {
+        "calories": 500,
+        "protein_g": 26,
+        "carbs_g": 54,
+        "fat_g": 20
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "rice-vinegar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 10,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "white-sesame",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "press the tofu between paper towels under a heavy pan for 10 minutes. dry tofu fries, wet tofu steams.",
+            "de": "Press den Tofu 10 Minuten zwischen Küchenpapier unter einer schweren Pfanne. Trockener Tofu brät, nasser Tofu dämpft nur."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "rice into a pot with 225 ml water (rinse it first until the water clears). boil once, lid on, lowest heat for 12 minutes, then let it sit lidded off the heat.",
+            "de": "Reis mit 225 ml Wasser in einen Topf (vorher waschen, bis das Wasser klar ist). Einmal aufkochen, Deckel drauf, 12 Minuten auf kleinster Stufe, dann zugedeckt vom Herd ziehen lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "stir the tamari, rice vinegar, sugar and ginger together until the sugar dissolves.",
+            "de": "Verrühre Tamari, Reisessig, Zucker und Ingwer, bis sich der Zucker aufgelöst hat."
+          }
+        },
+        {
+          "text": {
+            "en": "tear the tofu into rough bite-size chunks and toss them with the cornstarch until every ragged edge wears a thin coat.",
+            "de": "Rupf den Tofu in grobe, mundgerechte Stücke und wende sie in der Speisestärke, bis jede raue Kante einen dünnen Mantel trägt."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the oil in a wide pan over medium-high and fry the tofu, turning now and then, about 9 minutes — deep gold, crusty, unhurried.",
+            "de": "Erhitze das Öl in einer weiten Pfanne auf mittelhoher Stufe und brate den Tofu unter gelegentlichem Wenden etwa 9 Minuten – tief goldbraun, knusprig, ohne Eile."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "pour in the glaze and let it bubble for 2 minutes, tossing, until it thickens to a glossy film that clings to every chunk.",
+            "de": "Gieß die Glasur dazu und lass sie 2 Minuten blubbern, dabei schwenken, bis sie zu einem glänzenden Film eindickt, der an jedem Stück haftet."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "over the rice, spring onion and sesame on top. eat while the edges still crackle.",
+            "de": "Auf den Reis damit, Frühlingszwiebeln und Sesam obendrauf. Iss, solange die Kanten noch knuspern."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "teriyaki",
+          "plant-based",
+          "rice bowl"
+        ],
+        "de": [
+          "Teriyaki",
+          "pflanzlich",
+          "Reisschüssel"
+        ]
+      }
+    },
+    {
+      "id": "teriyaki-salmon",
+      "dish_id": "teriyaki",
+      "title": {
+        "en": "salmon teriyaki",
+        "de": "Teriyaki-Lachs"
+      },
+      "caption": {
+        "en": "lacquered salmon, glaze comes late",
+        "de": "lackierter Lachs, Glasur kommt spät"
+      },
+      "intro": {
+        "en": "salmon is too good to swim in sauce from the start, so the glaze waits. the fillets get a hard sear on the skin first, and only in the last two minutes does the reduced soy-mirin lacquer get brushed on, where the heat sets it to a shine.",
+        "de": "Lachs ist zu schade, um von Anfang an in Sauce zu schwimmen, also wartet die Glasur. Erst bekommen die Filets eine kräftig gebratene Haut, und erst in den letzten zwei Minuten kommt der eingekochte Soja-Mirin-Lack darüber, wo die Hitze ihn zum Glänzen bringt."
+      },
+      "variant": {
+        "diet": "pescatarian",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "gluten",
+        "alcohol",
+        "added-sugar",
+        "sesame"
+      ],
+      "attributes": [
+        "pescatarian",
+        "kosher",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 34,
+        "carbs_g": 50,
+        "fat_g": 25
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "salmon",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "fillets with skin, about 150 g each",
+            "de": "Filets mit Haut, je etwa 150 g"
+          }
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 10,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "in fine rings",
+            "de": "in feinen Ringen"
+          }
+        },
+        {
+          "ingredient_id": "white-sesame",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "start the rice: rinse it, then bring it to a boil with 225 ml water. lid on, lowest heat, 12 minutes — it rests lidded while the salmon happens.",
+            "de": "Setz den Reis auf: waschen, dann mit 225 ml Wasser aufkochen. Deckel drauf, kleinste Stufe, 12 Minuten – er ruht zugedeckt, während der Lachs dran ist."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "small pan: soy sauce, mirin, sugar and ginger. simmer about 4 minutes until it coats the back of a spoon. take it off — it thickens more as it cools.",
+            "de": "Kleiner Topf: Sojasauce, Mirin, Zucker und Ingwer. Etwa 4 Minuten einköcheln lassen, bis die Mischung einen Löffelrücken überzieht. Vom Herd nehmen – beim Abkühlen dickt sie noch nach."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "pat the fillets dry. heat the oil in a pan over medium-high and lay the salmon in skin-side down. 6 minutes without poking, until the skin releases on its own and the sides have gone pale most of the way up.",
+            "de": "Tupf die Filets trocken. Erhitze das Öl in einer Pfanne auf mittelhoher Stufe und leg den Lachs mit der Hautseite hinein. 6 Minuten nicht anrühren, bis sich die Haut von selbst löst und die Seiten fast bis oben hell geworden sind."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "flip, turn the heat down and brush the glaze on thickly. 2 more minutes, spooning over more glaze as it sets to a shine.",
+            "de": "Wenden, Hitze runterdrehen und die Glasur dick aufpinseln. Noch 2 Minuten, dabei weiter Glasur darüberlöffeln, bis sie glänzend anzieht."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "rice into bowls, salmon on top, the last of the glaze from the pan over everything. spring onion and sesame to finish.",
+            "de": "Reis in Schüsseln, Lachs obendrauf, den letzten Rest Glasur aus der Pfanne darüber. Frühlingszwiebeln und Sesam zum Schluss."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "teriyaki",
+          "fish",
+          "quick"
+        ],
+        "de": [
+          "Teriyaki",
+          "Fisch",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "gyoza-classic",
+      "dish_id": "gyoza",
+      "title": {
+        "en": "classic gyoza",
+        "de": "Klassische Gyoza"
+      },
+      "caption": {
+        "en": "fried below, steamed above",
+        "de": "unten gebraten, oben gedämpft"
+      },
+      "intro": {
+        "en": "hand-chopped pork belly stays bouncier than anything from the grinder, and salted cabbage keeps the filling juicy without flooding it. one lidded pan does both jobs: a hard fry for the crackle, a quick steam for the silk.",
+        "de": "Von Hand gehackter Schweinebauch bleibt saftiger und griffiger als alles aus dem Fleischwolf, und gesalzener Kohl hält die Füllung feucht, ohne sie zu ertränken. Eine Pfanne mit Deckel kann beides: erst kräftig braten für den knusprigen Boden, dann kurz dämpfen für die zarte Hülle."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "pork",
+        "gluten",
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "pan-fry",
+        "steam"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 22,
+        "carbs_g": 42,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "dumpling-wrappers",
+          "qty": 24,
+          "unit": "piece",
+          "note": {
+            "en": "round, thawed if frozen",
+            "de": "rund, ggf. aufgetaut"
+          }
+        },
+        {
+          "ingredient_id": "pork-belly",
+          "qty": 250,
+          "unit": "g",
+          "note": {
+            "en": "rind removed",
+            "de": "ohne Schwarte"
+          }
+        },
+        {
+          "ingredient_id": "white-cabbage",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "very finely shredded",
+            "de": "sehr fein gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 10,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "rice-vinegar",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the shredded cabbage with the salt and let it sit for 10 minutes. then squeeze it hard in a clean kitchen towel — every drop you wring out now stays out of your wrappers later.",
+            "de": "Vermenge den gehobelten Kohl mit dem Salz und lass ihn 10 Minuten stehen. Dann in einem sauberen Küchentuch kräftig auswringen – jeder Tropfen, den du jetzt rausdrückst, weicht später nicht die Teigblätter auf."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "chop the pork belly with a big knife, going over it again and again until it's almost a coarse paste. mix it with the cabbage, ginger, garlic, 1 tbsp of the soy sauce and half the sesame oil until sticky.",
+            "de": "Hack den Schweinebauch mit einem großen Messer, immer wieder darübergehen, bis er fast eine grobe Paste ist. Mit Kohl, Ingwer, Knoblauch, 1 EL der Sojasauce und der Hälfte des Sesamöls verkneten, bis die Masse klebrig wird."
+          }
+        },
+        {
+          "text": {
+            "en": "a heaped teaspoon of filling per wrapper. wet the rim with a finger of water, fold into a half-moon and press shut. pleat the edge if you're in the mood — a plain, firm seal holds just as well.",
+            "de": "Ein gehäufter Teelöffel Füllung pro Teigblatt. Den Rand mit einem nassen Finger befeuchten, zum Halbmond falten und fest zudrücken. Falte kleine Plisseefalten in den Rand, wenn du Lust hast – ein glatter, fester Verschluss hält genauso."
+          }
+        },
+        {
+          "text": {
+            "en": "you'll cook in two rounds — 24 gyoza don't fit one pan. heat half the vegetable oil in a large lidded pan over medium-high, arrange half the gyoza flat-side down and fry about 3 minutes, until the bottoms are deep gold.",
+            "de": "Du brätst in zwei Runden – 24 Gyoza passen nicht in eine Pfanne. Erhitze die Hälfte des Pflanzenöls in einer großen Pfanne mit Deckel auf mittelhoher Stufe, setz die Hälfte der Gyoza mit der flachen Seite hinein und brate sie etwa 3 Minuten, bis die Böden tief goldbraun sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "pour in 75 ml water and get the lid on fast. steam for 6 minutes, until the water is gone and the wrappers have turned glossy and translucent.",
+            "de": "75 ml Wasser angießen und sofort den Deckel drauf. 6 Minuten dämpfen, bis das Wasser verkocht ist und die Teigblätter glasig glänzen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "lid off, one more minute to re-crisp the bottoms, then run the second round the same way: oil, fry, water, lid. for the dip, stir the rice vinegar with the remaining soy sauce and the last drops of sesame oil. eating round one standing at the stove is allowed.",
+            "de": "Deckel runter, noch eine Minute, damit die Böden wieder knusprig werden, dann die zweite Runde genauso: Öl, braten, Wasser, Deckel. Für den Dip Reisessig mit der restlichen Sojasauce und den letzten Tropfen Sesamöl verrühren. Die erste Runde im Stehen am Herd zu essen ist erlaubt."
+          },
+          "timer_minutes": 1
+        }
+      ],
+      "tags": {
+        "en": [
+          "gyoza",
+          "dumplings",
+          "street food"
+        ],
+        "de": [
+          "Gyoza",
+          "Teigtaschen",
+          "Streetfood"
+        ]
+      }
+    },
+    {
+      "id": "gyoza-vegan",
+      "dish_id": "gyoza",
+      "title": {
+        "en": "shiitake tofu gyoza",
+        "de": "Shiitake-Tofu-Gyoza"
+      },
+      "caption": {
+        "en": "shiitake depth, crackly base",
+        "de": "Shiitake-Tiefe, knuspriger Boden"
+      },
+      "intro": {
+        "en": "shiitake bring the deep savoury backbone, crumbled tofu gives the filling body, and salted cabbage keeps it juicy. dry-frying the mushrooms and tofu first drives off their water and concentrates everything — then the usual ritual: crackle below, steam above.",
+        "de": "Shiitake liefern das herzhafte Rückgrat, zerbröselter Tofu gibt der Füllung Körper, und gesalzener Kohl hält sie saftig. Pilze und Tofu werden erst ohne Öl gebraten, damit ihr Wasser verdampft und sich alles konzentriert – dann das übliche Ritual: unten Kruste, oben Dampf."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le400",
+        "pan-fry",
+        "steam"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 380,
+      "macros": {
+        "calories": 380,
+        "protein_g": 18,
+        "carbs_g": 48,
+        "fat_g": 13
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "dumpling-wrappers",
+          "qty": 24,
+          "unit": "piece",
+          "note": {
+            "en": "round, thawed if frozen",
+            "de": "rund, ggf. aufgetaut"
+          }
+        },
+        {
+          "ingredient_id": "shiitake",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry",
+            "de": "trocken gepresst"
+          }
+        },
+        {
+          "ingredient_id": "white-cabbage",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "very finely shredded",
+            "de": "sehr fein gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 10,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 1,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the shredded cabbage with the salt, let it sit for 10 minutes, then wring it out hard in a clean kitchen towel.",
+            "de": "Vermenge den gehobelten Kohl mit dem Salz, lass ihn 10 Minuten stehen und wring ihn dann in einem sauberen Küchentuch kräftig aus."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "crumble the tofu into a hot, dry pan with the chopped shiitake. medium-high heat, stirring, about 6 minutes — the water cooks off and the edges start to brown. add 1 tbsp of the soy sauce at the end and let it sizzle dry.",
+            "de": "Bröckle den Tofu in eine heiße Pfanne ohne Öl, die gehackten Shiitake dazu. Mittelhohe Hitze, rühren, etwa 6 Minuten – das Wasser verdampft und die Ränder bräunen. Zum Schluss 1 EL der Sojasauce dazugeben und trocken zischen lassen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "off the heat, mix the tofu and shiitake with the cabbage, ginger, garlic and half the sesame oil. let the filling cool until you can handle it.",
+            "de": "Vom Herd nehmen und Tofu und Shiitake mit Kohl, Ingwer, Knoblauch und der Hälfte des Sesamöls vermengen. Die Füllung abkühlen lassen, bis du sie anfassen kannst."
+          }
+        },
+        {
+          "text": {
+            "en": "a heaped teaspoon of filling per wrapper, rim wetted with a finger of water, folded to a half-moon, pressed shut. pleats are encouraged — they make the row in the pan look like it knows what it's doing.",
+            "de": "Ein gehäufter Teelöffel Füllung pro Teigblatt, den Rand mit einem nassen Finger befeuchten, zum Halbmond falten, fest zudrücken. Plisseefalten lohnen sich – damit sieht die Reihe in der Pfanne gleich sehr souverän aus."
+          }
+        },
+        {
+          "text": {
+            "en": "two rounds, because 24 gyoza outnumber any pan. heat half the vegetable oil in a large lidded pan over medium-high, half the gyoza in flat-side down, about 3 minutes until the bottoms are deep gold.",
+            "de": "Zwei Runden, denn 24 Gyoza sind mehr, als in eine Pfanne passen. Erhitze die Hälfte des Pflanzenöls in einer großen Pfanne mit Deckel auf mittelhoher Stufe, setz die Hälfte der Gyoza mit der flachen Seite hinein und brate sie etwa 3 Minuten, bis die Böden tief goldbraun sind."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "75 ml water in, lid on immediately, 6 minutes of steam — until the water is gone and the wrappers turn glossy.",
+            "de": "75 ml Wasser angießen, sofort den Deckel drauf, 6 Minuten dämpfen – bis das Wasser verkocht ist und die Teigblätter glänzen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "uncover for a final minute of crisping, then give round two the same treatment. dip: the remaining soy sauce with the rest of the sesame oil. they vanish faster than they folded.",
+            "de": "Deckel ab und eine letzte Minute knusprig braten, dann bekommt die zweite Runde dieselbe Behandlung. Dip: die restliche Sojasauce mit dem übrigen Sesamöl. Sie verschwinden schneller, als du sie gefaltet hast."
+          },
+          "timer_minutes": 1
+        }
+      ],
+      "tags": {
+        "en": [
+          "gyoza",
+          "plant-based",
+          "dumplings"
+        ],
+        "de": [
+          "Gyoza",
+          "pflanzlich",
+          "Teigtaschen"
+        ]
+      }
+    },
+    {
+      "id": "green-curry-classic",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "chicken green curry",
+        "de": "Grünes Curry mit Hähnchen"
+      },
+      "caption": {
+        "en": "green heat, split coconut cream",
+        "de": "grüne Schärfe, gespaltene Kokoscreme"
+      },
+      "intro": {
+        "en": "the whole dish is decided in the first five minutes: thick coconut cream bubbled until its oil separates, then the paste fried in that oil until the kitchen smells like a thai market. after that it's chicken, beans, and a sauce that knows exactly what it wants.",
+        "de": "Das ganze Gericht entscheidet sich in den ersten fünf Minuten: dicke Kokoscreme blubbert, bis sich ihr Öl absetzt, dann röstet die Paste in genau diesem Öl, bis die Küche wie ein thailändischer Markt riecht. Danach kommen Hähnchen, Bohnen und eine Sauce, die genau weiß, was sie will."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "added-sugar"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 38,
+        "carbs_g": 48,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "in thin slices",
+            "de": "in dünnen Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "green-curry-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 ml, not shaken",
+            "de": "400 ml, nicht geschüttelt"
+          }
+        },
+        {
+          "ingredient_id": "green-beans",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "trimmed, halved",
+            "de": "geputzt, halbiert"
+          }
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "thai basil if you can find it",
+            "de": "Thai-Basilikum, wenn du es bekommst"
+          }
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "get the rice going first: rinsed, 225 ml water, boiled once, then lidded on the lowest heat for 12 minutes and left to rest.",
+            "de": "Setz zuerst den Reis auf: gewaschen, 225 ml Wasser, einmal aufkochen, dann zugedeckt 12 Minuten auf kleinster Stufe und danach ruhen lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "open the can without shaking it and spoon the thick cream from the top into a hot wok. let it bubble over medium-high heat for about 4 minutes, until it splits and the oil glistens at the edges.",
+            "de": "Öffne die Dose, ohne sie zu schütteln, und gib die dicke Creme von oben in einen heißen Wok. Bei mittelhoher Hitze etwa 4 Minuten blubbern lassen, bis sie sich spaltet und das Öl am Rand glänzt."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "curry paste in. fry it in that split cream, stirring, about 3 minutes — it darkens, and the smell gets loud. that's the dish announcing itself.",
+            "de": "Currypaste hinein. In der gespaltenen Creme unter Rühren etwa 3 Minuten rösten – sie wird dunkler und duftet immer lauter. Das ist das Gericht, das sich ankündigt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "chicken slices in, stir to coat them in the paste, about 2 minutes until they've gone pale on the outside.",
+            "de": "Hähnchenscheiben dazu, in der Paste schwenken, etwa 2 Minuten, bis sie außen hell geworden sind."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the rest of the can and add the green beans. simmer for 8 minutes — chicken cooked through, beans still with a little bite.",
+            "de": "Den Rest der Dose angießen und die Bohnen dazugeben. 8 Minuten köcheln lassen – das Hähnchen gar, die Bohnen noch mit etwas Biss."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "off the heat: fish sauce, sugar, lime juice. taste — salty should arrive first, then sweet, then sour. tear in the basil.",
+            "de": "Vom Herd: Fischsauce, Zucker, Limettensaft. Abschmecken – erst kommt salzig, dann süß, dann sauer. Das Basilikum hineinzupfen."
+          }
+        },
+        {
+          "text": {
+            "en": "serve over the rice, with extra sauce pooling at the bottom of the bowl. that pool is the point.",
+            "de": "Über dem Reis servieren, mit ordentlich Sauce, die sich unten in der Schüssel sammelt. Genau diese Pfütze ist der Sinn der Sache."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "green curry",
+          "thai",
+          "wok"
+        ],
+        "de": [
+          "grünes Curry",
+          "thailändisch",
+          "Wok"
+        ]
+      }
+    },
+    {
+      "id": "green-curry-vegan",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "tofu & eggplant green curry",
+        "de": "Grünes Curry mit Tofu und Aubergine"
+      },
+      "caption": {
+        "en": "eggplant drinks the green",
+        "de": "Aubergine trinkt das Grün"
+      },
+      "intro": {
+        "en": "eggplant soaks up green curry like it was built for it, and tofu simmered gently in the sauce comes out custard-soft. the opening stays sacred — coconut cream split, paste fried until fragrant — then tamari brings the salt with extra depth.",
+        "de": "Aubergine saugt grünes Curry auf, als wäre sie dafür gebaut, und sanft in der Sauce gegarter Tofu wird weich wie Pudding. Der Anfang bleibt heilig – Kokoscreme spalten, Paste rösten, bis sie duftet – dann bringt Tamari das Salz mit ordentlich Tiefe."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "easy",
+        "le30",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 500,
+      "macros": {
+        "calories": 500,
+        "protein_g": 22,
+        "carbs_g": 52,
+        "fat_g": 22
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "pressed dry, in 2 cm cubes",
+            "de": "trocken gepresst, in 2-cm-Würfeln"
+          }
+        },
+        {
+          "ingredient_id": "eggplant",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "about 250 g, in bite-size pieces",
+            "de": "etwa 250 g, in mundgerechten Stücken"
+          }
+        },
+        {
+          "ingredient_id": "green-curry-paste",
+          "qty": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "check the label — some pastes hide shrimp paste",
+            "de": "aufs Etikett schauen – manche Pasten verstecken Garnelenpaste"
+          }
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 ml, not shaken",
+            "de": "400 ml, nicht geschüttelt"
+          }
+        },
+        {
+          "ingredient_id": "tamari",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "thai basil if you can find it",
+            "de": "Thai-Basilikum, wenn du es bekommst"
+          }
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice and bring it to a boil with 225 ml water, then lid on and lowest heat for 12 minutes. it waits patiently while you cook.",
+            "de": "Wasch den Reis und koch ihn mit 225 ml Wasser einmal auf, dann Deckel drauf und 12 Minuten auf kleinster Stufe. Er wartet geduldig, während du kochst."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "spoon the thick cream from the top of the unshaken can into a hot wok. bubble it over medium-high heat for about 4 minutes, until it splits and the oil shines at the edges.",
+            "de": "Gib die dicke Creme von oben aus der ungeschüttelten Dose in einen heißen Wok. Bei mittelhoher Hitze etwa 4 Minuten blubbern lassen, bis sie sich spaltet und das Öl am Rand glänzt."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "fry the curry paste in that split cream, stirring, about 3 minutes — darker, glossier, and the smell should fill the room.",
+            "de": "Röste die Currypaste in der gespaltenen Creme unter Rühren etwa 3 Minuten – dunkler, glänzender, und der Duft soll den Raum füllen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "eggplant pieces in, toss them through the paste for 2 minutes so every cut side gets painted green.",
+            "de": "Auberginenstücke hinein und 2 Minuten in der Paste schwenken, bis jede Schnittfläche grün angemalt ist."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the rest of the can and simmer for 6 minutes, until the eggplant starts to slump.",
+            "de": "Den Rest der Dose angießen und 6 Minuten köcheln lassen, bis die Aubergine weich zu werden beginnt."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "slide in the tofu cubes and give everything 4 more gentle minutes — stir like you mean well.",
+            "de": "Die Tofuwürfel hineingleiten lassen und allem noch 4 sanfte Minuten geben – rühr, als würdest du es gut meinen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "off the heat: tamari, sugar, lime juice, and the basil torn in at the last second. serve over the rice.",
+            "de": "Vom Herd: Tamari, Zucker, Limettensaft, und in letzter Sekunde das Basilikum hineinzupfen. Über dem Reis servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "green curry",
+          "plant-based",
+          "thai"
+        ],
+        "de": [
+          "grünes Curry",
+          "pflanzlich",
+          "thailändisch"
+        ]
+      }
+    },
+    {
+      "id": "green-curry-shrimp",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "shrimp green curry",
+        "de": "Grünes Curry mit Garnelen"
+      },
+      "caption": {
+        "en": "shrimp in, heat off, done",
+        "de": "Garnelen rein, Hitze aus, fertig"
+      },
+      "intro": {
+        "en": "shrimp cook in the time it takes to set the table, so they go in dead last, after the sauce has already become itself. bell pepper keeps a little crunch against all that coconut. watch for the pink — the moment they curl, you're done.",
+        "de": "Garnelen garen in der Zeit, in der du den Tisch deckst – also kommen sie ganz zum Schluss, wenn die Sauce schon ganz sie selbst ist. Paprika hält mit etwas Biss gegen all die Kokosmilch dagegen. Achte auf das Rosa: sobald sie sich krümmen, bist du fertig."
+      },
+      "variant": {
+        "diet": "pescatarian",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "shellfish",
+        "fish",
+        "added-sugar"
+      ],
+      "attributes": [
+        "pescatarian",
+        "halal",
+        "gluten-free",
+        "low-fodmap",
+        "nut-free",
+        "medium",
+        "le30",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 32,
+        "carbs_g": 50,
+        "fat_g": 21
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "shrimp",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "peeled and deveined",
+            "de": "geschält und entdarmt"
+          }
+        },
+        {
+          "ingredient_id": "green-curry-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 ml, not shaken",
+            "de": "400 ml, nicht geschüttelt"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "in thin strips",
+            "de": "in dünnen Streifen"
+          }
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "qty": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "thai basil if you can find it",
+            "de": "Thai-Basilikum, wenn du es bekommst"
+          }
+        },
+        {
+          "ingredient_id": "jasmine-rice",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juiced",
+            "de": "ausgepresst"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rice first: rinse it, boil it with 225 ml water, then 12 minutes on the lowest heat with the lid on. leave it shut until serving.",
+            "de": "Zuerst der Reis: waschen, mit 225 ml Wasser aufkochen, dann 12 Minuten auf kleinster Stufe mit Deckel. Bis zum Servieren zugedeckt lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "scoop the thick cream from the top of the unshaken can into a hot wok and let it bubble over medium-high heat, about 4 minutes, until it splits and the oil pools at the edges.",
+            "de": "Die dicke Creme von oben aus der ungeschüttelten Dose in einen heißen Wok geben und bei mittelhoher Hitze etwa 4 Minuten blubbern lassen, bis sie sich spaltet und sich das Öl am Rand sammelt."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "fry the curry paste in the split cream, stirring, about 3 minutes, until it darkens and the whole kitchen knows what's for dinner.",
+            "de": "Die Currypaste in der gespaltenen Creme unter Rühren etwa 3 Minuten rösten, bis sie dunkler wird und die ganze Küche weiß, was es zum Abendessen gibt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "bell pepper strips in, 2 minutes of tossing through the paste.",
+            "de": "Paprikastreifen hinein und 2 Minuten in der Paste schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "pour in the rest of the can and simmer for 5 minutes, so the sauce settles into itself and the pepper softens just a little.",
+            "de": "Den Rest der Dose angießen und 5 Minuten köcheln lassen, bis die Sauce zu sich findet und die Paprika nur leicht nachgibt."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "shrimp in. 3 minutes, until they're pink and curled — then the heat goes off immediately. they finish in the residual warmth.",
+            "de": "Garnelen hinein. 3 Minuten, bis sie rosa und gekrümmt sind – dann sofort die Hitze aus. In der Restwärme ziehen sie fertig."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "season off the heat with the fish sauce, sugar and lime juice, tear in the basil and serve over the rice.",
+            "de": "Abseits der Hitze mit Fischsauce, Zucker und Limettensaft abschmecken, das Basilikum hineinzupfen und über dem Reis servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "green curry",
+          "seafood",
+          "thai"
+        ],
+        "de": [
+          "grünes Curry",
+          "Meeresfrüchte",
+          "thailändisch"
+        ]
+      }
     }
   ]
 }

@@ -1573,6 +1573,883 @@
           "Mexikanisch"
         ]
       }
+    },
+    {
+      "id": "chili-classic",
+      "dish_id": "chili",
+      "title": {
+        "en": "classic chili con carne",
+        "de": "Klassisches Chili con Carne"
+      },
+      "caption": {
+        "en": "browned hard, simmered soft",
+        "de": "scharf angebraten, sanft geschmort"
+      },
+      "intro": {
+        "en": "good chili is mostly about restraint. brown the beef like you mean it, bloom the spices in the fat, and then leave the pot alone for forty minutes while it turns into something deeper than the sum of a shopping list. make it a day early if you can wait that long.",
+        "de": "Gutes Chili ist vor allem eine Frage der Geduld. Brate das Hackfleisch richtig kräftig an, röste die Gewürze im Fett und lass den Topf dann vierzig Minuten in Ruhe, während er zu etwas wird, das mehr ist als seine Einkaufsliste. Wenn du es schaffst, koch es einen Tag im Voraus."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 38,
+        "carbs_g": 42,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "kidney-beans",
+          "qty": 2,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, chopped",
+            "de": "400 g, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "more if your evening needs it",
+            "de": "mehr, wenn dein Abend es braucht"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oil in a heavy pot over high heat. brown the beef in two batches, giving each one about 4 undisturbed minutes — you want dark crusty bits, not grey crumbles. set the browned meat aside.",
+            "de": "Das Öl in einem schweren Topf stark erhitzen. Das Hackfleisch in zwei Portionen anbraten, jede etwa 4 Minuten weitgehend ungestört — du willst dunkle Röststellen, kein graues Gebrösel. Das angebratene Fleisch beiseitestellen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "turn the heat to medium. soften the onions in the same pot with a pinch of salt, scraping up the beef crust as they release their water. add the garlic for the last minute.",
+            "de": "Die Hitze auf mittlere Stufe stellen. Die Zwiebeln mit einer Prise Salz im selben Topf weich dünsten und dabei die Röststellen vom Boden lösen. Den Knoblauch in der letzten Minute dazugeben."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "push the onions to one side and drop the tomato paste, smoked paprika, cumin and chili flakes into the fat. stir for a minute until the kitchen smells like a campfire — don't let the spices scorch.",
+            "de": "Die Zwiebeln zur Seite schieben und Tomatenmark, geräuchertes Paprikapulver, Kreuzkümmel und Chiliflocken ins Fett geben. Eine Minute rühren, bis die Küche nach Lagerfeuer riecht — die Gewürze dürfen nicht verbrennen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "return the beef with the canned tomatoes and a canful of water. scrape the bottom one last time and bring everything to a lazy simmer.",
+            "de": "Das Fleisch mit den Dosentomaten und einer Dose Wasser zurück in den Topf geben. Den Boden ein letztes Mal abkratzen und alles zu einem trägen Köcheln bringen."
+          }
+        },
+        {
+          "text": {
+            "en": "lid ajar, lowest heat, 25 minutes. stir once or twice, then leave it alone. this is where the chili happens.",
+            "de": "Deckel einen Spalt offen, kleinste Stufe, 25 Minuten. Ein-, zweimal umrühren, dann in Ruhe lassen. Hier passiert das Chili."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "stir in the beans and give them 15 more minutes so they warm through without falling apart. taste, season with salt, and let the pot sit off the heat for a few minutes before serving.",
+            "de": "Die Bohnen unterrühren und noch 15 Minuten mitköcheln lassen, damit sie warm werden, ohne zu zerfallen. Abschmecken, mit Salz würzen und den Topf vor dem Servieren ein paar Minuten von der Hitze ziehen."
+          },
+          "timer_minutes": 15
+        }
+      ],
+      "tags": {
+        "en": [
+          "tex-mex",
+          "one pot",
+          "meal prep"
+        ],
+        "de": [
+          "Tex-Mex",
+          "ein Topf",
+          "Vorkochen"
+        ]
+      }
+    },
+    {
+      "id": "chili-vegan",
+      "dish_id": "chili",
+      "title": {
+        "en": "vegan two-bean chili",
+        "de": "Veganes Chili mit zweierlei Bohnen"
+      },
+      "caption": {
+        "en": "two beans, corn, all the smoke",
+        "de": "zwei Bohnen, Mais, ganz viel Rauch"
+      },
+      "intro": {
+        "en": "this chili runs on beans, corn and an honest dose of smoked paprika — soy mince soaks up the spices and gives every spoonful something to chew on. it's the weeknight pot you make once and eat happily for three days.",
+        "de": "Dieses Chili lebt von Bohnen, Mais und einer ehrlichen Dosis geräuchertem Paprika — das Sojahack saugt die Gewürze auf und gibt jedem Löffel Biss. Der Topf für unter der Woche: einmal gekocht, drei Tage glücklich."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le600"
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "easy",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 28,
+        "carbs_g": 60,
+        "fat_g": 15
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "soy-mince",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "dried granules",
+            "de": "getrocknetes Granulat"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "kidney-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "black-beans",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "canned or frozen",
+            "de": "aus der Dose oder tiefgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, chopped",
+            "de": "400 g, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "warm the oil in a big pot over medium heat and soften the onion with a pinch of salt until it goes glassy and sweet.",
+            "de": "Das Öl in einem großen Topf bei mittlerer Hitze erwärmen und die Zwiebel mit einer Prise Salz glasig und süß dünsten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "add the garlic, smoked paprika and cumin and stir for a minute so the spices bloom in the oil — keep them moving, they burn fast.",
+            "de": "Knoblauch, geräuchertes Paprikapulver und Kreuzkümmel dazugeben und eine Minute rühren, damit die Gewürze im Öl ihr Aroma entfalten, statt am Boden zu verbrennen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "stir in the dry soy mince so it picks up every bit of spiced oil, then pour in the tomatoes and 400 ml of water. it will look thin. trust the simmer.",
+            "de": "Das trockene Sojagranulat unterrühren, damit es das ganze Gewürzöl aufnimmt, dann die Tomaten und 400 ml Wasser angießen. Es sieht erst dünn aus. Vertrau dem Köcheln."
+          }
+        },
+        {
+          "text": {
+            "en": "add both kinds of beans and the corn. simmer uncovered over low heat, stirring now and then, until the chili is thick enough to hold a spoon upright-ish.",
+            "de": "Beide Bohnensorten und den Mais dazugeben. Offen bei kleiner Hitze köcheln lassen und ab und zu umrühren, bis das Chili so dick ist, dass ein Löffel fast darin steht."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "season generously with salt — beans drink it up — and let the pot rest off the heat for 5 minutes before you ladle it out.",
+            "de": "Großzügig mit Salz abschmecken — Bohnen schlucken viel davon — und den Topf vor dem Servieren 5 Minuten neben dem Herd stehen lassen."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "tags": {
+        "en": [
+          "tex-mex",
+          "pantry dinner",
+          "meal prep"
+        ],
+        "de": [
+          "Tex-Mex",
+          "Vorratsküche",
+          "Vorkochen"
+        ]
+      }
+    },
+    {
+      "id": "chili-keto",
+      "dish_id": "chili",
+      "title": {
+        "en": "texas-style keto chili",
+        "de": "Keto-Chili nach Texas-Art"
+      },
+      "caption": {
+        "en": "the fat goes glossy, texas nods",
+        "de": "das Fett glänzt, Texas nickt"
+      },
+      "intro": {
+        "en": "texans have argued for a century that real chili is meat, chiles and time — this pot takes their side. beef and sweet peppers cook down with smoked paprika and cayenne into something dark, rich and quietly low-carb. cornbread optional, opinions mandatory.",
+        "de": "In Texas streitet man seit hundert Jahren, dass echtes Chili aus Fleisch, Chilis und Zeit besteht — dieser Topf gibt ihnen recht. Rindfleisch und Paprika schmoren mit Rauchpaprika und Cayenne zu etwas Dunklem, Sattem, ganz nebenbei Kohlenhydratarmem. Beilage optional, Meinung verpflichtend."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "beef",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "keto",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 35,
+        "carbs_g": 12,
+        "fat_g": 36
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "red, diced",
+            "de": "rot, gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g, chopped",
+            "de": "400 g, gehackt"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cayenne",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oil in a heavy pot until it shimmers. brown the beef in two batches, about 4 minutes per batch, pressing it flat and leaving it alone so it crusts. set aside.",
+            "de": "Das Öl in einem schweren Topf erhitzen, bis es flirrt. Das Hackfleisch in zwei Portionen je etwa 4 Minuten anbraten — flach drücken und in Ruhe lassen, damit es Kruste bekommt. Beiseitestellen."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "drop the heat to medium and sauté the onion and bell peppers with a pinch of salt until the edges soften and pick up some color.",
+            "de": "Die Hitze auf mittlere Stufe senken und Zwiebel und Paprika mit einer Prise Salz anschwitzen, bis die Kanten weich werden und etwas Farbe nehmen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir in the garlic, tomato paste, smoked paprika, cumin and cayenne and let everything bloom in the fat for a minute. it should smell loud.",
+            "de": "Knoblauch, Tomatenmark, Rauchpaprika, Kreuzkümmel und Cayenne einrühren und eine Minute im Fett rösten. Es soll laut duften."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "return the beef with the canned tomatoes and half a can of water, scraping up everything stuck to the bottom.",
+            "de": "Das Fleisch mit den Dosentomaten und einer halben Dose Wasser zurückgeben und alles vom Topfboden lösen."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer uncovered over low heat until the liquid cooks down and the fat rises glossy to the top — that sheen is the sign it's done.",
+            "de": "Offen bei kleiner Hitze köcheln lassen, bis die Flüssigkeit eingekocht ist und das Fett glänzend obenauf steht — dieser Glanz ist das Zeichen, dass es fertig ist."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "taste and season with salt. let it sit for 5 minutes off the heat; the chili thickens as it settles.",
+            "de": "Abschmecken und mit Salz würzen. 5 Minuten neben dem Herd stehen lassen; beim Setzen wird das Chili noch dicker."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "tags": {
+        "en": [
+          "low-carb",
+          "tex-mex",
+          "one pot"
+        ],
+        "de": [
+          "Low Carb",
+          "Tex-Mex",
+          "ein Topf"
+        ]
+      }
+    },
+    {
+      "id": "enchiladas-classic",
+      "dish_id": "enchiladas",
+      "title": {
+        "en": "classic chicken enchiladas",
+        "de": "Klassische Hähnchen-Enchiladas"
+      },
+      "caption": {
+        "en": "every tortilla takes a sauce bath",
+        "de": "jede Tortilla badet erst in Sauce"
+      },
+      "intro": {
+        "en": "shredded chicken rolled into corn tortillas, drowned in a smoky chile-tomato sauce and baked under a blanket of cheddar. the one non-negotiable: dip each tortilla in warm sauce and soften it in the pan before rolling — corn tortillas reward the ritual and punish the shortcut. naturally gluten-free, by the way.",
+        "de": "Zerrupftes Hähnchen, in Maistortillas gerollt, in rauchiger Chili-Tomatensauce ertränkt und unter einer Decke aus Cheddar gebacken. Die eine unverhandelbare Regel: Jede Tortilla vor dem Rollen in warme Sauce tauchen und kurz in der Pfanne weich werden lassen — Maistortillas belohnen das Ritual und bestrafen die Abkürzung. Und ganz nebenbei: von Natur aus glutenfrei."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le800"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le800",
+        "bake",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 55,
+      "servings": 4,
+      "calories_per_serving": 640,
+      "macros": {
+        "calories": 640,
+        "protein_g": 42,
+        "carbs_g": 52,
+        "fat_g": 28
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 8,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "cheddar",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slide the chicken breasts into a pot of well-salted, barely-simmering water and poach them gently — the surface should shiver rather than bubble. lift them out, let them cool a little and shred with two forks.",
+            "de": "Die Hähnchenbrüste in einen Topf mit gut gesalzenem, kaum siedendem Wasser gleiten lassen und sanft pochieren — die Oberfläche soll eher zittern als blubbern. Herausheben, etwas abkühlen lassen und mit zwei Gabeln zerrupfen."
+          },
+          "timer_minutes": 14
+        },
+        {
+          "text": {
+            "en": "meanwhile, make the sauce: soften the onion in 1 tablespoon of oil with a pinch of salt, add the garlic, cumin, smoked paprika and chili flakes for one fragrant minute, then pour in the passata. simmer until it coats a spoon.",
+            "de": "Währenddessen die Sauce kochen: Die Zwiebel in 1 Esslöffel Öl mit einer Prise Salz weich dünsten, Knoblauch, Kreuzkümmel, Rauchpaprika und Chiliflocken eine duftende Minute mitrösten, dann die Passata angießen. Köcheln lassen, bis sie einen Löffel überzieht."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°c. mix the shredded chicken with a generous ladle of sauce and a third of the cheddar — the filling should be juicy, almost too saucy.",
+            "de": "Den Ofen auf 200 °C vorheizen. Das gerupfte Hähnchen mit einer großzügigen Kelle Sauce und einem Drittel des Cheddars mischen — die Füllung soll richtig saftig sein, fast schon übertrieben."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the remaining oil in a small pan. one at a time, dip each tortilla into the warm sauce, then lay it in the pan for a few seconds per side until pliable. skip this and they crack when you roll them — corn tortillas don't forgive.",
+            "de": "Das restliche Öl in einer kleinen Pfanne erhitzen. Jede Tortilla einzeln in die warme Sauce tauchen und dann ein paar Sekunden pro Seite in die Pfanne legen, bis sie biegsam ist. Lässt du das aus, reißen sie beim Rollen — Maistortillas verzeihen nichts."
+          }
+        },
+        {
+          "text": {
+            "en": "fill each softened tortilla with chicken, roll it up and tuck it seam-down into a baking dish, snug like a row of sleeping bags.",
+            "de": "Jede weiche Tortilla mit Hähnchen füllen, aufrollen und mit der Naht nach unten dicht an dicht in eine Auflaufform legen, wie eine Reihe Schlafsäcke."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the rest of the sauce over the rolls, scatter the remaining cheddar on top and bake until the cheese blisters and the edges of the tortillas catch a little color. rest 5 minutes before serving — molten sauce holds grudges.",
+            "de": "Die restliche Sauce über die Rollen gießen, den übrigen Cheddar darüberstreuen und backen, bis der Käse Blasen wirft und die Tortillakanten etwas Farbe bekommen. Vor dem Servieren 5 Minuten ruhen lassen — flüssige Sauce ist nachtragend."
+          },
+          "timer_minutes": 20
+        }
+      ],
+      "tags": {
+        "en": [
+          "baked",
+          "comfort food",
+          "naturally gluten-free"
+        ],
+        "de": [
+          "aus dem Ofen",
+          "Wohlfühlessen",
+          "von Natur aus glutenfrei"
+        ]
+      }
+    },
+    {
+      "id": "enchiladas-vegan",
+      "dish_id": "enchiladas",
+      "title": {
+        "en": "vegan black bean enchiladas",
+        "de": "Vegane Enchiladas mit schwarzen Bohnen"
+      },
+      "caption": {
+        "en": "black beans, sweet corn, blistered top",
+        "de": "schwarze Bohnen, süßer Mais, blubbernde Kruste"
+      },
+      "intro": {
+        "en": "black beans were rolling around in tortillas long before anyone wrote recipes down, and they carry these enchiladas with ease: half mashed for body, half whole for bite, plus sweet corn and a smoky tomato sauce. corn tortillas keep the whole dish gluten-free without trying.",
+        "de": "Schwarze Bohnen wurden schon in Tortillas gerollt, lange bevor jemand Rezepte aufschrieb, und sie tragen diese Enchiladas mit links: halb zerdrückt für die Bindung, halb ganz für den Biss, dazu süßer Mais und eine rauchige Tomatensauce. Die Maistortillas halten das ganze Gericht nebenbei glutenfrei."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "bake",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 20,
+        "carbs_g": 78,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "black-beans",
+          "qty": 2,
+          "unit": "can",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgegossen und abgespült"
+          }
+        },
+        {
+          "ingredient_id": "corn",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "canned or frozen",
+            "de": "aus der Dose oder tiefgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "corn-tortilla",
+          "qty": 8,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegan-cheese",
+          "qty": 120,
+          "unit": "g",
+          "note": {
+            "en": "grated, the melty kind",
+            "de": "gerieben, eine schmelzende Sorte"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften the onion in 1 tablespoon of oil with a pinch of salt over medium heat until glassy, then stir in the garlic, cumin and smoked paprika for one fragrant minute.",
+            "de": "Die Zwiebel in 1 Esslöffel Öl mit einer Prise Salz bei mittlerer Hitze glasig dünsten, dann Knoblauch, Kreuzkümmel und Rauchpaprika eine duftende Minute mitrösten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "pour in the passata and let the sauce simmer over low heat until it thickens enough to coat a spoon. season with salt — taste it, it carries the whole dish.",
+            "de": "Die Passata angießen und die Sauce bei kleiner Hitze köcheln lassen, bis sie dick genug ist, um einen Löffel zu überziehen. Mit Salz abschmecken — probier sie, sie trägt das ganze Gericht."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "heat the oven to 200°c. mash half the beans roughly with a fork, then fold in the whole beans, the corn, a pinch of salt and a ladle of sauce — a juicy, spoonable filling.",
+            "de": "Den Ofen auf 200 °C vorheizen. Die Hälfte der Bohnen grob mit einer Gabel zerdrücken, dann die ganzen Bohnen, den Mais, eine Prise Salz und eine Kelle Sauce unterheben — eine saftige, löffelbare Füllung."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the remaining oil in a small pan. dip each tortilla in the warm sauce, then soften it in the pan for a few seconds per side until it bends without complaint. rolled dry, they crack — every time.",
+            "de": "Das restliche Öl in einer kleinen Pfanne erwärmen. Jede Tortilla in die warme Sauce tauchen und dann ein paar Sekunden pro Seite in der Pfanne weich werden lassen, bis sie sich klaglos biegt. Trocken gerollt reißen sie — jedes Mal."
+          }
+        },
+        {
+          "text": {
+            "en": "fill, roll and line the tortillas up seam-down in a baking dish. pour the rest of the sauce over and scatter the vegan cheese across the top.",
+            "de": "Die Tortillas füllen, rollen und mit der Naht nach unten in eine Auflaufform reihen. Die restliche Sauce darübergießen und den veganen Käse darüberstreuen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake until the top blisters and the sauce bubbles at the edges. give it 5 minutes of rest before serving so the rolls hold their shape.",
+            "de": "Backen, bis die Oberfläche Blasen wirft und die Sauce am Rand blubbert. Vor dem Servieren 5 Minuten ruhen lassen, damit die Rollen ihre Form behalten."
+          },
+          "timer_minutes": 20
+        }
+      ],
+      "tags": {
+        "en": [
+          "baked",
+          "pantry dinner",
+          "naturally gluten-free"
+        ],
+        "de": [
+          "aus dem Ofen",
+          "Vorratsküche",
+          "von Natur aus glutenfrei"
+        ]
+      }
     }
   ]
 }

@@ -2468,6 +2468,815 @@
           "pflanzlich"
         ]
       }
+    },
+    {
+      "id": "cookies-classic",
+      "dish_id": "cookies",
+      "title": {
+        "en": "chocolate chunk cookies",
+        "de": "Klassische Schokokekse"
+      },
+      "caption": {
+        "en": "crisp edges, bendy middles",
+        "de": "knusprige Ränder, weiche Mitte"
+      },
+      "intro": {
+        "en": "brown sugar for chew, white sugar for crisp edges, real chocolate chopped into ragged chunks so it puddles. the fifteen minutes in the fridge are the hard part — cold dough bakes thicker, chewier, deeper. set a timer and walk away.",
+        "de": "Brauner Zucker für den zähen Kern, weißer für knusprige Ränder, echte Schokolade grob gehackt, damit sie Seen bildet. Die fünfzehn Minuten im Kühlschrank sind der schwerste Teil – kalter Teig backt dicker, zäher, tiefer. Stell den Wecker und geh kurz weg."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "added-sugar",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "caffeine"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 16,
+      "calories_per_serving": 220,
+      "macros": {
+        "calories": 220,
+        "protein_g": 3,
+        "carbs_g": 26,
+        "fat_g": 11
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "butter",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "soft",
+            "de": "weich"
+          }
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 180,
+          "unit": "g",
+          "note": {
+            "en": "chopped into rough chunks",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "beat the soft butter with both sugars for a good 3 minutes, until the mix turns paler and fluffy. this air is what the crumb lives on later.",
+            "de": "Schlag die weiche Butter mit beiden Zuckersorten gute 3 Minuten auf, bis die Masse heller und fluffig wird. Von dieser Luft lebt später die Krume."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "beat in the egg and vanilla, just until smooth. stir the flour, baking soda and salt together, then fold them in along with the chocolate chunks — stop while a few flour streaks remain.",
+            "de": "Ei und Vanille kurz unterrühren, nur bis alles glatt ist. Mehl, Natron und Salz mischen und zusammen mit den Schokostücken unterheben – hör auf, solange noch ein paar Mehlspuren zu sehen sind."
+          }
+        },
+        {
+          "text": {
+            "en": "the rest: dough into the fridge for 15 minutes while the oven heats to 180°c and two trays get their parchment. the flour drinks, the butter firms, the cookies bake thicker.",
+            "de": "Die Ruhepause: Teig für 15 Minuten in den Kühlschrank, während der Ofen auf 180 °C heizt und zwei Bleche ihr Backpapier bekommen. Das Mehl quillt, die Butter wird fest, die Kekse backen dicker."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "roll 16 balls and set 8 per tray, far apart — they spread with conviction. bake both trays for 11 minutes, swapping shelves halfway, until the edges are set and golden and the centers still look slightly underdone.",
+            "de": "Forme 16 Kugeln und setz 8 pro Blech mit viel Abstand – sie gehen ordentlich in die Breite. Back beide Bleche zusammen 11 Minuten und tausch sie nach der Hälfte der Zeit, bis die Ränder fest und golden sind und die Mitte noch leicht unterbacken aussieht."
+          },
+          "timer_minutes": 11
+        },
+        {
+          "text": {
+            "en": "let them sit on the hot tray for 5 minutes — they finish setting right there — then move to a rack. the middles stay bendy. that's the point of them.",
+            "de": "Lass sie 5 Minuten auf dem heißen Blech liegen – genau dort werden sie fertig – und zieh sie dann auf ein Gitter. Die Mitte bleibt biegsam. Genau dafür sind sie da."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "tags": {
+        "en": [
+          "cookies",
+          "baking",
+          "sweet"
+        ],
+        "de": [
+          "Kekse",
+          "Backen",
+          "Süßes"
+        ]
+      }
+    },
+    {
+      "id": "cookies-vegan",
+      "dish_id": "cookies",
+      "title": {
+        "en": "vegan chocolate chunk cookies",
+        "de": "Vegane Schokokekse"
+      },
+      "caption": {
+        "en": "deep chew, dark chocolate puddles",
+        "de": "zäher Kern, dunkle Schokoseen"
+      },
+      "intro": {
+        "en": "a flax gel binds this dough and keeps the middles fudgy, while vegan butter browns the edges the way edges deserve. the chocolate stays glossy, the kitchen smells like a bakery — and the dough still needs its rest. some laws are universal.",
+        "de": "Ein Leinsamen-Gel bindet diesen Teig und hält die Mitte saftig, während vegane Butter die Ränder so goldbraun backt, wie Ränder es verdienen. Die Schokolade bleibt glänzend, die Küche duftet wie eine Bäckerei – und der Teig braucht trotzdem seine Ruhepause. Manche Gesetze gelten immer."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "high-fodmap",
+        "caffeine"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "easy",
+        "le30",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 16,
+      "calories_per_serving": 200,
+      "macros": {
+        "calories": 200,
+        "protein_g": 2,
+        "carbs_g": 25,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "flaxseeds",
+          "qty": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "ground",
+            "de": "geschrotet"
+          }
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 140,
+          "unit": "g",
+          "note": {
+            "en": "soft",
+            "de": "weich"
+          }
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 160,
+          "unit": "g",
+          "note": {
+            "en": "dairy-free, chopped into chunks",
+            "de": "milchfrei, grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the ground flaxseeds with 3 tbsp water and let them sit for 5 minutes until they turn into a loose gel. this is the glue of the whole operation.",
+            "de": "Verrühr die geschroteten Leinsamen mit 3 EL Wasser und lass sie 5 Minuten stehen, bis ein lockeres Gel entsteht. Das ist der Kleber, der hier alles zusammenhält."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "beat the vegan butter with both sugars for 3 minutes until pale and fluffy, then beat in the flax gel and the vanilla.",
+            "de": "Schlag die vegane Butter mit beiden Zuckersorten 3 Minuten hell und fluffig auf, dann das Leinsamen-Gel und die Vanille unterrühren."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "stir the flour, baking soda and salt together and fold them in with the chocolate chunks. the dough will feel soft — that's correct, the fridge handles it.",
+            "de": "Mehl, Natron und Salz mischen und zusammen mit den Schokostücken unterheben. Der Teig fühlt sich weich an – das gehört so, der Kühlschrank kümmert sich darum."
+          }
+        },
+        {
+          "text": {
+            "en": "chill the dough for 15 minutes while the oven heats to 180°c. cold fat means the cookies hold their shape long enough to build those chewy centers.",
+            "de": "Stell den Teig 15 Minuten kalt, während der Ofen auf 180 °C heizt. Kaltes Fett heißt: Die Kekse halten ihre Form lange genug, um eine zähe Mitte aufzubauen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "roll 16 balls, 8 per lined tray, generous spacing. bake both trays for 11 minutes, swapping shelves halfway, until the edges are golden and the middles still shine a little. cool on the tray for 5 minutes before they move anywhere.",
+            "de": "Forme 16 Kugeln, 8 pro Blech mit Backpapier, großzügiger Abstand. Back beide Bleche zusammen 11 Minuten, nach der Hälfte tauschen, bis die Ränder golden sind und die Mitte noch leicht glänzt. Vor dem Umsetzen 5 Minuten auf dem Blech abkühlen lassen."
+          },
+          "timer_minutes": 11
+        }
+      ],
+      "tags": {
+        "en": [
+          "cookies",
+          "baking",
+          "plant-based"
+        ],
+        "de": [
+          "Kekse",
+          "Backen",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "cookies-gluten-free",
+      "dish_id": "cookies",
+      "title": {
+        "en": "almond flour chocolate cookies",
+        "de": "Mandelmehl-Schokokekse"
+      },
+      "caption": {
+        "en": "almond flour bakes them tender",
+        "de": "Mandelmehl macht sie mürbe"
+      },
+      "intro": {
+        "en": "almond flour bakes these tender, with a quiet marzipan warmth underneath all that dark chocolate. the dough sits softer than a wheat dough and browns faster, so the oven runs a touch cooler here. watch the edges, trust the chill, let them set on the tray.",
+        "de": "Mandelmehl macht diese Kekse mürbe, mit einer leisen Marzipannote unter all der Zartbitterschokolade. Der Teig ist weicher als ein Weizenteig und bräunt schneller, deshalb läuft der Ofen hier eine Spur kühler. Behalt die Ränder im Blick, vertrau der Kühlzeit und lass sie auf dem Blech fest werden."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie": "le400"
+      },
+      "contains": [
+        "dairy",
+        "added-sugar",
+        "egg",
+        "tree-nuts",
+        "almonds",
+        "caffeine",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "easy",
+        "le30",
+        "le400",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 30,
+      "servings": 16,
+      "calories_per_serving": 230,
+      "macros": {
+        "calories": 230,
+        "protein_g": 5,
+        "carbs_g": 18,
+        "fat_g": 16
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "butter",
+          "qty": 100,
+          "unit": "g",
+          "note": {
+            "en": "melted, slightly cooled",
+            "de": "geschmolzen, etwas abgekühlt"
+          }
+        },
+        {
+          "ingredient_id": "brown-sugar",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "almond-flour",
+          "qty": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "dark-chocolate",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "chopped into chunks",
+            "de": "grob gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the melted butter with the brown sugar for 2 minutes until thick and glossy, then whisk in the egg and vanilla.",
+            "de": "Verquirl die geschmolzene Butter mit dem braunen Zucker 2 Minuten, bis die Masse dick und glänzend ist, dann Ei und Vanille unterrühren."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "fold in the almond flour, baking soda and salt, then the chocolate chunks. the dough stays softer than a wheat dough — almond flour binds with fat and egg, and both need cold to firm up.",
+            "de": "Mandelmehl, Natron und Salz unterheben, dann die Schokostücke. Der Teig bleibt weicher als ein Weizenteig – Mandelmehl bindet über Fett und Ei, und beide brauchen Kälte zum Festwerden."
+          }
+        },
+        {
+          "text": {
+            "en": "chill the dough for 15 minutes while the oven heats to 170°c and two trays get lined with parchment.",
+            "de": "Stell den Teig 15 Minuten kalt, während der Ofen auf 170 °C heizt und du zwei Bleche mit Backpapier auslegst."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "roll 16 balls, 8 per tray, and flatten each one slightly — these spread less than their wheat cousins. bake both trays for 10 minutes, swapping halfway, until the edges turn golden. almond flour browns fast, so stay close.",
+            "de": "Forme 16 Kugeln, 8 pro Blech, und drück jede leicht flach – diese hier laufen weniger auseinander als ihre Weizen-Verwandten. Back beide Bleche zusammen 10 Minuten, nach der Hälfte tauschen, bis die Ränder golden sind. Mandelmehl bräunt schnell, also bleib in der Nähe."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "leave them on the tray until fully cool — they come out of the oven soft and set as they sit. patience here is structural.",
+            "de": "Lass sie auf dem Blech vollständig auskühlen – sie kommen weich aus dem Ofen und werden im Liegen fest. Geduld ist hier Teil der Statik."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "cookies",
+          "baking",
+          "almond"
+        ],
+        "de": [
+          "Kekse",
+          "Backen",
+          "Mandel"
+        ]
+      }
+    },
+    {
+      "id": "cheesecake-classic",
+      "dish_id": "cheesecake",
+      "title": {
+        "en": "baked cheesecake",
+        "de": "Gebackener Käsekuchen"
+      },
+      "caption": {
+        "en": "the wobble means it's working",
+        "de": "das Wackeln heißt: alles richtig"
+      },
+      "intro": {
+        "en": "a cheesecake is mostly an exercise in restraint: low speed, low oven, and the nerve to pull it while the middle still wobbles. it finishes setting on its slow way down to room temperature, inside the switched-off oven with the door ajar. give it the evening. it gives back.",
+        "de": "Käsekuchen ist vor allem eine Übung in Zurückhaltung: niedrige Rührstufe, niedrige Ofentemperatur und der Mut, ihn rauszuholen, solange die Mitte noch wackelt. Fest wird er von ganz allein – beim langsamen Abkühlen im ausgeschalteten Ofen, Tür einen Spalt offen. Gib ihm den Abend. Er gibt zurück."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "added-sugar",
+        "egg",
+        "gluten"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "hard",
+        "gt60",
+        "le600",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 90,
+      "servings": 10,
+      "calories_per_serving": 480,
+      "macros": {
+        "calories": 480,
+        "protein_g": 9,
+        "carbs_g": 38,
+        "fat_g": 32
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ladyfingers",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "crushed to fine crumbs",
+            "de": "fein zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 80,
+          "unit": "g",
+          "note": {
+            "en": "melted",
+            "de": "geschmolzen"
+          }
+        },
+        {
+          "ingredient_id": "cream-cheese",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "room temperature",
+            "de": "zimmerwarm"
+          }
+        },
+        {
+          "ingredient_id": "sour-cream",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "qty": 3,
+          "unit": "piece",
+          "note": {
+            "en": "room temperature",
+            "de": "zimmerwarm"
+          }
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "zest plus 1 tbsp juice",
+            "de": "Abrieb plus 1 EL Saft"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 150°c. mix the ladyfinger crumbs with the melted butter, press them into the base of a 20 cm springform and park the form in the fridge while you make the filling.",
+            "de": "Heiz den Ofen auf 150 °C. Misch die Löffelbiskuit-Brösel mit der geschmolzenen Butter, drück sie als Boden in eine 20-cm-Springform und stell die Form in den Kühlschrank, während du die Füllung machst."
+          }
+        },
+        {
+          "text": {
+            "en": "beat the cream cheese smooth on low speed — low, because whipped-in air rises in the oven and cracks the top later. add the sugar and the salt and beat just until combined.",
+            "de": "Rühr den Frischkäse auf niedriger Stufe glatt – niedrig, weil eingeschlagene Luft im Ofen aufsteigt und später die Oberfläche reißen lässt. Zucker und Salz dazugeben und nur kurz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "add the eggs one at a time, still on low, then the cornstarch, sour cream, vanilla, lemon zest and the tablespoon of juice. scrape the bowl once. the batter should pour like thick paint.",
+            "de": "Die Eier einzeln unterrühren, weiterhin auf niedriger Stufe, dann Speisestärke, Schmand, Vanille, Zitronenabrieb und den Esslöffel Saft. Einmal die Schüssel auskratzen. Die Masse sollte wie dicke Farbe fließen."
+          }
+        },
+        {
+          "text": {
+            "en": "pour the filling over the crust and tap the form on the counter a few times to pop the air bubbles. slide a deep tray of hot water onto the rack below — the gentle steam keeps the top from drying and tearing.",
+            "de": "Gieß die Füllung auf den Boden und klopf die Form ein paarmal auf die Arbeitsfläche, damit die Luftblasen aufsteigen. Schieb ein tiefes Blech mit heißem Wasser auf die Schiene darunter – der sanfte Dampf bewahrt die Oberfläche vor dem Austrocknen und Reißen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for 50 minutes at 150°c. the edges should be set while the center still wobbles like a just-set custard when you nudge the pan. that wobble is the goal — it firms up entirely as it cools.",
+            "de": "Back den Kuchen 50 Minuten bei 150 °C. Die Ränder sollen fest sein, während die Mitte noch wie ein gerade gestockter Pudding wackelt, wenn du die Form anstupst. Dieses Wackeln ist das Ziel – beim Abkühlen wird sie ganz von allein fest."
+          },
+          "timer_minutes": 50
+        },
+        {
+          "text": {
+            "en": "switch the oven off, prop the door ajar with a wooden spoon and leave the cake inside for 30 minutes. the slow landing is what keeps the top smooth and the texture creamy.",
+            "de": "Schalte den Ofen aus, klemm einen Holzlöffel in die Tür und lass den Kuchen 30 Minuten drinnen. Die langsame Landung hält die Oberfläche glatt und die Textur cremig."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "cool to room temperature, then chill — overnight if you can stand the wait. run a thin knife around the edge before unclipping the form.",
+            "de": "Auf Zimmertemperatur abkühlen lassen, dann ab in den Kühlschrank – über Nacht, wenn du das Warten aushältst. Vor dem Öffnen der Form mit einem dünnen Messer am Rand entlangfahren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "cheesecake",
+          "baking",
+          "weekend project"
+        ],
+        "de": [
+          "Käsekuchen",
+          "Backen",
+          "Wochenendprojekt"
+        ]
+      }
+    },
+    {
+      "id": "cheesecake-vegan",
+      "dish_id": "cheesecake",
+      "title": {
+        "en": "cashew coconut cheesecake",
+        "de": "Cashew-Kokos-Käsekuchen"
+      },
+      "caption": {
+        "en": "cashews blend into pure silk",
+        "de": "Cashews werden zu purer Seide"
+      },
+      "intro": {
+        "en": "soaked cashews and thick coconut cream blend into a filling that bakes to silk, balanced by a double dose of lemon. underneath sits a toasted oat crust that smells like sunday breakfast. the rules you already know apply: low oven, brave wobble, slow exit.",
+        "de": "Eingeweichte Cashews und dicke Kokoscreme werden zu einer Füllung püriert, die im Ofen seidig stockt – ausbalanciert von einer doppelten Portion Zitrone. Darunter ein gerösteter Haferboden, der nach Sonntagsfrühstück duftet. Es gelten die Regeln, die du schon kennst: niedriger Ofen, mutiges Wackeln, langsamer Abgang."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie": "le600"
+      },
+      "contains": [
+        "tree-nuts",
+        "cashews",
+        "high-fodmap",
+        "added-sugar"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "hard",
+        "gt60",
+        "le600",
+        "bake"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "time_minutes": 80,
+      "servings": 10,
+      "calories_per_serving": 450,
+      "macros": {
+        "calories": 450,
+        "protein_g": 8,
+        "carbs_g": 40,
+        "fat_g": 28
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cashews-ing",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 250,
+          "unit": "ml",
+          "note": {
+            "en": "only the thick cream from a chilled can",
+            "de": "nur der feste Teil aus der gekühlten Dose"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 2,
+          "unit": "piece",
+          "note": {
+            "en": "zest and juice",
+            "de": "Abrieb und Saft"
+          }
+        },
+        {
+          "ingredient_id": "sugar",
+          "qty": 130,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vanilla-extract",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oats",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "qty": 80,
+          "unit": "g",
+          "note": {
+            "en": "melted",
+            "de": "geschmolzen"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cover the cashews with just-boiled water and let them soak for 20 minutes while you build the crust. soft cashews are what blend to silk; firm ones blend to grit.",
+            "de": "Übergieß die Cashews mit kochend heißem Wasser und lass sie 20 Minuten einweichen, während du den Boden baust. Weiche Cashews werden zu Seide püriert – feste nur zu Grieß."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "heat the oven to 180°c. blitz the oats to a coarse flour, mix with the melted vegan butter, 2 tbsp of the sugar and half the salt, and press into the base of a 20 cm springform. bake for 10 minutes until it smells toasty, then turn the oven down to 150°c.",
+            "de": "Heiz den Ofen auf 180 °C. Mahl die Haferflocken zu grobem Mehl, misch sie mit der geschmolzenen veganen Butter, 2 EL vom Zucker und der Hälfte des Salzes und drück alles als Boden in eine 20-cm-Springform. 10 Minuten backen, bis es geröstet duftet, dann den Ofen auf 150 °C herunterschalten."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "drain the cashews and blend them with the coconut cream, the remaining sugar, the cornstarch, lemon zest and juice, vanilla and the rest of the salt. blend a full 2 minutes — completely smooth now means completely smooth later.",
+            "de": "Gieß die Cashews ab und püriere sie mit der Kokoscreme, dem restlichen Zucker, der Speisestärke, Zitronenabrieb und -saft, Vanille und dem restlichen Salz. Volle 2 Minuten mixen – nur was jetzt ganz glatt ist, wird später ganz glatt."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "pour the filling onto the warm crust, smooth the top and tap the form on the counter to chase out the air bubbles.",
+            "de": "Gieß die Füllung auf den warmen Boden, streich die Oberfläche glatt und klopf die Form auf die Arbeitsfläche, um die Luftblasen herauszutreiben."
+          }
+        },
+        {
+          "text": {
+            "en": "bake for 40 minutes at 150°c, until the edges are set and a palm-sized wobble is left in the middle. the cornstarch keeps working as it cools, so resist the urge to bake the wobble away.",
+            "de": "Back den Kuchen 40 Minuten bei 150 °C, bis die Ränder fest sind und nur die Mitte noch handtellergroß wackelt. Die Speisestärke arbeitet beim Abkühlen weiter – also widersteh dem Drang, das Wackeln wegzubacken."
+          },
+          "timer_minutes": 40
+        },
+        {
+          "text": {
+            "en": "oven off, door propped ajar, cake stays in for 20 minutes. then cool to room temperature and chill until cold and sliceable — a few hours, better overnight.",
+            "de": "Ofen aus, Tür einen Spalt offen, der Kuchen bleibt 20 Minuten drin. Danach auf Zimmertemperatur abkühlen lassen und kaltstellen, bis er schnittfest ist – ein paar Stunden, besser über Nacht."
+          },
+          "timer_minutes": 20
+        }
+      ],
+      "tags": {
+        "en": [
+          "cheesecake",
+          "cashews",
+          "weekend project"
+        ],
+        "de": [
+          "Käsekuchen",
+          "Cashews",
+          "Wochenendprojekt"
+        ]
+      }
     }
   ]
 }

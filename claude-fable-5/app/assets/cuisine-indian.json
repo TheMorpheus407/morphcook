@@ -1627,6 +1627,905 @@
           "Festessen"
         ]
       }
+    },
+    {
+      "id": "palak-paneer-classic",
+      "dish_id": "palak-paneer",
+      "title": {
+        "en": "palak paneer",
+        "de": "Palak Paneer"
+      },
+      "caption": {
+        "en": "green velvet, golden paneer cubes",
+        "de": "grüner Samt, goldene Paneer-Würfel"
+      },
+      "intro": {
+        "en": "spinach blanched fast and shocked cold so it keeps its deep green, then blitzed into velvet. the paneer gets seared golden first — those crisp edges hold their own against all that silk. a vegetarian classic that earns its table space.",
+        "de": "Der Spinat wird kurz blanchiert und eiskalt abgeschreckt, damit er sein tiefes Grün behält, dann samtig püriert. Der Paneer wird vorher goldbraun angebraten – seine knusprigen Kanten behaupten sich gegen all den Samt. Ein vegetarischer Klassiker, der seinen Platz am Tisch verdient."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "blanch",
+        "saute",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 25,
+        "carbs_g": 14,
+        "fat_g": 40
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spinach",
+          "qty": 450,
+          "unit": "g",
+          "note": {
+            "en": "fresh, washed",
+            "de": "frisch, gewaschen"
+          }
+        },
+        {
+          "ingredient_id": "paneer",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "cut into 2 cm cubes",
+            "de": "in 2-cm-Würfel geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "ghee",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "ground",
+            "de": "gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 75,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "plus more for the blanching water",
+            "de": "plus mehr fürs Blanchierwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bring a big pot of well-salted water to a rolling boil. drop in the spinach and blanch for 2 minutes, until it collapses and turns a deeper green.",
+            "de": "Einen großen Topf mit gut gesalzenem Wasser sprudelnd aufkochen. Spinat hineingeben und 2 Minuten blanchieren, bis er zusammenfällt und dunkler grün wird."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "lift the spinach straight into a bowl of ice water — the shock locks in the color. squeeze it dry, then blitz it with a splash of water until completely smooth.",
+            "de": "Spinat sofort in eine Schüssel Eiswasser heben – das Abschrecken bewahrt die Farbe. Gut ausdrücken und mit einem Schluck Wasser ganz glatt pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "heat half the ghee in a wide pan over medium-high and sear the paneer cubes for 6 minutes, turning now and then, until golden on most sides. set them aside and salt them lightly while hot.",
+            "de": "Die Hälfte des Ghees in einer weiten Pfanne bei mittelhoher Hitze erhitzen und die Paneer-Würfel 6 Minuten anbraten, dabei ab und zu wenden, bis sie fast rundherum goldbraun sind. Herausnehmen und noch heiß leicht salzen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "melt the rest of the ghee in the same pan. cook the diced onion for 8 minutes until soft and golden, then add the garlic, ginger and cumin and fry for one more minute, until it smells intense.",
+            "de": "Das restliche Ghee in derselben Pfanne schmelzen. Die gewürfelte Zwiebel 8 Minuten weich und goldgelb dünsten, dann Knoblauch, Ingwer und Kreuzkümmel dazugeben und eine weitere Minute mitbraten, bis es intensiv duftet."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "pour in the spinach purée, stir in the garam masala and ½ tsp of salt, and simmer gently for 5 minutes. loosen with a little water if it gets too thick.",
+            "de": "Spinatpüree angießen, Garam Masala und ½ TL Salz einrühren und 5 Minuten sanft köcheln lassen. Wird es zu dick, mit etwas Wasser lockern."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "stir in the cream, fold the paneer back in and warm everything through for 2 minutes. taste, adjust the salt, serve hot.",
+            "de": "Sahne einrühren, Paneer wieder unterheben und alles 2 Minuten warm werden lassen. Abschmecken, Salz anpassen, heiß servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "indian",
+          "vegetarian"
+        ],
+        "de": [
+          "Curry",
+          "Indisch",
+          "vegetarisch"
+        ]
+      }
+    },
+    {
+      "id": "palak-tofu",
+      "dish_id": "palak-paneer",
+      "title": {
+        "en": "palak tofu",
+        "de": "Palak Tofu"
+      },
+      "caption": {
+        "en": "crisp tofu sinking into green silk",
+        "de": "knuspriger Tofu in grüner Seide"
+      },
+      "intro": {
+        "en": "the green here is serious — spinach blanched, shocked, blitzed to silk — and the tofu meets it crisp, seared deep golden and salted right in the pan. coconut milk rounds it all into something you'll want to eat straight from the pot.",
+        "de": "Das Grün hier ist ernst gemeint – Spinat blanchiert, abgeschreckt, seidig püriert – und der Tofu kommt knusprig dazu, tief goldbraun gebraten und direkt in der Pfanne gesalzen. Kokosmilch rundet alles ab, bis du am liebsten direkt aus dem Topf isst."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le400",
+        "blanch",
+        "pan-fry",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 20,
+        "carbs_g": 16,
+        "fat_g": 26
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "spinach",
+          "qty": 450,
+          "unit": "g",
+          "note": {
+            "en": "fresh, washed",
+            "de": "frisch, gewaschen"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "onion",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 3,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 100,
+          "unit": "ml",
+          "note": {
+            "en": "full-fat",
+            "de": "Vollfett"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "plus more for the blanching water",
+            "de": "plus mehr fürs Blanchierwasser"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "wrap the tofu in a clean towel and press it under a heavy pan for 10 minutes — drier tofu sears better. meanwhile, bring a big pot of well-salted water to a boil.",
+            "de": "Tofu in ein sauberes Küchentuch wickeln und 10 Minuten mit einer schweren Pfanne beschweren – trockener Tofu brät besser an. Währenddessen einen großen Topf mit gut gesalzenem Wasser aufkochen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "blanch the spinach for 2 minutes until it collapses, then lift it straight into ice water to lock in the green. squeeze it dry and blitz it with a splash of water until smooth.",
+            "de": "Spinat 2 Minuten blanchieren, bis er zusammenfällt, dann sofort in Eiswasser abschrecken, damit das Grün bleibt. Ausdrücken und mit einem Schluck Wasser glatt pürieren."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "cut the tofu into bite-sized pieces. heat 1 tbsp of the oil in a wide pan over medium-high and sear the tofu for 8 minutes, turning, until deeply golden all over. salt it right in the pan and set it aside.",
+            "de": "Tofu in mundgerechte Stücke schneiden. 1 EL Öl in einer weiten Pfanne bei mittelhoher Hitze erhitzen und den Tofu 8 Minuten rundherum tief goldbraun braten, dabei wenden. Direkt in der Pfanne salzen und beiseitestellen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "add the remaining oil to the pan and cook the diced onion for 7 minutes until soft and golden. stir in the garlic and ginger and fry for one more minute.",
+            "de": "Restliches Öl in die Pfanne geben und die gewürfelte Zwiebel 7 Minuten weich und goldgelb dünsten. Knoblauch und Ingwer einrühren und eine weitere Minute mitbraten."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "pour in the spinach purée with the garam masala and ½ tsp of salt and simmer gently for 5 minutes. stir in the coconut milk and let it come back to a soft bubble.",
+            "de": "Spinatpüree mit Garam Masala und ½ TL Salz angießen und 5 Minuten sanft köcheln lassen. Kokosmilch einrühren und wieder leise blubbern lassen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "fold the tofu back in and warm it through for 2 minutes. finish with a squeeze of lemon, check the salt, serve.",
+            "de": "Tofu wieder unterheben und 2 Minuten warm werden lassen. Mit einem Spritzer Zitrone abrunden, Salz prüfen, servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "indian",
+          "plant-based"
+        ],
+        "de": [
+          "Curry",
+          "Indisch",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "tikka-masala-classic",
+      "dish_id": "tikka-masala",
+      "title": {
+        "en": "chicken tikka masala",
+        "de": "Hähnchen-Tikka-Masala"
+      },
+      "caption": {
+        "en": "charred edges, tomato-cream glow",
+        "de": "dunkle Röstränder, Tomaten-Sahne-Glanz"
+      },
+      "intro": {
+        "en": "yogurt, garam masala and smoked paprika get a 20-minute head start on the chicken, working their way deep while you cook the sauce. then the broiler chars the edges dark, and every one of those smoky bits lands in a tomato-cream sauce that glows orange.",
+        "de": "Joghurt, Garam Masala und geräuchertes Paprikapulver bekommen 20 Minuten Vorsprung am Hähnchen und ziehen tief ein, während du die Sauce kochst. Dann röstet der Grill die Ränder dunkel, und jedes dieser rauchigen Stückchen landet in einer Tomaten-Sahne-Sauce, die orange leuchtet."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "broil",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 580,
+      "macros": {
+        "calories": 580,
+        "protein_g": 36,
+        "carbs_g": 50,
+        "fat_g": 24
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "qty": 600,
+          "unit": "g",
+          "note": {
+            "en": "boneless, skinless",
+            "de": "ohne Knochen, ohne Haut"
+          }
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "cream",
+          "qty": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 240,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the yogurt with half the garam masala, the smoked paprika, half the garlic, half the ginger and 1 tsp of salt. cut the chicken into big bite-sized chunks, coat them well and let them marinate for 20 minutes — this is where the flavor happens.",
+            "de": "Joghurt mit der Hälfte des Garam Masala, dem geräucherten Paprikapulver, der Hälfte von Knoblauch und Ingwer und 1 TL Salz verrühren. Hähnchen in grobe, mundgerechte Stücke schneiden, gründlich darin wenden und 20 Minuten marinieren – hier entsteht der Geschmack."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "rinse the rice until the water runs clear and cook it in plenty of salted water for 12 minutes. drain it, put the lid back on and leave it alone — it finishes itself.",
+            "de": "Reis waschen, bis das Wasser klar bleibt, und in reichlich Salzwasser 12 Minuten kochen. Abgießen, Deckel wieder drauf und in Ruhe lassen – den Rest macht er allein."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "meanwhile, melt the butter in a wide pot over medium heat. cook the remaining garlic, ginger and garam masala for one minute until fragrant, then pour in the passata and simmer for 12 minutes until thick and brick-red.",
+            "de": "Währenddessen die Butter in einem weiten Topf bei mittlerer Hitze schmelzen. Restlichen Knoblauch, Ingwer und das übrige Garam Masala eine Minute anrösten, bis es duftet, dann die Passata angießen und 12 Minuten einköcheln, bis sie dick und ziegelrot ist."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "heat the broiler to max. spread the chicken on a rack over a tray in a single layer and broil for 6 minutes per side, close to the heat, until the edges char black in places. those dark spots are the whole point.",
+            "de": "Den Backofengrill auf höchste Stufe heizen. Hähnchen in einer Lage auf einem Rost über einem Blech verteilen und pro Seite 6 Minuten dicht unter der Hitze grillen, bis die Ränder stellenweise schwarz rösten. Diese dunklen Stellen sind der ganze Sinn der Sache."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "stir the cream into the sauce, then add the charred chicken with all its juices. simmer gently for 5 minutes so everything settles in together. taste for salt.",
+            "de": "Sahne in die Sauce rühren, dann das geröstete Hähnchen samt Bratensaft dazugeben. 5 Minuten sanft köcheln lassen, bis alles zusammenfindet. Mit Salz abschmecken."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "serve over the rice, sauce generously spooned on top.",
+            "de": "Auf dem Reis servieren, großzügig Sauce darüberlöffeln."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "indian",
+          "comfort food"
+        ],
+        "de": [
+          "Curry",
+          "Indisch",
+          "Wohlfühlessen"
+        ]
+      }
+    },
+    {
+      "id": "tikka-masala-vegan",
+      "dish_id": "tikka-masala",
+      "title": {
+        "en": "cauliflower tikka masala",
+        "de": "Blumenkohl-Tikka-Masala"
+      },
+      "caption": {
+        "en": "roasted florets wear the marinade well",
+        "de": "geröstete Röschen, gut mariniert"
+      },
+      "intro": {
+        "en": "cauliflower and chickpeas take to a coconut-yogurt marinade like they were built for it, then roast at full heat until the tips blacken. the sauce is tomato and coconut cream, thick enough to hold every charred ridge.",
+        "de": "Blumenkohl und Kichererbsen nehmen die Kokosjoghurt-Marinade an, als wäre sie für sie gemacht, und rösten dann bei voller Hitze, bis die Spitzen dunkel werden. Die Sauce ist Tomate und Kokoscreme, dick genug, um jede geröstete Kante zu halten."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie": "le600"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "medium",
+        "le60",
+        "le600",
+        "roast",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 500,
+      "macros": {
+        "calories": 500,
+        "protein_g": 16,
+        "carbs_g": 74,
+        "fat_g": 17
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "qty": 1,
+          "unit": "piece",
+          "note": {
+            "en": "large, cut into florets",
+            "de": "groß, in Röschen geteilt"
+          }
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "qty": 2,
+          "unit": "can",
+          "note": {
+            "en": "400 g each, drained",
+            "de": "à 400 g, abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "coconut-yogurt",
+          "qty": 150,
+          "unit": "g",
+          "note": {
+            "en": "unsweetened",
+            "de": "ungesüßt"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 4,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 30,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "qty": 200,
+          "unit": "ml",
+          "note": {
+            "en": "full-fat, unshaken",
+            "de": "Vollfett, nicht geschüttelt"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "qty": 240,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk the coconut yogurt with half the garam masala, the smoked paprika, half the garlic, half the ginger and 1 tsp of salt. toss the cauliflower florets and drained chickpeas through until every floret wears a coat.",
+            "de": "Kokosjoghurt mit der Hälfte des Garam Masala, dem geräucherten Paprikapulver, der Hälfte von Knoblauch und Ingwer und 1 TL Salz verrühren. Blumenkohlröschen und abgetropfte Kichererbsen darin wenden, bis jedes Röschen einen Mantel trägt."
+          }
+        },
+        {
+          "text": {
+            "en": "heat the oven to 240 °c. spread everything on a big tray with room to breathe and roast for 22 minutes, until the tips char dark. if it sits too close together it steams — space is what makes the char.",
+            "de": "Ofen auf 240 °C vorheizen. Alles mit etwas Abstand auf einem großen Blech verteilen und 22 Minuten rösten, bis die Spitzen dunkel werden. Liegt es zu eng, dämpft es nur – der Abstand macht die Röstung."
+          },
+          "timer_minutes": 22
+        },
+        {
+          "text": {
+            "en": "rinse the rice until the water runs clear and cook it in plenty of salted water for 12 minutes. drain and let it rest under the lid.",
+            "de": "Reis waschen, bis das Wasser klar bleibt, und in reichlich Salzwasser 12 Minuten kochen. Abgießen und unter dem Deckel ruhen lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "open the coconut milk without shaking it and spoon the thick cream from the top into a wide pot. fry the remaining garam masala, garlic and ginger in it for one minute, then pour in the passata and simmer for 10 minutes until deep and thick.",
+            "de": "Kokosmilch ungeschüttelt öffnen und die feste Creme von oben in einen weiten Topf löffeln. Restliches Garam Masala, Knoblauch und Ingwer darin eine Minute anbraten, dann die Passata angießen und 10 Minuten dick einköcheln lassen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "stir in the rest of the coconut milk, then fold in the roasted cauliflower and chickpeas. give them 3 minutes together over low heat, then taste for salt.",
+            "de": "Restliche Kokosmilch einrühren, dann den gerösteten Blumenkohl und die Kichererbsen unterheben. Bei niedriger Hitze 3 Minuten zusammenkommen lassen, dann mit Salz abschmecken."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "serve over the rice. the charred florets stay crisp at the edges — get some into every spoonful.",
+            "de": "Auf dem Reis servieren. Die gerösteten Röschen bleiben am Rand knusprig – davon gehört etwas in jeden Löffel."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "indian",
+          "plant-based"
+        ],
+        "de": [
+          "Curry",
+          "Indisch",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "tikka-masala-light",
+      "dish_id": "tikka-masala",
+      "title": {
+        "en": "light chicken tikka",
+        "de": "Leichtes Hähnchen-Tikka"
+      },
+      "caption": {
+        "en": "all the char, a lighter sauce",
+        "de": "volle Röstung, leichtere Sauce"
+      },
+      "intro": {
+        "en": "chicken breast spends twenty minutes in spiced yogurt, then meets the broiler until the edges catch. the sauce keeps things bright: tomato simmered down, the rest of the yogurt stirred in off the heat, cilantro and lemon to land it.",
+        "de": "Die Hähnchenbrust zieht zwanzig Minuten im Gewürzjoghurt, dann röstet der Grill die Ränder dunkel. Die Sauce bleibt dabei frisch: eingekochte Tomate, der restliche Joghurt abseits der Hitze eingerührt, Koriander und Zitrone zum Schluss."
+      },
+      "variant": {
+        "diet": "light",
+        "effort": "medium",
+        "calorie": "le400"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "nut-free",
+        "light",
+        "medium",
+        "le60",
+        "le400",
+        "broil",
+        "simmer"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 42,
+        "carbs_g": 18,
+        "fat_g": 14
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-breast",
+          "qty": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "greek-yogurt",
+          "qty": 200,
+          "unit": "g",
+          "note": {
+            "en": "half for the marinade, half for the sauce",
+            "de": "die Hälfte für die Marinade, die Hälfte für die Sauce"
+          }
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "qty": 2,
+          "unit": "clove",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "ginger",
+          "qty": 20,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "passata",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "lemon",
+          "qty": 0.5,
+          "unit": "piece",
+          "note": {
+            "en": "juice only",
+            "de": "nur der Saft"
+          }
+        },
+        {
+          "ingredient_id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir half the yogurt with half the garam masala, half the smoked paprika, the grated garlic, the ginger and ½ tsp of salt. cut the chicken breast into big chunks, coat them well and marinate for 20 minutes.",
+            "de": "Die Hälfte des Joghurts mit der Hälfte von Garam Masala und geräuchertem Paprikapulver, dem geriebenen Knoblauch, dem Ingwer und ½ TL Salz verrühren. Hähnchenbrust in grobe Stücke schneiden, gut darin wenden und 20 Minuten marinieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "meanwhile, simmer the passata with the remaining garam masala and smoked paprika in a wide pan for 12 minutes, until it thickens and loses its raw edge.",
+            "de": "Währenddessen die Passata mit dem restlichen Garam Masala und Paprikapulver in einer weiten Pfanne 12 Minuten köcheln lassen, bis sie eindickt und die rohe Tomatenschärfe verliert."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "heat the broiler to max. spread the chicken on a rack in a single layer and broil for 5 minutes per side, until charred at the edges and just cooked through — chicken breast dries out fast, so stay close.",
+            "de": "Den Backofengrill auf höchste Stufe heizen. Hähnchen in einer Lage auf einem Rost verteilen und pro Seite 5 Minuten grillen, bis die Ränder geröstet sind und das Fleisch gerade durch ist – Hähnchenbrust trocknet schnell aus, also bleib in der Nähe."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "pull the pan off the heat and stir the remaining yogurt into the sauce — off the heat, so it stays smooth. fold in the chicken and warm it through for 2 minutes on the lowest setting.",
+            "de": "Pfanne vom Herd ziehen und den restlichen Joghurt in die Sauce rühren – abseits der Hitze, damit sie glatt bleibt. Hähnchen unterheben und auf kleinster Stufe 2 Minuten warm werden lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "finish with the lemon juice and the rest of the salt to taste, then shower the chopped cilantro over everything.",
+            "de": "Mit dem Zitronensaft und dem restlichen Salz abschmecken, dann den gehackten Koriander großzügig darüberstreuen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "curry",
+          "indian",
+          "light"
+        ],
+        "de": [
+          "Curry",
+          "Indisch",
+          "leicht"
+        ]
+      }
     }
   ]
 }
