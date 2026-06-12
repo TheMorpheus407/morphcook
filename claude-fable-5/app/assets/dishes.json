@@ -29,7 +29,16 @@
         "doener-vegan-easy-800",
         "doener-vegan-medium-600",
         "doener-vegan-medium-800",
-        "doener-gluten-free-easy-600"
+        "doener-gluten-free-easy-600",
+        "doener-classic-easy-800-no-gluten",
+        "doener-halal-no-gluten",
+        "doener-classic-no-gluten",
+        "doener-vegetarian-easy-800-no-gluten",
+        "doener-vegetarian-medium-800-no-gluten",
+        "doener-vegan-no-gluten",
+        "doener-vegan-easy-800-no-gluten",
+        "doener-vegan-medium-600-no-gluten",
+        "doener-vegan-medium-800-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -65,7 +74,15 @@
         "pasta-alfredo-vegan-easy-600",
         "pasta-alfredo-vegan-medium-400",
         "alfredo-vegan",
-        "alfredo-gluten-free"
+        "alfredo-gluten-free",
+        "alfredo-light-no-gluten",
+        "alfredo-classic-no-gluten",
+        "pasta-alfredo-classic-medium-400-no-gluten",
+        "pasta-alfredo-classic-medium-600-no-gluten",
+        "pasta-alfredo-vegan-easy-400-no-gluten",
+        "pasta-alfredo-vegan-easy-600-no-gluten",
+        "pasta-alfredo-vegan-medium-400-no-gluten",
+        "alfredo-vegan-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -101,7 +118,14 @@
         "pancakes-vegan-easy-600",
         "pancakes-vegan-medium-400",
         "pancakes-vegan-medium-600",
-        "pancakes-gluten-free"
+        "pancakes-gluten-free",
+        "pancakes-classic-no-gluten",
+        "pancakes-classic-easy-600-no-gluten",
+        "pancakes-classic-medium-600-no-gluten",
+        "pancakes-vegan-no-gluten",
+        "pancakes-vegan-easy-600-no-gluten",
+        "pancakes-vegan-medium-400-no-gluten",
+        "pancakes-vegan-medium-600-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -178,7 +202,14 @@
         "burger-vegan-easy-400",
         "burger-vegan",
         "burger-vegan-medium-400",
-        "burger-vegan-medium-600"
+        "burger-vegan-medium-600",
+        "burger-classic-easy-600-no-gluten",
+        "burger-classic-medium-400-no-gluten",
+        "burger-classic-medium-600-no-gluten",
+        "burger-vegetarian-easy-600-no-gluten",
+        "burger-veggie-no-gluten",
+        "burger-vegan-no-gluten",
+        "burger-vegan-medium-600-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -244,7 +275,10 @@
         "shakshuka-vegan-easy-600",
         "shakshuka-vegan-medium-400",
         "shakshuka-vegan-medium-600",
-        "shakshuka-green"
+        "shakshuka-green",
+        "shakshuka-classic-easy-600-no-gluten",
+        "shakshuka-classic-medium-600-no-gluten",
+        "shakshuka-vegan-medium-600-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -284,7 +318,15 @@
         "caesar-vegan",
         "caesar-salad-vegan-easy-600",
         "caesar-salad-vegan-medium-400",
-        "caesar-salad-vegan-medium-600"
+        "caesar-salad-vegan-medium-600",
+        "caesar-classic-no-gluten",
+        "caesar-salad-classic-medium-600-no-gluten",
+        "caesar-vegetarian-no-gluten",
+        "caesar-salad-vegetarian-easy-600-no-gluten",
+        "caesar-salad-vegetarian-medium-600-no-gluten",
+        "caesar-vegan-no-gluten",
+        "caesar-salad-vegan-easy-600-no-gluten",
+        "caesar-salad-vegan-medium-600-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -356,7 +398,19 @@
         "lasagna-vegan-medium-800",
         "lasagna-vegan-hard-600",
         "lasagna-vegan-hard-800",
-        "lasagna-gluten-free-hard-800"
+        "lasagna-gluten-free-hard-800",
+        "lasagna-classic-medium-600-no-gluten",
+        "lasagna-classic-medium-800-no-gluten",
+        "lasagna-classic-hard-600-no-gluten",
+        "lasagna-classic-no-gluten",
+        "lasagna-vegetarian-medium-600-no-gluten",
+        "lasagna-vegetarian-medium-800-no-gluten",
+        "lasagna-vegetarian-no-gluten",
+        "lasagna-vegetarian-hard-800-no-gluten",
+        "lasagna-vegan-medium-600-no-gluten",
+        "lasagna-vegan-medium-800-no-gluten",
+        "lasagna-vegan-hard-600-no-gluten",
+        "lasagna-vegan-hard-800-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -432,7 +486,14 @@
         "ramen-vegan-easy-400",
         "ramen-vegan-easy-600",
         "ramen-vegan-medium-400",
-        "ramen-vegan"
+        "ramen-vegan",
+        "ramen-quick-no-gluten",
+        "ramen-classic-medium-600-no-gluten",
+        "ramen-vegetarian-easy-600-no-gluten",
+        "ramen-vegetarian-medium-600-no-gluten",
+        "ramen-vegan-easy-600-no-gluten",
+        "ramen-vegan-medium-400-no-gluten",
+        "ramen-vegan-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -462,7 +523,9 @@
         "falafel-baked",
         "falafel-classic-easy-600",
         "falafel-classic-medium-400",
-        "falafel-classic"
+        "falafel-classic",
+        "falafel-classic-easy-600-no-gluten",
+        "falafel-classic-no-gluten"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -530,7 +593,19 @@
         "beef-wellington-vegan-medium-900",
         "beef-wellington-vegan-hard-800",
         "beef-wellington-vegan-hard-900",
-        "beef-wellington-gluten-free-hard-800"
+        "beef-wellington-gluten-free-hard-800",
+        "beef-wellington-classic-medium-800-no-gluten",
+        "beef-wellington-classic-medium-900-no-gluten",
+        "beef-wellington-classic-hard-800-no-gluten",
+        "wellington-classic-no-gluten",
+        "beef-wellington-vegetarian-medium-800-no-gluten",
+        "beef-wellington-vegetarian-medium-900-no-gluten",
+        "wellington-mushroom-no-gluten",
+        "beef-wellington-vegetarian-hard-900-no-gluten",
+        "beef-wellington-vegan-medium-800-no-gluten",
+        "beef-wellington-vegan-medium-900-no-gluten",
+        "beef-wellington-vegan-hard-800-no-gluten",
+        "beef-wellington-vegan-hard-900-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -564,7 +639,15 @@
         "croissants-vegan-medium-400",
         "croissants-vegan-medium-600",
         "croissants-vegan-hard-400",
-        "croissants-vegan-hard-600"
+        "croissants-vegan-hard-600",
+        "croissants-classic-medium-400-no-gluten",
+        "croissants-classic-medium-600-no-gluten",
+        "croissants-classic-no-gluten",
+        "croissants-chocolate-no-gluten",
+        "croissants-vegan-medium-400-no-gluten",
+        "croissants-vegan-medium-600-no-gluten",
+        "croissants-vegan-hard-400-no-gluten",
+        "croissants-vegan-hard-600-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -666,7 +749,15 @@
         "pizza-vegan-easy-800",
         "pizza-vegan",
         "pizza-vegan-medium-800",
-        "pizza-gluten-free"
+        "pizza-gluten-free",
+        "pizza-classic-easy-600-no-gluten",
+        "pizza-classic-easy-800-no-gluten",
+        "pizza-classic-medium-600-no-gluten",
+        "pizza-classic-no-gluten",
+        "pizza-vegan-easy-600-no-gluten",
+        "pizza-vegan-easy-800-no-gluten",
+        "pizza-vegan-no-gluten",
+        "pizza-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -705,7 +796,19 @@
         "bolognese-vegan-easy-800",
         "bolognese-lentil",
         "bolognese-vegan-medium-800",
-        "bolognese-gluten-free-medium-600"
+        "bolognese-gluten-free-medium-600",
+        "bolognese-classic-easy-600-no-gluten",
+        "bolognese-classic-easy-800-no-gluten",
+        "bolognese-classic-medium-600-no-gluten",
+        "bolognese-classic-no-gluten",
+        "bolognese-vegetarian-easy-600-no-gluten",
+        "bolognese-vegetarian-easy-800-no-gluten",
+        "bolognese-vegetarian-medium-600-no-gluten",
+        "bolognese-vegetarian-medium-800-no-gluten",
+        "bolognese-vegan-easy-600-no-gluten",
+        "bolognese-vegan-easy-800-no-gluten",
+        "bolognese-lentil-no-gluten",
+        "bolognese-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -744,7 +847,19 @@
         "carbonara-vegan-easy-800",
         "carbonara-vegan-medium-600",
         "carbonara-vegan-medium-800",
-        "carbonara-gluten-free"
+        "carbonara-gluten-free",
+        "carbonara-classic-easy-600-no-gluten",
+        "carbonara-classic-no-gluten",
+        "carbonara-classic-medium-600-no-gluten",
+        "carbonara-classic-medium-800-no-gluten",
+        "carbonara-veggie-no-gluten",
+        "carbonara-vegetarian-easy-800-no-gluten",
+        "carbonara-vegetarian-medium-600-no-gluten",
+        "carbonara-vegetarian-medium-800-no-gluten",
+        "carbonara-vegan-easy-600-no-gluten",
+        "carbonara-vegan-easy-800-no-gluten",
+        "carbonara-vegan-medium-600-no-gluten",
+        "carbonara-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -777,7 +892,13 @@
         "tiramisu-vegan-easy-400",
         "tiramisu-vegan-easy-600",
         "tiramisu-vegan",
-        "tiramisu-vegan-medium-600"
+        "tiramisu-vegan-medium-600",
+        "tiramisu-light-no-gluten",
+        "tiramisu-classic-easy-600-no-gluten",
+        "tiramisu-classic-medium-400-no-gluten",
+        "tiramisu-classic-no-gluten",
+        "tiramisu-vegan-no-gluten",
+        "tiramisu-vegan-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -814,7 +935,8 @@
         "sushi-vegan-easy-400",
         "sushi-vegan-easy-600",
         "sushi-vegan",
-        "sushi-vegan-medium-600"
+        "sushi-vegan-medium-600",
+        "sushi-classic-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -852,7 +974,10 @@
         "fried-rice-vegan",
         "fried-rice-vegan-medium-400",
         "fried-rice-vegan-medium-600",
-        "fried-rice-lowfodmap"
+        "fried-rice-lowfodmap",
+        "fried-rice-classic-no-gluten",
+        "fried-rice-classic-medium-600-no-gluten",
+        "fried-rice-vegetarian-easy-600-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -886,7 +1011,8 @@
         "pho-vegan-easy-400",
         "pho-vegan-easy-600",
         "pho-vegan-medium-400",
-        "pho-vegan"
+        "pho-vegan",
+        "pho-classic-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1075,7 +1201,8 @@
         "burrito-bowl-vegan",
         "burrito-bowl-vegan-easy-800",
         "burrito-bowl-vegan-medium-600",
-        "burrito-bowl-vegan-medium-800"
+        "burrito-bowl-vegan-medium-800",
+        "burrito-bowl-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -1110,7 +1237,11 @@
         "quesadilla-vegan",
         "quesadilla-vegan-medium-400",
         "quesadilla-vegan-medium-600",
-        "quesadilla-gluten-free"
+        "quesadilla-gluten-free",
+        "quesadilla-classic-no-gluten",
+        "quesadilla-classic-medium-600-no-gluten",
+        "quesadilla-vegan-no-gluten",
+        "quesadilla-vegan-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -1148,7 +1279,14 @@
         "shawarma-vegan-easy-400",
         "shawarma-vegan-easy-600",
         "shawarma-vegan-medium-400",
-        "shawarma-vegan"
+        "shawarma-vegan",
+        "shawarma-classic-easy-600-no-gluten",
+        "shawarma-classic-no-gluten",
+        "shawarma-vegetarian-easy-600-no-gluten",
+        "shawarma-vegetarian-medium-600-no-gluten",
+        "shawarma-vegan-easy-400-no-gluten",
+        "shawarma-vegan-easy-600-no-gluten",
+        "shawarma-vegan-no-gluten"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -1212,7 +1350,11 @@
         "tabbouleh-classic-easy-600",
         "tabbouleh-classic-medium-400",
         "tabbouleh-classic-medium-600",
-        "tabbouleh-quinoa"
+        "tabbouleh-quinoa",
+        "tabbouleh-classic-no-gluten",
+        "tabbouleh-classic-easy-600-no-gluten",
+        "tabbouleh-classic-medium-400-no-gluten",
+        "tabbouleh-classic-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -1250,7 +1392,8 @@
         "paella-vegan",
         "paella-vegan-medium-800",
         "paella-vegan-hard-600",
-        "paella-vegan-hard-800"
+        "paella-vegan-hard-800",
+        "paella-vegan-hard-800-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1288,7 +1431,8 @@
         "goulash-vegan-medium-400",
         "goulash-vegan",
         "goulash-vegan-hard-400",
-        "goulash-vegan-hard-600"
+        "goulash-vegan-hard-600",
+        "goulash-vegan-hard-600-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1323,7 +1467,13 @@
         "brownies-vegan-easy-600",
         "brownies-vegan-medium-400",
         "brownies-vegan-medium-600",
-        "brownies-gluten-free"
+        "brownies-gluten-free",
+        "brownies-classic-no-gluten",
+        "brownies-classic-easy-600-no-gluten",
+        "brownies-classic-medium-600-no-gluten",
+        "brownies-vegan-no-gluten",
+        "brownies-vegan-easy-600-no-gluten",
+        "brownies-vegan-medium-600-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1358,7 +1508,15 @@
         "apple-pie-vegan-medium-600",
         "apple-pie-vegan-hard-400",
         "apple-pie-vegan-hard-600",
-        "apple-pie-gluten-free-medium-400"
+        "apple-pie-gluten-free-medium-400",
+        "apple-pie-classic-no-gluten",
+        "apple-pie-classic-medium-600-no-gluten",
+        "apple-pie-classic-hard-400-no-gluten",
+        "apple-pie-classic-hard-600-no-gluten",
+        "apple-pie-vegan-no-gluten",
+        "apple-pie-vegan-medium-600-no-gluten",
+        "apple-pie-vegan-hard-400-no-gluten",
+        "apple-pie-vegan-hard-600-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1397,7 +1555,19 @@
         "schnitzel-vegan-easy-800",
         "schnitzel-vegan",
         "schnitzel-vegan-medium-800",
-        "schnitzel-gluten-free-medium-600"
+        "schnitzel-gluten-free-medium-600",
+        "schnitzel-classic-easy-600-no-gluten",
+        "schnitzel-classic-easy-800-no-gluten",
+        "schnitzel-chicken-no-gluten",
+        "schnitzel-classic-no-gluten",
+        "schnitzel-vegetarian-easy-600-no-gluten",
+        "schnitzel-vegetarian-easy-800-no-gluten",
+        "schnitzel-vegetarian-medium-600-no-gluten",
+        "schnitzel-vegetarian-medium-800-no-gluten",
+        "schnitzel-vegan-easy-600-no-gluten",
+        "schnitzel-vegan-easy-800-no-gluten",
+        "schnitzel-vegan-no-gluten",
+        "schnitzel-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1431,7 +1601,12 @@
         "kaesespaetzle-vegan-easy-600",
         "kaesespaetzle-vegan-easy-800",
         "kaesespaetzle-vegan",
-        "kaesespaetzle-vegan-medium-800"
+        "kaesespaetzle-vegan-medium-800",
+        "kaesespaetzle-classic-easy-600-no-gluten",
+        "kaesespaetzle-classic-easy-800-no-gluten",
+        "kaesespaetzle-classic-medium-600-no-gluten",
+        "kaesespaetzle-classic-no-gluten",
+        "kaesespaetzle-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1470,7 +1645,9 @@
         "meatballs-vegan-easy-800",
         "meatballs-vegan",
         "meatballs-vegan-medium-800",
-        "meatballs-gluten-free"
+        "meatballs-gluten-free",
+        "meatballs-classic-easy-800-no-gluten",
+        "meatballs-classic-no-gluten"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1503,7 +1680,13 @@
         "crepes-vegan",
         "crepes-vegan-easy-600",
         "crepes-vegan-medium-400",
-        "crepes-vegan-medium-600"
+        "crepes-vegan-medium-600",
+        "crepes-classic-no-gluten",
+        "crepes-classic-easy-600-no-gluten",
+        "crepes-classic-medium-600-no-gluten",
+        "crepes-vegan-no-gluten",
+        "crepes-vegan-easy-600-no-gluten",
+        "crepes-vegan-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1541,7 +1724,15 @@
         "quiche-vegan-medium-400",
         "quiche-vegan-medium-600",
         "quiche-vegan-hard-400",
-        "quiche-vegan-hard-600"
+        "quiche-vegan-hard-600",
+        "quiche-classic-medium-600-no-gluten",
+        "quiche-classic-hard-400-no-gluten",
+        "quiche-classic-no-gluten",
+        "quiche-vegetarian-medium-600-no-gluten",
+        "quiche-vegetarian-hard-400-no-gluten",
+        "quiche-spinach-no-gluten",
+        "quiche-vegan-medium-600-no-gluten",
+        "quiche-vegan-hard-600-no-gluten"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1621,7 +1812,11 @@
         "teriyaki-vegan-easy-400",
         "teriyaki-tofu",
         "teriyaki-vegan-medium-400",
-        "teriyaki-vegan-medium-600"
+        "teriyaki-vegan-medium-600",
+        "teriyaki-chicken-no-gluten",
+        "teriyaki-classic-medium-600-no-gluten",
+        "teriyaki-vegetarian-easy-600-no-gluten",
+        "teriyaki-vegetarian-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1660,7 +1855,15 @@
         "gyoza-vegan-easy-600",
         "gyoza-vegan",
         "gyoza-vegan-medium-600",
-        "gyoza-gluten-free-medium-400"
+        "gyoza-gluten-free-medium-400",
+        "gyoza-classic-easy-400-no-gluten",
+        "gyoza-classic-easy-600-no-gluten",
+        "gyoza-classic-no-gluten",
+        "gyoza-vegetarian-easy-400-no-gluten",
+        "gyoza-vegetarian-easy-600-no-gluten",
+        "gyoza-vegetarian-medium-400-no-gluten",
+        "gyoza-vegetarian-medium-600-no-gluten",
+        "gyoza-vegan-easy-400-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1733,7 +1936,15 @@
         "pesto-pasta-vegan",
         "pesto-pasta-vegan-medium-600",
         "pesto-pasta-vegan-medium-800",
-        "pesto-pasta-gluten-free-easy-600"
+        "pesto-pasta-gluten-free-easy-600",
+        "pesto-pasta-classic-easy-600-no-gluten",
+        "pesto-pasta-nut-free-no-gluten",
+        "pesto-pasta-classic-medium-600-no-gluten",
+        "pesto-pasta-classic-no-gluten",
+        "pesto-pasta-vegan-easy-600-no-gluten",
+        "pesto-pasta-vegan-no-gluten",
+        "pesto-pasta-vegan-medium-600-no-gluten",
+        "pesto-pasta-vegan-medium-800-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -1768,7 +1979,15 @@
         "gnocchi-vegan",
         "gnocchi-vegan-hard-400",
         "gnocchi-vegan-hard-600",
-        "gnocchi-gluten-free-medium-400"
+        "gnocchi-gluten-free-medium-400",
+        "gnocchi-classic-medium-400-no-gluten",
+        "gnocchi-classic-no-gluten",
+        "gnocchi-classic-hard-400-no-gluten",
+        "gnocchi-classic-hard-600-no-gluten",
+        "gnocchi-vegan-medium-400-no-gluten",
+        "gnocchi-vegan-no-gluten",
+        "gnocchi-vegan-hard-400-no-gluten",
+        "gnocchi-vegan-hard-600-no-gluten"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -1883,7 +2102,19 @@
         "couscous-bowl-classic",
         "couscous-bowl-vegan-medium-400",
         "couscous-bowl-vegan-medium-600",
-        "couscous-bowl-gluten-free-easy-400"
+        "couscous-bowl-gluten-free-easy-400",
+        "couscous-bowl-classic-easy-400-no-gluten",
+        "couscous-bowl-chicken-no-gluten",
+        "couscous-bowl-classic-medium-400-no-gluten",
+        "couscous-bowl-classic-medium-600-no-gluten",
+        "couscous-bowl-vegetarian-easy-400-no-gluten",
+        "couscous-bowl-vegetarian-easy-600-no-gluten",
+        "couscous-bowl-vegetarian-medium-400-no-gluten",
+        "couscous-bowl-vegetarian-medium-600-no-gluten",
+        "couscous-bowl-vegan-easy-400-no-gluten",
+        "couscous-bowl-classic-no-gluten",
+        "couscous-bowl-vegan-medium-400-no-gluten",
+        "couscous-bowl-vegan-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -2028,7 +2259,15 @@
         "french-toast-vegan-easy-600",
         "french-toast-vegan-medium-400",
         "french-toast-vegan-medium-600",
-        "french-toast-gluten-free-medium-600"
+        "french-toast-gluten-free-medium-600",
+        "french-toast-protein-no-gluten",
+        "french-toast-classic-no-gluten",
+        "french-toast-classic-medium-400-no-gluten",
+        "french-toast-classic-medium-600-no-gluten",
+        "french-toast-vegan-no-gluten",
+        "french-toast-vegan-easy-600-no-gluten",
+        "french-toast-vegan-medium-400-no-gluten",
+        "french-toast-vegan-medium-600-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -2096,7 +2335,12 @@
         "mac-and-cheese-vegan-easy-800",
         "mac-and-cheese-vegan-medium-600",
         "mac-and-cheese-vegan-medium-800",
-        "mac-and-cheese-gluten-free"
+        "mac-and-cheese-gluten-free",
+        "mac-and-cheese-classic-easy-600-no-gluten",
+        "mac-and-cheese-classic-no-gluten",
+        "mac-and-cheese-classic-medium-600-no-gluten",
+        "mac-and-cheese-classic-medium-800-no-gluten",
+        "mac-and-cheese-vegan-no-gluten"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -2131,7 +2375,15 @@
         "cookies-vegan-easy-600",
         "cookies-vegan-medium-400",
         "cookies-vegan-medium-600",
-        "cookies-gluten-free"
+        "cookies-gluten-free",
+        "cookies-classic-no-gluten",
+        "cookies-classic-easy-600-no-gluten",
+        "cookies-classic-medium-400-no-gluten",
+        "cookies-classic-medium-600-no-gluten",
+        "cookies-vegan-no-gluten",
+        "cookies-vegan-easy-600-no-gluten",
+        "cookies-vegan-medium-400-no-gluten",
+        "cookies-vegan-medium-600-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -2165,7 +2417,8 @@
         "cheesecake-vegan-medium-400",
         "cheesecake-vegan-medium-600",
         "cheesecake-vegan-hard-400",
-        "cheesecake-vegan"
+        "cheesecake-vegan",
+        "cheesecake-classic-no-gluten"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -2203,7 +2456,9 @@
         "bibimbap-vegan-easy-400",
         "bibimbap-vegan-easy-600",
         "bibimbap-vegan-medium-400",
-        "bibimbap-vegan-medium-600"
+        "bibimbap-vegan-medium-600",
+        "bibimbap-classic-easy-600-no-gluten",
+        "bibimbap-classic-medium-600-no-gluten"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
