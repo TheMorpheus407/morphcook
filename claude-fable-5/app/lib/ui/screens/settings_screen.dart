@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/app_state.dart';
 import '../../logic/backup/backup_service.dart';
@@ -16,8 +17,12 @@ import 'faq_screen.dart';
 import 'insights_screen.dart';
 import 'shopping_list_screen.dart';
 
+const _patreonUrl = 'https://www.patreon.com/c/themorpheus';
+const _websiteUrl = 'https://www.the-morpheus.de/';
+
 /// Settings: full profile editor, language toggle, adaptation preferences,
-/// accessibility, backup/restore, links to insights & help center.
+/// accessibility, backup/restore, links to insights & help center,
+/// about & support.
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
 
@@ -256,7 +261,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
               s('helpCenter'),
               () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (_) => const FaqScreen()))),
-          const SizedBox(height: 10),
+
+          SectionHeader(title: s('aboutSupport')),
+          _supportCard(s),
+
+          const SizedBox(height: 18),
           _linkRow(Icons.restart_alt, s('resetApp'),
               () => _confirmReset(state, s),
               color: MorphColors.coral),
@@ -403,6 +412,64 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   .copyWith(fontSize: 15, color: MorphColors.inkSoft)),
       ],
     );
+  }
+
+  /// Polaroid-flavoured card: logo, handwritten credit, honest mono note,
+  /// two outbound links. Visible, not pushy.
+  Widget _supportCard(S s) {
+    return Container(
+      decoration: BoxDecoration(
+        color: MorphColors.card,
+        border: Border.all(color: MorphColors.line),
+        boxShadow: [
+          BoxShadow(
+            color: MorphColors.ink.withValues(alpha: 0.06),
+            blurRadius: 10,
+            offset: const Offset(2, 4),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.fromLTRB(14, 14, 14, 4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Image.asset(
+                'assets/mo-logo.png',
+                width: 64,
+                color: MorphColors.ink, // pure-black source, tinted to ink
+                excludeFromSemantics: true,
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Text(s('supportMadeBy'),
+                    style: MorphText.hand
+                        .copyWith(fontSize: 21, color: MorphColors.ink)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(s('supportBody'),
+              style: MorphText.mono
+                  .copyWith(fontSize: 12, color: MorphColors.inkSoft)),
+          const DashedDivider(height: 20),
+          _linkRow(Icons.favorite_border, s('supportPatreon'),
+              () => _openExternal(_patreonUrl),
+              color: MorphColors.terracotta),
+          _linkRow(Icons.public, s('supportWebsite'),
+              () => _openExternal(_websiteUrl)),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _openExternal(String url) async {
+    try {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } on Exception {
+      _toast(url); // no browser? at least show where to go.
+    }
   }
 
   Widget _linkRow(IconData icon, String label, VoidCallback onTap,

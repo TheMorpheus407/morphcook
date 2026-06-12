@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/app_state.dart';
 import '../../models/dish.dart';
@@ -119,6 +120,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
               ),
+              const SizedBox(height: 20),
+              _colophon(s),
             ],
           ],
         ),
@@ -200,6 +203,23 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  /// Newspaper imprint line at the foot of the feed — handwritten, quiet,
+  /// taps through to the maker's site.
+  Widget _colophon(S s) {
+    return Column(
+      children: [
+        const DashedDivider(height: 1),
+        const SizedBox(height: 12),
+        GestureDetector(
+          onTap: () => launchUrl(Uri.parse('https://www.the-morpheus.de/'),
+              mode: LaunchMode.externalApplication),
+          child: Text(s('supportMadeBy'),
+              style: MorphText.hand.copyWith(fontSize: 18)),
+        ),
+      ],
     );
   }
 

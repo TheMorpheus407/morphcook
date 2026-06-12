@@ -7,6 +7,8 @@ import 'package:morphcook/models/profile.dart';
 import 'package:morphcook/ui/screens/dish_detail_screen.dart';
 import 'package:morphcook/ui/screens/home_screen.dart';
 import 'package:morphcook/ui/screens/onboarding_screen.dart';
+import 'package:morphcook/ui/screens/settings_screen.dart';
+import 'package:morphcook/ui/strings.dart';
 import 'package:morphcook/ui/theme.dart';
 import 'package:morphcook/ui/widgets/decor.dart';
 import 'package:provider/provider.dart';
@@ -122,6 +124,52 @@ void main() {
     await tester.tap(find.text('open my cookbook'));
     await tester.pumpAndSettle();
     expect(state.onboarded, isTrue);
+  });
+
+  testWidgets('settings renders the about & support section', (tester) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(app(state, const RootShell()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('settings'));
+    await tester.pumpAndSettle();
+
+    const en = S('en');
+    final settingsScrollable = find
+        .descendant(
+            of: find.byType(SettingsScreen),
+            matching: find.byType(Scrollable))
+        .first;
+    await tester.scrollUntilVisible(find.text(en('supportBody')), 300,
+        scrollable: settingsScrollable);
+
+    expect(find.text(en('supportBody')), findsOneWidget);
+    expect(find.text(en('supportMadeBy')), findsWidgets);
+    expect(find.text(en('supportPatreon')), findsOneWidget);
+    expect(find.text(en('supportWebsite')), findsOneWidget);
+    // The logo asset is wired up (no URL is launched in this test).
+    expect(
+      find.byWidgetPredicate((w) =>
+          w is Image &&
+          w.image is AssetImage &&
+          (w.image as AssetImage).assetName == 'assets/mo-logo.png'),
+      findsOneWidget,
+    );
+  });
+
+  test('support copy exists in english and german', () {
+    const en = S('en');
+    const de = S('de');
+    for (final key in [
+      'aboutSupport', 'supportMadeBy', 'supportBody',
+      'supportPatreon', 'supportWebsite'
+    ]) {
+      expect(en(key), isNot(equals(key)), reason: 'missing EN $key');
+      expect(de(key), isNot(equals(key)), reason: 'missing DE $key');
+    }
+    // Genuinely translated, not the EN fallback.
+    expect(de('supportBody'), isNot(equals(en('supportBody'))));
+    expect(de('supportBody'), contains('unterstützen'));
+    expect(de('supportPatreon'), isNot(equals(en('supportPatreon'))));
   });
 
   testWidgets('cookbook shows a saved variant', (tester) async {
