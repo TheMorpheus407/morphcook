@@ -162,7 +162,9 @@ def read_json(path):
 def write_json(path, data):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    tmp.replace(path)  # atomic — no reader ever sees a half-written file
 
 
 # ---------------------------------------------------------------- contexts
@@ -1235,11 +1237,15 @@ def expand_coverage(args, ctx, dish_ids, single_combo=False, max_size=None):
         total = sum(len(v) for v in work.values())
         log("coverage", f"no-{combo_key(combo)}: {total} uncovered cell(s) "
                         f"across {len(work)} dish(es)")
-        with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+        pool = ThreadPoolExecutor(max_workers=args.jobs)
+        try:
             counts = list(pool.map(
                 lambda kv: process_coverage_dish(
                     args, ctx, ctx.dish_by_id[kv[0]], combo, kv[1]),
                 work.items()))
+        finally:
+            # On interrupt, drop the queue — only in-flight calls drain.
+            pool.shutdown(wait=True, cancel_futures=True)
         produced += sum(counts)
         if not args.no_merge:
             merge_corpus(ctx)
@@ -1594,11 +1600,14 @@ def main():
         print(f"{len(ids) - len(todo)} dish(es) already done, "
               f"{len(todo)} to go, {args.jobs} in parallel\n")
         failures = {}
-        with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+        pool = ThreadPoolExecutor(max_workers=args.jobs)
+        try:
             for dish, err in zip(todo, pool.map(
                     lambda d: run_dish(args, ctx, d), todo)):
                 if err:
                     failures[dish["id"]] = err
+        finally:
+            pool.shutdown(wait=True, cancel_futures=True)
         return failures
 
     try:
@@ -1669,16 +1678,19 @@ def main():
                       f"{scouted} dish(es) scouted")
 
         failures = run_batch(ctx, dish_ids)
-    except BudgetExceeded as exc:
-        print(f"\nstopped: {exc} (rerun to resume)")
-        sys.exit(1)
-    except CodexUnavailable as exc:
-        print(f"\nstopped: codex unavailable ({exc}) — nothing was marked "
-              "impossible; rerun to resume")
-        sys.exit(1)
-    except PipelineError as exc:
-        print(f"\nstopped: {exc} (state is on disk; rerun to resume)")
-        sys.exit(1)
+    except (BudgetExceeded, CodexUnavailable, PipelineError,
+            KeyboardInterrupt) as exc:
+        kind = ("interrupted" if isinstance(exc, KeyboardInterrupt)
+                else f"stopped: {exc}")
+        print(f"\n{kind} — state is on disk, rerun to resume")
+        if not args.no_merge:
+            # Ship whatever was accepted before the stop; merge_corpus
+            # declines gracefully when the corpus isn't shippable.
+            try:
+                merge_corpus(Ctx())
+            except Exception as merge_exc:  # noqa: BLE001 — best effort
+                print(f"(final merge skipped: {merge_exc})")
+        sys.exit(130 if isinstance(exc, KeyboardInterrupt) else 1)
 
     print()
     show_status(ctx, dish_ids)
