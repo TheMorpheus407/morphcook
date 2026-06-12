@@ -17,10 +17,19 @@
       },
       "stripe": "#C96F4A",
       "recipes": [
-        "doener-classic",
-        "doener-vegan",
+        "doener-keto",
+        "doener-classic-easy-800",
         "doener-halal",
-        "doener-keto"
+        "doener-classic",
+        "doener-vegetarian-easy-600",
+        "doener-vegetarian-easy-800",
+        "doener-vegetarian-medium-600",
+        "doener-vegetarian-medium-800",
+        "doener-vegan",
+        "doener-vegan-easy-800",
+        "doener-vegan-medium-600",
+        "doener-vegan-medium-800",
+        "doener-gluten-free-easy-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -48,10 +57,15 @@
       },
       "stripe": "#D9B44A",
       "recipes": [
+        "alfredo-light",
         "alfredo-classic",
-        "alfredo-gluten-free",
+        "pasta-alfredo-classic-medium-400",
+        "pasta-alfredo-classic-medium-600",
+        "pasta-alfredo-vegan-easy-400",
+        "pasta-alfredo-vegan-easy-600",
+        "pasta-alfredo-vegan-medium-400",
         "alfredo-vegan",
-        "alfredo-light"
+        "alfredo-gluten-free"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -80,9 +94,14 @@
       "stripe": "#E0A899",
       "recipes": [
         "pancakes-classic",
+        "pancakes-classic-easy-600",
+        "pancakes-classic-medium-400",
+        "pancakes-classic-medium-600",
         "pancakes-vegan",
-        "pancakes-gluten-free",
-        "pancakes-protein"
+        "pancakes-vegan-easy-600",
+        "pancakes-vegan-medium-400",
+        "pancakes-vegan-medium-600",
+        "pancakes-gluten-free"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -108,9 +127,18 @@
       },
       "stripe": "#B8862D",
       "recipes": [
+        "curry-classic-easy-400",
+        "curry-classic-easy-600",
+        "curry-keto",
         "curry-chicken",
+        "curry-vegetarian-easy-400",
+        "curry-vegetarian-easy-600",
+        "curry-vegetarian-medium-400",
+        "curry-vegetarian-medium-600",
+        "curry-vegan-easy-400",
         "curry-chickpea",
-        "curry-keto"
+        "curry-vegan-medium-400",
+        "curry-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -139,10 +167,18 @@
       },
       "stripe": "#8C5E58",
       "recipes": [
-        "burger-classic",
+        "burger-lowcarb",
+        "burger-classic-easy-600",
+        "burger-classic-medium-400",
+        "burger-classic-medium-600",
+        "burger-vegetarian-easy-400",
+        "burger-vegetarian-easy-600",
+        "burger-vegetarian-medium-400",
         "burger-veggie",
+        "burger-vegan-easy-400",
         "burger-vegan",
-        "burger-lowcarb"
+        "burger-vegan-medium-400",
+        "burger-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -169,8 +205,13 @@
       "stripe": "#A9B39A",
       "recipes": [
         "porridge-classic",
+        "porridge-classic-easy-600",
+        "porridge-classic-medium-400",
+        "porridge-classic-medium-600",
         "porridge-vegan",
-        "porridge-sugarfree"
+        "porridge-vegan-easy-600",
+        "porridge-sugarfree",
+        "porridge-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -196,8 +237,14 @@
       "stripe": "#B5483A",
       "recipes": [
         "shakshuka-classic",
-        "shakshuka-green",
-        "shakshuka-vegan"
+        "shakshuka-classic-easy-600",
+        "shakshuka-classic-medium-400",
+        "shakshuka-classic-medium-600",
+        "shakshuka-vegan",
+        "shakshuka-vegan-easy-600",
+        "shakshuka-vegan-medium-400",
+        "shakshuka-vegan-medium-600",
+        "shakshuka-green"
       ],
       "partition_id": "core",
       "secondary_partitions": [
@@ -226,9 +273,18 @@
       },
       "stripe": "#7E9B6E",
       "recipes": [
+        "caesar-salad-classic-easy-400",
         "caesar-classic",
+        "caesar-salad-classic-medium-400",
+        "caesar-salad-classic-medium-600",
         "caesar-vegetarian",
-        "caesar-vegan"
+        "caesar-salad-vegetarian-easy-600",
+        "caesar-salad-vegetarian-medium-400",
+        "caesar-salad-vegetarian-medium-600",
+        "caesar-vegan",
+        "caesar-salad-vegan-easy-600",
+        "caesar-salad-vegan-medium-400",
+        "caesar-salad-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -254,7 +310,13 @@
       },
       "stripe": "#9A8C7A",
       "recipes": [
+        "risotto-classic-easy-400",
+        "risotto-classic-easy-600",
+        "risotto-classic-medium-400",
         "risotto-mushroom",
+        "risotto-vegan-easy-400",
+        "risotto-vegan-easy-600",
+        "risotto-vegan-medium-400",
         "risotto-vegan"
       ],
       "partition_id": "cuisine-italian",
@@ -282,9 +344,19 @@
       },
       "stripe": "#A6543F",
       "recipes": [
+        "lasagna-classic-medium-600",
+        "lasagna-classic-medium-800",
+        "lasagna-classic-hard-600",
         "lasagna-classic",
+        "lasagna-vegetarian-medium-600",
+        "lasagna-vegetarian-medium-800",
         "lasagna-vegetarian",
-        "lasagna-gluten-free"
+        "lasagna-vegetarian-hard-800",
+        "lasagna-vegan-medium-600",
+        "lasagna-vegan-medium-800",
+        "lasagna-vegan-hard-600",
+        "lasagna-vegan-hard-800",
+        "lasagna-gluten-free-hard-800"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -311,9 +383,18 @@
       },
       "stripe": "#C77B3E",
       "recipes": [
+        "pad-thai-classic-easy-400",
+        "pad-thai-nut-free",
+        "pad-thai-classic-medium-400",
         "pad-thai-classic",
-        "pad-thai-vegan",
-        "pad-thai-nut-free"
+        "pad-thai-vegetarian-easy-400",
+        "pad-thai-vegetarian-easy-600",
+        "pad-thai-vegetarian-medium-400",
+        "pad-thai-vegetarian-medium-600",
+        "pad-thai-vegan-easy-400",
+        "pad-thai-vegan-easy-600",
+        "pad-thai-vegan-medium-400",
+        "pad-thai-vegan"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -340,9 +421,18 @@
       },
       "stripe": "#5E6B73",
       "recipes": [
-        "ramen-classic",
-        "ramen-vegan",
-        "ramen-quick"
+        "ramen-classic-easy-400",
+        "ramen-quick",
+        "ramen-classic-medium-400",
+        "ramen-classic-medium-600",
+        "ramen-vegetarian-easy-400",
+        "ramen-vegetarian-easy-600",
+        "ramen-vegetarian-medium-400",
+        "ramen-vegetarian-medium-600",
+        "ramen-vegan-easy-400",
+        "ramen-vegan-easy-600",
+        "ramen-vegan-medium-400",
+        "ramen-vegan"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -369,8 +459,10 @@
       },
       "stripe": "#6F8F4F",
       "recipes": [
-        "falafel-classic",
-        "falafel-baked"
+        "falafel-baked",
+        "falafel-classic-easy-600",
+        "falafel-classic-medium-400",
+        "falafel-classic"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -397,7 +489,9 @@
       "stripe": "#C9A227",
       "recipes": [
         "hummus-bowl-classic",
-        "hummus-bowl-chicken"
+        "hummus-bowl-classic-easy-600",
+        "hummus-bowl-classic-medium-400",
+        "hummus-bowl-classic-medium-600"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -424,8 +518,19 @@
       },
       "stripe": "#704238",
       "recipes": [
+        "beef-wellington-classic-medium-800",
+        "beef-wellington-classic-medium-900",
+        "beef-wellington-classic-hard-800",
         "wellington-classic",
-        "wellington-mushroom"
+        "beef-wellington-vegetarian-medium-800",
+        "beef-wellington-vegetarian-medium-900",
+        "wellington-mushroom",
+        "beef-wellington-vegetarian-hard-900",
+        "beef-wellington-vegan-medium-800",
+        "beef-wellington-vegan-medium-900",
+        "beef-wellington-vegan-hard-800",
+        "beef-wellington-vegan-hard-900",
+        "beef-wellington-gluten-free-hard-800"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -452,8 +557,14 @@
       },
       "stripe": "#D4A86A",
       "recipes": [
+        "croissants-classic-medium-400",
+        "croissants-classic-medium-600",
         "croissants-classic",
-        "croissants-chocolate"
+        "croissants-chocolate",
+        "croissants-vegan-medium-400",
+        "croissants-vegan-medium-600",
+        "croissants-vegan-hard-400",
+        "croissants-vegan-hard-600"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -482,8 +593,13 @@
       "stripe": "#D9A23B",
       "recipes": [
         "omelette-classic",
+        "omelette-classic-easy-600",
+        "omelette-protein",
+        "omelette-classic-medium-600",
         "omelette-vegan",
-        "omelette-protein"
+        "omelette-vegan-easy-600",
+        "omelette-vegan-medium-400",
+        "omelette-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -510,8 +626,13 @@
       "stripe": "#B4527A",
       "recipes": [
         "smoothie-bowl-classic",
+        "smoothie-bowl-classic-easy-600",
+        "smoothie-bowl-protein",
+        "smoothie-bowl-classic-medium-600",
         "smoothie-bowl-vegan",
-        "smoothie-bowl-protein"
+        "smoothie-bowl-vegan-easy-600",
+        "smoothie-bowl-vegan-medium-400",
+        "smoothie-bowl-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -537,10 +658,15 @@
       },
       "stripe": "#C24B33",
       "recipes": [
+        "pizza-classic-easy-600",
+        "pizza-classic-easy-800",
+        "pizza-classic-medium-600",
         "pizza-classic",
+        "pizza-vegan-easy-600",
+        "pizza-vegan-easy-800",
         "pizza-vegan",
-        "pizza-gluten-free",
-        "pizza-keto"
+        "pizza-vegan-medium-800",
+        "pizza-gluten-free"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -567,9 +693,19 @@
       },
       "stripe": "#9E3B2B",
       "recipes": [
+        "bolognese-classic-easy-600",
+        "bolognese-classic-easy-800",
+        "bolognese-classic-medium-600",
         "bolognese-classic",
+        "bolognese-vegetarian-easy-600",
+        "bolognese-vegetarian-easy-800",
+        "bolognese-vegetarian-medium-600",
+        "bolognese-vegetarian-medium-800",
+        "bolognese-vegan-easy-600",
+        "bolognese-vegan-easy-800",
         "bolognese-lentil",
-        "bolognese-lowfodmap"
+        "bolognese-vegan-medium-800",
+        "bolognese-gluten-free-medium-600"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -596,8 +732,18 @@
       },
       "stripe": "#C9A227",
       "recipes": [
+        "carbonara-classic-easy-600",
         "carbonara-classic",
+        "carbonara-classic-medium-600",
+        "carbonara-classic-medium-800",
         "carbonara-veggie",
+        "carbonara-vegetarian-easy-800",
+        "carbonara-vegetarian-medium-600",
+        "carbonara-vegetarian-medium-800",
+        "carbonara-vegan-easy-600",
+        "carbonara-vegan-easy-800",
+        "carbonara-vegan-medium-600",
+        "carbonara-vegan-medium-800",
         "carbonara-gluten-free"
       ],
       "partition_id": "cuisine-italian",
@@ -624,9 +770,14 @@
       },
       "stripe": "#8A6B4F",
       "recipes": [
+        "tiramisu-light",
+        "tiramisu-classic-easy-600",
+        "tiramisu-classic-medium-400",
         "tiramisu-classic",
+        "tiramisu-vegan-easy-400",
+        "tiramisu-vegan-easy-600",
         "tiramisu-vegan",
-        "tiramisu-light"
+        "tiramisu-vegan-medium-600"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -652,9 +803,18 @@
       },
       "stripe": "#3F6E63",
       "recipes": [
+        "sushi-classic-easy-400",
+        "sushi-classic-easy-600",
+        "sushi-classic-medium-400",
         "sushi-classic",
+        "sushi-vegetarian-easy-400",
+        "sushi-vegetarian-easy-600",
+        "sushi-vegetarian-medium-400",
+        "sushi-vegetarian-medium-600",
+        "sushi-vegan-easy-400",
+        "sushi-vegan-easy-600",
         "sushi-vegan",
-        "sushi-protein"
+        "sushi-vegan-medium-600"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -680,8 +840,18 @@
       },
       "stripe": "#B8862D",
       "recipes": [
+        "fried-rice-classic-easy-400",
         "fried-rice-classic",
+        "fried-rice-classic-medium-400",
+        "fried-rice-classic-medium-600",
+        "fried-rice-vegetarian-easy-400",
+        "fried-rice-vegetarian-easy-600",
+        "fried-rice-vegetarian-medium-400",
+        "fried-rice-vegetarian-medium-600",
+        "fried-rice-vegan-easy-400",
         "fried-rice-vegan",
+        "fried-rice-vegan-medium-400",
+        "fried-rice-vegan-medium-600",
         "fried-rice-lowfodmap"
       ],
       "partition_id": "cuisine-asian",
@@ -709,9 +879,14 @@
       },
       "stripe": "#6B7D5E",
       "recipes": [
-        "pho-classic",
-        "pho-vegan",
-        "pho-quick"
+        "pho-classic-easy-400",
+        "pho-quick",
+        "pho-classic-medium-400",
+        "pho-classic-medium-600",
+        "pho-vegan-easy-400",
+        "pho-vegan-easy-600",
+        "pho-vegan-medium-400",
+        "pho-vegan"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -738,9 +913,18 @@
       },
       "stripe": "#C26A2D",
       "recipes": [
+        "butter-chicken-classic-easy-400",
+        "butter-chicken-classic-easy-600",
+        "butter-chicken-light",
         "butter-chicken-classic",
-        "butter-chicken-vegan",
-        "butter-chicken-light"
+        "butter-chicken-vegetarian-easy-400",
+        "butter-chicken-vegetarian-easy-600",
+        "butter-chicken-vegetarian-medium-400",
+        "butter-chicken-vegetarian-medium-600",
+        "butter-chicken-vegan-easy-400",
+        "butter-chicken-vegan-easy-600",
+        "butter-chicken-vegan-medium-400",
+        "butter-chicken-vegan"
       ],
       "partition_id": "cuisine-indian",
       "secondary_partitions": [],
@@ -768,8 +952,17 @@
       "stripe": "#B8862D",
       "recipes": [
         "dal-classic",
+        "dal-classic-easy-600",
+        "dal-classic-medium-400",
+        "dal-classic-medium-600",
+        "dal-vegetarian-easy-400",
+        "dal-paneer",
+        "dal-vegetarian-medium-400",
         "dal-makhani",
-        "dal-paneer"
+        "dal-vegan-easy-400",
+        "dal-vegan-easy-600",
+        "dal-vegan-medium-400",
+        "dal-vegan-medium-600"
       ],
       "partition_id": "cuisine-indian",
       "secondary_partitions": [],
@@ -796,9 +989,18 @@
       },
       "stripe": "#A65E2E",
       "recipes": [
+        "biryani-classic-medium-600",
+        "biryani-classic-medium-800",
+        "biryani-classic-hard-600",
         "biryani-chicken",
         "biryani-veg",
-        "biryani-vegan"
+        "biryani-vegetarian-medium-800",
+        "biryani-vegetarian-hard-600",
+        "biryani-vegetarian-hard-800",
+        "biryani-vegan",
+        "biryani-vegan-medium-800",
+        "biryani-vegan-hard-600",
+        "biryani-vegan-hard-800"
       ],
       "partition_id": "cuisine-indian",
       "secondary_partitions": [],
@@ -825,10 +1027,18 @@
       },
       "stripe": "#C77B3E",
       "recipes": [
+        "tacos-keto",
         "tacos-classic",
-        "tacos-vegan",
+        "tacos-classic-medium-400",
         "tacos-fish",
-        "tacos-keto"
+        "tacos-vegetarian-easy-400",
+        "tacos-vegetarian-easy-600",
+        "tacos-vegetarian-medium-400",
+        "tacos-vegetarian-medium-600",
+        "tacos-vegan-easy-400",
+        "tacos-vegan",
+        "tacos-vegan-medium-400",
+        "tacos-vegan-medium-600"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -854,9 +1064,18 @@
       },
       "stripe": "#7E9B6E",
       "recipes": [
+        "burrito-bowl-classic-easy-600",
         "burrito-bowl-classic",
+        "burrito-bowl-classic-medium-600",
+        "burrito-bowl-classic-medium-800",
+        "burrito-bowl-vegetarian-easy-600",
+        "burrito-bowl-vegetarian-easy-800",
+        "burrito-bowl-vegetarian-medium-600",
+        "burrito-bowl-vegetarian-medium-800",
         "burrito-bowl-vegan",
-        "burrito-bowl-protein"
+        "burrito-bowl-vegan-easy-800",
+        "burrito-bowl-vegan-medium-600",
+        "burrito-bowl-vegan-medium-800"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -883,8 +1102,14 @@
       },
       "stripe": "#D9A23B",
       "recipes": [
+        "quesadilla-classic-easy-400",
         "quesadilla-classic",
+        "quesadilla-classic-medium-400",
+        "quesadilla-classic-medium-600",
+        "quesadilla-vegan-easy-400",
         "quesadilla-vegan",
+        "quesadilla-vegan-medium-400",
+        "quesadilla-vegan-medium-600",
         "quesadilla-gluten-free"
       ],
       "partition_id": "cuisine-mexican",
@@ -912,9 +1137,18 @@
       },
       "stripe": "#8C5E58",
       "recipes": [
+        "shawarma-keto",
+        "shawarma-classic-easy-600",
+        "shawarma-classic-medium-400",
         "shawarma-classic",
-        "shawarma-vegan",
-        "shawarma-keto"
+        "shawarma-vegetarian-easy-400",
+        "shawarma-vegetarian-easy-600",
+        "shawarma-vegetarian-medium-400",
+        "shawarma-vegetarian-medium-600",
+        "shawarma-vegan-easy-400",
+        "shawarma-vegan-easy-600",
+        "shawarma-vegan-medium-400",
+        "shawarma-vegan"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -941,7 +1175,13 @@
       "stripe": "#C26A2D",
       "recipes": [
         "lentil-soup-classic",
-        "lentil-soup-vegetarian"
+        "lentil-soup-classic-easy-600",
+        "lentil-soup-classic-medium-400",
+        "lentil-soup-classic-medium-600",
+        "lentil-soup-vegetarian",
+        "lentil-soup-vegetarian-easy-600",
+        "lentil-soup-vegetarian-medium-400",
+        "lentil-soup-vegetarian-medium-600"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -969,6 +1209,9 @@
       "stripe": "#6F8F4F",
       "recipes": [
         "tabbouleh-classic",
+        "tabbouleh-classic-easy-600",
+        "tabbouleh-classic-medium-400",
+        "tabbouleh-classic-medium-600",
         "tabbouleh-quinoa"
       ],
       "partition_id": "cuisine-middle-eastern",
@@ -996,9 +1239,18 @@
       },
       "stripe": "#C9A227",
       "recipes": [
+        "paella-classic-medium-600",
+        "paella-classic-medium-800",
+        "paella-classic-hard-600",
         "paella-classic",
+        "paella-vegetarian-medium-600",
+        "paella-vegetarian-medium-800",
+        "paella-vegetarian-hard-600",
+        "paella-vegetarian-hard-800",
         "paella-vegan",
-        "paella-chicken"
+        "paella-vegan-medium-800",
+        "paella-vegan-hard-600",
+        "paella-vegan-hard-800"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1025,8 +1277,18 @@
       },
       "stripe": "#704238",
       "recipes": [
+        "goulash-classic-medium-400",
+        "goulash-classic-medium-600",
+        "goulash-classic-hard-400",
         "goulash-classic",
-        "goulash-vegan"
+        "goulash-vegetarian-medium-400",
+        "goulash-vegetarian-medium-600",
+        "goulash-vegetarian-hard-400",
+        "goulash-vegetarian-hard-600",
+        "goulash-vegan-medium-400",
+        "goulash-vegan",
+        "goulash-vegan-hard-400",
+        "goulash-vegan-hard-600"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1054,7 +1316,13 @@
       "stripe": "#5C4033",
       "recipes": [
         "brownies-classic",
+        "brownies-classic-easy-600",
+        "brownies-classic-medium-400",
+        "brownies-classic-medium-600",
         "brownies-vegan",
+        "brownies-vegan-easy-600",
+        "brownies-vegan-medium-400",
+        "brownies-vegan-medium-600",
         "brownies-gluten-free"
       ],
       "partition_id": "extended",
@@ -1083,7 +1351,14 @@
       "stripe": "#A6543F",
       "recipes": [
         "apple-pie-classic",
-        "apple-pie-vegan"
+        "apple-pie-classic-medium-600",
+        "apple-pie-classic-hard-400",
+        "apple-pie-classic-hard-600",
+        "apple-pie-vegan",
+        "apple-pie-vegan-medium-600",
+        "apple-pie-vegan-hard-400",
+        "apple-pie-vegan-hard-600",
+        "apple-pie-gluten-free-medium-400"
       ],
       "partition_id": "extended",
       "secondary_partitions": [],
@@ -1110,9 +1385,19 @@
       },
       "stripe": "#C9A227",
       "recipes": [
-        "schnitzel-classic",
+        "schnitzel-classic-easy-600",
+        "schnitzel-classic-easy-800",
         "schnitzel-chicken",
-        "schnitzel-vegan"
+        "schnitzel-classic",
+        "schnitzel-vegetarian-easy-600",
+        "schnitzel-vegetarian-easy-800",
+        "schnitzel-vegetarian-medium-600",
+        "schnitzel-vegetarian-medium-800",
+        "schnitzel-vegan-easy-600",
+        "schnitzel-vegan-easy-800",
+        "schnitzel-vegan",
+        "schnitzel-vegan-medium-800",
+        "schnitzel-gluten-free-medium-600"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1139,8 +1424,14 @@
       },
       "stripe": "#D9A23B",
       "recipes": [
+        "kaesespaetzle-classic-easy-600",
+        "kaesespaetzle-classic-easy-800",
+        "kaesespaetzle-classic-medium-600",
         "kaesespaetzle-classic",
-        "kaesespaetzle-vegan"
+        "kaesespaetzle-vegan-easy-600",
+        "kaesespaetzle-vegan-easy-800",
+        "kaesespaetzle-vegan",
+        "kaesespaetzle-vegan-medium-800"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1167,8 +1458,18 @@
       },
       "stripe": "#8C5E58",
       "recipes": [
+        "meatballs-classic-easy-600",
+        "meatballs-classic-easy-800",
+        "meatballs-classic-medium-600",
         "meatballs-classic",
+        "meatballs-vegetarian-easy-600",
+        "meatballs-vegetarian-easy-800",
+        "meatballs-vegetarian-medium-600",
+        "meatballs-vegetarian-medium-800",
+        "meatballs-vegan-easy-600",
+        "meatballs-vegan-easy-800",
         "meatballs-vegan",
+        "meatballs-vegan-medium-800",
         "meatballs-gluten-free"
       ],
       "partition_id": "cuisine-european",
@@ -1196,8 +1497,13 @@
       "stripe": "#E0A899",
       "recipes": [
         "crepes-classic",
+        "crepes-classic-easy-600",
+        "crepes-buckwheat",
+        "crepes-classic-medium-600",
         "crepes-vegan",
-        "crepes-buckwheat"
+        "crepes-vegan-easy-600",
+        "crepes-vegan-medium-400",
+        "crepes-vegan-medium-600"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1224,9 +1530,18 @@
       },
       "stripe": "#B8862D",
       "recipes": [
+        "quiche-classic-medium-400",
+        "quiche-classic-medium-600",
+        "quiche-classic-hard-400",
         "quiche-classic",
+        "quiche-keto",
+        "quiche-vegetarian-medium-600",
+        "quiche-vegetarian-hard-400",
         "quiche-spinach",
-        "quiche-keto"
+        "quiche-vegan-medium-400",
+        "quiche-vegan-medium-600",
+        "quiche-vegan-hard-400",
+        "quiche-vegan-hard-600"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -1254,7 +1569,13 @@
       "stripe": "#B5483A",
       "recipes": [
         "tomato-soup-classic",
+        "tomato-soup-classic-easy-600",
+        "tomato-soup-classic-medium-400",
+        "tomato-soup-classic-medium-600",
         "tomato-soup-vegan",
+        "tomato-soup-vegan-easy-600",
+        "tomato-soup-vegan-medium-400",
+        "tomato-soup-vegan-medium-600",
         "tomato-soup-lowfodmap"
       ],
       "partition_id": "cuisine-european",
@@ -1282,9 +1603,18 @@
       },
       "stripe": "#704238",
       "recipes": [
+        "teriyaki-classic-easy-400",
         "teriyaki-chicken",
+        "teriyaki-classic-medium-400",
+        "teriyaki-classic-medium-600",
+        "teriyaki-vegetarian-easy-400",
+        "teriyaki-vegetarian-easy-600",
+        "teriyaki-vegetarian-medium-400",
+        "teriyaki-vegetarian-medium-600",
+        "teriyaki-vegan-easy-400",
         "teriyaki-tofu",
-        "teriyaki-salmon"
+        "teriyaki-vegan-medium-400",
+        "teriyaki-vegan-medium-600"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1311,8 +1641,19 @@
       },
       "stripe": "#5E6B73",
       "recipes": [
+        "gyoza-classic-easy-400",
+        "gyoza-classic-easy-600",
+        "gyoza-classic-medium-400",
         "gyoza-classic",
-        "gyoza-vegan"
+        "gyoza-vegetarian-easy-400",
+        "gyoza-vegetarian-easy-600",
+        "gyoza-vegetarian-medium-400",
+        "gyoza-vegetarian-medium-600",
+        "gyoza-vegan-easy-400",
+        "gyoza-vegan-easy-600",
+        "gyoza-vegan",
+        "gyoza-vegan-medium-600",
+        "gyoza-gluten-free-medium-400"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1339,9 +1680,18 @@
       },
       "stripe": "#6F8F4F",
       "recipes": [
+        "green-curry-classic-easy-400",
+        "green-curry-classic-easy-600",
+        "green-curry-classic-medium-400",
         "green-curry-classic",
+        "green-curry-vegetarian-easy-400",
+        "green-curry-vegetarian-easy-600",
+        "green-curry-vegetarian-medium-400",
+        "green-curry-vegetarian-medium-600",
+        "green-curry-vegan-easy-400",
         "green-curry-vegan",
-        "green-curry-shrimp"
+        "green-curry-vegan-medium-400",
+        "green-curry-vegan-medium-600"
       ],
       "partition_id": "cuisine-asian",
       "secondary_partitions": [],
@@ -1368,9 +1718,15 @@
       },
       "stripe": "#7E9B6E",
       "recipes": [
+        "pesto-pasta-classic-easy-600",
+        "pesto-pasta-nut-free",
+        "pesto-pasta-classic-medium-600",
         "pesto-pasta-classic",
+        "pesto-pasta-vegan-easy-600",
         "pesto-pasta-vegan",
-        "pesto-pasta-nut-free"
+        "pesto-pasta-vegan-medium-600",
+        "pesto-pasta-vegan-medium-800",
+        "pesto-pasta-gluten-free-easy-600"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -1397,8 +1753,15 @@
       },
       "stripe": "#C9A227",
       "recipes": [
+        "gnocchi-classic-medium-400",
         "gnocchi-classic",
-        "gnocchi-vegan"
+        "gnocchi-classic-hard-400",
+        "gnocchi-classic-hard-600",
+        "gnocchi-vegan-medium-400",
+        "gnocchi-vegan",
+        "gnocchi-vegan-hard-400",
+        "gnocchi-vegan-hard-600",
+        "gnocchi-gluten-free-medium-400"
       ],
       "partition_id": "cuisine-italian",
       "secondary_partitions": [],
@@ -1425,9 +1788,18 @@
       },
       "stripe": "#9E3B2B",
       "recipes": [
+        "chili-classic-easy-400",
+        "chili-classic-easy-600",
+        "chili-classic-medium-400",
         "chili-classic",
+        "chili-vegetarian-easy-400",
+        "chili-vegetarian-easy-600",
+        "chili-vegetarian-medium-400",
+        "chili-vegetarian-medium-600",
+        "chili-vegan-easy-400",
         "chili-vegan",
-        "chili-keto"
+        "chili-vegan-medium-400",
+        "chili-vegan-medium-600"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -1454,8 +1826,18 @@
       },
       "stripe": "#C77B3E",
       "recipes": [
+        "enchiladas-classic-easy-600",
+        "enchiladas-classic-easy-800",
+        "enchiladas-classic-medium-600",
         "enchiladas-classic",
-        "enchiladas-vegan"
+        "enchiladas-vegetarian-easy-600",
+        "enchiladas-vegetarian-easy-800",
+        "enchiladas-vegetarian-medium-600",
+        "enchiladas-vegetarian-medium-800",
+        "enchiladas-vegan-easy-600",
+        "enchiladas-vegan-easy-800",
+        "enchiladas-vegan",
+        "enchiladas-vegan-medium-800"
       ],
       "partition_id": "cuisine-mexican",
       "secondary_partitions": [],
@@ -1482,8 +1864,19 @@
       },
       "stripe": "#C9A227",
       "recipes": [
+        "couscous-bowl-classic-easy-400",
+        "couscous-bowl-chicken",
+        "couscous-bowl-classic-medium-400",
+        "couscous-bowl-classic-medium-600",
+        "couscous-bowl-vegetarian-easy-400",
+        "couscous-bowl-vegetarian-easy-600",
+        "couscous-bowl-vegetarian-medium-400",
+        "couscous-bowl-vegetarian-medium-600",
+        "couscous-bowl-vegan-easy-400",
         "couscous-bowl-classic",
-        "couscous-bowl-chicken"
+        "couscous-bowl-vegan-medium-400",
+        "couscous-bowl-vegan-medium-600",
+        "couscous-bowl-gluten-free-easy-400"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -1510,8 +1903,18 @@
       },
       "stripe": "#A65E2E",
       "recipes": [
+        "tagine-classic-medium-400",
         "tagine-chicken",
-        "tagine-vegetable"
+        "tagine-classic-hard-400",
+        "tagine-classic-hard-600",
+        "tagine-vegetarian-medium-400",
+        "tagine-vegetarian-medium-600",
+        "tagine-vegetarian-hard-400",
+        "tagine-vegetarian-hard-600",
+        "tagine-vegan-medium-400",
+        "tagine-vegetable",
+        "tagine-vegan-hard-400",
+        "tagine-vegan-hard-600"
       ],
       "partition_id": "cuisine-middle-eastern",
       "secondary_partitions": [],
@@ -1538,8 +1941,14 @@
       },
       "stripe": "#556B2F",
       "recipes": [
+        "palak-paneer-classic-easy-400",
+        "palak-paneer-classic-easy-600",
+        "palak-paneer-classic-medium-400",
         "palak-paneer-classic",
-        "palak-tofu"
+        "palak-paneer-vegan-easy-400",
+        "palak-paneer-vegan-easy-600",
+        "palak-tofu",
+        "palak-paneer-vegan-medium-600"
       ],
       "partition_id": "cuisine-indian",
       "secondary_partitions": [],
@@ -1566,9 +1975,18 @@
       },
       "stripe": "#C26A2D",
       "recipes": [
+        "tikka-masala-classic-easy-400",
+        "tikka-masala-classic-easy-600",
+        "tikka-masala-light",
         "tikka-masala-classic",
-        "tikka-masala-vegan",
-        "tikka-masala-light"
+        "tikka-masala-vegetarian-easy-400",
+        "tikka-masala-vegetarian-easy-600",
+        "tikka-masala-vegetarian-medium-400",
+        "tikka-masala-vegetarian-medium-600",
+        "tikka-masala-vegan-easy-400",
+        "tikka-masala-vegan-easy-600",
+        "tikka-masala-vegan-medium-400",
+        "tikka-masala-vegan"
       ],
       "partition_id": "cuisine-indian",
       "secondary_partitions": [],
@@ -1595,9 +2013,15 @@
       },
       "stripe": "#D4A86A",
       "recipes": [
+        "french-toast-protein",
         "french-toast-classic",
+        "french-toast-classic-medium-400",
+        "french-toast-classic-medium-600",
         "french-toast-vegan",
-        "french-toast-protein"
+        "french-toast-vegan-easy-600",
+        "french-toast-vegan-medium-400",
+        "french-toast-vegan-medium-600",
+        "french-toast-gluten-free-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -1624,8 +2048,13 @@
       "stripe": "#A9B39A",
       "recipes": [
         "granola-classic",
+        "granola-classic-easy-600",
+        "granola-classic-medium-400",
+        "granola-classic-medium-600",
+        "granola-vegan-easy-400",
         "granola-vegan",
-        "granola-sugarfree"
+        "granola-sugarfree",
+        "granola-vegan-medium-600"
       ],
       "partition_id": "core",
       "secondary_partitions": [],
@@ -1652,8 +2081,14 @@
       },
       "stripe": "#D9A23B",
       "recipes": [
+        "mac-and-cheese-classic-easy-600",
         "mac-and-cheese-classic",
+        "mac-and-cheese-classic-medium-600",
+        "mac-and-cheese-classic-medium-800",
         "mac-and-cheese-vegan",
+        "mac-and-cheese-vegan-easy-800",
+        "mac-and-cheese-vegan-medium-600",
+        "mac-and-cheese-vegan-medium-800",
         "mac-and-cheese-gluten-free"
       ],
       "partition_id": "core",
@@ -1682,7 +2117,13 @@
       "stripe": "#8A6B4F",
       "recipes": [
         "cookies-classic",
+        "cookies-classic-easy-600",
+        "cookies-classic-medium-400",
+        "cookies-classic-medium-600",
         "cookies-vegan",
+        "cookies-vegan-easy-600",
+        "cookies-vegan-medium-400",
+        "cookies-vegan-medium-600",
         "cookies-gluten-free"
       ],
       "partition_id": "extended",
@@ -1710,7 +2151,13 @@
       },
       "stripe": "#E0C9A6",
       "recipes": [
+        "cheesecake-classic-medium-400",
+        "cheesecake-classic-medium-600",
+        "cheesecake-classic-hard-400",
         "cheesecake-classic",
+        "cheesecake-vegan-medium-400",
+        "cheesecake-vegan-medium-600",
+        "cheesecake-vegan-hard-400",
         "cheesecake-vegan"
       ],
       "partition_id": "extended",

@@ -56,6 +56,18 @@ void main() {
   testWidgets('dish detail shows dimension rows and switches variants',
       (tester) async {
     final state = (await tester.runAsync(onboardedState))!;
+    // Titles come from the live corpus — the lattice regenerates, the
+    // test shouldn't pin prose.
+    final veganTitles = (await tester.runAsync(() async {
+      final dish = state.corpus.dishById('doener')!;
+      final variants = await state.corpus.variantsOf(dish);
+      return variants
+          .where((r) => r.variant.diet == 'vegan')
+          .map((r) => r.title.of('en').toLowerCase())
+          .toList();
+    }))!;
+    expect(veganTitles, isNotEmpty);
+
     await tester
         .pumpWidget(app(state, const DishDetailScreen(dishId: 'doener')));
     await tester.pumpAndSettle();
@@ -69,7 +81,14 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('vegan').first);
     await tester.pumpAndSettle();
-    expect(find.text('vegan döner'), findsWidgets);
+    final shown = veganTitles
+        .where((t) => find.text(t).evaluate().isNotEmpty)
+        .toList();
+    expect(shown, isNotEmpty,
+        reason: 'no vegan döner title visible after switching; '
+            'expected one of $veganTitles');
+    // Let the ingredient highlight-flash reset timer fire before teardown.
+    await tester.pump(const Duration(seconds: 2));
   });
 
   testWidgets('onboarding completes into the shell', (tester) async {
@@ -107,11 +126,15 @@ void main() {
 
   testWidgets('cookbook shows a saved variant', (tester) async {
     final state = (await tester.runAsync(onboardedState))!;
+    final savedTitle = (await tester.runAsync(() async {
+      final recipe = await state.corpus.recipeById('doener-vegan');
+      return recipe!.title.of('en').toLowerCase();
+    }))!;
     await state.toggleSaved('doener-vegan');
     await tester.pumpWidget(app(state, const RootShell()));
     await tester.pumpAndSettle();
     await tester.tap(find.text('cookbook'));
     await tester.pumpAndSettle();
-    expect(find.text('vegan döner'), findsOneWidget);
+    expect(find.text(savedTitle), findsOneWidget);
   });
 }

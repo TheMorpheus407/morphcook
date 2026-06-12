@@ -81,7 +81,7 @@
     "calorie_bucket": ["le400", "le600", "le800", "gt800"],
     "technique": ["bake", "saute", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"]
   },
-  "diet_labels": ["classic", "vegetarian", "vegan", "pescatarian", "halal", "kosher", "keto", "gluten-free", "low-fodmap", "sugar-free", "high-protein", "light", "nut-free"],
+  "diet_labels": ["classic", "vegetarian", "vegan", "pescatarian", "halal", "kosher", "keto", "gluten-free", "low-fodmap", "sugar-free", "lactose-free", "high-protein", "light", "nut-free"],
   "diet_label_names": {
     "classic": {"en": "classic", "de": "klassisch"},
     "vegetarian": {"en": "vegetarian", "de": "vegetarisch"},
@@ -93,6 +93,7 @@
     "gluten-free": {"en": "gluten-free", "de": "glutenfrei"},
     "low-fodmap": {"en": "low FODMAP", "de": "FODMAP-arm"},
     "sugar-free": {"en": "sugar-free", "de": "zuckerfrei"},
+    "lactose-free": {"en": "lactose-free", "de": "laktosefrei"},
     "high-protein": {"en": "high-protein", "de": "proteinreich"},
     "light": {"en": "light", "de": "leicht"},
     "nut-free": {"en": "nut-free", "de": "nussfrei"}

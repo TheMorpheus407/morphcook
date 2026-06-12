@@ -338,10 +338,27 @@ def snapshot_current(ctx):
     """Freeze the pre-wave-4 corpus once, per dish (legacy-map ground truth).
 
     Built in a temp dir and renamed atomically, so an interrupted first run
-    can never leave a partial snapshot that later runs trust.
+    can never leave a partial snapshot that later runs trust. Dishes added
+    to dishes.json after the freeze get their snapshot filled in on the next
+    run (empty when the shipped corpus has no recipes for them yet) — adding
+    a dish is one dishes.json entry plus a pipeline run.
     """
     current_dir = WORK / "current"
     if current_dir.exists():
+        missing = [d["id"] for d in ctx.dishes
+                   if not (current_dir / f"{d['id']}.json").exists()]
+        if missing:
+            by_dish = {dish_id: [] for dish_id in missing}
+            for part in ctx.manifest["partitions"]:
+                for recipe in read_json(REPO / "app" /
+                                        part["file"])["recipes"]:
+                    if recipe["dish_id"] in by_dish:
+                        by_dish[recipe["dish_id"]].append(recipe)
+            for dish_id, recipes in by_dish.items():
+                write_json(current_dir / f"{dish_id}.json",
+                           {"dish_id": dish_id, "recipes": recipes})
+                print(f"snapshot added for new dish {dish_id} "
+                      f"({len(recipes)} existing recipes)")
         return
     tmp_dir = WORK / "current.tmp"
     if tmp_dir.exists():
@@ -858,6 +875,9 @@ def merge_corpus(ctx):
             pass
     manifest["corpus_version"] = f"{prefix}.{seq}"
     manifest["corpus_wave"] = 4
+    for part in manifest["partitions"]:
+        part["dish_ids"] = [d["id"] for d in ctx.dishes
+                            if d["partition_id"] == part["id"]]
     write_json(ASSETS / "partition-manifest.json", manifest)
 
     total = sum(len(r) for r in by_dish.values())
