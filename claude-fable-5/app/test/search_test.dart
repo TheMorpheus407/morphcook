@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart' hide Matcher;
 import 'package:morphcook/logic/matching.dart';
 import 'package:morphcook/logic/search.dart';
 import 'package:morphcook/models/profile.dart';
+import 'package:morphcook/models/recipe.dart';
 
 import 'helpers.dart';
 
@@ -108,6 +109,48 @@ void main() {
       }
       expect(fetched, results.length);
       expect(ids.length, results.length);
+    });
+
+    test('collapseCoverageVariants keeps one row per dish + coordinate',
+        () {
+      Recipe r(String id, {String diet = 'classic'}) => makeRecipe(
+          id: id, dishId: 'soup', diet: diet, effort: 'easy',
+          calorie: 'le600');
+      // Coverage variant ranked first, base later: base wins the slot but
+      // keeps the variant's ranking position.
+      final collapsed = collapseCoverageVariants([
+        r('soup-classic-easy-600-no-gluten'),
+        r('soup-vegan-easy-600', diet: 'vegan'),
+        r('soup-classic-easy-600'),
+        r('soup-classic-easy-600-no-dairy'),
+      ]);
+      expect(collapsed.map((x) => x.id).toList(), [
+        'soup-classic-easy-600',
+        'soup-vegan-easy-600',
+      ]);
+
+      // Base hidden by the profile (absent from input): the first-ranked
+      // visible coverage variant stands in.
+      final standIn = collapseCoverageVariants([
+        r('soup-classic-easy-600-no-gluten'),
+        r('soup-classic-easy-600-no-dairy'),
+      ]);
+      expect(standIn.map((x) => x.id).toList(),
+          ['soup-classic-easy-600-no-gluten']);
+    });
+
+    test('real corpus search shows no duplicate coordinates per dish',
+        () async {
+      final corpus = await loadRealCorpus();
+      final results =
+          collapseCoverageVariants(corpus.searchIndex.query(''));
+      final seen = <String>{};
+      for (final r in results) {
+        final key =
+            '${r.dishId}|${r.variant.diet}|${r.variant.effort}|${r.variant.calorie}';
+        expect(seen.add(key), isTrue,
+            reason: '${r.id}: duplicate search row at $key');
+      }
     });
   });
 }

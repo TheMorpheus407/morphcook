@@ -64,9 +64,10 @@ class _SearchScreenState extends State<SearchScreen> {
     await state.corpus.ensureAllLoaded();
     final raw = state.corpus.searchIndex
         .query(_query, tagFilters: _tagFilters);
-    final results = raw
-        .where((r) => state.matcher.isVisible(r, state.profile))
-        .toList();
+    // One row per dish-and-coordinate: coverage variants stand in for
+    // their base cell only when the base is hidden by the profile.
+    final results = collapseCoverageVariants(
+        raw.where((r) => state.matcher.isVisible(r, state.profile)));
 
     if (results.isEmpty && _query.trim().isNotEmpty && !_zeroLogged) {
       // Content-gap logging: zero-result queries are recorded locally and

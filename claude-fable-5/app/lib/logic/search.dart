@@ -75,6 +75,34 @@ class SearchIndex {
   }
 }
 
+final _coverageId = RegExp(r'-no-[a-z-]+$');
+
+/// Collapses coverage variants out of ranked search results.
+///
+/// Coverage variants ("…-no-gluten") re-author a base cell free of specific
+/// allergens and share its (dish, diet, effort, calorie) coordinates. To a
+/// permissive profile both are visible, but listing them side by side reads
+/// as duplicates — one row per dish-and-coordinate is what the dish page
+/// shows too. The base recipe wins when visible; otherwise the first-ranked
+/// visible variant stands in, keeping its position in the ranking.
+List<Recipe> collapseCoverageVariants(Iterable<Recipe> ranked) {
+  final slotByKey = <String, int>{};
+  final out = <Recipe>[];
+  for (final recipe in ranked) {
+    final v = recipe.variant;
+    final key = '${recipe.dishId}|${v.diet}|${v.effort}|${v.calorie}';
+    final slot = slotByKey[key];
+    if (slot == null) {
+      slotByKey[key] = out.length;
+      out.add(recipe);
+    } else if (_coverageId.hasMatch(out[slot].id) &&
+        !_coverageId.hasMatch(recipe.id)) {
+      out[slot] = recipe;
+    }
+  }
+  return out;
+}
+
 /// Cursor-based pager over a result list (cursor = stringified offset into
 /// a stable snapshot, which keeps pagination stable while the user scrolls).
 PageFetcher<Recipe> pagedResults(List<Recipe> results) {

@@ -118,6 +118,8 @@ class _CookModeScreenState extends State<CookModeScreen> {
                 children: [
                   Expanded(
                     child: Text(recipe.title.of(lang).toLowerCase(),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                         style: MorphText.display.copyWith(
                             fontSize: 20, color: MorphColors.cream)),
                   ),
