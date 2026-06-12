@@ -44,12 +44,21 @@ loops until both the mechanical validator and the reviewer pass
 
 ```sh
 pipeline/wave4_lattice.py              # all dishes, resumable, merges at the end
+pipeline/wave4_lattice.py --new-dish "pad see ew"   # research + lattice + ship
+pipeline/wave4_lattice.py --suggest-dish 3          # codex invents dishes (queued)
+pipeline/wave4_lattice.py --expand-coverage         # allergen-combination variants
+pipeline/wave4_lattice.py --forever                 # all of the above, endlessly
 pipeline/wave4_lattice.py --status     # progress, no agent calls
 pipeline/wave4_lattice.py --help       # subsets, parallelism, models, resets
 ```
 
 The merge stamps `corpus_wave: 4` into the partition manifest, which arms
 the lattice contract tests in `app/test/corpus_validation_test.dart`.
+Coverage variants share a base cell's coordinates and re-author it free of
+specific allergen combinations — the profile matcher picks the right one,
+so a "classic, easy" döner exists even for someone avoiding gluten and
+dairy at once. The longer `--forever` runs, the more of the combination
+space exists.
 
 ## The load-bearing idea
 

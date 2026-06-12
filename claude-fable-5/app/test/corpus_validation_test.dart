@@ -143,13 +143,24 @@ void main() {
       }
     });
 
-    test('variant triples are unique within a dish', () async {
+    test('variant triples are unique within a dish (coverage variants '
+        'share their base cell on purpose)', () async {
+      // Coverage variants ("…-no-gluten-dairy") re-author a base cell free
+      // of an allergen combination — same coordinates by design. The
+      // matcher picks the visible one. Base cells stay unique.
+      final coverageId = RegExp(r'-no-[a-z-]+$');
       final corpus = await loadRealCorpus();
       for (final dish in corpus.dishes) {
         final seen = <String>{};
         for (final recipe in await corpus.variantsOf(dish)) {
           final key =
               '${recipe.variant.diet}|${recipe.variant.effort}|${recipe.variant.calorie}';
+          if (coverageId.hasMatch(recipe.id)) {
+            expect(seen, contains(key),
+                reason: 'dish ${dish.id}: coverage ${recipe.id} sits at '
+                    '$key but no base cell exists there');
+            continue;
+          }
           expect(seen.add(key), isTrue,
               reason: 'dish ${dish.id}: duplicate variant combo $key');
         }

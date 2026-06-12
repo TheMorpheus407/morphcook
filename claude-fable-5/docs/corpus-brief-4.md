@@ -106,6 +106,28 @@ ingredients.json; 4–8 concrete steps, ≥2 with honest timers; salt always
 accounted for; servings ∈ {2,3,4,6}; captions ≤ ~40 chars, intros 2–3
 sentences teaching the why; tags 2–4 per language; macros honest.
 
+## Coverage variants (the lattice keeps growing)
+
+Beyond the base lattice, any cell may carry **coverage variants**: the same
+dish at the same coordinates, fully re-authored free of an avoid-combination
+("classic × easy × le600, without gluten and dairy"). They are registered in
+the dish plan under `coverage_cells` with their `free_of` set, share the
+cell's coordinate triple on purpose (the matcher picks the visible one), and
+follow every rule in this brief — same voice, same pride, own title. Cells
+that already satisfy a combination (a vegan cell is already dairy-free) are
+never duplicated; genuinely impossible combinations are recorded, not faked.
+`pipeline/wave4_lattice.py --expand-coverage` (or `--forever`) walks the
+combination space: singles first, then pairs, then deeper.
+
+## New dishes
+
+`--new-dish "name"` (or `--suggest-dish`, where codex proposes the dish
+itself) researches a dish baseline: canonical EN/DE naming, hero/caption,
+partition routing, and any genuinely missing catalog ingredients — each new
+ingredient with exact contains-flags, reviewed as a safety gate. New dishes
+stay queued until their complete lattice exists; the merge ships entry and
+recipes together, so the app never sees an empty dish.
+
 ## Why this shape
 
 The dish page already renders one switcher row per dimension and preselects

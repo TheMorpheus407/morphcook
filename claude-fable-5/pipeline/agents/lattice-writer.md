@@ -135,6 +135,8 @@ fences, no commentary.
 
 {{CELL_JSON}}
 
+{{MODE_NOTES}}
+
 {{LEGACY_BLOCK}}
 
 ## Accepted siblings (be different from all of these)

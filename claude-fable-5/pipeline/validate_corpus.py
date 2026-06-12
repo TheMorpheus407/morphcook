@@ -120,6 +120,14 @@ def check_recipe(r, ctx, errors, warnings, dish_id=None):
         err(f"effort '{effort}' invalid")
     if not isinstance(cal, str) or cal not in CAL_BUCKETS:
         err(f"calorie '{cal}' invalid")
+    # Column purity: the diet coordinate is a promise about contains.
+    diet_bans = {"vegan": ctx.compounds.get("vegan", set()),
+                 "vegetarian": ctx.compounds.get("vegetarian", set()),
+                 "gluten-free": {"gluten"},
+                 "low-fodmap": {"high-fodmap"}}
+    clash = contains_set(r) & set(diet_bans.get(diet, ()))
+    if clash:
+        err(f"diet '{diet}' but contains {sorted(clash)}")
 
     if loc_ok(r.get("title")):
         for lang in ("en", "de"):
@@ -329,6 +337,29 @@ def check_plan(plan, ctx, errors, warnings, current=None):
             err(f"extra diet {d} not allowed")
         if x.get("effort") not in ep or x.get("calorie") not in cp:
             err(f"extra {x.get('recipe_id')} coords outside dish pairs")
+    cov = plan.get("coverage_cells") \
+        if isinstance(plan.get("coverage_cells"), list) else []
+    cov = [c for c in cov if isinstance(c, dict)]
+    cov_ids = [coord(c, "recipe_id") for c in cov]
+    if len(set(cov_ids) | set(ids)) != len(set(cov_ids)) + len(set(ids)) \
+            or len(cov_ids) != len(set(cov_ids)):
+        err("coverage cell ids collide with cells/extras or each other")
+    base_diets = {coord(c, "diet") for c in cells} | \
+        {coord(x, "diet") for x in extras}
+    for c in cov:
+        if not isinstance(c.get("recipe_id"), str):
+            err(f"coverage cell has non-string recipe_id "
+                f"{c.get('recipe_id')!r}")
+        if coord(c, "diet") not in base_diets:
+            err(f"coverage {c.get('recipe_id')} diet outside dish columns")
+        if c.get("effort") not in ep or c.get("calorie") not in cp:
+            err(f"coverage {c.get('recipe_id')} coords outside dish pairs")
+        fo = c.get("free_of")
+        fo_set = {x for x in fo if isinstance(x, str)} \
+            if isinstance(fo, list) else set()
+        if not fo_set or (isinstance(fo, list) and len(fo) != len(fo_set)) \
+                or fo_set - ctx.contains_flags:
+            err(f"coverage {c.get('recipe_id')} bad free_of {fo}")
     if current is not None:
         lmap = plan.get("legacy_map") \
             if isinstance(plan.get("legacy_map"), list) else []
@@ -356,11 +387,34 @@ def check_dish(dish, plan, ctx, errors, warnings):
     for r in recipes:
         check_recipe(r, ctx, errors, warnings, dish_id=did)
     recipes = [r for r in recipes if isinstance(r, dict)]
+    # Coverage variants share a base cell's coordinates on purpose — they
+    # re-author the cell without specific allergens. They are exempt from
+    # the duplicate-triple rule but must match their registered cell.
+    cov_raw = plan.get("coverage_cells") \
+        if isinstance(plan.get("coverage_cells"), list) else []
+    cov_by_id = {c.get("recipe_id"): c for c in cov_raw
+                 if isinstance(c, dict)
+                 and isinstance(c.get("recipe_id"), str)}
     triples = {}
     for r in recipes:
         v = r.get("variant") if isinstance(r.get("variant"), dict) else {}
         key = tuple(v.get(k) if hashable(v.get(k)) else repr(v.get(k))
                     for k in ("diet", "effort", "calorie"))
+        cov_cell = cov_by_id.get(r.get("id"))
+        if cov_cell is not None:
+            for k in ("diet", "effort", "calorie"):
+                if v.get(k) != cov_cell.get(k):
+                    errors.append(f"{did}: coverage {r.get('id')} {k} "
+                                  f"'{v.get(k)}' != registered "
+                                  f"'{cov_cell.get(k)}'")
+            free_of = {x for x in (cov_cell.get("free_of") or [])
+                       if isinstance(x, str)}
+            clash = contains_set(r) & free_of
+            if clash:
+                errors.append(f"{did}: coverage {r.get('id')} declares "
+                              f"free_of {sorted(free_of)} but contains "
+                              f"{sorted(clash)}")
+            continue
         if key in triples:
             errors.append(f"{did}: duplicate variant triple {key}")
         triples[key] = r
@@ -447,11 +501,17 @@ def main():
                          dish_id=col.get("dish_id"))
         if a.plan_file:
             plan = load(a.plan_file)
-            cells_p = [c for c in (plan.get("cells") or [])
-                       if isinstance(c, dict)]
-            extras_p = [x for x in (plan.get("extras") or [])
-                        if isinstance(x, dict)]
-            slots = {c.get("recipe_id"): c for c in cells_p + extras_p
+            cells_raw = plan.get("cells") \
+                if isinstance(plan.get("cells"), list) else []
+            cells_p = [c for c in cells_raw if isinstance(c, dict)]
+            extras_raw = plan.get("extras") \
+                if isinstance(plan.get("extras"), list) else []
+            extras_p = [x for x in extras_raw if isinstance(x, dict)]
+            coverage_raw = plan.get("coverage_cells") \
+                if isinstance(plan.get("coverage_cells"), list) else []
+            coverage_p = [c for c in coverage_raw if isinstance(c, dict)]
+            slots = {c.get("recipe_id"): c
+                     for c in cells_p + extras_p + coverage_p
                      if isinstance(c.get("recipe_id"), str)}
             seen = set()
             for r in col.get("recipes", []):

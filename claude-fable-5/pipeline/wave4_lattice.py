@@ -24,10 +24,33 @@ Everything is resumable — state is plain files under pipeline/wave4/; rerun
 the same command and it picks up where it stopped. To redo one dish:
   ./wave4_lattice.py --reset-dish <id>   (then rerun)
 
+Beyond the base lattice:
+
+  GROW       --new-dish "okonomiyaki": codex researches the baseline
+             (canonical spelling EN/DE, hero/caption, routing, missing
+             catalog ingredients with allergen flags — reviewed, the flag
+             audit is the safety gate), then the dish's full lattice is
+             generated and merged. --suggest-dish N: codex invents N dishes
+             itself (baseline only, queued; the next run writes their
+             recipes — a queued dish never ships without its lattice).
+  COVER      --expand-coverage: for every lattice cell, fully-authored
+             variants for what people can't eat — free of gluten, dairy,
+             nuts, … then pairs ("no gluten AND no dairy"), then triples.
+             Cells already fine (a vegan cell is already dairy-free) are
+             skipped; genuinely impossible ones are recorded and never
+             retried. The longer it runs, the deeper the combination space.
+  FOREVER    --forever: cycle = finish lattices → merge → one coverage
+             combination → scout one new dish → repeat, until interrupted
+             or --call-budget runs out. Fully resumable at any point.
+
 Typical runs:
   ./wave4_lattice.py                      # the whole corpus, 4 dishes in parallel
   ./wave4_lattice.py --jobs 8             # more parallel dishes
   ./wave4_lattice.py --dishes doener,burger
+  ./wave4_lattice.py --new-dish "pad see ew"
+  ./wave4_lattice.py --suggest-dish 3    # queue three codex-invented dishes
+  ./wave4_lattice.py --expand-coverage --max-combo-size 2
+  ./wave4_lattice.py --forever --jobs 8  # let it run; ctrl-c is safe
   ./wave4_lattice.py --status            # progress overview, no codex calls
   ./wave4_lattice.py --merge-only        # just the merge (all dishes done)
   ./wave4_lattice.py --self-test         # machinery checks, no codex calls
@@ -65,6 +88,30 @@ NUT_FLAGS = {"peanuts", "tree-nuts", "almonds", "walnuts", "cashews",
              "hazelnuts", "pistachios", "pine-nuts"}
 COVERAGE_PROFILES = ["vegan", "vegetarian", "halal", "kosher",
                      "gluten", "dairy", "egg", "nuts", "soy"]
+# Avoid-groups for the coverage expansion, ordered by real-world prevalence.
+# The expansion walks singles first, then pairs, then triples … — the longer
+# it runs, the deeper into the combination space it gets. Meat/fish classes
+# are deliberately absent: those are the diet axis's business.
+COVERAGE_GROUPS = [
+    ("gluten", frozenset({"gluten"})),
+    ("dairy", frozenset({"dairy"})),
+    ("nuts", frozenset(NUT_FLAGS)),
+    ("egg", frozenset({"egg"})),
+    ("soy", frozenset({"soy"})),
+    ("sesame", frozenset({"sesame"})),
+    ("fodmap", frozenset({"high-fodmap"})),
+    ("sugar", frozenset({"added-sugar"})),
+    ("mustard", frozenset({"mustard"})),
+    ("celery", frozenset({"celery"})),
+    ("shellfish", frozenset({"shellfish", "molluscs"})),
+    ("fish", frozenset({"fish"})),
+    ("alcohol", frozenset({"alcohol"})),
+    ("honey", frozenset({"honey"})),
+    ("caffeine", frozenset({"caffeine"})),
+    ("sulphites", frozenset({"sulphites"})),
+    ("lupin", frozenset({"lupin"})),
+]
+FREQUENCY_TIERS = {"high", "medium", "low"}
 
 EN_BANNED = [
     (re.compile(r"\binstead of\b", re.I), '"instead of" framing'),
@@ -86,10 +133,17 @@ DE_BANNED = [
 _print_lock = threading.Lock()
 _budget_lock = threading.Lock()
 _calls_made = 0
+# Distinguishes log files of separate runs (the call counter restarts).
+RUN_STAMP = time.strftime("%m%d-%H%M%S")
 
 
 class PipelineError(Exception):
     """A dish (or stage) failed after exhausting its attempts."""
+
+
+class CodexUnavailable(PipelineError):
+    """Infrastructure failure (CLI errors, timeouts, unparseable reviewer
+    output) — retryable, never evidence that content is impossible."""
 
 
 class BudgetExceeded(Exception):
@@ -118,7 +172,21 @@ class Ctx:
 
     def __init__(self):
         self.ontology = read_json(ASSETS / "ontology.json")
-        self.dishes = read_json(ASSETS / "dishes.json")["dishes"]
+        shipped = read_json(ASSETS / "dishes.json")["dishes"]
+        pending_path = WORK / "pending-dishes.json"
+        self.pending = read_json(pending_path) if pending_path.exists() \
+            else []
+        # Self-heal a crash window between "shipped into dishes.json" and
+        # "cleared from pending" — a dish must never appear twice.
+        shipped_ids = {d["id"] for d in shipped}
+        if any(d["id"] in shipped_ids for d in self.pending):
+            self.pending = [d for d in self.pending
+                            if d["id"] not in shipped_ids]
+            write_json(pending_path, self.pending)
+        # Pending dishes (scouted but not yet shipped) take part in every
+        # stage; the merge moves them into dishes.json once their lattice
+        # exists, so the app never ships an empty dish.
+        self.dishes = shipped + self.pending
         self.dish_by_id = {d["id"]: d for d in self.dishes}
         self.manifest = read_json(ASSETS / "partition-manifest.json")
         self.compounds = {c["id"]: c["expands_to"]
@@ -136,7 +204,8 @@ class Ctx:
         self.catalog = self._build_catalog()
         self.prompts = {name: (AGENTS / f"lattice-{name}.md").read_text()
                         for name in ("planner", "plan-reviewer", "writer",
-                                     "recipe-reviewer", "dish-reviewer")}
+                                     "recipe-reviewer", "dish-reviewer",
+                                     "dish-scout", "scout-reviewer")}
 
     def _build_catalog(self):
         lines = []
@@ -170,6 +239,23 @@ class Ctx:
 
     def contains_flags_text(self):
         return ", ".join(f["id"] for f in self.ontology["contains_flags"])
+
+    def partitions_text(self):
+        return "\n".join(f"- {p['id']}: {p.get('description', '')}"
+                         for p in self.manifest["partitions"])
+
+    def existing_dishes_text(self):
+        return "\n".join(
+            f"- {d['id']} | {d['name'].get('en', '?')} | "
+            f"{', '.join(d.get('cuisine_tags', [])) or 'no tags'} | "
+            f"{d.get('partition_id')} | {d.get('frequency_tier')}"
+            for d in self.dishes)
+
+    def column_avoid(self, diet):
+        return {"vegan": set(self.compounds["vegan"]),
+                "vegetarian": set(self.compounds["vegetarian"]),
+                "gluten-free": {"gluten"},
+                "low-fodmap": {"high-fodmap"}}.get(diet, set())
 
 
 def fill(template, slots):
@@ -217,7 +303,7 @@ def codex_call(args, prompt, dish, label):
 
     log_dir = WORK / "logs" / dish
     log_dir.mkdir(parents=True, exist_ok=True)
-    log_path = log_dir / f"{seq:04d}-{label}.md"
+    log_path = log_dir / f"{RUN_STAMP}-{seq:04d}-{label}.md"
 
     last_err = ""
     for attempt in range(1, 4):
@@ -251,7 +337,7 @@ def codex_call(args, prompt, dish, label):
         log(dish, f"codex {label} attempt {attempt} failed ({last_err}); "
                   "retrying")
         time.sleep(15 * attempt)
-    raise PipelineError(f"codex call {label} failed 3 times: {last_err}")
+    raise CodexUnavailable(f"codex call {label} failed 3 times: {last_err}")
 
 
 def extract_json(text):
@@ -510,8 +596,8 @@ def review_call(args, ctx, dish_id, prompt_name, slots, label):
         verdict, _ = extract_json(reply)
         if isinstance(verdict, dict) and "approved" in verdict:
             return verdict
-    raise PipelineError(f"{dish_id}: {prompt_name} returned unparseable "
-                        "verdicts twice")
+    raise CodexUnavailable(f"{dish_id}: {prompt_name} returned unparseable "
+                           "verdicts twice")
 
 
 def ordered_cells(plan):
@@ -604,14 +690,16 @@ def mech_recipe_check(ctx, dish_id, plan_path, cell, recipe, siblings,
     return errors, warnings
 
 
-def cell_stage(args, ctx, dish, plan, cell, siblings, initial_feedback=None):
+def cell_stage(args, ctx, dish, plan, cell, siblings, initial_feedback=None,
+               mode_notes=""):
     dish_id = dish["id"]
     rid = cell["recipe_id"]
     path = WORK / "recipes" / dish_id / f"{rid}.json"
     if path.exists():
         return read_json(path)
     plan_path = WORK / "plans" / f"{dish_id}.json"
-    must_avoid = effective_must_avoid(ctx, plan).get(rid, set())
+    must_avoid = set(cell.get("must_avoid", [])) \
+        | effective_must_avoid(ctx, plan).get(rid, set())
     cell_doc = {**cell, "must_avoid": sorted(must_avoid)}
     legacy = next((r for r in read_json(
         WORK / "current" / f"{dish_id}.json")["recipes"] if r["id"] == rid),
@@ -636,6 +724,7 @@ def cell_stage(args, ctx, dish, plan, cell, siblings, initial_feedback=None):
         "COMPOUND_EXPANSIONS": ctx.compound_text(),
         "TECHNIQUES": ", ".join(ctx.techniques),
         "CONTAINS_FLAGS": ctx.contains_flags_text(),
+        "MODE_NOTES": mode_notes,
     }
     latest, older, prev = list(initial_feedback or []), [], None
 
@@ -669,6 +758,7 @@ def cell_stage(args, ctx, dish, plan, cell, siblings, initial_feedback=None):
              "CELL_JSON": slots["CELL_JSON"],
              "SIBLINGS_SUMMARY": slots["SIBLINGS_SUMMARY"],
              "VALIDATOR_WARNINGS": "\n".join(warnings) or "none",
+             "MODE_NOTES": mode_notes,
              "RECIPE_JSON": json.dumps(recipe, ensure_ascii=False, indent=2)},
             f"{rid}-review-{attempt}")
         if verdict.get("approved") is True:
@@ -820,6 +910,344 @@ def run_dish(args, ctx, dish):
         return str(exc)
 
 
+# ------------------------------------------------------------------- scout
+
+def loc_ok(v):
+    return (isinstance(v, dict) and isinstance(v.get("en"), str)
+            and isinstance(v.get("de"), str) and v["en"].strip()
+            and v["de"].strip())
+
+
+@as_feedback
+def mech_scout_errors(ctx, doc, requested_name):
+    if not isinstance(doc, dict) or not isinstance(doc.get("dish"), dict):
+        return ["reply must be a JSON object with a 'dish' object"]
+    errors = []
+    dish = doc["dish"]
+    did = dish.get("id")
+    if not isinstance(did, str) or not re.fullmatch(r"[a-z0-9-]+", did):
+        errors.append(f"bad dish id {did!r}")
+    elif did in ctx.dish_by_id:
+        errors.append(f"dish id '{did}' already exists")
+    for field in ("name", "hero", "caption"):
+        if not loc_ok(dish.get(field)):
+            errors.append(f"dish.{field} missing en/de")
+    if dish.get("recipes") != []:
+        errors.append('dish.recipes must be the empty list []')
+    part_ids = {p["id"] for p in ctx.manifest["partitions"]}
+    if dish.get("partition_id") not in part_ids:
+        errors.append(f"partition_id '{dish.get('partition_id')}' is not "
+                      f"one of {sorted(part_ids)}")
+    secondary = dish.get("secondary_partitions", [])
+    if not isinstance(secondary, list) or not set(
+            x for x in secondary if isinstance(x, str)) <= part_ids \
+            or any(not isinstance(x, str) for x in secondary):
+        errors.append(f"bad secondary_partitions {secondary}")
+    if not isinstance(dish.get("stripe"), str) or not re.fullmatch(
+            r"#[0-9a-fA-F]{6}", dish.get("stripe") or ""):
+        errors.append(f"stripe '{dish.get('stripe')}' is not #rrggbb")
+    if dish.get("frequency_tier") not in FREQUENCY_TIERS:
+        errors.append(f"frequency_tier '{dish.get('frequency_tier')}' not "
+                      f"in {sorted(FREQUENCY_TIERS)}")
+    tags = dish.get("cuisine_tags")
+    if not isinstance(tags, list) or not 1 <= len(tags) <= 4 \
+            or any(not isinstance(t, str) for t in tags):
+        errors.append(f"cuisine_tags must be 1-4 strings, got {tags}")
+    known_flags = {f["id"] for f in ctx.ontology["contains_flags"]}
+    new_ings = doc.get("new_ingredients") or []
+    if not isinstance(new_ings, list) or len(new_ings) > 6:
+        errors.append("new_ingredients must be a list of at most 6")
+        new_ings = []
+    seen_new = set()
+    for ing in new_ings:
+        if not isinstance(ing, dict):
+            errors.append(f"new ingredient {ing!r} is not an object")
+            continue
+        iid = ing.get("id")
+        if not isinstance(iid, str) or not re.fullmatch(r"[a-z0-9-]+", iid):
+            errors.append(f"bad new ingredient id {iid!r}")
+        elif iid in ctx.ing_flags:
+            errors.append(f"ingredient '{iid}' already exists in the "
+                          "catalog — use it, don't redefine it")
+        elif iid in seen_new:
+            errors.append(f"new ingredient '{iid}' proposed twice")
+        else:
+            seen_new.add(iid)
+        if ing.get("parent") not in ctx.ing_flags:
+            errors.append(f"new ingredient {iid}: parent "
+                          f"'{ing.get('parent')}' is not an existing "
+                          "catalog node")
+        if not loc_ok(ing.get("name")):
+            errors.append(f"new ingredient {iid}: name missing en/de")
+        flags = ing.get("flags")
+        if not isinstance(flags, list) or set(
+                x for x in flags if isinstance(x, str)) - known_flags \
+                or any(not isinstance(x, str) for x in flags):
+            errors.append(f"new ingredient {iid}: flags must be a list "
+                          f"from the contains-flags vocabulary, got {flags}")
+    # Whether the proposal really is the requested dish (canonical spelling
+    # may legitimately differ from the request) is the reviewer's judgment.
+    return errors
+
+
+def scout_slots(ctx, requested_name):
+    request = (f'The dish to add: "{requested_name}". Research its canonical '
+               "form (correct spelling and diacritics in both languages) "
+               "and fill in everything else."
+               if requested_name else
+               "Invent exactly ONE new dish this corpus is missing. Look at "
+               "the existing list: balance cuisines, meal types (breakfast/"
+               "dessert/weeknight dinners), and pick something people "
+               "genuinely cook and crave — not a novelty.")
+    return {
+        "REQUEST": request,
+        "EXISTING_DISHES": ctx.existing_dishes_text(),
+        "PARTITIONS": ctx.partitions_text(),
+        "INGREDIENT_CATALOG": ctx.catalog,
+        "CONTAINS_FLAGS": ctx.contains_flags_text(),
+    }
+
+
+def scout_stage(args, ctx, requested_name):
+    """Research one new dish's baseline (entry + missing ingredients)."""
+    label = requested_name or "(suggest)"
+    slots = scout_slots(ctx, requested_name)
+    latest, older, prev = [], [], None
+    for attempt in range(1, args.max_attempts + 1):
+        log("scout", f"{label}: researching (attempt {attempt})")
+        reply = codex_call(args, fill(ctx.prompts["dish-scout"],
+                                      {**slots,
+                                       "FEEDBACK": feedback_block(
+                                           latest, older, prev)}),
+                           "scout", f"scout-{attempt}")
+        doc, parse_err = extract_json(reply)
+        if doc is None:
+            older = [n for n in older + latest][-10:]
+            latest = [f"your reply was not parseable JSON ({parse_err})"]
+            continue
+        prev = doc
+        errors = mech_scout_errors(ctx, doc, requested_name)
+        if errors:
+            older = [n for n in older + latest if n not in errors][-10:]
+            latest = errors
+            continue
+        verdict = review_call(args, ctx, "scout", "scout-reviewer",
+                              {**slots,
+                               "PROPOSAL_JSON": json.dumps(
+                                   doc, ensure_ascii=False, indent=2)},
+                              f"scout-review-{attempt}")
+        if verdict.get("approved") is True:
+            log("scout", f"{label}: accepted as "
+                         f"'{doc['dish']['id']}' (attempt {attempt})")
+            return doc
+        older = [n for n in older + latest][-10:]
+        latest = [verdict.get("feedback") or "reviewer rejected the dish"]
+    raise PipelineError(f"scout: {label} not accepted after "
+                        f"{args.max_attempts} attempts")
+
+
+def insert_ingredient(ing_doc, parent_id, node):
+    """Insert a new leaf under parent_id. Returns True when inserted."""
+    def walk(n):
+        if n.get("id") == parent_id:
+            n.setdefault("children", []).append(node)
+            return True
+        return any(walk(ch) for ch in n.get("children", []))
+    return any(walk(root) for root in ing_doc["nodes"])
+
+
+def apply_scout(ctx, doc):
+    """Persist an accepted scout result: catalog additions + pending dish."""
+    new_ings = doc.get("new_ingredients") or []
+    if new_ings:
+        ing_doc = read_json(ASSETS / "ingredients.json")
+        for ing in new_ings:
+            node = {"id": ing["id"], "name": ing["name"],
+                    "flags": ing.get("flags") or []}
+            if not insert_ingredient(ing_doc, ing["parent"], node):
+                raise PipelineError(f"scout: parent node '{ing['parent']}' "
+                                    "vanished from ingredients.json")
+            log("scout", f"ingredient added: {ing['id']} "
+                         f"(under {ing['parent']}, "
+                         f"flags {ing.get('flags') or 'none'})")
+        write_json(ASSETS / "ingredients.json", ing_doc)
+    pending_path = WORK / "pending-dishes.json"
+    pending = read_json(pending_path) if pending_path.exists() else []
+    pending.append(doc["dish"])
+    write_json(pending_path, pending)
+    log("scout", f"dish '{doc['dish']['id']}' queued (pending until its "
+                 "lattice ships)")
+
+
+# ---------------------------------------------------------------- coverage
+
+_impossible_lock = threading.Lock()
+
+
+def load_impossible():
+    path = WORK / "coverage-impossible.json"
+    return read_json(path) if path.exists() else {}
+
+
+def record_impossible(key, reason):
+    with _impossible_lock:
+        registry = load_impossible()
+        registry[key] = reason
+        write_json(WORK / "coverage-impossible.json", registry)
+
+
+def combo_iter(max_size):
+    """Avoid-group combinations: all singles, then pairs, then triples …"""
+    from itertools import combinations
+    for size in range(1, max_size + 1):
+        yield from combinations(COVERAGE_GROUPS, size)
+
+
+def combo_key(combo):
+    return "-".join(k for k, _ in combo)
+
+
+def combo_flat(combo):
+    flat = set()
+    for _, flags in combo:
+        flat |= flags
+    return flat
+
+
+def triple_of(r):
+    v = r.get("variant", {})
+    return (v.get("diet"), v.get("effort"), v.get("calorie"))
+
+
+def coverage_work_for(ctx, dish_ids, combo):
+    """dish_id -> [(base_cell, coverage_recipe_id)] still uncovered."""
+    flat = combo_flat(combo)
+    suffix = "no-" + combo_key(combo)
+    impossible = load_impossible()
+    work = {}
+    for dish_id in dish_ids:
+        dish_path = WORK / "dishes" / f"{dish_id}.json"
+        plan_path = WORK / "plans" / f"{dish_id}.json"
+        if not dish_path.exists() or not plan_path.exists():
+            continue  # lattice not done yet — the base run handles it
+        plan = read_json(plan_path)
+        recipes = read_json(dish_path)["recipes"]
+        items = []
+        for cell in ordered_cells(plan):
+            triple = (cell["diet"], cell["effort"], cell["calorie"])
+            at_triple = [r for r in recipes if triple_of(r) == triple]
+            if any(not (set(r.get("contains", [])) & flat)
+                   for r in at_triple):
+                continue  # some recipe at these coords already fits
+            key = f"{cell['recipe_id']}-{suffix}"
+            if key in impossible:
+                continue
+            items.append((cell, key))
+        if items:
+            work[dish_id] = items
+    return work
+
+
+def process_coverage_dish(args, ctx, dish, combo, items):
+    dish_id = dish["id"]
+    flat = combo_flat(combo)
+    names = ", ".join(k for k, _ in combo)
+    plan_path = WORK / "plans" / f"{dish_id}.json"
+    dish_path = WORK / "dishes" / f"{dish_id}.json"
+    produced = 0
+    for cell, key in items:
+        plan = read_json(plan_path)
+        cov_list = plan.setdefault("coverage_cells", [])
+        if not any(c.get("recipe_id") == key for c in cov_list):
+            cov_list.append({"recipe_id": key, "diet": cell["diet"],
+                             "effort": cell["effort"],
+                             "calorie": cell["calorie"],
+                             "free_of": sorted(flat)})
+            write_json(plan_path, plan)
+        doc = read_json(dish_path)
+        base = next((r for r in doc["recipes"]
+                     if r["id"] == cell["recipe_id"]), None)
+        mode_notes = (
+            "## Coverage variant\n\n"
+            f"This recipe is the {cell['diet']}/{cell['effort']}/"
+            f"{cell['calorie']} cell of this dish, fully re-authored for "
+            f"people who avoid: {names}. Closeness in spirit to the base "
+            "cell below is INTENDED — same dish, same coordinates, its own "
+            "proud recipe without those ingredients. Do not copy the base "
+            "cell's prose; title, caption and intro must be its own.\n\n"
+            "Base cell recipe:\n"
+            + json.dumps(base, ensure_ascii=False, indent=2))
+        cov_cell = {
+            "recipe_id": key, "diet": cell["diet"],
+            "effort": cell["effort"], "calorie": cell["calorie"],
+            "intent": (f"the {cell['diet']}/{cell['effort']}/"
+                       f"{cell['calorie']} cell, written without {names} — "
+                       "same dish, complete and proud"),
+            "must_avoid": sorted(flat | ctx.column_avoid(cell["diet"])),
+        }
+        def unregister():
+            doc_plan = read_json(plan_path)
+            doc_plan["coverage_cells"] = [
+                c for c in doc_plan.get("coverage_cells", [])
+                if c.get("recipe_id") != key]
+            write_json(plan_path, doc_plan)
+
+        try:
+            recipe = cell_stage(args, ctx, dish, plan, cov_cell,
+                                siblings=doc["recipes"],
+                                mode_notes=mode_notes)
+        except CodexUnavailable:
+            # Infrastructure trouble says nothing about the recipe —
+            # unregister and let a rerun retry it.
+            unregister()
+            raise
+        except PipelineError as exc:
+            log(dish_id, f"coverage {key}: impossible ({exc})")
+            record_impossible(key, str(exc)[:300])
+            unregister()
+            continue
+        doc = read_json(dish_path)
+        if not any(r["id"] == key for r in doc["recipes"]):
+            doc["recipes"].append(recipe)
+            write_json(dish_path, doc)
+        errors, _ = validate_tmp(doc, "--dish", "--plan-file", plan_path)
+        if errors:
+            log(dish_id, f"coverage {key}: post-accept validation failed "
+                         f"{errors[:3]} — rolled back")
+            doc["recipes"] = [r for r in doc["recipes"] if r["id"] != key]
+            write_json(dish_path, doc)
+            (WORK / "recipes" / dish_id / f"{key}.json").unlink(
+                missing_ok=True)
+            record_impossible(key, f"dish validation: {errors[:3]}")
+            unregister()
+            continue
+        produced += 1
+    return produced
+
+
+def expand_coverage(args, ctx, dish_ids, single_combo=False, max_size=None):
+    """Walk the avoid-combination space; returns recipes produced."""
+    produced = 0
+    for combo in combo_iter(max_size or args.max_combo_size):
+        work = coverage_work_for(ctx, dish_ids, combo)
+        if not work:
+            continue
+        total = sum(len(v) for v in work.values())
+        log("coverage", f"no-{combo_key(combo)}: {total} uncovered cell(s) "
+                        f"across {len(work)} dish(es)")
+        with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+            counts = list(pool.map(
+                lambda kv: process_coverage_dish(
+                    args, ctx, ctx.dish_by_id[kv[0]], combo, kv[1]),
+                work.items()))
+        produced += sum(counts)
+        if not args.no_merge:
+            merge_corpus(ctx)
+        if single_combo:
+            break
+    return produced
+
+
 # ------------------------------------------------------------------- merge
 
 def merge_corpus(ctx):
@@ -859,9 +1287,18 @@ def merge_corpus(ctx):
                    {"partition_id": part["id"], "recipes": recipes})
 
     dishes_doc = read_json(ASSETS / "dishes.json")
+    shipped_ids = {d["id"] for d in dishes_doc["dishes"]}
+    for entry in ctx.pending:
+        if entry["id"] not in shipped_ids:
+            dishes_doc["dishes"].append(entry)
     for dish in dishes_doc["dishes"]:
         dish["recipes"] = [r["id"] for r in by_dish[dish["id"]]]
     write_json(ASSETS / "dishes.json", dishes_doc)
+    if ctx.pending:
+        print(f"shipped {len(ctx.pending)} new dish(es): "
+              f"{', '.join(d['id'] for d in ctx.pending)}")
+        write_json(WORK / "pending-dishes.json", [])
+        ctx.pending = []
 
     manifest = read_json(ASSETS / "partition-manifest.json")
     today = date.today()
@@ -890,7 +1327,8 @@ def merge_corpus(ctx):
 # ------------------------------------------------------------------ status
 
 def show_status(ctx, dish_ids):
-    done = planned = cells = 0
+    done = planned = cells = coverage = 0
+    pending_ids = {d["id"] for d in ctx.pending}
     for dish_id in dish_ids:
         plan_path = WORK / "plans" / f"{dish_id}.json"
         dish_done = (WORK / "dishes" / f"{dish_id}.json").exists()
@@ -898,17 +1336,25 @@ def show_status(ctx, dish_ids):
             planned += 1
             plan = read_json(plan_path)
             total = len(plan.get("cells", [])) + len(plan.get("extras", []))
+            cov = len(plan.get("coverage_cells", []))
+            coverage += cov
             have = len(list((WORK / "recipes" / dish_id).glob("*.json"))
                        if (WORK / "recipes" / dish_id).exists() else [])
             cells += have
             state = "DONE" if dish_done else f"{have}/{total} cells"
+            if cov:
+                state += f" (+{cov} coverage)"
         else:
             state = "no plan"
+        if dish_id in pending_ids:
+            state += "  [pending ship]"
         if dish_done:
             done += 1
         print(f"  {dish_id:<18} {state}")
+    impossible = len(load_impossible())
     print(f"\n{done}/{len(dish_ids)} dishes done, {planned} planned, "
-          f"{cells} cells accepted")
+          f"{cells} recipes accepted ({coverage} coverage variants"
+          f"{f', {impossible} recorded impossible' if impossible else ''})")
 
 
 # --------------------------------------------------------------- self-test
@@ -978,6 +1424,65 @@ def self_test():
                       "steps": []})
     check("text_lint catches bans + casing", len(lint) >= 4)
 
+    combos = list(combo_iter(2))
+    singles = len(COVERAGE_GROUPS)
+    check("combo_iter walks singles before pairs",
+          len(combos[0]) == 1 and combos[0][0][0] == "gluten"
+          and all(len(c) == 1 for c in combos[:singles])
+          and all(len(c) == 2 for c in combos[singles:]))
+    pair = (COVERAGE_GROUPS[0], COVERAGE_GROUPS[2])  # gluten + nuts
+    check("combo key + flat", combo_key(pair) == "gluten-nuts"
+          and combo_flat(pair) == {"gluten"} | NUT_FLAGS)
+    check("column_avoid vegan covers dairy and egg",
+          {"dairy", "egg"} <= ctx.column_avoid("vegan")
+          and ctx.column_avoid("classic") == set())
+    if (WORK / "dishes" / "tomato-soup.json").exists():
+        fish_work = coverage_work_for(ctx, ["tomato-soup"],
+                                      (("fish", frozenset({"fish"})),))
+        check("coverage_work_for skips fully-covered combos",
+              fish_work == {})
+
+    good_scout = {
+        "dish": {"id": "test-okonomiyaki",
+                 "name": {"en": "okonomiyaki", "de": "Okonomiyaki"},
+                 "hero": {"en": "x", "de": "x"},
+                 "caption": {"en": "x", "de": "x"}, "stripe": "#A1B2C3",
+                 "recipes": [], "partition_id": "cuisine-asian",
+                 "secondary_partitions": [], "cuisine_tags": ["japanese"],
+                 "frequency_tier": "medium"},
+        "new_ingredients": [{"id": "test-bonito-flakes",
+                             "parent": "fish-seafood",
+                             "name": {"en": "x", "de": "x"},
+                             "flags": ["fish"], "why": "x"}]}
+    check("mech_scout_errors accepts a sound proposal",
+          mech_scout_errors(ctx, good_scout, "okonomiyaki") == [])
+    bad = json.loads(json.dumps(good_scout))
+    bad["dish"]["id"] = "doener"
+    bad["new_ingredients"][0]["parent"] = "no-such-node"
+    bad["new_ingredients"][0]["flags"] = ["wheat"]
+    errs = mech_scout_errors(ctx, bad, None)
+    check("mech_scout_errors flags dup id, bad parent, bad flags",
+          len(errs) >= 3)
+
+    ing_copy = json.loads((ASSETS / "ingredients.json").read_text())
+    inserted = insert_ingredient(ing_copy, "garlic",
+                                 {"id": "test-leaf", "name": {}, "flags": []})
+
+    def find_node(nodes, node_id):
+        for n in nodes:
+            if n.get("id") == node_id:
+                return n
+            hit = find_node(n.get("children", []), node_id)
+            if hit:
+                return hit
+        return None
+
+    garlic = find_node(ing_copy["nodes"], "garlic")
+    check("insert_ingredient lands under its parent",
+          inserted and garlic is not None and any(
+              ch.get("id") == "test-leaf"
+              for ch in garlic.get("children", [])))
+
     for name, template in ctx.prompts.items():
         slots = set(re.findall(r"\{\{([A-Z_]+)\}\}", template))
         try:
@@ -1020,6 +1525,26 @@ def main():
     ap.add_argument("--status", action="store_true")
     ap.add_argument("--reset-dish", metavar="ID",
                     help="forget plan+cells+dish for one dish, then exit")
+    ap.add_argument("--new-dish", metavar="NAME",
+                    help="research one named dish (spelling, names, tags, "
+                         "missing ingredients), then generate its full "
+                         "lattice and merge")
+    ap.add_argument("--suggest-dish", type=int, nargs="?", const=1,
+                    default=0, metavar="N",
+                    help="let codex invent N new dishes (baseline entries "
+                         "only — queued; the next run writes their recipes)")
+    ap.add_argument("--expand-coverage", action="store_true",
+                    help="author allergen-coverage variants: for every "
+                         "lattice cell, versions free of avoid-combinations "
+                         "(singles, then pairs, …) up to --max-combo-size")
+    ap.add_argument("--max-combo-size", type=int, default=2,
+                    help="largest avoid-combination for --expand-coverage "
+                         "(default 2)")
+    ap.add_argument("--forever", action="store_true",
+                    help="run indefinitely: finish lattices, merge, expand "
+                         "coverage one combination per cycle, scout one new "
+                         "dish, repeat — until interrupted or the call "
+                         "budget runs out")
     ap.add_argument("--self-test", action="store_true")
     args = ap.parse_args()
 
@@ -1043,7 +1568,14 @@ def main():
         if rdir.exists():
             for f in rdir.glob("*.json"):
                 f.unlink()
-        print(f"reset {args.reset_dish}")
+        if any(d["id"] == args.reset_dish for d in ctx.pending):
+            write_json(WORK / "pending-dishes.json",
+                       [d for d in ctx.pending
+                        if d["id"] != args.reset_dish])
+            print(f"reset {args.reset_dish} (also unqueued — it was a "
+                  "pending dish)")
+        else:
+            print(f"reset {args.reset_dish}")
         return
 
     snapshot_current(ctx)
@@ -1054,19 +1586,98 @@ def main():
     if args.merge_only:
         sys.exit(0 if merge_corpus(ctx) else 1)
 
-    failures = {}
-    todo = [ctx.dish_by_id[d] for d in dish_ids
-            if not (WORK / "dishes" / f"{d}.json").exists()]
-    print(f"{len(dish_ids) - len(todo)} dish(es) already done, "
-          f"{len(todo)} to go, {args.jobs} in parallel\n")
-    try:
+    def run_batch(ctx, ids):
+        todo = [ctx.dish_by_id[d] for d in ids
+                if not (WORK / "dishes" / f"{d}.json").exists()]
+        if not todo:
+            return {}
+        print(f"{len(ids) - len(todo)} dish(es) already done, "
+              f"{len(todo)} to go, {args.jobs} in parallel\n")
+        failures = {}
         with ThreadPoolExecutor(max_workers=args.jobs) as pool:
             for dish, err in zip(todo, pool.map(
                     lambda d: run_dish(args, ctx, d), todo)):
                 if err:
                     failures[dish["id"]] = err
+        return failures
+
+    try:
+        if args.new_dish:
+            doc = scout_stage(args, ctx, args.new_dish)
+            apply_scout(ctx, doc)
+            ctx = Ctx()  # pick up the new dish + catalog additions
+            snapshot_current(ctx)
+            new_id = doc["dish"]["id"]
+            err = run_dish(args, ctx, ctx.dish_by_id[new_id])
+            if err:
+                print(f"\n{new_id}: lattice failed ({err}) — rerun "
+                      f"`--dishes {new_id}` to resume; the dish stays "
+                      "queued and unshipped")
+                sys.exit(1)
+            if not args.no_merge:
+                sys.exit(0 if merge_corpus(ctx) else 1)
+            return
+
+        if args.suggest_dish:
+            for _ in range(args.suggest_dish):
+                ctx = Ctx()  # each suggestion sees the grown list
+                apply_scout(ctx, scout_stage(args, ctx, None))
+            print(f"\n{args.suggest_dish} dish(es) queued — a normal run "
+                  "writes their lattices and ships them at merge")
+            return
+
+        if args.expand_coverage:
+            produced = expand_coverage(args, ctx, dish_ids)
+            print(f"\ncoverage pass complete — {produced} new recipe(s) up "
+                  f"to combo size {args.max_combo_size}; raise "
+                  "--max-combo-size (or use --forever) for more")
+            return
+
+        if args.forever:
+            cycle = 0
+            while True:
+                cycle += 1
+                print(f"\n━━ forever cycle {cycle} ━━")
+                ctx = Ctx()
+                snapshot_current(ctx)
+                failures = run_batch(ctx, [d["id"] for d in ctx.dishes])
+                if failures:
+                    print(f"{len(failures)} dish(es) failed this cycle "
+                          "(will retry next cycle): "
+                          f"{', '.join(failures)}")
+                elif not args.no_merge:
+                    merge_corpus(ctx)
+                produced = expand_coverage(
+                    args, ctx, [d["id"] for d in ctx.dishes],
+                    single_combo=True, max_size=len(COVERAGE_GROUPS))
+                scouted = 0
+                if failures:
+                    # Don't grow the queue while dishes are stuck — that
+                    # blocks every merge and burns calls without shipping.
+                    print("skipping the dish scout while dishes are "
+                          "failing; fix or --reset-dish them")
+                else:
+                    try:
+                        apply_scout(ctx, scout_stage(args, ctx, None))
+                        scouted = 1
+                    except CodexUnavailable:
+                        raise
+                    except PipelineError as exc:
+                        print(f"scout failed this cycle ({exc}) — "
+                              "continuing")
+                print(f"cycle {cycle}: {produced} coverage recipe(s), "
+                      f"{scouted} dish(es) scouted")
+
+        failures = run_batch(ctx, dish_ids)
     except BudgetExceeded as exc:
         print(f"\nstopped: {exc} (rerun to resume)")
+        sys.exit(1)
+    except CodexUnavailable as exc:
+        print(f"\nstopped: codex unavailable ({exc}) — nothing was marked "
+              "impossible; rerun to resume")
+        sys.exit(1)
+    except PipelineError as exc:
+        print(f"\nstopped: {exc} (state is on disk; rerun to resume)")
         sys.exit(1)
 
     print()

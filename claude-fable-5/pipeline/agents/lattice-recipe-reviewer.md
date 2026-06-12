@@ -66,6 +66,8 @@ taste preferences a reasonable cook would shrug at.
 
 {{CELL_JSON}}
 
+{{MODE_NOTES}}
+
 ## Accepted siblings (collision check)
 
 {{SIBLINGS_SUMMARY}}
