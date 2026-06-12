@@ -1576,7 +1576,14 @@
         "tomato-soup-vegan-easy-600",
         "tomato-soup-vegan-medium-400",
         "tomato-soup-vegan-medium-600",
-        "tomato-soup-lowfodmap"
+        "tomato-soup-lowfodmap",
+        "tomato-soup-classic-easy-600-no-gluten",
+        "tomato-soup-classic-medium-600-no-gluten",
+        "tomato-soup-classic-no-dairy",
+        "tomato-soup-classic-easy-600-no-dairy",
+        "tomato-soup-classic-medium-600-no-dairy",
+        "tomato-soup-classic-no-fodmap",
+        "tomato-soup-classic-easy-600-no-fodmap"
       ],
       "partition_id": "cuisine-european",
       "secondary_partitions": [],
@@ -2168,6 +2175,45 @@
         "celebration"
       ],
       "frequency_tier": "low"
+    },
+    {
+      "id": "bibimbap",
+      "name": {
+        "en": "bibimbap",
+        "de": "Bibimbap"
+      },
+      "hero": {
+        "en": "a warm rice bowl with crisp edges, bright vegetables, and that red spoonful of heat",
+        "de": "Eine warme Reisschale mit buntem Gemüse, Knusperkanten und roter Schärfe."
+      },
+      "caption": {
+        "en": "sunny egg, spicy spoon",
+        "de": "Spiegelei drauf, Löffel rein"
+      },
+      "stripe": "#b85f45",
+      "recipes": [
+        "bibimbap-classic-easy-400",
+        "bibimbap-classic-easy-600",
+        "bibimbap-classic-medium-400",
+        "bibimbap-classic-medium-600",
+        "bibimbap-vegetarian-easy-400",
+        "bibimbap-vegetarian-easy-600",
+        "bibimbap-vegetarian-medium-400",
+        "bibimbap-vegetarian-medium-600",
+        "bibimbap-vegan-easy-400",
+        "bibimbap-vegan-easy-600",
+        "bibimbap-vegan-medium-400",
+        "bibimbap-vegan-medium-600"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "korean",
+        "rice",
+        "bowl",
+        "comfort-food"
+      ],
+      "frequency_tier": "medium"
     }
   ]
 }
