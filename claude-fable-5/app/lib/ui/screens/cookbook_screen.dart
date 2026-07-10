@@ -115,6 +115,7 @@ class _CookbookScreenState extends State<CookbookScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
 
@@ -125,13 +126,12 @@ class _CookbookScreenState extends State<CookbookScreen> {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
             child: Text(s('yourCookbook'),
-                style: MorphText.display.copyWith(fontSize: 30)),
+                style: morph.text.display.copyWith(fontSize: 30)),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 2, 20, 6),
             child: Text(s('cookbookHint'),
-                style: MorphText.hand
-                    .copyWith(fontSize: 17, color: MorphColors.inkSoft)),
+                style: morph.text.handAt(17, color: morph.colors.inkSoft)),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -183,6 +183,7 @@ class _CookbookScreenState extends State<CookbookScreen> {
   }
 
   Widget _historyList(AppState state, S s) {
+    final morph = MorphTheme.of(context);
     final pager = _historyPager;
     if (pager == null) return const SizedBox.shrink();
     final lang = state.lang;
@@ -217,13 +218,13 @@ class _CookbookScreenState extends State<CookbookScreen> {
                         children: [
                           Text(
                             '${entry.cookedAt.day}.${entry.cookedAt.month}.',
-                            style: MorphText.label(size: 10),
+                            style: morph.text.label(size: 10),
                           ),
                           const SizedBox(width: 10),
                           Expanded(
                             child: Text(
-                                recipe.title.of(lang).toLowerCase(),
-                                style: MorphText.mono
+                                morph.cased(recipe.title.of(lang)),
+                                style: morph.text.mono
                                     .copyWith(fontSize: 12.5)),
                           ),
                         ],
@@ -238,10 +239,12 @@ class _CookbookScreenState extends State<CookbookScreen> {
     );
   }
 
-  Widget _empty(String text) => Center(
-        child: Text(text,
-            textAlign: TextAlign.center,
-            style: MorphText.hand
-                .copyWith(fontSize: 20, color: MorphColors.inkSoft)),
-      );
+  Widget _empty(String text) {
+    final morph = MorphTheme.of(context);
+    return Center(
+      child: Text(text,
+          textAlign: TextAlign.center,
+          style: morph.text.handAt(20, color: morph.colors.inkSoft)),
+    );
+  }
 }

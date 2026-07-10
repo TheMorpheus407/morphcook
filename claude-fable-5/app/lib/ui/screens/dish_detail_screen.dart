@@ -113,6 +113,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final lang = state.lang;
@@ -131,16 +132,16 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
         .where((r) => state.matcher.hiddenOnlyByCalories(r, state.profile))
         .length;
     final saved = state.isSaved(recipe.id);
-    final morph = motionDuration(context, state.profile.reduceMotion);
+    final motion = motionDuration(context, state.profile.reduceMotion);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(dish.name.of(lang).toLowerCase(),
-            style: MorphText.display.copyWith(fontSize: 22)),
+        title: Text(morph.cased(dish.name.of(lang)),
+            style: morph.text.display.copyWith(fontSize: 22)),
         actions: [
           IconButton(
             icon: Icon(saved ? Icons.bookmark : Icons.bookmark_border,
-                color: saved ? MorphColors.terracotta : MorphColors.ink),
+                color: saved ? morph.colors.terracotta : morph.colors.ink),
             tooltip: saved ? s('saved') : s('save'),
             onPressed: () => state.toggleSaved(recipe.id),
           ),
@@ -157,17 +158,17 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
             ),
             const SizedBox(height: 14),
             AnimatedSwitcher(
-              duration: morph,
+              duration: motion,
               child: Column(
                 key: ValueKey(recipe.id),
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(recipe.title.of(lang).toLowerCase(),
-                      style: MorphText.display.copyWith(fontSize: 30)),
+                  Text(morph.cased(recipe.title.of(lang)),
+                      style: morph.text.display.copyWith(fontSize: 30)),
                   const SizedBox(height: 6),
                   Text(recipe.intro.of(lang),
-                      style: MorphText.mono.copyWith(
-                          fontSize: 12, color: MorphColors.inkSoft)),
+                      style: morph.text.mono.copyWith(
+                          fontSize: 12, color: morph.colors.inkSoft)),
                 ],
               ),
             ),
@@ -178,8 +179,8 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
               Padding(
                 padding: const EdgeInsets.only(top: 2, bottom: 4),
                 child: Text(s('outsideProfile'),
-                    style: MorphText.hand.copyWith(
-                        fontSize: 16, color: MorphColors.terracotta)),
+                    style: morph.text
+                        .handAt(16, color: morph.colors.terracotta)),
               ),
             if (hiddenByCalories > 0) _calorieOverride(s, hiddenByCalories),
             _whyHiddenLink(s),
@@ -189,7 +190,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
             _sectionTabs(s),
             const SizedBox(height: 12),
             AnimatedSwitcher(
-              duration: morph,
+              duration: motion,
               child: KeyedSubtree(
                 key: ValueKey('${recipe.id}-$_section'),
                 child: switch (_section) {
@@ -210,6 +211,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   // ---- variant switcher rows ----
 
   Widget _dimensionRow(String dimension, S s, AppState state) {
+    final morph = MorphTheme.of(context);
     final lang = state.lang;
     final recipe = _selected!;
     final expanded = _expandedDimension == dimension;
@@ -230,15 +232,15 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
             padding: const EdgeInsets.symmetric(vertical: 9),
             child: Row(
               children: [
-                Text('— $label ', style: MorphText.label()),
+                Text('— $label ', style: morph.text.label()),
                 const Expanded(child: DashedDivider(height: 1)),
                 const SizedBox(width: 8),
-                Text(currentValue.toLowerCase(),
-                    style: MorphText.mono.copyWith(
+                Text(morph.cased(currentValue),
+                    style: morph.text.mono.copyWith(
                         fontSize: 12,
-                        color: MorphColors.terracotta)),
+                        color: morph.colors.terracotta)),
                 Icon(expanded ? Icons.expand_less : Icons.expand_more,
-                    size: 16, color: MorphColors.inkSoft),
+                    size: 16, color: morph.colors.inkSoft),
               ],
             ),
           ),
@@ -288,6 +290,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   }
 
   Widget _calorieOverride(S s, int hiddenCount) {
+    final morph = MorphTheme.of(context);
     return Padding(
       padding: const EdgeInsets.only(top: 6),
       child: Row(
@@ -295,12 +298,12 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
           Expanded(
             child: Text(
               '$hiddenCount × ${s('outsideCalories')} — ${s('showAnyway')}',
-              style: MorphText.label(size: 10),
+              style: morph.text.label(size: 10),
             ),
           ),
           Switch(
             value: _ignoreCalories,
-            activeThumbColor: MorphColors.terracotta,
+            activeThumbColor: morph.colors.terracotta,
             onChanged: (v) => setState(() => _ignoreCalories = v),
           ),
         ],
@@ -311,6 +314,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   Widget _whyHiddenLink(S s) {
     final hidden = _all.length - _visible.length;
     if (hidden <= 0) return const SizedBox.shrink();
+    final morph = MorphTheme.of(context);
     return GestureDetector(
       onTap: () => Navigator.of(context).push(MaterialPageRoute(
           builder: (_) => const FaqScreen(initialEntryId: 'why-recipe-hidden'))),
@@ -318,7 +322,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
         padding: const EdgeInsets.symmetric(vertical: 4),
         child: Text(
           '$hidden ${s('outsideProfileCount')} · ${s('whyHidden')}',
-          style: MorphText.label(size: 10, color: MorphColors.teal),
+          style: morph.text.label(size: 10, color: morph.colors.teal),
         ),
       ),
     );
@@ -341,13 +345,16 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
     );
   }
 
-  Widget _meta(String text) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
-        decoration: BoxDecoration(
-            border: Border.all(color: MorphColors.line),
-            borderRadius: BorderRadius.circular(2)),
-        child: Text(text.toLowerCase(), style: MorphText.label(size: 9)),
-      );
+  Widget _meta(String text) {
+    final morph = MorphTheme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+      decoration: BoxDecoration(
+          border: Border.all(color: morph.colors.line),
+          borderRadius: BorderRadius.circular(2)),
+      child: Text(morph.cased(text), style: morph.text.label(size: 9)),
+    );
+  }
 
   Widget _sectionTabs(S s) {
     final labels = [s('ingredients'), s('method'), s('macros')];
@@ -366,6 +373,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   }
 
   Widget _ingredients(Recipe recipe, AppState state, S s) {
+    final morph = MorphTheme.of(context);
     final lang = state.lang;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -375,12 +383,12 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
         const SizedBox(height: 14),
         OutlinedButton.icon(
           onPressed: () => _addToShoppingList(recipe, state, s),
-          icon: const Icon(Icons.add_shopping_cart,
-              size: 16, color: MorphColors.teal),
+          icon: Icon(Icons.add_shopping_cart,
+              size: 16, color: morph.colors.teal),
           label: Text(s('addToList'),
-              style: MorphText.label(color: MorphColors.teal)),
+              style: morph.text.label(color: morph.colors.teal)),
           style: OutlinedButton.styleFrom(
-            side: const BorderSide(color: MorphColors.teal),
+            side: BorderSide(color: morph.colors.teal),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(2)),
           ),
@@ -391,6 +399,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
 
   Widget _ingredientLine(
       RecipeIngredient ing, AppState state, String lang) {
+    final morph = MorphTheme.of(context);
     final node = state.corpus.dictionary.byId(ing.ingredientId);
     final name = node?.name.of(lang) ?? ing.ingredientId;
     final note = ing.note?.of(lang);
@@ -405,7 +414,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 600),
       color: isNew
-          ? MorphColors.butter.withValues(alpha: 0.45)
+          ? morph.colors.butter.withValues(alpha: 0.45)
           : Colors.transparent,
       padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 2),
       child: Row(
@@ -414,22 +423,22 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
           SizedBox(
             width: 78,
             child: Text('$qty ${ing.unit}',
-                style: MorphText.mono.copyWith(
-                    fontSize: 12, color: MorphColors.terracotta)),
+                style: morph.text.mono.copyWith(
+                    fontSize: 12, color: morph.colors.terracotta)),
           ),
           Expanded(
             child: Text(
               note == null ? name : '$name · $note',
-              style: MorphText.mono.copyWith(fontSize: 12.5),
+              style: morph.text.mono.copyWith(fontSize: 12.5),
             ),
           ),
           if (hasGuide)
             GestureDetector(
               onTap: () => showGuideSheet(context, ing.ingredientId),
-              child: const Padding(
-                padding: EdgeInsets.only(left: 6),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 6),
                 child: Icon(Icons.menu_book_outlined,
-                    size: 15, color: MorphColors.teal),
+                    size: 15, color: morph.colors.teal),
               ),
             ),
         ],
@@ -438,6 +447,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   }
 
   Widget _method(Recipe recipe, String lang, S s) {
+    final morph = MorphTheme.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -448,23 +458,22 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('${i + 1}.',
-                    style: MorphText.display.copyWith(
-                        fontSize: 20, color: MorphColors.terracotta)),
+                    style: morph.text.display.copyWith(
+                        fontSize: 20, color: morph.colors.terracotta)),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(recipe.steps[i].text.of(lang),
-                          style: MorphText.mono.copyWith(fontSize: 12.5)),
+                          style: morph.text.mono.copyWith(fontSize: 12.5)),
                       if (recipe.steps[i].timerMinutes != null)
                         Padding(
                           padding: const EdgeInsets.only(top: 3),
                           child: Text(
                               '⏲ ${recipe.steps[i].timerMinutes} ${s('minutes')}',
-                              style: MorphText.hand.copyWith(
-                                  fontSize: 16,
-                                  color: MorphColors.teal)),
+                              style: morph.text
+                                  .handAt(16, color: morph.colors.teal)),
                         ),
                     ],
                   ),
@@ -477,6 +486,7 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
   }
 
   Widget _macros(Recipe recipe, S s) {
+    final morph = MorphTheme.of(context);
     final m = recipe.macros;
     final rows = [
       (s('calories'), '${m.calories}'),
@@ -491,28 +501,30 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
             padding: const EdgeInsets.symmetric(vertical: 4),
             child: Row(
               children: [
-                Text(label.toLowerCase(), style: MorphText.label()),
+                Text(morph.cased(label), style: morph.text.label()),
                 const Expanded(child: DashedDivider(height: 1)),
-                Text(value, style: MorphText.mono.copyWith(fontSize: 13)),
+                Text(value, style: morph.text.mono.copyWith(fontSize: 13)),
               ],
             ),
           ),
         Padding(
           padding: const EdgeInsets.only(top: 6),
-          child: Text('${s('perServing')} · ${recipe.servings} ${s('servings')}'
-                  .toLowerCase(),
-              style: MorphText.label(size: 10)),
+          child: Text(
+              morph.cased(
+                  '${s('perServing')} · ${recipe.servings} ${s('servings')}'),
+              style: morph.text.label(size: 10)),
         ),
       ],
     );
   }
 
   Widget _cookButton(Recipe recipe, AppState state, S s) {
+    final morph = MorphTheme.of(context);
     final resume = state.cookProgress?.recipeId == recipe.id;
     return FilledButton(
       style: FilledButton.styleFrom(
-        backgroundColor: MorphColors.ink,
-        foregroundColor: MorphColors.cream,
+        backgroundColor: morph.colors.ink,
+        foregroundColor: morph.colors.paper,
         padding: const EdgeInsets.symmetric(vertical: 16),
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
@@ -520,8 +532,8 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
       onPressed: () => Navigator.of(context).push(MaterialPageRoute(
           builder: (_) => CookModeScreen(recipe: recipe))),
       child: Text(
-        (resume ? s('resumeCooking') : s('startCooking')).toLowerCase(),
-        style: MorphText.label(color: MorphColors.cream, size: 12),
+        morph.cased(resume ? s('resumeCooking') : s('startCooking')),
+        style: morph.text.label(color: morph.colors.paper, size: 12),
       ),
     );
   }

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../theme.dart';
 
 /// Diagonal-striped SVG-style placeholder — real photos are explicitly out;
-/// the stripes are part of the design.
+/// the stripes are part of the design. In readable mode the diagonals give
+/// way to a flat wash: community feedback flagged the stripes as visual
+/// noise that bleeds into text for dyslexic and low-vision readers.
 class StripedPlaceholder extends StatelessWidget {
   final Color color;
   final double? height;
@@ -18,38 +20,65 @@ class StripedPlaceholder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final stripes = CustomPaint(
-      painter: _StripePainter(color: color),
+    final morph = MorphTheme.of(context);
+    final cover = CustomPaint(
+      painter: _CoverPainter(
+        color: color,
+        flat: morph.readable,
+        isDark: morph.isDark,
+      ),
       child: caption == null
           ? null
           : Center(
               child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
-                color: MorphColors.card.withValues(alpha: 0.92),
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                // Fully opaque with a hairline: stripes end at the plate's
+                // edge instead of running on under the words.
+                decoration: BoxDecoration(
+                  color: morph.colors.card,
+                  border: Border.all(color: morph.colors.line),
+                ),
                 child: Text(
                   caption!,
                   textAlign: TextAlign.center,
-                  style: MorphText.hand
-                      .copyWith(fontSize: 19, color: MorphColors.ink),
+                  style: morph.text.handAt(19, color: morph.colors.ink),
                 ),
               ),
             ),
     );
     return height == null
-        ? stripes
-        : SizedBox(height: height, width: double.infinity, child: stripes);
+        ? cover
+        : SizedBox(height: height, width: double.infinity, child: cover);
   }
 }
 
-class _StripePainter extends CustomPainter {
+class _CoverPainter extends CustomPainter {
   final Color color;
-  const _StripePainter({required this.color});
+  final bool flat;
+  final bool isDark;
+  const _CoverPainter(
+      {required this.color, required this.flat, required this.isDark});
 
   @override
   void paint(Canvas canvas, Size size) {
-    canvas.drawRect(Offset.zero & size,
-        Paint()..color = color.withValues(alpha: 0.16));
+    // Dish stripe colors are authored against paper; on night they need a
+    // touch more presence to read as color at all.
+    final washAlpha = isDark ? 0.22 : 0.16;
+    canvas.drawRect(
+        Offset.zero & size, Paint()..color = color.withValues(alpha: washAlpha));
+    if (flat) {
+      final border = Paint()
+        ..color = color.withValues(alpha: 0.45)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1.5;
+      canvas.drawRect(
+          const Offset(0.75, 0.75) &
+              Size(size.width - 1.5, size.height - 1.5),
+          border);
+      return;
+    }
     final paint = Paint()
       ..color = color.withValues(alpha: 0.55)
       ..strokeWidth = 7;
@@ -61,16 +90,16 @@ class _StripePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _StripePainter old) => old.color != color;
+  bool shouldRepaint(covariant _CoverPainter old) =>
+      old.color != color || old.flat != flat || old.isDark != isDark;
 }
 
 /// Hand-drawn-feel dashed rule.
 class DashedDivider extends StatelessWidget {
   final double height;
-  final Color color;
+  final Color? color;
 
-  const DashedDivider(
-      {super.key, this.height = 24, this.color = MorphColors.line});
+  const DashedDivider({super.key, this.height = 24, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +108,8 @@ class DashedDivider extends StatelessWidget {
       child: Center(
         child: CustomPaint(
           size: const Size(double.infinity, 1),
-          painter: _DashPainter(color: color),
+          painter:
+              _DashPainter(color: color ?? MorphTheme.of(context).colors.line),
         ),
       ),
     );
@@ -113,6 +143,7 @@ class SectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
@@ -120,7 +151,7 @@ class SectionHeader extends StatelessWidget {
           const Expanded(child: DashedDivider(height: 1)),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Text(title.toLowerCase(), style: MorphText.label()),
+            child: Text(morph.cased(title), style: morph.text.label()),
           ),
           Expanded(
             child: trailing == null
@@ -138,7 +169,7 @@ class SectionHeader extends StatelessWidget {
 }
 
 /// Polaroid-ish card: white frame, striped photo area, handwritten caption,
-/// slight deterministic rotation.
+/// slight deterministic rotation (level in readable mode).
 class PolaroidCard extends StatelessWidget {
   final Color stripe;
   final String title;
@@ -161,62 +192,68 @@ class PolaroidCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     // ±1.6° wobble, deterministic per card.
-    final angle = ((rotationSeed * 37) % 7 - 3) * 0.009;
+    final angle =
+        morph.readable ? 0.0 : ((rotationSeed * 37) % 7 - 3) * 0.009;
     return Transform.rotate(
       angle: angle,
-      child: GestureDetector(
-        onTap: onTap,
-        child: Container(
-          decoration: BoxDecoration(
-            color: MorphColors.card,
-            border: Border.all(color: MorphColors.line),
-            boxShadow: [
-              BoxShadow(
-                color: MorphColors.ink.withValues(alpha: 0.10),
-                blurRadius: 10,
-                offset: const Offset(2, 5),
-              ),
-            ],
-          ),
-          padding: const EdgeInsets.fromLTRB(8, 8, 8, 10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Stack(
-                children: [
-                  StripedPlaceholder(color: stripe, height: photoHeight),
-                  if (badge != null)
-                    Positioned(
-                      top: 6,
-                      left: 6,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 6, vertical: 2),
-                        color: MorphColors.ink,
-                        child: Text(badge!,
-                            style: MorphText.label(
-                                color: MorphColors.cream, size: 9)),
+      child: Semantics(
+        button: onTap != null,
+        label: badge == null ? title : '$title, $badge',
+        child: GestureDetector(
+          onTap: onTap,
+          child: Container(
+            decoration: BoxDecoration(
+              color: morph.colors.card,
+              border: Border.all(color: morph.colors.line),
+              boxShadow: [
+                BoxShadow(
+                  color: morph.colors.ink.withValues(alpha: 0.10),
+                  blurRadius: 10,
+                  offset: const Offset(2, 5),
+                ),
+              ],
+            ),
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Stack(
+                  children: [
+                    StripedPlaceholder(color: stripe, height: photoHeight),
+                    if (badge != null)
+                      Positioned(
+                        top: 6,
+                        left: 6,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 6, vertical: 2),
+                          color: morph.colors.ink,
+                          child: Text(badge!,
+                              style: morph.text.label(
+                                  color: morph.colors.paper, size: 9)),
+                        ),
                       ),
-                    ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Text(
-                title.toLowerCase(),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: MorphText.display.copyWith(fontSize: 18),
-              ),
-              const SizedBox(height: 2),
-              Text(
-                caption,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: MorphText.hand.copyWith(fontSize: 16),
-              ),
-            ],
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  morph.cased(title),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: morph.text.display.copyWith(fontSize: 18),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  caption,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: morph.text.handAt(16),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -245,31 +282,38 @@ class MonoChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
+    final colors = morph.colors;
     final fg = !enabled
-        ? MorphColors.inkFaint
+        ? colors.inkFaint
         : selected
-            ? MorphColors.cream
+            ? colors.paper
             : muted
-                ? MorphColors.inkSoft
-                : MorphColors.ink;
+                ? colors.inkSoft
+                : colors.ink;
     return Opacity(
       opacity: !enabled
           ? 0.55
           : muted
               ? 0.75
               : 1,
-      child: GestureDetector(
-        onTap: enabled ? onTap : null,
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-          decoration: BoxDecoration(
-            color: selected ? MorphColors.ink : Colors.transparent,
-            border: Border.all(
-                color: selected ? MorphColors.ink : MorphColors.line),
-            borderRadius: BorderRadius.circular(2),
+      child: Semantics(
+        button: onTap != null,
+        selected: selected,
+        enabled: enabled,
+        child: GestureDetector(
+          onTap: enabled ? onTap : null,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            decoration: BoxDecoration(
+              color: selected ? colors.ink : Colors.transparent,
+              border:
+                  Border.all(color: selected ? colors.ink : colors.line),
+              borderRadius: BorderRadius.circular(2),
+            ),
+            child: Text(morph.cased(label),
+                style: morph.text.mono.copyWith(fontSize: 11, color: fg)),
           ),
-          child: Text(label.toLowerCase(),
-              style: MorphText.mono.copyWith(fontSize: 11, color: fg)),
         ),
       ),
     );
@@ -286,12 +330,13 @@ class SkeletonBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = MorphTheme.of(context).colors;
     return Container(
       height: height,
       margin: const EdgeInsets.symmetric(vertical: 6),
       decoration: BoxDecoration(
-        color: MorphColors.paperDeep.withValues(alpha: 0.7),
-        border: Border.all(color: MorphColors.line),
+        color: colors.paperDeep.withValues(alpha: 0.7),
+        border: Border.all(color: colors.line),
       ),
     );
   }

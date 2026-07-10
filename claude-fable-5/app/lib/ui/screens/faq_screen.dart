@@ -36,6 +36,7 @@ class _FaqScreenState extends State<FaqScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final lang = state.lang;
@@ -49,7 +50,7 @@ class _FaqScreenState extends State<FaqScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(s('helpCenter'),
-            style: MorphText.display.copyWith(fontSize: 22)),
+            style: morph.text.display.copyWith(fontSize: 22)),
       ),
       body: PaperBackground(
         child: Column(
@@ -58,18 +59,18 @@ class _FaqScreenState extends State<FaqScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 onChanged: (v) => setState(() => _query = v),
-                style: MorphText.mono.copyWith(fontSize: 13),
+                style: morph.text.mono.copyWith(fontSize: 13),
                 decoration: InputDecoration(
                   hintText: s('faqSearchHint'),
-                  hintStyle: MorphText.mono.copyWith(
-                      fontSize: 13, color: MorphColors.inkFaint),
-                  prefixIcon: const Icon(Icons.search,
-                      size: 18, color: MorphColors.inkSoft),
-                  enabledBorder: const UnderlineInputBorder(
-                      borderSide: BorderSide(color: MorphColors.line)),
-                  focusedBorder: const UnderlineInputBorder(
+                  hintStyle: morph.text.mono.copyWith(
+                      fontSize: 13, color: morph.colors.inkFaint),
+                  prefixIcon: Icon(Icons.search,
+                      size: 18, color: morph.colors.inkSoft),
+                  enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: morph.colors.line)),
+                  focusedBorder: UnderlineInputBorder(
                       borderSide:
-                          BorderSide(color: MorphColors.terracotta)),
+                          BorderSide(color: morph.colors.terracotta)),
                 ),
               ),
             ),
@@ -121,7 +122,7 @@ class _FaqScreenState extends State<FaqScreen> {
                             children: [
                               Expanded(
                                 child: Text(entry.question.of(lang),
-                                    style: MorphText.serif
+                                    style: morph.text.serif
                                         .copyWith(fontSize: 15)),
                               ),
                               Icon(
@@ -129,7 +130,7 @@ class _FaqScreenState extends State<FaqScreen> {
                                     ? Icons.expand_less
                                     : Icons.expand_more,
                                 size: 16,
-                                color: MorphColors.inkSoft,
+                                color: morph.colors.inkSoft,
                               ),
                             ],
                           ),
@@ -139,9 +140,9 @@ class _FaqScreenState extends State<FaqScreen> {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10),
                           child: Text(entry.answer.of(lang),
-                              style: MorphText.mono.copyWith(
+                              style: morph.text.mono.copyWith(
                                   fontSize: 12,
-                                  color: MorphColors.inkSoft)),
+                                  color: morph.colors.inkSoft)),
                         ),
                       const DashedDivider(height: 6),
                     ],

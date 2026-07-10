@@ -93,6 +93,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final pager = _pager;
@@ -105,18 +106,18 @@ class _SearchScreenState extends State<SearchScreen> {
             child: TextField(
               controller: _controller,
               onChanged: _onQueryChanged,
-              style: MorphText.mono.copyWith(fontSize: 13),
+              style: morph.text.mono.copyWith(fontSize: 13),
               decoration: InputDecoration(
                 hintText: s('searchHint'),
-                hintStyle: MorphText.mono
-                    .copyWith(fontSize: 13, color: MorphColors.inkFaint),
-                prefixIcon: const Icon(Icons.search,
-                    size: 18, color: MorphColors.inkSoft),
-                enabledBorder: const UnderlineInputBorder(
-                    borderSide: BorderSide(color: MorphColors.line)),
-                focusedBorder: const UnderlineInputBorder(
+                hintStyle: morph.text.mono
+                    .copyWith(fontSize: 13, color: morph.colors.inkFaint),
+                prefixIcon: Icon(Icons.search,
+                    size: 18, color: morph.colors.inkSoft),
+                enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: morph.colors.line)),
+                focusedBorder: UnderlineInputBorder(
                     borderSide:
-                        BorderSide(color: MorphColors.terracotta)),
+                        BorderSide(color: morph.colors.terracotta)),
               ),
             ),
           ),
@@ -160,6 +161,7 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   Widget _results(PaginationController<Recipe> pager, S s) {
+    final morph = MorphTheme.of(context);
     if (pager.isEmpty) {
       return Padding(
         padding: const EdgeInsets.all(32),
@@ -167,12 +169,11 @@ class _SearchScreenState extends State<SearchScreen> {
           children: [
             Text('${s('searchEmpty')} "$_query"',
                 textAlign: TextAlign.center,
-                style: MorphText.display.copyWith(fontSize: 20)),
+                style: morph.text.display.copyWith(fontSize: 20)),
             const SizedBox(height: 10),
             Text(s('searchEmptyNote'),
                 textAlign: TextAlign.center,
-                style: MorphText.hand
-                    .copyWith(fontSize: 18, color: MorphColors.inkSoft)),
+                style: morph.text.handAt(18, color: morph.colors.inkSoft)),
           ],
         ),
       );

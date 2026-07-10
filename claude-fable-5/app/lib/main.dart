@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -16,6 +17,13 @@ import 'ui/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // OFL fonts must ship with their license text; surface it on the
+  // standard licenses page.
+  LicenseRegistry.addLicense(() async* {
+    final text = await rootBundle
+        .loadString('assets/fonts/OFL-AtkinsonHyperlegible.txt');
+    yield LicenseEntryWithLineBreaks(const ['Atkinson Hyperlegible'], text);
+  });
   runApp(const MorphCookApp());
 }
 
@@ -43,19 +51,61 @@ class _MorphCookAppState extends State<MorphCookApp> {
       future: _boot,
       builder: (context, snapshot) {
         final state = snapshot.data;
+        if (state == null) {
+          return MaterialApp(
+            title: 'MorphCook',
+            debugShowCheckedModeBanner: false,
+            theme: morphThemeData(MorphColors.light),
+            home: const _BootSplash(),
+          );
+        }
         // The provider must sit ABOVE MaterialApp: routes pushed via the
         // Navigator live outside `home`'s subtree and would otherwise not
         // find AppState.
-        final app = MaterialApp(
-          title: 'MorphCook',
-          debugShowCheckedModeBanner: false,
-          theme: morphTheme(),
-          home: state == null ? const _BootSplash() : const _Root(),
-        );
-        return state == null
-            ? app
-            : ChangeNotifierProvider.value(value: state, child: app);
+        return ChangeNotifierProvider.value(
+            value: state, child: const ThemedApp());
       },
+    );
+  }
+}
+
+/// MaterialApp that follows the profile's appearance settings. Sits below
+/// the provider so a settings change re-themes the running app in place.
+class ThemedApp extends StatelessWidget {
+  const ThemedApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final profile = context.watch<AppState>().profile;
+    final mode = switch (profile.themeMode) {
+      'light' => ThemeMode.light,
+      'dark' => ThemeMode.dark,
+      _ => ThemeMode.system,
+    };
+    return MaterialApp(
+      title: 'MorphCook',
+      debugShowCheckedModeBanner: false,
+      theme: morphThemeData(MorphColors.light, readable: profile.readableText),
+      darkTheme:
+          morphThemeData(MorphColors.dark, readable: profile.readableText),
+      themeMode: mode,
+      // The builder wraps the Navigator, so every route sees MorphTheme.
+      builder: (context, child) {
+        final dark = switch (mode) {
+          ThemeMode.dark => true,
+          ThemeMode.light => false,
+          ThemeMode.system =>
+            MediaQuery.platformBrightnessOf(context) == Brightness.dark,
+        };
+        return MorphTheme(
+          data: MorphThemeData(
+            colors: dark ? MorphColors.dark : MorphColors.light,
+            readable: profile.readableText,
+          ),
+          child: child!,
+        );
+      },
+      home: const _Root(),
     );
   }
 }
@@ -65,6 +115,7 @@ class _BootSplash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     return Scaffold(
       body: PaperBackground(
         child: Center(
@@ -72,9 +123,9 @@ class _BootSplash extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text('morphcook',
-                  style: MorphText.display.copyWith(fontSize: 40)),
+                  style: morph.text.display.copyWith(fontSize: 40)),
               const SizedBox(height: 8),
-              Text('&', style: MorphText.hand.copyWith(fontSize: 28)),
+              Text('&', style: morph.text.handAt(28)),
             ],
           ),
         ),
@@ -106,6 +157,7 @@ class _RootShellState extends State<RootShell> {
   @override
   Widget build(BuildContext context) {
     final s = S(context.watch<AppState>().lang);
+    final morph = MorphTheme.of(context);
     const pages = [
       HomeScreen(),
       SearchScreen(),
@@ -118,9 +170,9 @@ class _RootShellState extends State<RootShell> {
         child: IndexedStack(index: _tab, children: pages),
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          color: MorphColors.card,
-          border: Border(top: BorderSide(color: MorphColors.line)),
+        decoration: BoxDecoration(
+          color: morph.colors.card,
+          border: Border(top: BorderSide(color: morph.colors.line)),
         ),
         child: SafeArea(
           top: false,
@@ -143,24 +195,29 @@ class _RootShellState extends State<RootShell> {
 
   Widget _navItem(int index, IconData icon, String label) {
     final selected = _tab == index;
+    final morph = MorphTheme.of(context);
     return Expanded(
       child: InkWell(
         onTap: () => setState(() => _tab = index),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(icon,
-                size: 20,
-                color:
-                    selected ? MorphColors.terracotta : MorphColors.inkSoft),
-            const SizedBox(height: 2),
-            Text(label.toLowerCase(),
-                style: MorphText.label(
-                    size: 9,
-                    color: selected
-                        ? MorphColors.terracotta
-                        : MorphColors.inkSoft)),
-          ],
+        child: Semantics(
+          selected: selected,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon,
+                  size: 20,
+                  color: selected
+                      ? morph.colors.terracotta
+                      : morph.colors.inkSoft),
+              const SizedBox(height: 2),
+              Text(morph.cased(label),
+                  style: morph.text.label(
+                      size: 9,
+                      color: selected
+                          ? morph.colors.terracotta
+                          : morph.colors.inkSoft)),
+            ],
+          ),
         ),
       ),
     );

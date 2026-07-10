@@ -13,6 +13,12 @@ class Profile {
   final bool visualAlertEnabled;
   final bool quickNextTapEnabled;
 
+  /// 'system' | 'light' | 'dark'.
+  final String themeMode;
+
+  /// Accessibility: legible sans typography, original casing, calm covers.
+  final bool readableText;
+
   const Profile({
     this.name = '',
     this.lang = 'en',
@@ -26,6 +32,8 @@ class Profile {
     this.reduceMotion,
     this.visualAlertEnabled = true,
     this.quickNextTapEnabled = false,
+    this.themeMode = 'system',
+    this.readableText = false,
   });
 
   /// Tolerance around [calorieTarget] within which a recipe still matches.
@@ -47,6 +55,8 @@ class Profile {
     bool clearReduceMotion = false,
     bool? visualAlertEnabled,
     bool? quickNextTapEnabled,
+    String? themeMode,
+    bool? readableText,
   }) =>
       Profile(
         name: name ?? this.name,
@@ -64,6 +74,8 @@ class Profile {
             clearReduceMotion ? null : (reduceMotion ?? this.reduceMotion),
         visualAlertEnabled: visualAlertEnabled ?? this.visualAlertEnabled,
         quickNextTapEnabled: quickNextTapEnabled ?? this.quickNextTapEnabled,
+        themeMode: themeMode ?? this.themeMode,
+        readableText: readableText ?? this.readableText,
       );
 
   Map<String, dynamic> toJson() => {
@@ -79,6 +91,8 @@ class Profile {
         'reduce_motion': reduceMotion,
         'visual_alert_enabled': visualAlertEnabled,
         'quick_next_tap_enabled': quickNextTapEnabled,
+        'theme_mode': themeMode,
+        'readable_text': readableText,
       };
 
   factory Profile.fromJson(Map<String, dynamic> json) => Profile(
@@ -98,5 +112,7 @@ class Profile {
         visualAlertEnabled: json['visual_alert_enabled'] as bool? ?? true,
         quickNextTapEnabled:
             json['quick_next_tap_enabled'] as bool? ?? false,
+        themeMode: json['theme_mode'] as String? ?? 'system',
+        readableText: json['readable_text'] as bool? ?? false,
       );
 }

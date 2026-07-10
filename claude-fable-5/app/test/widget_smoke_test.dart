@@ -26,7 +26,8 @@ Future<AppState> onboardedState() async {
 
 Widget app(AppState state, Widget child) => ChangeNotifierProvider.value(
       value: state,
-      child: MaterialApp(theme: morphTheme(), home: child),
+      child: MaterialApp(
+          theme: morphThemeData(MorphColors.light), home: child),
     );
 
 void main() {
@@ -103,7 +104,7 @@ void main() {
     await tester.pumpWidget(ChangeNotifierProvider.value(
       value: state,
       child: MaterialApp(
-        theme: morphTheme(),
+        theme: morphThemeData(MorphColors.light),
         home: Builder(
           builder: (context) => state.onboarded
               ? const RootShell()
@@ -170,6 +171,46 @@ void main() {
     expect(de('supportBody'), isNot(equals(en('supportBody'))));
     expect(de('supportBody'), contains('unterstützen'));
     expect(de('supportPatreon'), isNot(equals(en('supportPatreon'))));
+  });
+
+  testWidgets('appearance settings re-theme the running app in place',
+      (tester) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(
+        ChangeNotifierProvider.value(value: state, child: const ThemedApp()));
+    await tester.pumpAndSettle();
+
+    MorphThemeData morphOf() =>
+        MorphTheme.of(tester.element(find.byType(HomeScreen)));
+    expect(morphOf().isDark, isFalse);
+    expect(morphOf().text.display.fontFamily, 'Playfair Display');
+
+    await state.updateProfile(state.profile.copyWith(themeMode: 'dark'));
+    await tester.pumpAndSettle();
+    expect(morphOf().isDark, isTrue);
+    expect(find.text('morphcook'), findsOneWidget);
+
+    await state.updateProfile(state.profile.copyWith(readableText: true));
+    await tester.pumpAndSettle();
+    final morph = morphOf();
+    expect(morph.readable, isTrue);
+    expect(morph.text.display.fontFamily, 'Atkinson Hyperlegible');
+    expect(morph.text.display.fontStyle, isNot(FontStyle.italic));
+    // Readable mode keeps original casing (German nouns are a reading cue).
+    expect(morph.cased('Döner Kebab'), 'Döner Kebab');
+    expect(find.text('morphcook'), findsOneWidget);
+  });
+
+  test('appearance strings exist in english and german', () {
+    const en = S('en');
+    const de = S('de');
+    for (final key in [
+      'theme', 'themeLight', 'themeDark', 'readableText', 'readableTextHint'
+    ]) {
+      expect(en(key), isNot(equals(key)), reason: 'missing EN $key');
+      expect(de(key), isNot(equals(key)), reason: 'missing DE $key');
+    }
+    expect(de('readableTextHint'), isNot(equals(en('readableTextHint'))));
   });
 
   testWidgets('cookbook shows a saved variant', (tester) async {

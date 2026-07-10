@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return SafeArea(
       child: RefreshIndicator(
-        color: MorphColors.terracotta,
+        color: MorphTheme.of(context).colors.terracotta,
         onRefresh: _recompute,
         child: ListView(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
@@ -131,27 +131,29 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _masthead(S s, AppState state) {
     final name = state.profile.name;
+    final morph = MorphTheme.of(context);
     return Column(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('vol. 1', style: MorphText.label(size: 10)),
+            Text('vol. 1', style: morph.text.label(size: 10)),
             IconButton(
-              icon: const Icon(Icons.shopping_basket_outlined,
-                  size: 20, color: MorphColors.inkSoft),
+              icon: Icon(Icons.shopping_basket_outlined,
+                  size: 20, color: morph.colors.inkSoft),
+              tooltip: s('shoppingList'),
               onPressed: () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (_) => const ShoppingListScreen())),
             ),
           ],
         ),
-        Text('morphcook', style: MorphText.display.copyWith(fontSize: 44)),
+        Text('morphcook', style: morph.text.display.copyWith(fontSize: 44)),
         const SizedBox(height: 4),
-        Text(s('tagline'), style: MorphText.hand.copyWith(fontSize: 19)),
+        Text(s('tagline'), style: morph.text.handAt(19)),
         const SizedBox(height: 6),
         if (name.isNotEmpty)
-          Text('${s('editionFor')} $name'.toLowerCase(),
-              style: MorphText.label(size: 10)),
+          Text(morph.cased('${s('editionFor')} $name'),
+              style: morph.text.label(size: 10)),
         const SizedBox(height: 2),
       ],
     );
@@ -159,48 +161,53 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _featuredCard(
       Dish dish, Recipe recipe, String lang, AppState state) {
-    return GestureDetector(
-      onTap: () => _openDish(dish),
-      child: Container(
-        decoration: BoxDecoration(
-          color: MorphColors.card,
-          border: Border.all(color: MorphColors.line),
-          boxShadow: [
-            BoxShadow(
-              color: MorphColors.ink.withValues(alpha: 0.08),
-              blurRadius: 14,
-              offset: const Offset(0, 6),
-            ),
-          ],
-        ),
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            StripedPlaceholder(
-              color: _hex(dish.stripe),
-              height: 150,
-              caption: dish.caption.of(lang),
-            ),
-            const SizedBox(height: 10),
-            Text(dish.name.of(lang).toLowerCase(),
-                style: MorphText.display.copyWith(fontSize: 28)),
-            const SizedBox(height: 4),
-            Text(dish.hero.of(lang),
-                style: MorphText.mono
-                    .copyWith(fontSize: 12, color: MorphColors.inkSoft)),
-            const SizedBox(height: 8),
-            Row(
-              children: [
-                _meta('${recipe.timeMinutes} ${S(lang)('minutes')}'),
-                const SizedBox(width: 8),
-                _meta('${recipe.caloriesPerServing} kcal'),
-                const SizedBox(width: 8),
-                _meta(state.corpus.ontology
-                    .nameOf(recipe.variant.effort, lang)),
-              ],
-            ),
-          ],
+    final morph = MorphTheme.of(context);
+    return Semantics(
+      button: true,
+      label: dish.name.of(lang),
+      child: GestureDetector(
+        onTap: () => _openDish(dish),
+        child: Container(
+          decoration: BoxDecoration(
+            color: morph.colors.card,
+            border: Border.all(color: morph.colors.line),
+            boxShadow: [
+              BoxShadow(
+                color: morph.colors.ink.withValues(alpha: 0.08),
+                blurRadius: 14,
+                offset: const Offset(0, 6),
+              ),
+            ],
+          ),
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              StripedPlaceholder(
+                color: _hex(dish.stripe),
+                height: 150,
+                caption: dish.caption.of(lang),
+              ),
+              const SizedBox(height: 10),
+              Text(morph.cased(dish.name.of(lang)),
+                  style: morph.text.display.copyWith(fontSize: 28)),
+              const SizedBox(height: 4),
+              Text(dish.hero.of(lang),
+                  style: morph.text.mono
+                      .copyWith(fontSize: 12, color: morph.colors.inkSoft)),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  _meta('${recipe.timeMinutes} ${S(lang)('minutes')}'),
+                  const SizedBox(width: 8),
+                  _meta('${recipe.caloriesPerServing} kcal'),
+                  const SizedBox(width: 8),
+                  _meta(state.corpus.ontology
+                      .nameOf(recipe.variant.effort, lang)),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -213,23 +220,30 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         const DashedDivider(height: 1),
         const SizedBox(height: 12),
-        GestureDetector(
-          onTap: () => launchUrl(Uri.parse('https://www.the-morpheus.de/'),
-              mode: LaunchMode.externalApplication),
-          child: Text(s('supportMadeBy'),
-              style: MorphText.hand.copyWith(fontSize: 18)),
+        Semantics(
+          button: true,
+          link: true,
+          child: GestureDetector(
+            onTap: () => launchUrl(Uri.parse('https://www.the-morpheus.de/'),
+                mode: LaunchMode.externalApplication),
+            child: Text(s('supportMadeBy'),
+                style: MorphTheme.of(context).text.handAt(18)),
+          ),
         ),
       ],
     );
   }
 
-  Widget _meta(String text) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
-        decoration: BoxDecoration(
-            border: Border.all(color: MorphColors.line),
-            borderRadius: BorderRadius.circular(2)),
-        child: Text(text.toLowerCase(), style: MorphText.label(size: 9)),
-      );
+  Widget _meta(String text) {
+    final morph = MorphTheme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+      decoration: BoxDecoration(
+          border: Border.all(color: morph.colors.line),
+          borderRadius: BorderRadius.circular(2)),
+      child: Text(morph.cased(text), style: morph.text.label(size: 9)),
+    );
+  }
 
   void _openDish(Dish dish) {
     Navigator.of(context)

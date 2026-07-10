@@ -24,7 +24,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
   late CookSessionController _session;
   late OneHandedCookModeController _oneHanded;
   bool _flashing = false;
-  Color _flashColor = MorphColors.coral;
+  Color _flashColor = MorphColors.light.coral;
 
   @override
   void initState() {
@@ -55,6 +55,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
   /// coral/teal full-screen flashes. Skipped when motion is reduced —
   /// a steady banner is shown instead.
   Future<void> _triggerFlash() async {
+    final morph = MorphTheme.of(context);
     final state = context.read<AppState>();
     if (!state.profile.visualAlertEnabled) return;
     HapticFeedback.heavyImpact();
@@ -64,7 +65,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
     if (reduce) {
       setState(() {
         _flashing = true;
-        _flashColor = MorphColors.coral;
+        _flashColor = morph.colors.coral;
       });
       await Future.delayed(const Duration(milliseconds: 1500));
       if (mounted) setState(() => _flashing = false);
@@ -74,7 +75,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
       if (!mounted) return;
       setState(() {
         _flashing = true;
-        _flashColor = i.isEven ? MorphColors.coral : MorphColors.teal;
+        _flashColor = i.isEven ? morph.colors.coral : morph.colors.teal;
       });
       await Future.delayed(const Duration(milliseconds: 240));
     }
@@ -97,6 +98,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final lang = state.lang;
@@ -117,10 +119,10 @@ class _CookModeScreenState extends State<CookModeScreen> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Text(recipe.title.of(lang).toLowerCase(),
+                    child: Text(morph.cased(recipe.title.of(lang)),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: MorphText.display.copyWith(
+                        style: morph.text.display.copyWith(
                             fontSize: 20, color: MorphColors.cream)),
                   ),
                   _servingsScaler(s),
@@ -143,9 +145,9 @@ class _CookModeScreenState extends State<CookModeScreen> {
               child: Row(
                 children: [
                   Text(
-                    '${s('step')} ${_session.stepIndex + 1} ${s('of')} ${recipe.steps.length}'
-                        .toLowerCase(),
-                    style: MorphText.label(color: MorphColors.inkFaint),
+                    morph.cased(
+                        '${s('step')} ${_session.stepIndex + 1} ${s('of')} ${recipe.steps.length}'),
+                    style: morph.text.label(color: morph.colors.inkFaint),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -153,7 +155,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
                       value:
                           (_session.stepIndex + 1) / recipe.steps.length,
                       backgroundColor: MorphColors.nightCard,
-                      color: MorphColors.terracotta,
+                      color: morph.colors.terracotta,
                       minHeight: 2,
                     ),
                   ),
@@ -171,22 +173,21 @@ class _CookModeScreenState extends State<CookModeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('${_session.stepIndex + 1}.',
-                          style: MorphText.display.copyWith(
+                          style: morph.text.display.copyWith(
                               fontSize: 44,
-                              color: MorphColors.terracotta)),
+                              color: morph.colors.terracotta)),
                       const SizedBox(height: 12),
                       Text(
                         step.text.of(lang),
-                        style: MorphText.serif.copyWith(
+                        style: morph.text.serif.copyWith(
                             fontSize: 21, color: MorphColors.cream),
                       ),
                       if (_session.quickTapHintVisible(state))
                         Padding(
                           padding: const EdgeInsets.only(top: 16),
                           child: Text(s('quickTapHint'),
-                              style: MorphText.hand.copyWith(
-                                  fontSize: 17,
-                                  color: MorphColors.inkFaint)),
+                              style: morph.text.handAt(17,
+                                  color: morph.colors.inkFaint)),
                         ),
                     ],
                   ),
@@ -209,51 +210,55 @@ class _CookModeScreenState extends State<CookModeScreen> {
     showModalBottomSheet<void>(
       context: context,
       backgroundColor: MorphColors.nightCard,
-      builder: (context) => ListView(
-        padding: const EdgeInsets.fromLTRB(24, 18, 24, 28),
-        shrinkWrap: true,
-        children: [
-          Center(
-            child: Text(
-              '${s('ingredients')} · ${_session.servings} ${s('servings')}'
-                  .toLowerCase(),
-              style: MorphText.label(color: MorphColors.inkFaint),
-            ),
-          ),
-          const SizedBox(height: 10),
-          for (final ing in widget.recipe.ingredients)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 4),
-              child: Row(
-                children: [
-                  SizedBox(
-                    width: 90,
-                    child: Text(
-                      Quantity(ing.qty * factor, ing.unit).display,
-                      style: MorphText.mono.copyWith(
-                          fontSize: 12, color: MorphColors.terracotta),
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                      state.corpus.dictionary
-                              .byId(ing.ingredientId)
-                              ?.name
-                              .of(lang) ??
-                          ing.ingredientId,
-                      style: MorphText.mono.copyWith(
-                          fontSize: 12.5, color: MorphColors.cream),
-                    ),
-                  ),
-                ],
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return ListView(
+          padding: const EdgeInsets.fromLTRB(24, 18, 24, 28),
+          shrinkWrap: true,
+          children: [
+            Center(
+              child: Text(
+                morph.cased(
+                    '${s('ingredients')} · ${_session.servings} ${s('servings')}'),
+                style: morph.text.label(color: morph.colors.inkFaint),
               ),
             ),
-        ],
-      ),
+            const SizedBox(height: 10),
+            for (final ing in widget.recipe.ingredients)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 90,
+                      child: Text(
+                        Quantity(ing.qty * factor, ing.unit).display,
+                        style: morph.text.mono.copyWith(
+                            fontSize: 12, color: morph.colors.terracotta),
+                      ),
+                    ),
+                    Expanded(
+                      child: Text(
+                        state.corpus.dictionary
+                                .byId(ing.ingredientId)
+                                ?.name
+                                .of(lang) ??
+                            ing.ingredientId,
+                        style: morph.text.mono.copyWith(
+                            fontSize: 12.5, color: MorphColors.cream),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 
   Widget _servingsScaler(S s) {
+    final morph = MorphTheme.of(context);
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: MorphColors.nightCard),
@@ -266,7 +271,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
               () => _session.setServings(_session.servings - 1)),
           Text('${_session.servings}',
               style:
-                  MorphText.mono.copyWith(color: MorphColors.cream)),
+                  morph.text.mono.copyWith(color: MorphColors.cream)),
           _scaleButton(Icons.add,
               () => _session.setServings(_session.servings + 1)),
         ],
@@ -274,15 +279,19 @@ class _CookModeScreenState extends State<CookModeScreen> {
     );
   }
 
-  Widget _scaleButton(IconData icon, VoidCallback onTap) => InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(8),
-          child: Icon(icon, size: 16, color: MorphColors.inkFaint),
-        ),
-      );
+  Widget _scaleButton(IconData icon, VoidCallback onTap) {
+    final morph = MorphTheme.of(context);
+    return InkWell(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.all(8),
+        child: Icon(icon, size: 16, color: morph.colors.inkFaint),
+      ),
+    );
+  }
 
   Widget _timerBar(int remaining, S s) {
+    final morph = MorphTheme.of(context);
     final minutes = (remaining ~/ 60).toString().padLeft(2, '0');
     final seconds = (remaining % 60).toString().padLeft(2, '0');
     final running = _session.isTimerRunning;
@@ -297,29 +306,28 @@ class _CookModeScreenState extends State<CookModeScreen> {
       child: Row(
         children: [
           Text('$minutes:$seconds',
-              style: MorphText.mono.copyWith(
+              style: morph.text.mono.copyWith(
                   fontSize: 26,
                   color: remaining == 0
-                      ? MorphColors.coral
+                      ? morph.colors.coral
                       : MorphColors.cream)),
           const Spacer(),
           if (remaining == 0)
             Text(s('timerDone'),
-                style: MorphText.hand
-                    .copyWith(fontSize: 18, color: MorphColors.coral))
+                style: morph.text
+                    .handAt(18, color: morph.colors.coral))
           else
             TextButton(
               onPressed: running
                   ? _session.pauseTimer
                   : (paused ? _session.resumeTimer : _session.startTimer),
               child: Text(
-                (running
-                        ? s('pause')
-                        : paused
-                            ? s('resume')
-                            : s('startTimer'))
-                    .toLowerCase(),
-                style: MorphText.label(color: MorphColors.teal),
+                morph.cased(running
+                    ? s('pause')
+                    : paused
+                        ? s('resume')
+                        : s('startTimer')),
+                style: morph.text.label(color: morph.colors.teal),
               ),
             ),
         ],
@@ -328,6 +336,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
   }
 
   Widget _navBar(S s) {
+    final morph = MorphTheme.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
       child: Row(
@@ -340,7 +349,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
           const Spacer(),
           FilledButton(
             style: FilledButton.styleFrom(
-              backgroundColor: MorphColors.terracotta,
+              backgroundColor: morph.colors.terracotta,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(2)),
               padding:
@@ -350,9 +359,9 @@ class _CookModeScreenState extends State<CookModeScreen> {
                 ? _session.complete
                 : _session.nextStep,
             child: Text(
-              (_session.isLastStep ? s('finishCooking') : s('next'))
-                  .toLowerCase(),
-              style: MorphText.label(color: MorphColors.cream),
+              morph.cased(
+                  _session.isLastStep ? s('finishCooking') : s('next')),
+              style: morph.text.label(color: MorphColors.cream),
             ),
           ),
         ],
@@ -361,6 +370,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
   }
 
   Widget _completion(AppState state, S s) {
+    final morph = MorphTheme.of(context);
     return Scaffold(
       backgroundColor: MorphColors.night,
       body: SafeArea(
@@ -370,20 +380,20 @@ class _CookModeScreenState extends State<CookModeScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('&', style: MorphText.hand.copyWith(
-                    fontSize: 60, color: MorphColors.terracotta)),
+                Text('&', style: morph.text.handAt(60,
+                    color: morph.colors.terracotta)),
                 const SizedBox(height: 12),
                 Text(s('cookedIt'),
                     textAlign: TextAlign.center,
-                    style: MorphText.display.copyWith(
+                    style: morph.text.display.copyWith(
                         fontSize: 30, color: MorphColors.cream)),
                 const SizedBox(height: 8),
                 Text(s('cookAgainNote'),
-                    style: MorphText.label(color: MorphColors.inkFaint)),
+                    style: morph.text.label(color: morph.colors.inkFaint)),
                 const SizedBox(height: 32),
                 FilledButton(
                   style: FilledButton.styleFrom(
-                    backgroundColor: MorphColors.terracotta,
+                    backgroundColor: morph.colors.terracotta,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(2)),
                     padding: const EdgeInsets.symmetric(
@@ -395,8 +405,8 @@ class _CookModeScreenState extends State<CookModeScreen> {
                     // ignore: use_build_context_synchronously
                     Navigator.of(context).pop();
                   },
-                  child: Text(s('done').toLowerCase(),
-                      style: MorphText.label(color: MorphColors.cream)),
+                  child: Text(morph.cased(s('done')),
+                      style: morph.text.label(color: MorphColors.cream)),
                 ),
               ],
             ),

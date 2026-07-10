@@ -3,85 +3,222 @@ import 'package:flutter/material.dart';
 /// MorphCook's tumblr-era cookbook look: warm paper, ink, terracotta &
 /// teal accents, Playfair italic display, JetBrains Mono labels, Caveat
 /// handwriting. Calm, nostalgic, analog.
-abstract final class MorphColors {
-  static const paper = Color(0xFFF7F1E6);
-  static const paperDeep = Color(0xFFEFE6D4);
-  static const card = Color(0xFFFCF8F0);
-  static const ink = Color(0xFF2C261E);
-  static const inkSoft = Color(0xFF6E6354);
-  static const inkFaint = Color(0xFFA89A86);
-  static const terracotta = Color(0xFFC2603C);
-  static const teal = Color(0xFF50837B);
-  static const butter = Color(0xFFE9C46A);
-  static const coral = Color(0xFFE76F51);
-  static const line = Color(0xFFD8CCB8);
+///
+/// Two editions of the palette exist — [light] ("paper") and [dark]
+/// ("midnight kitchen") — plus a readable-text typography mode that trades
+/// the decorative faces for Atkinson Hyperlegible. Both are resolved
+/// through [MorphTheme]; widgets never hardcode an edition.
+class MorphColors {
+  final Brightness brightness;
+  final Color paper;
+  final Color paperDeep;
+  final Color card;
+  final Color ink;
+  final Color inkSoft;
+  final Color inkFaint;
+  final Color terracotta;
+  final Color teal;
+  final Color butter;
+  final Color coral;
+  final Color line;
 
-  // Cook mode (dark full-bleed)
+  /// Speck/fibre tint for [PaperGrainPainter].
+  final Color grain;
+
+  const MorphColors({
+    required this.brightness,
+    required this.paper,
+    required this.paperDeep,
+    required this.card,
+    required this.ink,
+    required this.inkSoft,
+    required this.inkFaint,
+    required this.terracotta,
+    required this.teal,
+    required this.butter,
+    required this.coral,
+    required this.line,
+    required this.grain,
+  });
+
+  // Cook mode (dark full-bleed, identical in both editions).
   static const night = Color(0xFF191511);
   static const nightCard = Color(0xFF241F19);
   static const cream = Color(0xFFF3EBDD);
+
+  static const light = MorphColors(
+    brightness: Brightness.light,
+    paper: Color(0xFFF7F1E6),
+    paperDeep: Color(0xFFEFE6D4),
+    card: Color(0xFFFCF8F0),
+    ink: Color(0xFF2C261E),
+    inkSoft: Color(0xFF6E6354),
+    // Darker than the original 0xFFA89A86 — that one sat near 2.4:1 on
+    // paper, unreadable for low-vision users at the tiny sizes it's used at.
+    inkFaint: Color(0xFF8C7D66),
+    terracotta: Color(0xFFC2603C),
+    teal: Color(0xFF50837B),
+    butter: Color(0xFFE9C46A),
+    coral: Color(0xFFE76F51),
+    line: Color(0xFFD8CCB8),
+    grain: Color(0x0E5B4A33),
+  );
+
+  static const dark = MorphColors(
+    brightness: Brightness.dark,
+    paper: night,
+    paperDeep: Color(0xFF120F0B),
+    card: nightCard,
+    ink: cream,
+    inkSoft: Color(0xFFBFB29C),
+    inkFaint: Color(0xFF8D806B),
+    // Accents lifted a step so they keep contrast against the night paper.
+    terracotta: Color(0xFFD87E58),
+    teal: Color(0xFF7FB0A6),
+    butter: Color(0xFFE9C46A),
+    coral: Color(0xFFEE8E74),
+    line: Color(0xFF3C342A),
+    grain: Color(0x12F3EBDD),
+  );
 }
 
-abstract final class MorphText {
-  static const display = TextStyle(
-    fontFamily: 'Playfair Display',
-    fontStyle: FontStyle.italic,
-    color: MorphColors.ink,
-    height: 1.1,
-  );
+class MorphText {
+  final MorphColors colors;
 
-  static const serif = TextStyle(
-    fontFamily: 'Playfair Display',
-    color: MorphColors.ink,
-    height: 1.25,
-  );
+  /// Swaps the decorative faces (Playfair italic, Caveat, mono body) for
+  /// Atkinson Hyperlegible — distinct letterforms, no italics. For readers
+  /// with dyslexia or low vision the flourishes are noise, not charm.
+  final bool readable;
 
-  static const mono = TextStyle(
-    fontFamily: 'JetBrains Mono',
-    color: MorphColors.ink,
-    height: 1.5,
-  );
+  const MorphText(this.colors, {this.readable = false});
 
-  static const hand = TextStyle(
-    fontFamily: 'Caveat',
-    color: MorphColors.inkSoft,
-    height: 1.1,
-  );
+  static const readableFamily = 'Atkinson Hyperlegible';
 
-  /// Small uppercase mono label with wide tracking — the "typewritten" voice.
-  static TextStyle label({Color color = MorphColors.inkSoft, double size = 11}) =>
-      mono.copyWith(fontSize: size, letterSpacing: 1.6, color: color);
+  TextStyle get display => readable
+      ? TextStyle(
+          fontFamily: readableFamily,
+          fontWeight: FontWeight.w700,
+          color: colors.ink,
+          height: 1.2,
+        )
+      : TextStyle(
+          fontFamily: 'Playfair Display',
+          fontStyle: FontStyle.italic,
+          color: colors.ink,
+          height: 1.1,
+        );
+
+  TextStyle get serif => readable
+      ? TextStyle(fontFamily: readableFamily, color: colors.ink, height: 1.35)
+      : TextStyle(
+          fontFamily: 'Playfair Display', color: colors.ink, height: 1.25);
+
+  TextStyle get mono => readable
+      ? TextStyle(
+          fontFamily: readableFamily,
+          color: colors.ink,
+          height: 1.5,
+          letterSpacing: 0.2,
+        )
+      : TextStyle(
+          fontFamily: 'JetBrains Mono', color: colors.ink, height: 1.5);
+
+  TextStyle get hand => readable
+      ? TextStyle(fontFamily: readableFamily, color: colors.inkSoft, height: 1.35)
+      : TextStyle(fontFamily: 'Caveat', color: colors.inkSoft, height: 1.1);
+
+  /// Handwriting at a nominal Caveat size. Caveat renders small for its
+  /// point size, so the readable face scales down (floored at 12) instead
+  /// of shouting.
+  TextStyle handAt(double size, {Color? color}) {
+    final resolved = readable ? (size * 0.78).clamp(12.0, size) : size;
+    return hand.copyWith(fontSize: resolved, color: color);
+  }
+
+  /// Small uppercase mono label with wide tracking — the "typewritten"
+  /// voice. Readable mode floors the size at 11 and relaxes the tracking.
+  TextStyle label({Color? color, double size = 11}) => mono.copyWith(
+        fontSize: readable && size < 11 ? 11 : size,
+        letterSpacing: readable ? 0.6 : 1.6,
+        color: color ?? colors.inkSoft,
+      );
 }
 
-ThemeData morphTheme() {
+/// Everything the widget tree needs to render one edition of the look.
+class MorphThemeData {
+  final MorphColors colors;
+  final bool readable;
+  final MorphText text;
+
+  MorphThemeData({required this.colors, this.readable = false})
+      : text = MorphText(colors, readable: readable);
+
+  bool get isDark => colors.brightness == Brightness.dark;
+
+  /// The all-lowercase "typewritten" aesthetic, applied at display sites.
+  /// Readable mode keeps original casing — capitalization is a reading cue
+  /// (German capitalizes every noun).
+  String cased(String value) => readable ? value : value.toLowerCase();
+
+  @override
+  bool operator ==(Object other) =>
+      other is MorphThemeData &&
+      other.colors == colors &&
+      other.readable == readable;
+
+  @override
+  int get hashCode => Object.hash(colors, readable);
+}
+
+class MorphTheme extends InheritedWidget {
+  final MorphThemeData data;
+
+  const MorphTheme({super.key, required this.data, required super.child});
+
+  /// Falls back to the light edition so bare test harnesses and the boot
+  /// splash don't need a wrapper.
+  static MorphThemeData of(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<MorphTheme>()?.data ??
+      _fallback;
+
+  static final _fallback = MorphThemeData(colors: MorphColors.light);
+
+  @override
+  bool updateShouldNotify(MorphTheme oldWidget) => oldWidget.data != data;
+}
+
+ThemeData morphThemeData(MorphColors colors, {bool readable = false}) {
   final base = ThemeData(
     useMaterial3: true,
-    scaffoldBackgroundColor: MorphColors.paper,
+    brightness: colors.brightness,
+    scaffoldBackgroundColor: colors.paper,
     colorScheme: ColorScheme.fromSeed(
-      seedColor: MorphColors.terracotta,
-      surface: MorphColors.paper,
-      primary: MorphColors.terracotta,
-      secondary: MorphColors.teal,
+      seedColor: colors.terracotta,
+      brightness: colors.brightness,
+      surface: colors.paper,
+      primary: colors.terracotta,
+      secondary: colors.teal,
     ),
     splashFactory: InkRipple.splashFactory,
   );
+  final text = MorphText(colors, readable: readable);
   return base.copyWith(
     textTheme: base.textTheme.apply(
-      bodyColor: MorphColors.ink,
-      displayColor: MorphColors.ink,
-      fontFamily: 'JetBrains Mono',
+      bodyColor: colors.ink,
+      displayColor: colors.ink,
+      fontFamily: readable ? MorphText.readableFamily : 'JetBrains Mono',
     ),
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
-      foregroundColor: MorphColors.ink,
+      foregroundColor: colors.ink,
       elevation: 0,
       centerTitle: true,
     ),
-    dividerColor: MorphColors.line,
+    dividerColor: colors.line,
     snackBarTheme: SnackBarThemeData(
-      backgroundColor: MorphColors.ink,
-      contentTextStyle: MorphText.mono
-          .copyWith(color: MorphColors.cream, fontSize: 12),
+      // Inverted chip: ink on paper flips to cream on night and stays legible.
+      backgroundColor: colors.ink,
+      contentTextStyle: text.mono.copyWith(color: colors.paper, fontSize: 12),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
     ),
@@ -103,7 +240,7 @@ Duration motionDuration(
 /// Subtle paper grain: scattered specks + faint horizontal fibre lines.
 class PaperGrainPainter extends CustomPainter {
   final Color speck;
-  const PaperGrainPainter({this.speck = const Color(0x0E5B4A33)});
+  const PaperGrainPainter({required this.speck});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -132,23 +269,24 @@ class PaperGrainPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant PaperGrainPainter oldDelegate) => false;
+  bool shouldRepaint(covariant PaperGrainPainter oldDelegate) =>
+      oldDelegate.speck != speck;
 }
 
 /// Scaffold background that lays paper grain behind [child].
 class PaperBackground extends StatelessWidget {
   final Widget child;
-  final Color color;
+  final Color? color;
 
-  const PaperBackground(
-      {super.key, required this.child, this.color = MorphColors.paper});
+  const PaperBackground({super.key, required this.child, this.color});
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     return Container(
-      color: color,
+      color: color ?? morph.colors.paper,
       child: CustomPaint(
-        foregroundPainter: const PaperGrainPainter(),
+        foregroundPainter: PaperGrainPainter(speck: morph.colors.grain),
         child: child,
       ),
     );

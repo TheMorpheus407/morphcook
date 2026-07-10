@@ -56,6 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final s = S(_lang);
     return Scaffold(
       body: PaperBackground(
@@ -64,9 +65,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               const SizedBox(height: 18),
               Text('morphcook',
-                  style: MorphText.display.copyWith(fontSize: 30)),
+                  style: morph.text.display.copyWith(fontSize: 30)),
               Text(s('tagline'),
-                  style: MorphText.hand.copyWith(fontSize: 17)),
+                  style: morph.text.handAt(17)),
               const SizedBox(height: 6),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -77,8 +78,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       height: 2,
                       margin: const EdgeInsets.symmetric(horizontal: 3),
                       color: i <= _index
-                          ? MorphColors.terracotta
-                          : MorphColors.line,
+                          ? morph.colors.terracotta
+                          : morph.colors.line,
                     ),
                 ],
               ),
@@ -105,16 +106,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   Widget _frame(String title, List<Widget> children,
       {String? subtitle, Widget? footer}) {
+    final morph = MorphTheme.of(context);
     return ListView(
       padding: const EdgeInsets.fromLTRB(28, 30, 28, 24),
       children: [
-        Text(title, style: MorphText.display.copyWith(fontSize: 27)),
+        Text(title, style: morph.text.display.copyWith(fontSize: 27)),
         if (subtitle != null)
           Padding(
             padding: const EdgeInsets.only(top: 8),
             child: Text(subtitle,
-                style: MorphText.hand
-                    .copyWith(fontSize: 18, color: MorphColors.inkSoft)),
+                style: morph.text.handAt(18, color: morph.colors.inkSoft)),
           ),
         const SizedBox(height: 22),
         ...children,
@@ -124,17 +125,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  Widget _primaryButton(String label, VoidCallback onTap) => FilledButton(
-        style: FilledButton.styleFrom(
-          backgroundColor: MorphColors.ink,
-          padding: const EdgeInsets.symmetric(vertical: 15),
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(2)),
-        ),
-        onPressed: onTap,
-        child: Text(label.toLowerCase(),
-            style: MorphText.label(color: MorphColors.cream)),
-      );
+  Widget _primaryButton(String label, VoidCallback onTap) {
+    final morph = MorphTheme.of(context);
+    return FilledButton(
+      style: FilledButton.styleFrom(
+        backgroundColor: morph.colors.ink,
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(2)),
+      ),
+      onPressed: onTap,
+      child: Text(morph.cased(label),
+          style: morph.text.label(color: morph.colors.paper)),
+    );
+  }
 
   Widget _languagePage(S s) => _frame(
         s('obLanguageTitle'),
@@ -150,45 +154,51 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         footer: _primaryButton(s('next'), _next),
       );
 
-  Widget _bigChoice(String label, bool selected, VoidCallback onTap) =>
-      GestureDetector(
-        onTap: onTap,
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: selected ? MorphColors.ink : MorphColors.card,
-            border: Border.all(color: MorphColors.line),
-          ),
-          child: Text(label,
-              style: MorphText.display.copyWith(
-                  fontSize: 20,
-                  color:
-                      selected ? MorphColors.cream : MorphColors.ink)),
+  Widget _bigChoice(String label, bool selected, VoidCallback onTap) {
+    final morph = MorphTheme.of(context);
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: selected ? morph.colors.ink : morph.colors.card,
+          border: Border.all(color: morph.colors.line),
         ),
-      );
+        child: Text(label,
+            style: morph.text.display.copyWith(
+                fontSize: 20,
+                color:
+                    selected ? morph.colors.paper : morph.colors.ink)),
+      ),
+    );
+  }
 
-  Widget _namePage(S s) => _frame(
-        s('obNameTitle'),
-        [
-          TextField(
-            controller: _name,
-            autofocus: false,
-            style: MorphText.mono.copyWith(fontSize: 15),
-            decoration: InputDecoration(
-              hintText: s('obNameHint'),
-              hintStyle: MorphText.mono
-                  .copyWith(fontSize: 13, color: MorphColors.inkFaint),
-              enabledBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(color: MorphColors.line)),
-              focusedBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(color: MorphColors.terracotta)),
-            ),
+  Widget _namePage(S s) {
+    final morph = MorphTheme.of(context);
+    return _frame(
+      s('obNameTitle'),
+      [
+        TextField(
+          controller: _name,
+          autofocus: false,
+          style: morph.text.mono.copyWith(fontSize: 15),
+          decoration: InputDecoration(
+            hintText: s('obNameHint'),
+            hintStyle: morph.text.mono
+                .copyWith(fontSize: 13, color: morph.colors.inkFaint),
+            enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: morph.colors.line)),
+            focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: morph.colors.terracotta)),
           ),
-        ],
-        footer: _primaryButton(s('next'), _next),
-      );
+        ),
+      ],
+      footer: _primaryButton(s('next'), _next),
+    );
+  }
 
   Widget _dietPage(S s) {
+    final morph = MorphTheme.of(context);
     final state = context.read<AppState>();
     final ontology = state.corpus.ontology;
     return _frame(
@@ -210,7 +220,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ],
         ),
         const DashedDivider(),
-        Text(s('obAllergyTitle'), style: MorphText.label(size: 10)),
+        Text(s('obAllergyTitle'), style: morph.text.label(size: 10)),
         const SizedBox(height: 10),
         Wrap(
           spacing: 8,
@@ -274,19 +284,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     required String Function(double?) display,
     required void Function(double?) onChanged,
   }) {
+    final morph = MorphTheme.of(context);
     final active = value != null;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           children: [
-            Expanded(child: Text(label, style: MorphText.label())),
+            Expanded(child: Text(label, style: morph.text.label())),
             Text(display(value),
-                style: MorphText.mono.copyWith(
-                    fontSize: 12, color: MorphColors.terracotta)),
+                style: morph.text.mono.copyWith(
+                    fontSize: 12, color: morph.colors.terracotta)),
             Checkbox(
               value: active,
-              activeColor: MorphColors.terracotta,
+              activeColor: morph.colors.terracotta,
               onChanged: (v) => onChanged(v == true ? (min + max) / 2 : null),
             ),
           ],
@@ -297,7 +308,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             min: min,
             max: max,
             divisions: divisions,
-            activeColor: MorphColors.terracotta,
+            activeColor: morph.colors.terracotta,
             onChanged: onChanged,
           ),
       ],
@@ -305,19 +316,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   Widget _confirmPage(S s) {
+    final morph = MorphTheme.of(context);
     final name = _name.text.trim();
     return _frame(
       s('obConfirmTitle'),
       [
         if (name.isNotEmpty)
-          Text('${s('editionFor')} $name'.toLowerCase(),
-              style: MorphText.label()),
+          Text(morph.cased('${s('editionFor')} $name'),
+              style: morph.text.label()),
         const SizedBox(height: 12),
         Text(s('obConfirmBody'),
-            style: MorphText.serif.copyWith(fontSize: 17)),
+            style: morph.text.serif.copyWith(fontSize: 17)),
         const SizedBox(height: 16),
-        Text('&', style: MorphText.hand.copyWith(
-            fontSize: 44, color: MorphColors.terracotta)),
+        Text('&', style: morph.text.handAt(44, color: morph.colors.terracotta)),
       ],
       footer: _primaryButton(s('letsCook'), _finish),
     );

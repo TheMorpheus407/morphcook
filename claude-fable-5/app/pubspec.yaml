@@ -45,6 +45,7 @@ flutter:
     - assets/ingredient-guide.json
     - assets/faqs.json
     - assets/mo-logo.png
+    - assets/fonts/OFL-AtkinsonHyperlegible.txt
 
   fonts:
     - family: Playfair Display
@@ -60,3 +61,15 @@ flutter:
     - family: Caveat
       fonts:
         - asset: assets/fonts/Caveat-Regular.ttf
+    # Braille Institute's low-vision/dyslexia-friendly face (SIL OFL,
+    # license file alongside the assets) — powers the readable-text setting.
+    - family: Atkinson Hyperlegible
+      fonts:
+        - asset: assets/fonts/AtkinsonHyperlegible-Regular.ttf
+        - asset: assets/fonts/AtkinsonHyperlegible-Italic.ttf
+          style: italic
+        - asset: assets/fonts/AtkinsonHyperlegible-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/AtkinsonHyperlegible-BoldItalic.ttf
+          weight: 700
+          style: italic

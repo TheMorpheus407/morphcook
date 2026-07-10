@@ -33,6 +33,8 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   final _ingredientQuery = TextEditingController();
 
+  MorphThemeData get _morph => MorphTheme.of(context);
+
   @override
   void dispose() {
     _ingredientQuery.dispose();
@@ -42,6 +44,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final morph = _morph;
     final s = S(state.lang);
     final lang = state.lang;
     final profile = state.profile;
@@ -52,13 +55,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
         padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
         children: [
           Text(s('settings'),
-              style: MorphText.display.copyWith(fontSize: 30)),
+              style: morph.text.display.copyWith(fontSize: 30)),
           const SizedBox(height: 8),
 
           SectionHeader(title: s('profile')),
           TextFormField(
             initialValue: profile.name,
-            style: MorphText.mono.copyWith(fontSize: 13),
+            style: morph.text.mono.copyWith(fontSize: 13),
             decoration: _underline(s('yourName')),
             onFieldSubmitted: (v) =>
                 state.updateProfile(profile.copyWith(name: v.trim())),
@@ -66,7 +69,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           const SizedBox(height: 14),
           Row(
             children: [
-              Text(s('language'), style: MorphText.label()),
+              Text(s('language'), style: morph.text.label()),
               const Spacer(),
               MonoChip(
                 label: 'english',
@@ -85,7 +88,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
 
           SectionHeader(title: s('dietAllergies')),
-          Text(s('avoidClasses'), style: MorphText.label(size: 10)),
+          Text(s('avoidClasses'), style: morph.text.label(size: 10)),
           const SizedBox(height: 8),
           Wrap(
             spacing: 8,
@@ -117,11 +120,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           Padding(
             padding: const EdgeInsets.only(top: 6),
             child: Text(s('halalKosherNote'),
-                style: MorphText.hand
-                    .copyWith(fontSize: 16, color: MorphColors.inkSoft)),
+                style: morph.text.handAt(16, color: morph.colors.inkSoft)),
           ),
           const SizedBox(height: 14),
-          Text(s('avoidSpecific'), style: MorphText.label(size: 10)),
+          Text(s('avoidSpecific'), style: morph.text.label(size: 10)),
           const SizedBox(height: 6),
           _specificAvoidance(state, s, lang),
 
@@ -172,7 +174,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 : profile.copyWith(maxTimeMinutes: v.round())),
           ),
           const SizedBox(height: 10),
-          Text(s('preferredEffort'), style: MorphText.label()),
+          Text(s('preferredEffort'), style: morph.text.label()),
           const SizedBox(height: 8),
           Wrap(
             spacing: 6,
@@ -196,32 +198,40 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
 
           SectionHeader(title: s('accessibility')),
-          Row(
-            children: [
-              Expanded(
-                  child:
-                      Text(s('reduceMotion'), style: MorphText.label())),
-              MonoChip(
-                label: s('systemDefault'),
-                selected: profile.reduceMotion == null,
-                onTap: () => state.updateProfile(
-                    profile.copyWith(clearReduceMotion: true)),
-              ),
-              const SizedBox(width: 6),
-              MonoChip(
-                label: s('on'),
-                selected: profile.reduceMotion == true,
-                onTap: () => state
-                    .updateProfile(profile.copyWith(reduceMotion: true)),
-              ),
-              const SizedBox(width: 6),
-              MonoChip(
-                label: s('off'),
-                selected: profile.reduceMotion == false,
-                onTap: () => state
-                    .updateProfile(profile.copyWith(reduceMotion: false)),
-              ),
+          _chipRow(
+            label: s('theme'),
+            chips: [
+              (s('systemDefault'), 'system'),
+              (s('themeLight'), 'light'),
+              (s('themeDark'), 'dark'),
             ],
+            selected: profile.themeMode,
+            onSelected: (mode) =>
+                state.updateProfile(profile.copyWith(themeMode: mode)),
+          ),
+          const SizedBox(height: 8),
+          _switchRow(
+            s('readableText'),
+            profile.readableText,
+            (v) => state.updateProfile(profile.copyWith(readableText: v)),
+            hint: s('readableTextHint'),
+          ),
+          const SizedBox(height: 8),
+          _chipRow(
+            label: s('reduceMotion'),
+            chips: [
+              (s('systemDefault'), 'system'),
+              (s('on'), 'on'),
+              (s('off'), 'off'),
+            ],
+            selected: switch (profile.reduceMotion) {
+              null => 'system',
+              true => 'on',
+              false => 'off',
+            },
+            onSelected: (v) => state.updateProfile(v == 'system'
+                ? profile.copyWith(clearReduceMotion: true)
+                : profile.copyWith(reduceMotion: v == 'on')),
           ),
           const SizedBox(height: 8),
           _switchRow(
@@ -268,7 +278,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           const SizedBox(height: 18),
           _linkRow(Icons.restart_alt, s('resetApp'),
               () => _confirmReset(state, s),
-              color: MorphColors.coral),
+              color: morph.colors.coral),
         ],
       ),
     );
@@ -278,11 +288,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   InputDecoration _underline(String label) => InputDecoration(
         labelText: label,
-        labelStyle: MorphText.label(),
-        enabledBorder: const UnderlineInputBorder(
-            borderSide: BorderSide(color: MorphColors.line)),
-        focusedBorder: const UnderlineInputBorder(
-            borderSide: BorderSide(color: MorphColors.terracotta)),
+        labelStyle: _morph.text.label(),
+        enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: _morph.colors.line)),
+        focusedBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: _morph.colors.terracotta)),
       );
 
   void _toggleSet(AppState state, Set<String> current, String id,
@@ -337,7 +347,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               (context, controller, focusNode, onSubmitted) => TextField(
             controller: controller,
             focusNode: focusNode,
-            style: MorphText.mono.copyWith(fontSize: 13),
+            style: _morph.text.mono.copyWith(fontSize: 13),
             decoration: _underline(s('avoidSpecificHint')),
           ),
           onSelected: (id) {
@@ -347,6 +357,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 profile.copyWith(avoidIngredients: next));
           },
         ),
+      ],
+    );
+  }
+
+  /// Label + exclusive chip group (system default / option / option).
+  Widget _chipRow({
+    required String label,
+    required List<(String, String)> chips,
+    required String selected,
+    required void Function(String) onSelected,
+  }) {
+    return Row(
+      children: [
+        Expanded(child: Text(label, style: _morph.text.label())),
+        for (final (text, value) in chips) ...[
+          MonoChip(
+            label: text,
+            selected: selected == value,
+            onTap: () => onSelected(value),
+          ),
+          if (value != chips.last.$2) const SizedBox(width: 6),
+        ],
       ],
     );
   }
@@ -366,13 +398,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         Row(
           children: [
-            Expanded(child: Text(label, style: MorphText.label())),
+            Expanded(child: Text(label, style: _morph.text.label())),
             Text(display(value),
-                style: MorphText.mono.copyWith(
-                    fontSize: 12, color: MorphColors.terracotta)),
+                style: _morph.text.mono.copyWith(
+                    fontSize: 12, color: _morph.colors.terracotta)),
             Checkbox(
               value: active,
-              activeColor: MorphColors.terracotta,
+              activeColor: _morph.colors.terracotta,
               onChanged: (v) =>
                   onChanged(v == true ? (min + max) / 2 : null),
             ),
@@ -384,7 +416,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             min: min,
             max: max,
             divisions: divisions,
-            activeColor: MorphColors.terracotta,
+            activeColor: _morph.colors.terracotta,
             onChanged: onChanged,
           ),
       ],
@@ -398,18 +430,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         Row(
           children: [
-            Expanded(child: Text(label, style: MorphText.label())),
+            Expanded(child: Text(label, style: _morph.text.label())),
             Switch(
               value: value,
-              activeThumbColor: MorphColors.terracotta,
+              activeThumbColor: _morph.colors.terracotta,
               onChanged: onChanged,
             ),
           ],
         ),
         if (hint != null)
           Text(hint,
-              style: MorphText.hand
-                  .copyWith(fontSize: 15, color: MorphColors.inkSoft)),
+              style: _morph.text.handAt(15, color: _morph.colors.inkSoft)),
       ],
     );
   }
@@ -417,13 +448,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   /// Polaroid-flavoured card: logo, handwritten credit, honest mono note,
   /// two outbound links. Visible, not pushy.
   Widget _supportCard(S s) {
+    final morph = _morph;
     return Container(
       decoration: BoxDecoration(
-        color: MorphColors.card,
-        border: Border.all(color: MorphColors.line),
+        color: morph.colors.card,
+        border: Border.all(color: morph.colors.line),
         boxShadow: [
           BoxShadow(
-            color: MorphColors.ink.withValues(alpha: 0.06),
+            color: morph.colors.ink.withValues(alpha: 0.06),
             blurRadius: 10,
             offset: const Offset(2, 4),
           ),
@@ -438,25 +470,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Image.asset(
                 'assets/mo-logo.png',
                 width: 64,
-                color: MorphColors.ink, // pure-black source, tinted to ink
+                color: morph.colors.ink, // pure-black source, tinted to ink
                 excludeFromSemantics: true,
               ),
               const SizedBox(width: 14),
               Expanded(
                 child: Text(s('supportMadeBy'),
-                    style: MorphText.hand
-                        .copyWith(fontSize: 21, color: MorphColors.ink)),
+                    style: morph.text.handAt(21, color: morph.colors.ink)),
               ),
             ],
           ),
           const SizedBox(height: 10),
           Text(s('supportBody'),
-              style: MorphText.mono
-                  .copyWith(fontSize: 12, color: MorphColors.inkSoft)),
+              style: morph.text.mono
+                  .copyWith(fontSize: 12, color: morph.colors.inkSoft)),
           const DashedDivider(height: 20),
           _linkRow(Icons.favorite_border, s('supportPatreon'),
               () => _openExternal(_patreonUrl),
-              color: MorphColors.terracotta),
+              color: morph.colors.terracotta),
           _linkRow(Icons.public, s('supportWebsite'),
               () => _openExternal(_websiteUrl)),
         ],
@@ -473,20 +504,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Widget _linkRow(IconData icon, String label, VoidCallback onTap,
-      {Color color = MorphColors.ink}) {
+      {Color? color}) {
+    final morph = _morph;
+    final fg = color ?? morph.colors.ink;
     return InkWell(
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10),
         child: Row(
           children: [
-            Icon(icon, size: 18, color: color),
+            Icon(icon, size: 18, color: fg),
             const SizedBox(width: 12),
             Text(label,
-                style: MorphText.mono.copyWith(fontSize: 13, color: color)),
+                style: morph.text.mono.copyWith(fontSize: 13, color: fg)),
             const Spacer(),
-            const Icon(Icons.chevron_right,
-                size: 16, color: MorphColors.inkFaint),
+            Icon(Icons.chevron_right,
+                size: 16, color: morph.colors.inkFaint),
           ],
         ),
       ),
@@ -544,22 +577,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (!mounted) return;
     final merge = await showDialog<bool>(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: MorphColors.paper,
-        title: Text(s('importBackup'),
-            style: MorphText.display.copyWith(fontSize: 20)),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, true),
-            child: Text(s('importMerge'), style: MorphText.label()),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: Text(s('importReplace'),
-                style: MorphText.label(color: MorphColors.coral)),
-          ),
-        ],
-      ),
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return AlertDialog(
+          backgroundColor: morph.colors.paper,
+          title: Text(s('importBackup'),
+              style: morph.text.display.copyWith(fontSize: 20)),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: Text(s('importMerge'), style: morph.text.label()),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: Text(s('importReplace'),
+                  style: morph.text.label(color: morph.colors.coral)),
+            ),
+          ],
+        );
+      },
     );
     if (merge == null) return;
     await state.applyBackup(data, merge: merge);
@@ -580,39 +616,42 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final controller = TextEditingController(text: initial);
     final result = await showDialog<String>(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: MorphColors.paper,
-        title:
-            Text(label, style: MorphText.display.copyWith(fontSize: 18)),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextField(
-              controller: controller,
-              obscureText: obscure,
-              autofocus: true,
-              style: MorphText.mono.copyWith(fontSize: 13),
-            ),
-            if (hint != null)
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Text(hint,
-                    style: MorphText.hand.copyWith(
-                        fontSize: 15, color: MorphColors.inkSoft)),
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return AlertDialog(
+          backgroundColor: morph.colors.paper,
+          title:
+              Text(label, style: morph.text.display.copyWith(fontSize: 18)),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: controller,
+                obscureText: obscure,
+                autofocus: true,
+                style: morph.text.mono.copyWith(fontSize: 13),
               ),
+              if (hint != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Text(hint,
+                      style: morph.text
+                          .handAt(15, color: morph.colors.inkSoft)),
+                ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(s('cancel'), style: morph.text.label()),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, controller.text),
+              child: Text('ok', style: morph.text.label()),
+            ),
           ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text(s('cancel'), style: MorphText.label()),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, controller.text),
-            child: Text('ok', style: MorphText.label()),
-          ),
-        ],
-      ),
+        );
+      },
     );
     if (result == null) return null;
     if (!allowEmpty && result.isEmpty) return null;
@@ -622,22 +661,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _confirmReset(AppState state, S s) async {
     final confirmed = await showDialog<bool>(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: MorphColors.paper,
-        content: Text(s('resetConfirm'),
-            style: MorphText.mono.copyWith(fontSize: 13)),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: Text(s('cancel'), style: MorphText.label()),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(context, true),
-            child: Text(s('erase'),
-                style: MorphText.label(color: MorphColors.coral)),
-          ),
-        ],
-      ),
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return AlertDialog(
+          backgroundColor: morph.colors.paper,
+          content: Text(s('resetConfirm'),
+              style: morph.text.mono.copyWith(fontSize: 13)),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: Text(s('cancel'), style: morph.text.label()),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: Text(s('erase'),
+                  style: morph.text.label(color: morph.colors.coral)),
+            ),
+          ],
+        );
+      },
     );
     if (confirmed == true) await state.resetEverything();
   }

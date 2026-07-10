@@ -26,11 +26,12 @@ class RecipeRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final morph = MorphTheme.of(context);
     final lang = state.lang;
     final s = S(lang);
     final dish = state.corpus.dishById(recipe.dishId);
     final stripe = dish == null
-        ? MorphColors.teal
+        ? morph.colors.teal
         : Color(int.parse(dish.stripe.replaceFirst('#', '0xFF')));
 
     return InkWell(
@@ -41,8 +42,8 @@ class RecipeRow extends StatelessWidget {
         margin: const EdgeInsets.symmetric(vertical: 5),
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: MorphColors.card,
-          border: Border.all(color: MorphColors.line),
+          color: morph.colors.card,
+          border: Border.all(color: morph.colors.line),
         ),
         child: Row(
           children: [
@@ -56,15 +57,15 @@ class RecipeRow extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(recipe.title.of(lang).toLowerCase(),
+                  Text(morph.cased(recipe.title.of(lang)),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: MorphText.display.copyWith(fontSize: 17)),
+                      style: morph.text.display.copyWith(fontSize: 17)),
                   const SizedBox(height: 2),
                   Text(
-                    '${recipe.timeMinutes} ${s('minutes')} · ${recipe.caloriesPerServing} kcal · ${state.corpus.ontology.nameOf(recipe.variant.effort, lang)}'
-                        .toLowerCase(),
-                    style: MorphText.label(size: 9),
+                    morph.cased(
+                        '${recipe.timeMinutes} ${s('minutes')} · ${recipe.caloriesPerServing} kcal · ${state.corpus.ontology.nameOf(recipe.variant.effort, lang)}'),
+                    style: morph.text.label(size: 9),
                   ),
                 ],
               ),
@@ -75,8 +76,7 @@ class RecipeRow extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 6),
                 child: Text(
                   state.corpus.ontology.nameOf(recipe.variant.diet, lang),
-                  style:
-                      MorphText.hand.copyWith(fontSize: 15, color: MorphColors.teal),
+                  style: morph.text.handAt(15, color: morph.colors.teal),
                 ),
               ),
             if (trailing != null) trailing!,

@@ -13,6 +13,7 @@ class InsightsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final lang = state.lang;
@@ -21,7 +22,7 @@ class InsightsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(s('shoppingInsights'),
-            style: MorphText.display.copyWith(fontSize: 22)),
+            style: morph.text.display.copyWith(fontSize: 22)),
       ),
       body: PaperBackground(
         child: insights.varietyScore == 0
@@ -30,8 +31,8 @@ class InsightsScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(32),
                   child: Text(s('insightsEmpty'),
                       textAlign: TextAlign.center,
-                      style: MorphText.hand.copyWith(
-                          fontSize: 20, color: MorphColors.inkSoft)),
+                      style: morph.text
+                          .handAt(20, color: morph.colors.inkSoft)),
                 ),
               )
             : ListView(
@@ -42,28 +43,28 @@ class InsightsScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text('${insights.varietyScore}',
-                            style: MorphText.display.copyWith(
+                            style: morph.text.display.copyWith(
                                 fontSize: 64,
-                                color: MorphColors.terracotta)),
+                                color: morph.colors.terracotta)),
                         Text(s('uniqueIngredients'),
-                            style: MorphText.hand.copyWith(fontSize: 18)),
+                            style: morph.text.handAt(18)),
                       ],
                     ),
                   ),
                   const SizedBox(height: 10),
                   SectionHeader(title: s('topIngredients')),
-                  ..._topBars(insights, state, lang),
+                  ..._topBars(morph, insights, state, lang),
                   const SizedBox(height: 10),
                   SectionHeader(title: s('seasonal')),
-                  ..._seasonalBars(insights),
+                  ..._seasonalBars(morph, insights),
                 ],
               ),
       ),
     );
   }
 
-  List<Widget> _topBars(
-      ShoppingInsights insights, AppState state, String lang) {
+  List<Widget> _topBars(MorphThemeData morph, ShoppingInsights insights,
+      AppState state, String lang) {
     if (insights.topIngredients.isEmpty) return const [];
     final max = insights.topIngredients.first.value;
     return [
@@ -79,26 +80,26 @@ class InsightsScreen extends StatelessWidget {
                       entry.key,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: MorphText.mono.copyWith(fontSize: 11.5),
+                  style: morph.text.mono.copyWith(fontSize: 11.5),
                 ),
               ),
               Expanded(
                 child: FractionallySizedBox(
                   alignment: Alignment.centerLeft,
                   widthFactor: (entry.value / max).clamp(0.05, 1.0),
-                  child: Container(height: 10, color: MorphColors.teal),
+                  child: Container(height: 10, color: morph.colors.teal),
                 ),
               ),
               const SizedBox(width: 8),
               Text('${entry.value}×',
-                  style: MorphText.label(size: 10)),
+                  style: morph.text.label(size: 10)),
             ],
           ),
         ),
     ];
   }
 
-  List<Widget> _seasonalBars(ShoppingInsights insights) {
+  List<Widget> _seasonalBars(MorphThemeData morph, ShoppingInsights insights) {
     if (insights.seasonalBreakdown.isEmpty) return const [];
     final max = insights.seasonalBreakdown
         .map((e) => e.value)
@@ -112,18 +113,18 @@ class InsightsScreen extends StatelessWidget {
               SizedBox(
                 width: 70,
                 child: Text(entry.key,
-                    style: MorphText.mono.copyWith(fontSize: 11.5)),
+                    style: morph.text.mono.copyWith(fontSize: 11.5)),
               ),
               Expanded(
                 child: FractionallySizedBox(
                   alignment: Alignment.centerLeft,
                   widthFactor: (entry.value / max).clamp(0.05, 1.0),
                   child:
-                      Container(height: 10, color: MorphColors.butter),
+                      Container(height: 10, color: morph.colors.butter),
                 ),
               ),
               const SizedBox(width: 8),
-              Text('${entry.value}', style: MorphText.label(size: 10)),
+              Text('${entry.value}', style: morph.text.label(size: 10)),
             ],
           ),
         ),

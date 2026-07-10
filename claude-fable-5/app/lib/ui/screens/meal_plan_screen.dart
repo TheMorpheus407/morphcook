@@ -32,6 +32,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final week = state.mealPlan[_weekKey] ?? const <String, String>{};
@@ -44,11 +45,11 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
             child: Row(
               children: [
                 Text(s('mealPlan'),
-                    style: MorphText.display.copyWith(fontSize: 30)),
+                    style: morph.text.display.copyWith(fontSize: 30)),
                 const Spacer(),
                 IconButton(
-                  icon: const Icon(Icons.shopping_basket_outlined,
-                      size: 20, color: MorphColors.inkSoft),
+                  icon: Icon(Icons.shopping_basket_outlined,
+                      size: 20, color: morph.colors.inkSoft),
                   onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute(
                           builder: (_) => const ShoppingListScreen())),
@@ -68,8 +69,8 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
                 ),
                 Expanded(
                   child: Center(
-                    child: Text('${s('week')} $_weekKey'.toLowerCase(),
-                        style: MorphText.label()),
+                    child: Text(morph.cased('${s('week')} $_weekKey'),
+                        style: morph.text.label()),
                   ),
                 ),
                 IconButton(
@@ -96,12 +97,12 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
               child: OutlinedButton.icon(
                 onPressed:
                     week.isEmpty ? null : () => _exportWeek(state, s),
-                icon: const Icon(Icons.playlist_add,
-                    size: 16, color: MorphColors.teal),
+                icon: Icon(Icons.playlist_add,
+                    size: 16, color: morph.colors.teal),
                 label: Text(s('exportWeekToList'),
-                    style: MorphText.label(color: MorphColors.teal)),
+                    style: morph.text.label(color: morph.colors.teal)),
                 style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: MorphColors.teal),
+                  side: BorderSide(color: morph.colors.teal),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(2)),
                   padding: const EdgeInsets.symmetric(vertical: 12),
@@ -116,6 +117,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
 
   Widget _dayRow(
       int dayIndex, Map<String, String> week, AppState state, S s) {
+    final morph = MorphTheme.of(context);
     final date = _weekDate.add(Duration(days: dayIndex));
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -123,9 +125,8 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
         Padding(
           padding: const EdgeInsets.only(top: 10, bottom: 4),
           child: Text(
-            '${s(weekDays[dayIndex])} ${date.day}.${date.month}.'
-                .toLowerCase(),
-            style: MorphText.label(),
+            morph.cased('${s(weekDays[dayIndex])} ${date.day}.${date.month}.'),
+            style: morph.text.label(),
           ),
         ),
         Row(
@@ -142,6 +143,7 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
 
   Widget _slotCell(int dayIndex, String slot, Map<String, String> week,
       AppState state, S s) {
+    final morph = MorphTheme.of(context);
     final slotKey = '${weekDays[dayIndex]}.$slot';
     final recipeId = week[slotKey];
     final recipe =
@@ -160,29 +162,28 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
             decoration: BoxDecoration(
               color: recipe == null
                   ? Colors.transparent
-                  : MorphColors.card,
+                  : morph.colors.card,
               border: Border.all(
                 color: highlighted
-                    ? MorphColors.terracotta
-                    : MorphColors.line,
+                    ? morph.colors.terracotta
+                    : morph.colors.line,
                 width: highlighted ? 1.6 : 1,
               ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(s(slot), style: MorphText.label(size: 8)),
+                Text(s(slot), style: morph.text.label(size: 8)),
                 const Spacer(),
                 Text(
                   recipe == null
                       ? s('planEmptySlot')
-                      : recipe.title.of(state.lang).toLowerCase(),
+                      : morph.cased(recipe.title.of(state.lang)),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: recipe == null
-                      ? MorphText.hand.copyWith(
-                          fontSize: 14, color: MorphColors.inkFaint)
-                      : MorphText.mono.copyWith(fontSize: 10),
+                      ? morph.text.handAt(14, color: morph.colors.inkFaint)
+                      : morph.text.mono.copyWith(fontSize: 10),
                 ),
               ],
             ),
@@ -199,11 +200,11 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
         color: Colors.transparent,
         child: Container(
           padding: const EdgeInsets.all(8),
-          color: MorphColors.ink,
+          color: morph.colors.ink,
           child: Text(
-            recipe?.title.of(state.lang).toLowerCase() ?? '',
-            style: MorphText.mono
-                .copyWith(fontSize: 11, color: MorphColors.cream),
+            morph.cased(recipe?.title.of(state.lang) ?? ''),
+            style: morph.text.mono
+                .copyWith(fontSize: 11, color: morph.colors.paper),
           ),
         ),
       ),
@@ -216,37 +217,40 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
     final existing = state.mealPlan[_weekKey]?[slotKey];
     final action = await showModalBottomSheet<String>(
       context: context,
-      backgroundColor: MorphColors.paper,
-      builder: (context) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(height: 10),
-            Text(s('pickRecipe'), style: MorphText.label()),
-            ListTile(
-              leading: const Icon(Icons.bookmark_border,
-                  color: MorphColors.terracotta),
-              title: Text(s('fromCookbook'),
-                  style: MorphText.mono.copyWith(fontSize: 13)),
-              onTap: () => Navigator.pop(context, 'cookbook'),
-            ),
-            ListTile(
-              leading: const Icon(Icons.search, color: MorphColors.teal),
-              title: Text(s('fromSearch'),
-                  style: MorphText.mono.copyWith(fontSize: 13)),
-              onTap: () => Navigator.pop(context, 'search'),
-            ),
-            if (existing != null)
+      backgroundColor: MorphTheme.of(context).colors.paper,
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 10),
+              Text(s('pickRecipe'), style: morph.text.label()),
               ListTile(
-                leading: const Icon(Icons.delete_outline,
-                    color: MorphColors.coral),
-                title: Text(s('removeFromSlot'),
-                    style: MorphText.mono.copyWith(fontSize: 13)),
-                onTap: () => Navigator.pop(context, 'remove'),
+                leading: Icon(Icons.bookmark_border,
+                    color: morph.colors.terracotta),
+                title: Text(s('fromCookbook'),
+                    style: morph.text.mono.copyWith(fontSize: 13)),
+                onTap: () => Navigator.pop(context, 'cookbook'),
               ),
-          ],
-        ),
-      ),
+              ListTile(
+                leading: Icon(Icons.search, color: morph.colors.teal),
+                title: Text(s('fromSearch'),
+                    style: morph.text.mono.copyWith(fontSize: 13)),
+                onTap: () => Navigator.pop(context, 'search'),
+              ),
+              if (existing != null)
+                ListTile(
+                  leading: Icon(Icons.delete_outline,
+                      color: morph.colors.coral),
+                  title: Text(s('removeFromSlot'),
+                      style: morph.text.mono.copyWith(fontSize: 13)),
+                  onTap: () => Navigator.pop(context, 'remove'),
+                ),
+            ],
+          ),
+        );
+      },
     );
     if (!mounted || action == null) return;
 
@@ -260,10 +264,13 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
       picked = await _pickFromCookbook(state, s);
     } else {
       picked = await Navigator.of(context).push<Recipe>(MaterialPageRoute(
-          builder: (_) => Scaffold(
+          builder: (context) => Scaffold(
                 appBar: AppBar(
                     title: Text(s('pickRecipe'),
-                        style: MorphText.display.copyWith(fontSize: 20))),
+                        style: MorphTheme.of(context)
+                            .text
+                            .display
+                            .copyWith(fontSize: 20))),
                 body: const PaperBackground(
                     child: SearchScreen(pickerMode: true)),
               )));
@@ -282,28 +289,31 @@ class _MealPlanScreenState extends State<MealPlanScreen> {
     if (!mounted) return null;
     return showModalBottomSheet<Recipe>(
       context: context,
-      backgroundColor: MorphColors.paper,
+      backgroundColor: MorphTheme.of(context).colors.paper,
       isScrollControlled: true,
-      builder: (context) => DraggableScrollableSheet(
-        expand: false,
-        initialChildSize: 0.7,
-        builder: (context, controller) => recipes.isEmpty
-            ? Center(
-                child: Text(s('cookbookEmpty'),
-                    textAlign: TextAlign.center,
-                    style: MorphText.hand.copyWith(
-                        fontSize: 19, color: MorphColors.inkSoft)))
-            : ListView.builder(
-                controller: controller,
-                padding: const EdgeInsets.all(20),
-                itemCount: recipes.length,
-                itemBuilder: (context, i) => RecipeRow(
-                  recipe: recipes[i],
-                  index: i,
-                  onTap: () => Navigator.pop(context, recipes[i]),
+      builder: (context) {
+        final morph = MorphTheme.of(context);
+        return DraggableScrollableSheet(
+          expand: false,
+          initialChildSize: 0.7,
+          builder: (context, controller) => recipes.isEmpty
+              ? Center(
+                  child: Text(s('cookbookEmpty'),
+                      textAlign: TextAlign.center,
+                      style: morph.text
+                          .handAt(19, color: morph.colors.inkSoft)))
+              : ListView.builder(
+                  controller: controller,
+                  padding: const EdgeInsets.all(20),
+                  itemCount: recipes.length,
+                  itemBuilder: (context, i) => RecipeRow(
+                    recipe: recipes[i],
+                    index: i,
+                    onTap: () => Navigator.pop(context, recipes[i]),
+                  ),
                 ),
-              ),
-      ),
+        );
+      },
     );
   }
 

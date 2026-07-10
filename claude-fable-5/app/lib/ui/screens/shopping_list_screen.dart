@@ -13,6 +13,7 @@ class ShoppingListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final morph = MorphTheme.of(context);
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final lang = state.lang;
@@ -27,7 +28,7 @@ class ShoppingListScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(s('shoppingList'),
-            style: MorphText.display.copyWith(fontSize: 22)),
+            style: morph.text.display.copyWith(fontSize: 22)),
         actions: [
           if (items.any((i) => i.checked))
             IconButton(
@@ -48,8 +49,8 @@ class ShoppingListScreen extends StatelessWidget {
             ? Center(
                 child: Text(s('shoppingEmpty'),
                     textAlign: TextAlign.center,
-                    style: MorphText.hand.copyWith(
-                        fontSize: 20, color: MorphColors.inkSoft)))
+                    style: morph.text
+                        .handAt(20, color: morph.colors.inkSoft)))
             : ListView(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
                 children: [
@@ -69,6 +70,7 @@ class ShoppingListScreen extends StatelessWidget {
 
   Widget _itemRow(
       BuildContext context, AppState state, int index, String lang) {
+    final morph = MorphTheme.of(context);
     final item = state.shoppingList[index];
     final name = state.corpus.dictionary.byId(item.ingredientId)?.name
             .of(lang) ??
@@ -85,18 +87,19 @@ class ShoppingListScreen extends StatelessWidget {
                   ? Icons.check_box_outlined
                   : Icons.check_box_outline_blank,
               size: 18,
-              color:
-                  item.checked ? MorphColors.teal : MorphColors.inkSoft,
+              color: item.checked
+                  ? morph.colors.teal
+                  : morph.colors.inkSoft,
             ),
             const SizedBox(width: 10),
             Expanded(
               child: Text(
                 name,
-                style: MorphText.mono.copyWith(
+                style: morph.text.mono.copyWith(
                   fontSize: 13,
                   color: item.checked
-                      ? MorphColors.inkFaint
-                      : MorphColors.ink,
+                      ? morph.colors.inkFaint
+                      : morph.colors.ink,
                   decoration: item.checked
                       ? TextDecoration.lineThrough
                       : TextDecoration.none,
@@ -104,8 +107,8 @@ class ShoppingListScreen extends StatelessWidget {
               ),
             ),
             Text(qty.display,
-                style: MorphText.mono.copyWith(
-                    fontSize: 12, color: MorphColors.terracotta)),
+                style: morph.text.mono.copyWith(
+                    fontSize: 12, color: morph.colors.terracotta)),
           ],
         ),
       ),
