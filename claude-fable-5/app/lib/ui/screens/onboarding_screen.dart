@@ -7,8 +7,11 @@ import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
 
-/// Onboarding: language → name → diet & allergies → calorie target +
-/// time budget → confirm.
+/// A light first-run welcome with optional dietary setup.
+///
+/// Opening the cookbook only requires choosing a language. People who want
+/// tailored variants immediately can set diet and allergy preferences on one
+/// additional screen; the full profile remains available in Settings.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -18,104 +21,134 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final _page = PageController();
-  int _index = 0;
-
-  String _lang = 'en';
-  final _name = TextEditingController();
   final Set<String> _avoidFlags = {};
-  final Set<String> _avoidIngredients = {};
-  int? _calorieTarget;
-  int? _maxTime;
+
+  late String _lang;
+  int _index = 0;
+  bool _finishing = false;
+
+  @override
+  void initState() {
+    super.initState();
+    final deviceLanguage =
+        WidgetsBinding.instance.platformDispatcher.locale.languageCode;
+    _lang = deviceLanguage == 'de' ? 'de' : 'en';
+  }
 
   @override
   void dispose() {
     _page.dispose();
-    _name.dispose();
     super.dispose();
   }
 
-  void _next() {
-    if (_index < 4) {
-      _page.nextPage(
-          duration: const Duration(milliseconds: 280),
-          curve: Curves.easeOutCubic);
+  void _goToPage(int index) {
+    FocusManager.instance.primaryFocus?.unfocus();
+    final duration = motionDuration(
+      context,
+      null,
+      normal: const Duration(milliseconds: 220),
+    );
+    if (duration == Duration.zero) {
+      _page.jumpToPage(index);
+    } else {
+      _page.animateToPage(
+        index,
+        duration: duration,
+        curve: Curves.easeOutCubic,
+      );
     }
   }
 
   Future<void> _finish() async {
+    if (_finishing) return;
+    setState(() => _finishing = true);
     final state = context.read<AppState>();
-    await state.completeOnboarding(Profile(
-      name: _name.text.trim(),
-      lang: _lang,
-      avoidFlags: _avoidFlags,
-      avoidIngredients: _avoidIngredients,
-      calorieTarget: _calorieTarget,
-      maxTimeMinutes: _maxTime,
-    ));
+    try {
+      await state.completeOnboarding(
+        Profile(lang: _lang, avoidFlags: _avoidFlags),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _finishing = false);
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(S(_lang)('obSaveFailed'))));
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final morph = MorphTheme.of(context);
     final s = S(_lang);
-    return Scaffold(
-      body: PaperBackground(
-        child: SafeArea(
-          child: Column(
-            children: [
-              const SizedBox(height: 18),
-              Text('morphcook',
-                  style: morph.text.display.copyWith(fontSize: 30)),
-              Text(s('tagline'),
-                  style: morph.text.handAt(17)),
-              const SizedBox(height: 6),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  for (var i = 0; i < 5; i++)
-                    Container(
-                      width: 24,
-                      height: 2,
-                      margin: const EdgeInsets.symmetric(horizontal: 3),
-                      color: i <= _index
-                          ? morph.colors.terracotta
-                          : morph.colors.line,
-                    ),
-                ],
-              ),
-              Expanded(
-                child: PageView(
-                  controller: _page,
-                  physics: const NeverScrollableScrollPhysics(),
-                  onPageChanged: (i) => setState(() => _index = i),
-                  children: [
-                    _languagePage(s),
-                    _namePage(s),
-                    _dietPage(s),
-                    _targetsPage(s),
-                    _confirmPage(s),
-                  ],
+    return PopScope(
+      canPop: _index == 0,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop && _index > 0) _goToPage(0);
+      },
+      child: Scaffold(
+        body: PaperBackground(
+          child: SafeArea(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 54,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      if (_index > 0)
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: IconButton(
+                            key: const ValueKey('onboarding-back'),
+                            tooltip: s('back'),
+                            onPressed: () => _goToPage(0),
+                            icon: const Icon(Icons.arrow_back),
+                            color: morph.colors.ink,
+                          ),
+                        ),
+                      Text(
+                        'morphcook',
+                        style: morph.text.display.copyWith(fontSize: 30),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                Text(s('tagline'), style: morph.text.handAt(17)),
+                const SizedBox(height: 6),
+                Expanded(
+                  child: PageView(
+                    controller: _page,
+                    physics: const NeverScrollableScrollPhysics(),
+                    onPageChanged: (index) => setState(() => _index = index),
+                    children: [_welcomePage(s), _dietPage(s)],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
     );
   }
 
-  Widget _frame(String title, List<Widget> children,
-      {String? subtitle, Widget? footer}) {
+  Widget _frame(
+    String title,
+    List<Widget> children, {
+    String? subtitle,
+    Widget? footer,
+  }) {
     final morph = MorphTheme.of(context);
     return ListView(
-      padding: const EdgeInsets.fromLTRB(28, 30, 28, 24),
+      padding: const EdgeInsets.fromLTRB(28, 24, 28, 24),
       children: [
         Text(title, style: morph.text.display.copyWith(fontSize: 27)),
         if (subtitle != null)
           Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: Text(subtitle,
-                style: morph.text.handAt(18, color: morph.colors.inkSoft)),
+            child: Text(
+              subtitle,
+              style: morph.text.handAt(18, color: morph.colors.inkSoft),
+            ),
           ),
         const SizedBox(height: 22),
         ...children,
@@ -125,82 +158,100 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  Widget _primaryButton(String label, VoidCallback onTap) {
+  Widget _primaryButton(String label, {required Key key}) {
     final morph = MorphTheme.of(context);
     return FilledButton(
+      key: key,
       style: FilledButton.styleFrom(
         backgroundColor: morph.colors.ink,
-        padding: const EdgeInsets.symmetric(vertical: 15),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(2)),
+        disabledBackgroundColor: morph.colors.inkSoft,
+        minimumSize: const Size.fromHeight(48),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
       ),
-      onPressed: onTap,
-      child: Text(morph.cased(label),
-          style: morph.text.label(color: morph.colors.paper)),
+      onPressed: _finishing ? null : _finish,
+      child: _finishing
+          ? SizedBox.square(
+              dimension: 18,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: morph.colors.paper,
+              ),
+            )
+          : Text(
+              morph.cased(label),
+              style: morph.text.label(color: morph.colors.paper),
+            ),
     );
   }
 
-  Widget _languagePage(S s) => _frame(
-        s('obLanguageTitle'),
-        [
-          _bigChoice('english', _lang == 'en', () {
-            setState(() => _lang = 'en');
-          }),
-          const SizedBox(height: 12),
-          _bigChoice('deutsch', _lang == 'de', () {
-            setState(() => _lang = 'de');
-          }),
+  Widget _welcomePage(S s) {
+    final morph = MorphTheme.of(context);
+    return _frame(
+      s('obLanguageTitle'),
+      [
+        _bigChoice('english', _lang == 'en', () {
+          setState(() => _lang = 'en');
+        }),
+        const SizedBox(height: 12),
+        _bigChoice('deutsch', _lang == 'de', () {
+          setState(() => _lang = 'de');
+        }),
+      ],
+      footer: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _primaryButton(s('letsCook'), key: const ValueKey('onboarding-open')),
+          const SizedBox(height: 8),
+          TextButton.icon(
+            key: const ValueKey('onboarding-personalize'),
+            onPressed: _finishing ? null : () => _goToPage(1),
+            icon: const Icon(Icons.tune, size: 18),
+            label: Text(
+              morph.cased(s('obPersonalize')),
+              style: morph.text.label(color: morph.colors.inkSoft),
+            ),
+          ),
+          Text(
+            s('obSetupLater'),
+            textAlign: TextAlign.center,
+            style: morph.text.mono.copyWith(
+              fontSize: 11,
+              color: morph.colors.inkSoft,
+            ),
+          ),
         ],
-        footer: _primaryButton(s('next'), _next),
-      );
+      ),
+    );
+  }
 
   Widget _bigChoice(String label, bool selected, VoidCallback onTap) {
     final morph = MorphTheme.of(context);
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: selected ? morph.colors.ink : morph.colors.card,
-          border: Border.all(color: morph.colors.line),
-        ),
-        child: Text(label,
-            style: morph.text.display.copyWith(
+    return Semantics(
+      button: true,
+      selected: selected,
+      child: Material(
+        color: selected ? morph.colors.ink : morph.colors.card,
+        shape: Border.all(color: morph.colors.line),
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text(
+              label,
+              style: morph.text.display.copyWith(
                 fontSize: 20,
-                color:
-                    selected ? morph.colors.paper : morph.colors.ink)),
-      ),
-    );
-  }
-
-  Widget _namePage(S s) {
-    final morph = MorphTheme.of(context);
-    return _frame(
-      s('obNameTitle'),
-      [
-        TextField(
-          controller: _name,
-          autofocus: false,
-          style: morph.text.mono.copyWith(fontSize: 15),
-          decoration: InputDecoration(
-            hintText: s('obNameHint'),
-            hintStyle: morph.text.mono
-                .copyWith(fontSize: 13, color: morph.colors.inkFaint),
-            enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: morph.colors.line)),
-            focusedBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: morph.colors.terracotta)),
+                color: selected ? morph.colors.paper : morph.colors.ink,
+              ),
+            ),
           ),
         ),
-      ],
-      footer: _primaryButton(s('next'), _next),
+      ),
     );
   }
 
   Widget _dietPage(S s) {
     final morph = MorphTheme.of(context);
-    final state = context.read<AppState>();
-    final ontology = state.corpus.ontology;
+    final ontology = context.read<AppState>().corpus.ontology;
     return _frame(
       s('obDietTitle'),
       [
@@ -212,10 +263,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               MonoChip(
                 label: compound.name.of(_lang),
                 selected: _avoidFlags.contains(compound.id),
-                onTap: () => setState(() =>
-                    _avoidFlags.contains(compound.id)
-                        ? _avoidFlags.remove(compound.id)
-                        : _avoidFlags.add(compound.id)),
+                onTap: () => setState(() {
+                  if (!_avoidFlags.remove(compound.id)) {
+                    _avoidFlags.add(compound.id);
+                  }
+                }),
               ),
           ],
         ),
@@ -227,110 +279,36 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           runSpacing: 10,
           children: [
             for (final flag in const [
-              'dairy', 'gluten', 'egg', 'soy', 'peanuts', 'tree-nuts',
-              'fish', 'shellfish', 'sesame', 'mustard', 'celery',
-              'sulphites', 'alcohol', 'caffeine'
+              'dairy',
+              'gluten',
+              'egg',
+              'soy',
+              'peanuts',
+              'tree-nuts',
+              'fish',
+              'shellfish',
+              'sesame',
+              'mustard',
+              'celery',
+              'sulphites',
+              'alcohol',
+              'caffeine',
             ])
               MonoChip(
                 label: ontology.nameOf(flag, _lang),
                 selected: _avoidFlags.contains(flag),
-                onTap: () => setState(() => _avoidFlags.contains(flag)
-                    ? _avoidFlags.remove(flag)
-                    : _avoidFlags.add(flag)),
+                onTap: () => setState(() {
+                  if (!_avoidFlags.remove(flag)) _avoidFlags.add(flag);
+                }),
               ),
           ],
         ),
       ],
       subtitle: s('obDietSub'),
-      footer: _primaryButton(s('next'), _next),
-    );
-  }
-
-  Widget _targetsPage(S s) => _frame(
-        s('obTargetsTitle'),
-        [
-          _targetSlider(
-            label: s('obCalories'),
-            value: _calorieTarget?.toDouble(),
-            min: 300,
-            max: 1000,
-            divisions: 14,
-            display: (v) =>
-                v == null ? s('noLimit') : '${v.round()} kcal',
-            onChanged: (v) =>
-                setState(() => _calorieTarget = v?.round()),
-          ),
-          const SizedBox(height: 16),
-          _targetSlider(
-            label: s('obTime'),
-            value: _maxTime?.toDouble(),
-            min: 15,
-            max: 240,
-            divisions: 15,
-            display: (v) =>
-                v == null ? s('noLimit') : '${v.round()} ${s('minutes')}',
-            onChanged: (v) => setState(() => _maxTime = v?.round()),
-          ),
-        ],
-        footer: _primaryButton(s('next'), _next),
-      );
-
-  Widget _targetSlider({
-    required String label,
-    required double? value,
-    required double min,
-    required double max,
-    required int divisions,
-    required String Function(double?) display,
-    required void Function(double?) onChanged,
-  }) {
-    final morph = MorphTheme.of(context);
-    final active = value != null;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Expanded(child: Text(label, style: morph.text.label())),
-            Text(display(value),
-                style: morph.text.mono.copyWith(
-                    fontSize: 12, color: morph.colors.terracotta)),
-            Checkbox(
-              value: active,
-              activeColor: morph.colors.terracotta,
-              onChanged: (v) => onChanged(v == true ? (min + max) / 2 : null),
-            ),
-          ],
-        ),
-        if (active)
-          Slider(
-            value: value.clamp(min, max),
-            min: min,
-            max: max,
-            divisions: divisions,
-            activeColor: morph.colors.terracotta,
-            onChanged: onChanged,
-          ),
-      ],
-    );
-  }
-
-  Widget _confirmPage(S s) {
-    final morph = MorphTheme.of(context);
-    final name = _name.text.trim();
-    return _frame(
-      s('obConfirmTitle'),
-      [
-        if (name.isNotEmpty)
-          Text(morph.cased('${s('editionFor')} $name'),
-              style: morph.text.label()),
-        const SizedBox(height: 12),
-        Text(s('obConfirmBody'),
-            style: morph.text.serif.copyWith(fontSize: 17)),
-        const SizedBox(height: 16),
-        Text('&', style: morph.text.handAt(44, color: morph.colors.terracotta)),
-      ],
-      footer: _primaryButton(s('letsCook'), _finish),
+      footer: _primaryButton(
+        s('letsCook'),
+        key: const ValueKey('onboarding-open-personalized'),
+      ),
     );
   }
 }

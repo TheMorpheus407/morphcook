@@ -34,6 +34,13 @@ class FailingBulkStore extends MemoryStore {
   }
 }
 
+class FailingProfileStore extends MemoryStore {
+  @override
+  Future<void> saveProfile(Profile profile) async {
+    throw const FileSystemException('simulated profile write failure');
+  }
+}
+
 class FailingMutationStore extends MemoryStore {
   bool failNextBulkWriteAfterPersisting = false;
   bool failNextImageWriteAfterPersisting = false;
@@ -102,6 +109,20 @@ void main() {
     await reloaded.load();
     expect(reloaded.onboarded, isTrue);
     expect(reloaded.profile.name, 'cedric');
+  });
+
+  test('onboarding stays pending when the profile cannot be saved', () async {
+    final store = FailingProfileStore();
+    final state = await buildState(store: store);
+
+    await expectLater(
+      state.completeOnboarding(const Profile(lang: 'de')),
+      throwsA(isA<FileSystemException>()),
+    );
+
+    expect(state.onboarded, isFalse);
+    expect(store.onboardingComplete, isFalse);
+    expect(state.profile.lang, 'en');
   });
 
   test('cookbook saves specific variants and toggles', () async {

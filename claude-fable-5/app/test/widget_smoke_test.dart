@@ -172,7 +172,7 @@ void main() {
     );
   });
 
-  testWidgets('onboarding completes into the shell', (tester) async {
+  testWidgets('onboarding opens the cookbook in one tap', (tester) async {
     final state = (await tester.runAsync(() async {
       final corpus = await loadRealCorpus();
       final s = AppState(store: MemoryStore(), corpus: corpus);
@@ -185,8 +185,9 @@ void main() {
         child: MaterialApp(
           theme: morphThemeData(MorphColors.light),
           home: Builder(
-            builder: (context) =>
-                state.onboarded ? const RootShell() : const OnboardingScreen(),
+            builder: (context) => context.watch<AppState>().onboarded
+                ? const RootShell()
+                : const OnboardingScreen(),
           ),
         ),
       ),
@@ -194,16 +195,50 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(OnboardingScreen), findsOneWidget);
 
-    // language -> name -> diet -> targets -> confirm
-    for (var i = 0; i < 4; i++) {
-      await tester.ensureVisible(find.text('next'));
-      await tester.tap(find.text('next'));
-      await tester.pumpAndSettle();
-    }
-    await tester.ensureVisible(find.text('open my cookbook'));
-    await tester.tap(find.text('open my cookbook'));
+    await tester.tap(find.byKey(const ValueKey('onboarding-open')));
     await tester.pumpAndSettle();
     expect(state.onboarded, isTrue);
+    expect(state.profile.readableText, isTrue);
+    expect(find.byType(RootShell), findsOneWidget);
+  });
+
+  testWidgets('onboarding dietary setup is optional and keeps selections', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(() async {
+      final corpus = await loadRealCorpus();
+      final s = AppState(store: MemoryStore(), corpus: corpus);
+      await s.load();
+      return s;
+    }))!;
+    await tester.pumpWidget(
+      ChangeNotifierProvider.value(
+        value: state,
+        child: MaterialApp(
+          theme: morphThemeData(MorphColors.light),
+          home: Builder(
+            builder: (context) => context.watch<AppState>().onboarded
+                ? const RootShell()
+                : const OnboardingScreen(),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('onboarding-personalize')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('onboarding-back')), findsOneWidget);
+
+    await tester.tap(find.text('vegan'));
+    await tester.pumpAndSettle();
+    final open = find.byKey(const ValueKey('onboarding-open-personalized'));
+    await tester.ensureVisible(open);
+    await tester.tap(open);
+    await tester.pumpAndSettle();
+
+    expect(state.onboarded, isTrue);
+    expect(state.profile.avoidFlags, contains('vegan'));
   });
 
   testWidgets('settings renders the about & support section', (tester) async {
@@ -273,21 +308,22 @@ void main() {
     MorphThemeData morphOf() =>
         MorphTheme.of(tester.element(find.byType(HomeScreen)));
     expect(morphOf().isDark, isFalse);
-    expect(morphOf().text.display.fontFamily, 'Playfair Display');
+    expect(morphOf().readable, isTrue);
+    expect(morphOf().text.display.fontFamily, 'Atkinson Hyperlegible');
+    expect(morphOf().text.display.fontStyle, isNot(FontStyle.italic));
 
     await state.updateProfile(state.profile.copyWith(themeMode: 'dark'));
     await tester.pumpAndSettle();
     expect(morphOf().isDark, isTrue);
     expect(find.text('morphcook'), findsOneWidget);
 
-    await state.updateProfile(state.profile.copyWith(readableText: true));
+    await state.updateProfile(state.profile.copyWith(readableText: false));
     await tester.pumpAndSettle();
     final morph = morphOf();
-    expect(morph.readable, isTrue);
-    expect(morph.text.display.fontFamily, 'Atkinson Hyperlegible');
-    expect(morph.text.display.fontStyle, isNot(FontStyle.italic));
-    // Readable mode keeps original casing (German nouns are a reading cue).
-    expect(morph.cased('Döner Kebab'), 'Döner Kebab');
+    expect(morph.readable, isFalse);
+    expect(morph.text.display.fontFamily, 'Playfair Display');
+    expect(morph.text.display.fontStyle, FontStyle.italic);
+    expect(morph.cased('Döner Kebab'), 'döner kebab');
     expect(find.text('morphcook'), findsOneWidget);
   });
 
@@ -482,8 +518,8 @@ void main() {
 
     await tester.tap(find.text('my recipes'));
     await tester.pumpAndSettle();
-    expect(find.text('my soup'), findsOneWidget);
-    await tester.tap(find.text('my soup'));
+    expect(find.text('My soup'), findsOneWidget);
+    await tester.tap(find.text('My soup'));
     await tester.pumpAndSettle();
 
     expect(find.byType(DishDetailScreen), findsOneWidget);

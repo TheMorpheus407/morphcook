@@ -219,6 +219,11 @@ class S {
     'obDietSub':
         'this never filters you out of a dish — it picks the version that\'s yours.',
     'obAllergyTitle': 'anything to keep out of the kitchen?',
+    'obPersonalize': 'set diet & allergies first',
+    'obSetupLater':
+        'optional — diet, allergies, time and calorie preferences stay editable in settings.',
+    'obSaveFailed':
+        'your setup could not be saved. check available storage and try again.',
     'obTargetsTitle': 'targets, gently',
     'obCalories': 'calories per meal',
     'obTime': 'minutes you usually have',
@@ -457,6 +462,11 @@ class S {
     'obDietSub':
         'das filtert dich nie aus einem Gericht heraus — es wählt die Version, die deine ist.',
     'obAllergyTitle': 'soll etwas aus der Küche bleiben?',
+    'obPersonalize': 'Ernährung & Allergien zuerst einstellen',
+    'obSetupLater':
+        'optional — Ernährung, Allergien, Zeit- und Kalorienziele bleiben jederzeit in den Einstellungen änderbar.',
+    'obSaveFailed':
+        'deine Einstellungen konnten nicht gespeichert werden. Prüfe den freien Speicher und versuche es erneut.',
     'obTargetsTitle': 'Ziele, ganz entspannt',
     'obCalories': 'Kalorien pro Mahlzeit',
     'obTime': 'Minuten, die du meistens hast',

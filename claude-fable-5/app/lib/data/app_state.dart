@@ -131,9 +131,14 @@ class AppState extends ChangeNotifier {
   }
 
   Future<void> completeOnboarding(Profile profile) async {
-    _onboarded = true;
+    // Persist the actual choices before hiding onboarding. If either write
+    // fails, the next launch can safely show setup again instead of entering
+    // the app with a profile that was never saved.
+    await store.saveProfile(profile);
     await store.setOnboardingComplete(true);
-    await updateProfile(profile);
+    _profile = profile;
+    _onboarded = true;
+    notifyListeners();
   }
 
   // ---- cookbook ----

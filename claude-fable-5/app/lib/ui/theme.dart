@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-/// MorphCook's tumblr-era cookbook look: warm paper, ink, terracotta &
-/// teal accents, Playfair italic display, JetBrains Mono labels, Caveat
-/// handwriting. Calm, nostalgic, analog.
+/// MorphCook's warm paper, ink, terracotta, and teal cookbook look.
 ///
 /// Two editions of the palette exist — [light] ("paper") and [dark]
-/// ("midnight kitchen") — plus a readable-text typography mode that trades
-/// the decorative faces for Atkinson Hyperlegible. Both are resolved
-/// through [MorphTheme]; widgets never hardcode an edition.
+/// ("midnight kitchen") — plus an optional decorative edition. The default
+/// uses Atkinson Hyperlegible, original casing, and calm covers. Both are
+/// resolved through [MorphTheme]; widgets never hardcode an edition.
 class MorphColors {
   final Brightness brightness;
   final Color paper;
@@ -85,12 +83,11 @@ class MorphColors {
 class MorphText {
   final MorphColors colors;
 
-  /// Swaps the decorative faces (Playfair italic, Caveat, mono body) for
-  /// Atkinson Hyperlegible — distinct letterforms, no italics. For readers
-  /// with dyslexia or low vision the flourishes are noise, not charm.
+  /// Uses Atkinson Hyperlegible — distinct letterforms and no decorative
+  /// italics. Turning this off opts into the original display treatment.
   final bool readable;
 
-  const MorphText(this.colors, {this.readable = false});
+  const MorphText(this.colors, {this.readable = true});
 
   static const readableFamily = 'Atkinson Hyperlegible';
 
@@ -111,7 +108,10 @@ class MorphText {
   TextStyle get serif => readable
       ? TextStyle(fontFamily: readableFamily, color: colors.ink, height: 1.35)
       : TextStyle(
-          fontFamily: 'Playfair Display', color: colors.ink, height: 1.25);
+          fontFamily: 'Playfair Display',
+          color: colors.ink,
+          height: 1.25,
+        );
 
   TextStyle get mono => readable
       ? TextStyle(
@@ -120,11 +120,14 @@ class MorphText {
           height: 1.5,
           letterSpacing: 0.2,
         )
-      : TextStyle(
-          fontFamily: 'JetBrains Mono', color: colors.ink, height: 1.5);
+      : TextStyle(fontFamily: 'JetBrains Mono', color: colors.ink, height: 1.5);
 
   TextStyle get hand => readable
-      ? TextStyle(fontFamily: readableFamily, color: colors.inkSoft, height: 1.35)
+      ? TextStyle(
+          fontFamily: readableFamily,
+          color: colors.inkSoft,
+          height: 1.35,
+        )
       : TextStyle(fontFamily: 'Caveat', color: colors.inkSoft, height: 1.1);
 
   /// Handwriting at a nominal Caveat size. Caveat renders small for its
@@ -138,10 +141,10 @@ class MorphText {
   /// Small uppercase mono label with wide tracking — the "typewritten"
   /// voice. Readable mode floors the size at 11 and relaxes the tracking.
   TextStyle label({Color? color, double size = 11}) => mono.copyWith(
-        fontSize: readable && size < 11 ? 11 : size,
-        letterSpacing: readable ? 0.6 : 1.6,
-        color: color ?? colors.inkSoft,
-      );
+    fontSize: readable && size < 11 ? 11 : size,
+    letterSpacing: readable ? 0.6 : 1.6,
+    color: color ?? colors.inkSoft,
+  );
 }
 
 /// Everything the widget tree needs to render one edition of the look.
@@ -150,8 +153,8 @@ class MorphThemeData {
   final bool readable;
   final MorphText text;
 
-  MorphThemeData({required this.colors, this.readable = false})
-      : text = MorphText(colors, readable: readable);
+  MorphThemeData({required this.colors, this.readable = true})
+    : text = MorphText(colors, readable: readable);
 
   bool get isDark => colors.brightness == Brightness.dark;
 
@@ -187,7 +190,7 @@ class MorphTheme extends InheritedWidget {
   bool updateShouldNotify(MorphTheme oldWidget) => oldWidget.data != data;
 }
 
-ThemeData morphThemeData(MorphColors colors, {bool readable = false}) {
+ThemeData morphThemeData(MorphColors colors, {bool readable = true}) {
   final base = ThemeData(
     useMaterial3: true,
     brightness: colors.brightness,

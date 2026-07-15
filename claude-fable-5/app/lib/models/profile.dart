@@ -1,5 +1,11 @@
 /// The user profile. One profile per install (v1).
 class Profile {
+  // Marks profiles saved after readable typography became the default. Old
+  // profiles contain `readable_text: false` simply because that used to be
+  // the default, so the marker lets them migrate once without preventing a
+  // later, deliberate opt-in to the decorative edition.
+  static const _typographyVersion = 2;
+
   final String name;
   final String lang;
   final Set<String> avoidFlags;
@@ -16,7 +22,10 @@ class Profile {
   /// 'system' | 'light' | 'dark'.
   final String themeMode;
 
-  /// Accessibility: legible sans typography, original casing, calm covers.
+  /// Legible sans typography, original casing, and calm covers.
+  ///
+  /// This is the default presentation. The decorative cookbook treatment is
+  /// still available as an explicit preference for people who enjoy it.
   final bool readableText;
 
   const Profile({
@@ -33,7 +42,7 @@ class Profile {
     this.visualAlertEnabled = true,
     this.quickNextTapEnabled = false,
     this.themeMode = 'system',
-    this.readableText = false,
+    this.readableText = true,
   });
 
   /// Tolerance around [calorieTarget] within which a recipe still matches.
@@ -57,62 +66,70 @@ class Profile {
     bool? quickNextTapEnabled,
     String? themeMode,
     bool? readableText,
-  }) =>
-      Profile(
-        name: name ?? this.name,
-        lang: lang ?? this.lang,
-        avoidFlags: avoidFlags ?? this.avoidFlags,
-        avoidIngredients: avoidIngredients ?? this.avoidIngredients,
-        requiredAttributes: requiredAttributes ?? this.requiredAttributes,
-        maxTimeMinutes:
-            clearMaxTime ? null : (maxTimeMinutes ?? this.maxTimeMinutes),
-        calorieTarget:
-            clearCalorieTarget ? null : (calorieTarget ?? this.calorieTarget),
-        preferredEffort: preferredEffort ?? this.preferredEffort,
-        showVariantTags: showVariantTags ?? this.showVariantTags,
-        reduceMotion:
-            clearReduceMotion ? null : (reduceMotion ?? this.reduceMotion),
-        visualAlertEnabled: visualAlertEnabled ?? this.visualAlertEnabled,
-        quickNextTapEnabled: quickNextTapEnabled ?? this.quickNextTapEnabled,
-        themeMode: themeMode ?? this.themeMode,
-        readableText: readableText ?? this.readableText,
-      );
+  }) => Profile(
+    name: name ?? this.name,
+    lang: lang ?? this.lang,
+    avoidFlags: avoidFlags ?? this.avoidFlags,
+    avoidIngredients: avoidIngredients ?? this.avoidIngredients,
+    requiredAttributes: requiredAttributes ?? this.requiredAttributes,
+    maxTimeMinutes: clearMaxTime
+        ? null
+        : (maxTimeMinutes ?? this.maxTimeMinutes),
+    calorieTarget: clearCalorieTarget
+        ? null
+        : (calorieTarget ?? this.calorieTarget),
+    preferredEffort: preferredEffort ?? this.preferredEffort,
+    showVariantTags: showVariantTags ?? this.showVariantTags,
+    reduceMotion: clearReduceMotion
+        ? null
+        : (reduceMotion ?? this.reduceMotion),
+    visualAlertEnabled: visualAlertEnabled ?? this.visualAlertEnabled,
+    quickNextTapEnabled: quickNextTapEnabled ?? this.quickNextTapEnabled,
+    themeMode: themeMode ?? this.themeMode,
+    readableText: readableText ?? this.readableText,
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'lang': lang,
-        'avoid_flags': avoidFlags.toList()..sort(),
-        'avoid_ingredients': avoidIngredients.toList()..sort(),
-        'required_attributes': requiredAttributes.toList()..sort(),
-        'max_time_minutes': maxTimeMinutes,
-        'calorie_target': calorieTarget,
-        'preferred_effort': preferredEffort,
-        'show_variant_tags': showVariantTags,
-        'reduce_motion': reduceMotion,
-        'visual_alert_enabled': visualAlertEnabled,
-        'quick_next_tap_enabled': quickNextTapEnabled,
-        'theme_mode': themeMode,
-        'readable_text': readableText,
-      };
+    'name': name,
+    'lang': lang,
+    'avoid_flags': avoidFlags.toList()..sort(),
+    'avoid_ingredients': avoidIngredients.toList()..sort(),
+    'required_attributes': requiredAttributes.toList()..sort(),
+    'max_time_minutes': maxTimeMinutes,
+    'calorie_target': calorieTarget,
+    'preferred_effort': preferredEffort,
+    'show_variant_tags': showVariantTags,
+    'reduce_motion': reduceMotion,
+    'visual_alert_enabled': visualAlertEnabled,
+    'quick_next_tap_enabled': quickNextTapEnabled,
+    'theme_mode': themeMode,
+    'readable_text': readableText,
+    'typography_version': _typographyVersion,
+  };
 
-  factory Profile.fromJson(Map<String, dynamic> json) => Profile(
-        name: json['name'] as String? ?? '',
-        lang: json['lang'] as String? ?? 'en',
-        avoidFlags:
-            Set<String>.from(json['avoid_flags'] as List? ?? const []),
-        avoidIngredients:
-            Set<String>.from(json['avoid_ingredients'] as List? ?? const []),
-        requiredAttributes: Set<String>.from(
-            json['required_attributes'] as List? ?? const []),
-        maxTimeMinutes: json['max_time_minutes'] as int?,
-        calorieTarget: json['calorie_target'] as int?,
-        preferredEffort: json['preferred_effort'] as String? ?? 'easy',
-        showVariantTags: json['show_variant_tags'] as bool? ?? true,
-        reduceMotion: json['reduce_motion'] as bool?,
-        visualAlertEnabled: json['visual_alert_enabled'] as bool? ?? true,
-        quickNextTapEnabled:
-            json['quick_next_tap_enabled'] as bool? ?? false,
-        themeMode: json['theme_mode'] as String? ?? 'system',
-        readableText: json['readable_text'] as bool? ?? false,
-      );
+  factory Profile.fromJson(Map<String, dynamic> json) {
+    final typographyVersion = json['typography_version'] as int? ?? 1;
+    return Profile(
+      name: json['name'] as String? ?? '',
+      lang: json['lang'] as String? ?? 'en',
+      avoidFlags: Set<String>.from(json['avoid_flags'] as List? ?? const []),
+      avoidIngredients: Set<String>.from(
+        json['avoid_ingredients'] as List? ?? const [],
+      ),
+      requiredAttributes: Set<String>.from(
+        json['required_attributes'] as List? ?? const [],
+      ),
+      maxTimeMinutes: json['max_time_minutes'] as int?,
+      calorieTarget: json['calorie_target'] as int?,
+      preferredEffort: json['preferred_effort'] as String? ?? 'easy',
+      showVariantTags: json['show_variant_tags'] as bool? ?? true,
+      reduceMotion: json['reduce_motion'] as bool?,
+      visualAlertEnabled: json['visual_alert_enabled'] as bool? ?? true,
+      quickNextTapEnabled: json['quick_next_tap_enabled'] as bool? ?? false,
+      themeMode: json['theme_mode'] as String? ?? 'system',
+      readableText: typographyVersion < _typographyVersion
+          ? true
+          : json['readable_text'] as bool? ?? true,
+    );
+  }
 }
