@@ -27,8 +27,10 @@ class ShoppingListScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(s('shoppingList'),
-            style: morph.text.display.copyWith(fontSize: 22)),
+        title: Text(
+          s('shoppingList'),
+          style: morph.text.display.copyWith(fontSize: 22),
+        ),
         actions: [
           if (items.any((i) => i.checked))
             IconButton(
@@ -47,18 +49,21 @@ class ShoppingListScreen extends StatelessWidget {
       body: PaperBackground(
         child: items.isEmpty
             ? Center(
-                child: Text(s('shoppingEmpty'),
-                    textAlign: TextAlign.center,
-                    style: morph.text
-                        .handAt(20, color: morph.colors.inkSoft)))
+                child: Text(
+                  s('shoppingEmpty'),
+                  textAlign: TextAlign.center,
+                  style: morph.text.handAt(20, color: morph.colors.inkSoft),
+                ),
+              )
             : ListView(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
                 children: [
                   for (final aisle in aisles) ...[
                     SectionHeader(
-                        title: state.corpus.dictionary.aisleNames[aisle]
-                                ?.of(lang) ??
-                            aisle),
+                      title:
+                          state.corpus.dictionary.aisleNames[aisle]?.of(lang) ??
+                          aisle,
+                    ),
                     for (final index in byAisle[aisle]!)
                       _itemRow(context, state, index, lang),
                   ],
@@ -69,11 +74,16 @@ class ShoppingListScreen extends StatelessWidget {
   }
 
   Widget _itemRow(
-      BuildContext context, AppState state, int index, String lang) {
+    BuildContext context,
+    AppState state,
+    int index,
+    String lang,
+  ) {
     final morph = MorphTheme.of(context);
     final item = state.shoppingList[index];
-    final name = state.corpus.dictionary.byId(item.ingredientId)?.name
-            .of(lang) ??
+    final name =
+        item.customName ??
+        state.corpus.dictionary.byId(item.ingredientId)?.name.of(lang) ??
         item.ingredientId;
     final qty = Quantity(item.qty, item.unit);
     return InkWell(
@@ -87,9 +97,7 @@ class ShoppingListScreen extends StatelessWidget {
                   ? Icons.check_box_outlined
                   : Icons.check_box_outline_blank,
               size: 18,
-              color: item.checked
-                  ? morph.colors.teal
-                  : morph.colors.inkSoft,
+              color: item.checked ? morph.colors.teal : morph.colors.inkSoft,
             ),
             const SizedBox(width: 10),
             Expanded(
@@ -106,9 +114,13 @@ class ShoppingListScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Text(qty.display,
-                style: morph.text.mono.copyWith(
-                    fontSize: 12, color: morph.colors.terracotta)),
+            Text(
+              qty.display,
+              style: morph.text.mono.copyWith(
+                fontSize: 12,
+                color: morph.colors.terracotta,
+              ),
+            ),
           ],
         ),
       ),

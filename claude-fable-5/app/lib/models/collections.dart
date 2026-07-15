@@ -6,14 +6,14 @@ class HistoryEntry {
   const HistoryEntry({required this.recipeId, required this.cookedAt});
 
   Map<String, dynamic> toJson() => {
-        'recipe_id': recipeId,
-        'cooked_at': cookedAt.toUtc().toIso8601String(),
-      };
+    'recipe_id': recipeId,
+    'cooked_at': cookedAt.toUtc().toIso8601String(),
+  };
 
   factory HistoryEntry.fromJson(Map<String, dynamic> json) => HistoryEntry(
-        recipeId: json['recipe_id'] as String,
-        cookedAt: DateTime.parse(json['cooked_at'] as String),
-      );
+    recipeId: json['recipe_id'] as String,
+    cookedAt: DateTime.parse(json['cooked_at'] as String),
+  );
 }
 
 /// A saved recipe in the cookbook — the user saves a specific variant.
@@ -24,14 +24,14 @@ class SavedRecipe {
   const SavedRecipe({required this.recipeId, required this.savedAt});
 
   Map<String, dynamic> toJson() => {
-        'recipe_id': recipeId,
-        'saved_at': savedAt.toUtc().toIso8601String(),
-      };
+    'recipe_id': recipeId,
+    'saved_at': savedAt.toUtc().toIso8601String(),
+  };
 
   factory SavedRecipe.fromJson(Map<String, dynamic> json) => SavedRecipe(
-        recipeId: json['recipe_id'] as String,
-        savedAt: DateTime.parse(json['saved_at'] as String),
-      );
+    recipeId: json['recipe_id'] as String,
+    savedAt: DateTime.parse(json['saved_at'] as String),
+  );
 }
 
 const mealSlots = ['breakfast', 'lunch', 'dinner'];
@@ -49,9 +49,11 @@ String isoWeekKey(DateTime date) {
 }
 
 /// Monday of the week containing [date].
-DateTime weekStart(DateTime date) =>
-    DateTime(date.year, date.month, date.day)
-        .subtract(Duration(days: date.weekday - 1));
+DateTime weekStart(DateTime date) => DateTime(
+  date.year,
+  date.month,
+  date.day,
+).subtract(Duration(days: date.weekday - 1));
 
 /// Meal plan: week key -> "mon.dinner" -> recipe id.
 typedef MealPlanData = Map<String, Map<String, String>>;
@@ -59,6 +61,9 @@ typedef MealPlanData = Map<String, Map<String, String>>;
 /// One item on the shopping list (manually checked off by the user).
 class ShoppingItem {
   final String ingredientId;
+
+  /// Authored ingredient name when no bundled dictionary entry exists.
+  final String? customName;
   final double qty;
   final String unit;
   final String aisle;
@@ -67,6 +72,7 @@ class ShoppingItem {
 
   const ShoppingItem({
     required this.ingredientId,
+    this.customName,
     required this.qty,
     required this.unit,
     required this.aisle,
@@ -74,31 +80,38 @@ class ShoppingItem {
     required this.addedAt,
   });
 
-  ShoppingItem copyWith({double? qty, String? unit, bool? checked}) =>
-      ShoppingItem(
-        ingredientId: ingredientId,
-        qty: qty ?? this.qty,
-        unit: unit ?? this.unit,
-        aisle: aisle,
-        checked: checked ?? this.checked,
-        addedAt: addedAt,
-      );
+  ShoppingItem copyWith({
+    String? customName,
+    double? qty,
+    String? unit,
+    bool? checked,
+  }) => ShoppingItem(
+    ingredientId: ingredientId,
+    customName: customName ?? this.customName,
+    qty: qty ?? this.qty,
+    unit: unit ?? this.unit,
+    aisle: aisle,
+    checked: checked ?? this.checked,
+    addedAt: addedAt,
+  );
 
   Map<String, dynamic> toJson() => {
-        'ingredient_id': ingredientId,
-        'qty': qty,
-        'unit': unit,
-        'aisle': aisle,
-        'checked': checked,
-        'added_at': addedAt.toUtc().toIso8601String(),
-      };
+    'ingredient_id': ingredientId,
+    if (customName != null) 'custom_name': customName,
+    'qty': qty,
+    'unit': unit,
+    'aisle': aisle,
+    'checked': checked,
+    'added_at': addedAt.toUtc().toIso8601String(),
+  };
 
   factory ShoppingItem.fromJson(Map<String, dynamic> json) => ShoppingItem(
-        ingredientId: json['ingredient_id'] as String,
-        qty: (json['qty'] as num).toDouble(),
-        unit: json['unit'] as String,
-        aisle: json['aisle'] as String,
-        checked: json['checked'] as bool? ?? false,
-        addedAt: DateTime.parse(json['added_at'] as String),
-      );
+    ingredientId: json['ingredient_id'] as String,
+    customName: json['custom_name'] as String?,
+    qty: (json['qty'] as num).toDouble(),
+    unit: json['unit'] as String,
+    aisle: json['aisle'] as String,
+    checked: json['checked'] as bool? ?? false,
+    addedAt: DateTime.parse(json['added_at'] as String),
+  );
 }

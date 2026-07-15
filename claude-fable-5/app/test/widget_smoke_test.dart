@@ -3,10 +3,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:morphcook/data/app_state.dart';
 import 'package:morphcook/data/store.dart';
 import 'package:morphcook/main.dart';
+import 'package:morphcook/models/personal_recipe.dart';
 import 'package:morphcook/models/profile.dart';
+import 'package:morphcook/ui/screens/cookbook_screen.dart';
 import 'package:morphcook/ui/screens/dish_detail_screen.dart';
 import 'package:morphcook/ui/screens/home_screen.dart';
 import 'package:morphcook/ui/screens/onboarding_screen.dart';
+import 'package:morphcook/ui/screens/personal_recipe_editor_screen.dart';
 import 'package:morphcook/ui/screens/settings_screen.dart';
 import 'package:morphcook/ui/strings.dart';
 import 'package:morphcook/ui/theme.dart';
@@ -19,20 +22,19 @@ Future<AppState> onboardedState() async {
   final corpus = await loadRealCorpus();
   final state = AppState(store: MemoryStore(), corpus: corpus);
   await state.load();
-  await state.completeOnboarding(
-      const Profile(name: 'cedric', lang: 'en'));
+  await state.completeOnboarding(const Profile(name: 'cedric', lang: 'en'));
   return state;
 }
 
 Widget app(AppState state, Widget child) => ChangeNotifierProvider.value(
-      value: state,
-      child: MaterialApp(
-          theme: morphThemeData(MorphColors.light), home: child),
-    );
+  value: state,
+  child: MaterialApp(theme: morphThemeData(MorphColors.light), home: child),
+);
 
 void main() {
-  testWidgets('home masthead renders and dish cards open the detail page',
-      (tester) async {
+  testWidgets('home masthead renders and dish cards open the detail page', (
+    tester,
+  ) async {
     // Corpus loading does real file I/O, which never completes inside the
     // FakeAsync zone — run it on the real event loop.
     final state = (await tester.runAsync(onboardedState))!;
@@ -46,7 +48,9 @@ void main() {
     // then tap a card to open the dish detail.
     final homeScrollable = find
         .descendant(
-            of: find.byType(HomeScreen), matching: find.byType(Scrollable))
+          of: find.byType(HomeScreen),
+          matching: find.byType(Scrollable),
+        )
         .first;
     await tester.drag(homeScrollable, const Offset(0, -700));
     await tester.pumpAndSettle();
@@ -56,8 +60,9 @@ void main() {
     expect(find.byType(DishDetailScreen), findsOneWidget);
   });
 
-  testWidgets('dish detail shows dimension rows and switches variants',
-      (tester) async {
+  testWidgets('dish detail shows dimension rows and switches variants', (
+    tester,
+  ) async {
     final state = (await tester.runAsync(onboardedState))!;
     // Titles come from the live corpus — the lattice regenerates, the
     // test shouldn't pin prose.
@@ -71,8 +76,9 @@ void main() {
     }))!;
     expect(veganTitles, isNotEmpty);
 
-    await tester
-        .pumpWidget(app(state, const DishDetailScreen(dishId: 'doener')));
+    await tester.pumpWidget(
+      app(state, const DishDetailScreen(dishId: 'doener')),
+    );
     await tester.pumpAndSettle();
 
     expect(find.textContaining('— diet'), findsOneWidget);
@@ -87,9 +93,13 @@ void main() {
     final shown = veganTitles
         .where((t) => find.text(t).evaluate().isNotEmpty)
         .toList();
-    expect(shown, isNotEmpty,
-        reason: 'no vegan döner title visible after switching; '
-            'expected one of $veganTitles');
+    expect(
+      shown,
+      isNotEmpty,
+      reason:
+          'no vegan döner title visible after switching; '
+          'expected one of $veganTitles',
+    );
     // Let the ingredient highlight-flash reset timer fire before teardown.
     await tester.pump(const Duration(seconds: 2));
   });
@@ -101,17 +111,18 @@ void main() {
       await s.load();
       return s;
     }))!;
-    await tester.pumpWidget(ChangeNotifierProvider.value(
-      value: state,
-      child: MaterialApp(
-        theme: morphThemeData(MorphColors.light),
-        home: Builder(
-          builder: (context) => state.onboarded
-              ? const RootShell()
-              : const OnboardingScreen(),
+    await tester.pumpWidget(
+      ChangeNotifierProvider.value(
+        value: state,
+        child: MaterialApp(
+          theme: morphThemeData(MorphColors.light),
+          home: Builder(
+            builder: (context) =>
+                state.onboarded ? const RootShell() : const OnboardingScreen(),
+          ),
         ),
       ),
-    ));
+    );
     await tester.pumpAndSettle();
     expect(find.byType(OnboardingScreen), findsOneWidget);
 
@@ -137,11 +148,15 @@ void main() {
     const en = S('en');
     final settingsScrollable = find
         .descendant(
-            of: find.byType(SettingsScreen),
-            matching: find.byType(Scrollable))
+          of: find.byType(SettingsScreen),
+          matching: find.byType(Scrollable),
+        )
         .first;
-    await tester.scrollUntilVisible(find.text(en('supportBody')), 300,
-        scrollable: settingsScrollable);
+    await tester.scrollUntilVisible(
+      find.text(en('supportBody')),
+      300,
+      scrollable: settingsScrollable,
+    );
 
     expect(find.text(en('supportBody')), findsOneWidget);
     expect(find.text(en('supportMadeBy')), findsWidgets);
@@ -149,10 +164,12 @@ void main() {
     expect(find.text(en('supportWebsite')), findsOneWidget);
     // The logo asset is wired up (no URL is launched in this test).
     expect(
-      find.byWidgetPredicate((w) =>
-          w is Image &&
-          w.image is AssetImage &&
-          (w.image as AssetImage).assetName == 'assets/mo-logo.png'),
+      find.byWidgetPredicate(
+        (w) =>
+            w is Image &&
+            w.image is AssetImage &&
+            (w.image as AssetImage).assetName == 'assets/mo-logo.png',
+      ),
       findsOneWidget,
     );
   });
@@ -161,8 +178,11 @@ void main() {
     const en = S('en');
     const de = S('de');
     for (final key in [
-      'aboutSupport', 'supportMadeBy', 'supportBody',
-      'supportPatreon', 'supportWebsite'
+      'aboutSupport',
+      'supportMadeBy',
+      'supportBody',
+      'supportPatreon',
+      'supportWebsite',
     ]) {
       expect(en(key), isNot(equals(key)), reason: 'missing EN $key');
       expect(de(key), isNot(equals(key)), reason: 'missing DE $key');
@@ -173,11 +193,13 @@ void main() {
     expect(de('supportPatreon'), isNot(equals(en('supportPatreon'))));
   });
 
-  testWidgets('appearance settings re-theme the running app in place',
-      (tester) async {
+  testWidgets('appearance settings re-theme the running app in place', (
+    tester,
+  ) async {
     final state = (await tester.runAsync(onboardedState))!;
     await tester.pumpWidget(
-        ChangeNotifierProvider.value(value: state, child: const ThemedApp()));
+      ChangeNotifierProvider.value(value: state, child: const ThemedApp()),
+    );
     await tester.pumpAndSettle();
 
     MorphThemeData morphOf() =>
@@ -205,7 +227,11 @@ void main() {
     const en = S('en');
     const de = S('de');
     for (final key in [
-      'theme', 'themeLight', 'themeDark', 'readableText', 'readableTextHint'
+      'theme',
+      'themeLight',
+      'themeDark',
+      'readableText',
+      'readableTextHint',
     ]) {
       expect(en(key), isNot(equals(key)), reason: 'missing EN $key');
       expect(de(key), isNot(equals(key)), reason: 'missing DE $key');
@@ -225,5 +251,73 @@ void main() {
     await tester.tap(find.text('cookbook'));
     await tester.pumpAndSettle();
     expect(find.text(savedTitle), findsOneWidget);
+  });
+
+  testWidgets('personal recipe editor creates a private recipe', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(app(state, const PersonalRecipeEditorScreen()));
+    await tester.pumpAndSettle();
+
+    await tester.enterText(
+      find.byKey(const ValueKey('recipe-title')),
+      'My tomato toast',
+    );
+    await tester.enterText(
+      find.byKey(const ValueKey('ingredient-name-0')),
+      'Tomato',
+    );
+    final editorScroll = find.byType(Scrollable).first;
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('step-text-0')),
+      300,
+      scrollable: editorScroll,
+    );
+    await tester.enterText(
+      find.byKey(const ValueKey('step-text-0')),
+      'Toast and top.',
+    );
+    final save = find.byKey(const ValueKey('save-personal-recipe'));
+    await tester.scrollUntilVisible(save, 450, scrollable: editorScroll);
+    await tester.tap(save);
+    await tester.pumpAndSettle();
+
+    expect(state.personalRecipes, hasLength(1));
+    expect(state.personalRecipes.single.title, 'My tomato toast');
+    expect(state.isSaved(state.personalRecipes.single.id), isTrue);
+  });
+
+  testWidgets('cookbook opens a personal recipe without lattice controls', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    final personal = PersonalRecipe(
+      id: 'personal-0123456789abcdef0123456789abcdef',
+      title: 'My soup',
+      timeMinutes: 20,
+      servings: 2,
+      ingredients: [
+        PersonalRecipeIngredient(name: 'Carrot', qty: 2, unit: 'piece'),
+      ],
+      steps: [PersonalRecipeStep(text: 'Simmer.')],
+      createdAt: DateTime.utc(2026, 7, 1),
+      updatedAt: DateTime.utc(2026, 7, 1),
+    );
+    await state.savePersonalRecipe(personal);
+    await tester.pumpWidget(app(state, const Scaffold(body: CookbookScreen())));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('my recipes'));
+    await tester.pumpAndSettle();
+    expect(find.text('my soup'), findsOneWidget);
+    await tester.tap(find.text('my soup'));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(DishDetailScreen), findsOneWidget);
+    expect(find.byKey(const ValueKey('edit-personal-recipe')), findsOneWidget);
+    expect(find.textContaining('— diet'), findsNothing);
+    expect(find.text('macros'), findsNothing);
+    expect(find.textContaining('kept only on this device'), findsOneWidget);
   });
 }

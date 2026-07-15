@@ -21,18 +21,21 @@ class InsightsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(s('shoppingInsights'),
-            style: morph.text.display.copyWith(fontSize: 22)),
+        title: Text(
+          s('shoppingInsights'),
+          style: morph.text.display.copyWith(fontSize: 22),
+        ),
       ),
       body: PaperBackground(
         child: insights.varietyScore == 0
             ? Center(
                 child: Padding(
                   padding: const EdgeInsets.all(32),
-                  child: Text(s('insightsEmpty'),
-                      textAlign: TextAlign.center,
-                      style: morph.text
-                          .handAt(20, color: morph.colors.inkSoft)),
+                  child: Text(
+                    s('insightsEmpty'),
+                    textAlign: TextAlign.center,
+                    style: morph.text.handAt(20, color: morph.colors.inkSoft),
+                  ),
                 ),
               )
             : ListView(
@@ -42,12 +45,17 @@ class InsightsScreen extends StatelessWidget {
                   Center(
                     child: Column(
                       children: [
-                        Text('${insights.varietyScore}',
-                            style: morph.text.display.copyWith(
-                                fontSize: 64,
-                                color: morph.colors.terracotta)),
-                        Text(s('uniqueIngredients'),
-                            style: morph.text.handAt(18)),
+                        Text(
+                          '${insights.varietyScore}',
+                          style: morph.text.display.copyWith(
+                            fontSize: 64,
+                            color: morph.colors.terracotta,
+                          ),
+                        ),
+                        Text(
+                          s('uniqueIngredients'),
+                          style: morph.text.handAt(18),
+                        ),
                       ],
                     ),
                   ),
@@ -63,8 +71,12 @@ class InsightsScreen extends StatelessWidget {
     );
   }
 
-  List<Widget> _topBars(MorphThemeData morph, ShoppingInsights insights,
-      AppState state, String lang) {
+  List<Widget> _topBars(
+    MorphThemeData morph,
+    ShoppingInsights insights,
+    AppState state,
+    String lang,
+  ) {
     if (insights.topIngredients.isEmpty) return const [];
     final max = insights.topIngredients.first.value;
     return [
@@ -76,7 +88,12 @@ class InsightsScreen extends StatelessWidget {
               SizedBox(
                 width: 120,
                 child: Text(
-                  state.corpus.dictionary.byId(entry.key)?.name.of(lang) ??
+                  state.shoppingHistory.reversed
+                          .where((item) => item.ingredientId == entry.key)
+                          .map((item) => item.customName)
+                          .whereType<String>()
+                          .firstOrNull ??
+                      state.corpus.dictionary.byId(entry.key)?.name.of(lang) ??
                       entry.key,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -91,8 +108,7 @@ class InsightsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 8),
-              Text('${entry.value}×',
-                  style: morph.text.label(size: 10)),
+              Text('${entry.value}×', style: morph.text.label(size: 10)),
             ],
           ),
         ),
@@ -112,15 +128,16 @@ class InsightsScreen extends StatelessWidget {
             children: [
               SizedBox(
                 width: 70,
-                child: Text(entry.key,
-                    style: morph.text.mono.copyWith(fontSize: 11.5)),
+                child: Text(
+                  entry.key,
+                  style: morph.text.mono.copyWith(fontSize: 11.5),
+                ),
               ),
               Expanded(
                 child: FractionallySizedBox(
                   alignment: Alignment.centerLeft,
                   widthFactor: (entry.value / max).clamp(0.05, 1.0),
-                  child:
-                      Container(height: 10, color: morph.colors.butter),
+                  child: Container(height: 10, color: morph.colors.butter),
                 ),
               ),
               const SizedBox(width: 8),

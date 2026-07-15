@@ -8,6 +8,9 @@ import '../logic/matching.dart';
 import '../logic/ranking.dart';
 import '../logic/shopping.dart';
 import '../models/collections.dart';
+import '../models/dish.dart';
+import '../models/localized.dart';
+import '../models/personal_recipe.dart';
 import '../models/profile.dart';
 import '../models/recipe.dart';
 import 'corpus.dart';
@@ -28,6 +31,7 @@ class AppState extends ChangeNotifier {
   List<ShoppingItem> _shoppingList = [];
   List<ShoppingItem> _shoppingHistory = [];
   List<String> _contentRequests = [];
+  List<PersonalRecipe> _personalRecipes = [];
   CookProgress? _cookProgress;
 
   Profile get profile => _profile;
@@ -36,9 +40,10 @@ class AppState extends ChangeNotifier {
   List<HistoryEntry> get history => List.unmodifiable(_history);
   MealPlanData get mealPlan => _mealPlan;
   List<ShoppingItem> get shoppingList => List.unmodifiable(_shoppingList);
-  List<ShoppingItem> get shoppingHistory =>
-      List.unmodifiable(_shoppingHistory);
+  List<ShoppingItem> get shoppingHistory => List.unmodifiable(_shoppingHistory);
   List<String> get contentRequests => List.unmodifiable(_contentRequests);
+  List<PersonalRecipe> get personalRecipes =>
+      List.unmodifiable(_personalRecipes);
   CookProgress? get cookProgress => _cookProgress;
 
   String get lang => _profile.lang;
@@ -57,11 +62,13 @@ class AppState extends ChangeNotifier {
     _shoppingHistory = _readList('shopping_history', ShoppingItem.fromJson);
     _mealPlan = _readMealPlan();
     _contentRequests = _readStrings('content_requests');
+    _personalRecipes = _readList('personal_recipes', PersonalRecipe.fromJson);
     final progressRaw = store.getCollection('cook_progress');
     if (progressRaw != null) {
       try {
         _cookProgress = CookProgress.fromJson(
-            json.decode(progressRaw) as Map<String, dynamic>);
+          json.decode(progressRaw) as Map<String, dynamic>,
+        );
       } catch (_) {}
     }
     notifyListeners();
@@ -93,11 +100,14 @@ class AppState extends ChangeNotifier {
     final raw = store.getCollection('meal_plan');
     if (raw == null) return {};
     try {
-      return (json.decode(raw) as Map<String, dynamic>).map((week, slots) =>
-          MapEntry(
-              week,
-              (slots as Map<String, dynamic>)
-                  .map((slot, id) => MapEntry(slot, id as String))));
+      return (json.decode(raw) as Map<String, dynamic>).map(
+        (week, slots) => MapEntry(
+          week,
+          (slots as Map<String, dynamic>).map(
+            (slot, id) => MapEntry(slot, id as String),
+          ),
+        ),
+      );
     } catch (_) {
       return {};
     }
@@ -122,8 +132,7 @@ class AppState extends ChangeNotifier {
 
   // ---- cookbook ----
 
-  bool isSaved(String recipeId) =>
-      _saved.any((s) => s.recipeId == recipeId);
+  bool isSaved(String recipeId) => _saved.any((s) => s.recipeId == recipeId);
 
   Future<void> toggleSaved(String recipeId) async {
     if (isSaved(recipeId)) {
@@ -132,6 +141,72 @@ class AppState extends ChangeNotifier {
       _saved.add(SavedRecipe(recipeId: recipeId, savedAt: DateTime.now()));
     }
     await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
+    notifyListeners();
+  }
+
+  // ---- personal recipes ----
+
+  PersonalRecipe? personalRecipeById(String recipeId) {
+    for (final recipe in _personalRecipes) {
+      if (recipe.id == recipeId) return recipe;
+    }
+    return null;
+  }
+
+  PersonalRecipe? _personalRecipeByDishId(String dishId) {
+    for (final recipe in _personalRecipes) {
+      if (recipe.dishId == dishId) return recipe;
+    }
+    return null;
+  }
+
+  bool isPersonalRecipe(String recipeId) =>
+      personalRecipeById(recipeId) != null;
+
+  /// Creates or updates a device-only recipe. New recipes are saved into the
+  /// cookbook automatically, while edited recipes keep their existing id and
+  /// references in plans/history.
+  Future<void> savePersonalRecipe(PersonalRecipe recipe) async {
+    final index = _personalRecipes.indexWhere((r) => r.id == recipe.id);
+    if (index < 0) {
+      _personalRecipes.add(recipe);
+      if (!isSaved(recipe.id)) {
+        _saved.add(SavedRecipe(recipeId: recipe.id, savedAt: DateTime.now()));
+        await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
+      }
+    } else {
+      _personalRecipes[index] = recipe;
+    }
+    await _writeJson(
+      'personal_recipes',
+      _personalRecipes.map((r) => r.toJson()).toList(),
+    );
+    notifyListeners();
+  }
+
+  /// Deletes the owned recipe and every reference that cannot be rendered
+  /// without it. Shopping-list lines remain useful and retain their names.
+  Future<void> deletePersonalRecipe(String recipeId) async {
+    if (!isPersonalRecipe(recipeId)) return;
+    _personalRecipes.removeWhere((r) => r.id == recipeId);
+    _saved.removeWhere((s) => s.recipeId == recipeId);
+    _history.removeWhere((h) => h.recipeId == recipeId);
+    for (final week in _mealPlan.values) {
+      week.removeWhere((_, id) => id == recipeId);
+    }
+    _mealPlan.removeWhere((_, slots) => slots.isEmpty);
+    if (_cookProgress?.recipeId == recipeId) _cookProgress = null;
+
+    await _writeJson(
+      'personal_recipes',
+      _personalRecipes.map((r) => r.toJson()).toList(),
+    );
+    await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
+    await _writeJson('history', _history.map((h) => h.toJson()).toList());
+    await _writeJson('meal_plan', _mealPlan);
+    if (_cookProgress == null) {
+      await store.putCollection('cook_progress', 'null');
+    }
     notifyListeners();
   }
 
@@ -178,34 +253,45 @@ class AppState extends ChangeNotifier {
     // History keeps one record per added line for insights.
     _shoppingHistory = [
       ..._shoppingHistory,
-      ...aggregated.map((a) => ShoppingItem(
-            ingredientId: a.ingredientId,
-            qty: a.quantity.amount,
-            unit: a.quantity.unit,
-            aisle: a.aisle,
-            addedAt: now,
-          )),
+      ...aggregated.map(
+        (a) => ShoppingItem(
+          ingredientId: a.ingredientId,
+          qty: a.quantity.amount,
+          unit: a.quantity.unit,
+          aisle: a.aisle,
+          addedAt: now,
+        ),
+      ),
     ];
     await _writeJson(
-        'shopping_list', _shoppingList.map((s) => s.toJson()).toList());
-    await _writeJson('shopping_history',
-        _shoppingHistory.map((s) => s.toJson()).toList());
+      'shopping_list',
+      _shoppingList.map((s) => s.toJson()).toList(),
+    );
+    await _writeJson(
+      'shopping_history',
+      _shoppingHistory.map((s) => s.toJson()).toList(),
+    );
     notifyListeners();
   }
 
   Future<void> toggleShoppingItem(int index) async {
     if (index < 0 || index >= _shoppingList.length) return;
-    _shoppingList[index] =
-        _shoppingList[index].copyWith(checked: !_shoppingList[index].checked);
+    _shoppingList[index] = _shoppingList[index].copyWith(
+      checked: !_shoppingList[index].checked,
+    );
     await _writeJson(
-        'shopping_list', _shoppingList.map((s) => s.toJson()).toList());
+      'shopping_list',
+      _shoppingList.map((s) => s.toJson()).toList(),
+    );
     notifyListeners();
   }
 
   Future<void> clearCheckedShoppingItems() async {
     _shoppingList.removeWhere((s) => s.checked);
     await _writeJson(
-        'shopping_list', _shoppingList.map((s) => s.toJson()).toList());
+      'shopping_list',
+      _shoppingList.map((s) => s.toJson()).toList(),
+    );
     notifyListeners();
   }
 
@@ -238,35 +324,44 @@ class AppState extends ChangeNotifier {
   // ---- backup ----
 
   BackupData buildBackup() => BackupData(
-        profile: _profile,
-        saved: _saved,
-        mealPlan: _mealPlan,
-        history: _history,
-        shoppingHistory: _shoppingHistory,
-        contentRequests: _contentRequests,
-      );
+    profile: _profile,
+    saved: _saved,
+    mealPlan: _mealPlan,
+    history: _history,
+    shoppingHistory: _shoppingHistory,
+    contentRequests: _contentRequests,
+    personalRecipes: _personalRecipes,
+  );
 
   /// Applies an imported backup. [merge] keeps existing data and unions the
   /// incoming; otherwise the import replaces local state. Never touches the
   /// bundled corpus.
   Future<void> applyBackup(BackupData incoming, {required bool merge}) async {
-    final data =
-        merge ? BackupService.merge(buildBackup(), incoming) : incoming;
+    final data = merge
+        ? BackupService.merge(buildBackup(), incoming)
+        : incoming;
     _profile = data.profile;
     _saved = List.of(data.saved);
     _mealPlan = data.mealPlan;
     _history = List.of(data.history);
     _shoppingHistory = List.of(data.shoppingHistory);
     _contentRequests = List.of(data.contentRequests);
+    _personalRecipes = List.of(data.personalRecipes);
     _onboarded = true;
     await store.saveProfile(_profile);
     await store.setOnboardingComplete(true);
     await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
     await _writeJson('meal_plan', _mealPlan);
     await _writeJson('history', _history.map((h) => h.toJson()).toList());
-    await _writeJson('shopping_history',
-        _shoppingHistory.map((s) => s.toJson()).toList());
+    await _writeJson(
+      'shopping_history',
+      _shoppingHistory.map((s) => s.toJson()).toList(),
+    );
     await _writeJson('content_requests', _contentRequests);
+    await _writeJson(
+      'personal_recipes',
+      _personalRecipes.map((r) => r.toJson()).toList(),
+    );
     notifyListeners();
   }
 
@@ -281,26 +376,77 @@ class AppState extends ChangeNotifier {
     _shoppingList = [];
     _shoppingHistory = [];
     _contentRequests = [];
+    _personalRecipes = [];
     _cookProgress = null;
     notifyListeners();
   }
 
   // ---- matching convenience ----
 
-  /// Visible variants of a dish for the current profile.
-  Future<List<Recipe>> visibleVariants(String dishId,
-      {bool ignoreCalories = false}) async {
-    final dish = corpus.dishById(dishId);
+  /// Unified lookup across device-owned recipes and the bundled corpus.
+  Future<Recipe?> recipeById(String id) async =>
+      personalRecipeById(id)?.asRecipe() ?? await corpus.recipeById(id);
+
+  /// Synchronous counterpart for already-loaded recipe references.
+  Recipe? loadedRecipeById(String id) =>
+      personalRecipeById(id)?.asRecipe() ?? corpus.loadedRecipeById(id);
+
+  /// Unified dish lookup. Personal recipes expose a synthetic single-variant
+  /// dish so existing detail navigation can keep using a dish id.
+  Dish? dishById(String id) {
+    final personal = _personalRecipeByDishId(id);
+    if (personal != null) {
+      final text = LocalizedText({'en': personal.title, 'de': personal.title});
+      final description = personal.description.isEmpty
+          ? LocalizedText.empty
+          : LocalizedText({
+              'en': personal.description,
+              'de': personal.description,
+            });
+      return Dish(
+        id: personal.dishId,
+        name: text,
+        hero: description,
+        caption: description,
+        stripe: '#497C78',
+        recipeIds: [personal.id],
+        partitionId: 'personal',
+        secondaryPartitions: const [],
+        cuisineTags: const [],
+        frequencyTier: 'personal',
+      );
+    }
+    return corpus.dishById(id);
+  }
+
+  Future<List<Recipe>> variantsOf(Dish dish) async {
+    final personal = _personalRecipeByDishId(dish.id);
+    if (personal != null) return [personal.asRecipe()];
+    return corpus.variantsOf(dish);
+  }
+
+  /// Visible variants of a dish for the current profile. Personal recipes
+  /// are always visible because the editor does not infer dietary claims.
+  Future<List<Recipe>> visibleVariants(
+    String dishId, {
+    bool ignoreCalories = false,
+  }) async {
+    final dish = dishById(dishId);
     if (dish == null) return [];
-    final variants = await corpus.variantsOf(dish);
+    final personal = _personalRecipeByDishId(dishId);
+    if (personal != null) return [personal.asRecipe()];
+    final variants = await variantsOf(dish);
     return variants
-        .where((r) =>
-            matcher.isVisible(r, _profile, ignoreCalories: ignoreCalories))
+        .where(
+          (r) => matcher.isVisible(r, _profile, ignoreCalories: ignoreCalories),
+        )
         .toList();
   }
 
   /// Best visible variant for the dish, profile-default and time-aware.
   Future<Recipe?> bestVariant(String dishId) async {
+    final personal = _personalRecipeByDishId(dishId);
+    if (personal != null) return personal.asRecipe();
     final visible = await visibleVariants(dishId);
     return ranker.pickBest(visible, _profile, _history);
   }

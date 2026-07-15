@@ -3,10 +3,12 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import '../../models/collections.dart';
+import '../../models/personal_recipe.dart';
 import '../../models/profile.dart';
 import 'crypto.dart';
 
-const backupSchemaVersion = 1;
+const backupSchemaVersion = 2;
+const maxBackupPersonalRecipes = 500;
 
 /// The full exportable state (SPEC "Backup format").
 class BackupData {
@@ -16,6 +18,7 @@ class BackupData {
   final List<HistoryEntry> history;
   final List<ShoppingItem> shoppingHistory;
   final List<String> contentRequests;
+  final List<PersonalRecipe> personalRecipes;
 
   const BackupData({
     required this.profile,
@@ -24,57 +27,82 @@ class BackupData {
     required this.history,
     this.shoppingHistory = const [],
     this.contentRequests = const [],
+    this.personalRecipes = const [],
   });
 
   Map<String, dynamic> toJson(DateTime exportedAt) => {
-        'schema_version': backupSchemaVersion,
-        'exported_at': exportedAt.toUtc().toIso8601String(),
-        'profile': profile.toJson(),
-        'saved': saved.map((s) => s.recipeId).toList(),
-        'saved_meta': saved.map((s) => s.toJson()).toList(),
-        'meal_plan': mealPlan,
-        'history': history.map((h) => h.toJson()).toList(),
-        'shopping_history':
-            shoppingHistory.map((s) => s.toJson()).toList(),
-        if (contentRequests.isNotEmpty) 'content_requests': contentRequests,
-      };
+    'schema_version': backupSchemaVersion,
+    'exported_at': exportedAt.toUtc().toIso8601String(),
+    'profile': profile.toJson(),
+    'saved': saved.map((s) => s.recipeId).toList(),
+    'saved_meta': saved.map((s) => s.toJson()).toList(),
+    'meal_plan': mealPlan,
+    'history': history.map((h) => h.toJson()).toList(),
+    'shopping_history': shoppingHistory.map((s) => s.toJson()).toList(),
+    if (contentRequests.isNotEmpty) 'content_requests': contentRequests,
+    if (personalRecipes.isNotEmpty)
+      'personal_recipes': personalRecipes.map((r) => r.toJson()).toList(),
+  };
 
   factory BackupData.fromJson(Map<String, dynamic> json) {
-    final version = json['schema_version'];
-    if (version is! int || version > backupSchemaVersion || version < 1) {
-      throw const DecryptionException(DecryptionFailure.invalidFormat);
-    }
-    final profileJson = json['profile'];
-    if (profileJson is! Map<String, dynamic>) {
-      throw const DecryptionException(DecryptionFailure.invalidFormat);
-    }
-    final savedMeta = json['saved_meta'] as List?;
-    final saved = savedMeta != null
-        ? savedMeta
-            .map((e) => SavedRecipe.fromJson(e as Map<String, dynamic>))
-            .toList()
-        : (json['saved'] as List? ?? const [])
-            .map((id) => SavedRecipe(
-                recipeId: id as String,
-                savedAt: DateTime.fromMillisecondsSinceEpoch(0, isUtc: true)))
-            .toList();
-    return BackupData(
-      profile: Profile.fromJson(profileJson),
-      saved: saved,
-      mealPlan: (json['meal_plan'] as Map<String, dynamic>? ?? const {}).map(
+    try {
+      final version = json['schema_version'];
+      if (version is! int || version > backupSchemaVersion || version < 1) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+      final profileJson = json['profile'];
+      if (profileJson is! Map<String, dynamic>) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+      final savedMeta = json['saved_meta'] as List?;
+      final saved = savedMeta != null
+          ? savedMeta
+                .map((e) => SavedRecipe.fromJson(e as Map<String, dynamic>))
+                .toList()
+          : (json['saved'] as List? ?? const [])
+                .map(
+                  (id) => SavedRecipe(
+                    recipeId: id as String,
+                    savedAt: DateTime.fromMillisecondsSinceEpoch(
+                      0,
+                      isUtc: true,
+                    ),
+                  ),
+                )
+                .toList();
+      final personalJson = json['personal_recipes'] as List? ?? const [];
+      if (personalJson.length > maxBackupPersonalRecipes) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+      return BackupData(
+        profile: Profile.fromJson(profileJson),
+        saved: saved,
+        mealPlan: (json['meal_plan'] as Map<String, dynamic>? ?? const {}).map(
           (week, slots) => MapEntry(
-              week,
-              (slots as Map<String, dynamic>)
-                  .map((slot, id) => MapEntry(slot, id as String)))),
-      history: (json['history'] as List? ?? const [])
-          .map((e) => HistoryEntry.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      shoppingHistory: (json['shopping_history'] as List? ?? const [])
-          .map((e) => ShoppingItem.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      contentRequests:
-          List<String>.from(json['content_requests'] as List? ?? const []),
-    );
+            week,
+            (slots as Map<String, dynamic>).map(
+              (slot, id) => MapEntry(slot, id as String),
+            ),
+          ),
+        ),
+        history: (json['history'] as List? ?? const [])
+            .map((e) => HistoryEntry.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        shoppingHistory: (json['shopping_history'] as List? ?? const [])
+            .map((e) => ShoppingItem.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        contentRequests: List<String>.from(
+          json['content_requests'] as List? ?? const [],
+        ),
+        personalRecipes: personalJson
+            .map((e) => PersonalRecipe.fromJson(e as Map<String, dynamic>))
+            .toList(),
+      );
+    } on DecryptionException {
+      rethrow;
+    } catch (_) {
+      throw const DecryptionException(DecryptionFailure.invalidFormat);
+    }
   }
 }
 
@@ -97,8 +125,9 @@ class BackupService {
     String? password,
     DateTime? exportedAt,
   }) {
-    final jsonText = const JsonEncoder.withIndent('  ')
-        .convert(data.toJson(exportedAt ?? DateTime.now()));
+    final jsonText = const JsonEncoder.withIndent(
+      '  ',
+    ).convert(data.toJson(exportedAt ?? DateTime.now()));
     final plainBytes = utf8.encode(jsonText);
 
     final jsonFile = (password != null && password.isNotEmpty)
@@ -169,9 +198,22 @@ class BackupService {
         .toSet();
     final history = [
       ...current.history,
-      ...incoming.history.where((h) =>
-          !historyKeys.contains('${h.recipeId}|${h.cookedAt.toIso8601String()}')),
+      ...incoming.history.where(
+        (h) => !historyKeys.contains(
+          '${h.recipeId}|${h.cookedAt.toIso8601String()}',
+        ),
+      ),
     ];
+
+    final personalById = <String, PersonalRecipe>{
+      for (final recipe in current.personalRecipes) recipe.id: recipe,
+    };
+    for (final recipe in incoming.personalRecipes) {
+      final existing = personalById[recipe.id];
+      if (existing == null || !existing.updatedAt.isAfter(recipe.updatedAt)) {
+        personalById[recipe.id] = recipe;
+      }
+    }
 
     return BackupData(
       profile: incoming.profile,
@@ -186,6 +228,7 @@ class BackupService {
         ...current.contentRequests,
         ...incoming.contentRequests,
       }.toList(),
+      personalRecipes: personalById.values.toList(),
     );
   }
 }

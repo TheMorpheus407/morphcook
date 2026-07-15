@@ -39,7 +39,8 @@ class _CookModeScreenState extends State<CookModeScreen> {
       resumeFrom: resume,
     );
     _oneHanded = OneHandedCookModeController(
-        quickNextTapEnabled: state.profile.quickNextTapEnabled);
+      quickNextTapEnabled: state.profile.quickNextTapEnabled,
+    );
     _session.addListener(_onSession);
   }
 
@@ -59,7 +60,8 @@ class _CookModeScreenState extends State<CookModeScreen> {
     final state = context.read<AppState>();
     if (!state.profile.visualAlertEnabled) return;
     HapticFeedback.heavyImpact();
-    final reduce = state.profile.reduceMotion ??
+    final reduce =
+        state.profile.reduceMotion ??
         MediaQuery.maybeDisableAnimationsOf(context) ??
         false;
     if (reduce) {
@@ -119,22 +121,28 @@ class _CookModeScreenState extends State<CookModeScreen> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Text(morph.cased(recipe.title.of(lang)),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: morph.text.display.copyWith(
-                            fontSize: 20, color: MorphColors.cream)),
+                    child: Text(
+                      morph.cased(recipe.title.of(lang)),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: morph.text.display.copyWith(
+                        fontSize: 20,
+                        color: MorphColors.cream,
+                      ),
+                    ),
                   ),
                   _servingsScaler(s),
                   IconButton(
-                    icon: const Icon(Icons.format_list_bulleted,
-                        size: 20, color: MorphColors.cream),
+                    icon: const Icon(
+                      Icons.format_list_bulleted,
+                      size: 20,
+                      color: MorphColors.cream,
+                    ),
                     tooltip: s('ingredients'),
                     onPressed: () => _showScaledIngredients(state, s),
                   ),
                   IconButton(
-                    icon:
-                        const Icon(Icons.close, color: MorphColors.cream),
+                    icon: const Icon(Icons.close, color: MorphColors.cream),
                     onPressed: () => Navigator.of(context).pop(),
                   ),
                 ],
@@ -146,14 +154,14 @@ class _CookModeScreenState extends State<CookModeScreen> {
                 children: [
                   Text(
                     morph.cased(
-                        '${s('step')} ${_session.stepIndex + 1} ${s('of')} ${recipe.steps.length}'),
+                      '${s('step')} ${_session.stepIndex + 1} ${s('of')} ${recipe.steps.length}',
+                    ),
                     style: morph.text.label(color: morph.colors.inkFaint),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: LinearProgressIndicator(
-                      value:
-                          (_session.stepIndex + 1) / recipe.steps.length,
+                      value: (_session.stepIndex + 1) / recipe.steps.length,
                       backgroundColor: MorphColors.nightCard,
                       color: morph.colors.terracotta,
                       minHeight: 2,
@@ -172,22 +180,31 @@ class _CookModeScreenState extends State<CookModeScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('${_session.stepIndex + 1}.',
-                          style: morph.text.display.copyWith(
-                              fontSize: 44,
-                              color: morph.colors.terracotta)),
+                      Text(
+                        '${_session.stepIndex + 1}.',
+                        style: morph.text.display.copyWith(
+                          fontSize: 44,
+                          color: morph.colors.terracotta,
+                        ),
+                      ),
                       const SizedBox(height: 12),
                       Text(
                         step.text.of(lang),
                         style: morph.text.serif.copyWith(
-                            fontSize: 21, color: MorphColors.cream),
+                          fontSize: 21,
+                          color: MorphColors.cream,
+                        ),
                       ),
                       if (_session.quickTapHintVisible(state))
                         Padding(
                           padding: const EdgeInsets.only(top: 16),
-                          child: Text(s('quickTapHint'),
-                              style: morph.text.handAt(17,
-                                  color: morph.colors.inkFaint)),
+                          child: Text(
+                            s('quickTapHint'),
+                            style: morph.text.handAt(
+                              17,
+                              color: morph.colors.inkFaint,
+                            ),
+                          ),
                         ),
                     ],
                   ),
@@ -219,7 +236,8 @@ class _CookModeScreenState extends State<CookModeScreen> {
             Center(
               child: Text(
                 morph.cased(
-                    '${s('ingredients')} · ${_session.servings} ${s('servings')}'),
+                  '${s('ingredients')} · ${_session.servings} ${s('servings')}',
+                ),
                 style: morph.text.label(color: morph.colors.inkFaint),
               ),
             ),
@@ -234,18 +252,23 @@ class _CookModeScreenState extends State<CookModeScreen> {
                       child: Text(
                         Quantity(ing.qty * factor, ing.unit).display,
                         style: morph.text.mono.copyWith(
-                            fontSize: 12, color: morph.colors.terracotta),
+                          fontSize: 12,
+                          color: morph.colors.terracotta,
+                        ),
                       ),
                     ),
                     Expanded(
                       child: Text(
-                        state.corpus.dictionary
+                        ing.customName ??
+                            state.corpus.dictionary
                                 .byId(ing.ingredientId)
                                 ?.name
                                 .of(lang) ??
                             ing.ingredientId,
                         style: morph.text.mono.copyWith(
-                            fontSize: 12.5, color: MorphColors.cream),
+                          fontSize: 12.5,
+                          color: MorphColors.cream,
+                        ),
                       ),
                     ),
                   ],
@@ -267,13 +290,18 @@ class _CookModeScreenState extends State<CookModeScreen> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          _scaleButton(Icons.remove,
-              () => _session.setServings(_session.servings - 1)),
-          Text('${_session.servings}',
-              style:
-                  morph.text.mono.copyWith(color: MorphColors.cream)),
-          _scaleButton(Icons.add,
-              () => _session.setServings(_session.servings + 1)),
+          _scaleButton(
+            Icons.remove,
+            () => _session.setServings(_session.servings - 1),
+          ),
+          Text(
+            '${_session.servings}',
+            style: morph.text.mono.copyWith(color: MorphColors.cream),
+          ),
+          _scaleButton(
+            Icons.add,
+            () => _session.setServings(_session.servings + 1),
+          ),
         ],
       ),
     );
@@ -305,28 +333,32 @@ class _CookModeScreenState extends State<CookModeScreen> {
       ),
       child: Row(
         children: [
-          Text('$minutes:$seconds',
-              style: morph.text.mono.copyWith(
-                  fontSize: 26,
-                  color: remaining == 0
-                      ? morph.colors.coral
-                      : MorphColors.cream)),
+          Text(
+            '$minutes:$seconds',
+            style: morph.text.mono.copyWith(
+              fontSize: 26,
+              color: remaining == 0 ? morph.colors.coral : MorphColors.cream,
+            ),
+          ),
           const Spacer(),
           if (remaining == 0)
-            Text(s('timerDone'),
-                style: morph.text
-                    .handAt(18, color: morph.colors.coral))
+            Text(
+              s('timerDone'),
+              style: morph.text.handAt(18, color: morph.colors.coral),
+            )
           else
             TextButton(
               onPressed: running
                   ? _session.pauseTimer
                   : (paused ? _session.resumeTimer : _session.startTimer),
               child: Text(
-                morph.cased(running
-                    ? s('pause')
-                    : paused
-                        ? s('resume')
-                        : s('startTimer')),
+                morph.cased(
+                  running
+                      ? s('pause')
+                      : paused
+                      ? s('resume')
+                      : s('startTimer'),
+                ),
                 style: morph.text.label(color: morph.colors.teal),
               ),
             ),
@@ -342,8 +374,7 @@ class _CookModeScreenState extends State<CookModeScreen> {
       child: Row(
         children: [
           IconButton(
-            onPressed:
-                _session.stepIndex > 0 ? _session.previousStep : null,
+            onPressed: _session.stepIndex > 0 ? _session.previousStep : null,
             icon: const Icon(Icons.arrow_back, color: MorphColors.cream),
           ),
           const Spacer(),
@@ -351,16 +382,15 @@ class _CookModeScreenState extends State<CookModeScreen> {
             style: FilledButton.styleFrom(
               backgroundColor: morph.colors.terracotta,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(2)),
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+                borderRadius: BorderRadius.circular(2),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
             ),
             onPressed: _session.isLastStep
                 ? _session.complete
                 : _session.nextStep,
             child: Text(
-              morph.cased(
-                  _session.isLastStep ? s('finishCooking') : s('next')),
+              morph.cased(_session.isLastStep ? s('finishCooking') : s('next')),
               style: morph.text.label(color: MorphColors.cream),
             ),
           ),
@@ -380,24 +410,35 @@ class _CookModeScreenState extends State<CookModeScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('&', style: morph.text.handAt(60,
-                    color: morph.colors.terracotta)),
+                Text(
+                  '&',
+                  style: morph.text.handAt(60, color: morph.colors.terracotta),
+                ),
                 const SizedBox(height: 12),
-                Text(s('cookedIt'),
-                    textAlign: TextAlign.center,
-                    style: morph.text.display.copyWith(
-                        fontSize: 30, color: MorphColors.cream)),
+                Text(
+                  s('cookedIt'),
+                  textAlign: TextAlign.center,
+                  style: morph.text.display.copyWith(
+                    fontSize: 30,
+                    color: MorphColors.cream,
+                  ),
+                ),
                 const SizedBox(height: 8),
-                Text(s('cookAgainNote'),
-                    style: morph.text.label(color: morph.colors.inkFaint)),
+                Text(
+                  s('cookAgainNote'),
+                  style: morph.text.label(color: morph.colors.inkFaint),
+                ),
                 const SizedBox(height: 32),
                 FilledButton(
                   style: FilledButton.styleFrom(
                     backgroundColor: morph.colors.terracotta,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(2)),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 28, vertical: 14),
+                      horizontal: 28,
+                      vertical: 14,
+                    ),
                   ),
                   onPressed: () async {
                     await state.logCooked(widget.recipe.id);
@@ -405,8 +446,10 @@ class _CookModeScreenState extends State<CookModeScreen> {
                     // ignore: use_build_context_synchronously
                     Navigator.of(context).pop();
                   },
-                  child: Text(morph.cased(s('done')),
-                      style: morph.text.label(color: MorphColors.cream)),
+                  child: Text(
+                    morph.cased(s('done')),
+                    style: morph.text.label(color: MorphColors.cream),
+                  ),
                 ),
               ],
             ),

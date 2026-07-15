@@ -29,15 +29,19 @@ class RecipeRow extends StatelessWidget {
     final morph = MorphTheme.of(context);
     final lang = state.lang;
     final s = S(lang);
-    final dish = state.corpus.dishById(recipe.dishId);
+    final dish = state.dishById(recipe.dishId);
     final stripe = dish == null
         ? morph.colors.teal
         : Color(int.parse(dish.stripe.replaceFirst('#', '0xFF')));
 
     return InkWell(
-      onTap: onTap ??
-          () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (_) => DishDetailScreen(dishId: recipe.dishId))),
+      onTap:
+          onTap ??
+          () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => DishDetailScreen(dishId: recipe.dishId),
+            ),
+          ),
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 5),
         padding: const EdgeInsets.all(8),
@@ -57,20 +61,33 @@ class RecipeRow extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(morph.cased(recipe.title.of(lang)),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: morph.text.display.copyWith(fontSize: 17)),
+                  Text(
+                    morph.cased(recipe.title.of(lang)),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: morph.text.display.copyWith(fontSize: 17),
+                  ),
                   const SizedBox(height: 2),
                   Text(
                     morph.cased(
-                        '${recipe.timeMinutes} ${s('minutes')} · ${recipe.caloriesPerServing} kcal · ${state.corpus.ontology.nameOf(recipe.variant.effort, lang)}'),
+                      recipe.hasNutrition
+                          ? '${recipe.timeMinutes} ${s('minutes')} · ${recipe.caloriesPerServing} kcal · ${state.corpus.ontology.nameOf(recipe.variant.effort, lang)}'
+                          : '${recipe.timeMinutes} ${s('minutes')} · ${recipe.servings} ${s('servings')}',
+                    ),
                     style: morph.text.label(size: 9),
                   ),
                 ],
               ),
             ),
-            if (state.profile.showVariantTags &&
+            if (state.isPersonalRecipe(recipe.id))
+              Padding(
+                padding: const EdgeInsets.only(left: 6),
+                child: Text(
+                  s('privateRecipe'),
+                  style: morph.text.handAt(15, color: morph.colors.teal),
+                ),
+              )
+            else if (state.profile.showVariantTags &&
                 recipe.variant.diet != 'classic')
               Padding(
                 padding: const EdgeInsets.only(left: 6),
