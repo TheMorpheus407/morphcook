@@ -79,6 +79,33 @@ void main() {
     expect(edited.updatedAt, DateTime.utc(2026, 7, 3));
   });
 
+  test('cumulative authored text is bounded for reliable backups', () {
+    final longStep = List<String>.filled(maxPersonalStepLength, 'x').join();
+    PersonalRecipe largeRecipe(int index) => PersonalRecipe(
+      id: 'personal-${index.toRadixString(16).padLeft(32, '0')}',
+      title: 'Large recipe $index',
+      timeMinutes: 30,
+      servings: 2,
+      ingredients: [
+        PersonalRecipeIngredient(name: 'Ingredient', qty: 1, unit: 'piece'),
+      ],
+      steps: [
+        for (var i = 0; i < maxPersonalRecipeSteps; i++)
+          PersonalRecipeStep(text: longStep),
+      ],
+      createdAt: DateTime.utc(2026),
+      updatedAt: DateTime.utc(2026),
+    );
+    final recipes = [for (var i = 0; i < 30; i++) largeRecipe(i)];
+
+    expect(personalRecipesFitBackup([samplePersonalRecipe()]), isTrue);
+    expect(personalRecipesFitBackup(recipes), isFalse);
+    expect(
+      estimatedPersonalRecipeBackupBytes(recipes),
+      greaterThan(maxPersonalRecipeBackupBytes),
+    );
+  });
+
   test('invalid authored data is rejected', () {
     expect(
       () => PersonalRecipeIngredient(name: '', qty: 1, unit: 'g'),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../data/app_state.dart';
-import '../../logic/units.dart';
 import '../../models/personal_recipe.dart';
 import '../strings.dart';
 import '../theme.dart';
@@ -225,17 +224,10 @@ class _PersonalRecipeEditorScreenState
               ),
               const SizedBox(width: 10),
               Expanded(
-                child: DropdownButtonFormField<String>(
+                child: _textField(
+                  controller: draft.unit,
+                  label: s('unit'),
                   key: ValueKey('ingredient-unit-$index'),
-                  initialValue: draft.unit,
-                  decoration: InputDecoration(labelText: s('unit')),
-                  items: [
-                    for (final unit in units.keys)
-                      DropdownMenuItem(value: unit, child: Text(unit)),
-                  ],
-                  onChanged: (value) {
-                    if (value != null) draft.unit = value;
-                  },
                 ),
               ),
             ],
@@ -340,7 +332,7 @@ class _PersonalRecipeEditorScreenState
           PersonalRecipeIngredient(
             name: draft.name.text,
             qty: double.parse(draft.qty.text.trim().replaceAll(',', '.')),
-            unit: draft.unit,
+            unit: draft.unit.text,
             note: draft.note.text,
           ),
       ];
@@ -375,11 +367,28 @@ class _PersonalRecipeEditorScreenState
       await state.savePersonalRecipe(recipe);
       if (!mounted) return;
       Navigator.of(context).pop(recipe.id);
+    } on PersonalRecipeLimitException catch (error) {
+      if (!mounted) return;
+      setState(() {
+        _saving = false;
+        _error = switch (error.reason) {
+          PersonalRecipeLimitReason.count => s('personalRecipeLimit'),
+          PersonalRecipeLimitReason.backupSize => s(
+            'personalRecipeBackupLimit',
+          ),
+        };
+      });
     } on FormatException {
       if (!mounted) return;
       setState(() {
         _saving = false;
         _error = s('recipeValidation');
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _saving = false;
+        _error = s('personalRecipeSaveFailed');
       });
     }
   }
@@ -388,16 +397,17 @@ class _PersonalRecipeEditorScreenState
 class _IngredientDraft {
   final TextEditingController name;
   final TextEditingController qty;
+  final TextEditingController unit;
   final TextEditingController note;
-  String unit;
 
   _IngredientDraft({
     String name = '',
     String qty = '1',
     String note = '',
-    this.unit = 'piece',
+    String unit = 'piece',
   }) : name = TextEditingController(text: name),
        qty = TextEditingController(text: qty),
+       unit = TextEditingController(text: unit),
        note = TextEditingController(text: note);
 
   factory _IngredientDraft.fromIngredient(PersonalRecipeIngredient value) =>
@@ -411,6 +421,7 @@ class _IngredientDraft {
   void dispose() {
     name.dispose();
     qty.dispose();
+    unit.dispose();
     note.dispose();
   }
 }

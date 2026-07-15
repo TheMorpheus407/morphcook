@@ -1,13 +1,17 @@
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../data/app_state.dart';
+import '../../logic/local_file_bytes.dart';
 import '../../models/dish.dart';
 import '../../models/personal_recipe.dart';
 import '../../models/recipe.dart';
+import '../../models/recipe_image.dart';
 import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
+import '../widgets/recipe_cover.dart';
 import 'cook_mode_screen.dart';
 import 'faq_screen.dart';
 import 'guide_sheet.dart';
@@ -20,7 +24,13 @@ const _dimensions = ['diet', 'effort', 'calorie'];
 /// Unreachable combos are disabled with a note, never hidden.
 class DishDetailScreen extends StatefulWidget {
   final String dishId;
-  const DishDetailScreen({super.key, required this.dishId});
+  final Future<List<int>?> Function()? pickImageBytes;
+
+  const DishDetailScreen({
+    super.key,
+    required this.dishId,
+    this.pickImageBytes,
+  });
 
   @override
   State<DishDetailScreen> createState() => _DishDetailScreenState();
@@ -151,6 +161,8 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
               .length
         : 0;
     final saved = state.isSaved(recipe.id);
+    final localImage = state.recipeImageFor(recipe.id);
+    final fallbackCaption = recipe.caption.of(lang);
     final motion = motionDuration(context, state.profile.reduceMotion);
 
     return Scaffold(
@@ -188,12 +200,43 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
         child: ListView(
           padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
           children: [
-            StripedPlaceholder(
-              color: _hex(dish.stripe),
+            RecipeCover(
+              recipeId: recipe.id,
+              fallbackColor: _hex(dish.stripe),
               height: 150,
-              caption: recipe.caption.of(lang),
+              fallbackCaption: fallbackCaption.isEmpty ? null : fallbackCaption,
+              semanticLabel: recipe.title.of(lang),
             ),
-            const SizedBox(height: 14),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton.icon(
+                  key: const ValueKey('set-recipe-image'),
+                  onPressed: () => _chooseImage(recipe, state, s),
+                  icon: const Icon(
+                    Icons.add_photo_alternate_outlined,
+                    size: 18,
+                  ),
+                  label: Text(
+                    localImage == null
+                        ? s('chooseRecipeImage')
+                        : s('changeRecipeImage'),
+                  ),
+                ),
+                if (localImage != null)
+                  IconButton(
+                    key: const ValueKey('remove-recipe-image'),
+                    tooltip: s('removeRecipeImage'),
+                    onPressed: () => _removeImage(recipe, state, s),
+                    icon: Icon(
+                      Icons.hide_image_outlined,
+                      size: 19,
+                      color: morph.colors.coral,
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 4),
             AnimatedSwitcher(
               duration: motion,
               child: Column(
@@ -687,9 +730,69 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
       ),
     );
     if (confirmed != true || !mounted) return;
-    await context.read<AppState>().deletePersonalRecipe(recipe.id);
+    try {
+      await context.read<AppState>().deletePersonalRecipe(recipe.id);
+    } catch (_) {
+      if (mounted) _toast(s('personalRecipeDeleteFailed'));
+      return;
+    }
     if (!mounted) return;
     Navigator.of(context).pop();
+  }
+
+  Future<void> _removeImage(Recipe recipe, AppState state, S s) async {
+    try {
+      await state.removeRecipeImage(recipe.id);
+    } catch (_) {
+      if (mounted) _toast(s('recipeImageRemoveFailed'));
+    }
+  }
+
+  Future<void> _chooseImage(Recipe recipe, AppState state, S s) async {
+    try {
+      final bytes =
+          await (widget.pickImageBytes?.call() ?? _pickImageFromDevice());
+      if (bytes == null || !mounted) return;
+      await state.setRecipeImage(recipe.id, bytes);
+    } on RecipeImageException catch (error) {
+      if (!mounted) return;
+      final message = switch (error.failure) {
+        RecipeImageFailure.tooLarge => s('recipeImageTooLarge'),
+        RecipeImageFailure.dimensionsTooLarge => s(
+          'recipeImageDimensionsTooLarge',
+        ),
+        RecipeImageFailure.unsupportedType => s('recipeImageUnsupported'),
+        RecipeImageFailure.storageLimit => s('recipeImageStorageFull'),
+        RecipeImageFailure.invalidRecipeId => s('recipeImageReadError'),
+      };
+      _toast(message);
+    } on LocalFileTooLargeException {
+      if (mounted) _toast(s('recipeImageTooLarge'));
+    } catch (_) {
+      if (mounted) _toast(s('recipeImageReadError'));
+    }
+  }
+
+  Future<List<int>?> _pickImageFromDevice() async {
+    try {
+      final picked = await FilePicker.pickFiles(
+        withData: false,
+        withReadStream: true,
+        type: FileType.image,
+        allowMultiple: false,
+      );
+      final file = picked?.files.firstOrNull;
+      if (file == null) return null;
+      return await readPickedFileBytes(file, maxBytes: maxRecipeImageBytes);
+    } finally {
+      await clearPickerTemporaryFiles();
+    }
+  }
+
+  void _toast(String message) {
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(message)));
   }
 }
 

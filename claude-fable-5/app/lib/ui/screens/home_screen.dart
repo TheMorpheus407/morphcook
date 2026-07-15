@@ -8,6 +8,7 @@ import '../../models/recipe.dart';
 import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
+import '../widgets/recipe_cover.dart';
 import 'dish_detail_screen.dart';
 import 'shopping_list_screen.dart';
 
@@ -49,26 +50,29 @@ class _HomeScreenState extends State<HomeScreen> {
     final s = S(state.lang);
     final lang = state.lang;
 
-    final visibleDishes = state.corpus.dishes
-        .where((d) => _best[d.id] != null)
-        .toList()
-      ..sort((a, b) => a.frequencyTier.compareTo(b.frequencyTier));
+    final visibleDishes =
+        state.corpus.dishes.where((d) => _best[d.id] != null).toList()
+          ..sort((a, b) => a.frequencyTier.compareTo(b.frequencyTier));
 
     Dish? featured;
     var bestScore = -1;
     for (final dish in visibleDishes) {
       final recipe = _best[dish.id];
       if (recipe == null) continue;
-      final score =
-          state.ranker.totalScore(recipe, state.profile, state.history);
+      final score = state.ranker.totalScore(
+        recipe,
+        state.profile,
+        state.history,
+      );
       if (score > bestScore) {
         bestScore = score;
         featured = dish;
       }
     }
 
-    final gridDishes =
-        visibleDishes.where((d) => d.id != featured?.id).toList();
+    final gridDishes = visibleDishes
+        .where((d) => d.id != featured?.id)
+        .toList();
 
     return SafeArea(
       child: RefreshIndicator(
@@ -93,8 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                gridDelegate:
-                    const SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 18,
                   crossAxisSpacing: 14,
@@ -107,15 +110,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   // The card sells the dish; the variant that opens is the
                   // profile's business (badge hints at it).
                   return PolaroidCard(
+                    key: ValueKey('home-dish-card-$i'),
                     stripe: _hex(dish.stripe),
                     title: dish.name.of(lang),
                     caption: dish.caption.of(lang),
-                    badge: state.profile.showVariantTags &&
+                    badge:
+                        state.profile.showVariantTags &&
                             recipe.variant.diet != 'classic'
-                        ? state.corpus.ontology
-                            .nameOf(recipe.variant.diet, lang)
+                        ? state.corpus.ontology.nameOf(
+                            recipe.variant.diet,
+                            lang,
+                          )
                         : null,
                     rotationSeed: i,
+                    photo: RecipeCover(
+                      recipeId: recipe.id,
+                      fallbackColor: _hex(dish.stripe),
+                      height: 110,
+                      semanticLabel: recipe.title.of(lang),
+                    ),
                     onTap: () => _openDish(dish),
                   );
                 },
@@ -139,11 +152,15 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Text('vol. 1', style: morph.text.label(size: 10)),
             IconButton(
-              icon: Icon(Icons.shopping_basket_outlined,
-                  size: 20, color: morph.colors.inkSoft),
+              icon: Icon(
+                Icons.shopping_basket_outlined,
+                size: 20,
+                color: morph.colors.inkSoft,
+              ),
               tooltip: s('shoppingList'),
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (_) => const ShoppingListScreen())),
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const ShoppingListScreen()),
+              ),
             ),
           ],
         ),
@@ -152,15 +169,16 @@ class _HomeScreenState extends State<HomeScreen> {
         Text(s('tagline'), style: morph.text.handAt(19)),
         const SizedBox(height: 6),
         if (name.isNotEmpty)
-          Text(morph.cased('${s('editionFor')} $name'),
-              style: morph.text.label(size: 10)),
+          Text(
+            morph.cased('${s('editionFor')} $name'),
+            style: morph.text.label(size: 10),
+          ),
         const SizedBox(height: 2),
       ],
     );
   }
 
-  Widget _featuredCard(
-      Dish dish, Recipe recipe, String lang, AppState state) {
+  Widget _featuredCard(Dish dish, Recipe recipe, String lang, AppState state) {
     final morph = MorphTheme.of(context);
     return Semantics(
       button: true,
@@ -183,18 +201,26 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              StripedPlaceholder(
-                color: _hex(dish.stripe),
+              RecipeCover(
+                recipeId: recipe.id,
+                fallbackColor: _hex(dish.stripe),
                 height: 150,
-                caption: dish.caption.of(lang),
+                fallbackCaption: dish.caption.of(lang),
+                semanticLabel: recipe.title.of(lang),
               ),
               const SizedBox(height: 10),
-              Text(morph.cased(dish.name.of(lang)),
-                  style: morph.text.display.copyWith(fontSize: 28)),
+              Text(
+                morph.cased(dish.name.of(lang)),
+                style: morph.text.display.copyWith(fontSize: 28),
+              ),
               const SizedBox(height: 4),
-              Text(dish.hero.of(lang),
-                  style: morph.text.mono
-                      .copyWith(fontSize: 12, color: morph.colors.inkSoft)),
+              Text(
+                dish.hero.of(lang),
+                style: morph.text.mono.copyWith(
+                  fontSize: 12,
+                  color: morph.colors.inkSoft,
+                ),
+              ),
               const SizedBox(height: 8),
               Row(
                 children: [
@@ -202,8 +228,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   const SizedBox(width: 8),
                   _meta('${recipe.caloriesPerServing} kcal'),
                   const SizedBox(width: 8),
-                  _meta(state.corpus.ontology
-                      .nameOf(recipe.variant.effort, lang)),
+                  _meta(
+                    state.corpus.ontology.nameOf(recipe.variant.effort, lang),
+                  ),
                 ],
               ),
             ],
@@ -224,10 +251,14 @@ class _HomeScreenState extends State<HomeScreen> {
           button: true,
           link: true,
           child: GestureDetector(
-            onTap: () => launchUrl(Uri.parse('https://www.the-morpheus.de/'),
-                mode: LaunchMode.externalApplication),
-            child: Text(s('supportMadeBy'),
-                style: MorphTheme.of(context).text.handAt(18)),
+            onTap: () => launchUrl(
+              Uri.parse('https://www.the-morpheus.de/'),
+              mode: LaunchMode.externalApplication,
+            ),
+            child: Text(
+              s('supportMadeBy'),
+              style: MorphTheme.of(context).text.handAt(18),
+            ),
           ),
         ),
       ],
@@ -239,19 +270,20 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
       decoration: BoxDecoration(
-          border: Border.all(color: morph.colors.line),
-          borderRadius: BorderRadius.circular(2)),
+        border: Border.all(color: morph.colors.line),
+        borderRadius: BorderRadius.circular(2),
+      ),
       child: Text(morph.cased(text), style: morph.text.label(size: 9)),
     );
   }
 
   void _openDish(Dish dish) {
     Navigator.of(context)
-        .push(MaterialPageRoute(
-            builder: (_) => DishDetailScreen(dishId: dish.id)))
+        .push(
+          MaterialPageRoute(builder: (_) => DishDetailScreen(dishId: dish.id)),
+        )
         .then((_) => _recompute());
   }
 }
 
-Color _hex(String hex) =>
-    Color(int.parse(hex.replaceFirst('#', '0xFF')));
+Color _hex(String hex) => Color(int.parse(hex.replaceFirst('#', '0xFF')));

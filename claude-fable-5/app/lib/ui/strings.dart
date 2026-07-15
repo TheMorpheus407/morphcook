@@ -47,8 +47,34 @@ class S {
     'createRecipe': 'create recipe',
     'recipeValidation':
         'add a title, valid time and servings, and complete every ingredient and step.',
+    'personalRecipeLimit':
+        'this cookbook already has the maximum of 500 personal recipes.',
+    'personalRecipeBackupLimit':
+        'these recipes contain too much text for a safe backup. shorten a recipe before saving another.',
+    'personalRecipeSaveFailed':
+        'this recipe could not be saved. check available storage and try again.',
+    'personalRecipeDeleteFailed':
+        'this recipe could not be deleted. check available storage and try again.',
     'personalRecipesEmpty':
         'your own recipes will live here — private, unless you share a backup.',
+    'chooseRecipeImage': 'add your photo',
+    'changeRecipeImage': 'change photo',
+    'removeRecipeImage': 'remove photo',
+    'recipeImageTooLarge': 'that image is larger than 8 MB.',
+    'recipeImageDimensionsTooLarge':
+        'that image has too many pixels to use safely.',
+    'recipeImageUnsupported': 'choose a JPEG, PNG or WebP image.',
+    'recipeImageReadError': 'that image could not be read.',
+    'recipeImageStorageFull':
+        'photo storage is full. remove another recipe photo first.',
+    'recipeImageRemoveFailed':
+        'that photo could not be removed. check available storage and try again.',
+    'confirmBackupPassword': 'confirm backup password',
+    'confirmBackupPasswordHint':
+        'enter it again — lost backup passwords cannot be recovered.',
+    'backupPasswordsDiffer': 'the two backup passwords do not match.',
+    'backupExportFailed': 'the backup could not be exported.',
+    'backupImportFailed': 'the backup could not be restored safely.',
     'searchHint': 'search dishes, ingredients, moods…',
     'searchEmpty': 'no recipes found for',
     'searchEmptyNote':
@@ -153,7 +179,7 @@ class S {
     'importBackup': 'import backup',
     'backupPassword': 'backup password (optional)',
     'backupPasswordHint':
-        'encrypts the .json file with AES-256-GCM. the .gz stays plain. a forgotten password cannot be recovered.',
+        'encrypts the complete backup with AES-256-GCM. with a password, no plain copy is shared. a forgotten password cannot be recovered.',
     'enterPassword': 'enter password',
     'importMerge': 'merge with my data',
     'importReplace': 'replace my data',
@@ -181,7 +207,7 @@ class S {
     'supportWebsite': 'the-morpheus.de',
     'resetApp': 'start over (erase everything)',
     'resetConfirm':
-        'erase profile, cookbook, personal recipes, plans and history? bundled recipes stay.',
+        'erase profile, cookbook, personal recipes, photos, plans and history? bundled recipes stay.',
     'cancel': 'cancel',
     'erase': 'erase',
     'history': 'history',
@@ -257,8 +283,36 @@ class S {
     'createRecipe': 'Rezept anlegen',
     'recipeValidation':
         'ergänze Name, gültige Zeit und Portionen sowie jede Zutat und jeden Schritt.',
+    'personalRecipeLimit':
+        'dieses Kochbuch enthält bereits maximal 500 eigene Rezepte.',
+    'personalRecipeBackupLimit':
+        'diese Rezepte enthalten zu viel Text für ein sicheres Backup. kürze ein Rezept, bevor du ein weiteres speicherst.',
+    'personalRecipeSaveFailed':
+        'dieses Rezept konnte nicht gespeichert werden. prüfe den freien Speicher und versuche es erneut.',
+    'personalRecipeDeleteFailed':
+        'dieses Rezept konnte nicht gelöscht werden. prüfe den freien Speicher und versuche es erneut.',
     'personalRecipesEmpty':
         'hier wohnen deine eigenen Rezepte — privat, außer du teilst ein Backup.',
+    'chooseRecipeImage': 'eigenes Foto hinzufügen',
+    'changeRecipeImage': 'Foto ändern',
+    'removeRecipeImage': 'Foto entfernen',
+    'recipeImageTooLarge': 'dieses Bild ist größer als 8 MB.',
+    'recipeImageDimensionsTooLarge':
+        'dieses Bild hat zu viele Pixel, um es sicher zu verwenden.',
+    'recipeImageUnsupported': 'wähle ein JPEG-, PNG- oder WebP-Bild.',
+    'recipeImageReadError': 'dieses Bild konnte nicht gelesen werden.',
+    'recipeImageStorageFull':
+        'der Fotospeicher ist voll. entferne zuerst ein anderes Rezeptfoto.',
+    'recipeImageRemoveFailed':
+        'dieses Foto konnte nicht entfernt werden. prüfe den freien Speicher und versuche es erneut.',
+    'confirmBackupPassword': 'Backup-Passwort bestätigen',
+    'confirmBackupPasswordHint':
+        'gib es erneut ein — verlorene Backup-Passwörter können nicht wiederhergestellt werden.',
+    'backupPasswordsDiffer':
+        'die beiden Backup-Passwörter stimmen nicht überein.',
+    'backupExportFailed': 'das Backup konnte nicht exportiert werden.',
+    'backupImportFailed':
+        'das Backup konnte nicht sicher wiederhergestellt werden.',
     'searchHint': 'Gerichte, Zutaten, Stimmungen…',
     'searchEmpty': 'keine Rezepte gefunden für',
     'searchEmptyNote':
@@ -363,7 +417,7 @@ class S {
     'importBackup': 'Backup importieren',
     'backupPassword': 'Backup-Passwort (optional)',
     'backupPasswordHint':
-        'verschlüsselt die .json-Datei mit AES-256-GCM. die .gz bleibt unverschlüsselt. ein vergessenes Passwort ist nicht wiederherstellbar.',
+        'verschlüsselt das komplette Backup mit AES-256-GCM. mit Passwort wird keine offene Kopie geteilt. ein vergessenes Passwort ist nicht wiederherstellbar.',
     'enterPassword': 'Passwort eingeben',
     'importMerge': 'mit meinen Daten zusammenführen',
     'importReplace': 'meine Daten ersetzen',
@@ -391,7 +445,7 @@ class S {
     'supportWebsite': 'the-morpheus.de',
     'resetApp': 'neu anfangen (alles löschen)',
     'resetConfirm':
-        'Profil, Kochbuch, eigene Rezepte, Pläne und Historie löschen? App-Rezepte bleiben.',
+        'Profil, Kochbuch, eigene Rezepte, Fotos, Pläne und Historie löschen? App-Rezepte bleiben.',
     'cancel': 'abbrechen',
     'erase': 'löschen',
     'history': 'Historie',

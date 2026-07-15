@@ -32,8 +32,10 @@ class StripedPlaceholder extends StatelessWidget {
           : Center(
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 4,
+                ),
                 // Fully opaque with a hairline: stripes end at the plate's
                 // edge instead of running on under the words.
                 decoration: BoxDecoration(
@@ -58,8 +60,11 @@ class _CoverPainter extends CustomPainter {
   final Color color;
   final bool flat;
   final bool isDark;
-  const _CoverPainter(
-      {required this.color, required this.flat, required this.isDark});
+  const _CoverPainter({
+    required this.color,
+    required this.flat,
+    required this.isDark,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -67,16 +72,18 @@ class _CoverPainter extends CustomPainter {
     // touch more presence to read as color at all.
     final washAlpha = isDark ? 0.22 : 0.16;
     canvas.drawRect(
-        Offset.zero & size, Paint()..color = color.withValues(alpha: washAlpha));
+      Offset.zero & size,
+      Paint()..color = color.withValues(alpha: washAlpha),
+    );
     if (flat) {
       final border = Paint()
         ..color = color.withValues(alpha: 0.45)
         ..style = PaintingStyle.stroke
         ..strokeWidth = 1.5;
       canvas.drawRect(
-          const Offset(0.75, 0.75) &
-              Size(size.width - 1.5, size.height - 1.5),
-          border);
+        const Offset(0.75, 0.75) & Size(size.width - 1.5, size.height - 1.5),
+        border,
+      );
       return;
     }
     final paint = Paint()
@@ -85,7 +92,10 @@ class _CoverPainter extends CustomPainter {
     const gap = 18.0;
     for (var x = -size.height; x < size.width + size.height; x += gap) {
       canvas.drawLine(
-          Offset(x, size.height + 4), Offset(x + size.height, -4), paint);
+        Offset(x, size.height + 4),
+        Offset(x + size.height, -4),
+        paint,
+      );
     }
   }
 
@@ -108,8 +118,9 @@ class DashedDivider extends StatelessWidget {
       child: Center(
         child: CustomPaint(
           size: const Size(double.infinity, 1),
-          painter:
-              _DashPainter(color: color ?? MorphTheme.of(context).colors.line),
+          painter: _DashPainter(
+            color: color ?? MorphTheme.of(context).colors.line,
+          ),
         ),
       ),
     );
@@ -156,11 +167,13 @@ class SectionHeader extends StatelessWidget {
           Expanded(
             child: trailing == null
                 ? const DashedDivider(height: 1)
-                : Row(children: [
-                    const Expanded(child: DashedDivider(height: 1)),
-                    const SizedBox(width: 8),
-                    trailing!,
-                  ]),
+                : Row(
+                    children: [
+                      const Expanded(child: DashedDivider(height: 1)),
+                      const SizedBox(width: 8),
+                      trailing!,
+                    ],
+                  ),
           ),
         ],
       ),
@@ -178,6 +191,7 @@ class PolaroidCard extends StatelessWidget {
   final VoidCallback? onTap;
   final int rotationSeed;
   final double photoHeight;
+  final Widget? photo;
 
   const PolaroidCard({
     super.key,
@@ -188,14 +202,14 @@ class PolaroidCard extends StatelessWidget {
     this.onTap,
     this.rotationSeed = 0,
     this.photoHeight = 110,
+    this.photo,
   });
 
   @override
   Widget build(BuildContext context) {
     final morph = MorphTheme.of(context);
     // ±1.6° wobble, deterministic per card.
-    final angle =
-        morph.readable ? 0.0 : ((rotationSeed * 37) % 7 - 3) * 0.009;
+    final angle = morph.readable ? 0.0 : ((rotationSeed * 37) % 7 - 3) * 0.009;
     return Transform.rotate(
       angle: angle,
       child: Semantics(
@@ -222,18 +236,25 @@ class PolaroidCard extends StatelessWidget {
               children: [
                 Stack(
                   children: [
-                    StripedPlaceholder(color: stripe, height: photoHeight),
+                    photo ??
+                        StripedPlaceholder(color: stripe, height: photoHeight),
                     if (badge != null)
                       Positioned(
                         top: 6,
                         left: 6,
                         child: Container(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 6, vertical: 2),
+                            horizontal: 6,
+                            vertical: 2,
+                          ),
                           color: morph.colors.ink,
-                          child: Text(badge!,
-                              style: morph.text.label(
-                                  color: morph.colors.paper, size: 9)),
+                          child: Text(
+                            badge!,
+                            style: morph.text.label(
+                              color: morph.colors.paper,
+                              size: 9,
+                            ),
+                          ),
                         ),
                       ),
                   ],
@@ -287,16 +308,16 @@ class MonoChip extends StatelessWidget {
     final fg = !enabled
         ? colors.inkFaint
         : selected
-            ? colors.paper
-            : muted
-                ? colors.inkSoft
-                : colors.ink;
+        ? colors.paper
+        : muted
+        ? colors.inkSoft
+        : colors.ink;
     return Opacity(
       opacity: !enabled
           ? 0.55
           : muted
-              ? 0.75
-              : 1,
+          ? 0.75
+          : 1,
       child: Semantics(
         button: onTap != null,
         selected: selected,
@@ -307,12 +328,13 @@ class MonoChip extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             decoration: BoxDecoration(
               color: selected ? colors.ink : Colors.transparent,
-              border:
-                  Border.all(color: selected ? colors.ink : colors.line),
+              border: Border.all(color: selected ? colors.ink : colors.line),
               borderRadius: BorderRadius.circular(2),
             ),
-            child: Text(morph.cased(label),
-                style: morph.text.mono.copyWith(fontSize: 11, color: fg)),
+            child: Text(
+              morph.cased(label),
+              style: morph.text.mono.copyWith(fontSize: 11, color: fg),
+            ),
           ),
         ),
       ),

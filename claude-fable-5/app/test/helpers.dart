@@ -30,6 +30,10 @@ Future<CorpusRepository> loadRealCorpus({bool all = true}) async {
 Map<String, dynamic> readJsonFile(String path) =>
     json.decode(File(path).readAsStringSync()) as Map<String, dynamic>;
 
+Uint8List testPngBytes() => base64Decode(
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=',
+);
+
 /// Minimal recipe factory for pure-logic tests.
 Recipe makeRecipe({
   String id = 'test-recipe',
@@ -58,11 +62,7 @@ Recipe makeRecipe({
     timeMinutes: timeMinutes,
     servings: servings,
     caloriesPerServing: calories,
-    macros: Macros(
-        calories: calories,
-        proteinG: 20,
-        carbsG: 50,
-        fatG: 20),
+    macros: Macros(calories: calories, proteinG: 20, carbsG: 50, fatG: 20),
     ingredients: [
       for (final ing in ingredientIds)
         RecipeIngredient(ingredientId: ing, qty: 1, unit: 'piece'),

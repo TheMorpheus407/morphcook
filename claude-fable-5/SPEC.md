@@ -80,6 +80,12 @@ Zero migrations, zero engine code changes.
     profile.
 - **Cookbook (saved).** User saves a **specific variant** (recipe ID), not a
   dish — you save *your* Döner.
+- **Personal recipes.** Users can author, edit and delete free-text recipes in
+  their cookbook. They stay on-device, participate in cook mode, meal planning
+  and shopping lists, and are included in backups.
+- **Local recipe photos.** Users can choose a JPEG, PNG or WebP override for
+  any bundled or personal recipe. Bytes are copied to app-private storage,
+  never uploaded, and included in backups.
 - **Search** by free text + tag filters, results respect profile filters.
 - **Settings:** full profile editor, language toggle, adaptation preferences.
 - **FAQ/Help Center.** Searchable FAQ entries with category filters and contextual links from UI copy. Covers dietary matching, recipe visibility, feature explanations, and troubleshooting.
@@ -93,15 +99,15 @@ Zero migrations, zero engine code changes.
 - **Meal planning.** Weekly grid (Mon–Sun × breakfast/lunch/dinner). Tap slot
   to assign a recipe from cookbook/search. Drag-drop between slots. One-tap
   export to shopping list. No auto-planning, no nutrition rollups in v1.
-- **File-based backup/restore.** App writes `morphcook-backup.json` (human-readable)
-  and `morphcook-backup.json.gz` (GZip compressed) to the OS share sheet → user
-  saves whichever they prefer. Import auto-detects compression and handles both
-  formats. Compression typically achieves 70-90% size reduction for JSON data.
+- **File-based backup/restore.** Without a password, the app writes
+  `morphcook-backup.json` (human-readable) and `morphcook-backup.json.gz` (GZip
+  compressed) to the OS share sheet → user saves whichever they prefer. Import
+  auto-detects compression and handles both formats.
   Optional password-based AES-256-GCM encryption protects sensitive data (B2B
-  fields, dietary preferences, meal plans). When a password is provided, the JSON
-  file is encrypted; the GZip file remains unencrypted for compatibility. Encrypted
-  backups use magic bytes `[0x45, 0x4E, 0x43]` (ASCII "ENC") for detection. No
-  OAuth, no cloud integration, no platform-specific APIs.
+  fields, dietary preferences, meal plans, personal recipes and photos). When a
+  password is provided, only the encrypted JSON file is shared. Encrypted backups
+  use magic bytes `[0x45, 0x4E, 0x43]` (ASCII "ENC") for detection. No OAuth or
+  cloud integration.
 - **Cook mode.** Dark full-bleed, step-by-step, per-step timer, servings
   scaler, prev/next, pause/resume with progress persistence, completion screen.
   Visual flash alert (coral/teal) on timer completion for accessibility
@@ -129,7 +135,8 @@ Zero migrations, zero engine code changes.
 - Account system, login, cloud sync.
 - Multi-profile / household (one profile per install).
 - Over-the-air content updates (corpus ships only via store releases).
-- Real photos — striped placeholders stay, they're part of the design.
+- Bundled/editorial photography — striped placeholders remain the default;
+  users may set their own local recipe photos.
 - Social video integration (post-v1; build-time curated from `#morphcook` once
   we have a curator pipeline).
 - Meal nutrition rollups (weekly macro totals).
@@ -185,7 +192,7 @@ See [docs/asset-partitioning-strategy.md](docs/asset-partitioning-strategy.md) f
 
 - **`shared_preferences`** for profile and small flags.
 - **Hive** (or `sqflite` if we need query power later) for saved/history/meal-plan
-  collections.
+  collections, personal recipes and app-private recipe-image bytes.
 - **Profile fields:**
   - `name`, `lang`
   - `avoid_flags`: class-level set (`{dairy, nuts, pork}`)
@@ -274,25 +281,41 @@ Loading, error, and empty states are handled per view with skeleton loaders duri
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "exported_at": "2026-04-18T12:00:00Z",
   "profile": { ... },
   "saved": ["recipe-id-1", "recipe-id-2"],
   "meal_plan": { "2026-W16": { "mon.dinner": "recipe-id-3" } },
   "history": [ ... ],
+  "personal_recipes": [ ... ],
+  "recipe_images": [
+    { "recipe_id": "recipe-id-1", "mime_type": "image/jpeg",
+      "updated_at": "2026-04-18T12:00:00Z", "data_base64": "..." }
+  ],
   "content_requests": ["pad thai", "sushi"]
 }
 ```
 
+Schema v2 adds optional `personal_recipes` and `recipe_images`; schema-v1 files
+remain importable. Image bytes are base64-encoded in the portable backup and
+validated with per-image, pixel-dimension, collection and total-size limits.
+Personal-recipe count and cumulative authored text are bounded before save so
+every accepted personal cookbook remains safe to serialize into a backup.
+Imports reject duplicate personal recipes, duplicate photos and photos that do
+not belong to a bundled or imported personal recipe. Compressed and decoded
+backup input is bounded before parsing.
+
 The `content_requests` field is optional and contains an array of search queries that returned zero results. This data helps identify content gaps in the recipe corpus — when users search for dishes that don't exist in the app, those queries are logged locally and can be exported to inform corpus team priorities.
 
-Export creates two files side by side:
-- `morphcook-backup.json` — human-readable for debugging (encrypted if password provided)
-- `morphcook-backup.json.gz` — GZip compressed for sharing (70-90% smaller, always unencrypted)
+Passwordless export creates two files side by side:
+- `morphcook-backup.json` — human-readable for debugging
+- `morphcook-backup.json.gz` — GZip compressed for sharing
 
-When a backup password is set, the JSON file is encrypted with AES-256-GCM using
-PBKDF2 key derivation (10,000 iterations, SHA-256). Each encryption generates a
-unique salt and IV for security.
+When a backup password is set, only the JSON file is shared and it is encrypted
+with AES-256-GCM using
+PBKDF2 key derivation (210,000 iterations, SHA-256). Each encryption generates a
+unique salt and IV for security. The encryption envelope is versioned; imports
+remain compatible with legacy version-1 files that used 10,000 iterations.
 
 Import auto-detects format by checking for encryption magic bytes (`0x45 0x4E 0x43`)
 first, then GZip magic bytes (`0x1f 0x8b`). If encrypted format is detected, the
@@ -563,6 +586,6 @@ morphcook/
 - Paid / Pro tier feature set
 - Social media integration (video feed from `#morphcook`)
 - Languages beyond DE + EN
-- Real photography or artist collaboration
+- Bundled photography or artist collaboration
 - Auto-detected step timers from prose
 - B2B corporate wellness licensing (architecture designed, implementation deferred; see `docs/b2b/` for wireframes and API surfaces)

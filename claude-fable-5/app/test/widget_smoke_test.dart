@@ -13,7 +13,6 @@ import 'package:morphcook/ui/screens/personal_recipe_editor_screen.dart';
 import 'package:morphcook/ui/screens/settings_screen.dart';
 import 'package:morphcook/ui/strings.dart';
 import 'package:morphcook/ui/theme.dart';
-import 'package:morphcook/ui/widgets/decor.dart';
 import 'package:provider/provider.dart';
 
 import 'helpers.dart';
@@ -26,12 +25,27 @@ Future<AppState> onboardedState() async {
   return state;
 }
 
+class FailOnceCollectionStore extends MemoryStore {
+  bool failNextPutCollections = true;
+
+  @override
+  Future<void> putCollections(Map<String, String> collections) async {
+    if (failNextPutCollections) {
+      failNextPutCollections = false;
+      throw StateError('simulated storage failure');
+    }
+    await super.putCollections(collections);
+  }
+}
+
 Widget app(AppState state, Widget child) => ChangeNotifierProvider.value(
   value: state,
   child: MaterialApp(theme: morphThemeData(MorphColors.light), home: child),
 );
 
 void main() {
+  WidgetController.hitTestWarningShouldBeFatal = true;
+
   testWidgets('home masthead renders and dish cards open the detail page', (
     tester,
   ) async {
@@ -54,8 +68,16 @@ void main() {
         .first;
     await tester.drag(homeScrollable, const Offset(0, -700));
     await tester.pumpAndSettle();
-    expect(find.byType(PolaroidCard), findsWidgets);
-    await tester.tap(find.byType(PolaroidCard).first);
+    final firstGridCard = find.byKey(const ValueKey('home-dish-card-0'));
+    expect(firstGridCard, findsOneWidget);
+    await tester.ensureVisible(firstGridCard);
+    await tester.pumpAndSettle();
+    await tester.tap(
+      find.descendant(
+        of: firstGridCard,
+        matching: find.byType(GestureDetector),
+      ),
+    );
     await tester.pumpAndSettle();
     expect(find.byType(DishDetailScreen), findsOneWidget);
   });
@@ -102,6 +124,52 @@ void main() {
     );
     // Let the ingredient highlight-flash reset timer fire before teardown.
     await tester.pump(const Duration(seconds: 2));
+  });
+
+  testWidgets('recipe detail sets, renders and removes a local image', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(
+      app(
+        state,
+        DishDetailScreen(
+          dishId: 'doener',
+          pickImageBytes: () async => testPngBytes(),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('set-recipe-image')));
+    await tester.pumpAndSettle();
+    final selectedId = state.recipeImages.single.recipeId;
+    expect(
+      state.recipeImageFor(selectedId)?.bytes,
+      orderedEquals(testPngBytes()),
+    );
+    expect(
+      find.byWidgetPredicate(
+        (widget) =>
+            widget is Image &&
+            widget.image is ResizeImage &&
+            (widget.image as ResizeImage).imageProvider is MemoryImage,
+      ),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.byKey(const ValueKey('remove-recipe-image')));
+    await tester.pumpAndSettle();
+    expect(state.recipeImageFor(selectedId), isNull);
+    expect(
+      find.byWidgetPredicate(
+        (widget) =>
+            widget is Image &&
+            widget.image is ResizeImage &&
+            (widget.image as ResizeImage).imageProvider is MemoryImage,
+      ),
+      findsNothing,
+    );
   });
 
   testWidgets('onboarding completes into the shell', (tester) async {
@@ -239,6 +307,40 @@ void main() {
     expect(de('readableTextHint'), isNot(equals(en('readableTextHint'))));
   });
 
+  test('personal recipe and image strings exist in english and german', () {
+    const en = S('en');
+    const de = S('de');
+    for (final key in [
+      'myRecipes',
+      'addRecipe',
+      'privateRecipeHint',
+      'chooseRecipeImage',
+      'changeRecipeImage',
+      'removeRecipeImage',
+      'recipeImageTooLarge',
+      'recipeImageDimensionsTooLarge',
+      'recipeImageUnsupported',
+      'personalRecipeLimit',
+      'personalRecipeBackupLimit',
+      'personalRecipeSaveFailed',
+      'personalRecipeDeleteFailed',
+      'recipeImageRemoveFailed',
+      'confirmBackupPassword',
+      'backupPasswordsDiffer',
+      'backupExportFailed',
+      'backupImportFailed',
+    ]) {
+      expect(en(key), isNot(equals(key)), reason: 'missing EN $key');
+      expect(de(key), isNot(equals(key)), reason: 'missing DE $key');
+      expect(de(key), isNot(equals(en(key))), reason: 'untranslated DE $key');
+    }
+  });
+
+  test('password-protected exports do not share a plaintext gzip sidecar', () {
+    expect(sharePlainGzipForPassword(''), isTrue);
+    expect(sharePlainGzipForPassword('secret'), isFalse);
+  });
+
   testWidgets('cookbook shows a saved variant', (tester) async {
     final state = (await tester.runAsync(onboardedState))!;
     final savedTitle = (await tester.runAsync(() async {
@@ -286,6 +388,76 @@ void main() {
     expect(state.personalRecipes, hasLength(1));
     expect(state.personalRecipes.single.title, 'My tomato toast');
     expect(state.isSaved(state.personalRecipes.single.id), isTrue);
+  });
+
+  testWidgets('personal recipe save failure is recoverable in the editor', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(() async {
+      final corpus = await loadRealCorpus();
+      final value = AppState(store: FailOnceCollectionStore(), corpus: corpus);
+      await value.load();
+      return value;
+    }))!;
+    await tester.pumpWidget(app(state, const PersonalRecipeEditorScreen()));
+    await tester.pumpAndSettle();
+
+    await tester.enterText(
+      find.byKey(const ValueKey('recipe-title')),
+      'My tomato toast',
+    );
+    await tester.enterText(
+      find.byKey(const ValueKey('ingredient-name-0')),
+      'Tomato',
+    );
+    final editorScroll = find.byType(Scrollable).first;
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('step-text-0')),
+      300,
+      scrollable: editorScroll,
+    );
+    await tester.enterText(
+      find.byKey(const ValueKey('step-text-0')),
+      'Toast and top.',
+    );
+    final save = find.byKey(const ValueKey('save-personal-recipe'));
+    await tester.scrollUntilVisible(save, 450, scrollable: editorScroll);
+    await tester.tap(save);
+    await tester.pumpAndSettle();
+
+    expect(
+      find.text(const S('en')('personalRecipeSaveFailed')),
+      findsOneWidget,
+    );
+    expect(tester.widget<FilledButton>(save).onPressed, isNotNull);
+    expect(state.personalRecipes, isEmpty);
+  });
+
+  testWidgets('personal recipe editor preserves a custom imported unit', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    final personal = PersonalRecipe(
+      id: 'personal-fedcba9876543210fedcba9876543210',
+      title: 'Imported biscuits',
+      timeMinutes: 20,
+      servings: 4,
+      ingredients: [
+        PersonalRecipeIngredient(name: 'Butter', qty: 4, unit: 'oz'),
+      ],
+      steps: [PersonalRecipeStep(text: 'Mix.')],
+      createdAt: DateTime.utc(2026, 7, 1),
+      updatedAt: DateTime.utc(2026, 7, 1),
+    );
+    await tester.pumpWidget(
+      app(state, PersonalRecipeEditorScreen(recipe: personal)),
+    );
+    await tester.pumpAndSettle();
+
+    final unit = find.byKey(const ValueKey('ingredient-unit-0'));
+    expect(tester.widget<TextField>(unit).controller?.text, 'oz');
+    await tester.enterText(unit, 'packet');
+    expect(tester.widget<TextField>(unit).controller?.text, 'packet');
   });
 
   testWidgets('cookbook opens a personal recipe without lattice controls', (

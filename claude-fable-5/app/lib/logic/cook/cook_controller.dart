@@ -4,6 +4,8 @@ import 'package:flutter/foundation.dart';
 
 import '../../models/recipe.dart';
 
+const maxCookServings = 1000;
+
 /// Persisted cook-mode progress so an interrupted session can resume.
 class CookProgress {
   final String recipeId;
@@ -19,18 +21,18 @@ class CookProgress {
   });
 
   Map<String, dynamic> toJson() => {
-        'recipe_id': recipeId,
-        'step_index': stepIndex,
-        'servings': servings,
-        'remaining_timer_seconds': remainingTimerSeconds,
-      };
+    'recipe_id': recipeId,
+    'step_index': stepIndex,
+    'servings': servings,
+    'remaining_timer_seconds': remainingTimerSeconds,
+  };
 
   factory CookProgress.fromJson(Map<String, dynamic> json) => CookProgress(
-        recipeId: json['recipe_id'] as String,
-        stepIndex: json['step_index'] as int,
-        servings: json['servings'] as int,
-        remainingTimerSeconds: json['remaining_timer_seconds'] as int?,
-      );
+    recipeId: json['recipe_id'] as String,
+    stepIndex: json['step_index'] as int,
+    servings: json['servings'] as int,
+    remainingTimerSeconds: json['remaining_timer_seconds'] as int?,
+  );
 }
 
 /// Drives a cook-mode session: step navigation, per-step timer with
@@ -44,10 +46,19 @@ class CookSessionController extends ChangeNotifier {
     required this.persist,
     CookProgress? resumeFrom,
     int? servings,
-  })  : _servings = servings ?? resumeFrom?.servings ?? recipe.servings,
-        _stepIndex = resumeFrom?.stepIndex ?? 0 {
+  }) : _servings = _validServings(
+         servings ?? resumeFrom?.servings ?? recipe.servings,
+         recipe.servings,
+       ),
+       _stepIndex = _validStepIndex(
+         resumeFrom?.stepIndex,
+         recipe.steps.length,
+       ) {
     final resumeSeconds = resumeFrom?.remainingTimerSeconds;
-    if (resumeSeconds != null && resumeSeconds > 0) {
+    final resumeMatches =
+        resumeFrom?.recipeId == recipe.id &&
+        resumeFrom?.stepIndex == _stepIndex;
+    if (resumeMatches && resumeSeconds != null && resumeSeconds > 0) {
       _remainingSeconds = resumeSeconds;
       _paused = true;
     } else {
@@ -80,7 +91,7 @@ class CookSessionController extends ChangeNotifier {
   double get scaleFactor => _servings / recipe.servings;
 
   void setServings(int value) {
-    if (value < 1 || value > 16) return;
+    if (value < 1 || value > maxCookServings) return;
     _servings = value;
     _persistNow();
     notifyListeners();
@@ -163,12 +174,14 @@ class CookSessionController extends ChangeNotifier {
   }
 
   void _persistNow() {
-    persist(CookProgress(
-      recipeId: recipe.id,
-      stepIndex: _stepIndex,
-      servings: _servings,
-      remainingTimerSeconds: _remainingSeconds,
-    ));
+    persist(
+      CookProgress(
+        recipeId: recipe.id,
+        stepIndex: _stepIndex,
+        servings: _servings,
+        remainingTimerSeconds: _remainingSeconds,
+      ),
+    );
   }
 
   void _stopTicker() {
@@ -182,6 +195,14 @@ class CookSessionController extends ChangeNotifier {
     super.dispose();
   }
 }
+
+int _validStepIndex(int? requested, int stepCount) {
+  if (stepCount <= 1 || requested == null || requested < 0) return 0;
+  return requested < stepCount ? requested : stepCount - 1;
+}
+
+int _validServings(int requested, int fallback) =>
+    requested >= 1 && requested <= maxCookServings ? requested : fallback;
 
 /// One-handed cook mode: a single tap on the step content advances to the
 /// next step. Opt-in via [quickNextTapEnabled]; a 300 ms debounce prevents

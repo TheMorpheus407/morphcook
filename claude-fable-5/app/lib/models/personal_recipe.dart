@@ -11,6 +11,19 @@ const maxPersonalRecipeSteps = 100;
 const maxPersonalIngredientNameLength = 200;
 const maxPersonalIngredientNoteLength = 500;
 const maxPersonalStepLength = 5000;
+const maxPersonalRecipes = 500;
+const maxPersonalRecipeBackupBytes = 8 * 1024 * 1024;
+
+enum PersonalRecipeLimitReason { count, backupSize }
+
+class PersonalRecipeLimitException implements Exception {
+  final PersonalRecipeLimitReason reason;
+
+  const PersonalRecipeLimitException(this.reason);
+
+  @override
+  String toString() => 'PersonalRecipeLimitException: ${reason.name}';
+}
 
 /// One free-text ingredient authored by the device owner.
 class PersonalRecipeIngredient {
@@ -335,3 +348,33 @@ String? _trimToNull(String? value) {
   final trimmed = value?.trim();
   return trimmed == null || trimmed.isEmpty ? null : trimmed;
 }
+
+/// Conservative UTF-8 JSON estimate used before materializing a whole backup.
+/// Per-object overhead covers field names, punctuation, timestamps and numbers.
+int estimatedPersonalRecipeBackupBytes(Iterable<PersonalRecipe> recipes) {
+  var total = 2; // surrounding JSON array
+  for (final recipe in recipes) {
+    total +=
+        256 +
+        _jsonStringBytes(recipe.id) +
+        _jsonStringBytes(recipe.title) +
+        _jsonStringBytes(recipe.description);
+    for (final ingredient in recipe.ingredients) {
+      total +=
+          128 +
+          _jsonStringBytes(ingredient.name) +
+          _jsonStringBytes(ingredient.unit) +
+          _jsonStringBytes(ingredient.note ?? '');
+    }
+    for (final step in recipe.steps) {
+      total += 96 + _jsonStringBytes(step.text);
+    }
+    if (total > maxPersonalRecipeBackupBytes) return total;
+  }
+  return total;
+}
+
+bool personalRecipesFitBackup(Iterable<PersonalRecipe> recipes) =>
+    estimatedPersonalRecipeBackupBytes(recipes) <= maxPersonalRecipeBackupBytes;
+
+int _jsonStringBytes(String value) => utf8.encode(json.encode(value)).length;

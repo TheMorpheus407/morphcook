@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../data/app_state.dart';
 import '../../logic/backup/backup_service.dart';
 import '../../logic/backup/crypto.dart';
+import '../../logic/local_file_bytes.dart';
 import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
@@ -19,6 +20,10 @@ import 'shopping_list_screen.dart';
 
 const _patreonUrl = 'https://www.patreon.com/c/themorpheus';
 const _websiteUrl = 'https://www.the-morpheus.de/';
+
+/// A password protects the complete shared payload, so an unencrypted GZip
+/// compatibility copy is offered only for passwordless exports.
+bool sharePlainGzipForPassword(String password) => password.isEmpty;
 
 /// Settings: full profile editor, language toggle, adaptation preferences,
 /// accessibility, backup/restore, links to insights & help center,
@@ -32,8 +37,15 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   final _ingredientQuery = TextEditingController();
+  late final Future<void> _startupCleanup;
 
   MorphThemeData get _morph => MorphTheme.of(context);
+
+  @override
+  void initState() {
+    super.initState();
+    _startupCleanup = _clearMorphCookTemporaryFiles();
+  }
 
   @override
   void dispose() {
@@ -54,8 +66,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: ListView(
         padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
         children: [
-          Text(s('settings'),
-              style: morph.text.display.copyWith(fontSize: 30)),
+          Text(s('settings'), style: morph.text.display.copyWith(fontSize: 30)),
           const SizedBox(height: 8),
 
           SectionHeader(title: s('profile')),
@@ -74,15 +85,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
               MonoChip(
                 label: 'english',
                 selected: lang == 'en',
-                onTap: () =>
-                    state.updateProfile(profile.copyWith(lang: 'en')),
+                onTap: () => state.updateProfile(profile.copyWith(lang: 'en')),
               ),
               const SizedBox(width: 8),
               MonoChip(
                 label: 'deutsch',
                 selected: lang == 'de',
-                onTap: () =>
-                    state.updateProfile(profile.copyWith(lang: 'de')),
+                onTap: () => state.updateProfile(profile.copyWith(lang: 'de')),
               ),
             ],
           ),
@@ -99,28 +108,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   label: compound.name.of(lang),
                   selected: profile.avoidFlags.contains(compound.id),
                   onTap: () => _toggleSet(
-                      state,
-                      profile.avoidFlags,
-                      compound.id,
-                      (set) => profile.copyWith(avoidFlags: set)),
+                    state,
+                    profile.avoidFlags,
+                    compound.id,
+                    (set) => profile.copyWith(avoidFlags: set),
+                  ),
                 ),
               for (final flag in ontology.containsFlags)
                 MonoChip(
                   label: flag.name.of(lang),
                   selected: profile.avoidFlags.contains(flag.id),
                   onTap: () => _toggleSet(
-                      state,
-                      profile.avoidFlags,
-                      flag.id,
-                      (set) => profile.copyWith(avoidFlags: set)),
+                    state,
+                    profile.avoidFlags,
+                    flag.id,
+                    (set) => profile.copyWith(avoidFlags: set),
+                  ),
                 ),
             ],
           ),
           const SizedBox(height: 6),
           Padding(
             padding: const EdgeInsets.only(top: 6),
-            child: Text(s('halalKosherNote'),
-                style: morph.text.handAt(16, color: morph.colors.inkSoft)),
+            child: Text(
+              s('halalKosherNote'),
+              style: morph.text.handAt(16, color: morph.colors.inkSoft),
+            ),
           ),
           const SizedBox(height: 14),
           Text(s('avoidSpecific'), style: morph.text.label(size: 10)),
@@ -133,18 +146,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
             runSpacing: 8,
             children: [
               for (final label in const [
-                'halal', 'kosher', 'vegan', 'vegetarian',
-                'gluten-free', 'low-fodmap', 'sugar-free'
+                'halal',
+                'kosher',
+                'vegan',
+                'vegetarian',
+                'gluten-free',
+                'low-fodmap',
+                'sugar-free',
               ])
                 MonoChip(
                   label: ontology.nameOf(label, lang),
                   selected: profile.requiredAttributes.contains(label),
                   onTap: () => _toggleSet(
-                      state,
-                      profile.requiredAttributes,
-                      label,
-                      (set) =>
-                          profile.copyWith(requiredAttributes: set)),
+                    state,
+                    profile.requiredAttributes,
+                    label,
+                    (set) => profile.copyWith(requiredAttributes: set),
+                  ),
                 ),
             ],
           ),
@@ -157,9 +175,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
             max: 1000,
             divisions: 14,
             display: (v) => v == null ? s('noLimit') : '${v.round()} kcal',
-            onChanged: (v) => state.updateProfile(v == null
-                ? profile.copyWith(clearCalorieTarget: true)
-                : profile.copyWith(calorieTarget: v.round())),
+            onChanged: (v) => state.updateProfile(
+              v == null
+                  ? profile.copyWith(clearCalorieTarget: true)
+                  : profile.copyWith(calorieTarget: v.round()),
+            ),
           ),
           _sliderRow(
             label: s('timeBudget'),
@@ -169,9 +189,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
             divisions: 15,
             display: (v) =>
                 v == null ? s('noLimit') : '${v.round()} ${s('minutes')}',
-            onChanged: (v) => state.updateProfile(v == null
-                ? profile.copyWith(clearMaxTime: true)
-                : profile.copyWith(maxTimeMinutes: v.round())),
+            onChanged: (v) => state.updateProfile(
+              v == null
+                  ? profile.copyWith(clearMaxTime: true)
+                  : profile.copyWith(maxTimeMinutes: v.round()),
+            ),
           ),
           const SizedBox(height: 10),
           Text(s('preferredEffort'), style: morph.text.label()),
@@ -185,7 +207,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   label: ontology.nameOf(effort, lang),
                   selected: profile.preferredEffort == effort,
                   onTap: () => state.updateProfile(
-                      profile.copyWith(preferredEffort: effort)),
+                    profile.copyWith(preferredEffort: effort),
+                  ),
                 ),
             ],
           ),
@@ -193,8 +216,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _switchRow(
             s('showVariantTags'),
             profile.showVariantTags,
-            (v) =>
-                state.updateProfile(profile.copyWith(showVariantTags: v)),
+            (v) => state.updateProfile(profile.copyWith(showVariantTags: v)),
           ),
 
           SectionHeader(title: s('accessibility')),
@@ -229,56 +251,72 @@ class _SettingsScreenState extends State<SettingsScreen> {
               true => 'on',
               false => 'off',
             },
-            onSelected: (v) => state.updateProfile(v == 'system'
-                ? profile.copyWith(clearReduceMotion: true)
-                : profile.copyWith(reduceMotion: v == 'on')),
+            onSelected: (v) => state.updateProfile(
+              v == 'system'
+                  ? profile.copyWith(clearReduceMotion: true)
+                  : profile.copyWith(reduceMotion: v == 'on'),
+            ),
           ),
           const SizedBox(height: 8),
           _switchRow(
             s('visualAlert'),
             profile.visualAlertEnabled,
-            (v) => state
-                .updateProfile(profile.copyWith(visualAlertEnabled: v)),
+            (v) => state.updateProfile(profile.copyWith(visualAlertEnabled: v)),
             hint: s('visualAlertHint'),
           ),
           _switchRow(
             s('quickTap'),
             profile.quickNextTapEnabled,
-            (v) => state
-                .updateProfile(profile.copyWith(quickNextTapEnabled: v)),
+            (v) =>
+                state.updateProfile(profile.copyWith(quickNextTapEnabled: v)),
             hint: s('quickTapSettingHint'),
           ),
 
           SectionHeader(title: s('backup')),
-          _linkRow(Icons.ios_share, s('exportBackup'),
-              () => _exportBackup(state, s)),
-          _linkRow(Icons.download_outlined, s('importBackup'),
-              () => _importBackup(state, s)),
+          _linkRow(
+            Icons.ios_share,
+            s('exportBackup'),
+            () => _exportBackup(state, s),
+          ),
+          _linkRow(
+            Icons.download_outlined,
+            s('importBackup'),
+            () => _importBackup(state, s),
+          ),
 
           SectionHeader(title: '&'),
           _linkRow(
-              Icons.shopping_basket_outlined,
-              s('shoppingList'),
-              () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (_) => const ShoppingListScreen()))),
+            Icons.shopping_basket_outlined,
+            s('shoppingList'),
+            () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const ShoppingListScreen()),
+            ),
+          ),
           _linkRow(
-              Icons.insights_outlined,
-              s('shoppingInsights'),
-              () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (_) => const InsightsScreen()))),
+            Icons.insights_outlined,
+            s('shoppingInsights'),
+            () => Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (_) => const InsightsScreen())),
+          ),
           _linkRow(
-              Icons.help_outline,
-              s('helpCenter'),
-              () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const FaqScreen()))),
+            Icons.help_outline,
+            s('helpCenter'),
+            () => Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (_) => const FaqScreen())),
+          ),
 
           SectionHeader(title: s('aboutSupport')),
           _supportCard(s),
 
           const SizedBox(height: 18),
-          _linkRow(Icons.restart_alt, s('resetApp'),
-              () => _confirmReset(state, s),
-              color: morph.colors.coral),
+          _linkRow(
+            Icons.restart_alt,
+            s('resetApp'),
+            () => _confirmReset(state, s),
+            color: morph.colors.coral,
+          ),
         ],
       ),
     );
@@ -287,16 +325,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
   // ---- helpers ----
 
   InputDecoration _underline(String label) => InputDecoration(
-        labelText: label,
-        labelStyle: _morph.text.label(),
-        enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: _morph.colors.line)),
-        focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: _morph.colors.terracotta)),
-      );
+    labelText: label,
+    labelStyle: _morph.text.label(),
+    enabledBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: _morph.colors.line),
+    ),
+    focusedBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: _morph.colors.terracotta),
+    ),
+  );
 
-  void _toggleSet(AppState state, Set<String> current, String id,
-      dynamic Function(Set<String>) update) {
+  void _toggleSet(
+    AppState state,
+    Set<String> current,
+    String id,
+    dynamic Function(Set<String>) update,
+  ) {
     final next = Set<String>.from(current);
     next.contains(id) ? next.remove(id) : next.add(id);
     state.updateProfile(update(next) as dynamic);
@@ -320,11 +364,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         '${state.corpus.dictionary.byId(id)?.name.of(lang) ?? id} ×',
                     selected: true,
                     onTap: () {
-                      final next =
-                          Set<String>.from(profile.avoidIngredients)
-                            ..remove(id);
+                      final next = Set<String>.from(profile.avoidIngredients)
+                        ..remove(id);
                       state.updateProfile(
-                          profile.copyWith(avoidIngredients: next));
+                        profile.copyWith(avoidIngredients: next),
+                      );
                     },
                   ),
               ],
@@ -343,18 +387,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
           },
           displayStringForOption: (id) =>
               state.corpus.dictionary.byId(id)?.name.of(lang) ?? id,
-          fieldViewBuilder:
-              (context, controller, focusNode, onSubmitted) => TextField(
-            controller: controller,
-            focusNode: focusNode,
-            style: _morph.text.mono.copyWith(fontSize: 13),
-            decoration: _underline(s('avoidSpecificHint')),
-          ),
+          fieldViewBuilder: (context, controller, focusNode, onSubmitted) =>
+              TextField(
+                controller: controller,
+                focusNode: focusNode,
+                style: _morph.text.mono.copyWith(fontSize: 13),
+                decoration: _underline(s('avoidSpecificHint')),
+              ),
           onSelected: (id) {
-            final next = Set<String>.from(profile.avoidIngredients)
-              ..add(id);
-            state.updateProfile(
-                profile.copyWith(avoidIngredients: next));
+            final next = Set<String>.from(profile.avoidIngredients)..add(id);
+            state.updateProfile(profile.copyWith(avoidIngredients: next));
           },
         ),
       ],
@@ -399,14 +441,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
         Row(
           children: [
             Expanded(child: Text(label, style: _morph.text.label())),
-            Text(display(value),
-                style: _morph.text.mono.copyWith(
-                    fontSize: 12, color: _morph.colors.terracotta)),
+            Text(
+              display(value),
+              style: _morph.text.mono.copyWith(
+                fontSize: 12,
+                color: _morph.colors.terracotta,
+              ),
+            ),
             Checkbox(
               value: active,
               activeColor: _morph.colors.terracotta,
-              onChanged: (v) =>
-                  onChanged(v == true ? (min + max) / 2 : null),
+              onChanged: (v) => onChanged(v == true ? (min + max) / 2 : null),
             ),
           ],
         ),
@@ -423,8 +468,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _switchRow(String label, bool value, void Function(bool) onChanged,
-      {String? hint}) {
+  Widget _switchRow(
+    String label,
+    bool value,
+    void Function(bool) onChanged, {
+    String? hint,
+  }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -439,8 +488,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ],
         ),
         if (hint != null)
-          Text(hint,
-              style: _morph.text.handAt(15, color: _morph.colors.inkSoft)),
+          Text(
+            hint,
+            style: _morph.text.handAt(15, color: _morph.colors.inkSoft),
+          ),
       ],
     );
   }
@@ -475,21 +526,33 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               const SizedBox(width: 14),
               Expanded(
-                child: Text(s('supportMadeBy'),
-                    style: morph.text.handAt(21, color: morph.colors.ink)),
+                child: Text(
+                  s('supportMadeBy'),
+                  style: morph.text.handAt(21, color: morph.colors.ink),
+                ),
               ),
             ],
           ),
           const SizedBox(height: 10),
-          Text(s('supportBody'),
-              style: morph.text.mono
-                  .copyWith(fontSize: 12, color: morph.colors.inkSoft)),
+          Text(
+            s('supportBody'),
+            style: morph.text.mono.copyWith(
+              fontSize: 12,
+              color: morph.colors.inkSoft,
+            ),
+          ),
           const DashedDivider(height: 20),
-          _linkRow(Icons.favorite_border, s('supportPatreon'),
-              () => _openExternal(_patreonUrl),
-              color: morph.colors.terracotta),
-          _linkRow(Icons.public, s('supportWebsite'),
-              () => _openExternal(_websiteUrl)),
+          _linkRow(
+            Icons.favorite_border,
+            s('supportPatreon'),
+            () => _openExternal(_patreonUrl),
+            color: morph.colors.terracotta,
+          ),
+          _linkRow(
+            Icons.public,
+            s('supportWebsite'),
+            () => _openExternal(_websiteUrl),
+          ),
         ],
       ),
     );
@@ -503,8 +566,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
-  Widget _linkRow(IconData icon, String label, VoidCallback onTap,
-      {Color? color}) {
+  Widget _linkRow(
+    IconData icon,
+    String label,
+    VoidCallback onTap, {
+    Color? color,
+  }) {
     final morph = _morph;
     final fg = color ?? morph.colors.ink;
     return InkWell(
@@ -515,11 +582,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             Icon(icon, size: 18, color: fg),
             const SizedBox(width: 12),
-            Text(label,
-                style: morph.text.mono.copyWith(fontSize: 13, color: fg)),
+            Text(
+              label,
+              style: morph.text.mono.copyWith(fontSize: 13, color: fg),
+            ),
             const Spacer(),
-            Icon(Icons.chevron_right,
-                size: 16, color: morph.colors.inkFaint),
+            Icon(Icons.chevron_right, size: 16, color: morph.colors.inkFaint),
           ],
         ),
       ),
@@ -529,35 +597,89 @@ class _SettingsScreenState extends State<SettingsScreen> {
   // ---- backup ----
 
   Future<void> _exportBackup(AppState state, S s) async {
-    final password = await _promptPassword(s, s('backupPassword'),
-        hint: s('backupPasswordHint'), allowEmpty: true);
-    if (password == null) return; // cancelled
-
-    final export = BackupService.export(
-      state.buildBackup(),
-      password: password.isEmpty ? null : password,
+    // Do not let stale-cache cleanup overlap creation of this export.
+    await _startupCleanup;
+    if (!mounted) return;
+    final password = await _promptPassword(
+      s,
+      s('backupPassword'),
+      hint: s('backupPasswordHint'),
+      allowEmpty: true,
     );
-    final dir = await getTemporaryDirectory();
-    final jsonFile = File('${dir.path}/morphcook-backup.json');
-    final gzFile = File('${dir.path}/morphcook-backup.json.gz');
-    await jsonFile.writeAsBytes(export.jsonFile);
-    await gzFile.writeAsBytes(export.gzipFile);
-    await SharePlus.instance.share(ShareParams(
-      files: [XFile(jsonFile.path), XFile(gzFile.path)],
-      subject: 'morphcook backup',
-    ));
+    if (password == null) return; // cancelled
+    if (password.isNotEmpty) {
+      final confirmation = await _promptPassword(
+        s,
+        s('confirmBackupPassword'),
+        hint: s('confirmBackupPasswordHint'),
+      );
+      if (confirmation == null) return;
+      if (confirmation != password) {
+        _toast(s('backupPasswordsDiffer'));
+        return;
+      }
+    }
+
+    Directory? exportDir;
+    try {
+      final shareGzip = sharePlainGzipForPassword(password);
+      final export = BackupService.export(
+        state.buildBackup(),
+        password: password.isEmpty ? null : password,
+        includePlainGzip: shareGzip,
+      );
+      final temp = await getTemporaryDirectory();
+      exportDir = await temp.createTemp('morphcook-export-');
+      final jsonFile = File('${exportDir.path}/morphcook-backup.json');
+      await jsonFile.writeAsBytes(export.jsonFile, flush: true);
+      final files = <XFile>[XFile(jsonFile.path)];
+      // Never accompany a password-protected backup with a plaintext sidecar.
+      if (shareGzip) {
+        final gzFile = File('${exportDir.path}/morphcook-backup.json.gz');
+        await gzFile.writeAsBytes(export.gzipFile!, flush: true);
+        files.add(XFile(gzFile.path));
+      }
+      await SharePlus.instance.share(
+        ShareParams(files: files, subject: 'morphcook backup'),
+      );
+    } on DecryptionException catch (error) {
+      _toast(error.message);
+    } catch (_) {
+      _toast(s('backupExportFailed'));
+    } finally {
+      if (exportDir != null) {
+        try {
+          await exportDir.delete(recursive: true);
+        } catch (_) {}
+      }
+    }
   }
 
   Future<void> _importBackup(AppState state, S s) async {
-    final picked =
-        await FilePicker.pickFiles(withData: true, type: FileType.any);
+    // Startup cleanup also clears picker caches, so let it finish before a
+    // newly selected import starts using one.
+    await _startupCleanup;
+    if (!mounted) return;
+    final picked = await FilePicker.pickFiles(
+      withData: false,
+      withReadStream: true,
+      type: FileType.any,
+    );
     final file = picked?.files.firstOrNull;
     if (file == null) return;
-    final bytes = file.bytes ??
-        (file.path != null ? await File(file.path!).readAsBytes() : null);
-    if (bytes == null) {
-      _toast('This file is not a valid MorphCook backup.');
+    late final List<int> bytes;
+    try {
+      bytes = await readPickedFileBytes(file, maxBytes: maxBackupFileBytes);
+    } on LocalFileTooLargeException {
+      _toast(const DecryptionException(DecryptionFailure.tooLarge).message);
       return;
+    } catch (_) {
+      _toast(
+        const DecryptionException(DecryptionFailure.invalidFormat).message,
+      );
+      return;
+    } finally {
+      await clearPickerTemporaryFiles();
     }
 
     String? password;
@@ -572,6 +694,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
     } on DecryptionException catch (e) {
       _toast(e.message);
       return;
+    } catch (_) {
+      _toast(s('backupImportFailed'));
+      return;
     }
 
     if (!mounted) return;
@@ -581,8 +706,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
         final morph = MorphTheme.of(context);
         return AlertDialog(
           backgroundColor: morph.colors.paper,
-          title: Text(s('importBackup'),
-              style: morph.text.display.copyWith(fontSize: 20)),
+          title: Text(
+            s('importBackup'),
+            style: morph.text.display.copyWith(fontSize: 20),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, true),
@@ -590,69 +717,100 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: Text(s('importReplace'),
-                  style: morph.text.label(color: morph.colors.coral)),
+              child: Text(
+                s('importReplace'),
+                style: morph.text.label(color: morph.colors.coral),
+              ),
             ),
           ],
         );
       },
     );
     if (merge == null) return;
-    await state.applyBackup(data, merge: merge);
+    try {
+      await state.applyBackup(data, merge: merge);
+    } on DecryptionException catch (e) {
+      _toast(e.message);
+      return;
+    } catch (_) {
+      _toast(s('backupImportFailed'));
+      return;
+    }
     _toast(s('importDone'));
   }
 
-  Future<String?> _promptPassword(S s, String title,
-      {String? hint, bool allowEmpty = false}) {
-    return _promptText(s, '',
-        label: title, hint: hint, obscure: true, allowEmpty: allowEmpty);
+  Future<String?> _promptPassword(
+    S s,
+    String title, {
+    String? hint,
+    bool allowEmpty = false,
+  }) {
+    return _promptText(
+      s,
+      '',
+      label: title,
+      hint: hint,
+      obscure: true,
+      allowEmpty: allowEmpty,
+    );
   }
 
-  Future<String?> _promptText(S s, String initial,
-      {required String label,
-      String? hint,
-      bool obscure = false,
-      bool allowEmpty = true}) async {
+  Future<String?> _promptText(
+    S s,
+    String initial, {
+    required String label,
+    String? hint,
+    bool obscure = false,
+    bool allowEmpty = true,
+  }) async {
     final controller = TextEditingController(text: initial);
-    final result = await showDialog<String>(
-      context: context,
-      builder: (context) {
-        final morph = MorphTheme.of(context);
-        return AlertDialog(
-          backgroundColor: morph.colors.paper,
-          title:
-              Text(label, style: morph.text.display.copyWith(fontSize: 18)),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: controller,
-                obscureText: obscure,
-                autofocus: true,
-                style: morph.text.mono.copyWith(fontSize: 13),
-              ),
-              if (hint != null)
-                Padding(
-                  padding: const EdgeInsets.only(top: 8),
-                  child: Text(hint,
-                      style: morph.text
-                          .handAt(15, color: morph.colors.inkSoft)),
+    String? result;
+    try {
+      result = await showDialog<String>(
+        context: context,
+        builder: (context) {
+          final morph = MorphTheme.of(context);
+          return AlertDialog(
+            backgroundColor: morph.colors.paper,
+            title: Text(
+              label,
+              style: morph.text.display.copyWith(fontSize: 18),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: controller,
+                  obscureText: obscure,
+                  autofocus: true,
+                  style: morph.text.mono.copyWith(fontSize: 13),
                 ),
+                if (hint != null)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Text(
+                      hint,
+                      style: morph.text.handAt(15, color: morph.colors.inkSoft),
+                    ),
+                  ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text(s('cancel'), style: morph.text.label()),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context, controller.text),
+                child: Text('ok', style: morph.text.label()),
+              ),
             ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(s('cancel'), style: morph.text.label()),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, controller.text),
-              child: Text('ok', style: morph.text.label()),
-            ),
-          ],
-        );
-      },
-    );
+          );
+        },
+      );
+    } finally {
+      controller.dispose();
+    }
     if (result == null) return null;
     if (!allowEmpty && result.isEmpty) return null;
     return result;
@@ -665,8 +823,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
         final morph = MorphTheme.of(context);
         return AlertDialog(
           backgroundColor: morph.colors.paper,
-          content: Text(s('resetConfirm'),
-              style: morph.text.mono.copyWith(fontSize: 13)),
+          content: Text(
+            s('resetConfirm'),
+            style: morph.text.mono.copyWith(fontSize: 13),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
@@ -674,19 +834,35 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             TextButton(
               onPressed: () => Navigator.pop(context, true),
-              child: Text(s('erase'),
-                  style: morph.text.label(color: morph.colors.coral)),
+              child: Text(
+                s('erase'),
+                style: morph.text.label(color: morph.colors.coral),
+              ),
             ),
           ],
         );
       },
     );
-    if (confirmed == true) await state.resetEverything();
+    if (confirmed == true) {
+      await state.resetEverything();
+      await _clearMorphCookTemporaryFiles();
+    }
+  }
+
+  Future<void> _clearMorphCookTemporaryFiles() async {
+    await clearPickerTemporaryFiles();
+    try {
+      final temp = await getTemporaryDirectory();
+      await clearMorphCookTemporaryFilesIn(temp);
+    } catch (_) {
+      // A platform may clean its cache concurrently; nothing remains to do.
+    }
   }
 
   void _toast(String message) {
     if (!mounted) return;
-    ScaffoldMessenger.of(context)
-        .showSnackBar(SnackBar(content: Text(message)));
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(message)));
   }
 }

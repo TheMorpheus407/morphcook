@@ -5,8 +5,8 @@ import '../../data/app_state.dart';
 import '../../models/recipe.dart';
 import '../strings.dart';
 import '../theme.dart';
-import '../widgets/decor.dart';
 import '../screens/dish_detail_screen.dart';
+import 'recipe_cover.dart';
 
 /// Compact list row used by search, cookbook and pickers.
 class RecipeRow extends StatelessWidget {
@@ -54,7 +54,12 @@ class RecipeRow extends StatelessWidget {
             SizedBox(
               width: 54,
               height: 54,
-              child: StripedPlaceholder(color: stripe),
+              child: RecipeCover(
+                recipeId: recipe.id,
+                fallbackColor: stripe,
+                height: 54,
+                semanticLabel: recipe.title.of(lang),
+              ),
             ),
             const SizedBox(width: 12),
             Expanded(

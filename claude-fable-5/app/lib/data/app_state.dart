@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 import '../logic/backup/backup_service.dart';
+import '../logic/backup/crypto.dart';
 import '../logic/cook/cook_controller.dart';
 import '../logic/matching.dart';
 import '../logic/ranking.dart';
@@ -13,6 +14,7 @@ import '../models/localized.dart';
 import '../models/personal_recipe.dart';
 import '../models/profile.dart';
 import '../models/recipe.dart';
+import '../models/recipe_image.dart';
 import 'corpus.dart';
 import 'store.dart';
 
@@ -32,6 +34,7 @@ class AppState extends ChangeNotifier {
   List<ShoppingItem> _shoppingHistory = [];
   List<String> _contentRequests = [];
   List<PersonalRecipe> _personalRecipes = [];
+  Map<String, RecipeImage> _recipeImages = {};
   CookProgress? _cookProgress;
 
   Profile get profile => _profile;
@@ -44,6 +47,8 @@ class AppState extends ChangeNotifier {
   List<String> get contentRequests => List.unmodifiable(_contentRequests);
   List<PersonalRecipe> get personalRecipes =>
       List.unmodifiable(_personalRecipes);
+  List<RecipeImage> get recipeImages =>
+      List<RecipeImage>.unmodifiable(_recipeImages.values);
   CookProgress? get cookProgress => _cookProgress;
 
   String get lang => _profile.lang;
@@ -63,6 +68,7 @@ class AppState extends ChangeNotifier {
     _mealPlan = _readMealPlan();
     _contentRequests = _readStrings('content_requests');
     _personalRecipes = _readList('personal_recipes', PersonalRecipe.fromJson);
+    _recipeImages = _loadRecipeImages();
     final progressRaw = store.getCollection('cook_progress');
     if (progressRaw != null) {
       try {
@@ -169,18 +175,62 @@ class AppState extends ChangeNotifier {
   Future<void> savePersonalRecipe(PersonalRecipe recipe) async {
     final index = _personalRecipes.indexWhere((r) => r.id == recipe.id);
     if (index < 0) {
-      _personalRecipes.add(recipe);
-      if (!isSaved(recipe.id)) {
-        _saved.add(SavedRecipe(recipeId: recipe.id, savedAt: DateTime.now()));
-        await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
+      if (_personalRecipes.length >= maxPersonalRecipes) {
+        throw const PersonalRecipeLimitException(
+          PersonalRecipeLimitReason.count,
+        );
       }
-    } else {
-      _personalRecipes[index] = recipe;
     }
-    await _writeJson(
-      'personal_recipes',
-      _personalRecipes.map((r) => r.toJson()).toList(),
-    );
+    final candidateRecipes = List<PersonalRecipe>.of(_personalRecipes);
+    if (index < 0) {
+      candidateRecipes.add(recipe);
+    } else {
+      candidateRecipes[index] = recipe;
+    }
+    if (!personalRecipesFitBackup(candidateRecipes)) {
+      throw const PersonalRecipeLimitException(
+        PersonalRecipeLimitReason.backupSize,
+      );
+    }
+
+    final nextSaved = List<SavedRecipe>.of(_saved);
+    final autoSave = index < 0 && !isSaved(recipe.id);
+    if (autoSave) {
+      nextSaved.add(SavedRecipe(recipeId: recipe.id, savedAt: DateTime.now()));
+    }
+    final invalidateCookProgress =
+        index >= 0 && _cookProgress?.recipeId == recipe.id;
+    final nextCollections = <String, String>{
+      'personal_recipes': json.encode(
+        candidateRecipes.map((r) => r.toJson()).toList(),
+      ),
+      if (autoSave)
+        'saved': json.encode(nextSaved.map((s) => s.toJson()).toList()),
+      if (invalidateCookProgress) 'cook_progress': 'null',
+    };
+    final previousCollections = <String, String>{
+      'personal_recipes': json.encode(
+        _personalRecipes.map((r) => r.toJson()).toList(),
+      ),
+      if (autoSave)
+        'saved': json.encode(_saved.map((s) => s.toJson()).toList()),
+      if (invalidateCookProgress)
+        'cook_progress': _cookProgress == null
+            ? 'null'
+            : json.encode(_cookProgress!.toJson()),
+    };
+    try {
+      await store.putCollections(nextCollections);
+    } catch (_) {
+      try {
+        await store.putCollections(previousCollections);
+      } catch (_) {}
+      rethrow;
+    }
+
+    _personalRecipes = candidateRecipes;
+    _saved = nextSaved;
+    if (invalidateCookProgress) _cookProgress = null;
     notifyListeners();
   }
 
@@ -188,25 +238,199 @@ class AppState extends ChangeNotifier {
   /// without it. Shopping-list lines remain useful and retain their names.
   Future<void> deletePersonalRecipe(String recipeId) async {
     if (!isPersonalRecipe(recipeId)) return;
-    _personalRecipes.removeWhere((r) => r.id == recipeId);
-    _saved.removeWhere((s) => s.recipeId == recipeId);
-    _history.removeWhere((h) => h.recipeId == recipeId);
-    for (final week in _mealPlan.values) {
+    final nextPersonalRecipes = List<PersonalRecipe>.of(_personalRecipes)
+      ..removeWhere((r) => r.id == recipeId);
+    final nextSaved = List<SavedRecipe>.of(_saved)
+      ..removeWhere((s) => s.recipeId == recipeId);
+    final nextHistory = List<HistoryEntry>.of(_history)
+      ..removeWhere((h) => h.recipeId == recipeId);
+    final nextMealPlan = <String, Map<String, String>>{
+      for (final entry in _mealPlan.entries)
+        entry.key: Map<String, String>.of(entry.value),
+    };
+    for (final week in nextMealPlan.values) {
       week.removeWhere((_, id) => id == recipeId);
     }
-    _mealPlan.removeWhere((_, slots) => slots.isEmpty);
-    if (_cookProgress?.recipeId == recipeId) _cookProgress = null;
-
-    await _writeJson(
-      'personal_recipes',
-      _personalRecipes.map((r) => r.toJson()).toList(),
-    );
-    await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
-    await _writeJson('history', _history.map((h) => h.toJson()).toList());
-    await _writeJson('meal_plan', _mealPlan);
-    if (_cookProgress == null) {
-      await store.putCollection('cook_progress', 'null');
+    nextMealPlan.removeWhere((_, slots) => slots.isEmpty);
+    final nextCookProgress = _cookProgress?.recipeId == recipeId
+        ? null
+        : _cookProgress;
+    final nextRecipeImages = Map<String, RecipeImage>.of(_recipeImages);
+    final removedImage = nextRecipeImages.remove(recipeId);
+    final nextCollections = <String, String>{
+      'personal_recipes': json.encode(
+        nextPersonalRecipes.map((r) => r.toJson()).toList(),
+      ),
+      'saved': json.encode(nextSaved.map((s) => s.toJson()).toList()),
+      'history': json.encode(nextHistory.map((h) => h.toJson()).toList()),
+      'meal_plan': json.encode(nextMealPlan),
+      'cook_progress': nextCookProgress == null
+          ? 'null'
+          : json.encode(nextCookProgress.toJson()),
+      'recipe_image_metadata': json.encode(
+        nextRecipeImages.values
+            .map((image) => image.metadata.toJson())
+            .toList(),
+      ),
+    };
+    final previousCollections = <String, String>{
+      'personal_recipes': json.encode(
+        _personalRecipes.map((r) => r.toJson()).toList(),
+      ),
+      'saved': json.encode(_saved.map((s) => s.toJson()).toList()),
+      'history': json.encode(_history.map((h) => h.toJson()).toList()),
+      'meal_plan': json.encode(_mealPlan),
+      'cook_progress': _cookProgress == null
+          ? 'null'
+          : json.encode(_cookProgress!.toJson()),
+      'recipe_image_metadata': json.encode(
+        _recipeImages.values.map((image) => image.metadata.toJson()).toList(),
+      ),
+    };
+    try {
+      await store.putCollections(nextCollections);
+      if (removedImage != null) {
+        await store.removeRecipeImageBytes(recipeId);
+      }
+    } catch (_) {
+      if (removedImage != null) {
+        try {
+          await store.putRecipeImageBytes(recipeId, removedImage.bytes);
+        } catch (_) {}
+      }
+      try {
+        await store.putCollections(previousCollections);
+      } catch (_) {}
+      rethrow;
     }
+
+    _personalRecipes = nextPersonalRecipes;
+    _saved = nextSaved;
+    _history = nextHistory;
+    _mealPlan = nextMealPlan;
+    _cookProgress = nextCookProgress;
+    _recipeImages = nextRecipeImages;
+    notifyListeners();
+  }
+
+  // ---- local recipe images ----
+
+  Map<String, RecipeImage> _loadRecipeImages() {
+    final metadata = _readList(
+      'recipe_image_metadata',
+      RecipeImageMetadata.fromJson,
+    );
+    final storedBytes = store.loadRecipeImageBytes();
+    final loaded = <String, RecipeImage>{};
+    for (final item in metadata) {
+      final bytes = storedBytes[item.recipeId];
+      if (bytes == null) continue;
+      try {
+        // Detect the actual stored format again. If the process stopped
+        // between replacing image bytes and metadata, the valid bytes remain
+        // recoverable instead of disappearing because of a stale MIME field.
+        loaded[item.recipeId] = RecipeImage(
+          recipeId: item.recipeId,
+          bytes: bytes,
+          updatedAt: item.updatedAt,
+        );
+      } on RecipeImageException {
+        // Ignore a corrupt local entry; the striped fallback remains usable.
+      }
+    }
+    return loaded;
+  }
+
+  RecipeImage? recipeImageFor(String recipeId) => _recipeImages[recipeId];
+
+  Future<RecipeImage> setRecipeImage(
+    String recipeId,
+    List<int> bytes, {
+    DateTime? updatedAt,
+  }) async {
+    if (await recipeById(recipeId) == null) {
+      throw ArgumentError.value(recipeId, 'recipeId', 'unknown recipe');
+    }
+    final image = RecipeImage(
+      recipeId: recipeId,
+      bytes: bytes,
+      updatedAt: updatedAt ?? DateTime.now(),
+    );
+    final previousBytes = _recipeImages[recipeId]?.bytes.length ?? 0;
+    final totalBytes =
+        _recipeImages.values.fold<int>(
+          0,
+          (total, stored) => total + stored.bytes.length,
+        ) -
+        previousBytes +
+        image.bytes.length;
+    if ((_recipeImages.length >= maxBackupRecipeImages &&
+            !_recipeImages.containsKey(recipeId)) ||
+        totalBytes > maxBackupImageBytes) {
+      throw const RecipeImageException(RecipeImageFailure.storageLimit);
+    }
+    final previousImage = _recipeImages[recipeId];
+    final nextRecipeImages = Map<String, RecipeImage>.of(_recipeImages)
+      ..[recipeId] = image;
+    final nextMetadata = json.encode(
+      nextRecipeImages.values
+          .map((stored) => stored.metadata.toJson())
+          .toList(),
+    );
+    final previousMetadata = json.encode(
+      _recipeImages.values.map((stored) => stored.metadata.toJson()).toList(),
+    );
+    try {
+      await store.putRecipeImageBytes(recipeId, image.bytes);
+      await store.putCollections({'recipe_image_metadata': nextMetadata});
+    } catch (_) {
+      if (previousImage == null) {
+        try {
+          await store.removeRecipeImageBytes(recipeId);
+        } catch (_) {}
+      } else {
+        try {
+          await store.putRecipeImageBytes(recipeId, previousImage.bytes);
+        } catch (_) {}
+      }
+      try {
+        await store.putCollections({'recipe_image_metadata': previousMetadata});
+      } catch (_) {}
+      rethrow;
+    }
+
+    _recipeImages = nextRecipeImages;
+    notifyListeners();
+    return image;
+  }
+
+  Future<void> removeRecipeImage(String recipeId) async {
+    final previousImage = _recipeImages[recipeId];
+    if (previousImage == null) return;
+    final nextRecipeImages = Map<String, RecipeImage>.of(_recipeImages)
+      ..remove(recipeId);
+    final nextMetadata = json.encode(
+      nextRecipeImages.values
+          .map((stored) => stored.metadata.toJson())
+          .toList(),
+    );
+    final previousMetadata = json.encode(
+      _recipeImages.values.map((stored) => stored.metadata.toJson()).toList(),
+    );
+    try {
+      await store.putCollections({'recipe_image_metadata': nextMetadata});
+      await store.removeRecipeImageBytes(recipeId);
+    } catch (_) {
+      try {
+        await store.putRecipeImageBytes(recipeId, previousImage.bytes);
+      } catch (_) {}
+      try {
+        await store.putCollections({'recipe_image_metadata': previousMetadata});
+      } catch (_) {}
+      rethrow;
+    }
+
+    _recipeImages = nextRecipeImages;
     notifyListeners();
   }
 
@@ -256,6 +480,7 @@ class AppState extends ChangeNotifier {
       ...aggregated.map(
         (a) => ShoppingItem(
           ingredientId: a.ingredientId,
+          customName: a.customName,
           qty: a.quantity.amount,
           unit: a.quantity.unit,
           aisle: a.aisle,
@@ -331,6 +556,7 @@ class AppState extends ChangeNotifier {
     shoppingHistory: _shoppingHistory,
     contentRequests: _contentRequests,
     personalRecipes: _personalRecipes,
+    recipeImages: _recipeImages.values.toList(),
   );
 
   /// Applies an imported backup. [merge] keeps existing data and unions the
@@ -340,28 +566,131 @@ class AppState extends ChangeNotifier {
     final data = merge
         ? BackupService.merge(buildBackup(), incoming)
         : incoming;
+    if (data.personalRecipes.length > maxPersonalRecipes) {
+      throw const DecryptionException(DecryptionFailure.invalidFormat);
+    }
+    if (!personalRecipesFitBackup(data.personalRecipes)) {
+      throw const DecryptionException(DecryptionFailure.tooLarge);
+    }
+    final personalIds = data.personalRecipes.map((r) => r.id).toSet();
+    if (personalIds.length != data.personalRecipes.length) {
+      throw const DecryptionException(DecryptionFailure.invalidFormat);
+    }
+    for (final image in data.recipeImages) {
+      if (!personalIds.contains(image.recipeId) &&
+          await corpus.recipeById(image.recipeId) == null) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+    }
+
+    final nextSaved = List<SavedRecipe>.of(data.saved);
+    final nextMealPlan = <String, Map<String, String>>{
+      for (final entry in data.mealPlan.entries)
+        entry.key: Map<String, String>.of(entry.value),
+    };
+    final nextHistory = List<HistoryEntry>.of(data.history);
+    final nextShoppingList = merge
+        ? List<ShoppingItem>.of(_shoppingList)
+        : <ShoppingItem>[];
+    final nextShoppingHistory = List<ShoppingItem>.of(data.shoppingHistory);
+    final nextContentRequests = List<String>.of(data.contentRequests);
+    final nextPersonalRecipes = List<PersonalRecipe>.of(data.personalRecipes);
+    final nextRecipeImages = <String, RecipeImage>{
+      for (final image in data.recipeImages) image.recipeId: image,
+    };
+    var nextCookProgress = merge ? _cookProgress : null;
+    if (nextCookProgress != null &&
+        incoming.personalRecipes.any(
+          (recipe) => recipe.id == nextCookProgress!.recipeId,
+        )) {
+      nextCookProgress = null;
+    }
+
+    final nextCollections = <String, String>{
+      'saved': json.encode(nextSaved.map((s) => s.toJson()).toList()),
+      'meal_plan': json.encode(nextMealPlan),
+      'history': json.encode(nextHistory.map((h) => h.toJson()).toList()),
+      'shopping_list': json.encode(
+        nextShoppingList.map((s) => s.toJson()).toList(),
+      ),
+      'shopping_history': json.encode(
+        nextShoppingHistory.map((s) => s.toJson()).toList(),
+      ),
+      'content_requests': json.encode(nextContentRequests),
+      'personal_recipes': json.encode(
+        nextPersonalRecipes.map((r) => r.toJson()).toList(),
+      ),
+      'recipe_image_metadata': json.encode(
+        nextRecipeImages.values
+            .map((image) => image.metadata.toJson())
+            .toList(),
+      ),
+      'cook_progress': nextCookProgress == null
+          ? 'null'
+          : json.encode(nextCookProgress.toJson()),
+    };
+    final oldCollections = <String, String>{
+      'saved': json.encode(_saved.map((s) => s.toJson()).toList()),
+      'meal_plan': json.encode(_mealPlan),
+      'history': json.encode(_history.map((h) => h.toJson()).toList()),
+      'shopping_list': json.encode(
+        _shoppingList.map((s) => s.toJson()).toList(),
+      ),
+      'shopping_history': json.encode(
+        _shoppingHistory.map((s) => s.toJson()).toList(),
+      ),
+      'content_requests': json.encode(_contentRequests),
+      'personal_recipes': json.encode(
+        _personalRecipes.map((r) => r.toJson()).toList(),
+      ),
+      'recipe_image_metadata': json.encode(
+        _recipeImages.values.map((image) => image.metadata.toJson()).toList(),
+      ),
+      'cook_progress': _cookProgress == null
+          ? 'null'
+          : json.encode(_cookProgress!.toJson()),
+    };
+    final oldImageIds = _recipeImages.keys.toSet();
+    final nextImageIds = nextRecipeImages.keys.toSet();
+    try {
+      await store.putRecipeImageBytesBatch({
+        for (final image in nextRecipeImages.values)
+          image.recipeId: image.bytes,
+      });
+      await store.putCollections(nextCollections);
+      await store.saveProfile(data.profile);
+      await store.setOnboardingComplete(true);
+      await store.removeRecipeImageBytesBatch(
+        oldImageIds.difference(nextImageIds),
+      );
+    } catch (_) {
+      // Best-effort rollback keeps a recoverable old state if persistence
+      // fails (for example because device storage is full).
+      try {
+        await store.putRecipeImageBytesBatch({
+          for (final image in _recipeImages.values) image.recipeId: image.bytes,
+        });
+        await store.removeRecipeImageBytesBatch(
+          nextImageIds.difference(oldImageIds),
+        );
+        await store.putCollections(oldCollections);
+        await store.saveProfile(_profile);
+        await store.setOnboardingComplete(_onboarded);
+      } catch (_) {}
+      rethrow;
+    }
+
     _profile = data.profile;
-    _saved = List.of(data.saved);
-    _mealPlan = data.mealPlan;
-    _history = List.of(data.history);
-    _shoppingHistory = List.of(data.shoppingHistory);
-    _contentRequests = List.of(data.contentRequests);
-    _personalRecipes = List.of(data.personalRecipes);
+    _saved = nextSaved;
+    _mealPlan = nextMealPlan;
+    _history = nextHistory;
+    _shoppingList = nextShoppingList;
+    _shoppingHistory = nextShoppingHistory;
+    _contentRequests = nextContentRequests;
+    _personalRecipes = nextPersonalRecipes;
+    _recipeImages = nextRecipeImages;
+    _cookProgress = nextCookProgress;
     _onboarded = true;
-    await store.saveProfile(_profile);
-    await store.setOnboardingComplete(true);
-    await _writeJson('saved', _saved.map((s) => s.toJson()).toList());
-    await _writeJson('meal_plan', _mealPlan);
-    await _writeJson('history', _history.map((h) => h.toJson()).toList());
-    await _writeJson(
-      'shopping_history',
-      _shoppingHistory.map((s) => s.toJson()).toList(),
-    );
-    await _writeJson('content_requests', _contentRequests);
-    await _writeJson(
-      'personal_recipes',
-      _personalRecipes.map((r) => r.toJson()).toList(),
-    );
     notifyListeners();
   }
 
@@ -377,6 +706,7 @@ class AppState extends ChangeNotifier {
     _shoppingHistory = [];
     _contentRequests = [];
     _personalRecipes = [];
+    _recipeImages = {};
     _cookProgress = null;
     notifyListeners();
   }

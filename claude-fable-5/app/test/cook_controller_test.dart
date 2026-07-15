@@ -25,8 +25,9 @@ Recipe timedRecipe() {
     steps: const [
       RecipeStep(text: LocalizedText({'en': 'prep', 'de': 'vorbereiten'})),
       RecipeStep(
-          text: LocalizedText({'en': 'simmer', 'de': 'köcheln'}),
-          timerMinutes: 1),
+        text: LocalizedText({'en': 'simmer', 'de': 'köcheln'}),
+        timerMinutes: 1,
+      ),
       RecipeStep(text: LocalizedText({'en': 'serve', 'de': 'servieren'})),
     ],
     tags: LocalizedList.empty,
@@ -38,7 +39,9 @@ void main() {
     test('navigates steps and persists progress', () {
       final saved = <CookProgress?>[];
       final session = CookSessionController(
-          recipe: timedRecipe(), persist: saved.add);
+        recipe: timedRecipe(),
+        persist: saved.add,
+      );
       expect(session.stepIndex, 0);
       expect(session.remainingSeconds, isNull); // step 0 has no timer
 
@@ -54,7 +57,9 @@ void main() {
 
     test('timer counts down and flags completion for the flash alert', () {
       final session = CookSessionController(
-          recipe: timedRecipe(), persist: (_) {});
+        recipe: timedRecipe(),
+        persist: (_) {},
+      );
       session.nextStep();
       session.startTimer();
       expect(session.isTimerRunning, isTrue);
@@ -75,7 +80,9 @@ void main() {
     test('pause/resume keeps remaining time and persists it', () {
       final saved = <CookProgress?>[];
       final session = CookSessionController(
-          recipe: timedRecipe(), persist: saved.add);
+        recipe: timedRecipe(),
+        persist: saved.add,
+      );
       session.nextStep();
       session.startTimer();
       session.tick();
@@ -94,10 +101,11 @@ void main() {
         recipe: timedRecipe(),
         persist: (_) {},
         resumeFrom: const CookProgress(
-            recipeId: 'cookable',
-            stepIndex: 1,
-            servings: 4,
-            remainingTimerSeconds: 30),
+          recipeId: 'cookable',
+          stepIndex: 1,
+          servings: 4,
+          remainingTimerSeconds: 30,
+        ),
       );
       expect(session.stepIndex, 1);
       expect(session.servings, 4);
@@ -106,23 +114,45 @@ void main() {
       session.dispose();
     });
 
-    test('servings scaler clamps to 1..16 and scales factor', () {
+    test('clamps stale resumed steps without reusing the old timer', () {
       final session = CookSessionController(
-          recipe: timedRecipe(), persist: (_) {});
+        recipe: timedRecipe(),
+        persist: (_) {},
+        resumeFrom: const CookProgress(
+          recipeId: 'cookable',
+          stepIndex: 99,
+          servings: 4,
+          remainingTimerSeconds: 30,
+        ),
+      );
+      expect(session.stepIndex, 2);
+      expect(session.remainingSeconds, isNull);
+      session.dispose();
+    });
+
+    test('servings scaler supports authored values and clamps to 1..1000', () {
+      final session = CookSessionController(
+        recipe: timedRecipe(),
+        persist: (_) {},
+      );
       session.setServings(0);
       expect(session.servings, 2);
       session.setServings(4);
       expect(session.servings, 4);
       expect(session.scaleFactor, 2.0);
       session.setServings(17);
-      expect(session.servings, 4);
+      expect(session.servings, 17);
+      session.setServings(maxCookServings + 1);
+      expect(session.servings, 17);
       session.dispose();
     });
 
     test('completing clears persisted progress', () {
       final saved = <CookProgress?>[];
       final session = CookSessionController(
-          recipe: timedRecipe(), persist: saved.add);
+        recipe: timedRecipe(),
+        persist: saved.add,
+      );
       session.nextStep();
       session.nextStep();
       expect(session.isLastStep, isTrue);
@@ -143,7 +173,9 @@ void main() {
     test('debounces taps within 300 ms', () {
       var now = DateTime(2026, 1, 1, 12, 0, 0);
       final controller = OneHandedCookModeController(
-          quickNextTapEnabled: true, now: () => now);
+        quickNextTapEnabled: true,
+        now: () => now,
+      );
       expect(controller.handleTap(), isTrue);
       now = now.add(const Duration(milliseconds: 299));
       expect(controller.handleTap(), isFalse);
