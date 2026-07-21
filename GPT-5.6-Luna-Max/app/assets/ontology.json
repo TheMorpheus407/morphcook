@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "contains_flags": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "egg", "dairy", "gluten", "soy", "peanuts", "tree-nuts", "sesame", "added-sugar", "high-fodmap", "honey", "alcohol"],
+  "compound_avoid_flags": {
+    "vegan": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "egg", "dairy", "honey"],
+    "vegetarian": ["pork", "beef", "lamb", "poultry", "fish", "shellfish"],
+    "halal": ["pork", "alcohol"],
+    "kosher": ["pork", "shellfish"],
+    "sugar-free": ["added-sugar"]
+  },
+  "attributes": {"effort": ["easy", "medium", "hard"], "technique": ["bake", "saute", "simmer", "raw", "grill", "fry", "steam", "roast", "stir-fry"]}
+}

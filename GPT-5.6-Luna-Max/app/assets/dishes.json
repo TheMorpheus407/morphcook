@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {"id": "doener", "canonical_name": {"en": "Döner", "de": "Döner"}, "hero_text": {"en": "A little smoky, a little bright, entirely yours.", "de": "Ein bisschen rauchig, ein bisschen hell, ganz deins."}, "stripe_color": "#E78A73", "recipe_ids": ["doener-classic", "doener-vegan", "doener-keto", "doener-halal"], "partition_id": "middle-eastern", "cuisine_tags": ["middle-eastern"]},
+    {"id": "alfredo", "canonical_name": {"en": "Alfredo", "de": "Alfredo"}, "hero_text": {"en": "The soft landing of a long day.", "de": "Die weiche Landung nach einem langen Tag."}, "stripe_color": "#8FB7AE", "recipe_ids": ["alfredo-classic", "alfredo-vegan"], "partition_id": "italian", "cuisine_tags": ["italian"]},
+    {"id": "pad-thai", "canonical_name": {"en": "Pad Thai", "de": "Pad Thai"}, "hero_text": {"en": "A bright little dance in one pan.", "de": "Ein kleiner heller Tanz aus einer Pfanne."}, "stripe_color": "#E6BF6E", "recipe_ids": ["padthai-tofu", "padthai-classic"], "partition_id": "asian", "cuisine_tags": ["thai"]}
+  ]
+}

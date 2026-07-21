@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "tree": {
+    "dairy": {"children": {"cow-milk": {"children": {"whole-milk": {}, "skim-milk": {}}, "name": {"en": "cow milk", "de": "Kuhmilch"}}, "cheese": {"children": {"parmesan": {}, "feta": {}}, "name": {"en": "cheese", "de": "Käse"}}, "name": {"en": "dairy", "de": "Milchprodukte"}}},
+    "nuts": {"children": {"tree-nuts": {"children": {"walnuts": {}, "almonds": {}, "pistachios": {}}, "name": {"en": "tree nuts", "de": "Baumnüsse"}}, "peanuts": {}, "name": {"en": "nuts", "de": "Nüsse"}},
+    "produce": {"children": {"apples": {}, "cilantro": {}, "bell-pepper": {}}, "name": {"en": "produce", "de": "Obst & Gemüse"}}
+  }
+}
