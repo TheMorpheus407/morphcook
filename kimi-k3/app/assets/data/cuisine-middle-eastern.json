@@ -1,0 +1,2983 @@
+{
+  "recipes": [
+    {
+      "id": "doener-classic-easy-light",
+      "dish_id": "doener",
+      "title": {
+        "en": "crispy chicken döner, extra salad",
+        "de": "knuspriger hähnchen-döner mit extra salat"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 440,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken",
+            "de": "hähnchen"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into thin strips",
+            "de": "in dünne streifen geschnitten"
+          }
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "pita",
+            "de": "pita"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "yogurt",
+            "de": "joghurt"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "cucumber",
+            "de": "gurke"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "sumac",
+            "de": "sumach"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the yogurt with grated garlic and half the sumac. that's your garlic sauce — park it in the fridge.",
+            "de": "joghurt mit geriebenem knoblauch und der hälfte des sumachs verrühren. das ist deine knoblauchsauce — ab in den kühlschrank."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the chicken strips with olive oil and the rest of the sumac.",
+            "de": "hähnchenstreifen mit olivenöl und dem restlichen sumach mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fry the chicken in a hot pan until golden and a little crispy at the edges.",
+            "de": "hähnchen in einer heißen pfanne goldbraun und an den rändern leicht knusprig braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "pile shredded cabbage, sliced tomato and cucumber high — this one is salad-forward on purpose.",
+            "de": "rotkohl, tomaten- und gurkenscheiben schön hoch stapeln — hier ist extra viel salat dran, mit absicht."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the pitas in the dry pan for a minute per side.",
+            "de": "pitas in der trockenen pfanne pro seite etwa eine minute erwärmen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "stuff: salad first, then chicken, then a generous zigzag of garlic sauce. fold and eat over the sink like a local.",
+            "de": "füllen: erst salat, dann hähnchen, dann einen ordentlichen schlenker knoblauchsauce. falten und am besten über der spüle essen, wie die profis."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 45,
+        "fat_g": 12
+      },
+      "tags": [
+        "street-food",
+        "weeknight",
+        "high-protein",
+        "fresh"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-classic-easy-hearty",
+      "dish_id": "doener",
+      "title": {
+        "en": "loaded chicken döner with halloumi",
+        "de": "vollgeladener hähnchen-döner mit halloumi"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken",
+            "de": "hähnchen"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into thin strips",
+            "de": "in dünne streifen geschnitten"
+          }
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "pita",
+            "de": "pita"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "yogurt",
+            "de": "joghurt"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "halloumi",
+          "name": {
+            "en": "halloumi",
+            "de": "halloumi"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "sumac",
+            "de": "sumach"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the yogurt with grated garlic and half the sumac. more sauce than you think you need is the correct amount.",
+            "de": "joghurt mit geriebenem knoblauch und der hälfte des sumachs verrühren. mehr sauce als du denkst ist genau richtig."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the chicken with olive oil and the rest of the sumac, then fry in a hot pan until deeply golden.",
+            "de": "hähnchen mit olivenöl und dem restlichen sumach mischen, dann in der heißen pfanne kräftig goldbraun braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fry the halloumi slices in the same pan until browned on both sides. squeaky cheese is the whole point.",
+            "de": "halloumi in derselben pfanne von beiden seiten braun braten. quietschekäse ist genau der punkt."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "shred the cabbage and slice the tomato while the pan does its thing.",
+            "de": "rotkohl hobeln und tomate schneiden, während die pfanne ihr ding macht."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the pitas, then load them up: cabbage, tomato, chicken, halloumi, and a heavy hand with the garlic sauce.",
+            "de": "pitas erwärmen und volladen: rotkohl, tomate, hähnchen, halloumi und ganz viel knoblauchsauce."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "wrap tight, napkin mandatory. this is a two-hander.",
+            "de": "fest einwickeln, serviette ist pflicht. das hier ist ein beidhänder."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 50,
+        "carbs_g": 52,
+        "fat_g": 32
+      },
+      "tags": [
+        "street-food",
+        "comfort-food",
+        "high-protein",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-classic-hard-light",
+      "dish_id": "doener",
+      "title": {
+        "en": "slow-roasted lamb döner with homemade pita",
+        "de": "zart geschmorter lammdöner mit selbstgemachtem pita"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "lamb",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "roast",
+        "bake"
+      ],
+      "time_minutes": 100,
+      "calories_per_serving": 540,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lamb",
+          "name": {
+            "en": "lamb",
+            "de": "lammfleisch"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "shoulder, thinly sliced",
+            "de": "schulter, in dünnen scheiben"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yeast",
+          "name": {
+            "en": "yeast",
+            "de": "hefe"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "yogurt",
+            "de": "joghurt"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "cucumber",
+            "de": "gurke"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "sumac",
+            "de": "sumach"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix flour, yeast and a pinch of salt with warm water into a soft dough. knead 5 minutes, then let it rise somewhere cozy.",
+            "de": "mehl, hefe und eine prise salz mit warmem wasser zu einem weichen teig verkneten. 5 minuten kneten, dann an einem warmen ort gehen lassen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "meanwhile rub the lamb with olive oil, sumac and crushed garlic. layer the slices in a small roasting tin, pressed tight like a mini spit.",
+            "de": "lamm inzwischen mit olivenöl, sumach und zerdrücktem knoblauch einreiben. scheiben eng an eng in eine kleine auflaufform schichten, wie ein mini-spieß."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "roast at 180°c until the edges crisp and the middle stays juicy. rest it, then shave thin.",
+            "de": "bei 180 °c rösten, bis die ränder knusprig sind und die mitte saftig bleibt. kurz ruhen lassen, dann hauchdünn aufschneiden."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "split the dough in two, roll into flatbreads and bake in a ripping hot oven until puffed and spotted.",
+            "de": "teig halbieren, zu fladen ausrollen und im richtig heißen ofen backen, bis sie sich aufblähen und blasen werfen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "stir the yogurt with a little grated garlic for the sauce, shred the cabbage, slice the cucumber.",
+            "de": "joghurt mit etwas geriebenem knoblauch zur sauce rühren, rotkohl hobeln, gurke schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill your warm homemade pita with lots of salad, thin lamb shavings and a drizzle of sauce. you built this from scratch — taste that.",
+            "de": "dein warmes selbstgemachtes pita mit viel salat, dünnen lammscheiben und einem schuss sauce füllen. alles von grund auf gemacht — das schmeckt man."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 40,
+        "carbs_g": 55,
+        "fat_g": 18
+      },
+      "tags": [
+        "street-food",
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "high-protein"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-classic-hard-hearty",
+      "dish_id": "doener",
+      "title": {
+        "en": "weekend lamb döner, the full works",
+        "de": "wochenend-lammdöner mit allem drum und dran"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "lamb",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "roast",
+        "bake"
+      ],
+      "time_minutes": 120,
+      "calories_per_serving": 790,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lamb",
+          "name": {
+            "en": "lamb",
+            "de": "lammfleisch"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "shoulder, thinly sliced",
+            "de": "schulter, in dünnen scheiben"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yeast",
+          "name": {
+            "en": "yeast",
+            "de": "hefe"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "yogurt",
+            "de": "joghurt"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "halloumi",
+          "name": {
+            "en": "halloumi",
+            "de": "halloumi"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix flour, yeast and a pinch of salt with warm water into a soft dough, knead 5 minutes and let it rise until doubled.",
+            "de": "mehl, hefe und eine prise salz mit warmem wasser zu einem weichen teig verkneten, 5 minuten kneten und gehen lassen, bis er sich verdoppelt hat."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "rub the lamb with olive oil and crushed garlic, then stack the slices tightly in a roasting tin — your homemade vertical spit, lying down.",
+            "de": "lamm mit olivenöl und zerdrücktem knoblauch einreiben und die scheiben eng in eine auflaufform schichten — dein hausgemachter drehspieß, nur liegend."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "roast low and slow at 160°c until tender, then crank the heat for crispy edges. rest, then shave.",
+            "de": "bei 160 °c langsam schmoren, bis es zart ist, dann die hitze hochdrehen für knusprige ränder. ruhen lassen, dann dünn aufschneiden."
+          },
+          "timer_seconds": 5400
+        },
+        {
+          "text": {
+            "en": "roll the dough into two big flatbreads and bake hot until puffed. fry the halloumi golden in a dry pan while the oven is busy.",
+            "de": "teig zu zwei großen fladen ausrollen und heiß backen, bis sie sich aufblähen. halloumi nebenbei in der trockenen pfanne goldbraun braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "stir the yogurt with grated garlic, shred the cabbage, slice the tomato. set everything out like a little döner station.",
+            "de": "joghurt mit geriebenem knoblauch verrühren, rotkohl hobeln, tomate schneiden. alles hinstellen wie eine kleine döner-station."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "load the warm pita: cabbage, tomato, a pile of lamb, halloumi, and sauce until it drips. the corner shop could never.",
+            "de": "das warme pita volladen: rotkohl, tomate, ein berg lamm, halloumi und sauce, bis es tropft. der späti-döner kann da nicht mithalten."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 52,
+        "carbs_g": 62,
+        "fat_g": 36
+      },
+      "tags": [
+        "street-food",
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "crowd-pleaser",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-vegan-easy-light",
+      "dish_id": "doener",
+      "title": {
+        "en": "crispy seitan döner, extra salad",
+        "de": "knuspriger seitan-döner mit extra salat"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 410,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "seitan",
+          "name": {
+            "en": "seitan",
+            "de": "seitan"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "thin strips",
+            "de": "in dünnen streifen"
+          }
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "pita",
+            "de": "pita"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "vegan-yogurt",
+          "name": {
+            "en": "vegan yogurt",
+            "de": "veganer joghurt"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "cucumber",
+            "de": "gurke"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "sumac",
+            "de": "sumach"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the vegan yogurt with grated garlic and half the sumac. garlic sauce, sorted.",
+            "de": "veganen joghurt mit geriebenem knoblauch und der hälfte des sumachs verrühren. knoblauchsauce, erledigt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the seitan strips with olive oil and the rest of the sumac.",
+            "de": "seitanstreifen mit olivenöl und dem restlichen sumach mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fry the seitan in a hot pan until the edges go crisp and browned. don't stir too much — let it catch some color.",
+            "de": "seitan in der heißen pfanne braten, bis die ränder knusprig und braun sind. nicht zu viel rühren — farbe braucht ruhe."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "pile up shredded cabbage, tomato and cucumber. the salad is half the sandwich here.",
+            "de": "rotkohl, tomate und gurke schön hoch stapeln. der salat ist hier die halbe füllung."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the pitas in the dry pan, then stuff with salad, crispy seitan and a good drizzle of sauce.",
+            "de": "pitas in der trockenen pfanne erwärmen, dann mit salat, knusprigem seitan und ordentlich sauce füllen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "fold, bite, repeat. the crunch-to-sauce ratio is exactly right.",
+            "de": "falten, beißen, wiederholen. das crunch-zu-sauce-verhältnis stimmt genau."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 32,
+        "carbs_g": 48,
+        "fat_g": 11
+      },
+      "tags": [
+        "street-food",
+        "weeknight",
+        "high-protein",
+        "fresh"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-vegan-easy-hearty",
+      "dish_id": "doener",
+      "title": {
+        "en": "loaded seitan döner with tahini drizzle",
+        "de": "vollgeladener seitan-döner mit tahini"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "seitan",
+          "name": {
+            "en": "seitan",
+            "de": "seitan"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "thin strips",
+            "de": "in dünnen streifen"
+          }
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "pita",
+            "de": "pita"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "vegan-yogurt",
+          "name": {
+            "en": "vegan yogurt",
+            "de": "veganer joghurt"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "tahini",
+            "de": "tahini"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "sumac",
+            "de": "sumach"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir vegan yogurt with grated garlic and the tahini until smooth. this sauce means business.",
+            "de": "veganen joghurt mit geriebenem knoblauch und tahini glatt rühren. diese sauce meint es ernst."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the seitan with olive oil and sumac, then fry hot until browned and crispy at the edges.",
+            "de": "seitan mit olivenöl und sumach mischen, dann scharf anbraten, bis er braun und an den rändern knusprig ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "shred the cabbage and slice the tomato while the pan works.",
+            "de": "rotkohl hobeln und tomate schneiden, während die pfanne arbeitet."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the pitas until soft and steamy.",
+            "de": "pitas erwärmen, bis sie weich und dampfig sind."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "stuff to capacity: cabbage, tomato, a serious pile of seitan, and sauce until it runs down your wrist.",
+            "de": "bis zum anschlag füllen: rotkohl, tomate, ein ernsthafter haufen seitan und sauce, bis sie am handgelenk runterläuft."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wrap in paper if you have it. eat immediately, lean forward, commit.",
+            "de": "in papier wickeln, wenn du welches hast. sofort essen, nach vorn beugen, voller einsatz."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 44,
+        "carbs_g": 58,
+        "fat_g": 30
+      },
+      "tags": [
+        "street-food",
+        "comfort-food",
+        "high-protein",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-vegan-hard-light",
+      "dish_id": "doener",
+      "title": {
+        "en": "marinated seitan döner with homemade pita",
+        "de": "marinierter seitan-döner mit selbstgemachtem pita"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "pan-fry"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 490,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "seitan",
+          "name": {
+            "en": "seitan",
+            "de": "seitan"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "thin strips",
+            "de": "in dünnen streifen"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yeast",
+          "name": {
+            "en": "yeast",
+            "de": "hefe"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegan-yogurt",
+          "name": {
+            "en": "vegan yogurt",
+            "de": "veganer joghurt"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "marinate the seitan in half the vegan yogurt with smoked paprika, grated garlic and olive oil. an hour is good, overnight is better.",
+            "de": "seitan in der hälfte des veganen joghurts mit räucherpaprika, geriebenem knoblauch und olivenöl marinieren. eine stunde ist gut, über nacht ist besser."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "mix flour, yeast and a pinch of salt with warm water into a soft dough, knead 5 minutes, let it rise until puffy.",
+            "de": "mehl, hefe und eine prise salz mit warmem wasser zu einem weichen teig verkneten, 5 minuten kneten, gehen lassen, bis er schön fluffig ist."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "split the dough, roll into two flatbreads and bake in a very hot oven until puffed and blistered.",
+            "de": "teig teilen, zu zwei fladen ausrollen und im sehr heißen ofen backen, bis sie sich aufblähen und blasen bekommen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry the marinated seitan hard and fast until charred at the edges.",
+            "de": "marinierten seitan heiß und schnell anbraten, bis die ränder leicht angekokelt sind."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stir the rest of the yogurt with a little garlic for the sauce, shred the cabbage, slice the tomato.",
+            "de": "restlichen joghurt mit etwas knoblauch zur sauce rühren, rotkohl hobeln, tomate schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill the warm pita with plenty of salad, smoky seitan and sauce. smoky, tangy, worth every minute.",
+            "de": "das warme pita mit viel salat, rauchigem seitan und sauce füllen. rauchig, frisch, jede minute wert."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 36,
+        "carbs_g": 56,
+        "fat_g": 13
+      },
+      "tags": [
+        "street-food",
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "high-protein"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "doener-vegan-hard-hearty",
+      "dish_id": "doener",
+      "title": {
+        "en": "weekend seitan döner, the full works",
+        "de": "wochenend-seitan-döner mit allem drum und dran"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "pan-fry"
+      ],
+      "time_minutes": 100,
+      "calories_per_serving": 760,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "seitan",
+          "name": {
+            "en": "seitan",
+            "de": "seitan"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "thin strips",
+            "de": "in dünnen streifen"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "yeast",
+          "name": {
+            "en": "yeast",
+            "de": "hefe"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegan-yogurt",
+          "name": {
+            "en": "vegan yogurt",
+            "de": "veganer joghurt"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "tahini",
+            "de": "tahini"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "red cabbage",
+            "de": "rotkohl"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomato",
+            "de": "tomate"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "marinate the seitan in half the vegan yogurt with grated garlic and a spoon of tahini. give it an hour, minimum.",
+            "de": "seitan in der hälfte des veganen joghurts mit geriebenem knoblauch und einem löffel tahini marinieren. mindestens eine stunde."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "mix flour, yeast and a pinch of salt with warm water into a soft dough, knead 5 minutes and let it rise until doubled.",
+            "de": "mehl, hefe und eine prise salz mit warmem wasser zu einem weichen teig verkneten, 5 minuten kneten und gehen lassen, bis er sich verdoppelt hat."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "roll the dough into two big flatbreads and bake hot until puffed and golden.",
+            "de": "teig zu zwei großen fladen ausrollen und heiß backen, bis sie sich aufblähen und golden sind."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry the marinated seitan in olive oil until deeply browned and crisp at the edges. work in batches so it fries, not steams.",
+            "de": "marinierten seitan in olivenöl kräftig braun und an den rändern knusprig braten. in zwei portionen, damit er brät statt dünstet."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stir the rest of the yogurt with the remaining tahini and garlic into a lush sauce. shred cabbage, slice tomato.",
+            "de": "restlichen joghurt mit dem restlichen tahini und knoblauch zu einer sämigen sauce rühren. rotkohl hobeln, tomate schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "load the warm homemade pita to the brim: salad, a mountain of seitan, sauce on sauce. this is the weekend one.",
+            "de": "das warme selbstgemachte pita bis zum rand füllen: salat, ein berg seitan, sauce auf sauce. das ist der für das wochenende."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 48,
+        "carbs_g": 66,
+        "fat_g": 33
+      },
+      "tags": [
+        "street-food",
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "high-protein"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "shakshuka-classic-easy-light",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "weeknight shakshuka",
+        "de": "shakshuka für unter der woche"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "simmer",
+        "poach"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 380,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell pepper",
+            "de": "paprika"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "paprika",
+          "name": {
+            "en": "paprika powder",
+            "de": "paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili-flakes",
+          "name": {
+            "en": "chili flakes",
+            "de": "chiliflocken"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften the onion and bell pepper in olive oil over medium heat, about 5 minutes.",
+            "de": "zwiebel und paprika in olivenöl bei mittlerer hitze weich dünsten, etwa 5 minuten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in garlic, cumin, paprika and chili flakes and cook for 1 minute until it smells amazing.",
+            "de": "knoblauch, kreuzkümmel, paprikapulver und chiliflocken unterrühren und 1 minute braten, bis es fantastisch duftet."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add the tomatoes, season with salt and simmer for 10 minutes until slightly thickened.",
+            "de": "tomaten dazugeben, mit salz würzen und 10 minuten köcheln, bis die sauce leicht eindickt."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "make little wells, crack in the eggs, cover and poach for 5–6 minutes until the whites are set but the yolks still jiggle.",
+            "de": "kleine mulden formen, eier hineingleiten lassen, abdecken und 5–6 minuten pochieren, bis das eiweiß fest ist und das eigelb noch wackelt."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "eat straight from the pan — that's the whole point.",
+            "de": "direkt aus der pfanne essen — genau darum geht's."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 25,
+        "fat_g": 22
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "weeknight",
+        "spicy",
+        "cozy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-classic-easy-hearty",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "shakshuka with feta & crusty bread",
+        "de": "shakshuka mit feta & knusprigem brot"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "poach"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell pepper",
+            "de": "paprika"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "feta",
+          "name": {
+            "en": "feta",
+            "de": "feta"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "crusty bread",
+            "de": "knuspriges brot"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "bakery"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion and bell pepper in olive oil over medium heat, about 5 minutes.",
+            "de": "zwiebel und paprika in olivenöl bei mittlerer hitze weich dünsten, etwa 5 minuten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in garlic and smoked paprika for 1 minute, then add the tomatoes.",
+            "de": "knoblauch und räucherpaprika 1 minute mitbraten, dann die tomaten dazugeben."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "season and simmer for 10 minutes until thick and saucy.",
+            "de": "würzen und 10 minuten köcheln, bis die sauce dick und sämig ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "crack in the eggs, scatter over half the feta, cover and poach for 5–6 minutes.",
+            "de": "eier hineingleiten lassen, die hälfte des feta darüberstreuen, abdecken und 5–6 minuten pochieren."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "top with the rest of the feta and a glug of olive oil. serve with lots of crusty bread for scooping.",
+            "de": "mit dem rest feta und einem schuss olivenöl toppen. mit viel knusprigem brot zum dippen servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 28,
+        "carbs_g": 55,
+        "fat_g": 32
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "comfort-food",
+        "weekend",
+        "cozy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-classic-hard-light",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "slow-simmered shakshuka with charred peppers",
+        "de": "langsam geschmorte shakshuka mit gerösteter paprika"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "roast",
+        "simmer"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 420,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell peppers",
+            "de": "paprika"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "harissa",
+            "de": "harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "parsley",
+            "de": "petersilie"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "produce",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "char the peppers under a hot broiler or over a flame until blackened all over, about 10 minutes. steam in a covered bowl, then peel and slice.",
+            "de": "paprika unter dem heißen grill oder über der flamme rundherum schwarz rösten, etwa 10 minuten. in einer abgedeckten schüssel dämpfen, dann häuten und in streifen schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the onion in olive oil over medium-low heat until sweet and golden, about 7 minutes.",
+            "de": "zwiebel in olivenöl bei mittlerer bis niedriger hitze süß und goldig dünsten, etwa 7 minuten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stir in garlic, cumin and harissa for 1 minute, then add the charred peppers and tomatoes.",
+            "de": "knoblauch, kreuzkümmel und harissa 1 minute mitbraten, dann geröstete paprika und tomaten dazugeben."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "simmer low and slow for 20 minutes until the sauce turns deep red and thick.",
+            "de": "20 minuten sanft köcheln, bis die sauce tiefrot und dick ist."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "crack in the eggs, cover and poach for 5–6 minutes until the whites are just set.",
+            "de": "eier hineingleiten lassen, abdecken und 5–6 minuten pochieren, bis das eiweiß gerade fest ist."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "shower with parsley and bring the whole pan to the table.",
+            "de": "mit petersilie bestreuen und die ganze pfanne auf den tisch stellen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 28,
+        "fat_g": 24
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "spicy",
+        "weekend",
+        "slow-cooked"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-classic-hard-hearty",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "sunday shakshuka: charred peppers, feta, warm bread",
+        "de": "sonntags-shakshuka: geröstete paprika, feta, warmes brot"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "roast",
+        "simmer"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 720,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell peppers",
+            "de": "paprika"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "feta",
+          "name": {
+            "en": "feta",
+            "de": "feta"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "warmed",
+            "de": "aufgewärmt"
+          }
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "harissa",
+            "de": "harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "char the peppers under a hot broiler until blackened, about 10 minutes. steam in a covered bowl, peel and slice.",
+            "de": "paprika unter dem heißen grill schwarz rösten, etwa 10 minuten. abgedeckt dämpfen, häuten und in streifen schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the onion in olive oil until deep golden, about 8 minutes. stir in garlic and harissa for 1 minute.",
+            "de": "zwiebel in olivenöl tiefgoldig dünsten, etwa 8 minuten. knoblauch und harissa 1 minute mitbraten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add the peppers and tomatoes and simmer low for 20 minutes until thick and intensely red.",
+            "de": "paprika und tomaten dazugeben und 20 minuten sanft köcheln, bis die sauce dick und intensiv rot ist."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "crack in the eggs, scatter over half the feta, cover and poach for 6 minutes until just set.",
+            "de": "eier hineingleiten lassen, die hälfte des feta darüberstreuen, abdecken und 6 minuten pochieren, bis alles gerade fest ist."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "finish with the rest of the feta and a generous swirl of olive oil. serve with warm bread and zero shame.",
+            "de": "mit dem rest feta und einem großzügigen schuss olivenöl vollenden. mit warmem brot und ganz ohne scham servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 30,
+        "carbs_g": 58,
+        "fat_g": 38
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "comfort-food",
+        "weekend",
+        "spicy",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-vegan-easy-light",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "chickpea shakshuka with spinach",
+        "de": "kichererbsen-shakshuka mit spinat"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 400,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell pepper",
+            "de": "paprika"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "spinach",
+            "de": "spinat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion and bell pepper in olive oil over medium heat, about 5 minutes.",
+            "de": "zwiebel und paprika in olivenöl bei mittlerer hitze weich dünsten, etwa 5 minuten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in garlic, cumin and smoked paprika for 1 minute.",
+            "de": "knoblauch, kreuzkümmel und räucherpaprika 1 minute mitbraten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add tomatoes and chickpeas, season, and simmer for 10 minutes until saucy.",
+            "de": "tomaten und kichererbsen dazugeben, würzen und 10 minuten köcheln, bis alles schön sämig ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fold in the spinach and let it wilt for 2 minutes.",
+            "de": "spinat unterheben und 2 minuten zusammenfallen lassen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "serve straight from the pan with an extra drizzle of olive oil.",
+            "de": "direkt aus der pfanne servieren, mit einem extra schuss olivenöl."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 50,
+        "fat_g": 14
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "weeknight",
+        "high-protein",
+        "spicy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-vegan-easy-hearty",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "tofu shakshuka with crusty bread",
+        "de": "tofu-shakshuka mit knusprigem brot"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 650,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tofu",
+          "name": {
+            "en": "tofu",
+            "de": "tofu"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell pepper",
+            "de": "paprika"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "turmeric",
+          "name": {
+            "en": "turmeric",
+            "de": "kurkuma"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "crusty bread",
+            "de": "knuspriges brot"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "bakery"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion and bell pepper in olive oil over medium heat, about 5 minutes.",
+            "de": "zwiebel und paprika in olivenöl bei mittlerer hitze weich dünsten, etwa 5 minuten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in garlic, cumin and turmeric for 1 minute, then add the tomatoes and simmer for 8 minutes.",
+            "de": "knoblauch, kreuzkümmel und kurkuma 1 minute mitbraten, dann tomaten dazugeben und 8 minuten köcheln."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "nestle the crumbled tofu into the sauce and simmer for 5 more minutes so it soaks up the flavor.",
+            "de": "zerbröselten tofu in die sauce betten und weitere 5 minuten köcheln, damit er den geschmack aufnimmt."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "season boldly with salt and pepper and finish with a swirl of olive oil.",
+            "de": "mutig mit salz und pfeffer abschmecken und mit einem schuss olivenöl vollenden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "serve with crusty bread for scooping — no leftovers allowed.",
+            "de": "mit knusprigem brot zum dippen servieren — reste sind nicht erlaubt."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 28,
+        "carbs_g": 55,
+        "fat_g": 33
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "high-protein",
+        "comfort-food",
+        "cozy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-vegan-hard-light",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "slow shakshuka with charred peppers & chickpeas",
+        "de": "geschmorte shakshuka mit gerösteter paprika & kichererbsen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "roast",
+        "simmer"
+      ],
+      "time_minutes": 55,
+      "calories_per_serving": 460,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell peppers",
+            "de": "paprika"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "harissa",
+            "de": "harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "parsley",
+            "de": "petersilie"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "produce",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "char the peppers under a hot broiler until blackened, about 10 minutes. steam in a covered bowl, peel and slice.",
+            "de": "paprika unter dem heißen grill schwarz rösten, etwa 10 minuten. abgedeckt dämpfen, häuten und in streifen schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the onion in olive oil until sweet and golden, about 7 minutes. stir in garlic, cumin and harissa for 1 minute.",
+            "de": "zwiebel in olivenöl süß und goldig dünsten, etwa 7 minuten. knoblauch, kreuzkümmel und harissa 1 minute mitbraten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "add peppers, tomatoes and chickpeas and simmer low for 20 minutes until deep red and thick.",
+            "de": "paprika, tomaten und kichererbsen dazugeben und 20 minuten sanft köcheln, bis alles tiefrot und dick ist."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "taste and adjust the salt — a long simmer deserves a confident hand.",
+            "de": "abschmecken und salz nachjustieren — eine lange köchelzeit verdient eine mutige hand."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "scatter with parsley and serve straight from the pan.",
+            "de": "mit petersilie bestreuen und direkt aus der pfanne servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 17,
+        "carbs_g": 55,
+        "fat_g": 16
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "spicy",
+        "weekend",
+        "slow-cooked"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "shakshuka-vegan-hard-hearty",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "weekend shakshuka: charred peppers, spiced tofu, warm bread",
+        "de": "wochenend-shakshuka: geröstete paprika, gewürz-tofu, warmes brot"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "roast",
+        "simmer"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 740,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "canned-tomatoes",
+          "name": {
+            "en": "canned tomatoes",
+            "de": "dosentomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tofu",
+          "name": {
+            "en": "tofu",
+            "de": "tofu"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "id": "bell-pepper",
+          "name": {
+            "en": "bell peppers",
+            "de": "paprika"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced",
+            "de": "in feinen ringen"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "harissa",
+            "de": "harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "warmed",
+            "de": "aufgewärmt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "char the peppers under a hot broiler until blackened, about 10 minutes. steam in a covered bowl, peel and slice.",
+            "de": "paprika unter dem heißen grill schwarz rösten, etwa 10 minuten. abgedeckt dämpfen, häuten und in streifen schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the onion in olive oil until deep golden, about 8 minutes. stir in garlic, harissa and smoked paprika for 1 minute.",
+            "de": "zwiebel in olivenöl tiefgoldig dünsten, etwa 8 minuten. knoblauch, harissa und räucherpaprika 1 minute mitbraten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add peppers and tomatoes and simmer low for 20 minutes until thick and intensely flavored.",
+            "de": "paprika und tomaten dazugeben und 20 minuten sanft köcheln, bis die sauce dick und intensiv ist."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "nestle the crumbled tofu into the sauce and simmer 5 more minutes so it drinks up the spice.",
+            "de": "zerbröselten tofu in die sauce betten und weitere 5 minuten köcheln, damit er die schärfe aufsaugt."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "finish with a generous swirl of olive oil and serve with warm bread.",
+            "de": "mit einem großzügigen schuss olivenöl vollenden und mit warmem brot servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 30,
+        "carbs_g": 60,
+        "fat_g": 40
+      },
+      "tags": [
+        "breakfast",
+        "one-pan",
+        "high-protein",
+        "comfort-food",
+        "weekend",
+        "spicy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "faqs": [
+    {
+      "id": "faq-how-matching-works",
+      "category": "matching",
+      "question": {"en": "how does dietary matching work?", "de": "wie funktioniert das matching mit meiner ernährung?"},
+      "answer": {"en": "every dish exists in several variants — classic, vegan, easy, slow, light, hearty. you tell us your diet class (like vegan or halal) and any specific ingredients you avoid, and we always show you the variant of a dish that fits you best. you never have to think about it while browsing.", "de": "jedes gericht existiert in mehreren varianten — klassisch, vegan, schnell, langsam, leicht, herzhaft. du sagst uns deine ernährungsform (z. b. vegan oder halal) und welche zutaten du meidest, und wir zeigen dir immer die variante, die am besten zu dir passt. beim stöbern musst du an nichts denken."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-dish-never-disappears",
+      "category": "matching",
+      "question": {"en": "why do i still see dishes that don't match my diet?", "de": "warum sehe ich gerichte, die nicht zu meiner ernährung passen?"},
+      "answer": {"en": "because a dish is a concept, not a single recipe. döner doesn't disappear when you go vegan — you just get the seitan version. the card always shows the dish; the variant underneath quietly adapts to you.", "de": "weil ein gericht ein konzept ist, kein einzelnes rezept. döner verschwindet nicht, nur weil du vegan bist — du bekommst einfach die seitan-version. die karte zeigt immer das gericht; die variante darunter passt sich leise an dich an."},
+      "related_route": null
+    },
+    {
+      "id": "faq-variant-switcher",
+      "category": "recipes",
+      "question": {"en": "can i see the other variants of a dish?", "de": "kann ich mir die anderen varianten eines gerichts ansehen?"},
+      "answer": {"en": "yes. open any dish and use the variant switchers for diet, effort, and calorie level. your matched variant is preselected, but everything is one tap away — cooking for a friend with different needs is easy.", "de": "ja. öffne ein gericht und nutze die umschalter für ernährung, aufwand und kalorien. deine passende variante ist voreingestellt, aber alles andere ist nur einen tap entfernt — praktisch, wenn du für menschen mit anderen bedürfnissen kochst."},
+      "related_route": "/cookbook"
+    },
+    {
+      "id": "faq-calorie-target",
+      "category": "matching",
+      "question": {"en": "how do calorie targets and per-dish overrides work?", "de": "wie funktionieren kalorientziele und ausnahmen pro gericht?"},
+      "answer": {"en": "set a daily calorie target in settings and we prefer light or hearty variants accordingly (with a ±150 kcal tolerance, because recipes aren't lab equipment). on any dish you can override the default — hearty pancakes on sunday, light ones on tuesday.", "de": "lege ein tägliches kalorienziel in den einstellungen fest, und wir bevorzugen passend leichte oder herzhafte varianten (mit ±150 kcal toleranz, rezepte sind keine laborgeräte). bei jedem gericht kannst du eine ausnahme machen — herzhafte pancakes am sonntag, leichte am dienstag."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-class-vs-specific",
+      "category": "matching",
+      "question": {"en": "what's the difference between a diet class and a specific avoidance?", "de": "was ist der unterschied zwischen ernährungsform und einzelner zutat, die ich meide?"},
+      "answer": {"en": "a diet class (vegan, halal, low-fodmap...) excludes whole categories at once. a specific avoidance is a single ingredient you personally skip — say, cilantro or cashews. avoidances work like a tree: avoiding 'nuts' also excludes walnuts and almonds; avoiding just 'walnuts' keeps the rest.", "de": "eine ernährungsform (vegan, halal, fodmap-arm ...) schließt ganze kategorien auf einmal aus. eine einzelne vermeidung ist eine konkrete zutat, die du persönlich weglässt — etwa koriander oder cashews. vermeidungen funktionieren wie ein baum: wer 'nüsse' meidet, schließt auch walnüsse und mandeln aus; wer nur 'walnüsse' meidet, behält den rest."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-halal-kosher-note",
+      "category": "matching",
+      "question": {"en": "are the halal and kosher options certified?", "de": "sind die halal- und koscher-optionen zertifiziert?"},
+      "answer": {"en": "no — and we want to be honest about that. our filters match recipes by compatible ingredients (no pork, no alcohol, and so on), but that's not certification. sourcing, preparation, and certification are your kitchen's job, not an app's.", "de": "nein — und das wollen wir ehrlich sagen. unsere filter wählen rezepte nach kompatiblen zutaten aus (kein schwein, kein alkohol und so weiter), aber das ist keine zertifizierung. einkauf, zubereitung und zertifizierung liegen in deiner küche, nicht in einer app."},
+      "related_route": null
+    },
+    {
+      "id": "faq-saving-variants",
+      "category": "features",
+      "question": {"en": "can i save a specific variant?", "de": "kann ich eine bestimmte variante speichern?"},
+      "answer": {"en": "yes — saving a dish saves the exact variant you were looking at, so your cookbook keeps the sunday version and the tuesday version side by side if you like.", "de": "ja — wenn du ein gericht speicherst, wird genau die variante gespeichert, die du gerade offen hast. so kann dein kochbuch die sonntags- und die dienstags-version friedlich nebeneinander halten."},
+      "related_route": "/cookbook"
+    },
+    {
+      "id": "faq-shopping-list",
+      "category": "features",
+      "question": {"en": "how does the shopping list work?", "de": "wie funktioniert die einkaufsliste?"},
+      "answer": {"en": "add any saved variant or planned meal and we aggregate the ingredients — three recipes calling for onion become one line saying three onions. items are grouped by supermarket aisle so you walk the store once.", "de": "füge gespeicherte varianten oder geplante mahlzeiten hinzu, und wir rechnen die zutaten zusammen — aus dreimal zwiebel in drei rezepten wird eine zeile mit drei zwiebeln. sortiert wird nach supermarkt-regal, damit du nur einmal durch den laden läufst."},
+      "related_route": "/shopping"
+    },
+    {
+      "id": "faq-meal-planning",
+      "category": "features",
+      "question": {"en": "can i plan my week?", "de": "kann ich meine woche planen?"},
+      "answer": {"en": "the meal plan lets you drop variants onto days and meal slots — breakfast, lunch, dinner. everything you plan flows straight into the shopping list, and your calorie target shows up per day.", "de": "im wochenplan legst du varianten auf tage und mahlzeiten — frühstück, mittag, abend. alles geplante fließt direkt in die einkaufsliste, und dein kalorienziel wird pro tag angezeigt."},
+      "related_route": "/meal-plan"
+    },
+    {
+      "id": "faq-cook-mode-timers",
+      "category": "features",
+      "question": {"en": "what can cook mode do?", "de": "was kann der kochmodus?"},
+      "answer": {"en": "cook mode walks you through a recipe step by step in big, sauce-proof text. steps with a time get a built-in timer — start it with one tap, and when it rings you get a sound plus a bright visual flash, handy when your hands are full or your phone is across the kitchen.", "de": "der kochmodus führt dich schritt für schritt durchs rezept, in großer, soßenfester schrift. schritte mit zeitangabe bekommen einen eingebauten timer — ein tap startet ihn, und beim klingeln gibt es einen ton plus ein helles visuelles aufblitzen, praktisch wenn deine hände voll sind oder das handy am anderen ende der küche liegt."},
+      "related_route": null
+    },
+    {
+      "id": "faq-backup-restore",
+      "category": "features",
+      "question": {"en": "how do i back up my data?", "de": "wie sichere ich meine daten?"},
+      "answer": {"en": "settings → backup exports everything — saved recipes, settings, meal plan — into one file you can keep wherever you like. set a password and the backup is encrypted; without one it stays a plain readable file. restore works from the same screen on any device running the app.", "de": "einstellungen → backup exportiert alles — gespeicherte rezepte, einstellungen, wochenplan — in eine einzige datei, die du behalten darfst, wo du willst. mit passwort wird das backup verschlüsselt; ohne bleibt es eine einfache lesbare datei. das wiederherstellen klappt vom selben bildschirm aus auf jedem gerät mit der app."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-languages",
+      "category": "features",
+      "question": {"en": "which languages does the app speak?", "de": "welche sprachen spricht die app?"},
+      "answer": {"en": "english and german, every last recipe step. the app follows your device language, and you can switch manually in settings whenever you want.", "de": "englisch und deutsch, bis zum letzten rezeptschritt. die app folgt der sprache deines geräts, und in den einstellungen kannst du jederzeit manuell wechseln."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-offline-privacy",
+      "category": "privacy",
+      "question": {"en": "does the app need internet or an account?", "de": "braucht die app internet oder ein konto?"},
+      "answer": {"en": "neither. every recipe ships inside the app, and everything you save lives only on your device. no account, no tracking, no analytics — the only network traffic is you downloading the app itself.", "de": "weder noch. jedes rezept steckt schon in der app, und alles, was du speicherst, bleibt nur auf deinem gerät. kein konto, kein tracking, keine analyse — der einzige netzwerkverkehr ist der download der app selbst."},
+      "related_route": null
+    },
+    {
+      "id": "faq-request-content",
+      "category": "features",
+      "question": {"en": "can i request a dish?", "de": "kann ich mir ein gericht wünschen?"},
+      "answer": {"en": "please do. there's a request option in the settings — tell us what's missing from the cookbook and it goes on the list for a future content update.", "de": "sehr gern. in den einstellungen gibt es eine wunsch-option — sag uns, was im kochbuch fehlt, und es landet auf der liste für ein zukünftiges inhalts-update."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-backup-import-fails",
+      "category": "troubleshooting",
+      "question": {"en": "my backup import fails — what now?", "de": "das importieren meines backups schlägt fehl — was jetzt?"},
+      "answer": {"en": "three usual suspects: the file was edited or corrupted (re-export a fresh one), the password is wrong (encrypted backups need the exact password, we can't recover it), or the backup comes from a much newer app version. if none of that fits, send us the error message via the feedback option.", "de": "drei übliche verdächtige: die datei wurde verändert oder ist beschädigt (exportiere eine frische), das passwort stimmt nicht (verschlüsselte backups brauchen exakt das passwort, wir können es nicht wiederherstellen), oder das backup stammt aus einer viel neueren app-version. wenn nichts davon passt, schick uns die fehlermeldung über die feedback-option."},
+      "related_route": "/settings"
+    },
+    {
+      "id": "faq-missing-variant",
+      "category": "troubleshooting",
+      "question": {"en": "a variant i expected isn't there.", "de": "eine variante, die ich erwartet hätte, fehlt."},
+      "answer": {"en": "if a combination shows as unavailable, it simply hasn't been written yet — some lattice cells are still in the test kitchen. the app falls back to your closest matching variant in the meantime, and missing ones arrive with content updates.", "de": "wenn eine kombination als nicht verfügbar angezeigt wird, wurde sie schlicht noch nicht geschrieben — manche felder des gitters sind noch in der testküche. bis dahin zeigt dir die app die am nächsten passende variante, und fehlende kommen mit inhalts-updates nach."},
+      "related_route": null
+    },
+    {
+      "id": "faq-allergen-accuracy",
+      "category": "matching",
+      "question": {"en": "how reliable is the ingredient information for allergies?", "de": "wie verlässlich sind die angaben bei allergien?"},
+      "answer": {"en": "we flag what's in each recipe honestly and carefully, but we're a cookbook, not a lab. cross-contamination, brand differences, and hidden ingredients in packaged goods are beyond what any app can promise — with a serious allergy, always double-check labels yourself.", "de": "wir kennzeichnen ehrlich und sorgfältig, was in jedem rezept steckt, aber wir sind ein kochbuch, kein labor. kreuzkontamination, markenunterschiede und versteckte zutaten in fertigprodukten kann keine app versprechen — bei einer ernsten allergie prüfe etiketten immer selbst."},
+      "related_route": null
+    },
+    {
+      "id": "faq-reset-everything",
+      "category": "troubleshooting",
+      "question": {"en": "something feels broken. can i start fresh?", "de": "irgendwas fühlt sich kaputt an. kann ich von vorne anfangen?"},
+      "answer": {"en": "before you do: make a backup. settings → reset clears saved recipes, settings, and the meal plan, and returns the app to day one. import your backup afterwards and you're back where you were — usually with the weirdness gone.", "de": "vorher bitte: ein backup machen. einstellungen → zurücksetzen löscht gespeicherte rezepte, einstellungen und den wochenplan und versetzt die app zurück auf tag eins. danach das backup importieren, und du bist wieder da, wo du warst — meist ohne den komischen fehler."},
+      "related_route": "/settings"
+    }
+  ]
+}

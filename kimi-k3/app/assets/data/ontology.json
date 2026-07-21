@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "contains_flags": [
+    {"id": "pork", "label": {"en": "pork", "de": "schwein"}},
+    {"id": "beef", "label": {"en": "beef", "de": "rind"}},
+    {"id": "lamb", "label": {"en": "lamb", "de": "lamm"}},
+    {"id": "poultry", "label": {"en": "poultry", "de": "geflügel"}},
+    {"id": "fish", "label": {"en": "fish", "de": "fisch"}},
+    {"id": "shellfish", "label": {"en": "shellfish", "de": "schalentiere"}},
+    {"id": "molluscs", "label": {"en": "molluscs", "de": "weichtiere"}},
+    {"id": "egg", "label": {"en": "egg", "de": "ei"}},
+    {"id": "dairy", "label": {"en": "dairy", "de": "milchprodukte"}},
+    {"id": "gluten", "label": {"en": "gluten", "de": "gluten"}},
+    {"id": "soy", "label": {"en": "soy", "de": "soja"}},
+    {"id": "peanuts", "label": {"en": "peanuts", "de": "erdnüsse"}},
+    {"id": "tree-nuts", "label": {"en": "tree nuts", "de": "baumnüsse"}},
+    {"id": "almonds", "label": {"en": "almonds", "de": "mandeln"}},
+    {"id": "walnuts", "label": {"en": "walnuts", "de": "walnüsse"}},
+    {"id": "cashews", "label": {"en": "cashews", "de": "cashews"}},
+    {"id": "pistachios", "label": {"en": "pistachios", "de": "pistazien"}},
+    {"id": "sesame", "label": {"en": "sesame", "de": "sesam"}},
+    {"id": "mustard", "label": {"en": "mustard", "de": "senf"}},
+    {"id": "celery", "label": {"en": "celery", "de": "sellerie"}},
+    {"id": "lupin", "label": {"en": "lupin", "de": "lupinen"}},
+    {"id": "sulphites", "label": {"en": "sulphites", "de": "sulfite"}},
+    {"id": "alcohol", "label": {"en": "alcohol", "de": "alkohol"}},
+    {"id": "caffeine", "label": {"en": "caffeine", "de": "koffein"}},
+    {"id": "added-sugar", "label": {"en": "added sugar", "de": "zugesetzter zucker"}},
+    {"id": "high-fodmap", "label": {"en": "high fodmap", "de": "fodmap-reich"}},
+    {"id": "gelatin-non-halal", "label": {"en": "gelatin (non-halal)", "de": "gelatine (nicht halal)"}},
+    {"id": "gelatin-non-kosher", "label": {"en": "gelatin (non-kosher)", "de": "gelatine (nicht koscher)"}},
+    {"id": "honey", "label": {"en": "honey", "de": "honig"}}
+  ],
+  "compound_flags": [
+    {"id": "vegan", "label": {"en": "vegan", "de": "vegan"}, "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "honey", "gelatin-non-halal", "gelatin-non-kosher"]},
+    {"id": "vegetarian", "label": {"en": "vegetarian", "de": "vegetarisch"}, "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"]},
+    {"id": "pescatarian", "label": {"en": "pescatarian", "de": "pescetarisch"}, "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal"]},
+    {"id": "halal", "label": {"en": "halal", "de": "halal"}, "expands_to": ["pork", "alcohol", "gelatin-non-halal"]},
+    {"id": "kosher", "label": {"en": "kosher", "de": "koscher"}, "expands_to": ["pork", "shellfish", "gelatin-non-kosher"]},
+    {"id": "low-fodmap", "label": {"en": "low fodmap", "de": "fodmap-arm"}, "expands_to": ["high-fodmap"]},
+    {"id": "sugar-free", "label": {"en": "sugar-free", "de": "zuckerfrei"}, "expands_to": ["added-sugar"]},
+    {"id": "lactose-free", "label": {"en": "lactose-free", "de": "laktosefrei"}, "expands_to": ["dairy"]}
+  ],
+  "effort_levels": [
+    {"id": "easy", "label": {"en": "easy", "de": "einfach"}},
+    {"id": "medium", "label": {"en": "medium", "de": "mittel"}},
+    {"id": "hard", "label": {"en": "hard", "de": "aufwendig"}}
+  ],
+  "time_buckets": ["≤15", "≤30", "≤60", ">60"],
+  "calorie_buckets": ["≤400", "≤600", "≤800", ">800"],
+  "techniques": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"],
+  "calorie_tolerance": 150
+}

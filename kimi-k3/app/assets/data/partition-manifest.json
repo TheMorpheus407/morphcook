@@ -1,0 +1,690 @@
+{
+  "version": 1,
+  "generated_at": "2026-07-20T00:00:00Z",
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "description": {
+        "en": "the everyday dozen-ish: eight dishes everyone asks for",
+        "de": "die alltags-favoriten: acht gerichte, nach denen alle fragen"
+      },
+      "recipe_count": 64,
+      "load_strategy": "eager"
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "description": {
+        "en": "the weekend shelf: salads, bakes, tacos, risotto",
+        "de": "das wochenend-regal: salate, gebäck, tacos, risotto"
+      },
+      "recipe_count": 32,
+      "load_strategy": "lazy"
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "description": {
+        "en": "italian classics, from alfredo to slow-stirred risotto",
+        "de": "italienische klassiker, von alfredo bis langsam gerührtem risotto"
+      },
+      "recipe_count": 16,
+      "load_strategy": "lazy"
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "description": {
+        "en": "wok nights and broth days: thai, japanese, indian",
+        "de": "wok-abende und brüh-tage: thai, japanisch, indisch"
+      },
+      "recipe_count": 24,
+      "load_strategy": "lazy"
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "description": {
+        "en": "warm bread, bright spices, shared pans",
+        "de": "warmes brot, helle gewürze, gemeinsame pfannen"
+      },
+      "recipe_count": 16,
+      "load_strategy": "lazy"
+    }
+  ],
+  "cross_references": [
+    {
+      "recipe_id": "alfredo-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "alfredo-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-italian"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-classic-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-classic-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-classic-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-classic-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-vegan-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-vegan-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-vegan-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "banana-bread-vegan-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "burger-classic-easy-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-classic-easy-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-classic-hard-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-classic-hard-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-vegan-easy-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-vegan-easy-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-vegan-hard-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "burger-vegan-hard-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-classic-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-classic-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-classic-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-classic-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-vegan-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-vegan-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-vegan-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "caesar-salad-vegan-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "chickpea-curry-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "doener-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "doener-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pad-thai-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-classic-easy-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-classic-easy-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-classic-hard-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-classic-hard-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-vegan-easy-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-vegan-easy-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-vegan-hard-hearty",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "pancakes-vegan-hard-light",
+      "partitions": [
+        "core"
+      ]
+    },
+    {
+      "recipe_id": "ramen-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "ramen-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-asian"
+      ]
+    },
+    {
+      "recipe_id": "risotto-classic-easy-hearty",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-classic-easy-light",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-classic-hard-hearty",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-classic-hard-light",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-vegan-easy-hearty",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-vegan-easy-light",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-vegan-hard-hearty",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "risotto-vegan-hard-light",
+      "partitions": [
+        "cuisine-italian",
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-classic-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-classic-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-classic-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-classic-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-vegan-easy-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-vegan-easy-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-vegan-hard-hearty",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "shakshuka-vegan-hard-light",
+      "partitions": [
+        "core",
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "recipe_id": "tacos-classic-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-classic-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-classic-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-classic-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-vegan-easy-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-vegan-easy-light",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-vegan-hard-hearty",
+      "partitions": [
+        "extended"
+      ]
+    },
+    {
+      "recipe_id": "tacos-vegan-hard-light",
+      "partitions": [
+        "extended"
+      ]
+    }
+  ]
+}

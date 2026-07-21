@@ -1,0 +1,5821 @@
+{
+  "recipes": [
+    {
+      "id": "caesar-salad-classic-easy-light",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "weeknight caesar, crisp and simple",
+        "de": "caesar-salat für unter der woche"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "fish",
+        "egg",
+        "dairy",
+        "mustard"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "raw",
+        "bake"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 380,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "cubed, for croutons",
+            "de": "gewürfelt, für croutons"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": {
+            "en": "mayonnaise",
+            "de": "mayonnaise"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "id": "anchovies",
+          "name": {
+            "en": "anchovies",
+            "de": "sardellen"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "protein",
+          "note": {
+            "en": "fillets",
+            "de": "filets"
+          }
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "dijon-mustard",
+          "name": {
+            "en": "dijon mustard",
+            "de": "dijonsenf"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bake the bread cubes at 180° until golden and crunchy.",
+            "de": "die brotwürfel bei 180° backen, bis sie goldbraun und knusprig sind."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk mayo, dijon, lemon juice and grated garlic into a dressing; mash in the anchovies until they disappear.",
+            "de": "mayo, senf, zitronensaft und geriebenen knoblauch zu einem dressing verrühren; die sardellen hineindrücken, bis sie verschwinden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "chop the lettuce and spin it dry — dry leaves hold the dressing.",
+            "de": "den salat schneiden und gut trocken schleudern — trockene blätter halten das dressing."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the lettuce with the dressing until every leaf shines.",
+            "de": "den salat mit dem dressing mischen, bis jedes blatt glänzt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "top with croutons and shaved parmesan.",
+            "de": "mit croutons und parmesanhobeln toppen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 28,
+        "fat_g": 24
+      },
+      "tags": [
+        "weeknight",
+        "fresh",
+        "classic"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-classic-easy-hearty",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "chicken caesar, fully loaded",
+        "de": "chicken-caesar, richtig satt"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "poultry",
+        "gluten",
+        "fish",
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 650,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken breast",
+            "de": "hähnchenbrust"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "protein"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "cubed, for croutons",
+            "de": "gewürfelt, für croutons"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": {
+            "en": "mayonnaise",
+            "de": "mayonnaise"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "id": "anchovies",
+          "name": {
+            "en": "anchovies",
+            "de": "sardellen"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "protein",
+          "note": {
+            "en": "fillets",
+            "de": "filets"
+          }
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "pan-fry the chicken until golden and cooked through, then let it rest 5 minutes.",
+            "de": "das hähnchen goldbraun und gar braten, dann 5 minuten ruhen lassen."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "bake the bread cubes into croutons at 180° until crisp.",
+            "de": "die brotwürfel bei 180° zu knusprigen croutons backen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk mayo, lemon juice, garlic and mashed anchovies into a thick dressing.",
+            "de": "mayo, zitronensaft, knoblauch und zerdrückte sardellen zu einem dicken dressing verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "chop the lettuce and spin it dry.",
+            "de": "den salat schneiden und trocken schleudern."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss lettuce with dressing and croutons.",
+            "de": "salat mit dressing und croutons mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "slice the chicken over the top and shower everything with parmesan.",
+            "de": "das hähnchen in scheiben darauflegen und alles mit parmesan bedecken."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 40,
+        "carbs_g": 40,
+        "fat_g": 36
+      },
+      "tags": [
+        "high-protein",
+        "weeknight",
+        "crowd-pleaser",
+        "classic"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-classic-hard-light",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "caesar from scratch, slow croutons and all",
+        "de": "caesar von grund auf, mit ofencroutons"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "fish",
+        "egg",
+        "dairy",
+        "mustard"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "raw",
+        "bake"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 420,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "torn, for croutons",
+            "de": "gerupft, für croutons"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": {
+            "en": "mayonnaise",
+            "de": "mayonnaise"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "id": "anchovies",
+          "name": {
+            "en": "anchovies",
+            "de": "sardellen"
+          },
+          "amount": 5,
+          "unit": "pcs",
+          "aisle": "protein",
+          "note": {
+            "en": "fillets",
+            "de": "filets"
+          }
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "dijon-mustard",
+          "name": {
+            "en": "dijon mustard",
+            "de": "dijonsenf"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "tear the bread into rough croutons and bake them low and slow until crisp all the way through.",
+            "de": "das brot zu rustikalen croutons rupfen und bei niedriger hitze langsam durchknuspern."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mash the anchovies and garlic into a paste with the side of your knife.",
+            "de": "sardellen und knoblauch mit der messerseite zu einer paste zerdrücken."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "whisk in dijon and lemon juice, then the mayo, a spoon at a time, until the dressing turns silky.",
+            "de": "senf und zitronensaft einrühren, dann die mayo löffelweise, bis das dressing seidig wird."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wash the lettuce, spin it very dry and chill it 10 minutes for maximum crunch.",
+            "de": "den salat waschen, sehr trocken schleudern und 10 minuten kalt stellen für maximalen crunch."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "tear the leaves into a big bowl.",
+            "de": "die blätter in eine große schüssel zupfen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss with the dressing, patiently, until every leaf is coated.",
+            "de": "geduldig mit dem dressing mischen, bis jedes blatt überzogen ist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "crown with croutons and parmesan shavings.",
+            "de": "mit croutons und parmesanhobeln krönen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 32,
+        "fat_g": 25
+      },
+      "tags": [
+        "weekend",
+        "from-scratch",
+        "classic",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-classic-hard-hearty",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "grilled chicken caesar, the full sunday version",
+        "de": "caesar mit gegrilltem hähnchen, die sonntagsversion"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "poultry",
+        "gluten",
+        "fish",
+        "egg",
+        "dairy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "grill",
+        "bake"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 720,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken breast",
+            "de": "hähnchenbrust"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "protein"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "torn, for croutons",
+            "de": "gerupft, für croutons"
+          }
+        },
+        {
+          "id": "mayonnaise",
+          "name": {
+            "en": "mayonnaise",
+            "de": "mayonnaise"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "shaved",
+            "de": "gehobelt"
+          }
+        },
+        {
+          "id": "anchovies",
+          "name": {
+            "en": "anchovies",
+            "de": "sardellen"
+          },
+          "amount": 6,
+          "unit": "pcs",
+          "aisle": "protein",
+          "note": {
+            "en": "fillets",
+            "de": "filets"
+          }
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "marinate the chicken with lemon juice, grated garlic and a spoon of mayo while the oven heats.",
+            "de": "das hähnchen mit zitronensaft, geriebenem knoblauch und einem löffel mayo marinieren, während der ofen heiß wird."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake the torn bread into slow, golden croutons.",
+            "de": "das gerupfte brot langsam zu goldenen croutons backen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mash anchovies and garlic, then whisk with mayo and lemon juice into a thick dressing.",
+            "de": "sardellen und knoblauch zerdrücken, dann mit mayo und zitronensaft zu einem dicken dressing verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "grill the chicken until charred at the edges; rest, then slice.",
+            "de": "das hähnchen grillen, bis die ränder röstspuren haben; ruhen lassen, dann aufschneiden."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "wash and dry the lettuce, tear into a bowl.",
+            "de": "den salat waschen, trocknen und in eine schüssel zupfen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss with the dressing and most of the croutons.",
+            "de": "mit dem dressing und dem großteil der croutons mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "top with sliced chicken, the remaining croutons and a snowfall of parmesan.",
+            "de": "mit hähnchenscheiben, den restlichen croutons und einem parmesan-schneegestöber toppen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 44,
+        "fat_g": 42
+      },
+      "tags": [
+        "weekend",
+        "high-protein",
+        "crowd-pleaser",
+        "from-scratch"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-vegan-easy-light",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "crunchy caesar with cashew dressing",
+        "de": "knackiger caesar mit cashewdressing"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "cashews",
+        "tree-nuts",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "raw",
+        "bake"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 390,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "cubed, for croutons",
+            "de": "gewürfelt, für croutons"
+          }
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "capers",
+          "name": {
+            "en": "capers",
+            "de": "kapern"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "bake the bread cubes at 180° until golden and crunchy.",
+            "de": "die brotwürfel bei 180° backen, bis sie goldbraun und knusprig sind."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk cashew cream, nutritional yeast, lemon juice, grated garlic and chopped capers into a dressing.",
+            "de": "cashewcreme, hefeflocken, zitronensaft, geriebenen knoblauch und gehackte kapern zu einem dressing verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "chop the lettuce and spin it dry.",
+            "de": "den salat schneiden und trocken schleudern."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the lettuce with the dressing and the chickpeas.",
+            "de": "den salat mit dem dressing und den kichererbsen mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "finish with croutons and a few whole capers.",
+            "de": "mit croutons und ein paar ganzen kapern vollenden."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 14,
+        "carbs_g": 44,
+        "fat_g": 18
+      },
+      "tags": [
+        "weeknight",
+        "fresh",
+        "classic"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-vegan-easy-hearty",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "loaded chickpea caesar",
+        "de": "sattmacher-caesar mit kichererbsen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "cashews",
+        "tree-nuts",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "raw"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "cubed, for croutons",
+            "de": "gewürfelt, für croutons"
+          }
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 6,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "capers",
+          "name": {
+            "en": "capers",
+            "de": "kapern"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crisp the chickpeas in olive oil until golden and crackly.",
+            "de": "die kichererbsen in olivenöl goldbraun und knusprig braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "bake the bread cubes into croutons at 180°.",
+            "de": "die brotwürfel bei 180° zu croutons backen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk cashew cream, nutritional yeast, lemon juice and chopped capers into a thick dressing.",
+            "de": "cashewcreme, hefeflocken, zitronensaft und gehackte kapern zu einem dicken dressing verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "chop the lettuce and spin it dry.",
+            "de": "den salat schneiden und trocken schleudern."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss everything together, generously.",
+            "de": "alles großzügig miteinander mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "top with the crispy chickpeas and extra capers.",
+            "de": "mit den knusprigen kichererbsen und extra kapern toppen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 62,
+        "fat_g": 32
+      },
+      "tags": [
+        "weeknight",
+        "crowd-pleaser",
+        "fresh"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-vegan-hard-light",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "from-scratch caesar with blended cashew dressing",
+        "de": "caesar von grund auf mit cashew-dressing"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "cashews",
+        "tree-nuts",
+        "gluten"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "raw",
+        "bake"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "torn, for croutons",
+            "de": "gerupft, für croutons"
+          }
+        },
+        {
+          "id": "cashews",
+          "name": {
+            "en": "cashews",
+            "de": "cashewkerne"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "capers",
+          "name": {
+            "en": "capers",
+            "de": "kapern"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water for 30 minutes.",
+            "de": "die cashews 30 minuten in heißem wasser einweichen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "slow-bake the torn bread into crunchy croutons.",
+            "de": "das gerupfte brot langsam zu knusprigen croutons backen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "blend the cashews with lemon juice, garlic, nutritional yeast and a splash of water until completely silky.",
+            "de": "die cashews mit zitronensaft, knoblauch, hefeflocken und einem schuss wasser pürieren, bis alles seidig glatt ist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stir in the chopped capers — your anchovy stand-in.",
+            "de": "die gehackten kapern unterrühren — dein sardellen-ersatz."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wash the lettuce, spin it dry and chill it for maximum crunch.",
+            "de": "den salat waschen, trocken schleudern und kalt stellen für maximalen crunch."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the leaves with the dressing and the chickpeas.",
+            "de": "die blätter mit dem dressing und den kichererbsen mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "top with croutons, more capers and a dusting of nutritional yeast.",
+            "de": "mit croutons, mehr kapern und einer prise hefeflocken toppen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 46,
+        "fat_g": 21
+      },
+      "tags": [
+        "weekend",
+        "from-scratch",
+        "fresh",
+        "cozy"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "caesar-salad-vegan-hard-hearty",
+      "dish_id": "caesar-salad",
+      "title": {
+        "en": "the big sunday caesar with roasted chickpeas",
+        "de": "der große sonntags-caesar mit gerösteten kichererbsen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "cashews",
+        "tree-nuts",
+        "gluten"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "bake",
+        "roast"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "romaine lettuce",
+            "de": "romana-salat"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bread",
+          "name": {
+            "en": "bread",
+            "de": "brot"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "bakery",
+          "note": {
+            "en": "torn, for croutons",
+            "de": "gerupft, für croutons"
+          }
+        },
+        {
+          "id": "cashews",
+          "name": {
+            "en": "cashews",
+            "de": "cashewkerne"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "capers",
+          "name": {
+            "en": "capers",
+            "de": "kapern"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "lemon",
+            "de": "zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "chickpeas",
+            "de": "kichererbsen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water for 30 minutes.",
+            "de": "die cashews 30 minuten in heißem wasser einweichen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "roast the chickpeas with olive oil until deeply crisp.",
+            "de": "die kichererbsen mit olivenöl rösten, bis sie richtig knusprig sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "bake the torn bread into golden croutons.",
+            "de": "das gerupfte brot zu goldenen croutons backen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend cashews, lemon juice, garlic, nutritional yeast and a splash of water into a thick, glossy dressing.",
+            "de": "cashews, zitronensaft, knoblauch, hefeflocken und einen schuss wasser zu einem dicken, glänzenden dressing pürieren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the chopped capers.",
+            "de": "die gehackten kapern unterrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "tear the lettuce and toss with the dressing until coated.",
+            "de": "den salat zupfen und mit dem dressing mischen, bis alles überzogen ist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "pile on the roasted chickpeas and croutons. lunch of champions.",
+            "de": "die gerösteten kichererbsen und croutons daraufhäufen. ein mittagessen für champion:innen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 22,
+        "carbs_g": 64,
+        "fat_g": 38
+      },
+      "tags": [
+        "weekend",
+        "from-scratch",
+        "crowd-pleaser",
+        "high-protein"
+      ],
+      "meal_types": [
+        "lunch"
+      ]
+    },
+    {
+      "id": "banana-bread-classic-easy-light",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "everyday banana bread muffins",
+        "de": "bananenbrot-muffins für jeden tag"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "bake"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe, lots of brown spots",
+            "de": "sehr reif, mit vielen braunen punkten"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "egg",
+            "de": "ei"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "melted",
+            "de": "geschmolzen"
+          }
+        },
+        {
+          "id": "sugar",
+          "name": {
+            "en": "sugar",
+            "de": "zucker"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and line 6 muffin cups with paper liners.",
+            "de": "ofen auf 200 °c vorheizen und 6 muffinförmchen mit papierförmchen auslegen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "mash the bananas with a fork until mostly smooth, then whisk in the egg, melted butter and sugar.",
+            "de": "bananen mit einer gabel zerdrücken, dann ei, geschmolzene butter und zucker unterschlagen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon. stop as soon as no dry streaks remain — lumpy is good.",
+            "de": "mehl, natron und zimt unterheben. aufhören, sobald nichts mehr trocken ist — klumpig ist gut."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "divide the batter between the cups, filling each about three quarters full.",
+            "de": "teig auf die förmchen verteilen, jeweils etwa dreiviertel voll."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake until golden and a skewer comes out clean.",
+            "de": "backen, bis sie goldbraun sind und ein stäbchen sauber herauskommt."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "cool for five minutes, then eat one warm. you earned it.",
+            "de": "fünf minuten abkühlen lassen, dann einen warm essen. verdient."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "macros": {
+        "protein_g": 8,
+        "carbs_g": 60,
+        "fat_g": 15
+      },
+      "tags": [
+        "breakfast",
+        "quick-bread",
+        "kid-friendly",
+        "meal-prep"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-classic-easy-hearty",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "chocolate chunk banana bread muffins",
+        "de": "bananenbrot-muffins mit schokostücken"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "walnuts",
+        "tree-nuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "bake"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 660,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 140,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "melted",
+            "de": "geschmolzen"
+          }
+        },
+        {
+          "id": "sugar",
+          "name": {
+            "en": "sugar",
+            "de": "zucker"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "walnuts",
+          "name": {
+            "en": "walnuts",
+            "de": "walnüsse"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": {
+            "en": "chocolate",
+            "de": "schokolade"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "chopped into chunks",
+            "de": "in stücke gehackt"
+          }
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and line 8 muffin cups.",
+            "de": "ofen auf 200 °c vorheizen und 8 muffinförmchen auslegen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "mash the bananas, then whisk in the eggs, melted butter and sugar until glossy.",
+            "de": "bananen zerdrücken, dann eier, geschmolzene butter und zucker glänzend verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then the walnuts and most of the chocolate.",
+            "de": "mehl, natron und zimt unterheben, dann walnüsse und den großteil der schokolade."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill the cups and press the last chocolate chunks on top so they melt into little pools.",
+            "de": "förmchen füllen und die letzten schokostücke obenauf drücken, damit sie zu kleinen pfützen schmelzen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake until domed and deep golden.",
+            "de": "backen, bis sie schön gewölbt und tief goldbraun sind."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "give them five minutes, then split one open while the chocolate is still soft.",
+            "de": "fünf minuten warten, dann einen aufbrechen, solange die schokolade noch weich ist."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 75,
+        "fat_g": 32
+      },
+      "tags": [
+        "breakfast",
+        "comfort-food",
+        "kid-friendly",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-classic-hard-light",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "sunday banana bread with brown butter",
+        "de": "sonntags-bananenbrot mit brauner butter"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "roast"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 470,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 130,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "egg",
+            "de": "ei"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "brown-sugar",
+          "name": {
+            "en": "brown sugar",
+            "de": "brauner zucker"
+          },
+          "amount": 45,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "vanilla",
+          "name": {
+            "en": "vanilla",
+            "de": "vanille"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c. roast the bananas in their skins on a tray until blackened and soft — this is where the deep flavor comes from.",
+            "de": "ofen auf 200 °c heizen. bananen in der schale auf einem blech rösten, bis sie schwarz und weich sind — hier entsteht der tiefe geschmack."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "meanwhile melt the butter in a small pan and keep cooking until it smells nutty and turns amber. take it off the heat before it burns.",
+            "de": "währenddessen butter in einem kleinen topf schmelzen und weiterköcheln, bis sie nussig duftet und bernsteinfarben ist. vor dem anbrennen vom herd nehmen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "squeeze the roasted banana flesh into a bowl, mash, and whisk in the brown butter, egg, brown sugar and vanilla.",
+            "de": "das geröstete bananenfruchtfleisch in eine schüssel drücken, zerdrücken und mit brauner butter, ei, braunem zucker und vanille verrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then pour into a small lined loaf tin.",
+            "de": "mehl, natron und zimt unterheben, dann in eine kleine ausgelegte kastenform füllen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "drop the oven to 170°c and bake low and slow until a skewer comes out with just a few moist crumbs.",
+            "de": "ofen auf 170 °c runterschalten und langsam backen, bis am stäbchen nur noch ein paar feuchte krümel hängen."
+          },
+          "timer_seconds": 3300
+        },
+        {
+          "text": {
+            "en": "rest in the tin for ten minutes, then slice thick and eat slightly warm.",
+            "de": "zehn minuten in der form ruhen lassen, dann dick aufschneiden und lauwarm essen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 9,
+        "carbs_g": 62,
+        "fat_g": 18
+      },
+      "tags": [
+        "breakfast",
+        "weekend-baking",
+        "cozy",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-classic-hard-hearty",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "brown butter banana bread with walnuts & chocolate",
+        "de": "bananenbrot mit brauner butter, walnüssen & schokolade"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "gluten",
+        "walnuts",
+        "tree-nuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "roast"
+      ],
+      "time_minutes": 80,
+      "calories_per_serving": 720,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "eggs",
+            "de": "eier"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "brown-sugar",
+          "name": {
+            "en": "brown sugar",
+            "de": "brauner zucker"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "walnuts",
+          "name": {
+            "en": "walnuts",
+            "de": "walnüsse"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "toasted and chopped",
+            "de": "geröstet und gehackt"
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": {
+            "en": "chocolate",
+            "de": "schokolade"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "chopped into chunks",
+            "de": "in stücke gehackt"
+          }
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and roast the bananas in their skins until black and syrupy.",
+            "de": "ofen auf 200 °c heizen und die bananen in der schale rösten, bis sie schwarz und sirupartig sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "brown the butter in a small pan until amber and nutty, then let it cool for a few minutes.",
+            "de": "butter in einem kleinen topf braun werden lassen, bis sie bernsteinfarben und nussig ist, dann kurz abkühlen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "mash the roasted bananas and whisk in the brown butter, eggs and brown sugar until the mixture looks like caramel.",
+            "de": "geröstete bananen zerdrücken und mit brauner butter, eiern und braunem zucker verrühren, bis es wie karamell aussieht."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then the walnuts and chocolate. scrape into a lined loaf tin.",
+            "de": "mehl, natron und zimt unterheben, dann walnüsse und schokolade. in eine ausgelegte kastenform füllen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake at 170°c until deeply browned and a skewer hits only melted chocolate, not raw batter.",
+            "de": "bei 170 °c backen, bis das brot tiefbraun ist und am stäbchen nur geschmolzene schokolade klebt, kein roher teig."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "cool for fifteen minutes — the hardest step of the day — then slice.",
+            "de": "fünfzehn minuten abkühlen lassen — der schwerste schritt des tages — dann aufschneiden."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 13,
+        "carbs_g": 82,
+        "fat_g": 36
+      },
+      "tags": [
+        "breakfast",
+        "weekend-baking",
+        "comfort-food",
+        "crowd-pleaser",
+        "cozy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-vegan-easy-light",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "soft banana oat muffins",
+        "de": "saftige bananen-hafer-muffins"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "bake"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 400,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe — they do the binding here",
+            "de": "sehr reif — sie binden hier den teig"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-oil",
+          "name": {
+            "en": "vegetable oil",
+            "de": "pflanzenöl"
+          },
+          "amount": 30,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 60,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sugar",
+          "name": {
+            "en": "sugar",
+            "de": "zucker"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and line 6 muffin cups.",
+            "de": "ofen auf 200 °c vorheizen und 6 muffinförmchen auslegen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "mash the bananas until almost liquid, then stir in the oil, oat milk and sugar.",
+            "de": "bananen fast flüssig zerdrücken, dann öl, hafermilch und zucker einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon. a few lumps are your friends.",
+            "de": "mehl, natron und zimt unterheben. ein paar klumpen sind deine freunde."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill the cups three quarters full.",
+            "de": "förmchen dreiviertel voll füllen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake until springy on top and golden at the edges.",
+            "de": "backen, bis sie oben federnd sind und an den rändern goldbraun werden."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "cool briefly and eat warm — they're at their best on day one.",
+            "de": "kurz abkühlen lassen und warm essen — am ersten tag sind sie am besten."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "macros": {
+        "protein_g": 6,
+        "carbs_g": 62,
+        "fat_g": 12
+      },
+      "tags": [
+        "breakfast",
+        "quick-bread",
+        "kid-friendly",
+        "meal-prep"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-vegan-easy-hearty",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "double chocolate banana muffins",
+        "de": "bananenmuffins mit doppelt schoko"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "walnuts",
+        "tree-nuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "bake"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 650,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 140,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-oil",
+          "name": {
+            "en": "vegetable oil",
+            "de": "pflanzenöl"
+          },
+          "amount": 50,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sugar",
+          "name": {
+            "en": "sugar",
+            "de": "zucker"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "walnuts",
+          "name": {
+            "en": "walnuts",
+            "de": "walnüsse"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": {
+            "en": "dark chocolate",
+            "de": "zartbitterschokolade"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "chopped, plus a little cocoa in the batter if you like",
+            "de": "gehackt, plus etwas kakao im teig, wenn du magst"
+          }
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and line 8 muffin cups.",
+            "de": "ofen auf 200 °c vorheizen und 8 muffinförmchen auslegen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "mash the bananas, then stir in the oil, oat milk and sugar until smooth.",
+            "de": "bananen zerdrücken, dann öl, hafermilch und zucker glatt einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then the walnuts and most of the chocolate.",
+            "de": "mehl, natron und zimt unterheben, dann walnüsse und den großteil der schokolade."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill the cups and scatter the remaining chocolate on top.",
+            "de": "förmchen füllen und die restliche schokolade darüberstreuen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake until the tops crack and the chocolate goes glossy.",
+            "de": "backen, bis die oberflächen aufreißen und die schokolade glänzt."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "five minutes of patience, then in.",
+            "de": "fünf minuten geduld, dann zugreifen."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "macros": {
+        "protein_g": 9,
+        "carbs_g": 80,
+        "fat_g": 30
+      },
+      "tags": [
+        "breakfast",
+        "comfort-food",
+        "kid-friendly",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-vegan-hard-light",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "slow-baked roasted banana bread",
+        "de": "langsam gebackenes bananenbrot mit gerösteten bananen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "roast"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 440,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 130,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-oil",
+          "name": {
+            "en": "vegetable oil",
+            "de": "pflanzenöl"
+          },
+          "amount": 35,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 70,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "brown-sugar",
+          "name": {
+            "en": "brown sugar",
+            "de": "brauner zucker"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "vanilla",
+          "name": {
+            "en": "vanilla",
+            "de": "vanille"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and roast the bananas in their skins until black — roasting concentrates all that banana sweetness.",
+            "de": "ofen auf 200 °c heizen und die bananen in der schale rösten, bis sie schwarz sind — das rösten konzentriert die ganze süße."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "squeeze the soft flesh into a bowl, mash well, and stir in the oil, oat milk, brown sugar and vanilla.",
+            "de": "das weiche fruchtfleisch in eine schüssel drücken, gut zerdrücken und öl, hafermilch, braunen zucker und vanille einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then scrape into a small lined loaf tin.",
+            "de": "mehl, natron und zimt unterheben, dann in eine kleine ausgelegte kastenform füllen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "turn the oven down to 170°c and bake slowly until a skewer comes out almost clean.",
+            "de": "ofen auf 170 °c runterschalten und langsam backen, bis das stäbchen fast sauber herauskommt."
+          },
+          "timer_seconds": 3300
+        },
+        {
+          "text": {
+            "en": "rest for ten minutes before slicing — the crumb needs a moment to set.",
+            "de": "vor dem anschneiden zehn minuten ruhen lassen — die krume braucht einen moment."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "macros": {
+        "protein_g": 7,
+        "carbs_g": 64,
+        "fat_g": 15
+      },
+      "tags": [
+        "breakfast",
+        "weekend-baking",
+        "cozy",
+        "meal-prep"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "banana-bread-vegan-hard-hearty",
+      "dish_id": "banana-bread",
+      "title": {
+        "en": "roasted banana bread with chocolate & walnuts",
+        "de": "geröstetes bananenbrot mit schokolade & walnüssen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "walnuts",
+        "tree-nuts",
+        "added-sugar"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "roast"
+      ],
+      "time_minutes": 80,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": {
+            "en": "bananas",
+            "de": "bananen"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very ripe",
+            "de": "sehr reif"
+          }
+        },
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-oil",
+          "name": {
+            "en": "vegetable oil",
+            "de": "pflanzenöl"
+          },
+          "amount": 55,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "brown-sugar",
+          "name": {
+            "en": "brown sugar",
+            "de": "brauner zucker"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "walnuts",
+          "name": {
+            "en": "walnuts",
+            "de": "walnüsse"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "toasted and chopped",
+            "de": "geröstet und gehackt"
+          }
+        },
+        {
+          "id": "chocolate",
+          "name": {
+            "en": "dark chocolate",
+            "de": "zartbitterschokolade"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "chopped into chunks",
+            "de": "in stücke gehackt"
+          }
+        },
+        {
+          "id": "baking-soda",
+          "name": {
+            "en": "baking soda",
+            "de": "natron"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cinnamon",
+          "name": {
+            "en": "cinnamon",
+            "de": "zimt"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "heat the oven to 200°c and roast the bananas in their skins until black and caramel-sweet.",
+            "de": "ofen auf 200 °c heizen und die bananen in der schale rösten, bis sie schwarz und karamellig süß sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "mash the roasted flesh and stir in the oil, oat milk and brown sugar.",
+            "de": "das geröstete fruchtfleisch zerdrücken und öl, hafermilch und braunen zucker einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fold in the flour, baking soda and cinnamon, then the walnuts and chocolate. into a lined loaf tin it goes.",
+            "de": "mehl, natron und zimt unterheben, dann walnüsse und schokolade. ab in eine ausgelegte kastenform."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "bake at 170°c until dark, glossy and a skewer finds only melted chocolate.",
+            "de": "bei 170 °c backen, bis das brot dunkel und glänzend ist und am stäbchen nur geschmolzene schokolade hängt."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "rest fifteen minutes, then cut thick slices while the chocolate is still a little molten.",
+            "de": "fünfzehn minuten ruhen lassen, dann dicke scheiben schneiden, solange die schokolade noch etwas flüssig ist."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 84,
+        "fat_g": 34
+      },
+      "tags": [
+        "breakfast",
+        "weekend-baking",
+        "comfort-food",
+        "crowd-pleaser",
+        "cozy"
+      ],
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "tacos-classic-easy-light",
+      "dish_id": "tacos",
+      "title": {
+        "en": "weeknight chicken tacos with fresh salsa",
+        "de": "hähnchen-tacos mit frischer salsa"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "poultry"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken breast",
+            "de": "hähnchenbrust"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into thin strips",
+            "de": "in dünne streifen geschnitten"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 6,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "red onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "cilantro",
+            "de": "koriandergrün"
+          },
+          "amount": 1,
+          "unit": "cup",
+          "aisle": "produce",
+          "note": {
+            "en": "roughly chopped",
+            "de": "grob gehackt"
+          }
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the chicken strips with cumin, chili, a pinch of salt and a squeeze of lime.",
+            "de": "hähnchenstreifen mit kreuzkümmel, chili, einer prise salz und einem spritzer limette mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stir the diced tomato, onion and cilantro together with lime juice — that's your salsa, done.",
+            "de": "tomate, zwiebel und koriander mit limettensaft verrühren — fertig ist die salsa."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "sear the chicken in a hot pan with a splash of oil until golden and cooked through.",
+            "de": "hähnchen in einer heißen pfanne mit etwas öl goldbraun und gar anbraten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "warm the tortillas one by one in a dry pan until they puff a little.",
+            "de": "tortillas nacheinander in einer trockenen pfanne wärmen, bis sie sich leicht wölben."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "pile chicken into the tortillas, spoon over the salsa, finish with more lime.",
+            "de": "hähnchen in die tortillas füllen, salsa darüberlöffeln, mit mehr limette abschließen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 32,
+        "carbs_g": 45,
+        "fat_g": 12
+      },
+      "tags": [
+        "weeknight",
+        "street-food",
+        "fresh",
+        "kid-friendly"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-classic-easy-hearty",
+      "dish_id": "tacos",
+      "title": {
+        "en": "loaded chicken tacos with cheddar & avocado",
+        "de": "vollgepackte hähnchen-tacos mit cheddar & avocado"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "poultry",
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "sauté"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "chicken",
+          "name": {
+            "en": "chicken breast",
+            "de": "hähnchenbrust"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 8,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "cheddar",
+          "name": {
+            "en": "cheddar",
+            "de": "cheddar"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "avocado",
+          "name": {
+            "en": "avocado",
+            "de": "avocado"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced or lightly smashed",
+            "de": "in scheiben oder leicht zerdrückt"
+          }
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "season the chicken with cumin, chili and salt, then sear in hot oil until browned and juicy.",
+            "de": "hähnchen mit kreuzkümmel, chili und salz würzen, dann in heißem öl braun und saftig anbraten."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "while it cooks, mix tomato, onion and lime juice into a quick salsa.",
+            "de": "währenddessen tomate, zwiebel und limettensaft zu einer schnellen salsa mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the tortillas in a dry pan, then sprinkle cheddar over each so it starts to melt.",
+            "de": "tortillas in einer trockenen pfanne wärmen und jeweils cheddar darüberstreuen, damit er leicht schmilzt."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "load them up: chicken, avocado, salsa, more cheese if you're that person.",
+            "de": "kräftig belegen: hähnchen, avocado, salsa, mehr käse, wenn du so jemand bist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "finish with lime and eat immediately — tacos wait for no one.",
+            "de": "mit limette vollenden und sofort essen — tacos warten auf niemanden."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 55,
+        "fat_g": 32
+      },
+      "tags": [
+        "weeknight",
+        "street-food",
+        "comfort-food",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-classic-hard-light",
+      "dish_id": "tacos",
+      "title": {
+        "en": "slow-braised beef tacos",
+        "de": "tacos mit langsam geschmortem rind"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "beef"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 110,
+      "calories_per_serving": 460,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": {
+            "en": "beef chuck",
+            "de": "rinderschulter"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into large chunks",
+            "de": "in große stücke geschnitten"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 6,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "half for the braise, half diced raw",
+            "de": "eine hälfte für den schmortopf, eine hälfte roh gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "cilantro",
+            "de": "koriandergrün"
+          },
+          "amount": 1,
+          "unit": "cup",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sear the beef chunks hard in hot oil until deeply browned on all sides — this crust is the whole flavor base.",
+            "de": "rindfleisch in heißem öl von allen seiten kräftig dunkelbraun anbraten — diese kruste ist die ganze geschmacksbasis."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "add half the onion, the garlic, tomatoes, cumin, chili and a cup of water. scrape up the browned bits.",
+            "de": "die halbe zwiebel, knoblauch, tomaten, kreuzkümmel, chili und eine tasse wasser dazugeben. die angebratenen reste lösen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "lid on, heat low, and braise until the beef falls apart at the sight of a fork.",
+            "de": "deckel drauf, hitze runter und schmoren, bis das fleisch beim anblick einer gabel zerfällt."
+          },
+          "timer_seconds": 5400
+        },
+        {
+          "text": {
+            "en": "shred the beef right in its juices and let it soak them back up.",
+            "de": "fleisch direkt im sud zupfen und ihn wieder aufsaugen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "char the tortillas over a flame or in a dry pan.",
+            "de": "tortillas über der flamme oder in einer trockenen pfanne rösten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "fill with beef, top with raw onion, cilantro and lots of lime.",
+            "de": "mit fleisch füllen, mit roher zwiebel, koriander und viel limette toppen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 42,
+        "fat_g": 16
+      },
+      "tags": [
+        "street-food",
+        "slow-cooked",
+        "weekend-project",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-classic-hard-hearty",
+      "dish_id": "tacos",
+      "title": {
+        "en": "braised beef tacos, fully loaded",
+        "de": "geschmorte rindertacos, voll beladen"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "beef",
+        "dairy"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 115,
+      "calories_per_serving": 760,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "beef",
+          "name": {
+            "en": "beef chuck",
+            "de": "rinderschulter"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "protein",
+          "note": {
+            "en": "cut into large chunks",
+            "de": "in große stücke geschnitten"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 8,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "cheddar",
+          "name": {
+            "en": "cheddar",
+            "de": "cheddar"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "avocado",
+          "name": {
+            "en": "avocado",
+            "de": "avocado"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the beef aggressively in hot oil — color equals flavor, don't rush it.",
+            "de": "rindfleisch in heißem öl kräftig bräunen — farbe heißt geschmack, nicht hetzen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "add half the onion, tomatoes, cumin, chili and a cup of water, then braise low and slow under a lid.",
+            "de": "die halbe zwiebel, tomaten, kreuzkümmel, chili und eine tasse wasser dazu, dann mit deckel langsam schmoren."
+          },
+          "timer_seconds": 5400
+        },
+        {
+          "text": {
+            "en": "shred the beef into its own rich juices.",
+            "de": "fleisch in seinem eigenen kräftigen sud zupfen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "char the tortillas and melt a little cheddar onto each one.",
+            "de": "tortillas rösten und auf jede etwas cheddar schmelzen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "stack them high: beef, avocado, onion, tomato, extra cheese, lime over everything.",
+            "de": "hoch stapeln: fleisch, avocado, zwiebel, tomate, extra käse, limette über alles."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 55,
+        "fat_g": 40
+      },
+      "tags": [
+        "street-food",
+        "slow-cooked",
+        "comfort-food",
+        "weekend-project",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-vegan-easy-light",
+      "dish_id": "tacos",
+      "title": {
+        "en": "smoky mushroom & black bean tacos",
+        "de": "rauchige pilz-tacos mit schwarzen bohnen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "sauté"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 400,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "black-beans",
+          "name": {
+            "en": "black beans",
+            "de": "schwarze bohnen"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 6,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "cilantro",
+            "de": "koriandergrün"
+          },
+          "amount": 1,
+          "unit": "cup",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté the mushrooms in hot oil until they give up their water and start to brown.",
+            "de": "pilze in heißem öl braten, bis sie ihr wasser abgegeben haben und farbe bekommen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add the beans, cumin, chili and a pinch of salt; cook until everything is hot and a little smoky.",
+            "de": "bohnen, kreuzkümmel, chili und eine prise salz dazu; braten, bis alles heiß und etwas rauchig ist."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "mix tomato, onion, cilantro and lime juice into a fresh salsa.",
+            "de": "tomate, zwiebel, koriander und limettensaft zu einer frischen salsa mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the tortillas in a dry pan.",
+            "de": "tortillas in einer trockenen pfanne wärmen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "fill, top with salsa, squeeze more lime. simple and so good.",
+            "de": "füllen, mit salsa toppen, mehr limette drüber. einfach und so gut."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 62,
+        "fat_g": 8
+      },
+      "tags": [
+        "weeknight",
+        "street-food",
+        "fresh",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-vegan-easy-hearty",
+      "dish_id": "tacos",
+      "title": {
+        "en": "sweet potato & black bean tacos with avocado",
+        "de": "süßkartoffel-tacos mit schwarzen bohnen & avocado"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "sauté",
+        "roast"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "black-beans",
+          "name": {
+            "en": "black beans",
+            "de": "schwarze bohnen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "id": "sweet-potato",
+          "name": {
+            "en": "sweet potato",
+            "de": "süßkartoffel"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into small cubes",
+            "de": "in kleine würfel geschnitten"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 8,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "avocado",
+          "name": {
+            "en": "avocado",
+            "de": "avocado"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomato",
+          "name": {
+            "en": "tomatoes",
+            "de": "tomaten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast the sweet potato cubes at 220°c with oil, cumin, chili and salt until the edges caramelize.",
+            "de": "süßkartoffelwürfel bei 220 °c mit öl, kreuzkümmel, chili und salz rösten, bis die ränder karamellisieren."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "warm the beans in a pan with a splash of water and a pinch of the same spices.",
+            "de": "bohnen mit einem schuss wasser und einer prise der gleichen gewürze in der pfanne erwärmen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir together a quick salsa from tomato, onion and lime.",
+            "de": "aus tomate, zwiebel und limette eine schnelle salsa rühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "warm the tortillas, then build: beans, sweet potato, avocado, salsa.",
+            "de": "tortillas wärmen, dann schichten: bohnen, süßkartoffel, avocado, salsa."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "more lime, always more lime.",
+            "de": "mehr limette, immer mehr limette."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 90,
+        "fat_g": 22
+      },
+      "tags": [
+        "weeknight",
+        "street-food",
+        "comfort-food",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-vegan-hard-light",
+      "dish_id": "tacos",
+      "title": {
+        "en": "slow-roasted sweet potato tacos with pickled onions",
+        "de": "tacos mit gerösteter süßkartoffel & eingelegten zwiebeln"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "roast"
+      ],
+      "time_minutes": 55,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "sweet-potato",
+          "name": {
+            "en": "sweet potato",
+            "de": "süßkartoffel"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "cut into wedges",
+            "de": "in spalten geschnitten"
+          }
+        },
+        {
+          "id": "black-beans",
+          "name": {
+            "en": "black beans",
+            "de": "schwarze bohnen"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 6,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "red onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "thinly sliced for pickling",
+            "de": "in dünne scheiben zum einlegen"
+          }
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "limes",
+            "de": "limetten"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "cilantro",
+            "de": "koriandergrün"
+          },
+          "amount": 1,
+          "unit": "cup",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "chili",
+          "name": {
+            "en": "chili powder",
+            "de": "chilipulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cover the onion slices with the juice of one lime and a pinch of salt. set aside to turn pink and tangy.",
+            "de": "zwiebelscheiben mit dem saft einer limette und einer prise salz bedecken. beiseitestellen, bis sie rosa und säuerlich werden."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "toss the sweet potato wedges with oil, smoked paprika, cumin, chili and salt.",
+            "de": "süßkartoffelspalten mit öl, räucherpaprika, kreuzkümmel, chili und salz mischen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "roast at 220°c until deeply caramelized at the edges — give them the full time, it's worth it.",
+            "de": "bei 220 °c rösten, bis die ränder tief karamellisiert sind — gib ihnen die volle zeit, es lohnt sich."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "warm the beans with a little of their spice mix, and char the tortillas.",
+            "de": "bohnen mit etwas gewürzmischung erwärmen und die tortillas rösten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "build the tacos: beans, sweet potato, pickled onions, cilantro, the second lime over the top.",
+            "de": "tacos bauen: bohnen, süßkartoffel, eingelegte zwiebeln, koriander, die zweite limette darüber."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 78,
+        "fat_g": 7
+      },
+      "tags": [
+        "street-food",
+        "weekend-project",
+        "fresh",
+        "meal-prep"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "tacos-vegan-hard-hearty",
+      "dish_id": "tacos",
+      "title": {
+        "en": "roasted mushroom & black bean tacos, fully loaded",
+        "de": "geröstete pilz-tacos mit schwarzen bohnen, voll beladen"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "roast",
+        "sauté"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "torn into bite-size pieces",
+            "de": "in mundgerechte stücke gezupft"
+          }
+        },
+        {
+          "id": "black-beans",
+          "name": {
+            "en": "black beans",
+            "de": "schwarze bohnen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "drained and rinsed",
+            "de": "abgetropft und abgespült"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "name": {
+            "en": "corn tortillas",
+            "de": "maistortillas"
+          },
+          "amount": 8,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "avocado",
+          "name": {
+            "en": "avocado",
+            "de": "avocado"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "cilantro",
+            "de": "koriandergrün"
+          },
+          "amount": 1,
+          "unit": "cup",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "lime",
+            "de": "limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "cumin",
+            "de": "kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": {
+            "en": "smoked paprika",
+            "de": "geräuchertes paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "toss the torn mushrooms with oil, smoked paprika, cumin and salt, then roast at 220°c until crisp-edged and meaty.",
+            "de": "gezupfte pilze mit öl, räucherpaprika, kreuzkümmel und salz mischen, dann bei 220 °c rösten, bis sie knusprige ränder haben und herzhaft schmecken."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "sauté the beans with a pinch of the spices until hot and slightly crisped.",
+            "de": "bohnen mit einer prise gewürze heiß und leicht knusprig braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "mash the avocado with lime juice and salt — two-minute guacamole.",
+            "de": "avocado mit limettensaft und salz zerdrücken — zwei-minuten-guacamole."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "char the tortillas in a dry pan until spotted and fragrant.",
+            "de": "tortillas in einer trockenen pfanne rösten, bis sie gefleckt sind und duften."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "load them up: guac, beans, roasted mushrooms, onion, cilantro, lime. napkins advised.",
+            "de": "voll beladen: guacamole, bohnen, geröstete pilze, zwiebel, koriander, limette. servietten empfohlen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 80,
+        "fat_g": 24
+      },
+      "tags": [
+        "street-food",
+        "weekend-project",
+        "comfort-food",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-easy-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "weeknight mushroom risotto",
+        "de": "pilzrisotto für unter der woche"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 480,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 600,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften the onion in half the butter, then add the mushrooms and garlic and cook until golden.",
+            "de": "zwiebel in der hälfte der butter weich dünsten, dann pilze und knoblauch dazu und goldbraun braten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "stir in the rice and toast it for a minute until the edges look translucent.",
+            "de": "reis einrühren und eine minute rösten, bis die ränder glasig aussehen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "pour in the wine and let it bubble away, stirring.",
+            "de": "wein angießen und unter rühren verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add warm broth a ladle at a time, stirring often, letting each one absorb before the next.",
+            "de": "warme brühe kellenweise zugeben, oft rühren, jede kelle aufsaugen lassen, bevor die nächste kommt."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "when the rice is creamy with a tiny bite, take it off the heat and beat in the rest of the butter and the parmesan.",
+            "de": "wenn der reis cremig mit leichtem biss ist, vom herd nehmen und restliche butter und parmesan unterrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "lid on, two minutes rest, then serve immediately.",
+            "de": "deckel drauf, zwei minuten ruhen lassen, dann sofort servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 13,
+        "carbs_g": 70,
+        "fat_g": 15
+      },
+      "tags": [
+        "weeknight",
+        "cozy",
+        "one-pan",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-easy-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "extra creamy mushroom risotto",
+        "de": "extra cremiges pilzrisotto"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 45,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "cream",
+          "name": {
+            "en": "cream",
+            "de": "sahne"
+          },
+          "amount": 50,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the mushrooms in a knob of butter and set a few pretty slices aside for the top.",
+            "de": "pilze in etwas butter braun braten und ein paar schöne scheiben für obendrauf beiseitelegen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "soften onion and garlic in more butter, stir in the rice and toast until translucent at the edges.",
+            "de": "zwiebel und knoblauch in mehr butter weich dünsten, reis einrühren und rösten, bis die ränder glasig sind."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "deglaze with the wine and let it evaporate.",
+            "de": "mit wein ablöschen und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "feed it warm broth ladle by ladle, stirring, until creamy and just al dente.",
+            "de": "warme brühe kelle für kelle unter rühren zugeben, bis es cremig und gerade al dente ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat: beat in the remaining butter, the cream and all that parmesan until it waves.",
+            "de": "vom herd: restliche butter, sahne und all den parmesan einrühren, bis das risotto wellen schlägt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, top with the saved mushrooms, serve.",
+            "de": "zwei minuten ruhen lassen, mit den beiseitegelegten pilzen toppen, servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 82,
+        "fat_g": 30
+      },
+      "tags": [
+        "weeknight",
+        "comfort-food",
+        "cozy",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-hard-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "saffron risotto, stirred slow",
+        "de": "safranrisotto, langsam gerührt"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 480,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth — watch it turn the color of late afternoon sun.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen — sieh zu, wie sie die farbe der späten nachmittagssonne annimmt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "sweat the onion and garlic gently in butter until completely soft but not browned. patience here pays off.",
+            "de": "zwiebel und knoblauch in butter sanft dünsten, bis sie ganz weich, aber nicht braun sind. geduld zahlt sich hier aus."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "add the rice, toast until pearly, then pour in the wine and let it fully absorb.",
+            "de": "reis zugeben, rösten bis er perlmuttartig glänzt, dann wein angießen und vollständig aufsaugen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "now the long meditation: broth ladle by ladle, stirring slowly, letting the starch build the creaminess. add the saffron broth halfway through.",
+            "de": "jetzt die lange meditation: brühe kelle für kelle, langsam rühren, damit die stärke die cremigkeit aufbaut. die safranbrühe nach der hälfte dazugeben."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, beat in the parmesan and a last small knob of butter. it should flow slowly, not sit in a mound.",
+            "de": "vom herd nehmen, parmesan und ein letztes kleines stück butter unterrühren. es sollte langsam fließen, nicht als haufen stehen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes under the lid, then eat it in peace.",
+            "de": "zwei minuten mit deckel ruhen lassen, dann in ruhe essen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 72,
+        "fat_g": 13
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-hard-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "risotto with slow-roasted mushrooms & saffron",
+        "de": "risotto mit langsam gerösteten pilzen & safran"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "simmer",
+        "roast"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 750,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "torn or thickly sliced",
+            "de": "gezupft oder dick geschnitten"
+          }
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast the mushrooms at 200°c with a little butter and salt until shriveled, browned and intensely savory.",
+            "de": "pilze bei 200 °c mit etwas butter und salz rösten, bis sie geschrumpft, braun und intensiv herzhaft sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth. sweat onion and garlic slowly in butter until meltingly soft.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen. zwiebel und knoblauch langsam in butter weich dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, then settle in: warm broth ladle by ladle, stirring, for a good long while. saffron broth goes in halfway.",
+            "de": "reis rösten, mit wein ablöschen, dann einrichten: warme brühe kelle für kelle unter rühren, eine gute lange zeit. safranbrühe nach der hälfte dazu."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "when creamy and al dente, take off the heat and beat in the remaining butter and the parmesan until glossy and loose.",
+            "de": "wenn cremig und al dente, vom herd nehmen und restliche butter und parmesan glänzend und locker einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then crown each bowl with the roasted mushrooms.",
+            "de": "zwei minuten ruhen lassen, dann jede schüssel mit den gerösteten pilzen krönen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 84,
+        "fat_g": 34
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-easy-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "golden mushroom risotto, olive oil finish",
+        "de": "goldenes pilzrisotto mit olivenöl-finish"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 440,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 600,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté the mushrooms in olive oil until golden, then add onion and garlic and soften.",
+            "de": "pilze in olivenöl goldbraun braten, dann zwiebel und knoblauch dazu und weich dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "stir in the rice, toast for a minute, then add the wine and let it cook off.",
+            "de": "reis einrühren, eine minute rösten, dann wein dazu und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add warm broth ladle by ladle, stirring often, until the rice is creamy with a little bite.",
+            "de": "warme brühe kellenweise unter häufigem rühren zugeben, bis der reis cremig mit etwas biss ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the nutritional yeast and a good drizzle of olive oil for the silky finish.",
+            "de": "vom herd nehmen, hefeflocken und einen guten schuss olivenöl für das seidige finish einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then serve with black pepper on top.",
+            "de": "zwei minuten ruhen lassen, dann mit schwarzem pfeffer servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 70,
+        "fat_g": 11
+      },
+      "tags": [
+        "weeknight",
+        "cozy",
+        "one-pan",
+        "dairy-free"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-easy-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "creamy mushroom risotto, no dairy needed",
+        "de": "cremiges pilzrisotto, ganz ohne milchprodukte"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the mushrooms in olive oil, scoop a few out for topping, then soften onion and garlic in the same pan.",
+            "de": "pilze in olivenöl braun braten, ein paar zum toppen herausnehmen, dann zwiebel und knoblauch in derselben pfanne weich dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, and let it evaporate.",
+            "de": "reis rösten, mit wein ablöschen und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "ladle in warm broth, stirring, until the rice turns creamy and just al dente.",
+            "de": "warme brühe unter rühren einellen, bis der reis cremig und gerade al dente ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat: nutritional yeast and the rest of the olive oil, beaten in until glossy and rich.",
+            "de": "vom herd: hefeflocken und das restliche olivenöl glänzend und sämig unterrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, top with the saved mushrooms, done.",
+            "de": "zwei minuten ruhen lassen, mit den beiseitegelegten pilzen toppen, fertig."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 14,
+        "carbs_g": 88,
+        "fat_g": 24
+      },
+      "tags": [
+        "weeknight",
+        "comfort-food",
+        "cozy",
+        "dairy-free",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-hard-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "saffron risotto, slow sunday style",
+        "de": "safranrisotto nach sonntagsart"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth until it glows.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen, bis sie leuchtet."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "sweat onion and garlic in olive oil, low and slow, until completely soft.",
+            "de": "zwiebel und knoblauch in olivenöl bei kleiner hitze ganz weich dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toast the rice until pearly, pour in the wine, let it disappear.",
+            "de": "reis rösten, bis er perlmuttartig glänzt, wein angießen, verschwinden lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "the slow part: ladle by ladle, stirring gently, letting the starch do its quiet work. saffron broth in halfway.",
+            "de": "der langsame teil: kelle für kelle, sanft rühren, die stärke ihre stille arbeit tun lassen. safranbrühe nach der hälfte dazu."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the nutritional yeast and a thread of olive oil. it should ripple when you shake the pan.",
+            "de": "vom herd, hefeflocken und ein faden olivenöl einrühren. es sollte sich wellen, wenn du die pfanne schwenkst."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then eat slowly. that's the whole point.",
+            "de": "zwei minuten ruhen lassen, dann langsam essen. genau darum geht's."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 72,
+        "fat_g": 10
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "dairy-free",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-hard-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "risotto with slow-roasted mushrooms & thyme",
+        "de": "risotto mit langsam gerösteten pilzen & thymian"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "simmer",
+        "roast"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 660,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "torn into pieces",
+            "de": "in stücke gezupft"
+          }
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "thyme",
+            "de": "thymian"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "produce",
+          "note": {
+            "en": "fresh leaves",
+            "de": "frische blättchen"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast the mushrooms at 200°c with olive oil, thyme and salt until dark, chewy and intensely mushroomy.",
+            "de": "pilze bei 200 °c mit olivenöl, thymian und salz rösten, bis sie dunkel, zäh und intensiv pilzig sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "sweat onion and garlic slowly in olive oil until soft and sweet.",
+            "de": "zwiebel und knoblauch langsam in olivenöl weich und süß dünsten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, then feed it warm broth ladle by ladle with unhurried stirring.",
+            "de": "reis rösten, mit wein ablöschen, dann warme brühe kelle für kelle mit gemächlichem rühren zugeben."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, beat in the nutritional yeast and remaining olive oil until it moves like lava.",
+            "de": "vom herd nehmen, hefeflocken und restliches olivenöl einrühren, bis es sich wie lava bewegt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, pile the roasted mushrooms on top, scatter more thyme.",
+            "de": "zwei minuten ruhen lassen, geröstete pilze daraufhäufen, mehr thymian darüberstreuen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 88,
+        "fat_g": 26
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "dairy-free",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    }
+  ]
+}

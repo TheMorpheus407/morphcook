@@ -1,0 +1,46 @@
+/// Meal-plan feature strings (EN/DE, warm lowercase voice).
+const Map<String, Map<String, String>> strings = {
+  'mealplan.title': {'en': 'meal plan', 'de': 'essensplan'},
+  'mealplan.week': {'en': 'week', 'de': 'woche'},
+  'mealplan.today': {'en': 'today', 'de': 'heute'},
+  'mealplan.prev_week': {'en': 'previous week', 'de': 'vorherige woche'},
+  'mealplan.next_week': {'en': 'next week', 'de': 'nächste woche'},
+  'mealplan.add': {'en': '+ add', 'de': '+ hinzufügen'},
+  'mealplan.assign_title': {'en': 'what’s cooking?', 'de': 'was gibt’s?'},
+  'mealplan.tab_cookbook': {'en': 'cookbook', 'de': 'kochbuch'},
+  'mealplan.tab_search': {'en': 'search', 'de': 'suchen'},
+  'mealplan.search_hint': {
+    'en': 'search all recipes…',
+    'de': 'alle rezepte durchsuchen…',
+  },
+  'mealplan.empty_saved': {
+    'en': 'nothing saved yet — save recipes from the cookbook first.',
+    'de': 'noch nichts gespeichert — speichere zuerst rezepte im kochbuch.',
+  },
+  'mealplan.no_results': {
+    'en': 'no matches. try another word.',
+    'de': 'keine treffer. versuch ein anderes wort.',
+  },
+  'mealplan.open_dish': {'en': 'open dish', 'de': 'gericht öffnen'},
+  'mealplan.remove': {'en': 'remove from plan', 'de': 'aus dem plan entfernen'},
+  'mealplan.to_shopping': {'en': 'shopping list', 'de': 'einkaufsliste'},
+  'mealplan.added_shopping': {
+    'en': 'week added to your shopping list',
+    'de': 'woche zur einkaufsliste hinzugefügt',
+  },
+  'mealplan.nothing_planned': {
+    'en': 'nothing planned this week yet',
+    'de': 'diese woche ist noch nichts geplant',
+  },
+  'mealplan.view': {'en': 'view', 'de': 'ansehen'},
+  'mealplan.meal.breakfast': {'en': 'breakfast', 'de': 'frühstück'},
+  'mealplan.meal.lunch': {'en': 'lunch', 'de': 'mittagessen'},
+  'mealplan.meal.dinner': {'en': 'dinner', 'de': 'abendessen'},
+  'mealplan.day.mon': {'en': 'monday', 'de': 'montag'},
+  'mealplan.day.tue': {'en': 'tuesday', 'de': 'dienstag'},
+  'mealplan.day.wed': {'en': 'wednesday', 'de': 'mittwoch'},
+  'mealplan.day.thu': {'en': 'thursday', 'de': 'donnerstag'},
+  'mealplan.day.fri': {'en': 'friday', 'de': 'freitag'},
+  'mealplan.day.sat': {'en': 'saturday', 'de': 'samstag'},
+  'mealplan.day.sun': {'en': 'sunday', 'de': 'sonntag'},
+};

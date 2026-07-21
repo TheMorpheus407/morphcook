@@ -1,0 +1,2768 @@
+{
+  "recipes": [
+    {
+      "id": "alfredo-classic-easy-light",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "silky light alfredo, weeknight edition",
+        "de": "seidig-leichte alfredo, feierabend-edition"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 450,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "pasta",
+          "name": {
+            "en": "pasta",
+            "de": "pasta"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "fettuccine if you have them",
+            "de": "fettuccine, wenn du welche hast"
+          }
+        },
+        {
+          "id": "skim-milk",
+          "name": {
+            "en": "skim milk",
+            "de": "magermilch"
+          },
+          "amount": 200,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "cornstarch",
+          "name": {
+            "en": "cornstarch",
+            "de": "speisestärke"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the pasta in well-salted water until just al dente. save a cup of pasta water before draining.",
+            "de": "pasta in gut gesalzenem wasser bissfest kochen. vor dem abgießen eine tasse pastawasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt the butter in a wide pan and soften the grated garlic in it for a minute — no color, just perfume.",
+            "de": "butter in einer weiten pfanne schmelzen und den geriebenen knoblauch eine minute darin anschwitzen — keine farbe, nur duft."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "whisk the cornstarch into the cold skim milk, pour it in and let it bubble gently until it thickens into a silky sauce.",
+            "de": "speisestärke in die kalte magermilch rühren, dazugießen und sanft aufkochen lassen, bis eine seidige sauce entsteht."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the parmesan and grate in the nutmeg. season well.",
+            "de": "von der hitze nehmen, parmesan unterrühren und muskat hineinreiben. gut abschmecken."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the pasta through the sauce with a splash of pasta water until everything is glossy. eat straight from the pan if nobody's watching.",
+            "de": "pasta mit einem schuss pastawasser in der sauce schwenken, bis alles glänzt. direkt aus der pfanne essen, wenn niemand hinschaut."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 68,
+        "fat_g": 11
+      },
+      "tags": [
+        "comfort-food",
+        "weeknight",
+        "kid-friendly",
+        "cozy"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-classic-easy-hearty",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "proper cream alfredo, no regrets",
+        "de": "richtige sahne-alfredo, ganz ohne reue"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 740,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "pasta",
+          "name": {
+            "en": "pasta",
+            "de": "pasta"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "fettuccine if you have them",
+            "de": "fettuccine, wenn du welche hast"
+          }
+        },
+        {
+          "id": "cream",
+          "name": {
+            "en": "cream",
+            "de": "sahne"
+          },
+          "amount": 250,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated, plus extra for the table",
+            "de": "fein gerieben, plus extra für den tisch"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "black pepper",
+            "de": "schwarzer pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the pasta in well-salted water until al dente. save a cup of pasta water.",
+            "de": "pasta in gut gesalzenem wasser bissfest kochen. eine tasse pastawasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt the butter, soften the grated garlic in it for a minute, then pour in all the cream. yes, all of it.",
+            "de": "butter schmelzen, geriebenen knoblauch eine minute darin anschwitzen, dann die ganze sahne dazu. ja, die ganze."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "let the cream simmer gently until it thickens enough to coat a spoon.",
+            "de": "sahne sanft köcheln lassen, bis sie dick genug ist, um einen löffel zu überziehen."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the parmesan, nutmeg and plenty of black pepper until the sauce turns glossy.",
+            "de": "von der hitze nehmen und parmesan, muskat und viel schwarzen pfeffer einrühren, bis die sauce glänzt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the pasta through with a splash of pasta water. serve with more parmesan on top, because that's who we are now.",
+            "de": "pasta mit einem schuss pastawasser durchschwenken. mit mehr parmesan servieren, denn so sind wir jetzt eben."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 24,
+        "carbs_g": 80,
+        "fat_g": 36
+      },
+      "tags": [
+        "comfort-food",
+        "weeknight",
+        "cozy",
+        "crowd-pleaser",
+        "indulgent"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-classic-hard-light",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "hand-cut tagliatelle with a light parmesan cream",
+        "de": "handgeschnittene tagliatelle mit leichter parmesan-sahne"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 525,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "plus extra for dusting",
+            "de": "plus etwas mehr zum bestäuben"
+          }
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "egg",
+            "de": "ei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "skim-milk",
+          "name": {
+            "en": "skim milk",
+            "de": "magermilch"
+          },
+          "amount": 150,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "pile the flour on the counter, make a well, crack in the eggs. work it into a smooth, firm dough and knead for 8 minutes.",
+            "de": "mehl auf die arbeitsfläche häufen, eine mulde formen, eier hineinschlagen. zu einem glatten, festen teig verarbeiten und 8 minuten kneten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wrap the dough and let it rest. it deserves it, and so do you.",
+            "de": "teig einwickeln und ruhen lassen. er hat es sich verdient, du auch."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "roll the dough out thin enough to almost see the counter through it, dust with flour, roll up loosely and cut into ribbons.",
+            "de": "teig so dünn ausrollen, dass die arbeitsfläche fast durchscheint, bemehlen, locker aufrollen und in bänder schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "melt the butter with grated garlic, add the milk and let it reduce into a light sauce. stir in parmesan and nutmeg off the heat.",
+            "de": "butter mit geriebenem knoblauch schmelzen, milch dazu und zu einer leichten sauce einkochen lassen. von der hitze parmesan und muskat einrühren."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "fresh pasta cooks fast — drop the ribbons into boiling salted water and they're done when they float.",
+            "de": "frische pasta kocht schnell — bänder ins kochende salzwasser geben, fertig, sobald sie oben schwimmen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "lift the pasta straight into the sauce, toss gently, serve immediately. handmade deserves an audience.",
+            "de": "pasta direkt in die sauce heben, vorsichtig mischen, sofort servieren. handgemacht verdient publikum."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 72,
+        "fat_g": 15
+      },
+      "tags": [
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-classic-hard-hearty",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "sunday fresh pasta alfredo",
+        "de": "sonntags-alfredo mit frischer pasta"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 795,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "plus extra for dusting",
+            "de": "plus etwas mehr zum bestäuben"
+          }
+        },
+        {
+          "id": "egg",
+          "name": {
+            "en": "egg",
+            "de": "ei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "protein"
+        },
+        {
+          "id": "cream",
+          "name": {
+            "en": "cream",
+            "de": "sahne"
+          },
+          "amount": 250,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "make the dough: flour in a mound, eggs in the well, knead 8 to 10 minutes until smooth and springy.",
+            "de": "teig machen: mehl anhäufen, eier in die mulde, 8 bis 10 minuten kneten, bis er glatt und elastisch ist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wrap and rest the dough for half an hour. put on some music, this is the sunday part.",
+            "de": "teig einwickeln und eine halbe stunde ruhen lassen. musik an, das ist der sonntags-teil."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "roll thin, dust, fold and cut into wide ribbons. unfurl them like little banners.",
+            "de": "dünn ausrollen, bemehlen, falten und in breite bänder schneiden. wie kleine fahnen auseinanderziehen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "melt the butter with grated garlic, pour in the cream and let it slowly reduce until thick and luscious.",
+            "de": "butter mit geriebenem knoblauch schmelzen, sahne dazugießen und langsam einköcheln lassen, bis sie dick und üppig ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "off the heat, melt the parmesan into the sauce with a generous grating of nutmeg.",
+            "de": "von der hitze nehmen und den parmesan mit einer ordentlichen menge muskat in der sauce schmelzen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "boil the fresh ribbons for about two minutes, toss through the sauce with a splash of pasta water, and serve in warm bowls.",
+            "de": "frische bänder etwa zwei minuten kochen, mit einem schuss pastawasser durch die sauce ziehen und in warmen schüsseln servieren."
+          },
+          "timer_seconds": 180
+        }
+      ],
+      "macros": {
+        "protein_g": 29,
+        "carbs_g": 83,
+        "fat_g": 39
+      },
+      "tags": [
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "indulgent"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-vegan-easy-light",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "cashew alfredo, light and silky",
+        "de": "cashew-alfredo, leicht und seidig"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 425,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "pasta",
+          "name": {
+            "en": "pasta",
+            "de": "pasta"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 200,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the pasta in salted water until al dente, saving a cup of pasta water.",
+            "de": "pasta in salzwasser bissfest kochen, eine tasse pastawasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the grated garlic in olive oil for a minute, gentle heat only.",
+            "de": "geriebenen knoblauch eine minute in olivenöl anschwitzen, nur sanfte hitze."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "whisk in the oat milk and cashew cream and let it simmer until silky.",
+            "de": "hafermilch und cashewcreme einrühren und köcheln lassen, bis die sauce seidig ist."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in the nutritional yeast and nutmeg off the heat — that's the cheesy, cozy flavor right there.",
+            "de": "von der hitze hefeflocken und muskat einrühren — das ist der käsige, gemütliche geschmack."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the pasta through the sauce with a splash of pasta water until glossy and light.",
+            "de": "pasta mit einem schuss pastawasser durch die sauce ziehen, bis sie glänzt und schön leicht ist."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 64,
+        "fat_g": 12
+      },
+      "tags": [
+        "comfort-food",
+        "weeknight",
+        "cozy",
+        "kid-friendly"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-vegan-easy-hearty",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "creamy cashew alfredo, extra sauce",
+        "de": "cremige cashew-alfredo mit extra sauce"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 695,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "pasta",
+          "name": {
+            "en": "pasta",
+            "de": "pasta"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 150,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the pasta in salted water until al dente. save that pasta water, it's liquid gold.",
+            "de": "pasta in salzwasser bissfest kochen. das pastawasser aufheben, das ist flüssiges gold."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften the grated garlic in olive oil, then whisk in oat milk and all of the cashew cream.",
+            "de": "geriebenen knoblauch in olivenöl anschwitzen, dann hafermilch und die ganze cashewcreme einrühren."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "simmer until the sauce coats the back of a spoon, thick and dreamy.",
+            "de": "köcheln lassen, bis die sauce den löffelrücken überzieht, dick und traumhaft."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in nutritional yeast and nutmeg. taste it. taste it again.",
+            "de": "von der hitze hefeflocken und muskat einrühren. probieren. nochmal probieren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toss the pasta through with enough pasta water to make it glossy. extra sauce was the plan all along.",
+            "de": "pasta mit genug pastawasser durchschwenken, bis alles glänzt. extra sauce war von anfang an der plan."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 24,
+        "carbs_g": 82,
+        "fat_g": 30
+      },
+      "tags": [
+        "comfort-food",
+        "weeknight",
+        "cozy",
+        "crowd-pleaser",
+        "indulgent"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-vegan-hard-light",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "hand-cut pasta with silky cashew cream",
+        "de": "handgeschnittene pasta mit seidiger cashewcreme"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 70,
+      "calories_per_serving": 500,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "plus extra for dusting",
+            "de": "plus etwas mehr zum bestäuben"
+          }
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 150,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix the flour with just water and a pinch of salt into a firm dough — no eggs needed, the old southern italian way. knead 8 minutes.",
+            "de": "mehl mit nur wasser und einer prise salz zu einem festen teig verkneten — ohne ei, so wie in süditalien. 8 minuten kneten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wrap the dough and let it rest so it rolls out like a dream.",
+            "de": "teig einwickeln und ruhen lassen, damit er sich traumhaft ausrollen lässt."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "roll thin, dust with flour, fold and cut into ribbons.",
+            "de": "dünn ausrollen, bemehlen, falten und in bänder schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "soften the garlic in olive oil, whisk in oat milk and cashew cream, simmer until silky. finish with nutritional yeast and nutmeg off the heat.",
+            "de": "knoblauch in olivenöl anschwitzen, hafermilch und cashewcreme einrühren, seidig köcheln lassen. von der hitze mit hefeflocken und muskat vollenden."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "boil the fresh pasta for about two minutes — it floats when it's ready.",
+            "de": "frische pasta etwa zwei minuten kochen — sie schwimmt oben, wenn sie fertig ist."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss through the sauce with a splash of pasta water and serve right away. handmade and light can absolutely be the same dish.",
+            "de": "mit einem schuss pastawasser durch die sauce ziehen und sofort servieren. handgemacht und leicht geht absolut in einem gericht."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 19,
+        "carbs_g": 74,
+        "fat_g": 14
+      },
+      "tags": [
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo-vegan-hard-hearty",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "sunday cashew alfredo with fresh pasta",
+        "de": "sonntags-cashew-alfredo mit frischer pasta"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 85,
+      "calories_per_serving": 780,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "white-flour",
+          "name": {
+            "en": "white flour",
+            "de": "weizenmehl"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry",
+          "note": {
+            "en": "plus extra for dusting",
+            "de": "plus etwas mehr zum bestäuben"
+          }
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "oat milk",
+            "de": "hafermilch"
+          },
+          "amount": 200,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "cashew cream",
+            "de": "cashewcreme"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutmeg",
+          "name": {
+            "en": "nutmeg",
+            "de": "muskatnuss"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "black pepper",
+            "de": "schwarzer pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix flour with water and a pinch of salt into a firm dough and knead 8 to 10 minutes until smooth and elastic.",
+            "de": "mehl mit wasser und einer prise salz zu einem festen teig verkneten und 8 bis 10 minuten kneten, bis er glatt und elastisch ist."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "wrap and rest for half an hour. good pasta can't be rushed.",
+            "de": "einwickeln und eine halbe stunde ruhen lassen. gute pasta lässt sich nicht hetzen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "roll thin, dust, fold and cut into wide ribbons.",
+            "de": "dünn ausrollen, bemehlen, falten und in breite bänder schneiden."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "soften the garlic in olive oil, add oat milk and all the cashew cream, and simmer slowly until the sauce is thick and lush.",
+            "de": "knoblauch in olivenöl anschwitzen, hafermilch und die ganze cashewcreme dazu, langsam köcheln lassen, bis die sauce dick und üppig ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in nutritional yeast, nutmeg and plenty of black pepper.",
+            "de": "von der hitze hefeflocken, muskat und viel schwarzen pfeffer einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "boil the fresh ribbons two minutes, toss through the sauce with pasta water, and serve in warm bowls. sunday done right.",
+            "de": "frische bänder zwei minuten kochen, mit pastawasser durch die sauce ziehen und in warmen schüsseln servieren. so geht sonntag richtig."
+          },
+          "timer_seconds": 180
+        }
+      ],
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 88,
+        "fat_g": 36
+      },
+      "tags": [
+        "from-scratch",
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "indulgent"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-easy-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "weeknight mushroom risotto",
+        "de": "pilzrisotto für unter der woche"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 480,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 600,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften the onion in half the butter, then add the mushrooms and garlic and cook until golden.",
+            "de": "zwiebel in der hälfte der butter weich dünsten, dann pilze und knoblauch dazu und goldbraun braten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "stir in the rice and toast it for a minute until the edges look translucent.",
+            "de": "reis einrühren und eine minute rösten, bis die ränder glasig aussehen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "pour in the wine and let it bubble away, stirring.",
+            "de": "wein angießen und unter rühren verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add warm broth a ladle at a time, stirring often, letting each one absorb before the next.",
+            "de": "warme brühe kellenweise zugeben, oft rühren, jede kelle aufsaugen lassen, bevor die nächste kommt."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "when the rice is creamy with a tiny bite, take it off the heat and beat in the rest of the butter and the parmesan.",
+            "de": "wenn der reis cremig mit leichtem biss ist, vom herd nehmen und restliche butter und parmesan unterrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "lid on, two minutes rest, then serve immediately.",
+            "de": "deckel drauf, zwei minuten ruhen lassen, dann sofort servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 13,
+        "carbs_g": 70,
+        "fat_g": 15
+      },
+      "tags": [
+        "weeknight",
+        "cozy",
+        "one-pan",
+        "comfort-food"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-easy-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "extra creamy mushroom risotto",
+        "de": "extra cremiges pilzrisotto"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 45,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "cream",
+          "name": {
+            "en": "cream",
+            "de": "sahne"
+          },
+          "amount": 50,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the mushrooms in a knob of butter and set a few pretty slices aside for the top.",
+            "de": "pilze in etwas butter braun braten und ein paar schöne scheiben für obendrauf beiseitelegen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "soften onion and garlic in more butter, stir in the rice and toast until translucent at the edges.",
+            "de": "zwiebel und knoblauch in mehr butter weich dünsten, reis einrühren und rösten, bis die ränder glasig sind."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "deglaze with the wine and let it evaporate.",
+            "de": "mit wein ablöschen und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "feed it warm broth ladle by ladle, stirring, until creamy and just al dente.",
+            "de": "warme brühe kelle für kelle unter rühren zugeben, bis es cremig und gerade al dente ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat: beat in the remaining butter, the cream and all that parmesan until it waves.",
+            "de": "vom herd: restliche butter, sahne und all den parmesan einrühren, bis das risotto wellen schlägt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, top with the saved mushrooms, serve.",
+            "de": "zwei minuten ruhen lassen, mit den beiseitegelegten pilzen toppen, servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 82,
+        "fat_g": 30
+      },
+      "tags": [
+        "weeknight",
+        "comfort-food",
+        "cozy",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-hard-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "saffron risotto, stirred slow",
+        "de": "safranrisotto, langsam gerührt"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 480,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth — watch it turn the color of late afternoon sun.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen — sieh zu, wie sie die farbe der späten nachmittagssonne annimmt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "sweat the onion and garlic gently in butter until completely soft but not browned. patience here pays off.",
+            "de": "zwiebel und knoblauch in butter sanft dünsten, bis sie ganz weich, aber nicht braun sind. geduld zahlt sich hier aus."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "add the rice, toast until pearly, then pour in the wine and let it fully absorb.",
+            "de": "reis zugeben, rösten bis er perlmuttartig glänzt, dann wein angießen und vollständig aufsaugen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "now the long meditation: broth ladle by ladle, stirring slowly, letting the starch build the creaminess. add the saffron broth halfway through.",
+            "de": "jetzt die lange meditation: brühe kelle für kelle, langsam rühren, damit die stärke die cremigkeit aufbaut. die safranbrühe nach der hälfte dazugeben."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, beat in the parmesan and a last small knob of butter. it should flow slowly, not sit in a mound.",
+            "de": "vom herd nehmen, parmesan und ein letztes kleines stück butter unterrühren. es sollte langsam fließen, nicht als haufen stehen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes under the lid, then eat it in peace.",
+            "de": "zwei minuten mit deckel ruhen lassen, dann in ruhe essen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 72,
+        "fat_g": 13
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-classic-hard-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "risotto with slow-roasted mushrooms & saffron",
+        "de": "risotto mit langsam gerösteten pilzen & safran"
+      },
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "simmer",
+        "roast"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 750,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "torn or thickly sliced",
+            "de": "gezupft oder dick geschnitten"
+          }
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "parmesan",
+            "de": "parmesan"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "butter",
+            "de": "butter"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast the mushrooms at 200°c with a little butter and salt until shriveled, browned and intensely savory.",
+            "de": "pilze bei 200 °c mit etwas butter und salz rösten, bis sie geschrumpft, braun und intensiv herzhaft sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth. sweat onion and garlic slowly in butter until meltingly soft.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen. zwiebel und knoblauch langsam in butter weich dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, then settle in: warm broth ladle by ladle, stirring, for a good long while. saffron broth goes in halfway.",
+            "de": "reis rösten, mit wein ablöschen, dann einrichten: warme brühe kelle für kelle unter rühren, eine gute lange zeit. safranbrühe nach der hälfte dazu."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "when creamy and al dente, take off the heat and beat in the remaining butter and the parmesan until glossy and loose.",
+            "de": "wenn cremig und al dente, vom herd nehmen und restliche butter und parmesan glänzend und locker einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then crown each bowl with the roasted mushrooms.",
+            "de": "zwei minuten ruhen lassen, dann jede schüssel mit den gerösteten pilzen krönen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 84,
+        "fat_g": 34
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-easy-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "golden mushroom risotto, olive oil finish",
+        "de": "goldenes pilzrisotto mit olivenöl-finish"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 440,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 600,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté the mushrooms in olive oil until golden, then add onion and garlic and soften.",
+            "de": "pilze in olivenöl goldbraun braten, dann zwiebel und knoblauch dazu und weich dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "stir in the rice, toast for a minute, then add the wine and let it cook off.",
+            "de": "reis einrühren, eine minute rösten, dann wein dazu und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "add warm broth ladle by ladle, stirring often, until the rice is creamy with a little bite.",
+            "de": "warme brühe kellenweise unter häufigem rühren zugeben, bis der reis cremig mit etwas biss ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the nutritional yeast and a good drizzle of olive oil for the silky finish.",
+            "de": "vom herd nehmen, hefeflocken und einen guten schuss olivenöl für das seidige finish einrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then serve with black pepper on top.",
+            "de": "zwei minuten ruhen lassen, dann mit schwarzem pfeffer servieren."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 70,
+        "fat_g": 11
+      },
+      "tags": [
+        "weeknight",
+        "cozy",
+        "one-pan",
+        "dairy-free"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-easy-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "creamy mushroom risotto, no dairy needed",
+        "de": "cremiges pilzrisotto, ganz ohne milchprodukte"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept warm",
+            "de": "warm gehalten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the mushrooms in olive oil, scoop a few out for topping, then soften onion and garlic in the same pan.",
+            "de": "pilze in olivenöl braun braten, ein paar zum toppen herausnehmen, dann zwiebel und knoblauch in derselben pfanne weich dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, and let it evaporate.",
+            "de": "reis rösten, mit wein ablöschen und verkochen lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "ladle in warm broth, stirring, until the rice turns creamy and just al dente.",
+            "de": "warme brühe unter rühren einellen, bis der reis cremig und gerade al dente ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "off the heat: nutritional yeast and the rest of the olive oil, beaten in until glossy and rich.",
+            "de": "vom herd: hefeflocken und das restliche olivenöl glänzend und sämig unterrühren."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, top with the saved mushrooms, done.",
+            "de": "zwei minuten ruhen lassen, mit den beiseitegelegten pilzen toppen, fertig."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 14,
+        "carbs_g": 88,
+        "fat_g": 24
+      },
+      "tags": [
+        "weeknight",
+        "comfort-food",
+        "cozy",
+        "dairy-free",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-hard-light",
+      "dish_id": "risotto",
+      "title": {
+        "en": "saffron risotto, slow sunday style",
+        "de": "safranrisotto nach sonntagsart"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 430,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 700,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "saffron",
+            "de": "safran"
+          },
+          "amount": 1,
+          "unit": "pinch",
+          "aisle": "spices"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 1,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "steep the saffron in a ladle of warm broth until it glows.",
+            "de": "safran in einer kelle warmer brühe ziehen lassen, bis sie leuchtet."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "sweat onion and garlic in olive oil, low and slow, until completely soft.",
+            "de": "zwiebel und knoblauch in olivenöl bei kleiner hitze ganz weich dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toast the rice until pearly, pour in the wine, let it disappear.",
+            "de": "reis rösten, bis er perlmuttartig glänzt, wein angießen, verschwinden lassen."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "the slow part: ladle by ladle, stirring gently, letting the starch do its quiet work. saffron broth in halfway.",
+            "de": "der langsame teil: kelle für kelle, sanft rühren, die stärke ihre stille arbeit tun lassen. safranbrühe nach der hälfte dazu."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, stir in the nutritional yeast and a thread of olive oil. it should ripple when you shake the pan.",
+            "de": "vom herd, hefeflocken und ein faden olivenöl einrühren. es sollte sich wellen, wenn du die pfanne schwenkst."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, then eat slowly. that's the whole point.",
+            "de": "zwei minuten ruhen lassen, dann langsam essen. genau darum geht's."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 72,
+        "fat_g": 10
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "dairy-free",
+        "one-pan"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto-vegan-hard-hearty",
+      "dish_id": "risotto",
+      "title": {
+        "en": "risotto with slow-roasted mushrooms & thyme",
+        "de": "risotto mit langsam gerösteten pilzen & thymian"
+      },
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "alcohol",
+        "sulphites"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤800",
+        "simmer",
+        "roast"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 660,
+      "servings": 2,
+      "ingredients": [
+        {
+          "id": "risotto-rice",
+          "name": {
+            "en": "risotto rice",
+            "de": "risottoreis"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushroom",
+          "name": {
+            "en": "mushrooms",
+            "de": "champignons"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "produce",
+          "note": {
+            "en": "torn into pieces",
+            "de": "in stücke gezupft"
+          }
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "white wine",
+            "de": "weißwein"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "vegetable broth",
+            "de": "gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry",
+          "note": {
+            "en": "kept at a bare simmer",
+            "de": "leise köchelnd warm halten"
+          }
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "nutritional yeast",
+            "de": "hefeflocken"
+          },
+          "amount": 4,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "olive oil",
+            "de": "olivenöl"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "onion",
+            "de": "zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce",
+          "note": {
+            "en": "very finely diced",
+            "de": "sehr fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "garlic",
+            "de": "knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "thyme",
+            "de": "thymian"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "produce",
+          "note": {
+            "en": "fresh leaves",
+            "de": "frische blättchen"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast the mushrooms at 200°c with olive oil, thyme and salt until dark, chewy and intensely mushroomy.",
+            "de": "pilze bei 200 °c mit olivenöl, thymian und salz rösten, bis sie dunkel, zäh und intensiv pilzig sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "sweat onion and garlic slowly in olive oil until soft and sweet.",
+            "de": "zwiebel und knoblauch langsam in olivenöl weich und süß dünsten."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "toast the rice, deglaze with wine, then feed it warm broth ladle by ladle with unhurried stirring.",
+            "de": "reis rösten, mit wein ablöschen, dann warme brühe kelle für kelle mit gemächlichem rühren zugeben."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "off the heat, beat in the nutritional yeast and remaining olive oil until it moves like lava.",
+            "de": "vom herd nehmen, hefeflocken und restliches olivenöl einrühren, bis es sich wie lava bewegt."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "en": "rest two minutes, pile the roasted mushrooms on top, scatter more thyme.",
+            "de": "zwei minuten ruhen lassen, geröstete pilze daraufhäufen, mehr thymian darüberstreuen."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 88,
+        "fat_g": 26
+      },
+      "tags": [
+        "cozy",
+        "weekend-project",
+        "comfort-food",
+        "dairy-free",
+        "crowd-pleaser"
+      ],
+      "meal_types": [
+        "dinner"
+      ]
+    }
+  ]
+}
