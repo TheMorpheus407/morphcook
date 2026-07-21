@@ -1,0 +1,98 @@
+[
+  {
+    "id": "doener",
+    "name": {"en": "Döner", "de": "Döner"},
+    "hero": {"en": "warm flatbread, bright pickles, dinner in both hands", "de": "warmes fladenbrot, helle pickles, abendessen in beiden händen"},
+    "caption": {"en": "eat this over the sink", "de": "am besten über der spüle"},
+    "stripe_color": "#D66B5C",
+    "recipe_ids": ["doener-classic-easy", "doener-vegan-easy", "doener-keto-medium", "doener-halal-medium"],
+    "partition_id": "core",
+    "secondary_partitions": ["middle-eastern"],
+    "cuisine_tags": ["turkish", "middle-eastern"],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "alfredo",
+    "name": {"en": "Alfredo", "de": "Alfredo"},
+    "hero": {"en": "silky noodles for a quiet, candlelit kind of evening", "de": "seidige nudeln für einen ruhigen abend bei kerzenlicht"},
+    "caption": {"en": "twirl slowly", "de": "langsam aufdrehen"},
+    "stripe_color": "#C99B42",
+    "recipe_ids": ["alfredo-classic-easy", "alfredo-glutenfree-easy", "alfredo-vegan-medium"],
+    "partition_id": "core",
+    "secondary_partitions": ["italian"],
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "pad-thai",
+    "name": {"en": "Pad Thai", "de": "Pad Thai"},
+    "hero": {"en": "tamarind, lime and a pan hot enough to sing", "de": "tamarinde, limette und eine pfanne, die heiß genug zum singen ist"},
+    "caption": {"en": "lime on the side", "de": "limette daneben"},
+    "stripe_color": "#4E8A84",
+    "recipe_ids": ["pad-thai-classic-medium", "pad-thai-vegan-easy", "pad-thai-nutfree-medium"],
+    "partition_id": "asian",
+    "secondary_partitions": [],
+    "cuisine_tags": ["thai", "asian"],
+    "frequency_tier": "extended"
+  },
+  {
+    "id": "shakshuka",
+    "name": {"en": "Shakshuka", "de": "Shakshuka"},
+    "hero": {"en": "tomatoes bubbling at the edge of a late breakfast", "de": "tomaten, die am rand eines späten frühstücks blubbern"},
+    "caption": {"en": "one pan, open window", "de": "eine pfanne, offenes fenster"},
+    "stripe_color": "#A8564F",
+    "recipe_ids": ["shakshuka-vegetarian-easy", "shakshuka-vegan-easy"],
+    "partition_id": "core",
+    "secondary_partitions": ["middle-eastern"],
+    "cuisine_tags": ["north-african", "middle-eastern"],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "ramen",
+    "name": {"en": "Ramen", "de": "Ramen"},
+    "hero": {"en": "a deep bowl, rain against the window, nowhere else to be", "de": "eine tiefe schale, regen am fenster, nirgendwo sonst sein müssen"},
+    "caption": {"en": "keep the broth close", "de": "brühe ganz nah"},
+    "stripe_color": "#745869",
+    "recipe_ids": ["ramen-classic-medium", "ramen-vegan-hard"],
+    "partition_id": "asian",
+    "secondary_partitions": [],
+    "cuisine_tags": ["japanese", "asian"],
+    "frequency_tier": "extended"
+  },
+  {
+    "id": "apple-pancakes",
+    "name": {"en": "Apple pancakes", "de": "Apfelpfannkuchen"},
+    "hero": {"en": "soft middles, crisp edges, cinnamon on your sleeve", "de": "weiche mitte, knuspriger rand, zimt am ärmel"},
+    "caption": {"en": "sunday, unhurried", "de": "sonntag, ohne eile"},
+    "stripe_color": "#78936A",
+    "recipe_ids": ["pancakes-vegetarian-easy", "pancakes-vegan-medium", "pancakes-glutenfree-medium"],
+    "partition_id": "extended",
+    "secondary_partitions": [],
+    "cuisine_tags": ["european", "breakfast"],
+    "frequency_tier": "extended"
+  },
+  {
+    "id": "lentil-soup",
+    "name": {"en": "Red lentil soup", "de": "Rote Linsensuppe"},
+    "hero": {"en": "the pot that looks after you while you do something else", "de": "der topf, der auf dich aufpasst, während du etwas anderes tust"},
+    "caption": {"en": "make enough for tomorrow", "de": "gleich für morgen mitkochen"},
+    "stripe_color": "#C77B4D",
+    "recipe_ids": ["lentil-soup-vegan-easy", "lentil-soup-halal-easy"],
+    "partition_id": "core",
+    "secondary_partitions": ["middle-eastern"],
+    "cuisine_tags": ["middle-eastern", "comfort"],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "mushroom-toast",
+    "name": {"en": "Mushroom toast", "de": "Pilztoast"},
+    "hero": {"en": "golden toast and mushrooms with a little too much thyme", "de": "goldener toast und pilze mit ein bisschen zu viel thymian"},
+    "caption": {"en": "lunch by the window", "de": "mittag am fenster"},
+    "stripe_color": "#8C7460",
+    "recipe_ids": ["mushroom-toast-vegan-easy", "mushroom-toast-classic-easy"],
+    "partition_id": "extended",
+    "secondary_partitions": [],
+    "cuisine_tags": ["european", "brunch"],
+    "frequency_tier": "extended"
+  }
+]

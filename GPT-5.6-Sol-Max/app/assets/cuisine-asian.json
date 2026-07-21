@@ -1,0 +1,117 @@
+[
+  {
+    "id":"pad-thai-classic-medium","dish_id":"pad-thai",
+    "title":{"en":"Tamarind shrimp Pad Thai","de":"Tamarinden-Garnelen-Pad-Thai"},
+    "subtitle":{"en":"springy noodles, sweet-sour tamarind and peanuts crushed by hand","de":"federnde nudeln, süßsaure tamarinde und von hand zerdrückte erdnüsse"},
+    "diet":"classic","effort":"medium","calorie_level":"hearty",
+    "contains":["shellfish","egg","peanuts","fish"],"attributes":["medium","≤60","≤800","stir-fry"],
+    "time_minutes":40,"servings":2,"nutrition":{"calories":650,"protein":34,"carbs":83,"fat":22},
+    "ingredients":[
+      {"id":"rice-noodles","name":{"en":"flat rice noodles","de":"breite reisnudeln"},"quantity":200,"unit":"g","aisle":"pantry"},
+      {"id":"shrimp","name":{"en":"raw peeled shrimp","de":"rohe geschälte garnelen"},"quantity":240,"unit":"g","aisle":"chilled"},
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":2,"unit":"piece","aisle":"chilled"},
+      {"id":"tamarind","name":{"en":"tamarind concentrate","de":"tamarindenkonzentrat"},"quantity":30,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"peanuts","name":{"en":"roasted peanuts","de":"geröstete erdnüsse"},"quantity":40,"unit":"g","aisle":"pantry"},
+      {"id":"lime","name":{"en":"limes","de":"limetten"},"quantity":2,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Soak the noodles in warm water until flexible but still firm. Drain very well.","de":"Nudeln in warmem Wasser biegsam, aber noch fest einweichen. Sehr gut abtropfen."},"timer_seconds":900},
+      {"text":{"en":"Stir tamarind with fish sauce, sugar and a splash of water. It should taste too intense on its own.","de":"Tamarinde mit Fischsauce, Zucker und etwas Wasser verrühren. Pur darf es zu intensiv schmecken."}},
+      {"text":{"en":"Sear shrimp in a smoking-hot wok, push aside, then scramble the eggs in the open space.","de":"Garnelen im rauchend heißen Wok braten, beiseiteschieben, dann Eier im freien Bereich rühren."},"timer_seconds":240},
+      {"text":{"en":"Add noodles and sauce. Toss until absorbed and springy. Finish with crushed peanuts and lime.","de":"Nudeln und Sauce zugeben. Schwenken, bis alles aufgenommen und federnd ist. Mit Erdnüssen und Limette vollenden."},"timer_seconds":300}
+    ],
+    "tags":["thai","noodles","street-food","seafood"],"meal_types":["lunch","dinner"],"cuisine":"thai","season":"all","reviewed":true
+  },
+  {
+    "id":"pad-thai-vegan-easy","dish_id":"pad-thai",
+    "title":{"en":"Vegan weeknight Pad Thai","de":"Veganes Feierabend-Pad-Thai"},
+    "subtitle":{"en":"tamarind noodles, golden tofu and a rain of fresh herbs","de":"tamarindennudeln, goldener tofu und ein regen frischer kräuter"},
+    "diet":"vegan","effort":"easy","calorie_level":"balanced",
+    "contains":["soy","peanuts"],"attributes":["vegan","halal","kosher","gluten-free","easy","≤30","≤600","stir-fry"],
+    "time_minutes":28,"servings":2,"nutrition":{"calories":560,"protein":24,"carbs":78,"fat":19},
+    "ingredients":[
+      {"id":"rice-noodles","name":{"en":"flat rice noodles","de":"breite reisnudeln"},"quantity":180,"unit":"g","aisle":"pantry"},
+      {"id":"tofu","name":{"en":"firm tofu","de":"fester tofu"},"quantity":240,"unit":"g","aisle":"chilled"},
+      {"id":"tamarind","name":{"en":"tamarind concentrate","de":"tamarindenkonzentrat"},"quantity":2,"unit":"tbsp","aisle":"pantry","volume_convertible":true},
+      {"id":"peanuts","name":{"en":"roasted peanuts","de":"geröstete erdnüsse"},"quantity":35,"unit":"g","aisle":"pantry"},
+      {"id":"cilantro","name":{"en":"cilantro","de":"koriandergrün"},"quantity":20,"unit":"g","aisle":"produce"},
+      {"id":"lime","name":{"en":"limes","de":"limetten"},"quantity":2,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Cover noodles with boiling water and leave until just flexible. Drain and rinse briefly.","de":"Nudeln mit kochendem Wasser bedecken und knapp biegsam ziehen lassen. Abgießen und kurz spülen."},"timer_seconds":480},
+      {"text":{"en":"Mix tamarind, soy sauce, brown sugar and water. Tear the tofu into small rough pieces.","de":"Tamarinde, Sojasauce, braunen Zucker und Wasser mischen. Tofu in kleine raue Stücke reißen."}},
+      {"text":{"en":"Brown tofu in a wide hot pan, then add noodles and sauce. Toss until the sauce clings.","de":"Tofu in einer breiten heißen Pfanne bräunen, dann Nudeln und Sauce zugeben. Schwenken, bis die Sauce haftet."},"timer_seconds":420},
+      {"text":{"en":"Fold through cilantro. Serve with peanuts and lime, keeping extra lime close.","de":"Koriander unterheben. Mit Erdnüssen und Limette servieren; extra Limette griffbereit halten."}}
+    ],
+    "tags":["vegan","thai","noodles","quick"],"meal_types":["lunch","dinner"],"cuisine":"thai","season":"all","reviewed":true
+  },
+  {
+    "id":"pad-thai-nutfree-medium","dish_id":"pad-thai",
+    "title":{"en":"Nut-free chicken Pad Thai","de":"Nussfreies Hähnchen-Pad-Thai"},
+    "subtitle":{"en":"tamarind chicken noodles with toasted seeds and lime","de":"tamarinden-hähnchen-nudeln mit gerösteten kernen und limette"},
+    "diet":"nut-free","effort":"medium","calorie_level":"hearty",
+    "contains":["poultry","egg","fish","sesame"],"attributes":["nut-free","gluten-free","medium","≤60","≤800","stir-fry"],
+    "time_minutes":38,"servings":2,"nutrition":{"calories":625,"protein":42,"carbs":79,"fat":17},
+    "ingredients":[
+      {"id":"rice-noodles","name":{"en":"flat rice noodles","de":"breite reisnudeln"},"quantity":200,"unit":"g","aisle":"pantry"},
+      {"id":"chicken","name":{"en":"chicken breast","de":"hähnchenbrust"},"quantity":280,"unit":"g","aisle":"chilled"},
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":2,"unit":"piece","aisle":"chilled"},
+      {"id":"tamarind","name":{"en":"tamarind concentrate","de":"tamarindenkonzentrat"},"quantity":30,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"sesame","name":{"en":"toasted sesame seeds","de":"gerösteter sesam"},"quantity":25,"unit":"g","aisle":"spices"},
+      {"id":"lime","name":{"en":"limes","de":"limetten"},"quantity":2,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Soak noodles until flexible. Mix tamarind, fish sauce, sugar and water in a small bowl.","de":"Nudeln biegsam einweichen. Tamarinde, Fischsauce, Zucker und Wasser in einer Schale mischen."},"timer_seconds":720},
+      {"text":{"en":"Slice chicken thinly and sear in a hot wok until nearly cooked. Push it to one side.","de":"Hähnchen dünn schneiden und im heißen Wok fast gar braten. Zur Seite schieben."},"timer_seconds":300},
+      {"text":{"en":"Scramble the eggs, then add noodles and sauce. Toss hard until glossy and cooked through.","de":"Eier rühren, dann Nudeln und Sauce zugeben. Kräftig schwenken, bis alles glänzt und gar ist."},"timer_seconds":360},
+      {"text":{"en":"Finish with sesame and lime. Use clean utensils if cooking for a severe nut allergy.","de":"Mit Sesam und Limette vollenden. Bei schwerer Nussallergie saubere Utensilien verwenden."}}
+    ],
+    "tags":["nut-free","thai","noodles","high-protein"],"meal_types":["lunch","dinner"],"cuisine":"thai","season":"all","reviewed":true
+  },
+  {
+    "id":"ramen-classic-medium","dish_id":"ramen",
+    "title":{"en":"Miso pork ramen","de":"Miso-Schweine-Ramen"},
+    "subtitle":{"en":"a deep miso broth with crisp pork and a soft egg","de":"tiefe misobrühe mit knusprigem schwein und weichem ei"},
+    "diet":"classic","effort":"medium","calorie_level":"hearty",
+    "contains":["pork","egg","gluten","soy"],"attributes":["medium","≤60","≤800","simmer"],
+    "time_minutes":55,"servings":2,"nutrition":{"calories":735,"protein":39,"carbs":82,"fat":28},
+    "ingredients":[
+      {"id":"ramen-noodles","name":{"en":"fresh ramen noodles","de":"frische ramennudeln"},"quantity":260,"unit":"g","aisle":"chilled"},
+      {"id":"pork","name":{"en":"pork mince","de":"schweinehack"},"quantity":250,"unit":"g","aisle":"chilled"},
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":2,"unit":"piece","aisle":"chilled"},
+      {"id":"soy","name":{"en":"red miso","de":"rotes miso"},"quantity":3,"unit":"tbsp","aisle":"chilled","volume_convertible":true},
+      {"id":"stock","name":{"en":"chicken stock","de":"hühnerbrühe"},"quantity":900,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"spring-onion","name":{"en":"spring onions","de":"frühlingszwiebeln"},"quantity":3,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Simmer the eggs for seven minutes, cool under water and peel carefully.","de":"Eier sieben Minuten köcheln, kalt abschrecken und vorsichtig schälen."},"timer_seconds":420},
+      {"text":{"en":"Brown the pork with ginger and garlic until crisp. Keep the golden bits for the bowls.","de":"Schweinehack mit Ingwer und Knoblauch knusprig bräunen. Die goldenen Stücke für die Schalen aufheben."},"timer_seconds":480},
+      {"text":{"en":"Warm stock gently. Take off the boil and whisk in miso so its flavour stays round.","de":"Brühe sanft erwärmen. Vom Kochen nehmen und Miso einrühren, damit der Geschmack rund bleibt."}},
+      {"text":{"en":"Cook noodles separately. Divide among bowls, pour over broth and top with pork, egg and spring onion.","de":"Nudeln separat kochen. Auf Schalen verteilen, Brühe angießen und mit Schwein, Ei und Frühlingszwiebel belegen."},"timer_seconds":180}
+    ],
+    "tags":["japanese","noodles","comfort","soup"],"meal_types":["lunch","dinner"],"cuisine":"japanese","season":"winter","reviewed":true
+  },
+  {
+    "id":"ramen-vegan-hard","dish_id":"ramen",
+    "title":{"en":"Roasted mushroom vegan ramen","de":"Vegane Ramen mit gerösteten Pilzen"},
+    "subtitle":{"en":"slow mushroom broth, charred greens and sesame-chilli oil","de":"langsame pilzbrühe, geröstetes grün und sesam-chiliöl"},
+    "diet":"vegan","effort":"hard","calorie_level":"balanced",
+    "contains":["gluten","soy","sesame"],"attributes":["vegan","halal","kosher","hard",">60","≤600","roast","simmer"],
+    "time_minutes":85,"servings":2,"nutrition":{"calories":595,"protein":24,"carbs":79,"fat":22},
+    "ingredients":[
+      {"id":"ramen-noodles","name":{"en":"egg-free ramen noodles","de":"eifreie ramennudeln"},"quantity":240,"unit":"g","aisle":"pantry"},
+      {"id":"mushrooms","name":{"en":"mixed mushrooms","de":"gemischte pilze"},"quantity":500,"unit":"g","aisle":"produce"},
+      {"id":"tofu","name":{"en":"firm tofu","de":"fester tofu"},"quantity":240,"unit":"g","aisle":"chilled"},
+      {"id":"soy","name":{"en":"white miso","de":"helles miso"},"quantity":3,"unit":"tbsp","aisle":"chilled","volume_convertible":true},
+      {"id":"sesame","name":{"en":"sesame oil","de":"sesamöl"},"quantity":15,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"bok-choy","name":{"en":"bok choy","de":"pak choi"},"quantity":2,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Roast half the mushrooms until dark at the edges. Simmer them with ginger, garlic and water for a deep broth.","de":"Die Hälfte der Pilze an den Rändern dunkel rösten. Mit Ingwer, Knoblauch und Wasser zu einer tiefen Brühe köcheln."},"timer_seconds":2700},
+      {"text":{"en":"Press and cube tofu. Brown it with the remaining mushrooms until every side has colour.","de":"Tofu pressen und würfeln. Mit den restlichen Pilzen rundum farbig braten."},"timer_seconds":720},
+      {"text":{"en":"Strain the broth. Whisk in miso, soy sauce and sesame oil off the heat. Char the bok choy.","de":"Brühe abseihen. Abseits der Hitze Miso, Sojasauce und Sesamöl einrühren. Pak Choi rösten."}},
+      {"text":{"en":"Cook noodles and build deep bowls with broth, tofu, mushrooms, greens and chilli oil.","de":"Nudeln kochen und tiefe Schalen mit Brühe, Tofu, Pilzen, Grün und Chiliöl bauen."},"timer_seconds":240}
+    ],
+    "tags":["vegan","japanese","slow","soup"],"meal_types":["lunch","dinner"],"cuisine":"japanese","season":"winter","reviewed":true
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id":"doener-keto-medium","dish_id":"doener",
+    "title":{"en":"Keto Döner bowl","de":"Keto-Döner-Bowl"},
+    "subtitle":{"en":"charred lamb, crunchy greens and tahini without the bread","de":"geröstetes lamm, knackiges grün und tahini ohne brot"},
+    "diet":"keto","effort":"medium","calorie_level":"hearty",
+    "contains":["lamb","sesame"],"attributes":["keto","gluten-free","medium","≤30","≤800","pan-fry"],
+    "time_minutes":30,"servings":2,"nutrition":{"calories":615,"protein":39,"carbs":18,"fat":44},
+    "ingredients":[
+      {"id":"lamb","name":{"en":"lamb mince","de":"lammhack"},"quantity":320,"unit":"g","aisle":"chilled"},
+      {"id":"lettuce","name":{"en":"romaine lettuce","de":"romanasalat"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"cucumber","name":{"en":"cucumber","de":"gurke"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"tahini","name":{"en":"tahini","de":"tahini"},"quantity":45,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"lemon","name":{"en":"lemon","de":"zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Whisk tahini with lemon, salt and warm water until pale and pourable.","de":"Tahini mit Zitrone, Salz und warmem Wasser hell und fließend rühren."}},
+      {"text":{"en":"Brown the lamb hard with cumin, coriander and chilli until crisp in places.","de":"Lamm mit Kreuzkümmel, Koriander und Chili kräftig braten, bis es stellenweise knusprig ist."},"timer_seconds":540},
+      {"text":{"en":"Chop lettuce and cucumber. Dress lightly with lemon and olive oil.","de":"Salat und Gurke schneiden. Leicht mit Zitrone und Olivenöl anmachen."}},
+      {"text":{"en":"Pile the hot lamb over the cold greens and stripe generously with tahini.","de":"Heißes Lamm auf das kalte Grün häufen und großzügig mit Tahini überziehen."}}
+    ],
+    "tags":["keto","gluten-free","high-protein","bowl"],"meal_types":["lunch","dinner"],"cuisine":"turkish","season":"summer","reviewed":true
+  },
+  {
+    "id":"doener-halal-medium","dish_id":"doener",
+    "title":{"en":"Halal-compatible chicken Döner","de":"Halal-kompatibler Hähnchen-Döner"},
+    "subtitle":{"en":"lemon chicken, pickled onion and herb sauce in warm bread","de":"zitronenhähnchen, eingelegte zwiebel und kräutersauce im warmen brot"},
+    "diet":"halal-compatible","effort":"medium","calorie_level":"hearty",
+    "contains":["poultry","dairy","lactose","gluten"],"attributes":["halal","medium","≤60","≤800","grill"],
+    "time_minutes":42,"servings":2,"nutrition":{"calories":680,"protein":44,"carbs":65,"fat":27},
+    "ingredients":[
+      {"id":"chicken","name":{"en":"halal-sourced chicken thigh","de":"halal bezogene hähnchenkeule"},"quantity":350,"unit":"g","aisle":"chilled","note":{"en":"Check sourcing and certification required by you.","de":"Prüfe Herkunft und die für dich nötige Zertifizierung."}},
+      {"id":"flatbread","name":{"en":"flatbreads","de":"fladenbrote"},"quantity":2,"unit":"piece","aisle":"bakery"},
+      {"id":"onion","name":{"en":"red onion","de":"rote zwiebel"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"yoghurt","name":{"en":"plain yoghurt","de":"naturjoghurt"},"quantity":120,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"parsley","name":{"en":"parsley","de":"petersilie"},"quantity":20,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Marinate the chicken with lemon, cumin, paprika, garlic and salt.","de":"Hähnchen mit Zitrone, Kreuzkümmel, Paprika, Knoblauch und Salz marinieren."},"timer_seconds":900},
+      {"text":{"en":"Slice onion thinly and scrunch with lemon and salt. Mix yoghurt with chopped parsley.","de":"Zwiebel dünn schneiden und mit Zitrone und Salz kneten. Joghurt mit gehackter Petersilie mischen."}},
+      {"text":{"en":"Grill or sear the chicken until browned and fully cooked, then rest before slicing.","de":"Hähnchen grillen oder braten, bis es gebräunt und durchgegart ist, dann vor dem Schneiden ruhen lassen."},"timer_seconds":720},
+      {"text":{"en":"Warm the bread and fill with herb yoghurt, chicken and bright pickled onion.","de":"Brot wärmen und mit Kräuterjoghurt, Hähnchen und heller eingelegter Zwiebel füllen."}}
+    ],
+    "tags":["halal-compatible","high-protein","street-food"],"meal_types":["lunch","dinner"],"cuisine":"turkish","season":"all","reviewed":true
+  },
+  {
+    "id":"shakshuka-vegan-easy","dish_id":"shakshuka",
+    "title":{"en":"Chickpea cloud shakshuka","de":"Kichererbsenwolken-Shakshuka"},
+    "subtitle":{"en":"spiced tomato, creamy chickpea spoonfuls and green herbs","de":"gewürzte tomate, cremige kichererbsenlöffel und grüne kräuter"},
+    "diet":"vegan","effort":"easy","calorie_level":"light",
+    "contains":[],"attributes":["vegan","halal","kosher","gluten-free","easy","≤30","≤400","simmer"],
+    "time_minutes":30,"servings":2,"nutrition":{"calories":385,"protein":17,"carbs":54,"fat":12},
+    "ingredients":[
+      {"id":"chickpeas","name":{"en":"chickpeas, drained","de":"kichererbsen, abgetropft"},"quantity":240,"unit":"g","aisle":"pantry"},
+      {"id":"tomatoes","name":{"en":"chopped tomatoes","de":"gehackte tomaten"},"quantity":400,"unit":"g","aisle":"pantry"},
+      {"id":"bell-peppers","name":{"en":"red pepper","de":"rote paprika"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"onion","name":{"en":"onion","de":"zwiebel"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"parsley","name":{"en":"parsley","de":"petersilie"},"quantity":15,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Blend half the chickpeas with a splash of water, lemon and salt until thick and soft.","de":"Die Hälfte der Kichererbsen mit etwas Wasser, Zitrone und Salz dick und weich pürieren."}},
+      {"text":{"en":"Soften onion and pepper with cumin and paprika. Add tomatoes and whole chickpeas.","de":"Zwiebel und Paprika mit Kreuzkümmel und Paprika weich dünsten. Tomaten und ganze Kichererbsen zugeben."},"timer_seconds":480},
+      {"text":{"en":"Simmer until rich. Nestle spoonfuls of chickpea cream into little hollows and warm through.","de":"Sämig köcheln. Löffel Kichererbsencreme in kleine Mulden setzen und erwärmen."},"timer_seconds":480},
+      {"text":{"en":"Finish with parsley, pepper and olive oil; scoop straight from the pan.","de":"Mit Petersilie, Pfeffer und Olivenöl vollenden; direkt aus der Pfanne schöpfen."}}
+    ],
+    "tags":["vegan","one-pan","breakfast","gluten-free"],"meal_types":["breakfast","lunch","dinner"],"cuisine":"middle-eastern","season":"all","reviewed":true
+  },
+  {
+    "id":"lentil-soup-halal-easy","dish_id":"lentil-soup",
+    "title":{"en":"Halal-compatible chicken & lentil soup","de":"Halal-kompatible Hähnchen-Linsensuppe"},
+    "subtitle":{"en":"red lentils, tender chicken and mint in a golden broth","de":"rote linsen, zartes hähnchen und minze in goldener brühe"},
+    "diet":"halal-compatible","effort":"easy","calorie_level":"balanced",
+    "contains":["poultry"],"attributes":["halal","gluten-free","easy","≤60","≤600","simmer"],
+    "time_minutes":42,"servings":4,"nutrition":{"calories":455,"protein":36,"carbs":48,"fat":12},
+    "ingredients":[
+      {"id":"lentils","name":{"en":"red lentils","de":"rote linsen"},"quantity":240,"unit":"g","aisle":"pantry"},
+      {"id":"chicken","name":{"en":"halal-sourced chicken breast","de":"halal bezogene hähnchenbrust"},"quantity":400,"unit":"g","aisle":"chilled","note":{"en":"Check sourcing and certification required by you.","de":"Prüfe Herkunft und die für dich nötige Zertifizierung."}},
+      {"id":"onion","name":{"en":"onion","de":"zwiebel"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"stock","name":{"en":"chicken stock","de":"hühnerbrühe"},"quantity":1200,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"mint","name":{"en":"mint","de":"minze"},"quantity":15,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Soften onion with cumin and turmeric. Stir in rinsed lentils and stock.","de":"Zwiebel mit Kreuzkümmel und Kurkuma weich dünsten. Gespülte Linsen und Brühe einrühren."}},
+      {"text":{"en":"Nestle in the chicken and simmer gently until cooked through.","de":"Hähnchen hineinlegen und sanft köcheln, bis es durchgegart ist."},"timer_seconds":1080},
+      {"text":{"en":"Lift out and shred the chicken. Blend a little of the soup, then return chicken to the pot.","de":"Hähnchen herausheben und zerpflücken. Etwas Suppe pürieren, dann das Hähnchen zurückgeben."}},
+      {"text":{"en":"Season with lemon and torn mint. Let the pot rest for five minutes before serving.","de":"Mit Zitrone und gezupfter Minze abschmecken. Vor dem Servieren fünf Minuten ruhen lassen."},"timer_seconds":300}
+    ],
+    "tags":["halal-compatible","soup","high-protein","gluten-free"],"meal_types":["lunch","dinner"],"cuisine":"middle-eastern","season":"winter","reviewed":true
+  }
+]

@@ -1,0 +1,47 @@
+name: morphcook
+description: "An offline, bilingual cookbook where every dietary variant is a complete recipe."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  archive: ^4.0.7
+  cryptography: ^2.7.0
+  cupertino_icons: ^1.0.8
+  file_picker: ^10.3.3
+  google_fonts: ^6.3.2
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+  path_provider: ^2.1.5
+  provider: ^6.1.5+1
+  share_plus: ^11.1.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/fonts/
+  fonts:
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-VariableFont_wght.ttf
+        - asset: assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf
+          style: italic
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-VariableFont_wght.ttf
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-VariableFont_wght.ttf

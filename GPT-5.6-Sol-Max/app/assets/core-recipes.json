@@ -1,0 +1,135 @@
+[
+  {
+    "id":"doener-classic-easy","dish_id":"doener",
+    "title":{"en":"Classic weeknight Döner","de":"Klassischer Feierabend-Döner"},
+    "subtitle":{"en":"spiced beef, lemony cabbage and garlic yoghurt in warm flatbread","de":"würziges rind, zitroniger kohl und knoblauchjoghurt im warmen fladenbrot"},
+    "diet":"classic","effort":"easy","calorie_level":"hearty",
+    "contains":["beef","dairy","lactose","gluten"],"attributes":["easy","≤30","≤800","pan-fry"],
+    "time_minutes":30,"servings":2,"nutrition":{"calories":710,"protein":38,"carbs":68,"fat":31},
+    "ingredients":[
+      {"id":"beef","name":{"en":"beef strips","de":"rindfleischstreifen"},"quantity":300,"unit":"g","aisle":"chilled"},
+      {"id":"flatbread","name":{"en":"flatbreads","de":"fladenbrote"},"quantity":2,"unit":"piece","aisle":"bakery"},
+      {"id":"cabbage","name":{"en":"red cabbage","de":"rotkohl"},"quantity":180,"unit":"g","aisle":"produce"},
+      {"id":"yoghurt","name":{"en":"plain yoghurt","de":"naturjoghurt"},"quantity":120,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":2,"unit":"clove","aisle":"produce"},
+      {"id":"lemon","name":{"en":"lemon","de":"zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Shred the cabbage. Massage it with half the lemon juice and a good pinch of salt until glossy.","de":"Rotkohl fein schneiden. Mit der Hälfte des Zitronensafts und einer guten Prise Salz glänzend massieren."},"timer_seconds":120,"tip":{"en":"This softens the cabbage without losing its crunch.","de":"So wird der Kohl weicher, bleibt aber knackig."}},
+      {"text":{"en":"Mix yoghurt, one grated garlic clove and the remaining lemon. Season until bright.","de":"Joghurt, eine geriebene Knoblauchzehe und restliche Zitrone verrühren. Frisch abschmecken."}},
+      {"text":{"en":"Season the beef with cumin, paprika, salt and pepper. Sear in a very hot pan until browned at the edges.","de":"Rind mit Kreuzkümmel, Paprika, Salz und Pfeffer würzen. In sehr heißer Pfanne an den Rändern braun braten."},"timer_seconds":420},
+      {"text":{"en":"Warm the flatbreads, then fill with yoghurt, cabbage and beef. Wrap in paper and eat immediately.","de":"Fladenbrote wärmen, dann mit Joghurt, Kohl und Rind füllen. In Papier wickeln und sofort essen."}}
+    ],
+    "tags":["comfort","quick","street-food","high-protein"],"meal_types":["lunch","dinner"],"cuisine":"turkish","season":"all","reviewed":true
+  },
+  {
+    "id":"doener-vegan-easy","dish_id":"doener",
+    "title":{"en":"Crisp tofu Döner","de":"Knuspriger Tofu-Döner"},
+    "subtitle":{"en":"sumac cabbage, browned tofu and a soft tahini cloud","de":"sumachkohl, gebräunter tofu und eine weiche tahiniwolke"},
+    "diet":"vegan","effort":"easy","calorie_level":"balanced",
+    "contains":["soy","sesame","gluten"],"attributes":["vegan","halal","kosher","easy","≤30","≤600","pan-fry"],
+    "time_minutes":28,"servings":2,"nutrition":{"calories":535,"protein":26,"carbs":61,"fat":23},
+    "ingredients":[
+      {"id":"tofu","name":{"en":"firm tofu","de":"fester tofu"},"quantity":280,"unit":"g","aisle":"chilled"},
+      {"id":"flatbread","name":{"en":"flatbreads","de":"fladenbrote"},"quantity":2,"unit":"piece","aisle":"bakery"},
+      {"id":"cabbage","name":{"en":"red cabbage","de":"rotkohl"},"quantity":180,"unit":"g","aisle":"produce"},
+      {"id":"tahini","name":{"en":"tahini","de":"tahini"},"quantity":3,"unit":"tbsp","aisle":"pantry","volume_convertible":true},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":2,"unit":"clove","aisle":"produce"},
+      {"id":"lemon","name":{"en":"lemon","de":"zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Press the tofu dry, tear it into craggy pieces and toss with cumin, smoked paprika and salt.","de":"Tofu trocken pressen, in raue Stücke reißen und mit Kreuzkümmel, Rauchpaprika und Salz mischen."}},
+      {"text":{"en":"Whisk tahini, grated garlic, lemon and enough warm water to make a ribboning sauce.","de":"Tahini, geriebenen Knoblauch, Zitrone und so viel warmes Wasser verrühren, bis eine fließende Sauce entsteht."}},
+      {"text":{"en":"Brown the tofu in a wide hot pan. Leave it untouched long enough to form crisp edges.","de":"Tofu in einer breiten heißen Pfanne bräunen. Lange genug in Ruhe lassen, damit knusprige Kanten entstehen."},"timer_seconds":480},
+      {"text":{"en":"Toss the cabbage with sumac and lemon. Warm the bread and layer everything generously.","de":"Kohl mit Sumach und Zitrone mischen. Brot wärmen und alles großzügig schichten."}}
+    ],
+    "tags":["vegan","quick","street-food","high-protein"],"meal_types":["lunch","dinner"],"cuisine":"turkish","season":"all","reviewed":true
+  },
+  {
+    "id":"alfredo-classic-easy","dish_id":"alfredo",
+    "title":{"en":"Silken parmesan Alfredo","de":"Seidige Parmesan-Alfredo"},
+    "subtitle":{"en":"butter, parmesan and pasta water doing their quiet magic","de":"butter, parmesan und nudelwasser wirken ihre stille magie"},
+    "diet":"classic","effort":"easy","calorie_level":"hearty",
+    "contains":["dairy","lactose","gluten"],"attributes":["vegetarian","easy","≤30","≤800","simmer"],
+    "time_minutes":22,"servings":2,"nutrition":{"calories":690,"protein":24,"carbs":76,"fat":34},
+    "ingredients":[
+      {"id":"wheat-pasta","name":{"en":"fettuccine","de":"fettuccine"},"quantity":220,"unit":"g","aisle":"pantry"},
+      {"id":"butter","name":{"en":"unsalted butter","de":"ungesalzene butter"},"quantity":45,"unit":"g","aisle":"chilled"},
+      {"id":"parmesan","name":{"en":"finely grated parmesan","de":"fein geriebener parmesan"},"quantity":75,"unit":"g","aisle":"chilled"},
+      {"id":"black-pepper","name":{"en":"black pepper","de":"schwarzer pfeffer"},"quantity":1,"unit":"tsp","aisle":"spices"}
+    ],
+    "steps":[
+      {"text":{"en":"Boil the pasta in well-salted water until just shy of al dente. Reserve a mug of cloudy cooking water.","de":"Pasta in gut gesalzenem Wasser knapp al dente kochen. Einen Becher trübes Kochwasser aufheben."},"timer_seconds":540},
+      {"text":{"en":"Melt butter in a wide pan with plenty of black pepper. Add half a mug of pasta water.","de":"Butter mit reichlich schwarzem Pfeffer in einer breiten Pfanne schmelzen. Einen halben Becher Nudelwasser zugeben."}},
+      {"text":{"en":"Toss in the pasta. Take the pan off the heat and rain in parmesan while tossing continuously.","de":"Pasta untermischen. Pfanne vom Herd nehmen und Parmesan unter ständigem Schwenken einrieseln lassen."}},
+      {"text":{"en":"Loosen with more pasta water until glossy. Serve at once on warm plates.","de":"Mit mehr Nudelwasser glänzend lockern. Sofort auf warmen Tellern servieren."}}
+    ],
+    "tags":["vegetarian","pasta","comfort","quick"],"meal_types":["lunch","dinner"],"cuisine":"italian","season":"all","reviewed":true
+  },
+  {
+    "id":"alfredo-glutenfree-easy","dish_id":"alfredo",
+    "title":{"en":"Gluten-free lemon Alfredo","de":"Glutenfreie Zitronen-Alfredo"},
+    "subtitle":{"en":"corn-rice ribbons held together with parmesan and lemon","de":"mais-reis-bänder, verbunden von parmesan und zitrone"},
+    "diet":"gluten-free","effort":"easy","calorie_level":"hearty",
+    "contains":["dairy","lactose"],"attributes":["vegetarian","gluten-free","easy","≤30","≤800","simmer"],
+    "time_minutes":24,"servings":2,"nutrition":{"calories":645,"protein":22,"carbs":72,"fat":31},
+    "ingredients":[
+      {"id":"gf-pasta","name":{"en":"gluten-free fettuccine","de":"glutenfreie fettuccine"},"quantity":220,"unit":"g","aisle":"pantry"},
+      {"id":"butter","name":{"en":"unsalted butter","de":"ungesalzene butter"},"quantity":40,"unit":"g","aisle":"chilled"},
+      {"id":"parmesan","name":{"en":"finely grated parmesan","de":"fein geriebener parmesan"},"quantity":70,"unit":"g","aisle":"chilled"},
+      {"id":"lemon","name":{"en":"unwaxed lemon","de":"unbehandelte zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Cook the pasta gently, stirring often so the ribbons do not cling. Save plenty of starchy water.","de":"Pasta sanft kochen und oft rühren, damit die Bänder nicht kleben. Reichlich stärkehaltiges Wasser aufheben."},"timer_seconds":600},
+      {"text":{"en":"Melt butter with lemon zest and a crack of pepper in a wide pan.","de":"Butter mit Zitronenschale und frisch gemahlenem Pfeffer in einer breiten Pfanne schmelzen."}},
+      {"text":{"en":"Add drained pasta and a splash of cooking water. Remove from the heat before adding parmesan.","de":"Abgetropfte Pasta und etwas Kochwasser zugeben. Vor dem Parmesan vom Herd nehmen."}},
+      {"text":{"en":"Toss vigorously, loosening spoon by spoon. Finish with a few drops of lemon juice.","de":"Kräftig schwenken und löffelweise lockern. Mit wenigen Tropfen Zitronensaft vollenden."}}
+    ],
+    "tags":["gluten-free","vegetarian","pasta","comfort"],"meal_types":["lunch","dinner"],"cuisine":"italian","season":"all","reviewed":true
+  },
+  {
+    "id":"shakshuka-vegetarian-easy","dish_id":"shakshuka",
+    "title":{"en":"Sunday skillet shakshuka","de":"Sonntags-Shakshuka"},
+    "subtitle":{"en":"soft eggs nestled in cumin tomatoes with torn parsley","de":"weiche eier in kreuzkümmeltomaten mit gezupfter petersilie"},
+    "diet":"vegetarian","effort":"easy","calorie_level":"light",
+    "contains":["egg"],"attributes":["vegetarian","easy","≤30","≤400","simmer"],
+    "time_minutes":27,"servings":2,"nutrition":{"calories":395,"protein":20,"carbs":31,"fat":21},
+    "ingredients":[
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":4,"unit":"piece","aisle":"chilled"},
+      {"id":"tomatoes","name":{"en":"chopped tomatoes","de":"gehackte tomaten"},"quantity":400,"unit":"g","aisle":"pantry"},
+      {"id":"bell-peppers","name":{"en":"red pepper","de":"rote paprika"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"onion","name":{"en":"onion","de":"zwiebel"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"parsley","name":{"en":"flat-leaf parsley","de":"glatte petersilie"},"quantity":15,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Soften sliced onion and pepper in olive oil with a pinch of salt.","de":"Zwiebel und Paprika in Olivenöl mit einer Prise Salz weich dünsten."},"timer_seconds":420},
+      {"text":{"en":"Add cumin, smoked paprika and tomatoes. Simmer until thick enough to hold a spoon trail.","de":"Kreuzkümmel, Rauchpaprika und Tomaten zugeben. Köcheln, bis eine Löffelspur stehen bleibt."},"timer_seconds":600},
+      {"text":{"en":"Make four hollows and crack in the eggs. Cover and cook until whites set but yolks still tremble.","de":"Vier Mulden machen und Eier hineinschlagen. Abdecken und garen, bis das Eiweiß fest ist und das Eigelb noch zittert."},"timer_seconds":360},
+      {"text":{"en":"Scatter with parsley, pepper and a little olive oil. Bring the whole pan to the table.","de":"Mit Petersilie, Pfeffer und etwas Olivenöl bestreuen. Die ganze Pfanne auf den Tisch stellen."}}
+    ],
+    "tags":["vegetarian","one-pan","breakfast","gluten-free"],"meal_types":["breakfast","lunch","dinner"],"cuisine":"middle-eastern","season":"all","reviewed":true
+  },
+  {
+    "id":"lentil-soup-vegan-easy","dish_id":"lentil-soup",
+    "title":{"en":"Red lentil & lemon soup","de":"Rote Linsen-Zitronen-Suppe"},
+    "subtitle":{"en":"a soft orange pot sharpened with lemon and cumin","de":"ein sanfter oranger topf, geschärft mit zitrone und kreuzkümmel"},
+    "diet":"vegan","effort":"easy","calorie_level":"light",
+    "contains":[],"attributes":["vegan","halal","kosher","gluten-free","easy","≤30","≤400","simmer"],
+    "time_minutes":30,"servings":4,"nutrition":{"calories":370,"protein":19,"carbs":58,"fat":8},
+    "ingredients":[
+      {"id":"lentils","name":{"en":"red lentils","de":"rote linsen"},"quantity":280,"unit":"g","aisle":"pantry"},
+      {"id":"onion","name":{"en":"onion","de":"zwiebel"},"quantity":1,"unit":"piece","aisle":"produce"},
+      {"id":"carrot","name":{"en":"carrots","de":"karotten"},"quantity":2,"unit":"piece","aisle":"produce"},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":3,"unit":"clove","aisle":"produce"},
+      {"id":"stock","name":{"en":"vegetable stock","de":"gemüsebrühe"},"quantity":1000,"unit":"ml","aisle":"pantry","volume_convertible":true},
+      {"id":"lemon","name":{"en":"lemon","de":"zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Rinse the lentils. Soften chopped onion and carrot in olive oil until sweet at the edges.","de":"Linsen spülen. Zwiebel und Karotten in Olivenöl weich dünsten, bis die Ränder süß werden."},"timer_seconds":420},
+      {"text":{"en":"Add garlic, cumin and a pinch of chilli. Stir until fragrant, then add lentils and stock.","de":"Knoblauch, Kreuzkümmel und eine Prise Chili zugeben. Duftend rühren, dann Linsen und Brühe hinzufügen."}},
+      {"text":{"en":"Simmer gently until the lentils collapse. Stir now and then so the bottom stays calm.","de":"Sanft köcheln, bis die Linsen zerfallen. Ab und zu rühren, damit am Boden alles ruhig bleibt."},"timer_seconds":1080},
+      {"text":{"en":"Blend half the pot, return it and finish with lemon. Add water until it pours softly.","de":"Die Hälfte pürieren, zurückgeben und mit Zitrone vollenden. Mit Wasser weich fließend einstellen."}}
+    ],
+    "tags":["vegan","soup","batch-cook","gluten-free"],"meal_types":["lunch","dinner"],"cuisine":"middle-eastern","season":"winter","reviewed":true
+  }
+]

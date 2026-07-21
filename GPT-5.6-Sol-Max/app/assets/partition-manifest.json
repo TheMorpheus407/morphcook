@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "loading_strategy": "core-first-on-demand",
+  "partitions": [
+    {"id": "core", "file": "core-recipes.json", "launch": true, "description": "Most-used launch recipes"},
+    {"id": "extended", "file": "extended-recipes.json", "launch": false, "description": "Long-tail discovery recipes"},
+    {"id": "italian", "file": "cuisine-italian.json", "launch": false, "description": "Italian discovery"},
+    {"id": "asian", "file": "cuisine-asian.json", "launch": false, "description": "Asian discovery"},
+    {"id": "middle-eastern", "file": "cuisine-middle-eastern.json", "launch": false, "description": "Middle Eastern discovery"}
+  ],
+  "cross_references": {"dish_file": "dishes.json", "ontology_file": "ontology.json", "ingredient_file": "ingredients.json"}
+}

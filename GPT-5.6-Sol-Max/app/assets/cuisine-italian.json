@@ -1,0 +1,24 @@
+[
+  {
+    "id":"alfredo-vegan-medium","dish_id":"alfredo",
+    "title":{"en":"White bean & miso Alfredo","de":"Weiße-Bohnen-Miso-Alfredo"},
+    "subtitle":{"en":"a velvet sauce of white beans, miso and roasted garlic","de":"eine samtsauce aus weißen bohnen, miso und geröstetem knoblauch"},
+    "diet":"vegan","effort":"medium","calorie_level":"balanced",
+    "contains":["gluten","soy"],"attributes":["vegan","halal","kosher","medium","≤60","≤600","simmer"],
+    "time_minutes":38,"servings":2,"nutrition":{"calories":575,"protein":25,"carbs":91,"fat":13},
+    "ingredients":[
+      {"id":"wheat-pasta","name":{"en":"fettuccine","de":"fettuccine"},"quantity":210,"unit":"g","aisle":"pantry"},
+      {"id":"white-beans","name":{"en":"cannellini beans","de":"cannellini-bohnen"},"quantity":240,"unit":"g","aisle":"pantry"},
+      {"id":"soy","name":{"en":"white miso","de":"helles miso"},"quantity":1,"unit":"tbsp","aisle":"chilled","volume_convertible":true},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":5,"unit":"clove","aisle":"produce"},
+      {"id":"lemon","name":{"en":"lemon","de":"zitrone"},"quantity":1,"unit":"piece","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Gently brown sliced garlic in olive oil until soft and pale gold; do not let it darken.","de":"Knoblauchscheiben in Olivenöl sanft weich und hellgold bräunen; nicht dunkel werden lassen."},"timer_seconds":420},
+      {"text":{"en":"Blend garlic and its oil with beans, miso, lemon and a splash of water until completely smooth.","de":"Knoblauch samt Öl mit Bohnen, Miso, Zitrone und etwas Wasser völlig glatt pürieren."}},
+      {"text":{"en":"Cook pasta just shy of al dente, keeping a large mug of cooking water.","de":"Pasta knapp al dente kochen und einen großen Becher Kochwasser aufheben."},"timer_seconds":540},
+      {"text":{"en":"Warm the bean cream gently, toss with pasta and loosen until glossy. Finish with black pepper.","de":"Bohnencreme sanft wärmen, mit Pasta mischen und glänzend lockern. Mit schwarzem Pfeffer vollenden."}}
+    ],
+    "tags":["vegan","pasta","high-protein","comfort"],"meal_types":["lunch","dinner"],"cuisine":"italian","season":"all","reviewed":true
+  }
+]

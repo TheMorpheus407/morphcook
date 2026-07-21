@@ -1,0 +1,116 @@
+[
+  {
+    "id":"pancakes-vegetarian-easy","dish_id":"apple-pancakes",
+    "title":{"en":"Cinnamon apple pancakes","de":"Zimt-Apfelpfannkuchen"},
+    "subtitle":{"en":"soft pancakes with buttery apples and crisp cinnamon edges","de":"weiche pfannkuchen mit butteräpfeln und knusprigen zimträndern"},
+    "diet":"vegetarian","effort":"easy","calorie_level":"balanced",
+    "contains":["egg","dairy","lactose","gluten","added-sugar"],"attributes":["vegetarian","easy","≤30","≤600","pan-fry"],
+    "time_minutes":28,"servings":2,"nutrition":{"calories":485,"protein":15,"carbs":69,"fat":18},
+    "ingredients":[
+      {"id":"apples","name":{"en":"tart apples","de":"säuerliche äpfel"},"quantity":2,"unit":"piece","aisle":"produce"},
+      {"id":"wheat-flour","name":{"en":"plain flour","de":"weizenmehl"},"quantity":160,"unit":"g","aisle":"pantry"},
+      {"id":"whole-milk","name":{"en":"whole milk","de":"vollmilch"},"quantity":220,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":2,"unit":"piece","aisle":"chilled"},
+      {"id":"butter","name":{"en":"butter","de":"butter"},"quantity":30,"unit":"g","aisle":"chilled"},
+      {"id":"cinnamon","name":{"en":"cinnamon","de":"zimt"},"quantity":1,"unit":"tsp","aisle":"spices"}
+    ],
+    "steps":[
+      {"text":{"en":"Slice one apple thinly and grate the other. Cook the slices in half the butter with cinnamon until golden.","de":"Einen Apfel dünn schneiden, den anderen reiben. Scheiben in der Hälfte der Butter mit Zimt goldig braten."},"timer_seconds":360},
+      {"text":{"en":"Whisk flour, milk, eggs, grated apple and a pinch of salt into a lumpy, tender batter.","de":"Mehl, Milch, Eier, geriebenen Apfel und eine Prise Salz zu einem noch leicht klumpigen Teig rühren."}},
+      {"text":{"en":"Fry small pancakes in the remaining butter. Turn when bubbles hold at the surface.","de":"Kleine Pfannkuchen in restlicher Butter braten. Wenden, wenn Blasen an der Oberfläche stehen bleiben."},"timer_seconds":180},
+      {"text":{"en":"Stack with the warm apple slices and a final dusting of cinnamon.","de":"Mit warmen Apfelscheiben stapeln und zuletzt mit Zimt bestäuben."}}
+    ],
+    "tags":["vegetarian","breakfast","sweet","quick"],"meal_types":["breakfast"],"cuisine":"european","season":"autumn","reviewed":true
+  },
+  {
+    "id":"pancakes-vegan-medium","dish_id":"apple-pancakes",
+    "title":{"en":"Vegan apple-oat pancakes","de":"Vegane Apfel-Hafer-Pfannkuchen"},
+    "subtitle":{"en":"oat-soft middles, caramel apples and maple at the table","de":"haferweiche mitte, karamelläpfel und ahornsirup am tisch"},
+    "diet":"vegan","effort":"medium","calorie_level":"balanced",
+    "contains":["gluten","soy","added-sugar"],"attributes":["vegan","halal","kosher","medium","≤60","≤600","pan-fry"],
+    "time_minutes":36,"servings":2,"nutrition":{"calories":445,"protein":12,"carbs":72,"fat":14},
+    "ingredients":[
+      {"id":"apples","name":{"en":"tart apples","de":"säuerliche äpfel"},"quantity":2,"unit":"piece","aisle":"produce"},
+      {"id":"oats","name":{"en":"rolled oats","de":"haferflocken"},"quantity":150,"unit":"g","aisle":"pantry"},
+      {"id":"soy-milk","name":{"en":"soy milk","de":"sojamilch"},"quantity":240,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"flax","name":{"en":"ground flaxseed","de":"geschrotete leinsamen"},"quantity":1,"unit":"tbsp","aisle":"pantry","volume_convertible":true},
+      {"id":"maple","name":{"en":"maple syrup","de":"ahornsirup"},"quantity":2,"unit":"tbsp","aisle":"pantry","volume_convertible":true},
+      {"id":"cinnamon","name":{"en":"cinnamon","de":"zimt"},"quantity":1,"unit":"tsp","aisle":"spices"}
+    ],
+    "steps":[
+      {"text":{"en":"Mix flaxseed with three tablespoons of water and leave until gelled.","de":"Leinsamen mit drei Esslöffeln Wasser mischen und gelieren lassen."},"timer_seconds":600},
+      {"text":{"en":"Blend oats into flour. Whisk with soy milk, flax gel, grated apple, baking powder and cinnamon.","de":"Hafer zu Mehl mixen. Mit Sojamilch, Leingel, geriebenem Apfel, Backpulver und Zimt verrühren."}},
+      {"text":{"en":"Cook small pancakes in a lightly oiled pan until deeply golden on both sides.","de":"Kleine Pfannkuchen in leicht geölter Pfanne auf beiden Seiten tiefgolden braten."},"timer_seconds":240},
+      {"text":{"en":"Warm the remaining apple in maple syrup and spoon over the stack.","de":"Restlichen Apfel in Ahornsirup wärmen und über den Stapel löffeln."},"timer_seconds":240}
+    ],
+    "tags":["vegan","breakfast","sweet","weekend"],"meal_types":["breakfast"],"cuisine":"european","season":"autumn","reviewed":true
+  },
+  {
+    "id":"pancakes-glutenfree-medium","dish_id":"apple-pancakes",
+    "title":{"en":"Buckwheat apple pancakes","de":"Buchweizen-Apfelpfannkuchen"},
+    "subtitle":{"en":"nutty buckwheat, soft apple and a cool spoon of yoghurt","de":"nussiger buchweizen, weicher apfel und ein kühler löffel joghurt"},
+    "diet":"gluten-free","effort":"medium","calorie_level":"balanced",
+    "contains":["egg","dairy","lactose","added-sugar","honey"],"attributes":["vegetarian","gluten-free","medium","≤60","≤600","pan-fry"],
+    "time_minutes":35,"servings":2,"nutrition":{"calories":455,"protein":16,"carbs":64,"fat":16},
+    "ingredients":[
+      {"id":"apples","name":{"en":"tart apples","de":"säuerliche äpfel"},"quantity":2,"unit":"piece","aisle":"produce"},
+      {"id":"buckwheat","name":{"en":"buckwheat flour","de":"buchweizenmehl"},"quantity":150,"unit":"g","aisle":"pantry"},
+      {"id":"whole-milk","name":{"en":"whole milk","de":"vollmilch"},"quantity":210,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"egg","name":{"en":"eggs","de":"eier"},"quantity":2,"unit":"piece","aisle":"chilled"},
+      {"id":"yoghurt","name":{"en":"plain yoghurt","de":"naturjoghurt"},"quantity":100,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"honey","name":{"en":"honey","de":"honig"},"quantity":1,"unit":"tbsp","aisle":"pantry","volume_convertible":true}
+    ],
+    "steps":[
+      {"text":{"en":"Grate one apple. Whisk buckwheat flour with milk, eggs, grated apple and a pinch of salt.","de":"Einen Apfel reiben. Buchweizenmehl mit Milch, Eiern, geriebenem Apfel und einer Prise Salz verrühren."}},
+      {"text":{"en":"Rest the batter so the buckwheat hydrates and the pancakes stay tender.","de":"Teig ruhen lassen, damit der Buchweizen quillt und die Pfannkuchen zart bleiben."},"timer_seconds":600},
+      {"text":{"en":"Slice the remaining apple. Fry pancakes and apple slices in a lightly buttered pan.","de":"Restlichen Apfel schneiden. Pfannkuchen und Apfelscheiben in leicht gebutterter Pfanne braten."},"timer_seconds":240},
+      {"text":{"en":"Serve with cool yoghurt, warm apple and a thin thread of honey.","de":"Mit kühlem Joghurt, warmem Apfel und einem dünnen Faden Honig servieren."}}
+    ],
+    "tags":["gluten-free","vegetarian","breakfast","weekend"],"meal_types":["breakfast"],"cuisine":"european","season":"autumn","reviewed":true
+  },
+  {
+    "id":"mushroom-toast-vegan-easy","dish_id":"mushroom-toast",
+    "title":{"en":"Garlicky mushroom toast","de":"Knoblauch-Pilztoast"},
+    "subtitle":{"en":"bronzed mushrooms, white bean cream and thyme on sourdough","de":"gebräunte pilze, weiße-bohnen-creme und thymian auf sauerteig"},
+    "diet":"vegan","effort":"easy","calorie_level":"light",
+    "contains":["gluten"],"attributes":["vegan","halal","kosher","easy","≤30","≤400","sauté"],
+    "time_minutes":20,"servings":2,"nutrition":{"calories":380,"protein":17,"carbs":53,"fat":12},
+    "ingredients":[
+      {"id":"mushrooms","name":{"en":"chestnut mushrooms","de":"braune champignons"},"quantity":300,"unit":"g","aisle":"produce"},
+      {"id":"sourdough","name":{"en":"sourdough slices","de":"sauerteigscheiben"},"quantity":4,"unit":"piece","aisle":"bakery"},
+      {"id":"white-beans","name":{"en":"cannellini beans","de":"cannellini-bohnen"},"quantity":180,"unit":"g","aisle":"pantry"},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":3,"unit":"clove","aisle":"produce"},
+      {"id":"thyme","name":{"en":"thyme","de":"thymian"},"quantity":8,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Blend beans with lemon, olive oil, one garlic clove and salt until creamy.","de":"Bohnen mit Zitrone, Olivenöl, einer Knoblauchzehe und Salz cremig pürieren."}},
+      {"text":{"en":"Toast the bread hard enough to stay crisp beneath the topping.","de":"Brot kräftig rösten, damit es unter dem Belag knusprig bleibt."},"timer_seconds":240},
+      {"text":{"en":"Sauté mushrooms in a wide hot pan. Add garlic and thyme only once they are deeply browned.","de":"Pilze in breiter heißer Pfanne braten. Knoblauch und Thymian erst zugeben, wenn sie tief gebräunt sind."},"timer_seconds":480},
+      {"text":{"en":"Spread bean cream on toast, heap over mushrooms and finish with pepper.","de":"Bohnencreme auf Toast streichen, Pilze darauf häufen und mit Pfeffer vollenden."}}
+    ],
+    "tags":["vegan","brunch","quick","high-protein"],"meal_types":["breakfast","lunch"],"cuisine":"european","season":"autumn","reviewed":true
+  },
+  {
+    "id":"mushroom-toast-classic-easy","dish_id":"mushroom-toast",
+    "title":{"en":"Creamy thyme mushroom toast","de":"Cremiger Thymian-Pilztoast"},
+    "subtitle":{"en":"butter-browned mushrooms and parmesan cream on crisp toast","de":"buttergebräunte pilze und parmesancreme auf knusprigem toast"},
+    "diet":"classic","effort":"easy","calorie_level":"balanced",
+    "contains":["dairy","lactose","gluten"],"attributes":["vegetarian","easy","≤30","≤600","sauté"],
+    "time_minutes":22,"servings":2,"nutrition":{"calories":510,"protein":18,"carbs":49,"fat":29},
+    "ingredients":[
+      {"id":"mushrooms","name":{"en":"mixed mushrooms","de":"gemischte pilze"},"quantity":350,"unit":"g","aisle":"produce"},
+      {"id":"sourdough","name":{"en":"sourdough slices","de":"sauerteigscheiben"},"quantity":4,"unit":"piece","aisle":"bakery"},
+      {"id":"cream","name":{"en":"double cream","de":"sahne"},"quantity":60,"unit":"ml","aisle":"chilled","volume_convertible":true},
+      {"id":"parmesan","name":{"en":"parmesan","de":"parmesan"},"quantity":35,"unit":"g","aisle":"chilled"},
+      {"id":"garlic","name":{"en":"garlic","de":"knoblauch"},"quantity":2,"unit":"clove","aisle":"produce"},
+      {"id":"thyme","name":{"en":"thyme","de":"thymian"},"quantity":8,"unit":"g","aisle":"produce"}
+    ],
+    "steps":[
+      {"text":{"en":"Toast the sourdough until deeply crisp, then rub lightly with a cut garlic clove.","de":"Sauerteig tief knusprig rösten, dann leicht mit einer angeschnittenen Knoblauchzehe einreiben."},"timer_seconds":240},
+      {"text":{"en":"Brown mushrooms in butter in a wide pan. Give them space and wait before stirring.","de":"Pilze in Butter in einer breiten Pfanne bräunen. Platz lassen und vor dem Rühren warten."},"timer_seconds":480},
+      {"text":{"en":"Add garlic and thyme, then cream. Bubble briefly and fold in parmesan off the heat.","de":"Knoblauch und Thymian, dann Sahne zugeben. Kurz blubbern lassen und Parmesan abseits der Hitze unterheben."},"timer_seconds":120},
+      {"text":{"en":"Spoon immediately over toast and finish with black pepper and thyme leaves.","de":"Sofort über den Toast löffeln und mit schwarzem Pfeffer und Thymianblättern vollenden."}}
+    ],
+    "tags":["vegetarian","brunch","quick","comfort"],"meal_types":["breakfast","lunch"],"cuisine":"european","season":"autumn","reviewed":true
+  }
+]
