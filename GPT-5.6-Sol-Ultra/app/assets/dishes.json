@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero_text": {
+        "en": "warm bread, cool sauce & the good kind of mess",
+        "de": "warmes Brot, kühle Sauce & die gute Art von Chaos"
+      },
+      "caption": {
+        "en": "fold tight; napkins nearby",
+        "de": "fest falten; Servietten bereithalten"
+      },
+      "stripe_color": "#D9785D",
+      "accent_color": "#315E59",
+      "variant_recipe_ids": [
+        "doener-classic-easy-balanced",
+        "doener-vegan-medium-light",
+        "doener-halal-medium-hearty",
+        "doener-keto-easy-light"
+      ],
+      "default_recipe_id": "doener-classic-easy-balanced",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "classic",
+          "vegan",
+          "halal",
+          "keto"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "effort": "easy"
+          },
+          "note": {
+            "en": "No vegan × easy version yet",
+            "de": "Noch keine vegane × einfache Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "halal",
+            "calorie_level": "light"
+          },
+          "note": {
+            "en": "No halal × light version yet",
+            "de": "Noch keine halal-kompatible × leichte Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "keto",
+            "effort": "hard"
+          },
+          "note": {
+            "en": "No keto × hard version yet",
+            "de": "Noch keine Keto × aufwendige Version"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "german-street-food"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "street-food",
+        "comfort-food",
+        "handheld"
+      ],
+      "discovery_partitions": [
+        "cuisine-middle-eastern"
+      ]
+    },
+    {
+      "id": "roasted-tomato-soup",
+      "canonical_name": {
+        "en": "Tomato Soup",
+        "de": "Tomatensuppe"
+      },
+      "hero_text": {
+        "en": "red velvet for grey-weather afternoons",
+        "de": "roter Samt für graue Nachmittage"
+      },
+      "caption": {
+        "en": "steam on the windowpane",
+        "de": "Dampf an der Fensterscheibe"
+      },
+      "stripe_color": "#C75545",
+      "accent_color": "#E8B75C",
+      "variant_recipe_ids": [
+        "tomato-soup-classic-easy-light",
+        "tomato-soup-vegan-easy-light",
+        "tomato-soup-classic-hard-balanced"
+      ],
+      "default_recipe_id": "tomato-soup-classic-easy-light",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "vegetarian",
+          "vegan"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "effort": "hard"
+          },
+          "note": {
+            "en": "No vegan × hard version yet",
+            "de": "Noch keine vegane × aufwendige Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "vegetarian",
+            "effort": "medium"
+          },
+          "note": {
+            "en": "No medium-effort version yet",
+            "de": "Noch keine Version mit mittlerem Aufwand"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "european",
+        "mediterranean-inspired"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "pantry",
+        "comfort-food"
+      ],
+      "discovery_partitions": [
+        "cuisine-italian"
+      ]
+    },
+    {
+      "id": "lentil-shepherds-pie",
+      "canonical_name": {
+        "en": "Lentil Shepherd's Pie",
+        "de": "Linsen-Shepherd’s-Pie"
+      },
+      "hero_text": {
+        "en": "a soft blanket with crisp potato peaks",
+        "de": "eine weiche Decke mit knusprigen Kartoffelspitzen"
+      },
+      "caption": {
+        "en": "made for second helpings",
+        "de": "für den zweiten Nachschlag gemacht"
+      },
+      "stripe_color": "#9B795C",
+      "accent_color": "#6D7751",
+      "variant_recipe_ids": [
+        "lentil-pie-classic-medium-balanced",
+        "lentil-pie-vegan-medium-light",
+        "lentil-pie-keto-hard-hearty"
+      ],
+      "default_recipe_id": "lentil-pie-classic-medium-balanced",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "vegetarian",
+          "vegan",
+          "keto"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "effort": "hard"
+          },
+          "note": {
+            "en": "No vegan × hard version yet",
+            "de": "Noch keine vegane × aufwendige Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "keto",
+            "calorie_level": "light"
+          },
+          "note": {
+            "en": "No keto × light version yet",
+            "de": "Noch keine Keto × leichte Version"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "cuisine_tags": [
+        "british-inspired"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "bake",
+        "make-ahead",
+        "family-style"
+      ],
+      "discovery_partitions": []
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "canonical_name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "hero_text": {
+        "en": "long ribbons, glossy sauce, one last crack of pepper",
+        "de": "lange Bänder, glänzende Sauce, ein letzter Dreh Pfeffer"
+      },
+      "caption": {
+        "en": "twirl while it is warm",
+        "de": "drehen, solange es warm ist"
+      },
+      "stripe_color": "#E0C07B",
+      "accent_color": "#527B69",
+      "variant_recipe_ids": [
+        "alfredo-classic-easy-hearty",
+        "alfredo-vegan-medium-balanced",
+        "alfredo-gluten-free-medium-balanced",
+        "alfredo-vegetarian-hard-light"
+      ],
+      "default_recipe_id": "alfredo-classic-easy-hearty",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "vegetarian",
+          "vegan",
+          "gluten-free"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "calorie_level": "light"
+          },
+          "note": {
+            "en": "No vegan × light version yet",
+            "de": "Noch keine vegane × leichte Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "gluten-free",
+            "effort": "easy"
+          },
+          "note": {
+            "en": "No gluten-free × easy version yet",
+            "de": "Noch keine glutenfreie × einfache Version"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "roman-inspired"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "comfort-food",
+        "date-night"
+      ],
+      "discovery_partitions": [
+        "cuisine-italian"
+      ]
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero_text": {
+        "en": "tamarind shine & lime squeezed at the table",
+        "de": "Tamarindenglanz & Limette direkt am Tisch"
+      },
+      "caption": {
+        "en": "hot wok, quick hands",
+        "de": "heißer Wok, flinke Hände"
+      },
+      "stripe_color": "#CE7650",
+      "accent_color": "#3F776D",
+      "variant_recipe_ids": [
+        "pad-thai-classic-medium-balanced",
+        "pad-thai-vegan-hard-balanced",
+        "pad-thai-pescatarian-easy-light"
+      ],
+      "default_recipe_id": "pad-thai-classic-medium-balanced",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "classic",
+          "vegan",
+          "pescatarian"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "effort": "easy"
+          },
+          "note": {
+            "en": "No vegan × easy version yet",
+            "de": "Noch keine vegane × einfache Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "classic",
+            "calorie_level": "light"
+          },
+          "note": {
+            "en": "No classic × light version yet",
+            "de": "Noch keine klassische × leichte Version"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "cuisine_tags": [
+        "thai",
+        "southeast-asian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "noodles",
+        "street-food",
+        "wok"
+      ],
+      "discovery_partitions": [
+        "cuisine-asian"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "canonical_name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero_text": {
+        "en": "a whole bright morning in one skillet",
+        "de": "ein ganzer heller Morgen in einer Pfanne"
+      },
+      "caption": {
+        "en": "bring the pan to the table",
+        "de": "die Pfanne kommt auf den Tisch"
+      },
+      "stripe_color": "#D05F4B",
+      "accent_color": "#3D7168",
+      "variant_recipe_ids": [
+        "shakshuka-classic-easy-light",
+        "shakshuka-vegan-medium-balanced",
+        "shakshuka-keto-hard-hearty"
+      ],
+      "default_recipe_id": "shakshuka-classic-easy-light",
+      "dimension_order": [
+        "diet",
+        "effort",
+        "calorie_level"
+      ],
+      "dimension_options": {
+        "diet": [
+          "vegetarian",
+          "vegan",
+          "keto"
+        ],
+        "effort": [
+          "easy",
+          "medium",
+          "hard"
+        ],
+        "calorie_level": [
+          "light",
+          "balanced",
+          "hearty"
+        ]
+      },
+      "unavailable_combinations": [
+        {
+          "selection": {
+            "diet": "vegan",
+            "effort": "easy"
+          },
+          "note": {
+            "en": "No vegan × easy version yet",
+            "de": "Noch keine vegane × einfache Version"
+          }
+        },
+        {
+          "selection": {
+            "diet": "keto",
+            "calorie_level": "light"
+          },
+          "note": {
+            "en": "No keto × light version yet",
+            "de": "Noch keine Keto × leichte Version"
+          }
+        }
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "cuisine_tags": [
+        "north-african",
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "one-pan",
+        "brunch",
+        "vegetable-forward"
+      ],
+      "discovery_partitions": [
+        "cuisine-middle-eastern"
+      ]
+    }
+  ]
+}

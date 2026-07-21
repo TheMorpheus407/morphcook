@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "contains_flags": [
+    {"id": "pork", "names": {"en": "Pork", "de": "Schweinefleisch"}, "category": "animal-derived"},
+    {"id": "beef", "names": {"en": "Beef", "de": "Rindfleisch"}, "category": "animal-derived"},
+    {"id": "lamb", "names": {"en": "Lamb", "de": "Lammfleisch"}, "category": "animal-derived"},
+    {"id": "poultry", "names": {"en": "Poultry", "de": "Geflügel"}, "category": "animal-derived"},
+    {"id": "fish", "names": {"en": "Fish", "de": "Fisch"}, "category": "animal-derived"},
+    {"id": "shellfish", "names": {"en": "Crustaceans", "de": "Krebstiere"}, "category": "animal-derived"},
+    {"id": "molluscs", "names": {"en": "Molluscs", "de": "Weichtiere"}, "category": "animal-derived"},
+    {"id": "egg", "names": {"en": "Egg", "de": "Ei"}, "category": "animal-derived"},
+    {"id": "dairy", "names": {"en": "Dairy", "de": "Milchprodukte"}, "category": "animal-derived"},
+    {"id": "lactose", "names": {"en": "Lactose", "de": "Laktose"}, "category": "animal-derived", "parent_id": "dairy"},
+    {"id": "honey", "names": {"en": "Honey", "de": "Honig"}, "category": "animal-derived"},
+    {"id": "gelatin-non-halal", "names": {"en": "Non-halal gelatin", "de": "Nicht-halal-konforme Gelatine"}, "category": "animal-derived"},
+    {"id": "gelatin-non-kosher", "names": {"en": "Non-kosher gelatin", "de": "Nicht-koschere Gelatine"}, "category": "animal-derived"},
+    {"id": "meat-dairy-combo", "names": {"en": "Meat and dairy combination", "de": "Kombination aus Fleisch und Milch"}, "category": "religious-practice"},
+    {"id": "gluten", "names": {"en": "Gluten", "de": "Gluten"}, "category": "allergen"},
+    {"id": "soy", "names": {"en": "Soy", "de": "Soja"}, "category": "allergen"},
+    {"id": "peanuts", "names": {"en": "Peanuts", "de": "Erdnüsse"}, "category": "allergen"},
+    {"id": "tree-nuts", "names": {"en": "Tree nuts", "de": "Schalenfrüchte"}, "category": "allergen"},
+    {"id": "almonds", "names": {"en": "Almonds", "de": "Mandeln"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "walnuts", "names": {"en": "Walnuts", "de": "Walnüsse"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "cashews", "names": {"en": "Cashews", "de": "Cashewkerne"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "pistachios", "names": {"en": "Pistachios", "de": "Pistazien"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "hazelnuts", "names": {"en": "Hazelnuts", "de": "Haselnüsse"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "pecans", "names": {"en": "Pecans", "de": "Pekannüsse"}, "category": "allergen", "parent_id": "tree-nuts"},
+    {"id": "sesame", "names": {"en": "Sesame", "de": "Sesam"}, "category": "allergen"},
+    {"id": "mustard", "names": {"en": "Mustard", "de": "Senf"}, "category": "allergen"},
+    {"id": "celery", "names": {"en": "Celery", "de": "Sellerie"}, "category": "allergen"},
+    {"id": "lupin", "names": {"en": "Lupin", "de": "Lupine"}, "category": "allergen"},
+    {"id": "sulphites", "names": {"en": "Sulphites", "de": "Sulfite"}, "category": "allergen"},
+    {"id": "alcohol", "names": {"en": "Alcohol", "de": "Alkohol"}, "category": "substance"},
+    {"id": "caffeine", "names": {"en": "Caffeine", "de": "Koffein"}, "category": "substance"},
+    {"id": "added-sugar", "names": {"en": "Added sugar", "de": "Zugesetzter Zucker"}, "category": "nutrition"},
+    {"id": "high-fodmap", "names": {"en": "High FODMAP", "de": "FODMAP-reich"}, "category": "digestion"}
+  ],
+  "compound_avoid_flags": [
+    {
+      "id": "vegan",
+      "names": {"en": "Vegan", "de": "Vegan"},
+      "description": {"en": "Avoids all animal-derived recipe flags.", "de": "Schließt alle tierischen Rezeptmerkmale aus."},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "lactose", "honey", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "vegetarian",
+      "names": {"en": "Vegetarian", "de": "Vegetarisch"},
+      "description": {"en": "Avoids meat, fish, seafood and animal gelatin.", "de": "Schließt Fleisch, Fisch, Meeresfrüchte und tierische Gelatine aus."},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "pescatarian",
+      "names": {"en": "Pescatarian", "de": "Pescetarisch"},
+      "description": {"en": "Avoids land-animal meat and animal gelatin; fish and seafood remain available.", "de": "Schließt Fleisch von Landtieren und tierische Gelatine aus; Fisch und Meeresfrüchte bleiben möglich."},
+      "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "halal",
+      "names": {"en": "Halal-compatible ingredients", "de": "Halal-kompatible Zutaten"},
+      "description": {"en": "Avoids pork, alcohol and non-halal gelatin. This is an ingredient compatibility aid, not certification.", "de": "Schließt Schweinefleisch, Alkohol und nicht-halal-konforme Gelatine aus. Dies ist eine Zutatenhilfe, keine Zertifizierung."},
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    {
+      "id": "kosher",
+      "names": {"en": "Kosher-compatible ingredients", "de": "Koscher-kompatible Zutaten"},
+      "description": {"en": "Avoids pork, shellfish, meat-dairy combinations and non-kosher gelatin. This is not certification.", "de": "Schließt Schwein, Krebstiere, Fleisch-Milch-Kombinationen und nicht-koschere Gelatine aus. Dies ist keine Zertifizierung."},
+      "expands_to": ["pork", "shellfish", "molluscs", "meat-dairy-combo", "gelatin-non-kosher"]
+    },
+    {
+      "id": "low-fodmap",
+      "names": {"en": "Low FODMAP", "de": "FODMAP-arm"},
+      "description": {"en": "Avoids recipes marked high FODMAP; portion tolerance still varies by person.", "de": "Schließt als FODMAP-reich markierte Rezepte aus; die Portionsverträglichkeit bleibt individuell."},
+      "expands_to": ["high-fodmap"]
+    },
+    {
+      "id": "sugar-free",
+      "names": {"en": "No added sugar", "de": "Ohne Zuckerzusatz"},
+      "description": {"en": "Avoids added sugar, not naturally occurring sugars.", "de": "Schließt zugesetzten Zucker aus, nicht natürlich vorkommenden Zucker."},
+      "expands_to": ["added-sugar"]
+    },
+    {
+      "id": "lactose-free",
+      "names": {"en": "Lactose-free", "de": "Laktosefrei"},
+      "description": {"en": "Avoids lactose while allowing explicitly lactose-free dairy ingredients.", "de": "Schließt Laktose aus, erlaubt aber ausdrücklich laktosefreie Milchprodukte."},
+      "expands_to": ["lactose"]
+    },
+    {
+      "id": "nut-free",
+      "names": {"en": "Nut-free", "de": "Nussfrei"},
+      "description": {"en": "Avoids peanuts and all listed tree nuts.", "de": "Schließt Erdnüsse und alle aufgeführten Schalenfrüchte aus."},
+      "expands_to": ["peanuts", "tree-nuts", "almonds", "walnuts", "cashews", "pistachios", "hazelnuts", "pecans"]
+    },
+    {
+      "id": "nuts",
+      "names": {"en": "All nuts", "de": "Alle Nüsse"},
+      "description": {"en": "Compatibility alias used by allergy onboarding; avoids peanuts and all listed tree nuts.", "de": "Kompatibilitätsalias für das Allergie-Onboarding; schließt Erdnüsse und alle aufgeführten Schalenfrüchte aus."},
+      "expands_to": ["peanuts", "tree-nuts", "almonds", "walnuts", "cashews", "pistachios", "hazelnuts", "pecans"]
+    }
+  ],
+  "attributes": {
+    "effort": [
+      {"id": "easy", "names": {"en": "Easy", "de": "Einfach"}, "description": {"en": "Few moving parts and forgiving timing.", "de": "Wenige parallele Schritte und gutmütiges Timing."}},
+      {"id": "medium", "names": {"en": "Medium", "de": "Mittel"}, "description": {"en": "Some coordination or prep, still weeknight-friendly.", "de": "Etwas Koordination oder Vorbereitung, noch feierabendtauglich."}},
+      {"id": "hard", "names": {"en": "Project", "de": "Kochprojekt"}, "description": {"en": "More stages, technique or attention; ideal when cooking is the plan.", "de": "Mehr Etappen, Technik oder Aufmerksamkeit; ideal, wenn Kochen der Plan ist."}}
+    ],
+    "time_bucket": [
+      {"id": "time-under-15", "names": {"en": "15 min or less", "de": "Bis 15 Min."}, "max_minutes": 15},
+      {"id": "time-under-30", "names": {"en": "30 min or less", "de": "Bis 30 Min."}, "max_minutes": 30},
+      {"id": "time-under-45", "names": {"en": "45 min or less", "de": "Bis 45 Min."}, "max_minutes": 45},
+      {"id": "time-under-60", "names": {"en": "60 min or less", "de": "Bis 60 Min."}, "max_minutes": 60},
+      {"id": "time-over-60", "names": {"en": "More than 60 min", "de": "Mehr als 60 Min."}, "min_minutes": 61}
+    ],
+    "calorie_bucket": [
+      {"id": "calorie-under-400", "names": {"en": "400 kcal or less", "de": "Bis 400 kcal"}, "max_calories": 400},
+      {"id": "calorie-under-500", "names": {"en": "500 kcal or less", "de": "Bis 500 kcal"}, "max_calories": 500},
+      {"id": "calorie-under-600", "names": {"en": "600 kcal or less", "de": "Bis 600 kcal"}, "max_calories": 600},
+      {"id": "calorie-under-800", "names": {"en": "800 kcal or less", "de": "Bis 800 kcal"}, "max_calories": 800},
+      {"id": "calorie-over-800", "names": {"en": "More than 800 kcal", "de": "Mehr als 800 kcal"}, "min_calories": 801}
+    ],
+    "technique": [
+      {"id": "bake", "names": {"en": "Bake", "de": "Backen"}},
+      {"id": "saute", "names": {"en": "Sauté", "de": "Sautieren"}},
+      {"id": "simmer", "names": {"en": "Simmer", "de": "Köcheln"}},
+      {"id": "raw", "names": {"en": "Raw", "de": "Roh"}},
+      {"id": "grill", "names": {"en": "Grill", "de": "Grillen"}},
+      {"id": "fry", "names": {"en": "Fry", "de": "Braten"}},
+      {"id": "steam", "names": {"en": "Steam", "de": "Dämpfen"}},
+      {"id": "roast", "names": {"en": "Roast", "de": "Rösten"}},
+      {"id": "broil", "names": {"en": "Broil", "de": "Übergrillen"}},
+      {"id": "pan-fry", "names": {"en": "Pan-fry", "de": "Pfannenbraten"}},
+      {"id": "deep-fry", "names": {"en": "Deep-fry", "de": "Frittieren"}},
+      {"id": "stir-fry", "names": {"en": "Stir-fry", "de": "Pfannenrühren"}},
+      {"id": "poach", "names": {"en": "Poach", "de": "Pochieren"}},
+      {"id": "blanch", "names": {"en": "Blanch", "de": "Blanchieren"}}
+    ],
+    "requirements": [
+      {"id": "vegan", "names": {"en": "Vegan", "de": "Vegan"}, "description": {"en": "Contains no marked animal-derived ingredients.", "de": "Enthält keine als tierisch markierten Zutaten."}},
+      {"id": "vegetarian", "names": {"en": "Vegetarian", "de": "Vegetarisch"}, "description": {"en": "Contains no meat, fish or seafood.", "de": "Enthält weder Fleisch noch Fisch oder Meeresfrüchte."}},
+      {"id": "pescatarian", "names": {"en": "Pescatarian", "de": "Pescetarisch"}, "description": {"en": "Contains no land-animal meat.", "de": "Enthält kein Fleisch von Landtieren."}},
+      {"id": "halal", "names": {"en": "Halal-compatible", "de": "Halal-kompatibel"}, "description": {"en": "Uses halal-compatible ingredient categories; sourcing is not certified.", "de": "Verwendet halal-kompatible Zutatenkategorien; die Herkunft ist nicht zertifiziert."}},
+      {"id": "kosher", "names": {"en": "Kosher-compatible", "de": "Koscher-kompatibel"}, "description": {"en": "Uses kosher-compatible ingredient categories; sourcing is not certified.", "de": "Verwendet koscher-kompatible Zutatenkategorien; die Herkunft ist nicht zertifiziert."}},
+      {"id": "keto", "names": {"en": "Keto", "de": "Keto"}, "description": {"en": "Designed as a lower-carbohydrate variant.", "de": "Als kohlenhydratärmere Variante entwickelt."}},
+      {"id": "gluten-free", "names": {"en": "Gluten-free", "de": "Glutenfrei"}, "description": {"en": "No gluten-containing ingredient is specified; check package labels for cross-contact.", "de": "Keine glutenhaltige Zutat ist angegeben; Verpackungshinweise auf Kreuzkontakt prüfen."}}
+    ]
+  },
+  "variant_dimensions": {
+    "diet": [
+      {"id": "classic", "names": {"en": "Classic", "de": "Klassisch"}},
+      {"id": "vegetarian", "names": {"en": "Vegetarian", "de": "Vegetarisch"}},
+      {"id": "vegan", "names": {"en": "Vegan", "de": "Vegan"}},
+      {"id": "pescatarian", "names": {"en": "Pescatarian", "de": "Pescetarisch"}},
+      {"id": "keto", "names": {"en": "Keto", "de": "Keto"}},
+      {"id": "gluten-free", "names": {"en": "Gluten-free", "de": "Glutenfrei"}},
+      {"id": "halal", "names": {"en": "Halal-compatible", "de": "Halal-kompatibel"}}
+    ],
+    "effort": [
+      {"id": "easy", "names": {"en": "Easy", "de": "Einfach"}},
+      {"id": "medium", "names": {"en": "Medium", "de": "Mittel"}},
+      {"id": "hard", "names": {"en": "Project", "de": "Kochprojekt"}}
+    ],
+    "calorie_level": [
+      {"id": "light", "names": {"en": "Light", "de": "Leicht"}, "typical_range": {"min": 0, "max": 500}},
+      {"id": "balanced", "names": {"en": "Balanced", "de": "Ausgewogen"}, "typical_range": {"min": 401, "max": 650}},
+      {"id": "hearty", "names": {"en": "Hearty", "de": "Üppig"}, "typical_range": {"min": 601, "max": 9999}}
+    ]
+  },
+  "units": [
+    {"id": "g", "symbol": {"en": "g", "de": "g"}, "kind": "mass", "base_unit": "g", "to_base": 1},
+    {"id": "kg", "symbol": {"en": "kg", "de": "kg"}, "kind": "mass", "base_unit": "g", "to_base": 1000},
+    {"id": "ml", "symbol": {"en": "ml", "de": "ml"}, "kind": "volume", "base_unit": "ml", "to_base": 1},
+    {"id": "l", "symbol": {"en": "l", "de": "l"}, "kind": "volume", "base_unit": "ml", "to_base": 1000},
+    {"id": "tsp", "symbol": {"en": "tsp", "de": "TL"}, "kind": "volume", "base_unit": "ml", "to_base": 5},
+    {"id": "tbsp", "symbol": {"en": "tbsp", "de": "EL"}, "kind": "volume", "base_unit": "ml", "to_base": 15},
+    {"id": "piece", "symbol": {"en": "", "de": ""}, "kind": "count", "base_unit": "piece", "to_base": 1},
+    {"id": "clove", "symbol": {"en": "clove", "de": "Zehe"}, "kind": "count", "base_unit": "clove", "to_base": 1},
+    {"id": "bunch", "symbol": {"en": "bunch", "de": "Bund"}, "kind": "count", "base_unit": "bunch", "to_base": 1},
+    {"id": "sprig", "symbol": {"en": "sprig", "de": "Zweig"}, "kind": "count", "base_unit": "sprig", "to_base": 1},
+    {"id": "sheet", "symbol": {"en": "sheet", "de": "Blatt"}, "kind": "count", "base_unit": "sheet", "to_base": 1},
+    {"id": "pinch", "symbol": {"en": "pinch", "de": "Prise"}, "kind": "count", "base_unit": "pinch", "to_base": 1},
+    {"id": "slice", "symbol": {"en": "slice", "de": "Scheibe"}, "kind": "count", "base_unit": "slice", "to_base": 1},
+    {"id": "can", "symbol": {"en": "can", "de": "Dose"}, "kind": "count", "base_unit": "can", "to_base": 1}
+  ],
+  "ingredient_categories": [
+    {"id": "produce", "names": {"en": "Produce", "de": "Obst & Gemüse"}},
+    {"id": "dairy-eggs", "names": {"en": "Dairy & eggs", "de": "Milchprodukte & Eier"}},
+    {"id": "meat-seafood", "names": {"en": "Meat & seafood", "de": "Fleisch & Fisch"}},
+    {"id": "bakery", "names": {"en": "Bakery", "de": "Backwaren"}},
+    {"id": "dry-goods", "names": {"en": "Dry goods", "de": "Trockenvorrat"}},
+    {"id": "canned-goods", "names": {"en": "Canned goods", "de": "Konserven"}},
+    {"id": "spices", "names": {"en": "Spices", "de": "Gewürze"}},
+    {"id": "condiments", "names": {"en": "Condiments", "de": "Würzsaucen"}},
+    {"id": "frozen", "names": {"en": "Frozen", "de": "Tiefkühlkost"}}
+  ]
+}

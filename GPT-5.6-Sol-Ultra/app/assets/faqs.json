@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "categories": [
+    {"id": "matching", "names": {"en": "Recipes & matching", "de": "Rezepte & Auswahl"}},
+    {"id": "dietary", "names": {"en": "Dietary needs", "de": "Ernährungsbedürfnisse"}},
+    {"id": "features", "names": {"en": "Planning & cooking", "de": "Planen & Kochen"}},
+    {"id": "privacy", "names": {"en": "Privacy & backups", "de": "Datenschutz & Backups"}},
+    {"id": "troubleshooting", "names": {"en": "Troubleshooting", "de": "Fehlerbehebung"}}
+  ],
+  "faqs": [
+    {
+      "id": "how-variants-work",
+      "category": "matching",
+      "question": {"en": "What is a recipe variant?", "de": "Was ist eine Rezeptvariante?"},
+      "answer": {"en": "Every variant is a complete, separately authored recipe linked to the same dish. Changing diet, effort or calorie level switches the whole recipe—ingredients, steps, timing and nutrition together.", "de": "Jede Variante ist ein vollständiges, eigenständig verfasstes Rezept desselben Gerichts. Wenn du Ernährung, Aufwand oder Kalorienniveau wechselst, ändern sich Zutaten, Schritte, Zeit und Nährwerte gemeinsam."},
+      "search_terms": {"en": ["variant", "switch", "version", "dimension"], "de": ["Variante", "wechseln", "Version", "Dimension"]},
+      "related_route": "/dish",
+      "related_faq_ids": ["unavailable-combination", "saved-specific-variant"]
+    },
+    {
+      "id": "unavailable-combination",
+      "category": "matching",
+      "question": {"en": "Why is a variant choice disabled?", "de": "Warum ist eine Variantenwahl deaktiviert?"},
+      "answer": {"en": "That exact combination has no fully authored recipe yet. Disabled choices stay visible so you can see what exists and what does not; choose another value in one dimension to reach an available recipe.", "de": "Für genau diese Kombination gibt es noch kein vollständig verfasstes Rezept. Deaktivierte Optionen bleiben sichtbar, damit du siehst, was vorhanden ist. Ändere einen Wert in einer Dimension, um eine verfügbare Variante zu erreichen."},
+      "search_terms": {"en": ["disabled", "unavailable", "greyed out", "combination"], "de": ["deaktiviert", "nicht verfügbar", "ausgegraut", "Kombination"]},
+      "related_route": "/dish",
+      "related_faq_ids": ["how-variants-work"]
+    },
+    {
+      "id": "recipe-not-visible",
+      "category": "matching",
+      "question": {"en": "Why did a recipe disappear?", "de": "Warum ist ein Rezept verschwunden?"},
+      "answer": {"en": "MorphCook hides a recipe when it conflicts with an avoided class or ingredient, misses a required attribute, exceeds your time limit, or falls outside your calorie target. Review the active preferences in Settings; the app never removes the bundled recipe itself.", "de": "MorphCook blendet ein Rezept aus, wenn es einer gemiedenen Klasse oder Zutat widerspricht, ein erforderliches Merkmal fehlt, dein Zeitlimit überschritten oder dein Kalorienziel verfehlt wird. Prüfe die aktiven Einstellungen; das gebündelte Rezept selbst wird nie gelöscht."},
+      "search_terms": {"en": ["missing recipe", "hidden", "filter", "empty feed"], "de": ["Rezept fehlt", "ausgeblendet", "Filter", "leere Startseite"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": ["calorie-filter", "ingredient-avoidance"]
+    },
+    {
+      "id": "calorie-filter",
+      "category": "matching",
+      "question": {"en": "How does the calorie target work?", "de": "Wie funktioniert das Kalorienziel?"},
+      "answer": {"en": "Your per-meal target is a hard profile filter with a tolerance around the target. On a dish page you can temporarily show versions outside that range without changing the saved profile.", "de": "Dein Ziel pro Mahlzeit ist ein fester Profilfilter mit einem Toleranzbereich. Auf einer Gerichtsseite kannst du vorübergehend Varianten außerhalb dieses Bereichs anzeigen, ohne dein Profil zu ändern."},
+      "search_terms": {"en": ["calories", "kcal", "target", "override"], "de": ["Kalorien", "kcal", "Ziel", "überschreiben"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": ["recipe-not-visible"]
+    },
+    {
+      "id": "effort-vs-time",
+      "category": "matching",
+      "question": {"en": "What is the difference between effort and time?", "de": "Was ist der Unterschied zwischen Aufwand und Zeit?"},
+      "answer": {"en": "Time is the total minutes a recipe needs and can exclude recipes above your limit. Effort describes coordination and attention: an easy recipe can simmer for a while, while a short project recipe may ask for more active technique.", "de": "Zeit sind die gesamten Minuten und kann Rezepte über deinem Limit ausschließen. Aufwand beschreibt Koordination und Aufmerksamkeit: Ein einfaches Rezept kann länger köcheln, während ein kurzes Kochprojekt mehr aktive Technik verlangt."},
+      "search_terms": {"en": ["easy", "medium", "hard", "minutes", "time budget"], "de": ["einfach", "mittel", "schwer", "Minuten", "Zeitbudget"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": []
+    },
+    {
+      "id": "ingredient-avoidance",
+      "category": "dietary",
+      "question": {"en": "How does specific ingredient avoidance work?", "de": "Wie funktioniert das Meiden einzelner Zutaten?"},
+      "answer": {"en": "Search the ingredient dictionary and choose a specific item or a parent group. Avoiding a parent includes every descendant—for example, choosing dairy also covers cow's milk, yogurt and cheese. Class allergies and specific ingredients combine.", "de": "Durchsuche das Zutatenverzeichnis und wähle eine einzelne Zutat oder eine Obergruppe. Eine Obergruppe umfasst alle Untereinträge – Milchprodukte schließen zum Beispiel Kuhmilch, Joghurt und Käse ein. Klassenallergien und einzelne Zutaten werden kombiniert."},
+      "search_terms": {"en": ["avoid ingredient", "typeahead", "allergy", "parent", "children"], "de": ["Zutat meiden", "Suche", "Allergie", "Obergruppe", "Untergruppe"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": ["allergen-safety"]
+    },
+    {
+      "id": "allergen-safety",
+      "category": "dietary",
+      "question": {"en": "Can MorphCook guarantee allergen safety?", "de": "Kann MorphCook Allergensicherheit garantieren?"},
+      "answer": {"en": "No. Flags help exclude recipes by their authored ingredients, but brands, cross-contact and manufacturing can differ. For a medical allergy, always read package labels and follow advice from your clinician.", "de": "Nein. Merkmale helfen, Rezepte anhand ihrer verfassten Zutaten auszuschließen, doch Marken, Kreuzkontakt und Herstellung unterscheiden sich. Bei einer medizinischen Allergie immer Verpackungshinweise lesen und ärztlichen Rat befolgen."},
+      "search_terms": {"en": ["allergy", "cross contact", "guarantee", "medical"], "de": ["Allergie", "Kreuzkontakt", "Garantie", "medizinisch"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": ["ingredient-avoidance"]
+    },
+    {
+      "id": "halal-kosher-compatible",
+      "category": "dietary",
+      "question": {"en": "Does halal- or kosher-compatible mean certified?", "de": "Bedeutet halal- oder koscher-kompatibel zertifiziert?"},
+      "answer": {"en": "No. MorphCook checks ingredient categories only. Certification depends on sourcing, slaughter, supervision, equipment and your own practice. Choose appropriately certified products where your practice requires them.", "de": "Nein. MorphCook prüft nur Zutatenkategorien. Zertifizierung hängt von Herkunft, Schlachtung, Aufsicht, Geräten und deiner eigenen Praxis ab. Wähle entsprechend zertifizierte Produkte, wenn deine Praxis dies verlangt."},
+      "search_terms": {"en": ["halal", "kosher", "certified", "compatible"], "de": ["halal", "koscher", "zertifiziert", "kompatibel"]},
+      "related_route": "/settings/profile",
+      "related_faq_ids": []
+    },
+    {
+      "id": "saved-specific-variant",
+      "category": "features",
+      "question": {"en": "Which version is saved to my cookbook?", "de": "Welche Version wird in meinem Kochbuch gespeichert?"},
+      "answer": {"en": "The exact recipe on screen is saved, including its diet, effort and calorie level. Switching a dish later does not silently replace your saved version.", "de": "Gespeichert wird genau das angezeigte Rezept mit Ernährungsart, Aufwand und Kalorienniveau. Ein späterer Wechsel am Gericht ersetzt deine gespeicherte Version nicht unbemerkt."},
+      "search_terms": {"en": ["save", "cookbook", "favorite", "variant"], "de": ["speichern", "Kochbuch", "Favorit", "Variante"]},
+      "related_route": "/cookbook",
+      "related_faq_ids": ["how-variants-work"]
+    },
+    {
+      "id": "meal-plan-shopping",
+      "category": "features",
+      "question": {"en": "How do I turn a meal plan into a shopping list?", "de": "Wie wird aus dem Essensplan eine Einkaufsliste?"},
+      "answer": {"en": "Open the week, assign recipes to breakfast, lunch or dinner slots, then choose Add week to shopping list. MorphCook adds the selected recipes once and keeps your meal-plan slots unchanged.", "de": "Öffne die Woche, ordne Rezepte den Frühstücks-, Mittags- oder Abendfeldern zu und wähle Woche zur Einkaufsliste. MorphCook fügt die ausgewählten Rezepte einmal hinzu und lässt den Essensplan unverändert."},
+      "search_terms": {"en": ["meal plan", "week", "shopping list", "export"], "de": ["Essensplan", "Woche", "Einkaufsliste", "exportieren"]},
+      "related_route": "/meal-plan",
+      "related_faq_ids": ["shopping-aggregation"]
+    },
+    {
+      "id": "shopping-aggregation",
+      "category": "features",
+      "question": {"en": "Why are some shopping-list amounts combined?", "de": "Warum werden manche Mengen auf der Einkaufsliste zusammengefasst?"},
+      "answer": {"en": "Matching ingredient IDs and compatible units are added together. Safe liquid units can convert between teaspoons, tablespoons, milliliters and liters; incompatible units stay as separate lines rather than guessing.", "de": "Gleiche Zutaten-IDs und kompatible Einheiten werden addiert. Sichere Flüssigkeiten können zwischen Teelöffeln, Esslöffeln, Millilitern und Litern umgerechnet werden; unvereinbare Einheiten bleiben getrennt, statt zu raten."},
+      "search_terms": {"en": ["combine", "deduplicate", "units", "tablespoon", "milliliter"], "de": ["zusammenfassen", "duplizieren", "Einheiten", "Esslöffel", "Milliliter"]},
+      "related_route": "/shopping",
+      "related_faq_ids": ["shopping-insights"]
+    },
+    {
+      "id": "shopping-insights",
+      "category": "features",
+      "question": {"en": "What do Shopping Insights show?", "de": "Was zeigen die Einkaufs-Einblicke?"},
+      "answer": {"en": "Insights summarize only your on-device shopping history: ingredient variety, most-added ingredients and a monthly seasonal view. They are for reflection, not nutrition or spending advice.", "de": "Die Einblicke fassen nur deinen Einkaufsverlauf auf diesem Gerät zusammen: Zutatenvielfalt, am häufigsten hinzugefügte Zutaten und eine monatliche Saisonansicht. Sie dienen der Orientierung, nicht als Ernährungs- oder Ausgabenberatung."},
+      "search_terms": {"en": ["insights", "variety score", "top ingredients", "seasonal"], "de": ["Einblicke", "Vielfalt", "Top-Zutaten", "saisonal"]},
+      "related_route": "/settings/shopping-insights",
+      "related_faq_ids": ["offline-privacy"]
+    },
+    {
+      "id": "cook-mode-timers",
+      "category": "features",
+      "question": {"en": "Do cook-mode timers keep running?", "de": "Laufen Timer im Kochmodus weiter?"},
+      "answer": {"en": "You can pause and resume each step timer, and in-progress cook state is stored locally. A completed timer can flash coral and teal when visual alerts are enabled; Reduce Motion keeps that alert still.", "de": "Du kannst jeden Schritt-Timer pausieren und fortsetzen; der laufende Kochstand wird lokal gespeichert. Ein beendeter Timer kann bei aktivierten visuellen Hinweisen korall- und petrolfarben aufleuchten; Bewegung reduzieren hält den Hinweis statisch."},
+      "search_terms": {"en": ["timer", "pause", "visual alert", "reduce motion"], "de": ["Timer", "Pause", "visueller Hinweis", "Bewegung reduzieren"]},
+      "related_route": "/settings/accessibility",
+      "related_faq_ids": ["quick-next"]
+    },
+    {
+      "id": "quick-next",
+      "category": "features",
+      "question": {"en": "How does quick-next tapping work?", "de": "Wie funktioniert das schnelle Weitertippen?"},
+      "answer": {"en": "When One-handed cook mode is enabled, one tap on the step content advances after a short debounce and haptic cue. Buttons still work, and you can turn the gesture off at any time.", "de": "Wenn der Einhand-Kochmodus aktiv ist, wechselt ein Tippen auf den Schrittinhalt nach einer kurzen Entprellzeit und einem haptischen Signal weiter. Die Tasten funktionieren weiterhin, und die Geste kann jederzeit ausgeschaltet werden."},
+      "search_terms": {"en": ["one handed", "tap", "next step", "haptic"], "de": ["einhändig", "tippen", "nächster Schritt", "haptisch"]},
+      "related_route": "/settings/accessibility",
+      "related_faq_ids": ["cook-mode-timers"]
+    },
+    {
+      "id": "offline-privacy",
+      "category": "privacy",
+      "question": {"en": "Does MorphCook send my data anywhere?", "de": "Sendet MorphCook meine Daten irgendwohin?"},
+      "answer": {"en": "No. The app is offline-only: profile, cookbook, history, shopping list and meal plans remain on this device unless you deliberately export a backup through the system share sheet.", "de": "Nein. Die App arbeitet ausschließlich offline: Profil, Kochbuch, Verlauf, Einkaufsliste und Essenspläne bleiben auf diesem Gerät, außer du exportierst bewusst ein Backup über das Teilen-Menü des Systems."},
+      "search_terms": {"en": ["offline", "privacy", "telemetry", "cloud", "account"], "de": ["offline", "Datenschutz", "Telemetrie", "Cloud", "Konto"]},
+      "related_route": "/settings/privacy",
+      "related_faq_ids": ["backup-formats"]
+    },
+    {
+      "id": "backup-formats",
+      "category": "privacy",
+      "question": {"en": "Which backup file should I keep?", "de": "Welche Backup-Datei soll ich aufbewahren?"},
+      "answer": {"en": "Both files contain the same restorable app data. The readable .json is easiest to inspect; the .json.gz is much smaller and remains unencrypted for compatibility. If you set a password, only the .json file is AES-256-GCM encrypted.", "de": "Beide Dateien enthalten dieselben wiederherstellbaren App-Daten. Die lesbare .json ist am einfachsten zu prüfen; die .json.gz ist deutlich kleiner und bleibt aus Kompatibilitätsgründen unverschlüsselt. Bei einem Passwort wird nur die .json-Datei mit AES-256-GCM verschlüsselt."},
+      "search_terms": {"en": ["backup", "gzip", "json", "password", "encrypted"], "de": ["Backup", "GZip", "JSON", "Passwort", "verschlüsselt"]},
+      "related_route": "/settings/backup",
+      "related_faq_ids": ["restore-error"]
+    },
+    {
+      "id": "restore-error",
+      "category": "troubleshooting",
+      "question": {"en": "Why will my backup not restore?", "de": "Warum lässt sich mein Backup nicht wiederherstellen?"},
+      "answer": {"en": "Confirm that the file is a MorphCook JSON, GZip or encrypted backup and that its schema is supported. For encrypted files, retry the exact password. A corruption warning means the file failed integrity checks and should not replace your current data.", "de": "Prüfe, ob die Datei ein MorphCook-JSON-, GZip- oder verschlüsseltes Backup ist und das Schema unterstützt wird. Bei verschlüsselten Dateien das genaue Passwort erneut eingeben. Eine Beschädigungswarnung bedeutet, dass die Integritätsprüfung fehlgeschlagen ist; die Datei sollte deine aktuellen Daten nicht ersetzen."},
+      "search_terms": {"en": ["restore", "wrong password", "corrupt", "invalid file"], "de": ["wiederherstellen", "falsches Passwort", "beschädigt", "ungültige Datei"]},
+      "related_route": "/settings/backup",
+      "related_faq_ids": ["backup-formats"]
+    },
+    {
+      "id": "language-switch",
+      "category": "troubleshooting",
+      "question": {"en": "Can I change the language after onboarding?", "de": "Kann ich die Sprache nach dem Onboarding ändern?"},
+      "answer": {"en": "Yes. Choose English or Deutsch in Settings. Recipe titles, descriptions, steps, ingredient names and help content switch together; saved recipes and plans stay intact.", "de": "Ja. Wähle in den Einstellungen English oder Deutsch. Rezepttitel, Beschreibungen, Schritte, Zutatennamen und Hilfe wechseln gemeinsam; gespeicherte Rezepte und Pläne bleiben erhalten."},
+      "search_terms": {"en": ["language", "English", "German", "translation"], "de": ["Sprache", "Englisch", "Deutsch", "Übersetzung"]},
+      "related_route": "/settings/language",
+      "related_faq_ids": []
+    },
+    {
+      "id": "striped-images",
+      "category": "troubleshooting",
+      "question": {"en": "Why do recipes have striped illustrations instead of photos?", "de": "Warum haben Rezepte gestreifte Illustrationen statt Fotos?"},
+      "answer": {"en": "Nothing failed to load. The striped, captioned panels are MorphCook's intentional offline cookbook artwork; v1 does not ship real food photography.", "de": "Es ist nichts beim Laden fehlgeschlagen. Die gestreiften Felder mit Bildunterschrift sind MorphCooks bewusstes Offline-Kochbuchdesign; Version 1 enthält keine echten Food-Fotos."},
+      "search_terms": {"en": ["image", "photo", "stripe", "placeholder", "not loading"], "de": ["Bild", "Foto", "Streifen", "Platzhalter", "lädt nicht"]},
+      "related_route": "/home",
+      "related_faq_ids": ["offline-privacy"]
+    },
+    {
+      "id": "zero-search-results",
+      "category": "troubleshooting",
+      "question": {"en": "Why did search return no results?", "de": "Warum liefert die Suche keine Ergebnisse?"},
+      "answer": {"en": "The dish may not be in the bundled corpus, or every matching variant may conflict with your active profile filters. Try a broader term, review filters, or keep the zero-result query in your next exported backup as a private content request.", "de": "Das Gericht ist möglicherweise nicht im gebündelten Korpus, oder jede passende Variante widerspricht deinen aktiven Profilfiltern. Probiere einen allgemeineren Begriff, prüfe Filter oder bewahre die erfolglose Suche im nächsten exportierten Backup als private Inhaltsanfrage auf."},
+      "search_terms": {"en": ["search", "no results", "missing dish", "content request"], "de": ["Suche", "keine Ergebnisse", "Gericht fehlt", "Inhaltsanfrage"]},
+      "related_route": "/search",
+      "related_faq_ids": ["recipe-not-visible"]
+    }
+  ]
+}

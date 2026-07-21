@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "generated_at": "2026-07-10T00:00:00Z",
+  "default_partitions": [
+    "core"
+  ],
+  "loading_strategy": {
+    "startup": [
+      "core"
+    ],
+    "on_demand": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern"
+    ],
+    "compatibility_aggregate": "assets/recipes.json",
+    "note": {
+      "en": "Load either the aggregate or individual partitions, never both.",
+      "de": "Entweder das Aggregat oder einzelne Partitionen laden, niemals beides."
+    }
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "asset": "assets/core-recipes.json",
+      "load_strategy": "startup",
+      "priority": 0,
+      "recipe_count": 16,
+      "dish_ids": [
+        "doener",
+        "roasted-tomato-soup",
+        "lentil-shepherds-pie",
+        "fettuccine-alfredo",
+        "pad-thai",
+        "shakshuka"
+      ],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "german-street-food",
+        "european",
+        "mediterranean-inspired",
+        "british-inspired",
+        "italian",
+        "italian-inspired",
+        "roman-inspired",
+        "thai",
+        "southeast-asian",
+        "north-african",
+        "middle-eastern"
+      ],
+      "depends_on": [],
+      "cross_references": [
+        "extended",
+        "cuisine-italian",
+        "cuisine-asian",
+        "cuisine-middle-eastern"
+      ],
+      "indexed_recipe_count": 16,
+      "recipe_ids": [
+        "doener-classic-easy-balanced",
+        "doener-vegan-medium-light",
+        "doener-halal-medium-hearty",
+        "doener-keto-easy-light",
+        "tomato-soup-classic-easy-light",
+        "tomato-soup-vegan-easy-light",
+        "tomato-soup-classic-hard-balanced",
+        "lentil-pie-classic-medium-balanced",
+        "lentil-pie-vegan-medium-light",
+        "alfredo-classic-easy-hearty",
+        "alfredo-vegan-medium-balanced",
+        "alfredo-gluten-free-medium-balanced",
+        "pad-thai-classic-medium-balanced",
+        "pad-thai-pescatarian-easy-light",
+        "shakshuka-classic-easy-light",
+        "shakshuka-vegan-medium-balanced"
+      ]
+    },
+    {
+      "id": "extended",
+      "asset": "assets/extended-recipes.json",
+      "load_strategy": "on-demand",
+      "priority": 40,
+      "recipe_count": 4,
+      "dish_ids": [
+        "lentil-shepherds-pie",
+        "fettuccine-alfredo",
+        "pad-thai",
+        "shakshuka"
+      ],
+      "cuisine_tags": [
+        "british-inspired"
+      ],
+      "depends_on": [
+        "core"
+      ],
+      "cross_references": [
+        "core",
+        "cuisine-italian",
+        "cuisine-asian",
+        "cuisine-middle-eastern"
+      ],
+      "indexed_recipe_count": 4,
+      "recipe_ids": [
+        "lentil-pie-keto-hard-hearty",
+        "alfredo-vegetarian-hard-light",
+        "pad-thai-vegan-hard-balanced",
+        "shakshuka-keto-hard-hearty"
+      ]
+    },
+    {
+      "id": "cuisine-italian",
+      "asset": "assets/cuisine-italian.json",
+      "load_strategy": "on-demand",
+      "priority": 10,
+      "recipe_count": 0,
+      "dish_ids": [
+        "fettuccine-alfredo",
+        "roasted-tomato-soup"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "roman-inspired",
+        "italian-inspired"
+      ],
+      "depends_on": [
+        "core",
+        "extended"
+      ],
+      "cross_references": [
+        "core",
+        "extended"
+      ],
+      "indexed_recipe_count": 5,
+      "recipe_ids": [
+        "tomato-soup-classic-hard-balanced",
+        "alfredo-classic-easy-hearty",
+        "alfredo-vegan-medium-balanced",
+        "alfredo-gluten-free-medium-balanced",
+        "alfredo-vegetarian-hard-light"
+      ]
+    },
+    {
+      "id": "cuisine-asian",
+      "asset": "assets/cuisine-asian.json",
+      "load_strategy": "on-demand",
+      "priority": 20,
+      "recipe_count": 0,
+      "dish_ids": [
+        "pad-thai"
+      ],
+      "cuisine_tags": [
+        "thai",
+        "thai-inspired",
+        "southeast-asian"
+      ],
+      "depends_on": [
+        "core",
+        "extended"
+      ],
+      "cross_references": [
+        "core",
+        "extended"
+      ],
+      "indexed_recipe_count": 3,
+      "recipe_ids": [
+        "pad-thai-classic-medium-balanced",
+        "pad-thai-vegan-hard-balanced",
+        "pad-thai-pescatarian-easy-light"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "asset": "assets/cuisine-middle-eastern.json",
+      "load_strategy": "on-demand",
+      "priority": 30,
+      "recipe_count": 0,
+      "dish_ids": [
+        "doener",
+        "shakshuka"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "middle-eastern-inspired",
+        "north-african",
+        "north-african-inspired"
+      ],
+      "depends_on": [
+        "core",
+        "extended"
+      ],
+      "cross_references": [
+        "core",
+        "extended"
+      ],
+      "indexed_recipe_count": 7,
+      "recipe_ids": [
+        "doener-classic-easy-balanced",
+        "doener-vegan-medium-light",
+        "doener-halal-medium-hearty",
+        "doener-keto-easy-light",
+        "shakshuka-classic-easy-light",
+        "shakshuka-vegan-medium-balanced",
+        "shakshuka-keto-hard-hearty"
+      ]
+    }
+  ],
+  "dish_routes": {
+    "doener": {
+      "primary_partition": "core",
+      "secondary_partitions": [],
+      "discovery_partitions": [
+        "cuisine-middle-eastern"
+      ]
+    },
+    "roasted-tomato-soup": {
+      "primary_partition": "core",
+      "secondary_partitions": [],
+      "discovery_partitions": [
+        "cuisine-italian"
+      ]
+    },
+    "lentil-shepherds-pie": {
+      "primary_partition": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "discovery_partitions": []
+    },
+    "fettuccine-alfredo": {
+      "primary_partition": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "discovery_partitions": [
+        "cuisine-italian"
+      ]
+    },
+    "pad-thai": {
+      "primary_partition": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "discovery_partitions": [
+        "cuisine-asian"
+      ]
+    },
+    "shakshuka": {
+      "primary_partition": "core",
+      "secondary_partitions": [
+        "extended"
+      ],
+      "discovery_partitions": [
+        "cuisine-middle-eastern"
+      ]
+    }
+  }
+}

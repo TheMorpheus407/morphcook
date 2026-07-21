@@ -1,0 +1,824 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "partition_id": "extended",
+  "recipes": [
+    {
+      "id": "lentil-pie-keto-hard-hearty",
+      "dish_id": "lentil-shepherds-pie",
+      "names": {
+        "en": "Mushroom Walnut Cottage Pie",
+        "de": "Pilz-Walnuss-Cottage-Pie"
+      },
+      "descriptions": {
+        "en": "A rich, low-carb cottage pie with deeply browned mushrooms, walnuts and a burnished cauliflower-cheddar top.",
+        "de": "Ein üppiger Low-Carb-Cottage-Pie mit tief gebräunten Pilzen, Walnüssen und goldener Blumenkohl-Cheddar-Haube."
+      },
+      "variant_dimensions": {
+        "diet": "keto",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "tree-nuts",
+        "walnuts"
+      ],
+      "attributes": [
+        "bake",
+        "calorie-under-800",
+        "gluten-free",
+        "halal",
+        "hard",
+        "keto",
+        "kosher",
+        "roast",
+        "time-over-60",
+        "vegetarian"
+      ],
+      "time_minutes": 76,
+      "calories_per_serving": 704,
+      "servings": 6,
+      "nutrition": {
+        "calories": 704,
+        "protein_g": 25,
+        "carbs_g": 24,
+        "fat_g": 59
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "mushroom",
+          "quantity": 900,
+          "unit": "g",
+          "preparation": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "walnuts",
+          "quantity": 220,
+          "unit": "g",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower",
+          "quantity": 1200,
+          "unit": "g",
+          "preparation": {
+            "en": "in florets",
+            "de": "in Röschen"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "quantity": 180,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cream-cheese",
+          "quantity": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 350,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fresh-thyme",
+          "quantity": 8,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.25,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "roast-cauliflower",
+          "text": {
+            "en": "Roast cauliflower with 1 tablespoon oil and salt at 220°C until dry-edged and tender.",
+            "de": "Blumenkohl mit 1 EL Öl und Salz bei 220 °C rösten, bis die Ränder trocken und die Röschen weich sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "toast-walnuts",
+          "text": {
+            "en": "Toast walnuts in a dry ovenproof pan until fragrant, then tip onto a board.",
+            "de": "Walnüsse in einer trockenen ofenfesten Pfanne duftend rösten, dann auf ein Brett geben."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "brown-mushrooms",
+          "text": {
+            "en": "Heat remaining oil in the pan. Brown mushrooms in three batches so they fry instead of steam.",
+            "de": "Restliches Öl in der Pfanne erhitzen. Pilze in drei Portionen bräunen, damit sie braten statt dämpfen."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "id": "finish-filling",
+          "text": {
+            "en": "Soften onion and celery, add garlic, tomato paste and thyme, then return mushrooms with walnuts and stock. Reduce until almost dry.",
+            "de": "Zwiebel und Sellerie weich dünsten, Knoblauch, Tomatenmark und Thymian zugeben. Pilze, Walnüsse und Brühe einrühren und fast trocken einkochen."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "puree-topping",
+          "text": {
+            "en": "Blend roasted cauliflower with butter, cream cheese, half the cheddar and salt until smooth.",
+            "de": "Röstblumenkohl mit Butter, Frischkäse, der Hälfte des Cheddars und Salz glatt pürieren."
+          }
+        },
+        {
+          "id": "bake",
+          "text": {
+            "en": "Spread cauliflower over the filling, scatter with remaining cheddar and bake until bubbling and bronzed.",
+            "de": "Blumenkohlpüree auf der Füllung verteilen, restlichen Cheddar darüberstreuen und blubbernd goldbraun backen."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "tags": [
+        "low-carb",
+        "bake",
+        "weekend",
+        "comfort-food"
+      ],
+      "search_terms": {
+        "en": [
+          "keto cottage pie",
+          "mushroom pie",
+          "cauliflower shepherd pie"
+        ],
+        "de": [
+          "Keto-Cottage-Pie",
+          "Pilz-Pie",
+          "Blumenkohl-Shepherd’s-Pie"
+        ]
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "british-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "alfredo-vegetarian-hard-light",
+      "dish_id": "fettuccine-alfredo",
+      "names": {
+        "en": "Cauliflower Alfredo Ribbons",
+        "de": "Blumenkohl-Alfredo-Bänder"
+      },
+      "descriptions": {
+        "en": "Roasted cauliflower turns into a pale, nutty sauce for zucchini ribbons and a modest tangle of pasta.",
+        "de": "Gerösteter Blumenkohl wird zur hellen, nussigen Sauce für Zucchinibänder und eine kleine Portion Pasta."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-500",
+        "halal",
+        "hard",
+        "kosher",
+        "roast",
+        "simmer",
+        "time-under-60",
+        "vegetarian"
+      ],
+      "time_minutes": 54,
+      "calories_per_serving": 426,
+      "servings": 4,
+      "nutrition": {
+        "calories": 426,
+        "protein_g": 19,
+        "carbs_g": 57,
+        "fat_g": 15
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "quantity": 700,
+          "unit": "g",
+          "preparation": {
+            "en": "in florets",
+            "de": "in Röschen"
+          }
+        },
+        {
+          "ingredient_id": "fettuccine",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "zucchini",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "cut into ribbons",
+            "de": "in Bänder geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "quantity": 350,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "preparation": {
+            "en": "unpeeled",
+            "de": "ungeschält"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "quantity": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "roast",
+          "text": {
+            "en": "Roast cauliflower and garlic with oil and salt at 220°C until deep gold appears at the edges.",
+            "de": "Blumenkohl und Knoblauch mit Öl und Salz bei 220 °C rösten, bis die Ränder tiefgolden sind."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "id": "warm-milk",
+          "text": {
+            "en": "Warm milk with nutmeg in a small pan; do not let it boil.",
+            "de": "Milch mit Muskat in einem kleinen Topf erwärmen, aber nicht kochen lassen."
+          }
+        },
+        {
+          "id": "blend",
+          "text": {
+            "en": "Squeeze garlic from its skin. Blend with roasted cauliflower, warm milk and half the parmesan until velvet-smooth.",
+            "de": "Knoblauch aus der Schale drücken. Mit Röstblumenkohl, warmer Milch und der Hälfte des Parmesans samtig pürieren."
+          }
+        },
+        {
+          "id": "cook-pasta",
+          "text": {
+            "en": "Cook fettuccine until al dente, adding zucchini ribbons for the final 45 seconds. Reserve pasta water.",
+            "de": "Fettuccine al dente kochen und die Zucchinibänder in den letzten 45 Sekunden zugeben. Pastawasser aufbewahren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "coat",
+          "text": {
+            "en": "Toss pasta and zucchini with cauliflower sauce, remaining parmesan and enough pasta water to flow.",
+            "de": "Pasta und Zucchini mit Blumenkohlsauce, restlichem Parmesan und genug Pastawasser cremig schwenken."
+          }
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold through chopped parsley and serve in warm shallow bowls.",
+            "de": "Gehackte Petersilie unterheben und in warmen flachen Schalen servieren."
+          }
+        }
+      ],
+      "tags": [
+        "pasta",
+        "vegetable-forward",
+        "weekend",
+        "lighter"
+      ],
+      "search_terms": {
+        "en": [
+          "light alfredo",
+          "cauliflower pasta",
+          "zucchini alfredo"
+        ],
+        "de": [
+          "leichte Alfredo",
+          "Blumenkohl-Pasta",
+          "Zucchini-Alfredo"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "pad-thai-vegan-hard-balanced",
+      "dish_id": "pad-thai",
+      "names": {
+        "en": "Charred Mushroom Pad Thai",
+        "de": "Pad Thai mit Röstpilzen"
+      },
+      "descriptions": {
+        "en": "King oyster mushrooms bring smoky chew to a fully plant-based tamarind noodle feast with toasted peanuts.",
+        "de": "Kräuterseitlinge bringen rauchigen Biss in ein rein pflanzliches Tamarindennudelfest mit gerösteten Erdnüssen."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "added-sugar",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "gluten-free",
+        "halal",
+        "hard",
+        "kosher",
+        "stir-fry",
+        "time-under-60",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 55,
+      "calories_per_serving": 568,
+      "servings": 4,
+      "nutrition": {
+        "calories": 568,
+        "protein_g": 19,
+        "carbs_g": 85,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "king-oyster-mushroom",
+          "quantity": 500,
+          "unit": "g",
+          "preparation": {
+            "en": "torn into strips",
+            "de": "in Streifen gezupft"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamari",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nori",
+          "quantity": 1,
+          "unit": "sheet",
+          "preparation": {
+            "en": "finely crushed",
+            "de": "fein zerkrümelt"
+          }
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "peanuts",
+          "quantity": 70,
+          "unit": "g",
+          "preparation": {
+            "en": "roasted and crushed",
+            "de": "geröstet und gehackt"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "quantity": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "quantity": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "neutral-oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soak-noodles",
+          "text": {
+            "en": "Soak noodles in cool water until pliable but not soft, then drain thoroughly.",
+            "de": "Nudeln in kühlem Wasser einweichen, bis sie biegsam, aber nicht weich sind; gründlich abgießen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Dissolve tamarind, tamari and palm sugar in 4 tablespoons warm water. Stir in crushed nori.",
+            "de": "Tamarinde, Tamari und Palmzucker in 4 EL warmem Wasser auflösen. Zerkrümeltes Nori einrühren."
+          }
+        },
+        {
+          "id": "char-mushrooms",
+          "text": {
+            "en": "Heat a wok until smoking. Fry mushrooms in two batches with oil, pressing them down until their torn edges char.",
+            "de": "Wok rauchend heiß werden lassen. Pilze in zwei Portionen mit Öl braten und andrücken, bis die gezupften Kanten rösten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "cook-aromatics",
+          "text": {
+            "en": "Add shallot and garlic, then crumble in tofu and stir-fry until it picks up golden spots.",
+            "de": "Schalotten und Knoblauch zugeben, Tofu hineinbröseln und goldfleckig pfannenrühren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "id": "glaze-noodles",
+          "text": {
+            "en": "Return mushrooms, add noodles and sauce and toss over high heat until tender and glossy.",
+            "de": "Pilze zurückgeben, Nudeln und Sauce zufügen und bei hoher Hitze weich und glänzend schwenken."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold in sprouts and spring onion. Serve immediately with peanuts and plenty of lime.",
+            "de": "Sprossen und Frühlingszwiebeln unterheben. Sofort mit Erdnüssen und reichlich Limette servieren."
+          }
+        }
+      ],
+      "tags": [
+        "noodles",
+        "plant-based",
+        "weekend",
+        "wok"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan pad thai",
+          "mushroom noodles",
+          "tofu pad thai"
+        ],
+        "de": [
+          "veganes Pad Thai",
+          "Pilznudeln",
+          "Tofu-Pad-Thai"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "thai-inspired",
+        "southeast-asian"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "shakshuka-keto-hard-hearty",
+      "dish_id": "shakshuka",
+      "names": {
+        "en": "Green Shakshuka with Feta",
+        "de": "Grüne Shakshuka mit Feta"
+      },
+      "descriptions": {
+        "en": "Jammy eggs, spinach, herbs and salty feta in a green skillet with toasted cumin butter.",
+        "de": "Cremige Eier, Spinat, Kräuter und salziger Feta in einer grünen Pfanne mit gerösteter Kreuzkümmelbutter."
+      },
+      "variant_dimensions": {
+        "diet": "keto",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-800",
+        "gluten-free",
+        "halal",
+        "hard",
+        "keto",
+        "kosher",
+        "poach",
+        "saute",
+        "time-under-60",
+        "vegetarian"
+      ],
+      "time_minutes": 48,
+      "calories_per_serving": 664,
+      "servings": 4,
+      "nutrition": {
+        "calories": 664,
+        "protein_g": 31,
+        "carbs_g": 19,
+        "fat_g": 53
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "egg",
+          "quantity": 8,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spinach",
+          "quantity": 700,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "leek",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "zucchini",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "feta",
+          "quantity": 240,
+          "unit": "g",
+          "preparation": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "heavy-cream",
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-dill",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "brown-butter",
+          "text": {
+            "en": "Melt butter in a wide lidded pan. Add cumin and let it foam until nutty and fragrant; spoon half into a cup.",
+            "de": "Butter in einer weiten Pfanne mit Deckel schmelzen. Kreuzkümmel zugeben und nussig duften lassen; die Hälfte in eine Tasse löffeln."
+          }
+        },
+        {
+          "id": "soften",
+          "text": {
+            "en": "Add oil and leek to the pan and cook slowly until silky, not browned.",
+            "de": "Öl und Lauch in die Pfanne geben und langsam seidig, aber nicht braun dünsten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "cook-greens",
+          "text": {
+            "en": "Squeeze excess water from zucchini, then add with spinach in batches. Cook until the pan looks lush, not wet.",
+            "de": "Überschüssiges Wasser aus der Zucchini drücken, dann portionsweise mit Spinat zugeben. Garen, bis die Pfanne saftig, aber nicht nass ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Stir in cream, half the feta, chopped herbs and lemon zest. Simmer until gently thickened.",
+            "de": "Sahne, die Hälfte des Fetas, gehackte Kräuter und Zitronenschale einrühren. Sanft andicken lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "poach-eggs",
+          "text": {
+            "en": "Make eight hollows, crack in eggs, cover and poach until whites are set and yolks remain soft.",
+            "de": "Acht Mulden formen, Eier hineinschlagen, abdecken und pochieren, bis das Eiweiß fest und das Eigelb weich ist."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Scatter with remaining feta and spoon the reserved cumin butter over the eggs. Finish with lemon juice.",
+            "de": "Restlichen Feta aufstreuen und die aufbewahrte Kreuzkümmelbutter über die Eier löffeln. Mit Zitronensaft vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "one-pan",
+        "low-carb",
+        "brunch",
+        "weekend"
+      ],
+      "search_terms": {
+        "en": [
+          "green shakshuka",
+          "spinach eggs",
+          "keto brunch"
+        ],
+        "de": [
+          "grüne Shakshuka",
+          "Spinat mit Eiern",
+          "Keto-Brunch"
+        ]
+      },
+      "meal_types": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "middle-eastern-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    }
+  ]
+}

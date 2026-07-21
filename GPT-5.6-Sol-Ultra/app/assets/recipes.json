@@ -1,0 +1,3785 @@
+{
+  "schema_version": 1,
+  "content_version": "2026.07.1",
+  "generated_at": "2026-07-10T00:00:00Z",
+  "recipes": [
+    {
+      "id": "doener-classic-easy-balanced",
+      "dish_id": "doener",
+      "names": {
+        "en": "Weeknight Beef Döner",
+        "de": "Feierabend-Rinderdöner"
+      },
+      "descriptions": {
+        "en": "Paprika-spiced beef, cool garlic yogurt and a bright cabbage crunch tucked into warm flatbread.",
+        "de": "Paprikawürziges Rindfleisch, kühler Knoblauchjoghurt und knackiger Krautsalat im warmen Fladenbrot."
+      },
+      "variant_dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat-dairy-combo",
+        "sesame"
+      ],
+      "attributes": [
+        "easy",
+        "time-under-30",
+        "calorie-under-600",
+        "pan-fry"
+      ],
+      "time_minutes": 28,
+      "calories_per_serving": 588,
+      "servings": 4,
+      "nutrition": {
+        "calories": 588,
+        "protein_g": 35,
+        "carbs_g": 55,
+        "fat_g": 25
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "red-cabbage",
+          "quantity": 220,
+          "unit": "g",
+          "preparation": {
+            "en": "finely shredded",
+            "de": "fein gehobelt"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "plain-yogurt",
+          "quantity": 180,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "preparation": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "flatbread",
+          "quantity": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sweet-paprika",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "sesame-seeds",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "mix-slaw",
+          "text": {
+            "en": "Massage the cabbage with half the lemon juice and a pinch of salt until glossy but still crisp.",
+            "de": "Den Kohl mit der Hälfte des Zitronensafts und einer Prise Salz massieren, bis er glänzt, aber noch knackig ist."
+          }
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Stir yogurt, half the garlic and the remaining lemon juice together. Season and set aside.",
+            "de": "Joghurt, die Hälfte des Knoblauchs und den restlichen Zitronensaft verrühren. Abschmecken und beiseitestellen."
+          }
+        },
+        {
+          "id": "brown-beef",
+          "text": {
+            "en": "Heat the oil in a wide pan. Add beef in one layer and leave it untouched until deeply browned underneath.",
+            "de": "Öl in einer weiten Pfanne erhitzen. Rindfleisch flach verteilen und unberührt kräftig bräunen lassen."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "id": "season-beef",
+          "text": {
+            "en": "Break up the beef, add paprika, cumin, remaining garlic and salt, then cook until the edges are crisp.",
+            "de": "Fleisch zerteilen, Paprika, Kreuzkümmel, restlichen Knoblauch und Salz zugeben und an den Rändern knusprig braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "warm-bread",
+          "text": {
+            "en": "Warm the flatbreads in the dry pan for 30 seconds per side.",
+            "de": "Fladenbrote in der trockenen Pfanne pro Seite 30 Sekunden erwärmen."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "id": "assemble",
+          "text": {
+            "en": "Fill with cabbage, tomato and beef. Spoon over garlic yogurt, scatter with sesame and fold snugly.",
+            "de": "Mit Kohl, Tomate und Fleisch füllen. Knoblauchjoghurt darübergeben, Sesam aufstreuen und fest zusammenklappen."
+          }
+        }
+      ],
+      "tags": [
+        "street-food",
+        "comfort-food",
+        "weeknight",
+        "handheld"
+      ],
+      "search_terms": {
+        "en": [
+          "doner",
+          "kebab",
+          "beef wrap"
+        ],
+        "de": [
+          "Döner",
+          "Kebab",
+          "Rindfleisch-Wrap"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "german-street-food"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "doener-vegan-medium-light",
+      "dish_id": "doener",
+      "names": {
+        "en": "Crisp Tofu Döner",
+        "de": "Knuspriger Tofu-Döner"
+      },
+      "descriptions": {
+        "en": "Charred shawarma-spiced tofu, lemony tahini and a tumble of herbs in a thin toasted flatbread.",
+        "de": "Röstig gebratener Tofu mit Shawarma-Gewürz, zitronige Tahinisauce und viele Kräuter im dünn gerösteten Fladenbrot."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "calorie-under-500",
+        "halal",
+        "kosher",
+        "medium",
+        "pan-fry",
+        "time-under-45",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 38,
+      "calories_per_serving": 438,
+      "servings": 4,
+      "nutrition": {
+        "calories": 438,
+        "protein_g": 23,
+        "carbs_g": 47,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "firm-tofu",
+          "quantity": 600,
+          "unit": "g",
+          "preparation": {
+            "en": "pressed and torn",
+            "de": "gepresst und gezupft"
+          }
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "tahini",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "ribboned",
+            "de": "in Bändern"
+          }
+        },
+        {
+          "ingredient_id": "red-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "thin-flatbread",
+          "quantity": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "season-tofu",
+          "text": {
+            "en": "Toss the torn tofu with cornstarch, cumin, paprika and salt until every crag is dusted.",
+            "de": "Den gezupften Tofu mit Stärke, Kreuzkümmel, Paprika und Salz mischen, bis jede Kante bedeckt ist."
+          }
+        },
+        {
+          "id": "crisp-tofu",
+          "text": {
+            "en": "Heat oil in a large pan and fry tofu without crowding, turning when each side is deeply golden.",
+            "de": "Öl in einer großen Pfanne erhitzen und den Tofu mit Platz rundherum von allen Seiten tiefgolden braten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "whisk-tahini",
+          "text": {
+            "en": "Whisk tahini with lemon juice, garlic and 3 tablespoons cold water. It will seize, then turn silky.",
+            "de": "Tahini mit Zitronensaft, Knoblauch und 3 EL kaltem Wasser verquirlen. Erst stockt sie, dann wird sie seidig."
+          }
+        },
+        {
+          "id": "dress-vegetables",
+          "text": {
+            "en": "Toss cucumber, onion and parsley with a spoonful of the tahini sauce.",
+            "de": "Gurke, Zwiebel und Petersilie mit einem Löffel Tahinisauce mischen."
+          }
+        },
+        {
+          "id": "toast-bread",
+          "text": {
+            "en": "Toast the flatbreads briefly in the tofu pan until pliable and spotted.",
+            "de": "Fladenbrote kurz in der Tofupfanne rösten, bis sie biegsam und leicht gebräunt sind."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "id": "assemble",
+          "text": {
+            "en": "Layer vegetables and crisp tofu into the bread, drizzle generously with tahini and roll.",
+            "de": "Gemüse und knusprigen Tofu ins Brot schichten, großzügig mit Tahini beträufeln und aufrollen."
+          }
+        }
+      ],
+      "tags": [
+        "street-food",
+        "plant-based",
+        "crispy",
+        "weekend"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan doner",
+          "tofu kebab",
+          "plant based wrap"
+        ],
+        "de": [
+          "veganer Döner",
+          "Tofu-Kebab",
+          "pflanzlicher Wrap"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "german-street-food"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "doener-halal-medium-hearty",
+      "dish_id": "doener",
+      "names": {
+        "en": "Sumac Chicken Döner Plate",
+        "de": "Sumach-Hähnchen-Dönerteller"
+      },
+      "descriptions": {
+        "en": "A generous plate of sumac chicken, golden bulgur, salad and cooling yogurt made with halal-compatible ingredients.",
+        "de": "Ein großzügiger Teller mit Sumach-Hähnchen, goldenem Bulgur, Salat und kühlem Joghurt aus halal-kompatiblen Zutaten."
+      },
+      "variant_dimensions": {
+        "diet": "halal",
+        "effort": "medium",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat-dairy-combo",
+        "poultry",
+        "sesame"
+      ],
+      "attributes": [
+        "calorie-under-800",
+        "grill",
+        "halal",
+        "medium",
+        "simmer",
+        "time-under-60"
+      ],
+      "time_minutes": 52,
+      "calories_per_serving": 748,
+      "servings": 4,
+      "nutrition": {
+        "calories": 748,
+        "protein_g": 48,
+        "carbs_g": 76,
+        "fat_g": 29
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thigh",
+          "quantity": 700,
+          "unit": "g",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Streifen"
+          }
+        },
+        {
+          "ingredient_id": "bulgur",
+          "quantity": 280,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chicken-stock",
+          "quantity": 560,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "sumac",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "plain-yogurt",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "romaine-lettuce",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "chopped",
+            "de": "geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "sesame-seeds",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "marinate",
+          "text": {
+            "en": "Coat chicken with sumac, cumin, half the oil, half the garlic and a pinch of salt. Rest while the bulgur cooks.",
+            "de": "Hähnchen mit Sumach, Kreuzkümmel, der Hälfte von Öl und Knoblauch sowie etwas Salz mischen. Während des Bulgurgarens ziehen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "cook-bulgur",
+          "text": {
+            "en": "Bring bulgur and stock to a simmer, cover and cook gently until tender. Rest off heat before fluffing.",
+            "de": "Bulgur und Brühe aufkochen, abdecken und sanft garen. Vom Herd nehmen, ruhen lassen und auflockern."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "id": "make-yogurt",
+          "text": {
+            "en": "Stir yogurt with remaining garlic, half the lemon juice and salt.",
+            "de": "Joghurt mit restlichem Knoblauch, der Hälfte des Zitronensafts und Salz verrühren."
+          }
+        },
+        {
+          "id": "grill-chicken",
+          "text": {
+            "en": "Heat a grill pan until very hot. Cook chicken in batches until charred and cooked through.",
+            "de": "Grillpfanne sehr heiß werden lassen. Hähnchen portionsweise röstig und vollständig durchgaren."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "dress-salad",
+          "text": {
+            "en": "Toss lettuce and tomato with remaining oil, lemon juice and a pinch of salt.",
+            "de": "Salat und Tomate mit restlichem Öl, Zitronensaft und einer Prise Salz mischen."
+          }
+        },
+        {
+          "id": "plate",
+          "text": {
+            "en": "Spoon bulgur into bowls. Add salad and chicken, finish with garlic yogurt and sesame.",
+            "de": "Bulgur in Schalen geben. Salat und Hähnchen daraufsetzen, mit Knoblauchjoghurt und Sesam vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "street-food",
+        "high-protein",
+        "platter",
+        "weekend"
+      ],
+      "search_terms": {
+        "en": [
+          "halal compatible doner",
+          "chicken kebab plate",
+          "sumac chicken"
+        ],
+        "de": [
+          "halal-kompatibler Döner",
+          "Hähnchen-Kebab-Teller",
+          "Sumach-Hähnchen"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "levantine-inspired"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "doener-keto-easy-light",
+      "dish_id": "doener",
+      "names": {
+        "en": "Döner Crunch Bowl",
+        "de": "Döner-Crunch-Bowl"
+      },
+      "descriptions": {
+        "en": "All the warm spice and cool garlic sauce of döner, built over crunchy greens instead of bread.",
+        "de": "Die ganze warme Würze und kühle Knoblauchsauce eines Döners, auf knackigem Grün statt Brot."
+      },
+      "variant_dimensions": {
+        "diet": "keto",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "meat-dairy-combo",
+        "sesame"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "easy",
+        "time-under-30",
+        "calorie-under-500",
+        "pan-fry"
+      ],
+      "time_minutes": 24,
+      "calories_per_serving": 472,
+      "servings": 4,
+      "nutrition": {
+        "calories": 472,
+        "protein_g": 34,
+        "carbs_g": 13,
+        "fat_g": 33
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "ground-beef",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "romaine-lettuce",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "shredded",
+            "de": "geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "cucumber",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "tomato",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "plain-yogurt",
+          "quantity": 160,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "sweet-paprika",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "sesame-seeds",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Mix yogurt, garlic, half the lemon juice and a pinch of salt.",
+            "de": "Joghurt, Knoblauch, die Hälfte des Zitronensafts und eine Prise Salz verrühren."
+          }
+        },
+        {
+          "id": "cook-beef",
+          "text": {
+            "en": "Heat oil in a wide pan. Brown the beef hard, then add paprika, cumin and salt and cook until crisp in places.",
+            "de": "Öl in einer weiten Pfanne erhitzen. Rindfleisch kräftig bräunen, dann Paprika, Kreuzkümmel und Salz zugeben und stellenweise knusprig braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "build-base",
+          "text": {
+            "en": "Divide lettuce, cucumber and tomato among bowls and squeeze over the remaining lemon.",
+            "de": "Salat, Gurke und Tomate auf Schalen verteilen und mit der restlichen Zitrone beträufeln."
+          }
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Pile on the hot spiced beef. Drizzle with garlic yogurt and shower with sesame.",
+            "de": "Das heiße Würzfleisch daraufhäufen. Mit Knoblauchjoghurt beträufeln und Sesam darüberstreuen."
+          }
+        }
+      ],
+      "tags": [
+        "low-carb",
+        "high-protein",
+        "quick",
+        "bowl"
+      ],
+      "search_terms": {
+        "en": [
+          "keto doner",
+          "doner salad",
+          "low carb kebab"
+        ],
+        "de": [
+          "Keto-Döner",
+          "Dönersalat",
+          "Low-Carb-Kebab"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "turkish-inspired",
+        "german-street-food"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "tomato-soup-classic-easy-light",
+      "dish_id": "roasted-tomato-soup",
+      "names": {
+        "en": "Velvet Tomato Soup",
+        "de": "Samtige Tomatensuppe"
+      },
+      "descriptions": {
+        "en": "A pantry-friendly tomato soup rounded with cream, basil and a tiny lick of smoked paprika.",
+        "de": "Eine unkomplizierte Tomatensuppe aus dem Vorrat, abgerundet mit Sahne, Basilikum und einem Hauch Rauchpaprika."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-400",
+        "easy",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "simmer",
+        "time-under-30",
+        "vegetarian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 286,
+      "servings": 4,
+      "nutrition": {
+        "calories": 286,
+        "protein_g": 6,
+        "carbs_g": 27,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "quantity": 800,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "finely diced",
+            "de": "fein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "heavy-cream",
+          "quantity": 120,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "quantity": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-basil",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soften",
+          "text": {
+            "en": "Warm oil in a pot and soften onion and carrot with a pinch of salt until sweet and translucent.",
+            "de": "Öl im Topf erwärmen und Zwiebel sowie Möhre mit einer Prise Salz weich und glasig dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "id": "toast-paste",
+          "text": {
+            "en": "Add garlic, tomato paste and smoked paprika; stir until the paste darkens by a shade.",
+            "de": "Knoblauch, Tomatenmark und Rauchpaprika zugeben und rühren, bis das Mark etwas dunkler wird."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "id": "simmer",
+          "text": {
+            "en": "Add tomatoes and stock. Simmer uncovered so the sharp edges soften.",
+            "de": "Tomaten und Brühe zugeben. Offen köcheln lassen, bis die Säure milder wird."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "blend",
+          "text": {
+            "en": "Blend until completely smooth, then stir in cream and warm gently without boiling.",
+            "de": "Vollkommen glatt pürieren, Sahne einrühren und sanft erwärmen, ohne zu kochen."
+          }
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Taste for salt and tear basil over each bowl just before serving.",
+            "de": "Mit Salz abschmecken und direkt vor dem Servieren Basilikum über jede Schale zupfen."
+          }
+        }
+      ],
+      "tags": [
+        "soup",
+        "pantry",
+        "quick",
+        "comfort-food"
+      ],
+      "search_terms": {
+        "en": [
+          "cream of tomato",
+          "tomato bisque",
+          "easy soup"
+        ],
+        "de": [
+          "Tomatencremesuppe",
+          "Tomaten-Bisque",
+          "einfache Suppe"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "european",
+        "modern-home"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "tomato-soup-vegan-easy-light",
+      "dish_id": "roasted-tomato-soup",
+      "names": {
+        "en": "Tomato & White Bean Soup",
+        "de": "Tomaten-Bohnen-Suppe"
+      },
+      "descriptions": {
+        "en": "Creamy without cream: white beans disappear into tomato and leave behind body, protein and a soft ivory swirl.",
+        "de": "Cremig ohne Sahne: Weiße Bohnen verschwinden in der Tomate und schenken Fülle, Protein und einen hellen Wirbel."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "calorie-under-400",
+        "easy",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "simmer",
+        "time-under-30",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 27,
+      "calories_per_serving": 318,
+      "servings": 4,
+      "nutrition": {
+        "calories": 318,
+        "protein_g": 13,
+        "carbs_g": 45,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "quantity": 800,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cannellini-beans",
+          "quantity": 480,
+          "unit": "g",
+          "preparation": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 450,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "dried-oregano",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-basil",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 0.5,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 0.75,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soften",
+          "text": {
+            "en": "Soften onion in olive oil with a pinch of salt until translucent.",
+            "de": "Zwiebel in Olivenöl mit einer Prise Salz glasig dünsten."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "id": "build-base",
+          "text": {
+            "en": "Stir in garlic, tomato paste and oregano until fragrant and brick red.",
+            "de": "Knoblauch, Tomatenmark und Oregano einrühren, bis alles duftet und ziegelrot ist."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "id": "simmer",
+          "text": {
+            "en": "Add tomatoes, stock and three quarters of the beans. Simmer gently.",
+            "de": "Tomaten, Brühe und drei Viertel der Bohnen zugeben und sanft köcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "blend",
+          "text": {
+            "en": "Blend smooth. Return to low heat and stir in the reserved whole beans.",
+            "de": "Glatt pürieren. Bei kleiner Hitze die zurückbehaltenen ganzen Bohnen einrühren."
+          }
+        },
+        {
+          "id": "brighten",
+          "text": {
+            "en": "Squeeze in lemon, adjust the salt and finish with torn basil and a thread of olive oil.",
+            "de": "Zitrone hineinpressen, Salz anpassen und mit gezupftem Basilikum sowie einem Faden Olivenöl vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "soup",
+        "plant-based",
+        "pantry",
+        "high-fiber"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan tomato soup",
+          "bean soup",
+          "dairy free bisque"
+        ],
+        "de": [
+          "vegane Tomatensuppe",
+          "Bohnensuppe",
+          "Tomatencremesuppe ohne Milch"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "mediterranean-inspired",
+        "modern-home"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "tomato-soup-classic-hard-balanced",
+      "dish_id": "roasted-tomato-soup",
+      "names": {
+        "en": "Slow-Roasted Tomato Soup",
+        "de": "Langsam geröstete Tomatensuppe"
+      },
+      "descriptions": {
+        "en": "A rainy-afternoon soup with blistered tomatoes, roasted garlic, basil oil and crisp parmesan crumbs.",
+        "de": "Eine Suppe für Regentage mit aufgeplatzten Tomaten, Röstknoblauch, Basilikumöl und knusprigen Parmesankrümeln."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "hard",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "sulphites"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "halal",
+        "hard",
+        "kosher",
+        "roast",
+        "simmer",
+        "time-over-60",
+        "vegetarian"
+      ],
+      "time_minutes": 82,
+      "calories_per_serving": 512,
+      "servings": 4,
+      "nutrition": {
+        "calories": 512,
+        "protein_g": 15,
+        "carbs_g": 42,
+        "fat_g": 33
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "plum-tomato",
+          "quantity": 1400,
+          "unit": "g",
+          "preparation": {
+            "en": "halved",
+            "de": "halbiert"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 8,
+          "unit": "clove",
+          "preparation": {
+            "en": "unpeeled",
+            "de": "ungeschält"
+          }
+        },
+        {
+          "ingredient_id": "red-onion",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "quartered",
+            "de": "geviertelt"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "heavy-cream",
+          "quantity": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 80,
+          "unit": "g",
+          "preparation": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "panko-breadcrumbs",
+          "quantity": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fresh-basil",
+          "quantity": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "balsamic-vinegar",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.25,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "heat-oven",
+          "text": {
+            "en": "Heat the oven to 210°C. Arrange tomatoes, garlic and onion on a deep tray with 3 tablespoons oil and salt.",
+            "de": "Backofen auf 210 °C vorheizen. Tomaten, Knoblauch und Zwiebeln mit 3 EL Öl und Salz auf einem tiefen Blech verteilen."
+          }
+        },
+        {
+          "id": "roast",
+          "text": {
+            "en": "Roast until the tomatoes collapse and their edges caramelize. Turn the onions once.",
+            "de": "Rösten, bis die Tomaten zusammenfallen und ihre Ränder karamellisieren. Zwiebeln einmal wenden."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "id": "make-crumbs",
+          "text": {
+            "en": "Mix panko, parmesan and 1 tablespoon oil. Bake on a small tray until golden, stirring halfway.",
+            "de": "Panko, Parmesan und 1 EL Öl mischen. Auf einem kleinen Blech goldbraun backen, nach der Hälfte umrühren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "make-basil-oil",
+          "text": {
+            "en": "Finely chop half the basil and stir it into the remaining oil with a pinch of salt.",
+            "de": "Die Hälfte des Basilikums fein hacken und mit dem restlichen Öl sowie einer Prise Salz verrühren."
+          }
+        },
+        {
+          "id": "simmer",
+          "text": {
+            "en": "Squeeze roasted garlic from its skins into a pot. Add the whole tray, stock and balsamic; simmer together.",
+            "de": "Röstknoblauch aus den Schalen in einen Topf drücken. Den gesamten Blechinhalt, Brühe und Balsamico zugeben und köcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "blend-finish",
+          "text": {
+            "en": "Blend silky, stir in cream and taste. Serve with parmesan crumbs, basil oil and the remaining basil.",
+            "de": "Seidig pürieren, Sahne einrühren und abschmecken. Mit Parmesankrümeln, Basilikumöl und restlichem Basilikum servieren."
+          }
+        }
+      ],
+      "tags": [
+        "soup",
+        "slow-cooking",
+        "weekend",
+        "comfort-food"
+      ],
+      "search_terms": {
+        "en": [
+          "roasted tomato bisque",
+          "gourmet tomato soup",
+          "rainy day soup"
+        ],
+        "de": [
+          "geröstete Tomatensuppe",
+          "feine Tomatencremesuppe",
+          "Regentagssuppe"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian-inspired",
+        "modern-home"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "lentil-pie-classic-medium-balanced",
+      "dish_id": "lentil-shepherds-pie",
+      "names": {
+        "en": "Lentil Shepherd's Pie",
+        "de": "Linsen-Shepherd’s-Pie"
+      },
+      "descriptions": {
+        "en": "Wine-dark lentils and vegetables under a cloud of buttery mashed potato, bronzed at the edges.",
+        "de": "Dunkle Linsen und Gemüse unter einer Wolke aus butterigem Kartoffelpüree, an den Rändern goldbraun."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "medium",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "alcohol",
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "sulphites"
+      ],
+      "attributes": [
+        "bake",
+        "calorie-under-600",
+        "gluten-free",
+        "kosher",
+        "medium",
+        "simmer",
+        "time-under-60",
+        "vegetarian"
+      ],
+      "time_minutes": 58,
+      "calories_per_serving": 556,
+      "servings": 6,
+      "nutrition": {
+        "calories": 556,
+        "protein_g": 21,
+        "carbs_g": 82,
+        "fat_g": 17
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "green-lentils",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "potato",
+          "quantity": 1200,
+          "unit": "g",
+          "preparation": {
+            "en": "peeled and chunked",
+            "de": "geschält und gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "mushroom",
+          "quantity": 300,
+          "unit": "g",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "red-wine",
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 700,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "quantity": 180,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "fresh-thyme",
+          "quantity": 6,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "cook-potatoes",
+          "text": {
+            "en": "Cover potatoes with salted cold water, bring to a boil and cook until a knife slips through easily.",
+            "de": "Kartoffeln mit gesalzenem kaltem Wasser bedecken, aufkochen und garen, bis ein Messer leicht hindurchgleitet."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "id": "brown-vegetables",
+          "text": {
+            "en": "Heat oil in a deep ovenproof pan. Brown mushrooms, then add onion, carrot and celery and soften.",
+            "de": "Öl in einer tiefen ofenfesten Pfanne erhitzen. Pilze bräunen, dann Zwiebel, Möhre und Sellerie zugeben und weich dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "build-filling",
+          "text": {
+            "en": "Stir in tomato paste and thyme. Add wine and reduce by half, then add lentils and stock.",
+            "de": "Tomatenmark und Thymian einrühren. Wein zugeben und auf die Hälfte einkochen, dann Linsen und Brühe zufügen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "simmer-filling",
+          "text": {
+            "en": "Simmer until lentils are tender and the sauce is glossy, adding a splash of water if needed.",
+            "de": "Köcheln, bis die Linsen weich und die Sauce glänzend ist; bei Bedarf etwas Wasser zugeben."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "mash",
+          "text": {
+            "en": "Drain potatoes well, steam dry, then mash with butter, warm milk and salt.",
+            "de": "Kartoffeln gut abgießen, ausdampfen lassen und mit Butter, warmer Milch und Salz stampfen."
+          }
+        },
+        {
+          "id": "bake",
+          "text": {
+            "en": "Spread mash over the filling, rough up the top with a fork and bake at 220°C until the peaks are bronze.",
+            "de": "Püree auf der Füllung verteilen, mit einer Gabel aufrauen und bei 220 °C backen, bis die Spitzen goldbraun sind."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "tags": [
+        "bake",
+        "comfort-food",
+        "make-ahead",
+        "family-style"
+      ],
+      "search_terms": {
+        "en": [
+          "vegetarian cottage pie",
+          "lentil bake",
+          "meatless shepherd pie"
+        ],
+        "de": [
+          "vegetarischer Cottage Pie",
+          "Linsenauflauf",
+          "Shepherd’s Pie ohne Fleisch"
+        ]
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "british-inspired"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "lentil-pie-vegan-medium-light",
+      "dish_id": "lentil-shepherds-pie",
+      "names": {
+        "en": "Herby Vegan Lentil Pie",
+        "de": "Kräuteriger veganer Linsen-Pie"
+      },
+      "descriptions": {
+        "en": "A bright, wine-free lentil filling capped with olive-oil potato and little green pools of parsley.",
+        "de": "Eine frische, weinfreie Linsenfüllung mit Olivenöl-Kartoffelhaube und kleinen grünen Petersilieninseln."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "calorie-under-500",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "medium",
+        "simmer",
+        "time-under-60",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 55,
+      "calories_per_serving": 448,
+      "servings": 6,
+      "nutrition": {
+        "calories": 448,
+        "protein_g": 18,
+        "carbs_g": 76,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "brown-lentils",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "potato",
+          "quantity": 1000,
+          "unit": "g",
+          "preparation": {
+            "en": "peeled and chunked",
+            "de": "geschält und gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower",
+          "quantity": 400,
+          "unit": "g",
+          "preparation": {
+            "en": "in florets",
+            "de": "in Röschen"
+          }
+        },
+        {
+          "ingredient_id": "carrot",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "leek",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Ringen"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 800,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "fresh-rosemary",
+          "quantity": 2,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "boil-topping",
+          "text": {
+            "en": "Boil potatoes and cauliflower in salted water until tender, then drain and let the steam escape.",
+            "de": "Kartoffeln und Blumenkohl in Salzwasser weich kochen, abgießen und ausdampfen lassen."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "id": "start-filling",
+          "text": {
+            "en": "Heat 2 tablespoons oil. Soften leek, carrot and celery, then stir in tomato paste and chopped rosemary.",
+            "de": "2 EL Öl erhitzen. Lauch, Möhre und Sellerie weich dünsten, dann Tomatenmark und gehackten Rosmarin einrühren."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "id": "simmer",
+          "text": {
+            "en": "Add lentils and stock. Simmer until tender and thick enough that a spoon leaves a trail.",
+            "de": "Linsen und Brühe zugeben. Köcheln, bis alles weich und so dick ist, dass ein Löffel eine Spur hinterlässt."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "mash",
+          "text": {
+            "en": "Mash potato and cauliflower with 2 tablespoons oil, lemon zest and salt.",
+            "de": "Kartoffeln und Blumenkohl mit 2 EL Öl, Zitronenschale und Salz stampfen."
+          }
+        },
+        {
+          "id": "bake",
+          "text": {
+            "en": "Top the filling with mash and bake at 220°C until lightly crisp and golden.",
+            "de": "Füllung mit dem Püree bedecken und bei 220 °C leicht knusprig und goldbraun backen."
+          },
+          "timer_seconds": 840
+        },
+        {
+          "id": "herb-finish",
+          "text": {
+            "en": "Chop parsley and mix with remaining oil and lemon juice. Spoon over the hot pie.",
+            "de": "Petersilie hacken und mit restlichem Öl und Zitronensaft mischen. Über den heißen Pie geben."
+          }
+        }
+      ],
+      "tags": [
+        "bake",
+        "plant-based",
+        "make-ahead",
+        "high-fiber"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan shepherd pie",
+          "lentil potato bake",
+          "plant based pie"
+        ],
+        "de": [
+          "veganer Shepherd’s Pie",
+          "Linsen-Kartoffel-Auflauf",
+          "pflanzlicher Pie"
+        ]
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "british-inspired",
+        "modern-home"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "lentil-pie-keto-hard-hearty",
+      "dish_id": "lentil-shepherds-pie",
+      "names": {
+        "en": "Mushroom Walnut Cottage Pie",
+        "de": "Pilz-Walnuss-Cottage-Pie"
+      },
+      "descriptions": {
+        "en": "A rich, low-carb cottage pie with deeply browned mushrooms, walnuts and a burnished cauliflower-cheddar top.",
+        "de": "Ein üppiger Low-Carb-Cottage-Pie mit tief gebräunten Pilzen, Walnüssen und goldener Blumenkohl-Cheddar-Haube."
+      },
+      "variant_dimensions": {
+        "diet": "keto",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "tree-nuts",
+        "walnuts"
+      ],
+      "attributes": [
+        "bake",
+        "calorie-under-800",
+        "gluten-free",
+        "halal",
+        "hard",
+        "keto",
+        "kosher",
+        "roast",
+        "time-over-60",
+        "vegetarian"
+      ],
+      "time_minutes": 76,
+      "calories_per_serving": 704,
+      "servings": 6,
+      "nutrition": {
+        "calories": 704,
+        "protein_g": 25,
+        "carbs_g": 24,
+        "fat_g": 59
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "mushroom",
+          "quantity": 900,
+          "unit": "g",
+          "preparation": {
+            "en": "finely chopped",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "walnuts",
+          "quantity": 220,
+          "unit": "g",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower",
+          "quantity": 1200,
+          "unit": "g",
+          "preparation": {
+            "en": "in florets",
+            "de": "in Röschen"
+          }
+        },
+        {
+          "ingredient_id": "celery-stalk",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "cheddar",
+          "quantity": 180,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cream-cheese",
+          "quantity": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegetable-stock",
+          "quantity": 350,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fresh-thyme",
+          "quantity": 8,
+          "unit": "sprig"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.25,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "roast-cauliflower",
+          "text": {
+            "en": "Roast cauliflower with 1 tablespoon oil and salt at 220°C until dry-edged and tender.",
+            "de": "Blumenkohl mit 1 EL Öl und Salz bei 220 °C rösten, bis die Ränder trocken und die Röschen weich sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "toast-walnuts",
+          "text": {
+            "en": "Toast walnuts in a dry ovenproof pan until fragrant, then tip onto a board.",
+            "de": "Walnüsse in einer trockenen ofenfesten Pfanne duftend rösten, dann auf ein Brett geben."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "brown-mushrooms",
+          "text": {
+            "en": "Heat remaining oil in the pan. Brown mushrooms in three batches so they fry instead of steam.",
+            "de": "Restliches Öl in der Pfanne erhitzen. Pilze in drei Portionen bräunen, damit sie braten statt dämpfen."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "id": "finish-filling",
+          "text": {
+            "en": "Soften onion and celery, add garlic, tomato paste and thyme, then return mushrooms with walnuts and stock. Reduce until almost dry.",
+            "de": "Zwiebel und Sellerie weich dünsten, Knoblauch, Tomatenmark und Thymian zugeben. Pilze, Walnüsse und Brühe einrühren und fast trocken einkochen."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "puree-topping",
+          "text": {
+            "en": "Blend roasted cauliflower with butter, cream cheese, half the cheddar and salt until smooth.",
+            "de": "Röstblumenkohl mit Butter, Frischkäse, der Hälfte des Cheddars und Salz glatt pürieren."
+          }
+        },
+        {
+          "id": "bake",
+          "text": {
+            "en": "Spread cauliflower over the filling, scatter with remaining cheddar and bake until bubbling and bronzed.",
+            "de": "Blumenkohlpüree auf der Füllung verteilen, restlichen Cheddar darüberstreuen und blubbernd goldbraun backen."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "tags": [
+        "low-carb",
+        "bake",
+        "weekend",
+        "comfort-food"
+      ],
+      "search_terms": {
+        "en": [
+          "keto cottage pie",
+          "mushroom pie",
+          "cauliflower shepherd pie"
+        ],
+        "de": [
+          "Keto-Cottage-Pie",
+          "Pilz-Pie",
+          "Blumenkohl-Shepherd’s-Pie"
+        ]
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "british-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "alfredo-classic-easy-hearty",
+      "dish_id": "fettuccine-alfredo",
+      "names": {
+        "en": "Silky Fettuccine Alfredo",
+        "de": "Seidige Fettuccine Alfredo"
+      },
+      "descriptions": {
+        "en": "A glossy, unabashed bowl of butter, parmesan and black pepper clinging to long ribbons of pasta.",
+        "de": "Eine glänzende, herrlich üppige Schale aus Butter, Parmesan und schwarzem Pfeffer an langen Pastabändern."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "easy",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-800",
+        "easy",
+        "halal",
+        "kosher",
+        "simmer",
+        "time-under-30",
+        "vegetarian"
+      ],
+      "time_minutes": 22,
+      "calories_per_serving": 786,
+      "servings": 4,
+      "nutrition": {
+        "calories": 786,
+        "protein_g": 27,
+        "carbs_g": 87,
+        "fat_g": 37
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "fettuccine",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 180,
+          "unit": "g",
+          "preparation": {
+            "en": "very finely grated",
+            "de": "sehr fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "quantity": 1.5,
+          "unit": "tsp",
+          "preparation": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "boil-water",
+          "text": {
+            "en": "Bring a wide pot of water to a boil and salt it until pleasantly savory.",
+            "de": "Einen weiten Topf Wasser aufkochen und angenehm herzhaft salzen."
+          }
+        },
+        {
+          "id": "cook-pasta",
+          "text": {
+            "en": "Cook fettuccine until just shy of al dente. Scoop out 350 ml pasta water before draining.",
+            "de": "Fettuccine knapp al dente kochen. Vor dem Abgießen 350 ml Pastawasser abnehmen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "start-emulsion",
+          "text": {
+            "en": "Melt butter with pepper in the empty pot over low heat. Add 200 ml pasta water and swirl.",
+            "de": "Butter und Pfeffer im leeren Topf bei kleiner Hitze schmelzen. 200 ml Pastawasser zugeben und schwenken."
+          }
+        },
+        {
+          "id": "toss",
+          "text": {
+            "en": "Add pasta and toss vigorously. Remove from heat, rain in parmesan and keep tossing until glossy, loosening with water as needed.",
+            "de": "Pasta zugeben und kräftig schwenken. Vom Herd nehmen, Parmesan einrieseln lassen und glänzend schwenken; bei Bedarf Pastawasser zugeben."
+          }
+        },
+        {
+          "id": "serve",
+          "text": {
+            "en": "Twirl into warm bowls immediately and finish with another crack of pepper.",
+            "de": "Sofort in warme Schalen drehen und mit frisch gemahlenem Pfeffer vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "pasta",
+        "comfort-food",
+        "quick",
+        "date-night"
+      ],
+      "search_terms": {
+        "en": [
+          "alfredo pasta",
+          "butter parmesan noodles",
+          "creamy fettuccine"
+        ],
+        "de": [
+          "Alfredo-Pasta",
+          "Butter-Parmesan-Nudeln",
+          "cremige Fettuccine"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "roman-inspired"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "alfredo-vegan-medium-balanced",
+      "dish_id": "fettuccine-alfredo",
+      "names": {
+        "en": "White Miso Alfredo",
+        "de": "Weiße Miso-Alfredo"
+      },
+      "descriptions": {
+        "en": "Cashew cream, mellow white miso and lemon make a quietly savory sauce with proper pasta-water gloss.",
+        "de": "Cashewcreme, mildes weißes Miso und Zitrone ergeben eine leise würzige Sauce mit echtem Pastawasserglanz."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "cashews",
+        "gluten",
+        "high-fodmap",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "halal",
+        "kosher",
+        "medium",
+        "simmer",
+        "time-under-45",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 36,
+      "calories_per_serving": 572,
+      "servings": 4,
+      "nutrition": {
+        "calories": 572,
+        "protein_g": 20,
+        "carbs_g": 82,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "fettuccine",
+          "quantity": 360,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cashews",
+          "quantity": 120,
+          "unit": "g",
+          "preparation": {
+            "en": "soaked in boiling water",
+            "de": "in kochendem Wasser eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "white-miso",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soak-cashews",
+          "text": {
+            "en": "Cover cashews with boiling water and leave them to soften while the pasta water heats.",
+            "de": "Cashews mit kochendem Wasser bedecken und weich werden lassen, während das Pastawasser erhitzt."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "id": "blend-sauce",
+          "text": {
+            "en": "Drain cashews and blend with miso, nutritional yeast, garlic, lemon juice, oil and 250 ml fresh water until perfectly smooth.",
+            "de": "Cashews abgießen und mit Miso, Hefeflocken, Knoblauch, Zitronensaft, Öl und 250 ml frischem Wasser vollkommen glatt mixen."
+          }
+        },
+        {
+          "id": "cook-pasta",
+          "text": {
+            "en": "Boil fettuccine in salted water until al dente. Reserve 300 ml cooking water.",
+            "de": "Fettuccine in Salzwasser al dente kochen. 300 ml Kochwasser aufbewahren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "glaze",
+          "text": {
+            "en": "Warm the sauce gently in a wide pan. Add pasta and toss, loosening with pasta water until it coats every ribbon.",
+            "de": "Sauce in einer weiten Pfanne sanft erwärmen. Pasta zugeben und mit Pastawasser schwenken, bis jedes Band überzogen ist."
+          }
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold in chopped parsley, shower with black pepper and serve at once.",
+            "de": "Gehackte Petersilie unterheben, reichlich schwarzen Pfeffer darübergeben und sofort servieren."
+          }
+        }
+      ],
+      "tags": [
+        "pasta",
+        "plant-based",
+        "creamy",
+        "date-night"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan alfredo",
+          "cashew pasta",
+          "miso cream pasta"
+        ],
+        "de": [
+          "vegane Alfredo",
+          "Cashew-Pasta",
+          "Miso-Sahne-Pasta"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian-inspired",
+        "modern-vegan"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "alfredo-gluten-free-medium-balanced",
+      "dish_id": "fettuccine-alfredo",
+      "names": {
+        "en": "Gluten-Free Lemon Alfredo",
+        "de": "Glutenfreie Zitronen-Alfredo"
+      },
+      "descriptions": {
+        "en": "Corn-rice fettuccine in a bright parmesan cream, balanced with lemon zest and peppery greens.",
+        "de": "Mais-Reis-Fettuccine in heller Parmesancreme, ausbalanciert mit Zitronenschale und pfeffrigem Grün."
+      },
+      "variant_dimensions": {
+        "diet": "gluten-free",
+        "effort": "medium",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "dairy",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "medium",
+        "simmer",
+        "time-under-30",
+        "vegetarian"
+      ],
+      "time_minutes": 29,
+      "calories_per_serving": 594,
+      "servings": 4,
+      "nutrition": {
+        "calories": 594,
+        "protein_g": 20,
+        "carbs_g": 73,
+        "fat_g": 25
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-fettuccine",
+          "quantity": 360,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "heavy-cream",
+          "quantity": 220,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 120,
+          "unit": "g",
+          "preparation": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "arugula",
+          "quantity": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "cook-pasta",
+          "text": {
+            "en": "Cook the gluten-free fettuccine in generously salted water, stirring often. Reserve 250 ml water before draining.",
+            "de": "Glutenfreie Fettuccine in gut gesalzenem Wasser unter häufigem Rühren kochen. Vor dem Abgießen 250 ml Wasser abnehmen."
+          },
+          "timer_seconds": 660
+        },
+        {
+          "id": "reduce-cream",
+          "text": {
+            "en": "Melt butter in a wide pan, add cream and pepper and simmer until it lightly coats a spoon.",
+            "de": "Butter in einer weiten Pfanne schmelzen, Sahne und Pfeffer zugeben und köcheln, bis die Sauce einen Löffel leicht überzieht."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "emulsify",
+          "text": {
+            "en": "Lower the heat. Add pasta and parmesan in handfuls, tossing with splashes of pasta water until glossy.",
+            "de": "Hitze reduzieren. Pasta und Parmesan portionsweise zugeben und mit Pastawasser glänzend schwenken."
+          }
+        },
+        {
+          "id": "brighten",
+          "text": {
+            "en": "Add lemon zest, a squeeze of juice and arugula. Toss just until the leaves begin to wilt.",
+            "de": "Zitronenschale, einen Spritzer Saft und Rucola zugeben. Nur so lange schwenken, bis die Blätter leicht welken."
+          }
+        },
+        {
+          "id": "serve",
+          "text": {
+            "en": "Taste for salt and serve immediately with extra pepper.",
+            "de": "Mit Salz abschmecken und sofort mit zusätzlichem Pfeffer servieren."
+          }
+        }
+      ],
+      "tags": [
+        "pasta",
+        "gluten-free",
+        "date-night",
+        "creamy"
+      ],
+      "search_terms": {
+        "en": [
+          "celiac alfredo",
+          "gluten free pasta",
+          "lemon cream noodles"
+        ],
+        "de": [
+          "glutenfreie Alfredo",
+          "Zöliakie-Pasta",
+          "Zitronen-Sahne-Nudeln"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian-inspired"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "alfredo-vegetarian-hard-light",
+      "dish_id": "fettuccine-alfredo",
+      "names": {
+        "en": "Cauliflower Alfredo Ribbons",
+        "de": "Blumenkohl-Alfredo-Bänder"
+      },
+      "descriptions": {
+        "en": "Roasted cauliflower turns into a pale, nutty sauce for zucchini ribbons and a modest tangle of pasta.",
+        "de": "Gerösteter Blumenkohl wird zur hellen, nussigen Sauce für Zucchinibänder und eine kleine Portion Pasta."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "hard",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-500",
+        "halal",
+        "hard",
+        "kosher",
+        "roast",
+        "simmer",
+        "time-under-60",
+        "vegetarian"
+      ],
+      "time_minutes": 54,
+      "calories_per_serving": 426,
+      "servings": 4,
+      "nutrition": {
+        "calories": 426,
+        "protein_g": 19,
+        "carbs_g": 57,
+        "fat_g": 15
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "quantity": 700,
+          "unit": "g",
+          "preparation": {
+            "en": "in florets",
+            "de": "in Röschen"
+          }
+        },
+        {
+          "ingredient_id": "fettuccine",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "zucchini",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "cut into ribbons",
+            "de": "in Bänder geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "whole-milk",
+          "quantity": 350,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 4,
+          "unit": "clove",
+          "preparation": {
+            "en": "unpeeled",
+            "de": "ungeschält"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "quantity": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "roast",
+          "text": {
+            "en": "Roast cauliflower and garlic with oil and salt at 220°C until deep gold appears at the edges.",
+            "de": "Blumenkohl und Knoblauch mit Öl und Salz bei 220 °C rösten, bis die Ränder tiefgolden sind."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "id": "warm-milk",
+          "text": {
+            "en": "Warm milk with nutmeg in a small pan; do not let it boil.",
+            "de": "Milch mit Muskat in einem kleinen Topf erwärmen, aber nicht kochen lassen."
+          }
+        },
+        {
+          "id": "blend",
+          "text": {
+            "en": "Squeeze garlic from its skin. Blend with roasted cauliflower, warm milk and half the parmesan until velvet-smooth.",
+            "de": "Knoblauch aus der Schale drücken. Mit Röstblumenkohl, warmer Milch und der Hälfte des Parmesans samtig pürieren."
+          }
+        },
+        {
+          "id": "cook-pasta",
+          "text": {
+            "en": "Cook fettuccine until al dente, adding zucchini ribbons for the final 45 seconds. Reserve pasta water.",
+            "de": "Fettuccine al dente kochen und die Zucchinibänder in den letzten 45 Sekunden zugeben. Pastawasser aufbewahren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "coat",
+          "text": {
+            "en": "Toss pasta and zucchini with cauliflower sauce, remaining parmesan and enough pasta water to flow.",
+            "de": "Pasta und Zucchini mit Blumenkohlsauce, restlichem Parmesan und genug Pastawasser cremig schwenken."
+          }
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold through chopped parsley and serve in warm shallow bowls.",
+            "de": "Gehackte Petersilie unterheben und in warmen flachen Schalen servieren."
+          }
+        }
+      ],
+      "tags": [
+        "pasta",
+        "vegetable-forward",
+        "weekend",
+        "lighter"
+      ],
+      "search_terms": {
+        "en": [
+          "light alfredo",
+          "cauliflower pasta",
+          "zucchini alfredo"
+        ],
+        "de": [
+          "leichte Alfredo",
+          "Blumenkohl-Pasta",
+          "Zucchini-Alfredo"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "italian-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "pad-thai-classic-medium-balanced",
+      "dish_id": "pad-thai",
+      "names": {
+        "en": "Tamarind Chicken Pad Thai",
+        "de": "Tamarinden-Hähnchen-Pad-Thai"
+      },
+      "descriptions": {
+        "en": "Chewy rice noodles lacquered with tamarind, fish sauce and palm sugar, tossed with chicken and crisp bean sprouts.",
+        "de": "Bissfeste Reisnudeln in Tamarinde, Fischsauce und Palmzucker, geschwenkt mit Hähnchen und knackigen Sojasprossen."
+      },
+      "variant_dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "peanuts",
+        "poultry"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "gluten-free",
+        "kosher",
+        "medium",
+        "stir-fry",
+        "time-under-45"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 596,
+      "servings": 4,
+      "nutrition": {
+        "calories": 596,
+        "protein_g": 34,
+        "carbs_g": 78,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chicken-breast",
+          "quantity": 400,
+          "unit": "g",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "beaten",
+            "de": "verquirlt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "quantity": 35,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "peanuts",
+          "quantity": 70,
+          "unit": "g",
+          "preparation": {
+            "en": "roasted and crushed",
+            "de": "geröstet und gehackt"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "quantity": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "quantity": 4,
+          "unit": "piece",
+          "preparation": {
+            "en": "cut into lengths",
+            "de": "in Stücke"
+          }
+        },
+        {
+          "ingredient_id": "neutral-oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soak-noodles",
+          "text": {
+            "en": "Soak noodles in room-temperature water until flexible but still firm at the center, then drain.",
+            "de": "Nudeln in zimmerwarmem Wasser einweichen, bis sie biegsam, im Kern aber noch fest sind; dann abgießen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Warm tamarind, fish sauce and palm sugar with 3 tablespoons water until the sugar dissolves. It should taste boldly sweet-sour-salty.",
+            "de": "Tamarinde, Fischsauce und Palmzucker mit 3 EL Wasser erwärmen, bis sich der Zucker löst. Die Sauce soll kräftig süß-sauer-salzig schmecken."
+          }
+        },
+        {
+          "id": "sear-chicken",
+          "text": {
+            "en": "Heat a wok until smoking. Add oil and chicken and stir-fry until just cooked; move it to the rim.",
+            "de": "Wok rauchend heiß werden lassen. Öl und Hähnchen zugeben und knapp gar pfannenrühren; an den Rand schieben."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "scramble",
+          "text": {
+            "en": "Add shallot and garlic, then pour egg into the clear center. Let it set before breaking into soft curds.",
+            "de": "Schalotten und Knoblauch zugeben, dann Ei in die freie Mitte gießen. Stocken lassen und in weiche Stücke teilen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "id": "glaze-noodles",
+          "text": {
+            "en": "Add noodles and sauce. Toss constantly until noodles are tender and have absorbed the lacquer, splashing in water if dry.",
+            "de": "Nudeln und Sauce zugeben. Ständig schwenken, bis die Nudeln weich und glänzend sind; bei Trockenheit Wasser zufügen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold in sprouts and spring onion for 30 seconds. Serve with peanuts and lime wedges.",
+            "de": "Sprossen und Frühlingszwiebeln 30 Sekunden unterheben. Mit Erdnüssen und Limettenspalten servieren."
+          },
+          "timer_seconds": 30
+        }
+      ],
+      "tags": [
+        "noodles",
+        "street-food",
+        "sweet-sour",
+        "wok"
+      ],
+      "search_terms": {
+        "en": [
+          "thai noodles",
+          "tamarind noodles",
+          "chicken pad thai"
+        ],
+        "de": [
+          "thailändische Nudeln",
+          "Tamarindennudeln",
+          "Hähnchen-Pad-Thai"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "thai",
+        "southeast-asian"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "pad-thai-vegan-hard-balanced",
+      "dish_id": "pad-thai",
+      "names": {
+        "en": "Charred Mushroom Pad Thai",
+        "de": "Pad Thai mit Röstpilzen"
+      },
+      "descriptions": {
+        "en": "King oyster mushrooms bring smoky chew to a fully plant-based tamarind noodle feast with toasted peanuts.",
+        "de": "Kräuterseitlinge bringen rauchigen Biss in ein rein pflanzliches Tamarindennudelfest mit gerösteten Erdnüssen."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "hard",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "added-sugar",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "calorie-under-600",
+        "gluten-free",
+        "halal",
+        "hard",
+        "kosher",
+        "stir-fry",
+        "time-under-60",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 55,
+      "calories_per_serving": 568,
+      "servings": 4,
+      "nutrition": {
+        "calories": 568,
+        "protein_g": 19,
+        "carbs_g": 85,
+        "fat_g": 18
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "king-oyster-mushroom",
+          "quantity": 500,
+          "unit": "g",
+          "preparation": {
+            "en": "torn into strips",
+            "de": "in Streifen gezupft"
+          }
+        },
+        {
+          "ingredient_id": "firm-tofu",
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamari",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nori",
+          "quantity": 1,
+          "unit": "sheet",
+          "preparation": {
+            "en": "finely crushed",
+            "de": "fein zerkrümelt"
+          }
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 3,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "peanuts",
+          "quantity": 70,
+          "unit": "g",
+          "preparation": {
+            "en": "roasted and crushed",
+            "de": "geröstet und gehackt"
+          }
+        },
+        {
+          "ingredient_id": "lime",
+          "quantity": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "quantity": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "neutral-oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soak-noodles",
+          "text": {
+            "en": "Soak noodles in cool water until pliable but not soft, then drain thoroughly.",
+            "de": "Nudeln in kühlem Wasser einweichen, bis sie biegsam, aber nicht weich sind; gründlich abgießen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Dissolve tamarind, tamari and palm sugar in 4 tablespoons warm water. Stir in crushed nori.",
+            "de": "Tamarinde, Tamari und Palmzucker in 4 EL warmem Wasser auflösen. Zerkrümeltes Nori einrühren."
+          }
+        },
+        {
+          "id": "char-mushrooms",
+          "text": {
+            "en": "Heat a wok until smoking. Fry mushrooms in two batches with oil, pressing them down until their torn edges char.",
+            "de": "Wok rauchend heiß werden lassen. Pilze in zwei Portionen mit Öl braten und andrücken, bis die gezupften Kanten rösten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "cook-aromatics",
+          "text": {
+            "en": "Add shallot and garlic, then crumble in tofu and stir-fry until it picks up golden spots.",
+            "de": "Schalotten und Knoblauch zugeben, Tofu hineinbröseln und goldfleckig pfannenrühren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "id": "glaze-noodles",
+          "text": {
+            "en": "Return mushrooms, add noodles and sauce and toss over high heat until tender and glossy.",
+            "de": "Pilze zurückgeben, Nudeln und Sauce zufügen und bei hoher Hitze weich und glänzend schwenken."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Fold in sprouts and spring onion. Serve immediately with peanuts and plenty of lime.",
+            "de": "Sprossen und Frühlingszwiebeln unterheben. Sofort mit Erdnüssen und reichlich Limette servieren."
+          }
+        }
+      ],
+      "tags": [
+        "noodles",
+        "plant-based",
+        "weekend",
+        "wok"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan pad thai",
+          "mushroom noodles",
+          "tofu pad thai"
+        ],
+        "de": [
+          "veganes Pad Thai",
+          "Pilznudeln",
+          "Tofu-Pad-Thai"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "thai-inspired",
+        "southeast-asian"
+      ],
+      "partition_id": "extended"
+    },
+    {
+      "id": "pad-thai-pescatarian-easy-light",
+      "dish_id": "pad-thai",
+      "names": {
+        "en": "Lime Prawn Pad Thai",
+        "de": "Limetten-Garnelen-Pad-Thai"
+      },
+      "descriptions": {
+        "en": "A brisk, lighter pad thai with juicy prawns, heaps of sprouts and a sharp lime-forward sauce.",
+        "de": "Ein flottes, leichteres Pad Thai mit saftigen Garnelen, vielen Sprossen und einer limettenbetonten Sauce."
+      },
+      "variant_dimensions": {
+        "diet": "pescatarian",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "added-sugar",
+        "fish",
+        "high-fodmap",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "calorie-under-500",
+        "easy",
+        "gluten-free",
+        "halal",
+        "pescatarian",
+        "stir-fry",
+        "time-under-30"
+      ],
+      "time_minutes": 28,
+      "calories_per_serving": 462,
+      "servings": 4,
+      "nutrition": {
+        "calories": 462,
+        "protein_g": 30,
+        "carbs_g": 67,
+        "fat_g": 10
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "prawn",
+          "quantity": 450,
+          "unit": "g",
+          "preparation": {
+            "en": "peeled and deveined",
+            "de": "geschält und entdarmt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "quantity": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "quantity": 2.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "quantity": 2.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "quantity": 18,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lime",
+          "quantity": 3,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "quantity": 5,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "peanuts",
+          "quantity": 45,
+          "unit": "g",
+          "preparation": {
+            "en": "crushed",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "neutral-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "quantity": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soften-noodles",
+          "text": {
+            "en": "Cover noodles with very hot water and soak just until bendable, then drain.",
+            "de": "Nudeln mit sehr heißem Wasser bedecken, nur bis zur Biegsamkeit einweichen und abgießen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "id": "mix-sauce",
+          "text": {
+            "en": "Stir tamarind, fish sauce, palm sugar, juice of two limes and 3 tablespoons water until dissolved.",
+            "de": "Tamarinde, Fischsauce, Palmzucker, Saft von zwei Limetten und 3 EL Wasser verrühren, bis sich alles löst."
+          }
+        },
+        {
+          "id": "sear-prawns",
+          "text": {
+            "en": "Heat oil in a wok. Sear prawns in one layer until pink and lightly caramelized; remove to a plate.",
+            "de": "Öl im Wok erhitzen. Garnelen in einer Lage rosa und leicht karamellisiert braten; auf einen Teller geben."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "id": "toss-noodles",
+          "text": {
+            "en": "Fry garlic briefly, then add noodles and sauce. Toss until the noodles are tender and shiny.",
+            "de": "Knoblauch kurz braten, dann Nudeln und Sauce zugeben. Schwenken, bis die Nudeln weich und glänzend sind."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Return prawns and fold in sprouts and spring onion. Finish with peanuts, chili and the last lime cut into wedges.",
+            "de": "Garnelen zurückgeben und Sprossen sowie Frühlingszwiebeln unterheben. Mit Erdnüssen, Chili und der letzten Limette in Spalten vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "noodles",
+        "seafood",
+        "quick",
+        "lighter"
+      ],
+      "search_terms": {
+        "en": [
+          "shrimp pad thai",
+          "prawn noodles",
+          "light thai noodles"
+        ],
+        "de": [
+          "Garnelen-Pad-Thai",
+          "Garnelennudeln",
+          "leichtes Pad Thai"
+        ]
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "thai",
+        "southeast-asian"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "shakshuka-classic-easy-light",
+      "dish_id": "shakshuka",
+      "names": {
+        "en": "Red Pepper Shakshuka",
+        "de": "Paprika-Shakshuka"
+      },
+      "descriptions": {
+        "en": "Soft eggs in a smoky red pepper and tomato pan, finished with parsley and eaten straight from the skillet.",
+        "de": "Weiche Eier in einer rauchigen Paprika-Tomaten-Pfanne, mit Petersilie vollendet und direkt aus der Pfanne gegessen."
+      },
+      "variant_dimensions": {
+        "diet": "vegetarian",
+        "effort": "easy",
+        "calorie_level": "light"
+      },
+      "contains": [
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "calorie-under-400",
+        "easy",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "poach",
+        "simmer",
+        "time-under-30",
+        "vegetarian"
+      ],
+      "time_minutes": 28,
+      "calories_per_serving": 338,
+      "servings": 4,
+      "nutrition": {
+        "calories": 338,
+        "protein_g": 18,
+        "carbs_g": 25,
+        "fat_g": 19
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "egg",
+          "quantity": 8,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "quantity": 800,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "red-bell-pepper",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yellow-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "soften-peppers",
+          "text": {
+            "en": "Heat oil in a wide lidded pan. Soften onion and red pepper with salt until their edges begin to color.",
+            "de": "Öl in einer weiten Pfanne mit Deckel erhitzen. Zwiebel und Paprika mit Salz weich dünsten, bis die Ränder Farbe bekommen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "id": "bloom-spices",
+          "text": {
+            "en": "Add garlic, tomato paste, cumin and paprika and stir until darkly fragrant.",
+            "de": "Knoblauch, Tomatenmark, Kreuzkümmel und Paprika zugeben und rühren, bis alles tief duftet."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "id": "simmer-sauce",
+          "text": {
+            "en": "Pour in tomatoes, crush them with the spoon and simmer until thick enough to hold a hollow.",
+            "de": "Tomaten zugießen, mit dem Löffel zerdrücken und köcheln, bis die Sauce eine Mulde halten kann."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "poach-eggs",
+          "text": {
+            "en": "Make eight hollows and crack in the eggs. Cover and cook until whites set but yolks still tremble.",
+            "de": "Acht Mulden formen und Eier hineinschlagen. Abgedeckt garen, bis das Eiweiß fest ist, die Dotter aber noch zittern."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Season each egg, scatter over parsley and carry the whole pan to the table.",
+            "de": "Jedes Ei würzen, Petersilie darüberstreuen und die ganze Pfanne auf den Tisch bringen."
+          }
+        }
+      ],
+      "tags": [
+        "one-pan",
+        "breakfast",
+        "brunch",
+        "vegetable-forward"
+      ],
+      "search_terms": {
+        "en": [
+          "eggs in tomato sauce",
+          "baked eggs",
+          "brunch skillet"
+        ],
+        "de": [
+          "Eier in Tomatensauce",
+          "pochierte Eier",
+          "Brunch-Pfanne"
+        ]
+      },
+      "meal_types": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "north-african",
+        "middle-eastern"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "shakshuka-vegan-medium-balanced",
+      "dish_id": "shakshuka",
+      "names": {
+        "en": "Chickpea Cloud Shakshuka",
+        "de": "Kichererbsenwolken-Shakshuka"
+      },
+      "descriptions": {
+        "en": "Lemony chickpea-tofu clouds nestle in harissa tomato sauce: soft at the center, golden at the peaks.",
+        "de": "Zitronige Kichererbsen-Tofu-Wolken liegen in Harissa-Tomatensauce: innen weich, an den Spitzen golden."
+      },
+      "variant_dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "balanced"
+      },
+      "contains": [
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "bake",
+        "calorie-under-600",
+        "gluten-free",
+        "halal",
+        "kosher",
+        "medium",
+        "simmer",
+        "time-under-45",
+        "vegan",
+        "vegetarian"
+      ],
+      "time_minutes": 44,
+      "calories_per_serving": 514,
+      "servings": 4,
+      "nutrition": {
+        "calories": 514,
+        "protein_g": 25,
+        "carbs_g": 54,
+        "fat_g": 23
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "quantity": 800,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "quantity": 480,
+          "unit": "g",
+          "preparation": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "silken-tofu",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chickpea-flour",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "red-bell-pepper",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "red-onion",
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        },
+        {
+          "ingredient_id": "harissa",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tahini",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fresh-cilantro",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1.25,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "make-clouds",
+          "text": {
+            "en": "Blend tofu, chickpea flour, tahini, lemon zest and a pinch of salt into a thick, spoonable cream.",
+            "de": "Tofu, Kichererbsenmehl, Tahini, Zitronenschale und eine Prise Salz zu einer dicken, löffelbaren Creme mixen."
+          }
+        },
+        {
+          "id": "soften-base",
+          "text": {
+            "en": "Heat oil in an ovenproof pan. Soften onion and pepper until sweet, then add garlic and harissa.",
+            "de": "Öl in einer ofenfesten Pfanne erhitzen. Zwiebel und Paprika weich und süß dünsten, dann Knoblauch und Harissa zugeben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "simmer",
+          "text": {
+            "en": "Add tomatoes and chickpeas, season and simmer until thick and glossy.",
+            "de": "Tomaten und Kichererbsen zugeben, würzen und dick sowie glänzend einkochen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "add-clouds",
+          "text": {
+            "en": "Drop generous spoonfuls of chickpea cream over the sauce, leaving red channels between them.",
+            "de": "Großzügige Löffel Kichererbsencreme auf der Sauce verteilen und rote Zwischenräume lassen."
+          }
+        },
+        {
+          "id": "bake",
+          "text": {
+            "en": "Bake at 220°C until the clouds feel set and their highest points turn gold.",
+            "de": "Bei 220 °C backen, bis die Wolken fest sind und ihre höchsten Punkte golden werden."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Squeeze over lemon juice and finish with torn cilantro.",
+            "de": "Zitronensaft darüberpressen und mit gezupftem Koriander vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "one-pan",
+        "plant-based",
+        "brunch",
+        "weekend"
+      ],
+      "search_terms": {
+        "en": [
+          "vegan shakshuka",
+          "eggless shakshuka",
+          "chickpea tomato bake"
+        ],
+        "de": [
+          "vegane Shakshuka",
+          "Shakshuka ohne Ei",
+          "Kichererbsen-Tomaten-Pfanne"
+        ]
+      },
+      "meal_types": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "north-african-inspired",
+        "middle-eastern-inspired"
+      ],
+      "partition_id": "core"
+    },
+    {
+      "id": "shakshuka-keto-hard-hearty",
+      "dish_id": "shakshuka",
+      "names": {
+        "en": "Green Shakshuka with Feta",
+        "de": "Grüne Shakshuka mit Feta"
+      },
+      "descriptions": {
+        "en": "Jammy eggs, spinach, herbs and salty feta in a green skillet with toasted cumin butter.",
+        "de": "Cremige Eier, Spinat, Kräuter und salziger Feta in einer grünen Pfanne mit gerösteter Kreuzkümmelbutter."
+      },
+      "variant_dimensions": {
+        "diet": "keto",
+        "effort": "hard",
+        "calorie_level": "hearty"
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "calorie-under-800",
+        "gluten-free",
+        "halal",
+        "hard",
+        "keto",
+        "kosher",
+        "poach",
+        "saute",
+        "time-under-60",
+        "vegetarian"
+      ],
+      "time_minutes": 48,
+      "calories_per_serving": 664,
+      "servings": 4,
+      "nutrition": {
+        "calories": 664,
+        "protein_g": 31,
+        "carbs_g": 19,
+        "fat_g": 53
+      },
+      "ingredients": [
+        {
+          "ingredient_id": "egg",
+          "quantity": 8,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spinach",
+          "quantity": 700,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "leek",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "thinly sliced",
+            "de": "fein geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "zucchini",
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "feta",
+          "quantity": 240,
+          "unit": "g",
+          "preparation": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "heavy-cream",
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "ground-cumin",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "fresh-dill",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "fresh-parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "id": "brown-butter",
+          "text": {
+            "en": "Melt butter in a wide lidded pan. Add cumin and let it foam until nutty and fragrant; spoon half into a cup.",
+            "de": "Butter in einer weiten Pfanne mit Deckel schmelzen. Kreuzkümmel zugeben und nussig duften lassen; die Hälfte in eine Tasse löffeln."
+          }
+        },
+        {
+          "id": "soften",
+          "text": {
+            "en": "Add oil and leek to the pan and cook slowly until silky, not browned.",
+            "de": "Öl und Lauch in die Pfanne geben und langsam seidig, aber nicht braun dünsten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "id": "cook-greens",
+          "text": {
+            "en": "Squeeze excess water from zucchini, then add with spinach in batches. Cook until the pan looks lush, not wet.",
+            "de": "Überschüssiges Wasser aus der Zucchini drücken, dann portionsweise mit Spinat zugeben. Garen, bis die Pfanne saftig, aber nicht nass ist."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "id": "make-sauce",
+          "text": {
+            "en": "Stir in cream, half the feta, chopped herbs and lemon zest. Simmer until gently thickened.",
+            "de": "Sahne, die Hälfte des Fetas, gehackte Kräuter und Zitronenschale einrühren. Sanft andicken lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "id": "poach-eggs",
+          "text": {
+            "en": "Make eight hollows, crack in eggs, cover and poach until whites are set and yolks remain soft.",
+            "de": "Acht Mulden formen, Eier hineinschlagen, abdecken und pochieren, bis das Eiweiß fest und das Eigelb weich ist."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "id": "finish",
+          "text": {
+            "en": "Scatter with remaining feta and spoon the reserved cumin butter over the eggs. Finish with lemon juice.",
+            "de": "Restlichen Feta aufstreuen und die aufbewahrte Kreuzkümmelbutter über die Eier löffeln. Mit Zitronensaft vollenden."
+          }
+        }
+      ],
+      "tags": [
+        "one-pan",
+        "low-carb",
+        "brunch",
+        "weekend"
+      ],
+      "search_terms": {
+        "en": [
+          "green shakshuka",
+          "spinach eggs",
+          "keto brunch"
+        ],
+        "de": [
+          "grüne Shakshuka",
+          "Spinat mit Eiern",
+          "Keto-Brunch"
+        ]
+      },
+      "meal_types": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "cuisine_tags": [
+        "middle-eastern-inspired",
+        "modern-home"
+      ],
+      "partition_id": "extended"
+    }
+  ]
+}

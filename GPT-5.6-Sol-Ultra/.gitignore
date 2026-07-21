@@ -1,0 +1,13 @@
+# Tool state is deliberately kept inside this workspace during development.
+.home/
+.pub-cache/
+.gradle/
+
+# Flutter and editor outputs.
+app/.dart_tool/
+app/build/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/*.iml
+.idea/
+.vscode/
