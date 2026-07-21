@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "strategy": "core-at-launch, cuisine-on-discovery",
+  "partitions": {
+    "core": { "asset": "assets/core-recipes.json", "load": "launch" },
+    "extended": { "asset": "assets/extended-recipes.json", "load": "search" },
+    "italian": { "asset": "assets/cuisine-italian.json", "load": "discovery" },
+    "asian": { "asset": "assets/cuisine-asian.json", "load": "discovery" },
+    "middle-eastern": { "asset": "assets/cuisine-middle-eastern.json", "load": "discovery" }
+  }
+}
