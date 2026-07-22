@@ -25,6 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Map<String, Recipe?> _best = {};
   bool _loaded = false;
 
+  // Selected browse category; null shows the full sectioned feed.
+  String? _category;
+
   @override
   void initState() {
     super.initState();
@@ -70,9 +73,23 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     }
 
-    final gridDishes = visibleDishes
-        .where((d) => d.id != featured?.id)
-        .toList();
+    final showAll = _category == null;
+
+    // Dishes bucketed per category in dishes.json order, each section
+    // carrying its card-index offset so keys stay one running sequence
+    // (the first visible card is always home-dish-card-0).
+    final sections = <(DishCategory, List<Dish>, int)>[];
+    var cardIndex = 0;
+    for (final category in state.corpus.categories) {
+      if (!showAll && _category != category.id) continue;
+      final dishes = visibleDishes
+          .where((d) => d.category == category.id)
+          .toList();
+      if (showAll) dishes.removeWhere((d) => d.id == featured?.id);
+      if (showAll && dishes.isEmpty) continue;
+      sections.add((category, dishes, cardIndex));
+      cardIndex += dishes.length;
+    }
 
     return SafeArea(
       child: RefreshIndicator(
@@ -87,58 +104,115 @@ class _HomeScreenState extends State<HomeScreen> {
               const SkeletonBlock(height: 220),
               const SkeletonBlock(height: 140),
             ] else ...[
-              if (featured != null) ...[
+              _categoryChips(s, state),
+              const SizedBox(height: 6),
+              if (showAll && featured != null) ...[
                 SectionHeader(title: s('featuredToday')),
                 _featuredCard(featured, _best[featured.id]!, lang, state),
+                const SizedBox(height: 12),
               ],
-              const SizedBox(height: 12),
-              SectionHeader(title: s('fromTheKitchen')),
-              const SizedBox(height: 6),
-              GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 18,
-                  crossAxisSpacing: 14,
-                  childAspectRatio: 0.78,
-                ),
-                itemCount: gridDishes.length,
-                itemBuilder: (context, i) {
-                  final dish = gridDishes[i];
-                  final recipe = _best[dish.id]!;
-                  // The card sells the dish; the variant that opens is the
-                  // profile's business (badge hints at it).
-                  return PolaroidCard(
-                    key: ValueKey('home-dish-card-$i'),
-                    stripe: _hex(dish.stripe),
-                    title: dish.name.of(lang),
-                    caption: dish.caption.of(lang),
-                    badge:
-                        state.profile.showVariantTags &&
-                            recipe.variant.diet != 'classic'
-                        ? state.corpus.ontology.nameOf(
-                            recipe.variant.diet,
-                            lang,
-                          )
-                        : null,
-                    rotationSeed: i,
-                    photo: RecipeCover(
-                      recipeId: recipe.id,
-                      fallbackColor: _hex(dish.stripe),
-                      height: 110,
-                      semanticLabel: recipe.title.of(lang),
+              for (final (category, dishes, offset) in sections) ...[
+                SectionHeader(title: category.name.of(lang)),
+                const SizedBox(height: 6),
+                if (dishes.isEmpty)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24),
+                    child: Text(
+                      s('categoryEmpty'),
+                      textAlign: TextAlign.center,
+                      style: MorphTheme.of(context).text.handAt(
+                            18,
+                            color: MorphTheme.of(context).colors.inkSoft,
+                          ),
                     ),
-                    onTap: () => _openDish(dish),
-                  );
-                },
-              ),
-              const SizedBox(height: 20),
+                  )
+                else
+                  _dishGrid(dishes, offset, lang, state),
+                const SizedBox(height: 12),
+              ],
+              const SizedBox(height: 8),
               _colophon(s),
             ],
           ],
         ),
       ),
+    );
+  }
+
+  Widget _categoryChips(S s, AppState state) {
+    final lang = state.lang;
+    return SizedBox(
+      height: 40,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: MonoChip(
+              label: s('allCategories'),
+              selected: _category == null,
+              onTap: () => setState(() => _category = null),
+            ),
+          ),
+          for (final category in state.corpus.categories)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: MonoChip(
+                label: category.name.of(lang),
+                selected: _category == category.id,
+                onTap: () => setState(
+                  () => _category = _category == category.id
+                      ? null
+                      : category.id,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _dishGrid(List<Dish> dishes, int indexOffset, String lang,
+      AppState state) {
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 18,
+        crossAxisSpacing: 14,
+        childAspectRatio: 0.78,
+      ),
+      itemCount: dishes.length,
+      itemBuilder: (context, i) {
+        final dish = dishes[i];
+        final recipe = _best[dish.id]!;
+        final globalIndex = indexOffset + i;
+        // The card sells the dish; the variant that opens is the
+        // profile's business (badge hints at it).
+        return PolaroidCard(
+          key: ValueKey('home-dish-card-$globalIndex'),
+          stripe: _hex(dish.stripe),
+          title: dish.name.of(lang),
+          caption: dish.caption.of(lang),
+          badge:
+              state.profile.showVariantTags &&
+                  recipe.variant.diet != 'classic'
+              ? state.corpus.ontology.nameOf(
+                  recipe.variant.diet,
+                  lang,
+                )
+              : null,
+          rotationSeed: globalIndex,
+          photo: RecipeCover(
+            recipeId: recipe.id,
+            fallbackColor: _hex(dish.stripe),
+            height: 110,
+            semanticLabel: recipe.title.of(lang),
+          ),
+          onTap: () => _openDish(dish),
+        );
+      },
     );
   }
 

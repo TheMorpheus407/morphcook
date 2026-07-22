@@ -26,6 +26,7 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   final _controller = TextEditingController();
   final Set<String> _tagFilters = {};
+  String? _categoryFilter;
   PaginationController<Recipe>? _pager;
   Timer? _debounce;
   String _query = '';
@@ -66,8 +67,11 @@ class _SearchScreenState extends State<SearchScreen> {
         .query(_query, tagFilters: _tagFilters);
     // One row per dish-and-coordinate: coverage variants stand in for
     // their base cell only when the base is hidden by the profile.
-    final results = collapseCoverageVariants(
-        raw.where((r) => state.matcher.isVisible(r, state.profile)));
+    final results = filterByCategory(
+        collapseCoverageVariants(
+            raw.where((r) => state.matcher.isVisible(r, state.profile))),
+        _categoryFilter,
+        state.corpus.categoryOfRecipe);
 
     if (results.isEmpty && _query.trim().isNotEmpty && !_zeroLogged) {
       // Content-gap logging: zero-result queries are recorded locally and
@@ -119,6 +123,32 @@ class _SearchScreenState extends State<SearchScreen> {
                     borderSide:
                         BorderSide(color: morph.colors.terracotta)),
               ),
+            ),
+          ),
+          SizedBox(
+            height: 40,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding:
+                  const EdgeInsets.fromLTRB(20, 8, 20, 0),
+              children: [
+                for (final category in state.corpus.categories)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: MonoChip(
+                      label: category.name.of(state.lang),
+                      selected: _categoryFilter == category.id,
+                      onTap: () {
+                        setState(() {
+                          _categoryFilter = _categoryFilter == category.id
+                              ? null
+                              : category.id;
+                        });
+                        _runSearch();
+                      },
+                    ),
+                  ),
+              ],
             ),
           ),
           SizedBox(

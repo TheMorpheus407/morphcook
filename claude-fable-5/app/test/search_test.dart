@@ -34,6 +34,23 @@ void main() {
       expect(hits.map((r) => r.id), contains('doener-vegan'));
     });
 
+    test('category filter keeps only recipes of dishes in that category',
+        () async {
+      final corpus = await loadRealCorpus();
+      final all = corpus.searchIndex.query('');
+      final desserts =
+          filterByCategory(all, 'desserts', corpus.categoryOfRecipe);
+      expect(desserts, isNotEmpty);
+      expect(
+          desserts.map((r) => corpus.dishById(r.dishId)!.category).toSet(),
+          {'desserts'});
+      expect(desserts.map((r) => r.dishId).toSet(), contains('tiramisu'));
+      expect(desserts.map((r) => r.dishId).toSet(),
+          isNot(contains('doener')));
+      // Null category = untouched result list.
+      expect(filterByCategory(all, null, corpus.categoryOfRecipe), all);
+    });
+
     test('prefix matching works for partial queries', () async {
       final corpus = await loadRealCorpus();
       final hits = corpus.searchIndex.query('lasag');

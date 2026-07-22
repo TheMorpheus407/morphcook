@@ -749,6 +749,9 @@ class AppState extends ChangeNotifier {
         secondaryPartitions: const [],
         cuisineTags: const [],
         frequencyTier: 'personal',
+        // Synthetic dishes never surface in category browse/filter; the
+        // value only satisfies the model.
+        category: 'mains',
       );
     }
     return corpus.dishById(id);

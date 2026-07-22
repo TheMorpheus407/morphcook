@@ -1,5 +1,19 @@
 import 'localized.dart';
 
+/// A browse category ("desserts & sweets"). Declared in dishes.json in
+/// display order; every dish files under exactly one.
+class DishCategory {
+  final String id;
+  final LocalizedText name;
+
+  const DishCategory({required this.id, required this.name});
+
+  factory DishCategory.fromJson(Map<String, dynamic> json) => DishCategory(
+        id: json['id'] as String,
+        name: LocalizedText.fromJson(json['name'] as Map<String, dynamic>),
+      );
+}
+
 /// A dish concept ("döner"). Its variants are full recipes linked by id.
 class Dish {
   final String id;
@@ -12,6 +26,7 @@ class Dish {
   final List<String> secondaryPartitions;
   final List<String> cuisineTags;
   final String frequencyTier;
+  final String category;
 
   const Dish({
     required this.id,
@@ -24,6 +39,7 @@ class Dish {
     required this.secondaryPartitions,
     required this.cuisineTags,
     required this.frequencyTier,
+    required this.category,
   });
 
   factory Dish.fromJson(Map<String, dynamic> json) => Dish(
@@ -40,5 +56,6 @@ class Dish {
         cuisineTags:
             List<String>.from(json['cuisine_tags'] as List? ?? const []),
         frequencyTier: json['frequency_tier'] as String? ?? 'medium',
+        category: json['category'] as String? ?? 'mains',
       );
 }

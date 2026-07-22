@@ -75,6 +75,18 @@ class SearchIndex {
   }
 }
 
+/// Keeps only recipes whose dish files under [categoryId] (null = keep all).
+/// [categoryOf] resolves a recipe to its dish's category; recipes it cannot
+/// resolve (no corpus dish) are dropped when a category is selected.
+List<Recipe> filterByCategory(
+  List<Recipe> results,
+  String? categoryId,
+  String? Function(Recipe) categoryOf,
+) {
+  if (categoryId == null) return results;
+  return results.where((r) => categoryOf(r) == categoryId).toList();
+}
+
 final _coverageId = RegExp(r'-no-[a-z-]+$');
 
 /// Collapses coverage variants out of ranked search results.

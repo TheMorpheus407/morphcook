@@ -4,7 +4,7 @@
   "type": "object",
   "required": ["id", "name", "hero", "caption", "stripe", "recipes",
                "partition_id", "secondary_partitions", "cuisine_tags",
-               "frequency_tier"],
+               "frequency_tier", "category"],
   "additionalProperties": false,
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
@@ -24,7 +24,9 @@
       "items": {"type": "string"}
     },
     "cuisine_tags": {"type": "array", "items": {"type": "string"}},
-    "frequency_tier": {"enum": ["high", "medium", "low"]}
+    "frequency_tier": {"enum": ["high", "medium", "low"]},
+    "category": {"enum": ["breakfast", "mains", "soups-stews",
+                          "salads-bowls", "snacks", "desserts", "drinks"]}
   },
   "$defs": {
     "localized": {

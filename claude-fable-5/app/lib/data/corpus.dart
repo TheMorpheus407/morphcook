@@ -46,11 +46,26 @@ class CorpusRepository {
   final Map<String, PartitionInfo> _partitions = {};
   final Set<String> _loadedPartitions = {};
   List<String> _launchPartitions = const [];
+  List<DishCategory> _categories = const [];
 
   List<Dish> get dishes => _dishes.values.toList();
   Iterable<Recipe> get loadedRecipes => _recipes.values;
 
+  /// Browse categories in dishes.json display order.
+  List<DishCategory> get categories => _categories;
+
   Dish? dishById(String id) => _dishes[id];
+
+  DishCategory? categoryById(String id) {
+    for (final c in _categories) {
+      if (c.id == id) return c;
+    }
+    return null;
+  }
+
+  /// The category a recipe's dish files under; null for recipes without a
+  /// corpus dish (personal recipes).
+  String? categoryOfRecipe(Recipe recipe) => _dishes[recipe.dishId]?.category;
 
   Future<Map<String, dynamic>> _loadJson(String path) async =>
       json.decode(await bundle.loadString(path)) as Map<String, dynamic>;
@@ -79,6 +94,9 @@ class CorpusRepository {
     }
 
     final dishesJson = await _loadJson('assets/dishes.json');
+    _categories = ((dishesJson['categories'] as List?) ?? const [])
+        .map((e) => DishCategory.fromJson(e as Map<String, dynamic>))
+        .toList();
     for (final d in dishesJson['dishes'] as List) {
       final dish = Dish.fromJson(d as Map<String, dynamic>);
       _dishes[dish.id] = dish;

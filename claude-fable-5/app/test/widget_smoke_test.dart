@@ -13,6 +13,7 @@ import 'package:morphcook/ui/screens/personal_recipe_editor_screen.dart';
 import 'package:morphcook/ui/screens/settings_screen.dart';
 import 'package:morphcook/ui/strings.dart';
 import 'package:morphcook/ui/theme.dart';
+import 'package:morphcook/ui/widgets/decor.dart';
 import 'package:provider/provider.dart';
 
 import 'helpers.dart';
@@ -80,6 +81,32 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.byType(DishDetailScreen), findsOneWidget);
+  });
+
+  testWidgets('home category chips filter the feed to one section', (
+    tester,
+  ) async {
+    final state = (await tester.runAsync(onboardedState))!;
+    await tester.pumpWidget(app(state, const RootShell()));
+    await tester.pumpAndSettle();
+
+    expect(find.text('featured today'), findsOneWidget);
+
+    final chip = find.widgetWithText(MonoChip, 'breakfast & brunch');
+    expect(chip, findsOneWidget);
+    await tester.tap(chip);
+    await tester.pumpAndSettle();
+
+    // Filtered view: no featured section, only breakfast dishes.
+    expect(find.text('featured today'), findsNothing);
+    expect(find.byKey(const ValueKey('home-dish-card-0')), findsOneWidget);
+    expect(find.text('pancakes'), findsWidgets);
+    expect(find.text('döner'), findsNothing);
+
+    // Tapping the selected chip again returns to the full feed.
+    await tester.tap(chip);
+    await tester.pumpAndSettle();
+    expect(find.text('featured today'), findsOneWidget);
   });
 
   testWidgets('dish detail shows dimension rows and switches variants', (

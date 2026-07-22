@@ -14,6 +14,8 @@ class S {
     'navSettings': 'settings',
     'featuredToday': 'featured today',
     'fromTheKitchen': 'from the kitchen',
+    'allCategories': 'everything',
+    'categoryEmpty': 'nothing in this section fits your profile yet.',
     'editionFor': 'edition for',
     'yourCookbook': 'your cookbook',
     'cookbookEmpty': 'nothing saved yet.\nfind a dish & make it yours.',
@@ -253,6 +255,8 @@ class S {
     'navSettings': 'Mehr',
     'featuredToday': 'heute im Blatt',
     'fromTheKitchen': 'aus der Küche',
+    'allCategories': 'alles',
+    'categoryEmpty': 'in dieser Rubrik passt noch nichts zu deinem Profil.',
     'editionFor': 'Ausgabe für',
     'yourCookbook': 'dein Kochbuch',
     'cookbookEmpty':

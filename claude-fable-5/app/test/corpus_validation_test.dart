@@ -38,6 +38,31 @@ void main() {
       }
     });
 
+    test('every dish files under a declared category, none empty', () async {
+      final corpus = await loadRealCorpus();
+      expect(corpus.categories, isNotEmpty);
+
+      final ids = corpus.categories.map((c) => c.id).toList();
+      expect(ids.toSet().length, ids.length,
+          reason: 'duplicate category ids');
+      for (final category in corpus.categories) {
+        expect(category.name.of('en'), isNotEmpty);
+        expect(category.name.of('de'), isNotEmpty);
+      }
+
+      final counts = <String, int>{for (final id in ids) id: 0};
+      for (final dish in corpus.dishes) {
+        expect(ids, contains(dish.category),
+            reason:
+                'dish ${dish.id} files under unknown category ${dish.category}');
+        counts[dish.category] = counts[dish.category]! + 1;
+      }
+      for (final entry in counts.entries) {
+        expect(entry.value, greaterThan(0),
+            reason: 'category ${entry.key} has no dishes');
+      }
+    });
+
     test('ingredients exist, units are known, contains ⊇ ingredient flags',
         () async {
       final corpus = await loadRealCorpus();
