@@ -1,0 +1,19 @@
+# Flutter / Dart build output
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/android/local.properties
+app/android/.gradle/
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/ephemeral/
+
+# Pipeline working state — regenerable; the corpus lands in app/assets/data
+pipeline/out/
+pipeline/**/__pycache__/
+
+# IDE / OS
+*.iml
+.idea/
+.DS_Store

@@ -1,0 +1,77 @@
+name: morphcook
+description: "MorphCook — the same dish exists for every body. Offline-first, bilingual, no backend."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State — deliberately boring.
+  provider: ^6.1.5
+
+  # Local persistence.
+  shared_preferences: ^2.5.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # Export/import through the OS share sheet.
+  share_plus: ^10.1.4
+
+  # Backup encryption: AES-256-GCM + PBKDF2-HMAC-SHA256.
+  pointycastle: ^3.9.1
+
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  fake_async: ^1.3.3
+
+# Playfair Display / JetBrains Mono / Caveat ship as static TTFs inside the
+# bundle. The `google_fonts` package is deliberately NOT a dependency: it
+# carries an HTTP client, and this app makes no network calls at runtime.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/fonts/OFL-PlayfairDisplay.txt
+    - assets/fonts/OFL-Caveat.txt
+    - assets/fonts/OFL-JetBrainsMono.txt
+
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlayfairDisplay-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700
+    - family: JetBrains Mono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Caveat-SemiBold.ttf
+          weight: 600

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.local/schemas/ontology.schema.json",
+  "title": "MorphCook ontology",
+  "description": "Flag taxonomy. Extending is additive: append a row, regenerate.",
+  "type": "object",
+  "required": ["contains_flags", "compound_flags", "attributes", "dimensions"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "contains_flags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "category"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "label": { "$ref": "#/$defs/localized" },
+          "category": {
+            "enum": [
+              "meat", "seafood", "animal", "grain", "legume", "nut",
+              "seed", "vegetable", "other"
+            ]
+          },
+          "eu_allergen": { "type": "boolean" }
+        }
+      }
+    },
+    "compound_flags": {
+      "type": "array",
+      "description": "User-facing shortcuts that expand into contains-flags.",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "expands_to"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "label": { "$ref": "#/$defs/localized" },
+          "expands_to": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "note": { "$ref": "#/$defs/localized" }
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["effort", "time_bucket", "calorie_bucket", "technique"],
+      "additionalProperties": true,
+      "properties": {
+        "effort": { "type": "array", "minItems": 3 },
+        "time_bucket": { "type": "array", "minItems": 1 },
+        "calorie_bucket": { "type": "array", "minItems": 1 },
+        "technique": { "type": "array" },
+        "descriptor": { "type": "array" }
+      }
+    },
+    "dimensions": {
+      "type": "array",
+      "description": "One switcher row per entry, in display order.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z_]+$" },
+          "label": { "$ref": "#/$defs/localized" },
+          "note": { "$ref": "#/$defs/localized" }
+        }
+      }
+    },
+    "axis_values": { "type": "object" },
+    "meal_slots": { "type": "array" },
+    "certification_note": {
+      "$ref": "#/$defs/localized",
+      "description": "Never claims certification, only ingredient compatibility."
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "propertyNames": { "pattern": "^[a-z]{2}$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}

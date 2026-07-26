@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.local/schemas/recipe.schema.json",
+  "title": "MorphCook recipe",
+  "description": "One fully-authored variant. Never a diff against a sibling.",
+  "type": "object",
+  "required": [
+    "id",
+    "dish_id",
+    "title",
+    "blurb",
+    "handwritten",
+    "axes",
+    "contains",
+    "effort",
+    "time_minutes",
+    "servings",
+    "calories_per_serving",
+    "macros",
+    "ingredients",
+    "steps"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "dish_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "$ref": "#/$defs/localized" },
+    "blurb": { "$ref": "#/$defs/localized" },
+    "handwritten": { "$ref": "#/$defs/localized" },
+    "axes": {
+      "type": "object",
+      "description": "One key per variant dimension. Adding an axis is additive.",
+      "required": ["diet", "effort"],
+      "propertyNames": { "pattern": "^[a-z_]+$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "contains": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "uniqueItems": true
+    },
+    "attributes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "techniques": { "type": "array", "items": { "type": "string" } },
+    "effort": { "enum": ["easy", "medium", "hard"] },
+    "time_minutes": { "type": "integer", "minimum": 1, "maximum": 2880 },
+    "time_bucket": { "enum": ["t15", "t30", "t60", "t60plus"] },
+    "servings": { "type": "integer", "minimum": 1, "maximum": 24 },
+    "calories_per_serving": { "type": "integer", "minimum": 20, "maximum": 3000 },
+    "macros": {
+      "type": "object",
+      "required": ["protein_g", "carbs_g", "fat_g"],
+      "additionalProperties": false,
+      "properties": {
+        "protein_g": { "type": "number", "minimum": 0, "maximum": 300 },
+        "carbs_g": { "type": "number", "minimum": 0, "maximum": 400 },
+        "fat_g": { "type": "number", "minimum": 0, "maximum": 300 }
+      }
+    },
+    "meal_slots": {
+      "type": "array",
+      "items": { "enum": ["breakfast", "lunch", "dinner", "snack", "dessert"] },
+      "uniqueItems": true
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ingredient_id", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "ingredient_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "qty": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+          "unit": { "type": "string" },
+          "note": { "$ref": "#/$defs/localized" },
+          "optional": { "type": "boolean" }
+        }
+      }
+    },
+    "ingredient_ids": { "type": "array", "items": { "type": "string" } },
+    "steps": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "$ref": "#/$defs/localized" },
+          "timer_seconds": { "type": "integer", "minimum": 5, "maximum": 172800 }
+        }
+      }
+    },
+    "tips": { "type": "array", "items": { "$ref": "#/$defs/localized" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "stripe_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+    "is_dish_default": { "type": "boolean" },
+    "nutrition_notes": { "type": "array", "items": { "type": "string" } },
+    "copy_notes": { "type": "array", "items": { "type": "string" } },
+    "requested_ingredients": {
+      "type": "array",
+      "description": "Ingredients the generator needed that the dictionary lacks.",
+      "items": {
+        "type": "object",
+        "required": ["id", "parent", "label", "aisle", "unit_type"],
+        "properties": {
+          "id": { "type": "string" },
+          "parent": { "type": ["string", "null"] },
+          "label": { "$ref": "#/$defs/localized" },
+          "aisle": { "type": "string" },
+          "unit_type": { "enum": ["mass", "volume", "count"] },
+          "flags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "description": "Every user-visible string is Map<lang, String>.",
+      "required": ["en", "de"],
+      "propertyNames": { "pattern": "^[a-z]{2}$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}

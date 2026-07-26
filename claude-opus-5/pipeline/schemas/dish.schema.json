@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.local/schemas/dish.schema.json",
+  "title": "MorphCook dish",
+  "description": "A concept, not a recipe. Döner is a dish; Vegan Döner is a recipe.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "hero",
+    "cap_caption",
+    "stripe_color",
+    "recipe_ids",
+    "partition_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "$ref": "#/$defs/localized" },
+    "hero": { "$ref": "#/$defs/localized" },
+    "cap_caption": {
+      "$ref": "#/$defs/localized",
+      "description": "Caption on the striped placeholder."
+    },
+    "stripe_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+    "recipe_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "partition_id": { "enum": ["core", "extended"] },
+    "secondary_partitions": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^cuisine-[a-z-]+$" },
+      "uniqueItems": true
+    },
+    "cuisine_tags": { "type": "array", "items": { "type": "string" } },
+    "frequency_tier": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "categories": { "type": "array", "items": { "type": "string" } },
+    "meal_slots": {
+      "type": "array",
+      "items": { "enum": ["breakfast", "lunch", "dinner", "snack", "dessert"] }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "propertyNames": { "pattern": "^[a-z]{2}$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}
