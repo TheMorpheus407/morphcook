@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "morphcook/ontology.schema.json",
+  "title": "Ontology",
+  "description": "Flag taxonomy. Extending is purely additive — new flags are new lines, never migrations.",
+  "type": "object",
+  "required": ["contains_flags", "compound_flags", "dimensions"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "contains_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label"],
+        "properties": { "label": { "$ref": "#/definitions/l10n" } }
+      }
+    },
+    "compound_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "expands_to"],
+        "properties": {
+          "label": { "$ref": "#/definitions/l10n" },
+          "expands_to": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "attributes": { "type": "object" },
+    "effort": { "type": "object" },
+    "time_bucket": { "type": "object" },
+    "calorie_bucket": { "type": "object" },
+    "techniques": { "type": "object" },
+    "dimensions": {
+      "type": "object",
+      "required": ["diet", "effort", "calorie_level"],
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "values": { "type": "array", "items": { "type": "string" } },
+          "labels": { "type": "object" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "l10n": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

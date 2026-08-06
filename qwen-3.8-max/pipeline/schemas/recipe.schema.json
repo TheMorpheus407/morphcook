@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "morphcook/recipe.schema.json",
+  "title": "Recipe",
+  "description": "One fully-authored variant of a dish. All user-visible text is Map<lang, String>.",
+  "type": "object",
+  "required": [
+    "id", "dish_id", "title", "axes", "contains", "effort",
+    "time_minutes", "servings", "calories_per_serving",
+    "ingredients", "steps"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "dish_id": { "type": "string" },
+    "title": { "$ref": "#/definitions/l10n" },
+    "blurb": { "$ref": "#/definitions/l10n" },
+    "handwritten": { "$ref": "#/definitions/l10n" },
+    "axes": {
+      "type": "object",
+      "required": ["diet", "effort", "calorie_level"],
+      "properties": {
+        "diet": { "type": "string" },
+        "effort": { "type": "string", "enum": ["easy", "medium", "hard"] },
+        "calorie_level": {
+          "type": "string",
+          "enum": ["light", "standard", "hearty"]
+        }
+      }
+    },
+    "contains": { "type": "array", "items": { "type": "string" } },
+    "attributes": { "type": "array", "items": { "type": "string" } },
+    "techniques": { "type": "array", "items": { "type": "string" } },
+    "effort": { "type": "string", "enum": ["easy", "medium", "hard"] },
+    "time_minutes": { "type": "integer", "minimum": 1 },
+    "time_bucket": {
+      "type": "string",
+      "enum": ["t15", "t30", "t60", "t60plus"]
+    },
+    "calorie_bucket": {
+      "type": "string",
+      "enum": ["c400", "c600", "c800", "c800plus"]
+    },
+    "servings": { "type": "integer", "minimum": 1 },
+    "calories_per_serving": { "type": "integer", "minimum": 0 },
+    "macros": {
+      "type": "object",
+      "properties": {
+        "protein_g": { "type": "integer" },
+        "carbs_g": { "type": "integer" },
+        "fat_g": { "type": "integer" }
+      }
+    },
+    "meal_slots": {
+      "type": "array",
+      "items": { "enum": ["breakfast", "lunch", "dinner"] }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ingredient_id", "qty", "unit"],
+        "properties": {
+          "ingredient_id": { "type": "string" },
+          "qty": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "type": "string" },
+          "note": { "$ref": "#/definitions/l10n" },
+          "optional": { "type": "boolean" }
+        }
+      }
+    },
+    "ingredient_ids": { "type": "array", "items": { "type": "string" } },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": { "$ref": "#/definitions/l10n" },
+          "timer_seconds": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "l10n": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}
