@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-05",
+  "default_strategy": "lazy",
+  "loading": {
+    "strategy": "launch+on-demand",
+    "preload": [
+      "core"
+    ],
+    "on_demand": [
+      "extended",
+      "cuisine-*"
+    ]
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "strategy": "launch",
+      "recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal",
+        "alfredo-classic",
+        "alfredo-gluten-free",
+        "alfredo-vegan",
+        "alfredo-lactose-free",
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "pad-thai-low-fodmap",
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-keto",
+        "tacos-halal",
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal",
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-gluten-free",
+        "shakshuka-keto",
+        "carbonara-classic",
+        "carbonara-vegetarian",
+        "carbonara-vegan",
+        "carbonara-gluten-free",
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-halal",
+        "butter-chicken-keto",
+        "pizza-classic",
+        "pizza-vegan",
+        "pizza-gluten-free",
+        "pizza-low-fodmap",
+        "oatmeal-classic",
+        "oatmeal-vegan",
+        "oatmeal-gluten-free",
+        "oatmeal-lactose-free",
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-keto",
+        "burger-classic",
+        "burger-vegan",
+        "burger-keto",
+        "burger-halal",
+        "burrito-classic",
+        "burrito-vegan",
+        "burrito-keto",
+        "burrito-halal",
+        "ratatouille-classic",
+        "ratatouille-low-fodmap",
+        "ratatouille-keto"
+      ],
+      "dish_ids": [
+        "doener",
+        "alfredo",
+        "pad-thai",
+        "tacos",
+        "ramen",
+        "shakshuka",
+        "carbonara",
+        "butter-chicken",
+        "pizza-margherita",
+        "oatmeal",
+        "pancakes",
+        "burger",
+        "burrito-bowl",
+        "ratatouille"
+      ]
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "strategy": "lazy",
+      "recipe_ids": [
+        "paella-classic",
+        "paella-pescatarian",
+        "paella-vegan",
+        "goulash-classic",
+        "goulash-vegan",
+        "goulash-gluten-free",
+        "falafel-classic",
+        "falafel-gluten-free",
+        "curry-classic",
+        "curry-vegan",
+        "curry-gluten-free",
+        "bouillabaisse-classic",
+        "bouillabaisse-pescatarian",
+        "lasagna-classic",
+        "lasagna-vegetarian",
+        "lasagna-vegan",
+        "lasagna-gluten-free"
+      ],
+      "dish_ids": [
+        "paella",
+        "goulash",
+        "falafel",
+        "thai-green-curry",
+        "bouillabaisse",
+        "lasagna"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "strategy": "lazy",
+      "recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal",
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-gluten-free",
+        "shakshuka-keto",
+        "falafel-classic",
+        "falafel-gluten-free"
+      ],
+      "dish_ids": [
+        "doener",
+        "shakshuka",
+        "falafel"
+      ],
+      "cuisine_tag": "middle-eastern"
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "strategy": "lazy",
+      "recipe_ids": [
+        "alfredo-classic",
+        "alfredo-gluten-free",
+        "alfredo-vegan",
+        "alfredo-lactose-free",
+        "carbonara-classic",
+        "carbonara-vegetarian",
+        "carbonara-vegan",
+        "carbonara-gluten-free",
+        "pizza-classic",
+        "pizza-vegan",
+        "pizza-gluten-free",
+        "pizza-low-fodmap",
+        "lasagna-classic",
+        "lasagna-vegetarian",
+        "lasagna-vegan",
+        "lasagna-gluten-free"
+      ],
+      "dish_ids": [
+        "alfredo",
+        "carbonara",
+        "pizza-margherita",
+        "lasagna"
+      ],
+      "cuisine_tag": "italian"
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "strategy": "lazy",
+      "recipe_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "pad-thai-low-fodmap",
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal",
+        "curry-classic",
+        "curry-vegan",
+        "curry-gluten-free"
+      ],
+      "dish_ids": [
+        "pad-thai",
+        "ramen",
+        "thai-green-curry"
+      ],
+      "cuisine_tag": "asian"
+    }
+  ],
+  "cross_references": {
+    "cuisine-middle-eastern": [
+      "core",
+      "extended"
+    ],
+    "cuisine-italian": [
+      "core",
+      "extended"
+    ],
+    "cuisine-asian": [
+      "core",
+      "extended"
+    ]
+  }
+}

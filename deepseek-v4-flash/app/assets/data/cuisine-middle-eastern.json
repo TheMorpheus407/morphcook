@@ -1,0 +1,1432 @@
+{
+  "partition": "cuisine-middle-eastern",
+  "cuisine_tag": "middle-eastern",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "classic döner",
+        "de": "klassischer döner"
+      },
+      "summary": {
+        "en": "lamb & beef from a slow spit, crisp-edged, with good bread.",
+        "de": "lamm & rind vom drehspieß, knusprig geröstet, auf gutem brot."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "grill",
+        "roast",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 620,
+      "protein_g": 38,
+      "carbs_g": 55,
+      "fat_g": 26,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "wrap",
+        "grill"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "ground-beef",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "grate the onion & garlic into the minced meat, add spices & salt.",
+            "de": "zwiebel & knoblauch ins hack reiben, gewürze & salz dazu."
+          }
+        },
+        {
+          "text": {
+            "en": "knead well and press onto a sheet pan in a wide loaf shape.",
+            "de": "gut kneten und als flaches laib auf ein blech drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 220°c, turning once, until deeply browned — about 30 min.",
+            "de": "bei 220°c braten, einmal wenden, bis tiefbraun — ca. 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest the loaf 10 min, then slice thin.",
+            "de": "laib 10 min ruhen lassen, dann dünn aufschneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "warm the pitas, toss cabbage with lemon & salt, slice tomatoes & cucumber.",
+            "de": "pitas erwärmen, kohl mit zitrone & salz mischen, tomaten & gurke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "swipe yogurt over bread, pile on meat & salad, roll it up.",
+            "de": "joghurt aufs brot, fleisch & salat drauf, einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "don't skip the resting — it keeps the slices juicy.",
+        "de": "das ruhen nicht überspringen — das hält die scheiben saftig."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "vegan döner",
+        "de": "veganer döner"
+      },
+      "summary": {
+        "en": "seitan on a spit-shape, charred & crisp, all the fixings.",
+        "de": "seitan in drehspieß-form, scharf & knusprig, alle zutaten."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "roast",
+        "grill",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 520,
+      "protein_g": 27,
+      "carbs_g": 62,
+      "fat_g": 18,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "wrap",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "seitan",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix grated onion, garlic, cumin, paprika & chili with the seitan.",
+            "de": "geriebene zwiebel, knoblauch, kreuzkümmel, paprika & chili mit seitan mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "mould into a loaf on a sheet pan, press tight.",
+            "de": "auf dem blech zu einem laib formen, fest drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 210°c until the surface is deeply charred — about 35 min.",
+            "de": "bei 210°c rösten, bis die oberfläche tief gebräunt ist — ca. 35 min."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "rest 10 min, slice thin against the grain.",
+            "de": "10 min ruhen, gegen die faser dünn schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "warm pitas; cabbage with lemon & salt, tomato & cucumber slices.",
+            "de": "pitas erwärmen; kohl mit zitrone & salz, tomaten- & gurkenscheiben."
+          }
+        },
+        {
+          "text": {
+            "en": "vegan mayo on the bread, then meat & salad, roll tight.",
+            "de": "vegane mayo aufs brot, dann fleisch & salat, fest einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "tahini instead of mayo is also very right.",
+        "de": "tahini statt mayo ist auch sehr richtig."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "title": {
+        "en": "keto döner bowl",
+        "de": "keto döner bowl"
+      },
+      "summary": {
+        "en": "all the döner, none of the bread. charred meat on greens.",
+        "de": "der ganze döner, ohne brot. scharfes fleisch auf salat."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "grill",
+        "pan-fry",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 480,
+      "protein_g": 36,
+      "carbs_g": 9,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "döner",
+        "keto",
+        "bowl",
+        "low carb"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "lettuce",
+          "amount": 1.0,
+          "unit": "head"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "greek-yogurt",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "season the mince with cumin, paprika, garlic & salt.",
+            "de": "hack mit kreuzkümmel, paprika, knoblauch & salz würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "press into a wide pan and sear until a crust forms, then chop it up.",
+            "de": "in einer großen pfanne flach drücken und scharf anbraten, dann zerkleinern."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice lettuce, cucumber & tomato.",
+            "de": "salat, gurke & tomate schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "stir lemon & salt into the yogurt.",
+            "de": "zitrone & salz in den joghurt rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "pile greens, meat & yogurt. no bread, no regrets.",
+            "de": "salat, fleisch & joghurt anrichten. kein brot, keine reue."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "halal döner",
+        "de": "halal döner"
+      },
+      "summary": {
+        "en": "halal-compatible lamb döner, crisp & proper.",
+        "de": "halal-kompatibler lammsdöner, knusprig & richtig."
+      },
+      "diet": "halal",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "roast",
+        "grill",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 590,
+      "protein_g": 36,
+      "carbs_g": 52,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "halal",
+        "wrap"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 700.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "grate onion & garlic into the lamb with the spices.",
+            "de": "zwiebel & knoblauch mit den gewürzen ins lamm reiben."
+          }
+        },
+        {
+          "text": {
+            "en": "press into a loaf on a sheet pan.",
+            "de": "auf dem blech zu einem laib drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 220°c until charred at the edges, ~30 min.",
+            "de": "bei 220°c rösten, bis die ränder dunkel sind, ca. 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest, slice thin; warm the pitas.",
+            "de": "ruhen lassen, dünn schneiden; pitas erwärmen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toss cabbage with lemon; slice tomato & cucumber.",
+            "de": "kohl mit zitrone mischen; tomate & gurke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "build: yogurt, meat, salad, roll.",
+            "de": "bauen: joghurt, fleisch, salat, einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "check the yogurt for halal-compatible ingredients if it matters to you.",
+        "de": "joghurt bei bedarf auf halal-kompatible zutaten prüfen."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "shakshuka",
+        "de": "shakshuka"
+      },
+      "summary": {
+        "en": "eggs poached in a pepper-tomato riot.",
+        "de": "eier pochiert im paprika-tomaten aufstand."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 420,
+      "protein_g": 20,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "brunch"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil, 8 min.",
+            "de": "zwiebel & paprika in olivenöl weich braten, 8 min."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "garlic, cumin, paprika, chili — one fragrant minute.",
+            "de": "knoblauch, kreuzkümmel, paprika, chili — eine duftende minute."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "pour in tomatoes, simmer 15 min until thick.",
+            "de": "tomaten angießen, 15 min köcheln, bis es dick wird."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "make wells; crack in the eggs; lid on 6-8 min, whites set.",
+            "de": "mulden formen; eier aufschlagen; deckel drauf 6-8 min, eiweiß gestockt."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley over. bread for mopping, obviously.",
+            "de": "feta & petersilie drüber. brot zum auftunken, klar."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "vegan shakshuka",
+        "de": "vegane shakshuka"
+      },
+      "summary": {
+        "en": "the same red riot, with silken tofu standing in.",
+        "de": "derselbe rote aufstand, mit seidentofu als einspringer."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤400",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 380,
+      "protein_g": 18,
+      "carbs_g": 30,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "brunch"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil.",
+            "de": "zwiebel & paprika in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices in, then tomatoes; simmer 15 min.",
+            "de": "gewürze rein, dann tomaten; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "slide in big slabs of silken tofu.",
+            "de": "große stücke seidentofu hineingleiten lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "lid on, 8 min, gently warm through.",
+            "de": "deckel drauf, 8 min, sanft durchwärmen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "parsley & black pepper. bread on standby.",
+            "de": "petersilie & pfeffer. brot in bereitschaft."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-gluten-free",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "gluten-free shakshuka",
+        "de": "glutenfreie shakshuka"
+      },
+      "summary": {
+        "en": "the classic, with a gluten-free bread to mop.",
+        "de": "der klassiker, mit glutenfreiem brot zum auftunken."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 420,
+      "protein_g": 20,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil.",
+            "de": "zwiebel & paprika in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices, tomatoes, 15 min simmer.",
+            "de": "gewürze, tomaten, 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "thicken with rice flour stirred into a splash of water.",
+            "de": "mit reismehl in etwas wasser andicken."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "poach the eggs, lid on 6-8 min.",
+            "de": "eier pochieren, deckel 6-8 min."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley; gluten-free bread for the mopping.",
+            "de": "feta & petersilie; glutenfreies brot zum auftunken."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-keto",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "keto shakshuka",
+        "de": "keto shakshuka"
+      },
+      "summary": {
+        "en": "eggs & peppers, zero carbs apologising.",
+        "de": "eier & paprika, null kohlenhydrate die sich entschuldigen."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 380,
+      "protein_g": 22,
+      "carbs_g": 12,
+      "fat_g": 28,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "keto"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion, peppers & garlic in olive oil.",
+            "de": "zwiebel, paprika & knoblauch in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices, tomatoes, simmer until thick, 12 min.",
+            "de": "gewürze, tomaten, köcheln bis es dick wird, 12 min."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "poach eggs in wells, lid on.",
+            "de": "eier in mulden pochieren, deckel drauf."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley. no bread required — it's already perfect.",
+            "de": "feta & petersilie. kein brot nötig — es ist schon perfekt."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "crispy falafel",
+        "de": "knusprige falafel"
+      },
+      "summary": {
+        "en": "green, herb-packed, impossible to stop at one.",
+        "de": "grün, kräuter-reich, unmöglich bei einem aufzuhören."
+      },
+      "diet": "classic",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "deep-fry",
+        "blend",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 480,
+      "protein_g": 18,
+      "carbs_g": 52,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "street food"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seed",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chickpea-flour",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-soda",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-paste",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak chickpeas overnight — canned ones are too wet.",
+            "de": "kichererbsen über nacht einweichen — dosenware ist zu nass."
+          }
+        },
+        {
+          "text": {
+            "en": "blend chickpeas, herbs, onion & garlic coarse — not a paste.",
+            "de": "kichererbsen, kräuter, zwiebel & knoblauch grob mixen — keine paste."
+          }
+        },
+        {
+          "text": {
+            "en": "spices, chickpea flour & baking soda in; rest 30 min.",
+            "de": "gewürze, kichererbsenmehl & natron rein; 30 min ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "shape small balls; fry 3-4 min at 175°c until deep brown.",
+            "de": "kleine bällchen formen; 3-4 min bei 175°c tiefbraun frittieren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "tahini + lemon + salt + water = the sauce.",
+            "de": "tahini + zitrone + salz + wasser = die sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "pita, falafel, salad, sauce. you know the drill.",
+            "de": "pita, falafel, salat, sauce. du kennst das spiel."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "falafel-gluten-free",
+      "dish_id": "falafel",
+      "title": {
+        "en": "gluten-free falafel",
+        "de": "glutenfreie falafel"
+      },
+      "summary": {
+        "en": "chickpea flour binder, same green crunch.",
+        "de": "kichererbsenmehl-binder, derselbe grüne crunch."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "deep-fry",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 470,
+      "protein_g": 18,
+      "carbs_g": 52,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seed",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chickpea-flour",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-soda",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-paste",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak chickpeas overnight.",
+            "de": "kichererbsen über nacht einweichen."
+          }
+        },
+        {
+          "text": {
+            "en": "blend with herbs, onion & garlic — coarse.",
+            "de": "mit kräutern, zwiebel & knoblauch grob mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "chickpea flour + rice flour + soda in; rest 30.",
+            "de": "kichererbsenmehl + reismehl + natron rein; 30 ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "fry at 175°c, 3-4 min.",
+            "de": "bei 175°c 3-4 min frittieren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "tahini-lemon sauce. gluten-free pita if you want the full ride.",
+            "de": "tahini-zitronen-sauce. glutenfreie pita für die volle fahrt."
+          }
+        }
+      ],
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "contains_flags": [
+    "pork",
+    "beef",
+    "lamb",
+    "poultry",
+    "fish",
+    "shellfish",
+    "molluscs",
+    "egg",
+    "dairy",
+    "gluten",
+    "soy",
+    "peanuts",
+    "tree-nuts",
+    "almonds",
+    "walnuts",
+    "sesame",
+    "mustard",
+    "celery",
+    "lupin",
+    "sulphites",
+    "alcohol",
+    "caffeine",
+    "added-sugar",
+    "high-fodmap",
+    "gelatin-non-halal",
+    "gelatin-non-kosher",
+    "honey",
+    "meat-dairy-combo"
+  ],
+  "compound_avoids": {
+    "vegan": {
+      "label": {
+        "en": "vegan",
+        "de": "vegan"
+      },
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "fish",
+        "shellfish",
+        "molluscs",
+        "egg",
+        "dairy",
+        "honey"
+      ]
+    },
+    "vegetarian": {
+      "label": {
+        "en": "vegetarian",
+        "de": "vegetarisch"
+      },
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "fish",
+        "shellfish",
+        "molluscs",
+        "gelatin-non-halal",
+        "gelatin-non-kosher"
+      ]
+    },
+    "pescatarian": {
+      "label": {
+        "en": "pescatarian",
+        "de": "pescetarisch"
+      },
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "gelatin-non-halal"
+      ]
+    },
+    "halal": {
+      "label": {
+        "en": "halal",
+        "de": "halal"
+      },
+      "expands_to": [
+        "pork",
+        "alcohol",
+        "gelatin-non-halal"
+      ]
+    },
+    "kosher": {
+      "label": {
+        "en": "kosher",
+        "de": "koscher"
+      },
+      "expands_to": [
+        "pork",
+        "shellfish",
+        "meat-dairy-combo",
+        "gelatin-non-kosher"
+      ]
+    },
+    "low-fodmap": {
+      "label": {
+        "en": "low-fodmap",
+        "de": "low-fodmap"
+      },
+      "expands_to": [
+        "high-fodmap"
+      ]
+    },
+    "sugar-free": {
+      "label": {
+        "en": "sugar-free",
+        "de": "zuckerfrei"
+      },
+      "expands_to": [
+        "added-sugar"
+      ]
+    },
+    "lactose-free": {
+      "label": {
+        "en": "lactose-free",
+        "de": "laktosefrei"
+      },
+      "expands_to": [
+        "dairy"
+      ]
+    }
+  },
+  "attributes": {
+    "effort": {
+      "easy": {
+        "label": {
+          "en": "easy",
+          "de": "einfach"
+        }
+      },
+      "medium": {
+        "label": {
+          "en": "medium",
+          "de": "mittel"
+        }
+      },
+      "hard": {
+        "label": {
+          "en": "hard",
+          "de": "anspruchsvoll"
+        }
+      }
+    },
+    "time_bucket": {
+      "≤15": {
+        "max_minutes": 15,
+        "label": {
+          "en": "15 min",
+          "de": "15 min"
+        }
+      },
+      "≤30": {
+        "max_minutes": 30,
+        "label": {
+          "en": "30 min",
+          "de": "30 min"
+        }
+      },
+      "≤60": {
+        "max_minutes": 60,
+        "label": {
+          "en": "60 min",
+          "de": "60 min"
+        }
+      },
+      ">60": {
+        "max_minutes": null,
+        "label": {
+          "en": "60+ min",
+          "de": "60+ min"
+        }
+      }
+    },
+    "calorie_bucket": {
+      "≤400": {
+        "max_calories": 400,
+        "label": {
+          "en": "≤400 kcal",
+          "de": "≤400 kcal"
+        }
+      },
+      "≤600": {
+        "max_calories": 600,
+        "label": {
+          "en": "≤600 kcal",
+          "de": "≤600 kcal"
+        }
+      },
+      "≤800": {
+        "max_calories": 800,
+        "label": {
+          "en": "≤800 kcal",
+          "de": "≤800 kcal"
+        }
+      },
+      ">800": {
+        "max_calories": null,
+        "label": {
+          "en": "800+ kcal",
+          "de": "800+ kcal"
+        }
+      }
+    },
+    "techniques": [
+      "bake",
+      "sauté",
+      "simmer",
+      "raw",
+      "grill",
+      "fry",
+      "steam",
+      "roast",
+      "broil",
+      "pan-fry",
+      "deep-fry",
+      "stir-fry",
+      "poach",
+      "blanch",
+      "blend",
+      "knead"
+    ]
+  },
+  "diet_order": [
+    "classic",
+    "vegetarian",
+    "vegan",
+    "pescatarian",
+    "keto",
+    "halal",
+    "kosher",
+    "gluten-free",
+    "lactose-free",
+    "low-fodmap",
+    "sugar-free"
+  ]
+}

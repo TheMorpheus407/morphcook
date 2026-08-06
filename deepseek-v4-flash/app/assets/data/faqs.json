@@ -1,0 +1,346 @@
+{
+  "categories": [
+    {
+      "id": "matching",
+      "label": {
+        "en": "diet matching",
+        "de": "ernährungs-matching"
+      }
+    },
+    {
+      "id": "features",
+      "label": {
+        "en": "features",
+        "de": "funktionen"
+      }
+    },
+    {
+      "id": "troubleshooting",
+      "label": {
+        "en": "troubleshooting",
+        "de": "hilfe bei problemen"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "category": "matching",
+      "question": {
+        "en": "why can't i see a recipe?",
+        "de": "warum sehe ich ein rezept nicht?"
+      },
+      "answer": {
+        "en": "MorphCook hides nothing you can't eat. a recipe disappears only if it actually contains something you avoid, takes longer than your budget, or is outside your calorie window. that's the deal — it's set logic, not judgement.",
+        "de": "MorphCook versteckt nichts, das du nicht essen kannst. ein rezept verschwindet nur, wenn es wirklich etwas enthält, das du vermeidest, länger dauert als dein budget, oder außerhalb deines kalorienfensters liegt. das ist der deal — mengenlogik, kein urteil."
+      },
+      "keywords": [
+        "visibility",
+        "hidden",
+        "filter",
+        "why",
+        "sichtbarkeit",
+        "gefiltert",
+        "warum"
+      ]
+    },
+    {
+      "category": "matching",
+      "question": {
+        "en": "how does diet matching work?",
+        "de": "wie funktioniert das ernährungs-matching?"
+      },
+      "answer": {
+        "en": "each dish is one concept with many recipes — classic, vegan, halal, keto & more. your profile sets the avoid-flags; a recipe is shown when its flags never touch yours. no substitutions, no watered-down versions: every recipe is fully written for you.",
+        "de": "jedes gericht ist ein konzept mit vielen rezepten — klassisch, vegan, halal, keto & mehr. dein profil setzt die vermeidungs-flaggen; ein rezept erscheint, wenn seine flaggen deine nie berühren. keine ersätze, keine verwässerten versionen: jedes rezept ist vollständig für dich geschrieben."
+      },
+      "keywords": [
+        "matching",
+        "vegan",
+        "diet",
+        "flags",
+        "matchen",
+        "ernährung"
+      ]
+    },
+    {
+      "category": "matching",
+      "question": {
+        "en": "what does \"halal-compatible\" mean?",
+        "de": "was bedeutet \"halal-kompatibel\"?"
+      },
+      "answer": {
+        "en": "we say halal-compatible, never halal-certified. certification is a property of sourcing & slaughter, not of a recipe text. compatible means: the ingredients and methods are compatible — do your own sourcing.",
+        "de": "wir sagen halal-kompatibel, nie halal-zertifiziert. zertifizierung ist eine eigenschaft der beschaffung & schlachtung, nicht eines rezepttexts. kompatibel heißt: zutaten und methoden passen — die beschaffung machst du selbst."
+      },
+      "keywords": [
+        "halal",
+        "certified",
+        "certification",
+        "kosher",
+        "zertifiziert"
+      ]
+    },
+    {
+      "category": "matching",
+      "question": {
+        "en": "can i avoid specific ingredients?",
+        "de": "kann ich einzelne zutaten vermeiden?"
+      },
+      "answer": {
+        "en": "yes — two ways. class avoidance (all dairy, all nuts) and specific avoidance: type the ingredient, like apples or cilantro, and any recipe containing it vanishes. both combine, and avoiding a whole family (dairy) also hides its children (whole milk, parmesan).",
+        "de": "ja — zweifach. klassen-vermeidung (alle milchprodukte, alle nüsse) und spezifische vermeidung: die zutat eintippen, wie äpfel oder koriander, und jedes rezept mit dieser zutat verschwindet. beides kombiniert, und eine ganze familie (milchprodukte) versteckt auch ihre kinder (vollmilch, parmesan)."
+      },
+      "keywords": [
+        "ingredients",
+        "avoid",
+        "allergy",
+        "allergies",
+        "zutaten",
+        "allergie"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "how do variant switchers work?",
+        "de": "wie funktionieren die varianten-schalter?"
+      },
+      "answer": {
+        "en": "on a dish page, each dimension — diet, effort, calorie level — shows your current choice. tap the chevron to see alternatives. combos that don't exist yet are disabled with a note, never hidden. switching animates the ingredients in place.",
+        "de": "auf der gerichtseite zeigt jede dimension — ernährung, aufwand, kalorienlevel — deine aktuelle wahl. aufs karo tippen zeigt alternativen. kombos, die es noch nicht gibt, sind mit einem hinweis deaktiviert, nie versteckt. das umschalten animiert die zutaten direkt."
+      },
+      "keywords": [
+        "variant",
+        "switch",
+        "dimension",
+        "diet",
+        "effort",
+        "varianten",
+        "dimensionen"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "how do i save a recipe?",
+        "de": "wie speichere ich ein rezept?"
+      },
+      "answer": {
+        "en": "you save a specific variant, not a dish — your döner. tap the bookmark on the recipe; it lands in your cookbook. you can save several variants of the same dish, each one is its own recipe.",
+        "de": "du speicherst eine bestimmte variante, nicht ein gericht — deinen döner. tippe auf das lesezeichen; es landet im kochbuch. mehrere varianten desselben gerichts sind erlaubt — jede ist ihr eigenes rezept."
+      },
+      "keywords": [
+        "save",
+        "bookmark",
+        "cookbook",
+        "speichern",
+        "kochbuch"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "what is cook mode?",
+        "de": "was ist der kochmodus?"
+      },
+      "answer": {
+        "en": "a dark, full-bleed, step-by-step view. per-step timers, a servings scaler, pause/resume that remembers where you are, and a completion screen. optional: a visual flash when a timer rings, and a quick-tap to advance steps.",
+        "de": "eine dunkle, randlose schritt-für-schritt-ansicht. timer pro schritt, portions-skalierung, pause/weiter mit merken, wo du bist, und ein abschluss-screen. optional: ein visueller blitz, wenn ein timer klingelt, und ein schnelles tippen zum nächsten schritt."
+      },
+      "keywords": [
+        "cook mode",
+        "timer",
+        "step",
+        "kochmodus",
+        "timer"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "how does the meal planner work?",
+        "de": "wie funktioniert der essensplaner?"
+      },
+      "answer": {
+        "en": "a weekly grid, monday to sunday, breakfast to dinner. tap a slot to assign a recipe from your cookbook or search, drag to move between slots, and export the whole week to your shopping list in one tap.",
+        "de": "ein wochenraster, montag bis sonntag, frühstück bis abendessen. tippe auf einen platz, um ein rezept aus dem kochbuch oder der suche zuzuweisen, ziehe, um es zu verschieben, und exportiere die ganze woche mit einem tipp in deine einkaufsliste."
+      },
+      "keywords": [
+        "meal plan",
+        "plan",
+        "week",
+        "essensplan",
+        "woche"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "what is the smart shopping list?",
+        "de": "was ist die schlaue einkaufsliste?"
+      },
+      "answer": {
+        "en": "it aggregates selected recipes into one list. 2 cloves of garlic + 3 cloves = 5 cloves; millilitres and tablespoons convert automatically. items are deduped and grouped by aisle.",
+        "de": "sie fasst ausgewählte rezepte zu einer liste zusammen. 2 knoblauchzehen + 3 zehen = 5 zehen; milliliter und esslöffel rechnen sich automatisch um. artikel werden zusammengeführt und nach gang gruppiert."
+      },
+      "keywords": [
+        "shopping",
+        "list",
+        "aisle",
+        "unit",
+        "einkauf",
+        "einheiten"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "what do the shopping insights show?",
+        "de": "was zeigen die einkaufs-einblicke?"
+      },
+      "answer": {
+        "en": "a small dashboard: your variety score (unique ingredients), the ingredients you add most often, and a seasonal breakdown by month. it's your pattern, gently reported.",
+        "de": "ein kleines dashboard: dein vielfalts-wert (einzigartige zutaten), die zutaten, die du am häufigsten hinzufügst, und eine saisonale aufteilung nach monat. dein muster, sanft berichtet."
+      },
+      "keywords": [
+        "insights",
+        "variety",
+        "seasonal",
+        "statistics",
+        "einblicke",
+        "statistik"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "how does the calorie target work?",
+        "de": "wie funktioniert das kalorienziel?"
+      },
+      "answer": {
+        "en": "your target is a hard filter with a small tolerance window. on a dish page you can switch it off per dish to see versions outside your window — you stay in control.",
+        "de": "dein ziel ist ein harter filter mit einem kleinen toleranzfenster. auf der gerichtseite kannst du es pro gericht ausschalten, um versionen außerhalb des fensters zu sehen — du behältst die kontrolle."
+      },
+      "keywords": [
+        "calories",
+        "calorie",
+        "target",
+        "kalorien",
+        "ziel"
+      ]
+    },
+    {
+      "category": "troubleshooting",
+      "question": {
+        "en": "how do backups work?",
+        "de": "wie funktionieren backups?"
+      },
+      "answer": {
+        "en": "settings → backup. export writes morphcook-backup.json (human-readable) and a .json.gz (70-90% smaller) side by side to the share sheet. you can add a password: the json becomes AES-256-GCM encrypted, the gz stays portable. import auto-detects everything.",
+        "de": "einstellungen → backup. export schreibt morphcook-backup.json (lesbar) und .json.gz (70-90% kleiner) nebeneinander in die freigabe. mit passwort wird die json AES-256-GCM-verschlüsselt, die gz bleibt portabel. import erkennt alles automatisch."
+      },
+      "keywords": [
+        "backup",
+        "export",
+        "import",
+        "restore",
+        "encrypted",
+        "backup",
+        "export"
+      ]
+    },
+    {
+      "category": "troubleshooting",
+      "question": {
+        "en": "my backup won't import — what now?",
+        "de": "mein backup lässt sich nicht importieren — was nun?"
+      },
+      "answer": {
+        "en": "the import checks three things: the encryption magic bytes, then gzip, then json validity. wrong password says \"incorrect password\", corrupted files say \"corrupted\", anything else says \"not a valid morphcook backup\". re-export and try again.",
+        "de": "der import prüft drei dinge: die verschlüsselungs-magie, dann gzip, dann json-gültigkeit. falsches passwort sagt \"falsches passwort\", beschädigte dateien sagen \"beschädigt\", alles andere sagt \"kein gültiges morphcook-backup\". neu exportieren und erneut versuchen."
+      },
+      "keywords": [
+        "backup",
+        "import",
+        "password",
+        "error",
+        "passwort",
+        "fehler"
+      ]
+    },
+    {
+      "category": "troubleshooting",
+      "question": {
+        "en": "is morphcook online?",
+        "de": "ist morphcook online?"
+      },
+      "answer": {
+        "en": "no. there is no backend, no account, no sync and no telemetry. everything runs on your phone; the recipes ship with the app. updates arrive with the app update, backups are your own files.",
+        "de": "nein. kein backend, kein konto, keine synchronisierung und keine telemetrie. alles läuft auf deinem telefon; die rezepte sind in der app. aktualisierungen kommen mit dem app-update, backups sind deine eigenen dateien."
+      },
+      "keywords": [
+        "offline",
+        "backend",
+        "cloud",
+        "account",
+        "privacy",
+        "datenschutz"
+      ]
+    },
+    {
+      "category": "troubleshooting",
+      "question": {
+        "en": "i searched for a dish and found nothing.",
+        "de": "ich habe ein gericht gesucht und nichts gefunden."
+      },
+      "answer": {
+        "en": "that query is noted locally and bundled into your next backup export — it helps us know what to author next. no data leaves your phone.",
+        "de": "die suche wird lokal notiert und in deinen nächsten backup-export aufgenommen — so wissen wir, was als nächstes geschrieben wird. keine daten verlassen dein telefon."
+      },
+      "keywords": [
+        "search",
+        "missing",
+        "no results",
+        "content",
+        "suche",
+        "keine ergebnisse"
+      ]
+    },
+    {
+      "category": "troubleshooting",
+      "question": {
+        "en": "how do i change my language?",
+        "de": "wie ändere ich meine sprache?"
+      },
+      "answer": {
+        "en": "settings → language. everything — recipes, menus, faqs — switches with it. more languages are data additions, not new versions.",
+        "de": "einstellungen → sprache. alles — rezepte, menüs, faqs — wechselt mit. weitere sprachen sind daten-zugaben, keine neuen versionen."
+      },
+      "keywords": [
+        "language",
+        "locale",
+        "deutsch",
+        "englisch",
+        "sprache"
+      ]
+    },
+    {
+      "category": "features",
+      "question": {
+        "en": "what does \"reduce motion\" do?",
+        "de": "was macht \"bewegung reduzieren\"?"
+      },
+      "answer": {
+        "en": "an accessibility setting that shortens or removes animations: variant morphs, timer flashes and step transitions become calmer. system-default uses your device setting.",
+        "de": "eine barrierefreiheits-einstellung, die animationen verkürzt oder entfernt: varianten-morphs, timer-blitze und schritt-übergänge werden ruhiger. system-standard nutzt die geräteeinstellung."
+      },
+      "keywords": [
+        "accessibility",
+        "reduce motion",
+        "animation",
+        "barrierefrei",
+        "bewegung"
+      ]
+    }
+  ]
+}

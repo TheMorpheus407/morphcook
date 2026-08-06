@@ -1,0 +1,2351 @@
+{
+  "partition": "extended",
+  "recipes": [
+    {
+      "id": "paella-classic",
+      "dish_id": "paella",
+      "title": {
+        "en": "paella valenciana-ish",
+        "de": "paella, valencia-ish"
+      },
+      "summary": {
+        "en": "a wide pan, saffron, and the whole coast in it.",
+        "de": "eine breite pfanne, safran und die ganze küste drin."
+      },
+      "diet": "classic",
+      "contains": [
+        "high-fodmap",
+        "molluscs",
+        "poultry",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 580,
+      "protein_g": 34,
+      "carbs_g": 62,
+      "fat_g": 18,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "spanish",
+        "rice",
+        "seafood"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "mussels",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-thigh",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "saffron",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.0,
+          "unit": "l"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sear chicken in the paella pan, set aside.",
+            "de": "hähnchen in der paella-pfanne anbraten, beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "soften onion & peppers; garlic & paprika 1 min.",
+            "de": "zwiebel & paprika weich; knoblauch & paprika 1 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes, then rice, stir to coat.",
+            "de": "tomaten, dann reis, durchrühren."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "saffron broth in; simmer 15 min, no stirring — the socarrat needs it.",
+            "de": "safranbrühe rein; 15 min köcheln, nicht rühren — der socarrat braucht das."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "chicken back, shrimp & mussels on top; lid 5 more.",
+            "de": "hähnchen zurück, garnelen & muscheln drauf; deckel 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "rest 5 min off heat. lemon & parsley. the crust is the prize.",
+            "de": "5 min vom herd ruhen. zitrone & petersilie. die kruste ist der preis."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "paella-pescatarian",
+      "dish_id": "paella",
+      "title": {
+        "en": "seafood paella",
+        "de": "meeresfrüchte-paella"
+      },
+      "summary": {
+        "en": "everything but the chicken.",
+        "de": "alles außer dem hähnchen."
+      },
+      "diet": "pescatarian",
+      "contains": [
+        "high-fodmap",
+        "molluscs",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 80,
+      "calories_per_serving": 540,
+      "protein_g": 30,
+      "carbs_g": 62,
+      "fat_g": 15,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "spanish",
+        "rice",
+        "seafood"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "mussels",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "squid",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "saffron",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.0,
+          "unit": "l"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers; garlic & paprika in.",
+            "de": "zwiebel & paprika weich; knoblauch & paprika rein."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes, rice, coat.",
+            "de": "tomaten, reis, rühren."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "saffron broth in; simmer 15, untouched.",
+            "de": "safranbrühe rein; 15 min köcheln, unberührt."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "sear squid 2 min; add with shrimp & mussels; lid 5.",
+            "de": "tintenfisch 2 min braten; mit garnelen & muscheln zugeben; deckel 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "rest, lemon, parsley. socarrat alert.",
+            "de": "ruhen, zitrone, petersilie. socarrat-alarm."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "paella-vegan",
+      "dish_id": "paella",
+      "title": {
+        "en": "vegan paella",
+        "de": "vegane paella"
+      },
+      "summary": {
+        "en": "artichokes & beans taking the saffron throne.",
+        "de": "artischocken & bohnen auf dem safran-thron."
+      },
+      "diet": "vegan",
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 460,
+      "protein_g": 15,
+      "carbs_g": 70,
+      "fat_g": 12,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "spanish",
+        "rice",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "artichoke",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "white-beans",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "saffron",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.0,
+          "unit": "l"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers, garlic & paprika in.",
+            "de": "zwiebel & paprika weich, knoblauch & paprika rein."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes & artichokes, then rice.",
+            "de": "tomaten & artischocken, dann reis."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "saffron broth in; simmer 15, still.",
+            "de": "safranbrühe rein; 15 min köcheln, ruhig."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "beans in, lid 5.",
+            "de": "bohnen rein, deckel 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "rest, lemon, parsley.",
+            "de": "ruhen, zitrone, petersilie."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "goulash-classic",
+      "dish_id": "goulash",
+      "title": {
+        "en": "beef goulash",
+        "de": "rindergulasch"
+      },
+      "summary": {
+        "en": "slow beef, sweet paprika, bread for the juice.",
+        "de": "langsames rind, süßes paprika, brot für den saft."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 180,
+      "calories_per_serving": 520,
+      "protein_g": 42,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "hungarian",
+        "stew",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-brisket",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 3.0,
+          "unit": "piece"
+        },
+        {
+          "id": "paprika",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "potato",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "beef-broth",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "caraway",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef in batches, hard.",
+            "de": "rind in portionen scharf anbraten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften onions 10 min, add paprika & garlic — careful, it burns fast.",
+            "de": "zwiebeln 10 min weich, paprika & knoblauch — vorsicht, es brennt schnell."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "beef back, tomatoes, broth & caraway; lid on, 2 hours low.",
+            "de": "rind zurück, tomaten, brühe & kümmel; deckel zu, 2 stunden niedrig."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "peppers, carrots & potatoes in; 30 more min.",
+            "de": "paprika, karotten & kartoffeln rein; noch 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest 10; bread for the juice.",
+            "de": "10 min ruhen; brot für den saft."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "goulash-vegan",
+      "dish_id": "goulash",
+      "title": {
+        "en": "mushroom goulash",
+        "de": "pilzgulasch"
+      },
+      "summary": {
+        "en": "mushrooms & beans wearing the paprika coat.",
+        "de": "pilze & bohnen im paprika-mantel."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 390,
+      "protein_g": 16,
+      "carbs_g": 44,
+      "fat_g": 17,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "hungarian",
+        "stew",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 3.0,
+          "unit": "piece"
+        },
+        {
+          "id": "paprika",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "potato",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "caraway",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown mushrooms in batches until dark.",
+            "de": "pilze in portionen dunkel braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "onions 10 min; paprika & garlic quickly.",
+            "de": "zwiebeln 10 min; paprika & knoblauch schnell."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "tomatoes, broth & caraway; simmer 25.",
+            "de": "tomaten, brühe & kümmel; 25 min köcheln."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "peppers, carrots, potatoes; 25 more.",
+            "de": "paprika, karotten, kartoffeln; noch 25 min."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "rest & bread.",
+            "de": "ruhen & brot."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "goulash-gluten-free",
+      "dish_id": "goulash",
+      "title": {
+        "en": "gluten-free goulash",
+        "de": "glutenfreies gulasch"
+      },
+      "summary": {
+        "en": "the same deep stew — check the broth label, done.",
+        "de": "derselbe tiefe eintopf — brühen-label prüfen, fertig."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "beef",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 180,
+      "calories_per_serving": 520,
+      "protein_g": 42,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "hungarian",
+        "stew",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-brisket",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 3.0,
+          "unit": "piece"
+        },
+        {
+          "id": "paprika",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "potato",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "beef-broth",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "caraway",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "use a verified gluten-free broth.",
+            "de": "eine geprüfte glutenfreie brühe verwenden."
+          }
+        },
+        {
+          "text": {
+            "en": "brown beef hard in batches.",
+            "de": "rind scharf in portionen braten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "onions, paprika, garlic — quick & careful.",
+            "de": "zwiebeln, paprika, knoblauch — schnell & vorsichtig."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "everything in, 2 hours low.",
+            "de": "alles rein, 2 stunden niedrig."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "veg in, 30 more. thick & slow.",
+            "de": "gemüse rein, noch 30 min. dick & langsam."
+          },
+          "timer_seconds": 1800
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "crispy falafel",
+        "de": "knusprige falafel"
+      },
+      "summary": {
+        "en": "green, herb-packed, impossible to stop at one.",
+        "de": "grün, kräuter-reich, unmöglich bei einem aufzuhören."
+      },
+      "diet": "classic",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "deep-fry",
+        "blend",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 480,
+      "protein_g": 18,
+      "carbs_g": 52,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "street food"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seed",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chickpea-flour",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-soda",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-paste",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak chickpeas overnight — canned ones are too wet.",
+            "de": "kichererbsen über nacht einweichen — dosenware ist zu nass."
+          }
+        },
+        {
+          "text": {
+            "en": "blend chickpeas, herbs, onion & garlic coarse — not a paste.",
+            "de": "kichererbsen, kräuter, zwiebel & knoblauch grob mixen — keine paste."
+          }
+        },
+        {
+          "text": {
+            "en": "spices, chickpea flour & baking soda in; rest 30 min.",
+            "de": "gewürze, kichererbsenmehl & natron rein; 30 min ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "shape small balls; fry 3-4 min at 175°c until deep brown.",
+            "de": "kleine bällchen formen; 3-4 min bei 175°c tiefbraun frittieren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "tahini + lemon + salt + water = the sauce.",
+            "de": "tahini + zitrone + salz + wasser = die sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "pita, falafel, salad, sauce. you know the drill.",
+            "de": "pita, falafel, salat, sauce. du kennst das spiel."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "falafel-gluten-free",
+      "dish_id": "falafel",
+      "title": {
+        "en": "gluten-free falafel",
+        "de": "glutenfreie falafel"
+      },
+      "summary": {
+        "en": "chickpea flour binder, same green crunch.",
+        "de": "kichererbsenmehl-binder, derselbe grüne crunch."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "deep-fry",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 470,
+      "protein_g": 18,
+      "carbs_g": 52,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "bunch"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seed",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chickpea-flour",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-soda",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500.0,
+          "unit": "ml"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-paste",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak chickpeas overnight.",
+            "de": "kichererbsen über nacht einweichen."
+          }
+        },
+        {
+          "text": {
+            "en": "blend with herbs, onion & garlic — coarse.",
+            "de": "mit kräutern, zwiebel & knoblauch grob mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "chickpea flour + rice flour + soda in; rest 30.",
+            "de": "kichererbsenmehl + reismehl + natron rein; 30 ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "fry at 175°c, 3-4 min.",
+            "de": "bei 175°c 3-4 min frittieren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "tahini-lemon sauce. gluten-free pita if you want the full ride.",
+            "de": "tahini-zitronen-sauce. glutenfreie pita für die volle fahrt."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-classic",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "thai green curry",
+        "de": "thai green curry"
+      },
+      "summary": {
+        "en": "coconut, basil & the friendliest green fire.",
+        "de": "kokos, basilikum & das freundlichste grüne feuer."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 560,
+      "protein_g": 30,
+      "carbs_g": 34,
+      "fat_g": 34,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "coconut"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry curry paste in a few spoonfuls of coconut cream until it smells dangerous.",
+            "de": "currypaste in etwas kokoscreme braten, bis es gefährlich riecht."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "chicken in, coat, 3 min.",
+            "de": "hähnchen rein, überziehen, 3 min."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "rest of the coconut milk, fish sauce & sugar; simmer 15.",
+            "de": "rest kokosmilch, fischsauce & zucker; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "peppers & zucchini in; 5 more.",
+            "de": "paprika & zucchini rein; noch 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "jasmine rice; basil & lime at the end.",
+            "de": "jasminreis; basilikum & limette zum schluss."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-vegan",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "vegan green curry",
+        "de": "veganes green curry"
+      },
+      "summary": {
+        "en": "tofu in the green coconut sea.",
+        "de": "tofu im grünen kokos-meer."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 520,
+      "protein_g": 22,
+      "carbs_g": 38,
+      "fat_g": 32,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry paste in coconut cream until fragrant.",
+            "de": "paste in kokoscreme anbraten, bis es duftet."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "tofu in, golden edges.",
+            "de": "tofu rein, goldene kanten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "coconut milk, tamari & maple; simmer 15.",
+            "de": "kokosmilch, tamari & ahorn; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "veg in; 5 min; rice on.",
+            "de": "gemüse rein; 5 min; reis ansetzen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "basil & lime.",
+            "de": "basilikum & limette."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-gluten-free",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "gluten-free green curry",
+        "de": "glutenfreies green curry"
+      },
+      "summary": {
+        "en": "the classic; the paste does the gluten-free lifting.",
+        "de": "der klassiker; die paste macht die glutenfreie arbeit."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 550,
+      "protein_g": 30,
+      "carbs_g": 34,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "check your paste label — most are naturally gluten-free.",
+            "de": "paste-label prüfen — die meisten sind natürlich glutenfrei."
+          }
+        },
+        {
+          "text": {
+            "en": "fry paste in coconut cream; chicken in.",
+            "de": "paste in kokoscreme anbraten; hähnchen rein."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "coconut milk, fish sauce, sugar; 15 min.",
+            "de": "kokosmilch, fischsauce, zucker; 15 min."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "veg in; rice; basil & lime after.",
+            "de": "gemüse rein; reis; basilikum & limette danach."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "bouillabaisse-classic",
+      "dish_id": "bouillabaisse",
+      "title": {
+        "en": "bouillabaisse",
+        "de": "bouillabaisse"
+      },
+      "summary": {
+        "en": "marseille in a pot: fish, saffron & garlic toast.",
+        "de": "marseille im topf: fisch, safran & knoblauch-toast."
+      },
+      "diet": "classic",
+      "contains": [
+        "alcohol",
+        "fish",
+        "gluten",
+        "high-fodmap",
+        "molluscs",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 440,
+      "protein_g": 38,
+      "carbs_g": 22,
+      "fat_g": 22,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "french",
+        "soup",
+        "seafood"
+      ],
+      "ingredients": [
+        {
+          "id": "white-fish",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "mussels",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "leek",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 6.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "saffron",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "fennel",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "white-wine",
+          "amount": 150.0,
+          "unit": "ml"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.0,
+          "unit": "l"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion, leek & fennel 8 min; garlic in.",
+            "de": "zwiebel, lauch & fenchel 8 min weich; knoblauch rein."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "tomatoes, wine, broth & saffron; simmer 30.",
+            "de": "tomaten, wein, brühe & safran; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "fish in first, 4 min.",
+            "de": "fisch zuerst rein, 4 min."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "mussels & shrimp in, lid 3 min until they open.",
+            "de": "muscheln & garnelen rein, deckel 3 min, bis sie sich öffnen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "rub toast with garlic, float the bread, olive oil & parsley over.",
+            "de": "toast mit knoblauch einreiben, brot drauf, olivenöl & petersilie drüber."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "bouillabaisse-pescatarian",
+      "dish_id": "bouillabaisse",
+      "title": {
+        "en": "pescatarian bouillabaisse",
+        "de": "pescetarische bouillabaisse"
+      },
+      "summary": {
+        "en": "the same coast, no changes — fish is the point.",
+        "de": "dieselbe küste, keine änderungen — fisch ist der punkt."
+      },
+      "diet": "pescatarian",
+      "contains": [
+        "alcohol",
+        "fish",
+        "gluten",
+        "high-fodmap",
+        "molluscs",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 440,
+      "protein_g": 38,
+      "carbs_g": 22,
+      "fat_g": 22,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "french",
+        "soup",
+        "pescatarian"
+      ],
+      "ingredients": [
+        {
+          "id": "white-fish",
+          "amount": 700.0,
+          "unit": "g"
+        },
+        {
+          "id": "mussels",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "leek",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 6.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "saffron",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "fennel",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "white-wine",
+          "amount": 150.0,
+          "unit": "ml"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.0,
+          "unit": "l"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion, leek & fennel; garlic in.",
+            "de": "zwiebel, lauch & fenchel weich; knoblauch rein."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "tomatoes, wine, broth, saffron; 30 min.",
+            "de": "tomaten, wein, brühe, safran; 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "fish 4 min, mussels 3 more under lid.",
+            "de": "fisch 4 min, muscheln 3 mehr unter deckel."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "garlic toast, oil, parsley. the coast calls.",
+            "de": "knoblauch-toast, öl, petersilie. die küste ruft."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-classic",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "beef lasagna",
+        "de": "rindfleisch-lasagne"
+      },
+      "summary": {
+        "en": "layers with a plan: meat, béchamel, patience.",
+        "de": "schichten mit plan: fleisch, béchamel, geduld."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 150,
+      "calories_per_serving": 690,
+      "protein_g": 38,
+      "carbs_g": 58,
+      "fat_g": 32,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "comfort",
+        "freezer friendly"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "flour",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef; onion, garlic, tomato paste; tomatoes in; simmer 45.",
+            "de": "rind anbraten; zwiebel, knoblauch, tomatenmark; tomaten rein; 45 min köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel: melt butter, whisk flour 1 min, milk in, whisk until thick.",
+            "de": "béchamel: butter schmelzen, mehl 1 min verrühren, milch rein, dick rühren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "nutmeg, salt, half the parmesan into the béchamel.",
+            "de": "muskat, salz, halber parmesan in die béchamel."
+          }
+        },
+        {
+          "text": {
+            "en": "layer: sauce, sheets, béchamel, repeat; mozzarella on top.",
+            "de": "schichten: sauce, platten, béchamel, wiederholen; mozzarella obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake 35 min at 190°c; rest 15 before cutting.",
+            "de": "35 min bei 190°c backen; vor dem schneiden 15 min ruhen."
+          },
+          "timer_seconds": 2100
+        }
+      ],
+      "kitchen_notes": {
+        "en": "freezes beautifully. make two.",
+        "de": "friert wunderbar ein. mach zwei."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-vegetarian",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "vegetarian lasagna",
+        "de": "vegetarische lasagne"
+      },
+      "summary": {
+        "en": "mushroom & spinach between the layers.",
+        "de": "pilz & spinat zwischen den schichten."
+      },
+      "diet": "vegetarian",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 130,
+      "calories_per_serving": 600,
+      "protein_g": 28,
+      "carbs_g": 56,
+      "fat_g": 29,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "spinach",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "flour",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown mushrooms in batches; spinach wilted in after.",
+            "de": "pilze in portionen braten; spinat danach zusammenfallen lassen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "onion, garlic, tomatoes; simmer 30.",
+            "de": "zwiebel, knoblauch, tomaten; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "béchamel with nutmeg & parmesan.",
+            "de": "béchamel mit muskat & parmesan."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "layer; mozzarella top; bake 35.",
+            "de": "schichten; mozzarella drauf; 35 min backen."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "rest 15. the spinach is the hero.",
+            "de": "15 min ruhen. der spinat ist der held."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-vegan",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "vegan lasagna",
+        "de": "vegane lasagne"
+      },
+      "summary": {
+        "en": "lentils, tomato & a cashew-white layer that lies about being dairy.",
+        "de": "linsen, tomate & eine cashew-schicht, die vorgibt, milch zu sein."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 130,
+      "calories_per_serving": 540,
+      "protein_g": 24,
+      "carbs_g": 62,
+      "fat_g": 22,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cashews",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spinach",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "vegan-mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & garlic; lentils & tomatoes in; simmer 35.",
+            "de": "zwiebel & knoblauch weich; linsen & tomaten rein; 35 min köcheln."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "blend soaked cashews, oat milk & nutritional yeast until silky.",
+            "de": "eingeweichte cashews, hafermilch & hefeflocken seidig mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "wilt spinach in; season.",
+            "de": "spinat zusammenfallen lassen; würzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "layer sauce, sheets, white layer; vegan mozzarella on top.",
+            "de": "sauce, platten, weiße schicht schichten; veganer mozzarella obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake 35 at 190°c; rest 15.",
+            "de": "35 min bei 190°c backen; 15 min ruhen."
+          },
+          "timer_seconds": 2100
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-gluten-free",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "gluten-free lasagna",
+        "de": "glutenfreie lasagne"
+      },
+      "summary": {
+        "en": "rice lasagna sheets doing the heavy lifting.",
+        "de": "reis-lasagneplatten beim schweren heben."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 140,
+      "calories_per_serving": 640,
+      "protein_g": 36,
+      "carbs_g": 56,
+      "fat_g": 31,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef; onion, garlic, tomatoes; simmer 45.",
+            "de": "rind anbraten; zwiebel, knoblauch, tomaten; 45 min köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel with rice flour — whisk well, it thickens late.",
+            "de": "béchamel mit reismehl — gut schlagen, es dickt spät an."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "pre-cook the rice sheets per packet, they're stubborn.",
+            "de": "reisplatten nach packung vorkochen, sie sind stur."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "layer; mozzarella; bake 30 at 190°c.",
+            "de": "schichten; mozzarella; 30 min bei 190°c backen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest 15 before the cut.",
+            "de": "vor dem schneiden 15 min ruhen."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "reviewed": true
+    }
+  ]
+}

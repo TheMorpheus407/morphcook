@@ -1,0 +1,1378 @@
+{
+  "partition": "cuisine-asian",
+  "cuisine_tag": "asian",
+  "recipes": [
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "classic pad thai",
+        "de": "klassisches pad thai"
+      },
+      "summary": {
+        "en": "shrimp, peanuts & tamarind — the wok's greatest hits.",
+        "de": "garnelen, erdnüsse & tamarinde — das beste aus dem wok."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "high-fodmap",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 590,
+      "protein_g": 28,
+      "carbs_g": 68,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "street food"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles in warm water 20 min, drain.",
+            "de": "nudeln 20 min in warmem wasser einweichen, abtropfen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix fish sauce, tamarind, sugar & a splash of water — the sauce.",
+            "de": "fischsauce, tamarinde, zucker & etwas wasser verrühren — die sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp hard in a screaming wok, 90 seconds, set aside.",
+            "de": "garnelen im heißen wok scharf anbraten, 90 sekunden, beiseite."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "scramble the eggs, then garlic & scallion.",
+            "de": "eier rühren, dann knoblauch & frühlingszwiebel."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "in with noodles & sauce, toss until every strand is dressed.",
+            "de": "nudeln & sauce dazu, schwenken, bis jeder strang bekleidet ist."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "back in: shrimp, sprouts, peanuts. lime on the side.",
+            "de": "zurück: garnelen, sprossen, erdnüsse. limette daneben."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "kitchen_notes": {
+        "en": "a screaming-hot wok is the whole trick. don't be shy.",
+        "de": "ein glühender wok ist der ganze trick. nicht zimperlich sein."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "vegan pad thai",
+        "de": "veganes pad thai"
+      },
+      "summary": {
+        "en": "tofu, tamarind & peanut crunch. zero apology.",
+        "de": "tofu, tamarinde & erdnuss-crunch. null entschuldigung."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 540,
+      "protein_g": 22,
+      "carbs_g": 72,
+      "fat_g": 19,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "tamari",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles 20 min; press & cube the tofu.",
+            "de": "nudeln 20 min einweichen; tofu pressen & würfeln."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix tamari, tamarind, sugar & water.",
+            "de": "tamari, tamarinde, zucker & wasser verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "fry tofu until golden & crisp on all sides, set aside.",
+            "de": "tofu von allen seiten goldgelb & knusprig braten, beiseite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "stir-fry garlic & scallion, add noodles & sauce, toss hard.",
+            "de": "knoblauch & frühlingszwiebel anbraten, nudeln & sauce zugeben, kräftig schwenken."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "back in: tofu, sprouts, peanuts. lime to finish.",
+            "de": "zurück: tofu, sprossen, erdnüsse. mit limette abschließen."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-gluten-free",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "gluten-free pad thai",
+        "de": "glutenfreies pad thai"
+      },
+      "summary": {
+        "en": "same sour-sweet swirl, tamari instead of soy.",
+        "de": "dasselbe süß-saure wirbeln, tamari statt sojasauce."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "high-fodmap",
+        "peanuts",
+        "shellfish",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 570,
+      "protein_g": 27,
+      "carbs_g": 68,
+      "fat_g": 20,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles 20 min; prep everything before you start.",
+            "de": "nudeln 20 min einweichen; alles vorbereiten, bevor du startest."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "whisk fish sauce, tamari, tamarind, sugar & water.",
+            "de": "fischsauce, tamari, tamarinde, zucker & wasser verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp 90 seconds, out; scramble eggs, out.",
+            "de": "garnelen 90 sekunden anbraten, raus; eier rühren, raus."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "garlic & scallion, noodles, sauce — toss fast & furious.",
+            "de": "knoblauch & frühlingszwiebel, nudeln, sauce — schnell & heftig schwenken."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "return shrimp & egg, sprouts, peanuts, lime.",
+            "de": "garnelen & ei zurück, sprossen, erdnüsse, limette."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-low-fodmap",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "low-fodmap pad thai",
+        "de": "low-fodmap pad thai"
+      },
+      "summary": {
+        "en": "the full stir-fry feel, without the onion-garlic punch.",
+        "de": "das volle stir-fry gefühl, ohne den zwiebel-knoblauch schlag."
+      },
+      "diet": "low-fodmap",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 550,
+      "protein_g": 28,
+      "carbs_g": 70,
+      "fat_g": 18,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "low-fodmap"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic-infused-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles; slice only the green parts of the scallions.",
+            "de": "nudeln einweichen; nur die grünen teile der frühlingszwiebeln schneiden."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix the sauce: fish sauce, tamarind, sugar, water.",
+            "de": "sauce mischen: fischsauce, tamarinde, zucker, wasser."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp 90 seconds; scramble eggs; set both aside.",
+            "de": "garnelen 90 sekunden braten; eier rühren; beides beiseite."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "toss noodles with garlic-infused oil & green scallion, add sauce.",
+            "de": "nudeln mit knoblauch-öl & grüner frühlingszwiebel schwenken, sauce zugeben."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "return shrimp & egg, add sprouts & peanuts, lime over.",
+            "de": "garnelen & ei zurück, sprossen & erdnüsse zugeben, limette darüber."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "kitchen_notes": {
+        "en": "garlic-infused oil carries the flavour without the fodmaps — a classic low-fodmap trick.",
+        "de": "knoblauch-öl trägt den geschmack ohne die fodmaps — ein klassischer low-fodmap trick."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "title": {
+        "en": "pork tonkotsu ramen",
+        "de": "tonkotsu ramen mit schwein"
+      },
+      "summary": {
+        "en": "a long, milky broth with the patience to prove it.",
+        "de": "eine lange, milchige brühe mit der geduld, es zu beweisen."
+      },
+      "diet": "classic",
+      "contains": [
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer",
+        "boil",
+        "cuisine-asian"
+      ],
+      "time_minutes": 150,
+      "calories_per_serving": 680,
+      "protein_g": 42,
+      "carbs_g": 78,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "noodles",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "pork",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "miso",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer pork with ginger & garlic in broth for 2 hours, skimming.",
+            "de": "schwein mit ingwer & knoblauch 2 stunden in brühe köcheln, abschäumen."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "soft-boil eggs 6.5 min, cool, peel, marinate in soy 10 min.",
+            "de": "eier 6,5 min weichkochen, kühlen, pellen, 10 min in sojasauce legen."
+          },
+          "timer_seconds": 990
+        },
+        {
+          "text": {
+            "en": "shred the pork; keep broth at a low roll.",
+            "de": "schwein zupfen; brühe leise köcheln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds, drain, divide between bowls.",
+            "de": "nudeln 90 sekunden kochen, abgießen, auf schalen verteilen."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "ladle broth over, top with pork, egg, scallion & nori.",
+            "de": "brühe darüber, mit schwein, ei, frühlingszwiebel & nori belegen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "tamari instead of soy keeps this soy-free if you need it.",
+        "de": "tamari statt sojasauce macht das bei bedarf sojafrei."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "ramen-vegan",
+      "dish_id": "ramen",
+      "title": {
+        "en": "miso mushroom ramen",
+        "de": "miso-pilz ramen"
+      },
+      "summary": {
+        "en": "deep, umami, and no animal had to be involved.",
+        "de": "tief, umami, und kein tier musste mitmachen."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 520,
+      "protein_g": 22,
+      "carbs_g": 74,
+      "fat_g": 15,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "noodles",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "miso",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté mushrooms hard until browned; set a few aside for topping.",
+            "de": "pilze kräftig anbraten; einige für das topping beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add ginger, garlic & sesame oil, then broth; simmer 30 min.",
+            "de": "ingwer, knoblauch & sesamöl dazu, dann brühe; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "whisk miso & tamari into a paste, stir into the hot broth.",
+            "de": "miso & tamari zu einer paste rühren, in die heiße brühe einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "pan-fry tofu cubes golden.",
+            "de": "tofu-würfel goldgelb braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds; divide; pour broth; top everything.",
+            "de": "nudeln 90 sekunden kochen; verteilen; brühe drüber; alles belegen."
+          },
+          "timer_seconds": 90
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ramen-halal",
+      "dish_id": "ramen",
+      "title": {
+        "en": "halal chicken ramen",
+        "de": "halal hähnchen-ramen"
+      },
+      "summary": {
+        "en": "halal-compatible chicken, clean broth, deep umami.",
+        "de": "halal-kompatibles hähnchen, klare brühe, tiefes umami."
+      },
+      "diet": "halal",
+      "contains": [
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "poultry",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤800",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 610,
+      "protein_g": 40,
+      "carbs_g": 76,
+      "fat_g": 16,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "halal"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer chicken with ginger & garlic 1 hour; shred.",
+            "de": "hähnchen mit ingwer & knoblauch 1 stunde köcheln; zupfen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "strain the broth; keep it hot.",
+            "de": "brühe abseihen; heiß halten."
+          }
+        },
+        {
+          "text": {
+            "en": "soft-boil eggs 6.5 min, peel, halve.",
+            "de": "eier 6,5 min kochen, pellen, halbieren."
+          },
+          "timer_seconds": 390
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds; divide; broth over.",
+            "de": "nudeln 90 sekunden kochen; verteilen; brühe darüber."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "chicken, egg, scallion, nori, sesame oil.",
+            "de": "hähnchen, ei, frühlingszwiebel, nori, sesamöl."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-classic",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "thai green curry",
+        "de": "thai green curry"
+      },
+      "summary": {
+        "en": "coconut, basil & the friendliest green fire.",
+        "de": "kokos, basilikum & das freundlichste grüne feuer."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 560,
+      "protein_g": 30,
+      "carbs_g": 34,
+      "fat_g": 34,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "coconut"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry curry paste in a few spoonfuls of coconut cream until it smells dangerous.",
+            "de": "currypaste in etwas kokoscreme braten, bis es gefährlich riecht."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "chicken in, coat, 3 min.",
+            "de": "hähnchen rein, überziehen, 3 min."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "rest of the coconut milk, fish sauce & sugar; simmer 15.",
+            "de": "rest kokosmilch, fischsauce & zucker; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "peppers & zucchini in; 5 more.",
+            "de": "paprika & zucchini rein; noch 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "jasmine rice; basil & lime at the end.",
+            "de": "jasminreis; basilikum & limette zum schluss."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-vegan",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "vegan green curry",
+        "de": "veganes green curry"
+      },
+      "summary": {
+        "en": "tofu in the green coconut sea.",
+        "de": "tofu im grünen kokos-meer."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 520,
+      "protein_g": 22,
+      "carbs_g": 38,
+      "fat_g": 32,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry paste in coconut cream until fragrant.",
+            "de": "paste in kokoscreme anbraten, bis es duftet."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "tofu in, golden edges.",
+            "de": "tofu rein, goldene kanten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "coconut milk, tamari & maple; simmer 15.",
+            "de": "kokosmilch, tamari & ahorn; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "veg in; 5 min; rice on.",
+            "de": "gemüse rein; 5 min; reis ansetzen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "basil & lime.",
+            "de": "basilikum & limette."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "curry-gluten-free",
+      "dish_id": "thai-green-curry",
+      "title": {
+        "en": "gluten-free green curry",
+        "de": "glutenfreies green curry"
+      },
+      "summary": {
+        "en": "the classic; the paste does the gluten-free lifting.",
+        "de": "der klassiker; die paste macht die glutenfreie arbeit."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 550,
+      "protein_g": 30,
+      "carbs_g": 34,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "curry",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "jasmine-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "check your paste label — most are naturally gluten-free.",
+            "de": "paste-label prüfen — die meisten sind natürlich glutenfrei."
+          }
+        },
+        {
+          "text": {
+            "en": "fry paste in coconut cream; chicken in.",
+            "de": "paste in kokoscreme anbraten; hähnchen rein."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "coconut milk, fish sauce, sugar; 15 min.",
+            "de": "kokosmilch, fischsauce, zucker; 15 min."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "veg in; rice; basil & lime after.",
+            "de": "gemüse rein; reis; basilikum & limette danach."
+          },
+          "timer_seconds": 300
+        }
+      ],
+      "reviewed": true
+    }
+  ]
+}

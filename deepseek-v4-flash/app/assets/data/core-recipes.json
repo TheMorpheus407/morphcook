@@ -1,0 +1,6738 @@
+{
+  "partition": "core",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "classic döner",
+        "de": "klassischer döner"
+      },
+      "summary": {
+        "en": "lamb & beef from a slow spit, crisp-edged, with good bread.",
+        "de": "lamm & rind vom drehspieß, knusprig geröstet, auf gutem brot."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "grill",
+        "roast",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 620,
+      "protein_g": 38,
+      "carbs_g": 55,
+      "fat_g": 26,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "wrap",
+        "grill"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "ground-beef",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "grate the onion & garlic into the minced meat, add spices & salt.",
+            "de": "zwiebel & knoblauch ins hack reiben, gewürze & salz dazu."
+          }
+        },
+        {
+          "text": {
+            "en": "knead well and press onto a sheet pan in a wide loaf shape.",
+            "de": "gut kneten und als flaches laib auf ein blech drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 220°c, turning once, until deeply browned — about 30 min.",
+            "de": "bei 220°c braten, einmal wenden, bis tiefbraun — ca. 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest the loaf 10 min, then slice thin.",
+            "de": "laib 10 min ruhen lassen, dann dünn aufschneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "warm the pitas, toss cabbage with lemon & salt, slice tomatoes & cucumber.",
+            "de": "pitas erwärmen, kohl mit zitrone & salz mischen, tomaten & gurke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "swipe yogurt over bread, pile on meat & salad, roll it up.",
+            "de": "joghurt aufs brot, fleisch & salat drauf, einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "don't skip the resting — it keeps the slices juicy.",
+        "de": "das ruhen nicht überspringen — das hält die scheiben saftig."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "vegan döner",
+        "de": "veganer döner"
+      },
+      "summary": {
+        "en": "seitan on a spit-shape, charred & crisp, all the fixings.",
+        "de": "seitan in drehspieß-form, scharf & knusprig, alle zutaten."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "roast",
+        "grill",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 520,
+      "protein_g": 27,
+      "carbs_g": 62,
+      "fat_g": 18,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "wrap",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "seitan",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix grated onion, garlic, cumin, paprika & chili with the seitan.",
+            "de": "geriebene zwiebel, knoblauch, kreuzkümmel, paprika & chili mit seitan mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "mould into a loaf on a sheet pan, press tight.",
+            "de": "auf dem blech zu einem laib formen, fest drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 210°c until the surface is deeply charred — about 35 min.",
+            "de": "bei 210°c rösten, bis die oberfläche tief gebräunt ist — ca. 35 min."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "rest 10 min, slice thin against the grain.",
+            "de": "10 min ruhen, gegen die faser dünn schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "warm pitas; cabbage with lemon & salt, tomato & cucumber slices.",
+            "de": "pitas erwärmen; kohl mit zitrone & salz, tomaten- & gurkenscheiben."
+          }
+        },
+        {
+          "text": {
+            "en": "vegan mayo on the bread, then meat & salad, roll tight.",
+            "de": "vegane mayo aufs brot, dann fleisch & salat, fest einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "tahini instead of mayo is also very right.",
+        "de": "tahini statt mayo ist auch sehr richtig."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "title": {
+        "en": "keto döner bowl",
+        "de": "keto döner bowl"
+      },
+      "summary": {
+        "en": "all the döner, none of the bread. charred meat on greens.",
+        "de": "der ganze döner, ohne brot. scharfes fleisch auf salat."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "grill",
+        "pan-fry",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 480,
+      "protein_g": 36,
+      "carbs_g": 9,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "döner",
+        "keto",
+        "bowl",
+        "low carb"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "lettuce",
+          "amount": 1.0,
+          "unit": "head"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "greek-yogurt",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "season the mince with cumin, paprika, garlic & salt.",
+            "de": "hack mit kreuzkümmel, paprika, knoblauch & salz würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "press into a wide pan and sear until a crust forms, then chop it up.",
+            "de": "in einer großen pfanne flach drücken und scharf anbraten, dann zerkleinern."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice lettuce, cucumber & tomato.",
+            "de": "salat, gurke & tomate schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "stir lemon & salt into the yogurt.",
+            "de": "zitrone & salz in den joghurt rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "pile greens, meat & yogurt. no bread, no regrets.",
+            "de": "salat, fleisch & joghurt anrichten. kein brot, keine reue."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "halal döner",
+        "de": "halal döner"
+      },
+      "summary": {
+        "en": "halal-compatible lamb döner, crisp & proper.",
+        "de": "halal-kompatibler lammsdöner, knusprig & richtig."
+      },
+      "diet": "halal",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "roast",
+        "grill",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 45,
+      "calories_per_serving": 590,
+      "protein_g": 36,
+      "carbs_g": 52,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "döner",
+        "street food",
+        "halal",
+        "wrap"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "amount": 700.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "pita",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cabbage",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "grate onion & garlic into the lamb with the spices.",
+            "de": "zwiebel & knoblauch mit den gewürzen ins lamm reiben."
+          }
+        },
+        {
+          "text": {
+            "en": "press into a loaf on a sheet pan.",
+            "de": "auf dem blech zu einem laib drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "roast at 220°c until charred at the edges, ~30 min.",
+            "de": "bei 220°c rösten, bis die ränder dunkel sind, ca. 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest, slice thin; warm the pitas.",
+            "de": "ruhen lassen, dünn schneiden; pitas erwärmen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "toss cabbage with lemon; slice tomato & cucumber.",
+            "de": "kohl mit zitrone mischen; tomate & gurke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "build: yogurt, meat, salad, roll.",
+            "de": "bauen: joghurt, fleisch, salat, einrollen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "check the yogurt for halal-compatible ingredients if it matters to you.",
+        "de": "joghurt bei bedarf auf halal-kompatible zutaten prüfen."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "silky alfredo",
+        "de": "butteriges alfredo"
+      },
+      "summary": {
+        "en": "parmesan & cream doing a slow dance with fettuccine.",
+        "de": "parmesan & sahne tanzen langsam mit fettuccine."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "stir-fry",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 680,
+      "protein_g": 22,
+      "carbs_g": 68,
+      "fat_g": 35,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta in heavily salted water, save a cup of the starchy water.",
+            "de": "pasta in stark gesalzenem wasser kochen, eine tasse nudelwasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt butter with garlic over low heat, never browning.",
+            "de": "butter mit knoblauch bei niedriger hitze schmelzen, nicht bräunen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "pour in cream and simmer gently 3 min.",
+            "de": "sahne angießen und 3 min sanft köcheln."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "drag the pasta into the sauce with a splash of pasta water.",
+            "de": "pasta mit etwas nudelwasser in die sauce ziehen."
+          }
+        },
+        {
+          "text": {
+            "en": "off the heat: rain in parmesan, toss until it turns glossy.",
+            "de": "vom herd: parmesan hineinrieseln lassen, schwenken bis es glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "a wallop of black pepper, and done.",
+            "de": "mit viel schwarzem pfeffer, fertig."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "the sauce looks broken for a second — keep tossing, it heals.",
+        "de": "die sauce sieht kurz getrennt aus — weiter schwenken, sie heilt."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "gluten-free alfredo",
+        "de": "glutenfreies alfredo"
+      },
+      "summary": {
+        "en": "the same silk, on rice noodles that hold their own.",
+        "de": "dieselbe seide, auf reisnudeln, die sich behaupten."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 640,
+      "protein_g": 20,
+      "carbs_g": 62,
+      "fat_g": 34,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook rice noodles per packet, drain, keep some water.",
+            "de": "reisnudeln nach packung kochen, abgießen, etwas wasser behalten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "melt butter & garlic low and slow.",
+            "de": "butter & knoblauch langsam schmelzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "add cream, simmer 3 min.",
+            "de": "sahne dazu, 3 min köcheln."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "fold in noodles, then parmesan, loosening with noodle water.",
+            "de": "nudeln unterheben, dann parmesan, mit nudelwasser lockern."
+          }
+        },
+        {
+          "text": {
+            "en": "pepper it boldly. serve immediately.",
+            "de": "kräftig pfeffern. sofort servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "vegan alfredo",
+        "de": "veganes alfredo"
+      },
+      "summary": {
+        "en": "cashew cream & nooch, slick as the original.",
+        "de": "cashew-sahne & hefeflocken, so sämig wie das original."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "blend",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 560,
+      "protein_g": 18,
+      "carbs_g": 66,
+      "fat_g": 25,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "cashews",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 250.0,
+          "unit": "ml"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 30.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak cashews in boiling water 15 min.",
+            "de": "cashews 15 min in kochendem wasser einweichen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend cashews with oat milk until completely smooth.",
+            "de": "cashews mit hafermilch völlig glatt mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water.",
+            "de": "pasta kochen; wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften garlic in olive oil, add the cream & nutritional yeast.",
+            "de": "knoblauch in olivenöl andünsten, sahne & hefeflocken zugeben."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss pasta through, loosen with starchy water, finish with lemon.",
+            "de": "pasta darin schwenken, mit nudelwasser lockern, mit zitrone abschließen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "nutritional yeast is the parmesan whisperer.",
+        "de": "hefeflocken sind das parmesan-gemurmel."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-lactose-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "lactose-free alfredo",
+        "de": "laktosefreies alfredo"
+      },
+      "summary": {
+        "en": "the full butter-sauce feeling, minus the lactose.",
+        "de": "das volle buttersaucen-gefühl, ohne laktose."
+      },
+      "diet": "lactose-free",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 650,
+      "protein_g": 22,
+      "carbs_g": 68,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "lactose-free"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-oil",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta; save a cup of water.",
+            "de": "pasta kochen; eine tasse wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt coconut oil with garlic low heat.",
+            "de": "kokosöl mit knoblauch bei niedriger hitze schmelzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "whisk in oat milk, simmer 3 min until it tightens.",
+            "de": "hafermilch einrühren, 3 min köcheln, bis es andickt."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss pasta in, add nutritional yeast & pasta water, toss glossy.",
+            "de": "pasta unterheben, hefeflocken & nudelwasser zugeben, glänzend schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "pepper heavily, serve.",
+            "de": "stark pfeffern, servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "classic pad thai",
+        "de": "klassisches pad thai"
+      },
+      "summary": {
+        "en": "shrimp, peanuts & tamarind — the wok's greatest hits.",
+        "de": "garnelen, erdnüsse & tamarinde — das beste aus dem wok."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "high-fodmap",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 590,
+      "protein_g": 28,
+      "carbs_g": 68,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "street food"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles in warm water 20 min, drain.",
+            "de": "nudeln 20 min in warmem wasser einweichen, abtropfen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix fish sauce, tamarind, sugar & a splash of water — the sauce.",
+            "de": "fischsauce, tamarinde, zucker & etwas wasser verrühren — die sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp hard in a screaming wok, 90 seconds, set aside.",
+            "de": "garnelen im heißen wok scharf anbraten, 90 sekunden, beiseite."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "scramble the eggs, then garlic & scallion.",
+            "de": "eier rühren, dann knoblauch & frühlingszwiebel."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "in with noodles & sauce, toss until every strand is dressed.",
+            "de": "nudeln & sauce dazu, schwenken, bis jeder strang bekleidet ist."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "back in: shrimp, sprouts, peanuts. lime on the side.",
+            "de": "zurück: garnelen, sprossen, erdnüsse. limette daneben."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "kitchen_notes": {
+        "en": "a screaming-hot wok is the whole trick. don't be shy.",
+        "de": "ein glühender wok ist der ganze trick. nicht zimperlich sein."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "vegan pad thai",
+        "de": "veganes pad thai"
+      },
+      "summary": {
+        "en": "tofu, tamarind & peanut crunch. zero apology.",
+        "de": "tofu, tamarinde & erdnuss-crunch. null entschuldigung."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 540,
+      "protein_g": 22,
+      "carbs_g": 72,
+      "fat_g": 19,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "tamari",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles 20 min; press & cube the tofu.",
+            "de": "nudeln 20 min einweichen; tofu pressen & würfeln."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix tamari, tamarind, sugar & water.",
+            "de": "tamari, tamarinde, zucker & wasser verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "fry tofu until golden & crisp on all sides, set aside.",
+            "de": "tofu von allen seiten goldgelb & knusprig braten, beiseite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "stir-fry garlic & scallion, add noodles & sauce, toss hard.",
+            "de": "knoblauch & frühlingszwiebel anbraten, nudeln & sauce zugeben, kräftig schwenken."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "back in: tofu, sprouts, peanuts. lime to finish.",
+            "de": "zurück: tofu, sprossen, erdnüsse. mit limette abschließen."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-gluten-free",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "gluten-free pad thai",
+        "de": "glutenfreies pad thai"
+      },
+      "summary": {
+        "en": "same sour-sweet swirl, tamari instead of soy.",
+        "de": "dasselbe süß-saure wirbeln, tamari statt sojasauce."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "high-fodmap",
+        "peanuts",
+        "shellfish",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 570,
+      "protein_g": 27,
+      "carbs_g": 68,
+      "fat_g": 20,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles 20 min; prep everything before you start.",
+            "de": "nudeln 20 min einweichen; alles vorbereiten, bevor du startest."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "whisk fish sauce, tamari, tamarind, sugar & water.",
+            "de": "fischsauce, tamari, tamarinde, zucker & wasser verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp 90 seconds, out; scramble eggs, out.",
+            "de": "garnelen 90 sekunden anbraten, raus; eier rühren, raus."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "garlic & scallion, noodles, sauce — toss fast & furious.",
+            "de": "knoblauch & frühlingszwiebel, nudeln, sauce — schnell & heftig schwenken."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "return shrimp & egg, sprouts, peanuts, lime.",
+            "de": "garnelen & ei zurück, sprossen, erdnüsse, limette."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pad-thai-low-fodmap",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "low-fodmap pad thai",
+        "de": "low-fodmap pad thai"
+      },
+      "summary": {
+        "en": "the full stir-fry feel, without the onion-garlic punch.",
+        "de": "das volle stir-fry gefühl, ohne den zwiebel-knoblauch schlag."
+      },
+      "diet": "low-fodmap",
+      "contains": [
+        "added-sugar",
+        "egg",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "stir-fry",
+        "cuisine-asian"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 550,
+      "protein_g": 28,
+      "carbs_g": 70,
+      "fat_g": 18,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "thai",
+        "noodles",
+        "wok",
+        "low-fodmap"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic-infused-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "peanuts",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak noodles; slice only the green parts of the scallions.",
+            "de": "nudeln einweichen; nur die grünen teile der frühlingszwiebeln schneiden."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "mix the sauce: fish sauce, tamarind, sugar, water.",
+            "de": "sauce mischen: fischsauce, tamarinde, zucker, wasser."
+          }
+        },
+        {
+          "text": {
+            "en": "sear shrimp 90 seconds; scramble eggs; set both aside.",
+            "de": "garnelen 90 sekunden braten; eier rühren; beides beiseite."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "toss noodles with garlic-infused oil & green scallion, add sauce.",
+            "de": "nudeln mit knoblauch-öl & grüner frühlingszwiebel schwenken, sauce zugeben."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "return shrimp & egg, add sprouts & peanuts, lime over.",
+            "de": "garnelen & ei zurück, sprossen & erdnüsse zugeben, limette darüber."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "kitchen_notes": {
+        "en": "garlic-infused oil carries the flavour without the fodmaps — a classic low-fodmap trick.",
+        "de": "knoblauch-öl trägt den geschmack ohne die fodmaps — ein klassischer low-fodmap trick."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "tacos-classic",
+      "dish_id": "tacos",
+      "title": {
+        "en": "beef tacos",
+        "de": "rindfleisch-tacos"
+      },
+      "summary": {
+        "en": "spiced ground beef, lime crema & a double corn tortilla.",
+        "de": "würziges rinderhack, limetten-crema & doppelte maistortilla."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "pan-fry"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 540,
+      "protein_g": 30,
+      "carbs_g": 46,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "mexican",
+        "street food",
+        "beef"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "tortilla",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-powder",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lettuce",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "sour-cream",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the beef hard, breaking it up.",
+            "de": "rinderhack scharf anbraten und zerkleinern."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add onion & garlic, cook until soft.",
+            "de": "zwiebel & knoblauch dazu, weich braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir in cumin, paprika, chili & salt; a splash of water, simmer 5.",
+            "de": "kreuzkümmel, paprika, chili & salz einrühren; schluck wasser, 5 min köcheln."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "stir lime into the sour cream.",
+            "de": "limette in den schmand rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "warm tortillas in a dry pan, 20 seconds per side.",
+            "de": "tortillas in trockener pfanne erwärmen, 20 sekunden pro seite."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "fill, crema, tomato, lettuce, cilantro. fold. eat. repeat.",
+            "de": "füllen, crema, tomate, salat, koriander. falten. essen. wiederholen."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "tacos-vegan",
+      "dish_id": "tacos",
+      "title": {
+        "en": "mushroom & black bean tacos",
+        "de": "pilz & bohnen tacos"
+      },
+      "summary": {
+        "en": "meaty mushrooms, smoky beans, lime crema without the dairy.",
+        "de": "fleischige pilze, rauchige bohnen, limetten-crema ohne milch."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 470,
+      "protein_g": 16,
+      "carbs_g": 62,
+      "fat_g": 17,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "mexican",
+        "street food",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "tortilla",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté mushrooms in batches until truly brown.",
+            "de": "pilze in portionen richtig braun braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add onion, garlic, cumin & smoked paprika.",
+            "de": "zwiebel, knoblauch, kreuzkümmel & räucherpaprika dazu."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "stir in beans with their liquid, simmer 5.",
+            "de": "bohnen mit flüssigkeit einrühren, 5 min köcheln."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "blend mayo, avocado & lime into a crema.",
+            "de": "mayo, avocado & limette zu einer crema mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "warm tortillas; build with beans, crema, cilantro.",
+            "de": "tortillas erwärmen; bohnen, crema, koriander belegen."
+          },
+          "timer_seconds": 120
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "tacos-keto",
+      "dish_id": "tacos",
+      "title": {
+        "en": "keto beef taco bowls",
+        "de": "keto taco bowls"
+      },
+      "summary": {
+        "en": "all the taco energy in a lettuce cup.",
+        "de": "die ganze taco-energie im salat-blatt."
+      },
+      "diet": "keto",
+      "contains": [
+        "beef",
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 460,
+      "protein_g": 32,
+      "carbs_g": 11,
+      "fat_g": 30,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "mexican",
+        "keto",
+        "low carb"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "lettuce",
+          "amount": 1.0,
+          "unit": "head"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "cheddar",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "sour-cream",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef, then cumin, paprika & salt.",
+            "de": "hack anbraten, dann kreuzkümmel, paprika & salz."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add diced bell pepper, 5 min.",
+            "de": "gewürfelte paprika dazu, 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "separate big sturdy lettuce cups.",
+            "de": "große feste salatblätter lösen."
+          }
+        },
+        {
+          "text": {
+            "en": "fill cups: beef, cheese, crema, avocado, lime.",
+            "de": "blätter füllen: hack, käse, crema, avocado, limette."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "tacos-halal",
+      "dish_id": "tacos",
+      "title": {
+        "en": "halal chicken tacos",
+        "de": "halal hähnchen-tacos"
+      },
+      "summary": {
+        "en": "halal-compatible chicken, charred & lime-slicked.",
+        "de": "halal-kompatibles hähnchen, verkohlt & mit limette."
+      },
+      "diet": "halal",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "grill"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 500,
+      "protein_g": 34,
+      "carbs_g": 46,
+      "fat_g": 19,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "mexican",
+        "street food",
+        "halal"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "tortilla",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lettuce",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "yogurt",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "chop chicken into small pieces, toss with cumin, paprika, turmeric, salt.",
+            "de": "hähnchen klein schneiden, mit kreuzkümmel, paprika, kurkuma, salz mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "sear in a hot pan until charred at the edges.",
+            "de": "in heißer pfanne braten, bis die ränder verkohlt sind."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add onion, cook 3 min.",
+            "de": "zwiebel zugeben, 3 min braten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "lime & salt into the yogurt; warm tortillas.",
+            "de": "limette & salz in den joghurt; tortillas erwärmen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "build with tomato, lettuce, crema, cilantro.",
+            "de": "mit tomate, salat, crema, koriander belegen."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "title": {
+        "en": "pork tonkotsu ramen",
+        "de": "tonkotsu ramen mit schwein"
+      },
+      "summary": {
+        "en": "a long, milky broth with the patience to prove it.",
+        "de": "eine lange, milchige brühe mit der geduld, es zu beweisen."
+      },
+      "diet": "classic",
+      "contains": [
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer",
+        "boil",
+        "cuisine-asian"
+      ],
+      "time_minutes": 150,
+      "calories_per_serving": 680,
+      "protein_g": 42,
+      "carbs_g": 78,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "noodles",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "pork",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "miso",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer pork with ginger & garlic in broth for 2 hours, skimming.",
+            "de": "schwein mit ingwer & knoblauch 2 stunden in brühe köcheln, abschäumen."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "soft-boil eggs 6.5 min, cool, peel, marinate in soy 10 min.",
+            "de": "eier 6,5 min weichkochen, kühlen, pellen, 10 min in sojasauce legen."
+          },
+          "timer_seconds": 990
+        },
+        {
+          "text": {
+            "en": "shred the pork; keep broth at a low roll.",
+            "de": "schwein zupfen; brühe leise köcheln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds, drain, divide between bowls.",
+            "de": "nudeln 90 sekunden kochen, abgießen, auf schalen verteilen."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "ladle broth over, top with pork, egg, scallion & nori.",
+            "de": "brühe darüber, mit schwein, ei, frühlingszwiebel & nori belegen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "tamari instead of soy keeps this soy-free if you need it.",
+        "de": "tamari statt sojasauce macht das bei bedarf sojafrei."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "ramen-vegan",
+      "dish_id": "ramen",
+      "title": {
+        "en": "miso mushroom ramen",
+        "de": "miso-pilz ramen"
+      },
+      "summary": {
+        "en": "deep, umami, and no animal had to be involved.",
+        "de": "tief, umami, und kein tier musste mitmachen."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-asian"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 520,
+      "protein_g": 22,
+      "carbs_g": 74,
+      "fat_g": 15,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "noodles",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "miso",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté mushrooms hard until browned; set a few aside for topping.",
+            "de": "pilze kräftig anbraten; einige für das topping beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "add ginger, garlic & sesame oil, then broth; simmer 30 min.",
+            "de": "ingwer, knoblauch & sesamöl dazu, dann brühe; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "whisk miso & tamari into a paste, stir into the hot broth.",
+            "de": "miso & tamari zu einer paste rühren, in die heiße brühe einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "pan-fry tofu cubes golden.",
+            "de": "tofu-würfel goldgelb braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds; divide; pour broth; top everything.",
+            "de": "nudeln 90 sekunden kochen; verteilen; brühe drüber; alles belegen."
+          },
+          "timer_seconds": 90
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ramen-halal",
+      "dish_id": "ramen",
+      "title": {
+        "en": "halal chicken ramen",
+        "de": "halal hähnchen-ramen"
+      },
+      "summary": {
+        "en": "halal-compatible chicken, clean broth, deep umami.",
+        "de": "halal-kompatibles hähnchen, klare brühe, tiefes umami."
+      },
+      "diet": "halal",
+      "contains": [
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "poultry",
+        "soy"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤800",
+        "simmer",
+        "cuisine-asian"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 610,
+      "protein_g": 40,
+      "carbs_g": 76,
+      "fat_g": 16,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "japanese",
+        "soup",
+        "halal"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-broth",
+          "amount": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "noodles",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "scallion",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nori",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "simmer chicken with ginger & garlic 1 hour; shred.",
+            "de": "hähnchen mit ingwer & knoblauch 1 stunde köcheln; zupfen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "strain the broth; keep it hot.",
+            "de": "brühe abseihen; heiß halten."
+          }
+        },
+        {
+          "text": {
+            "en": "soft-boil eggs 6.5 min, peel, halve.",
+            "de": "eier 6,5 min kochen, pellen, halbieren."
+          },
+          "timer_seconds": 390
+        },
+        {
+          "text": {
+            "en": "cook noodles 90 seconds; divide; broth over.",
+            "de": "nudeln 90 sekunden kochen; verteilen; brühe darüber."
+          },
+          "timer_seconds": 90
+        },
+        {
+          "text": {
+            "en": "chicken, egg, scallion, nori, sesame oil.",
+            "de": "hähnchen, ei, frühlingszwiebel, nori, sesamöl."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "shakshuka",
+        "de": "shakshuka"
+      },
+      "summary": {
+        "en": "eggs poached in a pepper-tomato riot.",
+        "de": "eier pochiert im paprika-tomaten aufstand."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 420,
+      "protein_g": 20,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "brunch"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil, 8 min.",
+            "de": "zwiebel & paprika in olivenöl weich braten, 8 min."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "garlic, cumin, paprika, chili — one fragrant minute.",
+            "de": "knoblauch, kreuzkümmel, paprika, chili — eine duftende minute."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "pour in tomatoes, simmer 15 min until thick.",
+            "de": "tomaten angießen, 15 min köcheln, bis es dick wird."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "make wells; crack in the eggs; lid on 6-8 min, whites set.",
+            "de": "mulden formen; eier aufschlagen; deckel drauf 6-8 min, eiweiß gestockt."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley over. bread for mopping, obviously.",
+            "de": "feta & petersilie drüber. brot zum auftunken, klar."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "vegan shakshuka",
+        "de": "vegane shakshuka"
+      },
+      "summary": {
+        "en": "the same red riot, with silken tofu standing in.",
+        "de": "derselbe rote aufstand, mit seidentofu als einspringer."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤400",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 380,
+      "protein_g": 18,
+      "carbs_g": 30,
+      "fat_g": 21,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "brunch"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "bread",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil.",
+            "de": "zwiebel & paprika in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices in, then tomatoes; simmer 15 min.",
+            "de": "gewürze rein, dann tomaten; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "slide in big slabs of silken tofu.",
+            "de": "große stücke seidentofu hineingleiten lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "lid on, 8 min, gently warm through.",
+            "de": "deckel drauf, 8 min, sanft durchwärmen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "parsley & black pepper. bread on standby.",
+            "de": "petersilie & pfeffer. brot in bereitschaft."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-gluten-free",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "gluten-free shakshuka",
+        "de": "glutenfreie shakshuka"
+      },
+      "summary": {
+        "en": "the classic, with a gluten-free bread to mop.",
+        "de": "der klassiker, mit glutenfreiem brot zum auftunken."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤600",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 420,
+      "protein_g": 20,
+      "carbs_g": 28,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & peppers in olive oil.",
+            "de": "zwiebel & paprika in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices, tomatoes, 15 min simmer.",
+            "de": "gewürze, tomaten, 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "thicken with rice flour stirred into a splash of water.",
+            "de": "mit reismehl in etwas wasser andicken."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "poach the eggs, lid on 6-8 min.",
+            "de": "eier pochieren, deckel 6-8 min."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley; gluten-free bread for the mopping.",
+            "de": "feta & petersilie; glutenfreies brot zum auftunken."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "shakshuka-keto",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "keto shakshuka",
+        "de": "keto shakshuka"
+      },
+      "summary": {
+        "en": "eggs & peppers, zero carbs apologising.",
+        "de": "eier & paprika, null kohlenhydrate die sich entschuldigen."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤400",
+        "simmer",
+        "cuisine-middle-eastern"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 380,
+      "protein_g": 22,
+      "carbs_g": 12,
+      "fat_g": 28,
+      "servings": 4,
+      "meal_types": [
+        "breakfast",
+        "dinner"
+      ],
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "keto"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "amount": 6.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "feta",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion, peppers & garlic in olive oil.",
+            "de": "zwiebel, paprika & knoblauch in olivenöl weich braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices, tomatoes, simmer until thick, 12 min.",
+            "de": "gewürze, tomaten, köcheln bis es dick wird, 12 min."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "poach eggs in wells, lid on.",
+            "de": "eier in mulden pochieren, deckel drauf."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "feta & parsley. no bread required — it's already perfect.",
+            "de": "feta & petersilie. kein brot nötig — es ist schon perfekt."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "carbonara",
+        "de": "carbonara"
+      },
+      "summary": {
+        "en": "guanciale energy, egg gloss, pepper like rain.",
+        "de": "guanciale-energie, ei-glanz, pfeffer wie regen."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "pork"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "sauté",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 640,
+      "protein_g": 26,
+      "carbs_g": 68,
+      "fat_g": 28,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "classic"
+      ],
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta in salted water; reserve a cup.",
+            "de": "pasta in salzwasser kochen; eine tasse aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fry bacon until crisp, not brittle.",
+            "de": "speck knusprig braten, nicht spröde."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan & a lot of pepper.",
+            "de": "eier, parmesan & viel pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "drag pasta into the pan off the heat.",
+            "de": "pasta bei ausgeschalteter hitze in die pfanne ziehen."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in the egg mix with a splash of pasta water, fast.",
+            "de": "ei-mix mit etwas nudelwasser schnell einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "serve before anyone can argue.",
+            "de": "servieren, bevor jemand diskutieren kann."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-vegetarian",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "vegetarian carbonara",
+        "de": "vegetarische carbonara"
+      },
+      "summary": {
+        "en": "smoky mushrooms stand in for the guanciale.",
+        "de": "rauchige pilze vertreten das guanciale."
+      },
+      "diet": "vegetarian",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 590,
+      "protein_g": 24,
+      "carbs_g": 66,
+      "fat_g": 25,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry mushrooms hard with smoked paprika until browned.",
+            "de": "pilze mit räucherpaprika kräftig braten, bis sie braun sind."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water.",
+            "de": "pasta kochen; wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan, pepper.",
+            "de": "eier, parmesan, pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "toss pasta with mushrooms off heat.",
+            "de": "pasta bei ausgeschalteter hitze mit pilzen schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in egg mix + pasta water, fast, glossy.",
+            "de": "ei-mix + nudelwasser schnell einrühren, glänzend."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-vegan",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "vegan carbonara",
+        "de": "vegane carbonara"
+      },
+      "summary": {
+        "en": "smoky tofu & a silky cashew sauce. the argument continues.",
+        "de": "rauchiger tofu & eine seidige cashew-sauce. die debatte geht weiter."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "blend",
+        "cuisine-italian"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 540,
+      "protein_g": 20,
+      "carbs_g": 64,
+      "fat_g": 23,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 30.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak cashews 15 min in hot water.",
+            "de": "cashews 15 min in heißem wasser einweichen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend cashews, oat milk, nutritional yeast & pepper until silky.",
+            "de": "cashews, hafermilch, hefeflocken & pfeffer seidig mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "crumble tofu, fry with smoked paprika until crispy.",
+            "de": "tofu zerkrümeln, mit räucherpaprika knusprig braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water; toss with tofu off heat.",
+            "de": "pasta kochen; wasser aufheben; bei ausgeschalteter hitze mit tofu schwenken."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stir in cashew sauce + pasta water to loosen. pepper hard.",
+            "de": "cashew-sauce + nudelwasser einrühren. kräftig pfeffern."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-gluten-free",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "gluten-free carbonara",
+        "de": "glutenfreie carbonara"
+      },
+      "summary": {
+        "en": "the full gloss, on rice spaghetti.",
+        "de": "der volle glanz, auf reis-spaghetti."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "egg",
+        "pork"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 600,
+      "protein_g": 24,
+      "carbs_g": 62,
+      "fat_g": 27,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-noodles",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook rice spaghetti; reserve water.",
+            "de": "reis-spaghetti kochen; wasser aufheben."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry bacon crisp.",
+            "de": "speck knusprig braten."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan, pepper.",
+            "de": "eier, parmesan, pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "off heat: pasta in, egg mix in, toss fast.",
+            "de": "ohne hitze: pasta rein, ei-mix rein, schnell schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "loosen with pasta water, serve now.",
+            "de": "mit nudelwasser lockern, sofort servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "butter-chicken-classic",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "butter chicken",
+        "de": "butter chicken"
+      },
+      "summary": {
+        "en": "tomato, cream & the softest heat, over basmati.",
+        "de": "tomate, sahne & die sanfteste schärfe, auf basmati."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 640,
+      "protein_g": 38,
+      "carbs_g": 52,
+      "fat_g": 29,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "indian",
+        "curry",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 150.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "marinate chicken in yogurt, half the spices, ginger & garlic — 30 min.",
+            "de": "hähnchen in joghurt, der hälfte der gewürze, ingwer & knoblauch marinieren — 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "sear chicken in butter until browned, set aside.",
+            "de": "hähnchen in butter anbraten, beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry remaining spices 1 min, add tomatoes; simmer 15.",
+            "de": "restliche gewürze 1 min rösten, tomaten dazu; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend the sauce until velvet-smooth.",
+            "de": "sauce samtweich mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "return chicken + cream, simmer 10 more.",
+            "de": "hähnchen + sahne zurück, noch 10 min köcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "basmati & cilantro. butter on everything, honestly.",
+            "de": "basmati & koriander. butter auf alles, ehrlich."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "butter-chicken-vegan",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "vegan butter \"chicken\"",
+        "de": "veganes butter \"chicken\""
+      },
+      "summary": {
+        "en": "tofu in the velvet tomato sauce, nobody's missing anything.",
+        "de": "tofu in der samtigen tomatensauce, niemand vermisst etwas."
+      },
+      "diet": "vegan",
+      "contains": [
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 520,
+      "protein_g": 24,
+      "carbs_g": 54,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "indian",
+        "curry",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "press & cube tofu; sear in oil until golden.",
+            "de": "tofu pressen & würfeln; in öl goldgelb braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry ginger, garlic & spices 1 min.",
+            "de": "ingwer, knoblauch & gewürze 1 min rösten."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "tomatoes in, simmer 15, blend smooth.",
+            "de": "tomaten rein, 15 min köcheln, glatt mixen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "coconut milk in, tofu in, simmer 10.",
+            "de": "kokosmilch rein, tofu rein, 10 min köcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "rice & cilantro. done deal.",
+            "de": "reis & koriander. abgemacht."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "butter-chicken-halal",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "halal butter chicken",
+        "de": "halal butter chicken"
+      },
+      "summary": {
+        "en": "halal-compatible chicken in the classic velvet.",
+        "de": "halal-kompatibles hähnchen im klassischen samt."
+      },
+      "diet": "halal",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "simmer"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 620,
+      "protein_g": 38,
+      "carbs_g": 52,
+      "fat_g": 27,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "indian",
+        "curry",
+        "halal"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 150.0,
+          "unit": "ml"
+        },
+        {
+          "id": "ghee",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "marinate chicken in yogurt & spices, 30 min.",
+            "de": "hähnchen in joghurt & gewürzen marinieren, 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "sear in ghee, set aside.",
+            "de": "in ghee anbraten, beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "spices 1 min; tomatoes; simmer 15; blend.",
+            "de": "gewürze 1 min; tomaten; 15 min köcheln; mixen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "chicken + cream back, 10 min.",
+            "de": "hähnchen + sahne zurück, 10 min."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "basmati & cilantro.",
+            "de": "basmati & koriander."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "butter-chicken-keto",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "keto butter chicken",
+        "de": "keto butter chicken"
+      },
+      "summary": {
+        "en": "the velvet sauce minus the rice.",
+        "de": "die samtige sauce ohne reis."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer"
+      ],
+      "time_minutes": 50,
+      "calories_per_serving": 520,
+      "protein_g": 36,
+      "carbs_g": 12,
+      "fat_g": 36,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "indian",
+        "curry",
+        "keto"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "ginger",
+          "amount": 20.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cauliflower",
+          "amount": 0.5,
+          "unit": "head"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sear chicken in butter, set aside.",
+            "de": "hähnchen in butter anbraten, beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "ginger, garlic & spices 1 min; tomatoes in; simmer 15.",
+            "de": "ingwer, knoblauch & gewürze 1 min; tomaten rein; 15 min köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend smooth; chicken + cream back, 10 min.",
+            "de": "glatt mixen; hähnchen + sahne zurück, 10 min."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "rice the cauliflower, steam 3 min.",
+            "de": "blumenkohl reiseln, 3 min dämpfen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "sauce over cauliflower rice. the bowl forgives all.",
+            "de": "sauce über blumenkohlreis. die schale verzeiht alles."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-classic",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "margherita",
+        "de": "margherita"
+      },
+      "summary": {
+        "en": "tomato, mozzarella, basil, and a crust worth the fight.",
+        "de": "tomate, mozzarella, basilikum & ein boden, der den kampf wert ist."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "knead",
+        "cuisine-italian"
+      ],
+      "time_minutes": 120,
+      "calories_per_serving": 720,
+      "protein_g": 28,
+      "carbs_g": 88,
+      "fat_g": 26,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix flour, yeast & salt; add water; knead 10 min into a smooth dough.",
+            "de": "mehl, hefe & salz mischen; wasser zugeben; 10 min zu glattem teig kneten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "rise 1 hour, covered, until doubled.",
+            "de": "1 stunde zugedeckt gehen lassen, bis es sich verdoppelt."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "crush tomatoes with salt & olive oil.",
+            "de": "tomaten mit salz & olivenöl zerdrücken."
+          }
+        },
+        {
+          "text": {
+            "en": "stretch dough into rounds; spread tomato; tear on mozzarella.",
+            "de": "teig zu runden ziehen; tomate drauf; mozzarella zerreißen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 250°c, hottest your oven goes, 8-10 min.",
+            "de": "bei 250°c backen, so heiß es geht, 8-10 min."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "basil after, olive oil after, slice. no knives at the table.",
+            "de": "basilikum danach, olivenöl danach, schneiden. keine messer am tisch."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-vegan",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "vegan margherita",
+        "de": "vegane margherita"
+      },
+      "summary": {
+        "en": "tomato, basil & the creamiest dairy-free melt.",
+        "de": "tomate, basilikum & der cremigste pflanzliche schmelz."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 120,
+      "calories_per_serving": 640,
+      "protein_g": 20,
+      "carbs_g": 86,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 100.0,
+          "unit": "ml"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead the dough 10 min; rise 1 hour.",
+            "de": "teig 10 min kneten; 1 stunde gehen lassen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "soak cashews 15 min; blend with coconut milk until thick & smooth.",
+            "de": "cashews 15 min einweichen; mit kokosmilch dick & glatt mixen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "crush tomatoes with salt & oil.",
+            "de": "tomaten mit salz & öl zerdrücken."
+          }
+        },
+        {
+          "text": {
+            "en": "stretch, sauce, spoon blobs of cashew mozzarella.",
+            "de": "ziehen, sauce, kleckse cashew-mozzarella drauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake hot 8-10 min; basil after.",
+            "de": "heiß 8-10 min backen; basilikum danach."
+          },
+          "timer_seconds": 540
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-gluten-free",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "gluten-free margherita",
+        "de": "glutenfreie margherita"
+      },
+      "summary": {
+        "en": "a crisp rice-flour crust that holds its head high.",
+        "de": "ein knuspriger reismehlboden mit erhobenem haupt."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 580,
+      "protein_g": 18,
+      "carbs_g": 78,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-flour",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "tapioca",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "quick-yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix rice flour, tapioca, yeast & salt; add warm water; rest 30 min.",
+            "de": "reismehl, tapioka, hefe & salz mischen; warmes wasser; 30 min ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "press the sticky dough thin with wet hands.",
+            "de": "den klebrigen teig mit nassen händen dünn drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "tomato, mozzarella.",
+            "de": "tomate, mozzarella."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 240°c until the rim is dark & crisp, 12 min.",
+            "de": "bei 240°c backen, bis der rand dunkel & knusprig ist, 12 min."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "basil & oil after.",
+            "de": "basilikum & öl danach."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-low-fodmap",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "low-fodmap margherita",
+        "de": "low-fodmap margherita"
+      },
+      "summary": {
+        "en": "garlic-free tomato, mozzarella & basil, quietly perfect.",
+        "de": "knoblauchfreie tomate, mozzarella & basilikum, leise perfekt."
+      },
+      "diet": "low-fodmap",
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 640,
+      "protein_g": 26,
+      "carbs_g": 84,
+      "fat_g": 23,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "low-fodmap"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "oregano",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead dough; rise 1 hour.",
+            "de": "teig kneten; 1 stunde gehen lassen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "simmer tomatoes with oregano & salt, 10 min — no garlic needed.",
+            "de": "tomaten mit oregano & salz 10 min köcheln — ohne knoblauch."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stretch, sauce, mozzarella.",
+            "de": "ziehen, sauce, mozzarella."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 250°c, 8-10 min; basil after.",
+            "de": "bei 250°c backen, 8-10 min; basilikum danach."
+          },
+          "timer_seconds": 540
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "oatmeal-classic",
+      "dish_id": "oatmeal",
+      "title": {
+        "en": "creamy oatmeal",
+        "de": "cremiger haferbrei"
+      },
+      "summary": {
+        "en": "slow oats, warm milk, a quiet sunrise in a bowl.",
+        "de": "langsame haferflocken, warme milch, ein stiller sonnenaufgang in der schale."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "honey",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 380,
+      "protein_g": 14,
+      "carbs_g": 58,
+      "fat_g": 10,
+      "servings": 2,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "comfort",
+        "warm"
+      ],
+      "ingredients": [
+        {
+          "id": "rolled-oats",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "banana",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cinnamon",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "honey",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "walnuts",
+          "amount": 30.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "oats & milk in a small pot, low heat.",
+            "de": "haferflocken & milch in einen kleinen topf, niedrige hitze."
+          }
+        },
+        {
+          "text": {
+            "en": "stir slowly 8 min until thick & dreamy.",
+            "de": "8 min langsam rühren, bis es dick & traumhaft ist."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "banana slices, cinnamon, honey, walnuts.",
+            "de": "bananenscheiben, zimt, honig, walnüsse."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "oatmeal-vegan",
+      "dish_id": "oatmeal",
+      "title": {
+        "en": "vegan oatmeal",
+        "de": "veganer haferbrei"
+      },
+      "summary": {
+        "en": "oat milk, maple, banana. no cow required.",
+        "de": "hafermilch, ahorn, banane. keine kuh nötig."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 370,
+      "protein_g": 11,
+      "carbs_g": 64,
+      "fat_g": 8,
+      "servings": 2,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "vegan",
+        "warm"
+      ],
+      "ingredients": [
+        {
+          "id": "rolled-oats",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "banana",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cinnamon",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "almonds",
+          "amount": 30.0,
+          "unit": "g"
+        },
+        {
+          "id": "chia",
+          "amount": 1.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "oats & oat milk, low heat, 8 min.",
+            "de": "haferflocken & hafermilch, niedrige hitze, 8 min."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "chia in, stir 2 more.",
+            "de": "chia rein, noch 2 min rühren."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "banana, cinnamon, maple, almonds.",
+            "de": "banane, zimt, ahorn, mandeln."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "oatmeal-gluten-free",
+      "dish_id": "oatmeal",
+      "title": {
+        "en": "gluten-free oatmeal",
+        "de": "glutenfreier haferbrei"
+      },
+      "summary": {
+        "en": "certified oats — the same warm hug, minus the gluten.",
+        "de": "zertifizierter hafer — dieselbe warme umarmung, ohne gluten."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "honey",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 380,
+      "protein_g": 14,
+      "carbs_g": 58,
+      "fat_g": 10,
+      "servings": 2,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "gluten-free",
+        "warm"
+      ],
+      "ingredients": [
+        {
+          "id": "rolled-oats",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "banana",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cinnamon",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "honey",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "walnuts",
+          "amount": 30.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "use certified gluten-free oats — check the bag.",
+            "de": "zertifizierte glutenfreie haferflocken nehmen — auf die tüte schauen."
+          }
+        },
+        {
+          "text": {
+            "en": "cook with milk 8 min, stirring.",
+            "de": "mit milch 8 min rührend kochen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "banana, cinnamon, honey, walnuts.",
+            "de": "banane, zimt, honig, walnüsse."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "oatmeal-lactose-free",
+      "dish_id": "oatmeal",
+      "title": {
+        "en": "lactose-free oatmeal",
+        "de": "laktosefreier haferbrei"
+      },
+      "summary": {
+        "en": "the creamiest lactose-free start of the day.",
+        "de": "der cremigste laktosefreie tagesanfang."
+      },
+      "diet": "lactose-free",
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": [
+        "easy",
+        "≤15",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 15,
+      "calories_per_serving": 370,
+      "protein_g": 12,
+      "carbs_g": 60,
+      "fat_g": 9,
+      "servings": 2,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "lactose-free",
+        "warm"
+      ],
+      "ingredients": [
+        {
+          "id": "rolled-oats",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "banana",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cinnamon",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sunflower-seeds",
+          "amount": 30.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "oats & oat milk, 8 min on low.",
+            "de": "haferflocken & hafermilch, 8 min auf niedrig."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "maple in, stir.",
+            "de": "ahornsirup rein, rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "banana, cinnamon, sunflower seeds.",
+            "de": "banane, zimt, sonnenblumenkerne."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pancakes-classic",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "fluffy pancakes",
+        "de": "fluffige pfannkuchen"
+      },
+      "summary": {
+        "en": "a stack of weekend, with maple on top.",
+        "de": "ein stapel wochenende, mit ahornsirup obendrauf."
+      },
+      "diet": "classic",
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 520,
+      "protein_g": 15,
+      "carbs_g": 74,
+      "fat_g": 18,
+      "servings": 4,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "sweet",
+        "weekend"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "butter",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 8.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "strawberry",
+          "amount": 1.0,
+          "unit": "punnet"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk flour, baking powder, sugar & salt.",
+            "de": "mehl, backpulver, zucker & salz verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "egg & milk in, whisk until just smooth — lumps are fine.",
+            "de": "ei & milch dazu, bis es gerade glatt ist — klümpchen ok."
+          }
+        },
+        {
+          "text": {
+            "en": "rest 5 min while the pan heats.",
+            "de": "5 min ruhen, während die pfanne heiß wird."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "butter the pan; ladle; flip when bubbles burst.",
+            "de": "pfanne mit butter; teig hinein; wenden, wenn blasen platzen."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "stack, maple, strawberries. no judgement.",
+            "de": "stapeln, ahorn, erdbeeren. keine verurteilung."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pancakes-vegan",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "vegan pancakes",
+        "de": "vegane pfannkuchen"
+      },
+      "summary": {
+        "en": "flax egg, oat milk, all the fluff.",
+        "de": "flax-ei, hafermilch, aller fluff."
+      },
+      "diet": "vegan",
+      "contains": [
+        "added-sugar",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 480,
+      "protein_g": 12,
+      "carbs_g": 78,
+      "fat_g": 13,
+      "servings": 4,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "vegan",
+        "sweet"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 350.0,
+          "unit": "ml"
+        },
+        {
+          "id": "flax",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "coconut-oil",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 8.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "banana",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "flax + 3 tbsp water, sit 5 min — the \"egg\".",
+            "de": "flax + 3 el wasser, 5 min stehen — das \"ei\"."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "whisk flour, baking powder, sugar, salt.",
+            "de": "mehl, backpulver, zucker, salz verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "oat milk, flax egg & melted coconut oil in, whisk.",
+            "de": "hafermilch, flax-ei & geschmolzenes kokosöl rein, verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "fry on a buttered-ish pan, flip on bubbles.",
+            "de": "auf leicht gefetteter pfanne braten, bei blasen wenden."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "banana, maple, done.",
+            "de": "banane, ahorn, fertig."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pancakes-gluten-free",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "gluten-free pancakes",
+        "de": "glutenfreie pfannkuchen"
+      },
+      "summary": {
+        "en": "oat flour fluff, no gluten in the building.",
+        "de": "hafermehl-fluff, kein gluten im gebäude."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 500,
+      "protein_g": 14,
+      "carbs_g": 72,
+      "fat_g": 17,
+      "servings": 4,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "gluten-free",
+        "sweet"
+      ],
+      "ingredients": [
+        {
+          "id": "oat-flour",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "butter",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 8.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk oat flour, baking powder, sugar & salt.",
+            "de": "hafermehl, backpulver, zucker & salz verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "egg & milk in; rest 5 min — oat flour needs it.",
+            "de": "ei & milch rein; 5 min ruhen — hafermehl braucht das."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "fry on butter, flip on bubbles, keep them modest.",
+            "de": "in butter braten, bei blasen wenden, bescheiden halten."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "maple & butter. all good.",
+            "de": "ahorn & butter. alles gut."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pancakes-keto",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "almond flour pancakes",
+        "de": "mandelmehl-pfannkuchen"
+      },
+      "summary": {
+        "en": "almond flour pancakes that don't taste like a compromise.",
+        "de": "mandelmehl-pfannkuchen ohne kompromiss-geschmack."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "egg"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 420,
+      "protein_g": 18,
+      "carbs_g": 10,
+      "fat_g": 34,
+      "servings": 4,
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "breakfast",
+        "keto",
+        "low carb"
+      ],
+      "ingredients": [
+        {
+          "id": "almond-flour",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cream-cheese",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "vanilla-extract",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "butter",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "erythritol",
+          "amount": 2.0,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "blend eggs, cream cheese, vanilla & erythritol until smooth.",
+            "de": "eier, frischkäse, vanille & erythrit glatt mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "almond flour & baking powder in; rest 5 min.",
+            "de": "mandelmehl & backpulver rein; 5 min ruhen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "small pancakes on butter — they're delicate.",
+            "de": "kleine pfannkuchen auf butter — sie sind zart."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "butter & a few berries if you want. done.",
+            "de": "butter & ein paar beeren nach lust. fertig."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burger-classic",
+      "dish_id": "burger",
+      "title": {
+        "en": "the classic burger",
+        "de": "der klassische burger"
+      },
+      "summary": {
+        "en": "a crusty beef patty, melted cheddar, honesty in a bun.",
+        "de": "knuspriges rindfleisch-patty, geschmolzener cheddar, ehrlichkeit im brötchen."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "meat-dairy-combo",
+        "mustard"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "pan-fry",
+        "grill"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 680,
+      "protein_g": 36,
+      "carbs_g": 46,
+      "fat_g": 38,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "burger",
+        "american",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "burger-bun",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cheddar",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lettuce",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "pickles",
+          "amount": 8.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ketchup",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mayonnaise",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mustard",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "form 4 loose patties, generous, thumb-print in the middle.",
+            "de": "4 lockere patties formen, großzügig, daumendruck in die mitte."
+          }
+        },
+        {
+          "text": {
+            "en": "season hard; sear in a screaming pan, 3 min a side.",
+            "de": "kräftig würzen; in glühender pfanne 3 min pro seite braten."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "cheese on, lid on, 1 min to melt.",
+            "de": "käse drauf, deckel drauf, 1 min schmelzen."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "toast buns in the fat, cut-side down.",
+            "de": "brötchen im fett rösten, schnittseite nach unten."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "build: sauce both halves, lettuce, tomato, onion, patty, pickles.",
+            "de": "bauen: sauce auf beide hälften, salat, tomate, zwiebel, patty, gurken."
+          }
+        },
+        {
+          "text": {
+            "en": "press gently. surrender.",
+            "de": "sanft drücken. ergeben."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burger-vegan",
+      "dish_id": "burger",
+      "title": {
+        "en": "the vegan burger",
+        "de": "der vegane burger"
+      },
+      "summary": {
+        "en": "charred black bean patty, smoky mayo, zero missing.",
+        "de": "verkohltes bohnen-patty, rauchige mayo, null vermisst."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 560,
+      "protein_g": 22,
+      "carbs_g": 62,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "burger",
+        "vegan",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "black-beans",
+          "amount": 2.0,
+          "unit": "can"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "burger-bun",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lettuce",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ketchup",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "sauté onion & garlic; mash beans roughly; combine all.",
+            "de": "zwiebel & knoblauch anbraten; bohnen grob zerdrücken; alles mischen."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "season with cumin, smoked paprika, salt; form 4 patties.",
+            "de": "mit kreuzkümmel, räucherpaprika, salz würzen; 4 patties formen."
+          }
+        },
+        {
+          "text": {
+            "en": "chill 15 min so they hold.",
+            "de": "15 min kühlen, damit sie halten."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "fry in oil until deeply browned both sides.",
+            "de": "in öl von beiden seiten tiefbraun braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "toast buns; build with mayo, ketchup, avocado, tomato, lettuce.",
+            "de": "brötchen rösten; mit mayo, ketchup, avocado, tomate, salat bauen."
+          },
+          "timer_seconds": 120
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burger-keto",
+      "dish_id": "burger",
+      "title": {
+        "en": "keto burger",
+        "de": "keto burger"
+      },
+      "summary": {
+        "en": "everything burger, nothing bun. lettuce is listening.",
+        "de": "alles am burger, nichts vom brot. salat hört zu."
+      },
+      "diet": "keto",
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "mustard",
+        "pork"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 560,
+      "protein_g": 38,
+      "carbs_g": 10,
+      "fat_g": 40,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "burger",
+        "keto",
+        "low carb"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "cheddar",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "bacon",
+          "amount": 8.0,
+          "unit": "slice"
+        },
+        {
+          "id": "lettuce",
+          "amount": 1.0,
+          "unit": "head"
+        },
+        {
+          "id": "tomato",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "mayonnaise",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mustard",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook bacon until crisp; patties in the same pan.",
+            "de": "speck knusprig braten; patties in derselben pfanne."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "sear patties 3 min a side; cheese melt under a lid.",
+            "de": "patties 3 min pro seite braten; käse unter deckel schmelzen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "wrap in double lettuce leaves — big, sturdy ones.",
+            "de": "in doppelte salatblätter wickeln — große, feste."
+          }
+        },
+        {
+          "text": {
+            "en": "mayo & mustard, tomato, onion, bacon, patty. wrap tight.",
+            "de": "mayo & senf, tomate, zwiebel, speck, patty. fest wickeln."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burger-halal",
+      "dish_id": "burger",
+      "title": {
+        "en": "halal beef burger",
+        "de": "halal rindfleisch-burger"
+      },
+      "summary": {
+        "en": "halal-compatible beef, charred, cheddar-covered.",
+        "de": "halal-kompatibles rind, verkohlt, mit cheddar."
+      },
+      "diet": "halal",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "pan-fry"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 650,
+      "protein_g": 36,
+      "carbs_g": 46,
+      "fat_g": 36,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "burger",
+        "halal",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "burger-bun",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cheddar",
+          "amount": 120.0,
+          "unit": "g"
+        },
+        {
+          "id": "lettuce",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "tomato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "pickles",
+          "amount": 8.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ketchup",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mayonnaise",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mustard",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "form 4 patties; season.",
+            "de": "4 patties formen; würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "sear 3 min a side; cheddar melt under lid.",
+            "de": "3 min pro seite braten; cheddar unter deckel schmelzen."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "toast buns in the pan.",
+            "de": "brötchen in der pfanne rösten."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "build with all the sauces & crunch.",
+            "de": "mit allen saucen & crunch bauen."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burrito-classic",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "chicken burrito bowl",
+        "de": "hähnchen burrito bowl"
+      },
+      "summary": {
+        "en": "charred chicken, lime rice, all the friends.",
+        "de": "verkohltes hähnchen, limettenreis, alle freunde."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "sauté",
+        "simmer"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 620,
+      "protein_g": 40,
+      "carbs_g": 64,
+      "fat_g": 20,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "mexican",
+        "bowl",
+        "meal prep"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "corn",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "sour-cream",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rice with a pinch of salt & a lime half, cook.",
+            "de": "reis mit einer prise salz & einer limettenhälfte kochen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "season chicken; sear until charred; rest, then slice.",
+            "de": "hähnchen würzen; verkohlt anbraten; ruhen, dann schneiden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "peppers & onion in the same pan, 5 min.",
+            "de": "paprika & zwiebel in derselben pfanne, 5 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "beans & corn warmed with cumin & paprika.",
+            "de": "bohnen & mais mit kreuzkümmel & paprika erwärmen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "build bowls: rice, chicken, veg, beans, avocado, crema, lime.",
+            "de": "bowls bauen: reis, hähnchen, gemüse, bohnen, avocado, crema, limette."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burrito-vegan",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "vegan burrito bowl",
+        "de": "veganer burrito bowl"
+      },
+      "summary": {
+        "en": "lime rice, smoky beans & everything green.",
+        "de": "limettenreis, rauchige bohnen & alles grüne."
+      },
+      "diet": "vegan",
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté"
+      ],
+      "time_minutes": 35,
+      "calories_per_serving": 540,
+      "protein_g": 19,
+      "carbs_g": 76,
+      "fat_g": 17,
+      "servings": 4,
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "tags": [
+        "mexican",
+        "bowl",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "corn",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "sweet-potato",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-mayo",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "roast sweet potato cubes with cumin & smoked paprika, 20 min.",
+            "de": "süßkartoffelwürfel mit kreuzkümmel & räucherpaprika 20 min rösten."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "cook rice with lime.",
+            "de": "reis mit limette kochen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "sauté peppers & onion; warm beans & corn.",
+            "de": "paprika & zwiebel anbraten; bohnen & mais erwärmen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "mayo + lime + salt = crema.",
+            "de": "mayo + limette + salz = crema."
+          }
+        },
+        {
+          "text": {
+            "en": "bowls: rice, sweet potato, veg, beans, avocado, crema.",
+            "de": "bowls: reis, süßkartoffel, gemüse, bohnen, avocado, crema."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burrito-keto",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "keto burrito bowl",
+        "de": "keto burrito bowl"
+      },
+      "summary": {
+        "en": "the whole fiesta, rice politely excused.",
+        "de": "die ganze fiesta, reis höflich entschuldigt."
+      },
+      "diet": "keto",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 540,
+      "protein_g": 40,
+      "carbs_g": 12,
+      "fat_g": 36,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "mexican",
+        "keto",
+        "bowl"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "cauliflower",
+          "amount": 0.5,
+          "unit": "head"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "cheddar",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "sour-cream",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "lime",
+          "amount": 2.0,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "season & sear chicken; slice.",
+            "de": "hähnchen würzen & anbraten; schneiden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "rice the cauliflower; sauté 3 min.",
+            "de": "blumenkohl reiseln; 3 min anbraten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "peppers & onion, 5 min, with spices.",
+            "de": "paprika & zwiebel, 5 min, mit gewürzen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "bowls: cauli rice, chicken, veg, cheese, crema, avocado.",
+            "de": "bowls: blumenkohlreis, hähnchen, gemüse, käse, crema, avocado."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "burrito-halal",
+      "dish_id": "burrito-bowl",
+      "title": {
+        "en": "halal burrito bowl",
+        "de": "halal burrito bowl"
+      },
+      "summary": {
+        "en": "halal-compatible chicken over lime rice.",
+        "de": "halal-kompatibles hähnchen auf limettenreis."
+      },
+      "diet": "halal",
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤800",
+        "sauté"
+      ],
+      "time_minutes": 40,
+      "calories_per_serving": 610,
+      "protein_g": 40,
+      "carbs_g": 64,
+      "fat_g": 19,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "mexican",
+        "bowl",
+        "halal"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "corn",
+          "amount": 1.0,
+          "unit": "can"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "ground-cumin",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "yogurt",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook rice with lime & salt.",
+            "de": "reis mit limette & salz kochen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "season & sear chicken until charred; slice.",
+            "de": "hähnchen würzen & verkohlt braten; schneiden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "peppers & onion 5 min; beans & corn warmed.",
+            "de": "paprika & zwiebel 5 min; bohnen & mais erwärmt."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "yogurt + lime = crema.",
+            "de": "joghurt + limette = crema."
+          }
+        },
+        {
+          "text": {
+            "en": "build the bowl, cilantro on top.",
+            "de": "die bowl bauen, koriander obendrauf."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ratatouille-classic",
+      "dish_id": "ratatouille",
+      "title": {
+        "en": "ratatouille",
+        "de": "ratatouille"
+      },
+      "summary": {
+        "en": "summer vegetables, cooked without hurry.",
+        "de": "sommergemüse, ohne eile gekocht."
+      },
+      "diet": "classic",
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤400",
+        "simmer",
+        "roast"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 260,
+      "protein_g": 7,
+      "carbs_g": 32,
+      "fat_g": 13,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "provencal",
+        "vegetables",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "eggplant",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "thyme",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "salt the eggplant & zucchini, sit 20 min, pat dry.",
+            "de": "aubergine & zucchini salzen, 20 min stehen, trocken tupfen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "brown them in olive oil in batches.",
+            "de": "in olivenöl in portionen braun braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "soften onion & peppers, add garlic 1 min.",
+            "de": "zwiebel & paprika weich braten, knoblauch 1 min."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes, thyme, bay leaf in; simmer 30 min.",
+            "de": "tomaten, thymian, lorbeer rein; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "fold the eggplant & zucchini back, 10 more.",
+            "de": "aubergine & zucchini zurückfalten, noch 10 min."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "basil & olive oil. serve warm or at room temperature, both correct.",
+            "de": "basilikum & olivenöl. warm oder zimmertemperatur, beides richtig."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ratatouille-low-fodmap",
+      "dish_id": "ratatouille",
+      "title": {
+        "en": "low-fodmap ratatouille",
+        "de": "low-fodmap ratatouille"
+      },
+      "summary": {
+        "en": "the same slow summer, onion & garlic free.",
+        "de": "derselbe langsame sommer, ohne zwiebel & knoblauch."
+      },
+      "diet": "low-fodmap",
+      "contains": [],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 250,
+      "protein_g": 6,
+      "carbs_g": 34,
+      "fat_g": 12,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "provencal",
+        "vegetables",
+        "low-fodmap"
+      ],
+      "ingredients": [
+        {
+          "id": "eggplant",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "leek",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "thyme",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "salt eggplant & zucchini 20 min, pat dry.",
+            "de": "aubergine & zucchini 20 min salzen, trocken tupfen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "brown in olive oil; set aside.",
+            "de": "in olivenöl braun braten; beiseite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "soften the green part of the leek with peppers.",
+            "de": "den grünen teil des lauchs mit paprika weich braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes, thyme, bay in; 30 min simmer.",
+            "de": "tomaten, thymian, lorbeer rein; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "eggplant & zucchini back, 10 more; basil after.",
+            "de": "aubergine & zucchini zurück, noch 10; basilikum danach."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ratatouille-keto",
+      "dish_id": "ratatouille",
+      "title": {
+        "en": "keto ratatouille",
+        "de": "keto ratatouille"
+      },
+      "summary": {
+        "en": "the classic stew, already low-carb. no changes needed.",
+        "de": "der klassische eintopf, schon kohlenhydratarm. keine änderungen nötig."
+      },
+      "diet": "keto",
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤400",
+        "simmer"
+      ],
+      "time_minutes": 75,
+      "calories_per_serving": 260,
+      "protein_g": 7,
+      "carbs_g": 32,
+      "fat_g": 13,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "provencal",
+        "vegetables",
+        "keto"
+      ],
+      "ingredients": [
+        {
+          "id": "eggplant",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "zucchini",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "onion",
+          "amount": 2.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 4.0,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "thyme",
+          "amount": 1.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "salt eggplant & zucchini, 20 min, dry.",
+            "de": "aubergine & zucchini salzen, 20 min, trocknen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "brown in batches.",
+            "de": "in portionen bräunen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "soften onion & peppers, garlic in.",
+            "de": "zwiebel & paprika weich, knoblauch rein."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomatoes & thyme, 30 min.",
+            "de": "tomaten & thymian, 30 min."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "back in the fried veg, 10 min; basil.",
+            "de": "gebratenes gemüse zurück, 10 min; basilikum."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "reviewed": true
+    }
+  ]
+}

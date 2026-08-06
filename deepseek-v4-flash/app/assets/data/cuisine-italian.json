@@ -1,0 +1,1905 @@
+{
+  "partition": "cuisine-italian",
+  "cuisine_tag": "italian",
+  "recipes": [
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "silky alfredo",
+        "de": "butteriges alfredo"
+      },
+      "summary": {
+        "en": "parmesan & cream doing a slow dance with fettuccine.",
+        "de": "parmesan & sahne tanzen langsam mit fettuccine."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "stir-fry",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 680,
+      "protein_g": 22,
+      "carbs_g": 68,
+      "fat_g": 35,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta in heavily salted water, save a cup of the starchy water.",
+            "de": "pasta in stark gesalzenem wasser kochen, eine tasse nudelwasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt butter with garlic over low heat, never browning.",
+            "de": "butter mit knoblauch bei niedriger hitze schmelzen, nicht bräunen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "pour in cream and simmer gently 3 min.",
+            "de": "sahne angießen und 3 min sanft köcheln."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "drag the pasta into the sauce with a splash of pasta water.",
+            "de": "pasta mit etwas nudelwasser in die sauce ziehen."
+          }
+        },
+        {
+          "text": {
+            "en": "off the heat: rain in parmesan, toss until it turns glossy.",
+            "de": "vom herd: parmesan hineinrieseln lassen, schwenken bis es glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "a wallop of black pepper, and done.",
+            "de": "mit viel schwarzem pfeffer, fertig."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "the sauce looks broken for a second — keep tossing, it heals.",
+        "de": "die sauce sieht kurz getrennt aus — weiter schwenken, sie heilt."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "gluten-free alfredo",
+        "de": "glutenfreies alfredo"
+      },
+      "summary": {
+        "en": "the same silk, on rice noodles that hold their own.",
+        "de": "dieselbe seide, auf reisnudeln, die sich behaupten."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 640,
+      "protein_g": 20,
+      "carbs_g": 62,
+      "fat_g": 34,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook rice noodles per packet, drain, keep some water.",
+            "de": "reisnudeln nach packung kochen, abgießen, etwas wasser behalten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "melt butter & garlic low and slow.",
+            "de": "butter & knoblauch langsam schmelzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "add cream, simmer 3 min.",
+            "de": "sahne dazu, 3 min köcheln."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "fold in noodles, then parmesan, loosening with noodle water.",
+            "de": "nudeln unterheben, dann parmesan, mit nudelwasser lockern."
+          }
+        },
+        {
+          "text": {
+            "en": "pepper it boldly. serve immediately.",
+            "de": "kräftig pfeffern. sofort servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "vegan alfredo",
+        "de": "veganes alfredo"
+      },
+      "summary": {
+        "en": "cashew cream & nooch, slick as the original.",
+        "de": "cashew-sahne & hefeflocken, so sämig wie das original."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "blend",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 560,
+      "protein_g": 18,
+      "carbs_g": 66,
+      "fat_g": 25,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "cashews",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 250.0,
+          "unit": "ml"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 30.0,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak cashews in boiling water 15 min.",
+            "de": "cashews 15 min in kochendem wasser einweichen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend cashews with oat milk until completely smooth.",
+            "de": "cashews mit hafermilch völlig glatt mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water.",
+            "de": "pasta kochen; wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "soften garlic in olive oil, add the cream & nutritional yeast.",
+            "de": "knoblauch in olivenöl andünsten, sahne & hefeflocken zugeben."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss pasta through, loosen with starchy water, finish with lemon.",
+            "de": "pasta darin schwenken, mit nudelwasser lockern, mit zitrone abschließen."
+          }
+        }
+      ],
+      "kitchen_notes": {
+        "en": "nutritional yeast is the parmesan whisperer.",
+        "de": "hefeflocken sind das parmesan-gemurmel."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "alfredo-lactose-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "lactose-free alfredo",
+        "de": "laktosefreies alfredo"
+      },
+      "summary": {
+        "en": "the full butter-sauce feeling, minus the lactose.",
+        "de": "das volle buttersaucen-gefühl, ohne laktose."
+      },
+      "diet": "lactose-free",
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 20,
+      "calories_per_serving": 650,
+      "protein_g": 22,
+      "carbs_g": 68,
+      "fat_g": 33,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "italian",
+        "lactose-free"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-oil",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 300.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2.0,
+          "unit": "clove"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta; save a cup of water.",
+            "de": "pasta kochen; eine tasse wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt coconut oil with garlic low heat.",
+            "de": "kokosöl mit knoblauch bei niedriger hitze schmelzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "whisk in oat milk, simmer 3 min until it tightens.",
+            "de": "hafermilch einrühren, 3 min köcheln, bis es andickt."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss pasta in, add nutritional yeast & pasta water, toss glossy.",
+            "de": "pasta unterheben, hefeflocken & nudelwasser zugeben, glänzend schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "pepper heavily, serve.",
+            "de": "stark pfeffern, servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "carbonara",
+        "de": "carbonara"
+      },
+      "summary": {
+        "en": "guanciale energy, egg gloss, pepper like rain.",
+        "de": "guanciale-energie, ei-glanz, pfeffer wie regen."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "pork"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤800",
+        "sauté",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 640,
+      "protein_g": 26,
+      "carbs_g": 68,
+      "fat_g": 28,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "classic"
+      ],
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook pasta in salted water; reserve a cup.",
+            "de": "pasta in salzwasser kochen; eine tasse aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fry bacon until crisp, not brittle.",
+            "de": "speck knusprig braten, nicht spröde."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan & a lot of pepper.",
+            "de": "eier, parmesan & viel pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "drag pasta into the pan off the heat.",
+            "de": "pasta bei ausgeschalteter hitze in die pfanne ziehen."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in the egg mix with a splash of pasta water, fast.",
+            "de": "ei-mix mit etwas nudelwasser schnell einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "serve before anyone can argue.",
+            "de": "servieren, bevor jemand diskutieren kann."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-vegetarian",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "vegetarian carbonara",
+        "de": "vegetarische carbonara"
+      },
+      "summary": {
+        "en": "smoky mushrooms stand in for the guanciale.",
+        "de": "rauchige pilze vertreten das guanciale."
+      },
+      "diet": "vegetarian",
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 590,
+      "protein_g": 24,
+      "carbs_g": 66,
+      "fat_g": 25,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "fry mushrooms hard with smoked paprika until browned.",
+            "de": "pilze mit räucherpaprika kräftig braten, bis sie braun sind."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water.",
+            "de": "pasta kochen; wasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan, pepper.",
+            "de": "eier, parmesan, pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "toss pasta with mushrooms off heat.",
+            "de": "pasta bei ausgeschalteter hitze mit pilzen schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in egg mix + pasta water, fast, glossy.",
+            "de": "ei-mix + nudelwasser schnell einrühren, glänzend."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-vegan",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "vegan carbonara",
+        "de": "vegane carbonara"
+      },
+      "summary": {
+        "en": "smoky tofu & a silky cashew sauce. the argument continues.",
+        "de": "rauchiger tofu & eine seidige cashew-sauce. die debatte geht weiter."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "blend",
+        "cuisine-italian"
+      ],
+      "time_minutes": 30,
+      "calories_per_serving": 540,
+      "protein_g": 20,
+      "carbs_g": 64,
+      "fat_g": 23,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "spaghetti",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 200.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 30.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak cashews 15 min in hot water.",
+            "de": "cashews 15 min in heißem wasser einweichen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "blend cashews, oat milk, nutritional yeast & pepper until silky.",
+            "de": "cashews, hafermilch, hefeflocken & pfeffer seidig mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "crumble tofu, fry with smoked paprika until crispy.",
+            "de": "tofu zerkrümeln, mit räucherpaprika knusprig braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "cook pasta; reserve water; toss with tofu off heat.",
+            "de": "pasta kochen; wasser aufheben; bei ausgeschalteter hitze mit tofu schwenken."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stir in cashew sauce + pasta water to loosen. pepper hard.",
+            "de": "cashew-sauce + nudelwasser einrühren. kräftig pfeffern."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "carbonara-gluten-free",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "gluten-free carbonara",
+        "de": "glutenfreie carbonara"
+      },
+      "summary": {
+        "en": "the full gloss, on rice spaghetti.",
+        "de": "der volle glanz, auf reis-spaghetti."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy",
+        "egg",
+        "pork"
+      ],
+      "attributes": [
+        "easy",
+        "≤30",
+        "≤600",
+        "sauté",
+        "cuisine-italian"
+      ],
+      "time_minutes": 25,
+      "calories_per_serving": 600,
+      "protein_g": 24,
+      "carbs_g": 62,
+      "fat_g": 27,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pasta",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-noodles",
+          "amount": 350.0,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4.0,
+          "unit": "piece"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook rice spaghetti; reserve water.",
+            "de": "reis-spaghetti kochen; wasser aufheben."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "fry bacon crisp.",
+            "de": "speck knusprig braten."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "whisk eggs, parmesan, pepper.",
+            "de": "eier, parmesan, pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "off heat: pasta in, egg mix in, toss fast.",
+            "de": "ohne hitze: pasta rein, ei-mix rein, schnell schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "loosen with pasta water, serve now.",
+            "de": "mit nudelwasser lockern, sofort servieren."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-classic",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "margherita",
+        "de": "margherita"
+      },
+      "summary": {
+        "en": "tomato, mozzarella, basil, and a crust worth the fight.",
+        "de": "tomate, mozzarella, basilikum & ein boden, der den kampf wert ist."
+      },
+      "diet": "classic",
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "knead",
+        "cuisine-italian"
+      ],
+      "time_minutes": 120,
+      "calories_per_serving": 720,
+      "protein_g": 28,
+      "carbs_g": 88,
+      "fat_g": 26,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "comfort"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix flour, yeast & salt; add water; knead 10 min into a smooth dough.",
+            "de": "mehl, hefe & salz mischen; wasser zugeben; 10 min zu glattem teig kneten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "rise 1 hour, covered, until doubled.",
+            "de": "1 stunde zugedeckt gehen lassen, bis es sich verdoppelt."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "crush tomatoes with salt & olive oil.",
+            "de": "tomaten mit salz & olivenöl zerdrücken."
+          }
+        },
+        {
+          "text": {
+            "en": "stretch dough into rounds; spread tomato; tear on mozzarella.",
+            "de": "teig zu runden ziehen; tomate drauf; mozzarella zerreißen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 250°c, hottest your oven goes, 8-10 min.",
+            "de": "bei 250°c backen, so heiß es geht, 8-10 min."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "basil after, olive oil after, slice. no knives at the table.",
+            "de": "basilikum danach, olivenöl danach, schneiden. keine messer am tisch."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-vegan",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "vegan margherita",
+        "de": "vegane margherita"
+      },
+      "summary": {
+        "en": "tomato, basil & the creamiest dairy-free melt.",
+        "de": "tomate, basilikum & der cremigste pflanzliche schmelz."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 120,
+      "calories_per_serving": 640,
+      "protein_g": 20,
+      "carbs_g": 86,
+      "fat_g": 24,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 100.0,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 100.0,
+          "unit": "ml"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead the dough 10 min; rise 1 hour.",
+            "de": "teig 10 min kneten; 1 stunde gehen lassen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "soak cashews 15 min; blend with coconut milk until thick & smooth.",
+            "de": "cashews 15 min einweichen; mit kokosmilch dick & glatt mixen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "crush tomatoes with salt & oil.",
+            "de": "tomaten mit salz & öl zerdrücken."
+          }
+        },
+        {
+          "text": {
+            "en": "stretch, sauce, spoon blobs of cashew mozzarella.",
+            "de": "ziehen, sauce, kleckse cashew-mozzarella drauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake hot 8-10 min; basil after.",
+            "de": "heiß 8-10 min backen; basilikum danach."
+          },
+          "timer_seconds": 540
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-gluten-free",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "gluten-free margherita",
+        "de": "glutenfreie margherita"
+      },
+      "summary": {
+        "en": "a crisp rice-flour crust that holds its head high.",
+        "de": "ein knuspriger reismehlboden mit erhobenem haupt."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "dairy"
+      ],
+      "attributes": [
+        "medium",
+        "≤60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 60,
+      "calories_per_serving": 580,
+      "protein_g": 18,
+      "carbs_g": 78,
+      "fat_g": 22,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-flour",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "tapioca",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "quick-yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix rice flour, tapioca, yeast & salt; add warm water; rest 30 min.",
+            "de": "reismehl, tapioka, hefe & salz mischen; warmes wasser; 30 min ruhen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "press the sticky dough thin with wet hands.",
+            "de": "den klebrigen teig mit nassen händen dünn drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "tomato, mozzarella.",
+            "de": "tomate, mozzarella."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 240°c until the rim is dark & crisp, 12 min.",
+            "de": "bei 240°c backen, bis der rand dunkel & knusprig ist, 12 min."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "basil & oil after.",
+            "de": "basilikum & öl danach."
+          }
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pizza-low-fodmap",
+      "dish_id": "pizza-margherita",
+      "title": {
+        "en": "low-fodmap margherita",
+        "de": "low-fodmap margherita"
+      },
+      "summary": {
+        "en": "garlic-free tomato, mozzarella & basil, quietly perfect.",
+        "de": "knoblauchfreie tomate, mozzarella & basilikum, leise perfekt."
+      },
+      "diet": "low-fodmap",
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "attributes": [
+        "medium",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 90,
+      "calories_per_serving": 640,
+      "protein_g": 26,
+      "carbs_g": 84,
+      "fat_g": 23,
+      "servings": 4,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "low-fodmap"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "yeast",
+          "amount": 7.0,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400.0,
+          "unit": "g"
+        },
+        {
+          "id": "oregano",
+          "amount": 1.0,
+          "unit": "tsp"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 250.0,
+          "unit": "g"
+        },
+        {
+          "id": "basil",
+          "amount": 1.0,
+          "unit": "handful"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 2.0,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead dough; rise 1 hour.",
+            "de": "teig kneten; 1 stunde gehen lassen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "simmer tomatoes with oregano & salt, 10 min — no garlic needed.",
+            "de": "tomaten mit oregano & salz 10 min köcheln — ohne knoblauch."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stretch, sauce, mozzarella.",
+            "de": "ziehen, sauce, mozzarella."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 250°c, 8-10 min; basil after.",
+            "de": "bei 250°c backen, 8-10 min; basilikum danach."
+          },
+          "timer_seconds": 540
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-classic",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "beef lasagna",
+        "de": "rindfleisch-lasagne"
+      },
+      "summary": {
+        "en": "layers with a plan: meat, béchamel, patience.",
+        "de": "schichten mit plan: fleisch, béchamel, geduld."
+      },
+      "diet": "classic",
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "simmer",
+        "cuisine-italian"
+      ],
+      "time_minutes": 150,
+      "calories_per_serving": 690,
+      "protein_g": 38,
+      "carbs_g": 58,
+      "fat_g": 32,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "comfort",
+        "freezer friendly"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "flour",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef; onion, garlic, tomato paste; tomatoes in; simmer 45.",
+            "de": "rind anbraten; zwiebel, knoblauch, tomatenmark; tomaten rein; 45 min köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel: melt butter, whisk flour 1 min, milk in, whisk until thick.",
+            "de": "béchamel: butter schmelzen, mehl 1 min verrühren, milch rein, dick rühren."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "nutmeg, salt, half the parmesan into the béchamel.",
+            "de": "muskat, salz, halber parmesan in die béchamel."
+          }
+        },
+        {
+          "text": {
+            "en": "layer: sauce, sheets, béchamel, repeat; mozzarella on top.",
+            "de": "schichten: sauce, platten, béchamel, wiederholen; mozzarella obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake 35 min at 190°c; rest 15 before cutting.",
+            "de": "35 min bei 190°c backen; vor dem schneiden 15 min ruhen."
+          },
+          "timer_seconds": 2100
+        }
+      ],
+      "kitchen_notes": {
+        "en": "freezes beautifully. make two.",
+        "de": "friert wunderbar ein. mach zwei."
+      },
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-vegetarian",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "vegetarian lasagna",
+        "de": "vegetarische lasagne"
+      },
+      "summary": {
+        "en": "mushroom & spinach between the layers.",
+        "de": "pilz & spinat zwischen den schichten."
+      },
+      "diet": "vegetarian",
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 130,
+      "calories_per_serving": 600,
+      "protein_g": 28,
+      "carbs_g": 56,
+      "fat_g": 29,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 500.0,
+          "unit": "g"
+        },
+        {
+          "id": "spinach",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "flour",
+          "amount": 50.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown mushrooms in batches; spinach wilted in after.",
+            "de": "pilze in portionen braten; spinat danach zusammenfallen lassen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "onion, garlic, tomatoes; simmer 30.",
+            "de": "zwiebel, knoblauch, tomaten; 30 min köcheln."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "béchamel with nutmeg & parmesan.",
+            "de": "béchamel mit muskat & parmesan."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "layer; mozzarella top; bake 35.",
+            "de": "schichten; mozzarella drauf; 35 min backen."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "rest 15. the spinach is the hero.",
+            "de": "15 min ruhen. der spinat ist der held."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-vegan",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "vegan lasagna",
+        "de": "vegane lasagne"
+      },
+      "summary": {
+        "en": "lentils, tomato & a cashew-white layer that lies about being dairy.",
+        "de": "linsen, tomate & eine cashew-schicht, die vorgibt, milch zu sein."
+      },
+      "diet": "vegan",
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤600",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 130,
+      "calories_per_serving": 540,
+      "protein_g": 24,
+      "carbs_g": 62,
+      "fat_g": 22,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "vegan"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "amount": 300.0,
+          "unit": "g"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "cashews",
+          "amount": 150.0,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 400.0,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-y",
+          "amount": 40.0,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spinach",
+          "amount": 200.0,
+          "unit": "g"
+        },
+        {
+          "id": "vegan-mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soften onion & garlic; lentils & tomatoes in; simmer 35.",
+            "de": "zwiebel & knoblauch weich; linsen & tomaten rein; 35 min köcheln."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "en": "blend soaked cashews, oat milk & nutritional yeast until silky.",
+            "de": "eingeweichte cashews, hafermilch & hefeflocken seidig mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "wilt spinach in; season.",
+            "de": "spinat zusammenfallen lassen; würzen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "layer sauce, sheets, white layer; vegan mozzarella on top.",
+            "de": "sauce, platten, weiße schicht schichten; veganer mozzarella obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake 35 at 190°c; rest 15.",
+            "de": "35 min bei 190°c backen; 15 min ruhen."
+          },
+          "timer_seconds": 2100
+        }
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lasagna-gluten-free",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "gluten-free lasagna",
+        "de": "glutenfreie lasagne"
+      },
+      "summary": {
+        "en": "rice lasagna sheets doing the heavy lifting.",
+        "de": "reis-lasagneplatten beim schweren heben."
+      },
+      "diet": "gluten-free",
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "hard",
+        ">60",
+        "≤800",
+        "bake",
+        "cuisine-italian"
+      ],
+      "time_minutes": 140,
+      "calories_per_serving": 640,
+      "protein_g": 36,
+      "carbs_g": 56,
+      "fat_g": 31,
+      "servings": 6,
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "italian",
+        "bake",
+        "gluten-free"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 600.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-lasagna-sheets",
+          "amount": 12.0,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 800.0,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1.0,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3.0,
+          "unit": "clove"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600.0,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 60.0,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80.0,
+          "unit": "g"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200.0,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown beef; onion, garlic, tomatoes; simmer 45.",
+            "de": "rind anbraten; zwiebel, knoblauch, tomaten; 45 min köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel with rice flour — whisk well, it thickens late.",
+            "de": "béchamel mit reismehl — gut schlagen, es dickt spät an."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "pre-cook the rice sheets per packet, they're stubborn.",
+            "de": "reisplatten nach packung vorkochen, sie sind stur."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "layer; mozzarella; bake 30 at 190°c.",
+            "de": "schichten; mozzarella; 30 min bei 190°c backen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "rest 15 before the cut.",
+            "de": "vor dem schneiden 15 min ruhen."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "reviewed": true
+    }
+  ]
+}

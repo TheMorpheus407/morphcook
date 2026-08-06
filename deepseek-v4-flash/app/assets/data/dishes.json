@@ -1,0 +1,576 @@
+{
+  "partition": "dishes",
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": {
+        "en": "döner",
+        "de": "döner"
+      },
+      "hero_text": {
+        "en": "the one & only. crisp, charred, unbothered.",
+        "de": "das eine & einzige. knusprig, verkohlt, ungerührt."
+      },
+      "cap_caption": {
+        "en": "kebab of the people, born on a spit, raised on good bread.",
+        "de": "kebab des volkes, geboren am spiess, erzogen auf gutem brot."
+      },
+      "stripe_color": "#c97b5d",
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal"
+      ]
+    },
+    {
+      "id": "alfredo",
+      "canonical_name": {
+        "en": "alfredo",
+        "de": "alfredo"
+      },
+      "hero_text": {
+        "en": "silky. buttery. quietly famous.",
+        "de": "seidig. buttrig. leise berühmt."
+      },
+      "cap_caption": {
+        "en": "the pasta that thinks it's a hug.",
+        "de": "die pasta, die denkt, sie sei eine umarmung."
+      },
+      "stripe_color": "#d9a441",
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "alfredo-classic",
+        "alfredo-gluten-free",
+        "alfredo-vegan",
+        "alfredo-lactose-free"
+      ]
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": {
+        "en": "pad thai",
+        "de": "pad thai"
+      },
+      "hero_text": {
+        "en": "lime, peanuts & a wok that means business.",
+        "de": "limette, erdnüsse & ein wok mit absichten."
+      },
+      "cap_caption": {
+        "en": "stir-fried sunshine with a sour-sweet temper.",
+        "de": "gebratener sonnenschein mit süß-saurem temper."
+      },
+      "stripe_color": "#7b9eab",
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "pad-thai-low-fodmap"
+      ]
+    },
+    {
+      "id": "tacos",
+      "canonical_name": {
+        "en": "tacos",
+        "de": "tacos"
+      },
+      "hero_text": {
+        "en": "fold. fill. forgive nothing.",
+        "de": "falten. füllen. nichts vergeben."
+      },
+      "cap_caption": {
+        "en": "the street corner handshake of dinner.",
+        "de": "der straßenecken-handschlag des abendessens."
+      },
+      "stripe_color": "#d96c5a",
+      "cuisine_tags": [
+        "mexican"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-keto",
+        "tacos-halal"
+      ]
+    },
+    {
+      "id": "ramen",
+      "canonical_name": {
+        "en": "ramen",
+        "de": "ramen"
+      },
+      "hero_text": {
+        "en": "a bowl you could fall asleep in.",
+        "de": "eine schale, in die du einschlafen könntest."
+      },
+      "cap_caption": {
+        "en": "steam, broth & the patience of a slow afternoon.",
+        "de": "dampf, brühe & die geduld eines langsamen nachmittags."
+      },
+      "stripe_color": "#8a6d5a",
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "canonical_name": {
+        "en": "shakshuka",
+        "de": "shakshuka"
+      },
+      "hero_text": {
+        "en": "eggs poached in a tomato riot.",
+        "de": "eier pochiert in einem tomaten-aufstand."
+      },
+      "cap_caption": {
+        "en": "breakfast pretending to be dinner.",
+        "de": "frühstück, das vorgibt, abendessen zu sein."
+      },
+      "stripe_color": "#c9703e",
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-gluten-free",
+        "shakshuka-keto"
+      ]
+    },
+    {
+      "id": "carbonara",
+      "canonical_name": {
+        "en": "carbonara",
+        "de": "carbonara"
+      },
+      "hero_text": {
+        "en": "egg, cheese & pepper. nothing else, thanks.",
+        "de": "ei, käse & pfeffer. sonst nichts, danke."
+      },
+      "cap_caption": {
+        "en": "three ingredients, one perfect argument.",
+        "de": "drei zutaten, ein perfektes argument."
+      },
+      "stripe_color": "#d9a441",
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "carbonara-classic",
+        "carbonara-vegetarian",
+        "carbonara-vegan",
+        "carbonara-gluten-free"
+      ]
+    },
+    {
+      "id": "butter-chicken",
+      "canonical_name": {
+        "en": "butter chicken",
+        "de": "butter chicken"
+      },
+      "hero_text": {
+        "en": "tomato, cream & the softest kind of heat.",
+        "de": "tomate, sahne & die weichste art von hitze."
+      },
+      "cap_caption": {
+        "en": "the hug of north indian cooking.",
+        "de": "die umarmung der nordindischen küche."
+      },
+      "stripe_color": "#c97b5d",
+      "cuisine_tags": [
+        "indian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-halal",
+        "butter-chicken-keto"
+      ]
+    },
+    {
+      "id": "pizza-margherita",
+      "canonical_name": {
+        "en": "pizza margherita",
+        "de": "pizza margherita"
+      },
+      "hero_text": {
+        "en": "tomato, mozzarella, basil. the holy trinity.",
+        "de": "tomate, mozzarella, basilikum. die heilige dreifaltigkeit."
+      },
+      "cap_caption": {
+        "en": "the simplest argument for a wood oven.",
+        "de": "das einfachste argument für einen holzofen."
+      },
+      "stripe_color": "#c9703e",
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "partition_id": "core",
+      "variant_ids": [
+        "pizza-classic",
+        "pizza-vegan",
+        "pizza-gluten-free",
+        "pizza-low-fodmap"
+      ]
+    },
+    {
+      "id": "oatmeal",
+      "canonical_name": {
+        "en": "oatmeal",
+        "de": "haferbrei"
+      },
+      "hero_text": {
+        "en": "a warm, quiet start to the day.",
+        "de": "ein warmer, stiller tagesanfang."
+      },
+      "cap_caption": {
+        "en": "the cosiest possible beginning.",
+        "de": "der gemütlichste mögliche anfang."
+      },
+      "stripe_color": "#b5a642",
+      "cuisine_tags": [
+        "breakfast"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "oatmeal-classic",
+        "oatmeal-vegan",
+        "oatmeal-gluten-free",
+        "oatmeal-lactose-free"
+      ]
+    },
+    {
+      "id": "pancakes",
+      "canonical_name": {
+        "en": "pancakes",
+        "de": "pfannkuchen"
+      },
+      "hero_text": {
+        "en": "a stack of sunday mornings.",
+        "de": "ein stapel sonntagmorgen."
+      },
+      "cap_caption": {
+        "en": "fluffy, maple-soaked, unapologetic.",
+        "de": "fluffig, ahorn-getränkt, ohne reue."
+      },
+      "stripe_color": "#d9a441",
+      "cuisine_tags": [
+        "breakfast"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-keto"
+      ]
+    },
+    {
+      "id": "burger",
+      "canonical_name": {
+        "en": "burger",
+        "de": "burger"
+      },
+      "hero_text": {
+        "en": "two hands, one decision.",
+        "de": "zwei hände, eine entscheidung."
+      },
+      "cap_caption": {
+        "en": "the honest, greasy classic.",
+        "de": "der ehrliche, fettige klassiker."
+      },
+      "stripe_color": "#8a6d5a",
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "burger-classic",
+        "burger-vegan",
+        "burger-keto",
+        "burger-halal"
+      ]
+    },
+    {
+      "id": "burrito-bowl",
+      "canonical_name": {
+        "en": "burrito bowl",
+        "de": "burrito bowl"
+      },
+      "hero_text": {
+        "en": "all the fillings, none of the folding.",
+        "de": "alle füllungen, keinerlei falten."
+      },
+      "cap_caption": {
+        "en": "a salad that got a promotion.",
+        "de": "ein salat, der befördert wurde."
+      },
+      "stripe_color": "#7b9eab",
+      "cuisine_tags": [
+        "mexican"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "burrito-classic",
+        "burrito-vegan",
+        "burrito-keto",
+        "burrito-halal"
+      ]
+    },
+    {
+      "id": "ratatouille",
+      "canonical_name": {
+        "en": "ratatouille",
+        "de": "ratatouille"
+      },
+      "hero_text": {
+        "en": "the slow, patient summer vegetable.",
+        "de": "das langsame, geduldige sommargemüse."
+      },
+      "cap_caption": {
+        "en": "provence, stewed quietly.",
+        "de": "provence, leise geschmort."
+      },
+      "stripe_color": "#4e8d7c",
+      "cuisine_tags": [
+        "mediterranean"
+      ],
+      "frequency_tier": 1,
+      "secondary_partitions": [],
+      "partition_id": "core",
+      "variant_ids": [
+        "ratatouille-classic",
+        "ratatouille-low-fodmap",
+        "ratatouille-keto"
+      ]
+    },
+    {
+      "id": "paella",
+      "canonical_name": {
+        "en": "paella",
+        "de": "paella"
+      },
+      "hero_text": {
+        "en": "a pan wide as a smile.",
+        "de": "eine pfanne, so breit wie ein lächeln."
+      },
+      "cap_caption": {
+        "en": "saffron, rice & the whole coast.",
+        "de": "safran, reis & die ganze küste."
+      },
+      "stripe_color": "#d9a441",
+      "cuisine_tags": [
+        "spanish"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [],
+      "partition_id": "extended",
+      "variant_ids": [
+        "paella-classic",
+        "paella-pescatarian",
+        "paella-vegan"
+      ]
+    },
+    {
+      "id": "goulash",
+      "canonical_name": {
+        "en": "goulash",
+        "de": "gulasch"
+      },
+      "hero_text": {
+        "en": "paprika stew with a long memory.",
+        "de": "paprika-eintopf mit langem gedächtnis."
+      },
+      "cap_caption": {
+        "en": "the pot that fed the whole block.",
+        "de": "der topf, der den ganzen block ernährte."
+      },
+      "stripe_color": "#c97b5d",
+      "cuisine_tags": [
+        "hungarian"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [],
+      "partition_id": "extended",
+      "variant_ids": [
+        "goulash-classic",
+        "goulash-vegan",
+        "goulash-gluten-free"
+      ]
+    },
+    {
+      "id": "falafel",
+      "canonical_name": {
+        "en": "falafel",
+        "de": "falafel"
+      },
+      "hero_text": {
+        "en": "crispy little green coins.",
+        "de": "knusprige kleine grüne münzen."
+      },
+      "cap_caption": {
+        "en": "the vegan street food that needed no apology.",
+        "de": "das vegane streetfood, das keine entschuldigung brauchte."
+      },
+      "stripe_color": "#4e8d7c",
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "partition_id": "extended",
+      "variant_ids": [
+        "falafel-classic",
+        "falafel-gluten-free"
+      ]
+    },
+    {
+      "id": "thai-green-curry",
+      "canonical_name": {
+        "en": "thai green curry",
+        "de": "thai green curry"
+      },
+      "hero_text": {
+        "en": "coconut, chili & a green you can taste.",
+        "de": "kokos, chili & ein grün, das man schmeckt."
+      },
+      "cap_caption": {
+        "en": "the friendly fire of thai cooking.",
+        "de": "das freundliche feuer der thai-küche."
+      },
+      "stripe_color": "#4e8d7c",
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "partition_id": "extended",
+      "variant_ids": [
+        "curry-classic",
+        "curry-vegan",
+        "curry-gluten-free"
+      ]
+    },
+    {
+      "id": "bouillabaisse",
+      "canonical_name": {
+        "en": "bouillabaisse",
+        "de": "bouillabaisse"
+      },
+      "hero_text": {
+        "en": "the fisherman's pot, done properly.",
+        "de": "der topf des fischer, ordentlich gemacht."
+      },
+      "cap_caption": {
+        "en": "marseille in a bowl, garlic & saffron.",
+        "de": "marseille in einer schale, knoblauch & safran."
+      },
+      "stripe_color": "#7b9eab",
+      "cuisine_tags": [
+        "french"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [],
+      "partition_id": "extended",
+      "variant_ids": [
+        "bouillabaisse-classic",
+        "bouillabaisse-pescatarian"
+      ]
+    },
+    {
+      "id": "lasagna",
+      "canonical_name": {
+        "en": "lasagna",
+        "de": "lasagne"
+      },
+      "hero_text": {
+        "en": "layers with a plan.",
+        "de": "schichten mit plan."
+      },
+      "cap_caption": {
+        "en": "the architecture of comfort.",
+        "de": "die architektur des trosts."
+      },
+      "stripe_color": "#c9703e",
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": 2,
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "partition_id": "extended",
+      "variant_ids": [
+        "lasagna-classic",
+        "lasagna-vegetarian",
+        "lasagna-vegan",
+        "lasagna-gluten-free"
+      ]
+    }
+  ]
+}
