@@ -1,0 +1,71 @@
+[
+  {
+    "id": "doener-classic",
+    "dish_id": "doener",
+    "title": { "en": "Classic Street Döner", "de": "Klassischer Street Döner" },
+    "description": {
+      "en": "Thinly spiced shaved beef & lamb, crisp shredded red cabbage, crunchy cucumbers, and garlicky herb yogurt sauce in toasted sesame pita.",
+      "de": "Fein gewürztes Rind- & Lammfleisch, knackiger Rotkohl, Gurken und Knoblauch-Kräuter-Joghurt im gerösteten Fladenbrot."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "620" },
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "calories_per_serving": 620,
+    "macros": { "calories": 620, "protein": 38, "carbs": 58, "fat": 24 },
+    "contains": ["gluten", "dairy", "beef", "lamb", "garlic", "onions"],
+    "ingredient_ids": ["beef", "lamb", "pita-bread", "greek-yogurt", "garlic", "cabbage", "cucumbers", "tomatoes", "red-onion", "cumin", "olive-oil"],
+    "attributes": ["medium", "<=60", "<=800", "pan-fry", "sauté"],
+    "ingredients": [
+      { "id": "beef", "name": { "en": "Shaved Beef Steak", "de": "Rindersteak in Streifen" }, "amount": 250, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "lamb", "name": { "en": "Ground Lamb", "de": "Lammhackfleisch" }, "amount": 100, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "pita-bread", "name": { "en": "Turkish Pita Bread", "de": "Fladenbrot viertel" }, "amount": 2, "unit": "pieces", "aisle": "Bakery" },
+      { "id": "greek-yogurt", "name": { "en": "Greek Yogurt", "de": "Griechischer Joghurt" }, "amount": 150, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "cabbage", "name": { "en": "Shredded Red Cabbage", "de": "Rotkohl feine Streifen" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "tomatoes", "name": { "en": "Tomatoes", "de": "Tomaten gewürfelt" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "red-onion", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "cumin", "name": { "en": "Ground Cumin", "de": "Kreuzkümmel" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Marinate the shaved beef and lamb with cumin, minced garlic, a pinch of salt, and 1 tbsp olive oil.",
+          "de": "Rindfleisch und Lammhack mit Kreuzkümmel, gehacktem Knoblauch, Salz und 1 EL Olivenöl marinieren."
+        },
+        "timer_minutes": 5,
+        "tip": { "en": "Letting it sit at room temperature ensures quick, tender browning.", "de": "Zimmertemperatur sorgt für zartes und schnelles Anbraten." }
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Whisk Greek yogurt with 1 minced garlic clove, salt, black pepper, and a squeeze of fresh lemon juice.",
+          "de": "Griechischen Joghurt mit Knoblauchzehe, Salz, Pfeffer und einem Spritzer Zitrone glattrühren."
+        },
+        "timer_minutes": null,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "Sear meat in a smoking hot skillet with remaining olive oil for 6-8 minutes until deeply browned and crisp around the edges.",
+          "de": "Fleisch in einer sehr heißen Pfanne 6-8 Minuten scharf anbraten, bis es an den Rändern knusprig wird."
+        },
+        "timer_minutes": 7,
+        "tip": { "en": "Do not overcrowd the pan so the meat fries rather than steams.", "de": "Pfanne nicht überfüllen, damit das Fleisch röstet statt kocht." }
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Toast pita quarters. Fill generously with garlic yogurt, crisp cabbage, tomatoes, sumac onions, and hot spiced meat.",
+          "de": "Fladenbrot toasten. Reichlich mit Knoblauchsauce, Rotkohl, Tomaten, Zwiebeln und heißem Fleisch füllen."
+        },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "pasta-arrabbiata",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Fiery Penne All'Arrabbiata", "de": "Feurige Penne All'Arrabbiata" },
+    "description": {
+      "en": "Classic Roman pasta with garlic, tomatoes, and dried red chili peppers cooked in olive oil with fresh parsley.",
+      "de": "Römischer Pastaklassiker mit Knoblauch, Tomaten und feurigen Chilischoten in Olivenöl mit Petersilie."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "410" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "calories_per_serving": 410,
+    "macros": { "calories": 410, "protein": 12, "carbs": 72, "fat": 8 },
+    "contains": ["gluten", "garlic", "tomatoes"],
+    "ingredient_ids": ["pasta", "tomatoes", "garlic", "chili-peppers", "olive-oil", "parsley"],
+    "attributes": ["easy", "<=30", "<=600", "sauté", "simmer"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Penne Rigate", "de": "Penne Rigate" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "tomatoes", "name": { "en": "San Marzano Tomatoes", "de": "San Marzano Tomaten" }, "amount": 400, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 3, "unit": "cloves", "aisle": "Produce" },
+      { "id": "chili-peppers", "name": { "en": "Red Chili Flakes", "de": "Chiliflocken" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "parsley", "name": { "en": "Parsley", "de": "Petersilie" }, "amount": 2, "unit": "tbsp", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Boil penne until al dente.", "de": "Penne al dente kochen." }, "timer_minutes": 9, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Sauté sliced garlic and chili flakes in olive oil; add crushed tomatoes and simmer 10 minutes.", "de": "Knoblauch und Chili in Öl anbraten, Tomaten zugeben und 10 Minuten köcheln." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Toss pasta in spicy sauce and garnish with parsley.", "de": "Pasta in der Sauce schwenken und mit Petersilie anrichten." }, "timer_minutes": 1, "tip": null }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "default_partition": "core",
+  "partitions": [
+    {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "load_at_launch": true,
+      "description": "Core recipes loaded immediately at app startup"
+    },
+    {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "load_at_launch": false,
+      "description": "Extended recipes loaded on demand"
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "load_at_launch": false,
+      "description": "Italian cuisine specific recipes"
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "load_at_launch": false,
+      "description": "Asian cuisine specific recipes"
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "load_at_launch": false,
+      "description": "Middle Eastern cuisine specific recipes"
+    }
+  ]
+}

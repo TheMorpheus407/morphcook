@@ -1,0 +1,180 @@
+[
+  {
+    "id": "doener",
+    "name": { "en": "Döner Kebab", "de": "Döner Kebab" },
+    "hero_text": {
+      "en": "The legendary street food icon. Spiced grilled layers, crisp salad, and herb sauce inside warm bread or over a fresh bowl.",
+      "de": "Die legendäre Streetfood-Ikone. Feingewürztes Grillgut, knackiger Salat und Kräutersauce im warmen Brot oder als Bowl."
+    },
+    "cap_caption": {
+      "en": "Berlin street style with toasted bread and garlic sauce",
+      "de": "Berliner Street-Style mit geröstetem Fladenbrot und Knoblauchsauce"
+    },
+    "stripe_color": "#D48B68",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-middle-eastern"],
+    "cuisine_tags": ["middle-eastern", "street-food", "german-turkish"],
+    "frequency_tier": "daily",
+    "variant_recipe_ids": [
+      "doener-classic",
+      "doener-vegan",
+      "doener-keto",
+      "doener-halal"
+    ]
+  },
+  {
+    "id": "pasta-carbonara",
+    "name": { "en": "Pasta Carbonara", "de": "Pasta Carbonara" },
+    "hero_text": {
+      "en": "The Roman temple of pasta. Silky egg yolk emulsion, fragrant black pepper, and crispy savory cured bites.",
+      "de": "Roms zeitloser Pastaklassiker. Samtige Eigelb-Emulsion, frisch gemahlener Pfeffer und krosse Einlage."
+    },
+    "cap_caption": {
+      "en": "Classic Roman pasta with golden yolk emulsion",
+      "de": "Römische Traditionsküche mit goldener Eigelb-Emulsion"
+    },
+    "stripe_color": "#E5B25D",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-italian"],
+    "cuisine_tags": ["italian", "pasta", "comfort-food"],
+    "frequency_tier": "daily",
+    "variant_recipe_ids": [
+      "carbonara-classic",
+      "carbonara-vegan",
+      "carbonara-gf",
+      "carbonara-halal"
+    ]
+  },
+  {
+    "id": "ramen",
+    "name": { "en": "Tokyo Craft Ramen", "de": "Tokyo Craft Ramen" },
+    "hero_text": {
+      "en": "A deeply comforting bowl of springy noodles bathed in aromatic, hours-simmered broth with exquisite toppings.",
+      "de": "Eine wärmende Schüssel federnder Nudeln in tiefwürziger, aromatischer Brühe mit feinen Toppings."
+    },
+    "cap_caption": {
+      "en": "Steaming savory broth with noodles and scallions",
+      "de": "Dampfende würzige Brühe mit Nudeln und Frühlingszwiebeln"
+    },
+    "stripe_color": "#8C5846",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-asian"],
+    "cuisine_tags": ["japanese", "noodles", "soup"],
+    "frequency_tier": "weekly",
+    "variant_recipe_ids": [
+      "ramen-classic",
+      "ramen-vegan",
+      "ramen-quick"
+    ]
+  },
+  {
+    "id": "shakshuka",
+    "name": { "en": "North African Shakshuka", "de": "Nordafrikanische Shakshuka" },
+    "hero_text": {
+      "en": "Sun-ripened tomatoes, sweet peppers, and warming spices gently simmering around soft poached centers.",
+      "de": "Sonnengereifte Tomaten, Paprika und wärmende Gewürze sanft geschmort mit saftigen Einlagen."
+    },
+    "cap_caption": {
+      "en": "Simmered cast-iron skillet with herbs and warm bread",
+      "de": "In der Gusseisenpfanne geschmort mit Kräutern und warmem Brot"
+    },
+    "stripe_color": "#C44536",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-middle-eastern"],
+    "cuisine_tags": ["middle-eastern", "breakfast", "brunch", "one-pan"],
+    "frequency_tier": "daily",
+    "variant_recipe_ids": [
+      "shakshuka-classic",
+      "shakshuka-vegan",
+      "shakshuka-hearty"
+    ]
+  },
+  {
+    "id": "curry",
+    "name": { "en": "Velvety Golden Curry", "de": "Samtiges Goldenes Curry" },
+    "hero_text": {
+      "en": "Warm, fragrant spice pastes bloomed with coconut or ghee, stewed with tender proteins and fresh aromatics.",
+      "de": "Warme, duftende Gewürzpasten verfeinert mit Kokos oder Ghee, schonend gegart mit feinen Aromen."
+    },
+    "cap_caption": {
+      "en": "Rich spiced gravy served over fragrant basmati rice",
+      "de": "Cremige Gewürzsauce auf duftendem Basmatireis"
+    },
+    "stripe_color": "#DDA15E",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-asian"],
+    "cuisine_tags": ["indian", "curry", "comfort-food"],
+    "frequency_tier": "daily",
+    "variant_recipe_ids": [
+      "curry-classic",
+      "curry-vegan",
+      "curry-quick"
+    ]
+  },
+  {
+    "id": "tacos",
+    "name": { "en": "Street-Style Tacos", "de": "Street-Style Tacos" },
+    "hero_text": {
+      "en": "Handheld parcels of joy: charred fillings, bright citrus salsa, pickled onions, and fresh herbs in warm tortillas.",
+      "de": "Würzige Füllungen, frische Zitrus-Salsa, eingelegte rote Zwiebeln und Kräuter in warmen Tortillas."
+    },
+    "cap_caption": {
+      "en": "Warm corn tortillas topped with lime and fresh cilantro",
+      "de": "Warme Maistortillas serviert mit Limette und Koriander"
+    },
+    "stripe_color": "#606C38",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-asian"],
+    "cuisine_tags": ["mexican", "street-food", "quick"],
+    "frequency_tier": "weekly",
+    "variant_recipe_ids": [
+      "tacos-classic",
+      "tacos-vegan",
+      "tacos-pescatarian"
+    ]
+  },
+  {
+    "id": "pancakes",
+    "name": { "en": "Sunday Morning Pancakes", "de": "Sonntags-Pancakes" },
+    "hero_text": {
+      "en": "Golden, pillow-soft stack fresh off the griddle, dripping with pure amber maple syrup and crushed toppings.",
+      "de": "Goldbraun gebackene, fluffige Pfannkuchen direkt aus der Pfanne mit echtem Ahornsirup."
+    },
+    "cap_caption": {
+      "en": "Golden pancake stack drizzled with pure maple syrup",
+      "de": "Fluffiger Pancake-Stapel mit echtem Ahornsirup beträufelt"
+    },
+    "stripe_color": "#BC6C25",
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": ["breakfast", "brunch", "baking"],
+    "frequency_tier": "weekend",
+    "variant_recipe_ids": [
+      "pancakes-classic",
+      "pancakes-vegan",
+      "pancakes-gf"
+    ]
+  },
+  {
+    "id": "pad-thai",
+    "name": { "en": "Bangkok Pad Thai", "de": "Bangkok Pad Thai" },
+    "hero_text": {
+      "en": "Wok-seared rice ribbons tangled with tamarind, lime, crunchy sprouts, and aromatic herbs in a sweet-sour glaze.",
+      "de": "Heiß gebratene Reisbandnudeln mit Tamarinde, Limette, knackigen Sprossen und süß-säuerlicher Glasur."
+    },
+    "cap_caption": {
+      "en": "Wok-tossed noodles with crushed peanuts and lime",
+      "de": "Im Wok geschwenkte Nudeln mit Erdnüssen und Limette"
+    },
+    "stripe_color": "#BC4749",
+    "partition_id": "core",
+    "secondary_partitions": ["cuisine-asian"],
+    "cuisine_tags": ["thai", "noodles", "street-food", "wok"],
+    "frequency_tier": "weekly",
+    "variant_recipe_ids": [
+      "pad-thai-classic",
+      "pad-thai-vegan",
+      "pad-thai-chicken"
+    ]
+  }
+]

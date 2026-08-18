@@ -1,0 +1,67 @@
+[
+  {
+    "id": "carbonara-classic",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Authentic Roman Carbonara", "de": "Original Römische Carbonara" },
+    "description": {
+      "en": "Crispy rendered guanciale batons, fresh egg yolk emulsion with aged Pecorino Romano and Parmigiano, and toasted coarse black pepper.",
+      "de": "Kross ausgelassener Guanciale, samtige Eigelb-Emulsion mit gereiftem Pecorino Romano und Parmigiano, plus frisch gerösteter Pfeffer."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "650" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 650,
+    "macros": { "calories": 650, "protein": 30, "carbs": 68, "fat": 28 },
+    "contains": ["gluten", "pork", "dairy", "egg"],
+    "ingredient_ids": ["pasta", "guanciale", "pecorino", "parmesan", "egg", "black-pepper", "sea-salt"],
+    "attributes": ["medium", "<=30", "<=800", "sauté", "simmer"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Spaghetti / Rigatoni", "de": "Spaghetti / Rigatoni" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "guanciale", "name": { "en": "Guanciale", "de": "Guanciale" }, "amount": 100, "unit": "g", "aisle": "Meat & Seafood", "guide_id": "guanciale" },
+      { "id": "egg", "name": { "en": "Large Egg Yolks", "de": "Frische Eigelb" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "pecorino", "name": { "en": "Pecorino Romano (grated)", "de": "Pecorino Romano (gerieben)" }, "amount": 40, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "parmesan", "name": { "en": "Parmigiano Reggiano (grated)", "de": "Parmigiano Reggiano" }, "amount": 20, "unit": "g", "aisle": "Dairy & Eggs", "guide_id": "parmesan" },
+      { "id": "black-pepper", "name": { "en": "Whole Black Peppercorns", "de": "Schwarze Pfefferkörner" }, "amount": 2, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Bring a pot of salted water to a boil and cook pasta until 2 minutes shy of al dente.",
+          "de": "Salzwasser zum Kochen bringen und Pasta 2 Minuten vor al dente kochen."
+        },
+        "timer_minutes": 8,
+        "tip": { "en": "Reserve 1 cup of starchy pasta water before draining.", "de": "Unbedingt 1 Tasse stärkehaltiges Nudelwasser vor dem Abgießen abschöpfen." }
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Cut guanciale into 1/4-inch batons. Render in a cold skillet over medium-low heat until crisp and amber, about 7 minutes. Turn off heat.",
+          "de": "Guanciale in Streifen schneiden und in kalter Pfanne bei mittlerer Hitze ca. 7 Minuten knusprig auslassen. Pfanne von der Hitze nehmen."
+        },
+        "timer_minutes": 7,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "In a bowl, vigorously whisk egg yolks, grated Pecorino, Parmesan, and freshly crushed black pepper into a thick paste.",
+          "de": "In einer Schüssel Eigelbe, Pecorino, Parmesan und frisch gemörserten Pfeffer zu einer Paste verrühren."
+        },
+        "timer_minutes": null,
+        "tip": null
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Transfer hot pasta to the guanciale pan off-heat. Pour in egg cheese paste with 3 tbsp hot pasta water and toss rapidly until a glossy, creamy sauce coats every strand.",
+          "de": "Heiße Pasta in die Pfanne (abseits der Flamme) geben. Ei-Käse-Mischung mit 3 EL Nudelwasser zugeben und zügig schwenken, bis eine glänzende Creme entsteht."
+        },
+        "timer_minutes": 2,
+        "tip": { "en": "Residual pan heat creates the silkiness without scrambling the eggs.", "de": "Die Resthitze bindet die Sauce samtig ab, ohne dass das Ei stockt." }
+      }
+    ]
+  }
+]

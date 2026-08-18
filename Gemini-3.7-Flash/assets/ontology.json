@@ -1,0 +1,114 @@
+{
+  "contains_flags": [
+    { "id": "pork", "label": { "en": "Pork", "de": "Schweinefleisch" } },
+    { "id": "beef", "label": { "en": "Beef", "de": "Rindfleisch" } },
+    { "id": "lamb", "label": { "en": "Lamb", "de": "Lammfleisch" } },
+    { "id": "poultry", "label": { "en": "Poultry", "de": "Geflügel" } },
+    { "id": "fish", "label": { "en": "Fish", "de": "Fisch" } },
+    { "id": "shellfish", "label": { "en": "Shellfish", "de": "Krebstiere" } },
+    { "id": "molluscs", "label": { "en": "Molluscs", "de": "Weichtiere" } },
+    { "id": "egg", "label": { "en": "Eggs", "de": "Eier" } },
+    { "id": "dairy", "label": { "en": "Dairy", "de": "Milchprodukte" } },
+    { "id": "gluten", "label": { "en": "Gluten", "de": "Gluten" } },
+    { "id": "soy", "label": { "en": "Soy", "de": "Soja" } },
+    { "id": "peanuts", "label": { "en": "Peanuts", "de": "Erdnüsse" } },
+    { "id": "tree-nuts", "label": { "en": "Tree Nuts", "de": "Schalenfrüchte" } },
+    { "id": "sesame", "label": { "en": "Sesame", "de": "Sesam" } },
+    { "id": "mustard", "label": { "en": "Mustard", "de": "Senf" } },
+    { "id": "celery", "label": { "en": "Celery", "de": "Sellerie" } },
+    { "id": "lupin", "label": { "en": "Lupin", "de": "Lupinen" } },
+    { "id": "sulphites", "label": { "en": "Sulphites", "de": "Sulfite" } },
+    { "id": "alcohol", "label": { "en": "Alcohol", "de": "Alkohol" } },
+    { "id": "caffeine", "label": { "en": "Caffeine", "de": "Koffein" } },
+    { "id": "added-sugar", "label": { "en": "Added Sugar", "de": "Zuckerzusatz" } },
+    { "id": "high-fodmap", "label": { "en": "High FODMAP", "de": "Hohe FODMAPs" } },
+    { "id": "gelatin-non-halal", "label": { "en": "Non-Halal Gelatin", "de": "Nicht-halal Gelatine" } },
+    { "id": "gelatin-non-kosher", "label": { "en": "Non-Kosher Gelatin", "de": "Nicht-koschere Gelatine" } },
+    { "id": "meat-dairy-combo", "label": { "en": "Meat & Dairy Combination", "de": "Fleisch-Milch-Kombination" } },
+    { "id": "honey", "label": { "en": "Honey", "de": "Honig" } }
+  ],
+  "compound_avoid_flags": {
+    "vegan": {
+      "id": "vegan",
+      "label": { "en": "Vegan", "de": "Vegan" },
+      "description": { "en": "Excludes all animal products, meat, dairy, eggs, and honey", "de": "Schließt alle tierischen Produkte, Fleisch, Milch, Eier und Honig aus" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "honey", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    "vegetarian": {
+      "id": "vegetarian",
+      "label": { "en": "Vegetarian", "de": "Vegetarisch" },
+      "description": { "en": "Excludes meat, poultry, fish, shellfish, and gelatin", "de": "Schließt Fleisch, Geflügel, Fisch, Krebstiere und Gelatine aus" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    "pescatarian": {
+      "id": "pescatarian",
+      "label": { "en": "Pescatarian", "de": "Pescetarisch" },
+      "description": { "en": "Excludes land meat and poultry; fish and seafood are OK", "de": "Schließt Landfleisch und Geflügel aus; Fisch ist erlaubt" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal"]
+    },
+    "halal": {
+      "id": "halal",
+      "label": { "en": "Halal (Compatible)", "de": "Halal (Kompatibel)" },
+      "description": { "en": "Excludes pork, alcohol, and non-halal gelatin. Surfaces halal-compatible ingredients.", "de": "Schließt Schwein, Alkohol und nicht-halal Gelatine aus. Zeigt halal-kompatible Zutaten." },
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    "kosher": {
+      "id": "kosher",
+      "label": { "en": "Kosher (Compatible)", "de": "Koscher (Kompatibel)" },
+      "description": { "en": "Excludes pork, shellfish, meat+dairy combos, and non-kosher gelatin", "de": "Schließt Schwein, Schalentiere, Fleisch-Milch-Mischungen und nicht-koschere Gelatine aus" },
+      "expands_to": ["pork", "shellfish", "meat-dairy-combo", "gelatin-non-kosher"]
+    },
+    "low-fodmap": {
+      "id": "low-fodmap",
+      "label": { "en": "Low FODMAP", "de": "Niedrig-FODMAP" },
+      "description": { "en": "Excludes high-FODMAP ingredients like onions, garlic, and wheat", "de": "Schließt FODMAP-reiche Zutaten wie Zwiebeln, Knoblauch und Weizen aus" },
+      "expands_to": ["high-fodmap"]
+    },
+    "sugar-free": {
+      "id": "sugar-free",
+      "label": { "en": "Sugar-Free", "de": "Zuckerfrei" },
+      "description": { "en": "Excludes added refined and processed sugars", "de": "Schließt zugesetzte raffinierte Zucker aus" },
+      "expands_to": ["added-sugar"]
+    },
+    "lactose-free": {
+      "id": "lactose-free",
+      "label": { "en": "Lactose-Free", "de": "Laktosefrei" },
+      "description": { "en": "Excludes dairy products containing lactose", "de": "Schließt laktosehaltige Milchprodukte aus" },
+      "expands_to": ["dairy"]
+    },
+    "gluten-free": {
+      "id": "gluten-free",
+      "label": { "en": "Gluten-Free", "de": "Glutenfrei" },
+      "description": { "en": "Excludes wheat, barley, rye, and gluten grains", "de": "Schließt Weizen, Gerste, Roggen und Gluten aus" },
+      "expands_to": ["gluten"]
+    },
+    "nut-free": {
+      "id": "nut-free",
+      "label": { "en": "Nut-Free", "de": "Nussfrei" },
+      "description": { "en": "Excludes peanuts and all tree nuts", "de": "Schließt Erdnüsse und alle Baumnüsse aus" },
+      "expands_to": ["peanuts", "tree-nuts"]
+    }
+  },
+  "attributes": {
+    "effort": [
+      { "id": "easy", "label": { "en": "Easy / Quick", "de": "Einfach / Schnell" } },
+      { "id": "medium", "label": { "en": "Medium / Balanced", "de": "Mittel / Ausgewogen" } },
+      { "id": "hard", "label": { "en": "Hard / Gourmet", "de": "Aufwändig / Gourmet" } }
+    ],
+    "time_bucket": [
+      { "id": "<=15", "label": { "en": "≤ 15 mins", "de": "≤ 15 Min." } },
+      { "id": "<=30", "label": { "en": "≤ 30 mins", "de": "≤ 30 Min." } },
+      { "id": "<=60", "label": { "en": "≤ 60 mins", "de": "≤ 60 Min." } },
+      { "id": ">60", "label": { "en": "> 60 mins", "de": "> 60 Min." } }
+    ],
+    "calorie_bucket": [
+      { "id": "<=400", "label": { "en": "Light (≤ 400 kcal)", "de": "Leicht (≤ 400 kcal)" } },
+      { "id": "<=600", "label": { "en": "Moderate (≤ 600 kcal)", "de": "Moderat (≤ 600 kcal)" } },
+      { "id": "<=800", "label": { "en": "Hearty (≤ 800 kcal)", "de": "Herzhaft (≤ 800 kcal)" } },
+      { "id": ">800", "label": { "en": "Rich (> 800 kcal)", "de": "Üppig (> 800 kcal)" } }
+    ],
+    "techniques": [
+      "bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"
+    ]
+  }
+}

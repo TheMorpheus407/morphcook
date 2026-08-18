@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "doener-classic",
+    "dish_id": "doener",
+    "title": { "en": "Classic Street Döner", "de": "Klassischer Street Döner" },
+    "description": {
+      "en": "Thinly spiced shaved beef & lamb, crisp shredded red cabbage, crunchy cucumbers, and garlicky herb yogurt sauce in toasted sesame pita.",
+      "de": "Fein gewürztes Rind- & Lammfleisch, knackiger Rotkohl, Gurken und Knoblauch-Kräuter-Joghurt im gerösteten Fladenbrot."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "620" },
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "calories_per_serving": 620,
+    "macros": { "calories": 620, "protein": 38, "carbs": 58, "fat": 24 },
+    "contains": ["gluten", "dairy", "beef", "lamb", "garlic", "onions"],
+    "ingredient_ids": ["beef", "lamb", "pita-bread", "greek-yogurt", "garlic", "cabbage", "cucumbers", "tomatoes", "red-onion", "cumin", "olive-oil"],
+    "attributes": ["medium", "<=60", "<=800", "pan-fry", "sauté"],
+    "ingredients": [
+      { "id": "beef", "name": { "en": "Shaved Beef Steak", "de": "Rindersteak in Streifen" }, "amount": 250, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "lamb", "name": { "en": "Ground Lamb", "de": "Lammhackfleisch" }, "amount": 100, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "pita-bread", "name": { "en": "Turkish Pita Bread", "de": "Fladenbrot viertel" }, "amount": 2, "unit": "pieces", "aisle": "Bakery" },
+      { "id": "greek-yogurt", "name": { "en": "Greek Yogurt", "de": "Griechischer Joghurt" }, "amount": 150, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "cabbage", "name": { "en": "Shredded Red Cabbage", "de": "Rotkohl feine Streifen" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "tomatoes", "name": { "en": "Tomatoes", "de": "Tomaten gewürfelt" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "red-onion", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "cumin", "name": { "en": "Ground Cumin", "de": "Kreuzkümmel" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Marinate the shaved beef and lamb with cumin, minced garlic, a pinch of salt, and 1 tbsp olive oil.",
+          "de": "Rindfleisch und Lammhack mit Kreuzkümmel, gehacktem Knoblauch, Salz und 1 EL Olivenöl marinieren."
+        },
+        "timer_minutes": 5,
+        "tip": { "en": "Letting it sit at room temperature ensures quick, tender browning.", "de": "Zimmertemperatur sorgt für zartes und schnelles Anbraten." }
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Whisk Greek yogurt with 1 minced garlic clove, salt, black pepper, and a squeeze of fresh lemon juice.",
+          "de": "Griechischen Joghurt mit Knoblauchzehe, Salz, Pfeffer und einem Spritzer Zitrone glattrühren."
+        },
+        "timer_minutes": null,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "Sear meat in a smoking hot skillet with remaining olive oil for 6-8 minutes until deeply browned and crisp around the edges.",
+          "de": "Fleisch in einer sehr heißen Pfanne 6-8 Minuten scharf anbraten, bis es an den Rändern knusprig wird."
+        },
+        "timer_minutes": 7,
+        "tip": { "en": "Do not overcrowd the pan so the meat fries rather than steams.", "de": "Pfanne nicht überfüllen, damit das Fleisch röstet statt kocht." }
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Toast pita quarters. Fill generously with garlic yogurt, crisp cabbage, tomatoes, sumac onions, and hot spiced meat.",
+          "de": "Fladenbrot toasten. Reichlich mit Knoblauchsauce, Rotkohl, Tomaten, Zwiebeln und heißem Fleisch füllen."
+        },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "doener-vegan",
+    "dish_id": "doener",
+    "title": { "en": "Plant-Crafted Vegan Döner", "de": "Pflanzlicher Vegan Döner" },
+    "description": {
+      "en": "Spiced pan-crisped oyster mushrooms and seitan strips with creamy garlic tahini yogurt, sumac red onions, and crisp cabbage.",
+      "de": "Würzige Austernpilze & Seitanstreifen kross gebraten mit cremiger Knoblauch-Tahini-Sauce, Sumach-Zwiebeln und Rotkohl."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "480" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 480,
+    "macros": { "calories": 480, "protein": 32, "carbs": 64, "fat": 12 },
+    "contains": ["gluten", "soy", "sesame", "garlic", "onions"],
+    "ingredient_ids": ["seitan", "portobello", "pita-bread", "tahini", "garlic", "cabbage", "cucumbers", "tomatoes", "red-onion", "smoked-paprika", "olive-oil"],
+    "attributes": ["easy", "<=30", "<=600", "pan-fry", "sauté"],
+    "ingredients": [
+      { "id": "seitan", "name": { "en": "Seitan Strips", "de": "Seitan-Streifen" }, "amount": 200, "unit": "g", "aisle": "Plant Proteins" },
+      { "id": "portobello", "name": { "en": "King Oyster / Portobello Mushrooms", "de": "Kräuterseitlinge / Pilze" }, "amount": 150, "unit": "g", "aisle": "Produce" },
+      { "id": "pita-bread", "name": { "en": "Pita Bread", "de": "Fladenbrot" }, "amount": 2, "unit": "pieces", "aisle": "Bakery" },
+      { "id": "tahini", "name": { "en": "Sesame Tahini", "de": "Sesam-Tahini" }, "amount": 3, "unit": "tbsp", "aisle": "Pantry & Spices", "guide_id": "tahini" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "smoked-paprika", "name": { "en": "Smoked Paprika", "de": "Geräuchertes Paprikapulver" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices", "guide_id": "smoked-paprika" },
+      { "id": "cabbage", "name": { "en": "Red Cabbage", "de": "Rotkohl" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "tomatoes", "name": { "en": "Tomatoes", "de": "Tomaten" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "red-onion", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Tear mushrooms into strips. Toss with seitan, smoked paprika, cumin, 1 clove grated garlic, and olive oil.",
+          "de": "Pilze in Streifen zupfen. Mit Seitan, Räucherpaprika, Kreuzkümmel, Knoblauch und Olivenöl vermengen."
+        },
+        "timer_minutes": 3,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Whisk tahini with 3 tbsp cold water, lemon juice, grated garlic, and sea salt until light, pale, and creamy.",
+          "de": "Tahini mit 3 EL kaltem Wasser, Zitronensaft, Knoblauch und Meersalz cremig aufschlagen."
+        },
+        "timer_minutes": null,
+        "tip": { "en": "Cold water is the secret to emulsifying tahini into a fluffy sauce.", "de": "Kaltes Wasser sorgt für die perfekte luftige Emulsion." }
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "Pan-fry the seitan and mushrooms in a hot skillet for 8 minutes until edges are crisp and browned.",
+          "de": "Seitan und Pilze in der heißen Pfanne 8 Minuten goldbraun und kross braten."
+        },
+        "timer_minutes": 8,
+        "tip": null
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Stuff warm toasted pita with crunchy vegetables, tahini garlic sauce, and hot savory strips.",
+          "de": "Warmes Fladenbrot mit knackigem Gemüse, Tahini-Knoblauchsauce und heißen Kebab-Streifen füllen."
+        },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "doener-keto",
+    "dish_id": "doener",
+    "title": { "en": "Keto Döner Salad Bowl", "de": "Keto Döner Schüssel" },
+    "description": {
+      "en": "Low-carb high-flavor döner bowl: spiced beef steak strips, garlic-herb feta crumble, avocado, crisp lettuce, and olive oil dressing.",
+      "de": "Kohlenhydratarme Döner-Bowl: Würzige Rinderstreifen, Knoblauch-Kräuter-Feta, Avocado, Blattsalat und Olivenöl."
+    },
+    "variant_dimension_values": { "diet": "keto", "effort": "easy", "calorie": "540" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 540,
+    "macros": { "calories": 540, "protein": 42, "carbs": 8, "fat": 38 },
+    "contains": ["dairy", "beef", "garlic", "onions"],
+    "ingredient_ids": ["beef", "feta", "avocado", "romaine-lettuce", "cucumbers", "tomatoes", "garlic", "olive-oil", "oregano"],
+    "attributes": ["easy", "<=30", "<=600", "pan-fry"],
+    "ingredients": [
+      { "id": "beef", "name": { "en": "Sirloin Beef Strips", "de": "Rinderhüftstreifen" }, "amount": 300, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "feta", "name": { "en": "Crumbled Greek Feta", "de": "Schafskäse / Feta" }, "amount": 80, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "avocado", "name": { "en": "Avocado", "de": "Avocado" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "romaine-lettuce", "name": { "en": "Romaine Lettuce", "de": "Römersalat" }, "amount": 150, "unit": "g", "aisle": "Produce" },
+      { "id": "cucumbers", "name": { "en": "Persian Cucumber", "de": "Minigurken" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic Clove", "de": "Knoblauchzehe" }, "amount": 1, "unit": "cloves", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Extra Virgin Olive Oil", "de": "Natives Olivenöl Extra" }, "amount": 3, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Sear beef strips in a hot skillet with 1 tbsp olive oil and oregano for 5-6 minutes until browned.",
+          "de": "Rinderstreifen mit 1 EL Olivenöl und Oregano 5-6 Minuten scharf anbraten."
+        },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Assemble bowls with crisp romaine, diced cucumbers, sliced avocado, and crumbled feta.",
+          "de": "Schüsseln mit knackigem Salat, Gurken, Avocado und zerbröckeltem Feta anrichten."
+        },
+        "timer_minutes": null,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "Top with hot beef and drizzle with remaining olive oil mixed with grated garlic and lemon juice.",
+          "de": "Heißes Rindfleisch darauflegen und mit Knoblauch-Zitronen-Olivenöl beträufeln."
+        },
+        "timer_minutes": null,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "doener-halal",
+    "dish_id": "doener",
+    "title": { "en": "Halal Spiced Lamb Döner", "de": "Halal Gewürz-Lamm Döner" },
+    "description": {
+      "en": "Halal-compatible spiced tender lamb strips, fragrant herbs, sumac salad, garlic yogurt, and warm pita bread.",
+      "de": "Halal-konforme zarte Lammstreifen mit orientalischen Gewürzen, Sumach-Salat, Knoblauchjoghurt und warmem Fladenbrot."
+    },
+    "variant_dimension_values": { "diet": "halal", "effort": "medium", "calorie": "610" },
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 30,
+    "calories_per_serving": 610,
+    "macros": { "calories": 610, "protein": 36, "carbs": 56, "fat": 26 },
+    "contains": ["gluten", "dairy", "lamb", "garlic", "onions"],
+    "ingredient_ids": ["lamb", "pita-bread", "greek-yogurt", "garlic", "cabbage", "tomatoes", "red-onion", "cumin", "olive-oil"],
+    "attributes": ["medium", "<=30", "<=800", "pan-fry"],
+    "ingredients": [
+      { "id": "lamb", "name": { "en": "Halal Lamb Fillet Strips", "de": "Lammfiletstreifen" }, "amount": 300, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "pita-bread", "name": { "en": "Pita Bread", "de": "Fladenbrot" }, "amount": 2, "unit": "pieces", "aisle": "Bakery" },
+      { "id": "greek-yogurt", "name": { "en": "Plain Yogurt", "de": "Naturjoghurt" }, "amount": 150, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "cabbage", "name": { "en": "White / Red Cabbage", "de": "Kraut / Rotkohl" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "tomatoes", "name": { "en": "Tomatoes", "de": "Tomaten" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": { "en": "Toss lamb strips in cumin, garlic, salt, and olive oil.", "de": "Lammstreifen mit Kreuzkümmel, Knoblauch, Salz und Olivenöl marinieren." },
+        "timer_minutes": 5,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": { "en": "Pan-sear lamb quickly in hot skillet for 5-6 minutes until juicy and caramelized.", "de": "Lamm in heißer Pfanne 5-6 Minuten saftig und karamellisiert anbraten." },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": { "en": "Layer warm toasted pita with yogurt sauce, vegetables, and lamb.", "de": "Warmes Fladenbrot mit Joghurtsauce, Gemüse und Lamm belegen." },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "carbonara-classic",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Authentic Roman Carbonara", "de": "Original Römische Carbonara" },
+    "description": {
+      "en": "Crispy rendered guanciale batons, fresh egg yolk emulsion with aged Pecorino Romano and Parmigiano, and toasted coarse black pepper.",
+      "de": "Kross ausgelassener Guanciale, samtige Eigelb-Emulsion mit gereiftem Pecorino Romano und Parmigiano, plus frisch gerösteter Pfeffer."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "650" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 650,
+    "macros": { "calories": 650, "protein": 30, "carbs": 68, "fat": 28 },
+    "contains": ["gluten", "pork", "dairy", "egg"],
+    "ingredient_ids": ["pasta", "guanciale", "pecorino", "parmesan", "egg", "black-pepper", "sea-salt"],
+    "attributes": ["medium", "<=30", "<=800", "sauté", "simmer"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Spaghetti / Rigatoni", "de": "Spaghetti / Rigatoni" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "guanciale", "name": { "en": "Guanciale", "de": "Guanciale" }, "amount": 100, "unit": "g", "aisle": "Meat & Seafood", "guide_id": "guanciale" },
+      { "id": "egg", "name": { "en": "Large Egg Yolks", "de": "Frische Eigelb" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "pecorino", "name": { "en": "Pecorino Romano (grated)", "de": "Pecorino Romano (gerieben)" }, "amount": 40, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "parmesan", "name": { "en": "Parmigiano Reggiano (grated)", "de": "Parmigiano Reggiano" }, "amount": 20, "unit": "g", "aisle": "Dairy & Eggs", "guide_id": "parmesan" },
+      { "id": "black-pepper", "name": { "en": "Whole Black Peppercorns", "de": "Schwarze Pfefferkörner" }, "amount": 2, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": {
+          "en": "Bring a pot of salted water to a boil and cook pasta until 2 minutes shy of al dente.",
+          "de": "Salzwasser zum Kochen bringen und Pasta 2 Minuten vor al dente kochen."
+        },
+        "timer_minutes": 8,
+        "tip": { "en": "Reserve 1 cup of starchy pasta water before draining.", "de": "Unbedingt 1 Tasse stärkehaltiges Nudelwasser vor dem Abgießen abschöpfen." }
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Cut guanciale into 1/4-inch batons. Render in a cold skillet over medium-low heat until crisp and amber, about 7 minutes. Turn off heat.",
+          "de": "Guanciale in Streifen schneiden und in kalter Pfanne bei mittlerer Hitze ca. 7 Minuten knusprig auslassen. Pfanne von der Hitze nehmen."
+        },
+        "timer_minutes": 7,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "In a bowl, vigorously whisk egg yolks, grated Pecorino, Parmesan, and freshly crushed black pepper into a thick paste.",
+          "de": "In einer Schüssel Eigelbe, Pecorino, Parmesan und frisch gemörserten Pfeffer zu einer Paste verrühren."
+        },
+        "timer_minutes": null,
+        "tip": null
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Transfer hot pasta to the guanciale pan off-heat. Pour in egg cheese paste with 3 tbsp hot pasta water and toss rapidly until a glossy, creamy sauce coats every strand.",
+          "de": "Heiße Pasta in die Pfanne (abseits der Flamme) geben. Ei-Käse-Mischung mit 3 EL Nudelwasser zugeben und zügig schwenken, bis eine glänzende Creme entsteht."
+        },
+        "timer_minutes": 2,
+        "tip": { "en": "Residual pan heat creates the silkiness without scrambling the eggs.", "de": "Die Resthitze bindet die Sauce samtig ab, ohne dass das Ei stockt." }
+      }
+    ]
+  },
+  {
+    "id": "carbonara-vegan",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Silken Cashew & Smoked Tofu Carbonara", "de": "Samtige Cashew & Räuchertofu Carbonara" },
+    "description": {
+      "en": "Smoky golden tofu crisps over al dente pasta coated in a luxurious cashew cream, nutritional yeast, garlic, and coarse black pepper sauce.",
+      "de": "Knusprige Räuchertofu-Würfel über Pasta in samtiger Cashew-Sauce mit Hefeflocken, Knoblauch und viel grobem Pfeffer."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "490" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 490,
+    "macros": { "calories": 490, "protein": 22, "carbs": 66, "fat": 15 },
+    "contains": ["gluten", "soy", "tree-nuts"],
+    "ingredient_ids": ["pasta", "tofu", "cashews", "nutritional-yeast", "garlic", "olive-oil", "black-pepper", "smoked-paprika"],
+    "attributes": ["easy", "<=30", "<=600", "pan-fry", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Spaghetti", "de": "Spaghetti" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "tofu", "name": { "en": "Smoked Tofu", "de": "Räuchertofu" }, "amount": 150, "unit": "g", "aisle": "Plant Proteins", "guide_id": "tofu" },
+      { "id": "cashews", "name": { "en": "Raw Cashews (soaked)", "de": "Cashewkerne (eingeweicht)" }, "amount": 60, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "nutritional-yeast", "name": { "en": "Nutritional Yeast", "de": "Hefeflocken" }, "amount": 3, "unit": "tbsp", "aisle": "Pantry & Spices", "guide_id": "nutritional-yeast" },
+      { "id": "garlic", "name": { "en": "Garlic Clove", "de": "Knoblauchzehe" }, "amount": 1, "unit": "cloves", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 1, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "black-pepper", "name": { "en": "Black Pepper", "de": "Schwarzer Pfeffer" }, "amount": 2, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": { "en": "Cook spaghetti in salted water until al dente.", "de": "Spaghetti in kochendem Salzwasser al dente garen." },
+        "timer_minutes": 9,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": {
+          "en": "Blend soaked cashews with nutritional yeast, garlic, 1/2 cup warm pasta water, and sea salt until completely smooth.",
+          "de": "Eingeweichte Cashews mit Hefeflocken, Knoblauch, 1/2 Tasse warmem Nudelwasser und Salz cremig pürieren."
+        },
+        "timer_minutes": 2,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": {
+          "en": "Dice smoked tofu small and fry in olive oil until golden and crisp.",
+          "de": "Räuchertofu fein würfeln und in Olivenöl goldbraun anbraten."
+        },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 4,
+        "instruction": {
+          "en": "Toss hot pasta with cashew silk sauce, black pepper, and crispy tofu bits.",
+          "de": "Pasta mit der Cashew-Sauce, viel Pfeffer und den krossen Tofuwürfeln vermengen."
+        },
+        "timer_minutes": 1,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "carbonara-gf",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Gluten-Free Penne Carbonara", "de": "Glutenfreie Penne Carbonara" },
+    "description": {
+      "en": "Gluten-free brown rice pasta tossed with crispy pancetta, golden egg yolk cream, and freshly grated Parmigiano.",
+      "de": "Glutenfreie Naturreis-Penne mit knuspriger Pancetta, goldener Eigelb-Creme und frisch geriebenem Parmigiano."
+    },
+    "variant_dimension_values": { "diet": "gluten-free", "effort": "easy", "calorie": "610" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 610,
+    "macros": { "calories": 610, "protein": 28, "carbs": 64, "fat": 26 },
+    "contains": ["pork", "dairy", "egg"],
+    "ingredient_ids": ["gluten-free-pasta", "pancetta", "parmesan", "egg", "black-pepper"],
+    "attributes": ["easy", "<=30", "<=800", "sauté"],
+    "ingredients": [
+      { "id": "gluten-free-pasta", "name": { "en": "Gluten-Free Penne", "de": "Glutenfreie Penne" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "pancetta", "name": { "en": "Diced Pancetta", "de": "Pancetta gewürfelt" }, "amount": 90, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Egg Yolks", "de": "Eigelbe" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "parmesan", "name": { "en": "Parmigiano Reggiano", "de": "Parmigiano Reggiano" }, "amount": 50, "unit": "g", "aisle": "Dairy & Eggs", "guide_id": "parmesan" },
+      { "id": "black-pepper", "name": { "en": "Black Pepper", "de": "Schwarzer Pfeffer" }, "amount": 2, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": { "en": "Boil GF penne in salted water according to package directions.", "de": "Glutenfreie Penne in kochendem Salzwasser garen." },
+        "timer_minutes": 8,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": { "en": "Fry pancetta in a skillet until crisp.", "de": "Pancetta in einer Pfanne knusprig auslassen." },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": { "en": "Emulsify yolks with parmesan, black pepper, pasta water, and pasta off heat.", "de": "Eigelb mit Parmesan, Pfeffer und Nudelwasser abseits der Hitze unterrühren." },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "carbonara-halal",
+    "dish_id": "pasta-carbonara",
+    "title": { "en": "Halal Beef Bacon Carbonara", "de": "Halal Rinderbacon Carbonara" },
+    "description": {
+      "en": "Smoked halal cured beef bacon crisped in olive oil, married with creamy egg yolks, aged cheese, and cracked pepper over spaghetti.",
+      "de": "Geräucherter Halal-Rinderbacon kross gebraten, serviert mit cremigen Eigelben, würzigem Käse und grobem Pfeffer."
+    },
+    "variant_dimension_values": { "diet": "halal", "effort": "medium", "calorie": "630" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 630,
+    "macros": { "calories": 630, "protein": 32, "carbs": 66, "fat": 25 },
+    "contains": ["gluten", "dairy", "egg", "beef"],
+    "ingredient_ids": ["pasta", "bacon", "parmesan", "egg", "black-pepper", "olive-oil"],
+    "attributes": ["medium", "<=30", "<=800", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Spaghetti", "de": "Spaghetti" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "bacon", "name": { "en": "Halal Smoked Beef Bacon", "de": "Halal Rinderbacon" }, "amount": 100, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Egg Yolks", "de": "Eigelbe" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "parmesan", "name": { "en": "Parmigiano Reggiano", "de": "Parmigiano Reggiano" }, "amount": 50, "unit": "g", "aisle": "Dairy & Eggs", "guide_id": "parmesan" },
+      { "id": "black-pepper", "name": { "en": "Coarse Black Pepper", "de": "Grober schwarzer Pfeffer" }, "amount": 2, "unit": "tsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": { "en": "Boil spaghetti in salted water until al dente.", "de": "Spaghetti in Salzwasser al dente kochen." },
+        "timer_minutes": 8,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": { "en": "Sear beef bacon strips in a skillet with a dash of olive oil until crunchy.", "de": "Rinderbacon mit etwas Öl knusprig ausbacken." },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": { "en": "Whisk yolks with grated cheese and pepper; fold into hot pasta off the flame.", "de": "Eigelbe mit Käse und Pfeffer verrühren; abseits der Hitze unter die heiße Pasta ziehen." },
+        "timer_minutes": 2,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "shakshuka-classic",
+    "dish_id": "shakshuka",
+    "title": { "en": "Classic Skillet Shakshuka", "de": "Klassische Pfannen-Shakshuka" },
+    "description": {
+      "en": "Poached eggs nestled in sweet bell peppers and tomatoes spiced with cumin, smoked paprika, topped with feta and fresh parsley.",
+      "de": "Pochierte Eier in einer Sauce aus geschmorten Paprika, Tomaten, Kreuzkümmel und Räucherpaprika, verfeinert mit Feta und Petersilie."
+    },
+    "variant_dimension_values": { "diet": "vegetarian", "effort": "easy", "calorie": "380" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 380,
+    "macros": { "calories": 380, "protein": 18, "carbs": 24, "fat": 22 },
+    "contains": ["egg", "dairy", "tomatoes", "bell-peppers", "onions", "garlic"],
+    "ingredient_ids": ["egg", "tomatoes", "bell-peppers", "yellow-onion", "garlic", "feta", "olive-oil", "cumin", "smoked-paprika", "parsley"],
+    "attributes": ["easy", "<=30", "<=400", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "tomatoes", "name": { "en": "Crushed Canned Tomatoes", "de": "Gehackte Dosentomaten" }, "amount": 400, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "bell-peppers", "name": { "en": "Red Bell Pepper", "de": "Rote Paprika" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "yellow-onion", "name": { "en": "Yellow Onion", "de": "Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic Cloves", "de": "Knoblauchzehen" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "feta", "name": { "en": "Feta Cheese", "de": "Feta" }, "amount": 50, "unit": "g", "aisle": "Dairy & Eggs" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "cumin", "name": { "en": "Ground Cumin", "de": "Kreuzkümmel" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" },
+      { "id": "smoked-paprika", "name": { "en": "Smoked Paprika", "de": "Geräuchertes Paprikapulver" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices", "guide_id": "smoked-paprika" }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": { "en": "Sauté diced onion and bell pepper in olive oil until soft, about 6 minutes.", "de": "Gewürfelte Zwiebel und Paprika in Olivenöl ca. 6 Minuten weich dünsten." },
+        "timer_minutes": 6,
+        "tip": null
+      },
+      {
+        "step_number": 2,
+        "instruction": { "en": "Stir in minced garlic, cumin, smoked paprika, and canned tomatoes. Simmer for 8 minutes.", "de": "Knoblauch, Kreuzkümmel, Paprikapulver und Tomaten einrühren. 8 Minuten sanft köcheln." },
+        "timer_minutes": 8,
+        "tip": null
+      },
+      {
+        "step_number": 3,
+        "instruction": { "en": "Create four wells in the sauce. Crack an egg into each well. Cover and cook on low for 5-6 minutes until whites are set.", "de": "Vier Mulden formen, Eier hineinschlagen, zudecken und 5-6 Minuten stocken lassen." },
+        "timer_minutes": 6,
+        "tip": { "en": "Yolks should remain pleasantly runny.", "de": "Das Eigelb sollte flüssig bleiben." }
+      },
+      {
+        "step_number": 4,
+        "instruction": { "en": "Garnish with crumbled feta and chopped fresh parsley. Serve hot with crusty bread.", "de": "Mit zerbröckeltem Feta und Petersilie bestreuen und heiß servieren." },
+        "timer_minutes": null,
+        "tip": null
+      }
+    ]
+  },
+  {
+    "id": "shakshuka-vegan",
+    "dish_id": "shakshuka",
+    "title": { "en": "Silken Tofu & Chickpea Shakshuka", "de": "Seidentofu & Kichererbsen Shakshuka" },
+    "description": {
+      "en": "Rich spiced tomato and roasted bell pepper stew studded with protein-rich chickpeas and tender seasoned silken tofu pillows.",
+      "de": "Würziger Tomaten-Paprika-Eintopf mit saftigen Kichererbsen und zarten, gewürzten Seidentofu-Nocken."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "360" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 360,
+    "macros": { "calories": 360, "protein": 20, "carbs": 44, "fat": 11 },
+    "contains": ["soy", "tomatoes", "bell-peppers", "onions", "garlic"],
+    "ingredient_ids": ["tofu", "chickpeas", "tomatoes", "bell-peppers", "yellow-onion", "garlic", "olive-oil", "smoked-paprika", "cumin"],
+    "attributes": ["easy", "<=30", "<=400", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "tofu", "name": { "en": "Firm or Silken Tofu", "de": "Natur- / Seidentofu" }, "amount": 200, "unit": "g", "aisle": "Plant Proteins", "guide_id": "tofu" },
+      { "id": "chickpeas", "name": { "en": "Cooked Chickpeas", "de": "Gekochte Kichererbsen" }, "amount": 200, "unit": "g", "aisle": "Plant Proteins" },
+      { "id": "tomatoes", "name": { "en": "Crushed Tomatoes", "de": "Gehackte Tomaten" }, "amount": 400, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "bell-peppers", "name": { "en": "Bell Pepper", "de": "Paprika" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "yellow-onion", "name": { "en": "Onion", "de": "Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "olive-oil", "name": { "en": "Olive Oil", "de": "Olivenöl" }, "amount": 2, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Sauté onions, peppers, and garlic in olive oil for 5 minutes.", "de": "Zwiebeln, Paprika und Knoblauch 5 Minuten in Olivenöl anschwitzen." }, "timer_minutes": 5, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Add tomatoes, chickpeas, and spices. Simmer for 8 minutes.", "de": "Tomaten, Kichererbsen und Gewürze zugeben. 8 Minuten köcheln." }, "timer_minutes": 8, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Spoon tofu pieces into sauce and warm through gently for 4 minutes.", "de": "Tofustücke in die Sauce setzen und 4 Minuten sanft erwärmen." }, "timer_minutes": 4, "tip": null }
+    ]
+  },
+  {
+    "id": "shakshuka-hearty",
+    "dish_id": "shakshuka",
+    "title": { "en": "Spiced Lamb Sausage Shakshuka", "de": "Lammwurst & Ei Shakshuka" },
+    "description": {
+      "en": "Spiced halal lamb merguez sausage slices browned and simmered in fiery tomato pepper sauce with runny eggs.",
+      "de": "Würzige Halal-Lammwurstscheiben angebraten und in pikanter Tomaten-Paprika-Sauce mit Eiern pochiert."
+    },
+    "variant_dimension_values": { "diet": "halal", "effort": "medium", "calorie": "590" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "calories_per_serving": 590,
+    "macros": { "calories": 590, "protein": 34, "carbs": 26, "fat": 39 },
+    "contains": ["lamb", "egg", "tomatoes", "bell-peppers", "onions", "garlic"],
+    "ingredient_ids": ["lamb", "egg", "tomatoes", "bell-peppers", "yellow-onion", "garlic", "olive-oil"],
+    "attributes": ["medium", "<=30", "<=600", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "lamb", "name": { "en": "Spiced Lamb Sausage", "de": "Würzige Lammwurst" }, "amount": 200, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 4, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "tomatoes", "name": { "en": "Crushed Tomatoes", "de": "Tomaten" }, "amount": 400, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "bell-peppers", "name": { "en": "Red Pepper", "de": "Rote Paprika" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Brown sliced lamb sausage in skillet for 6 minutes.", "de": "Lammwurst in Scheiben 6 Minuten anbraten." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Add peppers, garlic, and tomatoes; simmer for 10 minutes.", "de": "Paprika, Knoblauch und Tomaten zugeben; 10 Minuten köcheln." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Poach eggs in sauce until whites set.", "de": "Eier in die Sauce schlagen und stocken lassen." }, "timer_minutes": 5, "tip": null }
+    ]
+  },
+  {
+    "id": "ramen-classic",
+    "dish_id": "ramen",
+    "title": { "en": "Tokyo Tonkotsu Shoyu Ramen", "de": "Tokyo Shoyu Ramen" },
+    "description": {
+      "en": "Springy wheat noodles in rich umami broth topped with tender glazed pork, marinated egg, scallions, and nori.",
+      "de": "Federnde Ramen-Nudeln in tiefer Umami-Brühe mit zartem Schweinebauch, mariniertem Ei und Frühlingszwiebeln."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "hard", "calorie": "720" },
+    "servings": 2,
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 55,
+    "calories_per_serving": 720,
+    "macros": { "calories": 720, "protein": 42, "carbs": 76, "fat": 28 },
+    "contains": ["pork", "egg", "gluten", "soy", "garlic", "scallions"],
+    "ingredient_ids": ["pasta", "pork-chops", "egg", "soy-sauce", "scallions", "garlic", "sesame-oil"],
+    "attributes": ["hard", "<=60", ">800", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Fresh Ramen Noodles", "de": "Frische Ramen-Nudeln" }, "amount": 250, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "pork-chops", "name": { "en": "Pork Chashu / Belly", "de": "Schweinebauch / Chashu" }, "amount": 200, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Soft Boiled Eggs", "de": "Wachsweiche Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce", "de": "Sojasauce" }, "amount": 3, "unit": "tbsp", "aisle": "Pantry & Spices" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 3, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "sesame-oil", "name": { "en": "Sesame Oil", "de": "Sesamöl" }, "amount": 1, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Simmer broth base with soy sauce, garlic, and aromatics for 20 minutes.", "de": "Brühe mit Sojasauce, Knoblauch und Aromen 20 Minuten köcheln." }, "timer_minutes": 20, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Sear pork slices until caramelized and crisp.", "de": "Fleischscheiben anbraten bis sie karamellisieren." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Boil ramen noodles for 2-3 minutes; drain.", "de": "Nudeln 2-3 Minuten kochen und abgießen." }, "timer_minutes": 3, "tip": null },
+      { "step_number": 4, "instruction": { "en": "Assemble hot broth over noodles; crown with pork, egg halves, and scallions.", "de": "Heiße Brühe über Nudeln gießen, mit Fleisch, Ei und Frühlingszwiebeln toppen." }, "timer_minutes": null, "tip": null }
+    ]
+  },
+  {
+    "id": "ramen-vegan",
+    "dish_id": "ramen",
+    "title": { "en": "Roasted Garlic Miso Mushroom Ramen", "de": "Geröstetes Knoblauch-Miso Ramen" },
+    "description": {
+      "en": "Rich savory white miso & sesame broth with seared shiitake mushrooms, crisp tofu squares, bok choy, and scallions.",
+      "de": "Aromatische Miso-Sesam-Brühe mit gebratenen Shiitake-Pilzen, krossem Tofu, Pak Choi und Frühlingszwiebeln."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "medium", "calorie": "480" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 30,
+    "calories_per_serving": 480,
+    "macros": { "calories": 480, "protein": 24, "carbs": 68, "fat": 14 },
+    "contains": ["soy", "sesame", "gluten", "scallions", "mushrooms"],
+    "ingredient_ids": ["pasta", "tofu", "shiitake", "tamari", "sesame-oil", "garlic", "scallions", "spinach"],
+    "attributes": ["medium", "<=30", "<=600", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Ramen Noodles", "de": "Ramen-Nudeln" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "tofu", "name": { "en": "Firm Tofu", "de": "Naturtofu" }, "amount": 150, "unit": "g", "aisle": "Plant Proteins", "guide_id": "tofu" },
+      { "id": "shiitake", "name": { "en": "Shiitake Mushrooms", "de": "Shiitake-Pilze" }, "amount": 120, "unit": "g", "aisle": "Produce" },
+      { "id": "tamari", "name": { "en": "Tamari Soy Sauce", "de": "Tamari Sojasauce" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices", "guide_id": "tamari" },
+      { "id": "sesame-oil", "name": { "en": "Sesame Oil", "de": "Sesamöl" }, "amount": 1, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 2, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Brown tofu cubes and sliced shiitake in sesame oil for 6 minutes.", "de": "Tofuwürfel und Shiitake in Sesamöl 6 Minuten braten." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Simmer vegetable broth with miso paste, tamari, and grated garlic for 10 minutes.", "de": "Gemüsebrühe mit Miso, Tamari und Knoblauch 10 Minuten köcheln." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Cook noodles, divide into bowls, ladle hot aromatic broth, and arrange toppings.", "de": "Nudeln kochen, Brühe darübergießen und mit Pilzen, Tofu und Frühlingszwiebeln anrichten." }, "timer_minutes": 3, "tip": null }
+    ]
+  },
+  {
+    "id": "ramen-quick",
+    "dish_id": "ramen",
+    "title": { "en": "15-Minute Chicken & Chili Ramen", "de": "15-Minuten Hähnchen-Chili Ramen" },
+    "description": {
+      "en": "Fast weeknight ramen: tender sliced chicken breast, quick soft egg, chili oil, scallions, and savory broth.",
+      "de": "Schnelles Feierabend-Ramen: Zarte Hähnchenbruststreifen, weiches Ei, Chiliöl und Frühlingszwiebeln."
+    },
+    "variant_dimension_values": { "diet": "quick", "effort": "easy", "calorie": "510" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "calories_per_serving": 510,
+    "macros": { "calories": 510, "protein": 38, "carbs": 62, "fat": 14 },
+    "contains": ["poultry", "egg", "gluten", "soy", "scallions"],
+    "ingredient_ids": ["pasta", "chicken-breast", "egg", "soy-sauce", "scallions", "garlic"],
+    "attributes": ["easy", "<=15", "<=600", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Quick Ramen Noodles", "de": "Ramen-Nudeln" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "chicken-breast", "name": { "en": "Chicken Breast Strips", "de": "Hähnchenbruststreifen" }, "amount": 200, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce", "de": "Sojasauce" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 2, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Sear chicken strips in hot pot with soy sauce for 5 minutes.", "de": "Hähnchenstreifen im Topf mit Sojasauce 5 Minuten anbraten." }, "timer_minutes": 5, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Pour in 3 cups broth, bring to boil, add noodles and simmer 3 minutes.", "de": "Brühe zugeben, aufkochen, Nudeln zugeben und 3 Minuten kochen." }, "timer_minutes": 3, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Serve in deep bowls with sliced boiled egg and scallions.", "de": "In Schalen füllen, mit halbiertem Ei und Frühlingszwiebeln servieren." }, "timer_minutes": null, "tip": null }
+    ]
+  },
+  {
+    "id": "curry-classic",
+    "dish_id": "curry",
+    "title": { "en": "Velvet Butter Chicken & Fragrant Rice", "de": "Samtiges Butter Chicken mit Reis" },
+    "description": {
+      "en": "Tender spiced chicken pieces simmered in a silky tomato, cashew cream, and warm garam masala gravy served with basmati rice.",
+      "de": "Zarte Hähnchenstücke in einer samtigen Tomaten-Cashew-Creme mit Garam Masala und Basmatireis."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "670" },
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "total_time_minutes": 35,
+    "calories_per_serving": 670,
+    "macros": { "calories": 670, "protein": 40, "carbs": 65, "fat": 28 },
+    "contains": ["poultry", "dairy", "tree-nuts", "garlic", "onions"],
+    "ingredient_ids": ["chicken-breast", "rice", "butter", "heavy-cream", "cashews", "tomatoes", "garlic", "yellow-onion", "turmeric"],
+    "attributes": ["medium", "<=60", "<=800", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "chicken-breast", "name": { "en": "Chicken Breast Cubes", "de": "Hähnchenbrust gewürfelt" }, "amount": 300, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "rice", "name": { "en": "Basmati Rice", "de": "Basmatireis" }, "amount": 150, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "butter", "name": { "en": "Butter / Ghee", "de": "Butter / Ghee" }, "amount": 2, "unit": "tbsp", "aisle": "Dairy & Eggs" },
+      { "id": "heavy-cream", "name": { "en": "Heavy Cream", "de": "Sahne" }, "amount": 100, "unit": "ml", "aisle": "Dairy & Eggs" },
+      { "id": "tomatoes", "name": { "en": "Tomato Passata", "de": "Passierte Tomaten" }, "amount": 250, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "yellow-onion", "name": { "en": "Onion", "de": "Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Cook basmati rice in 1.5x water with a pinch of salt.", "de": "Basmatireis mit der 1,5-fachen Menge Wasser gar kochen." }, "timer_minutes": 12, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Brown chicken cubes in 1 tbsp butter for 5 minutes; remove.", "de": "Hähnchen in 1 EL Butter 5 Minuten scharf anbraten; herausnehmen." }, "timer_minutes": 5, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Sauté onions, garlic, spices, passata, and cream. Simmer with chicken for 12 minutes until thick.", "de": "Zwiebeln, Knoblauch, Gewürze, Tomaten und Sahne köcheln. Hähnchen 12 Minuten darin garen." }, "timer_minutes": 12, "tip": null }
+    ]
+  },
+  {
+    "id": "curry-vegan",
+    "dish_id": "curry",
+    "title": { "en": "Golden Coconut Chickpea & Spinach Curry", "de": "Goldenes Kokos-Kichererbsen Curry" },
+    "description": {
+      "en": "Sun-golden turmeric and ginger coconut curry loaded with protein-dense chickpeas, baby spinach, and basmati rice.",
+      "de": "Sonniges Kurkuma-Ingwer-Kokoscurry mit Kichererbsen, Babyspinat und Basmatireis."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "440" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 440,
+    "macros": { "calories": 440, "protein": 18, "carbs": 62, "fat": 14 },
+    "contains": ["garlic", "onions", "spinach"],
+    "ingredient_ids": ["chickpeas", "coconut-milk", "rice", "spinach", "garlic", "yellow-onion", "turmeric", "cumin"],
+    "attributes": ["easy", "<=30", "<=600", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "chickpeas", "name": { "en": "Chickpeas (canned)", "de": "Kichererbsen" }, "amount": 250, "unit": "g", "aisle": "Plant Proteins" },
+      { "id": "coconut-milk", "name": { "en": "Coconut Milk", "de": "Kokosmilch" }, "amount": 200, "unit": "ml", "aisle": "Pantry & Spices" },
+      { "id": "rice", "name": { "en": "Basmati Rice", "de": "Basmatireis" }, "amount": 150, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "spinach", "name": { "en": "Baby Spinach", "de": "Babyspinat" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "turmeric", "name": { "en": "Ground Turmeric", "de": "Kurkuma" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Cook rice until tender.", "de": "Reis gar kochen." }, "timer_minutes": 12, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Sauté garlic and spices in pot for 1 minute; add coconut milk and chickpeas. Simmer 10 minutes.", "de": "Knoblauch und Gewürze 1 Minute andünsten; Kokosmilch und Kichererbsen zugeben. 10 Minuten köcheln." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Stir in spinach until wilted. Serve over hot rice.", "de": "Spinat unterheben bis er zusammenfällt. Auf Reis anrichten." }, "timer_minutes": 2, "tip": null }
+    ]
+  },
+  {
+    "id": "curry-quick",
+    "dish_id": "curry",
+    "title": { "en": "15-Minute Spiced Red Lentil Dal", "de": "15-Minuten Rote Linsen Dal" },
+    "description": {
+      "en": "Quick soothing red lentil curry with cumin tempering, fragrant ginger, tomatoes, and fresh lemon cilantro finish.",
+      "de": "Wohltuendes Rote-Linsen-Dal mit Kreuzkümmel-Tempering, Ingwer, Tomaten und frischem Koriander."
+    },
+    "variant_dimension_values": { "diet": "quick", "effort": "easy", "calorie": "380" },
+    "servings": 2,
+    "prep_time_minutes": 3,
+    "cook_time_minutes": 12,
+    "total_time_minutes": 15,
+    "calories_per_serving": 380,
+    "macros": { "calories": 380, "protein": 22, "carbs": 58, "fat": 6 },
+    "contains": ["garlic", "onions", "cilantro"],
+    "ingredient_ids": ["lentils", "tomatoes", "garlic", "yellow-onion", "cumin", "turmeric", "cilantro"],
+    "attributes": ["easy", "<=15", "<=400", "simmer"],
+    "ingredients": [
+      { "id": "lentils", "name": { "en": "Red Split Lentils", "de": "Rote Linsen" }, "amount": 180, "unit": "g", "aisle": "Plant Proteins" },
+      { "id": "tomatoes", "name": { "en": "Diced Tomatoes", "de": "Tomaten gewürfelt" }, "amount": 200, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "cumin", "name": { "en": "Cumin Seeds", "de": "Kreuzkümmelsamen" }, "amount": 1, "unit": "tsp", "aisle": "Pantry & Spices" },
+      { "id": "cilantro", "name": { "en": "Fresh Cilantro", "de": "Frischer Koriander" }, "amount": 2, "unit": "tbsp", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Rinse red lentils. Simmer with tomatoes, water, and turmeric for 10 minutes.", "de": "Linsen mit Tomaten, Wasser und Kurkuma 10 Minuten köcheln." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Temper cumin and garlic in a pan with 1 tbsp oil; pour over dal.", "de": "Kreuzkümmel und Knoblauch kurz anrösten und über das Dal geben." }, "timer_minutes": 2, "tip": null }
+    ]
+  },
+  {
+    "id": "tacos-classic",
+    "dish_id": "tacos",
+    "title": { "en": "Charred Beef Street Tacos", "de": "Klassische Rindfleisch Street Tacos" },
+    "description": {
+      "en": "Seared spiced beef tucked into warm corn tortillas with diced white onion, cilantro, and fresh lime wedges.",
+      "de": "Scharf angebratenes Rindfleisch in warmen Maistortillas mit Zwiebelwürfeln, Koriander und Limette."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "580" },
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 25,
+    "total_time_minutes": 40,
+    "calories_per_serving": 580,
+    "macros": { "calories": 580, "protein": 38, "carbs": 46, "fat": 26 },
+    "contains": ["beef", "cilantro", "onions", "garlic"],
+    "ingredient_ids": ["beef", "yellow-onion", "cilantro", "lime", "garlic", "chili-peppers", "olive-oil"],
+    "attributes": ["medium", "<=60", "<=600", "pan-fry", "grill"],
+    "ingredients": [
+      { "id": "beef", "name": { "en": "Flank / Skirt Steak", "de": "Rindersteak in Streifen" }, "amount": 300, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "yellow-onion", "name": { "en": "White Onion (finely diced)", "de": "Zwiebel gewürfelt" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "cilantro", "name": { "en": "Fresh Cilantro", "de": "Frischer Koriander" }, "amount": 3, "unit": "tbsp", "aisle": "Produce" },
+      { "id": "lime", "name": { "en": "Fresh Limes", "de": "Limetten" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Marinate beef with lime juice, garlic, and chili.", "de": "Fleisch mit Limettensaft, Knoblauch und Chili marinieren." }, "timer_minutes": 10, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Sear beef in a very hot skillet for 6 minutes; rest and slice.", "de": "Fleisch in heißer Pfanne 6 Minuten braten, kurz ruhen lassen und tranchieren." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Warm tortillas, pile with beef, onions, cilantro, and squeeze lime over.", "de": "Tortillas erwärmen, mit Fleisch, Zwiebeln, Koriander und Limettensaft füllen." }, "timer_minutes": 3, "tip": null }
+    ]
+  },
+  {
+    "id": "tacos-vegan",
+    "dish_id": "tacos",
+    "title": { "en": "Crispy Black Bean & Avocado Street Tacos", "de": "Schwarze Bohnen & Avocado Tacos" },
+    "description": {
+      "en": "Smoky seasoned black beans, creamy avocado slices, pickled onions, and fresh cilantro on warm corn tortillas.",
+      "de": "Würzige schwarze Bohnen, cremige Avocado, eingelegte Zwiebeln und Koriander in warmen Maistortillas."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "390" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "calories_per_serving": 390,
+    "macros": { "calories": 390, "protein": 14, "carbs": 52, "fat": 15 },
+    "contains": ["cilantro", "onions"],
+    "ingredient_ids": ["black-beans", "avocado", "red-onion", "cilantro", "lime", "smoked-paprika", "cumin"],
+    "attributes": ["easy", "<=15", "<=400", "pan-fry"],
+    "ingredients": [
+      { "id": "black-beans", "name": { "en": "Black Beans (cooked)", "de": "Schwarze Bohnen" }, "amount": 250, "unit": "g", "aisle": "Plant Proteins" },
+      { "id": "avocado", "name": { "en": "Ripe Avocado", "de": "Reife Avocado" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "red-onion", "name": { "en": "Red Onion", "de": "Rote Zwiebel" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "cilantro", "name": { "en": "Fresh Cilantro", "de": "Koriander" }, "amount": 2, "unit": "tbsp", "aisle": "Produce" },
+      { "id": "lime", "name": { "en": "Lime", "de": "Limette" }, "amount": 1, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Warm black beans in skillet with cumin, smoked paprika, and a splash of water for 5 minutes.", "de": "Schwarze Bohnen mit Kreuzkümmel, Räucherpaprika und etwas Wasser 5 Minuten erhitzen." }, "timer_minutes": 5, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Warm tortillas, layer beans, sliced avocado, onions, cilantro, and lime.", "de": "Tortillas erwärmen, mit Bohnen, Avocado, Zwiebeln und Koriander füllen." }, "timer_minutes": 2, "tip": null }
+    ]
+  },
+  {
+    "id": "tacos-pescatarian",
+    "dish_id": "tacos",
+    "title": { "en": "Baja Grilled Fish Tacos", "de": "Baja Gegrillte Fisch-Tacos" },
+    "description": {
+      "en": "Lime-marinated grilled white fish fillets with crunchy chipotle cabbage slaw and avocado in toasted tortillas.",
+      "de": "In Limette mariniertes gegrilltes Fischfilet mit knackigem Chipotle-Krautsalat und Avocado."
+    },
+    "variant_dimension_values": { "diet": "pescatarian", "effort": "easy", "calorie": "450" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 450,
+    "macros": { "calories": 450, "protein": 34, "carbs": 42, "fat": 16 },
+    "contains": ["fish", "dairy", "cilantro", "onions"],
+    "ingredient_ids": ["cod", "cabbage", "avocado", "greek-yogurt", "lime", "cilantro"],
+    "attributes": ["easy", "<=30", "<=600", "pan-fry", "grill"],
+    "ingredients": [
+      { "id": "cod", "name": { "en": "Fresh Cod / White Fish", "de": "Kabeljau / Weißfisch" }, "amount": 250, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "cabbage", "name": { "en": "Shredded Cabbage", "de": "Weißkohl gehobelt" }, "amount": 100, "unit": "g", "aisle": "Produce" },
+      { "id": "avocado", "name": { "en": "Avocado", "de": "Avocado" }, "amount": 1, "unit": "pieces", "aisle": "Produce" },
+      { "id": "greek-yogurt", "name": { "en": "Yogurt", "de": "Joghurt" }, "amount": 3, "unit": "tbsp", "aisle": "Dairy & Eggs" },
+      { "id": "lime", "name": { "en": "Lime", "de": "Limette" }, "amount": 1, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Grill or sear seasoned fish fillets 3-4 minutes per side until flaky.", "de": "Fischfilets von jeder Seite 3-4 Minuten saftig anbraten." }, "timer_minutes": 7, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Flake fish and serve in tortillas with slaw, lime, and avocado.", "de": "Fisch zerteilen und in Tortillas mit Krautsalat und Avocado anrichten." }, "timer_minutes": null, "tip": null }
+    ]
+  },
+  {
+    "id": "pancakes-classic",
+    "dish_id": "pancakes",
+    "title": { "en": "Golden Buttermilk Pancakes", "de": "Fluffige Buttermilch-Pancakes" },
+    "description": {
+      "en": "Thick, cloud-fluffy griddle cakes made with real buttermilk, melted butter, and pure maple syrup.",
+      "de": "Dicke, federleichte Pfannkuchen mit echter Buttermilch, zerlassener Butter und Ahornsirup."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "easy", "calorie": "420" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "calories_per_serving": 420,
+    "macros": { "calories": 420, "protein": 10, "carbs": 64, "fat": 14 },
+    "contains": ["gluten", "dairy", "egg", "added-sugar"],
+    "ingredient_ids": ["wheat-flour", "whole-milk", "butter", "egg", "maple-syrup"],
+    "attributes": ["easy", "<=15", "<=600", "pan-fry"],
+    "ingredients": [
+      { "id": "wheat-flour", "name": { "en": "Flour", "de": "Mehl" }, "amount": 150, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "whole-milk", "name": { "en": "Milk", "de": "Milch" }, "amount": 180, "unit": "ml", "aisle": "Dairy & Eggs" },
+      { "id": "egg", "name": { "en": "Egg", "de": "Ei" }, "amount": 1, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "butter", "name": { "en": "Butter", "de": "Butter" }, "amount": 2, "unit": "tbsp", "aisle": "Dairy & Eggs" },
+      { "id": "maple-syrup", "name": { "en": "Maple Syrup", "de": "Ahornsirup" }, "amount": 3, "unit": "tbsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Whisk flour, baking powder, milk, egg, and melted butter until just combined.", "de": "Mehl, Backpulver, Milch, Ei und flüssige Butter verrühren." }, "timer_minutes": 2, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Pour batter onto hot buttered skillet; flip when bubbles appear.", "de": "Teig in die Pfanne geben, backen und wenden sobald Blasen entstehen." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Stack high and drizzle with warm maple syrup.", "de": "Stapeln und mit reichlich Ahornsirup servieren." }, "timer_minutes": null, "tip": null }
+    ]
+  },
+  {
+    "id": "pancakes-vegan",
+    "dish_id": "pancakes",
+    "title": { "en": "Banana Oat Milk Pancakes", "de": "Bananen-Hafermilch Pancakes" },
+    "description": {
+      "en": "Naturally sweet plant-based pancakes made with ripe mashed banana, oat flour, cinnamon, and toasted walnuts.",
+      "de": "Rein pflanzliche Pancakes aus reifer Banane, Hafermehl, Zimt und gerösteten Walnüssen."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "360" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 15,
+    "calories_per_serving": 360,
+    "macros": { "calories": 360, "protein": 8, "carbs": 66, "fat": 8 },
+    "contains": ["gluten", "tree-nuts"],
+    "ingredient_ids": ["wheat-flour", "walnuts", "maple-syrup"],
+    "attributes": ["easy", "<=15", "<=400", "pan-fry"],
+    "ingredients": [
+      { "id": "wheat-flour", "name": { "en": "Oat / Wheat Flour", "de": "Hafer- / Weizenmehl" }, "amount": 150, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "walnuts", "name": { "en": "Walnuts (chopped)", "de": "Walnüsse" }, "amount": 30, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "maple-syrup", "name": { "en": "Maple Syrup", "de": "Ahornsirup" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Mash 1 ripe banana with 1 cup plant milk, whisk into flour and 1 tsp baking powder.", "de": "1 reife Banane mit Pflanzenmilch zerdrücken und mit Mehl sowie Backpulver verrühren." }, "timer_minutes": 3, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Cook in lightly oiled pan for 3 minutes per side. Serve with walnuts and syrup.", "de": "In der Pfanne 3 Minuten pro Seite backen. Mit Walnüssen und Sirup servieren." }, "timer_minutes": 6, "tip": null }
+    ]
+  },
+  {
+    "id": "pancakes-gf",
+    "dish_id": "pancakes",
+    "title": { "en": "Gluten-Free Blueberry Almond Pancakes", "de": "Glutenfreie Heidelbeer-Mandel Pancakes" },
+    "description": {
+      "en": "Tender grain-free pancakes made from almond flour and coconut milk, bursting with juicy fresh blueberries.",
+      "de": "Zarte glutenfreie Pancakes aus Mandelmehl und Kokosmilch, vollgepackt mit frischen Heidelbeeren."
+    },
+    "variant_dimension_values": { "diet": "gluten-free", "effort": "easy", "calorie": "390" },
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 20,
+    "calories_per_serving": 390,
+    "macros": { "calories": 390, "protein": 14, "carbs": 32, "fat": 24 },
+    "contains": ["egg", "tree-nuts"],
+    "ingredient_ids": ["almonds", "egg", "coconut-milk", "maple-syrup"],
+    "attributes": ["easy", "<=30", "<=400", "pan-fry"],
+    "ingredients": [
+      { "id": "almonds", "name": { "en": "Almond Flour", "de": "Mandelmehl" }, "amount": 120, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "coconut-milk", "name": { "en": "Coconut Milk", "de": "Kokosmilch" }, "amount": 60, "unit": "ml", "aisle": "Pantry & Spices" },
+      { "id": "maple-syrup", "name": { "en": "Maple Syrup", "de": "Ahornsirup" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Whisk almond flour, eggs, and coconut milk until smooth.", "de": "Mandelmehl, Eier und Kokosmilch glattrühren." }, "timer_minutes": 2, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Cook small rounds over low heat, flip gently, and serve warm.", "de": "Kleine Pancakes bei sanfter Hitze backen und vorsichtig wenden." }, "timer_minutes": 8, "tip": null }
+    ]
+  },
+  {
+    "id": "pad-thai-classic",
+    "dish_id": "pad-thai",
+    "title": { "en": "Street-Style Shrimp Pad Thai", "de": "Original Garnelen Pad Thai" },
+    "description": {
+      "en": "Wok-fried flat rice noodles with succulent shrimp, egg ribbons, crunchy bean sprouts, toasted peanuts, and zesty tamarind glaze.",
+      "de": "Im Wok gebratene Reisbandnudeln mit Garnelen, Rührei, knackigen Sojasprossen, Erdnüssen und Tamarinden-Sauce."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "medium", "calorie": "580" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 580,
+    "macros": { "calories": 580, "protein": 32, "carbs": 70, "fat": 18 },
+    "contains": ["shellfish", "egg", "peanuts", "soy", "fish"],
+    "ingredient_ids": ["rice", "shrimp", "egg", "peanuts", "soy-sauce", "scallions", "lime", "garlic"],
+    "attributes": ["medium", "<=30", "<=600", "stir-fry", "pan-fry"],
+    "ingredients": [
+      { "id": "rice", "name": { "en": "Flat Rice Noodles", "de": "Reisbandnudeln" }, "amount": 180, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "shrimp", "name": { "en": "Peeled Raw Shrimp", "de": "Rohe Garnelen" }, "amount": 200, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "peanuts", "name": { "en": "Crushed Roasted Peanuts", "de": "Gehackte Erdnüsse" }, "amount": 30, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce", "de": "Sojasauce" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "lime", "name": { "en": "Lime", "de": "Limette" }, "amount": 1, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Soak rice noodles in warm water for 15 minutes until pliable.", "de": "Reisnudeln 15 Minuten in warmem Wasser einweichen." }, "timer_minutes": 15, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Stir-fry shrimp in wok with garlic for 3 minutes; push to side and scramble eggs.", "de": "Garnelen mit Knoblauch 3 Minuten anbraten; zur Seite schieben und Eier anstocken." }, "timer_minutes": 4, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Toss in drained noodles, tamarind soy sauce, and scallions. Serve with crushed peanuts and lime.", "de": "Nudeln, Sauce und Frühlingszwiebeln unterschwenken. Mit Erdnüssen und Limette servieren." }, "timer_minutes": 3, "tip": null }
+    ]
+  },
+  {
+    "id": "pad-thai-vegan",
+    "dish_id": "pad-thai",
+    "title": { "en": "Crispy Tofu & Sesame Pad Thai", "de": "Knusper-Tofu & Sesam Pad Thai" },
+    "description": {
+      "en": "Pan-crisped organic tofu and rice noodles tossed in tamarind lime sauce, crunchy bean sprouts, toasted sesame seeds, and green onions.",
+      "de": "Kross gebratener Tofu und Reisnudeln in Tamarinden-Limettensauce mit Sprossen und geröstetem Sesam."
+    },
+    "variant_dimension_values": { "diet": "vegan", "effort": "easy", "calorie": "460" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 10,
+    "total_time_minutes": 20,
+    "calories_per_serving": 460,
+    "macros": { "calories": 460, "protein": 20, "carbs": 68, "fat": 12 },
+    "contains": ["soy", "sesame", "scallions"],
+    "ingredient_ids": ["rice", "tofu", "tamari", "sesame-oil", "scallions", "lime", "garlic"],
+    "attributes": ["easy", "<=30", "<=600", "stir-fry", "pan-fry"],
+    "ingredients": [
+      { "id": "rice", "name": { "en": "Rice Noodles", "de": "Reisbandnudeln" }, "amount": 180, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "tofu", "name": { "en": "Extra Firm Tofu", "de": "Naturtofu extra fest" }, "amount": 200, "unit": "g", "aisle": "Plant Proteins", "guide_id": "tofu" },
+      { "id": "tamari", "name": { "en": "Tamari GF Soy Sauce", "de": "Tamari Sojasauce" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices", "guide_id": "tamari" },
+      { "id": "sesame-oil", "name": { "en": "Sesame Oil", "de": "Sesamöl" }, "amount": 1, "unit": "tbsp", "aisle": "Oils & Condiments" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 2, "unit": "pieces", "aisle": "Produce" },
+      { "id": "lime", "name": { "en": "Lime", "de": "Limette" }, "amount": 1, "unit": "pieces", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Soak noodles; dice tofu and fry in sesame oil until golden and crisp.", "de": "Nudeln einweichen; Tofu würfeln und in Sesamöl knusprig braten." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Add garlic, tamari, lime juice, and noodles to wok; toss over high heat for 3 minutes.", "de": "Knoblauch, Tamari, Limettensaft und Nudeln in den Wok geben und 3 Minuten schwenken." }, "timer_minutes": 3, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Garnish with toasted sesame seeds and scallions.", "de": "Mit geröstetem Sesam und Frühlingszwiebeln anrichten." }, "timer_minutes": null, "tip": null }
+    ]
+  },
+  {
+    "id": "pad-thai-chicken",
+    "dish_id": "pad-thai",
+    "title": { "en": "Halal Chicken Street Pad Thai", "de": "Halal Hähnchen Pad Thai" },
+    "description": {
+      "en": "Halal-compatible sliced chicken breast stir-fried with tamarind glaze, rice noodles, egg, crushed peanuts, and fresh cilantro.",
+      "de": "Zarte Hähnchenbrust im Wok gebraten mit Tamarinde, Reisnudeln, Ei, Erdnüssen und frischem Koriander."
+    },
+    "variant_dimension_values": { "diet": "halal", "effort": "medium", "calorie": "540" },
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "total_time_minutes": 25,
+    "calories_per_serving": 540,
+    "macros": { "calories": 540, "protein": 36, "carbs": 66, "fat": 15 },
+    "contains": ["poultry", "egg", "peanuts", "soy", "fish"],
+    "ingredient_ids": ["rice", "chicken-breast", "egg", "peanuts", "soy-sauce", "cilantro", "lime"],
+    "attributes": ["medium", "<=30", "<=600", "stir-fry"],
+    "ingredients": [
+      { "id": "rice", "name": { "en": "Rice Noodles", "de": "Reisbandnudeln" }, "amount": 180, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "chicken-breast", "name": { "en": "Chicken Breast Strips", "de": "Hähnchenbruststreifen" }, "amount": 250, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Eggs", "de": "Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "peanuts", "name": { "en": "Peanuts", "de": "Erdnüsse" }, "amount": 30, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce", "de": "Sojasauce" }, "amount": 2, "unit": "tbsp", "aisle": "Pantry & Spices" },
+      { "id": "cilantro", "name": { "en": "Cilantro", "de": "Koriander" }, "amount": 2, "unit": "tbsp", "aisle": "Produce" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Stir-fry chicken strips in hot oil for 5 minutes.", "de": "Hähnchenstreifen in heißem Öl 5 Minuten anbraten." }, "timer_minutes": 5, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Add egg, noodles, and tamarind sauce; stir-fry 4 minutes.", "de": "Ei, Nudeln und Tamarindensauce zugeben; 4 Minuten pfannenrühren." }, "timer_minutes": 4, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Serve topped with peanuts and fresh cilantro.", "de": "Mit Erdnüssen und Koriander servieren." }, "timer_minutes": null, "tip": null }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "faq-1",
+    "category": "matching",
+    "question": {
+      "en": "How does MorphCook adapt recipes for my dietary needs?",
+      "de": "Wie passt MorphCook Rezepte an meine Ernährungsweise an?"
+    },
+    "answer": {
+      "en": "Rather than watering down or removing recipes with basic ingredient swaps, MorphCook pairs each dish concept with fully authored, distinct recipe variants. The app compares your avoid-flags and disliked ingredients against each variant to surface the one tailored for your way of eating.",
+      "de": "Statt Rezepte einfach auszublenden oder plumpe Ersetzungen vorzuschlagen, hat jedes Gericht eigenständige, vollwertig ausgearbeitete Rezept-Varianten. Die App gleicht deine Unverträglichkeiten und Vorlieben ab und zeigt die perfekte Variante für dich."
+    }
+  },
+  {
+    "id": "faq-2",
+    "category": "matching",
+    "question": {
+      "en": "Why are Halal and Kosher marked as 'Compatible'?",
+      "de": "Warum sind Halal und Koscher als 'Kompatibel' gekennzeichnet?"
+    },
+    "answer": {
+      "en": "Religious dietary designations like Halal and Kosher depend on ingredient sourcing, slaughter methods, and certified supervision. MorphCook ensures recipes contain only halal/kosher compatible ingredients (e.g., zero pork, zero alcohol, no meat-dairy mixes), but cannot certify physical supply chains.",
+      "de": "Zertifizierungen für Halal und Koscher hängen von Bezugsquellen, Schlachtung und Aufsicht ab. MorphCook garantiert zutatenseitige Kompatibilität (kein Schwein, kein Alkohol, keine Fleisch-Milch-Mischung), zertifiziert aber keine Lieferketten."
+    }
+  },
+  {
+    "id": "faq-3",
+    "category": "visibility",
+    "question": {
+      "en": "Why can't I see certain recipes in the feed?",
+      "de": "Warum sehe ich manche Rezepte nicht im Feed?"
+    },
+    "answer": {
+      "en": "If a recipe contains ingredients or allergens you have selected in your profile's avoidance settings, or exceeds your maximum prep time or calorie target, it will be filtered out. You can adjust your profile preferences or toggle the calorie override switch inside any dish.",
+      "de": "Wenn ein Rezept Zutaten oder Allergene enthält, die du in deinem Profil ausgeschlossen hast, oder dein Zeit-/Kalorienlimit überschreitet, wird es gefiltert. Du kannst die Filter in deinen Einstellungen anpassen oder den Kalorien-Schalter im Gericht aktivieren."
+    }
+  },
+  {
+    "id": "faq-4",
+    "category": "visibility",
+    "question": {
+      "en": "What does a disabled variant chip mean?",
+      "de": "Was bedeutet ein ausgegrauter Varianten-Chip?"
+    },
+    "answer": {
+      "en": "When viewing a dish, some combinations (such as Vegan + Hard Gourmet) might not have a dedicated authored recipe yet. Instead of hiding the option, MorphCook displays it disabled with an informative note so you know what is currently available.",
+      "de": "Manche Kombinationen (z. B. Vegan + Aufwändig) haben noch keine eigene verfasste Rezeptvariante. Anstatt diese zu verstecken, zeigt MorphCook sie transparent mit einem Hinweis an."
+    }
+  },
+  {
+    "id": "faq-5",
+    "category": "features",
+    "question": {
+      "en": "How does the Smart Shopping List combine ingredients?",
+      "de": "Wie fasst die smarte Einkaufsliste Zutaten zusammen?"
+    },
+    "answer": {
+      "en": "The shopping list understands culinary units. Adding multiple recipes will aggregate identical ingredients (e.g. 2 cloves + 3 cloves = 5 cloves) and convert compatible measurements (tablespoons, milliliters, grams). Items are automatically grouped by supermarket aisle.",
+      "de": "Die Einkaufsliste versteht Mengeneinheiten. Werden mehrere Rezepte hinzugefügt, werden gleiche Zutaten addiert (z. B. 2 Zehen + 3 Zehen = 5 Zehen) und nach Supermarkt-Gängen geordnet."
+    }
+  },
+  {
+    "id": "faq-6",
+    "category": "features",
+    "question": {
+      "en": "How does Cook Mode work?",
+      "de": "Wie funktioniert der Kochmodus?"
+    },
+    "answer": {
+      "en": "Cook Mode offers a full-screen, distraction-free cooking assistant with step timers, visual alerts for the hearing impaired, single-tap progress advancing with haptic feedback, and automatic step resume if you close the app.",
+      "de": "Der Kochmodus bietet eine bildschirmfüllende Ansicht mit Schritt-Timern, barrierefreien Blink-Signalen, Schnell-Tipp-Weiterschaltung und automatischer Speicherfunktion des aktuellen Fortschritts."
+    }
+  },
+  {
+    "id": "faq-7",
+    "category": "troubleshooting",
+    "question": {
+      "en": "How does file backup and restore work?",
+      "de": "Wie funktioniert die Datensicherung und Wiederherstellung?"
+    },
+    "answer": {
+      "en": "MorphCook operates 100% offline. Backups export directly to your device as JSON and GZip files. You can optionally set a password for AES-256-GCM encryption. To restore, select your backup file in Settings.",
+      "de": "MorphCook funktioniert komplett offline. Backups werden direkt als JSON und komprimierte GZip-Datei exportiert – optional mit AES-256-GCM-Verschlüsselung. Zum Wiederherstellen wählst du die Datei in den Einstellungen aus."
+    }
+  }
+]

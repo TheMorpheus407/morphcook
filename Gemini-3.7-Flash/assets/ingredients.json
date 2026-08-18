@@ -1,0 +1,260 @@
+[
+  {
+    "id": "dairy",
+    "name": { "en": "Dairy", "de": "Milchprodukte" },
+    "children": [
+      {
+        "id": "cow-milk",
+        "name": { "en": "Cow's Milk", "de": "Kuhmilch" },
+        "children": [
+          { "id": "whole-milk", "name": { "en": "Whole Milk", "de": "Vollmilch" } },
+          { "id": "skim-milk", "name": { "en": "Skim Milk", "de": "Magermilch" } },
+          { "id": "heavy-cream", "name": { "en": "Heavy Cream", "de": "Schlagsahne" } },
+          { "id": "sour-cream", "name": { "en": "Sour Cream", "de": "Sauerrahm" } },
+          { "id": "butter", "name": { "en": "Butter", "de": "Butter" } },
+          { "id": "greek-yogurt", "name": { "en": "Greek Yogurt", "de": "Griechischer Joghurt" } }
+        ]
+      },
+      {
+        "id": "cheese",
+        "name": { "en": "Cheese", "de": "Käse" },
+        "children": [
+          { "id": "parmesan", "name": { "en": "Parmesan", "de": "Parmesan" } },
+          { "id": "feta", "name": { "en": "Feta", "de": "Feta" } },
+          { "id": "mozzarella", "name": { "en": "Mozzarella", "de": "Mozzarella" } },
+          { "id": "cheddar", "name": { "en": "Cheddar", "de": "Cheddar" } },
+          { "id": "ricotta", "name": { "en": "Ricotta", "de": "Ricotta" } },
+          { "id": "pecorino", "name": { "en": "Pecorino", "de": "Pecorino" } },
+          { "id": "goat-cheese", "name": { "en": "Goat Cheese", "de": "Ziegenkäse" } }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nuts",
+    "name": { "en": "Nuts", "de": "Nüsse" },
+    "children": [
+      {
+        "id": "tree-nuts",
+        "name": { "en": "Tree Nuts", "de": "Baumnüsse" },
+        "children": [
+          { "id": "walnuts", "name": { "en": "Walnuts", "de": "Walnüsse" } },
+          { "id": "almonds", "name": { "en": "Almonds", "de": "Mandeln" } },
+          { "id": "pistachios", "name": { "en": "Pistachios", "de": "Pistazien" } },
+          { "id": "cashews", "name": { "en": "Cashews", "de": "Cashewkerne" } },
+          { "id": "pine-nuts", "name": { "en": "Pine Nuts", "de": "Pinienkerne" } }
+        ]
+      },
+      {
+        "id": "peanuts",
+        "name": { "en": "Peanuts", "de": "Erdnüsse" },
+        "children": [
+          { "id": "peanut-butter", "name": { "en": "Peanut Butter", "de": "Erdnussbutter" } }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "meat",
+    "name": { "en": "Meat", "de": "Fleisch" },
+    "children": [
+      {
+        "id": "pork",
+        "name": { "en": "Pork", "de": "Schweinefleisch" },
+        "children": [
+          { "id": "bacon", "name": { "en": "Bacon", "de": "Speck" } },
+          { "id": "pork-chops", "name": { "en": "Pork Chops", "de": "Schweinekotelett" } },
+          { "id": "guanciale", "name": { "en": "Guanciale", "de": "Guanciale" } },
+          { "id": "pancetta", "name": { "en": "Pancetta", "de": "Pancetta" } }
+        ]
+      },
+      {
+        "id": "beef",
+        "name": { "en": "Beef", "de": "Rindfleisch" },
+        "children": [
+          { "id": "ground-beef", "name": { "en": "Ground Beef", "de": "Rinderhackfleisch" } },
+          { "id": "beef-steak", "name": { "en": "Beef Steak", "de": "Rindersteak" } }
+        ]
+      },
+      {
+        "id": "poultry",
+        "name": { "en": "Poultry", "de": "Geflügel" },
+        "children": [
+          { "id": "chicken-breast", "name": { "en": "Chicken Breast", "de": "Hähnchenbrust" } },
+          { "id": "chicken-thighs", "name": { "en": "Chicken Thighs", "de": "Hähnchenschenkel" } },
+          { "id": "turkey", "name": { "en": "Turkey", "de": "Putenfleisch" } }
+        ]
+      },
+      {
+        "id": "lamb",
+        "name": { "en": "Lamb", "de": "Lammfleisch" }
+      }
+    ]
+  },
+  {
+    "id": "seafood",
+    "name": { "en": "Seafood & Fish", "de": "Meeresfrüchte & Fisch" },
+    "children": [
+      {
+        "id": "fish",
+        "name": { "en": "Fish", "de": "Fisch" },
+        "children": [
+          { "id": "salmon", "name": { "en": "Salmon", "de": "Lachs" } },
+          { "id": "tuna", "name": { "en": "Tuna", "de": "Thunfisch" } },
+          { "id": "cod", "name": { "en": "Cod", "de": "Kabeljau" } }
+        ]
+      },
+      {
+        "id": "shellfish",
+        "name": { "en": "Shellfish", "de": "Krebstiere" },
+        "children": [
+          { "id": "shrimp", "name": { "en": "Shrimp / Prawns", "de": "Garnelen" } },
+          { "id": "crab", "name": { "en": "Crab", "de": "Krabbe" } }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "produce",
+    "name": { "en": "Vegetables & Produce", "de": "Gemüse & Frischezutaten" },
+    "children": [
+      {
+        "id": "alliums",
+        "name": { "en": "Alliums (Onions & Garlic)", "de": "Lauch- und Zwiebelgewächse" },
+        "children": [
+          { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" } },
+          { "id": "yellow-onion", "name": { "en": "Yellow Onion", "de": "Zwiebel gelb" } },
+          { "id": "red-onion", "name": { "en": "Red Onion", "de": "Rote Zwiebel" } },
+          { "id": "shallots", "name": { "en": "Shallots", "de": "Schalotten" } },
+          { "id": "scallions", "name": { "en": "Scallions / Spring Onion", "de": "Frühlingszwiebeln" } }
+        ]
+      },
+      {
+        "id": "nightshades",
+        "name": { "en": "Nightshades", "de": "Nachtschattengewächse" },
+        "children": [
+          { "id": "tomatoes", "name": { "en": "Tomatoes", "de": "Tomaten" } },
+          { "id": "cherry-tomatoes", "name": { "en": "Cherry Tomatoes", "de": "Kirschtomaten" } },
+          { "id": "bell-peppers", "name": { "en": "Bell Peppers", "de": "Paprika" } },
+          { "id": "eggplant", "name": { "en": "Eggplant / Aubergine", "de": "Aubergine" } },
+          { "id": "chili-peppers", "name": { "en": "Chili Peppers", "de": "Chilischoten" } }
+        ]
+      },
+      {
+        "id": "herbs",
+        "name": { "en": "Herbs", "de": "Kräuter" },
+        "children": [
+          { "id": "cilantro", "name": { "en": "Cilantro / Coriander", "de": "Koriander" } },
+          { "id": "basil", "name": { "en": "Basil", "de": "Basilikum" } },
+          { "id": "parsley", "name": { "en": "Parsley", "de": "Petersilie" } },
+          { "id": "mint", "name": { "en": "Mint", "de": "Minze" } },
+          { "id": "oregano", "name": { "en": "Oregano", "de": "Oregano" } },
+          { "id": "rosemary", "name": { "en": "Rosemary", "de": "Rosmarin" } },
+          { "id": "thyme", "name": { "en": "Thyme", "de": "Thymian" } },
+          { "id": "dill", "name": { "en": "Dill", "de": "Dill" } }
+        ]
+      },
+      {
+        "id": "leafy-greens",
+        "name": { "en": "Leafy Greens", "de": "Blattgemüse" },
+        "children": [
+          { "id": "spinach", "name": { "en": "Spinach", "de": "Spinat" } },
+          { "id": "arugula", "name": { "en": "Arugula / Rocket", "de": "Rucola" } },
+          { "id": "kale", "name": { "en": "Kale", "de": "Grünkohl" } },
+          { "id": "romaine-lettuce", "name": { "en": "Romaine Lettuce", "de": "Römersalat" } },
+          { "id": "cabbage", "name": { "en": "Cabbage", "de": "Kohl" } }
+        ]
+      },
+      {
+        "id": "mushrooms",
+        "name": { "en": "Mushrooms", "de": "Pilze" },
+        "children": [
+          { "id": "button-mushrooms", "name": { "en": "Button Mushrooms", "de": "Champignons" } },
+          { "id": "shiitake", "name": { "en": "Shiitake", "de": "Shiitake" } },
+          { "id": "portobello", "name": { "en": "Portobello", "de": "Portobello" } }
+        ]
+      },
+      {
+        "id": "fruits",
+        "name": { "en": "Fruits", "de": "Früchte" },
+        "children": [
+          { "id": "apples", "name": { "en": "Apples", "de": "Äpfel" } },
+          { "id": "lemon", "name": { "en": "Lemon", "de": "Zitrone" } },
+          { "id": "lime", "name": { "en": "Lime", "de": "Limette" } },
+          { "id": "avocado", "name": { "en": "Avocado", "de": "Avocado" } }
+        ]
+      },
+      {
+        "id": "cucumbers",
+        "name": { "en": "Cucumber", "de": "Gurke" }
+      },
+      {
+        "id": "carrots",
+        "name": { "en": "Carrots", "de": "Karotten" }
+      },
+      {
+        "id": "zucchini",
+        "name": { "en": "Zucchini / Courgette", "de": "Zucchini" }
+      }
+    ]
+  },
+  {
+    "id": "grains",
+    "name": { "en": "Grains & Pasta", "de": "Getreide & Pasta" },
+    "children": [
+      {
+        "id": "gluten-grains",
+        "name": { "en": "Wheat & Gluten Grains", "de": "Weizen & Glutenhaltiges" },
+        "children": [
+          { "id": "wheat-flour", "name": { "en": "Wheat Flour", "de": "Weizenmehl" } },
+          { "id": "pasta", "name": { "en": "Wheat Pasta", "de": "Weizenpasta" } },
+          { "id": "pita-bread", "name": { "en": "Pita Bread", "de": "Fladenbrot / Pitabrot" } },
+          { "id": "sourdough-bread", "name": { "en": "Sourdough Bread", "de": "Sauerteigbrot" } },
+          { "id": "couscous", "name": { "en": "Couscous", "de": "Couscous" } }
+        ]
+      },
+      {
+        "id": "gluten-free-grains",
+        "name": { "en": "Gluten-Free Grains", "de": "Glutenfreie Getreide" },
+        "children": [
+          { "id": "rice", "name": { "en": "Rice (Jasmine/Basmati)", "de": "Reis" } },
+          { "id": "quinoa", "name": { "en": "Quinoa", "de": "Quinoa" } },
+          { "id": "oats-gf", "name": { "en": "GF Oats", "de": "Glutenfreie Haferflocken" } },
+          { "id": "gluten-free-pasta", "name": { "en": "Gluten-Free Pasta", "de": "Glutenfreie Pasta" } }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plant-proteins",
+    "name": { "en": "Plant Proteins & Tofu", "de": "Pflanzliche Proteine" },
+    "children": [
+      { "id": "tofu", "name": { "en": "Tofu (Firm / Silken)", "de": "Tofu" } },
+      { "id": "tempeh", "name": { "en": "Tempeh", "de": "Tempeh" } },
+      { "id": "seitan", "name": { "en": "Seitan", "de": "Seitan" } },
+      { "id": "chickpeas", "name": { "en": "Chickpeas", "de": "Kichererbsen" } },
+      { "id": "lentils", "name": { "en": "Lentils", "de": "Linsen" } },
+      { "id": "black-beans", "name": { "en": "Black Beans", "de": "Schwarze Bohnen" } }
+    ]
+  },
+  {
+    "id": "pantry",
+    "name": { "en": "Pantry & Condiments", "de": "Vorratskammer & Würzsaucen" },
+    "children": [
+      { "id": "olive-oil", "name": { "en": "Extra Virgin Olive Oil", "de": "Natives Olivenöl Extra" } },
+      { "id": "sesame-oil", "name": { "en": "Toasted Sesame Oil", "de": "Geröstetes Sesamöl" } },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce / Shoyu", "de": "Sojasauce" } },
+      { "id": "tamari", "name": { "en": "Tamari (Gluten-Free)", "de": "Tamari (Glutenfrei)" } },
+      { "id": "tahini", "name": { "en": "Tahini", "de": "Tahini / Sesampaste" } },
+      { "id": "nutritional-yeast", "name": { "en": "Nutritional Yeast", "de": "Hefeflocken" } },
+      { "id": "coconut-milk", "name": { "en": "Coconut Milk", "de": "Kokosmilch" } },
+      { "id": "maple-syrup", "name": { "en": "Maple Syrup", "de": "Ahornsirup" } },
+      { "id": "honey", "name": { "en": "Honey", "de": "Honig" } },
+      { "id": "cumin", "name": { "en": "Ground Cumin", "de": "Kreuzkümmel" } },
+      { "id": "smoked-paprika", "name": { "en": "Smoked Paprika", "de": "Geräuchertes Paprikapulver" } },
+      { "id": "turmeric", "name": { "en": "Turmeric", "de": "Kurkuma" } },
+      { "id": "black-pepper", "name": { "en": "Black Pepper", "de": "Schwarzer Pfeffer" } },
+      { "id": "sea-salt", "name": { "en": "Sea Salt", "de": "Meersalz" } }
+    ]
+  }
+]

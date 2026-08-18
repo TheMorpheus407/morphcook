@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ramen-classic",
+    "dish_id": "ramen",
+    "title": { "en": "Tokyo Tonkotsu Shoyu Ramen", "de": "Tokyo Shoyu Ramen" },
+    "description": {
+      "en": "Springy wheat noodles in rich umami broth topped with tender glazed pork, marinated egg, scallions, and nori.",
+      "de": "Federnde Ramen-Nudeln in tiefer Umami-Brühe mit zartem Schweinebauch, mariniertem Ei und Frühlingszwiebeln."
+    },
+    "variant_dimension_values": { "diet": "classic", "effort": "hard", "calorie": "720" },
+    "servings": 2,
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 30,
+    "total_time_minutes": 55,
+    "calories_per_serving": 720,
+    "macros": { "calories": 720, "protein": 42, "carbs": 76, "fat": 28 },
+    "contains": ["pork", "egg", "gluten", "soy", "garlic", "scallions"],
+    "ingredient_ids": ["pasta", "pork-chops", "egg", "soy-sauce", "scallions", "garlic", "sesame-oil"],
+    "attributes": ["hard", "<=60", ">800", "simmer", "sauté"],
+    "ingredients": [
+      { "id": "pasta", "name": { "en": "Fresh Ramen Noodles", "de": "Frische Ramen-Nudeln" }, "amount": 250, "unit": "g", "aisle": "Pantry & Spices" },
+      { "id": "pork-chops", "name": { "en": "Pork Chashu / Belly", "de": "Schweinebauch / Chashu" }, "amount": 200, "unit": "g", "aisle": "Meat & Seafood" },
+      { "id": "egg", "name": { "en": "Soft Boiled Eggs", "de": "Wachsweiche Eier" }, "amount": 2, "unit": "pieces", "aisle": "Dairy & Eggs" },
+      { "id": "soy-sauce", "name": { "en": "Soy Sauce", "de": "Sojasauce" }, "amount": 3, "unit": "tbsp", "aisle": "Pantry & Spices" },
+      { "id": "scallions", "name": { "en": "Scallions", "de": "Frühlingszwiebeln" }, "amount": 3, "unit": "pieces", "aisle": "Produce" },
+      { "id": "garlic", "name": { "en": "Garlic", "de": "Knoblauch" }, "amount": 2, "unit": "cloves", "aisle": "Produce" },
+      { "id": "sesame-oil", "name": { "en": "Sesame Oil", "de": "Sesamöl" }, "amount": 1, "unit": "tbsp", "aisle": "Oils & Condiments" }
+    ],
+    "steps": [
+      { "step_number": 1, "instruction": { "en": "Simmer broth base with soy sauce, garlic, and aromatics for 20 minutes.", "de": "Brühe mit Sojasauce, Knoblauch und Aromen 20 Minuten köcheln." }, "timer_minutes": 20, "tip": null },
+      { "step_number": 2, "instruction": { "en": "Sear pork slices until caramelized and crisp.", "de": "Fleischscheiben anbraten bis sie karamellisieren." }, "timer_minutes": 6, "tip": null },
+      { "step_number": 3, "instruction": { "en": "Boil ramen noodles for 2-3 minutes; drain.", "de": "Nudeln 2-3 Minuten kochen und abgießen." }, "timer_minutes": 3, "tip": null },
+      { "step_number": 4, "instruction": { "en": "Assemble hot broth over noodles; crown with pork, egg halves, and scallions.", "de": "Heiße Brühe über Nudeln gießen, mit Fleisch, Ei und Frühlingszwiebeln toppen." }, "timer_minutes": null, "tip": null }
+    ]
+  }
+]
