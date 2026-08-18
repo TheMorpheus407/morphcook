@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.08.1",
+  "loading_strategy": {
+    "launch": ["core-recipes"],
+    "on_demand": ["extended-recipes", "cuisine-italian", "cuisine-asian", "cuisine-middle-eastern"]
+  },
+  "partitions": [
+    {
+      "id": "core-recipes",
+      "file": "core-recipes.json",
+      "tier": "core",
+      "loaded_at_launch": true,
+      "cuisine_tags": ["middle-eastern", "asian", "american"],
+      "dish_ids": ["doener", "shakshuka", "pad-thai", "ramen", "pancakes", "burger"],
+      "recipe_count": 24
+    },
+    {
+      "id": "extended-recipes",
+      "file": "extended-recipes.json",
+      "tier": "extended",
+      "loaded_at_launch": false,
+      "cuisine_tags": ["italian", "asian"],
+      "dish_ids": ["lasagna", "sushi"],
+      "recipe_count": 7
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "tier": "cuisine",
+      "loaded_at_launch": false,
+      "cuisine_tags": ["italian"],
+      "dish_ids": ["alfredo", "carbonara"],
+      "recipe_count": 8
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "tier": "cuisine",
+      "strategy": "reference-partition",
+      "loaded_at_launch": false,
+      "cuisine_tags": ["asian"],
+      "dish_ids": ["pad-thai", "ramen", "sushi"],
+      "recipe_count": 0
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "tier": "cuisine",
+      "loaded_at_launch": false,
+      "cuisine_tags": ["middle-eastern"],
+      "dish_ids": ["falafel-wrap"],
+      "recipe_count": 4
+    }
+  ],
+  "cross_references": {
+    "alfredo": ["cuisine-italian"],
+    "carbonara": ["cuisine-italian"],
+    "lasagna": ["extended-recipes", "cuisine-italian"],
+    "pad-thai": ["core-recipes", "cuisine-asian"],
+    "ramen": ["core-recipes", "cuisine-asian"],
+    "sushi": ["extended-recipes", "cuisine-asian"],
+    "doener": ["core-recipes", "cuisine-middle-eastern"],
+    "shakshuka": ["core-recipes", "cuisine-middle-eastern"],
+    "falafel-wrap": ["cuisine-middle-eastern"]
+  },
+  "totals": {"dishes": 11, "recipes": 43}
+}

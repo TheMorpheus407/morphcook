@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "partition": "extended-recipes",
+  "recipes": [
+    {
+      "id": "lasagna-classic", "dish": "lasagna", "title": {"en": "classic lasagna", "de": "klassische lasagne"},
+      "diet": "classic", "effort": "hard", "time": 90, "cal": 820, "p": 40, "c": 62, "f": 42, "servings": 4,
+      "contains": ["beef", "dairy", "lactose", "gluten", "celery", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["bake", "simmer"],
+      "ing": [
+        {"id": "lasagna-sheets", "q": 9, "u": "pc"}, {"id": "ground-beef", "q": 400, "u": "g"}, {"id": "tomato-tinned", "q": 400, "u": "g"},
+        {"id": "tomato-paste", "q": 2, "u": "tbsp"}, {"id": "onion", "q": 100, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"},
+        {"id": "carrot", "q": 100, "u": "g"}, {"id": "celery", "q": 50, "u": "g"}, {"id": "oregano", "q": 1, "u": "tsp"},
+        {"id": "butter", "q": 40, "u": "g"}, {"id": "flour", "q": 40, "u": "g"}, {"id": "milk", "q": 500, "u": "ml"},
+        {"id": "mozzarella", "q": 150, "u": "g"}, {"id": "parmesan", "q": 50, "u": "g"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "sweat onion, carrot and celery in olive oil until soft.", "de": "zwiebel, karotte und sellerie in olivenöl weich dünsten."}, "s": 480},
+        {"t": {"en": "add garlic and beef; brown, then tomato paste, tinned tomatoes and oregano; simmer twenty minutes.", "de": "knoblauch und hack zugeben; anbraten, dann tomatenmark, dosentomaten und oregano; zwanzig minuten köcheln."}, "s": 1200},
+        {"t": {"en": "make a béchamel: melt butter, stir in flour, whisk in milk until silky.", "de": "béchamel anrühren: butter schmelzen, mehl einrühren, milch einschlagen, bis sie seidig ist."}, "s": 480},
+        {"t": {"en": "layer: ragù, sheets, béchamel — repeat — finish with béchamel, mozzarella and parmesan.", "de": "schichten: ragout, platten, béchamel — wiederholen — mit béchamel, mozzarella und parmesan abschließen."}, "s": 300},
+        {"t": {"en": "bake at 190 °c until bubbling and dark on top; rest ten minutes before cutting.", "de": "bei 190 °c backen, bis es blubbert und oben dunkel ist; zehn minuten ruhen lassen."}, "s": 2400}
+      ]
+    },
+    {
+      "id": "lasagna-gluten-free", "dish": "lasagna", "title": {"en": "gluten-free lasagna", "de": "glutenfreie lasagne"},
+      "diet": "gluten-free", "effort": "hard", "time": 90, "cal": 810, "p": 40, "c": 60, "f": 41, "servings": 4,
+      "contains": ["beef", "dairy", "lactose", "celery", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["bake", "simmer"],
+      "ing": [
+        {"id": "lasagna-sheets-gf", "q": 9, "u": "pc"}, {"id": "ground-beef", "q": 400, "u": "g"}, {"id": "tomato-tinned", "q": 400, "u": "g"},
+        {"id": "tomato-paste", "q": 2, "u": "tbsp"}, {"id": "onion", "q": 100, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"},
+        {"id": "carrot", "q": 100, "u": "g"}, {"id": "celery", "q": 50, "u": "g"}, {"id": "oregano", "q": 1, "u": "tsp"},
+        {"id": "butter", "q": 40, "u": "g"}, {"id": "cornstarch", "q": 30, "u": "g"}, {"id": "milk", "q": 500, "u": "ml"},
+        {"id": "mozzarella", "q": 150, "u": "g"}, {"id": "parmesan", "q": 50, "u": "g"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "make the ragù exactly like the classic.", "de": "das ragout genau wie beim klassiker zubereiten."}, "s": 1800},
+        {"t": {"en": "thicken the milk with cornstarch instead of flour for the sauce.", "de": "die milch für die sauce statt mit mehl mit speisestärke andicken."}, "s": 480},
+        {"t": {"en": "layer with gluten-free sheets; they drink more sauce — be generous.", "de": "mit glutenfreien platten schichten; sie trinken mehr sauce — großzügig sein."}, "s": 300},
+        {"t": {"en": "bake at 190 °c until golden; rest before cutting.", "de": "bei 190 °c goldbraun backen; vor dem anschneiden ruhen lassen."}, "s": 2400}
+      ]
+    },
+    {
+      "id": "lasagna-vegan", "dish": "lasagna", "title": {"en": "vegan lentil lasagna", "de": "vegane linsen-lasagne"},
+      "diet": "vegan", "effort": "hard", "time": 90, "cal": 640, "p": 28, "c": 94, "f": 16, "servings": 4,
+      "contains": ["gluten", "soy", "celery", "high-fodmap"], "attr": [], "tech": ["bake", "simmer"],
+      "ing": [
+        {"id": "lasagna-sheets", "q": 9, "u": "pc"}, {"id": "red-lentils", "q": 200, "u": "g"}, {"id": "tomato-tinned", "q": 800, "u": "g"},
+        {"id": "onion", "q": 100, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "carrot", "q": 100, "u": "g"},
+        {"id": "celery", "q": 50, "u": "g"}, {"id": "mushroom", "q": 200, "u": "g"}, {"id": "oregano", "q": 1, "u": "tsp"},
+        {"id": "soy-milk", "q": 500, "u": "ml"}, {"id": "cornstarch", "q": 30, "u": "g"}, {"id": "nutritional-yeast", "q": 3, "u": "tbsp"},
+        {"id": "olive-oil", "q": 2, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "sweat onion, carrot, celery and mushrooms; add lentils, tomatoes and oregano; simmer until the lentils collapse.", "de": "zwiebel, karotte, sellerie und pilze dünsten; linsen, tomaten und oregano zugeben; köcheln, bis die linsen zerfallen."}, "s": 1800},
+        {"t": {"en": "whisk soy milk with cornstarch and nutritional yeast; stir over heat until thick.", "de": "sojamilch mit speisestärke und hefeflocken verrühren; unter rühren erhitzen, bis es bindet."}, "s": 480},
+        {"t": {"en": "layer ragù, sheets and sauce twice; end with sauce.", "de": "ragout, platten und sauce zweimal schichten; mit sauce abschließen."}, "s": 300},
+        {"t": {"en": "bake at 190 °c until the edges crisp; rest ten minutes.", "de": "bei 190 °c backen, bis die ränder knusprig sind; zehn minuten ruhen lassen."}, "s": 2400}
+      ]
+    },
+    {
+      "id": "lasagna-light", "dish": "lasagna", "title": {"en": "light lasagna", "de": "leichte lasagne"},
+      "diet": "classic", "effort": "hard", "time": 90, "cal": 520, "p": 33, "c": 48, "f": 22, "servings": 4,
+      "contains": ["beef", "dairy", "lactose", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["bake", "simmer"],
+      "ing": [
+        {"id": "lasagna-sheets", "q": 6, "u": "pc"}, {"id": "zucchini", "q": 300, "u": "g"}, {"id": "ground-beef", "q": 300, "u": "g"},
+        {"id": "tomato-tinned", "q": 400, "u": "g"}, {"id": "onion", "q": 50, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"},
+        {"id": "carrot", "q": 80, "u": "g"}, {"id": "oregano", "q": 1, "u": "tsp"}, {"id": "butter", "q": 20, "u": "g"},
+        {"id": "cornstarch", "q": 20, "u": "g"}, {"id": "milk", "q": 400, "u": "ml"}, {"id": "mozzarella", "q": 80, "u": "g"},
+        {"id": "parmesan", "q": 30, "u": "g"}, {"id": "olive-oil", "q": 1, "u": "tsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "make a lean ragù with the beef, onion, carrot, garlic and tomatoes.", "de": "ein mageres ragout aus hack, zwiebel, karotte, knoblauch und tomaten kochen."}, "s": 1800},
+        {"t": {"en": "slice the zucchini lengthwise into thin planks — they are half your layers now.", "de": "die zucchini der länge nach in dünne platten schneiden — sie sind jetzt die hälfte der schichten."}, "s": 300},
+        {"t": {"en": "make a thin sauce with milk, cornstarch and butter.", "de": "eine dünne sauce aus milch, speisestärke und butter anrühren."}, "s": 420},
+        {"t": {"en": "alternate sheets, zucchini and ragù; finish with a little cheese.", "de": "platten, zucchini und ragout abwechseln; mit etwas käse abschließen."}, "s": 300},
+        {"t": {"en": "bake at 190 °c until bubbling; rest before serving.", "de": "bei 190 °c backen, bis es blubbert; vor dem servieren ruhen lassen."}, "s": 2400}
+      ]
+    },
+    {
+      "id": "sushi-classic", "dish": "sushi", "title": {"en": "salmon sushi rolls", "de": "lachs-sushi-röllchen"},
+      "diet": "classic", "effort": "hard", "time": 60, "cal": 520, "p": 24, "c": 74, "f": 12, "servings": 2,
+      "contains": ["fish", "soy", "gluten", "added-sugar"], "attr": [], "tech": ["raw"],
+      "ing": [
+        {"id": "rice", "q": 300, "u": "g"}, {"id": "rice-vinegar", "q": 3, "u": "tbsp"}, {"id": "sugar", "q": 1, "u": "tbsp"},
+        {"id": "salt", "q": 1, "u": "tsp"}, {"id": "salmon", "q": 200, "u": "g"}, {"id": "avocado", "q": 1, "u": "pc"},
+        {"id": "cucumber", "q": 0.5, "u": "pc"}, {"id": "seaweed-nori", "q": 4, "u": "sheet"}, {"id": "soy-sauce", "q": 2, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "cook the rice; while warm, fold in vinegar, sugar and salt.", "de": "den reis kochen; warm mit essig, zucker und salz vermengen."}, "s": 1200},
+        {"t": {"en": "cool the rice to room temperature — warm rice ruins nori.", "de": "den reis auf raumtemperatur kühlen — warmer reis ruiniert nori."}, "s": 900},
+        {"t": {"en": "slice salmon, avocado and cucumber into long matchsticks.", "de": "lachs, avocado und gurke in lange streifen schneiden."}, "s": 300},
+        {"t": {"en": "spread rice on the nori, lay the filling, roll tight with the mat.", "de": "reis auf dem nori verteilen, füllung auflegen, mit der matte fest rollen."}, "s": 300},
+        {"t": {"en": "wipe the knife between cuts; slice each roll into eight.", "de": "das messer zwischen den schnitten abwischen; jede rolle in acht teile schneiden."}, "s": 180},
+        {"t": {"en": "serve with soy sauce.", "de": "mit sojasauce servieren."}}
+      ]
+    },
+    {
+      "id": "sushi-vegan", "dish": "sushi", "title": {"en": "vegan garden rolls", "de": "vegane garten-röllchen"},
+      "diet": "vegan", "effort": "medium", "time": 45, "cal": 440, "p": 16, "c": 82, "f": 7, "servings": 2,
+      "contains": ["soy", "gluten", "added-sugar", "sesame"], "attr": [], "tech": ["raw"],
+      "ing": [
+        {"id": "rice", "q": 300, "u": "g"}, {"id": "rice-vinegar", "q": 3, "u": "tbsp"}, {"id": "sugar", "q": 1, "u": "tbsp"},
+        {"id": "salt", "q": 1, "u": "tsp"}, {"id": "tofu", "q": 150, "u": "g"}, {"id": "avocado", "q": 1, "u": "pc"},
+        {"id": "cucumber", "q": 0.5, "u": "pc"}, {"id": "carrot", "q": 1, "u": "pc"}, {"id": "seaweed-nori", "q": 4, "u": "sheet"},
+        {"id": "soy-sauce", "q": 2, "u": "tbsp"}, {"id": "sesame-seeds", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "cook and season the rice, cool completely.", "de": "den reis kochen, würzen und vollständig abkühlen."}, "s": 1800},
+        {"t": {"en": "julienne the carrot and cucumber; slice avocado and tofu into strips.", "de": "karotte und gurke julienne schneiden; avocado und tofu in streifen."}, "s": 300},
+        {"t": {"en": "roll with the mat, sprinkle the rice with sesame before rolling.", "de": "mit der matte rollen, den reis vor dem rollen mit sesam bestreuen."}, "s": 300},
+        {"t": {"en": "slice into eight pieces each; serve with soy sauce.", "de": "je in acht stücke schneiden; mit sojasauce servieren."}}
+      ]
+    },
+    {
+      "id": "sushi-light", "dish": "sushi", "title": {"en": "light shrimp rolls", "de": "leichte garnelen-röllchen"},
+      "diet": "classic", "effort": "medium", "time": 40, "cal": 380, "p": 26, "c": 58, "f": 6, "servings": 2,
+      "contains": ["shellfish", "soy", "gluten", "added-sugar"], "attr": [], "tech": ["raw"],
+      "ing": [
+        {"id": "rice", "q": 250, "u": "g"}, {"id": "rice-vinegar", "q": 2, "u": "tbsp"}, {"id": "sugar", "q": 1, "u": "tsp"},
+        {"id": "salt", "q": 0.5, "u": "tsp"}, {"id": "shrimp", "q": 200, "u": "g"}, {"id": "cucumber", "q": 0.5, "u": "pc"},
+        {"id": "avocado", "q": 0.5, "u": "pc"}, {"id": "seaweed-nori", "q": 4, "u": "sheet"}, {"id": "soy-sauce", "q": 2, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "cook and season the rice with a little less sugar; cool.", "de": "den reis kochen, mit etwas weniger zucker würzen; abkühlen."}, "s": 1800},
+        {"t": {"en": "cook the shrimp briefly, chill, halve lengthwise.", "de": "die garnelen kurz garen, kühlen, der länge nach halbieren."}, "s": 240},
+        {"t": {"en": "roll with cucumber and avocado; slice into eight each.", "de": "mit gurke und avocado rollen; je in acht schneiden."}, "s": 300},
+        {"t": {"en": "serve with soy sauce.", "de": "mit sojasauce servieren."}}
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "partition": "core-recipes",
+  "recipes": [
+    {
+      "id": "doener-classic", "dish": "doener", "title": {"en": "classic döner", "de": "klassischer döner"},
+      "diet": "classic", "effort": "medium", "time": 40, "cal": 680, "p": 36, "c": 62, "f": 30, "servings": 2,
+      "contains": ["beef", "lamb", "dairy", "lactose", "gluten", "high-fodmap", "meat-dairy"], "attr": [], "tech": ["grill"],
+      "ing": [
+        {"id": "ground-beef", "q": 250, "u": "g"}, {"id": "ground-lamb", "q": 250, "u": "g"}, {"id": "pitta", "q": 2, "u": "pc"},
+        {"id": "cabbage", "q": 150, "u": "g"}, {"id": "onion", "q": 100, "u": "g"}, {"id": "tomato", "q": 1, "u": "pc"},
+        {"id": "cucumber", "q": 0.5, "u": "pc"}, {"id": "yogurt", "q": 150, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"},
+        {"id": "paprika", "q": 1, "u": "tsp"}, {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "olive-oil", "q": 1, "u": "tbsp"},
+        {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "knead the beef and lamb with paprika, cumin, salt and pepper until sticky — five honest minutes.", "de": "knete rind und lamm mit paprika, kreuzkümmel, salz und pfeffer, bis alles klebrig ist — fünf ehrliche minuten."}, "s": 300},
+        {"t": {"en": "press into a tight loaf, wrap, and let it firm up in the fridge.", "de": "zu einem festen laib formen, einwickeln und im kühlschrank fest werden lassen."}, "s": 1200},
+        {"t": {"en": "grill or bake at 220 °c until the edges are crisp and dark, turning once.", "de": "grillen oder bei 220 °c backen, bis die ränder knusprig und dunkel sind, einmal wenden."}, "s": 1500},
+        {"t": {"en": "meanwhile shave the cabbage thinly and dice onion, tomato and cucumber.", "de": "derweil den kohl fein hobeln und zwiebel, tomate und gurke würfeln."}, "s": 300},
+        {"t": {"en": "stir grated garlic into the yogurt for the sauce; season with salt.", "de": "geriebenen knoblauch in den joghurt rühren und mit salz abschmecken."}, "s": 60},
+        {"t": {"en": "warm the pitta, slice the meat thin, and build: bread, meat, salad, sauce.", "de": "fladenbrot erwärmen, fleisch dünn aufschneiden und bauen: brot, fleisch, salat, sauce."}}
+      ]
+    },
+    {
+      "id": "doener-vegan", "dish": "doener", "title": {"en": "vegan döner", "de": "veganer döner"},
+      "diet": "vegan", "effort": "medium", "time": 35, "cal": 540, "p": 26, "c": 66, "f": 20, "servings": 2,
+      "contains": ["gluten", "soy", "sesame", "high-fodmap"], "attr": [], "tech": ["grill"],
+      "ing": [
+        {"id": "tofu", "q": 400, "u": "g"}, {"id": "pitta", "q": 2, "u": "pc"}, {"id": "cabbage", "q": 150, "u": "g"},
+        {"id": "onion", "q": 50, "u": "g"}, {"id": "tomato", "q": 1, "u": "pc"}, {"id": "cucumber", "q": 0.5, "u": "pc"},
+        {"id": "tahini", "q": 3, "u": "tbsp"}, {"id": "lemon", "q": 0.5, "u": "pc"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "sumac", "q": 0.5, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "press the tofu dry, then tear it into rugged chunks.", "de": "den tofu trocken pressen und in rustikale stücke reißen."}, "s": 600},
+        {"t": {"en": "toss with paprika, cumin, sumac, oil and salt until every piece is rust-red.", "de": "mit paprika, kreuzkümmel, sumach, öl und salz mischen, bis jedes stück rostrot ist."}, "s": 120},
+        {"t": {"en": "roast in a hot pan or oven until crisp at the edges.", "de": "in einer heißen pfanne oder im ofen rösten, bis die ränder knusprig sind."}, "s": 900},
+        {"t": {"en": "whisk tahini with lemon juice and a splash of water into a pouring sauce.", "de": "tahini mit zitronensaft und einem schuss wasser zu einer gießbaren sauce verrühren."}, "s": 120},
+        {"t": {"en": "shave cabbage, dice onion, tomato and cucumber.", "de": "kohl hobeln, zwiebel, tomate und gurke würfeln."}, "s": 240},
+        {"t": {"en": "warm the pitta and build: bread, tofu, salad, tahini.", "de": "fladenbrot erwärmen und bauen: brot, tofu, salat, tahini."}}
+      ]
+    },
+    {
+      "id": "doener-keto", "dish": "doener", "title": {"en": "keto döner bowl", "de": "keto-döner-bowl"},
+      "diet": "keto", "effort": "easy", "time": 25, "cal": 590, "p": 39, "c": 11, "f": 40, "servings": 2,
+      "contains": ["beef", "dairy", "lactose", "high-fodmap", "meat-dairy"], "attr": [], "tech": ["sauté"],
+      "ing": [
+        {"id": "ground-beef", "q": 400, "u": "g"}, {"id": "cabbage", "q": 200, "u": "g"}, {"id": "cucumber", "q": 0.5, "u": "pc"},
+        {"id": "tomato", "q": 1, "u": "pc"}, {"id": "onion", "q": 50, "u": "g"}, {"id": "yogurt", "q": 120, "u": "g"},
+        {"id": "garlic", "q": 1, "u": "clove"}, {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "sumac", "q": 0.5, "u": "tsp"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "brown the beef in oil with cumin and paprika until crusty; season well.", "de": "das rinderhack in öl mit kreuzkümmel und paprika krümelig anbraten; gut würzen."}, "s": 600},
+        {"t": {"en": "shave the cabbage and slice cucumber, tomato and onion.", "de": "kohl hobeln, gurke, tomate und zwiebel schneiden."}, "s": 240},
+        {"t": {"en": "stir grated garlic into the yogurt; dust with sumac.", "de": "geriebenen knoblauch in den joghurt rühren; mit sumach bestauben."}, "s": 60},
+        {"t": {"en": "pile the salad into bowls, spoon the hot beef on top, finish with the yogurt sauce.", "de": "den salat in schalen schichten, das heiße hack darübergeben und mit der joghurtsauce vollenden."}}
+      ]
+    },
+    {
+      "id": "doener-halal", "dish": "doener", "title": {"en": "halal döner", "de": "halal-döner"},
+      "diet": "halal", "effort": "medium", "time": 35, "cal": 610, "p": 36, "c": 58, "f": 22, "servings": 2,
+      "contains": ["poultry", "dairy", "lactose", "gluten", "high-fodmap", "meat-dairy"], "attr": ["halal"], "tech": ["grill"],
+      "ing": [
+        {"id": "chicken-thigh", "q": 500, "u": "g"}, {"id": "pitta", "q": 2, "u": "pc"}, {"id": "cabbage", "q": 150, "u": "g"},
+        {"id": "onion", "q": 50, "u": "g"}, {"id": "tomato", "q": 1, "u": "pc"}, {"id": "cucumber", "q": 0.5, "u": "pc"},
+        {"id": "yogurt", "q": 150, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "sumac", "q": 0.5, "u": "tsp"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "cube the chicken thighs and marinate with paprika, cumin, sumac, oil and salt.", "de": "die hähnchenschenkel würfeln und mit paprika, kreuzkümmel, sumach, öl und salz marinieren."}, "s": 900},
+        {"t": {"en": "grill or pan-fry over high heat until charred at the edges and cooked through.", "de": "bei großer hitze grillen oder braten, bis die ränder gebräunt und alles durchgegart ist."}, "s": 720},
+        {"t": {"en": "shave cabbage, dice onion, tomato and cucumber.", "de": "kohl hobeln, zwiebel, tomate und gurke würfeln."}, "s": 240},
+        {"t": {"en": "stir grated garlic into the yogurt.", "de": "geriebenen knoblauch in den joghurt rühren."}, "s": 60},
+        {"t": {"en": "warm the pitta and build: bread, chicken, salad, sauce.", "de": "fladenbrot erwärmen und bauen: brot, hähnchen, salat, sauce."}}
+      ]
+    },
+    {
+      "id": "shakshuka-classic", "dish": "shakshuka", "title": {"en": "classic shakshuka", "de": "klassische shakshuka"},
+      "diet": "classic", "effort": "easy", "time": 25, "cal": 450, "p": 19, "c": 24, "f": 30, "servings": 2,
+      "contains": ["egg", "dairy", "lactose", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "tomato-tinned", "q": 400, "u": "g"}, {"id": "onion", "q": 100, "u": "g"}, {"id": "bell-pepper", "q": 100, "u": "g"},
+        {"id": "garlic", "q": 2, "u": "clove"}, {"id": "egg", "q": 4, "u": "pc"}, {"id": "feta", "q": 80, "u": "g"},
+        {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "chili-flakes", "q": 0.5, "u": "tsp"}, {"id": "parsley", "q": 0.5, "u": "bunch"}
+      ],
+      "steps": [
+        {"t": {"en": "sweat onion and pepper in olive oil until soft and sweet.", "de": "zwiebel und paprika in olivenöl weich und süß dünsten."}, "s": 300},
+        {"t": {"en": "add garlic, cumin and paprika, then the tinned tomatoes; simmer until jammy.", "de": "knoblauch, kreuzkümmel und paprika zugeben, dann die dosentomaten; einköcheln lassen."}, "s": 600},
+        {"t": {"en": "make four wells and crack an egg into each; cover and cook until the whites set.", "de": "vier kuhlen formen und je ein ei hineinschlagen; zugedeckt garen, bis das eiweiß stockt."}, "s": 360},
+        {"t": {"en": "crumble feta over the top, scatter chili flakes and torn parsley.", "de": "feta darüberbröseln, chiliflocken und gezupfte petersilie streuen."}}
+      ]
+    },
+    {
+      "id": "shakshuka-vegan", "dish": "shakshuka", "title": {"en": "vegan shakshuka", "de": "vegane shakshuka"},
+      "diet": "vegan", "effort": "easy", "time": 25, "cal": 430, "p": 24, "c": 26, "f": 24, "servings": 2,
+      "contains": ["soy", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "tofu", "q": 400, "u": "g"}, {"id": "turmeric", "q": 0.5, "u": "tsp"}, {"id": "tomato-tinned", "q": 400, "u": "g"},
+        {"id": "onion", "q": 100, "u": "g"}, {"id": "bell-pepper", "q": 100, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"},
+        {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "chili-flakes", "q": 0.5, "u": "tsp"}, {"id": "cilantro", "q": 0.25, "u": "bunch"}
+      ],
+      "steps": [
+        {"t": {"en": "sweat onion and pepper in olive oil until soft.", "de": "zwiebel und paprika in olivenöl weich dünsten."}, "s": 300},
+        {"t": {"en": "add garlic, spices and tinned tomatoes; simmer until thick.", "de": "knoblauch, gewürze und dosentomaten zugeben; einköcheln lassen."}, "s": 600},
+        {"t": {"en": "crumble the tofu over the pan in egg-sized clouds, dust with turmeric.", "de": "den tofu in ei-großen wolken über die pfanne bröseln, mit kurkuma bestauben."}, "s": 60},
+        {"t": {"en": "cover and steam gently until the tofu is hot and has taken on the sauce.", "de": "zugedeckt sanft dämpfen, bis der tofu heiß ist und die sauce angenommen hat."}, "s": 420},
+        {"t": {"en": "scatter chili flakes and torn cilantro; serve straight from the pan.", "de": "chiliflocken und gezupften koriander streuen; direkt aus der pfanne servieren."}}
+      ]
+    },
+    {
+      "id": "shakshuka-keto", "dish": "shakshuka", "title": {"en": "keto shakshuka", "de": "keto-shakshuka"},
+      "diet": "keto", "effort": "easy", "time": 20, "cal": 480, "p": 28, "c": 10, "f": 36, "servings": 2,
+      "contains": ["egg", "dairy", "lactose", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "egg", "q": 4, "u": "pc"}, {"id": "spinach", "q": 200, "u": "g"}, {"id": "tomato-tinned", "q": 200, "u": "g"},
+        {"id": "butter", "q": 1, "u": "tbsp"}, {"id": "feta", "q": 100, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"},
+        {"id": "cumin", "q": 0.5, "u": "tsp"}, {"id": "paprika", "q": 0.5, "u": "tsp"}, {"id": "chili-flakes", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "melt the butter, wilt the spinach down with the garlic.", "de": "die butter schmelzen, den spinat mit dem knoblauch zusammenfallen lassen."}, "s": 180},
+        {"t": {"en": "add a small tin of tomatoes, cumin and paprika; simmer briefly.", "de": "eine kleine dose tomaten, kreuzkümmel und paprika zugeben; kurz einköcheln."}, "s": 300},
+        {"t": {"en": "make wells, crack in the eggs, cover and cook until just set.", "de": "kuhlen formen, eier hineinschlagen, zugedeckt garen, bis sie gerade stocken."}, "s": 360},
+        {"t": {"en": "crumble feta on top and finish with chili flakes.", "de": "feta darüberbröseln und mit chiliflocken vollenden."}}
+      ]
+    },
+    {
+      "id": "shakshuka-light", "dish": "shakshuka", "title": {"en": "light shakshuka", "de": "leichte shakshuka"},
+      "diet": "classic", "effort": "easy", "time": 20, "cal": 330, "p": 19, "c": 22, "f": 18, "servings": 2,
+      "contains": ["egg", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "egg", "q": 3, "u": "pc"}, {"id": "tomato-tinned", "q": 400, "u": "g"}, {"id": "onion", "q": 50, "u": "g"},
+        {"id": "bell-pepper", "q": 150, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "olive-oil", "q": 1, "u": "tsp"},
+        {"id": "cumin", "q": 0.5, "u": "tsp"}, {"id": "paprika", "q": 0.5, "u": "tsp"}, {"id": "spinach", "q": 100, "u": "g"}
+      ],
+      "steps": [
+        {"t": {"en": "sweat onion and pepper in the teaspoon of oil, adding a splash of water if it catches.", "de": "zwiebel und paprika im teelöffel öl dünsten, bei bedarf mit einem schuss wasser ablöschen."}, "s": 300},
+        {"t": {"en": "add garlic, spices, tomatoes and the spinach; simmer until wilted and thick.", "de": "knoblauch, gewürze, tomaten und den spinat zugeben; einköcheln, bis alles dicklich ist."}, "s": 480},
+        {"t": {"en": "make wells, crack in the eggs, cover and cook until the whites set.", "de": "kuhlen formen, eier hineinschlagen, zugedeckt garen, bis das eiweiß stockt."}, "s": 360},
+        {"t": {"en": "season and eat straight from the pan with a spoon.", "de": "abschmecken und direkt aus der pfanne löffeln."}}
+      ]
+    },
+    {
+      "id": "pad-thai-classic", "dish": "pad-thai", "title": {"en": "classic pad thai", "de": "klassisches pad thai"},
+      "diet": "classic", "effort": "medium", "time": 35, "cal": 640, "p": 28, "c": 76, "f": 22, "servings": 2,
+      "contains": ["shellfish", "fish", "egg", "peanuts", "added-sugar", "high-fodmap"], "attr": [], "tech": ["stir-fry"],
+      "ing": [
+        {"id": "rice-noodles", "q": 200, "u": "g"}, {"id": "shrimp", "q": 250, "u": "g"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "peanuts", "q": 50, "u": "g"}, {"id": "beansprouts", "q": 100, "u": "g"}, {"id": "scallion", "q": 3, "u": "pc"},
+        {"id": "garlic", "q": 2, "u": "clove"}, {"id": "fish-sauce", "q": 2, "u": "tbsp"}, {"id": "brown-sugar", "q": 1.5, "u": "tbsp"},
+        {"id": "rice-vinegar", "q": 1, "u": "tbsp"}, {"id": "lime", "q": 0.5, "u": "pc"}, {"id": "neutral-oil", "q": 2, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soak the rice noodles in warm water until pliable but still firm.", "de": "die reisnudeln in warmem wasser einweichen, bis sie geschmeidig, aber noch bissfest sind."}, "s": 600},
+        {"t": {"en": "stir fish sauce, brown sugar, vinegar and lime juice into a small sauce.", "de": "fischsauce, braunen zucker, essig und limettensaft zu einer kleinen sauce verrühren."}, "s": 120},
+        {"t": {"en": "fry the garlic in oil, add the shrimp and cook until just pink.", "de": "den knoblauch in öl braten, die garnelen zugeben und garziehen lassen, bis sie rosa sind."}, "s": 300},
+        {"t": {"en": "push aside, scramble the eggs in the same pan.", "de": "zur seite schieben und die eier in derselben pfanne rühren."}, "s": 120},
+        {"t": {"en": "add noodles and sauce, toss hard for two minutes, fold in sprouts and scallion.", "de": "nudeln und sauce zugeben, zwei minuten kräftig schwenken, sprossen und zwiebeln unterheben."}, "s": 180},
+        {"t": {"en": "plate with crushed peanuts and the remaining lime.", "de": "mit zerstoßenen erdnüssen und der restlichen limette anrichten."}}
+      ]
+    },
+    {
+      "id": "pad-thai-peanut-free", "dish": "pad-thai", "title": {"en": "peanut-free pad thai", "de": "pad thai ohne erdnüsse"},
+      "diet": "classic", "effort": "medium", "time": 35, "cal": 660, "p": 32, "c": 74, "f": 24, "servings": 2,
+      "contains": ["poultry", "fish", "egg", "added-sugar", "high-fodmap"], "attr": [], "tech": ["stir-fry"],
+      "ing": [
+        {"id": "rice-noodles", "q": 200, "u": "g"}, {"id": "chicken-breast", "q": 250, "u": "g"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "sunflower-butter", "q": 1.5, "u": "tbsp"}, {"id": "beansprouts", "q": 100, "u": "g"}, {"id": "scallion", "q": 3, "u": "pc"},
+        {"id": "garlic", "q": 2, "u": "clove"}, {"id": "fish-sauce", "q": 2, "u": "tbsp"}, {"id": "brown-sugar", "q": 1.5, "u": "tbsp"},
+        {"id": "rice-vinegar", "q": 1, "u": "tbsp"}, {"id": "lime", "q": 0.5, "u": "pc"}, {"id": "neutral-oil", "q": 2, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soak the rice noodles until pliable.", "de": "die reisnudeln einweichen, bis sie geschmeidig sind."}, "s": 600},
+        {"t": {"en": "whisk fish sauce, brown sugar, vinegar, lime juice and sunflower butter into a sauce.", "de": "fischsauce, braunen zucker, essig, limettensaft und sonnenblumenkernbutter zu einer sauce verrühren."}, "s": 120},
+        {"t": {"en": "fry the garlic, add thin slices of chicken and cook through.", "de": "den knoblauch anbraten, dünne hähnchenstreifen zugeben und durchgaren."}, "s": 420},
+        {"t": {"en": "push aside, scramble the eggs.", "de": "zur seite schieben, die eier rühren."}, "s": 120},
+        {"t": {"en": "add noodles and sauce, toss, fold in sprouts and scallion.", "de": "nudeln und sauce zugeben, schwenken, sprossen und zwiebeln unterheben."}, "s": 180}
+      ]
+    },
+    {
+      "id": "pad-thai-vegan", "dish": "pad-thai", "title": {"en": "vegan pad thai", "de": "veganes pad thai"},
+      "diet": "vegan", "effort": "medium", "time": 30, "cal": 600, "p": 22, "c": 82, "f": 18, "servings": 2,
+      "contains": ["soy", "gluten", "peanuts", "added-sugar", "high-fodmap"], "attr": [], "tech": ["stir-fry"],
+      "ing": [
+        {"id": "tofu", "q": 300, "u": "g"}, {"id": "rice-noodles", "q": 200, "u": "g"}, {"id": "beansprouts", "q": 150, "u": "g"},
+        {"id": "scallion", "q": 3, "u": "pc"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "soy-sauce", "q": 2.5, "u": "tbsp"},
+        {"id": "maple-syrup", "q": 1.5, "u": "tbsp"}, {"id": "rice-vinegar", "q": 1, "u": "tbsp"}, {"id": "lime", "q": 0.5, "u": "pc"},
+        {"id": "peanuts", "q": 40, "u": "g"}, {"id": "neutral-oil", "q": 2, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soak the noodles; press and cube the tofu.", "de": "die nudeln einweichen; den tofu pressen und würfeln."}, "s": 600},
+        {"t": {"en": "whisk soy sauce, maple syrup, vinegar and lime juice into a sauce.", "de": "sojasauce, ahornsirup, essig und limettensaft zu einer sauce verrühren."}, "s": 120},
+        {"t": {"en": "fry the tofu in oil on every side until golden.", "de": "den tofu in öl rundum goldbraun braten."}, "s": 480},
+        {"t": {"en": "add garlic, noodles and sauce; toss until glossy.", "de": "knoblauch, nudeln und sauce zugeben; schwenken, bis alles glänzt."}, "s": 180},
+        {"t": {"en": "fold in sprouts and scallion, top with crushed peanuts.", "de": "sprossen und zwiebeln unterheben, mit zerstoßenen erdnüssen toppen."}}
+      ]
+    },
+    {
+      "id": "pad-thai-light", "dish": "pad-thai", "title": {"en": "light pad thai", "de": "leichtes pad thai"},
+      "diet": "classic", "effort": "easy", "time": 25, "cal": 430, "p": 29, "c": 56, "f": 9, "servings": 2,
+      "contains": ["shellfish", "fish", "egg", "added-sugar", "high-fodmap"], "attr": [], "tech": ["stir-fry"],
+      "ing": [
+        {"id": "rice-noodles", "q": 150, "u": "g"}, {"id": "shrimp", "q": 250, "u": "g"}, {"id": "egg", "q": 1, "u": "pc"},
+        {"id": "beansprouts", "q": 200, "u": "g"}, {"id": "scallion", "q": 2, "u": "pc"}, {"id": "garlic", "q": 2, "u": "clove"},
+        {"id": "fish-sauce", "q": 1.5, "u": "tbsp"}, {"id": "sugar", "q": 1, "u": "tsp"}, {"id": "rice-vinegar", "q": 1, "u": "tbsp"},
+        {"id": "lime", "q": 0.5, "u": "pc"}, {"id": "neutral-oil", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soak the noodles until pliable.", "de": "die nudeln einweichen, bis sie geschmeidig sind."}, "s": 600},
+        {"t": {"en": "stir fish sauce, sugar, vinegar and lime juice together.", "de": "fischsauce, zucker, essig und limettensaft verrühren."}, "s": 120},
+        {"t": {"en": "sizzle the garlic in the teaspoon of oil, add shrimp and cook until pink.", "de": "den knoblauch im teelöffel öl anbraten, garnelen zugeben und garziehen lassen."}, "s": 300},
+        {"t": {"en": "add noodles, sauce and the mountain of sprouts; toss two minutes.", "de": "nudeln, sauce und den berg sprossen zugeben; zwei minuten schwenken."}, "s": 180}
+      ]
+    },
+    {
+      "id": "ramen-classic", "dish": "ramen", "title": {"en": "pork ramen", "de": "schweine-ramen"},
+      "diet": "classic", "effort": "hard", "time": 75, "cal": 720, "p": 34, "c": 74, "f": 28, "servings": 2,
+      "contains": ["pork", "egg", "gluten", "soy", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "pork-belly", "q": 250, "u": "g"}, {"id": "noodles-wheat", "q": 200, "u": "g"}, {"id": "chicken-stock", "q": 1000, "u": "ml"},
+        {"id": "miso", "q": 1, "u": "tbsp"}, {"id": "soy-sauce", "q": 3, "u": "tbsp"}, {"id": "garlic", "q": 3, "u": "clove"},
+        {"id": "ginger", "q": 20, "u": "g"}, {"id": "scallion", "q": 2, "u": "pc"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "neutral-oil", "q": 1, "u": "tbsp"}, {"id": "chili-flakes", "q": 0.5, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soft-boil the eggs for six and a half minutes, then peel.", "de": "die eier sechseinhalb minuten wachsweich kochen, dann pellen."}, "s": 390},
+        {"t": {"en": "sear the pork belly in oil until browned on all sides.", "de": "den schweinebauch in öl rundum anbraten."}, "s": 600},
+        {"t": {"en": "add stock, garlic, ginger, miso and soy sauce; simmer twenty minutes.", "de": "brühe, knoblauch, ingwer, miso und sojasauce zugeben; zwanzig minuten köcheln."}, "s": 1200},
+        {"t": {"en": "cook the noodles separately, drain well.", "de": "die nudeln separat kochen und gut abtropfen lassen."}, "s": 240},
+        {"t": {"en": "build the bowls: noodles, broth, sliced pork, halved egg, scallion, chili.", "de": "die schalen bauen: nudeln, brühe, aufgeschnittenes fleisch, halbiertes ei, zwiebeln, chili."}}
+      ]
+    },
+    {
+      "id": "ramen-vegetarian", "dish": "ramen", "title": {"en": "miso mushroom ramen", "de": "miso-pilz-ramen"},
+      "diet": "vegetarian", "effort": "medium", "time": 40, "cal": 560, "p": 22, "c": 78, "f": 18, "servings": 2,
+      "contains": ["egg", "gluten", "soy", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "noodles-wheat", "q": 200, "u": "g"}, {"id": "miso", "q": 2, "u": "tbsp"}, {"id": "vegetable-stock", "q": 1000, "u": "ml"},
+        {"id": "mushroom", "q": 200, "u": "g"}, {"id": "spinach", "q": 100, "u": "g"}, {"id": "cabbage", "q": 80, "u": "g"},
+        {"id": "scallion", "q": 2, "u": "pc"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "ginger", "q": 10, "u": "g"},
+        {"id": "soy-sauce", "q": 2, "u": "tbsp"}, {"id": "egg", "q": 2, "u": "pc"}, {"id": "neutral-oil", "q": 1, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "soft-boil and peel the eggs.", "de": "die eier wachsweich kochen und pellen."}, "s": 390},
+        {"t": {"en": "fry the mushrooms in oil until deeply browned — patience is the broth.", "de": "die pilze in öl richtig braun braten — geduld ist die brühe."}, "s": 480},
+        {"t": {"en": "add garlic and ginger, then stock, miso and soy; simmer ten minutes.", "de": "knoblauch und ingwer zugeben, dann brühe, miso und sojasauce; zehn minuten köcheln."}, "s": 600},
+        {"t": {"en": "wilt spinach and cabbage into the broth; cook noodles separately.", "de": "spinat und kohl in der brühe zusammenfallen lassen; nudeln separat kochen."}, "s": 240},
+        {"t": {"en": "assemble with halved eggs and scallion.", "de": "mit halbierten eiern und zwiebeln anrichten."}}
+      ]
+    },
+    {
+      "id": "ramen-light", "dish": "ramen", "title": {"en": "light chicken ramen", "de": "leichte hähnchen-ramen"},
+      "diet": "classic", "effort": "easy", "time": 30, "cal": 430, "p": 30, "c": 52, "f": 10, "servings": 2,
+      "contains": ["poultry", "gluten", "soy", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "noodles-wheat", "q": 150, "u": "g"}, {"id": "chicken-breast", "q": 200, "u": "g"}, {"id": "chicken-stock", "q": 1000, "u": "ml"},
+        {"id": "spinach", "q": 100, "u": "g"}, {"id": "scallion", "q": 2, "u": "pc"}, {"id": "ginger", "q": 10, "u": "g"},
+        {"id": "garlic", "q": 1, "u": "clove"}, {"id": "soy-sauce", "q": 2, "u": "tbsp"}, {"id": "neutral-oil", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "poach the chicken breasts gently in the stock, then slice.", "de": "die hähnchenbrüste sanft in der brühe pochieren, dann schneiden."}, "s": 900},
+        {"t": {"en": "add ginger, garlic and soy sauce to the poaching stock.", "de": "ingwer, knoblauch und sojasauce zur pochierbrühe geben."}, "s": 300},
+        {"t": {"en": "cook the noodles in a separate pot.", "de": "die nudeln in einem separaten topf kochen."}, "s": 240},
+        {"t": {"en": "wilt the spinach into the broth, assemble bowls with scallion.", "de": "den spinat in der brühe zusammenfallen lassen, schalen mit zwiebeln anrichten."}}
+      ]
+    },
+    {
+      "id": "ramen-halal", "dish": "ramen", "title": {"en": "halal chicken ramen", "de": "halal-hähnchen-ramen"},
+      "diet": "halal", "effort": "medium", "time": 45, "cal": 640, "p": 34, "c": 72, "f": 22, "servings": 2,
+      "contains": ["poultry", "gluten", "soy", "high-fodmap"], "attr": ["halal"], "tech": ["simmer"],
+      "ing": [
+        {"id": "chicken-thigh", "q": 300, "u": "g"}, {"id": "noodles-wheat", "q": 200, "u": "g"}, {"id": "chicken-stock", "q": 1000, "u": "ml"},
+        {"id": "miso", "q": 1.5, "u": "tbsp"}, {"id": "soy-sauce", "q": 3, "u": "tbsp"}, {"id": "garlic", "q": 2, "u": "clove"},
+        {"id": "ginger", "q": 15, "u": "g"}, {"id": "scallion", "q": 2, "u": "pc"}, {"id": "cabbage", "q": 100, "u": "g"},
+        {"id": "neutral-oil", "q": 1, "u": "tbsp"}, {"id": "chili-flakes", "q": 0.5, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "sear the chicken thighs in oil until browned.", "de": "die hähnchenschenkel in öl anbraten, bis sie gebräunt sind."}, "s": 480},
+        {"t": {"en": "add stock, garlic, ginger, miso and soy; simmer fifteen minutes.", "de": "brühe, knoblauch, ingwer, miso und sojasauce zugeben; fünfzehn minuten köcheln."}, "s": 900},
+        {"t": {"en": "slice the chicken; cook the noodles separately.", "de": "das hähnchen schneiden; die nudeln separat kochen."}, "s": 240},
+        {"t": {"en": "assemble: noodles, broth, chicken, cabbage, scallion, chili.", "de": "anrichten: nudeln, brühe, hähnchen, kohl, zwiebeln, chili."}}
+      ]
+    },
+    {
+      "id": "pancakes-classic", "dish": "pancakes", "title": {"en": "classic fluffy pancakes", "de": "klassische fluffige pancakes"},
+      "diet": "classic", "effort": "easy", "time": 20, "cal": 560, "p": 16, "c": 84, "f": 18, "servings": 2,
+      "contains": ["dairy", "lactose", "egg", "gluten", "added-sugar", "high-fodmap"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "flour", "q": 200, "u": "g"}, {"id": "milk", "q": 250, "u": "ml"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "butter", "q": 30, "u": "g"}, {"id": "sugar", "q": 2, "u": "tbsp"}, {"id": "baking-powder", "q": 2, "u": "tsp"},
+        {"id": "berries", "q": 150, "u": "g"}, {"id": "maple-syrup", "q": 2, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "whisk flour, sugar, baking powder and salt.", "de": "mehl, zucker, backpulver und salz verrühren."}, "s": 60},
+        {"t": {"en": "whisk milk, eggs and melted butter; fold into the dry mix — lumps are welcome.", "de": "milch, eier und geschmolzene butter verrühren; unter die trockene mischung heben — klümpchen sind erlaubt."}, "s": 120},
+        {"t": {"en": "let the batter rest so the baking powder wakes up.", "de": "den teig ruhen lassen, damit das backpulver aufwacht."}, "s": 600},
+        {"t": {"en": "fry in a lightly buttered pan, medium heat, until bubbles pop; flip once.", "de": "in einer leicht gebutterten pfanne bei mittlerer hitze backen, bis blasen platzen; einmal wenden."}, "s": 240},
+        {"t": {"en": "stack, pile on the berries, pour the maple syrup.", "de": "stapeln, beeren drauf, ahornsirup darüber."}}
+      ]
+    },
+    {
+      "id": "pancakes-gluten-free", "dish": "pancakes", "title": {"en": "oat pancakes", "de": "hafer-pancakes"},
+      "diet": "gluten-free", "effort": "easy", "time": 20, "cal": 540, "p": 15, "c": 78, "f": 20, "servings": 2,
+      "contains": ["dairy", "lactose", "egg", "added-sugar", "high-fodmap"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "oats", "q": 200, "u": "g"}, {"id": "milk", "q": 250, "u": "ml"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "banana", "q": 1, "u": "pc"}, {"id": "butter", "q": 20, "u": "g"}, {"id": "baking-powder", "q": 2, "u": "tsp"},
+        {"id": "berries", "q": 150, "u": "g"}, {"id": "maple-syrup", "q": 2, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "blend the oats to a coarse flour.", "de": "die haferflocken zu grobem mehl mixen."}, "s": 60},
+        {"t": {"en": "blend with milk, eggs, banana and baking powder into a thick batter.", "de": "mit milch, eiern, banane und backpulver zu einem dicken teig mixen."}, "s": 120},
+        {"t": {"en": "fry in butter, medium heat, until golden; flip once.", "de": "in butter bei mittlerer hitze goldgelb backen; einmal wenden."}, "s": 300},
+        {"t": {"en": "serve with berries and maple syrup.", "de": "mit beeren und ahornsirup servieren."}}
+      ]
+    },
+    {
+      "id": "pancakes-vegan", "dish": "pancakes", "title": {"en": "vegan pancakes", "de": "vegane pancakes"},
+      "diet": "vegan", "effort": "easy", "time": 20, "cal": 520, "p": 14, "c": 88, "f": 14, "servings": 2,
+      "contains": ["gluten", "soy", "added-sugar", "high-fodmap"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "flour", "q": 200, "u": "g"}, {"id": "soy-milk", "q": 250, "u": "ml"}, {"id": "banana", "q": 1, "u": "pc"},
+        {"id": "sugar", "q": 2, "u": "tbsp"}, {"id": "baking-powder", "q": 2, "u": "tsp"}, {"id": "neutral-oil", "q": 2, "u": "tbsp"},
+        {"id": "berries", "q": 150, "u": "g"}, {"id": "maple-syrup", "q": 2, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "mash the banana until no lumps remain.", "de": "die banane verkneten, bis keine klümpchen übrig sind."}, "s": 120},
+        {"t": {"en": "whisk with soy milk and oil; fold into flour, sugar, baking powder, salt.", "de": "mit sojamilch und öl verrühren; unter mehl, zucker, backpulver, salz heben."}, "s": 120},
+        {"t": {"en": "fry small pancakes in a little oil until bubbles form; flip gently.", "de": "kleine pancakes in wenig öl backen, bis blasen entstehen; vorsichtig wenden."}, "s": 300},
+        {"t": {"en": "serve with berries and maple syrup.", "de": "mit beeren und ahornsirup servieren."}}
+      ]
+    },
+    {
+      "id": "pancakes-keto", "dish": "pancakes", "title": {"en": "keto pancakes", "de": "keto-pancakes"},
+      "diet": "keto", "effort": "easy", "time": 15, "cal": 470, "p": 22, "c": 9, "f": 36, "servings": 2,
+      "contains": ["tree-nuts", "dairy", "lactose", "egg"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "almond-flour", "q": 150, "u": "g"}, {"id": "egg", "q": 3, "u": "pc"}, {"id": "cream-cheese", "q": 60, "u": "g"},
+        {"id": "baking-powder", "q": 1, "u": "tsp"}, {"id": "butter", "q": 20, "u": "g"}, {"id": "berries", "q": 100, "u": "g"}
+      ],
+      "steps": [
+        {"t": {"en": "blend almond flour, eggs, cream cheese and baking powder into a smooth batter.", "de": "mandelmehl, eier, frischkäse und backpulver zu einem glatten teig mixen."}, "s": 180},
+        {"t": {"en": "let it thicken for five minutes.", "de": "fünf minuten eindicken lassen."}, "s": 300},
+        {"t": {"en": "fry small pancakes in butter, low and slow; flip once.", "de": "kleine pancakes in butter bei kleiner hitze backen; einmal wenden."}, "s": 300},
+        {"t": {"en": "serve with a handful of berries.", "de": "mit einer handvoll beeren servieren."}}
+      ]
+    },
+    {
+      "id": "burger-classic", "dish": "burger", "title": {"en": "classic beef burger", "de": "klassischer rind-burger"},
+      "diet": "classic", "effort": "medium", "time": 30, "cal": 760, "p": 38, "c": 44, "f": 44, "servings": 2,
+      "contains": ["beef", "dairy", "lactose", "gluten", "mustard", "egg", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["grill"],
+      "ing": [
+        {"id": "ground-beef", "q": 400, "u": "g"}, {"id": "burger-bun", "q": 2, "u": "pc"}, {"id": "cheddar", "q": 80, "u": "g"},
+        {"id": "lettuce", "q": 1, "u": "handful"}, {"id": "tomato", "q": 1, "u": "pc"}, {"id": "onion", "q": 0.5, "u": "pc"},
+        {"id": "mayo", "q": 2, "u": "tbsp"}, {"id": "dijon-mustard", "q": 1, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "form two loose patties — handle gently, dimple the centre.", "de": "zwei lockere patties formen — sanft behandeln, mitte einmulden."}, "s": 120},
+        {"t": {"en": "season generously and grill hot, three to four minutes per side.", "de": "großzügig würzen und heiß grillen, drei bis vier minuten pro seite."}, "s": 240},
+        {"t": {"en": "melt the cheddar onto the patties in the last minute.", "de": "den cheddar in der letzten minute auf die patties schmelzen."}, "s": 60},
+        {"t": {"en": "toast the buns cut-side down in the beef fat.", "de": "die brötchen mit der schnittseite im bratfett toasten."}, "s": 120},
+        {"t": {"en": "build: mayo and mustard, lettuce, tomato, patty, onion.", "de": "bauen: mayo und senf, salat, tomate, patty, zwiebel."}}
+      ]
+    },
+    {
+      "id": "burger-vegan", "dish": "burger", "title": {"en": "vegan bean burger", "de": "vegane bohnen-burger"},
+      "diet": "vegan", "effort": "medium", "time": 35, "cal": 610, "p": 24, "c": 76, "f": 22, "servings": 2,
+      "contains": ["gluten", "high-fodmap", "mustard"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "black-beans", "q": 400, "u": "g"}, {"id": "breadcrumbs", "q": 40, "u": "g"}, {"id": "onion", "q": 0.5, "u": "pc"},
+        {"id": "garlic", "q": 2, "u": "clove"}, {"id": "cumin", "q": 1, "u": "tsp"}, {"id": "paprika", "q": 1, "u": "tsp"},
+        {"id": "burger-bun", "q": 2, "u": "pc"}, {"id": "lettuce", "q": 1, "u": "handful"}, {"id": "tomato", "q": 1, "u": "pc"},
+        {"id": "dijon-mustard", "q": 1, "u": "tbsp"}, {"id": "olive-oil", "q": 1, "u": "tbsp"}
+      ],
+      "steps": [
+        {"t": {"en": "mash the drained beans until half smooth, half chunky.", "de": "die abgetropften bohnen zerdrücken — halb glatt, halb stückig."}, "s": 180},
+        {"t": {"en": "mix with grated onion, garlic, cumin, paprika and breadcrumbs; form two patties.", "de": "mit geriebener zwiebel, knoblauch, kreuzkümmel, paprika und paniermehl mischen; zwei patties formen."}, "s": 180},
+        {"t": {"en": "fry in olive oil until a dark crust forms on both sides.", "de": "in olivenöl braten, bis sich beidseitig eine dunkle kruste bildet."}, "s": 480},
+        {"t": {"en": "toast the buns and build with mustard, lettuce and tomato.", "de": "die brötchen toasten und mit senf, salat und tomate belegen."}}
+      ]
+    },
+    {
+      "id": "burger-keto", "dish": "burger", "title": {"en": "keto burger bowl", "de": "keto-burger-bowl"},
+      "diet": "keto", "effort": "easy", "time": 20, "cal": 640, "p": 40, "c": 9, "f": 48, "servings": 2,
+      "contains": ["beef", "dairy", "lactose", "mustard", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["sauté"],
+      "ing": [
+        {"id": "ground-beef", "q": 400, "u": "g"}, {"id": "cheddar", "q": 100, "u": "g"}, {"id": "butter", "q": 1, "u": "tbsp"},
+        {"id": "lettuce", "q": 2, "u": "handful"}, {"id": "tomato", "q": 1, "u": "pc"}, {"id": "onion", "q": 0.5, "u": "pc"},
+        {"id": "dijon-mustard", "q": 1, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "brown the beef hard in butter; season with salt and pepper.", "de": "das hack in butter scharf anbraten; mit salz und pfeffer würzen."}, "s": 420},
+        {"t": {"en": "shred the lettuce, dice tomato and onion.", "de": "den salat zupfen, tomate und zwiebel würfeln."}, "s": 180},
+        {"t": {"en": "pile into bowls, top with the hot beef and torn cheddar; finish with mustard.", "de": "in schalen schichten, mit dem heißen hack und gezupftem cheddar toppen; mit senf vollenden."}}
+      ]
+    },
+    {
+      "id": "burger-light", "dish": "burger", "title": {"en": "light turkey burger", "de": "leichter puten-burger"},
+      "diet": "classic", "effort": "medium", "time": 25, "cal": 480, "p": 36, "c": 46, "f": 16, "servings": 2,
+      "contains": ["poultry", "gluten", "mustard", "high-fodmap"], "attr": [], "tech": ["pan-fry"],
+      "ing": [
+        {"id": "ground-turkey", "q": 400, "u": "g"}, {"id": "burger-bun", "q": 2, "u": "pc"}, {"id": "lettuce", "q": 1, "u": "handful"},
+        {"id": "tomato", "q": 1, "u": "pc"}, {"id": "onion", "q": 0.5, "u": "pc"}, {"id": "dijon-mustard", "q": 1, "u": "tbsp"},
+        {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}, {"id": "neutral-oil", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "form two patties from the turkey — it is soft, wet hands help.", "de": "aus dem putenhack zwei patties formen — der teig ist weich, feuchte hände helfen."}, "s": 120},
+        {"t": {"en": "fry in the teaspoon of oil, four to five minutes per side, until just done.", "de": "im teelöffel öl braten, vier bis fünf minuten pro seite, bis gerade gar."}, "s": 540},
+        {"t": {"en": "toast the buns lightly and build with mustard, lettuce, tomato and onion.", "de": "die brötchen leicht toasten und mit senf, salat, tomate und zwiebel belegen."}}
+      ]
+    }
+  ]
+}
+

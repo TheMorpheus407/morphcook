@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "partition": "cuisine-middle-eastern",
+  "cuisine": "middle-eastern",
+  "recipes": [
+    {
+      "id": "falafel-classic", "dish": "falafel-wrap", "title": {"en": "classic falafel wrap", "de": "klassischer falafel-wrap"},
+      "diet": "classic", "effort": "medium", "time": 45, "cal": 610, "p": 20, "c": 72, "f": 26, "servings": 2,
+      "contains": ["gluten", "sesame", "high-fodmap"], "attr": [], "tech": ["fry"],
+      "ing": [
+        {"id": "chickpeas", "q": 480, "u": "g"}, {"id": "parsley", "q": 1, "u": "bunch"}, {"id": "cilantro", "q": 0.5, "u": "bunch"},
+        {"id": "onion", "q": 50, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "cumin", "q": 2, "u": "tsp"},
+        {"id": "flour", "q": 3, "u": "tbsp"}, {"id": "baking-powder", "q": 0.5, "u": "tsp"}, {"id": "neutral-oil", "q": 500, "u": "ml"},
+        {"id": "pitta", "q": 2, "u": "pc"}, {"id": "tahini", "q": 3, "u": "tbsp"}, {"id": "lemon", "q": 0.5, "u": "pc"}, {"id": "sesame-seeds", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "pulse the drained chickpeas with herbs, onion, garlic and cumin to a rough gravel — never a purée.", "de": "die abgetropften kichererbsen mit kräutern, zwiebel, knoblauch und kreuzkümmel zu grobem gravel mixen — nie püree."}, "s": 300},
+        {"t": {"en": "stir in flour and baking powder; chill the mix so it holds together.", "de": "mehl und backpulver unterrühren; die masse kühlen, damit sie hält."}, "s": 900},
+        {"t": {"en": "shape small balls, roll in sesame seeds; fry at 180 °c until deep brown.", "de": "kleine bällchen formen, in sesam wälzen; bei 180 °c frittieren, bis sie dunkelbraun sind."}, "s": 420},
+        {"t": {"en": "whisk tahini with lemon juice and water into a sauce.", "de": "tahini mit zitronensaft und wasser zu einer sauce rühren."}, "s": 120},
+        {"t": {"en": "stuff the warm pitta with falafel, sauce and anything green.", "de": "das warme fladenbrot mit falafel, sauce und etwas grünem füllen."}}
+      ]
+    },
+    {
+      "id": "falafel-gluten-free", "dish": "falafel-wrap", "title": {"en": "gluten-free falafel wrap", "de": "glutenfreier falafel-wrap"},
+      "diet": "gluten-free", "effort": "medium", "time": 45, "cal": 600, "p": 19, "c": 76, "f": 23, "servings": 2,
+      "contains": ["sesame", "high-fodmap"], "attr": [], "tech": ["fry"],
+      "ing": [
+        {"id": "chickpeas", "q": 480, "u": "g"}, {"id": "parsley", "q": 1, "u": "bunch"}, {"id": "cilantro", "q": 0.5, "u": "bunch"},
+        {"id": "onion", "q": 50, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "cumin", "q": 2, "u": "tsp"},
+        {"id": "cornstarch", "q": 3, "u": "tbsp"}, {"id": "baking-powder", "q": 0.5, "u": "tsp"}, {"id": "neutral-oil", "q": 500, "u": "ml"},
+        {"id": "corn-tortilla", "q": 2, "u": "pc"}, {"id": "tahini", "q": 3, "u": "tbsp"}, {"id": "lemon", "q": 0.5, "u": "pc"}, {"id": "sesame-seeds", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "make the falafel mix as in the classic, binding with cornstarch instead of flour.", "de": "die falafelmasse wie beim klassiker ansetzen, stattdessen mit speisestärke binden."}, "s": 1200},
+        {"t": {"en": "fry at 180 °c until deep brown.", "de": "bei 180 °c frittieren, bis sie dunkelbraun sind."}, "s": 420},
+        {"t": {"en": "wrap in warmed corn tortillas with tahini sauce.", "de": "in erwärmten mais-tortillas mit tahini-sauce einwickeln."}, "s": 120}
+      ]
+    },
+    {
+      "id": "falafel-keto", "dish": "falafel-wrap", "title": {"en": "keto falafel bowl", "de": "keto-falafel-bowl"},
+      "diet": "keto", "effort": "medium", "time": 40, "cal": 560, "p": 24, "c": 16, "f": 42, "servings": 2,
+      "contains": ["egg", "tree-nuts", "sesame", "dairy", "lactose", "high-fodmap"], "attr": [], "tech": ["bake"],
+      "ing": [
+        {"id": "chickpeas", "q": 240, "u": "g"}, {"id": "cauliflower", "q": 200, "u": "g"}, {"id": "almond-flour", "q": 60, "u": "g"},
+        {"id": "egg", "q": 1, "u": "pc"}, {"id": "halloumi", "q": 150, "u": "g"}, {"id": "parsley", "q": 1, "u": "bunch"},
+        {"id": "onion", "q": 30, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "cumin", "q": 2, "u": "tsp"},
+        {"id": "tahini", "q": 3, "u": "tbsp"}, {"id": "lemon", "q": 0.5, "u": "pc"}, {"id": "olive-oil", "q": 2, "u": "tbsp"},
+        {"id": "lettuce", "q": 1, "u": "handful"}, {"id": "tomato", "q": 1, "u": "pc"}
+      ],
+      "steps": [
+        {"t": {"en": "pulse chickpeas (half the usual amount), cauliflower, herbs, onion, garlic and cumin.", "de": "kichererbsen (die hälfte der üblichen menge), blumenkohl, kräuter, zwiebel, knoblauch und kreuzkümmel mixen."}, "s": 300},
+        {"t": {"en": "bind with egg and almond flour; form small flat cakes.", "de": "mit ei und mandelmehl binden; kleine flache taler formen."}, "s": 180},
+        {"t": {"en": "brush with oil and bake at 200 °c until browned.", "de": "mit öl bestreichen und bei 200 °c backen, bis sie gebräunt sind."}, "s": 1500},
+        {"t": {"en": "sear thick halloumi slices until golden.", "de": "dicke halloumi-scheiben goldbraun braten."}, "s": 300},
+        {"t": {"en": "build bowls over lettuce and tomato, with tahini-lemon sauce.", "de": "schalen auf salat und tomate bauen, mit tahini-zitronen-sauce."}}
+      ]
+    },
+    {
+      "id": "falafel-light", "dish": "falafel-wrap", "title": {"en": "baked falafel wrap", "de": "gebackener falafel-wrap"},
+      "diet": "classic", "effort": "medium", "time": 40, "cal": 430, "p": 18, "c": 64, "f": 12, "servings": 2,
+      "contains": ["gluten", "sesame", "high-fodmap"], "attr": [], "tech": ["bake"],
+      "ing": [
+        {"id": "chickpeas", "q": 480, "u": "g"}, {"id": "parsley", "q": 1, "u": "bunch"}, {"id": "cilantro", "q": 0.5, "u": "bunch"},
+        {"id": "onion", "q": 50, "u": "g"}, {"id": "garlic", "q": 2, "u": "clove"}, {"id": "cumin", "q": 2, "u": "tsp"},
+        {"id": "flour", "q": 3, "u": "tbsp"}, {"id": "baking-powder", "q": 0.5, "u": "tsp"}, {"id": "olive-oil", "q": 2, "u": "tbsp"},
+        {"id": "pitta", "q": 2, "u": "pc"}, {"id": "tahini", "q": 2, "u": "tbsp"}, {"id": "lemon", "q": 0.5, "u": "pc"},
+        {"id": "lettuce", "q": 1, "u": "handful"}, {"id": "tomato", "q": 1, "u": "pc"}
+      ],
+      "steps": [
+        {"t": {"en": "make the classic falafel mix.", "de": "die klassische falafelmasse ansetzen."}, "s": 1200},
+        {"t": {"en": "shape flat cakes, brush with olive oil, bake at 210 °c, turning once.", "de": "flache taler formen, mit olivenöl bestreichen, bei 210 °c backen, einmal wenden."}, "s": 1500},
+        {"t": {"en": "wrap in pitta with lettuce, tomato and a thin ribbon of tahini sauce.", "de": "in fladenbrot mit salat, tomate und einem dünnen band tahini-sauce einwickeln."}, "s": 120}
+      ]
+    }
+  ]
+}
+

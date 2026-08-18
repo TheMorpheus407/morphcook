@@ -1,0 +1,31 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# NOTE: .idea/, *.iml and android/local.properties are deliberately committed:
+# they wire Android Studio to the Flutter SDK at ~/flutter and the Android
+# SDK at ~/Android/Sdk. Keep your own IDE churn out, but keep these files.
+
+# IDE churn (everything else inside .idea)
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/dictionaries/
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/libraries/Dart_Packages.xml
+
+# Gradle / Android build noise
+android/.gradle/
+android/local.properties.bak
+*.log
+
+# Hive test artifacts
+*.hive
+*.lock

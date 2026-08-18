@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "partition": "cuisine-italian",
+  "recipes": [
+    {
+      "id": "alfredo-classic", "dish": "alfredo", "title": {"en": "classic alfredo", "de": "klassisches alfredo"},
+      "diet": "classic", "effort": "medium", "time": 25, "cal": 780, "p": 19, "c": 74, "f": 45, "servings": 2,
+      "contains": ["dairy", "lactose", "gluten", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "fettuccine", "q": 200, "u": "g"}, {"id": "butter", "q": 60, "u": "g"}, {"id": "cream", "q": 200, "u": "ml"},
+        {"id": "parmesan", "q": 80, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the fettuccine in well-salted water until just short of al dente.", "de": "die fettuccine in gut gesalzenem wasser kochen, kurz vor al dente."}, "s": 600},
+        {"t": {"en": "melt the butter with the crushed garlic; add the cream and warm through.", "de": "die butter mit dem angedrückten knoblauch schmelzen; die sahne zugeben und erwärmen."}, "s": 180},
+        {"t": {"en": "drag the pasta into the sauce with a splash of pasta water; toss hard.", "de": "die nudeln mit einem schuss nudelwasser in die sauce heben; kräftig schwenken."}, "s": 120},
+        {"t": {"en": "off the heat, rain in the parmesan, toss until glossy; pepper over everything.", "de": "vom herd den parmesan einrieseln lassen, bis es glänzt; pfeffer über alles."}}
+      ]
+    },
+    {
+      "id": "alfredo-gluten-free", "dish": "alfredo", "title": {"en": "gluten-free alfredo", "de": "glutenfreies alfredo"},
+      "diet": "gluten-free", "effort": "medium", "time": 25, "cal": 770, "p": 19, "c": 72, "f": 44, "servings": 2,
+      "contains": ["dairy", "lactose", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "fettuccine-gf", "q": 200, "u": "g"}, {"id": "butter", "q": 60, "u": "g"}, {"id": "cream", "q": 200, "u": "ml"},
+        {"id": "parmesan", "q": 80, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the gluten-free fettuccine; reserve a mug of the water.", "de": "die glutenfreien fettuccine kochen; eine tasse vom wasser aufheben."}, "s": 600},
+        {"t": {"en": "make the butter-cream sauce with the garlic, as in the classic.", "de": "die butter-sahne-sauce mit knoblauch wie beim klassiker ansetzen."}, "s": 180},
+        {"t": {"en": "finish with parmesan and plenty of pepper; gluten-free pasta drinks sauce — add water generously.", "de": "mit parmesan und viel pfeffer vollenden; glutenfreie nudeln trinken sauce — großzügig wasser zugeben."}, "s": 120}
+      ]
+    },
+    {
+      "id": "alfredo-vegan", "dish": "alfredo", "title": {"en": "vegan alfredo", "de": "veganes alfredo"},
+      "diet": "vegan", "effort": "medium", "time": 30, "cal": 640, "p": 21, "c": 76, "f": 27, "servings": 2,
+      "contains": ["tree-nuts", "gluten", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "fettuccine", "q": 200, "u": "g"}, {"id": "cashews", "q": 100, "u": "g"}, {"id": "nutritional-yeast", "q": 2, "u": "tbsp"},
+        {"id": "garlic", "q": 1, "u": "clove"}, {"id": "lemon", "q": 0.5, "u": "pc"}, {"id": "vegetable-stock", "q": 100, "u": "ml"},
+        {"id": "olive-oil", "q": 1, "u": "tbsp"}, {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "soak the cashews in hot water until soft.", "de": "die cashewkerne in heißem wasser einweichen, bis sie weich sind."}, "s": 900},
+        {"t": {"en": "blend cashews, garlic, nutritional yeast, stock, lemon and oil until completely smooth.", "de": "cashews, knoblauch, hefeflocken, brühe, zitrone und öl völlig glatt mixen."}, "s": 180},
+        {"t": {"en": "boil the fettuccine; toss through the warm sauce with pasta water.", "de": "die fettuccine kochen; durch die warme sauce mit nudelwasser ziehen."}, "s": 600}
+      ]
+    },
+    {
+      "id": "alfredo-light", "dish": "alfredo", "title": {"en": "light alfredo", "de": "leichtes alfredo"},
+      "diet": "classic", "effort": "easy", "time": 20, "cal": 480, "p": 20, "c": 72, "f": 14, "servings": 2,
+      "contains": ["dairy", "lactose", "gluten", "high-fodmap"], "attr": [], "tech": ["simmer"],
+      "ing": [
+        {"id": "fettuccine", "q": 180, "u": "g"}, {"id": "milk", "q": 200, "u": "ml"}, {"id": "cornstarch", "q": 1, "u": "tsp"},
+        {"id": "parmesan", "q": 40, "u": "g"}, {"id": "butter", "q": 10, "u": "g"}, {"id": "garlic", "q": 1, "u": "clove"},
+        {"id": "salt", "q": 1, "u": "tsp"}, {"id": "pepper", "q": 1, "u": "pinch"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the pasta; keep a mug of the water.", "de": "die nudeln kochen; eine tasse vom wasser behalten."}, "s": 600},
+        {"t": {"en": "warm milk with butter and garlic; whisk in the cornstarch until slightly thick.", "de": "milch mit butter und knoblauch erwärmen; die speisestärke einrühren, bis es leicht bindet."}, "s": 180},
+        {"t": {"en": "melt in the parmesan, toss with pasta and a splash of water; pepper generously.", "de": "den parmesan einschmelzen, mit nudeln und einem schuss wasser schwenken; großzügig pfeffern."}, "s": 120}
+      ]
+    },
+    {
+      "id": "carbonara-classic", "dish": "carbonara", "title": {"en": "classic carbonara", "de": "klassische carbonara"},
+      "diet": "classic", "effort": "medium", "time": 25, "cal": 700, "p": 30, "c": 72, "f": 30, "servings": 2,
+      "contains": ["pork", "egg", "dairy", "gluten", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["sauté"],
+      "ing": [
+        {"id": "spaghetti", "q": 200, "u": "g"}, {"id": "bacon", "q": 120, "u": "g"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "parmesan", "q": 60, "u": "g"}, {"id": "pepper", "q": 1, "u": "tsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the spaghetti in salted water.", "de": "die spaghetti in salzwasser kochen."}, "s": 600},
+        {"t": {"en": "crisp the bacon strips slowly; kill the heat, keep the fat.", "de": "den speck langsam knusprig braten; herd aus, das fett behalten."}, "s": 420},
+        {"t": {"en": "whisk eggs, parmesan and a storm of black pepper.", "de": "eier, parmesan und ein sturm schwarzen pfeffers verquirlen."}, "s": 120},
+        {"t": {"en": "drag the hot pasta into the pan, off the heat; pour in the egg mix, toss — it must silk, not scramble.", "de": "die heißen nudeln in die pfanne heben, vom herd; die ei-mischung eingießen, schwenken — sie muss seiden, nicht rührei."}, "s": 120}
+      ]
+    },
+    {
+      "id": "carbonara-halal", "dish": "carbonara", "title": {"en": "halal carbonara", "de": "halal-carbonara"},
+      "diet": "halal", "effort": "medium", "time": 25, "cal": 690, "p": 31, "c": 70, "f": 30, "servings": 2,
+      "contains": ["beef", "egg", "dairy", "gluten", "meat-dairy", "high-fodmap"], "attr": ["halal"], "tech": ["sauté"],
+      "ing": [
+        {"id": "spaghetti", "q": 200, "u": "g"}, {"id": "beef-bacon", "q": 120, "u": "g"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "parmesan", "q": 60, "u": "g"}, {"id": "pepper", "q": 1, "u": "tsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the spaghetti in salted water.", "de": "die spaghetti in salzwasser kochen."}, "s": 600},
+        {"t": {"en": "crisp thin strips of beef bacon in a dry pan; keep the fat.", "de": "dünne streifen rinderspeck in der trockenen pfanne knusprig braten; das fett behalten."}, "s": 420},
+        {"t": {"en": "whisk eggs, parmesan and black pepper.", "de": "eier, parmesan und schwarzen pfeffer verquirlen."}, "s": 120},
+        {"t": {"en": "toss the pasta off the heat with the egg mix until silky.", "de": "die nudeln vom herd mit der ei-mischung schwenken, bis sie seidig ist."}, "s": 120}
+      ]
+    },
+    {
+      "id": "carbonara-vegan", "dish": "carbonara", "title": {"en": "vegan carbonara", "de": "vegane carbonara"},
+      "diet": "vegan", "effort": "medium", "time": 30, "cal": 620, "p": 24, "c": 78, "f": 22, "servings": 2,
+      "contains": ["tree-nuts", "gluten", "soy", "high-fodmap"], "attr": [], "tech": ["sauté"],
+      "ing": [
+        {"id": "spaghetti", "q": 200, "u": "g"}, {"id": "smoked-tofu", "q": 150, "u": "g"}, {"id": "cashews", "q": 60, "u": "g"},
+        {"id": "nutritional-yeast", "q": 2, "u": "tbsp"}, {"id": "garlic", "q": 1, "u": "clove"}, {"id": "olive-oil", "q": 1, "u": "tbsp"},
+        {"id": "pepper", "q": 1, "u": "tsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the spaghetti; soak the cashews in hot water.", "de": "die spaghetti kochen; die cashews in heißem wasser einweichen."}, "s": 900},
+        {"t": {"en": "fry julienne smoked tofu in olive oil until it behaves like crispy bacon.", "de": "räuchertofu in streifen in olivenöl braten, bis er sich wie knuspriger speck benimmt."}, "s": 480},
+        {"t": {"en": "blend cashews, garlic, nutritional yeast and pepper with a splash of pasta water.", "de": "cashews, knoblauch, hefeflocken und pfeffer mit einem schuss nudelwasser mixen."}, "s": 180},
+        {"t": {"en": "toss everything together off the heat until each strand is coated.", "de": "alles vom herd miteinander schwenken, bis jeder strang ummantelt ist."}, "s": 120}
+      ]
+    },
+    {
+      "id": "carbonara-gluten-free", "dish": "carbonara", "title": {"en": "gluten-free carbonara", "de": "glutenfreie carbonara"},
+      "diet": "gluten-free", "effort": "medium", "time": 25, "cal": 690, "p": 30, "c": 66, "f": 31, "servings": 2,
+      "contains": ["pork", "egg", "dairy", "meat-dairy", "high-fodmap"], "attr": [], "tech": ["sauté"],
+      "ing": [
+        {"id": "spaghetti-gf", "q": 200, "u": "g"}, {"id": "bacon", "q": 120, "u": "g"}, {"id": "egg", "q": 2, "u": "pc"},
+        {"id": "parmesan", "q": 60, "u": "g"}, {"id": "pepper", "q": 1, "u": "tsp"}, {"id": "salt", "q": 1, "u": "tsp"}
+      ],
+      "steps": [
+        {"t": {"en": "boil the gluten-free spaghetti; save water for the sauce.", "de": "die glutenfreien spaghetti kochen; wasser für die sauce aufheben."}, "s": 600},
+        {"t": {"en": "crisp the bacon slowly.", "de": "den speck langsam knusprig braten."}, "s": 420},
+        {"t": {"en": "whisk eggs, parmesan, pepper; toss off the heat — the same ritual, other noodles.", "de": "eier, parmesan, pfeffer verquirlen; vom herd schwenken — dasselbe ritual, andere nudeln."}, "s": 120}
+      ]
+    }
+  ]
+}
+

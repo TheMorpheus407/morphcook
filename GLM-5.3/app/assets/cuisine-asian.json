@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "partition": "cuisine-asian",
+  "cuisine": "asian",
+  "strategy": "reference-partition",
+  "note": "asian dishes are high-frequency and therefore live in core-recipes (pad-thai, ramen) and extended-recipes (sushi). this partition routes discovery by cuisine without duplicating recipe records.",
+  "recipes": [],
+  "references": {
+    "pad-thai": "core-recipes",
+    "ramen": "core-recipes",
+    "sushi": "extended-recipes"
+  }
+}

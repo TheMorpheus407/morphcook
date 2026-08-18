@@ -1,0 +1,68 @@
+name: morphcook
+description: >-
+  Offline cookbook where every dish exists for every body — fully-authored
+  variants instead of filters. No backend, no accounts, no runtime AI.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State — keep it boring (SPEC: "ValueNotifier / Provider", picker's choice).
+  provider: ^6.1.2
+
+  # Local state.
+  shared_preferences: ^2.2.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Tumblr-cookbook typography.
+  google_fonts: ^6.2.1
+
+  # Backup export to OS share sheet + import file picking.
+  path_provider: ^2.1.3
+  share_plus: ^7.2.2
+  file_picker: ^8.0.6
+
+  # AES-256-GCM + PBKDF2 for password-protected backups.
+  pointycastle: ^3.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/partition-manifest.json
+    - assets/core-recipes.json
+    - assets/extended-recipes.json
+    - assets/cuisine-italian.json
+    - assets/cuisine-asian.json
+    - assets/cuisine-middle-eastern.json
+    - assets/dishes.json
+    - assets/ontology.json
+    - assets/ingredients.json
+    - assets/ingredient-guide.json
+    - assets/faqs.json
+
+  # To fully bundle the display typefaces (no runtime fetching at all), drop
+  # the .ttf files into assets/fonts/ and uncomment:
+  #
+  # fonts:
+  #   - family: Playfair Display
+  #     fonts:
+  #       - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+  #         style: italic
+  #   - family: JetBrains Mono
+  #     fonts:
+  #       - asset: assets/fonts/JetBrainsMono-Regular.ttf
+  #   - family: Caveat
+  #     fonts:
+  #       - asset: assets/fonts/Caveat-Regular.ttf

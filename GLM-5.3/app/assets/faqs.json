@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {"id": "matching", "label": {"en": "dietary matching", "de": "ernährungs-abgleich"}},
+    {"id": "visibility", "label": {"en": "recipe visibility", "de": "rezept-sichtbarkeit"}},
+    {"id": "features", "label": {"en": "features", "de": "funktionen"}},
+    {"id": "troubleshooting", "label": {"en": "troubleshooting", "de": "problemlösung"}}
+  ],
+  "faqs": [
+    {
+      "id": "faq-how-matching-works",
+      "category": "matching",
+      "q": {"en": "how does morphcook decide which recipes i see?", "de": "wie entscheidet morphcook, welche rezepte ich sehe?"},
+      "a": {"en": "simple set logic. every recipe carries flags for what it contains (pork, dairy, gluten…). your profile carries flags for what you avoid. if the two sets never intersect, and no ingredient you specifically avoid appears, the recipe is visible to you. no recipes are deleted from the world — they are just not for you, and every dish keeps a fully-written version that is.", "de": "einfache mengen-logik. jedes rezept trägt flaggen für seinen inhalt (schwein, milch, gluten …). dein profil trägt flaggen für das, was du meidest. wenn sich die mengen nie schneiden und keine spezifisch gemiedene zutat vorkommt, ist das rezept für dich sichtbar. nichts wird aus der welt gelöscht — es ist nur nicht für dich, und jedes gericht behält eine vollständig geschriebene version, die es ist."}
+    },
+    {
+      "id": "faq-variants-disabled",
+      "category": "matching",
+      "q": {"en": "why is a variant greyed out with a note?", "de": "warum ist eine variante ausgegraut?"},
+      "a": {"en": "a greyed-out chip means no fully-authored recipe exists yet for that exact combination (say, vegan × hard effort). it is shown disabled with a note rather than hidden, so you always know the whole map of a dish. the corpus grows with every app release.", "de": "ein ausgegrauter chip heißt: für genau diese kombination (z. b. vegan × anspruchsvoll) existiert noch kein vollständig geschriebenes rezept. er wird mit notiz gezeigt statt versteckt, damit du immer die ganze karte eines gerichts kennst. der bestand wächst mit jedem app-release."}
+    },
+    {
+      "id": "faq-halal-kosher",
+      "category": "matching",
+      "q": {"en": "are the halal and kosher versions certified?", "de": "sind die halal- und koscher-versionen zertifiziert?"},
+      "a": {"en": "no, and we never claim they are. certification is a property of sourcing and supervision, not of a recipe text. morphcook only marks recipes as built from halal- or kosher-compatible ingredients. please source your meat accordingly.", "de": "nein, und das behaupten wir nie. zertifizierung ist eine eigenschaft von herkunft und aufsicht, nicht von einem rezepttext. morphcook kennzeichnet nur rezepte mit halal- bzw. koscher-kompatiblen zutaten. bitte fleisch entsprechend einkaufen."}
+    },
+    {
+      "id": "faq-avoidance-both-kinds",
+      "category": "matching",
+      "q": {"en": "what is the difference between class avoidance and specific avoidance?", "de": "was ist der unterschied zwischen klassen-meidung und spezifischer meidung?"},
+      "a": {"en": "class avoidance removes whole classes by flag: all dairy, all nuts, all shellfish. specific avoidance works on the ingredient tree: type \"cilantro\" and only cilantro disappears — or pick \"cheese\" and every cheese descendant (parmesan, feta, halloumi) disappears with it. both combine: any match excludes a recipe.", "de": "klassen-meidung entfernt ganze klassen per flagge: alle milchprodukte, alle nüsse, alle schalentiere. spezifische meidung arbeitet auf dem zutaten-baum: tippe „koriandergrün“ und nur das verschwindet — oder wähle „käse“ und alle nachfahren (parmesan, feta, halloumi) verschwinden mit. beides kombiniert sich: jeder treffer schließt ein rezept aus."}
+    },
+    {
+      "id": "faq-calorie-override",
+      "category": "visibility",
+      "q": {"en": "my calorie filter hides a dish i want — can i still see it?", "de": "mein kalorienfilter versteckt ein gericht, das ich will — kann ich es trotzdem sehen?"},
+      "a": {"en": "yes. the calorie target is a hard filter at the profile level, but every dish page has a per-dish override switch (\"show versions outside my target\"). it reveals that dish's other calorie levels for as long as you want — and only for that dish.", "de": "ja. das kalorienziel ist ein harter filter auf profilebene, aber jede gericht-seite hat einen schalter („versionen außerhalb meines ziels zeigen“). damit werden die anderen kalorien-stufen genau dieses gerichts sichtbar — solange du willst, und nur für dieses gericht."}
+    },
+    {
+      "id": "faq-dish-missing",
+      "category": "visibility",
+      "q": {"en": "why can't i find a dish at all?", "de": "warum finde ich ein gericht gar nicht?"},
+      "a": {"en": "two possible reasons. either it does not exist in the corpus yet (search logged it as a content request — these directly inform what we write next), or every one of its variants conflicts with your profile. check via a cuisine section; the variant switcher will tell you which versions exist.", "de": "zwei mögliche gründe. entweder existiert es noch nicht im bestand (deine suche wurde als inhaltswunsch notiert — genau davon lassen wir uns leiten), oder jede variante kollidiert mit deinem profil. prüfe es über einen küchen-abschnitt; der varianten-umschalter zeigt dir, welche versionen existieren."}
+    },
+    {
+      "id": "faq-no-results",
+      "category": "visibility",
+      "q": {"en": "my search returns zero results. is that a bug?", "de": "meine suche liefert null treffer. ist das ein fehler?"},
+      "a": {"en": "usually no. search applies your profile filters after matching, so a query can find dishes that all get filtered out for you. try widening your filters, or search for the plain dish name. if a dish truly is missing, the query is logged as a content request for the corpus team.", "de": "meist nein. die suche wendet deine profilfilter nach dem abgleich an — eine anfrage kann also gerichte finden, die für dich alle rausgefiltert werden. öffne die filter oder suche nach dem schlichten gerichtsnamen. fehlt ein gericht wirklich, wird die anfrage als inhaltswunsch notiert."}
+    },
+    {
+      "id": "faq-offline",
+      "category": "features",
+      "q": {"en": "does morphcook need an internet connection?", "de": "braucht morphcook eine internetverbindung?"},
+      "a": {"en": "no. everything — every recipe, this faq, your cookbook, your plans — lives on your device. no account, no cloud, no telemetry. the only time data leaves the phone is when you explicitly share a backup file.", "de": "nein. alles — jedes rezept, diese faq, dein kochbuch, deine pläne — lebt auf deinem gerät. kein konto, keine wolke, keine telemetrie. daten verlassen das handy nur, wenn du selbst eine sicherungsdatei teilst."}
+    },
+    {
+      "id": "faq-languages",
+      "category": "features",
+      "q": {"en": "which languages are available?", "de": "welche sprachen gibt es?"},
+      "a": {"en": "english and german at launch, and the data model is n-language-ready: all user-visible text is stored per language, so adding another language is a content update, never a schema change.", "de": "englisch und deutsch zum start, und das datenmodell ist n-sprachen-fähig: aller sichtbare text liegt pro sprache vor — eine neue sprache ist eine inhalts-aktualisierung, nie eine schema-änderung."}
+    },
+    {
+      "id": "faq-cook-mode",
+      "category": "features",
+      "q": {"en": "what can cook mode do?", "de": "was kann der kochmodus?"},
+      "a": {"en": "a dark, full-bleed, step-by-step view with a timer per step (visual flash + haptics when it ends, for deaf and hard-of-hearing cooks), a servings scaler, prev/next, pause/resume with progress saved, and an optional quick-tap gesture that advances steps with one tap anywhere on the screen.", "de": "eine dunkle, vollflächige schritt-für-schritt-ansicht mit timer pro schritt (visueller blitz + haptik am ende, für gehörlose und schwerhörige köche), einer portionen-skala, vor/zurück, pause/fortsetzen mit gespeichertem fortschritt und einer optionalen schnell-tipp-geste, die schritte mit einem tipp überall auf dem bildschirm weiterblättert."}
+    },
+    {
+      "id": "faq-shopping-units",
+      "category": "features",
+      "q": {"en": "how does the shopping list combine amounts?", "de": "wie rechnet die einkaufsliste mengen zusammen?"},
+      "a": {"en": "it aggregates per ingredient across all added recipes: two cloves of garlic plus three cloves become five cloves. where units are convertible it converts them (millilitres ↔ tablespoons ↔ teaspoons ↔ cups), and where they are not, it keeps both lines — you will never see nonsense like \"0.7 onion grams\".", "de": "sie fasst pro zutat über alle hinzugefügten rezepte zusammen: zwei knoblauchzehen plus drei zehen werden fünf zehen. wandelbare einheiten werden umgerechnet (milliliter ↔ esslöffel ↔ teelöffel ↔ tassen), nicht wandelbare bleiben getrennte zeilen — du wirst nie so etwas wie „0,7 zwiebel-gramm“ sehen."}
+    },
+    {
+      "id": "faq-meal-plan",
+      "category": "features",
+      "q": {"en": "how does the weekly meal plan work?", "de": "wie funktioniert der wochenplan?"},
+      "a": {"en": "a monday-to-sunday grid with breakfast, lunch and dinner slots. tap an empty slot to assign a recipe from your cookbook or search, drag entries between slots, and export the whole week to the shopping list in one tap. no auto-planning, no nutrition rollups — deliberately simple.", "de": "ein raster von montag bis sonntag mit frühstück, mittag und abend. tippe ein leeres feld, um ein rezept aus kochbuch oder suche zuzuweisen, ziehe einträge zwischen feldern und exportiere die ganze woche mit einem tipp auf die einkaufsliste. keine auto-planung, keine nährwert-summen — absichtlich einfach."}
+    },
+    {
+      "id": "faq-backup",
+      "category": "features",
+      "q": {"en": "how do backups work?", "de": "wie funktionieren sicherungen?"},
+      "a": {"en": "settings → backup creates morphcook-backup.json (human-readable) and morphcook-backup.json.gz (compressed) and hands both to the os share sheet. optionally protect the json with a password (aes-256-gcm). import auto-detects plain, compressed and encrypted files, validates the schema version, and lets you merge or replace.", "de": "einstellungen → sicherung erzeugt morphcook-backup.json (lesbar) und morphcook-backup.json.gz (komprimiert) und übergibt beide ans teilen-menü des systems. optional schützt ein passwort die json-datei (aes-256-gcm). der import erkennt einfache, komprimierte und verschlüsselte dateien, prüft die schema-version und lässt dich zusammenführen oder ersetzen."}
+    },
+    {
+      "id": "faq-restore-password",
+      "category": "troubleshooting",
+      "q": {"en": "the import says the backup is encrypted — now what?", "de": "der import sagt, die sicherung sei verschlüsselt — und jetzt?"},
+      "a": {"en": "enter the password you set when exporting; the encrypted json is the only file that needs it (the .gz copy is always unencrypted, so you can import that one instead if you lost the password). wrong passwords fail with a clear message, never with corrupted data.", "de": "gib das passwort ein, das du beim export gesetzt hast; nur die verschlüsselte json braucht es (die .gz-kopie ist nie verschlüsselt — die kannst du stattdessen importieren, falls du das passwort vergessen hast). falsche passwörter scheitern mit klarer meldung, niemals mit kaputten daten."}
+    },
+    {
+      "id": "faq-content-requests",
+      "category": "troubleshooting",
+      "q": {"en": "what happens to searches that find nothing?", "de": "was passiert mit suchanfragen ohne treffer?"},
+      "a": {"en": "they are logged locally as content requests and travel inside your backup file if you export one. they never leave your device on their own — but they tell the corpus team exactly which dishes to write next.", "de": "sie werden lokal als inhaltswünsche notiert und reisen in deiner sicherungsdatei mit, falls du eine exportierst. sie verlassen dein gerät nie von selbst — aber sie zeigen dem corpus-team genau, welche gerichte als nächstes geschrieben werden."}
+    },
+    {
+      "id": "faq-update-corpus",
+      "category": "troubleshooting",
+      "q": {"en": "how do i get new recipes?", "de": "wie bekomme ich neue rezepte?"},
+      "a": {"en": "the corpus ships inside the app and arrives with normal app-store or play-store updates. there is no over-the-air content download — keeping the app fully offline and reviewable.", "de": "der bestand liegt in der app und kommt mit normalen updates aus app store oder play store. es gibt keinen over-the-air-download — die app bleibt komplett offline und prüfbar."}
+    }
+  ]
+}
+

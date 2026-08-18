@@ -1,0 +1,31 @@
+pluginManagement {
+    def flutterSdkPath = {
+        def properties = new Properties()
+        def localFile = file("local.properties")
+        if (localFile.exists()) {
+            localFile.withInputStream { properties.load(it) }
+        }
+        def path = properties.getProperty("flutter.sdk") ?: System.getenv("FLUTTER_ROOT")
+        assert path != null, "flutter.sdk not set in local.properties and FLUTTER_ROOT not set. Run 'flutter pub get' once (or set flutter.sdk in android/local.properties)."
+        return path
+    }()
+
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    // Wires the native side of pub plugins (shared_preferences, path_provider,
+    // share_plus, file_picker) into this Gradle build. Without it they compile
+    // out and throw MissingPluginException at runtime.
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "8.11.1" apply false
+    id "org.jetbrains.kotlin.android" version "2.2.20" apply false
+}
+
+include ":app"

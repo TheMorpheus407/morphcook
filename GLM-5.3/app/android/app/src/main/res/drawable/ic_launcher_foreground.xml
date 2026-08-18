@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher foreground: a quiet bowl of soup, steam rising.
+     Drawn entirely in vector XML (no binary assets needed).
+     108dp adaptive canvas; keep content inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- steam -->
+    <path
+        android:strokeColor="#3E7C74"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M45,46 C41.5,42 46,38.5 43,34.5 M58,46 C54.5,42 59,38.5 56,34.5" />
+
+    <!-- bowl -->
+    <path
+        android:fillColor="#2E2A24"
+        android:pathData="M32,55 L76,55 A3,3 0 0 1 79,58 L79,59 A23,23 0 0 1 56,82 A23,23 0 0 1 33,59 L33,58 A3,3 0 0 1 32,55 Z" />
+
+    <!-- coral stripe on the rim -->
+    <path
+        android:fillColor="#D96A5B"
+        android:pathData="M29,52 L79,52 L79,56 L29,56 Z" />
+
+    <!-- mustard foot -->
+    <path
+        android:fillColor="#C9A85C"
+        android:pathData="M47,83 L61,83 L59,87 L49,87 Z" />
+</vector>
