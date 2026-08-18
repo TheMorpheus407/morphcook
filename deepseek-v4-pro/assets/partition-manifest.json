@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "corpus_version": "1.0.0",
+  "generated_at": "2026-08-14T10:00:00Z",
+  "partitions": [
+    {"id": "core", "file": "assets/core-recipes.json", "tier": "core", "load": "eager", "description": {"en": "Most-used recipes, loaded at launch", "de": "Meistgenutzte Rezepte, beim Start geladen"}},
+    {"id": "extended", "file": "assets/extended-recipes.json", "tier": "extended", "load": "lazy", "description": {"en": "Rarely-used dishes, loaded on demand", "de": "Selten genutzte Gerichte, bei Bedarf geladen"}},
+    {"id": "cuisine-italian", "file": "assets/cuisine-italian.json", "tier": "cuisine", "load": "on_demand", "description": {"en": "Italian dishes", "de": "Italienische Gerichte"}},
+    {"id": "cuisine-asian", "file": "assets/cuisine-asian.json", "tier": "cuisine", "load": "on_demand", "description": {"en": "Asian dishes", "de": "Asiatische Gerichte"}},
+    {"id": "cuisine-middle-eastern", "file": "assets/cuisine-middle-eastern.json", "tier": "cuisine", "load": "on_demand", "description": {"en": "Middle-Eastern dishes", "de": "Orientalische Gerichte"}}
+  ],
+  "loading_strategy": {
+    "eager": ["core"],
+    "lazy": ["extended"],
+    "on_demand": ["cuisine-italian", "cuisine-asian", "cuisine-middle-eastern"]
+  },
+  "cross_references": {
+    "doener": ["core", "cuisine-middle-eastern"],
+    "pad-thai": ["core", "cuisine-asian"],
+    "alfredo": ["core", "cuisine-italian"],
+    "margherita": ["core", "cuisine-italian"],
+    "ramen": ["core", "cuisine-asian"],
+    "falafel": ["core", "cuisine-middle-eastern"],
+    "tikka-masala": ["extended", "cuisine-asian"],
+    "lasagna": ["core", "cuisine-italian"],
+    "sushi": ["extended", "cuisine-asian"],
+    "bolognese": ["core", "cuisine-italian"],
+    "shakshuka": ["extended", "cuisine-middle-eastern"],
+    "hummus": ["core", "cuisine-middle-eastern"],
+    "burger": ["extended"],
+    "pho": ["extended", "cuisine-asian"],
+    "tiramisu": ["extended", "cuisine-italian"],
+    "oatmeal": ["core"]
+  }
+}

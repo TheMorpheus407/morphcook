@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "contains_flags": [
+    "pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs",
+    "egg", "dairy", "gluten", "soy", "peanuts", "tree-nuts", "almonds",
+    "walnuts", "pistachios", "cashews", "sesame", "mustard", "celery",
+    "lupin", "sulphites", "alcohol", "caffeine", "added-sugar",
+    "high-fodmap", "gelatin-non-halal", "gelatin-non-kosher", "honey",
+    "meat-dairy-combo"
+  ],
+  "compound_avoid_flags": {
+    "vegan": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "gelatin-non-halal", "gelatin-non-kosher", "honey"],
+    "vegetarian": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"],
+    "pescatarian": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal"],
+    "halal": ["pork", "alcohol", "gelatin-non-halal"],
+    "kosher": ["pork", "shellfish", "molluscs", "meat-dairy-combo", "gelatin-non-kosher"],
+    "low-fodmap": ["high-fodmap"],
+    "sugar-free": ["added-sugar"],
+    "lactose-free": ["dairy"]
+  },
+  "positive_markers": [
+    "vegan", "vegetarian", "pescatarian", "gluten-free", "dairy-free",
+    "egg-free", "nut-free", "alcohol-free", "caffeine-free", "sugar-free",
+    "low-fodmap", "pork-free", "halal-compatible", "kosher-compatible",
+    "lactose-free"
+  ],
+  "attributes": {
+    "effort": ["easy", "medium", "hard"],
+    "time_bucket": ["le15", "le30", "le60", "gt60"],
+    "calorie_bucket": ["le400", "le600", "le800", "gt800"],
+    "technique": ["bake", "saute", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"]
+  },
+  "meal_types": ["breakfast", "lunch", "dinner", "snack", "any"]
+}

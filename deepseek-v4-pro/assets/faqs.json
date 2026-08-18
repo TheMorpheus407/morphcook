@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "faqs": [
+    {
+      "id": "how-matching-works",
+      "category": "dietary",
+      "q": {"en": "How does MorphCook decide which recipes I see?", "de": "Wie entscheidet MorphCook, welche Rezepte ich sehe?"},
+      "a": {"en": "Pure set logic, nothing mysterious. Every recipe carries contains-flags (what it has: dairy, gluten, pork…) and every profile carries avoid-flags (what to exclude). A recipe is visible when those two sets don't intersect, no avoided ingredient appears, your positive requirements are met, and time/calorie budgets hold. When several variants of a dish pass, we show the one scoring best on your requirements, effort mood, time and calories.", "de": "Reine Mengenlogik, nichts Geheimnisvolles. Jedes Rezept trägt Enthält-Flags (was drin ist: Milch, Gluten, Schwein …) und jedes Profil trägt Vermeiden-Flags (was auszuschließen ist). Ein Rezept ist sichtbar, wenn sich diese beiden Mengen nicht schneiden, keine vermiedene Zutat vorkommt, deine positiven Anforderungen erfüllt sind und Zeit- sowie Kalorienbudgets passen. Wenn mehrere Varianten eines Gerichts passen, zeigen wir die mit der besten Punktzahl für deine Anforderungen, deine Aufwandsstimmung, Zeit und Kalorien."},
+      "tags": ["matching", "filters", "profile"]
+    },
+    {
+      "id": "same-dish-every-body",
+      "category": "dietary",
+      "q": {"en": "Why does the same dish show up for everyone?", "de": "Warum erscheint dasselbe Gericht für alle?"},
+      "a": {"en": "That's the whole point. MorphCook doesn't remove recipes from your world — every dish concept has fully-authored variants. The Döner exists for the vegan you, the gluten-free you and the keto you, each written completely, not watered down. You see your cookbook, not a filtered subset of someone else's.", "de": "Das ist der ganze Sinn. MorphCook entfernt keine Rezepte aus deiner Welt — jedes Gerichtskonzept hat vollständig verfasste Varianten. Den Döner gibt es für dein veganes Ich, dein glutenfreies Ich und dein Keto-Ich, jeweils vollständig geschrieben, nicht verwässert. Du siehst dein Kochbuch, nicht eine gefilterte Teilmenge des Kochbuchs anderer."},
+      "tags": ["philosophy", "variants"]
+    },
+    {
+      "id": "save-specific-variant",
+      "category": "features",
+      "q": {"en": "What happens when I save a recipe?", "de": "Was passiert, wenn ich ein Rezept speichere?"},
+      "a": {"en": "You save the exact variant you're looking at — your Döner, not just 'a Döner'. Saved recipes land in your Cookbook with their specific contains-flags and attributes, so your cookbook stays filtered to you forever.", "de": "Du speicherst genau die Variante, die du gerade ansiehst — deinen Döner, nicht einfach „einen Döner“. Gespeicherte Rezepte landen mit ihren spezifischen Enthält-Flags und Attributen in deinem Kochbuch, damit es für immer zu dir gefiltert bleibt."},
+      "tags": ["cookbook", "saved"]
+    },
+    {
+      "id": "halal-kosher-note",
+      "category": "dietary",
+      "q": {"en": "Does MorphCook certify recipes as halal or kosher?", "de": "Zertifiziert MorphCook Rezepte als halal oder koscher?"},
+      "a": {"en": "No — and we're careful to never claim it. Certification is a property of sourcing (slaughter, supervision), not of a recipe text. We surface 'halal-compatible ingredients' only: no pork, no alcohol, no non-halal gelatin. The same goes for kosher. Check labels and your trusted certifier for anything you buy.", "de": "Nein — und wir achten darauf, es nie zu behaupten. Zertifizierung ist eine Eigenschaft der Beschaffung (Schlachtung, Überwachung), nicht eines Rezepttextes. Wir zeigen nur „halal-kompatible Zutaten“: kein Schwein, kein Alkohol, keine nicht-halale Gelatine. Gleiches gilt für koscher. Prüfe Etiketten und deine vertrauenswürdige Zertifizierungsstelle bei allem, was du kaufst."},
+      "tags": ["halal", "kosher", "dietary"]
+    },
+    {
+      "id": "lactose-free-flag",
+      "category": "dietary",
+      "q": {"en": "Why doesn't a lactose-free recipe carry the dairy flag?", "de": "Warum trägt ein laktosefreies Rezept kein Milch-Flag?"},
+      "a": {"en": "Flags describe what matters for your constraint. A lactose-free variant is authored with lactose-free cream and naturally lactose-free aged parmesan, so it doesn't carry the 'dairy' flag that lactose-sensitive profiles avoid. It's the whole philosophy: the variant is written for you, not merely filtered.", "de": "Flags beschreiben, was für deine Einschränkung relevant ist. Eine laktosefreie Variante wird mit laktosefreier Sahne und von Natur aus laktosefreiem, gereiftem Parmesan verfasst und trägt daher nicht das „Milch“-Flag, das laktosesensible Profile vermeiden. Das ist die ganze Philosophie: Die Variante ist für dich geschrieben, nicht bloß gefiltert."},
+      "tags": ["lactose", "flags"]
+    },
+    {
+      "id": "specific-avoidance",
+      "category": "dietary",
+      "q": {"en": "How does specific ingredient avoidance work?", "de": "Wie funktioniert die Vermeidung bestimmter Zutaten?"},
+      "a": {"en": "Two ways, both combining. Class avoidance is a checkbox: all dairy, all nuts, all shellfish. Specific avoidance is a typeahead backed by our ingredient dictionary: apples, cilantro, bell peppers. Avoidance propagates down the ingredient tree — avoiding 'nuts' excludes walnuts, almonds, pistachios and every other child. Any match excludes the recipe.", "de": "Auf zwei Wegen, die sich kombinieren. Klassen-Vermeidung ist eine Checkbox: alle Milchprodukte, alle Nüsse, alle Schalentiere. Spezifische Vermeidung ist eine Suche mit Vorschlägen auf Basis unseres Zutaten-Lexikons: Äpfel, Koriander, Paprika. Die Vermeidung vererbt sich im Zutatenbaum nach unten — wer „Nüsse“ vermeidet, schließt Walnüsse, Mandeln, Pistazien und alle anderen Kinder aus. Jeder Treffer schließt das Rezept aus."},
+      "tags": ["avoidance", "allergies", "ingredients"]
+    },
+    {
+      "id": "calorie-target",
+      "category": "features",
+      "q": {"en": "How does the calorie target work?", "de": "Wie funktioniert das Kalorienziel?"},
+      "a": {"en": "It's a hard filter at the profile level with a tolerance band: a recipe is visible when its calories-per-serving are within your target ± tolerance. On each dish page there's a per-dish override switch to peek at versions outside your target — useful when a birthday demands tiramisu.", "de": "Es ist ein harter Filter auf Profilebene mit Toleranzband: Ein Rezept ist sichtbar, wenn seine Kalorien pro Portion innerhalb deines Ziels ± Toleranz liegen. Auf jeder Gerichtsseite gibt es einen Override-Schalter pro Gericht, um Versionen außerhalb deines Ziels anzusehen — nützlich, wenn ein Geburtstag Tiramisu verlangt."},
+      "tags": ["calories", "profile"]
+    },
+    {
+      "id": "variant-switcher",
+      "category": "features",
+      "q": {"en": "How does the variant switcher work?", "de": "Wie funktioniert der Varianten-Umschalter?"},
+      "a": {"en": "On a dish page, each dimension — diet, effort, calorie level, and any future axis — is a collapsed row showing your current variant. Tap it to reveal alternatives. Unreachable combinations (no vegan × pro version exists yet) are shown disabled with a note, never hidden. Switching re-renders the recipe in place with a highlight flash on changed ingredients.", "de": "Auf einer Gerichtsseite ist jede Dimension — Ernährung, Aufwand, Kalorienstufe und jede künftige Achse — eine eingeklappte Zeile mit deiner aktuellen Variante. Tippen zeigt die Alternativen. Unerreichbare Kombinationen (es gibt noch keine vegane × Profi-Version) werden deaktiviert mit einem Hinweis angezeigt, nie versteckt. Beim Wechseln wird das Rezept an Ort und Stelle neu gerendert, mit Aufblitzen der geänderten Zutaten."},
+      "tags": ["variants", "dish"]
+    },
+    {
+      "id": "shopping-list-units",
+      "category": "features",
+      "q": {"en": "How does the smart shopping list merge ingredients?", "de": "Wie führt die smarte Einkaufsliste Zutaten zusammen?"},
+      "a": {"en": "It aggregates across all selected recipes: 2 cloves of garlic plus 3 cloves becomes 5 cloves. Compatible unit types convert automatically — ml ↔ tbsp ↔ tsp ↔ cups for liquids, g ↔ kg for solids. Incompatible units stay as separate lines so nothing gets silently mangled. Items are grouped by supermarket aisle.", "de": "Sie fasst über alle ausgewählten Rezepte zusammen: 2 Knoblauchzehen plus 3 Zehen werden 5 Zehen. Kompatible Einheiten werden automatisch umgerechnet — ml ↔ EL ↔ TL ↔ Tassen für Flüssiges, g ↔ kg für Festes. Inkompatible Einheiten bleiben getrennte Zeilen, damit nichts stillschweigend verfälscht wird. Die Posten sind nach Supermarkt-Gang gruppiert."},
+      "tags": ["shopping", "units"]
+    },
+    {
+      "id": "meal-planning",
+      "category": "features",
+      "q": {"en": "How does meal planning work?", "de": "Wie funktioniert die Essensplanung?"},
+      "a": {"en": "A weekly grid, Monday to Sunday, breakfast/lunch/dinner. Tap a slot to assign a recipe from your cookbook or search, drag-and-drop between slots, and export any week to your shopping list with one tap. No auto-planning and no nutrition rollups in v1 — your week, your decisions.", "de": "Ein Wochenraster, Montag bis Sonntag, Frühstück/Mittag/Abendessen. Tippe auf ein Feld, um ein Rezept aus deinem Kochbuch oder der Suche zuzuweisen, ziehe Rezepte zwischen Feldern und exportiere jede Woche mit einem Tipp in deine Einkaufsliste. Keine automatische Planung und keine Nährwert-Zusammenfassung in v1 — deine Woche, deine Entscheidungen."},
+      "tags": ["meal-plan", "weekly"]
+    },
+    {
+      "id": "cook-mode",
+      "category": "features",
+      "q": {"en": "What can cook mode do?", "de": "Was kann der Kochmodus?"},
+      "a": {"en": "A dark, full-bleed step-by-step view. Per-step timers, a servings scaler for the whole recipe, prev/next navigation, and pause/resume with progress saved so a phone call never costs you your place. When a timer finishes, a coral/teal flash covers the screen for accessibility — you can control it in Settings and it respects the reduce-motion preference.", "de": "Eine dunkle, randlose Schritt-für-Schritt-Ansicht. Timer pro Schritt, ein Portions-Skalierer für das ganze Rezept, Zurück/Weiter-Navigation und Pause/Fortsetzen mit gespeichertem Fortschritt, damit ein Anruf dich nie deine Stelle kostet. Wenn ein Timer endet, bedeckt ein Korallen/Türkis-Blitz den Bildschirm — barrierefrei steuerbar in den Einstellungen, respektiert die Einstellung „Bewegung reduzieren“."},
+      "tags": ["cook-mode", "timer", "accessibility"]
+    },
+    {
+      "id": "quick-tap",
+      "category": "accessibility",
+      "q": {"en": "What is the one-handed quick-tap?", "de": "Was ist das Einhand-Quick-Tap?"},
+      "a": {"en": "Optional: a single tap anywhere on the step text advances to the next step, with a 300ms debounce to prevent accidental double-advances. It's designed for cooking with floury hands, and it respects the reduce-motion preference. Turn it on in cook mode.", "de": "Optional: Ein einzelnes Tippen irgendwo auf den Schritttext springt zum nächsten Schritt, mit 300 ms Entprellung gegen versehentliches Doppelspringen. Gedacht fürs Kochen mit mehligen Händen; respektiert „Bewegung reduzieren“. Einschalten im Kochmodus."},
+      "tags": ["cook-mode", "accessibility", "gesture"]
+    },
+    {
+      "id": "offline-first",
+      "category": "general",
+      "q": {"en": "Does MorphCook need an internet connection?", "de": "Braucht MorphCook eine Internetverbindung?"},
+      "a": {"en": "No. The entire recipe corpus ships inside the app, and there are no network calls at runtime. Everything — matching, search, planning, backup — works in airplane mode. New recipes arrive with app updates through the store.", "de": "Nein. Der gesamte Rezeptbestand ist in der App enthalten, und zur Laufzeit gibt es keine Netzwerkaufrufe. Alles — Matching, Suche, Planung, Backup — funktioniert im Flugmodus. Neue Rezepte kommen mit App-Updates über den Store."},
+      "tags": ["offline", "privacy"]
+    },
+    {
+      "id": "no-ai-runtime",
+      "category": "general",
+      "q": {"en": "Is there AI running inside the app?", "de": "Läuft KI in der App?"},
+      "a": {"en": "No LLM calls, ever, from the app. All recipes are AI-generated and human-reviewed at build time by our pipeline, then shipped as plain JSON in the app bundle. The app is deterministic set logic on top of that corpus.", "de": "Niemals LLM-Aufrufe aus der App. Alle Rezepte werden zur Build-Zeit von unserer Pipeline KI-generiert und von Menschen geprüft und dann als schlichtes JSON im App-Bundle ausgeliefert. Die App ist deterministische Mengenlogik auf diesem Bestand."},
+      "tags": ["ai", "pipeline"]
+    },
+    {
+      "id": "backup",
+      "category": "features",
+      "q": {"en": "How do backup and restore work?", "de": "Wie funktionieren Sicherung und Wiederherstellung?"},
+      "a": {"en": "Export writes two files to the share sheet: morphcook-backup.json (human-readable) and morphcook-backup.json.gz (GZip compressed, 70–90% smaller). Optionally protect the JSON with a password using AES-256-GCM encryption — the GZip file always stays unencrypted for compatibility. Import auto-detects the format and merges or replaces your data, your choice. The bundled recipe corpus is never touched.", "de": "Der Export schreibt zwei Dateien ins Teilen-Menü: morphcook-backup.json (lesbar) und morphcook-backup.json.gz (GZip-komprimiert, 70–90 % kleiner). Optional die JSON mit einem Passwort per AES-256-GCM verschlüsseln — die GZip-Datei bleibt aus Kompatibilitätsgründen unverschlüsselt. Der Import erkennt das Format automatisch und führt Daten zusammen oder ersetzt sie — deine Wahl. Der mitgelieferte Rezeptbestand wird nie angefasst."},
+      "tags": ["backup", "export", "import"]
+    },
+    {
+      "id": "shopping-insights",
+      "category": "features",
+      "q": {"en": "What are Shopping Insights?", "de": "Was sind Einkaufs-Insights?"},
+      "a": {"en": "An analytics dashboard for your shopping patterns: a variety score (how many unique ingredients you've shopped for), your most-added ingredients with frequency counts, and a seasonal breakdown grouped by month. Find it in Settings. It helps you notice patterns — like buying cilantro every week for a recipe you then skip.", "de": "Ein Analyse-Dashboard für deine Einkaufsmuster: ein Vielfalts-Score (wie viele verschiedene Zutaten du eingekauft hast), deine am häufigsten hinzugefügten Zutaten mit Häufigkeit und eine saisonale Aufschlüsselung nach Monaten. Zu finden in den Einstellungen. Es hilft dir, Muster zu erkennen — etwa, dass du jede Woche Koriander kaufst für ein Rezept, das du dann überspringst."},
+      "tags": ["insights", "analytics", "shopping"]
+    },
+    {
+      "id": "search-returns-empty",
+      "category": "troubleshooting",
+      "q": {"en": "Why did my search return nothing?", "de": "Warum liefert meine Suche nichts?"},
+      "a": {"en": "Search respects your profile filters — if every hit is excluded by your avoids, time budget or calorie target, the result is empty. The per-dish override doesn't apply to search. Queries that return zero results are logged locally (never sent anywhere) and exported in your backup as content requests, so we know which dishes to write next.", "de": "Die Suche respektiert deine Profilfilter — wenn jeder Treffer durch deine Vermeidungen, dein Zeitbudget oder dein Kalorienziel ausgeschlossen ist, ist das Ergebnis leer. Der Override pro Gericht gilt nicht für die Suche. Suchanfragen ohne Ergebnis werden lokal protokolliert (nie irgendwohin gesendet) und als Inhaltswünsche in dein Backup exportiert, damit wir wissen, welche Gerichte wir als Nächstes schreiben."},
+      "tags": ["search", "empty", "content-requests"]
+    },
+    {
+      "id": "change-language",
+      "category": "general",
+      "q": {"en": "Can I switch languages later?", "de": "Kann ich die Sprache später wechseln?"},
+      "a": {"en": "Yes, anytime in Settings. Every user-visible text — recipe titles, steps, ingredients, FAQ — is stored per language, so switching is instant and complete for English and German, with the data model ready for more languages without any schema change.", "de": "Ja, jederzeit in den Einstellungen. Jeder sichtbare Text — Rezepttitel, Schritte, Zutaten, FAQ — ist pro Sprache gespeichert, sodass der Wechsel sofort und vollständig ist für Englisch und Deutsch; das Datenmodell ist bereit für weitere Sprachen ohne jede Schemaänderung."},
+      "tags": ["language", "settings"]
+    },
+    {
+      "id": "profile-edit",
+      "category": "troubleshooting",
+      "q": {"en": "I picked the wrong diet during onboarding. Now what?", "de": "Ich habe beim Onboarding die falsche Ernährung gewählt. Und jetzt?"},
+      "a": {"en": "Fix it in Settings → Profile. Everything from onboarding is editable there: avoid classes, specific ingredients, required attributes, time budget, calorie target, effort mood. Your cookbook re-filters instantly.", "de": "Ändere es unter Einstellungen → Profil. Alles aus dem Onboarding ist dort editierbar: Vermeidungsklassen, spezifische Zutaten, erforderliche Attribute, Zeitbudget, Kalorienziel, Aufwandsstimmung. Dein Kochbuch filtert sich sofort neu."},
+      "tags": ["profile", "settings", "onboarding"]
+    },
+    {
+      "id": "striped-placeholders",
+      "category": "general",
+      "q": {"en": "Why do recipes have striped images instead of photos?", "de": "Warum haben Rezepte gestreifte Bilder statt Fotos?"},
+      "a": {"en": "It's the design, on purpose: striped SVG placeholders with captions give the app its tumblr-era cookbook look, and no dish ever disappoints by looking better in the photo than on your plate. Real photography is a deferred decision.", "de": "Das ist Absicht im Design: Gestreifte SVG-Platzhalter mit Bildunterschriften geben der App ihren Tumblr-Ära-Kochbuch-Look, und kein Gericht enttäuscht je, weil es auf dem Foto besser aussieht als auf deinem Teller. Echte Fotografie ist eine zurückgestellte Entscheidung."},
+      "tags": ["design", "aesthetic"]
+    }
+  ]
+}

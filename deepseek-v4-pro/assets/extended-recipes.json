@@ -1,0 +1,2658 @@
+{
+  "partition_id": "extended",
+  "version": 1,
+  "recipes": [
+    {
+      "id": "tikka.classic",
+      "dish_id": "tikka-masala",
+      "name": {
+        "en": "Chicken Tikka Masala",
+        "de": "Chicken Tikka Masala"
+      },
+      "blurb": {
+        "en": "Charred chicken in a tomato-cream sauce — born in dispute, loved everywhere, disputed no further at the table.",
+        "de": "Gegrilltes Hähnchen in Tomaten-Sahne-Sauce — im Streit geboren, überall geliebt, am Tisch nicht weiter diskutiert."
+      },
+      "contains": [
+        "poultry",
+        "dairy"
+      ],
+      "ingredient_ids": [
+        "meat.chicken",
+        "dairy.yogurt.greek",
+        "dairy.cream",
+        "fermented.canned-tomato",
+        "produce.onion",
+        "produce.garlic",
+        "produce.ginger",
+        "spices.garam-masala",
+        "spices.turmeric",
+        "spices.cumin",
+        "spices.cayenne",
+        "grains.rice",
+        "oils.vegetable-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "halal-compatible",
+        "medium",
+        "gt60",
+        "le800",
+        "saute",
+        "grill"
+      ],
+      "effort": "medium",
+      "time_minutes": 60,
+      "time_bucket": "gt60",
+      "calories_per_serving": 680,
+      "calorie_bucket": "le800",
+      "servings": 4,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner"
+      ],
+      "technique": [
+        "saute",
+        "grill"
+      ],
+      "tags": [
+        "curry",
+        "family"
+      ],
+      "stripe_colors": [
+        "#C75B39",
+        "#E8B04A"
+      ],
+      "caption": {
+        "en": "the disputed curry, settled nightly",
+        "de": "das umstrittene Curry, jeden Abend beigelegt"
+      },
+      "ingredients": [
+        {
+          "id": "meat.chicken",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.yogurt.greek",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "fermented.canned-tomato",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "produce.ginger",
+          "amount": 15,
+          "unit": "g"
+        },
+        {
+          "id": "spices.garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.turmeric",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cayenne",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "grains.rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Marinate",
+            "de": "Marinieren"
+          },
+          "text": {
+            "en": "Marinate chicken in yogurt, garlic, ginger and half the spices for 30 minutes.",
+            "de": "Hähnchen in Joghurt, Knoblauch, Ingwer und der Hälfte der Gewürze 30 Minuten marinieren."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "title": {
+            "en": "Char",
+            "de": "Anrösten"
+          },
+          "text": {
+            "en": "Sear the chicken until charred at the edges but still juicy inside.",
+            "de": "Hähnchen anbraten, bis die Ränder verkohlt sind, innen aber saftig."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Sauce",
+            "de": "Sauce"
+          },
+          "text": {
+            "en": "Soften onion, add remaining spices, tomatoes, simmer 10 minutes. Blend until silky, stir in cream.",
+            "de": "Zwiebel weich dünsten, restliche Gewürze, Tomaten, 10 Minuten köcheln. Seidig pürieren, Sahne einrühren."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Combine",
+            "de": "Kombinieren"
+          },
+          "text": {
+            "en": "Chicken into the sauce, 5 minutes together. Rice alongside.",
+            "de": "Hähnchen in die Sauce, 5 Minuten gemeinsam. Reis dazu."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 38,
+        "carbs_g": 52,
+        "fat_g": 34
+      },
+      "reviewed": true,
+      "diet": "classic"
+    },
+    {
+      "id": "tikka.vegan",
+      "dish_id": "tikka-masala",
+      "name": {
+        "en": "Chickpea Tikka Masala",
+        "de": "Kichererbsen-Tikka-Masala"
+      },
+      "blurb": {
+        "en": "Roasted chickpeas swim in a coconut-tomato masala that needs no dairy to go deep.",
+        "de": "Geröstete Kichererbsen schwimmen in einem Kokos-Tomaten-Masala, das keine Milch braucht, um tief zu gehen."
+      },
+      "contains": [
+        "soy"
+      ],
+      "ingredient_ids": [
+        "plant-based.chickpea",
+        "plant-based.coconut-milk",
+        "fermented.canned-tomato",
+        "produce.onion",
+        "produce.garlic",
+        "produce.ginger",
+        "spices.garam-masala",
+        "spices.turmeric",
+        "spices.cumin",
+        "spices.cayenne",
+        "grains.rice",
+        "oils.vegetable-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "vegan",
+        "halal-compatible",
+        "medium",
+        "gt60",
+        "le600",
+        "saute",
+        "roast"
+      ],
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "gt60",
+      "calories_per_serving": 540,
+      "calorie_bucket": "le600",
+      "servings": 4,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner"
+      ],
+      "technique": [
+        "saute",
+        "roast"
+      ],
+      "tags": [
+        "curry",
+        "plant-based"
+      ],
+      "stripe_colors": [
+        "#C75B39",
+        "#6F8F3F"
+      ],
+      "caption": {
+        "en": "the curry that went coconut",
+        "de": "das Curry, das kokosnüssig wurde"
+      },
+      "ingredients": [
+        {
+          "id": "plant-based.chickpea",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "plant-based.coconut-milk",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "fermented.canned-tomato",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "produce.ginger",
+          "amount": 15,
+          "unit": "g"
+        },
+        {
+          "id": "spices.garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.turmeric",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cayenne",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "grains.rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Roast chickpeas",
+            "de": "Kichererbsen rösten"
+          },
+          "text": {
+            "en": "Toss chickpeas in oil and half the spices, roast 20 minutes until crisped.",
+            "de": "Kichererbsen in Öl und der Hälfte der Gewürze wenden, 20 Minuten rösten, bis knusprig."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "title": {
+            "en": "Sauce",
+            "de": "Sauce"
+          },
+          "text": {
+            "en": "Soften onion, add spices, tomatoes, simmer 10 minutes. Blend with coconut milk until sunset-orange.",
+            "de": "Zwiebel weich dünsten, Gewürze, Tomaten, 10 Minuten köcheln. Mit Kokosmilch pürieren, bis sonnenuntergangsorange."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Combine",
+            "de": "Kombinieren"
+          },
+          "text": {
+            "en": "Fold in the roasted chickpeas, 5 minutes together. Rice alongside.",
+            "de": "Geröstete Kichererbsen unterheben, 5 Minuten gemeinsam. Reis dazu."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 22,
+        "carbs_g": 62,
+        "fat_g": 22
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "tikka.halal",
+      "dish_id": "tikka-masala",
+      "name": {
+        "en": "Halal Chicken Tikka Masala",
+        "de": "Halal Chicken Tikka Masala"
+      },
+      "blurb": {
+        "en": "The same char and velvet, built on halal-compatible ingredients from the marinade up.",
+        "de": "Dieselbe Röstaroma-Samtigkeit, von der Marinade an auf halal-kompatiblen Zutaten aufgebaut."
+      },
+      "contains": [
+        "poultry",
+        "dairy"
+      ],
+      "ingredient_ids": [
+        "meat.chicken",
+        "dairy.yogurt.greek",
+        "dairy.cream",
+        "fermented.canned-tomato",
+        "produce.onion",
+        "produce.garlic",
+        "produce.ginger",
+        "spices.garam-masala",
+        "spices.turmeric",
+        "spices.cumin",
+        "grains.rice",
+        "oils.vegetable-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "halal-compatible",
+        "medium",
+        "gt60",
+        "le800",
+        "saute",
+        "grill"
+      ],
+      "effort": "medium",
+      "time_minutes": 60,
+      "time_bucket": "gt60",
+      "calories_per_serving": 690,
+      "calorie_bucket": "le800",
+      "servings": 4,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner"
+      ],
+      "technique": [
+        "saute",
+        "grill"
+      ],
+      "tags": [
+        "curry",
+        "halal"
+      ],
+      "stripe_colors": [
+        "#C75B39",
+        "#E8B04A"
+      ],
+      "caption": {
+        "en": "charred, velvet, compatible",
+        "de": "geröstet, samtig, kompatibel"
+      },
+      "ingredients": [
+        {
+          "id": "meat.chicken",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.yogurt.greek",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "fermented.canned-tomato",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "produce.ginger",
+          "amount": 15,
+          "unit": "g"
+        },
+        {
+          "id": "spices.garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.turmeric",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "grains.rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Marinate",
+            "de": "Marinieren"
+          },
+          "text": {
+            "en": "Marinate chicken in yogurt, garlic, ginger, spices for 30 minutes.",
+            "de": "Hähnchen in Joghurt, Knoblauch, Ingwer, Gewürzen 30 Minuten marinieren."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "title": {
+            "en": "Char",
+            "de": "Anrösten"
+          },
+          "text": {
+            "en": "Sear until the edges char, inside stays juicy.",
+            "de": "Anbraten, bis die Ränder rösten, innen saftig bleibt."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Sauce",
+            "de": "Sauce"
+          },
+          "text": {
+            "en": "Onion, spices, tomatoes, simmer, blend, cream in.",
+            "de": "Zwiebel, Gewürze, Tomaten, köcheln, pürieren, Sahne dazu."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Combine",
+            "de": "Kombinieren"
+          },
+          "text": {
+            "en": "Chicken into the sauce, rice alongside.",
+            "de": "Hähnchen in die Sauce, Reis dazu."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 39,
+        "carbs_g": 52,
+        "fat_g": 35
+      },
+      "reviewed": true,
+      "diet": "halal"
+    },
+    {
+      "id": "sushi.salmon",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Salmon Maki",
+        "de": "Lachs-Maki"
+      },
+      "blurb": {
+        "en": "Sushi-grade salmon and seasoned rice, rolled tight and cut clean — the Friday ritual.",
+        "de": "Sushi-Lachs und gewürzter Reis, fest gerollt und sauber geschnitten — das Freitagsritual."
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "grains.sushi-rice",
+        "seafood.salmon",
+        "spices.nori",
+        "oils.rice-vinegar",
+        "baking.sugar",
+        "spices.salt",
+        "oils.soy-sauce",
+        "oils.sesame-oil"
+      ],
+      "attributes": [
+        "pescatarian",
+        "hard",
+        "gt60",
+        "le600",
+        "raw"
+      ],
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "gt60",
+      "calories_per_serving": 420,
+      "calorie_bucket": "le600",
+      "servings": 2,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "raw"
+      ],
+      "tags": [
+        "weekend",
+        "japanese"
+      ],
+      "stripe_colors": [
+        "#3F6F5F",
+        "#E8E0D0"
+      ],
+      "caption": {
+        "en": "rice with a plan",
+        "de": "Reis mit einem Plan"
+      },
+      "ingredients": [
+        {
+          "id": "grains.sushi-rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "seafood.salmon",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "spices.nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.rice-vinegar",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "oils.soy-sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "oils.sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Cook rice",
+            "de": "Reis kochen"
+          },
+          "text": {
+            "en": "Rinse sushi rice until the water runs clear, cook, then fold in vinegar, sugar and salt. Cool to room temperature.",
+            "de": "Sushireis spülen, bis das Wasser klar bleibt, kochen, dann Essig, Zucker und Salz unterheben. Auf Raumtemperatur abkühlen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "title": {
+            "en": "Roll",
+            "de": "Rollen"
+          },
+          "text": {
+            "en": "Rice on nori, salmon in the middle, roll tight with a bamboo mat. Wet the edge to seal.",
+            "de": "Reis auf Nori, Lachs in die Mitte, mit der Bambusmatte fest rollen. Kante anfeuchten zum Versiegeln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Slice",
+            "de": "Schneiden"
+          },
+          "text": {
+            "en": "Slice with a wet knife into clean rounds. Soy sauce for dipping, sesame oil for brushing.",
+            "de": "Mit feuchtem Messer in saubere Röllchen schneiden. Sojasauce zum Dippen, Sesamöl zum Bestreichen."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 28,
+        "carbs_g": 52,
+        "fat_g": 10
+      },
+      "reviewed": true,
+      "diet": "pescatarian"
+    },
+    {
+      "id": "sushi.vegan",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Vegan Maki",
+        "de": "Vegane Maki"
+      },
+      "blurb": {
+        "en": "Avocado, cucumber and pickled radish in a tight little roll — the vegetable version of precision.",
+        "de": "Avocado, Gurke und eingelegter Rettich in einer engen kleinen Rolle — die Gemüse-Version der Präzision."
+      },
+      "contains": [
+        "soy",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "grains.sushi-rice",
+        "produce.avocado",
+        "produce.cucumber",
+        "spices.nori",
+        "oils.rice-vinegar",
+        "baking.sugar",
+        "spices.salt",
+        "oils.tamari",
+        "oils.sesame-oil"
+      ],
+      "attributes": [
+        "vegan",
+        "halal-compatible",
+        "hard",
+        "gt60",
+        "le400",
+        "raw"
+      ],
+      "effort": "hard",
+      "time_minutes": 55,
+      "time_bucket": "gt60",
+      "calories_per_serving": 380,
+      "calorie_bucket": "le400",
+      "servings": 2,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "raw"
+      ],
+      "tags": [
+        "plant-based",
+        "japanese"
+      ],
+      "stripe_colors": [
+        "#3F6F5F",
+        "#A8C98A"
+      ],
+      "caption": {
+        "en": "precision, plant-based",
+        "de": "Präzision, pflanzlich"
+      },
+      "ingredients": [
+        {
+          "id": "grains.sushi-rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "produce.avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "spices.nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.rice-vinegar",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "oils.tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "oils.sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Cook rice",
+            "de": "Reis kochen"
+          },
+          "text": {
+            "en": "Rinse, cook, season with vinegar, sugar, salt. Cool.",
+            "de": "Spülen, kochen, mit Essig, Zucker, Salz würzen. Abkühlen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "title": {
+            "en": "Prep veg",
+            "de": "Gemüse vorbereiten"
+          },
+          "text": {
+            "en": "Slice avocado and cucumber into thin batons.",
+            "de": "Avocado und Gurke in dünne Stifte schneiden."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "title": {
+            "en": "Roll",
+            "de": "Rollen"
+          },
+          "text": {
+            "en": "Rice on nori, batons in the middle, roll tight. Seal with water.",
+            "de": "Reis auf Nori, Stifte in die Mitte, fest rollen. Mit Wasser versiegeln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Slice",
+            "de": "Schneiden"
+          },
+          "text": {
+            "en": "Wet knife, clean rounds, tamari for dipping.",
+            "de": "Feuchtes Messer, saubere Röllchen, Tamari zum Dippen."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 12,
+        "carbs_g": 56,
+        "fat_g": 12
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "sushi.chicken",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Teriyaki Chicken Maki",
+        "de": "Teriyaki-Hähnchen-Maki"
+      },
+      "blurb": {
+        "en": "Cooked teriyaki chicken rolled with rice — all the sushi ritual, none of the raw, halal-compatible to boot.",
+        "de": "Gegartes Teriyaki-Hähnchen mit Reis gerollt — das ganze Sushi-Ritual, nichts Rohes, obendrein halal-kompatibel."
+      },
+      "contains": [
+        "poultry",
+        "soy",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "grains.sushi-rice",
+        "meat.chicken",
+        "spices.nori",
+        "oils.rice-vinegar",
+        "baking.sugar",
+        "spices.salt",
+        "oils.soy-sauce",
+        "oils.sesame-oil",
+        "produce.scallion"
+      ],
+      "attributes": [
+        "halal-compatible",
+        "hard",
+        "gt60",
+        "le600",
+        "pan-fry",
+        "raw"
+      ],
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "gt60",
+      "calories_per_serving": 450,
+      "calorie_bucket": "le600",
+      "servings": 2,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "pan-fry",
+        "raw"
+      ],
+      "tags": [
+        "japanese",
+        "halal"
+      ],
+      "stripe_colors": [
+        "#3F6F5F",
+        "#D9A227"
+      ],
+      "caption": {
+        "en": "cooked, rolled, loved",
+        "de": "gegart, gerollt, geliebt"
+      },
+      "ingredients": [
+        {
+          "id": "grains.sushi-rice",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "meat.chicken",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "spices.nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.rice-vinegar",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "oils.soy-sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "oils.sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "produce.scallion",
+          "amount": 1,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Cook rice",
+            "de": "Reis kochen"
+          },
+          "text": {
+            "en": "Rinse, cook, season with vinegar, sugar, salt. Cool.",
+            "de": "Spülen, kochen, mit Essig, Zucker, Salz würzen. Abkühlen."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "title": {
+            "en": "Teriyaki chicken",
+            "de": "Teriyaki-Hähnchen"
+          },
+          "text": {
+            "en": "Pan-fry chicken strips, glaze with soy sauce and sugar until sticky and dark.",
+            "de": "Hähnchenstreifen braten, mit Sojasauce und Zucker glasieren, bis klebrig und dunkel."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Roll",
+            "de": "Rollen"
+          },
+          "text": {
+            "en": "Rice on nori, chicken and scallion in the middle, roll tight.",
+            "de": "Reis auf Nori, Hähnchen und Frühlingszwiebel in die Mitte, fest rollen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Slice",
+            "de": "Schneiden"
+          },
+          "text": {
+            "en": "Wet knife, clean rounds. Dip lightly — the glaze did the work.",
+            "de": "Feuchtes Messer, saubere Röllchen. Leicht dippen — die Glasur hat die Arbeit gemacht."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 30,
+        "carbs_g": 54,
+        "fat_g": 10
+      },
+      "reviewed": true,
+      "diet": "classic"
+    },
+    {
+      "id": "shakshuka.classic",
+      "dish_id": "shakshuka",
+      "name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "blurb": {
+        "en": "Eggs poached in a spiced tomato bath, bread for the sopping — breakfast's best argument.",
+        "de": "Eier in einem würzigen Tomatenbad pochiert, Brot zum Eintunken — das beste Argument des Frühstücks."
+      },
+      "contains": [
+        "egg",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "eggs.egg",
+        "fermented.canned-tomato",
+        "produce.bell-pepper",
+        "produce.onion",
+        "produce.garlic",
+        "spices.paprika",
+        "spices.cumin",
+        "spices.cayenne",
+        "grains.bread",
+        "oils.olive-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "vegetarian",
+        "easy",
+        "le30",
+        "le400",
+        "simmer"
+      ],
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "le30",
+      "calories_per_serving": 380,
+      "calorie_bucket": "le400",
+      "servings": 2,
+      "cuisine": "middle-eastern",
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "tags": [
+        "breakfast",
+        "one-pan"
+      ],
+      "stripe_colors": [
+        "#C75B39",
+        "#E8B04A"
+      ],
+      "caption": {
+        "en": "eggs in a spicy bath",
+        "de": "Eier in einem würzigen Bad"
+      },
+      "ingredients": [
+        {
+          "id": "eggs.egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "fermented.canned-tomato",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "produce.bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "spices.paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cayenne",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "grains.bread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Sauce",
+            "de": "Sauce"
+          },
+          "text": {
+            "en": "Soften onion, pepper and garlic in oil. Add tomatoes and spices, simmer 10 minutes until thick.",
+            "de": "Zwiebel, Paprika und Knoblauch in Öl weich dünsten. Tomaten und Gewürze zugeben, 10 Minuten köcheln, bis dick."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Poach",
+            "de": "Pochieren"
+          },
+          "text": {
+            "en": "Make wells, crack the eggs in, cover, 6 minutes — whites set, yolks molten.",
+            "de": "Mulden formen, Eier hineinschlagen, abdecken, 6 Minuten — Eiweiß fest, Eigelb flüssig."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "title": {
+            "en": "Serve",
+            "de": "Servieren"
+          },
+          "text": {
+            "en": "Warm bread, pan to the table, everyone attacks from their corner.",
+            "de": "Brot wärmen, Pfanne auf den Tisch, alle greifen aus ihrer Ecke an."
+          },
+          "timer_minutes": null
+        }
+      ],
+      "nutrition": {
+        "protein_g": 22,
+        "carbs_g": 34,
+        "fat_g": 18
+      },
+      "reviewed": true,
+      "diet": "vegetarian"
+    },
+    {
+      "id": "shakshuka.vegan",
+      "dish_id": "shakshuka",
+      "name": {
+        "en": "Vegan Shakshuka",
+        "de": "Vegane Shakshuka"
+      },
+      "blurb": {
+        "en": "Silken tofu scrambles in where the eggs used to be — same bath, same sopping, zero regrets.",
+        "de": "Seidentofu stockt dort, wo früher die Eier waren — gleiches Bad, gleiches Eintunken, null Reue."
+      },
+      "contains": [
+        "gluten",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "plant-based.tofu",
+        "fermented.canned-tomato",
+        "produce.bell-pepper",
+        "produce.onion",
+        "produce.garlic",
+        "spices.paprika",
+        "spices.cumin",
+        "spices.cayenne",
+        "grains.bread",
+        "oils.olive-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "vegan",
+        "halal-compatible",
+        "easy",
+        "le30",
+        "le400",
+        "simmer"
+      ],
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "le30",
+      "calories_per_serving": 350,
+      "calorie_bucket": "le400",
+      "servings": 2,
+      "cuisine": "middle-eastern",
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "tags": [
+        "breakfast",
+        "plant-based"
+      ],
+      "stripe_colors": [
+        "#C75B39",
+        "#6F8F3F"
+      ],
+      "caption": {
+        "en": "the bath, tofu-style",
+        "de": "das Bad, Tofu-Style"
+      },
+      "ingredients": [
+        {
+          "id": "plant-based.tofu",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "fermented.canned-tomato",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "produce.bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "spices.paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cayenne",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "grains.bread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Sauce",
+            "de": "Sauce"
+          },
+          "text": {
+            "en": "Soften onion, pepper, garlic. Tomatoes and spices in, simmer 10 minutes.",
+            "de": "Zwiebel, Paprika, Knoblauch weich dünsten. Tomaten und Gewürze zugeben, 10 Minuten köcheln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Tofu in",
+            "de": "Tofu hinein"
+          },
+          "text": {
+            "en": "Crumble silken tofu into the sauce, cover, 5 minutes until set and warm.",
+            "de": "Seidentofu in die Sauce krümeln, abdecken, 5 Minuten, bis gestockt und warm."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "title": {
+            "en": "Serve",
+            "de": "Servieren"
+          },
+          "text": {
+            "en": "Bread, pan, table. The tofu soaks up everything you love.",
+            "de": "Brot, Pfanne, Tisch. Der Tofu saugt alles auf, was du liebst."
+          },
+          "timer_minutes": null
+        }
+      ],
+      "nutrition": {
+        "protein_g": 20,
+        "carbs_g": 32,
+        "fat_g": 16
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "burger.classic",
+      "dish_id": "burger",
+      "name": {
+        "en": "Classic Cheeseburger",
+        "de": "Klassischer Cheeseburger"
+      },
+      "blurb": {
+        "en": "A smashed beef patty, a melted lid of cheddar, and a bun that knows its job.",
+        "de": "Ein gedrücktes Rinderpatty, ein geschmolzener Cheddar-Deckel und ein Brötchen, das seinen Job kennt."
+      },
+      "contains": [
+        "beef",
+        "gluten",
+        "dairy",
+        "egg",
+        "mustard",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "meat.beef-mince",
+        "grains.bread",
+        "dairy.cheese.mozzarella",
+        "produce.lettuce",
+        "produce.tomato",
+        "produce.onion",
+        "produce.cucumber",
+        "oils.vegetable-oil",
+        "spices.salt",
+        "spices.black-pepper"
+      ],
+      "attributes": [
+        "medium",
+        "le60",
+        "le800",
+        "pan-fry"
+      ],
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "le60",
+      "calories_per_serving": 780,
+      "calorie_bucket": "le800",
+      "servings": 2,
+      "cuisine": "american",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "pan-fry"
+      ],
+      "tags": [
+        "street-food",
+        "grill-party"
+      ],
+      "stripe_colors": [
+        "#8C5B2E",
+        "#D98E4A"
+      ],
+      "caption": {
+        "en": "a sandwich with ambitions",
+        "de": "ein Sandwich mit Ambitionen"
+      },
+      "ingredients": [
+        {
+          "id": "meat.beef-mince",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "grains.bread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "dairy.cheese.mozzarella",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "produce.lettuce",
+          "amount": 0.25,
+          "unit": "head"
+        },
+        {
+          "id": "produce.tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.cucumber",
+          "amount": 0.25,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "spices.black-pepper",
+          "amount": 2,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Form patties",
+            "de": "Patties formen"
+          },
+          "text": {
+            "en": "Season the mince, form two loose patties. Chill 10 minutes.",
+            "de": "Hackfleisch würzen, zwei lockere Patties formen. 10 Minuten kühlen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Smash & sear",
+            "de": "Drücken & braten"
+          },
+          "text": {
+            "en": "Sear hard in a hot pan, flip once, cheese on top to melt.",
+            "de": "In heißer Pfanne kräftig braten, einmal wenden, Käse darauf schmelzen lassen."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "title": {
+            "en": "Toast buns",
+            "de": "Brötchen rösten"
+          },
+          "text": {
+            "en": "Toast the buns in the pan's residual fat — the secret step.",
+            "de": "Brötchen im Restfett der Pfanne rösten — der geheime Schritt."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "title": {
+            "en": "Assemble",
+            "de": "Zusammenbauen"
+          },
+          "text": {
+            "en": "Lettuce, patty, tomato, onion, pickle. Two hands, no shame.",
+            "de": "Salat, Patty, Tomate, Zwiebel, Gurke. Zwei Hände, keine Scham."
+          },
+          "timer_minutes": null
+        }
+      ],
+      "nutrition": {
+        "protein_g": 40,
+        "carbs_g": 44,
+        "fat_g": 46
+      },
+      "reviewed": true,
+      "diet": "classic"
+    },
+    {
+      "id": "burger.vegan",
+      "dish_id": "burger",
+      "name": {
+        "en": "Black Bean Burger",
+        "de": "Schwarze-Bohnen-Burger"
+      },
+      "blurb": {
+        "en": "A black bean patty with a serious crust, smoky and sturdy — the burger that refuses to be a sad side note.",
+        "de": "Ein Schwarze-Bohnen-Patty mit ernsthafter Kruste, rauchig und stabil — der Burger, der sich weigert, eine traurige Fußnote zu sein."
+      },
+      "contains": [
+        "gluten",
+        "mustard",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "plant-based.black-bean",
+        "grains.bread",
+        "produce.onion",
+        "produce.garlic",
+        "spices.paprika",
+        "spices.cumin",
+        "spices.cayenne",
+        "grains.breadcrumb",
+        "produce.lettuce",
+        "produce.tomato",
+        "oils.vegetable-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "vegan",
+        "halal-compatible",
+        "medium",
+        "le60",
+        "le600",
+        "pan-fry"
+      ],
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "le60",
+      "calories_per_serving": 580,
+      "calorie_bucket": "le600",
+      "servings": 2,
+      "cuisine": "american",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "pan-fry"
+      ],
+      "tags": [
+        "plant-based",
+        "street-food"
+      ],
+      "stripe_colors": [
+        "#8C5B2E",
+        "#6F8F3F"
+      ],
+      "caption": {
+        "en": "the bean that flexed",
+        "de": "die Bohne, die die Muskeln spielen ließ"
+      },
+      "ingredients": [
+        {
+          "id": "plant-based.black-bean",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "grains.bread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "spices.paprika",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cayenne",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "grains.breadcrumb",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "produce.lettuce",
+          "amount": 0.25,
+          "unit": "head"
+        },
+        {
+          "id": "produce.tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Mash & mix",
+            "de": "Zerdrücken & mischen"
+          },
+          "text": {
+            "en": "Mash half the beans, keep half whole. Fold in onion, garlic, spices, crumbs.",
+            "de": "Die Hälfte der Bohnen zerdrücken, die andere ganz lassen. Zwiebel, Knoblauch, Gewürze, Brösel unterheben."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Sear",
+            "de": "Anbraten"
+          },
+          "text": {
+            "en": "Form patties, sear 4 minutes per side until the crust is real.",
+            "de": "Patties formen, pro Seite 4 Minuten braten, bis die Kruste echt ist."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Toast buns",
+            "de": "Brötchen rösten"
+          },
+          "text": {
+            "en": "Toast the buns, then build with lettuce and tomato.",
+            "de": "Brötchen rösten, dann mit Salat und Tomate aufbauen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "title": {
+            "en": "Assemble",
+            "de": "Zusammenbauen"
+          },
+          "text": {
+            "en": "Stack it high, sauce it, own it.",
+            "de": "Hoch stapeln, saucieren, für sich beanspruchen."
+          },
+          "timer_minutes": null
+        }
+      ],
+      "nutrition": {
+        "protein_g": 24,
+        "carbs_g": 62,
+        "fat_g": 24
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "burger.halal-chicken",
+      "dish_id": "burger",
+      "name": {
+        "en": "Halal Chicken Burger",
+        "de": "Halal-Hähnchen-Burger"
+      },
+      "blurb": {
+        "en": "A spiced chicken patty with the same two-hands energy — halal-compatible and quietly excellent.",
+        "de": "Ein gewürztes Hähnchenpatty mit derselben Zwei-Hände-Energie — halal-kompatibel und still exzellent."
+      },
+      "contains": [
+        "poultry",
+        "gluten",
+        "egg",
+        "mustard",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "meat.chicken",
+        "grains.bread",
+        "eggs.egg",
+        "produce.onion",
+        "produce.garlic",
+        "spices.paprika",
+        "spices.cumin",
+        "grains.breadcrumb",
+        "produce.lettuce",
+        "produce.tomato",
+        "oils.vegetable-oil",
+        "spices.salt"
+      ],
+      "attributes": [
+        "halal-compatible",
+        "medium",
+        "le60",
+        "le800",
+        "pan-fry"
+      ],
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "le60",
+      "calories_per_serving": 640,
+      "calorie_bucket": "le800",
+      "servings": 2,
+      "cuisine": "american",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "pan-fry"
+      ],
+      "tags": [
+        "halal",
+        "street-food"
+      ],
+      "stripe_colors": [
+        "#8C5B2E",
+        "#D9A227"
+      ],
+      "caption": {
+        "en": "two hands, zero pork",
+        "de": "zwei Hände, null Schwein"
+      },
+      "ingredients": [
+        {
+          "id": "meat.chicken",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "grains.bread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "eggs.egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "spices.paprika",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "spices.cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "grains.breadcrumb",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "id": "produce.lettuce",
+          "amount": 0.25,
+          "unit": "head"
+        },
+        {
+          "id": "produce.tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "oils.vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Mix patties",
+            "de": "Patties mischen"
+          },
+          "text": {
+            "en": "Mince the chicken, bind with egg and crumbs, spice generously.",
+            "de": "Hähnchen zerkleinern, mit Ei und Bröseln binden, großzügig würzen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Fry",
+            "de": "Braten"
+          },
+          "text": {
+            "en": "Fry 5 minutes per side until cooked through and golden.",
+            "de": "Pro Seite 5 Minuten braten, bis durchgegart und goldbraun."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Toast buns",
+            "de": "Brötchen rösten"
+          },
+          "text": {
+            "en": "Toast the buns in the pan, then stack lettuce, patty, tomato.",
+            "de": "Brötchen in der Pfanne rösten, dann Salat, Patty, Tomate stapeln."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "title": {
+            "en": "Assemble",
+            "de": "Zusammenbauen"
+          },
+          "text": {
+            "en": "Two hands. Zero apologies.",
+            "de": "Zwei Hände. Null Entschuldigungen."
+          },
+          "timer_minutes": null
+        }
+      ],
+      "nutrition": {
+        "protein_g": 36,
+        "carbs_g": 46,
+        "fat_g": 30
+      },
+      "reviewed": true,
+      "diet": "halal"
+    },
+    {
+      "id": "pho.classic",
+      "dish_id": "pho",
+      "name": {
+        "en": "Classic Pho",
+        "de": "Klassische Pho"
+      },
+      "blurb": {
+        "en": "Six hours of beef broth, two minutes of assembly — the bowl that took the scenic route.",
+        "de": "Sechs Stunden Rinderbrühe, zwei Minuten Zusammenbau — die Schale, die den Umweg genommen hat."
+      },
+      "contains": [
+        "beef",
+        "fish"
+      ],
+      "ingredient_ids": [
+        "meat.beef-brisket",
+        "grains.rice-noodle",
+        "produce.ginger",
+        "produce.onion",
+        "spices.cinnamon",
+        "produce.scallion",
+        "produce.cilantro",
+        "produce.lime",
+        "produce.sprouts",
+        "oils.fish-sauce",
+        "baking.sugar",
+        "spices.salt"
+      ],
+      "attributes": [
+        "hard",
+        "gt60",
+        "le600",
+        "simmer"
+      ],
+      "effort": "hard",
+      "time_minutes": 240,
+      "time_bucket": "gt60",
+      "calories_per_serving": 480,
+      "calorie_bucket": "le600",
+      "servings": 4,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "tags": [
+        "soup",
+        "weekend-project"
+      ],
+      "stripe_colors": [
+        "#6F4F3F",
+        "#A8C98A"
+      ],
+      "caption": {
+        "en": "patience in broth form",
+        "de": "Geduld in Brühenform"
+      },
+      "ingredients": [
+        {
+          "id": "meat.beef-brisket",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "grains.rice-noodle",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "produce.ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "spices.cinnamon",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "produce.scallion",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.cilantro",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "produce.lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "oils.fish-sauce",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Broth",
+            "de": "Brühe"
+          },
+          "text": {
+            "en": "Simmer brisket with charred ginger and onion, cinnamon and salt for 4 hours. Skim, strain, season with fish sauce and sugar.",
+            "de": "Brisket mit geröstetem Ingwer und Zwiebel, Zimt und Salz 4 Stunden köcheln. Abschöpfen, abseihen, mit Fischsauce und Zucker würzen."
+          },
+          "timer_minutes": 240
+        },
+        {
+          "title": {
+            "en": "Noodles",
+            "de": "Nudeln"
+          },
+          "text": {
+            "en": "Soften rice noodles in warm water, drain.",
+            "de": "Reisnudeln in warmem Wasser einweichen, abgießen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Assemble",
+            "de": "Anrichten"
+          },
+          "text": {
+            "en": "Noodles in bowls, sliced brisket over, boiling broth poured over. Herbs, sprouts, lime at the table.",
+            "de": "Nudeln in Schalen, geschnittenes Brisket darauf, kochende Brühe darüber. Kräuter, Sprossen, Limette an den Tisch."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 36,
+        "carbs_g": 48,
+        "fat_g": 16
+      },
+      "reviewed": true,
+      "diet": "classic"
+    },
+    {
+      "id": "pho.vegan",
+      "dish_id": "pho",
+      "name": {
+        "en": "Vegan Pho",
+        "de": "Vegane Pho"
+      },
+      "blurb": {
+        "en": "A mushroom-ginger broth that went to the same school as the beef one — same depth, different tuition.",
+        "de": "Eine Pilz-Ingwer-Brühe, die auf derselben Schule war wie die Rinderbrühe — gleiche Tiefe, anderes Schulgeld."
+      },
+      "contains": [
+        "soy"
+      ],
+      "ingredient_ids": [
+        "grains.rice-noodle",
+        "produce.mushroom",
+        "plant-based.tofu",
+        "produce.ginger",
+        "produce.onion",
+        "spices.cinnamon",
+        "produce.scallion",
+        "produce.cilantro",
+        "produce.lime",
+        "produce.sprouts",
+        "oils.soy-sauce",
+        "baking.sugar",
+        "spices.salt"
+      ],
+      "attributes": [
+        "vegan",
+        "halal-compatible",
+        "hard",
+        "gt60",
+        "le400",
+        "simmer"
+      ],
+      "effort": "hard",
+      "time_minutes": 120,
+      "time_bucket": "gt60",
+      "calories_per_serving": 420,
+      "calorie_bucket": "le600",
+      "servings": 4,
+      "cuisine": "asian",
+      "meal_types": [
+        "dinner",
+        "lunch"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "tags": [
+        "soup",
+        "plant-based"
+      ],
+      "stripe_colors": [
+        "#6F4F3F",
+        "#6F8F3F"
+      ],
+      "caption": {
+        "en": "the scenic route, plant-based",
+        "de": "der Umweg, pflanzlich"
+      },
+      "ingredients": [
+        {
+          "id": "grains.rice-noodle",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "produce.mushroom",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "plant-based.tofu",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "produce.ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "produce.onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "spices.cinnamon",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "produce.scallion",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.cilantro",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "produce.lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "produce.sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "oils.soy-sauce",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "id": "spices.salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Broth",
+            "de": "Brühe"
+          },
+          "text": {
+            "en": "Simmer mushrooms, charred ginger, onion and cinnamon for 90 minutes. Strain, season with soy and sugar.",
+            "de": "Pilze, gerösteten Ingwer, Zwiebel und Zimt 90 Minuten köcheln. Abseihen, mit Sojasauce und Zucker würzen."
+          },
+          "timer_minutes": 90
+        },
+        {
+          "title": {
+            "en": "Tofu",
+            "de": "Tofu"
+          },
+          "text": {
+            "en": "Cube tofu, sear until golden.",
+            "de": "Tofu würfeln, goldbraun braten."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "title": {
+            "en": "Assemble",
+            "de": "Anrichten"
+          },
+          "text": {
+            "en": "Noodles, tofu, boiling broth over. Herbs, sprouts, lime at the table.",
+            "de": "Nudeln, Tofu, kochende Brühe darüber. Kräuter, Sprossen, Limette an den Tisch."
+          },
+          "timer_minutes": 5
+        }
+      ],
+      "nutrition": {
+        "protein_g": 20,
+        "carbs_g": 52,
+        "fat_g": 14
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "tiramisu.classic",
+      "dish_id": "tiramisu",
+      "name": {
+        "en": "Classic Tiramisu",
+        "de": "Klassisches Tiramisu"
+      },
+      "blurb": {
+        "en": "Espresso-soaked ladyfingers, mascarpone clouds, cocoa snow — pick me up, put me down gently.",
+        "de": "Espressogetränkte Löffelbiskuits, Mascarpone-Wolken, Kakaoschnee — zieh mich hoch, setz mich sanft ab."
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "alcohol",
+        "caffeine",
+        "added-sugar"
+      ],
+      "ingredient_ids": [
+        "baking.ladyfingers",
+        "dairy.cheese.mascarpone",
+        "dairy.cream",
+        "eggs.egg",
+        "baking.coffee",
+        "baking.sugar",
+        "spices.cocoa"
+      ],
+      "attributes": [
+        "vegetarian",
+        "medium",
+        "gt60",
+        "le600",
+        "raw"
+      ],
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "gt60",
+      "calories_per_serving": 520,
+      "calorie_bucket": "le600",
+      "servings": 6,
+      "cuisine": "italian",
+      "meal_types": [
+        "snack",
+        "dinner"
+      ],
+      "technique": [
+        "raw"
+      ],
+      "tags": [
+        "dessert",
+        "no-bake"
+      ],
+      "stripe_colors": [
+        "#8C6B4F",
+        "#E8D9A8"
+      ],
+      "caption": {
+        "en": "pick me up, put me down gently",
+        "de": "zieh mich hoch, setz mich sanft ab"
+      },
+      "ingredients": [
+        {
+          "id": "baking.ladyfingers",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cheese.mascarpone",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cream",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "eggs.egg",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "baking.coffee",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "spices.cocoa",
+          "amount": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Zabaglione",
+            "de": "Zabaglione"
+          },
+          "text": {
+            "en": "Whisk egg yolks and sugar over a water bath until pale and thick.",
+            "de": "Eigelb und Zucker über dem Wasserbad schlagen, bis hell und dick."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Mascarpone",
+            "de": "Mascarpone"
+          },
+          "text": {
+            "en": "Fold mascarpone and whipped cream into the zabaglione gently.",
+            "de": "Mascarpone und geschlagene Sahne sanft unter die Zabaglione heben."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "title": {
+            "en": "Dip & layer",
+            "de": "Tunken & schichten"
+          },
+          "text": {
+            "en": "Quick-dip ladyfingers in espresso with a splash of marsala, layer with cream. Repeat.",
+            "de": "Löffelbiskuits kurz in Espresso mit einem Schuss Marsala tunken, mit Creme schichten. Wiederholen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Chill",
+            "de": "Kühlen"
+          },
+          "text": {
+            "en": "Refrigerate at least 4 hours. Cocoa snow on top just before serving.",
+            "de": "Mindestens 4 Stunden kühlen. Kakaoschnee erst kurz vor dem Servieren darauf."
+          },
+          "timer_minutes": 240
+        }
+      ],
+      "nutrition": {
+        "protein_g": 12,
+        "carbs_g": 44,
+        "fat_g": 32
+      },
+      "reviewed": true,
+      "diet": "classic"
+    },
+    {
+      "id": "tiramisu.vegan",
+      "dish_id": "tiramisu",
+      "name": {
+        "en": "Vegan Tiramisu",
+        "de": "Veganes Tiramisu"
+      },
+      "blurb": {
+        "en": "Cashew mascarpone and strong coffee on vegan ladyfingers — the same soft landing, no dairy involved.",
+        "de": "Cashew-Mascarpone und starker Kaffee auf veganen Löffelbiskuits — dieselbe weiche Landung, ganz ohne Milchprodukte."
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "tree-nuts",
+        "cashews",
+        "caffeine",
+        "added-sugar"
+      ],
+      "ingredient_ids": [
+        "baking.ladyfingers",
+        "nuts.tree-nuts.cashews",
+        "plant-based.vegan-cream",
+        "baking.coffee",
+        "baking.sugar",
+        "spices.cocoa"
+      ],
+      "attributes": [
+        "vegan",
+        "alcohol-free",
+        "halal-compatible",
+        "medium",
+        "gt60",
+        "le600",
+        "raw"
+      ],
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "gt60",
+      "calories_per_serving": 480,
+      "calorie_bucket": "le600",
+      "servings": 6,
+      "cuisine": "italian",
+      "meal_types": [
+        "snack",
+        "dinner"
+      ],
+      "technique": [
+        "raw"
+      ],
+      "tags": [
+        "dessert",
+        "plant-based"
+      ],
+      "stripe_colors": [
+        "#8C6B4F",
+        "#6F8F3F"
+      ],
+      "caption": {
+        "en": "soft landing, plant-based",
+        "de": "weiche Landung, pflanzlich"
+      },
+      "ingredients": [
+        {
+          "id": "baking.ladyfingers",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "nuts.tree-nuts.cashews",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "plant-based.vegan-cream",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.coffee",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "spices.cocoa",
+          "amount": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Cashew mascarpone",
+            "de": "Cashew-Mascarpone"
+          },
+          "text": {
+            "en": "Blend soaked cashews with oat cream and sugar into mascarpone-silk.",
+            "de": "Eingeweichte Cashews mit Hafersahne und Zucker zu Mascarpone-Seide mixen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "title": {
+            "en": "Dip & layer",
+            "de": "Tunken & schichten"
+          },
+          "text": {
+            "en": "Quick-dip vegan ladyfingers in strong coffee, layer with cream. Repeat.",
+            "de": "Vegane Löffelbiskuits kurz in starken Kaffee tunken, mit Creme schichten. Wiederholen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Chill",
+            "de": "Kühlen"
+          },
+          "text": {
+            "en": "Refrigerate at least 4 hours. Cocoa snow before serving.",
+            "de": "Mindestens 4 Stunden kühlen. Kakaoschnee vor dem Servieren."
+          },
+          "timer_minutes": 240
+        }
+      ],
+      "nutrition": {
+        "protein_g": 12,
+        "carbs_g": 42,
+        "fat_g": 28
+      },
+      "reviewed": true,
+      "diet": "vegan"
+    },
+    {
+      "id": "tiramisu.alcohol-free",
+      "dish_id": "tiramisu",
+      "name": {
+        "en": "Alcohol-Free Tiramisu",
+        "de": "Alkoholfreies Tiramisu"
+      },
+      "blurb": {
+        "en": "All the clouds, none of the marsala — the family version that still puts everyone gently to sleep.",
+        "de": "Alle Wolken, kein Marsala — die Familienversion, die trotzdem alle sanft einschlafen lässt."
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "egg",
+        "caffeine",
+        "added-sugar"
+      ],
+      "ingredient_ids": [
+        "baking.ladyfingers",
+        "dairy.cheese.mascarpone",
+        "dairy.cream",
+        "eggs.egg",
+        "baking.coffee",
+        "baking.sugar",
+        "spices.cocoa"
+      ],
+      "attributes": [
+        "vegetarian",
+        "alcohol-free",
+        "halal-compatible",
+        "medium",
+        "gt60",
+        "le600",
+        "raw"
+      ],
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "gt60",
+      "calories_per_serving": 510,
+      "calorie_bucket": "le600",
+      "servings": 6,
+      "cuisine": "italian",
+      "meal_types": [
+        "snack",
+        "dinner"
+      ],
+      "technique": [
+        "raw"
+      ],
+      "tags": [
+        "dessert",
+        "family"
+      ],
+      "stripe_colors": [
+        "#8C6B4F",
+        "#E8D9A8"
+      ],
+      "caption": {
+        "en": "everyone gets a slice now",
+        "de": "jetzt bekommt jeder ein Stück"
+      },
+      "ingredients": [
+        {
+          "id": "baking.ladyfingers",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cheese.mascarpone",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "dairy.cream",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "eggs.egg",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "baking.coffee",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "baking.sugar",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "spices.cocoa",
+          "amount": 2,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "title": {
+            "en": "Zabaglione",
+            "de": "Zabaglione"
+          },
+          "text": {
+            "en": "Whisk egg yolks and sugar over a water bath until pale and thick.",
+            "de": "Eigelb und Zucker über dem Wasserbad schlagen, bis hell und dick."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "title": {
+            "en": "Mascarpone",
+            "de": "Mascarpone"
+          },
+          "text": {
+            "en": "Fold mascarpone and whipped cream in gently.",
+            "de": "Mascarpone und geschlagene Sahne sanft unterheben."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "title": {
+            "en": "Dip & layer",
+            "de": "Tunken & schichten"
+          },
+          "text": {
+            "en": "Dip ladyfingers in espresso (no alcohol), layer with cream. Repeat.",
+            "de": "Löffelbiskuits in Espresso tunken (ohne Alkohol), mit Creme schichten. Wiederholen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "title": {
+            "en": "Chill",
+            "de": "Kühlen"
+          },
+          "text": {
+            "en": "4 hours in the fridge. Cocoa snow, then the whole family descends.",
+            "de": "4 Stunden im Kühlschrank. Kakaoschnee, dann fällt die ganze Familie ein."
+          },
+          "timer_minutes": 240
+        }
+      ],
+      "nutrition": {
+        "protein_g": 12,
+        "carbs_g": 44,
+        "fat_g": 31
+      },
+      "reviewed": true,
+      "diet": "alcohol-free"
+    }
+  ]
+}
