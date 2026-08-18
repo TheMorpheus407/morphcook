@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.07.4",
+  "generated_by": "morphcook pipeline",
+  "loading_strategy": {
+    "at_launch": [
+      "core"
+    ],
+    "on_demand": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern",
+      "cuisine-indian",
+      "cuisine-mexican",
+      "cuisine-european",
+      "pop-culture"
+    ]
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "description": "Top 80% most-used recipes, loaded at launch.",
+      "dish_ids": [
+        "doener",
+        "pasta-alfredo",
+        "pancakes",
+        "curry",
+        "burger",
+        "porridge",
+        "shakshuka",
+        "caesar-salad",
+        "omelette",
+        "smoothie-bowl",
+        "french-toast",
+        "granola",
+        "mac-and-cheese",
+        "chicken-noodle-soup",
+        "roast-chicken",
+        "banana-bread",
+        "chicken-pot-pie",
+        "stuffed-peppers",
+        "tuna-melt",
+        "chicken-stir-fry",
+        "fried-chicken",
+        "chicken-parmesan",
+        "meatloaf",
+        "grilled-cheese",
+        "baked-salmon",
+        "waffles"
+      ]
+    },
+    {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "description": "Rarely-used long-tail dishes, loaded on demand.",
+      "dish_ids": [
+        "beef-wellington",
+        "croissants",
+        "paella",
+        "goulash",
+        "brownies",
+        "apple-pie",
+        "cookies",
+        "cheesecake",
+        "jollof-rice",
+        "ceviche"
+      ]
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "description": "Italian cuisine partition for discovery.",
+      "dish_ids": [
+        "risotto",
+        "lasagna",
+        "pizza",
+        "bolognese",
+        "carbonara",
+        "tiramisu",
+        "pesto-pasta",
+        "gnocchi"
+      ]
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "description": "Asian cuisine partition for discovery.",
+      "dish_ids": [
+        "pad-thai",
+        "ramen",
+        "sushi",
+        "fried-rice",
+        "pho",
+        "teriyaki",
+        "gyoza",
+        "green-curry",
+        "bibimbap",
+        "chicken-adobo",
+        "mapo-tofu",
+        "chicken-satay",
+        "poke-bowl",
+        "bulgogi",
+        "kimchi-jjigae",
+        "kung-pao-chicken",
+        "banh-mi",
+        "laksa",
+        "okonomiyaki",
+        "japanese-curry"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "description": "Middle-Eastern cuisine partition for discovery.",
+      "dish_ids": [
+        "falafel",
+        "hummus-bowl",
+        "shawarma",
+        "lentil-soup",
+        "tabbouleh",
+        "couscous-bowl",
+        "tagine"
+      ]
+    },
+    {
+      "id": "cuisine-indian",
+      "file": "assets/cuisine-indian.json",
+      "description": "Indian cuisine partition for discovery.",
+      "dish_ids": [
+        "butter-chicken",
+        "dal",
+        "biryani",
+        "palak-paneer",
+        "tikka-masala",
+        "chana-masala"
+      ]
+    },
+    {
+      "id": "cuisine-mexican",
+      "file": "assets/cuisine-mexican.json",
+      "description": "Mexican cuisine partition for discovery.",
+      "dish_ids": [
+        "tacos",
+        "burrito-bowl",
+        "quesadilla",
+        "chili",
+        "enchiladas",
+        "fajitas",
+        "huevos-rancheros"
+      ]
+    },
+    {
+      "id": "cuisine-european",
+      "file": "assets/cuisine-european.json",
+      "description": "European cuisine partition for discovery.",
+      "dish_ids": [
+        "schnitzel",
+        "kaesespaetzle",
+        "meatballs",
+        "crepes",
+        "quiche",
+        "tomato-soup",
+        "greek-salad",
+        "ratatouille",
+        "moussaka",
+        "creme-brulee",
+        "fish-and-chips",
+        "shepherds-pie",
+        "beef-stroganoff",
+        "pierogi",
+        "spanakopita",
+        "rice-pudding",
+        "borscht"
+      ]
+    },
+    {
+      "id": "pop-culture",
+      "file": "assets/pop-culture.json",
+      "description": "Gaming & nerd-culture homage dishes for discovery.",
+      "dish_ids": [
+        "cinnamon-rolls",
+        "chocolate-cake",
+        "mushroom-soup",
+        "pumpkin-soup",
+        "katsudon",
+        "onigiri",
+        "beef-stew",
+        "nachos",
+        "nuckla-coka",
+        "leblonc-curry",
+        "crabby-patty",
+        "butterbrew",
+        "lembras",
+        "sea-salt-ice-cream",
+        "sweetroll",
+        "black-forest-cake",
+        "butterscotch-cinnamon-pie",
+        "well-done-steak",
+        "sandvich",
+        "beer-basted-ribs",
+        "pink-frosted-donuts",
+        "bacon-pancakes",
+        "creamy-heart-soup",
+        "gotchop-pork-roast",
+        "treacle-tart",
+        "pumpkin-pasties",
+        "lemon-cakes",
+        "turkish-delight",
+        "cheese-buns",
+        "lamb-plum-stew",
+        "fish-fingers-and-custard",
+        "the-moist-baker",
+        "plomek-soup",
+        "blue-milk",
+        "apple-cabbage-stew",
+        "sticky-honey-roast",
+        "complete-breakfast",
+        "pocket-puffs",
+        "monster-cake",
+        "honey-cakes",
+        "oyakodon",
+        "karaage",
+        "omurice",
+        "baked-apples",
+        "pumpkin-pie",
+        "stuffed-mushrooms",
+        "peach-shortcake",
+        "bacon-and-eggs",
+        "cherry-pie",
+        "smores",
+        "hot-dogs",
+        "loaded-baked-potatoes",
+        "mitarashi-dango",
+        "melonpan",
+        "taiyaki",
+        "elswhere-fondue",
+        "boiled-creme-treat",
+        "suspicious-stew",
+        "dragonbreath-chili",
+        "mirelark-cakes",
+        "sundown-sarsaparilla",
+        "fancy-lasses-snack-cakes",
+        "nice-cream",
+        "glammburger",
+        "pawffins",
+        "estos-broth",
+        "hasperot-wrap",
+        "ronton-wrap",
+        "popplets",
+        "cauldron-cakes",
+        "everything-burrito",
+        "wonko-bars",
+        "dubious-food"
+      ]
+    }
+  ],
+  "cross_references": [
+    {
+      "partition_id": "core",
+      "dish_ids": [
+        "fajitas",
+        "rice-pudding"
+      ]
+    },
+    {
+      "partition_id": "cuisine-asian",
+      "dish_ids": [
+        "curry",
+        "chicken-stir-fry",
+        "katsudon",
+        "onigiri",
+        "leblonc-curry",
+        "gotchop-pork-roast",
+        "oyakodon",
+        "karaage",
+        "omurice",
+        "mitarashi-dango",
+        "melonpan",
+        "taiyaki",
+        "dubious-food"
+      ]
+    },
+    {
+      "partition_id": "cuisine-european",
+      "dish_ids": [
+        "stuffed-peppers",
+        "mushroom-soup",
+        "pumpkin-soup",
+        "beef-stew",
+        "butterbrew",
+        "lembras",
+        "sweetroll",
+        "black-forest-cake",
+        "beer-basted-ribs",
+        "creamy-heart-soup",
+        "treacle-tart",
+        "pumpkin-pasties",
+        "lemon-cakes",
+        "cheese-buns",
+        "fish-fingers-and-custard",
+        "plomek-soup",
+        "apple-cabbage-stew",
+        "sticky-honey-roast",
+        "pocket-puffs",
+        "monster-cake",
+        "honey-cakes",
+        "baked-apples",
+        "stuffed-mushrooms",
+        "elswhere-fondue",
+        "boiled-creme-treat",
+        "suspicious-stew",
+        "estos-broth",
+        "cauldron-cakes"
+      ]
+    },
+    {
+      "partition_id": "cuisine-italian",
+      "dish_ids": [
+        "pasta-alfredo",
+        "chicken-parmesan"
+      ]
+    },
+    {
+      "partition_id": "cuisine-mexican",
+      "dish_ids": [
+        "nachos",
+        "dragonbreath-chili",
+        "everything-burrito"
+      ]
+    },
+    {
+      "partition_id": "cuisine-middle-eastern",
+      "dish_ids": [
+        "doener",
+        "shakshuka",
+        "turkish-delight",
+        "lamb-plum-stew",
+        "hasperot-wrap"
+      ]
+    },
+    {
+      "partition_id": "extended",
+      "dish_ids": [
+        "creme-brulee"
+      ]
+    }
+  ],
+  "corpus_wave": 4
+}
