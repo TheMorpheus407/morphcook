@@ -1,0 +1,776 @@
+{
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "classic döner",
+        "de": "klassischer döner"
+      },
+      "subtitle": {
+        "en": "pork shoulder, home-rotisserie style, yogurt sauce",
+        "de": "schweineschulter, hausgemacht am spieß, joghurtsoße"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 50,
+      "effort": "medium",
+      "calories_per_serving": 820,
+      "macros": {
+        "protein": 46,
+        "carbs": 68,
+        "fat": 41
+      },
+      "contains": [
+        "pork",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": {
+        "techniques": [
+          "roast",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pork-shoulder",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-thigh",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the pork and chicken as thinly as patience allows — partially frozen meat cuts cleaner.",
+            "de": "schwein und hähnchen so dünn schneiden, wie die geduld es zulässt — angefrorenes fleisch lässt sich sauberer schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "rub with smoked paprika, cumin, oregano, salt, 1 tbsp olive oil. stack the slices into a tight loaf, pressing firmly — this is your fake spit.",
+            "de": "mit paprika, kreuzkümmel, oregano, salz und 1 el olivenöl einreiben. die scheiben zu einem festen laib schichten und gut andrücken — das ist dein falscher spieß."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the loaf on all sides in a hot pan, then roast at 200 °C.",
+            "de": "den laib rundum in der heißen pfanne anbraten, dann bei 200 °C im ofen garen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "meanwhile: shred the cabbage finely, salt it, knead briefly, squeeze. slice tomato and cucumber, cut the onion into fine rings.",
+            "de": "inzwischen: kohl fein hobeln, salzen, kurz kneten, ausdrücken. tomate und gurke schneiden, zwiebel in feine ringe schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "stir the yogurt with grated garlic, lemon juice and salt. taste. add more garlic. (you know you want to.)",
+            "de": "joghurt mit geriebenem knoblauch, zitronensaft und salz verrühren. probieren. mehr knoblauch. (du willst es doch.)"
+          }
+        },
+        {
+          "text": {
+            "en": "rest the meat 5 minutes, then shave off thin crisp slices with a heavy knife.",
+            "de": "fleisch 5 minuten ruhen lassen, dann dünne knusprige scheiben abschneiden."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "warm the pita briefly in the pan, load with meat, salad and sauce. wrap in paper, eat leaning slightly forward, like tradition demands.",
+            "de": "fladenbrot kurz in der pfanne erwärmen, mit fleisch, salat und soße füllen. in papier wickeln und leicht nach vorne gebeugt essen — so will es die tradition."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the meatloaf trick: two layers stacked crosswise shave exactly like real döner.",
+          "de": "der hackbraten-trick: zwei lagen kreuzweise geschichtet schmecken genau wie echter döner."
+        },
+        {
+          "en": "leftover meat + egg + pan = tomorrow's döner omelet. you're welcome.",
+          "de": "übrig gebliebenes fleisch + ei + pfanne = morgiges döner-omelett. gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "vegan döner",
+        "de": "veganer döner"
+      },
+      "subtitle": {
+        "en": "seitan spit, cashew garlic sauce, all the crunch",
+        "de": "seitan-spieß, knoblauchsoße aus cashews, alles knusprig"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 45,
+      "effort": "medium",
+      "calories_per_serving": 590,
+      "macros": {
+        "protein": 34,
+        "carbs": 71,
+        "fat": 15
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "high-fodmap",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "techniques": [
+          "bake",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "seitan",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water.",
+            "de": "cashews in heißem wasser einweichen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice the seitan into thin strips. toss with smoked paprika, cumin, oregano, salt and 1 tbsp olive oil.",
+            "de": "seitan in dünne streifen schneiden. mit paprika, kreuzkümmel, oregano, salz und 1 el olivenöl mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the strips hard in a dry-hot pan until the edges crackle — crunch is the whole point.",
+            "de": "die streifen in der trockenen, heißen pfanne scharf anbraten, bis die ränder knistern — crunch ist der punkt."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "shred the cabbage finely, salt, knead, squeeze. slice tomato and cucumber, cut the onion into rings.",
+            "de": "kohl fein hobeln, salzen, kneten, ausdrücken. tomate und gurke schneiden, zwiebel in ringe."
+          }
+        },
+        {
+          "text": {
+            "en": "blend cashews, garlic, lemon juice, salt and 80 ml water into a thick sauce. it should taste aggressively of garlic. correct it until it does.",
+            "de": "cashews, knoblauch, zitronensaft, salz und 80 ml wasser zu einer dicken soße mixen. sie muss aggressiv nach knoblauch schmecken. nachbessern, bis sie es tut."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the pita, load with seitan, salad and cashew sauce. lean forward. tradition.",
+            "de": "fladenbrot erwärmen, mit seitan, salat und cashewsoße füllen. nach vorne beugen. tradition."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the cashew sauce keeps 3 days in the fridge and improves — like most of us.",
+          "de": "die cashewsoße hält 3 tage im kühlschrank und wird besser — wie die meisten von uns."
+        }
+      ]
+    },
+    {
+      "id": "doener-keto-bowl",
+      "dish_id": "doener",
+      "title": {
+        "en": "keto döner bowl",
+        "de": "keto-döner-bowl"
+      },
+      "subtitle": {
+        "en": "all the spit, none of the bread — crisp edges on a bed of salad",
+        "de": "alles vom spieß, kein brot — knusprige ränder auf salatbett"
+      },
+      "diet": "keto",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "easy",
+      "calories_per_serving": 640,
+      "macros": {
+        "protein": 38,
+        "carbs": 9,
+        "fat": 47
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "romaine",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "red-onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "olives",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix the ground beef with smoked paprika, cumin and salt. press it into a hot pan as a flat, wide \"spit-loaf\" — maximum contact, maximum crust.",
+            "de": "hackfleisch mit paprika, kreuzkümmel und salz mischen. in der heißen pfanne zu einem flachen, breiten \"spieß-laib\" drücken — maximale kontaktfläche, maximale kruste."
+          }
+        },
+        {
+          "text": {
+            "en": "fry undisturbed until the bottom is deeply browned, flip once, repeat. remove and slice into strips.",
+            "de": "unbeachtet braten, bis der boden dunkelbraun ist, einmal wenden, wiederholen. herausnehmen und in streifen schneiden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "chop romaine, tomato, cucumber, onion. pile into bowls. this is your bread now. make peace with it.",
+            "de": "romana, tomate, gurke, zwiebel hacken. in schälchen füllen. das ist jetzt dein brot. finde frieden damit."
+          }
+        },
+        {
+          "text": {
+            "en": "stir yogurt with grated garlic, lemon juice, salt. drizzle generously over everything.",
+            "de": "joghurt mit geriebenem knoblauch, zitronensaft und salz verrühren. großzügig über alles träufeln."
+          }
+        },
+        {
+          "text": {
+            "en": "top with olives and the hot beef strips. eat immediately, smugly.",
+            "de": "mit oliven und den heißen rinderstreifen toppen. sofort essen, selbstzufrieden."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the loaf slices best when it has cooled for two minutes — the crust stays on the meat, not the pan.",
+          "de": "der laib lässt sich am besten schneiden, wenn er zwei minuten abgekühlt ist — dann bleibt die kruste am fleisch, nicht in der pfanne."
+        }
+      ]
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "halal-friendly döner",
+        "de": "halal-freundlicher döner"
+      },
+      "subtitle": {
+        "en": "beef & lamb stack, no pork, no alcohol — sourced right",
+        "de": "rind & lamm, ohne schwein, ohne alkohol — richtig eingekauft"
+      },
+      "diet": "halal",
+      "servings": 2,
+      "time_minutes": 55,
+      "effort": "medium",
+      "calories_per_serving": 830,
+      "macros": {
+        "protein": 48,
+        "carbs": 70,
+        "fat": 42
+      },
+      "contains": [
+        "beef",
+        "lamb",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "roast",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "ground-lamb",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead beef and lamb with the spices, salt and 1 tbsp oil until sticky — 3 honest minutes.",
+            "de": "rind und lamm mit gewürzen, salz und 1 el öl kneten, bis es klebt — 3 ehrliche minuten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "press into a dense loaf. sear on all sides, then finish in the oven at 200 °C.",
+            "de": "zu einem dichten laib formen. rundum anbraten, dann bei 200 °C im ofen fertig garen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "shred and squeeze the cabbage. slice tomato, cucumber, onion rings.",
+            "de": "kohl hobeln und ausdrücken. tomate, gurke und zwiebelringe schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "yogurt sauce: yogurt, grated garlic, lemon juice, salt. the non-negotiable trio.",
+            "de": "joghurtsoße: joghurt, geriebener knoblauch, zitronensaft, salz. das nicht verhandelbare trio."
+          }
+        },
+        {
+          "text": {
+            "en": "rest the loaf, shave thin slices, load warm pita. halal-compatible ingredients — certification is between you and your butcher.",
+            "de": "laib ruhen lassen, dünne scheiben abschneiden, warmes fladenbrot füllen. halal-kompatible zutaten — die zertifizierung liegt zwischen dir und deinem metzger."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "buy meat from a butcher you trust — we list ingredients as halal-compatible, never as certified.",
+          "de": "kauf fleisch bei einem metzger, dem du vertraust — wir nennen zutaten halal-kompatibel, niemals zertifiziert."
+        }
+      ]
+    },
+    {
+      "id": "doener-glutenfrei",
+      "dish_id": "doener",
+      "title": {
+        "en": "gluten-free döner",
+        "de": "glutenfreier döner"
+      },
+      "subtitle": {
+        "en": "chicken stack in corn tortillas — same street, new bread",
+        "de": "hähnchen-spieß in mais-tortillas — gleiche straße, neues brot"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 40,
+      "effort": "medium",
+      "calories_per_serving": 780,
+      "macros": {
+        "protein": 45,
+        "carbs": 72,
+        "fat": 34
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry",
+          "roast"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "corn-tortillas",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "100 % corn, gluten-free labeled",
+            "de": "100 % mais, als glutenfrei gekennzeichnet"
+          }
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the chicken thighs thinly, marinate with spices, salt, oil.",
+            "de": "hähnchenschenkel dünn schneiden, mit gewürzen, salz und öl marinieren."
+          }
+        },
+        {
+          "text": {
+            "en": "stack into a loaf, sear all around, finish at 200 °C until the edges crisp.",
+            "de": "zu einem laib schichten, rundum anbraten, bei 200 °C fertig garen, bis die ränder knusprig sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "cabbage, tomato, cucumber, onion — the salad knows no gluten and no mercy.",
+            "de": "kohl, tomate, gurke, zwiebel — der salat kennt kein gluten und keine gnade."
+          }
+        },
+        {
+          "text": {
+            "en": "yogurt-garlic sauce, lemon, salt. check your yogurt label if you're very sensitive — thickeners vary.",
+            "de": "joghurt-knoblauch-soße, zitrone, salz. bei starker sensibilität das joghurt-etikett prüfen — verdickungsmittel variieren."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the corn tortillas dry in the pan, fill, fold, eat standing up. tradition transcends flour.",
+            "de": "mais-tortillas trocken in der pfanne erwärmen, füllen, falten, im stehen essen. tradition überwindet mehl."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "corn tortillas beat most gluten-free pita imitations — they fold without shattering.",
+          "de": "mais-tortillas schlagen die meisten glutenfreien brot-imitate — sie falten, ohne zu zerbrechen."
+        }
+      ]
+    }
+  ]
+}

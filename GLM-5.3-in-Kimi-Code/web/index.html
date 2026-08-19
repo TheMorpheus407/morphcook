@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>morphcook — prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F1E5; --paperDeep:#EFE7D4; --ink:#2B2620; --inkSoft:#6B6156;
+  --inkFaint:#A69B8C; --line:#D8CDB8; --coral:#C1543C; --teal:#3E7C7B;
+  --mustard:#E9B44C; --sage:#8F9E4F;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Playfair Display',serif;
+  position:relative;min-height:100vh;padding-bottom:90px}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;
+  background-image:radial-gradient(var(--inkFaint) 0.6px, transparent 0.7px),
+    linear-gradient(transparent 48%, rgba(166,155,140,.05) 50%);
+  background-size:7px 7px, 100% 26px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+/* masthead */
+.mast{padding-top:14px}
+.mast .bar{height:7px;background:var(--ink)}
+.mast h1{font-style:italic;font-weight:600;font-size:40px;text-align:center;margin-top:10px;letter-spacing:-.5px}
+.mast .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:2.2px;
+  text-transform:lowercase;text-align:center;color:var(--inkSoft);margin-top:6px}
+.rule{border:none;border-top:1px dashed var(--line);margin:8px 0 4px}
+.mast .dateline{display:flex;justify-content:space-between;
+  font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.6px;color:var(--inkFaint)}
+
+/* search */
+.search{display:flex;gap:10px;border:1.4px solid var(--ink);padding:12px 14px;margin-top:22px;
+  background:rgba(239,231,212,.4)}
+.search input{flex:1;border:none;background:none;outline:none;
+  font-family:'Caveat',cursive;font-size:19px;color:var(--ink)}
+.search input::placeholder{color:var(--inkFaint)}
+.search .btn{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.4px;
+  border:1px solid var(--line);padding:6px 10px;cursor:pointer;background:var(--paper);color:var(--inkSoft)}
+.search .btn.on{border-color:var(--coral);color:var(--coral)}
+
+/* filters */
+.filters{display:none;margin-top:10px}
+.filters.open{display:block}
+.fgroup{margin-bottom:8px}
+.fgroup .flabel{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1.8px;
+  text-transform:uppercase;color:var(--inkFaint);margin-bottom:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.2px;
+  border:1.3px solid var(--line);padding:6px 12px;cursor:pointer;background:var(--paper);color:var(--inkSoft)}
+.chip.sel{background:var(--teal);border-color:var(--teal);color:var(--paper)}
+
+/* sections */
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2.4px;
+  text-transform:uppercase;font-weight:700;margin:30px 0 10px}
+.sec-label.lead{color:var(--coral)}
+
+/* feature */
+.feature{cursor:pointer}
+.feature .plate{height:230px;transform:rotate(-.6deg)}
+.feature h2{font-style:italic;font-size:32px;margin-top:12px}
+.feature .hero{font-style:italic;font-size:16px;color:var(--inkSoft);margin-top:4px;line-height:1.4}
+.feature .meta{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--inkFaint);margin-top:8px}
+.feature .meta b{color:var(--teal);font-weight:700}
+
+/* polaroid grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:16px 14px}
+.polaroid{background:var(--paper);border:1px solid var(--line);padding:10px;cursor:pointer;
+  box-shadow:2px 4px 10px rgba(43,38,32,.10);transition:transform .18s}
+.polaroid:nth-child(even){transform:rotate(.8deg)}
+.polaroid:nth-child(odd){transform:rotate(-.7deg)}
+.polaroid:hover{transform:rotate(0)}
+.polaroid .plate{height:110px}
+.polaroid .name{font-family:'Caveat',cursive;font-size:21px;margin-top:8px;line-height:1.05}
+.polaroid .sub{font-style:italic;font-size:13px;color:var(--inkSoft);margin-top:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.polaroid .meta{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--inkFaint);margin-top:6px}
+.tagchip{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1.6px;
+  font-weight:700;border:1.2px solid;padding:3px 8px;margin-top:8px}
+
+/* striped plate */
+.plate{position:relative;overflow:hidden;border-radius:4px;
+  background:linear-gradient(115deg, rgba(0,0,0,0) 0 26px, var(--c1) 26px 37px,
+    rgba(0,0,0,0) 37px 52px, var(--c2) 52px 63px, rgba(0,0,0,0) 63px 78px,
+    var(--c2) 78px 89px, rgba(0,0,0,0) 89px 104px, var(--c2) 104px 115px,
+    rgba(0,0,0,0) 115px 130px, var(--c1) 130px 141px, rgba(0,0,0,0) 141px);
+  background-size:auto 140%;background-color:var(--base)}
+.plate .cap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding:0 14px;text-align:center}
+.plate .cap span{background:rgba(246,241,229,.93);padding:6px 14px;font-style:italic;font-size:15px}
+
+/* footer nav */
+.spine{position:fixed;bottom:0;left:0;right:0;background:var(--paper);border-top:2px solid var(--ink);z-index:60}
+.spine .row{max-width:760px;margin:0 auto;display:flex}
+.spine .tab{flex:1;padding:12px 0 14px;text-align:center;cursor:pointer;
+  font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.4px;color:var(--inkFaint)}
+.spine .tab .tick{height:3px;width:26px;margin:0 auto 6px;background:transparent}
+.spine .tab.on{color:var(--ink);font-weight:700}
+.spine .tab.on .tick{background:var(--coral)}
+
+/* dish page */
+.dish-back{margin:18px 0 8px;font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:1.4px;color:var(--teal);cursor:pointer}
+.dish h2{font-style:italic;font-size:30px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.pill{font-family:'JetBrains Mono',monospace;font-size:9.5px;border:1px solid var(--line);
+  padding:4px 8px;color:var(--inkSoft)}
+.switch{display:flex;align-items:baseline;gap:8px;border-bottom:1px dashed var(--line);
+  padding:10px 0 6px}
+.switch .lab{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.6px;
+  color:var(--inkFaint);font-weight:700}
+.switch .cur{margin-left:auto;font-style:italic;font-size:16px;cursor:pointer}
+.switch .chev{color:var(--coral);cursor:pointer;font-family:'JetBrains Mono',monospace}
+.opts{display:none;padding:8px 0 4px}
+.opts.open{display:flex;flex-wrap:wrap;gap:8px}
+.optnote{font-family:'JetBrains Mono',monospace;font-size:8.5px;color:var(--inkFaint);
+  width:100%;margin-top:-2px}
+.ing{padding:6px 4px;border-bottom:1px solid rgba(216,205,184,.5)}
+.ing .amt{color:var(--teal);font-family:'JetBrains Mono',monospace;font-size:11px}
+.ing.flash{background:rgba(233,180,76,.35);animation:fade 1.4s}
+@keyframes fade{to{background:transparent}}
+.step{display:flex;gap:10px;padding:10px 0}
+.step .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--coral);font-weight:700}
+.step .t{flex:1;line-height:1.5}
+.step .timer{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--inkFaint);margin-top:3px}
+.macro{display:flex;gap:10px;margin:10px 0}
+.macro div{flex:1;border:1px solid var(--line);text-align:center;padding:10px 4px;
+  font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700}
+.macro div small{display:block;font-size:8.5px;color:var(--inkFaint);font-weight:400;margin-top:2px}
+.actions{display:flex;gap:10px;margin:20px 0 10px}
+.inkbtn{flex:1;text-align:center;padding:14px;background:var(--ink);color:var(--paper);
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.8px;font-weight:700;cursor:pointer}
+.inkbtn.ghost{background:var(--paper);color:var(--ink);border:1.4px solid var(--ink)}
+.inkbtn.sage{background:var(--sage)}
+.hand{font-family:'Caveat',cursive}
+.empty{margin:50px 0;text-align:center}
+.empty .h{font-family:'Caveat',cursive;font-size:22px;color:var(--inkSoft)}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<nav class="spine"><div class="row" id="tabs"></div></nav>
+
+<script>
+/* ── prototype corpus (a slice of the real thing) ─────────────────── */
+const ONTO = {
+  diets:{classic:{en:'classic',de:'klassisch'},vegan:{en:'vegan',de:'vegan'},
+    'gluten-free':{en:'gluten-free',de:'glutenfrei'},keto:{en:'keto',de:'keto'},
+    halal:{en:'halal-friendly',de:'halal-freundlich'}},
+  vegan:['pork','beef','lamb','poultry','fish','shellfish','molluscs','egg','dairy','lactose-dairy','honey','gelatin-non-halal','gelatin-non-kosher'],
+  halal:['pork','alcohol','gelatin-non-halal'],
+};
+const DISHES = {
+  doener:{name:'döner',color:'#C1543C',hero:'crisp-edged meat (or its many souls), pickled cabbage, garlicky sauce, warm bread — berlin at 2am, forgiving',
+    cap:'no. 01 — the street classic',
+    variants:[
+      {id:'doener-classic',diet:'classic',title:'classic döner',eff:'medium',time:50,kcal:820,sub:'pork shoulder, home-rotisserie style, yogurt sauce',
+       contains:['pork','gluten','dairy']},
+      {id:'doener-vegan',diet:'vegan',title:'vegan döner',eff:'medium',time:45,kcal:590,sub:'seitan spit, cashew garlic sauce, all the crunch',
+       contains:['gluten','soy']},
+      {id:'doener-keto-bowl',diet:'keto',title:'keto döner bowl',eff:'easy',time:30,kcal:640,sub:'all the spit, none of the bread',
+       contains:['beef','dairy']},
+      {id:'doener-halal',diet:'halal',title:'halal-friendly döner',eff:'medium',time:55,kcal:830,sub:'beef & lamb stack, no pork, no alcohol',
+       contains:['beef','lamb','gluten','dairy']},
+      {id:'doener-glutenfrei',diet:'gluten-free',title:'gluten-free döner',eff:'medium',time:40,kcal:780,sub:'chicken stack in corn tortillas',
+       contains:['poultry','dairy']},
+    ]},
+  alfredo:{name:'fettuccine alfredo',color:'#E9B44C',hero:'butter, cream & parmesan in their simplest, most honest agreement',
+    cap:'no. 02 — roman comfort',
+    variants:[
+      {id:'alfredo-classic',diet:'classic',title:'classic fettuccine alfredo',eff:'easy',time:25,kcal:780,sub:'cream, butter & parmesan — no apologies',contains:['gluten','dairy']},
+      {id:'alfredo-vegan',diet:'vegan',title:'vegan alfredo',eff:'easy',time:30,kcal:690,sub:'cashew cream & olive oil, same golden coat',contains:['gluten','tree-nuts']},
+      {id:'alfredo-glutenfrei',diet:'gluten-free',title:'gluten-free alfredo',eff:'easy',time:25,kcal:750,sub:'corn-rice fettuccine, untouched sauce',contains:['dairy']},
+    ]},
+  'pad-thai':{name:'pad thai',color:'#7A9E7E',hero:'tamarind, peanuts & rice noodles doing the sweet-sour-salty dance',
+    cap:'no. 03 — bangkok in a pan',
+    variants:[
+      {id:'pad-thai-classic',diet:'classic',title:'classic pad thai',eff:'medium',time:30,kcal:640,sub:'shrimp, egg & tamarind — the wok original',contains:['fish','shellfish','egg','peanuts']},
+      {id:'pad-thai-vegan',diet:'vegan',title:'vegan pad thai',eff:'medium',time:35,kcal:620,sub:'smoky tofu, tamari, tamarind',contains:['soy','peanuts']},
+      {id:'pad-thai-glutenfrei',diet:'gluten-free',title:'gluten-free pad thai',eff:'medium',time:30,kcal:660,sub:'chicken & tamari',contains:['poultry','peanuts','soy']},
+    ]},
+  pancakes:{name:'fluffy pancakes',color:'#E1A692',hero:'tall, golden & patient with maple syrup',cap:'no. 04 — sunday architecture',
+    variants:[
+      {id:'pancakes-classic',diet:'classic',title:'classic fluffy pancakes',eff:'easy',time:25,kcal:490,sub:'buttermilk tall-boys with maple',contains:['gluten','egg','dairy']},
+      {id:'pancakes-vegan',diet:'vegan',title:'vegan pancakes',eff:'easy',time:25,kcal:450,sub:'oat milk & a sneaky dash of vinegar',contains:['gluten']},
+      {id:'pancakes-glutenfrei',diet:'gluten-free',title:'gluten-free pancakes',eff:'easy',time:20,kcal:470,sub:'certified oats, blended into flour',contains:['egg','dairy']},
+    ]},
+  falafel:{name:'falafel',color:'#8F9E4F',hero:'herbs & chickpeas fried into green-cored little planets',cap:'no. 05 — green on the inside',
+    variants:[
+      {id:'falafel-classic',diet:'classic',title:'classic falafel',eff:'medium',time:40,kcal:520,sub:'green-hearted chickpea planets',contains:['gluten','sesame']},
+      {id:'falafel-glutenfrei',diet:'gluten-free',title:'gluten-free falafel',eff:'medium',time:40,kcal:540,sub:'chickpea flour binder',contains:['sesame']},
+    ]},
+  'butter-chicken':{name:'butter chicken',color:'#D89A5B',hero:'tandoori-charred chicken folded into tomato-butter velvet',cap:'no. 06 — delhi velvet',
+    variants:[
+      {id:'butter-chicken-classic',diet:'classic',title:'classic butter chicken',eff:'medium',time:75,kcal:740,sub:'yogurt-marinated chicken in tomato-butter velvet',contains:['poultry','dairy']},
+      {id:'butter-chicken-vegan',diet:'vegan',title:'vegan butter chicken',eff:'medium',time:60,kcal:660,sub:'charred tofu in coconut-cashew makhani',contains:['soy','tree-nuts']},
+    ]},
+};
+
+/* ── profile ───────────────────────────────────────────────────────── */
+const state = {tab:'home', dish:null, diet:'classic', vegan:false, halal:false, q:''};
+
+function visibleVariants(dish){
+  return dish.variants.filter(v=>{
+    if(state.vegan && v.contains.some(f=>ONTO.vegan.includes(f))) return false;
+    if(state.halal && v.contains.some(f=>ONTO.halal.includes(f))) return false;
+    return true;
+  });
+}
+function pick(dish){
+  const vis = visibleVariants(dish);
+  return vis.length ? vis[0] : dish.variants[0];
+}
+function blockedReason(v){
+  if(state.vegan && v.contains.some(f=>ONTO.vegan.includes(f)))
+    return 'clashes with your dietary rules';
+  if(state.halal && v.contains.some(f=>ONTO.halal.includes(f)))
+    return 'clashes with your dietary rules';
+  return null;
+}
+
+/* ── rendering ─────────────────────────────────────────────────────── */
+const $ = sel => document.querySelector(sel);
+function el(html){const t=document.createElement('template');t.innerHTML=html.trim();return t.content.firstChild;}
+function plate(dish,cap,h){
+  const c = dish.color;
+  return `<div class="plate" style="--base:${c}22;--c1:${c}cc;--c2:${c}77;${h?`height:${h}px;`:''}">
+    <div class="cap"><span>${cap}</span></div></div>`;
+}
+function mast(){
+  const now = new Date();
+  const months=['january','february','march','april','may','june','july','august','september','october','november','december'];
+  const days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+  return `<header class="mast"><div class="bar"></div><h1>morphcook</h1>
+  <div class="tag">the same dish exists for every body</div>
+  <hr class="rule"><div class="dateline"><span>no. 001 — vol. i</span>
+  <span>${days[now.getDay()]}, ${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}</span></div>
+  <hr class="rule"></header>`;
+}
+function searchBox(){
+  return `<div class="search"><input id="q" placeholder="dish, ingredient, craving…" value="${state.q}">
+    <span class="btn ${state.vegan||state.halal?'on':''}" id="fbtn">filters</span></div>
+  <div class="filters ${state.vegan||state.halal?'open':''}" id="filters">
+    <div class="fgroup"><div class="flabel">diet rules</div><div class="chips">
+      <span class="chip ${state.vegan?'sel':''}" data-f="vegan">vegan</span>
+      <span class="chip ${state.halal?'sel':''}" data-f="halal">halal-friendly</span>
+    </div></div></div>`;
+}
+function card(dish){
+  const v = pick(dish);
+  return `<div class="polaroid" data-dish="${dish.name}">
+    ${plate(dish,'',110)}
+    <div class="name">${dish.name}</div>
+    <div class="sub">${v.sub}</div>
+    <div class="meta">${v.time} min · ~${v.kcal} kcal · ${v.eff}</div>
+    <div class="tagchip" style="color:${dish.color};border-color:${dish.color}">${ONTO.diets[v.diet].en.toUpperCase()}</div>
+  </div>`;
+}
+function home(){
+  const all = Object.values(DISHES).filter(d=>{
+    const v = pick(d);
+    return !state.q || d.name.includes(state.q) || v.sub.includes(state.q) ||
+      v.title.includes(state.q);
+  });
+  const feat = all[0]; const quick = all.filter(d=>pick(d).time<=30).slice(0,4);
+  if(!feat) return `<div class="empty"><div class="h">nothing found</div></div>`;
+  const fv = pick(feat);
+  return `${mast()}${searchBox()}
+  <div class="sec-label lead">tonight's lead story</div>
+  <div class="feature" data-dish="${feat.name}">
+    ${plate(feat,feat.cap,230)}
+    <h2>${feat.name}</h2><div class="hero">${feat.hero}</div>
+    <div class="meta"><b>${feat.variants.length} ways to make it</b> · ${fv.eff} · ${fv.time} min · ~${fv.kcal} kcal</div>
+  </div>
+  <div class="sec-label">quick tonight — under 30</div>
+  <div class="grid">${quick.map(card).join('')}</div>
+  <div class="sec-label">for your table</div>
+  <div class="grid">${all.slice(0,6).map(card).join('')}</div>
+  <div class="sec-label" style="color:var(--inkFaint)">from the kitchen binder</div>
+  <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:8px">
+    ${Object.values(DISHES).map(d=>`<span data-dish="${d.name}" style="cursor:pointer;font-style:italic;
+      color:var(--teal);text-decoration:underline;text-decoration-color:var(--line);text-decoration-thickness:2px">${d.name}</span>`).join('')}
+  </div>`;
+}
+function dish(id){
+  const dish = Object.values(DISHES).find(d=>d.name===id);
+  if(!dish) return home();
+  const vis = visibleVariants(dish);
+  let sel = vis.find(v=>v.diet===state.diet) || vis[0] || dish.variants[0];
+  const dietChips = dish.variants.map(v=>{
+    const blocked = blockedReason(v);
+    const other = dish.variants.find(x=>x!==v && x.eff===v.eff);
+    return `<span class="chip ${v.diet===sel.diet?'sel':''}" data-diet="${v.diet}"
+      style="${blocked?'opacity:.38;pointer-events:none':''}">${ONTO.diets[v.diet].en}</span>
+      ${blocked?`<div class="optnote">${blocked}</div>`:''}`;
+  }).join('');
+  return `<div class="dish-back" data-back>← back to the paper</div>
+  <div class="dish">${plate(dish,sel.sub,200)}
+  <h2 style="margin-top:12px">${dish.name}</h2>
+  <div style="font-style:italic;color:var(--inkSoft);margin:4px 0 10px">${dish.hero}</div>
+  <div class="pills"><span class="pill">time: ${sel.time} min</span><span class="pill">serves 2</span>
+    <span class="pill">~${sel.kcal} kcal / serving</span></div>
+  <div class="switch"><span class="lab">— diet</span><span class="cur" data-exp="diet">${ONTO.diets[sel.diet].en}</span><span class="chev" data-exp="diet">⌃</span></div>
+  <div class="opts" id="opts-diet">${dietChips}</div>
+  <div class="switch"><span class="lab">— effort</span><span class="cur">${sel.eff}</span><span class="chev">⌄</span></div>
+  <div class="switch"><span class="lab">— calorie level</span><span class="cur">~${sel.kcal} kcal</span><span class="chev">⌄</span></div>
+  <div class="sec-label" style="margin-top:22px">ingredients</div>
+  <div id="ings">${fakeIngs(sel)}</div>
+  <div class="sec-label">method</div>
+  ${['prep the base','build & cook','finish & serve'].map((s,i)=>`<div class="step">
+    <span class="n">0${i+1}</span><div class="t">${s} — the full text lives in the app; this is the visual prototype.</div>
+    ${i===1?'<div class="timer">⏱ 15 min</div>':''}</div>`).join('')}
+  <div class="macro"><div>${sel.kcal}<small>kcal</small></div><div>38g<small>protein</small></div>
+    <div>66g<small>carbs</small></div><div>40g<small>fat</small></div></div>
+  <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--inkFaint)">contains: ${sel.contains.join(' · ')}</div>
+  <div class="actions"><div class="inkbtn">cook this</div><div class="inkbtn ghost">save this version</div></div>
+  <div class="actions" style="margin-top:0"><div class="inkbtn sage">add → market list</div></div>
+  </div>`;
+}
+function fakeIngs(v){
+  // small deterministic list so the morph flash is visible
+  const base = [['seitan','300 g'],['tofu','200 g'],['garlic','2 cloves'],['lemon','½ piece'],
+    ['pita bread','2 pieces'],['white cabbage','200 g'],['red onion','1 piece'],['tomato','1 piece']];
+  const vegan = v.diet==='vegan';
+  const rows = base.map(([n,a],i)=>{
+    const flash = (vegan && i===0) || (!vegan && i===1);
+    return `<div class="ing ${flash?'flash':''}">${vegan&&i===1?'':!vegan&&i===0?'':''}${n} — <span class="amt">${a}</span></div>`;
+  });
+  return rows.filter((_,i)=> !(vegan && i===1) ).join('');
+}
+const TABS = [['home','home'],['cookbook','cookbook'],['week','week'],['market','market'],['settings','settings']];
+function render(){
+  const app = $('#app');
+  app.innerHTML = state.dish ? dish(state.dish) : home();
+  $('#tabs').innerHTML = TABS.map(([k,l])=>`<div class="tab ${state.tab===k&&!state.dish?'on':''}" data-tab="${k}">
+    <div class="tick"></div>${l}</div>`).join('');
+}
+document.addEventListener('click', e=>{
+  const t = e.target.closest('[data-dish],[data-tab],[data-back],[data-exp],[data-diet],[data-f],#fbtn');
+  if(!t) return;
+  if(t.dataset.dish){state.dish=t.dataset.dish;render();scrollTo(0,0);}
+  else if(t.dataset.tab){state.tab=t.dataset.tab;state.dish=null;render();}
+  else if(t.dataset.back){state.dish=null;render();}
+  else if(t.id==='fbtn'){$('#filters').classList.toggle('open');$('#fbtn').classList.toggle('on');}
+  else if(t.dataset.f){state[t.dataset.f]=!state[t.dataset.f];render();}
+  else if(t.dataset.exp){document.getElementById('opts-'+t.dataset.exp).classList.toggle('open');}
+  else if(t.dataset.diet){state.diet=t.dataset.diet;render();}
+});
+document.addEventListener('input', e=>{
+  if(e.target.id==='q'){state.q=e.target.value.toLowerCase();render();
+    document.getElementById('q').focus();}
+});
+render();
+</script>
+</body>
+</html>

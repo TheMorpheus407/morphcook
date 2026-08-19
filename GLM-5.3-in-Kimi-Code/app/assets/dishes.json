@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": { "en": "döner", "de": "döner" },
+      "hero": {
+        "en": "crisp-edged meat (or its many souls), pickled cabbage, garlicky sauce, warm bread — berlin at 2am, forgiving",
+        "de": "knuspriges fleisch (oder seine vielen seelen), sauerkraut, knoblauchsoße, warmes brot — berlin um 2 uhr nachts, verzeihend"
+      },
+      "cap_caption": { "en": "no. 01 — the street classic", "de": "nr. 01 — der straßenklassiker" },
+      "stripe_color": "#C1543C",
+      "variants": ["doener-classic", "doener-vegan", "doener-keto-bowl", "doener-halal", "doener-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["turkish", "german", "street-food"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "alfredo",
+      "canonical_name": { "en": "fettuccine alfredo", "de": "fettuccine alfredo" },
+      "hero": {
+        "en": "butter, cream & parmesan in their simplest, most honest agreement",
+        "de": "butter, sahne & parmesan in ihrer einfachsten, ehrlichsten vereinbarung"
+      },
+      "cap_caption": { "en": "no. 02 — roman comfort", "de": "nr. 02 — römisches wohlfühlen" },
+      "stripe_color": "#E9B44C",
+      "variants": ["alfredo-classic", "alfredo-vegan", "alfredo-glutenfrei", "alfredo-lactosefrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "pasta"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": { "en": "pad thai", "de": "pad thai" },
+      "hero": {
+        "en": "tamarind, peanuts & rice noodles doing the sweet-sour-salty dance",
+        "de": "tamarinde, erdnüsse & reisnudeln beim süß-sauer-salzigen tanz"
+      },
+      "cap_caption": { "en": "no. 03 — bangkok in a pan", "de": "nr. 03 — bangkok in der pfanne" },
+      "stripe_color": "#7A9E7E",
+      "variants": ["pad-thai-classic", "pad-thai-vegan", "pad-thai-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["thai", "noodles", "stir-fry"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "pancakes",
+      "canonical_name": { "en": "fluffy pancakes", "de": "fluffige pancakes" },
+      "hero": {
+        "en": "tall, golden & patient with maple syrup",
+        "de": "hoch, golden & geduldig mit ahornsirup"
+      },
+      "cap_caption": { "en": "no. 04 — sunday's official architectural style", "de": "nr. 04 — die offizielle architektur des sonntags" },
+      "stripe_color": "#E1A692",
+      "variants": ["pancakes-classic", "pancakes-vegan", "pancakes-glutenfrei", "pancakes-lowfodmap"],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": ["breakfast", "american", "sweet"],
+      "frequency_tier": 1,
+      "meal_type": "breakfast"
+    },
+    {
+      "id": "sushi",
+      "canonical_name": { "en": "sushi rolls", "de": "sushi-röllchen" },
+      "hero": {
+        "en": "vinegared rice, nori & whatever the sea (or the garden) offers",
+        "de": "gewürzter reis, nori & was das meer (oder der garten) hergibt"
+      },
+      "cap_caption": { "en": "no. 05 — little edible parcels", "de": "nr. 05 — kleine essbare päckchen" },
+      "stripe_color": "#5B7B9A",
+      "variants": ["sushi-salmon", "sushi-vegan", "sushi-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["japanese", "fish", "project-cooking"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "bolognese",
+      "canonical_name": { "en": "spaghetti bolognese", "de": "spaghetti bolognese" },
+      "hero": {
+        "en": "slow meat & tomato, the gravy of italian grandmothers",
+        "de": "langsam geschmortes fleisch & tomaten, die soße italienischer omas"
+      },
+      "cap_caption": { "en": "no. 06 — sunday gravy", "de": "nr. 06 — sonntagssugo" },
+      "stripe_color": "#A34A3A",
+      "variants": ["bolognese-classic", "bolognese-vegan", "bolognese-glutenfrei", "bolognese-lowfodmap"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "pasta", "simmer"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "currywurst",
+      "canonical_name": { "en": "currywurst", "de": "currywurst" },
+      "hero": {
+        "en": "sliced sausage drowning happily in curry-ketchup",
+        "de": "geschnittene wurst, glücklich ertränkt in curry-ketchup"
+      },
+      "cap_caption": { "en": "no. 07 — berlin's paper plate queen", "de": "nr. 07 — berlins papierteller-königin" },
+      "stripe_color": "#D06A4F",
+      "variants": ["currywurst-classic", "currywurst-vegan", "currywurst-halal"],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": ["german", "street-food", "quick"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "falafel",
+      "canonical_name": { "en": "falafel", "de": "falafel" },
+      "hero": {
+        "en": "herbs & chickpeas fried into green-cored little planets",
+        "de": "kräuter & kichererbsen, frittiert zu kleinen planeten mit grünem kern"
+      },
+      "cap_caption": { "en": "no. 08 — green on the inside", "de": "nr. 08 — innen grün" },
+      "stripe_color": "#8F9E4F",
+      "variants": ["falafel-classic", "falafel-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "vegan-friendly", "fried"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "lasagna",
+      "canonical_name": { "en": "lasagna", "de": "lasagne" },
+      "hero": {
+        "en": "layers upon layers upon layers — a baked argument for patience",
+        "de": "schicht um schicht um schicht — ein gebackenes argument für geduld"
+      },
+      "cap_caption": { "en": "no. 09 — the weekend project", "de": "nr. 09 — das wochenendprojekt" },
+      "stripe_color": "#C98F5E",
+      "variants": ["lasagna-classic", "lasagna-vegan", "lasagna-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "bake", "project-cooking"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "carbonara",
+      "canonical_name": { "en": "spaghetti carbonara", "de": "spaghetti carbonara" },
+      "hero": {
+        "en": "egg, pecorino & guanciale — rome's creamy non-cream classic",
+        "de": "ei, pecorino & guanciale — roms cremiger klassiker ohne sahne"
+      },
+      "cap_caption": { "en": "no. 10 — no cream, ever. we checked.", "de": "nr. 10 — niemals sahne. wir haben nachgeprüft." },
+      "stripe_color": "#D8C3A5",
+      "variants": ["carbonara-classic", "carbonara-vegetarian", "carbonara-glutenfrei"],
+      "partition_id": "core",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "pasta", "quick"],
+      "frequency_tier": 1
+    },
+    {
+      "id": "butter-chicken",
+      "canonical_name": { "en": "butter chicken", "de": "butter chicken" },
+      "hero": {
+        "en": "tandoori-charred chicken folded into tomato-butter velvet",
+        "de": "tandoori-hähnchen, versenkt in samtige tomaten-butter"
+      },
+      "cap_caption": { "en": "no. 11 — delhi velvet", "de": "nr. 11 — samt aus delhi" },
+      "stripe_color": "#D89A5B",
+      "variants": ["butter-chicken-classic", "butter-chicken-vegan"],
+      "partition_id": "extended",
+      "secondary_partitions": ["asian"],
+      "cuisine_tags": ["indian", "curry", "simmer"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "shakshuka",
+      "canonical_name": { "en": "shakshuka", "de": "shakshuka" },
+      "hero": {
+        "en": "eggs poached in smoky pepper-tomato stew",
+        "de": "eier, pochiert in geschmorter paprika-tomaten-pfanne"
+      },
+      "cap_caption": { "en": "no. 12 — one pan, many opinions", "de": "nr. 12 — eine pfanne, viele meinungen" },
+      "stripe_color": "#C34C3D",
+      "variants": ["shakshuka-classic", "shakshuka-vegan", "shakshuka-lowfodmap"],
+      "partition_id": "extended",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "breakfast", "eggs"],
+      "frequency_tier": 2,
+      "meal_type": "breakfast"
+    },
+    {
+      "id": "risotto",
+      "canonical_name": { "en": "mushroom risotto", "de": "pilz-risotto" },
+      "hero": {
+        "en": "rice coaxed into creaminess, one ladle of patience at a time",
+        "de": "reis, gedrängt in cremigkeit, schöpflöffel für schöpflöffel geduld"
+      },
+      "cap_caption": { "en": "no. 13 — eighteen minutes of stirring", "de": "nr. 13 — achtzehn minuten rühren" },
+      "stripe_color": "#C9B458",
+      "variants": ["risotto-classic", "risotto-vegan", "risotto-lactosefrei"],
+      "partition_id": "extended",
+      "secondary_partitions": ["italian"],
+      "cuisine_tags": ["italian", "rice", "stir"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "goulash",
+      "canonical_name": { "en": "goulash", "de": "gulasch" },
+      "hero": {
+        "en": "paprika-stained stew that improves overnight, like most of us",
+        "de": "paprika-rotes schmorgericht, das über nacht besser wird — wie die meisten von uns"
+      },
+      "cap_caption": { "en": "no. 14 — better on day two", "de": "nr. 14 — am zweiten tag besser" },
+      "stripe_color": "#9C4A2F",
+      "variants": ["goulash-classic", "goulash-vegan"],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": ["hungarian", "stew", "simmer"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "muhammara",
+      "canonical_name": { "en": "muhammara", "de": "muhammara" },
+      "hero": {
+        "en": "roasted red pepper & walnut dip with a pomegranate grin",
+        "de": "dip aus gerösteter roter paprika & walnüssen mit granatapfel-grinsen"
+      },
+      "cap_caption": { "en": "no. 15 — aleppo's red secret", "de": "nr. 15 — aleppos rotes geheimnis" },
+      "stripe_color": "#B03A2E",
+      "variants": ["muhammara-classic", "muhammara-nutfrei"],
+      "partition_id": "extended",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "dip", "meze"],
+      "frequency_tier": 2
+    },
+    {
+      "id": "hummus",
+      "canonical_name": { "en": "hummus", "de": "hummus" },
+      "hero": {
+        "en": "chickpeas, tahini & lemon — the dip that became a meal",
+        "de": "kichererbsen, tahini & zitrone — der dip, der zum essen wurde"
+      },
+      "cap_caption": { "en": "no. 16 — the beige legend", "de": "nr. 16 — die beige legende" },
+      "stripe_color": "#D9C79A",
+      "variants": ["hummus-classic"],
+      "partition_id": "extended",
+      "secondary_partitions": ["middle-eastern"],
+      "cuisine_tags": ["middle-eastern", "dip", "meze"],
+      "frequency_tier": 2
+    }
+  ]
+}

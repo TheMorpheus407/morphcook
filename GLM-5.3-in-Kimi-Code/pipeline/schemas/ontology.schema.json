@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/ontology.schema.json",
+  "title": "MorphCook Ontology",
+  "description": "Flag taxonomy. Extending is purely additive — one line per new flag, never a migration.",
+  "type": "object",
+  "required": ["schema_version", "contains_flags", "compound_flags", "attributes", "diet_labels"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "contains_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "group"],
+        "properties": {
+          "label": { "$ref": "recipe.schema.json#/$defs/ltext" },
+          "group": {
+            "enum": ["meat", "fish", "animal", "allergen", "other"]
+          }
+        }
+      }
+    },
+    "compound_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "expands_to", "note"],
+        "properties": {
+          "label": { "$ref": "recipe.schema.json#/$defs/ltext" },
+          "expands_to": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "description": "base contains-flags banned by this compound"
+          },
+          "note": { "$ref": "recipe.schema.json#/$defs/ltext" }
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["effort", "time_bucket", "calorie_bucket", "technique"],
+      "properties": {
+        "effort": { "$ref": "#/$defs/attribute" },
+        "time_bucket": { "$ref": "#/$defs/attribute" },
+        "calorie_bucket": { "$ref": "#/$defs/attribute" },
+        "technique": { "$ref": "#/$defs/attribute" }
+      }
+    },
+    "diet_labels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label"],
+        "properties": {
+          "label": { "$ref": "recipe.schema.json#/$defs/ltext" },
+          "compound_flag": {
+            "type": "string",
+            "description": "compound flag this diet implies, if any"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "attribute": {
+      "type": "object",
+      "required": ["label", "values", "value_labels"],
+      "properties": {
+        "label": { "$ref": "recipe.schema.json#/$defs/ltext" },
+        "values": { "type": "array", "minItems": 2, "uniqueItems": true },
+        "value_labels": {
+          "type": "object",
+          "additionalProperties": { "$ref": "recipe.schema.json#/$defs/ltext" }
+        }
+      }
+    }
+  }
+}

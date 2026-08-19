@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "generated_at_note": "static manifest maintained with the corpus",
+  "partitions": {
+    "core": {
+      "file": "core-recipes.json",
+      "loaded_at": "launch",
+      "description": {
+        "en": "top 80% most-used recipes",
+        "de": "die 80% meistgenutzten rezepte"
+      },
+      "recipe_count": 34,
+      "dish_ids": [
+        "alfredo",
+        "bolognese",
+        "carbonara",
+        "currywurst",
+        "doener",
+        "falafel",
+        "lasagna",
+        "pad-thai",
+        "pancakes",
+        "sushi"
+      ]
+    },
+    "extended": {
+      "file": "extended-recipes.json",
+      "loaded_at": "launch",
+      "description": {
+        "en": "rarely-used dishes",
+        "de": "selten genutzte gerichte"
+      },
+      "recipe_count": 13,
+      "dish_ids": [
+        "butter-chicken",
+        "goulash",
+        "hummus",
+        "muhammara",
+        "risotto",
+        "shakshuka"
+      ]
+    },
+    "italian": {
+      "file": "cuisine-italian.json",
+      "loaded_at": "on-demand",
+      "description": {
+        "en": "italian cuisine selection",
+        "de": "italienische auswahl"
+      },
+      "recipe_count": 17,
+      "dish_ids": [
+        "alfredo",
+        "bolognese",
+        "carbonara",
+        "lasagna",
+        "risotto"
+      ]
+    },
+    "asian": {
+      "file": "cuisine-asian.json",
+      "loaded_at": "on-demand",
+      "description": {
+        "en": "asian cuisine selection",
+        "de": "asiatische auswahl"
+      },
+      "recipe_count": 0,
+      "dish_ids": []
+    },
+    "middle-eastern": {
+      "file": "cuisine-middle-eastern.json",
+      "loaded_at": "on-demand",
+      "description": {
+        "en": "middle eastern cuisine selection",
+        "de": "orientalische auswahl"
+      },
+      "recipe_count": 8,
+      "dish_ids": [
+        "falafel",
+        "hummus",
+        "muhammara",
+        "shakshuka"
+      ]
+    }
+  },
+  "cross_references": {
+    "dishes_file": "dishes.json",
+    "recipe_id_to_dish": {
+      "alfredo-classic": "alfredo",
+      "alfredo-vegan": "alfredo",
+      "alfredo-glutenfrei": "alfredo",
+      "alfredo-lactosefrei": "alfredo",
+      "pad-thai-classic": "pad-thai",
+      "pad-thai-vegan": "pad-thai",
+      "pad-thai-glutenfrei": "pad-thai",
+      "pancakes-classic": "pancakes",
+      "pancakes-vegan": "pancakes",
+      "pancakes-glutenfrei": "pancakes",
+      "pancakes-lowfodmap": "pancakes",
+      "sushi-salmon": "sushi",
+      "sushi-vegan": "sushi",
+      "sushi-glutenfrei": "sushi",
+      "bolognese-classic": "bolognese",
+      "bolognese-vegan": "bolognese",
+      "bolognese-glutenfrei": "bolognese",
+      "bolognese-lowfodmap": "bolognese",
+      "currywurst-classic": "currywurst",
+      "currywurst-vegan": "currywurst",
+      "currywurst-halal": "currywurst",
+      "falafel-classic": "falafel",
+      "falafel-glutenfrei": "falafel",
+      "lasagna-classic": "lasagna",
+      "lasagna-vegan": "lasagna",
+      "lasagna-glutenfrei": "lasagna",
+      "carbonara-classic": "carbonara",
+      "carbonara-vegetarian": "carbonara",
+      "carbonara-glutenfrei": "carbonara",
+      "doener-classic": "doener",
+      "doener-vegan": "doener",
+      "doener-keto-bowl": "doener",
+      "doener-halal": "doener",
+      "doener-glutenfrei": "doener",
+      "butter-chicken-classic": "butter-chicken",
+      "butter-chicken-vegan": "butter-chicken",
+      "shakshuka-classic": "shakshuka",
+      "shakshuka-vegan": "shakshuka",
+      "shakshuka-lowfodmap": "shakshuka",
+      "risotto-classic": "risotto",
+      "risotto-vegan": "risotto",
+      "risotto-lactosefrei": "risotto",
+      "goulash-classic": "goulash",
+      "goulash-vegan": "goulash",
+      "muhammara-classic": "muhammara",
+      "muhammara-nutfrei": "muhammara",
+      "hummus-classic": "hummus"
+    }
+  },
+  "loading_strategy": {
+    "en": "core + extended load at launch; cuisine partitions are views over the same recipes and load on demand when browsing by cuisine.",
+    "de": "core + extended laden beim start; küchen-partitionen sind sichten über dieselben rezepte und laden beim stöbern nach küche."
+  },
+  "version": 1,
+  "total_recipes": 47,
+  "total_dishes": 16,
+  "variants_per_dish": {
+    "alfredo": 4,
+    "pad-thai": 3,
+    "pancakes": 4,
+    "sushi": 3,
+    "bolognese": 4,
+    "currywurst": 3,
+    "falafel": 2,
+    "lasagna": 3,
+    "carbonara": 3,
+    "doener": 5,
+    "butter-chicken": 2,
+    "shakshuka": 3,
+    "risotto": 3,
+    "goulash": 2,
+    "muhammara": 2,
+    "hummus": 1
+  }
+}

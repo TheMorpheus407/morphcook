@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/recipe.schema.json",
+  "title": "MorphCook Recipe",
+  "type": "object",
+  "required": [
+    "id", "dish_id", "title", "subtitle", "diet", "servings",
+    "time_minutes", "effort", "calories_per_serving", "macros",
+    "contains", "attributes", "ingredients", "steps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "unique, kebab-case, convention: <dish>-<variant>"
+    },
+    "dish_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "$ref": "#/$defs/ltext" },
+    "subtitle": { "$ref": "#/$defs/ltext" },
+    "diet": {
+      "type": "string",
+      "description": "key into ontology.json diet_labels"
+    },
+    "servings": { "type": "integer", "minimum": 1, "maximum": 24 },
+    "time_minutes": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "honest ACTIVE time; soaks/proofing excluded"
+    },
+    "effort": { "enum": ["easy", "medium", "hard"] },
+    "calories_per_serving": { "type": "integer", "minimum": 40 },
+    "macros": {
+      "type": "object",
+      "required": ["protein", "carbs", "fat"],
+      "additionalProperties": false,
+      "properties": {
+        "protein": { "type": "number", "minimum": 0 },
+        "carbs": { "type": "number", "minimum": 0 },
+        "fat": { "type": "number", "minimum": 0 }
+      }
+    },
+    "contains": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "description": "contains-flags; must cover flags derivable from ingredients"
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["techniques"],
+      "additionalProperties": false,
+      "properties": {
+        "techniques": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam",
+                     "roast", "broil", "pan-fry", "deep-fry", "stir-fry",
+                     "poach", "blanch"]
+          }
+        },
+        "meal_type": {
+          "enum": ["breakfast", "lunch", "dinner", null]
+        }
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "amount", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "must exist in ingredients.json"
+          },
+          "amount": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": {
+            "enum": ["g", "kg", "mg", "ml", "l", "tbsp", "tsp", "pinch",
+                     "dash", "piece", "clove", "stick", "bunch"]
+          },
+          "note": { "$ref": "#/$defs/ltext" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "$ref": "#/$defs/ltext" },
+          "timer_seconds": { "type": "integer", "minimum": 5 }
+        }
+      }
+    },
+    "tips": {
+      "type": "array",
+      "maxItems": 2,
+      "items": { "$ref": "#/$defs/ltext" }
+    }
+  },
+  "$defs": {
+    "ltext": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": {
+        "type": "string"
+      },
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      },
+      "description": "localized text; N-language-ready: any extra language keys are allowed"
+    }
+  }
+}

@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "classic pad thai",
+        "de": "klassisches pad thai"
+      },
+      "subtitle": {
+        "en": "shrimp, egg & tamarind — the wok original",
+        "de": "garnelen, ei & tamarinde — das wok-original"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "medium",
+      "calories_per_serving": 640,
+      "macros": {
+        "protein": 28,
+        "carbs": 76,
+        "fat": 22
+      },
+      "contains": [
+        "fish",
+        "shellfish",
+        "egg",
+        "peanuts",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the rice noodles in warm water until bendable but still firm — they finish in the wok.",
+            "de": "reisnudeln in warmem wasser einweichen, bis sie biegsam, aber noch fest sind — sie garen in der wok."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stir tamarind, sugar and fish sauce into a sauce that tastes like a polite argument between sweet, sour and salty.",
+            "de": "tamarinde, zucker und fischsauce zu einer soße verrühren, die wie ein höflicher streit zwischen süß, sauer und salzig schmeckt."
+          }
+        },
+        {
+          "text": {
+            "en": "fry garlic and shallot in hot oil for 30 seconds — fragrance, not color.",
+            "de": "knoblauch und schalotte in heißem öl 30 sekunden braten — duft, nicht farbe."
+          },
+          "timer_seconds": 30
+        },
+        {
+          "text": {
+            "en": "add shrimp, then push aside and scramble the eggs in the same pan. everything may share the wok; nothing may leave it.",
+            "de": "garnelen zugeben, beiseite schieben und die eier in derselben pfanne rühren. alles darf die wok teilen; nichts darf sie verlassen."
+          }
+        },
+        {
+          "text": {
+            "en": "noodles in, sauce over, toss constantly for 2 minutes until glossy and tangled.",
+            "de": "nudeln rein, soße drüber, 2 minuten ständig schwenken, bis alles glänzt und verfilzt."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "off heat: bean sprouts, scallions, half the peanuts, crushed. lime wedge on the side. eat immediately.",
+            "de": "vom feuer: bohnensprossen, frühlingszwiebeln, die hälfte der erdnüsse, grob gestoßen. limettenspalte dazu. sofort essen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "mise en place first — the wok gives you no time to measure once it's hot.",
+          "de": "erst alles bereitstellen — die wok gibt dir keine zeit zum abmessen, sobald sie heiß ist."
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "vegan pad thai",
+        "de": "veganes pad thai"
+      },
+      "subtitle": {
+        "en": "smoky tofu, tamari, tamarind — street stall energy",
+        "de": "geräucherter tofu, tamari, tamarinde — imbiss-energie"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 35,
+      "effort": "medium",
+      "calories_per_serving": 620,
+      "macros": {
+        "protein": 24,
+        "carbs": 80,
+        "fat": 19
+      },
+      "contains": [
+        "soy",
+        "peanuts",
+        "added-sugar",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "smoked, firm",
+            "de": "geräuchert, fest"
+          }
+        },
+        {
+          "id": "tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the rice noodles until bendable but firm.",
+            "de": "reisnudeln einweichen, bis sie biegsam, aber fest sind."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "cube the tofu and fry it in a hot dry pan until the edges are properly browned. set aside.",
+            "de": "tofu würfeln und in der heißen pfanne braten, bis die kanten richtig braun sind. beiseite stellen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "sauce: tamarind, sugar, tamari. taste and adjust — it should be louder than feels reasonable.",
+            "de": "soße: tamarinde, zucker, tamari. probieren und nachjustieren — sie darf lauter sein, als sich vernünftig anfühlt."
+          }
+        },
+        {
+          "text": {
+            "en": "fry garlic and shallot, add noodles and sauce, toss hard.",
+            "de": "knoblauch und schalotte braten, nudeln und soße zugeben, kräftig schwenken."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "fold in the tofu, sprouts, scallions. crush the peanuts over the top. lime. done.",
+            "de": "tofu, sprossen und frühlingszwiebeln unterheben. erdnüsse darüber bröseln. limette. fertig."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "tamari keeps this gluten-free and wheat-free without losing the soy depth.",
+          "de": "tamari hält das gericht gluten- und weizenfrei, ohne die soja-tiefe zu verlieren."
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-glutenfrei",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "gluten-free pad thai",
+        "de": "glutenfreies pad thai"
+      },
+      "subtitle": {
+        "en": "chicken & tamari — the wok classic, sauce-checked",
+        "de": "hähnchen & tamari — der wok-klassiker, soße geprüft"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "medium",
+      "calories_per_serving": 660,
+      "macros": {
+        "protein": 32,
+        "carbs": 74,
+        "fat": 23
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "egg",
+        "peanuts",
+        "soy",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-breast",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "check label — should be gluten-free",
+            "de": "etikett prüfen — sollte glutenfrei sein"
+          }
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the noodles until bendable. slice the chicken thin.",
+            "de": "nudeln einweichen, bis sie biegsam sind. hähnchen dünn schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "sauce: tamarind, sugar, tamari, fish sauce (label-checked).",
+            "de": "soße: tamarinde, zucker, tamari, fischsauce (etikett geprüft)."
+          }
+        },
+        {
+          "text": {
+            "en": "stir-fry chicken until just done, push aside, scramble the eggs.",
+            "de": "hähnchen im wok garen, beiseite schieben, eier rühren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "garlic and shallot in, noodles and sauce in, toss toss toss.",
+            "de": "knoblauch und schalotte rein, nudeln und soße rein, schwenken schwenken schwenken."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "sprouts, scallions, crushed peanuts, lime. the wok has spoken.",
+            "de": "sprossen, frühlingszwiebeln, gestoßene erdnüsse, limette. die wok hat gesprochen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "rice noodles, tamarind and sugar are naturally gluten-free — only the sauces ever betray you.",
+          "de": "reisnudeln, tamarinde und zucker sind von natur aus glutenfrei — nur die saucen verraten dich."
+        }
+      ]
+    },
+    {
+      "id": "sushi-salmon",
+      "dish_id": "sushi",
+      "title": {
+        "en": "salmon sushi rolls",
+        "de": "lachs-sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "maki with salmon & avocado — your first roll WILL be ugly",
+        "de": "maki mit lachs & avocado — dein erstes röllchen WIRD hässlich"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 480,
+      "macros": {
+        "protein": 28,
+        "carbs": 66,
+        "fat": 11
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salmon",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "sushi-grade",
+            "de": "sushi-qualität"
+          }
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water runs clear, then cook it. (clear-ish. we're making sushi, not jewelry.)",
+            "de": "reis waschen, bis das wasser klar läuft, dann kochen. (klar-ish. wir machen sushi, keinen schmuck.)"
+          }
+        },
+        {
+          "text": {
+            "en": "fold warm rice with vinegar, sugar, salt. fan it while folding — glossy, not mushy. let it cool to hand-warm.",
+            "de": "warmen reis mit essig, zucker, salz falten. dabei fächeln — glänzend, nicht breiig. auf handwarm abkühlen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice salmon and avocado into long batons. seed and strip the cucumber.",
+            "de": "lachs und avocado in lange stäbchen schneiden. gurke entkernen und in streifen schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "rice on nori (thin, leave a bare edge), fillings in a line, roll with the mat — snug, not crushed.",
+            "de": "reis auf nori (dünn, eine kante frei), füllungen in eine linie, mit der matte rollen — straff, nicht erdrückt."
+          }
+        },
+        {
+          "text": {
+            "en": "wipe your knife between cuts and slice each roll into 8. ugly ones taste identical — eat the evidence.",
+            "de": "messer zwischen den schnitten abwischen und jede rolle in 8 teile schneiden. hässliche schmecken identisch — die beweise vernichten."
+          }
+        },
+        {
+          "text": {
+            "en": "soy sauce for dipping. wasabi optional, tears optional.",
+            "de": "sojasauce zum tunken. wasabi optional, tränen optional."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "wet hands stop rice from adopting your fingers as permanent roommates.",
+          "de": "nasse hände verhindern, dass der reis deine finger als dauermitbewohner adoptiert."
+        }
+      ]
+    },
+    {
+      "id": "sushi-vegan",
+      "dish_id": "sushi",
+      "title": {
+        "en": "vegan sushi rolls",
+        "de": "vegane sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "avocado, carrot & pickled cucumber garden maki",
+        "de": "garten-maki mit avocado, karotte & essiggurke"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 420,
+      "macros": {
+        "protein": 9,
+        "carbs": 70,
+        "fat": 9
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "sesame",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "pickles",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sesame-seeds",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook and season the rice as usual — vinegar, sugar, salt, fan, cool.",
+            "de": "reis wie üblich kochen und würzen — essig, zucker, salz, fächeln, abkühlen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "cut avocado into strips, carrot into thin matchsticks (raw or blanched), pickles into spears.",
+            "de": "avocado in streifen, karotte in feine stäbchen (roh oder blanchiert), gurken in spalten schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "roll: nori, thin rice, a line of each vegetable, sprinkle sesame. snug roll.",
+            "de": "rollen: nori, dünner reis, je eine linie gemüse, sesam bestreuen. straff rollen."
+          }
+        },
+        {
+          "text": {
+            "en": "slice into 8 with a wiped knife. serve with soy sauce.",
+            "de": "mit abgewischtem messer in 8 schneiden. mit sojasauce servieren."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the rainbow of the garden roll comes from contrast — pack colors side by side.",
+          "de": "das rgb der gartenrolle kommt aus dem kontrast — farben nebeneinander legen."
+        }
+      ]
+    },
+    {
+      "id": "sushi-glutenfrei",
+      "dish_id": "sushi",
+      "title": {
+        "en": "gluten-free sushi rolls",
+        "de": "glutenfreie sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "tamari on the side, everything else unchanged",
+        "de": "tamari dazu, alles andere unverändert"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 460,
+      "macros": {
+        "protein": 26,
+        "carbs": 64,
+        "fat": 11
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salmon",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "sushi-grade",
+            "de": "sushi-qualität"
+          }
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4,
+          "unit": "tbsp",
+          "note": {
+            "en": "gluten-free tamari",
+            "de": "glutenfreies tamari"
+          }
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook and season the rice, cool to hand-warm.",
+            "de": "reis kochen und würzen, auf handwarm abkühlen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice salmon, avocado, cucumber into batons.",
+            "de": "lachs, avocado und gurke in stäbchen schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "roll maki with a bare nori edge, slice into 8.",
+            "de": "maki mit frei nori-kante rollen, in 8 schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "tamari instead of soy sauce — that's the whole trick. sushi itself was gluten-free all along.",
+            "de": "tamari statt sojasauce — das ist der ganze trick. sushi selbst war die ganze zeit glutenfrei."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "nori, rice, fish, wasabi: gluten-free. the soy sauce bottle was the only spy.",
+          "de": "nori, reis, fisch, wasabi: glutenfrei. die sojasauce-flasche war der einzige spion."
+        }
+      ]
+    },
+    {
+      "id": "butter-chicken-classic",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "classic butter chicken",
+        "de": "klassisches butter chicken"
+      },
+      "subtitle": {
+        "en": "yogurt-marinated chicken in tomato-butter velvet",
+        "de": "joghurt-mariniertes hähnchen in tomaten-butter-samt"
+      },
+      "diet": "classic",
+      "servings": 4,
+      "time_minutes": 75,
+      "effort": "medium",
+      "calories_per_serving": 740,
+      "macros": {
+        "protein": 44,
+        "carbs": 22,
+        "fat": 50
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "broil"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 800,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "cream",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "ginger",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "id": "cashews",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "secret thickener",
+            "de": "geheime bindung"
+          }
+        },
+        {
+          "id": "paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cube the chicken, marinate in yogurt, half the garam masala, turmeric, salt — 30 minutes minimum, overnight is diplomacy.",
+            "de": "hähnchen würfeln, in joghurt, der hälfte des garam masala, kurkuma und salz marinieren — 30 minuten minimum, über nacht ist diplomatie."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "broil or char the chicken pieces hard until the edges blacken — the char is the flavor's résumé.",
+            "de": "hähnchenstücke scharf grillen oder im ofen rösten, bis die ränder schwärzen — die röstnoten sind der lebenslauf des geschmacks."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "simmer tomatoes with ginger, garlic, remaining spices and the cashews for 20 minutes, then blend smooth.",
+            "de": "tomaten mit ingwer, knoblauch, restlichen gewürzen und den cashews 20 minuten köcheln, dann glatt pürieren."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "return the sauce to low heat, stir in the butter piece by piece, then the cream. it should turn glossy-orange and calm.",
+            "de": "soße zurück auf kleine hitze, die butter stück für stück einrühren, dann die sahne. sie wird glänzend-orange und ruhig."
+          }
+        },
+        {
+          "text": {
+            "en": "add the charred chicken, simmer 10 minutes, serve with rice or naan.",
+            "de": "das geröstete hähnchen zugeben, 10 minuten köcheln, mit reis oder naan servieren."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "tips": [
+        {
+          "en": "blended cashews give the sauce its silk — the classic restaurant trick nobody confesses to.",
+          "de": "pürierte cashews geben der soße ihre seide — der klassische restaurant-trick, zu dem niemand steht."
+        }
+      ]
+    },
+    {
+      "id": "butter-chicken-vegan",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "vegan butter chicken",
+        "de": "veganes butter chicken"
+      },
+      "subtitle": {
+        "en": "charred tofu in coconut-cashew makhani",
+        "de": "gerösteter tofu in kokos-cashew-makhani"
+      },
+      "diet": "vegan",
+      "servings": 4,
+      "time_minutes": 60,
+      "effort": "medium",
+      "calories_per_serving": 660,
+      "macros": {
+        "protein": 26,
+        "carbs": 28,
+        "fat": 46
+      },
+      "contains": [
+        "soy",
+        "cashews",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "broil"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "tofu",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "firm",
+            "de": "fest"
+          }
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-milk",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "cashews",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "vegan-butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "ginger",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "press and cube the tofu, toss with garam masala and salt, broil until the edges char.",
+            "de": "tofu pressen und würfeln, mit garam masala und salz mischen, grillen, bis die ränder rösten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "simmer tomatoes, ginger, garlic, spices and cashews 20 minutes, blend silky.",
+            "de": "tomaten, ingwer, knoblauch, gewürze und cashews 20 minuten köcheln, seidig pürieren."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "stir in coconut milk and vegan butter over low heat until glossy.",
+            "de": "kokosmilch und vegane butter bei kleiner hitze einrühren, bis es glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "add the charred tofu, simmer 10 minutes. serve with rice — naan optional, longing guaranteed.",
+            "de": "das geröstete tofu zugeben, 10 minuten köcheln. mit reis servieren — naan optional, sehnsucht garantiert."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "tips": [
+        {
+          "en": "freeze-and-thaw tofu before pressing for a chew that survives the sauce.",
+          "de": "tofu vor dem pressen einfrieren und auftauen — für eine bissfestigkeit, die die soße übersteht."
+        }
+      ]
+    }
+  ]
+}

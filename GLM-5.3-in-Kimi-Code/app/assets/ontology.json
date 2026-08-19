@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "contains_flags": {
+    "pork": { "label": { "en": "pork", "de": "Schweinefleisch" }, "group": "meat" },
+    "beef": { "label": { "en": "beef", "de": "Rindfleisch" }, "group": "meat" },
+    "lamb": { "label": { "en": "lamb", "de": "Lammfleisch" }, "group": "meat" },
+    "poultry": { "label": { "en": "poultry", "de": "Geflügel" }, "group": "meat" },
+    "fish": { "label": { "en": "fish", "de": "Fisch" }, "group": "fish" },
+    "shellfish": { "label": { "en": "shellfish", "de": "Krebstiere" }, "group": "fish" },
+    "molluscs": { "label": { "en": "molluscs", "de": "Weichtiere" }, "group": "fish" },
+    "egg": { "label": { "en": "egg", "de": "Ei" }, "group": "animal" },
+    "dairy": { "label": { "en": "dairy", "de": "Milchprodukte" }, "group": "animal" },
+    "lactose-dairy": { "label": { "en": "lactose (milk, cream, soft cheese)", "de": "Laktose (Milch, Sahne, Weichkäse)" }, "group": "animal" },
+    "meat-dairy-combo": { "label": { "en": "meat & dairy combined", "de": "Fleisch & Milchprodukte kombiniert" }, "group": "animal" },
+    "gluten": { "label": { "en": "gluten", "de": "Gluten" }, "group": "allergen" },
+    "soy": { "label": { "en": "soy", "de": "Soja" }, "group": "allergen" },
+    "peanuts": { "label": { "en": "peanuts", "de": "Erdnüsse" }, "group": "allergen" },
+    "tree-nuts": { "label": { "en": "tree nuts", "de": "Schalenfrüchte" }, "group": "allergen" },
+    "almonds": { "label": { "en": "almonds", "de": "Mandeln" }, "group": "allergen" },
+    "walnuts": { "label": { "en": "walnuts", "de": "Walnüsse" }, "group": "allergen" },
+    "pistachios": { "label": { "en": "pistachios", "de": "Pistazien" }, "group": "allergen" },
+    "cashews": { "label": { "en": "cashews", "de": "Cashewkerne" }, "group": "allergen" },
+    "hazelnuts": { "label": { "en": "hazelnuts", "de": "Haselnüsse" }, "group": "allergen" },
+    "sesame": { "label": { "en": "sesame", "de": "Sesam" }, "group": "allergen" },
+    "mustard": { "label": { "en": "mustard", "de": "Senf" }, "group": "allergen" },
+    "celery": { "label": { "en": "celery", "de": "Sellerie" }, "group": "allergen" },
+    "lupin": { "label": { "en": "lupin", "de": "Lupinen" }, "group": "allergen" },
+    "sulphites": { "label": { "en": "sulphites", "de": "Sulfite" }, "group": "allergen" },
+    "alcohol": { "label": { "en": "alcohol", "de": "Alkohol" }, "group": "other" },
+    "caffeine": { "label": { "en": "caffeine", "de": "Koffein" }, "group": "other" },
+    "added-sugar": { "label": { "en": "added sugar", "de": "Zugesetzter Zucker" }, "group": "other" },
+    "high-fodmap": { "label": { "en": "high-FODMAP", "de": "Hohe FODMAPs" }, "group": "other" },
+    "gelatin-non-halal": { "label": { "en": "gelatin (non-halal)", "de": "Gelatine (nicht halal)" }, "group": "other" },
+    "gelatin-non-kosher": { "label": { "en": "gelatin (non-kosher)", "de": "Gelatine (nicht koscher)" }, "group": "other" },
+    "honey": { "label": { "en": "honey", "de": "Honig" }, "group": "animal" }
+  },
+  "compound_flags": {
+    "vegan": {
+      "label": { "en": "vegan", "de": "vegan" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "egg", "dairy", "lactose-dairy", "honey", "gelatin-non-halal", "gelatin-non-kosher"],
+      "note": { "en": "no animal-derived ingredients at all", "de": "komplett ohne tierische Zutaten" }
+    },
+    "vegetarian": {
+      "label": { "en": "vegetarian", "de": "vegetarisch" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs", "gelatin-non-halal", "gelatin-non-kosher"],
+      "note": { "en": "no meat, no fish — eggs & dairy are fine", "de": "ohne Fleisch und Fisch — Eier & Milchprodukte sind okay" }
+    },
+    "pescatarian": {
+      "label": { "en": "pescatarian", "de": "pescetarisch" },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "gelatin-non-halal", "gelatin-non-kosher"],
+      "note": { "en": "no meat — fish is fine", "de": "ohne Fleisch — Fisch ist okay" }
+    },
+    "halal": {
+      "label": { "en": "halal-compatible", "de": "halal-kompatibel" },
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"],
+      "note": { "en": "no pork, no alcohol — see note in settings", "de": "ohne Schwein und Alkohol — Hinweis in den Einstellungen" }
+    },
+    "kosher": {
+      "label": { "en": "kosher-style", "de": "koscher-stil" },
+      "expands_to": ["pork", "shellfish", "molluscs", "meat-dairy-combo", "gelatin-non-kosher"],
+      "note": { "en": "no pork, no shellfish, no meat-dairy combos", "de": "ohne Schwein, Schalentiere und Fleisch-Milch-Kombis" }
+    },
+    "low-fodmap": {
+      "label": { "en": "low-FODMAP", "de": "low-FODMAP" },
+      "expands_to": ["high-fodmap"],
+      "note": { "en": "gentle on sensitive digestion", "de": "schonend für empfindliche Verdauung" }
+    },
+    "sugar-free": {
+      "label": { "en": "sugar-free", "de": "zuckerfrei" },
+      "expands_to": ["added-sugar"],
+      "note": { "en": "no added sugar", "de": "ohne zugesetzten Zucker" }
+    },
+    "lactose-free": {
+      "label": { "en": "lactose-free", "de": "laktosefrei" },
+      "expands_to": ["lactose-dairy"],
+      "note": { "en": "no milk, cream, yogurt or soft cheese — aged cheese is fine", "de": "ohne Milch, Sahne, Joghurt und Weichkäse — gereifter Käse ist okay" }
+    }
+  },
+  "attributes": {
+    "effort": {
+      "label": { "en": "effort", "de": "Aufwand" },
+      "values": ["easy", "medium", "hard"],
+      "value_labels": {
+        "easy": { "en": "easy", "de": "einfach" },
+        "medium": { "en": "medium", "de": "mittel" },
+        "hard": { "en": "project", "de": "Projekt" }
+      }
+    },
+    "time_bucket": {
+      "label": { "en": "time", "de": "Zeit" },
+      "values": ["<=15", "<=30", "<=60", ">60"],
+      "value_labels": {
+        "<=15": { "en": "≤ 15 min", "de": "≤ 15 Min" },
+        "<=30": { "en": "≤ 30 min", "de": "≤ 30 Min" },
+        "<=60": { "en": "≤ 60 min", "de": "≤ 60 Min" },
+        ">60": { "en": "> 60 min", "de": "> 60 Min" }
+      }
+    },
+    "calorie_bucket": {
+      "label": { "en": "calories", "de": "Kalorien" },
+      "values": ["<=400", "<=600", "<=800", ">800"],
+      "value_labels": {
+        "<=400": { "en": "≤ 400 kcal", "de": "≤ 400 kcal" },
+        "<=600": { "en": "≤ 600 kcal", "de": "≤ 600 kcal" },
+        "<=800": { "en": "≤ 800 kcal", "de": "≤ 800 kcal" },
+        ">800": { "en": "> 800 kcal", "de": "> 800 kcal" }
+      }
+    },
+    "technique": {
+      "label": { "en": "technique", "de": "Technik" },
+      "values": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"],
+      "value_labels": {
+        "bake": { "en": "bake", "de": "backen" },
+        "sauté": { "en": "sauté", "de": "anbraten" },
+        "simmer": { "en": "simmer", "de": "köcheln" },
+        "raw": { "en": "raw", "de": "roh" },
+        "grill": { "en": "grill", "de": "grillen" },
+        "fry": { "en": "fry", "de": "braten" },
+        "steam": { "en": "steam", "de": "dämpfen" },
+        "roast": { "en": "roast", "de": "schmoren" },
+        "pan-fry": { "en": "pan-fry", "de": "pfannbraten" },
+        "deep-fry": { "en": "deep-fry", "de": "frittieren" },
+        "stir-fry": { "en": "stir-fry", "de": "im Wok braten" },
+        "poach": { "en": "poach", "de": "pochieren" },
+        "blanch": { "en": "blanch", "de": "blanchieren" }
+      }
+    }
+  },
+  "diet_labels": {
+    "classic": { "label": { "en": "classic", "de": "klassisch" } },
+    "vegan": { "label": { "en": "vegan", "de": "vegan" }, "compound_flag": "vegan" },
+    "vegetarian": { "label": { "en": "vegetarian", "de": "vegetarisch" }, "compound_flag": "vegetarian" },
+    "pescatarian": { "label": { "en": "pescatarian", "de": "pescetarisch" }, "compound_flag": "pescatarian" },
+    "halal": { "label": { "en": "halal-friendly", "de": "halal-freundlich" }, "compound_flag": "halal" },
+    "kosher": { "label": { "en": "kosher-style", "de": "koscher-stil" }, "compound_flag": "kosher" },
+    "keto": { "label": { "en": "keto", "de": "keto" } },
+    "gluten-free": { "label": { "en": "gluten-free", "de": "glutenfrei" } },
+    "nut-free": { "label": { "en": "nut-free", "de": "nussfrei" } },
+    "lactose-free": { "label": { "en": "lactose-free", "de": "laktosefrei" }, "compound_flag": "lactose-free" },
+    "low-fodmap": { "label": { "en": "low-FODMAP", "de": "low-FODMAP" }, "compound_flag": "low-fodmap" },
+    "sugar-free": { "label": { "en": "sugar-free", "de": "zuckerfrei" }, "compound_flag": "sugar-free" }
+  }
+}

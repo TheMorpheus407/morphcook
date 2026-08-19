@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "faqs": [
+    {
+      "id": "faq-what-is-morphcook",
+      "category": "general",
+      "question": { "en": "what is morphcook?", "de": "was ist morphcook?" },
+      "answer": { "en": "a cookbook where every dish exists in fully-authored versions for different diets. if you're vegan, the döner doesn't disappear — a vegan döner is right there, written completely, not watered down. each variant is its own recipe, designed for you.", "de": "ein kochbuch, in dem jedes gericht in vollständig ausgearbeiteten versionen für verschiedene ernährungsweisen existiert. wenn du vegan lebst, verschwindet der döner nicht — ein veganer döner steht einfach da, komplett geschrieben, keine abschwächung. jede variante ist ein eigenes rezept, für dich gestaltet." },
+      "related_faq_ids": ["faq-variant-switching", "faq-offline"],
+      "related_screen": "home"
+    },
+    {
+      "id": "faq-variant-switching",
+      "category": "recipes",
+      "question": { "en": "how do i switch between variants of a dish?", "de": "wie wechsle ich zwischen varianten eines gerichts?" },
+      "answer": { "en": "on any dish page you'll find one row per dimension — diet, effort, calories. each row shows your current variant; tap it to reveal the alternatives. if a combination doesn't exist yet (say vegan × pro effort), it appears disabled with a note instead of vanishing.", "de": "auf jeder gerichtseite gibt es eine zeile pro dimension — ernährung, aufwand, kalorien. jede zeile zeigt deine aktuelle variante; tippe sie an, um die alternativen zu sehen. existiert eine kombination noch nicht (etwa vegan × pro-aufwand), erscheint sie deaktiviert mit hinweis statt zu verschwinden." },
+      "related_faq_ids": ["faq-why-missing-variant"],
+      "related_screen": "dish"
+    },
+    {
+      "id": "faq-why-missing-variant",
+      "category": "recipes",
+      "question": { "en": "why is a variant grayed out?", "de": "warum ist eine variante ausgegraut?" },
+      "answer": { "en": "grayed-out combinations mean no fully-authored recipe exists for that exact mix yet — for example a keto × halal version of a dish. we don't auto-substitute or half-adapt; when a variant exists, it was written and reviewed as a complete recipe.", "de": "ausgegraute kombinationen bedeuten, dass es für genau diese mischung noch kein vollständig ausgearbeitetes rezept gibt — etwa eine keto-×-halal-version eines gerichts. wir ersetzen nicht automatisch und improvisieren nicht halb; existiert eine variante, wurde sie als komplettes rezept geschrieben und geprüft." },
+      "related_faq_ids": ["faq-request-recipe"],
+      "related_screen": "dish"
+    },
+    {
+      "id": "faq-recipe-not-visible",
+      "category": "matching",
+      "question": { "en": "why don't i see a recipe my friend sees?", "de": "warum sehe ich ein rezept nicht, das meine freundin sieht?" },
+      "answer": { "en": "your profile filters what you see: avoided ingredients, required attributes (like halal), your time budget and calorie target all apply. the recipe isn't gone — a version of the dish that fits you is shown instead, or the recipe is temporarily out of your calorie window. on a dish page you can toggle 'show versions outside my calorie target' to peek at the others.", "de": "dein profil filtert, was du siehst: vermiedene zutaten, erforderliche attribute (wie halal), dein zeitbudget und dein kalorienziel gelten überall. das rezept ist nicht weg — stattdessen wird eine version des gerichts gezeigt, die zu dir passt, oder sie liegt gerade außerhalb deines kalorienfensters. auf der gerichtseite kannst du 'versionen außerhalb meines kalorienziels zeigen' einschalten, um die anderen zu sehen." },
+      "related_faq_ids": ["faq-how-matching-works", "faq-calorie-target"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-how-matching-works",
+      "category": "matching",
+      "question": { "en": "how does the dietary matching work?", "de": "wie funktioniert die ernährungs-abstimmung?" },
+      "answer": { "en": "every recipe carries flags for what it contains (pork, dairy, gluten, nuts…). your profile carries what you avoid. a recipe is shown when its contains-flags and your avoid-flags have nothing in common — and none of your specifically avoided ingredients appear. it's simple set logic, applied honestly and always offline.", "de": "jedes rezept trägt flags dafür, was es enthält (schwein, milch, gluten, nüsse …). dein profil trägt, was du meidest. ein rezept wird gezeigt, wenn seine enthält-flags und deine vermeide-flags nichts gemeinsam haben — und keine deiner gezielt vermiedenen zutaten vorkommt. das ist einfache mengenlogik, ehrlich angewandt und immer offline." },
+      "related_faq_ids": ["faq-avoid-specific-ingredient"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-avoid-specific-ingredient",
+      "category": "matching",
+      "question": { "en": "can i avoid a single ingredient, like cilantro?", "de": "kann ich eine einzelne zutat meiden, etwa koriandergrün?" },
+      "answer": { "en": "yes. in settings → 'avoid specific ingredients' you can search the ingredient dictionary and pick any level — 'nuts' excludes everything under it, 'walnuts' excludes only walnuts. avoidance on a parent automatically covers all its children.", "de": "ja. unter einstellungen → 'einzelne zutaten meiden' kannst du das zutatenverzeichnis durchsuchen und jede ebene wählen — 'nüsse' schließt alles darunter aus, 'walnüsse' nur walnüsse. eine vermeidung auf einer übergeordneten kategorie deckt automatisch alle kinder ab." },
+      "related_faq_ids": ["faq-how-matching-works"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-calorie-target",
+      "category": "matching",
+      "question": { "en": "what does the calorie target do?", "de": "was macht das kalorienziel?" },
+      "answer": { "en": "it's a hard filter: recipes far outside your per-meal target are hidden. but every dish page has an override switch — 'show versions outside my target' — because hunger doesn't respect arithmetic. the tolerance is generous by design.", "de": "es ist ein hartfilter: rezepte weit außerhalb deines mahlzeitenziels werden ausgeblendet. aber jede gerichtseite hat einen schalter — 'versionen außerhalb meines ziels zeigen' — weil hunger keine mathematik respektiert. die toleranz ist bewusst großzügig." },
+      "related_faq_ids": ["faq-recipe-not-visible"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-halal-kosher",
+      "category": "matching",
+      "question": { "en": "what does halal-friendly / kosher-style actually mean?", "de": "was bedeutet halal-freundlich / koscher-stil eigentlich?" },
+      "answer": { "en": "it means the recipe uses halal-compatible (or kosher-style) ingredients: no pork, no alcohol, no non-halal gelatin — and for kosher-style, no shellfish and no meat-dairy combinations. it does NOT mean certified. certification is a property of sourcing and supervision, not of a recipe text. buy your meat from a butcher you trust.", "de": "es bedeutet, dass das rezept halal-kompatible (bzw. koscher-stil-)zutaten verwendet: kein schwein, kein alkohol, keine nicht-halal-gelatine — bei koscher-stil zusätzlich keine schalentiere und keine fleisch-milch-kombinationen. es bedeutet NICHT zertifiziert. zertifizierung ist eine eigenschaft der beschaffung und aufsicht, nicht eines rezepttextes. kauf fleisch bei einem metzger, dem du vertraust." },
+      "related_faq_ids": ["faq-how-matching-works"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-time-budget",
+      "category": "matching",
+      "question": { "en": "how does the time budget filter work?", "de": "wie funktioniert der zeitbudget-filter?" },
+      "answer": { "en": "you set a maximum active time in your profile; recipes that take longer are hidden. the time shown is honest active time — soaking chickpeas overnight doesn't count against you, only the minutes you actually stand at the stove.", "de": "du setzt eine maximale aktive zeit im profil; längere rezepte werden ausgeblendet. die angegebene zeit ist ehrliche aktivzeit — kichererbsen über nacht einweichen zählt nicht, nur die minuten, in denen du wirklich am herd stehst." },
+      "related_faq_ids": ["faq-calorie-target"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-offline",
+      "category": "general",
+      "question": { "en": "does morphcook need an internet connection?", "de": "braucht morphcook eine internetverbindung?" },
+      "answer": { "en": "no. everything — all recipes, your saved cookbook, meal plans, shopping lists — lives on your device. no account, no cloud, no telemetry. the only network the app ever touches is when you tap a legal or store link.", "de": "nein. alles — alle rezepte, dein gespeichertes kochbuch, wochenpläne, einkaufslisten — lebt auf deinem gerät. kein konto, keine cloud, keine telemetrie. das einzige netz, das die app je berührt, ist ein rechts- oder store-link, den du selbst antippst." },
+      "related_faq_ids": ["faq-backup"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-backup",
+      "category": "troubleshooting",
+      "question": { "en": "how do i back up my data?", "de": "wie sichere ich meine daten?" },
+      "answer": { "en": "settings → backup & restore. the app writes two files — a readable json and a compressed .gz — and hands them to the share sheet so you can save them anywhere. you can protect the json with a password (AES-256 encryption). importing recognizes both formats automatically; encrypted files will ask for the password.", "de": "einstellungen → backup & wiederherstellung. die app schreibt zwei dateien — ein lesbares json und ein komprimiertes .gz — und übergibt sie ans teilen-menü, damit du sie überall speichern kannst. du kannst das json mit einem passwort schützen (AES-256-verschlüsselung). der import erkennt beide formate automatisch; verschlüsselte dateien fragen nach dem passwort." },
+      "related_faq_ids": ["faq-backup-failed", "faq-offline"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-backup-failed",
+      "category": "troubleshooting",
+      "question": { "en": "the import says my backup is encrypted or corrupted", "de": "der import sagt, mein backup sei verschlüsselt oder beschädigt" },
+      "answer": { "en": "three possibilities: wrong password (try again, carefully), corrupted file (transfer it again — messenger apps sometimes truncate attachments), or not a morphcook backup at all. encrypted backups start with the marker 'ENC'; .gz files start with their own compression signature. if the password is lost, the data is lost — we can't recover it, nobody can.", "de": "drei möglichkeiten: falsches passwort (nochmal, in ruft), beschädigte datei (nochmal übertragen — messenger kürzen anhänge manchmal) oder gar kein morphcook-backup. verschlüsselte backups beginnen mit der kennung 'ENC'; .gz-dateien mit ihrer eigenen signatur. ist das passwort verloren, sind die daten verloren — wir können es nicht wiederherstellen, niemand kann es." },
+      "related_faq_ids": ["faq-backup"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-cook-mode",
+      "category": "features",
+      "question": { "en": "what is cook mode?", "de": "was ist der kochmodus?" },
+      "answer": { "en": "a full-screen, dark, step-by-step view: one step at a time, built-in timers where a step has a duration, a servings scaler that rescales the ingredient list, and prev/next navigation. your progress persists — if the phone rings mid-recipe, you come back to the same step. there's also a flash alert option when a timer ends, for when you can't hear the ping.", "de": "eine vollbild-dunkle schritt-für-schritt-ansicht: ein schritt nach dem anderen, eingebaute timer, wo ein schritt eine dauer hat, ein portionen-regler der zutatenliste neu rechnet, sowie vor/zurück. dein fortschritt bleibt erhalten — klingelt das handy mitten im rezept, stehst du beim zurückkehren vor demselben schritt. es gibt auch eine blitz-alarm-option für timer-ende, falls du den ping nicht hörst." },
+      "related_faq_ids": ["faq-quick-tap"],
+      "related_screen": "dish"
+    },
+    {
+      "id": "faq-quick-tap",
+      "category": "features",
+      "question": { "en": "what is quick-tap in cook mode?", "de": "was ist quick-tap im kochmodus?" },
+      "answer": { "en": "an optional one-handed mode: with it on, a single tap anywhere on the step text jumps to the next step (with a small vibration). a 300 ms debounce protects against double-triggering. you can switch it on in settings under cook mode; it respects your reduced-motion preference.", "de": "ein optionaler einhand-modus: ist er an, springt ein einfacher tipp auf den schritttext zum nächsten schritt (mit kurzem vibration). eine 300-ms-entprellung schützt vor doppel-auslösung. einschaltbar in den einstellungen unter kochmodus; er respektiert die einstellung für weniger animationen." },
+      "related_faq_ids": ["faq-cook-mode"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-shopping-list",
+      "category": "features",
+      "question": { "en": "how does the smart shopping list aggregate?", "de": "wie fasst die smarte einkaufsliste zusammen?" },
+      "answer": { "en": "add any saved recipe (or a whole week from the meal plan) and ingredients combine intelligently: 2 cloves + 3 cloves become 5 cloves, 200 ml + 3 tbsp become 250 ml when the units are convertible. everything is grouped by supermarket aisle, and you can check items off and clear the list when the week is over.", "de": "füge ein gespeichertes rezept (oder eine ganze woche aus dem wochenplan) hinzu, und zutaten vereinen sich klug: 2 zehen + 3 zehen werden 5 zehen, 200 ml + 3 el werden 250 ml, wenn die einheiten umrechenbar sind. alles wird nach supermarkt-abteilung gruppiert, einträge lassen sich abhaken und die liste am wochenende leeren." },
+      "related_faq_ids": ["faq-meal-plan"],
+      "related_screen": "shopping"
+    },
+    {
+      "id": "faq-meal-plan",
+      "category": "features",
+      "question": { "en": "how does meal planning work?", "de": "wie funktioniert der wochenplan?" },
+      "answer": { "en": "a simple weekly grid: mon–sun × breakfast/lunch/dinner. tap an empty slot to assign a recipe from your cookbook or search results; drag a filled slot to another day or meal. the 'add week to shopping list' button exports everything at once.", "de": "ein einfaches wochenraster: mo–so × frühstück/mittag/abendessen. tippe auf ein leeres feld, um ein rezept aus dem kochbuch oder der suche zuzuweisen; ziehe ein gefülltes feld auf einen anderen tag oder eine andere mahlzeit. der knopf 'woche zur einkaufsliste' exportiert alles auf einmal." },
+      "related_faq_ids": ["faq-shopping-list"],
+      "related_screen": "meal-plan"
+    },
+    {
+      "id": "faq-save-variant",
+      "category": "features",
+      "question": { "en": "what exactly do i save when i save a recipe?", "de": "was genau speichere ich, wenn ich ein rezept speichere?" },
+      "answer": { "en": "the exact variant — the specific recipe id, not just the dish. you save YOUR döner: the vegan one with the cashew sauce, exactly as written, at the effort level you chose. switch variants again and save again, and you'll have both in your cookbook.", "de": "die exakte variante — die konkrete rezept-id, nicht nur das gericht. du speicherst DEINEN döner: den veganen mit der cashewsoße, genau wie geschrieben, auf der stufe, die du gewählt hast. wechsle erneut und speichere nochmal — dann hast du beide im kochbuch." },
+      "related_faq_ids": ["faq-variant-switching"],
+      "related_screen": "cookbook"
+    },
+    {
+      "id": "faq-insights",
+      "category": "features",
+      "question": { "en": "what are shopping insights?", "de": "was sind einkaufs-insights?" },
+      "answer": { "en": "a small analytics page in settings: how many unique ingredients you've shopped (your variety score), which ingredients you add most often, and how your shopping distributes across the months. everything computed on-device from your own list history.", "de": "eine kleine analyse-seite in den einstellungen: wie viele verschiedene zutaten du eingekauft hast (dein abwechslungswert), welche zutaten du am häufigsten hinzufügst und wie sich dein einkauf über die monate verteilt. alles auf dem gerät aus deiner eigenen listen-historie berechnet." },
+      "related_faq_ids": ["faq-shopping-list"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-language",
+      "category": "general",
+      "question": { "en": "can i change the app language?", "de": "kann ich die app-sprache wechseln?" },
+      "answer": { "en": "yes — settings → language, between english and deutsch. the switch applies immediately, everywhere, including recipe texts (they're natively bilingual). more languages can be added without any update drama; the data model is ready.", "de": "ja — einstellungen → sprache, zwischen english und deutsch. der wechsel gilt sofort und überall, auch für die rezepte (sie sind von haus aus zweisprachig). weitere sprachen lassen sich ohne update-drama ergänzen; das datenmodell ist bereit." },
+      "related_faq_ids": [],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-no-photos",
+      "category": "general",
+      "question": { "en": "why are there no photos of the dishes?", "de": "warum gibt es keine fotos der gerichte?" },
+      "answer": { "en": "the striped illustrations are the design, not a placeholder for something better. a hand-drawn cookbook look travels well across diets and decades — the vegan döner gets the same loving stripes as the classic.", "de": "die gestreiften illustrationen sind das design, kein platzhalter für etwas besseres. der look eines handgezeichneten kochbuchs funktioniert über ernährungsweisen und jahrzehnte hinweg — der vegane döner bekommt dieselben liebevollen streifen wie der klassische." },
+      "related_faq_ids": [],
+      "related_screen": "home"
+    },
+    {
+      "id": "faq-request-recipe",
+      "category": "troubleshooting",
+      "question": { "en": "i searched for a dish and found nothing", "de": "ich habe ein gericht gesucht und nichts gefunden" },
+      "answer": { "en": "two possibilities: the dish isn't in the corpus yet, or your profile filters hide it. check by loosening filters in settings temporarily (raise the time budget, widen the calorie target). if it's genuinely missing, the search was noted anonymously in your local content-requests list — export your backup and send it to us; those queries decide what gets written next.", "de": "zwei möglichkeiten: das gericht ist noch nicht im bestand, oder deine profilfilter verbergen es. prüfe es, indem du die filter in den einstellungen vorübergehend lockerst (zeitbudget erhöhen, kalorienziel weiten). fehlt es wirklich, wurde die suche anonym in deiner lokalen wunschliste vermerkt — exportiere dein backup und schick es uns; diese suchanfragen entscheiden, was als nächstes geschrieben wird." },
+      "related_faq_ids": ["faq-recipe-not-visible", "faq-backup"],
+      "related_screen": "search"
+    },
+    {
+      "id": "faq-storage",
+      "category": "troubleshooting",
+      "question": { "en": "where is my data stored?", "de": "wo werden meine daten gespeichert?" },
+      "answer": { "en": "entirely on your device: profile in the app's preferences storage, saved recipes / history / meal plans / shopping lists in a local database. uninstalling the app removes everything — which is why the backup button exists. nothing is ever sent anywhere.", "de": "vollständig auf deinem gerät: das profil im einstellungsspeicher der app, gespeicherte rezepte / historie / wochenpläne / einkaufslisten in einer lokalen datenbank. beim deinstallieren verschwindet alles — deshalb gibt es den backup-knopf. nichts wird je irgendwohin gesendet." },
+      "related_faq_ids": ["faq-backup", "faq-offline"],
+      "related_screen": "settings"
+    },
+    {
+      "id": "faq-add-recipes",
+      "category": "recipes",
+      "question": { "en": "can i add my own recipes?", "de": "kann ich eigene rezepte hinzufügen?" },
+      "answer": { "en": "not in v1 — the corpus ships with app updates so every recipe is human-reviewed and fully flagged. your personal corner is the cookbook: save exactly your variants and they're always one tap away.", "de": "nicht in v1 — der bestand kommt mit app-updates, damit jedes rezept von menschen geprüft und vollständig geflaggt ist. deine persönliche ecke ist das kochbuch: speichere genau deine varianten, und sie sind immer einen tipp entfernt." },
+      "related_faq_ids": ["faq-save-variant"],
+      "related_screen": "cookbook"
+    }
+  ]
+}

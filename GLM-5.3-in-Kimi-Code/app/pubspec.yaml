@@ -1,0 +1,58 @@
+name: morphcook
+description: "MorphCook — the same dish exists for every body. Offline cookbook with fully-authored variants."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  file_picker: ^12.0.0
+  hive_ce: ^2.19.3
+  hive_ce_flutter: ^2.3.4
+  path_provider: ^2.1.6
+  pointycastle: ^4.0.0
+  provider: ^6.1.5+1
+  share_plus: ^13.3.0
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ">=5.0.0 <7.0.0"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/partition-manifest.json
+    - assets/core-recipes.json
+    - assets/extended-recipes.json
+    - assets/cuisine-italian.json
+    - assets/cuisine-asian.json
+    - assets/cuisine-middle-eastern.json
+    - assets/dishes.json
+    - assets/ontology.json
+    - assets/ingredients.json
+    - assets/ingredient-guide.json
+    - assets/faqs.json
+
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay.ttf
+          weight: 400
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          style: italic
+          weight: 400
+    - family: JetBrains Mono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono.ttf
+          weight: 400
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat.ttf
+          weight: 400

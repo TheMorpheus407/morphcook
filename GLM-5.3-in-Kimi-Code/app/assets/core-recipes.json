@@ -1,0 +1,4513 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "classic fettuccine alfredo",
+        "de": "klassische fettuccine alfredo"
+      },
+      "subtitle": {
+        "en": "cream, butter & parmesan — no apologies",
+        "de": "sahne, butter & parmesan — ohne entschuldigungen"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 780,
+      "macros": {
+        "protein": 24,
+        "carbs": 76,
+        "fat": 40
+      },
+      "contains": [
+        "gluten",
+        "dairy",
+        "lactose-dairy"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pasta",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "fettuccine",
+            "de": "fettuccine"
+          }
+        },
+        {
+          "id": "cream",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "amount": 70,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil the fettuccine in well-salted water until just shy of done. reserve a mug of pasta water.",
+            "de": "fettuccine in reichlich gesalzenem wasser kochen, bis sie fast fertig sind. eine tasse nudelwasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt the butter, add the cream, simmer gently for 3 minutes — do not boil it into submission.",
+            "de": "butter schmelzen, sahne zugeben, 3 minuten sanft köcheln — nicht kochend erziehen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss the drained pasta in the sauce with the parmesan, splashing pasta water until it turns glossy.",
+            "de": "die abgegossenen nudeln mit dem parmesan in die soße geben, mit nudelwasser glänzend schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "nutmeg, a wall of black pepper, serve immediately. alfredo waits for no one.",
+            "de": "muskat, eine mauer schwarzen pfeffers, sofort servieren. alfredo wartet auf niemanden."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the sauce tightens as it sits — take the pan off heat a shade before it looks perfect.",
+          "de": "die soße zieht nach — nimm die pfanne vom feuer, bevor sie perfekt aussieht."
+        }
+      ]
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "vegan alfredo",
+        "de": "vegane alfredo"
+      },
+      "subtitle": {
+        "en": "cashew cream & olive oil, same golden coat",
+        "de": "cashewsahne & olivenöl, derselbe goldene mantel"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "easy",
+      "calories_per_serving": 690,
+      "macros": {
+        "protein": 21,
+        "carbs": 92,
+        "fat": 26
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pasta",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "fettuccine",
+            "de": "fettuccine"
+          }
+        },
+        {
+          "id": "cashews",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "nutritional-yeast",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water.",
+            "de": "cashews in heißem wasser einweichen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "boil the fettuccine, reserve a mug of pasta water.",
+            "de": "fettuccine kochen, eine tasse nudelwasser aufheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "blend cashews, nutritional yeast, garlic, lemon juice, oil, salt and 150 ml water until completely smooth — grit is betrayal.",
+            "de": "cashews, hefeflocken, knoblauch, zitronensaft, öl, salz und 150 ml wasser völlig glatt mixen — sand ist verrat."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the sauce in the pan, toss with pasta and pasta water until each strand is coated.",
+            "de": "soße in der pfanne erwärmen, mit nudeln und nudelwasser schwenken, bis jeder strang glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "nutmeg, pepper, serve. no one will ask what's missing.",
+            "de": "muskat, pfeffer, servieren. niemand fragt, was fehlt."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "10 minutes in just-boiled water softens cashews as well as an overnight soak.",
+          "de": "zehn minuten in kochendem wasser weichen cashews so gut wie eine übernacht-einweichung."
+        }
+      ]
+    },
+    {
+      "id": "alfredo-glutenfrei",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "gluten-free alfredo",
+        "de": "glutenfreie alfredo"
+      },
+      "subtitle": {
+        "en": "corn-rice fettuccine, untouched sauce",
+        "de": "mais-reis-fettuccine, unangetastete soße"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 750,
+      "macros": {
+        "protein": 22,
+        "carbs": 80,
+        "fat": 35
+      },
+      "contains": [
+        "dairy",
+        "lactose-dairy"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pasta-glutenfrei",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "gluten-free fettuccine (corn/rice)",
+            "de": "glutenfreie fettuccine (mais/reis)"
+          }
+        },
+        {
+          "id": "cream",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "amount": 70,
+          "unit": "g",
+          "note": {
+            "en": "check label for gluten-free certification",
+            "de": "etikett auf glutenfrei prüfen"
+          }
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook the gluten-free fettuccine a minute shorter than the package claims — it overcooks with enthusiasm.",
+            "de": "glutenfreie fettuccine eine minute kürzer kochen als die packung behauptet — sie kocht mit überzeugung zu weit."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "simmer cream and butter gently for 3 minutes.",
+            "de": "sahne und butter 3 minuten sanft köcheln."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "toss pasta, parmesan and splashes of pasta water into a glossy sauce. gluten-free pasta water is starchier — go slow.",
+            "de": "nudeln, parmesan und schluckweise nudelwasser zu einer glänzenden soße schwenken. glutenfreies nudelwasser ist stärkehaltiger — langsam rangehen."
+          }
+        },
+        {
+          "text": {
+            "en": "nutmeg, pepper, plate immediately.",
+            "de": "muskat, pfeffer, sofort anrichten."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "stir gf pasta while boiling — it welds itself to the pot bottom out of spite.",
+          "de": "glutenfreie nudeln beim kochen rühren — sie verschweißen sich aus trotz mit dem topfboden."
+        }
+      ]
+    },
+    {
+      "id": "alfredo-lactosefrei",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "lactose-free alfredo",
+        "de": "laktosefreie alfredo"
+      },
+      "subtitle": {
+        "en": "the roman original: butter & aged parmesan, no cream at all",
+        "de": "das römische original: butter & gereifter parmesan, ganz ohne sahne"
+      },
+      "diet": "lactose-free",
+      "servings": 2,
+      "time_minutes": 20,
+      "effort": "easy",
+      "calories_per_serving": 720,
+      "macros": {
+        "protein": 25,
+        "carbs": 74,
+        "fat": 37
+      },
+      "contains": [
+        "gluten",
+        "dairy"
+      ],
+      "attributes": {
+        "techniques": [
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pasta",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "fettuccine",
+            "de": "fettuccine"
+          }
+        },
+        {
+          "id": "butter",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "or ghee — virtually lactose-free",
+            "de": "oder butterschmalz — praktisch laktosefrei"
+          }
+        },
+        {
+          "id": "parmesan",
+          "amount": 90,
+          "unit": "g",
+          "note": {
+            "en": "aged 24+ months, naturally low in lactose",
+            "de": "24+ monate gereift, natürlich laktosearm"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "boil the pasta. save a full mug of starchy water — this version lives on it.",
+            "de": "nudeln kochen. eine volle tasse stärkehaltiges wasser aufheben — diese version lebt davon."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "melt the butter in a wide pan until it foams but does not brown.",
+            "de": "butter in einer weiten pfanne schmelzen, bis sie schäumt, aber nicht bräunt."
+          }
+        },
+        {
+          "text": {
+            "en": "add pasta, parmesan and pasta water bit by bit, tossing hard — the emulsion IS the sauce.",
+            "de": "nudeln, parmesan und nach und nach nudelwasser zugeben, kräftig schwenken — die emulsion IST die soße."
+          }
+        },
+        {
+          "text": {
+            "en": "aggressive black pepper. rome approves.",
+            "de": "aggressiv schwarzer pfeffer. rom nickt."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "aged cheese and ghee carry almost no lactose — that's why this variant can taste like the original.",
+          "de": "gereifter käse und butterschmalz enthalten fast keine laktose — deshalb schmeckt diese variante wie das original."
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "classic pad thai",
+        "de": "klassisches pad thai"
+      },
+      "subtitle": {
+        "en": "shrimp, egg & tamarind — the wok original",
+        "de": "garnelen, ei & tamarinde — das wok-original"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "medium",
+      "calories_per_serving": 640,
+      "macros": {
+        "protein": 28,
+        "carbs": 76,
+        "fat": 22
+      },
+      "contains": [
+        "fish",
+        "shellfish",
+        "egg",
+        "peanuts",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the rice noodles in warm water until bendable but still firm — they finish in the wok.",
+            "de": "reisnudeln in warmem wasser einweichen, bis sie biegsam, aber noch fest sind — sie garen in der wok."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "stir tamarind, sugar and fish sauce into a sauce that tastes like a polite argument between sweet, sour and salty.",
+            "de": "tamarinde, zucker und fischsauce zu einer soße verrühren, die wie ein höflicher streit zwischen süß, sauer und salzig schmeckt."
+          }
+        },
+        {
+          "text": {
+            "en": "fry garlic and shallot in hot oil for 30 seconds — fragrance, not color.",
+            "de": "knoblauch und schalotte in heißem öl 30 sekunden braten — duft, nicht farbe."
+          },
+          "timer_seconds": 30
+        },
+        {
+          "text": {
+            "en": "add shrimp, then push aside and scramble the eggs in the same pan. everything may share the wok; nothing may leave it.",
+            "de": "garnelen zugeben, beiseite schieben und die eier in derselben pfanne rühren. alles darf die wok teilen; nichts darf sie verlassen."
+          }
+        },
+        {
+          "text": {
+            "en": "noodles in, sauce over, toss constantly for 2 minutes until glossy and tangled.",
+            "de": "nudeln rein, soße drüber, 2 minuten ständig schwenken, bis alles glänzt und verfilzt."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "off heat: bean sprouts, scallions, half the peanuts, crushed. lime wedge on the side. eat immediately.",
+            "de": "vom feuer: bohnensprossen, frühlingszwiebeln, die hälfte der erdnüsse, grob gestoßen. limettenspalte dazu. sofort essen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "mise en place first — the wok gives you no time to measure once it's hot.",
+          "de": "erst alles bereitstellen — die wok gibt dir keine zeit zum abmessen, sobald sie heiß ist."
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "vegan pad thai",
+        "de": "veganes pad thai"
+      },
+      "subtitle": {
+        "en": "smoky tofu, tamari, tamarind — street stall energy",
+        "de": "geräucherter tofu, tamari, tamarinde — imbiss-energie"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 35,
+      "effort": "medium",
+      "calories_per_serving": 620,
+      "macros": {
+        "protein": 24,
+        "carbs": 80,
+        "fat": 19
+      },
+      "contains": [
+        "soy",
+        "peanuts",
+        "added-sugar",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "smoked, firm",
+            "de": "geräuchert, fest"
+          }
+        },
+        {
+          "id": "tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "sesame-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the rice noodles until bendable but firm.",
+            "de": "reisnudeln einweichen, bis sie biegsam, aber fest sind."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "cube the tofu and fry it in a hot dry pan until the edges are properly browned. set aside.",
+            "de": "tofu würfeln und in der heißen pfanne braten, bis die kanten richtig braun sind. beiseite stellen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "sauce: tamarind, sugar, tamari. taste and adjust — it should be louder than feels reasonable.",
+            "de": "soße: tamarinde, zucker, tamari. probieren und nachjustieren — sie darf lauter sein, als sich vernünftig anfühlt."
+          }
+        },
+        {
+          "text": {
+            "en": "fry garlic and shallot, add noodles and sauce, toss hard.",
+            "de": "knoblauch und schalotte braten, nudeln und soße zugeben, kräftig schwenken."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "fold in the tofu, sprouts, scallions. crush the peanuts over the top. lime. done.",
+            "de": "tofu, sprossen und frühlingszwiebeln unterheben. erdnüsse darüber bröseln. limette. fertig."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "tamari keeps this gluten-free and wheat-free without losing the soy depth.",
+          "de": "tamari hält das gericht gluten- und weizenfrei, ohne die soja-tiefe zu verlieren."
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-glutenfrei",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "gluten-free pad thai",
+        "de": "glutenfreies pad thai"
+      },
+      "subtitle": {
+        "en": "chicken & tamari — the wok classic, sauce-checked",
+        "de": "hähnchen & tamari — der wok-klassiker, soße geprüft"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "medium",
+      "calories_per_serving": 660,
+      "macros": {
+        "protein": 32,
+        "carbs": 74,
+        "fat": 23
+      },
+      "contains": [
+        "poultry",
+        "fish",
+        "egg",
+        "peanuts",
+        "soy",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "stir-fry",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-breast",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "amount": 1,
+          "unit": "tbsp",
+          "note": {
+            "en": "check label — should be gluten-free",
+            "de": "etikett prüfen — sollte glutenfrei sein"
+          }
+        },
+        {
+          "id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "peanuts",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the noodles until bendable. slice the chicken thin.",
+            "de": "nudeln einweichen, bis sie biegsam sind. hähnchen dünn schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "sauce: tamarind, sugar, tamari, fish sauce (label-checked).",
+            "de": "soße: tamarinde, zucker, tamari, fischsauce (etikett geprüft)."
+          }
+        },
+        {
+          "text": {
+            "en": "stir-fry chicken until just done, push aside, scramble the eggs.",
+            "de": "hähnchen im wok garen, beiseite schieben, eier rühren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "garlic and shallot in, noodles and sauce in, toss toss toss.",
+            "de": "knoblauch und schalotte rein, nudeln und soße rein, schwenken schwenken schwenken."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "sprouts, scallions, crushed peanuts, lime. the wok has spoken.",
+            "de": "sprossen, frühlingszwiebeln, gestoßene erdnüsse, limette. die wok hat gesprochen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "rice noodles, tamarind and sugar are naturally gluten-free — only the sauces ever betray you.",
+          "de": "reisnudeln, tamarinde und zucker sind von natur aus glutenfrei — nur die saucen verraten dich."
+        }
+      ]
+    },
+    {
+      "id": "pancakes-classic",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "classic fluffy pancakes",
+        "de": "klassische fluffige pancakes"
+      },
+      "subtitle": {
+        "en": "buttermilk tall-boys with maple",
+        "de": "buttermilch-hochhäuser mit ahorn"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 490,
+      "macros": {
+        "protein": 16,
+        "carbs": 62,
+        "fat": 20
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy",
+        "lactose-dairy",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "fry"
+        ],
+        "meal_type": "breakfast"
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "buttermilk",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g",
+          "note": {
+            "en": "melted, plus more for the pan",
+            "de": "geschmolzen, plus mehr für die pfanne"
+          }
+        },
+        {
+          "id": "sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "whisk flour, sugar, baking powder, salt. in another bowl: buttermilk, egg, melted butter.",
+            "de": "mehl, zucker, backpulver, salz verrühren. in einer anderen schale: buttermilch, ei, geschmolzene butter."
+          }
+        },
+        {
+          "text": {
+            "en": "mix wet into dry until just combined — lumps are passengers, not enemies. rest the batter.",
+            "de": "feuchtes zu trockenem mischen, nur eben verbunden — klümpchen sind mitfahrer, keine feinde. teig ruhen lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "ladle into a buttered pan on medium heat. flip when bubbles pop and hold their craters.",
+            "de": "in die gebutterte pfanne bei mittlerer hitze geben. wenden, wenn blasen platzen und krater bleiben."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "stack tall, drown in maple syrup, defend against household thieves.",
+            "de": "hoch stapeln, in ahornsirup ertränken, gegen haushaltsdiebe verteidigen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "don't stir away the lumps — overmixed batter makes flat, chewy pancakes.",
+          "de": "klümpchen nicht wegrühren — übermischter teig macht flache, zähe pancakes."
+        }
+      ]
+    },
+    {
+      "id": "pancakes-vegan",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "vegan pancakes",
+        "de": "vegane pancakes"
+      },
+      "subtitle": {
+        "en": "oat milk & a sneaky dash of vinegar for the fluff",
+        "de": "haferdrink & ein hinterhältiger schuss essig für den fluff"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 450,
+      "macros": {
+        "protein": 11,
+        "carbs": 74,
+        "fat": 12
+      },
+      "contains": [
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "fry"
+        ],
+        "meal_type": "breakfast"
+      },
+      "ingredients": [
+        {
+          "id": "flour",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "id": "vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "stir the vinegar into the oat milk and let it curdle proudly for 5 minutes — that's your buttermilk.",
+            "de": "essig in den haferdrink rühren und 5 minuten stolz gerinnen lassen — das ist deine buttermilch."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "mix dry ingredients, add the curdled milk and oil, stir until just combined.",
+            "de": "trockene zutaten mischen, die geronnene milch und das öl zugeben, nur eben verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "fry on medium heat, flip when the surface loses its shine.",
+            "de": "bei mittlerer hitze braten, wenden, wenn die oberfläche den glanz verliert."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "stack, maple, repeat until sunday feels complete.",
+            "de": "stapeln, ahorn, wiederholen, bis der sonntag sich komplett anfühlt."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the vinegar trick replaces both egg and buttermilk — chemistry eats breakfast too.",
+          "de": "der essig-trick ersetzt ei und buttermilch — chemie frühstückt auch."
+        }
+      ]
+    },
+    {
+      "id": "pancakes-glutenfrei",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "gluten-free pancakes",
+        "de": "glutenfreie pancakes"
+      },
+      "subtitle": {
+        "en": "certified oats, blended into flour",
+        "de": "zertifizierter hafer, zu mehl gemahlen"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 20,
+      "effort": "easy",
+      "calories_per_serving": 470,
+      "macros": {
+        "protein": 17,
+        "carbs": 58,
+        "fat": 19
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "lactose-dairy",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "fry"
+        ],
+        "meal_type": "breakfast"
+      },
+      "ingredients": [
+        {
+          "id": "oats",
+          "amount": 180,
+          "unit": "g",
+          "note": {
+            "en": "certified gluten-free",
+            "de": "zertifiziert glutenfrei"
+          }
+        },
+        {
+          "id": "whole-milk",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "blend the oats into a coarse flour — 30 seconds is enough.",
+            "de": "hafer zu grobem mehl mixen — 30 sekunden genügen."
+          },
+          "timer_seconds": 30
+        },
+        {
+          "text": {
+            "en": "mix with the other dry ingredients, then milk, egg, melted butter. rest 10 minutes — oat batter thickens as it pleases.",
+            "de": "mit den anderen trockenen zutaten mischen, dann milch, ei, geschmolzene butter. 10 minuten ruhen lassen — hafer teig verdickt sich, wie er will."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fry in butter until the edges look dry, flip once, be gentle — oat pancakes are romantics.",
+            "de": "in butter braten, bis die ränder trocken wirken, einmal vorsichtig wenden — hafer-pancakes sind romantiker."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "maple syrup. berries if you're feeling fancy.",
+            "de": "ahornsirup. beeren, wenn du fancy sein willst."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "only certified gluten-free oats count — regular oats share mills with wheat.",
+          "de": "nur zertifiziert glutenfreier hafer zählt — normaler hafer teilt sich mühlen mit weizen."
+        }
+      ]
+    },
+    {
+      "id": "pancakes-lowfodmap",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "low-FODMAP pancakes",
+        "de": "low-FODMAP-pancakes"
+      },
+      "subtitle": {
+        "en": "gentle oats, maple, blueberries",
+        "de": "sanfter hafer, ahorn, blaubeeren"
+      },
+      "diet": "low-fodmap",
+      "servings": 2,
+      "time_minutes": 20,
+      "effort": "easy",
+      "calories_per_serving": 430,
+      "macros": {
+        "protein": 15,
+        "carbs": 56,
+        "fat": 16
+      },
+      "contains": [
+        "egg"
+      ],
+      "attributes": {
+        "techniques": [
+          "fry"
+        ],
+        "meal_type": "breakfast"
+      },
+      "ingredients": [
+        {
+          "id": "oats",
+          "amount": 180,
+          "unit": "g",
+          "note": {
+            "en": "certified gluten-free",
+            "de": "zertifiziert glutenfrei"
+          }
+        },
+        {
+          "id": "oat-milk",
+          "amount": 200,
+          "unit": "ml",
+          "note": {
+            "en": "small amount per serving stays FODMAP-friendly",
+            "de": "kleine menge pro portion bleibt fodmap-freundlich"
+          }
+        },
+        {
+          "id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "maple-syrup",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "blueberries",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "blend oats to flour, mix with baking powder and salt.",
+            "de": "hafer zu mehl mixen, mit backpulver und salz mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "whisk eggs, oat milk, 1 tbsp maple and the oil into the dry mix. rest 10 minutes.",
+            "de": "eier, haferdrink, 1 el ahorn und das öl unter die trockene mischung rühren. 10 minuten ruhen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "fry small pancakes — they flip better modest. press a few blueberries into each.",
+            "de": "kleine pancakes braten — sie wenden sich bescheidener besser. ein paar blaubeeren in jede drücken."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "remaining maple over the stack. digestion stays on your side.",
+            "de": "den rest ahorn über den stapel. die verdauung bleibt auf deiner seite."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "maple syrup is FODMAP-free — honey is not. this is the entire plot.",
+          "de": "ahornsirup ist fodmap-frei — honig nicht. das ist die ganze handlung."
+        }
+      ]
+    },
+    {
+      "id": "sushi-salmon",
+      "dish_id": "sushi",
+      "title": {
+        "en": "salmon sushi rolls",
+        "de": "lachs-sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "maki with salmon & avocado — your first roll WILL be ugly",
+        "de": "maki mit lachs & avocado — dein erstes röllchen WIRD hässlich"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 480,
+      "macros": {
+        "protein": 28,
+        "carbs": 66,
+        "fat": 11
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salmon",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "sushi-grade",
+            "de": "sushi-qualität"
+          }
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "rinse the rice until the water runs clear, then cook it. (clear-ish. we're making sushi, not jewelry.)",
+            "de": "reis waschen, bis das wasser klar läuft, dann kochen. (klar-ish. wir machen sushi, keinen schmuck.)"
+          }
+        },
+        {
+          "text": {
+            "en": "fold warm rice with vinegar, sugar, salt. fan it while folding — glossy, not mushy. let it cool to hand-warm.",
+            "de": "warmen reis mit essig, zucker, salz falten. dabei fächeln — glänzend, nicht breiig. auf handwarm abkühlen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice salmon and avocado into long batons. seed and strip the cucumber.",
+            "de": "lachs und avocado in lange stäbchen schneiden. gurke entkernen und in streifen schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "rice on nori (thin, leave a bare edge), fillings in a line, roll with the mat — snug, not crushed.",
+            "de": "reis auf nori (dünn, eine kante frei), füllungen in eine linie, mit der matte rollen — straff, nicht erdrückt."
+          }
+        },
+        {
+          "text": {
+            "en": "wipe your knife between cuts and slice each roll into 8. ugly ones taste identical — eat the evidence.",
+            "de": "messer zwischen den schnitten abwischen und jede rolle in 8 teile schneiden. hässliche schmecken identisch — die beweise vernichten."
+          }
+        },
+        {
+          "text": {
+            "en": "soy sauce for dipping. wasabi optional, tears optional.",
+            "de": "sojasauce zum tunken. wasabi optional, tränen optional."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "wet hands stop rice from adopting your fingers as permanent roommates.",
+          "de": "nasse hände verhindern, dass der reis deine finger als dauermitbewohner adoptiert."
+        }
+      ]
+    },
+    {
+      "id": "sushi-vegan",
+      "dish_id": "sushi",
+      "title": {
+        "en": "vegan sushi rolls",
+        "de": "vegane sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "avocado, carrot & pickled cucumber garden maki",
+        "de": "garten-maki mit avocado, karotte & essiggurke"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 420,
+      "macros": {
+        "protein": 9,
+        "carbs": 70,
+        "fat": 9
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "sesame",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "pickles",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sesame-seeds",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook and season the rice as usual — vinegar, sugar, salt, fan, cool.",
+            "de": "reis wie üblich kochen und würzen — essig, zucker, salz, fächeln, abkühlen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "cut avocado into strips, carrot into thin matchsticks (raw or blanched), pickles into spears.",
+            "de": "avocado in streifen, karotte in feine stäbchen (roh oder blanchiert), gurken in spalten schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "roll: nori, thin rice, a line of each vegetable, sprinkle sesame. snug roll.",
+            "de": "rollen: nori, dünner reis, je eine linie gemüse, sesam bestreuen. straff rollen."
+          }
+        },
+        {
+          "text": {
+            "en": "slice into 8 with a wiped knife. serve with soy sauce.",
+            "de": "mit abgewischtem messer in 8 schneiden. mit sojasauce servieren."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the rainbow of the garden roll comes from contrast — pack colors side by side.",
+          "de": "das rgb der gartenrolle kommt aus dem kontrast — farben nebeneinander legen."
+        }
+      ]
+    },
+    {
+      "id": "sushi-glutenfrei",
+      "dish_id": "sushi",
+      "title": {
+        "en": "gluten-free sushi rolls",
+        "de": "glutenfreie sushi-röllchen"
+      },
+      "subtitle": {
+        "en": "tamari on the side, everything else unchanged",
+        "de": "tamari dazu, alles andere unverändert"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 60,
+      "effort": "hard",
+      "calories_per_serving": 460,
+      "macros": {
+        "protein": 26,
+        "carbs": 64,
+        "fat": 11
+      },
+      "contains": [
+        "fish",
+        "soy",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "raw"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "sushi-rice",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "rice-vinegar",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salmon",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "sushi-grade",
+            "de": "sushi-qualität"
+          }
+        },
+        {
+          "id": "avocado",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "nori",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "tamari",
+          "amount": 4,
+          "unit": "tbsp",
+          "note": {
+            "en": "gluten-free tamari",
+            "de": "glutenfreies tamari"
+          }
+        },
+        {
+          "id": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cook and season the rice, cool to hand-warm.",
+            "de": "reis kochen und würzen, auf handwarm abkühlen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice salmon, avocado, cucumber into batons.",
+            "de": "lachs, avocado und gurke in stäbchen schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "roll maki with a bare nori edge, slice into 8.",
+            "de": "maki mit frei nori-kante rollen, in 8 schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "tamari instead of soy sauce — that's the whole trick. sushi itself was gluten-free all along.",
+            "de": "tamari statt sojasauce — das ist der ganze trick. sushi selbst war die ganze zeit glutenfrei."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "nori, rice, fish, wasabi: gluten-free. the soy sauce bottle was the only spy.",
+          "de": "nori, reis, fisch, wasabi: glutenfrei. die sojasauce-flasche war der einzige spion."
+        }
+      ]
+    },
+    {
+      "id": "bolognese-classic",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "classic bolognese",
+        "de": "klassische bolognese"
+      },
+      "subtitle": {
+        "en": "slow, milky, wine-deepened ragù — sunday gravy",
+        "de": "langsames, milchiges, weintiefer ragù — sonntagssugo"
+      },
+      "diet": "classic",
+      "servings": 4,
+      "time_minutes": 90,
+      "effort": "hard",
+      "calories_per_serving": 720,
+      "macros": {
+        "protein": 38,
+        "carbs": 74,
+        "fat": 28
+      },
+      "contains": [
+        "beef",
+        "pork",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "celery",
+        "alcohol",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "ground-pork",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "celery",
+          "amount": 2,
+          "unit": "stick"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "white-wine",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "pasta",
+          "amount": 320,
+          "unit": "g",
+          "note": {
+            "en": "spaghetti or tagliatelle",
+            "de": "spaghetti oder tagliatelle"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "finely dice onion, carrot, celery — the soffritto. sweat in olive oil slowly until soft and sweet.",
+            "de": "zwiebel, karotte, sellerie fein würfeln — das soffritto. langsam in olivenöl weich und süß dünsten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "add garlic, then the meats. brown properly — gray mince is a missed appointment.",
+            "de": "knoblauch zugeben, dann das fleisch. richtig anbraten — graues hack ist ein verpasster termin."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "pour in the wine and let it evaporate completely, scraping the pan's memory off the bottom.",
+            "de": "wein angießen und vollständig verdampfen lassen, die erinnerung des topfbodens loskratzen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "tomato paste, canned tomatoes, salt. simmer on the lowest heat, lid ajar.",
+            "de": "tomatenmark, dosentomaten, salz. auf kleinster stufe köcheln, deckel einen spalt offen."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "in the last 20 minutes, stir in the milk. yes, milk. bologna does this. trust bologna.",
+            "de": "in den letzten 20 minuten die milch einrühren. ja, milch. bologna macht das. vertrau bologna."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "toss with al dente pasta and a splash of pasta water. parmesan is not optional in this house.",
+            "de": "mit al-dente-nudeln und einem schuss nudelwasser schwenken. parmesan ist in diesem haus nicht optional."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "ragù is better on day two — make double and thank yourself tomorrow.",
+          "de": "ragù ist am zweiten tag besser — doppelt machen und dir selbst morgen danken."
+        }
+      ]
+    },
+    {
+      "id": "bolognese-vegan",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "vegan bolognese",
+        "de": "vegane bolognese"
+      },
+      "subtitle": {
+        "en": "lentils & mushrooms, same long simmer",
+        "de": "linsen & champignons, dasselbe lange köcheln"
+      },
+      "diet": "vegan",
+      "servings": 4,
+      "time_minutes": 75,
+      "effort": "medium",
+      "calories_per_serving": 610,
+      "macros": {
+        "protein": 26,
+        "carbs": 88,
+        "fat": 14
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "lentils",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "brown or green, not red",
+            "de": "braun oder grün, nicht rot"
+          }
+        },
+        {
+          "id": "mushroom",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "soy-sauce",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "pasta",
+          "amount": 320,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "dice onion, carrot; chop mushrooms into tiny rubble — they play the role of mince.",
+            "de": "zwiebel und karotte würfeln; champignons zu kleinem schutt hacken — sie spielen die rolle des hackfleischs."
+          }
+        },
+        {
+          "text": {
+            "en": "sweat the vegetables, then fry the mushrooms hard until they stop squeaking and start browning.",
+            "de": "gemüse dünsten, dann champignons scharf braten, bis sie aufhören zu quietschen und braun werden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "tomato paste, canned tomatoes, soy sauce, oregano, the rinsed lentils and 500 ml water.",
+            "de": "tomatenmark, dosentomaten, sojasauce, oregano, die gewaschenen linsen und 500 ml wasser."
+          }
+        },
+        {
+          "text": {
+            "en": "simmer until the lentils are tender and the sauce sits thick — about 40 minutes. stir occasionally, expect attachment issues.",
+            "de": "köcheln, bis die linsen weich und die soße dick ist — etwa 40 minuten. gelegentlich rühren, haftprobleme einkalkulieren."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "season hard, toss with pasta. nutritional yeast at the table for the parmesan nostalgic.",
+            "de": "kräftig abschmecken, mit nudeln schwenken. hefeflocken am tisch für die parmesan-nostalgiker."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "soy sauce is the umami bribe that makes lentils taste like a weekend.",
+          "de": "sojasauce ist die umami-bestechung, die linsen wie ein wochenende schmecken lässt."
+        }
+      ]
+    },
+    {
+      "id": "bolognese-glutenfrei",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "gluten-free bolognese",
+        "de": "glutenfreie bolognese"
+      },
+      "subtitle": {
+        "en": "the full ragù on corn-rigatoni",
+        "de": "das volle ragù auf mais-rigatoni"
+      },
+      "diet": "gluten-free",
+      "servings": 4,
+      "time_minutes": 90,
+      "effort": "hard",
+      "calories_per_serving": 680,
+      "macros": {
+        "protein": 36,
+        "carbs": 72,
+        "fat": 26
+      },
+      "contains": [
+        "beef",
+        "pork",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "ground-pork",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "celery",
+          "amount": 2,
+          "unit": "stick"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "pasta-glutenfrei",
+          "amount": 320,
+          "unit": "g",
+          "note": {
+            "en": "gluten-free rigatoni",
+            "de": "glutenfreie rigatoni"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soffritto of onion, carrot, celery — sweated slow and sweet, 10 minutes.",
+            "de": "soffritto aus zwiebel, karotte, sellerie — langsam und süß gedünstet, 10 minuten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "brown both meats with the garlic.",
+            "de": "beide fleischsorten mit dem knoblauch anbraten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "tomatoes and paste in, simmer low for an hour, milk stirred in at the end.",
+            "de": "tomaten und mark zugeben, eine stunde auf kleiner flamme köcheln, die milch am schluss einrühren."
+          },
+          "timer_seconds": 3600
+        },
+        {
+          "text": {
+            "en": "cook the gluten-free pasta just shy of al dente — it softens in the sauce on the way to the table.",
+            "de": "glutenfreie nudeln knapp al dente kochen — sie weichen auf dem weg zum tisch in der soße nach."
+          }
+        },
+        {
+          "text": {
+            "en": "combine cautiously, serve loudly.",
+            "de": "vorsichtig vereinen, laut servieren."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "skip the wine here or check for gluten-free labeling — most is fine, some isn't bothered.",
+          "de": "wein weglassen oder auf glutenfrei prüfen — die meisten sind in ordnung, manche nicht."
+        }
+      ]
+    },
+    {
+      "id": "bolognese-lowfodmap",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "low-FODMAP bolognese",
+        "de": "low-FODMAP-bolognese"
+      },
+      "subtitle": {
+        "en": "green-onion-only ragù, gentle but serious",
+        "de": "ragù nur mit grünem lauch, sanft aber ernst"
+      },
+      "diet": "low-fodmap",
+      "servings": 4,
+      "time_minutes": 70,
+      "effort": "medium",
+      "calories_per_serving": 640,
+      "macros": {
+        "protein": 37,
+        "carbs": 68,
+        "fat": 24
+      },
+      "contains": [
+        "beef"
+      ],
+      "attributes": {
+        "techniques": [
+          "simmer",
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "scallions",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "green parts only",
+            "de": "nur das grüne"
+          }
+        },
+        {
+          "id": "carrot",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "small amount keeps it FODMAP-safe",
+            "de": "kleine menge hält es fodmap-sicher"
+          }
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "amount": 300,
+          "unit": "ml",
+          "note": {
+            "en": "FODMAP-safe, no onion/garlic",
+            "de": "fodmap-sicher, ohne zwiebel/knoblauch"
+          }
+        },
+        {
+          "id": "pasta-glutenfrei",
+          "amount": 320,
+          "unit": "g",
+          "note": {
+            "en": "gluten-free",
+            "de": "glutenfrei"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "brown the beef in olive oil, in batches if needed — crowding steams instead of browns.",
+            "de": "rinderhack in olivenöl anbraten, bei bedarf portionsweise — gedränge dämpft statt brät."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "add sliced scallion greens and diced carrot, fry 3 minutes. no onion, no garlic — the bay leaf keeps the pot honest.",
+            "de": "frühlingszwiebelgrün und karottenwürfel zugeben, 3 minuten braten. keine zwiebel, kein knoblauch — das lorbeerblatt hält den topf ehrlich."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "tomatoes, paste, stock, bay. simmer 40 minutes until saucy.",
+            "de": "tomaten, mark, brühe, lorbeer. 40 minuten köcheln, bis soßig."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "serve over gluten-free pasta. season aggressively — gentle on the gut doesn't mean gentle on flavor.",
+            "de": "auf glutenfreien nudeln servieren. kräftig würzen — sanft zum darm heißt nicht sanft zum geschmack."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "garlic-infused oil gives the aroma back if you miss it — FODMAPs don't dissolve in oil.",
+          "de": "knoblauchöl gibt das aroma zurück, wenn du ihn vermisst — fodmaps lösen sich nicht in öl."
+        }
+      ]
+    },
+    {
+      "id": "currywurst-classic",
+      "dish_id": "currywurst",
+      "title": {
+        "en": "classic currywurst",
+        "de": "klassische currywurst"
+      },
+      "subtitle": {
+        "en": "pork bratwurst, curry-ketchup, oven fries",
+        "de": "schweinebratwurst, curry-ketchup, ofen-pommes"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 760,
+      "macros": {
+        "protein": 26,
+        "carbs": 66,
+        "fat": 40
+      },
+      "contains": [
+        "pork",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry",
+          "bake"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "bratwurst",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "pork bratwurst",
+            "de": "schweinebratwurst"
+          }
+        },
+        {
+          "id": "ketchup",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "curry-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "sweet paprika powder",
+            "de": "edelsüß paprika"
+          }
+        },
+        {
+          "id": "potato",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cut potatoes into thick fries, toss with oil and salt, bake at 220 °C, turning once.",
+            "de": "kartoffeln in dicke pommes schneiden, mit öl und salz mischen, bei 220 °C backen, einmal wenden."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "prick the sausages and pan-fry on medium until evenly browned on all sides.",
+            "de": "würste einstechen und bei mittlerer hitze rundum gleichmäßig braun braten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "mix ketchup with curry powder and paprika. warm it briefly — cold sauce on hot sausage is a treaty violation.",
+            "de": "ketchup mit currypulver und paprika mischen. kurz erwärmen — kalte soße auf heißer wurst ist ein vertragsbruch."
+          }
+        },
+        {
+          "text": {
+            "en": "slice the sausages into coins, drown in sauce, dust with more curry. fries on the side, paper plate optional but correct.",
+            "de": "würste in münzen schneiden, in soße ertränken, mit mehr curry bestauben. pommes dazu, papierteller optional, aber korrekt."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the sauce to sausage ratio is a personal matter between you and berlin.",
+          "de": "das verhältnis von soße zu wurst ist eine persönliche angelegenheit zwischen dir und berlin."
+        }
+      ]
+    },
+    {
+      "id": "currywurst-vegan",
+      "dish_id": "currywurst",
+      "title": {
+        "en": "vegan currywurst",
+        "de": "vegane currywurst"
+      },
+      "subtitle": {
+        "en": "grilled plant sausage, same sauce ritual",
+        "de": "gegrillte pflanzenwurst, dasselbe soßen-ritual"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 690,
+      "macros": {
+        "protein": 22,
+        "carbs": 70,
+        "fat": 34
+      },
+      "contains": [
+        "soy",
+        "gluten",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry",
+          "bake"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "vegan-sausage",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "check label if gluten matters — many are wheat-based",
+            "de": "etikett prüfen, wenn gluten zählt — viele sind weizenbasiert"
+          }
+        },
+        {
+          "id": "ketchup",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "curry-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "potato",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "oven fries: thick cut, oiled, salted, 220 °C, turned once.",
+            "de": "ofen-pommes: dick geschnitten, geölt, gesalzen, 220 °C, einmal gewendet."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "fry the plant sausages in a little oil until striped with brown — patience, they're softer than they look.",
+            "de": "pflanzenwürste in etwas öl braten, bis sie braun gestreift sind — geduld, sie sind weicher, als sie aussehen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "curry-ketchup from ketchup, curry powder, paprika. warm briefly.",
+            "de": "curry-ketchup aus ketchup, currypulver, paprika. kurz erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "slice, sauce, curry dust, fries. the ritual survives the sausage.",
+            "de": "schneiden, soße, currystaub, pommes. das ritual überlebt die wurst."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "most vegan bratwurst is wheat-protein based — this variant keeps the flavor, not the gluten.",
+          "de": "die meisten veganen bratwürste basieren auf weizenprotein — diese variante behält den geschmack, nicht das gluten."
+        }
+      ]
+    },
+    {
+      "id": "currywurst-halal",
+      "dish_id": "currywurst",
+      "title": {
+        "en": "halal-friendly currywurst",
+        "de": "halal-freundliche currywurst"
+      },
+      "subtitle": {
+        "en": "all-beef bratwurst, same berlin attitude",
+        "de": "reine rinderbratwurst, dieselbe berliner attitude"
+      },
+      "diet": "halal",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 770,
+      "macros": {
+        "protein": 28,
+        "carbs": 66,
+        "fat": 41
+      },
+      "contains": [
+        "beef",
+        "added-sugar"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry",
+          "bake"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "beef-sausage",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "pure beef, from a trusted butcher",
+            "de": "reines rind, vom metzger deines vertrauens"
+          }
+        },
+        {
+          "id": "ketchup",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "curry-powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "potato",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "oven fries first — thick, oiled, salted, 220 °C.",
+            "de": "zuerst ofen-pommes — dick, geölt, gesalzen, 220 °C."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "fry the beef sausages until properly browned all around.",
+            "de": "rinderwürste rundum richtig braun braten."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "curry-ketchup: ketchup, curry powder, paprika, warmed.",
+            "de": "curry-ketchup: ketchup, currypulver, paprika, erwärmt."
+          }
+        },
+        {
+          "text": {
+            "en": "coins, sauce, extra curry dust. halal-compatible ingredients — the certificate hangs in the butcher's shop, not in this app.",
+            "de": "münzen, soße, extra currystaub. halal-kompatible zutaten — das zertifikat hängt beim metzger, nicht in dieser app."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "all-beef bratwurst exists in most well-stocked butchers — ask, don't assume.",
+          "de": "reine rinderbratwurst gibt es in den meisten guten metzgereien — fragen, nicht annehmen."
+        }
+      ]
+    },
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "classic falafel",
+        "de": "klassischer falafel"
+      },
+      "subtitle": {
+        "en": "green-hearted chickpea planets from the deep fryer",
+        "de": "kichererbsen-planeten mit grünem herz aus der friteuse"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 40,
+      "effort": "medium",
+      "calories_per_serving": 520,
+      "macros": {
+        "protein": 19,
+        "carbs": 52,
+        "fat": 28
+      },
+      "contains": [
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "deep-fry"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250,
+          "unit": "g",
+          "note": {
+            "en": "dried, soaked overnight — canned fails",
+            "de": "getrocknet, über nacht eingeweicht — dose scheitert"
+          }
+        },
+        {
+          "id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "flour",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seeds",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "tahini",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500,
+          "unit": "ml",
+          "note": {
+            "en": "for frying",
+            "de": "zum frittieren"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the dried chickpeas overnight — 12 hours minimum. canned chickpeas make hummus; only failure makes falafel.",
+            "de": "getrocknete kichererbsen über nacht einweichen — mindestens 12 stunden. dosenkichererbsen machen hummus; nur misserfolg macht falafel."
+          },
+          "timer_seconds": 43200
+        },
+        {
+          "text": {
+            "en": "grind chickpeas with herbs, onion, garlic, spices and salt into a gritty, intensely green paste.",
+            "de": "kichererbsen mit kräutern, zwiebel, knoblauch, gewürzen und salz zu einer körnigen, intensiv grünen paste mahlen."
+          }
+        },
+        {
+          "text": {
+            "en": "stir in flour, rest the mix 30 minutes so it firms up enough to shape.",
+            "de": "mehl einrühren, die masse 30 minuten ruhen lassen, damit sie formbar wird."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "shape small balls or scooped disks. fry at 175 °C until the crust is nut-brown.",
+            "de": "kleine kugeln oder elchen formen. bei 175 °C frittieren, bis die kruste nussbraun ist."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "tahini sauce: tahini, lemon juice, water, salt — whisked into a pourable cloud.",
+            "de": "tahini-soße: tahini, zitronensaft, wasser, salz — zu einer gießbaren wolke geschlagen."
+          }
+        },
+        {
+          "text": {
+            "en": "stuff into pita with salad, or serve with the sauce and pickles. crunch is law.",
+            "de": "mit salat in fladenbrot füllen oder mit soße und gurken servieren. knusprigkeit ist gesetz."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the paste should feel like wet sand that holds a grudge — if it's smooth, you've made hummus again.",
+          "de": "die paste soll sich anfühlen wie nasser sand, der eine meinung hat — ist sie glatt, hast du wieder hummus gemacht."
+        }
+      ]
+    },
+    {
+      "id": "falafel-glutenfrei",
+      "dish_id": "falafel",
+      "title": {
+        "en": "gluten-free falafel",
+        "de": "glutenfreier falafel"
+      },
+      "subtitle": {
+        "en": "chickpea flour binder, everything else the same green religion",
+        "de": "kichererbsenmehl als binder, sonst dieselbe grüne religion"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 40,
+      "effort": "medium",
+      "calories_per_serving": 540,
+      "macros": {
+        "protein": 20,
+        "carbs": 50,
+        "fat": 30
+      },
+      "contains": [
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "deep-fry"
+        ],
+        "meal_type": "lunch"
+      },
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "amount": 250,
+          "unit": "g",
+          "note": {
+            "en": "dried, soaked overnight",
+            "de": "getrocknet, über nacht eingeweicht"
+          }
+        },
+        {
+          "id": "chickpea-flour",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander-seeds",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "tahini",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 500,
+          "unit": "ml",
+          "note": {
+            "en": "for frying",
+            "de": "zum frittieren"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the dried chickpeas 12 hours. no shortcuts, we've talked about this.",
+            "de": "getrocknete kichererbsen 12 stunden einweichen. keine abkürzungen, wir hatten das thema."
+          },
+          "timer_seconds": 43200
+        },
+        {
+          "text": {
+            "en": "grind with herbs, onion, garlic, spices into coarse green grit.",
+            "de": "mit kräutern, zwiebel, knoblauch und gewürzen zu grünem grus mahlen."
+          }
+        },
+        {
+          "text": {
+            "en": "bind with chickpea flour instead of wheat flour. rest 30 minutes.",
+            "de": "statt weizenmehl mit kichererbsenmehl binden. 30 minuten ruhen lassen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "shape and fry at 175 °C until nut-brown.",
+            "de": "formen und bei 175 °C frittieren, bis nussbraun."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "serve with tahini-lemon sauce — check the tahini label if you're strictly gluten-free.",
+            "de": "mit tahini-zitronen-soße servieren — bei strenger glutenfreiheit das tahini-etikett prüfen."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "chickpea flour binds nearly as well and toasts into a deeper crust.",
+          "de": "kichererbsenmehl bindet fast genauso gut und röstet zu dunklerer kruste."
+        }
+      ]
+    },
+    {
+      "id": "lasagna-classic",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "classic lasagna",
+        "de": "klassische lasagne"
+      },
+      "subtitle": {
+        "en": "ragù, béchamel, cheese crust — the full cathedral",
+        "de": "ragù, béchamel, käsekruste — die ganze kathedrale"
+      },
+      "diet": "classic",
+      "servings": 4,
+      "time_minutes": 120,
+      "effort": "hard",
+      "calories_per_serving": 890,
+      "macros": {
+        "protein": 42,
+        "carbs": 72,
+        "fat": 45
+      },
+      "contains": [
+        "beef",
+        "pork",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "bake",
+          "simmer"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "ground-pork",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "flour",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600,
+          "unit": "ml"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "start the ragù: brown both meats with onion and garlic, add tomatoes, simmer while you make everything else.",
+            "de": "ragù beginnen: beide fleischsorten mit zwiebel und knoblauch anbraten, tomaten zugeben, köcheln lassen, während du alles andere machst."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel: melt butter, stir in flour for 2 minutes, whisk in milk gradually until thick and smooth. salt, nutmeg.",
+            "de": "béchamel: butter schmelzen, mehl 2 minuten einrühren, milch nach und nach ein schlagen, bis es dick und glatt ist. salz, muskat."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "layer in the dish: béchamel, sheets, ragù, béchamel, repeat. finish with béchamel and both cheeses.",
+            "de": "in der form schichten: béchamel, platten, ragù, béchamel, wiederholen. mit béchamel und beiden käsen abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 190 °C until the top is blistered bronze and the corners mutter and bubble.",
+            "de": "bei 190 °C backen, bis die oberfläche bronzen blattert und die ecken leise blubbern."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "rest 15 minutes before cutting — lasagna is molten lava with delusions of architecture.",
+            "de": "15 minuten ruhen lassen, bevor du schneidest — lasagne ist geschmolzene lava mit architektur-allüren."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "tips": [
+        {
+          "en": "a thin first layer of béchamel under the first sheets stops the whole operation from welding to the dish.",
+          "de": "eine dünne erste schicht béchamel unter die erste plattenreihe verhindert, dass das ganze mit der form verschweißt."
+        }
+      ]
+    },
+    {
+      "id": "lasagna-vegan",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "vegan lasagna",
+        "de": "vegane lasagne"
+      },
+      "subtitle": {
+        "en": "lentil ragù, cashew béchamel — same cathedral, new materials",
+        "de": "linsen-ragù, cashew-béchamel — gleiche kathedrale, neue materialien"
+      },
+      "diet": "vegan",
+      "servings": 4,
+      "time_minutes": 110,
+      "effort": "hard",
+      "calories_per_serving": 710,
+      "macros": {
+        "protein": 27,
+        "carbs": 82,
+        "fat": 28
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "high-fodmap",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "techniques": [
+          "bake",
+          "simmer"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "lentils",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "mushroom",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "lasagna-sheets",
+          "amount": 12,
+          "unit": "piece",
+          "note": {
+            "en": "egg-free",
+            "de": "eifrei"
+          }
+        },
+        {
+          "id": "cashews",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "nutritional-yeast",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "soy-milk",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water.",
+            "de": "cashews in heißem wasser einweichen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "ragù: onion, garlic, carrot, chopped mushrooms fried hard, lentils and tomatoes in, simmer 40 minutes.",
+            "de": "ragù: zwiebel, knoblauch, karotte, gehackte champignons scharf anbraten, linsen und tomaten zugeben, 40 minuten köcheln."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "béchamel: blend cashews with soy milk, nutritional yeast, salt, nutmeg into a pourable cream. warm it gently to thicken.",
+            "de": "béchamel: cashews mit sojamilch, hefeflocken, salz und muskat zu gießbarer creme mixen. sanft erwärmen, bis es andickt."
+          }
+        },
+        {
+          "text": {
+            "en": "layer like the classic: sauce, sheets, ragù, up to three floors, cashew cream on top.",
+            "de": "schichten wie beim klassiker: soße, platten, ragù, bis zu drei stockwerke, cashewcreme obendrauf."
+          }
+        },
+        {
+          "text": {
+            "en": "bake at 190 °C until the top firms and takes color. rest 15 minutes.",
+            "de": "bei 190 °C backen, bis die oberfläche fest wird und farbe nimmt. 15 minuten ruhen lassen."
+          },
+          "timer_seconds": 2400
+        }
+      ],
+      "tips": [
+        {
+          "en": "the cashew cream thickens twice — once in the pan, once in the oven. under-season at the stove.",
+          "de": "die cashewcreme bindet zweimal — einmal in der pfanne, einmal im ofen. am herd unterwürzen."
+        }
+      ]
+    },
+    {
+      "id": "lasagna-glutenfrei",
+      "dish_id": "lasagna",
+      "title": {
+        "en": "gluten-free lasagna",
+        "de": "glutenfreie lasagne"
+      },
+      "subtitle": {
+        "en": "cornstarch béchamel, gf sheets — no structural compromise",
+        "de": "béchamel mit speisestärke, glutenfreie platten — kein struktureller kompromiss"
+      },
+      "diet": "gluten-free",
+      "servings": 4,
+      "time_minutes": 120,
+      "effort": "hard",
+      "calories_per_serving": 860,
+      "macros": {
+        "protein": 40,
+        "carbs": 74,
+        "fat": 42
+      },
+      "contains": [
+        "beef",
+        "pork",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "bake",
+          "simmer"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "ground-pork",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "canned-tomatoes",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lasagna-sheets-glutenfrei",
+          "amount": 12,
+          "unit": "piece",
+          "note": {
+            "en": "gluten-free",
+            "de": "glutenfrei"
+          }
+        },
+        {
+          "id": "butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "cornstarch",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "amount": 600,
+          "unit": "ml"
+        },
+        {
+          "id": "mozzarella",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "ragù as always: browned meats, onion, garlic, tomatoes, long simmer.",
+            "de": "ragù wie immer: angebratenes fleisch, zwiebel, knoblauch, tomaten, lange köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "béchamel without flour: whisk cornstarch into cold milk, heat with butter while stirring until thick.",
+            "de": "béchamel ohne mehl: speisestärke in kalte milch einrühren, mit butter unter rühren erhitzen, bis es bindet."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "blanch the gf sheets briefly if the package asks for it — they assemble more obediently.",
+            "de": "glutenfreie platten kurz wässern, wenn die packung es verlangt — sie fügen sich fügsamer."
+          }
+        },
+        {
+          "text": {
+            "en": "layer, cheese on top, bake at 190 °C to a bronze blister.",
+            "de": "schichten, käse obenauf, bei 190 °C zu bronze blattern."
+          },
+          "timer_seconds": 2400
+        },
+        {
+          "text": {
+            "en": "the 15-minute rest is not optional — gf lasagna slumps when cut hot.",
+            "de": "die 15 minuten ruhe sind nicht optional — glutenfreie lasagne kollabiert, heiß geschnitten."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "tips": [
+        {
+          "en": "cornstarch béchamel seizes when it boils — keep it at a murmur.",
+          "de": "speisestärke-béchamel gerinnt beim kochen — auf murmeln halten."
+        }
+      ]
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "classic carbonara",
+        "de": "klassische carbonara"
+      },
+      "subtitle": {
+        "en": "guanciale, egg, pecorino, pepper — no cream in sight",
+        "de": "guanciale, ei, pecorino, pfeffer — keine sahne in sicht"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 780,
+      "macros": {
+        "protein": 36,
+        "carbs": 74,
+        "fat": 36
+      },
+      "contains": [
+        "pork",
+        "gluten",
+        "egg",
+        "dairy",
+        "meat-dairy-combo"
+      ],
+      "attributes": {
+        "techniques": [
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 120,
+          "unit": "g",
+          "note": {
+            "en": "guanciale if you can get it, pancetta or smoked bacon if not",
+            "de": "guanciale, wenn du ihn bekommst, sonst pancetta oder geräucherter speck"
+          }
+        },
+        {
+          "id": "pasta",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "spaghetti",
+            "de": "spaghetti"
+          }
+        },
+        {
+          "id": "egg-yolk",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "pecorino",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "cut the guanciale into batons. fry slowly in a dry pan until glassy-crisp. keep the fat — it's the sauce's bodyguard.",
+            "de": "guanciale in stäbchen schneiden. langsam in der trockenen pfanne ausbraten, bis glasig-knusprig. das fett behalten — es ist der bodyguard der soße."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "whisk egg yolks, one whole egg, grated pecorino and a reckless amount of cracked pepper into a paste.",
+            "de": "eigelbe, ein ganzes ei, geriebenen pecorino und eine rücksichtslose menge gemahlenen pfeffer zu einer paste verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "boil the spaghetti in shallow, salty water — you need it starchy. pull them a minute early.",
+            "de": "spaghetti in flachem, salzigem wasser kochen — du brauchst sie stärkehaltig. eine minute früher raus."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "toss the hot pasta in the pan OFF the heat with the egg paste, splashing pasta water until creamy. scramble = start over, we don't judge, but start over.",
+            "de": "die heißen nudeln vom feuer mit der ei-paste schwenken, mit nudelwasser zur cremigkeit bringen. geronnen? von vorn. wir urteilen nicht, aber von vorn."
+          }
+        },
+        {
+          "text": {
+            "en": "guanciale on top, more pecorino, more pepper. rome nods approvingly.",
+            "de": "guanciale obendrauf, mehr pecorino, mehr pfeffer. rom nickt anerkennend."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the pan must be off the flame before the egg meets it — residual heat only. this is the entire recipe.",
+          "de": "die pfanne muss vom feuer, bevor das ei dazukommt — nur restwärme. das ist das ganze rezept."
+        }
+      ]
+    },
+    {
+      "id": "carbonara-vegetarian",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "vegetarian carbonara",
+        "de": "vegetarische carbonara"
+      },
+      "subtitle": {
+        "en": "smoked mushrooms stand in for guanciale — convincingly",
+        "de": "geräucherte champignons spielen guanciale — überzeugend"
+      },
+      "diet": "vegetarian",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 700,
+      "macros": {
+        "protein": 28,
+        "carbs": 76,
+        "fat": 29
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy"
+      ],
+      "attributes": {
+        "techniques": [
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "mushroom",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "smoked, if findable",
+            "de": "geräuchert, wenn auffindbar"
+          }
+        },
+        {
+          "id": "pasta",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "spaghetti",
+            "de": "spaghetti"
+          }
+        },
+        {
+          "id": "egg-yolk",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "pecorino",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "rennet-free (microbial), if strict",
+            "de": "labfrei (mikrobiell), wenn streng"
+          }
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the mushrooms, fry in olive oil with smoked paprika until the edges brown and the pan smells like a campfire.",
+            "de": "champignons schneiden, in olivenöl mit geräuchertem paprika braten, bis die ränder bräunen und die pfanne nach lagerfeuer riecht."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "egg paste: yolks, one egg, pecorino, cracked pepper — thick enough to hold a fork upright. almost.",
+            "de": "ei-paste: eigelbe, ein ei, pecorino, pfeffer — fast dick genug, um eine gabel aufrecht zu halten."
+          }
+        },
+        {
+          "text": {
+            "en": "boil spaghetti, save the starchy water.",
+            "de": "spaghetti kochen, das stärkewasser aufheben."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "off heat: pasta, egg paste, pasta water, mushrooms. toss to a glossy cream.",
+            "de": "vom feuer: nudeln, ei-paste, nudelwasser, champignons. zu glänzender creme schwenken."
+          }
+        },
+        {
+          "text": {
+            "en": "more pecorino, more pepper. no one will interrogate the mushrooms.",
+            "de": "mehr pecorino, mehr pfeffer. niemand wird die champignons verhören."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "smoked mushrooms + smoked paprika recreate the guanciale smoke — smoke is the actual flavor you miss.",
+          "de": "geräucherte champignons + geräucherter paprika rekonstruieren den guanciale-rauch — rauch ist der geschmack, der dir fehlt."
+        }
+      ]
+    },
+    {
+      "id": "carbonara-glutenfrei",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "gluten-free carbonara",
+        "de": "glutenfreie carbonara"
+      },
+      "subtitle": {
+        "en": "the same roman trick on gf spaghetti",
+        "de": "derselbe römische trick auf glutenfreien spaghetti"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 25,
+      "effort": "easy",
+      "calories_per_serving": 760,
+      "macros": {
+        "protein": 34,
+        "carbs": 72,
+        "fat": 35
+      },
+      "contains": [
+        "pork",
+        "egg",
+        "dairy",
+        "meat-dairy-combo"
+      ],
+      "attributes": {
+        "techniques": [
+          "sauté"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "bacon",
+          "amount": 120,
+          "unit": "g",
+          "note": {
+            "en": "guanciale or smoked bacon",
+            "de": "guanciale oder geräucherter speck"
+          }
+        },
+        {
+          "id": "pasta-glutenfrei",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "gluten-free spaghetti",
+            "de": "glutenfreie spaghetti"
+          }
+        },
+        {
+          "id": "egg-yolk",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "pecorino",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "crisp the guanciale slowly in a dry pan; keep every drop of fat.",
+            "de": "guanciale langsam in der trockenen pfanne krossen; jeden tropfen fett behalten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "egg paste from yolks, one egg, pecorino and pepper.",
+            "de": "ei-paste aus eigelben, einem ei, pecorino und pfeffer."
+          }
+        },
+        {
+          "text": {
+            "en": "cook gf spaghetti in shallow water — the extra starch is exactly what the emulsion needs.",
+            "de": "glutenfreie spaghetti in flachem wasser kochen — die extra stärke braucht die emulsion genau."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "off heat, toss everything with splashes of pasta water into cream. gf pasta cools faster — work quickly.",
+            "de": "vom feuer, alles mit schluckweisem nudelwasser zur creme schwenken. glutenfreie nudeln kühlen schneller — zügig arbeiten."
+          }
+        },
+        {
+          "text": {
+            "en": "serve at once. carbonara does not do encores.",
+            "de": "sofort servieren. carbonara macht keine zugaben."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "gf pasta water is cloudier and stiffer — a natural ally for the egg emulsion.",
+          "de": "glutenfreies nudelwasser ist trüber und zäher — ein natürlicher verbündeter der ei-emulsion."
+        }
+      ]
+    },
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "classic döner",
+        "de": "klassischer döner"
+      },
+      "subtitle": {
+        "en": "pork shoulder, home-rotisserie style, yogurt sauce",
+        "de": "schweineschulter, hausgemacht am spieß, joghurtsoße"
+      },
+      "diet": "classic",
+      "servings": 2,
+      "time_minutes": 50,
+      "effort": "medium",
+      "calories_per_serving": 820,
+      "macros": {
+        "protein": 46,
+        "carbs": 68,
+        "fat": 41
+      },
+      "contains": [
+        "pork",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": {
+        "techniques": [
+          "roast",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "pork-shoulder",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-thigh",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the pork and chicken as thinly as patience allows — partially frozen meat cuts cleaner.",
+            "de": "schwein und hähnchen so dünn schneiden, wie die geduld es zulässt — angefrorenes fleisch lässt sich sauberer schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "rub with smoked paprika, cumin, oregano, salt, 1 tbsp olive oil. stack the slices into a tight loaf, pressing firmly — this is your fake spit.",
+            "de": "mit paprika, kreuzkümmel, oregano, salz und 1 el olivenöl einreiben. die scheiben zu einem festen laib schichten und gut andrücken — das ist dein falscher spieß."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the loaf on all sides in a hot pan, then roast at 200 °C.",
+            "de": "den laib rundum in der heißen pfanne anbraten, dann bei 200 °C im ofen garen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "meanwhile: shred the cabbage finely, salt it, knead briefly, squeeze. slice tomato and cucumber, cut the onion into fine rings.",
+            "de": "inzwischen: kohl fein hobeln, salzen, kurz kneten, ausdrücken. tomate und gurke schneiden, zwiebel in feine ringe schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "stir the yogurt with grated garlic, lemon juice and salt. taste. add more garlic. (you know you want to.)",
+            "de": "joghurt mit geriebenem knoblauch, zitronensaft und salz verrühren. probieren. mehr knoblauch. (du willst es doch.)"
+          }
+        },
+        {
+          "text": {
+            "en": "rest the meat 5 minutes, then shave off thin crisp slices with a heavy knife.",
+            "de": "fleisch 5 minuten ruhen lassen, dann dünne knusprige scheiben abschneiden."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "warm the pita briefly in the pan, load with meat, salad and sauce. wrap in paper, eat leaning slightly forward, like tradition demands.",
+            "de": "fladenbrot kurz in der pfanne erwärmen, mit fleisch, salat und soße füllen. in papier wickeln und leicht nach vorne gebeugt essen — so will es die tradition."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the meatloaf trick: two layers stacked crosswise shave exactly like real döner.",
+          "de": "der hackbraten-trick: zwei lagen kreuzweise geschichtet schmecken genau wie echter döner."
+        },
+        {
+          "en": "leftover meat + egg + pan = tomorrow's döner omelet. you're welcome.",
+          "de": "übrig gebliebenes fleisch + ei + pfanne = morgiges döner-omelett. gern geschehen."
+        }
+      ]
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "vegan döner",
+        "de": "veganer döner"
+      },
+      "subtitle": {
+        "en": "seitan spit, cashew garlic sauce, all the crunch",
+        "de": "seitan-spieß, knoblauchsoße aus cashews, alles knusprig"
+      },
+      "diet": "vegan",
+      "servings": 2,
+      "time_minutes": 45,
+      "effort": "medium",
+      "calories_per_serving": 590,
+      "macros": {
+        "protein": 34,
+        "carbs": 71,
+        "fat": 15
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "high-fodmap",
+        "cashews",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "techniques": [
+          "bake",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "seitan",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "soak the cashews in hot water.",
+            "de": "cashews in heißem wasser einweichen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "slice the seitan into thin strips. toss with smoked paprika, cumin, oregano, salt and 1 tbsp olive oil.",
+            "de": "seitan in dünne streifen schneiden. mit paprika, kreuzkümmel, oregano, salz und 1 el olivenöl mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "sear the strips hard in a dry-hot pan until the edges crackle — crunch is the whole point.",
+            "de": "die streifen in der trockenen, heißen pfanne scharf anbraten, bis die ränder knistern — crunch ist der punkt."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "shred the cabbage finely, salt, knead, squeeze. slice tomato and cucumber, cut the onion into rings.",
+            "de": "kohl fein hobeln, salzen, kneten, ausdrücken. tomate und gurke schneiden, zwiebel in ringe."
+          }
+        },
+        {
+          "text": {
+            "en": "blend cashews, garlic, lemon juice, salt and 80 ml water into a thick sauce. it should taste aggressively of garlic. correct it until it does.",
+            "de": "cashews, knoblauch, zitronensaft, salz und 80 ml wasser zu einer dicken soße mixen. sie muss aggressiv nach knoblauch schmecken. nachbessern, bis sie es tut."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the pita, load with seitan, salad and cashew sauce. lean forward. tradition.",
+            "de": "fladenbrot erwärmen, mit seitan, salat und cashewsoße füllen. nach vorne beugen. tradition."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the cashew sauce keeps 3 days in the fridge and improves — like most of us.",
+          "de": "die cashewsoße hält 3 tage im kühlschrank und wird besser — wie die meisten von uns."
+        }
+      ]
+    },
+    {
+      "id": "doener-keto-bowl",
+      "dish_id": "doener",
+      "title": {
+        "en": "keto döner bowl",
+        "de": "keto-döner-bowl"
+      },
+      "subtitle": {
+        "en": "all the spit, none of the bread — crisp edges on a bed of salad",
+        "de": "alles vom spieß, kein brot — knusprige ränder auf salatbett"
+      },
+      "diet": "keto",
+      "servings": 2,
+      "time_minutes": 30,
+      "effort": "easy",
+      "calories_per_serving": 640,
+      "macros": {
+        "protein": 38,
+        "carbs": 9,
+        "fat": 47
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "romaine",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "red-onion",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "olives",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "mix the ground beef with smoked paprika, cumin and salt. press it into a hot pan as a flat, wide \"spit-loaf\" — maximum contact, maximum crust.",
+            "de": "hackfleisch mit paprika, kreuzkümmel und salz mischen. in der heißen pfanne zu einem flachen, breiten \"spieß-laib\" drücken — maximale kontaktfläche, maximale kruste."
+          }
+        },
+        {
+          "text": {
+            "en": "fry undisturbed until the bottom is deeply browned, flip once, repeat. remove and slice into strips.",
+            "de": "unbeachtet braten, bis der boden dunkelbraun ist, einmal wenden, wiederholen. herausnehmen und in streifen schneiden."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "chop romaine, tomato, cucumber, onion. pile into bowls. this is your bread now. make peace with it.",
+            "de": "romana, tomate, gurke, zwiebel hacken. in schälchen füllen. das ist jetzt dein brot. finde frieden damit."
+          }
+        },
+        {
+          "text": {
+            "en": "stir yogurt with grated garlic, lemon juice, salt. drizzle generously over everything.",
+            "de": "joghurt mit geriebenem knoblauch, zitronensaft und salz verrühren. großzügig über alles träufeln."
+          }
+        },
+        {
+          "text": {
+            "en": "top with olives and the hot beef strips. eat immediately, smugly.",
+            "de": "mit oliven und den heißen rinderstreifen toppen. sofort essen, selbstzufrieden."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "the loaf slices best when it has cooled for two minutes — the crust stays on the meat, not the pan.",
+          "de": "der laib lässt sich am besten schneiden, wenn er zwei minuten abgekühlt ist — dann bleibt die kruste am fleisch, nicht in der pfanne."
+        }
+      ]
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "halal-friendly döner",
+        "de": "halal-freundlicher döner"
+      },
+      "subtitle": {
+        "en": "beef & lamb stack, no pork, no alcohol — sourced right",
+        "de": "rind & lamm, ohne schwein, ohne alkohol — richtig eingekauft"
+      },
+      "diet": "halal",
+      "servings": 2,
+      "time_minutes": 55,
+      "effort": "medium",
+      "calories_per_serving": 830,
+      "macros": {
+        "protein": 48,
+        "carbs": 70,
+        "fat": 42
+      },
+      "contains": [
+        "beef",
+        "lamb",
+        "gluten",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "roast",
+          "pan-fry"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "ground-lamb",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "knead beef and lamb with the spices, salt and 1 tbsp oil until sticky — 3 honest minutes.",
+            "de": "rind und lamm mit gewürzen, salz und 1 el öl kneten, bis es klebt — 3 ehrliche minuten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "press into a dense loaf. sear on all sides, then finish in the oven at 200 °C.",
+            "de": "zu einem dichten laib formen. rundum anbraten, dann bei 200 °C im ofen fertig garen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "shred and squeeze the cabbage. slice tomato, cucumber, onion rings.",
+            "de": "kohl hobeln und ausdrücken. tomate, gurke und zwiebelringe schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "yogurt sauce: yogurt, grated garlic, lemon juice, salt. the non-negotiable trio.",
+            "de": "joghurtsoße: joghurt, geriebener knoblauch, zitronensaft, salz. das nicht verhandelbare trio."
+          }
+        },
+        {
+          "text": {
+            "en": "rest the loaf, shave thin slices, load warm pita. halal-compatible ingredients — certification is between you and your butcher.",
+            "de": "laib ruhen lassen, dünne scheiben abschneiden, warmes fladenbrot füllen. halal-kompatible zutaten — die zertifizierung liegt zwischen dir und deinem metzger."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "buy meat from a butcher you trust — we list ingredients as halal-compatible, never as certified.",
+          "de": "kauf fleisch bei einem metzger, dem du vertraust — wir nennen zutaten halal-kompatibel, niemals zertifiziert."
+        }
+      ]
+    },
+    {
+      "id": "doener-glutenfrei",
+      "dish_id": "doener",
+      "title": {
+        "en": "gluten-free döner",
+        "de": "glutenfreier döner"
+      },
+      "subtitle": {
+        "en": "chicken stack in corn tortillas — same street, new bread",
+        "de": "hähnchen-spieß in mais-tortillas — gleiche straße, neues brot"
+      },
+      "diet": "gluten-free",
+      "servings": 2,
+      "time_minutes": 40,
+      "effort": "medium",
+      "calories_per_serving": 780,
+      "macros": {
+        "protein": 45,
+        "carbs": 72,
+        "fat": 34
+      },
+      "contains": [
+        "poultry",
+        "dairy",
+        "lactose-dairy",
+        "meat-dairy-combo",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "techniques": [
+          "pan-fry",
+          "roast"
+        ],
+        "meal_type": "dinner"
+      },
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "corn-tortillas",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "100 % corn, gluten-free labeled",
+            "de": "100 % mais, als glutenfrei gekennzeichnet"
+          }
+        },
+        {
+          "id": "white-cabbage",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "tomato",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "cucumber",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "slice the chicken thighs thinly, marinate with spices, salt, oil.",
+            "de": "hähnchenschenkel dünn schneiden, mit gewürzen, salz und öl marinieren."
+          }
+        },
+        {
+          "text": {
+            "en": "stack into a loaf, sear all around, finish at 200 °C until the edges crisp.",
+            "de": "zu einem laib schichten, rundum anbraten, bei 200 °C fertig garen, bis die ränder knusprig sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "cabbage, tomato, cucumber, onion — the salad knows no gluten and no mercy.",
+            "de": "kohl, tomate, gurke, zwiebel — der salat kennt kein gluten und keine gnade."
+          }
+        },
+        {
+          "text": {
+            "en": "yogurt-garlic sauce, lemon, salt. check your yogurt label if you're very sensitive — thickeners vary.",
+            "de": "joghurt-knoblauch-soße, zitrone, salz. bei starker sensibilität das joghurt-etikett prüfen — verdickungsmittel variieren."
+          }
+        },
+        {
+          "text": {
+            "en": "warm the corn tortillas dry in the pan, fill, fold, eat standing up. tradition transcends flour.",
+            "de": "mais-tortillas trocken in der pfanne erwärmen, füllen, falten, im stehen essen. tradition überwindet mehl."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "corn tortillas beat most gluten-free pita imitations — they fold without shattering.",
+          "de": "mais-tortillas schlagen die meisten glutenfreien brot-imitate — sie falten, ohne zu zerbrechen."
+        }
+      ]
+    }
+  ]
+}
