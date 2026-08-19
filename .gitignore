@@ -22,6 +22,12 @@
 **/ios/Flutter/ephemeral/
 **/ios/Flutter/.last_build_id
 
+# Local tool caches created inside variant dirs during builds
+**/.gradle-home/
+**/.gradle/
+**/.cache/
+**/.config/
+
 # IDE
 **/.idea/
 *.iml
