@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "dietary",
+      "label": {
+        "en": "Dietary & matching",
+        "de": "Ernährung & Matching"
+      }
+    },
+    {
+      "id": "features",
+      "label": {
+        "en": "Features",
+        "de": "Funktionen"
+      }
+    },
+    {
+      "id": "troubleshoot",
+      "label": {
+        "en": "Troubleshooting",
+        "de": "Fehlerbehebung"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "category": "dietary",
+      "q": {
+        "en": "Why do I only see some dishes, or why does a dish look different?",
+        "de": "Warum sehe ich nur bestimmte Gerichte oder sieht ein Gericht anders aus?"
+      },
+      "a": {
+        "en": "MorphCook never removes a dish for you. Every dish ships as a set of fully-authored variants (classic, vegan, keto, halal-compatible…). Your profile picks which sibling you see by default, but all variants remain listed on the dish page, including the ones filtered out of your feed.",
+        "de": "MorphCook entfernt nie ein Gericht für dich. Jedes Gericht wird als Satz vollständig geschriebener Varianten ausgeliefert (klassisch, vegan, keto, halal-kompatibel…). Dein Profil wählt, welcher Bruderstandard du als Default siehst, aber alle Varianten stehen auf der Gerichtseite – auch die, die aus deinem Feed gefiltert wurden."
+      },
+      "tag_links": [
+        "matches",
+        "variants"
+      ],
+      "tags": [
+        "matching",
+        "variants",
+        "filters"
+      ]
+    },
+    {
+      "category": "dietary",
+      "q": {
+        "en": "What does 'halal-compatible' actually mean?",
+        "de": "Was bedeutet 'halal-kompatibel' tatsächlich?"
+      },
+      "a": {
+        "en": "It is not a certification claim. MorphCook only lists halal-compatible ingredients — no pork, no alcohol, no non-halal gelatin. Whether your sourcing is halal-certified depends on the store and the slaughter, and that's yours to verify. We will never say 'halal-certified' in copy.",
+        "de": "Es ist keine Zertifizierung. MorphCook listet nur halal-kompatible Zutaten — kein Schwein, kein Alkohol, keine nicht-halale Gelatine. Ob deine Beschaffung halal-zertifiziert ist, hängt vom Laden und der Schlachtung ab — das ist deine Sache zu prüfen. Wir werden nie 'halal-zertifiziert' in einer Textzeile sagen."
+      },
+      "tag_links": [
+        "halal"
+      ],
+      "tags": [
+        "halal-kosher"
+      ]
+    },
+    {
+      "category": "dietary",
+      "q": {
+        "en": "What does 'kosher-compatible' actually mean?",
+        "de": "Was bedeutet 'koscher-kompatibel' tatsächlich?"
+      },
+      "a": {
+        "en": "Again, not a certification. We avoid the ingredient choices a kosher kitchen would avoid (pork, shellfish, meat-dairy mixes). Supervision is a property of sourcing, not of a recipe book. Check your own source.",
+        "de": "Auch keine Zertifizierung. Wir vermeiden die Zutaten, die eine koschere Küche meidet (Schwein, Schalentiere, Fleisch-Milch-Gemische). Die Aufsicht ist eine Eigenschaft der Beschaffung, keine eines Kochbuchs. Prüfe deine Quelle."
+      },
+      "tag_links": [
+        "kosher"
+      ],
+      "tags": [
+        "halal-kosher"
+      ]
+    },
+    {
+      "category": "dietary",
+      "q": {
+        "en": "I added 'apples' to my avoid list — what happens?",
+        "de": "Ich habe 'Äpfel' in meine Ausschlussliste aufgenommen — was passiert?"
+      },
+      "a": {
+        "en": "Variants that use apples disappear from your feed and your variant switcher. This is 'specific avoidance' and it combines with class filters (e.g. 'all dairy'). It never deletes the dish itself — it only hides the variant that uses that ingredient.",
+        "de": "Varianten, die Äpfel verwenden, verschwinden aus deinem Feed und deinem Varianten-Umschalter. Das ist 'spezifische Vermeidung' und sie kombiniert sich mit Klassenfiltern (z. B. 'alle Milchprodukte'). Sie löscht niemals das Gericht selbst — sie versteckt nur die Variante, die diese Zutat verwendet."
+      },
+      "tag_links": [
+        "avoid"
+      ],
+      "tags": [
+        "avoidance"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "How do variants work?",
+        "de": "Wie funktionieren Varianten?"
+      },
+      "a": {
+        "en": "Each dish is a concept. Underneath it are separate, fully-written recipes — a vegan Döner is not a 'filter' of a classic Döner, it's its own recipe with its own ingredients, method and macros. They are siblings, not a swap.",
+        "de": "Jedes Gericht ist ein Konzept. Darunter liegen separate, vollständig geschriebene Rezepte — ein veganes Döner ist kein 'Filter' eines klassischen Döners, es ist sein eigenes Rezept mit eigenen Zutaten, Methode und Makros. Sie sind Geschwister, kein Austausch."
+      },
+      "tag_links": [
+        "variants"
+      ],
+      "tags": [
+        "variants"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "Why can I not pick some variant (the chip is disabled)?",
+        "de": "Warum kann ich nicht alle Varianten wählen (Chip ist deaktiviert)?"
+      },
+      "a": {
+        "en": "Some combinations have no recipe yet. We show them disabled with a note, not hidden, so you can see the full space of possibilities we are building toward.",
+        "de": "Für einige Kombinationen gibt es noch kein Rezept. Wir zeigen sie deaktiviert mit einer Notiz an, nicht versteckt, sodass du den gesamten Raum von Möglichkeiten siehst, auf den wir hin arbeiten."
+      },
+      "tag_links": [
+        "variants"
+      ],
+      "tags": [
+        "variants",
+        "matching"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "Why is this recipe not showing on my home feed?",
+        "de": "Warum erscheint dieses Rezept nicht in meinem Home-Feed?"
+      },
+      "a": {
+        "en": "Three filters combine: (1) your class + specific avoidance, (2) your required attributes (e.g. 'halal-compat'), and (3) your time budget and calorie target. If a variant fails any of those, it leaves your feed but stays in the dish page. The same dish, different variant.",
+        "de": "Drei Filter kombinieren: (1) dein Klassen- + spezifischer Ausschluss, (2) deine Pflichtattribute (z. B. 'halal-compat'), (3) dein Zeitbudget und Kalorienziel. Wenn eine Variante einen davon scheitert, verlässt sie deinen Feed, bleibt aber auf der Gerichtseite. Dasselbe Gericht, andere Variante."
+      },
+      "tag_links": [
+        "matching",
+        "avoid",
+        "calories"
+      ],
+      "tags": [
+        "matching",
+        "filters"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "How do I save a recipe?",
+        "de": "Wie speichere ich ein Rezept?"
+      },
+      "a": {
+        "en": "You save one specific variant (one recipe ID), not the whole dish — so your cookbook keeps exactly the Döner you cook, not all four Döners. Find a dish, tap save.",
+        "de": "Du speicherst eine bestimmte Variante (eine Rezept-ID), nicht das gesamte Gericht — so behält dein Kochbuch genau das Döner bei, das du kochst, nicht alle vier Döner. Finde ein Gericht, tippe auf Speichern."
+      },
+      "tag_links": [
+        "save"
+      ],
+      "tags": [
+        "saving",
+        "variants"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "What is Cook mode?",
+        "de": "Was ist der Kochmodus?"
+      },
+      "a": {
+        "en": "A dark, full-bleed, step-by-step view. Per-step timer, servings scaler, prev/next, pause/resume with your progress saved. A visual flash (coral/teal) on the timer — no beep — is available and respects reduce-motion.",
+        "de": "Eine dunkle, Vollbild-, Schritt-für-Schritt-Ansicht. Zeitstempel pro Schritt, Portionen-Scaler, Vor/Zurück, Pausieren/Weiter mit gespeichertem Stand. Ein visuelles Blinken (Korall/Teal) bei Zeiters — kein Piepen — ist verfügbar und respektiert reduzierte Bewegung."
+      },
+      "tag_links": [
+        "cook"
+      ],
+      "tags": [
+        "cook"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "How does the shopping list combine ingredients?",
+        "de": "Wie kombiniert die Einkaufsliste Zutaten?"
+      },
+      "a": {
+        "en": "It sums identical ingredients across your chosen recipes (2 cloves + 3 cloves garlic = 5 cloves) and converts between compatible units (ml ↔ tablespoons) where the ingredient type allows. You get a single, deduplicated list grouped by aisle.",
+        "de": "Sie summiert identische Zutaten über deine gewählten Rezepte (2 + 3 Knoblauchzehen = 5 Knoblauchzehen) und konvertiert zwischen kompatiblen Einheiten (ml ↔ Esslöffel), wo die Zutatenart es erlaubt. Du erhältst eine einzige, deduzierte, nach Abteilungen gruppierte Liste."
+      },
+      "tag_links": [
+        "shopping"
+      ],
+      "tags": [
+        "shopping"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "What is the shopping insights dashboard?",
+        "de": "Was ist das Shopping-Insights-Dashboard?"
+      },
+      "a": {
+        "en": "A small analytics view in Settings: your unique-ingredient variety score, the most-added ingredients, and a month-by-month seasonal split. It is a read-only mirror of your shopping list history.",
+        "de": "Eine kleine Analyseansicht in den Einstellungen: deine Variantenpunkte (Einzel-Ingredienzen), die am häufigsten hinzugefügten Ingredienzen, und eine saisonale Aufteilung nach Monat. Es ist ein schreibgeschützter Spiegel deiner Einkaufshistorie."
+      },
+      "tag_links": [
+        "insights"
+      ],
+      "tags": [
+        "shopping"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "How do the meal plans work?",
+        "de": "Wie funktionieren die Mahlzeitenpläne?"
+      },
+      "a": {
+        "en": "A simple weekly grid (Mon–Sun × breakfast/lunch/dinner). Tap a slot, pick a recipe from your cookbook or search, drag-drop between slots, and export to your shopping list in one tap. No auto-planning, no nutrition rollups in v1.",
+        "de": "Ein einfaches Wochenraster (Mo–So × Frühstück/Mittag/Abend). Tippe auf ein Feld, wähle ein Rezept aus deinem Kochbuch oder der Suche, ziehe es zwischen den Feldern, und exportiere es mit einem Tap zu deiner Einkaufsliste. Kein Auto-Plan, keine Nährstoff-Aggregate in v1."
+      },
+      "tag_links": [
+        "meals"
+      ],
+      "tags": [
+        "meal-plan"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "How do I back up / restore?",
+        "de": "Wie sichere ich / wiederherstelle ich?"
+      },
+      "a": {
+        "en": "Settings → Backup. The app writes `morphcook-backup.json` (human-readable) and `morphcook-backup.json.gz` (GZip, typically 70–90 % smaller) side by side and hands them to your OS share sheet — you keep whichever you prefer. Import auto-detects both formats. If you set a password, the JSON is AES-256-GCM encrypted with a unique salt+IV.",
+        "de": "Einstellungen → Backup. Die App schreibt `morphcook-backup.json` (menschenlesbar) und `morphcook-backup.json.gz` (GZip, typ. 70–90 % kleiner) nebeneinander und übergibt sie ihrem OS-Share-Panel — du behältst deinen bevorzugten. Import erkennt beide Formate automatisch. Falls du ein Passwort setzt, wird das JSON mit AES-256-GCM verschlüsselt, mit eindeutigen Salt+IV."
+      },
+      "tag_links": [
+        "backup"
+      ],
+      "tags": [
+        "backup"
+      ]
+    },
+    {
+      "category": "features",
+      "q": {
+        "en": "Can I add a language I don't see?",
+        "de": "Kann ich eine Sprache hinzufügen, die ich nicht sehe?"
+      },
+      "a": {
+        "en": "EN and DE are the two we ship. All strings in the corpus are stored as Map<lang, String>, so adding a language is a data addition, never a schema change. We don't ship a language until it's reviewed, but the room is there.",
+        "de": "EN und DE sind die beiden, die wir ausliefern. Alle Strings im Korpus werden als Map<lang, String> gespeichert, das Hinzufügen einer Sprache ist also eine Datenergänzung, nie eine Schemaänderung. Wir liefern keine Sprache aus, bis sie geprüft ist, aber der Platz ist da."
+      },
+      "tag_links": [],
+      "tags": []
+    },
+    {
+      "category": "troubleshoot",
+      "q": {
+        "en": "Why is my backup import failing?",
+        "de": "Warum scheitert mein Backup-Import?"
+      },
+      "a": {
+        "en": "Two likely causes: the file was not the MorphCook JSON (or a .gz of it), or you set a password and the import didn't get the right one. 'Incorrect password' — try the exact one you set. 'Backup file is corrupted' — re-export. 'Not a valid MorphCook backup' — wrong format; check it starts with schema_version 1 JSON or is a GZip of it.",
+        "de": "Zwei wahrscheinliche Ursachen: Die Datei war nicht das MorphCook-JSON (oder ein .gz davon), oder du hast ein Passwort eingestellt und der Import bekam nicht das richtige. 'Falsches Passwort' — versuche das exakte. 'Backup-Datei ist beschädigt' — exportiere neu. 'Nicht ein gültiges MorphCook-Backup' — falsches Format; prüfe, dass es mit einem schema_version 1 JSON beginnt oder ein GZip davon ist."
+      },
+      "tag_links": [
+        "backup"
+      ],
+      "tags": [
+        "troubleshoot",
+        "backup"
+      ]
+    },
+    {
+      "category": "troubleshoot",
+      "q": {
+        "en": "I added a new avoid and nothing changed. What now?",
+        "de": "Ich habe eine neue Vermeidung hinzugefügt und nichts hat sich geändert. Was jetzt?"
+      },
+      "a": {
+        "en": "Re-open the dish — the variant switcher recomputes which variants remain visible from your current profile. Feed and cookbook both respect avoid. If you expected a dish to disappear entirely, it won't: dish is a concept, the variant is the filter target.",
+        "de": "Öffne das Gericht neu — die Varianten-Umschaltung berechnet neu, welche Varianten sichtbar bleiben, aus deinem aktuellen Profil. Feed und Kochbuch respektieren beide die Vermeidung. Wenn du erwartet hättest, dass ein Gericht ganz verschwindet, tut es das nicht: das Gericht ist ein Konzept, die Variante ist das Filterziel."
+      },
+      "tag_links": [
+        "avoid",
+        "matches"
+      ],
+      "tags": [
+        "avoidance",
+        "matching"
+      ]
+    },
+    {
+      "category": "troubleshoot",
+      "q": {
+        "en": "The shopping list looks off / double-counted. Is that a bug?",
+        "de": "Die Einkaufsliste sieht falsch aus / doppelt gezählt. Ist das ein Bug?"
+      },
+      "a": {
+        "en": "Most-likely it is two recipes you added separately that both name the same ingredient in different units (15 ml + 1 Tbsp). We convert when the type is compatible, but some pairs are not (e.g. '1 tomato slice' + '1 tomato'). If you spot one, tap the ingredient and it shows the two sources so you can dedup.",
+        "de": "Wahrscheinlich sind es zwei Rezepte, die du separat hinzugefügt hast und beide dieselbe Ingredienz in unterschiedlichen Einheiten nennen (15 ml + 1 EL). Wir konvertieren, wenn der Typ kompatibel ist, aber paarweise nicht (z. B. '1 Tomatenscheibe' + '1 Tomate'). Wenn du eins siehst, tippe die Ingredienz — die zwei Quellen werden angezeigt, so dass du dedup kannst."
+      },
+      "tag_links": [
+        "shopping"
+      ],
+      "tags": [
+        "troubleshoot",
+        "shopping"
+      ]
+    }
+  ]
+}

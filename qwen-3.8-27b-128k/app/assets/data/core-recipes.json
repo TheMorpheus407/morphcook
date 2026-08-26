@@ -1,0 +1,3414 @@
+{
+  "schema_version": 1,
+  "partition_id": "core",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "name": {
+        "en": "Classic Döner",
+        "de": "Klassischer Döner"
+      },
+      "summary": {
+        "en": "Juicy chicken sliced off the spit, wrapped in warm pita with tomato, cucumber and garlic-yogurt.",
+        "de": "Saftiges Hähnchen in Scheiben von der Drehspieß, gewickelt in warmem Fladenbrot mit Tomate, Gurke und Joghurt-Garlick-Arbeit."
+      },
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "calories_per_serving": 620,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "meat-dairy-combo",
+        "poultry"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "chicken-breast",
+        "cucumber",
+        "garlic",
+        "olive-oil",
+        "pita",
+        "plain-yogurt",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "qty": "500",
+          "unit": "g",
+          "name": {
+            "en": "chicken breast, sliced thin",
+            "de": "Hähnchenbrust, in Hauchdünnen Scheiben"
+          }
+        },
+        {
+          "id": "pita",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "pita breads, split open",
+            "de": "Fladenbrote, geöffnet"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in rough chunks",
+            "de": "Tomate, in groben Stücken"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in rough chunks",
+            "de": "Gurke, in groben Stücken"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": "2",
+          "unit": "clove",
+          "name": {
+            "en": "garlic, minced",
+            "de": "Knoblauch, fein gehackt"
+          }
+        },
+        {
+          "id": "plain-yogurt",
+          "qty": "100",
+          "unit": "g",
+          "name": {
+            "en": "plain yogurt",
+            "de": "Naturjoghurt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "¾",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Season the sliced chicken with olive oil, salt and pepper, press to a thin patty.",
+            "de": "Würze die Hähnchenscheiben mit Olivenöl, Salz und Pfeffer und drücke sie zu einer dünnen Scheibe."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Grill the patty on high heat until golden and cooked through.",
+            "de": "Brate die Scheibe bei starker Hitze, bis sie goldbraun und durchgegart ist."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Mix the yogurt with the garlic, salt and a splash of water into a thick sauce.",
+            "de": "Mische Joghurt, Knoblauch, Salz und einen Schuss Wasser zu einer dicken Sauce."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Pile the tomato, cucumber and sauce into each pita, top with the hot chicken.",
+            "de": "Fülle die Pitas mit Tomate, Gurke und sauce und belege sie mit dem heißen Hähnchen."
+          },
+          "seconds": 30
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Wrap, cut, and serve warm. The pita should still be slightly chewy.",
+            "de": "Einrollen, durchschneiden und warm servieren. Das Fladenbrot sollte noch ein wenig kauen."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "street food",
+        "wrap",
+        "spit roast"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "name": {
+        "en": "Vegan Döner",
+        "de": "Vegetarischer Döner"
+      },
+      "summary": {
+        "en": "Seitan carved like the classic, with tahini instead of yogurt. Just as heavy, none of the animal.",
+        "de": "Seitan, wie der Klassiker aufgeschnitten, mit Tahini statt Joghurt. Ebenfalls schwer, ohne Tier."
+      },
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "≤60",
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "ingredient_ids": [
+        "cucumber",
+        "garlic",
+        "olive-oil",
+        "paprika-smoked",
+        "pita",
+        "seitan",
+        "tahini",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "seitan",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "seitan, sliced",
+            "de": "Seitan, geschnitten"
+          }
+        },
+        {
+          "id": "pita",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "pita breads",
+            "de": "Fladenbrote"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in chunks",
+            "de": "Tomate, in Stücken"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in chunks",
+            "de": "Gurke, in Stücken"
+          }
+        },
+        {
+          "id": "tahini",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "tahini",
+            "de": "Tahini"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "paprika-smoked",
+          "qty": "¾",
+          "unit": "tsp",
+          "name": {
+            "en": "smoked paprika",
+            "de": "Geräucherte Paprika"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": "1",
+          "unit": "clove",
+          "name": {
+            "en": "garlic, minced",
+            "de": "Knoblauch, fein gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Press the seitan with paprika, olive oil and salt.",
+            "de": "Drücke den Seitan mit Paprika, Olivenöl und Salz."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Grill until the edges char and the interior is hot.",
+            "de": "Brate, bis die Ränder karamellisieren und das Innere heiß ist."
+          },
+          "seconds": 420
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Loosen the tahini with a little water into a pourable sauce.",
+            "de": "Dünne das Tahini mit etwas Wasser zu einer gussfähigen Sauce."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Layer tomato, cucumber and sauce into the pita, top with the seitan.",
+            "de": "Schichte Tomate, Gurke und sauce in das Fladenbrot und belege es mit Seitan."
+          },
+          "seconds": 30
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Wrap tight and serve straight away.",
+            "de": "Eng einrollen und sofort servieren."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "street food",
+        "wrap"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "name": {
+        "en": "Keto Döner Bowl",
+        "de": "Keto-Döner-Bowl"
+      },
+      "summary": {
+        "en": "The same spit-roasted chicken, no pita. Cucumber, tomato and yogurt in a bowl instead of a wrap.",
+        "de": "Das gleiche gebratene Hähnchen, ohne Fladenbrot. Gurke, Tomate und Joghurt in einer Schüssel statt einer Tüte."
+      },
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "≤60",
+      "calories_per_serving": 580,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "dairy",
+        "meat-dairy-combo",
+        "poultry"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "chicken-breast",
+        "cucumber",
+        "olive-oil",
+        "plain-yogurt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "qty": "500",
+          "unit": "g",
+          "name": {
+            "en": "chicken breast, sliced",
+            "de": "Hähnchenbrust, geschnitten"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in chunks",
+            "de": "Gurke, in Stücken"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in chunks",
+            "de": "Tomate, in Stücken"
+          }
+        },
+        {
+          "id": "plain-yogurt",
+          "qty": "120",
+          "unit": "g",
+          "name": {
+            "en": "plain yogurt",
+            "de": "Naturjoghurt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Season the chicken and grill it until golden.",
+            "de": "Würze das Hähnchen und brate es, bis es goldbraun ist."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Cut the cucumber and tomato into rough, mouthful pieces.",
+            "de": "Scheide Gurke und Tomate in grobe, mundgerechte Stücke."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Whisk the yogurt with a splash of olive oil.",
+            "de": "Wische den Joghurt mit etwas Olivenöl."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Build the bowl: chicken, veg, yogurt, a grind of pepper.",
+            "de": "Stelle die Schüssel: Hähnchen, Gemüse, Joghurt, eine Prise Pfeffer."
+          },
+          "seconds": 30
+        }
+      ],
+      "tags": [
+        "keto",
+        "low carb",
+        "bowl"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "name": {
+        "en": "Halal-Compatible Döner",
+        "de": "Halal-kompatibler Döner"
+      },
+      "summary": {
+        "en": "Beef mince rolled into a dense coil and ground on request, wrapped in pita with the usual garden.",
+        "de": "Rinderhack in einer dicken Spirale gewickelt und auf Anfrage gemahlen, eingewickelt in Fladenbrot mit dem üblichen Garten."
+      },
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "≤60",
+      "calories_per_serving": 680,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "meat-dairy-combo"
+      ],
+      "ingredient_ids": [
+        "beef-mince",
+        "coriander",
+        "cucumber",
+        "cumin",
+        "olive-oil",
+        "pita",
+        "plain-yogurt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-mince",
+          "qty": "500",
+          "unit": "g",
+          "name": {
+            "en": "beef mince",
+            "de": "Rinderhack"
+          }
+        },
+        {
+          "id": "pita",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "pita breads",
+            "de": "Fladenbrote"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in chunks",
+            "de": "Tomate, in Stücken"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in chunks",
+            "de": "Gurke, in Stücken"
+          }
+        },
+        {
+          "id": "plain-yogurt",
+          "qty": "100",
+          "unit": "g",
+          "name": {
+            "en": "plain yogurt",
+            "de": "Naturjoghurt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "cumin",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "cumin",
+            "de": "Kreuzkümmel"
+          }
+        },
+        {
+          "id": "coriander",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "coriander (dried)",
+            "de": "Koriander (getrocknet)"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Form the mince with cumin, coriander, salt and pepper into a dense sausage.",
+            "de": "Forme das Hack mit Kreuzkümmel, Koriander, Salz und Pfeffer zu einer dicken Wurst."
+          },
+          "seconds": 90
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Grill the sausage hard so the outside crisps and the inside stays pink-warm.",
+            "de": "Brate die Wurst kräftig, damit die Außenseite knusprig und die Innenseite rosa-warm bleibt."
+          },
+          "seconds": 540
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Slice into thin coins against the grain.",
+            "de": "Zerlege sie in dünne Scheiben quer zur Faser."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Build the wrap: pita, tomato, cucumber, garlic yogurt, and the sliced meat.",
+            "de": "Stelle die Tüte: Fladenbrot, Tomate, Gurke, Knoblauchjoghurt und die geschnittenen Fleisch."
+          },
+          "seconds": 30
+        }
+      ],
+      "tags": [
+        "beef",
+        "halal-compat",
+        "street food",
+        "wrap"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "padthai-classic",
+      "dish_id": "pad-thai",
+      "name": {
+        "en": "Classic Pad Thai",
+        "de": "Klassisches Pad Thai"
+      },
+      "summary": {
+        "en": "Rice noodles, shrimp and egg, tamarind-sweet and tippy at the edges, peanuts on top.",
+        "de": "Reisnudeln, Garnellen und Ei, tamarinb-süß und am Rand knusprig, Erdnüsse obendrauf."
+      },
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "calories_per_serving": 640,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "egg",
+        "peanuts",
+        "shellfish"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "egg",
+        "olive-oil",
+        "peanuts",
+        "rice-noodles",
+        "salt",
+        "shrimp",
+        "tamarind-sauce"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "rice noodles",
+            "de": "Reisnudeln"
+          }
+        },
+        {
+          "id": "shrimp",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "shrimp, peeled",
+            "de": "Garnelen, geschält"
+          }
+        },
+        {
+          "id": "egg",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "eggs, lightly beaten",
+            "de": "Eier, leicht geschlagen"
+          }
+        },
+        {
+          "id": "peanuts",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "peanuts, coarsely crushed",
+            "de": "Erdnüsse, grob zerschlagen"
+          }
+        },
+        {
+          "id": "tamarind-sauce",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "tamarind sauce",
+            "de": "Tamarindensoße"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Soften the rice noodles in warm water for a few minutes, drain well.",
+            "de": "Lasst die Reisnudeln in warmem Wasser einige Minuten weich werden, gut abtropfen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Stir-fry the shrimp over high heat until they just curl.",
+            "de": "Brate die Garnelen bei starker Hitze an, bis sie sich gerade rollen."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Push to one side, pour in the egg, scramble it loosely.",
+            "de": "Seit zur Seite schieben und das Ei hineingießen und locker rühren."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Add the noodles, tamarind sauce and a splash of water; toss and fold until glossy.",
+            "de": "Füge die Nudeln, die Tamarindsoße und einen Schuss Wasser hinzu; schwenke und fülle, bis glänzend."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Serve with crushed peanuts and a grind of pepper.",
+            "de": "Serviere mit zerschlagenen Erdnüssen und einer Prise Pfeffer."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "wheat noodle",
+        "street food",
+        "umami"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "padthai-vegan",
+      "dish_id": "pad-thai",
+      "name": {
+        "en": "Vegan Pad Thai",
+        "de": "Vegetarisches Pad Thai"
+      },
+      "summary": {
+        "en": "Firm tofu instead of shrimp and egg, the same sweet-sour tamarind backbone.",
+        "de": "Fester Tofu statt Garnellen und Ei, mit derselben süß-sauren Tamarinb-Grundachse."
+      },
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "peanuts"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "olive-oil",
+        "peanuts",
+        "rice-noodles",
+        "tamarind-sauce",
+        "tofufirm"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "rice noodles",
+            "de": "Reisnudeln"
+          }
+        },
+        {
+          "id": "tofufirm",
+          "qty": "300",
+          "unit": "g",
+          "name": {
+            "en": "firm tofu, cubed",
+            "de": "Fester Tofu, in Würfel"
+          }
+        },
+        {
+          "id": "peanuts",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "peanuts, crushed",
+            "de": "Erdnüsse, zerschlagen"
+          }
+        },
+        {
+          "id": "tamarind-sauce",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "tamarind sauce",
+            "de": "Tamarindensoße"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Press and cube the tofu.",
+            "de": "Presse und würfle den Tofu."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Crisp the tofu in oil over high heat.",
+            "de": "Bräune den Tofu bei starker Hitze im Öl."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Soften the noodles in warm water, drain.",
+            "de": "Erweiche die Nudeln in warmem Wasser, abtropfen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Toss noodles, tofu and tamarind sauce until glossy.",
+            "de": "Wende Nudeln, Tofu und Tamarindsoße, bis sie glänzen."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Top with crushed peanuts and pepper.",
+            "de": "Mit zerschlagenen Erdnüssen und Pfeffer belegen."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "street food"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "padthai-keto",
+      "dish_id": "pad-thai",
+      "name": {
+        "en": "Keto Pad Thai",
+        "de": "Keto-Pad Thai"
+      },
+      "summary": {
+        "en": "Zucchini ribbons in lieu of rice noodles, shrimp and egg, all the sweet-sour punch.",
+        "de": "Zucchinischnitte statt Reisnudeln, Garnellen und Ei, mit der ganzen süß-sauren Power."
+      },
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "egg",
+        "shellfish"
+      ],
+      "ingredient_ids": [
+        "egg",
+        "olive-oil",
+        "shrimp",
+        "tamarind-sauce",
+        "zucchini"
+      ],
+      "ingredients": [
+        {
+          "id": "zucchini",
+          "qty": "3",
+          "unit": "piece",
+          "name": {
+            "en": "zucchini, ribboned",
+            "de": "Zucchini, in Schnitten"
+          }
+        },
+        {
+          "id": "shrimp",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "shrimp, peeled",
+            "de": "Garnelen, geschält"
+          }
+        },
+        {
+          "id": "egg",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "eggs, lightly beaten",
+            "de": "Eier, leicht geschlagen"
+          }
+        },
+        {
+          "id": "tamarind-sauce",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "tamarind sauce",
+            "de": "Tamarindensoße"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Ribbon the zucchini with a peeler.",
+            "de": "Zerlege die Zucchini mit einem Pflaume."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Crisp the shrimp over high heat.",
+            "de": "Bräune die Garnelen bei starker Hitze."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Stir-fry the zucchini ribbons for under two minutes, keep them bright.",
+            "de": "Brate die Zucchinischeiben weniger als zwei Minuten an, halte sie hell."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Add egg and tamarind sauce; toss until glossy.",
+            "de": "Füge Ei und Tamarindsoße hinzu; rühre, bis glänzend."
+          },
+          "seconds": 180
+        }
+      ],
+      "tags": [
+        "keto",
+        "low carb"
+      ],
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "fettuccine-classic",
+      "dish_id": "alfredopasta",
+      "name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "summary": {
+        "en": "Three ingredients and patience: butter, cream, parmesan, bound into a coat that clings to ribbon-thin noodles.",
+        "de": "Drei Zutaten und Geduld: Butter, Sahne, Parmesan, zu einem Umhang verbunden, der sich hauchdünnen Nudeln anschließt."
+      },
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "calories_per_serving": 780,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "butter",
+        "cream",
+        "parmesan",
+        "salt",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-pasta",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "fettuccine (wheat)",
+            "de": "Fettuccine (Weizen)"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "butter, in pieces",
+            "de": "Butter, in Stücken"
+          }
+        },
+        {
+          "id": "cream",
+          "qty": "200",
+          "unit": "ml",
+          "name": {
+            "en": "double cream",
+            "de": "Doppelrahm"
+          }
+        },
+        {
+          "id": "parmesan",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "parmesan, grated",
+            "de": "Parmesan, gerieben"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Bring a heavily salted pot to a boil; cook the fettuccine one minute shy.",
+            "de": "Bringe einen stark gesalzenen Topf zum Kochen; koch die Fettuccine eine Minute zu kurz."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "In a wide pan, melt the butter and let it foam, don't let it brown.",
+            "de": "Schmelze in einer breiten Pfanne die Butter und lass sie aufschäumen, braune sie nicht."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Pour in the cream and warm it gently; it should shiver, not bubble.",
+            "de": "Gieße die Sahne ein und erwarme sie sanft; sie sollte zittern, nicht schäumen."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Off the heat, stir in the parmesan and the hot pasta with a splash of cooking water.",
+            "de": "Auf dem Herd, Parmesan und die heiße Nudeln mit einem Spritzer Kochwasser einrühren."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Twist until it coats every ribbon; finish with pepper.",
+            "de": "Drehe, bis jede Schnur beschichtet; mit Pfeffer abschließen."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "three ingredients",
+        "creamy"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "italian"
+    },
+    {
+      "id": "fettuccine-gf",
+      "dish_id": "alfredopasta",
+      "name": {
+        "en": "Gluten-Free Alfredo",
+        "de": "Glutenfreies Alfredo"
+      },
+      "summary": {
+        "en": "The same satin of butter, cream and parmesan over gluten-free fettuccine.",
+        "de": "Dasselbe Seide aus Butter, Sahne und Parmesan über glutenfreie Fettuccine."
+      },
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "calories_per_serving": 760,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "dairy"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "butter",
+        "cream",
+        "gf-pasta",
+        "parmesan"
+      ],
+      "ingredients": [
+        {
+          "id": "gf-pasta",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "gluten-free fettuccine",
+            "de": "Glutenfreie Fettuccine"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "butter",
+            "de": "Butter"
+          }
+        },
+        {
+          "id": "cream",
+          "qty": "200",
+          "unit": "ml",
+          "name": {
+            "en": "double cream",
+            "de": "Doppelrahm"
+          }
+        },
+        {
+          "id": "parmesan",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "parmesan",
+            "de": "Parmesan"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Cook the gluten-free pasta one minute shy of the box.",
+            "de": "Koch die glutenfreie Nudeln eine Minute vor der Box."
+          },
+          "seconds": 540
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Melt the butter, add the cream, warm it.",
+            "de": "Schmelze die Butter, füge die Sahne hinzu, erwärme sie."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Stir the parmesan off the heat, add the pasta and a splash of cooking water.",
+            "de": "Rühre den Parmesan nach dem Abschalten ein, füge die Nudeln und einen Spritzer Kochwasser hinzu."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Twist until glossy and clung.",
+            "de": "Drehe, bis glänzend und klebrig."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "gluten-free",
+        "creamy"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "italian"
+    },
+    {
+      "id": "fettuccine-vegan",
+      "dish_id": "alfredopasta",
+      "name": {
+        "en": "Vegan Alfredo",
+        "de": "Vegetarisches Alfredo"
+      },
+      "summary": {
+        "en": "Cashews and a splash of water for creaminess, wheat pasta on the bottom.",
+        "de": "Cashews und ein Spritzer Wasser für Cremigkeit, Weizennudeln unten."
+      },
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "≤60",
+      "calories_per_serving": 720,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "cashews",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "cashews",
+        "olive-oil",
+        "salt",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-pasta",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "fettuccine (wheat)",
+            "de": "Fettuccine (Weizen)"
+          }
+        },
+        {
+          "id": "cashews",
+          "qty": "80",
+          "unit": "g",
+          "name": {
+            "en": "cashews, soaked in warm water 30 min",
+            "de": "Cashews, 30 min in warmem Wasser eingeweicht"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "1",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Soak the cashews in hot water for at least 30 minutes.",
+            "de": "Leg die Cashews mindestens 30 Minuten in heißes Wasser."
+          },
+          "seconds": 1200
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Cook the pasta one minute shy of al dente.",
+            "de": "Koch die Nudeln eine Minute vor Al Dente."
+          },
+          "seconds": 540
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Blend the soaked cashews with a cup of pasta water, salt and pepper to a smooth cream.",
+            "de": "Mixe die eingeweichten Cashews mit einer Tasse Nudelwasser, Salz und Pfeffer zu einer glatten Crema."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Warm the cashew cream in a pan, pour the pasta into it and toss.",
+            "de": "Erwärme die Cashewcreme in einer Pfanne, gib die Nudeln hinein und wende sie."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Serve with a grind of pepper.",
+            "de": "Serviere mit einer Prise Pfeffer."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "cashew cream"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "italian"
+    },
+    {
+      "id": "burger-classic",
+      "dish_id": "burger",
+      "name": {
+        "en": "Classic Beef Burger",
+        "de": "Klassisches Rindfleisch-Burger"
+      },
+      "summary": {
+        "en": "A single beef patty, two eggs for a loose crumb, a bun, and the works on the side.",
+        "de": "Eine einzelne Rindfleisch-Patty, zwei Eier für ein lockeres Krümel, ein Brötchen und das Ganze an der Seite."
+      },
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "calories_per_serving": 680,
+      "calorie_bucket": "≤800",
+      "servings": 1,
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "meat-dairy-combo"
+      ],
+      "ingredient_ids": [
+        "beef-bun",
+        "beef-mince",
+        "black-pepper",
+        "butter",
+        "cucumber",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-mince",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "beef mince, 20%",
+            "de": "Rinderhack, 20 %"
+          }
+        },
+        {
+          "id": "beef-bun",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "beef bun",
+            "de": "Rindfleisch-Brot"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, 4 thick slices",
+            "de": "Tomate, 4 dicke Scheiben"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "4",
+          "unit": "slice",
+          "name": {
+            "en": "cucumber slices",
+            "de": "Gurkenscheiben"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "20",
+          "unit": "g",
+          "name": {
+            "en": "butter (for the bun)",
+            "de": "Butter (für das Brötchen)"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Form the mince into a patty, make a shallow dimple in the center, season.",
+            "de": "Forme das Hack in eine Patty, mache eine flache Delle in der Mitte, würze sie."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Grill the patty over high heat, one flip, until cooked.",
+            "de": "Brate das Patty über starker Hitze, ein Mal wenden, bis es fertig ist."
+          },
+          "seconds": 420
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Butter the cut side of the bun, toast it on the grill.",
+            "de": "Buttere die Schnittseite des Brötchens, toasten es über dem Grill."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Build: patty, tomato, cucumber, a wedge of butter.",
+            "de": "Bauen: Patty, Tomate, Gurke, ein Butterkeil."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "grill",
+        "burger"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "burger-vegan",
+      "dish_id": "burger",
+      "name": {
+        "en": "Vegan Black-Bean Burger",
+        "de": "Vegetarisches Black Bean Burger"
+      },
+      "summary": {
+        "en": "Black beans and grated carrot, bound with a little flour, grilled until the edges hold.",
+        "de": "Schwarze Bohnen und geriebene Möhre, mit etwas Mehl gebunden, gebratene, bis die Ränder halten."
+      },
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "servings": 1,
+      "contains": [
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "beef-bun",
+        "black-beans",
+        "carrot",
+        "cumin",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "black-beans",
+          "qty": "240",
+          "unit": "g",
+          "name": {
+            "en": "black beans (canned), rinsed and crushed",
+            "de": "Schwarze Bohnen (Dose), abgespült und zerdrückt"
+          }
+        },
+        {
+          "id": "carrot",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "carrot, finely grated",
+            "de": "Karotte, fein gerieben"
+          }
+        },
+        {
+          "id": "beef-bun",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "burger bun",
+            "de": "Burger-Brötchen"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in slices",
+            "de": "Tomate, in Scheiben"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        },
+        {
+          "id": "cumin",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "cumin",
+            "de": "Kreuzkümmel"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Mash the beans rough and mix with carrot, cumin and salt.",
+            "de": "Masse die Bohnen grob und mische sie mit Möhre, Kreuzkümmel und Salz."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Chill the mix for 15 minutes so it firms.",
+            "de": "Chill die Mischung für 15 Minuten, damit sie fest wird."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Form a patty and grill until the edges crisp.",
+            "de": "Forme ein Patty und brate es, bis die Ränder knusprig sind."
+          },
+          "seconds": 420
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve in the bun with tomato slices.",
+            "de": "Serviere es in dem Brötchen mit Tomatenscheiben."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "black bean",
+        "grill"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "burger-keto",
+      "dish_id": "burger",
+      "name": {
+        "en": "Keto Cheeseburger",
+        "de": "Keto-Käseburger"
+      },
+      "summary": {
+        "en": "Beef patty with a cheese cap, no bun, wrapped in lettuce if you count.",
+        "de": "Rindfleisch-Patty mit einer Käsehaube, kein Brötchen, in Salat eingewickelt, wenn du zählen willst."
+      },
+      "effort": "medium",
+      "time_minutes": 28,
+      "time_bucket": "≤30",
+      "calories_per_serving": 700,
+      "calorie_bucket": "≤800",
+      "servings": 1,
+      "contains": [
+        "beef",
+        "dairy",
+        "meat-dairy-combo"
+      ],
+      "ingredient_ids": [
+        "beef-mince",
+        "lettuce",
+        "parmesan",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-mince",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "beef mince, 20%",
+            "de": "Rinderhack, 20 %"
+          }
+        },
+        {
+          "id": "lettuce",
+          "qty": "4",
+          "unit": "leaf",
+          "name": {
+            "en": "lettuce leaves",
+            "de": "Salatblätter"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "tomato, in slices",
+            "de": "Tomate, in Scheiben"
+          }
+        },
+        {
+          "id": "parmesan",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "parmesan, grated",
+            "de": "Parmesan, gerieben"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Grill the patty until cooked, rest a minute.",
+            "de": "Brate das Patty, bis es fertig ist, ruhe es eine Minute."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Shave the parmesan thickly over the hot patty so it melts.",
+            "de": "Renne den Parmesan dick über das heiße Patty, damit es schmilzt."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Build the wrap: lettuce, patty, tomato.",
+            "de": "Bauen Sie die Tüte: Salat, Patty, Tomate."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "keto",
+        "no bun"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "name": {
+        "en": "Shoyu Ramen",
+        "de": "Shoyu-Ramen"
+      },
+      "summary": {
+        "en": "Broth, egg, chashu, noodles, and scallions; a bowl the size of a small arm.",
+        "de": "Brühe, Ei, Chashu, Nudeln und Frühlingszwiebeln; eine Schüssel der Größe eines kleinen Arms."
+      },
+      "effort": "hard",
+      "time_minutes": 90,
+      "time_bucket": ">60",
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "servings": 1,
+      "contains": [
+        "egg",
+        "gluten",
+        "poultry",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "chicken-breast",
+        "egg",
+        "olive-oil",
+        "salt",
+        "soy-sauce",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-pasta",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "ramen noodles",
+            "de": "Lammnoodles"
+          }
+        },
+        {
+          "id": "chicken-breast",
+          "qty": "200",
+          "unit": "g",
+          "name": {
+            "en": "chicken thigh, sliced",
+            "de": "Hähnchenscheiben, geschnitten"
+          }
+        },
+        {
+          "id": "egg",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "eggs, soft-boiled",
+            "de": "Eier, weich gekocht"
+          }
+        },
+        {
+          "id": "soy-sauce",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "soy sauce",
+            "de": "Sojasauce"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "1",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Parboil the ramen noodles, drain, set aside.",
+            "de": "Vorkochen Sie die Lammnoodles, abtropfen, zur Seite stellen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Build the broth: chicken, soy sauce, and a good pinch of salt, simmer 30 min.",
+            "de": "Schaffen Sie die Brühe: Hähnchen, Sojasauce und eine gute Prise Salz, 30 Min. Köcheln."
+          },
+          "seconds": 1800
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Soft-boil the eggs 6 minutes, ice-bath.",
+            "de": "Weichkochen Sie die Eier 6 Minuten, Eis-Bad."
+          },
+          "seconds": 360
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Slip the noodles into a hot bowl, pour the broth, top with chicken and egg.",
+            "de": "Gleite die Nudeln in eine heiße Schüssel, gieße die Brühe ein, belege sie mit Hähnchen und Ei."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "soup",
+        "noodles"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "ramen-vegan",
+      "dish_id": "ramen",
+      "name": {
+        "en": "Vegan Miso Ramen",
+        "de": "Vegetarisches Miso-Ramen"
+      },
+      "summary": {
+        "en": "Mushroom-and-miso broth, firm tofu, soft noodles, and scallion for a quiet punch.",
+        "de": "Pilz- und Miso-Brühe, fester Tofu, weiche Nudeln und Frühlingszwiebeln für einen ruhigen Punch."
+      },
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "≤60",
+      "calories_per_serving": 480,
+      "calorie_bucket": "≤600",
+      "servings": 1,
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "mushroom",
+        "olive-oil",
+        "salt",
+        "soy-sauce",
+        "tofufirm",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-pasta",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "ramen noodles",
+            "de": "Ramennudeln"
+          }
+        },
+        {
+          "id": "mushroom",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "mushrooms, sliced",
+            "de": "Pilze, in Scheiben"
+          }
+        },
+        {
+          "id": "tofufirm",
+          "qty": "200",
+          "unit": "g",
+          "name": {
+            "en": "firm tofu, cubed",
+            "de": "Fester Tofu, in Würfel"
+          }
+        },
+        {
+          "id": "soy-sauce",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "soy sauce",
+            "de": "Sojasauce"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "1",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Sauté the mushroom in oil until brown.",
+            "de": "Braten Sie die Pilze im Öl, bis sie braun sind."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Build a broth with mushroom, soy sauce and water, simmer 20 min.",
+            "de": "Bringen Sie eine Brühe mit Pilzen, Sojasauce und Wasser, auf 20 Min. Köcheln."
+          },
+          "seconds": 1200
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add the tofu, warm it, cook the noodles separately and add.",
+            "de": "Füge den Tofu hinzu, erwärme ihn, koche die Nudeln separat und füge sie hinzu."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve in a big bowl.",
+            "de": "Serviere es in einer großen Schüssel."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "soup"
+      ],
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "pancake-classic",
+      "dish_id": "pancake",
+      "name": {
+        "en": "Buttermilk Pancakes",
+        "de": "Buttermilch-Pfannkuchen"
+      },
+      "summary": {
+        "en": "Fluffy, golden, stacked, with a wedge of butter and a pool of maple syrup.",
+        "de": "Fluffy, golden, aufgestapelt, mit einem Butterkeil und einem Pool Ahornsirup."
+      },
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "butter",
+        "egg",
+        "maple-syrup",
+        "milk",
+        "oatmeal",
+        "salt",
+        "wheat-flour"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-flour",
+          "qty": "250",
+          "unit": "g",
+          "name": {
+            "en": "wheat flour",
+            "de": "Weizenmehl"
+          }
+        },
+        {
+          "id": "oatmeal",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "rolled oats",
+            "de": "Haferflocken"
+          }
+        },
+        {
+          "id": "milk",
+          "qty": "300",
+          "unit": "ml",
+          "name": {
+            "en": "whole milk",
+            "de": "Vollmilch"
+          }
+        },
+        {
+          "id": "egg",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "eggs",
+            "de": "Eier"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "butter, melted",
+            "de": "Butter, geschmolzen"
+          }
+        },
+        {
+          "id": "maple-syrup",
+          "qty": "60",
+          "unit": "ml",
+          "name": {
+            "en": "maple syrup",
+            "de": "Ahornsirup"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Whisk the flour, oats and salt; pour in milk, egg and melted butter.",
+            "de": "Schlage das Mehl, Haferflocken und Salz; gieße Milch, Ei und geschmolzene Butter ein."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Rest the batter 5 minutes.",
+            "de": "Ruhe den Teig 5 Minuten stellen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Cook in a lightly oiled pan, flip once, stack.",
+            "de": "Kochen Sie sie in einer leicht geöten Pfanne, wenden Sie sie einmal und stapeln Sie sie."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Top with butter and maple syrup.",
+            "de": "Bereiche Sie sie mit Butter und Ahornsirup."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "breakfast",
+        "fluffy"
+      ],
+      "seasonal_months": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "pancake-gf",
+      "dish_id": "pancake",
+      "name": {
+        "en": "Buckwheat Crêpe",
+        "de": "Buchweizen-Crêpes"
+      },
+      "summary": {
+        "en": "Buckwheat flour for a thin, nutty, naturally gluten-free crêpe, served with fruit.",
+        "de": "Buchweizenmehl für ein dünnes, nussiges, natürliches glutenfreies Crêpe, mit Obst serviert."
+      },
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "calories_per_serving": 380,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg"
+      ],
+      "ingredient_ids": [
+        "buckwheat-flour",
+        "egg",
+        "maple-syrup",
+        "milk",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "buckwheat-flour",
+          "qty": "200",
+          "unit": "g",
+          "name": {
+            "en": "buckwheat flour",
+            "de": "Buchweizenmehl"
+          }
+        },
+        {
+          "id": "milk",
+          "qty": "400",
+          "unit": "ml",
+          "name": {
+            "en": "whole milk",
+            "de": "Vollmilch"
+          }
+        },
+        {
+          "id": "egg",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "eggs",
+            "de": "Eier"
+          }
+        },
+        {
+          "id": "maple-syrup",
+          "qty": "30",
+          "unit": "ml",
+          "name": {
+            "en": "maple syrup (to serve)",
+            "de": "Ahornsirup (zum Servieren)"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Whisk flour, milk, egg and a pinch of salt to a pourable batter.",
+            "de": "Rühren Sie Mehl, Milch, Ei und eine Prise Salz zu einem flüssigen Teig."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Rest 20 minutes; the batter thickens.",
+            "de": "Ruhe 20 Min.; der Teig wird dick."
+          },
+          "seconds": 1200
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Cook thin crêpes in a hot pan, flip once.",
+            "de": "Kochen Sie dünne Crêpes in einer heißen Pfanne, wenden Sie sie einmal."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve warm with fruit and maple syrup.",
+            "de": "Serviere sie warm mit Obst und Ahornsirup."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "gluten-free",
+        "breakfast"
+      ],
+      "seasonal_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "pancake-vegan",
+      "dish_id": "pancake",
+      "name": {
+        "en": "Vegan Banana Pancakes",
+        "de": "Vegetarische Bananen-Pfannkuchen"
+      },
+      "summary": {
+        "en": "A ripe banana and oats for the whole batter, no milk or egg, and it is still fluff.",
+        "de": "Eine reife Banane und Haferflocken für den gesamten Teig, ohne Milch oder Ei, und es ist immer noch Luftig."
+      },
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "calories_per_serving": 380,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "added-sugar",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "banana",
+        "maple-syrup",
+        "oatmeal",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "banana",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "very ripe banana",
+            "de": "Sehr reife Banane"
+          }
+        },
+        {
+          "id": "oatmeal",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "rolled oats",
+            "de": "Haferflocken"
+          }
+        },
+        {
+          "id": "maple-syrup",
+          "qty": "1",
+          "unit": "tbsp",
+          "name": {
+            "en": "maple syrup",
+            "de": "Ahornsirup"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Mash the banana and mix in the oats, maple syrup and salt.",
+            "de": "Drücke die Banane und mische sie mit den Haferflocken, Ahornsirup und Salz."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Cook the batter in a dry pan, flip until golden.",
+            "de": "Kochen Sie den Teig in einer trockenen Pfanne, wenden Sie ihn bis er golden ist."
+          },
+          "seconds": 540
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Stack and serve with the last of the banana.",
+            "de": "Stapeln und servieren Sie mit der letzten der Banane."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "breakfast",
+        "two-ingredient"
+      ],
+      "seasonal_months": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "greek-salad-classic",
+      "dish_id": "greek-salad",
+      "name": {
+        "en": "Greek Salad",
+        "de": "Griechischer Salat"
+      },
+      "summary": {
+        "en": "Tomato, cucumber, feta, olives and oregano; the salad that eats itself.",
+        "de": "Tomate, Gurke, Feta, Oliven und Oregano; der Salat, der sich selbst isst."
+      },
+      "effort": "easy",
+      "time_minutes": 15,
+      "time_bucket": "≤15",
+      "calories_per_serving": 320,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "dairy"
+      ],
+      "ingredient_ids": [
+        "black-pepper",
+        "cucumber",
+        "feta",
+        "olive-oil",
+        "olives",
+        "oregano",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "tomato",
+          "qty": "3",
+          "unit": "piece",
+          "name": {
+            "en": "tomatoes, in wedges",
+            "de": "Tomaten, in Keil"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in chunks",
+            "de": "Gurke, in Stücken"
+          }
+        },
+        {
+          "id": "feta",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "feta, in big chunks",
+            "de": "Feta, in großen Stücken"
+          }
+        },
+        {
+          "id": "olives",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "black olives",
+            "de": "Schwarze Oliven"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "oregano",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "oregano (dried)",
+            "de": "Oregano (getrocknet)"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "½",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Cut the tomato and cucumber into generous chunks.",
+            "de": "Scheide Tomate und Gurke in großzügige Stücke."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Dress with olive oil, salt, pepper and oregano.",
+            "de": "Bereiche es mit Olivenöl, Salz, Pfeffer und Oregano."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Break the feta and olives on top and serve.",
+            "de": "Zerbrechen Sie den Feta und die Oliven und serviere ihn."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegetarian",
+        "summer"
+      ],
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "greek-salad-vegan",
+      "dish_id": "greek-salad",
+      "name": {
+        "en": "Vegan Greek Salad",
+        "de": "Vegetarischer griechischer Salat"
+      },
+      "summary": {
+        "en": "No feta, just the crisp tomato and cucumber and a generous olive oil.",
+        "de": "Kein Feta, nur die knusprige Tomate und Gurke und ein großzügiges Olivenöl."
+      },
+      "effort": "easy",
+      "time_minutes": 15,
+      "time_bucket": "≤15",
+      "calories_per_serving": 240,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [],
+      "ingredient_ids": [
+        "cucumber",
+        "olive-oil",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "tomato",
+          "qty": "3",
+          "unit": "piece",
+          "name": {
+            "en": "tomatoes, in wedges",
+            "de": "Tomaten, Keile"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in chunks",
+            "de": "Gurke, in Stücken"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Cut everything big and crisp.",
+            "de": "Scheide alles groß und knusprig."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Dress with olive oil and salt.",
+            "de": "Bereiche es mit Olivenöl und Salz."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Serve cold.",
+            "de": "Serviere es kalt."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "summer"
+      ],
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "partition": "core",
+      "cuisine": "middle-eastern"
+    },
+    {
+      "id": "curry-veg",
+      "dish_id": "curry",
+      "name": {
+        "en": "Vegetable Coconut Curry",
+        "de": "Gemüse-Kokos-Curry"
+      },
+      "summary": {
+        "en": "Chickpeas, carrot and coconut milk, a little turmeric, a little fire.",
+        "de": "Kichererbsen, Karotte und Kokosmilch, ein wenig Kurkuma, ein wenig Feuer."
+      },
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "≤60",
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [],
+      "ingredient_ids": [
+        "carrot",
+        "chickpeas",
+        "chili-powder",
+        "coconut-milk",
+        "curry-powder",
+        "olive-oil",
+        "salt",
+        "turmeric"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "qty": "480",
+          "unit": "g",
+          "name": {
+            "en": "chickpeas (canned)",
+            "de": "Kichererbsen (Dose)"
+          }
+        },
+        {
+          "id": "carrot",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "carrots, in chunks",
+            "de": "Karotten, in Stücke"
+          }
+        },
+        {
+          "id": "coconut-milk",
+          "qty": "250",
+          "unit": "ml",
+          "name": {
+            "en": "coconut milk",
+            "de": "Kokosmilch"
+          }
+        },
+        {
+          "id": "curry-powder",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "curry powder",
+            "de": "Kürbispulver"
+          }
+        },
+        {
+          "id": "turmeric",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "turmeric",
+            "de": "Kurkuma"
+          }
+        },
+        {
+          "id": "chili-powder",
+          "qty": "¼",
+          "unit": "tsp",
+          "name": {
+            "en": "chili powder",
+            "de": "Chilipulver"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Warm the oil and toast the curry powder and turmeric for a minute.",
+            "de": "Erwärme das Öl und röste das Currypulver und Kurkuma eine Minute lang."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the carrot and soften with a splash of water.",
+            "de": "Füge die Karotte hinzu und lasse sie mit einem Spritzer Wasser weich werden."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add the chickpeas and the coconut milk, simmer 15 minutes.",
+            "de": "Füge die Kichererbsen und die Kokosmilch hinzu, lass sie 15 Min. köcheln."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Season with chili and salt; serve warm.",
+            "de": "Würze mit Chili und Salz; serviere es warm."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "comfort"
+      ],
+      "seasonal_months": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "curry-chicken",
+      "dish_id": "curry",
+      "name": {
+        "en": "Chicken Coconut Curry",
+        "de": "Hähnchen-Kokos-Curry"
+      },
+      "summary": {
+        "en": "The coconut base, chicken in place of legumes, and a deeper umami.",
+        "de": "Die Kokosbasis, Hähnchen statt Hülsenfrüchten, und ein tieferes Umami."
+      },
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "poultry"
+      ],
+      "ingredient_ids": [
+        "carrot",
+        "chicken-breast",
+        "coconut-milk",
+        "curry-powder",
+        "olive-oil",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "qty": "500",
+          "unit": "g",
+          "name": {
+            "en": "chicken thigh, cubed",
+            "de": "Hähnchenscheiben, in Würfel"
+          }
+        },
+        {
+          "id": "carrot",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "carrots, in chunks",
+            "de": "Karotten, in Stücke"
+          }
+        },
+        {
+          "id": "coconut-milk",
+          "qty": "250",
+          "unit": "ml",
+          "name": {
+            "en": "coconut milk",
+            "de": "Kokosmilch"
+          }
+        },
+        {
+          "id": "curry-powder",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "curry powder",
+            "de": "Kürbispulver"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Crisp the chicken in oil, set aside.",
+            "de": "Bräune das Hähnchen im Öl, zur Seite stellen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Toast the curry powder a minute, add the carrot.",
+            "de": "Röste das Currypulver eine Minute lang, füge die Karotte hinzu."
+          },
+          "seconds": 60
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Return the chicken, add the coconut milk, simmer 15 minutes.",
+            "de": "Kehre das Hähnchen zurück, füge die Kokosmilch hinzu, koche 15 Min."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Warm, serve.",
+            "de": "Erwärme, serviere es."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "comfort",
+        "meaty"
+      ],
+      "seasonal_months": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "partition": "core",
+      "cuisine": "asian"
+    },
+    {
+      "id": "taco-classic",
+      "dish_id": "taco",
+      "name": {
+        "en": "Carne Asada Taco",
+        "de": "Carne-Asada-Taco"
+      },
+      "summary": {
+        "en": "Beef seared in chili, on hot tortillas, with a squeeze of lime.",
+        "de": "Rindfleisch in Chili gebräunt, auf heißen Tortillas, mit einem Spritzer Limette."
+      },
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "beef"
+      ],
+      "ingredient_ids": [
+        "beef-mince",
+        "chili-powder",
+        "corn-tortillas",
+        "cumin",
+        "lettuce",
+        "salt",
+        "tomato"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-mince",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "beef mince",
+            "de": "Rinderhack"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "qty": "8",
+          "unit": "piece",
+          "name": {
+            "en": "corn tortillas",
+            "de": "Mais-Tortillas"
+          }
+        },
+        {
+          "id": "lettuce",
+          "qty": "1",
+          "unit": "cup",
+          "name": {
+            "en": "shredded lettuce (a cup)",
+            "de": "Geraspelte Salat (eine Tasse)"
+          }
+        },
+        {
+          "id": "tomato",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "tomatoes, diced",
+            "de": "Tomaten, in Würfel"
+          }
+        },
+        {
+          "id": "cumin",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "cumin",
+            "de": "Kreuzkümmel"
+          }
+        },
+        {
+          "id": "chili-powder",
+          "qty": "¼",
+          "unit": "tsp",
+          "name": {
+            "en": "chili powder",
+            "de": "Chilipulver"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Crisp the beef with cumin, chili and salt.",
+            "de": "Bräunte das Rindfleisch mit Kreuzkümmel, Chili und Salz."
+          },
+          "seconds": 420
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Warm the tortillas in a dry pan.",
+            "de": "Erwärme die Tortillas in einer trockenen Pfanne."
+          },
+          "seconds": 120
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Build the tacos: tortilla, meat, lettuce, tomato.",
+            "de": "Bauen Sie die Tacos: Tortilla, Fleisch, Salat, Tomate."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "wheat taco",
+        "street food"
+      ],
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "partition": "core",
+      "cuisine": "mexican"
+    },
+    {
+      "id": "taco-veg",
+      "dish_id": "taco",
+      "name": {
+        "en": "Vegan Taco",
+        "de": "Vegetarischer Taco"
+      },
+      "summary": {
+        "en": "Black beans and a fried onion, the same punch, no beef.",
+        "de": "Schwarze Bohnen und eine gebratene Zwiebel, derselbe Punch, kein Rindfleisch."
+      },
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "high-fodmap"
+      ],
+      "ingredient_ids": [
+        "black-beans",
+        "corn-tortillas",
+        "cumin",
+        "onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "black-beans",
+          "qty": "480",
+          "unit": "g",
+          "name": {
+            "en": "black beans (canned)",
+            "de": "Schwarze Bohnen (Dose)"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "onion, in thin strips",
+            "de": "Zwiebel, in dünne Streifen"
+          }
+        },
+        {
+          "id": "corn-tortillas",
+          "qty": "8",
+          "unit": "piece",
+          "name": {
+            "en": "corn tortillas",
+            "de": "Mais-Tortillas"
+          }
+        },
+        {
+          "id": "cumin",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "cumin",
+            "de": "Kreuzkümmel"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Warm the beans with cumin, a splash of water, and salt.",
+            "de": "Erwärme die Bohnen mit Kreuzkümmel, einem Spritzer Wasser und Salz."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Crisp the onion strips in a dry pan.",
+            "de": "Brate die Zwiebelstreifen in einer trockenen Pfanne."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Warm the tortillas and build the tacos: beans, onion.",
+            "de": "Erwärme die Tortillas und baue die Tacos: Bohnen, Zwiebel."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "vegan",
+        "wheat taco"
+      ],
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "partition": "core",
+      "cuisine": "mexican"
+    },
+    {
+      "id": "porridge-classic",
+      "dish_id": "porridge",
+      "name": {
+        "en": "Honey Oat Porridge",
+        "de": "Honig-Hafer-Flocken"
+      },
+      "summary": {
+        "en": "Rolled oats in warm milk, finished with honey and a little salt.",
+        "de": "Haferflocken in warmer Milch, abgeschmeckt mit Honig und einer Prise Salz."
+      },
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "≤15",
+      "calories_per_serving": 340,
+      "calorie_bucket": "≤400",
+      "servings": 1,
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "gluten",
+        "honey"
+      ],
+      "ingredient_ids": [
+        "honey",
+        "milk",
+        "oatmeal",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "oatmeal",
+          "qty": "80",
+          "unit": "g",
+          "name": {
+            "en": "rolled oats",
+            "de": "Haferflocken"
+          }
+        },
+        {
+          "id": "milk",
+          "qty": "400",
+          "unit": "ml",
+          "name": {
+            "en": "whole milk",
+            "de": "Vollmilch"
+          }
+        },
+        {
+          "id": "honey",
+          "qty": "1",
+          "unit": "tbsp",
+          "name": {
+            "en": "honey",
+            "de": "Honig"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "1",
+          "unit": "pinch",
+          "name": {
+            "en": "sea salt (a pinch)",
+            "de": "Meersalz (eine Prise)"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Warm the milk in a small pot.",
+            "de": "Erwärme die Milch in einem kleinen Topf."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Stir in the oats, simmer gentle for 3 minutes.",
+            "de": "Rühre die Haferflocken ein, lass sie 3 Min. sanft köcheln."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Ladle into a bowl, finish with honey and a pinch of salt.",
+            "de": "Schöpfe in eine Schüssel, beende es mit Honig und einer Prise Salz."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "breakfast",
+        "one pot"
+      ],
+      "seasonal_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "partition": "core",
+      "cuisine": "european"
+    },
+    {
+      "id": "porridge-sugarfree",
+      "dish_id": "porridge",
+      "name": {
+        "en": "Sugar-Free Porridge (Cinnamon)",
+        "de": "Zuckerfreies Porridge (Zimt)"
+      },
+      "summary": {
+        "en": "The oats and the milk, but no honey; a ground of cinnamon for the warmth.",
+        "de": "Die Haferflocken und die Milch, aber kein Honig; eine Prise Zimt für die Wärme."
+      },
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "≤15",
+      "calories_per_serving": 320,
+      "calorie_bucket": "≤400",
+      "servings": 1,
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredient_ids": [
+        "cinnamon",
+        "milk",
+        "oatmeal",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "oatmeal",
+          "qty": "80",
+          "unit": "g",
+          "name": {
+            "en": "rolled oats",
+            "de": "Haferflocken"
+          }
+        },
+        {
+          "id": "milk",
+          "qty": "400",
+          "unit": "ml",
+          "name": {
+            "en": "whole milk",
+            "de": "Vollmilch"
+          }
+        },
+        {
+          "id": "cinnamon",
+          "qty": "¾",
+          "unit": "tsp",
+          "name": {
+            "en": "cinnamon",
+            "de": "Zimt"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "1",
+          "unit": "pinch",
+          "name": {
+            "en": "sea salt (a pinch)",
+            "de": "Meersalz (eine Prise)"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Warm the milk.",
+            "de": "Erwärme die Milch."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the oats and the cinnamon, simmer gentle.",
+            "de": "Füge die Haferflocken und den Zimt hinzu, lass es sanft köcheln."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Serve with a pinch of salt.",
+            "de": "Serviere es mit einer Prise Salz."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "sugar-free",
+        "breakfast"
+      ],
+      "seasonal_months": [],
+      "partition": "core",
+      "cuisine": "european"
+    }
+  ]
+}

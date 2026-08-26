@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "partitions": {
+    "core": {
+      "file": "core-recipes.json",
+      "strategy": "eager",
+      "load": "launch"
+    },
+    "extended": {
+      "file": "extended-recipes.json",
+      "strategy": "lazy",
+      "load": "on-demand"
+    }
+  },
+  "recipe_index": {
+    "doener-classic": "core",
+    "doener-vegan": "core",
+    "doener-keto": "core",
+    "doener-halal": "core",
+    "padthai-classic": "core",
+    "padthai-vegan": "core",
+    "padthai-keto": "core",
+    "fettuccine-classic": "core",
+    "fettuccine-gf": "core",
+    "fettuccine-vegan": "core",
+    "burger-classic": "core",
+    "burger-vegan": "core",
+    "burger-keto": "core",
+    "ramen-classic": "core",
+    "ramen-vegan": "core",
+    "pancake-classic": "core",
+    "pancake-gf": "core",
+    "pancake-vegan": "core",
+    "greek-salad-classic": "core",
+    "greek-salad-vegan": "core",
+    "stroganoff-classic": "extended",
+    "curry-veg": "core",
+    "curry-chicken": "core",
+    "minestrone-classic": "extended",
+    "minestrone-vegan": "extended",
+    "risotto-classic": "extended",
+    "risotto-vegan": "extended",
+    "taco-classic": "core",
+    "taco-veg": "core",
+    "porridge-classic": "core",
+    "porridge-sugarfree": "core",
+    "sushi-classic": "extended",
+    "sushi-vegan": "extended",
+    "sushi-halal": "extended"
+  },
+  "cuisine_index": {
+    "italian": [
+      "fettuccine-classic",
+      "fettuccine-gf",
+      "fettuccine-vegan",
+      "minestrone-classic",
+      "minestrone-vegan",
+      "risotto-classic",
+      "risotto-vegan"
+    ],
+    "asian": [
+      "padthai-classic",
+      "padthai-vegan",
+      "padthai-keto",
+      "ramen-classic",
+      "ramen-vegan",
+      "curry-veg",
+      "curry-chicken",
+      "sushi-classic",
+      "sushi-vegan",
+      "sushi-halal"
+    ],
+    "middle-eastern": [
+      "doener-classic",
+      "doener-vegan",
+      "doener-keto",
+      "doener-halal",
+      "greek-salad-classic",
+      "greek-salad-vegan"
+    ],
+    "european": [
+      "burger-classic",
+      "burger-vegan",
+      "burger-keto",
+      "pancake-classic",
+      "pancake-gf",
+      "pancake-vegan",
+      "stroganoff-classic",
+      "porridge-classic",
+      "porridge-sugarfree"
+    ],
+    "mexican": [
+      "taco-classic",
+      "taco-veg"
+    ]
+  },
+  "version": {
+    "corpus": "1.0.0",
+    "recipe_count": 34
+  }
+}

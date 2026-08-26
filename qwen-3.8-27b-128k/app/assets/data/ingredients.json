@@ -1,0 +1,1204 @@
+{
+  "schema_version": 1,
+  "tree": {
+    "dairy": [
+      "butter",
+      "feta",
+      "cream",
+      "milk",
+      "plain-yogurt",
+      "parmesan"
+    ],
+    "nuts": [
+      "peanuts",
+      "cashews",
+      "walnuts",
+      "tahini"
+    ],
+    "legume": [
+      "chickpeas",
+      "black-beans",
+      "red-lentils"
+    ],
+    "animal": [
+      "egg",
+      "chicken-breast",
+      "beef-mince",
+      "pork-mince"
+    ],
+    "seafood": [
+      "salmon",
+      "shrimp"
+    ],
+    "bakery": [
+      "wheat-flour",
+      "pita",
+      "wheat-pasta",
+      "gf-pasta",
+      "corn-tortillas",
+      "oatmeal",
+      "buckwheat-flour",
+      "rice-noodles",
+      "nori"
+    ],
+    "produce": [
+      "tomato",
+      "onion",
+      "garlic",
+      "cucumber",
+      "lettuce",
+      "avocado",
+      "banana",
+      "mango",
+      "carrot",
+      "mushroom",
+      "potato",
+      "sweet-potato"
+    ],
+    "plant": [
+      "tofufirm",
+      "seitan"
+    ],
+    "pantry": [
+      "olive-oil",
+      "salt",
+      "black-pepper",
+      "maple-syrup",
+      "honey",
+      "soy-sauce",
+      "tomato-paste",
+      "paprika-smoked",
+      "cumin",
+      "coriander",
+      "chili-powder",
+      "turmeric",
+      "curry-powder",
+      "cinnamon"
+    ]
+  },
+  "flag_map": {
+    "butter": "dairy",
+    "feta": "dairy",
+    "cream": "dairy",
+    "milk": "dairy",
+    "plain-yogurt": "dairy",
+    "parmesan": "dairy",
+    "peanuts": "peanuts",
+    "cashews": "cashews",
+    "walnuts": "walnuts",
+    "tahini": "sesame",
+    "egg": "egg",
+    "chicken-breast": "poultry",
+    "beef-mince": "beef",
+    "pork-mince": "pork",
+    "salmon": "fish",
+    "shrimp": "shellfish",
+    "wheat-flour": "gluten",
+    "pita": "gluten",
+    "wheat-pasta": "gluten",
+    "oatmeal": "gluten",
+    "soy-sauce": "soy",
+    "seitan": "gluten",
+    "beef-bun": "gluten"
+  },
+  "ingredients": [
+    {
+      "id": "olive-oil",
+      "name": {
+        "en": "olive oil",
+        "de": "Olivenöl"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "The workhorse. Bright, peppery, generous.",
+        "de": "Das Arbeitspferd. Hell, pfeffrig, großzügig."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "butter",
+      "name": {
+        "en": "butter",
+        "de": "Butter"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Unsalted keeps the salt level in your hand.",
+        "de": "Mageres Salz lässt dir die Kontrolle über Salz."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "salt",
+      "name": {
+        "en": "sea salt",
+        "de": "Meersalz"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Season in layers, not all at once.",
+        "de": "In Etappen würzen, nicht alles auf einmal."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "black-pepper",
+      "name": {
+        "en": "black pepper",
+        "de": "Schwarzer Pfeffer"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Cracked at the end stays fragrant.",
+        "de": "Zum Schluss frisch gemahlen bleibt das Aroma."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "maple-syrup",
+      "name": {
+        "en": "maple syrup",
+        "de": "Ahornsirup"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Real maple, dark amber, is the nicest sweetener.",
+        "de": "Echter Ahornsirup, dunkelbernsteinfarben, ist der schönste Süßungsmittel."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "honey",
+      "name": {
+        "en": "honey",
+        "de": "Honig"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Animal-made. Stir into warm, never boiling, liquids.",
+        "de": "Von Tieren. In warme, nie siedende Flüssigkeiten rühren."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "soy-sauce",
+      "name": {
+        "en": "soy sauce",
+        "de": "Sojasauce"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Salty, savory, ancient. Watch the sodium if it’s a concern.",
+        "de": "Salzig, savory, alt. Bei Natrium-Besorgnis die Menge beachten."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "tomato-paste",
+      "name": {
+        "en": "tomato paste",
+        "de": "Tomatenpaste"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Concentrated umami. A spoonful goes a long way.",
+        "de": "Konzentriertes Umami. Ein Löffel reicht weit."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "paprika-smoked",
+      "name": {
+        "en": "smoked paprika",
+        "de": "Geräucherte Paprika"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Smoked paprika is goulash in a pinch.",
+        "de": "Geräucherte Paprika ist Gulasch in einer Prise."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "cumin",
+      "name": {
+        "en": "cumin",
+        "de": "Kreuzkümmel"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Toasted briefly, cumin smells like a warm kitchen.",
+        "de": "Kurz geröstet, riecht Kreuzkümmel nach warmem Küchen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "coriander",
+      "name": {
+        "en": "coriander (dried)",
+        "de": "Koriander (getrocknet)"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "The quiet cousin of fresh coriander.",
+        "de": "Der stille Cousin des frischen Korianders."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "chili-powder",
+      "name": {
+        "en": "chili powder",
+        "de": "Chilipulver"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Start with ¼ tsp and add on your own tongue.",
+        "de": "Mit ¼ TL anfangen und auf der eigenen Zunge weitergehen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "turmeric",
+      "name": {
+        "en": "turmeric",
+        "de": "Kurkuma"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Golden and earthy. Stains, gently, everything.",
+        "de": "Goldfarben und erdig. Färbt alles sanft."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "curry-powder",
+      "name": {
+        "en": "curry powder",
+        "de": "Kürbispulver"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "A blend, not a spice — so blends differ. That’s fine.",
+        "de": "Eine Mischung, kein Gewürz — Mischungen unterscheiden sich. Das ist okay."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "cinnamon",
+      "name": {
+        "en": "cinnamon (sticks)",
+        "de": "Zimt (Stangen)"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Sticks are the good stuff. Grind as you need.",
+        "de": "Stangen sind das Gute. Mahle, wie du brauchst."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "tomato",
+      "name": {
+        "en": "tomatoes",
+        "de": "Tomaten"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Ripe is the only way. Heel-cut for even cooking.",
+        "de": "Reif ist der einzige Weg. Für gleichmäßiges Garen keulenweise schneiden."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "onion",
+      "name": {
+        "en": "onions",
+        "de": "Zwiebeln"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Half sweet, half savoury. The base of almost everything.",
+        "de": "Halb süß, halb savoury. Die Basis von fast allem."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "garlic",
+      "name": {
+        "en": "garlic",
+        "de": "Knoblauch"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "clove",
+      "note": {
+        "en": "One clove per person is the classic ratio.",
+        "de": "Eine Zehe pro Person ist das klassische Verhältnis."
+      },
+      "seasonal_months": [
+        2,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "cucumber",
+      "name": {
+        "en": "cucumbers",
+        "de": "Gurken"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Peel half for texture, leave half for colour.",
+        "de": "Hälfte schälen für Textur, Hälfte für Farbe."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "lettuce",
+      "name": {
+        "en": "romaine lettuce",
+        "de": "Römersalat"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "head",
+      "note": {
+        "en": "Rip, don’t tear, and dress just before serving.",
+        "de": "Rupfen statt reißen, erst kurz vor dem Servieren anmachen."
+      },
+      "seasonal_months": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "avocado",
+      "name": {
+        "en": "avocado",
+        "de": "Avocado"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Buys hard, softens in 3 days. Buy accordingly.",
+        "de": "Wird hart gekauft, wird in 3 Tagen weich. Dem entsprechend kaufen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "banana",
+      "name": {
+        "en": "bananas",
+        "de": "Bananen"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Spotted is ripest and least sweet. Green is starchy.",
+        "de": "Flecken ist am reifsten und am wenigsten süß. Grün ist mehlig."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "mango",
+      "name": {
+        "en": "mango",
+        "de": "Mangos"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Sweet, floral, summer’s loudest fruit.",
+        "de": "Süß, blumig, die lauteste Frucht des Sommers."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "carrot",
+      "name": {
+        "en": "carrots",
+        "de": "Möhren"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Roughly chopped is fine. It’s cake, not sculpture.",
+        "de": "Rund geschnitten ist okay. Es ist Kuchen, keine Skulptur."
+      },
+      "seasonal_months": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "mushroom",
+      "name": {
+        "en": "mushrooms",
+        "de": "Pilze"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "250g",
+      "note": {
+        "en": "Brown and sturdy are worth the extra coins.",
+        "de": "Braun und fest lohnt sich für die zusätzlichen Münzen."
+      },
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "potato",
+      "name": {
+        "en": "potatoes",
+        "de": "Kartoffeln"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "500g",
+      "note": {
+        "en": "Waxy hold their shape; floury go creamy.",
+        "de": "Feste behalten ihre Form; mehlig werden cremig."
+      },
+      "seasonal_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "sweet-potato",
+      "name": {
+        "en": "sweet potatoes",
+        "de": "Süßkartoffeln"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "400g",
+      "note": {
+        "en": "Half carrot, half squash, all comfort.",
+        "de": "Hälfte Möhre, Hälfte Kürbis, alles Geborgenheit."
+      },
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "chickpeas",
+      "name": {
+        "en": "chickpeas (canned)",
+        "de": "Kichererbsen (Dose)"
+      },
+      "category": "legume",
+      "aisle": "legume",
+      "unit": "240g",
+      "note": {
+        "en": "Rinsed well. The cheap, patient protein.",
+        "de": "Gut abgespült. Das billige, geduldige Eiweiß."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "black-beans",
+      "name": {
+        "en": "black beans (canned)",
+        "de": "Schwarze Bohnen (Dose)"
+      },
+      "category": "legume",
+      "aisle": "legume",
+      "unit": "240g",
+      "note": {
+        "en": "Rinse, drain, go. Earthy and quiet.",
+        "de": "Abspülen, abtropfen, los. Erdig und still."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "red-lentils",
+      "name": {
+        "en": "red lentils",
+        "de": "Rote Linsen"
+      },
+      "category": "legume",
+      "aisle": "legume",
+      "unit": "150g",
+      "note": {
+        "en": "No soaking. They melt into a soft soup in 20 minutes.",
+        "de": "Kein Einweichen. Sie zerfallen in 20 Minuten in eine weiche Suppe."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "chicken-breast",
+      "name": {
+        "en": "chicken breast",
+        "de": "Hähnchenbrust"
+      },
+      "category": "animal",
+      "aisle": "meat",
+      "unit": "500g",
+      "note": {
+        "en": "Trim the pin bone, slice across the grain.",
+        "de": "Die Brustknochenseite entfernen, quer zur Faser schneiden."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "beef-mince",
+      "name": {
+        "en": "beef mince",
+        "de": "Rinderhackfleisch"
+      },
+      "category": "animal",
+      "aisle": "meat",
+      "unit": "400g",
+      "note": {
+        "en": "20% fat is the happy middle line.",
+        "de": "20 % Fett ist die glückliche Mittellinie."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "pork-mince",
+      "name": {
+        "en": "pork mince",
+        "de": "Schweinehackfleisch"
+      },
+      "category": "animal",
+      "aisle": "meat",
+      "unit": "500g",
+      "note": {
+        "en": "A little fatty is a good thing. It’s the flavour.",
+        "de": "Ein wenig Fett ist gut. Es ist der Geschmack."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "salmon",
+      "name": {
+        "en": "salmon fillet",
+        "de": "Lachsfilet"
+      },
+      "category": "seafood",
+      "aisle": "seafood",
+      "unit": "300g",
+      "note": {
+        "en": "Skin-on is structurally better for sushi.",
+        "de": "Mit Haut ist strukturell besser für Sushi."
+      },
+      "seasonal_months": [
+        3,
+        4,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "shrimp",
+      "name": {
+        "en": "shrimp (peeled)",
+        "de": "Garnelen (geschält)"
+      },
+      "category": "seafood",
+      "aisle": "seafood",
+      "unit": "250g",
+      "note": {
+        "en": "They’re done the moment they curl. Watch them.",
+        "de": "Sie sind fertig, sobald sie sich rollen. Aufpassen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "egg",
+      "name": {
+        "en": "eggs",
+        "de": "Eier"
+      },
+      "category": "animal",
+      "aisle": "dairy",
+      "unit": "piece",
+      "note": {
+        "en": "Room-temperature eggs beat better.",
+        "de": "Zimmertemperatur Eier schlagen besser."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "feta",
+      "name": {
+        "en": "feta",
+        "de": "Feta"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "150g",
+      "note": {
+        "en": "Brined and salty. Rinse, then drain.",
+        "de": "In Salzwasser und salzig. Abspülen, dann abtropfen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "cream",
+      "name": {
+        "en": "double cream",
+        "de": "Sahne"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "200ml",
+      "note": {
+        "en": "Whips from 35% fat down. That’s the whole trick.",
+        "de": "Schlägt sich von 35 % Fett ab. Das ist der ganze Trick."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "milk",
+      "name": {
+        "en": "whole milk",
+        "de": "Vollmilch"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "250ml",
+      "note": {
+        "en": "Whole milk carries more flavour; light is fine for porridge.",
+        "de": "Vollmilch trägt mehr Geschmack; light ist okay für Porridge."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "plain-yogurt",
+      "name": {
+        "en": "plain yogurt (full fat)",
+        "de": "Naturjoghurt (voller Fett)"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "100g",
+      "note": {
+        "en": "Stir, don’t blend, and it stays creamy.",
+        "de": "Rühren statt mixen, und es bleibt cremig."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "parmesan",
+      "name": {
+        "en": "parmesan",
+        "de": "Parmesan"
+      },
+      "category": "dairy",
+      "aisle": "dairy",
+      "unit": "40g",
+      "note": {
+        "en": "Grate fine, just before it hits the pan.",
+        "de": "Fein reiben, kurz bevor es die Pfanne trifft."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "tofufirm",
+      "name": {
+        "en": "firm tofu",
+        "de": "Fester Tofu"
+      },
+      "category": "plant",
+      "aisle": "plant",
+      "unit": "400g",
+      "note": {
+        "en": "Press 10 minutes. It’s the whole game of tofu.",
+        "de": "10 Minuten pressen. Es ist das ganze Spiel von Soja."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "seitan",
+      "name": {
+        "en": "seitan",
+        "de": "Seitan"
+      },
+      "category": "plant",
+      "aisle": "plant",
+      "unit": "250g",
+      "note": {
+        "en": "Wheat gluten, chewy and meat-like. The vegan döner hero.",
+        "de": "Weizeneiweiß, zäh und fleischig. Der Held des veganen Döners."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "wheat-flour",
+      "name": {
+        "en": "wheat flour",
+        "de": "Weizenmehl"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "200g",
+      "note": {
+        "en": "Sift it for fluffiness. All-purpose is fine.",
+        "de": "Zerlegen für Leichtigkeit. Allzweck ist okay."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "pita",
+      "name": {
+        "en": "pita breads",
+        "de": "Fladenbrote"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "piece",
+      "note": {
+        "en": "Puff them for a minute under a hot grill.",
+        "de": "Für eine Minute unter einem heißen Grill aufschlagen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "wheat-pasta",
+      "name": {
+        "en": "fettuccine (wheat)",
+        "de": "Fettuccine (Weizen)"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "200g",
+      "note": {
+        "en": "Salt the water like the sea. Move it.",
+        "de": "Die Salzwasser wie das Meer. Bewegen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "gf-pasta",
+      "name": {
+        "en": "gluten-free fettuccine",
+        "de": "Glutenfreie Fettuccine"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "200g",
+      "note": {
+        "en": "Cook 1 minute less than you think. It softens.",
+        "de": "1 Minute weniger als du denkst. Es wird weicher."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "corn-tortillas",
+      "name": {
+        "en": "corn tortillas",
+        "de": "Mais-Tortillas"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "piece",
+      "note": {
+        "en": "Warm them in a dry pan, not a toaster.",
+        "de": "In einer trockenen Pfanne erwärmen, nicht im Toaster."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "oatmeal",
+      "name": {
+        "en": "rolled oats",
+        "de": "Haferflocken"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "60g",
+      "note": {
+        "en": "Check the shelf for cross-contact if gluten-mattering.",
+        "de": "Prüfe das Regal auf Kreuzkontakt, wenn Gluten eine Rolle spielt."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "buckwheat-flour",
+      "name": {
+        "en": "buckwheat flour",
+        "de": "Buckweizenmehl"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "120g",
+      "note": {
+        "en": "Naturally gluten-free despite the name.",
+        "de": "Trotz des Namens von Natur aus glutenfrei."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "rice-noodles",
+      "name": {
+        "en": "rice noodles",
+        "de": "Reisnudeln"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "120g",
+      "note": {
+        "en": "Soften in warm water. They do not like boiling long.",
+        "de": "In warmem Wasser erweichen. Sie mögen kein langes Kochen."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "nori",
+      "name": {
+        "en": "nori sheets",
+        "de": "Nori-Blätter"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "sheet",
+      "note": {
+        "en": "Keep it sealed and dry or it turns to dust.",
+        "de": "Versiegelt und trocken halten, sonst wird es zu Staub."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "peanuts",
+      "name": {
+        "en": "peanuts (roasted)",
+        "de": "Erdnüsse (geröstet)"
+      },
+      "category": "nuts",
+      "aisle": "nuts",
+      "unit": "50g",
+      "note": {
+        "en": "A legume in disguise, an allergen in full force.",
+        "de": "Hülsenfrucht in Verkleidung, Allergen in voller Kraft."
+      },
+      "seasonal_months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "cashews",
+      "name": {
+        "en": "cashews (raw)",
+        "de": "Cashewkerne (roh)"
+      },
+      "category": "nuts",
+      "aisle": "nuts",
+      "unit": "60g",
+      "note": {
+        "en": "Blanch and blend for a cream that fools everyone.",
+        "de": "Blanchieren und mixen, für eine Sahne, die alle täuscht."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "walnuts",
+      "name": {
+        "en": "walnuts",
+        "de": "Walnüsse"
+      },
+      "category": "nuts",
+      "aisle": "nuts",
+      "unit": "30g",
+      "note": {
+        "en": "Crush, don’t grind. Texture is the reward.",
+        "de": "Zerschlagen, nicht mahlen. Textur ist die Belohnung."
+      },
+      "seasonal_months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "tahini",
+      "name": {
+        "en": "tahini",
+        "de": "Tahini"
+      },
+      "category": "nuts",
+      "aisle": "pantry",
+      "unit": "Tbsp",
+      "note": {
+        "en": "Thin it with lemon and water until it pours.",
+        "de": "Mit Zitrone und Wasser dünnen, bis es fließt."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "rice-arborio",
+      "name": {
+        "en": "arborio rice",
+        "de": "Arborio-Reis"
+      },
+      "category": "bakery",
+      "aisle": "pantry",
+      "unit": "g",
+      "note": {
+        "en": "The short, plump, starchy rice that makes risotto. It swells; stir, don't rush.",
+        "de": "Der kurze, plump, stärkehaltige Reis, der Risotto macht. Er quillt auf; rühre, hast nicht."
+      },
+      "seasonal_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rice-sushi",
+      "name": {
+        "en": "sushi rice (short grain)",
+        "de": "Sushi-Reis (kurzer Korn)"
+      },
+      "category": "bakery",
+      "aisle": "pantry",
+      "unit": "g",
+      "note": {
+        "en": "The sticky, short grain rice for sushi. Rinse it until the water runs clear.",
+        "de": "Der klebrige, kurze Korn-Reis für Sushi. Spüle ihn, bis das Wasser klar läuft."
+      },
+      "seasonal_months": []
+    },
+    {
+      "id": "tamarind-sauce",
+      "name": {
+        "en": "tamarind paste / sauce",
+        "de": "Tamarinden-Paste / -Soße"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tbsp",
+      "note": {
+        "en": "Sour, fruity, deep. The backbone of pad thai.",
+        "de": "Saure, fruchtig, tief. Die Grundaufbau von Pad Thai."
+      },
+      "seasonal_months": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "coconut-milk",
+      "name": {
+        "en": "coconut milk",
+        "de": "Kokosmilch"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "ml",
+      "note": {
+        "en": "Rich and a little sweet. The fat in a curry is this, not oil.",
+        "de": "Reich und ein bisschen süß. Das Fett in einem Curry ist das, kein Öl."
+      },
+      "seasonal_months": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "beef-bun",
+      "name": {
+        "en": "burger bun (brioche)",
+        "de": "Burger-Brötchen (Brioche)"
+      },
+      "category": "bakery",
+      "aisle": "bakery",
+      "unit": "piece",
+      "note": {
+        "en": "Soft, slightly sweet, structured. Grill the cut side.",
+        "de": "Weich, leicht süß, strukturiert. Die Schnittseite grillen."
+      },
+      "seasonal_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "zucchini",
+      "name": {
+        "en": "zucchini (courgette)",
+        "de": "Zucchini"
+      },
+      "category": "produce",
+      "aisle": "produce",
+      "unit": "piece",
+      "note": {
+        "en": "Summer squash. It cooks in minutes and keeps its shape.",
+        "de": "Sommerschlag. Kocht in Minuten und hält seine Form."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "olives",
+      "name": {
+        "en": "black olives",
+        "de": "Schwarze Oliven"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "g",
+      "note": {
+        "en": "Brined. A rinse takes out half the salt.",
+        "de": "In Salzwasser. Ein Abwasch nimmt die Hälfte des Salzes."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "oregano",
+      "name": {
+        "en": "oregano (dried)",
+        "de": "Oregano (getrocknet)"
+      },
+      "category": "pantry",
+      "aisle": "pantry",
+      "unit": "tsp",
+      "note": {
+        "en": "Crush between your palms just before you use it.",
+        "de": "Zerdrücke es zwischen den Handflächen, kurz bevor du es verwendest."
+      },
+      "seasonal_months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

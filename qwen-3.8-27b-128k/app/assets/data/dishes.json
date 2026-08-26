@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": {
+        "en": "Classic Döner",
+        "de": "Klassischer Döner"
+      },
+      "hero_text": {
+        "en": "warm pita, cold cucumber, hot meat.",
+        "de": "warmes Fladenbrot, kalte Gurke, heißes Fleisch."
+      },
+      "cap_caption": {
+        "en": "the spit-roast that feeds the whole street",
+        "de": "das Drehspieß, das die ganze Straße füttert"
+      },
+      "stripe_color": "#C46A54",
+      "variant_recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": {
+        "en": "Classic Pad Thai",
+        "de": "Klassisches Pad Thai"
+      },
+      "hero_text": {
+        "en": "tamarind is the whole soul.",
+        "de": "Tamarind ist die ganze Seele."
+      },
+      "cap_caption": {
+        "en": "sweet, sour, and a crunch on top",
+        "de": "süß, sauer und ein Crunch obendrauf"
+      },
+      "stripe_color": "#D89A4A",
+      "variant_recipe_ids": [
+        "padthai-classic",
+        "padthai-vegan",
+        "padthai-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "alfredopasta",
+      "canonical_name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "hero_text": {
+        "en": "butter, cream, cheese, patience.",
+        "de": "Butter, Sahne, Käse, Geduld."
+      },
+      "cap_caption": {
+        "en": "three ingredients, one pan",
+        "de": "drei Zutaten, eine Pfanne"
+      },
+      "stripe_color": "#E6D4A8",
+      "variant_recipe_ids": [
+        "fettuccine-classic",
+        "fettuccine-gf",
+        "fettuccine-vegan"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "burger",
+      "canonical_name": {
+        "en": "Classic Beef Burger",
+        "de": "Klassisches Rindfleisch-Burger"
+      },
+      "hero_text": {
+        "en": "a bun, a patty, a reason to eat standing up.",
+        "de": "ein Brötchen, eine Patty, ein Grund, im Stehen zu essen."
+      },
+      "cap_caption": {
+        "en": "the sandwich that refuses to sit still",
+        "de": "das Sandwich, das sich nicht still setzen kann"
+      },
+      "stripe_color": "#B0522F",
+      "variant_recipe_ids": [
+        "burger-classic",
+        "burger-vegan",
+        "burger-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "european"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "ramen",
+      "canonical_name": {
+        "en": "Shoyu Ramen",
+        "de": "Shoyu-Ramen"
+      },
+      "hero_text": {
+        "en": "broth, noodles, and an egg you can't stop thinking about.",
+        "de": "Brühe, Nudeln und ein Ei, das du nicht aufhören kannst zu denken."
+      },
+      "cap_caption": {
+        "en": "a bowl with its own gravity",
+        "de": "eine Schüssel mit ihrer eigenen Schwerkraft"
+      },
+      "stripe_color": "#7E9E7B",
+      "variant_recipe_ids": [
+        "ramen-classic",
+        "ramen-vegan"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "pancake",
+      "canonical_name": {
+        "en": "Buttermilk Pancakes",
+        "de": "Buttermilch-Pfannkuchen"
+      },
+      "hero_text": {
+        "en": "the pan, the patience, the syrup.",
+        "de": "die Pfanne, die Geduld, der Sirup."
+      },
+      "cap_caption": {
+        "en": "stacks, syrup, and a quiet morning",
+        "de": "Stacks, Sirup und ein ruhiger Morgen"
+      },
+      "stripe_color": "#E0B36A",
+      "variant_recipe_ids": [
+        "pancake-classic",
+        "pancake-gf",
+        "pancake-vegan"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "european"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "greek-salad",
+      "canonical_name": {
+        "en": "Greek Salad",
+        "de": "Griechischer Salat"
+      },
+      "hero_text": {
+        "en": "tomato, cucumber, feta, and an olive oil you don't have to explain.",
+        "de": "Tomate, Gurke, Feta und ein Olivenöl, das du nicht erklären musst."
+      },
+      "cap_caption": {
+        "en": "the salad that eats itself",
+        "de": "der Salat, der sich selbst isst"
+      },
+      "stripe_color": "#6FA287",
+      "variant_recipe_ids": [
+        "greek-salad-classic",
+        "greek-salad-vegan"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "stroganoff",
+      "canonical_name": {
+        "en": "Beef Stroganoff",
+        "de": "Rinderstroganoff"
+      },
+      "hero_text": {
+        "en": "beef, cream, mushroom, onion.",
+        "de": "Rind, Sahne, Pilz, Zwiebel."
+      },
+      "cap_caption": {
+        "en": "a heavy spoon and a quiet room",
+        "de": "ein schwerer Löffel und ein ruhiger Raum"
+      },
+      "stripe_color": "#A9765A",
+      "variant_recipe_ids": [
+        "stroganoff-classic"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "european"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "curry",
+      "canonical_name": {
+        "en": "Vegetable Coconut Curry",
+        "de": "Gemüse-Kokos-Curry"
+      },
+      "hero_text": {
+        "en": "coconut, chickpea, a little fire.",
+        "de": "Kokos, Kichererbsen, ein wenig Feuer."
+      },
+      "cap_caption": {
+        "en": "a pot that makes a dinner",
+        "de": "ein Topf, der ein Abendessen macht"
+      },
+      "stripe_color": "#C87C3E",
+      "variant_recipe_ids": [
+        "curry-veg",
+        "curry-chicken"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "minestrone",
+      "canonical_name": {
+        "en": "Minestrone",
+        "de": "Minestrone"
+      },
+      "hero_text": {
+        "en": "soup that fills. soup that stays.",
+        "de": "Suppe, die füllt. Suppe, die bleibt."
+      },
+      "cap_caption": {
+        "en": "every vegetable in the fridge",
+        "de": "jedes Gemüse im Kühlschrank"
+      },
+      "stripe_color": "#95906B",
+      "variant_recipe_ids": [
+        "minestrone-classic",
+        "minestrone-vegan"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "risotto",
+      "canonical_name": {
+        "en": "Risotto alla Milanese",
+        "de": "Risotto alla Milanese"
+      },
+      "hero_text": {
+        "en": "rice, butter, and a long patient stir.",
+        "de": "Reis, Butter und ein langes, geduldiges Rühren."
+      },
+      "cap_caption": {
+        "en": "a pot that makes an evening",
+        "de": "ein Topf, der einen Abend macht"
+      },
+      "stripe_color": "#D9C79B",
+      "variant_recipe_ids": [
+        "risotto-classic",
+        "risotto-vegan"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "taco",
+      "canonical_name": {
+        "en": "Carne Asada Taco",
+        "de": "Carne-Asada-Taco"
+      },
+      "hero_text": {
+        "en": "hot tortilla, cold lettuce, and a squeeze of lime.",
+        "de": "heißes Fladenbrot, kalter Salat und ein Spritzer Limette."
+      },
+      "cap_caption": {
+        "en": "a hand, a tortilla, a reason",
+        "de": "eine Hand, eine Tortilla, ein Grund"
+      },
+      "stripe_color": "#C28F4A",
+      "variant_recipe_ids": [
+        "taco-classic",
+        "taco-veg"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "porridge",
+      "canonical_name": {
+        "en": "Honey Oat Porridge",
+        "de": "Honig-Hafer-Flocken"
+      },
+      "hero_text": {
+        "en": "oats, milk, honey.",
+        "de": "Hafer, Milch, Honig."
+      },
+      "cap_caption": {
+        "en": "one pot, one spoon, one warm bowl",
+        "de": "ein Topf, ein Löffel, eine warme Schüssel"
+      },
+      "stripe_color": "#C9B88E",
+      "variant_recipe_ids": [
+        "porridge-classic",
+        "porridge-sugarfree"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "european"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "sushi",
+      "canonical_name": {
+        "en": "Salmon & Shrimp Maki",
+        "de": "Lachs- & Garnellen-Maki"
+      },
+      "hero_text": {
+        "en": "nori, rice, salmon, and a knife that is almost too clean.",
+        "de": "Nori, Reis, Lachs und ein Messer, das beinahe zu sauber ist."
+      },
+      "cap_caption": {
+        "en": "a cold, clean, green bite",
+        "de": "ein kalter, sauberer, grüner Biss"
+      },
+      "stripe_color": "#5F7E77",
+      "variant_recipe_ids": [
+        "sushi-classic",
+        "sushi-vegan",
+        "sushi-halal"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "extended"
+    }
+  ]
+}

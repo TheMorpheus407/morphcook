@@ -1,0 +1,60 @@
+name: morphcook
+description: "MorphCook — a cookbook where every body gets the whole recipe book."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Boring local persistence: plain JSON files in app documents dir.
+  path: ^1.9.1
+  path_provider: ^2.1.6
+
+  # Backup: OS share sheet
+  share_plus: ^13.3.0
+
+  # Backup import: pick a file from the OS file picker
+  file_picker: ^12.0.0
+
+  crypto: ^3.0.7
+
+  # PBKDF2 + AES-256-GCM for optional encrypted backups.
+  pointycastle: ^4.0.0
+
+  # GZip encode/decode for the .gz backup export format.
+  archive: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/fonts/
+
+  fonts:
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay.ttf
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          style: italic
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat.ttf
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          style: italic

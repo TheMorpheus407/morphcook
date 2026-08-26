@@ -1,0 +1,1101 @@
+{
+  "schema_version": 1,
+  "partition_id": "extended",
+  "recipes": [
+    {
+      "id": "stroganoff-classic",
+      "dish_id": "stroganoff",
+      "name": {
+        "en": "Beef Stroganoff",
+        "de": "Rinderstroganoff"
+      },
+      "summary": {
+        "en": "Beef, cream, mushroom, onion. A heavy spoon and a quiet room.",
+        "de": "Rind, Sahne, Pilz, Zwiebel. Ein schwerer Löffel und ein ruhiger Raum."
+      },
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "≤60",
+      "calories_per_serving": 720,
+      "calorie_bucket": "≤800",
+      "servings": 2,
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "meat-dairy-combo"
+      ],
+      "ingredient_ids": [
+        "beef-mince",
+        "black-pepper",
+        "butter",
+        "cream",
+        "mushroom",
+        "onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-mince",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "beef mince",
+            "de": "Rinderhack"
+          }
+        },
+        {
+          "id": "mushroom",
+          "qty": "300",
+          "unit": "g",
+          "name": {
+            "en": "mushrooms, sliced",
+            "de": "Pilze, in Scheiben"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "30",
+          "unit": "g",
+          "name": {
+            "en": "butter",
+            "de": "Butter"
+          }
+        },
+        {
+          "id": "cream",
+          "qty": "150",
+          "unit": "ml",
+          "name": {
+            "en": "double cream",
+            "de": "Doppelrahm"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "onions, in thin strips",
+            "de": "Zwiebeln, in dünne Streifen"
+          }
+        },
+        {
+          "id": "black-pepper",
+          "qty": "1",
+          "unit": "tsp",
+          "name": {
+            "en": "black pepper",
+            "de": "Schwarzer Pfeffer"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Crisp the beef in butter, set aside.",
+            "de": "Brate das Rind in Butter, zur Seite stellen."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Sweat the onion strips until soft.",
+            "de": "Schweiß die Zwiebelstreifen, bis sie weich sind."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Return the beef, add the mushroom, let it brown.",
+            "de": "Kehre das Rind zurück, füge die Pilze hinzu, lass sie braun werden."
+          },
+          "seconds": 600
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Pour in the cream, simmer gently 15 minutes.",
+            "de": "Gieße die Sahne ein, lass sie 15 Min. sanft köcheln."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 5,
+          "text": {
+            "en": "Season and serve with a grind of pepper.",
+            "de": "Würze und serviere mit einer Prise Pfeffer."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "creamy",
+        "meaty"
+      ],
+      "seasonal_months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "partition": "extended",
+      "cuisine": "european"
+    },
+    {
+      "id": "minestrone-classic",
+      "dish_id": "minestrone",
+      "name": {
+        "en": "Minestrone",
+        "de": "Minestrone"
+      },
+      "summary": {
+        "en": "Every vegetable in the fridge, beans, and a deep tomato broth. Soup that fills you.",
+        "de": "Jedes Gemüse im Kühlschrank, Bohnen und eine tiefe Tomatenbrühe. Eine Suppe, die dich füllt."
+      },
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "≤60",
+      "calories_per_serving": 380,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "ingredient_ids": [
+        "carrot",
+        "chickpeas",
+        "garlic",
+        "olive-oil",
+        "onion",
+        "salt",
+        "tomato",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "tomato",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "tomatoes, grated",
+            "de": "Tomaten, gerieben"
+          }
+        },
+        {
+          "id": "carrot",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "carrots, in chunks",
+            "de": "Karotten, in Stücke"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "onion, in thin strips",
+            "de": "Zwiebel, in dünne Streifen"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": "2",
+          "unit": "clove",
+          "name": {
+            "en": "garlic",
+            "de": "Knoblauchzehen"
+          }
+        },
+        {
+          "id": "chickpeas",
+          "qty": "240",
+          "unit": "g",
+          "name": {
+            "en": "chickpeas (canned)",
+            "de": "Kichererbsen (Dose)"
+          }
+        },
+        {
+          "id": "wheat-pasta",
+          "qty": "100",
+          "unit": "g",
+          "name": {
+            "en": "wheat pasta",
+            "de": "Weizen-Nudeln"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Soften the onion and carrot in oil.",
+            "de": "Erweiche die Zwiebel und Karotte im Öl."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the garlic, the raw tomato and a little paste, cook a few minutes.",
+            "de": "Füge den Knoblauch, die rohe Tomate und ein wenig Paste hinzu, koch einige Minuten lang."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add water or stock, bring to a simmer, add the chickpeas and pasta.",
+            "de": "Füge Wasser oder Brühe hinzu, bringe es zum Kochen, füge die Kichererbsen und Nudeln hinzu."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Simmer until the pasta is just cooked.",
+            "de": "Köcheln bis die Nudeln nur noch gekocht sind."
+          },
+          "seconds": 600
+        }
+      ],
+      "tags": [
+        "soup",
+        "vegetarian",
+        "comfort"
+      ],
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "partition": "extended",
+      "cuisine": "italian"
+    },
+    {
+      "id": "minestrone-vegan",
+      "dish_id": "minestrone",
+      "name": {
+        "en": "Vegan Minestrone",
+        "de": "Vegetarische Minestrone"
+      },
+      "summary": {
+        "en": "The same vegetables and beans, no meat stock, and still the best thing on a winter day.",
+        "de": "Dasselbe Gemüse und Hülsenfrüchte, ohne Fleischbrühe, und trotzdem das Beste an einem Wintertag."
+      },
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "≤60",
+      "calories_per_serving": 340,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "gluten",
+        "high-fodmap"
+      ],
+      "ingredient_ids": [
+        "carrot",
+        "chickpeas",
+        "olive-oil",
+        "onion",
+        "salt",
+        "tomato",
+        "wheat-pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "tomato",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "tomatoes, grated",
+            "de": "Tomaten, gerieben"
+          }
+        },
+        {
+          "id": "carrot",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "carrots, in chunks",
+            "de": "Karotten, in Stücke"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "onion, in thin strips",
+            "de": "Zwiebel, in dünne Streifen"
+          }
+        },
+        {
+          "id": "chickpeas",
+          "qty": "240",
+          "unit": "g",
+          "name": {
+            "en": "chickpeas (canned)",
+            "de": "Kichererbsen (Dose)"
+          }
+        },
+        {
+          "id": "wheat-pasta",
+          "qty": "100",
+          "unit": "g",
+          "name": {
+            "en": "wheat pasta",
+            "de": "Weizen-Nudeln"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Soften the onion and carrot in oil.",
+            "de": "Erweiche die Zwiebel und Karotte im Öl."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the raw tomato, cook a few minutes.",
+            "de": "Füge die rohe Tomate hinzu, koch einige Minuten lang."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add water, simmer, add the chickpeas and pasta.",
+            "de": "Füge Wasser hinzu, lass es kochen, füge die Kichererbsen und Nudeln hinzu."
+          },
+          "seconds": 900
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Simmer until the pasta is just cooked.",
+            "de": "Köcheln bis die Nudeln nur noch gekocht sind."
+          },
+          "seconds": 600
+        }
+      ],
+      "tags": [
+        "vegan",
+        "soup"
+      ],
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "partition": "extended",
+      "cuisine": "italian"
+    },
+    {
+      "id": "risotto-classic",
+      "dish_id": "risotto",
+      "name": {
+        "en": "Risotto alla Milanese",
+        "de": "Risotto alla Milanese"
+      },
+      "summary": {
+        "en": "Rice, butter, and a long patient stir. The pot that makes an evening.",
+        "de": "Reis, Butter und ein langes geduldiges Rühren. Ein Topf, der einen Abend macht."
+      },
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "ingredient_ids": [
+        "butter",
+        "olive-oil",
+        "onion",
+        "parmesan",
+        "rice-arborio",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-arborio",
+          "qty": "300",
+          "unit": "g",
+          "name": {
+            "en": "arborio rice",
+            "de": "Arborio-Reis"
+          }
+        },
+        {
+          "id": "butter",
+          "qty": "40",
+          "unit": "g",
+          "name": {
+            "en": "butter",
+            "de": "Butter"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "onion, finely chopped",
+            "de": "Zwiebel, fein gehackt"
+          }
+        },
+        {
+          "id": "parmesan",
+          "qty": "60",
+          "unit": "g",
+          "name": {
+            "en": "parmesan",
+            "de": "Parmesan"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Toast the onion in butter and oil.",
+            "de": "Röste die Zwiebel in Butter und Öl."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the rice and cook until the edges go glassy.",
+            "de": "Füge den Reis hinzu und brate, bis die Ränder glasig werden."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add warm stock a ladle at a time, stirring, until the rice is creamy and just tender.",
+            "de": "Füge warme Brühe einen Schöpflöffel nach dem anderen hinzu, rühre, bis der Reis cremig und gerade zart ist."
+          },
+          "seconds": 2400
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Stir in the parmesan off the heat, rest 2 minutes, serve.",
+            "de": "Rühre den Parmesan nach dem Abschalten ein, Ruhe er 2 Min., serviere ihn."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "creamy",
+        "rice"
+      ],
+      "seasonal_months": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "partition": "extended",
+      "cuisine": "italian"
+    },
+    {
+      "id": "risotto-vegan",
+      "dish_id": "risotto",
+      "name": {
+        "en": "Vegan Risotto",
+        "de": "Vegetarisches Risotto"
+      },
+      "summary": {
+        "en": "The same patient rice, no parmesan; a little mushroom for the umami.",
+        "de": "Derselbe geduldige Reis, kein Parmesan; ein bisschen Pilz für das Umami."
+      },
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "calories_per_serving": 450,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "high-fodmap"
+      ],
+      "ingredient_ids": [
+        "mushroom",
+        "olive-oil",
+        "onion",
+        "rice-arborio",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-arborio",
+          "qty": "300",
+          "unit": "g",
+          "name": {
+            "en": "arborio rice",
+            "de": "Arborio-Reis"
+          }
+        },
+        {
+          "id": "mushroom",
+          "qty": "200",
+          "unit": "g",
+          "name": {
+            "en": "mushrooms",
+            "de": "Pilze"
+          }
+        },
+        {
+          "id": "onion",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "onion, finely chopped",
+            "de": "Zwiebel, fein gehackt"
+          }
+        },
+        {
+          "id": "olive-oil",
+          "qty": "3",
+          "unit": "tbsp",
+          "name": {
+            "en": "olive oil",
+            "de": "Olivenöl"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Sauté the mushroom until brown, then the onion until soft.",
+            "de": "Brate den Pilz, bis er braun ist, dann die Zwiebel, bis sie weich ist."
+          },
+          "seconds": 360
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Add the rice and toast it.",
+            "de": "Füge den Reis hinzu und röste ihn."
+          },
+          "seconds": 180
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Add warm water a ladle at a time, stirring, until the rice is creamy.",
+            "de": "Füge warmes Wasser einen Schöpflöffel nach dem anderen hinzu, rühre, bis der Reis cremig ist."
+          },
+          "seconds": 2400
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Rest and serve.",
+            "de": "Erwärme und serviere."
+          },
+          "seconds": 60
+        }
+      ],
+      "tags": [
+        "vegan",
+        "rice"
+      ],
+      "seasonal_months": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "partition": "extended",
+      "cuisine": "italian"
+    },
+    {
+      "id": "sushi-classic",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Salmon & Shrimp Maki",
+        "de": "Lachs- & Garnellen-Maki"
+      },
+      "summary": {
+        "en": "Nori, rice, salmon and shrimp, cut into clean eight pieces.",
+        "de": "Nori, Reis, Lachs und Garnelen, in acht saubere Stücke geschnitten."
+      },
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "≤60",
+      "calories_per_serving": 480,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "fish",
+        "shellfish",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "nori",
+        "rice-sushi",
+        "salmon",
+        "salt",
+        "shrimp",
+        "soy-sauce"
+      ],
+      "ingredients": [
+        {
+          "id": "nori",
+          "qty": "4",
+          "unit": "sheet",
+          "name": {
+            "en": "nori sheets",
+            "de": "Nori-Blätter"
+          }
+        },
+        {
+          "id": "rice-sushi",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "sushi rice",
+            "de": "Sushi-Reis"
+          }
+        },
+        {
+          "id": "salmon",
+          "qty": "200",
+          "unit": "g",
+          "name": {
+            "en": "salmon, in strips",
+            "de": "Lachs, in Streifen"
+          }
+        },
+        {
+          "id": "shrimp",
+          "qty": "150",
+          "unit": "g",
+          "name": {
+            "en": "shrimp, peeled",
+            "de": "Garnelen, geschält"
+          }
+        },
+        {
+          "id": "soy-sauce",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "soy sauce",
+            "de": "Sojasauce"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Rinse the sushi rice until the water runs clear, cook per package.",
+            "de": "Spüle den Sushi-Reis, bis das Wasser klar ist, koche ihn nach Packung."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Lay the nori on a mat, spread the rice, place salmon and shrimp.",
+            "de": "Lege das Nori auf eine Matte, streiche den Reis, platziere Lachs und Garnelen."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Roll up and seal, slice into eights.",
+            "de": "Rollen Sie sie und versiegeln sie, schneiden Sie sie in Achtel."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve with a dip of soy.",
+            "de": "Serviere es mit einem Tauchsoße."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "raw",
+        "asian"
+      ],
+      "seasonal_months": [
+        3,
+        4,
+        9,
+        10
+      ],
+      "partition": "extended",
+      "cuisine": "asian"
+    },
+    {
+      "id": "sushi-vegan",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Vegan Avocado Maki",
+        "de": "Vegetarische Avocado-Maki"
+      },
+      "summary": {
+        "en": "Nori, rice, avocado and cucumber; no fish, just a cold, clean, green bite.",
+        "de": "Nori, Reis, Avocado und Gurke; kein Fisch, nur ein kalter, sauberer, grüner Biss."
+      },
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "calories_per_serving": 380,
+      "calorie_bucket": "≤400",
+      "servings": 2,
+      "contains": [
+        "soy"
+      ],
+      "ingredient_ids": [
+        "avocado",
+        "cucumber",
+        "nori",
+        "rice-sushi",
+        "soy-sauce"
+      ],
+      "ingredients": [
+        {
+          "id": "nori",
+          "qty": "4",
+          "unit": "sheet",
+          "name": {
+            "en": "nori sheets",
+            "de": "Nori-Blätter"
+          }
+        },
+        {
+          "id": "rice-sushi",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "sushi rice",
+            "de": "Sushi-Reis"
+          }
+        },
+        {
+          "id": "avocado",
+          "qty": "2",
+          "unit": "piece",
+          "name": {
+            "en": "avocados, in thick slices",
+            "de": "Avocados, in dicke Scheiben"
+          }
+        },
+        {
+          "id": "cucumber",
+          "qty": "1",
+          "unit": "piece",
+          "name": {
+            "en": "cucumber, in long strips",
+            "de": "Gurke, in lange Streifen"
+          }
+        },
+        {
+          "id": "soy-sauce",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "soy sauce",
+            "de": "Sojasauce"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Cook the sushi rice.",
+            "de": "Kochen Sie den Sushi-Reis."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Spread the rice on the nori, place avocado and cucumber.",
+            "de": "Streiche den Reis auf das Nori, platziere Avocado und Gurke."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Roll and slice into twos.",
+            "de": "Rullen und schneiden Sie in Zweiteile."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve with soy sauce and a chill.",
+            "de": "Geben Sie sie mit Sojasauce und einem Chill über."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "vegan",
+        "raw"
+      ],
+      "seasonal_months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "partition": "extended",
+      "cuisine": "asian"
+    },
+    {
+      "id": "sushi-halal",
+      "dish_id": "sushi",
+      "name": {
+        "en": "Halal-Compatible Salmon Maki",
+        "de": "Halal-kompatible Lachs-Maki"
+      },
+      "summary": {
+        "en": "Salmon-only maki, no shrimp, on sushi rice and nori.",
+        "de": "Lachs-Only-Maki, ohne Garnellen, auf Sushi-Reis und Nori."
+      },
+      "effort": "hard",
+      "time_minutes": 55,
+      "time_bucket": "≤60",
+      "calories_per_serving": 460,
+      "calorie_bucket": "≤600",
+      "servings": 2,
+      "contains": [
+        "fish",
+        "soy"
+      ],
+      "ingredient_ids": [
+        "nori",
+        "rice-sushi",
+        "salmon",
+        "salt",
+        "soy-sauce"
+      ],
+      "ingredients": [
+        {
+          "id": "nori",
+          "qty": "4",
+          "unit": "sheet",
+          "name": {
+            "en": "nori sheets",
+            "de": "Nori-Blätter"
+          }
+        },
+        {
+          "id": "rice-sushi",
+          "qty": "400",
+          "unit": "g",
+          "name": {
+            "en": "sushi rice",
+            "de": "Sushi-Reis"
+          }
+        },
+        {
+          "id": "salmon",
+          "qty": "300",
+          "unit": "g",
+          "name": {
+            "en": "salmon, in strips",
+            "de": "Lachs, in Streifen"
+          }
+        },
+        {
+          "id": "soy-sauce",
+          "qty": "2",
+          "unit": "tbsp",
+          "name": {
+            "en": "soy sauce",
+            "de": "Sojasauce"
+          }
+        },
+        {
+          "id": "salt",
+          "qty": "to taste",
+          "unit": "unit",
+          "name": {
+            "en": "sea salt",
+            "de": "Meersalz"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "n": 1,
+          "text": {
+            "en": "Cook the sushi rice.",
+            "de": "Kochen Sie den Sushi-Reis."
+          },
+          "seconds": 480
+        },
+        {
+          "n": 2,
+          "text": {
+            "en": "Spread the rice on the nori and the salmon.",
+            "de": "Streiche den Reis auf das Nori und den Lachs."
+          },
+          "seconds": 240
+        },
+        {
+          "n": 3,
+          "text": {
+            "en": "Roll and slice into eights.",
+            "de": "Rollen und schneiden Sie in Achtel."
+          },
+          "seconds": 300
+        },
+        {
+          "n": 4,
+          "text": {
+            "en": "Serve with soy.",
+            "de": "Geben Sie sie mit Soja über."
+          },
+          "seconds": 0
+        }
+      ],
+      "tags": [
+        "halal-compat",
+        "raw"
+      ],
+      "seasonal_months": [
+        3,
+        4,
+        9,
+        10
+      ],
+      "partition": "extended",
+      "cuisine": "asian"
+    }
+  ]
+}

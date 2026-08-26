@@ -1,0 +1,51 @@
+// opencode: lokaler Ollama-Provider fuer den Qwen3.8-27B-Lauf in diesem Ordner.
+// Angelegt 2026-08-24.
+//
+// Zweck: dritter Q4_K_M-Lauf desselben MorphCook-One-Shots, diesmal mit dem
+// vollen nativen Kontextfenster des Modells (262144) statt 64k oder 128k.
+// Moeglich wird das durch einen quantisierten K/V-Cache im Ollama-Dienst
+// (OLLAMA_KV_CACHE_TYPE=q8_0 + OLLAMA_FLASH_ATTENTION=1, gesetzt in
+// /etc/nixos/configuration.nix am 2026-08-24): in f16 kostet der Cache bei
+// 256k rund 16 GiB, in q8_0 rund 8 GiB - genau so viel wie das 128k-Fenster
+// vorher in f16 gebraucht hat.
+//
+// Modell ist der Alias qwen3.8-27b-q4-256k
+// (FROM qwen3.8:27b-mtp-q4_K_M, PARAMETER num_ctx 262144).
+//
+// Der limit-Block steht hier, weil opencode fuer einen selbst definierten
+// Provider sonst keine Fenstergroesse kennt und seine automatische Compaction
+// dann nicht greift. Doku (https://opencode.ai/docs/providers/), verbatim:
+// "The limit fields allow OpenCode to understand how much context you have
+// left. Standard providers pull these from models.dev automatically."
+// limit.context = num_ctx des Alias. limit.output = 32768, der Wert, den Qwen
+// selbst fuer agentische Coding-Laeufe angibt (Model Card Qwen3.8-27B,
+// QwenSWEBench: "max_tokens=32,768").
+// Compaction-Schwelle daraus: 262144 - min(32768, OUTPUT_TOKEN_MAX=32000)
+// = 230144 Tokens.
+//
+// Die beiden frueheren Q4-Laeufe liegen daneben und bleiben unberuehrt:
+//   ../qwen-3.8-27b/       64k,  ohne limit-Block, endete am vollen Fenster
+//   ../qwen-3.8-27b-128k/  128k, mit limit-Block, 5 Compactions, regulaeres Ende
+//
+// Start: cd <dieser Ordner> && opencode run --model ollama/qwen3.8-27b-q4-256k "$(cat prompt.txt)"
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3.8-27b-q4-256k": {
+          "name": "Qwen3.8 27B Q4_K_M (256k)",
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+// opencode: lokaler Ollama-Provider für den Qwen3.8-27B-Lauf in diesem Ordner.
+// Angelegt 2026-08-24, am selben Tag auf den GGUF-Tag umgestellt.
+//
+// Zweck: opencode kennt von sich aus keinen lokalen Ollama-Provider — `opencode
+// models` listet ohne diese Datei nur die Cloud-Anbieter. Der Block unten hängt
+// den Systemdienst auf 127.0.0.1:11434 als OpenAI-kompatiblen Provider ein.
+// Er gilt nur für dieses Verzeichnis; ~/.config/opencode/opencode.jsonc bleibt
+// unangetastet.
+//
+// Umstellung 2026-08-24, 20:12 MESZ: Das Modell war zuvor der Alias
+// qwen3.8-27b-nvfp4-64k (FROM qwen3.8:27b-nvfp4). Der NVFP4-Tag läuft auf Linux
+// zwingend über Ollamas MLX-CUDA-Runner, und der stirbt reproduzierbar beim
+// Prefill jedes Prompts über 2.048 Tokens (drei Panics, Beleg im Stück
+// Active Content/Long Form/qwen-3-8-27b/work_test/2026-08-24_mlx-prefill-grenze.txt).
+// opencode sendet allein für System-Prompt und Werkzeugdefinitionen ~7.500
+// Tokens, der Lauf kam deshalb nie beim Modell an. Ersatz ist der GGUF-Tag
+// qwen3.8:27b-mtp-q4_K_M (Q4_K_M, MTP an, Vision-Projektor dabei), der über
+// Ollamas GGML/CUDA-Runner läuft und von dem Fehler nicht betroffen ist.
+//
+// Das Modell ist der Alias qwen3.8-27b-q4-64k (FROM qwen3.8:27b-mtp-q4_K_M,
+// PARAMETER num_ctx 65536). Die 64k stehen dort, weil Ollamas
+// opencode-Integrationsseite sie verlangt: "OpenCode requires a context length
+// of 64k or higher."
+//
+// Start: cd /home/morpheus/Documents/Projects/Benchmarks/MorphCook/qwen-3.8-27b && opencode
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3.8-27b-q4-64k": {
+          "name": "Qwen3.8 27B Q4_K_M (64k)"
+        }
+      }
+    }
+  }
+}

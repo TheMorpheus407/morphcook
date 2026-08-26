@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "contains_flags": [
+    { "id": "pork", "label": { "en": "Pork", "de": "Schweinefleisch" }, "group": "meat" },
+    { "id": "beef", "label": { "en": "Beef", "de": "Rindfleisch" }, "group": "meat" },
+    { "id": "lamb", "label": { "en": "Lamb", "de": "Lamm" }, "group": "meat" },
+    { "id": "poultry", "label": { "en": "Poultry", "de": "Geflügel" }, "group": "meat" },
+    { "id": "fish", "label": { "en": "Fish", "de": "Fisch" }, "group": "seafood" },
+    { "id": "shellfish", "label": { "en": "Shellfish", "de": "Schalentiere" }, "group": "seafood" },
+    { "id": "egg", "label": { "en": "Eggs", "de": "Ei" }, "group": "animal" },
+    { "id": "dairy", "label": { "en": "Dairy", "de": "Milchprodukte" }, "group": "animal" },
+    { "id": "lactose", "label": { "en": "Lactose", "de": "Laktose" }, "group": "animal" },
+    { "id": "honey", "label": { "en": "Honey", "de": "Honig" }, "group": "animal" },
+    { "id": "gelatin", "label": { "en": "Gelatin", "de": "Gelatine" }, "group": "animal" },
+    { "id": "gelatin-non-halal", "label": { "en": "Non-halal gelatin", "de": "Gelatine (nicht halal)" }, "group": "animal" },
+    { "id": "gelatin-non-kosher", "label": { "en": "Non-kosher gelatin", "de": "Gelatine (nicht koscher)" }, "group": "animal" },
+    { "id": "meat-dairy-combo", "label": { "en": "Meat & dairy together", "de": "Fleisch & Milchprodukte" }, "group": "animal" },
+    { "id": "gluten", "label": { "en": "Gluten", "de": "Gluten" }, "group": "plant" },
+    { "id": "soy", "label": { "en": "Soy", "de": "Soja" }, "group": "plant" },
+    { "id": "peanuts", "label": { "en": "Peanuts", "de": "Erdnüsse" }, "group": "plant" },
+    { "id": "almonds", "label": { "en": "Almonds", "de": "Mandeln" }, "group": "plant" },
+    { "id": "walnuts", "label": { "en": "Walnuts", "de": "Walnüsse" }, "group": "plant" },
+    { "id": "pistachios", "label": { "en": "Pistachios", "de": "Pistazien" }, "group": "plant" },
+    { "id": "cashews", "label": { "en": "Cashews", "de": "Cashewkerne" }, "group": "plant" },
+    { "id": "hazelnuts", "label": { "en": "Hazelnuts", "de": "Haselnüsse" }, "group": "plant" },
+    { "id": "sesame", "label": { "en": "Sesame", "de": "Sesam" }, "group": "plant" },
+    { "id": "mustard", "label": { "en": "Mustard", "de": "Senf" }, "group": "plant" },
+    { "id": "celery", "label": { "en": "Celery", "de": "Sellerie" }, "group": "plant" },
+    { "id": "lupin", "label": { "en": "Lupin", "de": "Lupine" }, "group": "plant" },
+    { "id": "sulphites", "label": { "en": "Sulphites", "de": "Sulfite" }, "group": "additive" },
+    { "id": "alcohol", "label": { "en": "Alcohol", "de": "Alkohol" }, "group": "additive" },
+    { "id": "caffeine", "label": { "en": "Caffeine", "de": "Koffein" }, "group": "additive" },
+    { "id": "added-sugar", "label": { "en": "Added sugar", "de": "Zusätzlich Zucker" }, "group": "additive" },
+    { "id": "high-fodmap", "label": { "en": "High-FODMAP", "de": "Hoch-FODMAP" }, "group": "digestion" }
+  ],
+  "compound_flags": [
+    {
+      "id": "vegan",
+      "label": { "en": "Vegan", "de": "Vegetarisch-vegan" },
+      "note": { "en": "Expands to all animal-derived contains-flags.", "de": "Entfaltet sich zu allen tierischen Contains-Flags." },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "egg", "dairy", "honey", "gelatin", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "vegetarian",
+      "label": { "en": "Vegetarian", "de": "Vegetarisch" },
+      "note": { "en": "No meat, fish, shellfish or gelatin.", "de": "Kein Fleisch, Fisch, Schalentiere oder Gelatine." },
+      "expands_to": ["pork", "beef", "lamb", "poultry", "fish", "shellfish", "gelatin", "gelatin-non-halal", "gelatin-non-kosher"]
+    },
+    {
+      "id": "pescatarian",
+      "label": { "en": "Pescatarian", "de": "Pescatarisch" },
+      "note": { "en": "No land meat (fish is fine).", "de": "Kein Landfleisch (Fisch ist okay)." },
+      "expands_to": ["pork", "beef", "lamb", "gelatin-non-halal"]
+    },
+    {
+      "id": "halal-compat",
+      "label": { "en": "Halal-compatible", "de": "Halal-kompatibel" },
+      "note": { "en": "We never claim halal certification — only halal-compatible ingredients (no pork, alcohol or non-halal gelatin). Sourcing depends on you.", "de": "Wir behaupten nie Halal-Zertifizierung — nur halal-kompatible Zutaten (kein Schwein, Alkohol oder nicht-halale Gelatine). Die Beschaffung liegt bei dir." },
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    {
+      "id": "kosher-compat",
+      "label": { "en": "Kosher-compatible", "de": "Koscher-kompatibel" },
+      "note": { "en": "We never claim kosher certification — only kosher-compatible ingredient choices (no pork, shellfish or meat-dairy combos). Supervision is a property of sourcing, not of a recipe text.", "de": "Wir behaupten nie Koscher-Zertifizierung — nur koschere Zutatenauswahl (kein Schwein, keine Schalentiere, keine Fleisch-Milch-Kombinationen). Die Aufsicht ist eine Eigenschaft der Beschaffung, nicht des Rezepttexts." },
+      "expands_to": ["pork", "shellfish", "meat-dairy-combo", "gelatin-non-kosher"]
+    },
+    {
+      "id": "low-fodmap",
+      "label": { "en": "Low FODMAP", "de": "Low FODMAP" },
+      "note": { "en": "Excludes recipes tagged high-FODMAP.", "de": "Schließt Rezepte mit dem Hoch-FODMAP-Tag aus." },
+      "expands_to": ["high-fodmap"]
+    },
+    {
+      "id": "sugar-free",
+      "label": { "en": "Sugar-free", "de": "Zuckerfrei" },
+      "note": { "en": "Excludes recipes with added sugar.", "de": "Schließt Rezepte mit Zuckerzusatz aus." },
+      "expands_to": ["added-sugar"]
+    },
+    {
+      "id": "lactose-free",
+      "label": { "en": "Lactose-free", "de": "Laktosefrei" },
+      "note": { "en": "Excludes recipes containing lactose (a subset of dairy).", "de": "Schließt Rezepte mit Laktose (Teilmenge von Milchprodukten) aus." },
+      "expands_to": ["lactose"]
+    }
+  ],
+  "attributes": {
+    "effort": [
+      { "id": "easy", "label": { "en": "easy", "de": "einfach" } },
+      { "id": "medium", "label": { "en": "medium", "de": "mittleres Maß" } },
+      { "id": "hard", "label": { "en": "hard", "de": "anspruchsvoll" } }
+    ],
+    "meal": [
+      { "id": "breakfast", "label": { "en": "breakfast", "de": "frühstück" } },
+      { "id": "lunch", "label": { "en": "lunch", "de": "mittagessen" } },
+      { "id": "dinner", "label": { "en": "dinner", "de": "abendessen" } }
+    ]
+  }
+}

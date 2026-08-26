@@ -1,0 +1,40 @@
+// opencode: lokaler Ollama-Provider fuer den Qwen3.8-27B-Lauf in diesem Ordner.
+// Angelegt 2026-08-24.
+//
+// Modell ist der Alias qwen3.8-27b-q4-128k
+// (FROM qwen3.8:27b-mtp-q4_K_M, PARAMETER num_ctx 131072).
+//
+// Der limit-Block steht hier, weil opencode fuer einen selbst definierten
+// Provider sonst keine Fenstergroesse kennt und seine automatische Compaction
+// dann nicht greift. Doku (https://opencode.ai/docs/providers/), verbatim:
+// "The limit fields allow OpenCode to understand how much context you have
+// left. Standard providers pull these from models.dev automatically."
+// limit.context = num_ctx des Alias. limit.output = 32768, der Wert, den Qwen
+// selbst fuer agentische Coding-Laeufe angibt (Model Card Qwen3.8-27B,
+// QwenSWEBench: "max_tokens=32,768").
+//
+// Ein frueherer Lauf mit 64k Fenster und ohne limit-Block liegt in
+// ../qwen-3.8-27b/.
+//
+// Start: cd <dieser Ordner> && opencode run --model ollama/qwen3.8-27b-q4-128k "$(cat prompt.txt)"
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3.8-27b-q4-128k": {
+          "name": "Qwen3.8 27B Q4_K_M (128k)",
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        }
+      }
+    }
+  }
+}
