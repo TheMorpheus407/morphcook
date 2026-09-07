@@ -1,0 +1,2138 @@
+[
+  {
+    "id": "pad-thai-classic",
+    "dish_id": "pad-thai",
+    "title": {
+      "en": "Prawn pad Thai",
+      "de": "Pad Thai mit Garnelen"
+    },
+    "description": {
+      "en": "Tamarind-tangled noodles with a peanut crunch.",
+      "de": "Nudeln in Tamarinde mit knackigen Erdnüssen."
+    },
+    "diet": "classic",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 575,
+    "servings": 2,
+    "contains": [
+      "added-sugar",
+      "egg",
+      "nuts",
+      "peanuts",
+      "shellfish",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "halal",
+      "medium",
+      "stir-fry",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "classic",
+      "medium",
+      "dinner",
+      "stir-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "prawns",
+        "quantity": 240.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "bean-sprouts",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "peanuts",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamarind",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sugar",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 30.0,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Everything within reach",
+          "de": "Alles griffbereit"
+        },
+        "text": {
+          "en": "Soak noodles following packet directions until flexible but not soft. Mix tamarind, tamari, sugar and 3 tbsp warm water. Chop peanuts and spring onion greens.",
+          "de": "Nudeln nach Packung einweichen, bis sie biegsam, aber noch fest sind. Tamarinde, Tamari, Zucker und 3 EL warmes Wasser verrühren. Erdnüsse und Zwiebelgrün hacken."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "A hot wok",
+          "de": "Ein heißer Wok"
+        },
+        "text": {
+          "en": "Heat oil in a wok. Fry prawns for 3 minutes until opaque and 63°C inside. Push aside, crack in eggs and scramble for 1 minute until set.",
+          "de": "Öl im Wok erhitzen. Garnelen 3 Minuten braten, bis sie undurchsichtig sind und innen 63 °C erreichen. Zur Seite schieben, Eier hineinschlagen und 1 Minute vollständig stocken lassen."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "Toss the noodles",
+          "de": "Nudeln schwenken"
+        },
+        "text": {
+          "en": "Add drained noodles and sauce. Toss for 3–4 minutes, adding a little water if needed, until the noodles are tender. Add sprouts and cook for 2 minutes until piping hot.",
+          "de": "Abgetropfte Nudeln und Sauce zugeben. 3–4 Minuten schwenken, bei Bedarf etwas Wasser ergänzen, bis die Nudeln gar sind. Sprossen zugeben und 2 Minuten gründlich erhitzen."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "The lime moment",
+          "de": "Der Limettenmoment"
+        },
+        "text": {
+          "en": "Divide between bowls, scatter over peanuts and spring onion greens, and serve with lime wedges.",
+          "de": "Auf Schalen verteilen, Erdnüsse und Zwiebelgrün darüberstreuen und mit Limettenspalten servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 35,
+      "carbs": 72,
+      "fat": 17
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "pad-thai-vegetarian",
+    "dish_id": "pad-thai",
+    "title": {
+      "en": "Golden egg & tofu pad Thai",
+      "de": "Pad Thai mit Ei und goldenem Tofu"
+    },
+    "description": {
+      "en": "Soft egg ribbons, crisp tofu, a bright finish.",
+      "de": "Zarte Eierstreifen, knuspriger Tofu, frische Limette."
+    },
+    "diet": "vegetarian",
+    "effort": "medium",
+    "calorie_level": "hearty",
+    "time_minutes": 30,
+    "calories_per_serving": 620,
+    "servings": 2,
+    "contains": [
+      "added-sugar",
+      "egg",
+      "nuts",
+      "peanuts",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "halal",
+      "kosher",
+      "medium",
+      "stir-fry",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegetarian",
+      "medium",
+      "dinner",
+      "stir-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "tofu",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "carrots",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "bean-sprouts",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "peanuts",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamarind",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sugar",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A little preparation",
+          "de": "Ein wenig Vorbereitung"
+        },
+        "text": {
+          "en": "Soak noodles as directed. Pat tofu dry and cut into small cubes. Shave carrots into matchsticks. Stir tamarind, tamari, sugar and 50 ml water together.",
+          "de": "Nudeln nach Packung einweichen. Tofu trocken tupfen und klein würfeln. Karotten in feine Stifte schneiden. Tamarinde, Tamari, Zucker und 50 ml Wasser verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Make the egg ribbons",
+          "de": "Eierstreifen zubereiten"
+        },
+        "text": {
+          "en": "Heat half the oil in a wok. Beat the eggs, pour in and swirl into a thin omelette. Cook until fully set, transfer to a board and cut into ribbons.",
+          "de": "Die Hälfte des Öls im Wok erhitzen. Eier verquirlen, hineingeben und zu einem dünnen Omelett schwenken. Ganz stocken lassen, auf ein Brett legen und in Streifen schneiden."
+        },
+        "timer_seconds": 120
+      },
+      {
+        "title": {
+          "en": "Noodles meet the wok",
+          "de": "Nudeln treffen Wok"
+        },
+        "text": {
+          "en": "Add remaining oil and fry tofu for 5 minutes until golden. Add carrot, drained noodles and sauce; toss for 4 minutes. Add sprouts and cook for 2 minutes, until thoroughly hot.",
+          "de": "Restliches Öl zugeben und Tofu 5 Minuten goldbraun braten. Karotte, abgetropfte Nudeln und Sauce zugeben; 4 Minuten schwenken. Sprossen zugeben und 2 Minuten gut durcherhitzen."
+        },
+        "timer_seconds": 660
+      },
+      {
+        "title": {
+          "en": "A bright finish",
+          "de": "Ein frischer Abschluss"
+        },
+        "text": {
+          "en": "Fold through the egg ribbons. Finish with chopped peanuts and lime juice.",
+          "de": "Eierstreifen unterheben. Mit gehackten Erdnüssen und Limettensaft abschließen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 30,
+      "carbs": 74,
+      "fat": 23
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "pad-thai-vegan",
+    "dish_id": "pad-thai",
+    "title": {
+      "en": "Tamarind tofu noodles",
+      "de": "Tamarinden-Tofu-Nudeln"
+    },
+    "description": {
+      "en": "Sticky-sour noodles with sunflower crunch.",
+      "de": "Süßsaure Nudeln mit knackigen Sonnenblumenkernen."
+    },
+    "diet": "vegan",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 560,
+    "servings": 2,
+    "contains": [
+      "added-sugar",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "stir-fry",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegan",
+      "easy",
+      "dinner",
+      "stir-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "tofu",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "courgette",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "carrots",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "sunflower-seeds",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamarind",
+        "quantity": 30.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "maple-syrup",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "cilantro",
+        "quantity": 10.0,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Slice & soak",
+          "de": "Schneiden & einweichen"
+        },
+        "text": {
+          "en": "Soak rice noodles according to the packet. Cut tofu into thin triangles and pat dry. Julienne courgette and carrot. Mix tamarind, tamari, maple syrup and 60 ml water.",
+          "de": "Reisnudeln nach Packung einweichen. Tofu in dünne Dreiecke schneiden und trocken tupfen. Zucchini und Karotte in feine Streifen schneiden. Tamarinde, Tamari, Ahornsirup und 60 ml Wasser mischen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Golden triangles",
+          "de": "Goldene Dreiecke"
+        },
+        "text": {
+          "en": "Toast sunflower seeds in a dry wok for 2 minutes, then remove. Heat oil and fry tofu for 5 minutes, turning halfway. Add vegetables and stir-fry for 2 minutes.",
+          "de": "Sonnenblumenkerne 2 Minuten trocken im Wok rösten und herausnehmen. Öl erhitzen und Tofu 5 Minuten braten, nach der Hälfte wenden. Gemüse zugeben und 2 Minuten pfannenrühren."
+        },
+        "timer_seconds": 540
+      },
+      {
+        "title": {
+          "en": "Tangle & serve",
+          "de": "Mischen & servieren"
+        },
+        "text": {
+          "en": "Add drained noodles and sauce. Toss for 3–4 minutes until tender and glossy, adding water if dry. Serve with sunflower seeds, cilantro and squeezed lime.",
+          "de": "Abgetropfte Nudeln und Sauce zugeben. 3–4 Minuten schwenken, bis sie gar und glänzend sind; bei Trockenheit Wasser ergänzen. Mit Kernen, Koriandergrün und Limettensaft servieren."
+        },
+        "timer_seconds": 240
+      }
+    ],
+    "nutrition": {
+      "protein": 25,
+      "carbs": 74,
+      "fat": 18
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "pad-thai-keto",
+    "dish_id": "pad-thai",
+    "title": {
+      "en": "Lime chicken cabbage noodles",
+      "de": "Limettenhähnchen auf Kohlnudeln"
+    },
+    "description": {
+      "en": "A wok supper with plenty of crunch.",
+      "de": "Ein Wok-Abendessen mit viel Biss."
+    },
+    "diet": "keto",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 435,
+    "servings": 2,
+    "contains": [
+      "egg",
+      "nuts",
+      "peanuts",
+      "poultry",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "keto",
+      "kosher",
+      "stir-fry",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "keto",
+      "easy",
+      "dinner",
+      "stir-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "red-cabbage",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "peanuts",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "tamarind",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 30.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 15.0,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Cabbage ribbons",
+          "de": "Kohlbänder"
+        },
+        "text": {
+          "en": "Shred cabbage into noodle-thin ribbons. Slice chicken very thinly. Grate ginger and mix tamari, tamarind, lime juice and 2 tbsp water.",
+          "de": "Kohl in nudeldünne Streifen hobeln. Hähnchen sehr dünn schneiden. Ingwer reiben und Tamari, Tamarinde, Limettensaft und 2 EL Wasser verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Keep the wok hot",
+          "de": "Wok heiß halten"
+        },
+        "text": {
+          "en": "Heat oil in a wok. Fry chicken with ginger for 7–9 minutes until it reaches 74°C. Move to a plate. Add cabbage and stir-fry for 3 minutes.",
+          "de": "Öl im Wok erhitzen. Hähnchen mit Ingwer 7–9 Minuten bis 74 °C braten. Auf einen Teller legen. Kohl in den Wok geben und 3 Minuten pfannenrühren."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "A final toss",
+          "de": "Zum Schluss schwenken"
+        },
+        "text": {
+          "en": "Push cabbage aside, add beaten eggs and scramble until fully set. Return chicken, pour in the sauce and toss for a minute. Top with peanuts and sliced spring onion greens.",
+          "de": "Kohl zur Seite schieben, verquirlte Eier zugeben und ganz stocken lassen. Hähnchen zurückgeben, Sauce zugießen und eine Minute schwenken. Mit Erdnüssen und Zwiebelgrün bestreuen."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 41,
+      "carbs": 15,
+      "fat": 23
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "pad-thai-halal",
+    "dish_id": "pad-thai",
+    "title": {
+      "en": "Chicken & sesame pad Thai",
+      "de": "Pad Thai mit Hähnchen und Sesam"
+    },
+    "description": {
+      "en": "Tamarind, tender chicken and toasted sesame.",
+      "de": "Tamarinde, zartes Hähnchen und gerösteter Sesam."
+    },
+    "diet": "halal",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 555,
+    "servings": 2,
+    "contains": [
+      "added-sugar",
+      "poultry",
+      "sesame",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "halal",
+      "kosher",
+      "medium",
+      "stir-fry",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "halal",
+      "medium",
+      "dinner",
+      "stir-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 170.0,
+        "unit": "g"
+      },
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "carrots",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "bean-sprouts",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "sesame",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamarind",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sugar",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A thoughtful beginning",
+          "de": "Sorgfältig beginnen"
+        },
+        "text": {
+          "en": "Select chicken for your halal requirements and alcohol-free tamari. Soak noodles according to the packet. Stir tamarind, tamari, sugar and 50 ml water together.",
+          "de": "Hähnchen nach deinen Halal-Anforderungen und alkoholfreies Tamari wählen. Nudeln nach Packung einweichen. Tamarinde, Tamari, Zucker und 50 ml Wasser verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Toast & sizzle",
+          "de": "Rösten & braten"
+        },
+        "text": {
+          "en": "Toast sesame in a dry pan for 2 minutes and remove. Cut chicken into thin strips and carrots into matchsticks. Heat oil and stir-fry chicken for 7–9 minutes to 74°C.",
+          "de": "Sesam 2 Minuten trocken rösten und herausnehmen. Hähnchen dünn und Karotten in feine Stifte schneiden. Öl erhitzen und Hähnchen 7–9 Minuten bis 74 °C pfannenrühren."
+        },
+        "timer_seconds": 660
+      },
+      {
+        "title": {
+          "en": "Bring on the noodles",
+          "de": "Jetzt die Nudeln"
+        },
+        "text": {
+          "en": "Add carrots for 2 minutes, then noodles and sauce for 3–4 minutes until noodles are tender. Fold in sprouts and cook thoroughly for 2 minutes. Finish with sesame and lime wedges.",
+          "de": "Karotten 2 Minuten mitbraten, dann Nudeln und Sauce 3–4 Minuten zugeben, bis die Nudeln gar sind. Sprossen unterheben und 2 Minuten gründlich erhitzen. Mit Sesam und Limettenspalten servieren."
+        },
+        "timer_seconds": 480
+      }
+    ],
+    "nutrition": {
+      "protein": 40,
+      "carbs": 72,
+      "fat": 14
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "ramen-classic",
+    "dish_id": "ramen",
+    "title": {
+      "en": "Ginger pork ramen",
+      "de": "Ingwer-Schweinefleisch-Ramen"
+    },
+    "description": {
+      "en": "A savoury broth with a golden, crumbled topping.",
+      "de": "Würzige Brühe mit goldbraunen Hackfleischkrümeln."
+    },
+    "diet": "classic",
+    "effort": "medium",
+    "calorie_level": "hearty",
+    "time_minutes": 30,
+    "calories_per_serving": 630,
+    "servings": 2,
+    "contains": [
+      "egg",
+      "gluten",
+      "high-fodmap",
+      "pork",
+      "sesame",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "medium",
+      "simmer",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "classic",
+      "medium",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "ramen-noodles",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "pork-mince",
+        "quantity": 220.0,
+        "unit": "g"
+      },
+      {
+        "id": "pak-choi",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "miso",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sesame-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 800.0,
+        "unit": "ml"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 30.0,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "The savoury topping",
+          "de": "Der würzige Belag"
+        },
+        "text": {
+          "en": "Boil eggs for 10 minutes, cool and peel. Brown pork in sesame oil for 7 minutes to 71°C, breaking it into crumbs. Add grated ginger and garlic for 1 minute.",
+          "de": "Eier 10 Minuten kochen, abschrecken und schälen. Hack in Sesamöl 7 Minuten bis 71 °C krümelig braten. Geriebenen Ingwer und Knoblauch 1 Minute mitbraten."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Build the broth",
+          "de": "Brühe aufsetzen"
+        },
+        "text": {
+          "en": "Bring water and tamari to a simmer. Add noodles and cook to packet instructions, adding quartered pak choi for the final 3 minutes.",
+          "de": "Wasser und Tamari aufkochen. Nudeln nach Packung darin garen, geviertelten Pak Choi die letzten 3 Minuten mitgaren."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "A bowl to hold",
+          "de": "Eine Schale zum Wärmen"
+        },
+        "text": {
+          "en": "Take broth off the heat. Mix miso with a ladle of broth, then stir back in. Divide into bowls and top with pork, halved eggs and sliced spring onion greens.",
+          "de": "Brühe vom Herd nehmen. Miso mit einer Kelle Brühe verrühren und zurückgeben. Auf Schalen verteilen, mit Hack, halbierten Eiern und Zwiebelgrün belegen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 35,
+      "carbs": 66,
+      "fat": 25
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "ramen-vegetarian",
+    "dish_id": "ramen",
+    "title": {
+      "en": "Miso mushroom & egg ramen",
+      "de": "Miso-Pilz-Ramen mit Ei"
+    },
+    "description": {
+      "en": "An earthy bowl with a soft sesame finish.",
+      "de": "Eine erdige Schale mit sanftem Sesamabschluss."
+    },
+    "diet": "vegetarian",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 490,
+    "servings": 2,
+    "contains": [
+      "egg",
+      "gluten",
+      "high-fodmap",
+      "sesame",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegetarian",
+      "easy",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "ramen-noodles",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "mushrooms",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "spinach",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "miso",
+        "quantity": 30.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sesame",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 800.0,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Eggs & earthy edges",
+          "de": "Eier & Pilzränder"
+        },
+        "text": {
+          "en": "Boil eggs for 10 minutes, cool and peel. Slice mushrooms and fry in oil for 6 minutes until browned. Grate ginger into the pan for 30 seconds.",
+          "de": "Eier 10 Minuten kochen, abschrecken und schälen. Pilze schneiden und in Öl 6 Minuten bräunen. Ingwer dazureiben und 30 Sekunden mitbraten."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "A gentle simmer",
+          "de": "Sanft köcheln"
+        },
+        "text": {
+          "en": "Add water and tamari, bring to a boil, then cook noodles according to the packet. Stir in spinach for the final minute.",
+          "de": "Wasser und Tamari zugeben, aufkochen und Nudeln nach Packung darin garen. Spinat in der letzten Minute einrühren."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "Finish off the heat",
+          "de": "Ohne Hitze abschließen"
+        },
+        "text": {
+          "en": "Remove from heat and dissolve miso in a little broth before stirring it back in. Serve with egg halves and sesame seeds.",
+          "de": "Vom Herd nehmen, Miso in wenig Brühe auflösen und zurückrühren. Mit Eihälften und Sesam servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 26,
+      "carbs": 61,
+      "fat": 16
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "ramen-vegan",
+    "dish_id": "ramen",
+    "title": {
+      "en": "Sesame tofu rice-noodle ramen",
+      "de": "Sesam-Tofu-Ramen mit Reisnudeln"
+    },
+    "description": {
+      "en": "A creamy broth, a crisp tofu corner.",
+      "de": "Cremige Brühe und ein knuspriges Stück Tofu."
+    },
+    "diet": "vegan",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 550,
+    "servings": 2,
+    "contains": [
+      "sesame",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "halal",
+      "kosher",
+      "medium",
+      "pan-fry",
+      "simmer",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegan",
+      "medium",
+      "dinner",
+      "pan-fry",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 130.0,
+        "unit": "g"
+      },
+      {
+        "id": "tofu",
+        "quantity": 260.0,
+        "unit": "g"
+      },
+      {
+        "id": "pak-choi",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "miso",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "water",
+        "quantity": 850.0,
+        "unit": "ml"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 30.0,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Golden little cubes",
+          "de": "Goldene kleine Würfel"
+        },
+        "text": {
+          "en": "Press tofu between towels and cut into cubes. Fry in oil for 8 minutes, turning to colour all sides. Remove from the pan and set aside.",
+          "de": "Tofu zwischen Tüchern ausdrücken und würfeln. In Öl 8 Minuten unter Wenden rundum bräunen. Aus der Pfanne nehmen und beiseitestellen."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Ginger-scented steam",
+          "de": "Ingwerduftender Dampf"
+        },
+        "text": {
+          "en": "Simmer water with grated ginger and tamari for 5 minutes. Add rice noodles and cook as the packet directs; add sliced pak choi for the final 3 minutes.",
+          "de": "Wasser mit geriebenem Ingwer und Tamari 5 Minuten köcheln. Reisnudeln nach Packung darin garen; geschnittenen Pak Choi die letzten 3 Minuten zugeben."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "The sesame swirl",
+          "de": "Der Sesamwirbel"
+        },
+        "text": {
+          "en": "Whisk tahini and miso with a ladle of broth. Remove the pot from heat and stir the mixture in. Top bowls with tofu and spring onion greens.",
+          "de": "Tahin und Miso mit einer Kelle Brühe verquirlen. Topf vom Herd nehmen und die Mischung einrühren. Schalen mit Tofu und Zwiebelgrün belegen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 29,
+      "carbs": 60,
+      "fat": 22
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "ramen-keto",
+    "dish_id": "ramen",
+    "title": {
+      "en": "Salmon & courgette noodle broth",
+      "de": "Lachsbrühe mit Zucchininudeln"
+    },
+    "description": {
+      "en": "A clear, ginger-warm bowl with delicate salmon.",
+      "de": "Eine klare, ingwerwarme Schale mit zartem Lachs."
+    },
+    "diet": "keto",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 405,
+    "servings": 2,
+    "contains": [
+      "fish",
+      "sesame",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "keto",
+      "kosher",
+      "poach",
+      "simmer",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "keto",
+      "easy",
+      "dinner",
+      "poach",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "courgette",
+        "quantity": 350.0,
+        "unit": "g"
+      },
+      {
+        "id": "spinach",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "sesame-oil",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "sesame",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "water",
+        "quantity": 750.0,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A fragrant pot",
+          "de": "Ein duftender Topf"
+        },
+        "text": {
+          "en": "Cut courgette into fine ribbons. Simmer water, sliced ginger and tamari for 8 minutes to make a fragrant broth.",
+          "de": "Zucchini in feine Bänder schneiden. Wasser, geschnittenen Ingwer und Tamari 8 Minuten zu einer duftenden Brühe köcheln."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Poach gently",
+          "de": "Sanft pochieren"
+        },
+        "text": {
+          "en": "Cut salmon into four pieces. Lower into gently simmering broth and poach for 6–8 minutes until opaque and 63°C in the centre.",
+          "de": "Lachs in vier Stücke schneiden. In die leicht köchelnde Brühe legen und 6–8 Minuten pochieren, bis er undurchsichtig ist und innen 63 °C erreicht."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "A clear finish",
+          "de": "Ein klarer Abschluss"
+        },
+        "text": {
+          "en": "Lift salmon into two bowls. Add courgette and spinach to the broth for 2 minutes. Ladle over salmon; finish with sesame oil, sesame seeds and lime.",
+          "de": "Lachs in zwei Schalen heben. Zucchini und Spinat 2 Minuten in der Brühe garen. Über den Lachs schöpfen; mit Sesamöl, Sesam und Limette abschließen."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 34,
+      "carbs": 11,
+      "fat": 25
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "ramen-halal",
+    "dish_id": "ramen",
+    "title": {
+      "en": "Chicken ginger noodle soup",
+      "de": "Hähnchen-Ingwer-Nudelsuppe"
+    },
+    "description": {
+      "en": "A bright, clear bowl to warm your hands around.",
+      "de": "Eine klare, frische Schale zum Händewärmen."
+    },
+    "diet": "halal",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 480,
+    "servings": 2,
+    "contains": [
+      "poultry",
+      "soy"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "poach",
+      "simmer",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "halal",
+      "easy",
+      "dinner",
+      "poach",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "rice-noodles",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "carrots",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "pak-choi",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "tamari",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 30.0,
+        "unit": "g"
+      },
+      {
+        "id": "water",
+        "quantity": 900.0,
+        "unit": "ml"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A clear beginning",
+          "de": "Ein klarer Anfang"
+        },
+        "text": {
+          "en": "Choose suitable halal-sourced chicken and alcohol-free tamari. Simmer water with sliced ginger, thin carrot rounds and tamari for 7 minutes.",
+          "de": "Passend halal bezogenes Hähnchen und alkoholfreies Tamari wählen. Wasser mit Ingwerscheiben, dünnen Karottenringen und Tamari 7 Minuten köcheln."
+        },
+        "timer_seconds": 420
+      },
+      {
+        "title": {
+          "en": "A gentle poach",
+          "de": "Sanft pochieren"
+        },
+        "text": {
+          "en": "Add thinly sliced chicken and poach for 8 minutes until the centre reaches 74°C. Add noodles according to packet timing and pak choi for the final 3 minutes.",
+          "de": "Dünn geschnittenes Hähnchen zugeben und 8 Minuten bis 74 °C pochieren. Nudeln entsprechend ihrer Packungszeit und Pak Choi für die letzten 3 Minuten zugeben."
+        },
+        "timer_seconds": 660
+      },
+      {
+        "title": {
+          "en": "Hold a warm bowl",
+          "de": "Eine warme Schale halten"
+        },
+        "text": {
+          "en": "Remove large ginger pieces if desired. Divide into bowls and finish with lemon juice, a little rapeseed oil and sliced spring onion greens.",
+          "de": "Große Ingwerstücke nach Wunsch entfernen. In Schalen geben und mit Zitronensaft, etwas Rapsöl und Zwiebelgrün abschließen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 42,
+      "carbs": 62,
+      "fat": 8
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "curry-classic",
+    "dish_id": "curry",
+    "title": {
+      "en": "Chicken coconut curry",
+      "de": "Hähnchen-Kokoscurry"
+    },
+    "description": {
+      "en": "Tender chicken in a ginger-gold sauce.",
+      "de": "Zartes Hähnchen in ingwergoldener Sauce."
+    },
+    "diet": "classic",
+    "effort": "easy",
+    "calorie_level": "hearty",
+    "time_minutes": 35,
+    "calories_per_serving": 650,
+    "servings": 2,
+    "contains": [
+      "high-fodmap",
+      "poultry"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "≤60"
+    ],
+    "tags": [
+      "asian",
+      "classic",
+      "easy",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken-thigh",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "rice",
+        "quantity": 130.0,
+        "unit": "g"
+      },
+      {
+        "id": "coconut-milk",
+        "quantity": 200.0,
+        "unit": "ml"
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 60.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "coriander",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Rice on, kettle quiet",
+          "de": "Reis aufsetzen"
+        },
+        "text": {
+          "en": "Rinse rice and cook in 260 ml water, covered, for 12 minutes, then rest off heat 5 minutes. Dice chicken and pepper; finely chop onion, garlic and ginger.",
+          "de": "Reis waschen und mit 260 ml Wasser zugedeckt 12 Minuten kochen, dann ohne Hitze 5 Minuten ruhen lassen. Hähnchen und Paprika würfeln; Zwiebel, Knoblauch und Ingwer fein hacken."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Wake the golden spices",
+          "de": "Goldene Gewürze wecken"
+        },
+        "text": {
+          "en": "Soften onion, garlic and ginger in oil for 4 minutes. Add spices for 30 seconds, then chicken and pepper for 5 minutes, stirring.",
+          "de": "Zwiebel, Knoblauch und Ingwer in Öl 4 Minuten dünsten. Gewürze 30 Sekunden, dann Hähnchen und Paprika 5 Minuten unter Rühren mitbraten."
+        },
+        "timer_seconds": 570
+      },
+      {
+        "title": {
+          "en": "A golden finish",
+          "de": "Ein goldener Abschluss"
+        },
+        "text": {
+          "en": "Pour in coconut milk and 100 ml water, add salt and simmer 15 minutes until chicken reaches 74°C. Finish with lime and serve over rice.",
+          "de": "Kokosmilch und 100 ml Wasser zugießen, salzen und 15 Minuten köcheln, bis das Hähnchen 74 °C erreicht. Mit Limette abschließen und auf Reis servieren."
+        },
+        "timer_seconds": 900
+      }
+    ],
+    "nutrition": {
+      "protein": 39,
+      "carbs": 61,
+      "fat": 28
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "curry-vegetarian",
+    "dish_id": "curry",
+    "title": {
+      "en": "Golden egg & spinach curry",
+      "de": "Goldenes Eier-Spinat-Curry"
+    },
+    "description": {
+      "en": "A softly spiced bowl with a yogurt swirl.",
+      "de": "Eine sanft gewürzte Schale mit Joghurtwirbel."
+    },
+    "diet": "vegetarian",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 505,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "egg",
+      "high-fodmap",
+      "lactose"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegetarian",
+      "easy",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "quantity": 4.0,
+        "unit": "piece"
+      },
+      {
+        "id": "rice",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "spinach",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 60.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "coriander",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Eggs & rice",
+          "de": "Eier & Reis"
+        },
+        "text": {
+          "en": "Boil eggs for 10 minutes, cool and peel. Rinse rice and cook with 240 ml water for 12 minutes, then rest covered off heat for 5 minutes.",
+          "de": "Eier 10 Minuten kochen, abschrecken und schälen. Reis waschen und mit 240 ml Wasser 12 Minuten kochen, dann abgedeckt ohne Hitze 5 Minuten ruhen lassen."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "A spiced tomato blanket",
+          "de": "Eine würzige Tomatendecke"
+        },
+        "text": {
+          "en": "Soften chopped onion and ginger in oil for 5 minutes. Add spices, tomatoes, salt and 80 ml water; simmer 10 minutes. Stir in spinach until wilted.",
+          "de": "Gehackte Zwiebel und Ingwer in Öl 5 Minuten dünsten. Gewürze, Tomaten, Salz und 80 ml Wasser zugeben; 10 Minuten köcheln. Spinat zusammenfallen lassen."
+        },
+        "timer_seconds": 900
+      },
+      {
+        "title": {
+          "en": "Keep it gentle",
+          "de": "Sanft bleiben"
+        },
+        "text": {
+          "en": "Turn heat low and stir in yogurt slowly. Add halved eggs and warm gently for 2 minutes without boiling. Spoon over rice.",
+          "de": "Hitze reduzieren und Joghurt langsam einrühren. Halbierte Eier zugeben und 2 Minuten ohne Kochen erwärmen. Über Reis löffeln."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 24,
+      "carbs": 59,
+      "fat": 20
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "curry-vegan",
+    "dish_id": "curry",
+    "title": {
+      "en": "Red lentil coconut dal",
+      "de": "Rotes Linsen-Kokos-Dal"
+    },
+    "description": {
+      "en": "A spoon-soft supper for the tired evenings.",
+      "de": "Ein löffelweiches Abendessen für müde Abende."
+    },
+    "diet": "vegan",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 480,
+    "servings": 2,
+    "contains": [
+      "high-fodmap"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "vegan",
+      "easy",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "red-lentils",
+        "quantity": 170.0,
+        "unit": "g"
+      },
+      {
+        "id": "coconut-milk",
+        "quantity": 160.0,
+        "unit": "ml"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "spinach",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 60.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 2.0,
+        "unit": "clove"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "water",
+        "quantity": 500.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A small golden beginning",
+          "de": "Ein kleiner goldener Anfang"
+        },
+        "text": {
+          "en": "Rinse lentils until water runs mostly clear. Finely chop onion, garlic and ginger. Soften in oil for 4 minutes; stir in turmeric and cumin.",
+          "de": "Linsen spülen, bis das Wasser weitgehend klar ist. Zwiebel, Knoblauch und Ingwer fein hacken. In Öl 4 Minuten dünsten; Kurkuma und Kreuzkümmel einrühren."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "Let the lentils soften",
+          "de": "Linsen weich werden lassen"
+        },
+        "text": {
+          "en": "Add lentils, tomatoes, coconut milk, measured water and salt. Simmer gently for 20 minutes, stirring often, until lentils collapse; add water if the pot catches.",
+          "de": "Linsen, Tomaten, Kokosmilch, abgemessenes Wasser und Salz zugeben. Unter häufigem Rühren 20 Minuten sanft köcheln, bis die Linsen zerfallen; bei Bedarf Wasser ergänzen."
+        },
+        "timer_seconds": 1200
+      },
+      {
+        "title": {
+          "en": "A green swirl",
+          "de": "Ein grüner Wirbel"
+        },
+        "text": {
+          "en": "Fold in spinach for 2 minutes until wilted. Stir in lime juice and rest 3 minutes; the dal thickens as it settles.",
+          "de": "Spinat 2 Minuten zusammenfallen lassen. Limettensaft einrühren und 3 Minuten ruhen lassen; dabei wird das Dal dicker."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 24,
+      "carbs": 57,
+      "fat": 18
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "curry-keto",
+    "dish_id": "curry",
+    "title": {
+      "en": "Prawn & broccoli coconut curry",
+      "de": "Garnelen-Brokkoli-Kokoscurry"
+    },
+    "description": {
+      "en": "A quick, fragrant bowl with plenty of green.",
+      "de": "Eine schnelle, duftende Schale mit viel Grün."
+    },
+    "diet": "keto",
+    "effort": "easy",
+    "calorie_level": "light",
+    "time_minutes": 20,
+    "calories_per_serving": 390,
+    "servings": 2,
+    "contains": [
+      "high-fodmap",
+      "shellfish"
+    ],
+    "attributes": [
+      "dinner",
+      "easy",
+      "halal",
+      "keto",
+      "simmer",
+      "≤30"
+    ],
+    "tags": [
+      "asian",
+      "keto",
+      "easy",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "prawns",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "broccoli",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "coconut-milk",
+        "quantity": 200.0,
+        "unit": "ml"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "id": "coriander",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "water",
+        "quantity": 100.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Warm the aromatics",
+          "de": "Aromen erwärmen"
+        },
+        "text": {
+          "en": "Cut broccoli into small florets. Grate ginger and garlic. Stir them in warm oil for 1 minute; add turmeric and coriander for 30 seconds.",
+          "de": "Brokkoli in kleine Röschen schneiden. Ingwer und Knoblauch reiben. In warmem Öl 1 Minute rühren; Kurkuma und Koriander 30 Sekunden mitrösten."
+        },
+        "timer_seconds": 90
+      },
+      {
+        "title": {
+          "en": "A coconut bath",
+          "de": "Ein Kokosbad"
+        },
+        "text": {
+          "en": "Add coconut milk, water, salt and broccoli. Simmer covered for 6 minutes until broccoli is almost tender.",
+          "de": "Kokosmilch, Wasser, Salz und Brokkoli zugeben. Zugedeckt 6 Minuten köcheln, bis der Brokkoli fast gar ist."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "Finish the prawns gently",
+          "de": "Garnelen sanft fertig garen"
+        },
+        "text": {
+          "en": "Add prawns and simmer for 4–5 minutes until opaque and 63°C inside. Remove from heat, squeeze in lime and serve in deep bowls.",
+          "de": "Garnelen zugeben und 4–5 Minuten köcheln, bis sie undurchsichtig sind und innen 63 °C erreichen. Vom Herd nehmen, Limette hineinpressen und in tiefen Schalen servieren."
+        },
+        "timer_seconds": 300
+      }
+    ],
+    "nutrition": {
+      "protein": 32,
+      "carbs": 16,
+      "fat": 23
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "curry-halal",
+    "dish_id": "curry",
+    "title": {
+      "en": "Beef & aubergine coconut curry",
+      "de": "Rind-Auberginen-Kokoscurry"
+    },
+    "description": {
+      "en": "A rich, spice-warmed supper with soft aubergine.",
+      "de": "Ein kräftiges, gewürzwarmes Abendessen mit weicher Aubergine."
+    },
+    "diet": "halal",
+    "effort": "medium",
+    "calorie_level": "hearty",
+    "time_minutes": 40,
+    "calories_per_serving": 620,
+    "servings": 2,
+    "contains": [
+      "beef"
+    ],
+    "attributes": [
+      "dinner",
+      "halal",
+      "kosher",
+      "medium",
+      "simmer",
+      "≤60"
+    ],
+    "tags": [
+      "asian",
+      "halal",
+      "medium",
+      "dinner",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "beef-mince",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "aubergine",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "rice",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "coconut-milk",
+        "quantity": 180.0,
+        "unit": "ml"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "ginger",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "coriander",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "id": "rapeseed-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 100.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Rice & aubergine",
+          "de": "Reis & Aubergine"
+        },
+        "text": {
+          "en": "Choose beef for your halal requirements. Cook rinsed rice in 240 ml water for 12 minutes, then rest covered. Dice aubergine into 1 cm pieces.",
+          "de": "Rindfleisch nach deinen Halal-Anforderungen wählen. Gewaschenen Reis in 240 ml Wasser 12 Minuten kochen, dann abgedeckt ruhen lassen. Aubergine 1 cm groß würfeln."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "A deep golden base",
+          "de": "Eine tiefgoldene Basis"
+        },
+        "text": {
+          "en": "Brown beef in oil for 7 minutes. Add aubergine and grated ginger for 5 minutes, stirring. Add cumin, coriander and turmeric.",
+          "de": "Hack in Öl 7 Minuten bräunen. Aubergine und geriebenen Ingwer 5 Minuten unter Rühren mitbraten. Kreuzkümmel, Koriander und Kurkuma zugeben."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "A slow little simmer",
+          "de": "Langsam köcheln"
+        },
+        "text": {
+          "en": "Add tomatoes, coconut milk, measured water and salt. Simmer for 20 minutes until aubergine is soft and beef reaches 71°C. Serve over the warm rice.",
+          "de": "Tomaten, Kokosmilch, abgemessenes Wasser und Salz zugeben. 20 Minuten köcheln, bis die Aubergine weich ist und das Hack 71 °C erreicht. Auf warmem Reis servieren."
+        },
+        "timer_seconds": 1200
+      }
+    ],
+    "nutrition": {
+      "protein": 30,
+      "carbs": 61,
+      "fat": 29
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  }
+]

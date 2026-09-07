@@ -1,0 +1,290 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook recipe",
+  "type": "object",
+  "required": [
+    "id",
+    "dish_id",
+    "title",
+    "description",
+    "diet",
+    "effort",
+    "calorie_level",
+    "time_minutes",
+    "calories_per_serving",
+    "servings",
+    "contains",
+    "attributes",
+    "tags",
+    "ingredients",
+    "steps",
+    "nutrition"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "dish_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "de": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "de": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "diet": {
+      "type": "string",
+      "enum": [
+        "classic",
+        "vegetarian",
+        "vegan",
+        "keto",
+        "halal"
+      ]
+    },
+    "effort": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "calorie_level": {
+      "type": "string",
+      "enum": [
+        "light",
+        "balanced",
+        "hearty"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "time_minutes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "calories_per_serving": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "servings": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "contains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "quantity",
+          "unit"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quantity": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "unit": {
+            "type": "string",
+            "enum": [
+              "g",
+              "kg",
+              "ml",
+              "l",
+              "tsp",
+              "tbsp",
+              "clove",
+              "piece",
+              "pinch"
+            ]
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "text",
+          "timer_seconds"
+        ],
+        "properties": {
+          "title": {
+            "type": "object",
+            "required": [
+              "en",
+              "de"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "de": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "text": {
+            "type": "object",
+            "required": [
+              "en",
+              "de"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "de": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "timer_seconds": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "nutrition": {
+      "type": "object",
+      "required": [
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "properties": {
+        "protein": {
+          "type": "number",
+          "minimum": 0
+        },
+        "carbs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "fat": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "nutrition_note": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "de": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "pending-human-review",
+        "human-spot-checked"
+      ]
+    }
+  }
+}

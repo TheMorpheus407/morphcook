@@ -1,0 +1,503 @@
+{
+  "version": 1,
+  "flags": [
+    {
+      "id": "pork",
+      "name": {
+        "en": "Pork",
+        "de": "Schweinefleisch"
+      }
+    },
+    {
+      "id": "beef",
+      "name": {
+        "en": "Beef",
+        "de": "Rindfleisch"
+      }
+    },
+    {
+      "id": "lamb",
+      "name": {
+        "en": "Lamb",
+        "de": "Lamm"
+      }
+    },
+    {
+      "id": "poultry",
+      "name": {
+        "en": "Poultry",
+        "de": "Geflügel"
+      }
+    },
+    {
+      "id": "fish",
+      "name": {
+        "en": "Fish",
+        "de": "Fisch"
+      }
+    },
+    {
+      "id": "shellfish",
+      "name": {
+        "en": "Shellfish",
+        "de": "Krebstiere"
+      }
+    },
+    {
+      "id": "molluscs",
+      "name": {
+        "en": "Molluscs",
+        "de": "Weichtiere"
+      }
+    },
+    {
+      "id": "egg",
+      "name": {
+        "en": "Eggs",
+        "de": "Eier"
+      }
+    },
+    {
+      "id": "dairy",
+      "name": {
+        "en": "Dairy",
+        "de": "Milchprodukte"
+      }
+    },
+    {
+      "id": "lactose",
+      "name": {
+        "en": "Lactose",
+        "de": "Laktose"
+      }
+    },
+    {
+      "id": "gluten",
+      "name": {
+        "en": "Gluten",
+        "de": "Gluten"
+      }
+    },
+    {
+      "id": "soy",
+      "name": {
+        "en": "Soy",
+        "de": "Soja"
+      }
+    },
+    {
+      "id": "nuts",
+      "name": {
+        "en": "All nuts & peanuts",
+        "de": "Alle Nüsse & Erdnüsse"
+      }
+    },
+    {
+      "id": "peanuts",
+      "name": {
+        "en": "Peanuts",
+        "de": "Erdnüsse"
+      }
+    },
+    {
+      "id": "tree-nuts",
+      "name": {
+        "en": "Tree nuts",
+        "de": "Schalenfrüchte"
+      }
+    },
+    {
+      "id": "almonds",
+      "name": {
+        "en": "Almonds",
+        "de": "Mandeln"
+      }
+    },
+    {
+      "id": "walnuts",
+      "name": {
+        "en": "Walnuts",
+        "de": "Walnüsse"
+      }
+    },
+    {
+      "id": "pistachios",
+      "name": {
+        "en": "Pistachios",
+        "de": "Pistazien"
+      }
+    },
+    {
+      "id": "cashews",
+      "name": {
+        "en": "Cashews",
+        "de": "Cashewkerne"
+      }
+    },
+    {
+      "id": "sesame",
+      "name": {
+        "en": "Sesame",
+        "de": "Sesam"
+      }
+    },
+    {
+      "id": "mustard",
+      "name": {
+        "en": "Mustard",
+        "de": "Senf"
+      }
+    },
+    {
+      "id": "celery",
+      "name": {
+        "en": "Celery",
+        "de": "Sellerie"
+      }
+    },
+    {
+      "id": "lupin",
+      "name": {
+        "en": "Lupin",
+        "de": "Lupinen"
+      }
+    },
+    {
+      "id": "sulphites",
+      "name": {
+        "en": "Sulphites",
+        "de": "Sulfite"
+      }
+    },
+    {
+      "id": "alcohol",
+      "name": {
+        "en": "Alcohol",
+        "de": "Alkohol"
+      }
+    },
+    {
+      "id": "caffeine",
+      "name": {
+        "en": "Caffeine",
+        "de": "Koffein"
+      }
+    },
+    {
+      "id": "added-sugar",
+      "name": {
+        "en": "Added sugar",
+        "de": "Zugesetzter Zucker"
+      }
+    },
+    {
+      "id": "high-fodmap",
+      "name": {
+        "en": "High FODMAP ingredients",
+        "de": "FODMAP-reiche Zutaten"
+      }
+    },
+    {
+      "id": "gelatin-non-halal",
+      "name": {
+        "en": "Non-halal gelatin",
+        "de": "Nicht-halale Gelatine"
+      }
+    },
+    {
+      "id": "gelatin-non-kosher",
+      "name": {
+        "en": "Non-kosher gelatin",
+        "de": "Nicht-koschere Gelatine"
+      }
+    },
+    {
+      "id": "honey",
+      "name": {
+        "en": "Honey",
+        "de": "Honig"
+      }
+    },
+    {
+      "id": "animal-rennet",
+      "name": {
+        "en": "Animal rennet",
+        "de": "Tierisches Lab"
+      }
+    },
+    {
+      "id": "rennet-non-halal",
+      "name": {
+        "en": "Rennet without halal-compatible sourcing",
+        "de": "Lab ohne halal-kompatible Herkunft"
+      }
+    },
+    {
+      "id": "rennet-non-kosher",
+      "name": {
+        "en": "Rennet without kosher-compatible sourcing",
+        "de": "Lab ohne koscher-kompatible Herkunft"
+      }
+    },
+    {
+      "id": "meat-dairy-combo",
+      "name": {
+        "en": "Meat and dairy together",
+        "de": "Fleisch und Milch zusammen"
+      }
+    }
+  ],
+  "compounds": {
+    "vegan": [
+      "pork",
+      "beef",
+      "lamb",
+      "poultry",
+      "fish",
+      "shellfish",
+      "molluscs",
+      "egg",
+      "dairy",
+      "honey",
+      "animal-rennet",
+      "gelatin-non-halal",
+      "gelatin-non-kosher"
+    ],
+    "vegetarian": [
+      "pork",
+      "beef",
+      "lamb",
+      "poultry",
+      "fish",
+      "shellfish",
+      "molluscs",
+      "animal-rennet",
+      "gelatin-non-halal",
+      "gelatin-non-kosher"
+    ],
+    "pescatarian": [
+      "pork",
+      "beef",
+      "lamb",
+      "poultry",
+      "animal-rennet",
+      "gelatin-non-halal",
+      "gelatin-non-kosher"
+    ],
+    "halal": [
+      "pork",
+      "alcohol",
+      "gelatin-non-halal",
+      "rennet-non-halal"
+    ],
+    "kosher": [
+      "pork",
+      "shellfish",
+      "molluscs",
+      "meat-dairy-combo",
+      "gelatin-non-kosher",
+      "rennet-non-kosher"
+    ],
+    "low-fodmap": [
+      "high-fodmap"
+    ],
+    "sugar-free": [
+      "added-sugar"
+    ],
+    "lactose-free": [
+      "lactose"
+    ]
+  },
+  "compound_labels": {
+    "vegan": {
+      "en": "Vegan",
+      "de": "Vegan"
+    },
+    "vegetarian": {
+      "en": "Vegetarian",
+      "de": "Vegetarisch"
+    },
+    "pescatarian": {
+      "en": "Pescatarian",
+      "de": "Pescetarisch"
+    },
+    "halal": {
+      "en": "Halal-compatible ingredients",
+      "de": "Halal-kompatible Zutaten"
+    },
+    "kosher": {
+      "en": "Kosher-compatible ingredients",
+      "de": "Koscher-kompatible Zutaten"
+    },
+    "low-fodmap": {
+      "en": "Low FODMAP",
+      "de": "FODMAP-arm"
+    },
+    "sugar-free": {
+      "en": "No added sugar",
+      "de": "Ohne zugesetzten Zucker"
+    },
+    "lactose-free": {
+      "en": "Lactose-free",
+      "de": "Laktosefrei"
+    }
+  },
+  "dimensions": [
+    {
+      "id": "diet",
+      "label": {
+        "en": "Diet",
+        "de": "Ernährung"
+      },
+      "values": [
+        {
+          "id": "classic",
+          "label": {
+            "en": "Classic",
+            "de": "Klassisch"
+          }
+        },
+        {
+          "id": "vegetarian",
+          "label": {
+            "en": "Vegetarian",
+            "de": "Vegetarisch"
+          }
+        },
+        {
+          "id": "vegan",
+          "label": {
+            "en": "Vegan",
+            "de": "Vegan"
+          }
+        },
+        {
+          "id": "keto",
+          "label": {
+            "en": "Keto",
+            "de": "Keto"
+          }
+        },
+        {
+          "id": "halal",
+          "label": {
+            "en": "Halal-compatible",
+            "de": "Halal-kompatibel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "effort",
+      "label": {
+        "en": "Effort",
+        "de": "Aufwand"
+      },
+      "values": [
+        {
+          "id": "easy",
+          "label": {
+            "en": "Easy",
+            "de": "Einfach"
+          }
+        },
+        {
+          "id": "medium",
+          "label": {
+            "en": "A little care",
+            "de": "Mit etwas Muße"
+          }
+        },
+        {
+          "id": "hard",
+          "label": {
+            "en": "A kitchen project",
+            "de": "Ein Küchenprojekt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "calorie_level",
+      "label": {
+        "en": "Calorie level",
+        "de": "Kalorien"
+      },
+      "values": [
+        {
+          "id": "light",
+          "label": {
+            "en": "Light",
+            "de": "Leicht"
+          }
+        },
+        {
+          "id": "balanced",
+          "label": {
+            "en": "Balanced",
+            "de": "Ausgewogen"
+          }
+        },
+        {
+          "id": "hearty",
+          "label": {
+            "en": "Hearty",
+            "de": "Herzhaft"
+          }
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "effort": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "time_bucket": [
+      "≤15",
+      "≤30",
+      "≤60",
+      ">60"
+    ],
+    "calorie_bucket": [
+      "≤400",
+      "≤600",
+      "≤800",
+      ">800"
+    ],
+    "technique": [
+      "bake",
+      "sauté",
+      "simmer",
+      "raw",
+      "grill",
+      "fry",
+      "steam",
+      "roast",
+      "broil",
+      "pan-fry",
+      "deep-fry",
+      "stir-fry",
+      "poach",
+      "blanch"
+    ],
+    "meal": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "positive": [
+      "halal",
+      "kosher",
+      "vegetarian",
+      "vegan",
+      "keto"
+    ]
+  },
+  "calorie_tolerance": 150,
+  "sourcing_note": {
+    "en": "Halal-compatible and kosher-compatible describe ingredients, not certification. Check labels, sourcing and your own preparation requirements.",
+    "de": "Halal-kompatibel und koscher-kompatibel beschreiben Zutaten, keine Zertifizierung. Prüfe Etiketten, Herkunft und deine Anforderungen an die Zubereitung."
+  }
+}

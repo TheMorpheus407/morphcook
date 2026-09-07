@@ -1,0 +1,7 @@
+# Copy to key.properties and fill with your own release key details.
+# key.properties and keystores are ignored by Git.
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+# Relative to app/android/app; keep the keystore in the project if desired.
+storeFile=../release-keystore.jks

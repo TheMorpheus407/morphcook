@@ -1,0 +1,287 @@
+[
+  {
+    "id": "matching",
+    "category": {
+      "en": "Your cookbook",
+      "de": "Dein Kochbuch"
+    },
+    "question": {
+      "en": "How does my cookbook know what I eat?",
+      "de": "Woher weiß mein Kochbuch, was ich esse?"
+    },
+    "answer": {
+      "en": "Your profile sets ingredients and classes to avoid, positive requirements, a time budget and a calorie target. A recipe appears only when it passes all those checks. Each version has its own complete ingredient list and method.",
+      "de": "Dein Profil legt gemiedene Zutaten und Gruppen, positive Anforderungen, Zeitbudget und Kalorienziel fest. Ein Rezept erscheint nur, wenn es alle Prüfungen besteht. Jede Version hat eine eigene vollständige Zutatenliste und Zubereitung."
+    }
+  },
+  {
+    "id": "visibility",
+    "category": {
+      "en": "Your cookbook",
+      "de": "Dein Kochbuch"
+    },
+    "question": {
+      "en": "Why is a dish missing?",
+      "de": "Warum fehlt ein Gericht?"
+    },
+    "answer": {
+      "en": "There may be no version that meets every profile setting at once. Check your time budget, calorie target and avoidance list in Settings. On a dish page, the calorie override shows versions outside your target while keeping your other requirements.",
+      "de": "Vielleicht gibt es keine Version, die alle Profileinstellungen gleichzeitig erfüllt. Prüfe Zeitbudget, Kalorienziel und Vermeidungsliste in Einstellungen. Auf einer Gerichtseite zeigt der Kalorien-Schalter Versionen außerhalb deines Ziels; deine übrigen Anforderungen bleiben aktiv."
+    }
+  },
+  {
+    "id": "allergies",
+    "category": {
+      "en": "Diet & ingredients",
+      "de": "Ernährung & Zutaten"
+    },
+    "question": {
+      "en": "Can I rely on the app for allergy safety?",
+      "de": "Kann ich mich bei Allergien auf die App verlassen?"
+    },
+    "answer": {
+      "en": "Matching checks the listed ingredients and their ingredient families. Brand ingredients, manufacturing contact and your own kitchen can differ. Read product labels and follow your personal allergy guidance; the app does not certify an allergen-free meal.",
+      "de": "Die Zuordnung prüft aufgeführte Zutaten und ihre Zutatenfamilien. Markenrezepturen, Herstellungskontakt und deine Küche können abweichen. Lies Etiketten und beachte deine persönliche Allergieberatung; die App zertifiziert keine allergenfreie Mahlzeit."
+    }
+  },
+  {
+    "id": "avoidance",
+    "category": {
+      "en": "Diet & ingredients",
+      "de": "Ernährung & Zutaten"
+    },
+    "question": {
+      "en": "Can I avoid just one ingredient?",
+      "de": "Kann ich nur eine einzelne Zutat meiden?"
+    },
+    "answer": {
+      "en": "Yes. Search the ingredient dictionary in your profile and select an ingredient or a parent family. Avoiding cow's milk also avoids whole milk and skimmed milk. Class checkboxes and specific ingredient choices work together.",
+      "de": "Ja. Suche im Zutatenverzeichnis deines Profils und wähle eine Zutat oder Obergruppe. Kuhmilch zu meiden schließt auch Vollmilch und Magermilch aus. Gruppen-Kästchen und einzelne Zutaten wirken gemeinsam."
+    }
+  },
+  {
+    "id": "halal-kosher",
+    "category": {
+      "en": "Diet & ingredients",
+      "de": "Ernährung & Zutaten"
+    },
+    "question": {
+      "en": "What do halal-compatible and kosher-compatible mean?",
+      "de": "Was bedeuten halal-kompatibel und koscher-kompatibel?"
+    },
+    "answer": {
+      "en": "These describe ingredient compatibility, not certification. Sourcing, slaughter, supervision, labels and preparation remain your choice and responsibility. We never label a recipe halal-certified or kosher-certified.",
+      "de": "Die Begriffe beschreiben Zutatenkompatibilität, keine Zertifizierung. Herkunft, Schlachtung, Aufsicht, Etiketten und Zubereitung liegen weiterhin bei dir. Wir kennzeichnen kein Rezept als halal- oder koscher-zertifiziert."
+    }
+  },
+  {
+    "id": "calories",
+    "category": {
+      "en": "Your cookbook",
+      "de": "Dein Kochbuch"
+    },
+    "question": {
+      "en": "How does the calorie target work?",
+      "de": "Wie funktioniert das Kalorienziel?"
+    },
+    "answer": {
+      "en": "The target is per meal, with a tolerance of 150 kcal on either side. Nutrition values are estimates per serving. Use the per-dish calorie override when you want to browse beyond that range; it does not change your profile.",
+      "de": "Das Ziel gilt pro Mahlzeit mit 150 kcal Toleranz nach oben und unten. Nährwerte sind Schätzungen pro Portion. Mit dem Kalorien-Schalter eines Gerichts kannst du außerhalb dieses Bereichs stöbern; dein Profil wird dadurch nicht geändert."
+    }
+  },
+  {
+    "id": "switching",
+    "category": {
+      "en": "Cooking",
+      "de": "Kochen"
+    },
+    "question": {
+      "en": "Why is a version choice greyed out?",
+      "de": "Warum ist eine Versionsauswahl ausgegraut?"
+    },
+    "answer": {
+      "en": "Each row changes one dimension while preserving the other selections. A greyed-out choice has no available recipe for that combination and your profile. Try another effort or calorie level first; new recipes arrive with app releases.",
+      "de": "Jede Zeile ändert eine Eigenschaft und behält die anderen bei. Für eine ausgegraute Auswahl gibt es kein verfügbares Rezept mit dieser Kombination und deinem Profil. Probiere zunächst einen anderen Aufwand oder Kalorienbereich; neue Rezepte kommen mit App-Versionen."
+    }
+  },
+  {
+    "id": "saved",
+    "category": {
+      "en": "Your cookbook",
+      "de": "Dein Kochbuch"
+    },
+    "question": {
+      "en": "What exactly gets saved?",
+      "de": "Was genau wird gespeichert?"
+    },
+    "answer": {
+      "en": "You save the particular recipe you are viewing, including its own ingredients and method. Your vegan Döner and a classic Döner are separate saved recipes, even though they belong to the same dish.",
+      "de": "Du speicherst genau das angezeigte Rezept mit seinen eigenen Zutaten und Schritten. Dein veganer Döner und ein klassischer Döner sind getrennte gespeicherte Rezepte, obwohl sie zum selben Gericht gehören."
+    }
+  },
+  {
+    "id": "shopping",
+    "category": {
+      "en": "Planning & shopping",
+      "de": "Planen & Einkaufen"
+    },
+    "question": {
+      "en": "How are shopping quantities combined?",
+      "de": "Wie werden Einkaufsmengen zusammengezählt?"
+    },
+    "answer": {
+      "en": "The list combines the same ingredient across selected recipes and scales amounts with servings. Compatible units are converted, such as tablespoons and millilitres. Incompatible units remain separate so the list never guesses a weight from a piece count.",
+      "de": "Die Liste kombiniert gleiche Zutaten aus ausgewählten Rezepten und skaliert Mengen nach Portionen. Kompatible Einheiten wie Esslöffel und Milliliter werden umgerechnet. Unvereinbare Einheiten bleiben getrennt; die Liste errät kein Gewicht aus einer Stückzahl."
+    }
+  },
+  {
+    "id": "planning",
+    "category": {
+      "en": "Planning & shopping",
+      "de": "Planen & Einkaufen"
+    },
+    "question": {
+      "en": "How do I plan the week?",
+      "de": "Wie plane ich die Woche?"
+    },
+    "answer": {
+      "en": "Open the planner, choose a breakfast, lunch or dinner slot, and assign a saved or searched recipe. Drag a recipe to move it to another slot. Export the displayed week to the shopping list when you are ready.",
+      "de": "Öffne den Wochenplan, wähle Frühstück, Mittag- oder Abendessen und ordne ein gespeichertes oder gesuchtes Rezept zu. Ziehe ein Rezept in ein anderes Feld, um es zu verschieben. Übertrage die angezeigte Woche in die Einkaufsliste, wenn du bereit bist."
+    }
+  },
+  {
+    "id": "insights",
+    "category": {
+      "en": "Planning & shopping",
+      "de": "Planen & Einkaufen"
+    },
+    "question": {
+      "en": "What do Shopping Insights show?",
+      "de": "Was zeigen die Einkaufsstatistiken?"
+    },
+    "answer": {
+      "en": "Find them in Settings. Variety counts distinct ingredients added to shopping; frequency shows which ingredients you add most often. Monthly groups help you notice your own patterns. Everything is calculated from history stored on this device.",
+      "de": "Du findest sie in Einstellungen. Vielfalt zählt unterschiedliche zum Einkauf hinzugefügte Zutaten; Häufigkeit zeigt oft hinzugefügte Zutaten. Monatsgruppen machen eigene Muster sichtbar. Alles wird aus dem Verlauf auf diesem Gerät berechnet."
+    }
+  },
+  {
+    "id": "cook-mode",
+    "category": {
+      "en": "Cooking",
+      "de": "Kochen"
+    },
+    "question": {
+      "en": "Can I pause a recipe and come back?",
+      "de": "Kann ich ein Rezept pausieren und später fortsetzen?"
+    },
+    "answer": {
+      "en": "Yes. Cook mode keeps your step and progress locally. Use its pause and resume controls. Step timers help with waiting; check the food as well as the clock. Completing a recipe adds it to your local cooking history.",
+      "de": "Ja. Der Kochmodus speichert Schritt und Fortschritt lokal. Nutze Pause und Fortsetzen. Schritttimer helfen beim Warten; prüfe das Essen zusätzlich zur Uhr. Beim Abschließen wird das Rezept deinem lokalen Kochverlauf hinzugefügt."
+    }
+  },
+  {
+    "id": "accessibility",
+    "category": {
+      "en": "Cooking",
+      "de": "Kochen"
+    },
+    "question": {
+      "en": "Can I cook one-handed or use visual timer alerts?",
+      "de": "Kann ich einhändig kochen oder visuelle Timerhinweise nutzen?"
+    },
+    "answer": {
+      "en": "Enable quick-next tap in Settings to advance by tapping the step text. Taps are debounced to avoid accidental repeats. Visual timer alerts use coral and teal; reduced motion keeps feedback calm. Both features are optional.",
+      "de": "Aktiviere in Einstellungen das Weitertippen, um durch Tippen auf den Schritttext weiterzugehen. Schnelle Wiederholungen werden abgefangen. Visuelle Timerhinweise verwenden Koralle und Petrol; reduzierte Bewegung hält das Feedback ruhig. Beide Funktionen sind optional."
+    }
+  },
+  {
+    "id": "backup",
+    "category": {
+      "en": "Backup & privacy",
+      "de": "Sicherung & Datenschutz"
+    },
+    "question": {
+      "en": "How do I save a backup?",
+      "de": "Wie sichere ich meine Daten?"
+    },
+    "answer": {
+      "en": "In Settings, export a backup and save it through your device's share sheet. You get a JSON file and a smaller GZip file. Both include your profile, saved recipes, plans and history. Keep a copy somewhere you can find again.",
+      "de": "Exportiere in Einstellungen eine Sicherung und speichere sie über die Teilen-Funktion deines Geräts. Du erhältst eine JSON-Datei und eine kleinere GZip-Datei. Beide enthalten Profil, gespeicherte Rezepte, Pläne und Verlauf. Bewahre eine Kopie auffindbar auf."
+    }
+  },
+  {
+    "id": "encryption",
+    "category": {
+      "en": "Backup & privacy",
+      "de": "Sicherung & Datenschutz"
+    },
+    "question": {
+      "en": "Does a backup password protect both files?",
+      "de": "Schützt ein Sicherungspasswort beide Dateien?"
+    },
+    "answer": {
+      "en": "No. A password encrypts the JSON file with AES-256-GCM. The GZip copy remains unencrypted for compatibility and contains the same personal data. Share only the encrypted JSON when password protection is needed. Keep the password: it cannot be recovered.",
+      "de": "Nein. Ein Passwort verschlüsselt die JSON-Datei mit AES-256-GCM. Die GZip-Kopie bleibt aus Kompatibilitätsgründen unverschlüsselt und enthält dieselben persönlichen Daten. Teile bei gewünschtem Passwortschutz nur die verschlüsselte JSON-Datei. Bewahre das Passwort auf; es kann nicht wiederhergestellt werden."
+    }
+  },
+  {
+    "id": "restore",
+    "category": {
+      "en": "Backup & privacy",
+      "de": "Sicherung & Datenschutz"
+    },
+    "question": {
+      "en": "What is the difference between merge and replace?",
+      "de": "Was ist der Unterschied zwischen Zusammenführen und Ersetzen?"
+    },
+    "answer": {
+      "en": "Merge keeps existing collections and adds backup entries, resolving matching identifiers. Replace restores the backed-up state in place of your current state. Import validates the file first and never changes the bundled recipes.",
+      "de": "Zusammenführen behält vorhandene Sammlungen und ergänzt Sicherungseinträge anhand ihrer Kennungen. Ersetzen stellt den Sicherungsstand anstelle deines aktuellen Stands her. Der Import prüft zuerst die Datei und ändert niemals die mitgelieferten Rezepte."
+    }
+  },
+  {
+    "id": "offline",
+    "category": {
+      "en": "Backup & privacy",
+      "de": "Sicherung & Datenschutz"
+    },
+    "question": {
+      "en": "Does MorphCook send my information anywhere?",
+      "de": "Versendet MorphCook meine Informationen?"
+    },
+    "answer": {
+      "en": "No. Recipes, search, matching and personal history work on your device. There is no account, telemetry, cloud sync or live AI. Exporting through the share sheet is your own explicit action.",
+      "de": "Nein. Rezepte, Suche, Zuordnung und persönlicher Verlauf funktionieren auf deinem Gerät. Es gibt kein Konto, keine Telemetrie, Cloud-Synchronisierung oder Live-KI. Ein Export über die Teilen-Funktion ist deine ausdrückliche Aktion."
+    }
+  },
+  {
+    "id": "search-empty",
+    "category": {
+      "en": "Troubleshooting",
+      "de": "Fehlerbehebung"
+    },
+    "question": {
+      "en": "Why does my search have no results?",
+      "de": "Warum hat meine Suche keine Treffer?"
+    },
+    "answer": {
+      "en": "Try a shorter word, remove search tags or check your profile restrictions. The bundled cookbook is finite. Searches with no results are kept locally as content requests and can be included in your backup; they are never sent automatically.",
+      "de": "Versuche ein kürzeres Wort, entferne Such-Tags oder prüfe deine Profilregeln. Das mitgelieferte Kochbuch ist begrenzt. Suchen ohne Treffer werden lokal als Inhaltswünsche gespeichert und können in der Sicherung enthalten sein; sie werden nie automatisch versendet."
+    }
+  },
+  {
+    "id": "language",
+    "category": {
+      "en": "Troubleshooting",
+      "de": "Fehlerbehebung"
+    },
+    "question": {
+      "en": "Can I change the language later?",
+      "de": "Kann ich die Sprache später ändern?"
+    },
+    "answer": {
+      "en": "Yes. Switch between English and German in Settings. Your profile, saved recipe IDs and planning data remain the same.",
+      "de": "Ja. Wechsle in Einstellungen zwischen Englisch und Deutsch. Profil, gespeicherte Rezeptkennungen und Plandaten bleiben gleich."
+    }
+  }
+]

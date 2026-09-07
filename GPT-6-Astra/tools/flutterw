@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+MORPHCOOK_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+export PUB_CACHE="$MORPHCOOK_ROOT/.local/pub-cache"
+export XDG_CONFIG_HOME="$MORPHCOOK_ROOT/.local/config"
+export XDG_CACHE_HOME="$MORPHCOOK_ROOT/.local/cache"
+export TMPDIR="$MORPHCOOK_ROOT/.local/tmp"
+export GRADLE_USER_HOME="$MORPHCOOK_ROOT/.local/gradle"
+export ANDROID_USER_HOME="$MORPHCOOK_ROOT/.local/android"
+export ANDROID_EMULATOR_HOME="$MORPHCOOK_ROOT/.local/android/avd"
+export GRADLE_OPTS="${GRADLE_OPTS:-} -Duser.home=$MORPHCOOK_ROOT/.local/java -Djava.io.tmpdir=$MORPHCOOK_ROOT/.local/tmp"
+export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:-} -Duser.home=$MORPHCOOK_ROOT/.local/java -Djava.io.tmpdir=$MORPHCOOK_ROOT/.local/tmp"
+mkdir -p "$ANDROID_USER_HOME" "$ANDROID_EMULATOR_HOME" "$MORPHCOOK_ROOT/.local/java" "$TMPDIR"
+export FLUTTER_SUPPRESS_ANALYTICS=true
+export DART_SUPPRESS_ANALYTICS=true
+export CI=true
+exec flutter --suppress-analytics "$@"

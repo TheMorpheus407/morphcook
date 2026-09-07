@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Keep release builds offline even if a future dependency adds permission. -->
+    <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
+</manifest>

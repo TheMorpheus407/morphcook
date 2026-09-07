@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+MORPHCOOK_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+export PUB_CACHE="$MORPHCOOK_ROOT/.local/pub-cache"
+export XDG_CONFIG_HOME="$MORPHCOOK_ROOT/.local/config"
+export XDG_CACHE_HOME="$MORPHCOOK_ROOT/.local/cache"
+export TMPDIR="$MORPHCOOK_ROOT/.local/tmp"
+export GRADLE_USER_HOME="$MORPHCOOK_ROOT/.local/gradle"
+export FLUTTER_SUPPRESS_ANALYTICS=true
+export DART_SUPPRESS_ANALYTICS=true
+export CI=true
+exec dart "$@"

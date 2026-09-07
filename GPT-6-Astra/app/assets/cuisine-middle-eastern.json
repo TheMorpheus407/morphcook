@@ -1,0 +1,2260 @@
+[
+  {
+    "id": "doener-classic",
+    "dish_id": "doener",
+    "title": {
+      "en": "Chicken döner with lemon yogurt",
+      "de": "Hähnchen-Döner mit Zitronenjoghurt"
+    },
+    "description": {
+      "en": "Crisp edges, soft bread, a very good lunch.",
+      "de": "Knusprige Ränder, weiches Brot, ein richtig gutes Mittagessen."
+    },
+    "diet": "classic",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 595,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose",
+      "meat-dairy-combo",
+      "poultry"
+    ],
+    "attributes": [
+      "halal",
+      "lunch",
+      "medium",
+      "pan-fry",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "classic",
+      "medium",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken-thigh",
+        "quantity": 280.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "red-cabbage",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Slice & season",
+          "de": "Schneiden & würzen"
+        },
+        "text": {
+          "en": "Slice chicken thinly. Toss with oil, cumin, paprika and half the salt. Shred cabbage and slice cucumber and tomato.",
+          "de": "Hähnchen dünn schneiden. Mit Öl, Kreuzkümmel, Paprika und der Hälfte des Salzes mischen. Kohl hobeln, Gurke und Tomate schneiden."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Golden edges",
+          "de": "Goldene Ränder"
+        },
+        "text": {
+          "en": "Heat a wide pan over medium-high heat. Cook chicken in one layer for 8–10 minutes, turning, until browned and the centre reaches 74°C.",
+          "de": "Eine große Pfanne stark erhitzen. Hähnchen 8–10 Minuten in einer Lage braten, dabei wenden, bis es braun ist und innen 74 °C erreicht."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "The cool things",
+          "de": "Die frischen Dinge"
+        },
+        "text": {
+          "en": "Grate garlic into yogurt. Add half the lemon juice and remaining salt. Massage cabbage with the other half of the juice.",
+          "de": "Knoblauch in den Joghurt reiben. Die Hälfte des Zitronensafts und das restliche Salz zugeben. Kohl mit dem übrigen Saft kneten."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Wrap it up",
+          "de": "Alles einpacken"
+        },
+        "text": {
+          "en": "Warm pita in the dry pan for 30 seconds per side. Open carefully and fill with yogurt, vegetables and hot chicken.",
+          "de": "Fladenbrot in der trockenen Pfanne je Seite 30 Sekunden erwärmen. Vorsichtig öffnen und mit Joghurt, Gemüse und heißem Hähnchen füllen."
+        },
+        "timer_seconds": 60
+      }
+    ],
+    "nutrition": {
+      "protein": 44,
+      "carbs": 59,
+      "fat": 20
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-vegetarian",
+    "dish_id": "doener",
+    "title": {
+      "en": "Halloumi & mint döner",
+      "de": "Halloumi-Minz-Döner"
+    },
+    "description": {
+      "en": "Salty golden cheese, a tangle of fresh mint.",
+      "de": "Goldener, salziger Käse und eine Handvoll frische Minze."
+    },
+    "diet": "vegetarian",
+    "effort": "easy",
+    "calorie_level": "hearty",
+    "time_minutes": 20,
+    "calories_per_serving": 675,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "lunch",
+      "pan-fry",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegetarian",
+      "easy",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "halloumi",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "mint",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A fresh start",
+          "de": "Frisch beginnen"
+        },
+        "text": {
+          "en": "Pat halloumi dry and cut into 1 cm slabs. Slice cucumber and tomato; roughly tear the mint.",
+          "de": "Halloumi trocken tupfen und in 1 cm dicke Scheiben schneiden. Gurke und Tomate schneiden, Minze grob zupfen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Golden halloumi",
+          "de": "Goldener Halloumi"
+        },
+        "text": {
+          "en": "Brush cheese with oil and paprika. Fry in a hot non-stick pan for 2 minutes on each side until striped with gold.",
+          "de": "Käse mit Öl und Paprika bestreichen. In einer heißen beschichteten Pfanne je Seite 2 Minuten goldbraun braten."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "Fold & eat",
+          "de": "Füllen & genießen"
+        },
+        "text": {
+          "en": "Mix yogurt with lemon juice and mint. Warm the pita, spread with yogurt, then tuck in vegetables and halloumi. Eat while the cheese is warm.",
+          "de": "Joghurt mit Zitronensaft und Minze mischen. Brot erwärmen, mit Joghurt bestreichen und Gemüse und Halloumi hineinlegen. Essen, solange der Käse warm ist."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 30,
+      "carbs": 60,
+      "fat": 35
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-vegan",
+    "dish_id": "doener",
+    "title": {
+      "en": "Crispy oyster mushroom döner",
+      "de": "Knuspriger Austernpilz-Döner"
+    },
+    "description": {
+      "en": "Smoky mushrooms and tahini tucked into warm bread.",
+      "de": "Rauchige Pilze und Tahin in warmem Fladenbrot."
+    },
+    "diet": "vegan",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 560,
+    "servings": 2,
+    "contains": [
+      "gluten",
+      "high-fodmap",
+      "sesame"
+    ],
+    "attributes": [
+      "halal",
+      "kosher",
+      "lunch",
+      "medium",
+      "roast",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegan",
+      "medium",
+      "lunch",
+      "roast"
+    ],
+    "ingredients": [
+      {
+        "id": "oyster-mushrooms",
+        "quantity": 350.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 35.0,
+        "unit": "g"
+      },
+      {
+        "id": "red-cabbage",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 40.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Tear & tumble",
+          "de": "Zupfen & mischen"
+        },
+        "text": {
+          "en": "Heat the oven to 220°C. Tear mushrooms into wide strips, toss with oil, paprika, cumin and half the salt, and spread across a metal tray.",
+          "de": "Ofen auf 220 °C vorheizen. Pilze in breite Streifen zupfen, mit Öl, Paprika, Kreuzkümmel und halbem Salz mischen und auf einem Metallblech verteilen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Crisp edges",
+          "de": "Knusprige Ränder"
+        },
+        "text": {
+          "en": "Roast mushrooms for 20 minutes, turning halfway, until their edges are crisp. Keep pieces separated so they roast rather than steam.",
+          "de": "Pilze 20 Minuten rösten, nach der Hälfte wenden, bis die Ränder knusprig sind. Stücke mit Abstand verteilen, damit sie rösten."
+        },
+        "timer_seconds": 1200
+      },
+      {
+        "title": {
+          "en": "Stir the sesame cream",
+          "de": "Sesamcreme rühren"
+        },
+        "text": {
+          "en": "Whisk tahini with grated garlic, half the lemon juice, water and remaining salt. Finely shred cabbage and massage with the rest of the lemon. Slice cucumber.",
+          "de": "Tahin mit geriebenem Knoblauch, halbem Zitronensaft, Wasser und übrigem Salz verrühren. Kohl fein hobeln und mit restlicher Zitrone kneten. Gurke schneiden."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Your corner-shop moment",
+          "de": "Dein Kioskmoment"
+        },
+        "text": {
+          "en": "Warm pita in the oven for 2 minutes. Fill with tahini, cabbage, cucumber and the hot mushrooms; spoon over the tray juices.",
+          "de": "Brot 2 Minuten im Ofen erwärmen. Mit Tahin, Kohl, Gurke und heißen Pilzen füllen; den Bratensaft darübergeben."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 18,
+      "carbs": 68,
+      "fat": 24
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-keto",
+    "dish_id": "doener",
+    "title": {
+      "en": "Lamb döner lettuce bowls",
+      "de": "Lamm-Döner in Salatschalen"
+    },
+    "description": {
+      "en": "Warm cumin lamb, cool leaves, no fork required.",
+      "de": "Warmes Kreuzkümmellamm und kühle Salatblätter."
+    },
+    "diet": "keto",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 510,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "high-fodmap",
+      "lactose",
+      "lamb",
+      "meat-dairy-combo"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "keto",
+      "lunch",
+      "pan-fry",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "keto",
+      "easy",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "lamb-mince",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "lettuce",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Cool & crunchy",
+          "de": "Kühl & knackig"
+        },
+        "text": {
+          "en": "Separate and wash lettuce leaves, then dry them well. Dice cucumber and tomato. Stir yogurt with grated garlic, lemon juice and a pinch of the salt.",
+          "de": "Salatblätter lösen, waschen und gut trocknen. Gurke und Tomate würfeln. Joghurt mit geriebenem Knoblauch, Zitronensaft und etwas Salz verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Sizzle the lamb",
+          "de": "Lamm anbraten"
+        },
+        "text": {
+          "en": "Heat oil in a skillet. Press lamb into a thin layer and leave for 3 minutes. Break up, add cumin, paprika and remaining salt, then fry for 6 minutes until fully cooked to 71°C.",
+          "de": "Öl in einer Pfanne erhitzen. Lamm dünn hineindrücken und 3 Minuten braten. Zerteilen, Kreuzkümmel, Paprika und restliches Salz zugeben und 6 Minuten bis 71 °C Kerntemperatur fertig braten."
+        },
+        "timer_seconds": 540
+      },
+      {
+        "title": {
+          "en": "Build your bowl",
+          "de": "Schalen füllen"
+        },
+        "text": {
+          "en": "Nest the leaves in two bowls. Add chopped vegetables, spoon over lamb and its juices, then finish with lemon yogurt.",
+          "de": "Blätter in zwei Schalen legen. Gemüse und Lamm samt Bratensaft hineinfüllen und mit Zitronenjoghurt abschließen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 32,
+      "carbs": 12,
+      "fat": 37
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-halal",
+    "dish_id": "doener",
+    "title": {
+      "en": "Spiced chicken & parsley döner",
+      "de": "Gewürz-Hähnchen-Döner mit Petersilie"
+    },
+    "description": {
+      "en": "A bright, tahini-dressed pocket for the lunch hour.",
+      "de": "Eine frische Teigtasche mit Tahin für die Mittagspause."
+    },
+    "diet": "halal",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 35,
+    "calories_per_serving": 575,
+    "servings": 2,
+    "contains": [
+      "gluten",
+      "high-fodmap",
+      "poultry",
+      "sesame"
+    ],
+    "attributes": [
+      "halal",
+      "kosher",
+      "lunch",
+      "medium",
+      "roast",
+      "≤60"
+    ],
+    "tags": [
+      "middle-eastern",
+      "halal",
+      "medium",
+      "lunch",
+      "roast"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "parsley",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 50.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "coriander",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "water",
+        "quantity": 40.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Season with care",
+          "de": "Sorgfältig würzen"
+        },
+        "text": {
+          "en": "Choose chicken sourced for your halal requirements. Cut into strips and coat with oil, cumin, coriander and half the salt. Heat the oven to 210°C.",
+          "de": "Hähnchen passend zu deinen Halal-Anforderungen wählen. In Streifen schneiden, mit Öl, Kreuzkümmel, Koriander und halbem Salz mischen. Ofen auf 210 °C vorheizen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Let the oven work",
+          "de": "Der Ofen übernimmt"
+        },
+        "text": {
+          "en": "Spread chicken on a tray and roast for 18–22 minutes, turning once, until the thickest piece reaches 74°C.",
+          "de": "Hähnchen auf einem Blech verteilen und 18–22 Minuten rösten, einmal wenden, bis das dickste Stück 74 °C erreicht."
+        },
+        "timer_seconds": 1200
+      },
+      {
+        "title": {
+          "en": "A parsley tangle",
+          "de": "Petersilienfrische"
+        },
+        "text": {
+          "en": "Thinly slice onion; toss with chopped parsley, tomato and half the lemon juice. Whisk tahini with water, remaining lemon juice and salt.",
+          "de": "Zwiebel dünn schneiden; mit gehackter Petersilie, Tomate und halbem Zitronensaft mischen. Tahin mit Wasser, restlichem Zitronensaft und Salz verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Tuck everything in",
+          "de": "Alles hineinpacken"
+        },
+        "text": {
+          "en": "Warm the pita on the oven shelf for 2 minutes. Fill with the parsley salad and chicken, then spoon in the tahini sauce.",
+          "de": "Brot 2 Minuten auf dem Ofenrost erwärmen. Mit Petersiliensalat und Hähnchen füllen und Tahinsauce hineinlöffeln."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 41,
+      "carbs": 62,
+      "fat": 18
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "shakshuka-classic",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Tomato & pepper shakshuka",
+      "de": "Tomaten-Paprika-Shakshuka"
+    },
+    "description": {
+      "en": "Eggs nestled in a warm red blanket.",
+      "de": "Eier unter einer warmen roten Decke."
+    },
+    "diet": "classic",
+    "effort": "easy",
+    "calorie_level": "light",
+    "time_minutes": 30,
+    "calories_per_serving": 395,
+    "servings": 2,
+    "contains": [
+      "egg",
+      "gluten",
+      "high-fodmap"
+    ],
+    "attributes": [
+      "breakfast",
+      "easy",
+      "halal",
+      "kosher",
+      "poach",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "classic",
+      "easy",
+      "breakfast",
+      "simmer",
+      "poach"
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "quantity": 4.0,
+        "unit": "piece"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 400.0,
+        "unit": "g"
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 180.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 1.0,
+        "unit": "clove"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "bread",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "parsley",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Wake the spices",
+          "de": "Gewürze wecken"
+        },
+        "text": {
+          "en": "Dice pepper and onion. Warm oil in a lidded frying pan and soften them for 7 minutes. Add chopped garlic, cumin and paprika; stir for 1 minute.",
+          "de": "Paprika und Zwiebel würfeln. Öl in einer Pfanne mit Deckel erwärmen und Gemüse 7 Minuten weich dünsten. Gehackten Knoblauch, Kreuzkümmel und Paprikapulver 1 Minute mitrühren."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "A red blanket",
+          "de": "Eine rote Decke"
+        },
+        "text": {
+          "en": "Add tomatoes and salt. Simmer uncovered for 10 minutes, stirring, until the sauce is thick enough to hold a little hollow.",
+          "de": "Tomaten und Salz zugeben. Ohne Deckel 10 Minuten unter Rühren köcheln, bis die Sauce eine kleine Mulde hält."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Nest the eggs",
+          "de": "Eier einbetten"
+        },
+        "text": {
+          "en": "Make four hollows and crack in the eggs. Cover and cook on low for 7–9 minutes until whites and yolks are set. Scatter parsley and serve with toasted bread.",
+          "de": "Vier Mulden formen und Eier hineinschlagen. Zugedeckt bei kleiner Hitze 7–9 Minuten garen, bis Eiweiß und Eigelb fest sind. Petersilie darüberstreuen und mit geröstetem Brot servieren."
+        },
+        "timer_seconds": 540
+      }
+    ],
+    "nutrition": {
+      "protein": 18,
+      "carbs": 39,
+      "fat": 18
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "shakshuka-vegetarian",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Green feta shakshuka",
+      "de": "Grüne Feta-Shakshuka"
+    },
+    "description": {
+      "en": "A small green garden, with eggs for company.",
+      "de": "Ein kleiner grüner Garten mit Eiern als Gesellschaft."
+    },
+    "diet": "vegetarian",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 25,
+    "calories_per_serving": 420,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "egg",
+      "high-fodmap",
+      "lactose"
+    ],
+    "attributes": [
+      "breakfast",
+      "easy",
+      "halal",
+      "kosher",
+      "poach",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegetarian",
+      "easy",
+      "breakfast",
+      "simmer",
+      "poach"
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "quantity": 4.0,
+        "unit": "piece"
+      },
+      {
+        "id": "spinach",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "peas",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "feta",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "spring-onion",
+        "quantity": 40.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "dill",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "black-pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Start with green",
+          "de": "Grün beginnen"
+        },
+        "text": {
+          "en": "Slice spring onion greens and chop dill. Warm oil in a lidded skillet; add onion greens and peas with 60 ml water. Simmer for 4 minutes.",
+          "de": "Zwiebelgrün schneiden und Dill hacken. Öl in einer Pfanne mit Deckel erwärmen; Zwiebelgrün, Erbsen und 60 ml Wasser zugeben. 4 Minuten köcheln."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "Make little nests",
+          "de": "Kleine Nester formen"
+        },
+        "text": {
+          "en": "Add spinach in handfuls until wilted. Stir in yogurt, lemon zest, half the dill and pepper. Make four wells and crack in the eggs.",
+          "de": "Spinat portionsweise zusammenfallen lassen. Joghurt, Zitronenabrieb, halben Dill und Pfeffer einrühren. Vier Mulden formen und Eier hineinschlagen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "A gentle finish",
+          "de": "Sanft fertig garen"
+        },
+        "text": {
+          "en": "Crumble feta around the eggs, cover and cook gently for 8 minutes until eggs are fully set. Finish with remaining dill and a squeeze of lemon.",
+          "de": "Feta um die Eier bröseln, zudecken und 8 Minuten sanft garen, bis die Eier ganz gestockt sind. Mit restlichem Dill und etwas Zitronensaft abschließen."
+        },
+        "timer_seconds": 480
+      }
+    ],
+    "nutrition": {
+      "protein": 26,
+      "carbs": 17,
+      "fat": 29
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "shakshuka-vegan",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Chickpea & silken tofu shakshuka",
+      "de": "Shakshuka mit Kichererbsen und Seidentofu"
+    },
+    "description": {
+      "en": "Soft tofu clouds in a spiced tomato sea.",
+      "de": "Weiche Tofuwolken in einem würzigen Tomatenmeer."
+    },
+    "diet": "vegan",
+    "effort": "easy",
+    "calorie_level": "light",
+    "time_minutes": 30,
+    "calories_per_serving": 385,
+    "servings": 2,
+    "contains": [
+      "high-fodmap",
+      "soy"
+    ],
+    "attributes": [
+      "breakfast",
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegan",
+      "easy",
+      "breakfast",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "silken-tofu",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "chickpeas",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 400.0,
+        "unit": "g"
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "garlic",
+        "quantity": 2.0,
+        "unit": "clove"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "turmeric",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "id": "parsley",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A warm beginning",
+          "de": "Ein warmer Anfang"
+        },
+        "text": {
+          "en": "Slice pepper and garlic. Fry in oil for 6 minutes. Add cumin, paprika and turmeric for 30 seconds, then stir in tomatoes and salt.",
+          "de": "Paprika und Knoblauch schneiden. In Öl 6 Minuten braten. Kreuzkümmel, Paprikapulver und Kurkuma 30 Sekunden mitrösten, dann Tomaten und Salz einrühren."
+        },
+        "timer_seconds": 390
+      },
+      {
+        "title": {
+          "en": "Tomato sea",
+          "de": "Tomatenmeer"
+        },
+        "text": {
+          "en": "Add drained chickpeas and simmer uncovered for 12 minutes, until thick. Drain tofu carefully and use a large spoon to nest six pieces into the sauce.",
+          "de": "Abgetropfte Kichererbsen zugeben und 12 Minuten offen dicklich köcheln. Tofu vorsichtig abtropfen lassen und mit einem großen Löffel sechs Stücke in die Sauce setzen."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Keep the clouds whole",
+          "de": "Wolken ganz lassen"
+        },
+        "text": {
+          "en": "Cover and heat gently for 5 minutes without stirring, until tofu is hot through. Scatter chopped parsley and spoon into warm bowls.",
+          "de": "Zudecken und ohne Rühren 5 Minuten sanft erhitzen, bis der Tofu durchgehend heiß ist. Gehackte Petersilie darüberstreuen und in warme Schalen löffeln."
+        },
+        "timer_seconds": 300
+      }
+    ],
+    "nutrition": {
+      "protein": 23,
+      "carbs": 35,
+      "fat": 17
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "shakshuka-keto",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Creamy aubergine & egg skillet",
+      "de": "Cremige Auberginen-Eier-Pfanne"
+    },
+    "description": {
+      "en": "Slow-soft aubergine and rich eggs for a quiet morning.",
+      "de": "Weiche Aubergine und kräftige Eier für einen ruhigen Morgen."
+    },
+    "diet": "keto",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 35,
+    "calories_per_serving": 480,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "egg",
+      "lactose"
+    ],
+    "attributes": [
+      "breakfast",
+      "halal",
+      "keto",
+      "kosher",
+      "medium",
+      "poach",
+      "simmer",
+      "vegetarian",
+      "≤60"
+    ],
+    "tags": [
+      "middle-eastern",
+      "keto",
+      "medium",
+      "breakfast",
+      "simmer",
+      "poach"
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "quantity": 4.0,
+        "unit": "piece"
+      },
+      {
+        "id": "aubergine",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 200.0,
+        "unit": "g"
+      },
+      {
+        "id": "feta",
+        "quantity": 80.0,
+        "unit": "g"
+      },
+      {
+        "id": "cream",
+        "quantity": 60.0,
+        "unit": "ml"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "chili",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "id": "parsley",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Soften the aubergine",
+          "de": "Aubergine weich garen"
+        },
+        "text": {
+          "en": "Dice aubergine into 1 cm cubes. Fry with oil and salt for 8 minutes, turning often. Add 60 ml water and cover for 4 minutes to soften.",
+          "de": "Aubergine in 1 cm große Würfel schneiden. Mit Öl und Salz 8 Minuten unter Wenden braten. 60 ml Wasser zugeben und zugedeckt 4 Minuten weich garen."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "A creamy red sauce",
+          "de": "Eine cremige rote Sauce"
+        },
+        "text": {
+          "en": "Stir in cumin, chili and tomatoes. Simmer for 8 minutes, then fold through cream. Make four wells and add eggs.",
+          "de": "Kreuzkümmel, Chili und Tomaten einrühren. 8 Minuten köcheln, dann Sahne unterziehen. Vier Mulden formen und Eier hineingeben."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Set the eggs softly",
+          "de": "Eier sanft stocken"
+        },
+        "text": {
+          "en": "Scatter feta between the eggs. Cover and cook on low for 8 minutes until eggs are set. Finish with parsley.",
+          "de": "Feta zwischen die Eier streuen. Zugedeckt bei kleiner Hitze 8 Minuten garen, bis die Eier gestockt sind. Mit Petersilie abschließen."
+        },
+        "timer_seconds": 480
+      }
+    ],
+    "nutrition": {
+      "protein": 24,
+      "carbs": 16,
+      "fat": 36
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "shakshuka-halal",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Cumin beef breakfast skillet",
+      "de": "Frühstückspfanne mit Kreuzkümmel-Rind"
+    },
+    "description": {
+      "en": "A hearty pan with a bright parsley finish.",
+      "de": "Eine herzhafte Pfanne mit frischer Petersilie."
+    },
+    "diet": "halal",
+    "effort": "medium",
+    "calorie_level": "balanced",
+    "time_minutes": 30,
+    "calories_per_serving": 440,
+    "servings": 2,
+    "contains": [
+      "beef",
+      "egg",
+      "high-fodmap"
+    ],
+    "attributes": [
+      "breakfast",
+      "halal",
+      "kosher",
+      "medium",
+      "poach",
+      "simmer",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "halal",
+      "medium",
+      "breakfast",
+      "simmer",
+      "poach"
+    ],
+    "ingredients": [
+      {
+        "id": "beef-mince",
+        "quantity": 220.0,
+        "unit": "g"
+      },
+      {
+        "id": "eggs",
+        "quantity": 2.0,
+        "unit": "piece"
+      },
+      {
+        "id": "canned-tomatoes",
+        "quantity": 400.0,
+        "unit": "g"
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "onion",
+        "quantity": 60.0,
+        "unit": "g"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "parsley",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Brown the beef",
+          "de": "Rind anbraten"
+        },
+        "text": {
+          "en": "Choose beef according to your halal sourcing requirements. Dice onion and pepper. Heat oil and brown beef for 6 minutes, breaking it into small pieces.",
+          "de": "Rindfleisch gemäß deinen Halal-Anforderungen wählen. Zwiebel und Paprika würfeln. Öl erhitzen und Hack 6 Minuten krümelig anbraten."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "Let the sauce settle",
+          "de": "Sauce köcheln lassen"
+        },
+        "text": {
+          "en": "Add onion and pepper for 5 minutes, then cumin, paprika, tomatoes and salt. Simmer for 10 minutes. The beef must reach 71°C before adding eggs.",
+          "de": "Zwiebel und Paprika 5 Minuten mitbraten, dann Kreuzkümmel, Paprikapulver, Tomaten und Salz zugeben. 10 Minuten köcheln. Vor Zugabe der Eier muss das Hack 71 °C erreichen."
+        },
+        "timer_seconds": 900
+      },
+      {
+        "title": {
+          "en": "Breakfast is ready",
+          "de": "Frühstück ist fertig"
+        },
+        "text": {
+          "en": "Make two wells, add eggs and cover. Cook gently for 7–9 minutes until fully set. Scatter parsley and serve from the pan.",
+          "de": "Zwei Mulden formen, Eier zugeben und zudecken. 7–9 Minuten sanft garen, bis sie ganz gestockt sind. Petersilie darüberstreuen und aus der Pfanne servieren."
+        },
+        "timer_seconds": 540
+      }
+    ],
+    "nutrition": {
+      "protein": 36,
+      "carbs": 17,
+      "fat": 25
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-classic-easy",
+    "dish_id": "doener",
+    "title": {
+      "en": "Quick paprika chicken pita",
+      "de": "Schnelle Paprika-Hähnchen-Pita"
+    },
+    "description": {
+      "en": "A warm pocket for an ordinary good day.",
+      "de": "Eine warme Tasche für einen gewöhnlich guten Tag."
+    },
+    "diet": "classic",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 20,
+    "calories_per_serving": 520,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose",
+      "meat-dairy-combo",
+      "poultry"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "lunch",
+      "pan-fry",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "classic",
+      "easy",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 280.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A quick beginning",
+          "de": "Ein schneller Anfang"
+        },
+        "text": {
+          "en": "Slice chicken into very thin strips and toss with paprika, oil and half the salt. Grate cucumber coarsely and squeeze out moisture.",
+          "de": "Hähnchen in sehr dünne Streifen schneiden und mit Paprika, Öl und halbem Salz mischen. Gurke grob reiben und ausdrücken."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "One hot pan",
+          "de": "Eine heiße Pfanne"
+        },
+        "text": {
+          "en": "Fry chicken in a hot pan for 8 minutes, stirring, until it reaches 74°C. Mix cucumber with yogurt, lemon juice and remaining salt.",
+          "de": "Hähnchen in einer heißen Pfanne unter Rühren 8 Minuten bis 74 °C braten. Gurke mit Joghurt, Zitronensaft und übrigem Salz mischen."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Pocket-sized comfort",
+          "de": "Geborgenheit im Taschenformat"
+        },
+        "text": {
+          "en": "Warm pita in the dry pan for 30 seconds each side. Fill with cucumber yogurt and chicken; spoon the paprika pan juices over the filling.",
+          "de": "Brot in der trockenen Pfanne je Seite 30 Sekunden erwärmen. Mit Gurkenjoghurt und Hähnchen füllen; Paprika-Bratensaft darüberlöffeln."
+        },
+        "timer_seconds": 60
+      }
+    ],
+    "nutrition": {
+      "protein": 40,
+      "carbs": 55,
+      "fat": 16
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-vegan-easy",
+    "dish_id": "doener",
+    "title": {
+      "en": "Pan-crisp chickpea döner",
+      "de": "Pfannenknuspriger Kichererbsen-Döner"
+    },
+    "description": {
+      "en": "Warm cumin crumbs, cucumber and sesame cream.",
+      "de": "Warme Kreuzkümmelkrümel, Gurke und Sesamcreme."
+    },
+    "diet": "vegan",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 20,
+    "calories_per_serving": 540,
+    "servings": 2,
+    "contains": [
+      "gluten",
+      "high-fodmap",
+      "sesame"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "lunch",
+      "pan-fry",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegan",
+      "easy",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "quantity": 280.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 2.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 40.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Crush into rough crumbs",
+          "de": "Grob zerdrücken"
+        },
+        "text": {
+          "en": "Drain and dry chickpeas, then crush roughly with a fork. Toss with cumin, paprika and half the salt.",
+          "de": "Kichererbsen abtropfen lassen, trocknen und mit einer Gabel grob zerdrücken. Mit Kreuzkümmel, Paprika und halbem Salz mischen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Let a crust form",
+          "de": "Eine Kruste entstehen lassen"
+        },
+        "text": {
+          "en": "Heat oil in a wide pan. Press chickpeas into one layer and fry for 7 minutes, turning only twice so a crust forms. Meanwhile whisk tahini with lemon, water and remaining salt.",
+          "de": "Öl in einer breiten Pfanne erhitzen. Kichererbsen flach hineindrücken und 7 Minuten braten; nur zweimal wenden, damit eine Kruste entsteht. Tahin mit Zitrone, Wasser und übrigem Salz verrühren."
+        },
+        "timer_seconds": 420
+      },
+      {
+        "title": {
+          "en": "Scoop up the crisp bits",
+          "de": "Knusprige Stücke aufheben"
+        },
+        "text": {
+          "en": "Slice cucumber. Warm pita for 1 minute, spread with sesame cream and tuck in cucumber and the crisp chickpea crumbles.",
+          "de": "Gurke schneiden. Brot 1 Minute erwärmen, mit Sesamcreme bestreichen und Gurke und knusprige Kichererbsenkrümel hineinlegen."
+        },
+        "timer_seconds": 60
+      }
+    ],
+    "nutrition": {
+      "protein": 21,
+      "carbs": 74,
+      "fat": 17
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-vegetarian-easy",
+    "dish_id": "doener",
+    "title": {
+      "en": "Feta & warm lentil döner",
+      "de": "Döner mit Feta und warmen Linsen"
+    },
+    "description": {
+      "en": "Soft lentils, cool feta and a minty squeeze of lemon.",
+      "de": "Weiche Linsen, kühler Feta und minzige Zitrone."
+    },
+    "diet": "vegetarian",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 20,
+    "calories_per_serving": 560,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "lunch",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegetarian",
+      "easy",
+      "lunch",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "feta",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "mint",
+        "quantity": 10.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Warm the lentils",
+          "de": "Linsen erwärmen"
+        },
+        "text": {
+          "en": "Warm lentils in a small saucepan with cumin, oil and 3 tbsp water for 5 minutes. Crush a few against the pan so the filling holds together.",
+          "de": "Linsen mit Kreuzkümmel, Öl und 3 EL Wasser in einem kleinen Topf 5 Minuten erwärmen. Einige am Topfrand zerdrücken, damit die Füllung zusammenhält."
+        },
+        "timer_seconds": 300
+      },
+      {
+        "title": {
+          "en": "A minty salad",
+          "de": "Ein minziger Salat"
+        },
+        "text": {
+          "en": "Dice tomatoes and mix with torn mint, lemon juice and salt. Crumble feta into the tomato salad just before filling.",
+          "de": "Tomaten würfeln und mit gezupfter Minze, Zitronensaft und Salz mischen. Feta erst kurz vor dem Füllen hineinbröseln."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Warm meets cool",
+          "de": "Warm trifft kühl"
+        },
+        "text": {
+          "en": "Toast pita in a dry pan for 1 minute per side. Open and spoon in warm lentils, then add the juicy tomato and feta salad.",
+          "de": "Brot in einer trockenen Pfanne je Seite 1 Minute rösten. Öffnen und warme Linsen hineinlöffeln, dann saftigen Tomaten-Feta-Salat zugeben."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 27,
+      "carbs": 68,
+      "fat": 20
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-halal-easy",
+    "dish_id": "doener",
+    "title": {
+      "en": "Quick beef & tomato döner",
+      "de": "Schneller Rind-Tomaten-Döner"
+    },
+    "description": {
+      "en": "Cumin beef, parsley and a bright chopped salad.",
+      "de": "Kreuzkümmelrind, Petersilie und frischer gehackter Salat."
+    },
+    "diet": "halal",
+    "effort": "easy",
+    "calorie_level": "balanced",
+    "time_minutes": 20,
+    "calories_per_serving": 580,
+    "servings": 2,
+    "contains": [
+      "beef",
+      "gluten",
+      "high-fodmap",
+      "sesame"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "lunch",
+      "pan-fry",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "halal",
+      "easy",
+      "lunch",
+      "pan-fry"
+    ],
+    "ingredients": [
+      {
+        "id": "beef-mince",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 180.0,
+        "unit": "g"
+      },
+      {
+        "id": "parsley",
+        "quantity": 15.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 20.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 40.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "A sizzling start",
+          "de": "Ein brutzelnder Anfang"
+        },
+        "text": {
+          "en": "Choose beef for your halal requirements. Heat a dry skillet and brown mince for 8 minutes with cumin, paprika and half the salt, breaking into small pieces; reach 71°C.",
+          "de": "Rind nach deinen Halal-Anforderungen wählen. Hack in einer trockenen Pfanne mit Kreuzkümmel, Paprika und halbem Salz 8 Minuten krümelig bis 71 °C anbraten."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Chop the fresh things",
+          "de": "Frisches hacken"
+        },
+        "text": {
+          "en": "Chop tomato and parsley together. Toss with half the lemon juice. Whisk tahini with water, remaining lemon juice and salt.",
+          "de": "Tomate und Petersilie zusammen hacken. Mit halbem Zitronensaft mischen. Tahin mit Wasser, übrigem Zitronensaft und Salz verrühren."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Tuck in",
+          "de": "Hinein damit"
+        },
+        "text": {
+          "en": "Warm the pita in a dry pan for 1 minute each side. Fill with tahini sauce, hot beef and the chopped tomato salad.",
+          "de": "Brot in einer trockenen Pfanne je Seite 1 Minute erwärmen. Mit Tahinsauce, heißem Rind und gehacktem Tomatensalat füllen."
+        },
+        "timer_seconds": 120
+      }
+    ],
+    "nutrition": {
+      "protein": 34,
+      "carbs": 56,
+      "fat": 25
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-classic-light",
+    "dish_id": "doener",
+    "title": {
+      "en": "Lemon chicken döner salad",
+      "de": "Zitronen-Hähnchen-Dönersalat"
+    },
+    "description": {
+      "en": "A bright bowl with a little toasted bread.",
+      "de": "Eine frische Schale mit etwas geröstetem Brot."
+    },
+    "diet": "classic",
+    "effort": "medium",
+    "calorie_level": "light",
+    "time_minutes": 30,
+    "calories_per_serving": 385,
+    "servings": 2,
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose",
+      "meat-dairy-combo",
+      "poultry"
+    ],
+    "attributes": [
+      "halal",
+      "lunch",
+      "medium",
+      "roast",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "classic",
+      "medium",
+      "lunch",
+      "roast"
+    ],
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 280.0,
+        "unit": "g"
+      },
+      {
+        "id": "pita",
+        "quantity": 70.0,
+        "unit": "g"
+      },
+      {
+        "id": "yogurt",
+        "quantity": 100.0,
+        "unit": "g"
+      },
+      {
+        "id": "red-cabbage",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "cucumber",
+        "quantity": 150.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Roast the chicken",
+          "de": "Hähnchen rösten"
+        },
+        "text": {
+          "en": "Heat oven to 210°C. Coat chicken with oil, cumin, paprika and half the salt. Roast in a small tray for 20 minutes until the thickest part reaches 74°C.",
+          "de": "Ofen auf 210 °C heizen. Hähnchen mit Öl, Kreuzkümmel, Paprika und halbem Salz einreiben. In einer kleinen Form 20 Minuten bis 74 °C Kerntemperatur rösten."
+        },
+        "timer_seconds": 1200
+      },
+      {
+        "title": {
+          "en": "A crunchy bowl",
+          "de": "Eine knackige Schale"
+        },
+        "text": {
+          "en": "Shred cabbage and massage with half the lemon juice. Slice cucumber. Mix yogurt with remaining juice and salt. Tear pita into shards and toast in the oven for 4 minutes.",
+          "de": "Kohl hobeln und mit halbem Zitronensaft kneten. Gurke schneiden. Joghurt mit übrigem Saft und Salz mischen. Brot zupfen und 4 Minuten im Ofen rösten."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "Arrange a little lunch",
+          "de": "Ein kleines Mittagessen anrichten"
+        },
+        "text": {
+          "en": "Rest chicken for 3 minutes, then slice. Divide vegetables into bowls, add chicken and yogurt, and tuck toasted pita around the edges.",
+          "de": "Hähnchen 3 Minuten ruhen lassen, dann schneiden. Gemüse auf Schalen verteilen, Hähnchen und Joghurt zugeben und geröstetes Brot an die Ränder stecken."
+        },
+        "timer_seconds": 180
+      }
+    ],
+    "nutrition": {
+      "protein": 38,
+      "carbs": 30,
+      "fat": 12
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  },
+  {
+    "id": "doener-vegan-light",
+    "dish_id": "doener",
+    "title": {
+      "en": "Roasted aubergine döner salad",
+      "de": "Dönersalat mit Ofenaubergine"
+    },
+    "description": {
+      "en": "Silky aubergine, warm lentils and lemony greens.",
+      "de": "Seidige Aubergine, warme Linsen und zitroniges Grün."
+    },
+    "diet": "vegan",
+    "effort": "medium",
+    "calorie_level": "light",
+    "time_minutes": 30,
+    "calories_per_serving": 380,
+    "servings": 2,
+    "contains": [
+      "high-fodmap",
+      "sesame"
+    ],
+    "attributes": [
+      "halal",
+      "kosher",
+      "lunch",
+      "medium",
+      "roast",
+      "simmer",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "middle-eastern",
+      "vegan",
+      "medium",
+      "lunch",
+      "roast",
+      "simmer"
+    ],
+    "ingredients": [
+      {
+        "id": "aubergine",
+        "quantity": 300.0,
+        "unit": "g"
+      },
+      {
+        "id": "lentils",
+        "quantity": 250.0,
+        "unit": "g"
+      },
+      {
+        "id": "lettuce",
+        "quantity": 120.0,
+        "unit": "g"
+      },
+      {
+        "id": "tomatoes",
+        "quantity": 160.0,
+        "unit": "g"
+      },
+      {
+        "id": "tahini",
+        "quantity": 25.0,
+        "unit": "g"
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece"
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp"
+      },
+      {
+        "id": "water",
+        "quantity": 40.0,
+        "unit": "ml"
+      },
+      {
+        "id": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Roast until silky",
+          "de": "Seidig rösten"
+        },
+        "text": {
+          "en": "Heat oven to 220°C. Cut aubergine into slim wedges, toss with oil, cumin, paprika and half the salt. Roast for 22 minutes, turning halfway, until soft and browned.",
+          "de": "Ofen auf 220 °C heizen. Aubergine in schmale Spalten schneiden und mit Öl, Kreuzkümmel, Paprika und halbem Salz mischen. 22 Minuten weich und braun rösten, nach der Hälfte wenden."
+        },
+        "timer_seconds": 1320
+      },
+      {
+        "title": {
+          "en": "Warm lentils, cool sauce",
+          "de": "Warme Linsen, kühle Sauce"
+        },
+        "text": {
+          "en": "Warm lentils with 3 tbsp water in a covered pan for 4 minutes. Whisk tahini with lemon juice, measured water and remaining salt.",
+          "de": "Linsen mit 3 EL Wasser zugedeckt 4 Minuten erwärmen. Tahin mit Zitronensaft, abgemessenem Wasser und restlichem Salz verrühren."
+        },
+        "timer_seconds": 240
+      },
+      {
+        "title": {
+          "en": "A bowl of good things",
+          "de": "Eine Schale guter Dinge"
+        },
+        "text": {
+          "en": "Tear lettuce and slice tomatoes into bowls. Add warm lentils and aubergine; spoon sesame dressing across the vegetables.",
+          "de": "Salat zupfen und Tomaten in Schalen schneiden. Warme Linsen und Aubergine zugeben; Sesamdressing über das Gemüse löffeln."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "nutrition": {
+      "protein": 17,
+      "carbs": 44,
+      "fat": 15
+    },
+    "nutrition_note": {
+      "en": "Approximate values per serving; brands and portions vary.",
+      "de": "Ungefähre Werte pro Portion; Marken und Portionsgrößen variieren."
+    },
+    "review_status": "pending-human-review"
+  }
+]

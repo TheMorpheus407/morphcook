@@ -1,0 +1,1889 @@
+[
+  {
+    "id": "dairy",
+    "name": {
+      "en": "Dairy",
+      "de": "Milchprodukte"
+    },
+    "parent_id": null,
+    "flags": [
+      "dairy"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "cow-milk",
+    "name": {
+      "en": "Cow's milk",
+      "de": "Kuhmilch"
+    },
+    "parent_id": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "whole-milk",
+    "name": {
+      "en": "Whole milk",
+      "de": "Vollmilch"
+    },
+    "parent_id": "cow-milk",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "skim-milk",
+    "name": {
+      "en": "Skimmed milk",
+      "de": "Magermilch"
+    },
+    "parent_id": "cow-milk",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "goat-milk",
+    "name": {
+      "en": "Goat's milk",
+      "de": "Ziegenmilch"
+    },
+    "parent_id": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "cheese",
+    "name": {
+      "en": "Cheese",
+      "de": "Käse"
+    },
+    "parent_id": "dairy",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "parmesan",
+    "name": {
+      "en": "Parmesan with animal rennet",
+      "de": "Parmesan mit tierischem Lab"
+    },
+    "parent_id": "cheese",
+    "flags": [
+      "animal-rennet",
+      "rennet-non-halal",
+      "rennet-non-kosher"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "vegetarian-hard-cheese",
+    "name": {
+      "en": "Hard cheese with microbial rennet",
+      "de": "Hartkäse mit mikrobiellem Lab"
+    },
+    "parent_id": "cheese",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "feta",
+    "name": {
+      "en": "Feta with microbial rennet",
+      "de": "Feta mit mikrobiellem Lab"
+    },
+    "parent_id": "cheese",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "halloumi",
+    "name": {
+      "en": "Halloumi with microbial rennet",
+      "de": "Halloumi mit mikrobiellem Lab"
+    },
+    "parent_id": "cheese",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "cream-cheese",
+    "name": {
+      "en": "Cream cheese",
+      "de": "Frischkäse"
+    },
+    "parent_id": "cheese",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "mozzarella",
+    "name": {
+      "en": "Mozzarella with microbial rennet",
+      "de": "Mozzarella mit mikrobiellem Lab"
+    },
+    "parent_id": "cheese",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "yogurt",
+    "name": {
+      "en": "Plain yogurt",
+      "de": "Naturjoghurt"
+    },
+    "parent_id": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "butter",
+    "name": {
+      "en": "Butter",
+      "de": "Butter"
+    },
+    "parent_id": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "cream",
+    "name": {
+      "en": "Double cream",
+      "de": "Sahne"
+    },
+    "parent_id": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "nuts",
+    "name": {
+      "en": "All nuts and peanuts",
+      "de": "Alle Nüsse und Erdnüsse"
+    },
+    "parent_id": null,
+    "flags": [
+      "nuts"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "tree-nuts",
+    "name": {
+      "en": "Tree nuts",
+      "de": "Schalenfrüchte"
+    },
+    "parent_id": "nuts",
+    "flags": [
+      "tree-nuts"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "almonds",
+    "name": {
+      "en": "Almonds",
+      "de": "Mandeln"
+    },
+    "parent_id": "tree-nuts",
+    "flags": [
+      "almonds"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "walnuts",
+    "name": {
+      "en": "Walnuts",
+      "de": "Walnüsse"
+    },
+    "parent_id": "tree-nuts",
+    "flags": [
+      "walnuts"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "pistachios",
+    "name": {
+      "en": "Pistachios",
+      "de": "Pistazien"
+    },
+    "parent_id": "tree-nuts",
+    "flags": [
+      "pistachios"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "cashews",
+    "name": {
+      "en": "Cashews",
+      "de": "Cashewkerne"
+    },
+    "parent_id": "tree-nuts",
+    "flags": [
+      "cashews"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "almond-flour",
+    "name": {
+      "en": "Ground almonds",
+      "de": "Gemahlene Mandeln"
+    },
+    "parent_id": "almonds",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "peanuts",
+    "name": {
+      "en": "Peanuts",
+      "de": "Erdnüsse"
+    },
+    "parent_id": "nuts",
+    "flags": [
+      "peanuts"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "peanut-butter",
+    "name": {
+      "en": "Unsweetened peanut butter",
+      "de": "Ungesüßtes Erdnussmus"
+    },
+    "parent_id": "peanuts",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "sesame",
+    "name": {
+      "en": "Sesame seeds",
+      "de": "Sesam"
+    },
+    "parent_id": null,
+    "flags": [
+      "sesame"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "tahini",
+    "name": {
+      "en": "Tahini",
+      "de": "Tahin"
+    },
+    "parent_id": "sesame",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "sesame-oil",
+    "name": {
+      "en": "Toasted sesame oil",
+      "de": "Geröstetes Sesamöl"
+    },
+    "parent_id": "sesame",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "soy",
+    "name": {
+      "en": "Soy foods",
+      "de": "Sojaprodukte"
+    },
+    "parent_id": null,
+    "flags": [
+      "soy"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "tofu",
+    "name": {
+      "en": "Firm tofu",
+      "de": "Fester Tofu"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "silken-tofu",
+    "name": {
+      "en": "Silken tofu",
+      "de": "Seidentofu"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "tempeh",
+    "name": {
+      "en": "Plain tempeh",
+      "de": "Natur-Tempeh"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "tamari",
+    "name": {
+      "en": "Alcohol-free gluten-free tamari",
+      "de": "Alkoholfreies glutenfreies Tamari"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "miso",
+    "name": {
+      "en": "Alcohol-free rice miso",
+      "de": "Alkoholfreies Reis-Miso"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "edamame",
+    "name": {
+      "en": "Shelled edamame",
+      "de": "Geschälte Edamame"
+    },
+    "parent_id": "soy",
+    "flags": [],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "wheat",
+    "name": {
+      "en": "Wheat",
+      "de": "Weizen"
+    },
+    "parent_id": null,
+    "flags": [
+      "gluten",
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "pita",
+    "name": {
+      "en": "Pita bread",
+      "de": "Fladenbrot"
+    },
+    "parent_id": "wheat",
+    "flags": [],
+    "aisle": {
+      "en": "Bread & bakery",
+      "de": "Brot & Backwaren"
+    }
+  },
+  {
+    "id": "pasta",
+    "name": {
+      "en": "Fettuccine",
+      "de": "Fettuccine"
+    },
+    "parent_id": "wheat",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "ramen-noodles",
+    "name": {
+      "en": "Wheat ramen noodles",
+      "de": "Weizen-Ramennudeln"
+    },
+    "parent_id": "wheat",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "flour",
+    "name": {
+      "en": "Plain flour",
+      "de": "Weizenmehl"
+    },
+    "parent_id": "wheat",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "bread",
+    "name": {
+      "en": "Sourdough bread",
+      "de": "Sauerteigbrot"
+    },
+    "parent_id": "wheat",
+    "flags": [],
+    "aisle": {
+      "en": "Bread & bakery",
+      "de": "Brot & Backwaren"
+    }
+  },
+  {
+    "id": "meat",
+    "name": {
+      "en": "Meat",
+      "de": "Fleisch"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "chicken",
+    "name": {
+      "en": "Chicken breast",
+      "de": "Hähnchenbrust"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "poultry"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "chicken-thigh",
+    "name": {
+      "en": "Boneless chicken thigh",
+      "de": "Hähnchenoberkeule ohne Knochen"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "poultry"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "beef-mince",
+    "name": {
+      "en": "Beef mince",
+      "de": "Rinderhackfleisch"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "beef"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "lamb-mince",
+    "name": {
+      "en": "Lamb mince",
+      "de": "Lammhackfleisch"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "lamb"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "pork-mince",
+    "name": {
+      "en": "Pork mince",
+      "de": "Schweinehackfleisch"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "pork"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "bacon",
+    "name": {
+      "en": "Smoked bacon",
+      "de": "Räucherspeck"
+    },
+    "parent_id": "meat",
+    "flags": [
+      "pork"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "fish",
+    "name": {
+      "en": "Fish",
+      "de": "Fisch"
+    },
+    "parent_id": null,
+    "flags": [
+      "fish"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "salmon",
+    "name": {
+      "en": "Salmon fillet",
+      "de": "Lachsfilet"
+    },
+    "parent_id": "fish",
+    "flags": [],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "anchovies",
+    "name": {
+      "en": "Anchovies in oil",
+      "de": "Sardellen in Öl"
+    },
+    "parent_id": "fish",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "shellfish",
+    "name": {
+      "en": "Shellfish",
+      "de": "Krebstiere"
+    },
+    "parent_id": null,
+    "flags": [
+      "shellfish"
+    ],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "prawns",
+    "name": {
+      "en": "Raw peeled prawns",
+      "de": "Rohe geschälte Garnelen"
+    },
+    "parent_id": "shellfish",
+    "flags": [],
+    "aisle": {
+      "en": "Meat & fish",
+      "de": "Fleisch & Fisch"
+    }
+  },
+  {
+    "id": "eggs",
+    "name": {
+      "en": "Eggs",
+      "de": "Eier"
+    },
+    "parent_id": null,
+    "flags": [
+      "egg"
+    ],
+    "aisle": {
+      "en": "Chilled & dairy",
+      "de": "Kühlregal & Milchprodukte"
+    }
+  },
+  {
+    "id": "garlic",
+    "name": {
+      "en": "Garlic",
+      "de": "Knoblauch"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "onion",
+    "name": {
+      "en": "Onion",
+      "de": "Zwiebel"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "spring-onion",
+    "name": {
+      "en": "Spring onion greens",
+      "de": "Frühlingszwiebelgrün"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "tomatoes",
+    "name": {
+      "en": "Tomatoes",
+      "de": "Tomaten"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "cherry-tomatoes",
+    "name": {
+      "en": "Cherry tomatoes",
+      "de": "Kirschtomaten"
+    },
+    "parent_id": "tomatoes",
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "cucumber",
+    "name": {
+      "en": "Cucumber",
+      "de": "Gurke"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "red-cabbage",
+    "name": {
+      "en": "Red cabbage",
+      "de": "Rotkohl"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "lettuce",
+    "name": {
+      "en": "Romaine lettuce",
+      "de": "Römersalat"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "spinach",
+    "name": {
+      "en": "Spinach",
+      "de": "Spinat"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "mushrooms",
+    "name": {
+      "en": "Mushrooms",
+      "de": "Pilze"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "oyster-mushrooms",
+    "name": {
+      "en": "Oyster mushrooms",
+      "de": "Austernpilze"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "courgette",
+    "name": {
+      "en": "Courgette",
+      "de": "Zucchini"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "cauliflower",
+    "name": {
+      "en": "Cauliflower",
+      "de": "Blumenkohl"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "broccoli",
+    "name": {
+      "en": "Broccoli florets",
+      "de": "Brokkoliröschen"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "carrots",
+    "name": {
+      "en": "Carrots",
+      "de": "Karotten"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "potatoes",
+    "name": {
+      "en": "Potatoes",
+      "de": "Kartoffeln"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "sweet-potato",
+    "name": {
+      "en": "Sweet potato",
+      "de": "Süßkartoffel"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "bell-peppers",
+    "name": {
+      "en": "Bell peppers",
+      "de": "Paprika"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "aubergine",
+    "name": {
+      "en": "Aubergine",
+      "de": "Aubergine"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "pak-choi",
+    "name": {
+      "en": "Pak choi",
+      "de": "Pak Choi"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "bean-sprouts",
+    "name": {
+      "en": "Mung bean sprouts",
+      "de": "Mungobohnensprossen"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "lemon",
+    "name": {
+      "en": "Lemon",
+      "de": "Zitrone"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "lime",
+    "name": {
+      "en": "Lime",
+      "de": "Limette"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "ginger",
+    "name": {
+      "en": "Fresh ginger",
+      "de": "Frischer Ingwer"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "avocado",
+    "name": {
+      "en": "Avocado",
+      "de": "Avocado"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "apples",
+    "name": {
+      "en": "Apples",
+      "de": "Äpfel"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "pears",
+    "name": {
+      "en": "Pears",
+      "de": "Birnen"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "banana",
+    "name": {
+      "en": "Banana",
+      "de": "Banane"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "blueberries",
+    "name": {
+      "en": "Blueberries",
+      "de": "Heidelbeeren"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "strawberries",
+    "name": {
+      "en": "Strawberries",
+      "de": "Erdbeeren"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "peas",
+    "name": {
+      "en": "Peas",
+      "de": "Erbsen"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "asparagus",
+    "name": {
+      "en": "Asparagus",
+      "de": "Spargel"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "celery",
+    "name": {
+      "en": "Celery",
+      "de": "Sellerie"
+    },
+    "parent_id": null,
+    "flags": [
+      "celery"
+    ],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "parsley",
+    "name": {
+      "en": "Parsley",
+      "de": "Petersilie"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "cilantro",
+    "name": {
+      "en": "Cilantro",
+      "de": "Koriandergrün"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "mint",
+    "name": {
+      "en": "Mint",
+      "de": "Minze"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "basil",
+    "name": {
+      "en": "Basil",
+      "de": "Basilikum"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "dill",
+    "name": {
+      "en": "Dill",
+      "de": "Dill"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Fruit & vegetables",
+      "de": "Obst & Gemüse"
+    }
+  },
+  {
+    "id": "olive-oil",
+    "name": {
+      "en": "Olive oil",
+      "de": "Olivenöl"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "rapeseed-oil",
+    "name": {
+      "en": "Rapeseed oil",
+      "de": "Rapsöl"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "rice",
+    "name": {
+      "en": "Basmati rice",
+      "de": "Basmatireis"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "risotto-rice",
+    "name": {
+      "en": "Arborio rice",
+      "de": "Arborio-Reis"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "rice-noodles",
+    "name": {
+      "en": "Rice noodles",
+      "de": "Reisnudeln"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "rice-flour",
+    "name": {
+      "en": "Rice flour",
+      "de": "Reismehl"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "gf-pasta",
+    "name": {
+      "en": "Gluten-free fettuccine",
+      "de": "Glutenfreie Fettuccine"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "oats",
+    "name": {
+      "en": "Certified gluten-free oats",
+      "de": "Zertifiziert glutenfreie Haferflocken"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "chickpeas",
+    "name": {
+      "en": "Cooked chickpeas, drained",
+      "de": "Gekochte Kichererbsen, abgetropft"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "lentils",
+    "name": {
+      "en": "Cooked green lentils, drained",
+      "de": "Gekochte grüne Linsen, abgetropft"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "red-lentils",
+    "name": {
+      "en": "Dried red lentils",
+      "de": "Getrocknete rote Linsen"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "kidney-beans",
+    "name": {
+      "en": "Cooked kidney beans, drained",
+      "de": "Gekochte Kidneybohnen, abgetropft"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "black-beans",
+    "name": {
+      "en": "Cooked black beans, drained",
+      "de": "Gekochte schwarze Bohnen, abgetropft"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "white-beans",
+    "name": {
+      "en": "Cooked white beans, drained",
+      "de": "Gekochte weiße Bohnen, abgetropft"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "canned-tomatoes",
+    "name": {
+      "en": "Tinned chopped tomatoes",
+      "de": "Gehackte Tomaten aus der Dose"
+    },
+    "parent_id": "tomatoes",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "tomato-paste",
+    "name": {
+      "en": "Tomato purée",
+      "de": "Tomatenmark"
+    },
+    "parent_id": "tomatoes",
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "coconut-milk",
+    "name": {
+      "en": "Unsweetened coconut milk",
+      "de": "Ungesüßte Kokosmilch"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "oat-milk",
+    "name": {
+      "en": "Unsweetened gluten-free oat drink",
+      "de": "Ungesüßter glutenfreier Haferdrink"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "coconut-yogurt",
+    "name": {
+      "en": "Unsweetened coconut yogurt",
+      "de": "Ungesüßter Kokosjoghurt"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "coconut-flakes",
+    "name": {
+      "en": "Unsweetened coconut flakes",
+      "de": "Ungesüßte Kokosflocken"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "nutritional-yeast",
+    "name": {
+      "en": "Nutritional yeast",
+      "de": "Hefeflocken"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "pumpkin-seeds",
+    "name": {
+      "en": "Pumpkin seeds",
+      "de": "Kürbiskerne"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "sunflower-seeds",
+    "name": {
+      "en": "Sunflower seeds",
+      "de": "Sonnenblumenkerne"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "chia-seeds",
+    "name": {
+      "en": "Chia seeds",
+      "de": "Chiasamen"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "flaxseed",
+    "name": {
+      "en": "Ground flaxseed",
+      "de": "Geschrotete Leinsamen"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "capers",
+    "name": {
+      "en": "Capers in brine",
+      "de": "Kapern in Salzlake"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "mustard",
+    "name": {
+      "en": "Alcohol-free Dijon mustard",
+      "de": "Alkoholfreier Dijon-Senf"
+    },
+    "parent_id": null,
+    "flags": [
+      "mustard"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "tamarind",
+    "name": {
+      "en": "Unsweetened tamarind paste",
+      "de": "Ungesüßte Tamarindenpaste"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "maple-syrup",
+    "name": {
+      "en": "Maple syrup",
+      "de": "Ahornsirup"
+    },
+    "parent_id": null,
+    "flags": [
+      "added-sugar"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "sugar",
+    "name": {
+      "en": "Brown sugar",
+      "de": "Brauner Zucker"
+    },
+    "parent_id": null,
+    "flags": [
+      "added-sugar"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "honey",
+    "name": {
+      "en": "Honey",
+      "de": "Honig"
+    },
+    "parent_id": null,
+    "flags": [
+      "honey",
+      "added-sugar"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "dates",
+    "name": {
+      "en": "Pitted dates",
+      "de": "Entsteinte Datteln"
+    },
+    "parent_id": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "baking-powder",
+    "name": {
+      "en": "Gluten-free baking powder",
+      "de": "Glutenfreies Backpulver"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "water",
+    "name": {
+      "en": "Water",
+      "de": "Wasser"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Pantry",
+      "de": "Vorrat"
+    }
+  },
+  {
+    "id": "salt",
+    "name": {
+      "en": "Salt",
+      "de": "Salz"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "black-pepper",
+    "name": {
+      "en": "Black pepper",
+      "de": "Schwarzer Pfeffer"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "cumin",
+    "name": {
+      "en": "Ground cumin",
+      "de": "Gemahlener Kreuzkümmel"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "paprika",
+    "name": {
+      "en": "Smoked paprika",
+      "de": "Geräuchertes Paprikapulver"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "chili",
+    "name": {
+      "en": "Chili flakes",
+      "de": "Chiliflocken"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "oregano",
+    "name": {
+      "en": "Dried oregano",
+      "de": "Getrockneter Oregano"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "thyme",
+    "name": {
+      "en": "Dried thyme",
+      "de": "Getrockneter Thymian"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "cinnamon",
+    "name": {
+      "en": "Ground cinnamon",
+      "de": "Gemahlener Zimt"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "cardamom",
+    "name": {
+      "en": "Ground cardamom",
+      "de": "Gemahlener Kardamom"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "turmeric",
+    "name": {
+      "en": "Ground turmeric",
+      "de": "Gemahlene Kurkuma"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "coriander",
+    "name": {
+      "en": "Ground coriander",
+      "de": "Gemahlener Koriander"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  },
+  {
+    "id": "vanilla",
+    "name": {
+      "en": "Alcohol-free vanilla powder",
+      "de": "Alkoholfreies Vanillepulver"
+    },
+    "parent_id": null,
+    "flags": [],
+    "aisle": {
+      "en": "Herbs & spices",
+      "de": "Kräuter & Gewürze"
+    }
+  }
+]
