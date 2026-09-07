@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -19,13 +18,7 @@ import 'ui/theme.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   registerNativeLicenses();
-  // OFL fonts must ship with their license text; surface it on the
-  // standard licenses page.
-  LicenseRegistry.addLicense(() async* {
-    final text = await rootBundle
-        .loadString('assets/fonts/OFL-AtkinsonHyperlegible.txt');
-    yield LicenseEntryWithLineBreaks(const ['Atkinson Hyperlegible'], text);
-  });
+  registerBundledFontLicenses();
   runApp(const MorphCookApp());
 }
 

@@ -9,6 +9,7 @@ void main() {
     'native PDF notices are bundled and available offline to the licenses page',
     () async {
       registerNativeLicenses();
+      registerBundledFontLicenses();
       final entries = await LicenseRegistry.licenses.toList();
       String textFor(String package) => entries
           .where((entry) => entry.packages.contains(package))
@@ -16,6 +17,14 @@ void main() {
           .map((paragraph) => paragraph.text)
           .join('\n');
 
+      for (final font in [
+        'Atkinson Hyperlegible',
+        'Caveat',
+        'JetBrains Mono',
+        'Playfair Display',
+      ]) {
+        expect(textFor(font), contains('SIL OPEN FONT LICENSE'), reason: font);
+      }
       final pdf = textFor('PdfBox-Android 2.0.27.0');
       expect(pdf, contains('Apache License'));
       expect(pdf, contains('Copyright 2014 The Apache Software Foundation'));

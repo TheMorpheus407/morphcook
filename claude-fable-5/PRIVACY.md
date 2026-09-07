@@ -7,11 +7,13 @@ via the support email listed on the Play Store page.*
 
 MorphCook is an **offline-first app**. It has no backend, no accounts, no
 analytics, no ads, and no tracking. MorphCook has no collection server and does not sell personal data. Network
-requests happen only when you explicitly load a recipe URL or choose to
-download its photo. The requested website (and any redirect or image host)
+requests made directly by MorphCook happen only when you explicitly load a
+recipe URL or choose to download its photo. The requested website (and any redirect or image host)
 receives your IP address and the URL requested, under its own privacy policy.
 Your profile and cookbook are never sent with those requests. There are no
 background downloads. Saved recipes and downloaded photos work offline.
+Choosing a feedback draft or another external link opens your browser, which
+contacts that service under its own privacy policy.
 
 ## What stays on your device
 

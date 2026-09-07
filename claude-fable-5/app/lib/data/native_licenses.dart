@@ -40,3 +40,20 @@ void registerNativeLicenses() {
     }
   });
 }
+
+/// Include each bundled interface font's full OFL notice in offline licenses.
+void registerBundledFontLicenses() {
+  LicenseRegistry.addLicense(() async* {
+    for (final entry in const [
+      ('Atkinson Hyperlegible', 'AtkinsonHyperlegible'),
+      ('Caveat', 'Caveat'),
+      ('JetBrains Mono', 'JetBrainsMono'),
+      ('Playfair Display', 'PlayfairDisplay'),
+    ]) {
+      final text = await rootBundle.loadString(
+        'assets/fonts/OFL-${entry.$2}.txt',
+      );
+      yield LicenseEntryWithLineBreaks([entry.$1], text);
+    }
+  });
+}

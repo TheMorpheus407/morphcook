@@ -1,7 +1,7 @@
 name: morphcook
 description: "MorphCook — the same dish exists for every body."
 publish_to: 'none'
-version: 1.6.0+10
+version: 1.7.0+11
 
 environment:
   sdk: ^3.10.0
@@ -49,6 +49,9 @@ flutter:
     - assets/faqs.json
     - assets/mo-logo.png
     - assets/fonts/OFL-AtkinsonHyperlegible.txt
+    - assets/fonts/OFL-Caveat.txt
+    - assets/fonts/OFL-JetBrainsMono.txt
+    - assets/fonts/OFL-PlayfairDisplay.txt
 
   fonts:
     - family: Playfair Display

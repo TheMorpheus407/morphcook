@@ -92,3 +92,22 @@ all native license assets match their sources. A real release-APK smoke test
 selected a compressed PDF through Android's picker, extracted the expected
 ingredients/steps, reviewed its draft, saved it, and returned to the cookbook
 with the new recipe. Native test commands are in `app/android/PDF_IMPORT_TESTS.md`.
+
+## Release 1.7.0
+
+All three reviewers approved the final production release source and metadata.
+The release audit restored the three existing interface-font OFL notices that
+had not previously been included in the APK, registered all four interface-font
+notices offline, and extended the asset regression. English/German privacy and
+store wording accurately describe explicit website/photo requests and external
+browser feedback handoffs.
+
+Final validation: analysis clean; all 299 Flutter tests pass after release
+packaging changes; 12 native PDF tests passed. The signed Play AAB has package
+`de.themorpheus.morphcook`, version `1.7.0`, versionCode `11`, minSdk 24 and
+targetSdk 36. Its signature and all font/native notice assets were verified.
+The separate F-Droid source builds with the enforced lockfile and produces ABI
+APKs with codes `111` (armeabi-v7a), `112` (arm64-v8a), and `113` (x86_64);
+package/version/ABI/signatures/notices were verified in every artifact. F-Droid's
+pinned Flutter 3.38.3, dependency-metadata exclusions and ABI code mapping remain
+intact. Other benchmark implementations remain unchanged.

@@ -88,7 +88,7 @@ Was drin ist:
 · verschlüsselte, dateibasierte Backups, die dir gehören
 
 Optionale Webseiten-Importe speichern Rezepte und auf Wunsch Fotos offline.
-Nur beim Laden eines Links wird die Webseite kontaktiert.
+Beim Laden eines Rezepts oder eines gewählten Fotos wird die jeweilige Website kontaktiert.
 Keine Konten, Werbung oder Tracking. Profil und Kochbuch bleiben auf deinem
 Gerät, bis du sie selbst exportierst.
 ```
