@@ -66,6 +66,7 @@ class ShoppingItem {
   final String? customName;
   final double qty;
   final String unit;
+  final bool hasQuantity;
   final String aisle;
   final bool checked;
   final DateTime addedAt;
@@ -75,6 +76,7 @@ class ShoppingItem {
     this.customName,
     required this.qty,
     required this.unit,
+    this.hasQuantity = true,
     required this.aisle,
     this.checked = false,
     required this.addedAt,
@@ -90,6 +92,7 @@ class ShoppingItem {
     customName: customName ?? this.customName,
     qty: qty ?? this.qty,
     unit: unit ?? this.unit,
+    hasQuantity: hasQuantity,
     aisle: aisle,
     checked: checked ?? this.checked,
     addedAt: addedAt,
@@ -100,6 +103,7 @@ class ShoppingItem {
     if (customName != null) 'custom_name': customName,
     'qty': qty,
     'unit': unit,
+    if (!hasQuantity) 'has_quantity': false,
     'aisle': aisle,
     'checked': checked,
     'added_at': addedAt.toUtc().toIso8601String(),
@@ -110,6 +114,7 @@ class ShoppingItem {
     customName: json['custom_name'] as String?,
     qty: (json['qty'] as num).toDouble(),
     unit: json['unit'] as String,
+    hasQuantity: json['has_quantity'] as bool? ?? true,
     aisle: json['aisle'] as String,
     checked: json['checked'] as bool? ?? false,
     addedAt: DateTime.parse(json['added_at'] as String),

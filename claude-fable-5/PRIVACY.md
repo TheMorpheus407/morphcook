@@ -1,13 +1,17 @@
 # MorphCook Privacy Policy
 
-*Effective: 2026-07-15 · Contact: Bootstrap Academy / The Morpheus —
+*Effective: 2026-09-07 · Contact: Bootstrap Academy / The Morpheus —
 via the support email listed on the Play Store page.*
 
 ## The short version
 
-MorphCook is an **offline app**. It has no backend, no accounts, no
-analytics, no ads, and no tracking. MorphCook itself does not collect,
-transmit, sell, or share personal data, and makes **no network requests**.
+MorphCook is an **offline-first app**. It has no backend, no accounts, no
+analytics, no ads, and no tracking. MorphCook has no collection server and does not sell personal data. Network
+requests happen only when you explicitly load a recipe URL or choose to
+download its photo. The requested website (and any redirect or image host)
+receives your IP address and the URL requested, under its own privacy policy.
+Your profile and cookbook are never sent with those requests. There are no
+background downloads. Saved recipes and downloaded photos work offline.
 
 ## What stays on your device
 
@@ -25,6 +29,14 @@ device:
 MorphCook never uploads this data. If your phone's OS-level device backup is
 enabled, the operating system may include app data in its encrypted device or
 cloud backup under the terms and controls of your Apple or Google account.
+
+## Website imports
+
+Recipes imported from a link, their source attribution, and optional photos are
+saved in private app storage after you review and save them. Photos are off by
+default. You can remove a photo or delete a personal recipe from its detail page.
+Website dietary claims are retained as unverified text and do not qualify an
+imported recipe for dietary or allergy filtering.
 
 ## Backups
 

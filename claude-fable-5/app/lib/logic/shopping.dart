@@ -8,12 +8,14 @@ class AggregatedItem {
   final String ingredientId;
   final String? customName;
   final Quantity quantity;
+  final bool hasQuantity;
   final String aisle;
 
   const AggregatedItem({
     required this.ingredientId,
     this.customName,
     required this.quantity,
+    this.hasQuantity = true,
     required this.aisle,
   });
 }
@@ -28,9 +30,24 @@ List<AggregatedItem> aggregate(
   // Key: ingredientId + unit family bucket (count units keyed by unit id).
   final buckets =
       <String, ({String ingredientId, String? customName, Quantity qty})>{};
+  final rawItems = <AggregatedItem>[];
 
   for (final (recipe, factor) in recipesWithServingFactor) {
     for (final ing in recipe.ingredients) {
+      if (!ing.hasQuantity) {
+        // Preserve every original line: there is no known amount to scale,
+        // and combining repeated lines could hide ingredients from a recipe.
+        rawItems.add(
+          AggregatedItem(
+            ingredientId: ing.ingredientId,
+            customName: ing.customName,
+            quantity: Quantity(ing.qty, ing.unit),
+            hasQuantity: false,
+            aisle: dictionary.aisleOf(ing.ingredientId),
+          ),
+        );
+        continue;
+      }
       final qty = Quantity(ing.qty * factor, ing.unit);
       final family = qty.def.family;
       final key = family == UnitFamily.count
@@ -61,6 +78,7 @@ List<AggregatedItem> aggregate(
         ),
       )
       .toList();
+  items.addAll(rawItems);
 
   // Group by aisle, then alphabetically inside.
   items.sort((a, b) {
@@ -92,6 +110,8 @@ List<ShoppingItem> mergeIntoList(
     final addQty = add.quantity;
     final idx = result.indexWhere(
       (item) =>
+          item.hasQuantity &&
+          add.hasQuantity &&
           item.ingredientId == add.ingredientId &&
           !item.checked &&
           Quantity(item.qty, item.unit).canAddTo(addQty),
@@ -110,6 +130,7 @@ List<ShoppingItem> mergeIntoList(
           customName: add.customName,
           qty: addQty.amount,
           unit: addQty.unit,
+          hasQuantity: add.hasQuantity,
           aisle: add.aisle,
           addedAt: addedAt,
         ),

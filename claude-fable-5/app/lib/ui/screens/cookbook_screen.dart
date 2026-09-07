@@ -12,6 +12,7 @@ import '../theme.dart';
 import '../widgets/decor.dart';
 import '../widgets/recipe_row.dart';
 import 'personal_recipe_editor_screen.dart';
+import 'website_import_screen.dart';
 
 /// The cookbook: saved variants (offset-paginated, 30/page) and the
 /// cooking history (time-paginated by week).
@@ -139,6 +140,16 @@ class _CookbookScreenState extends State<CookbookScreen> {
                     s('yourCookbook'),
                     style: morph.text.display.copyWith(fontSize: 30),
                   ),
+                ),
+                IconButton(
+                  key: const ValueKey('import-website-recipe'),
+                  tooltip: s('importWebsite'),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const WebsiteImportScreen(),
+                    ),
+                  ),
+                  icon: const Icon(Icons.link),
                 ),
                 IconButton(
                   key: const ValueKey('add-personal-recipe'),

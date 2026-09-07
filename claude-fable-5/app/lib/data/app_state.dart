@@ -488,6 +488,7 @@ class AppState extends ChangeNotifier {
           customName: a.customName,
           qty: a.quantity.amount,
           unit: a.quantity.unit,
+          hasQuantity: a.hasQuantity,
           aisle: a.aisle,
           addedAt: now,
         ),

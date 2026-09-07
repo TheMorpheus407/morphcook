@@ -15,7 +15,7 @@ descriptions; Play requires normal casing only for the app title.
 
 ## Short description (80 chars max)
 
-- **EN**: `every diet gets the whole cookbook. vegan döner included. fully offline.`
+- **EN**: `every diet gets the whole cookbook. vegan döner included. works offline.`
 - **DE**: `jede Ernährung bekommt das ganze Kochbuch. Veganer Döner inklusive. Offline.`
 
 ## Full description (EN)
@@ -46,8 +46,10 @@ what's inside:
   visual flash alert for deaf and hard-of-hearing cooks
 · encrypted, file-based backups you fully own
 
-and what's not inside: accounts, ads, tracking, cloud, network calls.
-the app is completely offline. your data never leaves your device.
+optional website imports let you save a recipe link and its photo for offline use.
+loading a link contacts that website; photos download only when selected.
+no accounts, ads or tracking. your profile and cookbook stay on your device
+unless you choose to export them.
 ```
 
 ## Full description (DE)
@@ -79,9 +81,10 @@ Was drin ist:
   und visuellem Blitz-Alarm für gehörlose und schwerhörige Köch:innen
 · verschlüsselte, dateibasierte Backups, die dir gehören
 
-Und was nicht drin ist: Konten, Werbung, Tracking, Cloud,
-Netzwerkzugriffe. Die App ist komplett offline. Deine Daten verlassen
-dein Gerät nie.
+Optionale Webseiten-Importe speichern Rezepte und auf Wunsch Fotos offline.
+Nur beim Laden eines Links wird die Webseite kontaktiert.
+Keine Konten, Werbung oder Tracking. Profil und Kochbuch bleiben auf deinem
+Gerät, bis du sie selbst exportierst.
 ```
 
 ## Graphics

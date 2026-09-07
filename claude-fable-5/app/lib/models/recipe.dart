@@ -5,6 +5,10 @@ class RecipeIngredient {
   final double qty;
   final String unit;
 
+  /// False when [customName] holds an imported ingredient line whose amount
+  /// could not be parsed. Its original text must not be scaled or summed.
+  final bool hasQuantity;
+
   /// Free-text ingredient name for a personal recipe. Bundled recipes use
   /// [ingredientId] to resolve a localized name from the corpus dictionary.
   final String? customName;
@@ -14,6 +18,7 @@ class RecipeIngredient {
     required this.ingredientId,
     required this.qty,
     required this.unit,
+    this.hasQuantity = true,
     this.customName,
     this.note,
   });
@@ -23,6 +28,7 @@ class RecipeIngredient {
         ingredientId: json['ingredient_id'] as String,
         qty: (json['qty'] as num).toDouble(),
         unit: json['unit'] as String,
+        hasQuantity: json['has_quantity'] as bool? ?? true,
         customName: json['custom_name'] as String?,
         note: json['note'] == null
             ? null

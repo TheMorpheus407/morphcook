@@ -5,6 +5,33 @@ class S {
   const S(this.lang);
 
   static const _en = <String, String>{
+    'originalAmount': 'original amount · not scaled',
+    "sourceAuthor": "author (website claim)",
+    "sourceDiet": "diet (website claim, unverified)",
+    "ingredientHasQuantity": "use a measured quantity",
+    "rawIngredientHint":
+        "Original ingredient text; amounts are not scaled. Enter a measured quantity to enable scaling.",
+
+    "importWebsite": "import from website",
+    "recipeUrl": "recipe URL (https://…)",
+    "fetchRecipe": "load recipe",
+    "importWebsiteHint":
+        "Paste a recipe link from Chefkoch, Allrecipes or another recipe website. Loading contacts that website. Saved recipes work offline. Some sites block imports or do not publish recipe data.",
+    "importReviewHint":
+        "Review every ingredient, amount, step, time and serving count before saving. Missing time or servings start at 30 minutes and 2 servings. Imported recipes are not checked against your dietary or allergy profile and have no verified nutrition. Website ratings are not proof that a recipe is safe.",
+    "importFailed":
+        "Could not load a usable recipe. Check the link and connection, or add the recipe manually.",
+    "importPhoto": "download photo for offline use (optional)",
+    "importPhotoHint": "Photos use extra storage. Leave off to save text only.",
+    "importPhotoFailed":
+        "Recipe saved; the photo could not be saved. You can add it later from the recipe.",
+    "importPhotoDownloadFailed":
+        "Photo unavailable. Continue without it or try again.",
+    "importWithoutPhoto": "continue without photo",
+    "reviewRecipe": "review recipe",
+    "recipeSource": "source (website claims are unverified)",
+    "sourceOpenFailed": "Could not open the source link.",
+
     'appName': 'morphcook',
     'tagline': 'the same dish exists for every body',
     'navHome': 'home',
@@ -246,6 +273,34 @@ class S {
   };
 
   static const _de = <String, String>{
+    'originalAmount': 'Originalmenge · nicht umgerechnet',
+    "sourceAuthor": "Autor (Angabe der Webseite)",
+    "sourceDiet": "Ernährung (Angabe der Webseite, ungeprüft)",
+    "ingredientHasQuantity": "abgemessene Menge verwenden",
+    "rawIngredientHint":
+        "Original-Zutatentext; Mengen werden nicht umgerechnet. Trage eine abgemessene Menge ein, um sie skalieren zu können.",
+
+    "importWebsite": "von Webseite importieren",
+    "recipeUrl": "Rezept-Link (https://…)",
+    "fetchRecipe": "Rezept laden",
+    "importWebsiteHint":
+        "Füge einen Rezept-Link von Chefkoch, Allrecipes oder einer anderen Rezeptseite ein. Beim Laden wird die Webseite kontaktiert. Gespeicherte Rezepte funktionieren offline. Manche Seiten blockieren Importe oder stellen keine Rezeptdaten bereit.",
+    "importReviewHint":
+        "Prüfe vor dem Speichern alle Zutaten, Mengen, Schritte, Zeit und Portionen. Fehlende Angaben starten mit 30 Minuten und 2 Portionen. Importierte Rezepte werden nicht mit deinem Ernährungs- oder Allergieprofil abgeglichen und haben keine geprüften Nährwerte. Webseitenbewertungen belegen keine Sicherheit.",
+    "importFailed":
+        "Kein verwendbares Rezept gefunden. Prüfe Link und Verbindung oder lege das Rezept selbst an.",
+    "importPhoto": "Foto für offline herunterladen (optional)",
+    "importPhotoHint":
+        "Fotos brauchen zusätzlichen Speicher. Ausgeschaltet wird nur Text gespeichert.",
+    "importPhotoFailed":
+        "Rezept gespeichert; das Foto konnte nicht gespeichert werden. Du kannst es später im Rezept hinzufügen.",
+    "importPhotoDownloadFailed":
+        "Foto nicht verfügbar. Fahre ohne Foto fort oder versuche es erneut.",
+    "importWithoutPhoto": "ohne Foto fortfahren",
+    "reviewRecipe": "Rezept prüfen",
+    "recipeSource": "Quelle (Angaben der Webseite sind ungeprüft)",
+    "sourceOpenFailed": "Der Quellen-Link konnte nicht geöffnet werden.",
+
     'appName': 'morphcook',
     'tagline': 'dasselbe Gericht gibt es für jeden Körper',
     'navHome': 'Start',

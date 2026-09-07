@@ -8,10 +8,11 @@ burger — and every dish carries a complete grid of fully-authored versions
 (diet × effort × calorie level). Your profile picks where you start; the
 whole grid stays yours. Not a substitution engine, and never a compromise.
 
-**Offline-only Flutter app (iOS + Android).** No backend, no accounts, no
+**Offline-first Flutter app (iOS + Android).** No backend, no accounts, no
 telemetry, no runtime AI. The bilingual (EN/DE) recipe corpus ships bundled
 and is generated offline by a multi-agent pipeline, then human-reviewed.
-People can also keep personal recipes and recipe photos locally; both travel
+People can also import recipe links from websites on request, review them, and
+keep recipes and optional photos locally; both travel
 through a MorphCook backup only when someone explicitly exports it. The phone's
 own OS-level device backup may separately include app data when enabled.
 

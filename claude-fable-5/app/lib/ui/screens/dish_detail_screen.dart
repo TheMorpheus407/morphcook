@@ -1,6 +1,7 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/app_state.dart';
 import '../../logic/local_file_bytes.dart';
@@ -269,6 +270,29 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
               )
             else
               for (final dim in _dimensions) _dimensionRow(dim, s, state),
+            if (personal?.sourceUrl != null) ...[
+              Text(s('importReviewHint')),
+              TextButton.icon(
+                key: const ValueKey('recipe-source'),
+                onPressed: () async {
+                  try {
+                    final opened = await launchUrl(
+                      Uri.parse(personal.sourceUrl!),
+                      mode: LaunchMode.externalApplication,
+                    );
+                    if (!opened && mounted) _toast(s('sourceOpenFailed'));
+                  } catch (_) {
+                    if (mounted) _toast(s('sourceOpenFailed'));
+                  }
+                },
+                icon: const Icon(Icons.open_in_new),
+                label: Text('${s('recipeSource')}: ${personal!.sourceUrl}'),
+              ),
+            ],
+            if (personal?.sourceAuthor != null)
+              Text('${s('sourceAuthor')}: ${personal!.sourceAuthor}'),
+            if (personal?.sourceDiet != null)
+              Text('${s('sourceDiet')}: ${personal!.sourceDiet}'),
             if (personal == null &&
                 !state.matcher.isVisible(
                   recipe,
@@ -549,20 +573,34 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            width: 78,
-            child: Text(
-              '$qty ${ing.unit}',
-              style: morph.text.mono.copyWith(
-                fontSize: 12,
-                color: morph.colors.terracotta,
+          if (ing.hasQuantity)
+            SizedBox(
+              width: 78,
+              child: Text(
+                '$qty ${ing.unit}',
+                style: morph.text.mono.copyWith(
+                  fontSize: 12,
+                  color: morph.colors.terracotta,
+                ),
               ),
             ),
-          ),
           Expanded(
-            child: Text(
-              note == null ? name : '$name · $note',
-              style: morph.text.mono.copyWith(fontSize: 12.5),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  note == null ? name : '$name · $note',
+                  style: morph.text.mono.copyWith(fontSize: 12.5),
+                ),
+                if (!ing.hasQuantity)
+                  Text(
+                    S(lang)('originalAmount'),
+                    style: morph.text.mono.copyWith(
+                      fontSize: 11,
+                      color: morph.colors.terracotta,
+                    ),
+                  ),
+              ],
             ),
           ),
           if (hasGuide)

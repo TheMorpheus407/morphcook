@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,8 +13,15 @@ import '../widgets/decor.dart';
 /// backup). The compact runtime [Recipe] is derived only after validation.
 class PersonalRecipeEditorScreen extends StatefulWidget {
   final PersonalRecipe? recipe;
+  final bool importing;
+  final Uint8List? importImage;
 
-  const PersonalRecipeEditorScreen({super.key, this.recipe});
+  const PersonalRecipeEditorScreen({
+    super.key,
+    this.recipe,
+    this.importing = false,
+    this.importImage,
+  });
 
   @override
   State<PersonalRecipeEditorScreen> createState() =>
@@ -66,7 +75,7 @@ class _PersonalRecipeEditorScreenState
     final state = context.watch<AppState>();
     final s = S(state.lang);
     final morph = MorphTheme.of(context);
-    final editing = widget.recipe != null;
+    final editing = widget.recipe != null && !widget.importing;
 
     return Scaffold(
       appBar: AppBar(
@@ -83,6 +92,19 @@ class _PersonalRecipeEditorScreenState
               s('privateRecipeHint'),
               style: morph.text.handAt(17, color: morph.colors.inkSoft),
             ),
+            if (widget.importing) ...[
+              const SizedBox(height: 12),
+              Text(
+                s('importReviewHint'),
+                key: const ValueKey('import-review-warning'),
+              ),
+              if (widget.recipe?.sourceUrl != null)
+                SelectableText(widget.recipe!.sourceUrl!),
+              if (widget.recipe?.sourceAuthor != null)
+                Text('${s('sourceAuthor')}: ${widget.recipe!.sourceAuthor}'),
+              if (widget.recipe?.sourceDiet != null)
+                Text('${s('sourceDiet')}: ${widget.recipe!.sourceDiet}'),
+            ],
             const SizedBox(height: 16),
             _textField(
               controller: _title,
@@ -210,28 +232,37 @@ class _PersonalRecipeEditorScreenState
             ],
           ),
           const SizedBox(height: 8),
-          Row(
-            children: [
-              Expanded(
-                child: _textField(
-                  controller: draft.qty,
-                  label: s('quantity'),
-                  key: ValueKey('ingredient-qty-$index'),
-                  keyboardType: const TextInputType.numberWithOptions(
-                    decimal: true,
+          CheckboxListTile(
+            key: ValueKey('ingredient-has-quantity-$index'),
+            value: draft.hasQuantity,
+            title: Text(s('ingredientHasQuantity')),
+            onChanged: (value) =>
+                setState(() => draft.hasQuantity = value ?? false),
+          ),
+          if (!draft.hasQuantity) Text(s('rawIngredientHint')),
+          if (draft.hasQuantity)
+            Row(
+              children: [
+                Expanded(
+                  child: _textField(
+                    controller: draft.qty,
+                    label: s('quantity'),
+                    key: ValueKey('ingredient-qty-$index'),
+                    keyboardType: const TextInputType.numberWithOptions(
+                      decimal: true,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: _textField(
-                  controller: draft.unit,
-                  label: s('unit'),
-                  key: ValueKey('ingredient-unit-$index'),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: _textField(
+                    controller: draft.unit,
+                    label: s('unit'),
+                    key: ValueKey('ingredient-unit-$index'),
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
           const SizedBox(height: 8),
           _textField(
             controller: draft.note,
@@ -331,8 +362,11 @@ class _PersonalRecipeEditorScreenState
         for (final draft in _ingredients)
           PersonalRecipeIngredient(
             name: draft.name.text,
-            qty: double.parse(draft.qty.text.trim().replaceAll(',', '.')),
-            unit: draft.unit.text,
+            qty: draft.hasQuantity
+                ? double.parse(draft.qty.text.trim().replaceAll(',', '.'))
+                : 1,
+            unit: draft.hasQuantity ? draft.unit.text : 'raw',
+            hasQuantity: draft.hasQuantity,
             note: draft.note.text,
           ),
       ];
@@ -365,6 +399,17 @@ class _PersonalRecipeEditorScreenState
               updatedAt: DateTime.now(),
             );
       await state.savePersonalRecipe(recipe);
+      if (widget.importImage != null) {
+        try {
+          await state.setRecipeImage(recipe.id, widget.importImage!);
+        } catch (_) {
+          if (mounted) {
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(SnackBar(content: Text(s('importPhotoFailed'))));
+          }
+        }
+      }
       if (!mounted) return;
       Navigator.of(context).pop(recipe.id);
     } on PersonalRecipeLimitException catch (error) {
@@ -395,6 +440,7 @@ class _PersonalRecipeEditorScreenState
 }
 
 class _IngredientDraft {
+  bool hasQuantity;
   final TextEditingController name;
   final TextEditingController qty;
   final TextEditingController unit;
@@ -405,6 +451,7 @@ class _IngredientDraft {
     String qty = '1',
     String note = '',
     String unit = 'piece',
+    this.hasQuantity = true,
   }) : name = TextEditingController(text: name),
        qty = TextEditingController(text: qty),
        unit = TextEditingController(text: unit),
@@ -413,6 +460,7 @@ class _IngredientDraft {
   factory _IngredientDraft.fromIngredient(PersonalRecipeIngredient value) =>
       _IngredientDraft(
         name: value.name,
+        hasQuantity: value.hasQuantity,
         qty: _number(value.qty),
         note: value.note ?? '',
         unit: value.unit,

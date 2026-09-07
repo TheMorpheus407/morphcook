@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Used only for a recipe URL/photo the user explicitly imports. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="MorphCook"
         android:name="${applicationName}"

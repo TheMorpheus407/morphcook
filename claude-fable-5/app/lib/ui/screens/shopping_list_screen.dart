@@ -85,7 +85,6 @@ class ShoppingListScreen extends StatelessWidget {
         item.customName ??
         state.corpus.dictionary.byId(item.ingredientId)?.name.of(lang) ??
         item.ingredientId;
-    final qty = Quantity(item.qty, item.unit);
     return InkWell(
       onTap: () => state.toggleShoppingItem(index),
       child: Padding(
@@ -101,26 +100,40 @@ class ShoppingListScreen extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: Text(
-                name,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name,
+                    style: morph.text.mono.copyWith(
+                      fontSize: 13,
+                      color: item.checked
+                          ? morph.colors.inkFaint
+                          : morph.colors.ink,
+                      decoration: item.checked
+                          ? TextDecoration.lineThrough
+                          : TextDecoration.none,
+                    ),
+                  ),
+                  if (!item.hasQuantity)
+                    Text(
+                      S(lang)('originalAmount'),
+                      style: morph.text.mono.copyWith(
+                        fontSize: 11,
+                        color: morph.colors.terracotta,
+                      ),
+                    ),
+                ],
+              ),
+            ),
+            if (item.hasQuantity)
+              Text(
+                Quantity(item.qty, item.unit).display,
                 style: morph.text.mono.copyWith(
-                  fontSize: 13,
-                  color: item.checked
-                      ? morph.colors.inkFaint
-                      : morph.colors.ink,
-                  decoration: item.checked
-                      ? TextDecoration.lineThrough
-                      : TextDecoration.none,
+                  fontSize: 12,
+                  color: morph.colors.terracotta,
                 ),
               ),
-            ),
-            Text(
-              qty.display,
-              style: morph.text.mono.copyWith(
-                fontSize: 12,
-                color: morph.colors.terracotta,
-              ),
-            ),
           ],
         ),
       ),

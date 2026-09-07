@@ -247,28 +247,42 @@ class _CookModeScreenState extends State<CookModeScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 4),
                 child: Row(
                   children: [
-                    SizedBox(
-                      width: 90,
-                      child: Text(
-                        Quantity(ing.qty * factor, ing.unit).display,
-                        style: morph.text.mono.copyWith(
-                          fontSize: 12,
-                          color: morph.colors.terracotta,
+                    if (ing.hasQuantity)
+                      SizedBox(
+                        width: 90,
+                        child: Text(
+                          Quantity(ing.qty * factor, ing.unit).display,
+                          style: morph.text.mono.copyWith(
+                            fontSize: 12,
+                            color: morph.colors.terracotta,
+                          ),
                         ),
                       ),
-                    ),
                     Expanded(
-                      child: Text(
-                        ing.customName ??
-                            state.corpus.dictionary
-                                .byId(ing.ingredientId)
-                                ?.name
-                                .of(lang) ??
-                            ing.ingredientId,
-                        style: morph.text.mono.copyWith(
-                          fontSize: 12.5,
-                          color: MorphColors.cream,
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            ing.customName ??
+                                state.corpus.dictionary
+                                    .byId(ing.ingredientId)
+                                    ?.name
+                                    .of(lang) ??
+                                ing.ingredientId,
+                            style: morph.text.mono.copyWith(
+                              fontSize: 12.5,
+                              color: MorphColors.cream,
+                            ),
+                          ),
+                          if (!ing.hasQuantity)
+                            Text(
+                              s('originalAmount'),
+                              style: morph.text.mono.copyWith(
+                                fontSize: 11,
+                                color: morph.colors.terracotta,
+                              ),
+                            ),
+                        ],
                       ),
                     ),
                   ],

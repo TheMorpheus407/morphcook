@@ -32,11 +32,16 @@ class PersonalRecipeIngredient {
   final String unit;
   final String? note;
 
+  /// False for an imported free-text line whose quantity could not be parsed.
+  /// Its name contains the original amount, and must not be scaled.
+  final bool hasQuantity;
+
   PersonalRecipeIngredient._({
     required this.name,
     required this.qty,
     required this.unit,
     this.note,
+    required this.hasQuantity,
   });
 
   factory PersonalRecipeIngredient({
@@ -44,12 +49,14 @@ class PersonalRecipeIngredient {
     required double qty,
     required String unit,
     String? note,
+    bool hasQuantity = true,
   }) {
     final value = PersonalRecipeIngredient._(
       name: name.trim(),
       qty: qty,
       unit: unit.trim(),
       note: _trimToNull(note),
+      hasQuantity: hasQuantity,
     );
     value._validate();
     return value;
@@ -61,6 +68,7 @@ class PersonalRecipeIngredient {
         qty: (json['qty'] as num).toDouble(),
         unit: json['unit'] as String,
         note: json['note'] as String?,
+        hasQuantity: json['has_quantity'] as bool? ?? true,
       );
 
   Map<String, dynamic> toJson() => {
@@ -68,6 +76,7 @@ class PersonalRecipeIngredient {
     'qty': qty,
     'unit': unit,
     if (note != null) 'note': note,
+    if (!hasQuantity) 'has_quantity': false,
   };
 
   void _validate() {
@@ -132,6 +141,11 @@ class PersonalRecipe {
   final String id;
   final String title;
   final String description;
+
+  /// Attribution as supplied by the imported website; never verified labels.
+  final String? sourceUrl;
+  final String? sourceAuthor;
+  final String? sourceDiet;
   final int timeMinutes;
   final int servings;
   final List<PersonalRecipeIngredient> ingredients;
@@ -143,6 +157,9 @@ class PersonalRecipe {
     required this.id,
     required this.title,
     required this.description,
+    this.sourceUrl,
+    this.sourceAuthor,
+    this.sourceDiet,
     required this.timeMinutes,
     required this.servings,
     required this.ingredients,
@@ -155,6 +172,9 @@ class PersonalRecipe {
     required String id,
     required String title,
     String description = '',
+    String? sourceUrl,
+    String? sourceAuthor,
+    String? sourceDiet,
     required int timeMinutes,
     required int servings,
     required List<PersonalRecipeIngredient> ingredients,
@@ -166,6 +186,9 @@ class PersonalRecipe {
       id: id,
       title: title.trim(),
       description: description.trim(),
+      sourceUrl: _trimToNull(sourceUrl),
+      sourceAuthor: _trimToNull(sourceAuthor),
+      sourceDiet: _trimToNull(sourceDiet),
       timeMinutes: timeMinutes,
       servings: servings,
       ingredients: List.unmodifiable(ingredients),
@@ -180,6 +203,9 @@ class PersonalRecipe {
   factory PersonalRecipe.create({
     required String title,
     String description = '',
+    String? sourceUrl,
+    String? sourceAuthor,
+    String? sourceDiet,
     required int timeMinutes,
     required int servings,
     required List<PersonalRecipeIngredient> ingredients,
@@ -191,6 +217,9 @@ class PersonalRecipe {
       id: _newPersonalRecipeId(),
       title: title,
       description: description,
+      sourceUrl: sourceUrl,
+      sourceAuthor: sourceAuthor,
+      sourceDiet: sourceDiet,
       timeMinutes: timeMinutes,
       servings: servings,
       ingredients: ingredients,
@@ -204,6 +233,9 @@ class PersonalRecipe {
     id: json['id'] as String,
     title: json['title'] as String,
     description: json['description'] as String? ?? '',
+    sourceUrl: json['source_url'] as String?,
+    sourceAuthor: json['source_author'] as String?,
+    sourceDiet: json['source_diet'] as String?,
     timeMinutes: (json['time_minutes'] as num).round(),
     servings: (json['servings'] as num).round(),
     ingredients: (json['ingredients'] as List)
@@ -224,6 +256,9 @@ class PersonalRecipe {
     'id': id,
     'title': title,
     if (description.isNotEmpty) 'description': description,
+    if (sourceUrl != null) 'source_url': sourceUrl,
+    if (sourceAuthor != null) 'source_author': sourceAuthor,
+    if (sourceDiet != null) 'source_diet': sourceDiet,
     'time_minutes': timeMinutes,
     'servings': servings,
     'ingredients': ingredients.map((i) => i.toJson()).toList(),
@@ -235,6 +270,9 @@ class PersonalRecipe {
   PersonalRecipe copyWith({
     String? title,
     String? description,
+    String? sourceUrl,
+    String? sourceAuthor,
+    String? sourceDiet,
     int? timeMinutes,
     int? servings,
     List<PersonalRecipeIngredient>? ingredients,
@@ -244,6 +282,9 @@ class PersonalRecipe {
     id: id,
     title: title ?? this.title,
     description: description ?? this.description,
+    sourceUrl: sourceUrl ?? this.sourceUrl,
+    sourceAuthor: sourceAuthor ?? this.sourceAuthor,
+    sourceDiet: sourceDiet ?? this.sourceDiet,
     timeMinutes: timeMinutes ?? this.timeMinutes,
     servings: servings ?? this.servings,
     ingredients: ingredients ?? this.ingredients,
@@ -284,6 +325,7 @@ class PersonalRecipe {
             qty: ingredient.qty,
             unit: ingredient.unit,
             customName: ingredient.name,
+            hasQuantity: ingredient.hasQuantity,
             note: ingredient.note == null
                 ? null
                 : LocalizedText({
@@ -312,6 +354,19 @@ class PersonalRecipe {
     }
     if (description.length > maxPersonalRecipeDescriptionLength) {
       throw const FormatException('personal recipe description is too long');
+    }
+    if (sourceUrl != null) {
+      final uri = Uri.tryParse(sourceUrl!);
+      if (sourceUrl!.length > 4096 ||
+          uri == null ||
+          !const ['http', 'https'].contains(uri.scheme) ||
+          uri.host.isEmpty ||
+          uri.userInfo.isNotEmpty) {
+        throw const FormatException('invalid personal recipe source URL');
+      }
+    }
+    if ((sourceAuthor?.length ?? 0) > 500 || (sourceDiet?.length ?? 0) > 1000) {
+      throw const FormatException('personal recipe attribution is too long');
     }
     if (timeMinutes <= 0 || timeMinutes > 1440) {
       throw const FormatException('invalid personal recipe time');
@@ -359,6 +414,11 @@ int estimatedPersonalRecipeBackupBytes(Iterable<PersonalRecipe> recipes) {
         _jsonStringBytes(recipe.id) +
         _jsonStringBytes(recipe.title) +
         _jsonStringBytes(recipe.description);
+    total +=
+        128 +
+        _jsonStringBytes(recipe.sourceUrl ?? '') +
+        _jsonStringBytes(recipe.sourceAuthor ?? '') +
+        _jsonStringBytes(recipe.sourceDiet ?? '');
     for (final ingredient in recipe.ingredients) {
       total +=
           128 +
