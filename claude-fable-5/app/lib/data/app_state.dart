@@ -9,6 +9,7 @@ import '../logic/matching.dart';
 import '../logic/ranking.dart';
 import '../logic/shopping.dart';
 import '../models/collections.dart';
+import '../models/expert_assessment.dart';
 import '../models/dish.dart';
 import '../models/localized.dart';
 import '../models/personal_recipe.dart';
@@ -35,6 +36,8 @@ class AppState extends ChangeNotifier {
   List<ShoppingItem> _shoppingHistory = [];
   List<String> _contentRequests = [];
   List<PersonalRecipe> _personalRecipes = [];
+  List<ExpertAssessment> _expertAssessments = [];
+  Future<void> _assessmentWork = Future<void>.value();
   Map<String, RecipeImage> _recipeImages = {};
   CookProgress? _cookProgress;
 
@@ -51,6 +54,8 @@ class AppState extends ChangeNotifier {
   List<RecipeImage> get recipeImages =>
       List<RecipeImage>.unmodifiable(_recipeImages.values);
   CookProgress? get cookProgress => _cookProgress;
+  List<ExpertAssessment> get expertAssessments =>
+      List.unmodifiable(_expertAssessments);
 
   String get lang => _profile.lang;
 
@@ -69,6 +74,10 @@ class AppState extends ChangeNotifier {
     _mealPlan = _readMealPlan();
     _contentRequests = _readStrings('content_requests');
     _personalRecipes = _readList('personal_recipes', PersonalRecipe.fromJson);
+    _expertAssessments = _readList(
+      'expert_assessments',
+      ExpertAssessment.fromJson,
+    );
     _recipeImages = _loadRecipeImages();
     final progressRaw = store.getCollection('cook_progress');
     if (progressRaw != null) {
@@ -375,7 +384,10 @@ class AppState extends ChangeNotifier {
 
   /// Deletes the owned recipe and every reference that cannot be rendered
   /// without it. Shopping-list lines remain useful and retain their names.
-  Future<void> deletePersonalRecipe(String recipeId) async {
+  Future<void> deletePersonalRecipe(String recipeId) =>
+      _queueAssessment(() => _deletePersonalRecipe(recipeId));
+
+  Future<void> _deletePersonalRecipe(String recipeId) async {
     if (!isPersonalRecipe(recipeId)) return;
     final nextPersonalRecipes = List<PersonalRecipe>.of(_personalRecipes)
       ..removeWhere((r) => r.id == recipeId);
@@ -396,7 +408,13 @@ class AppState extends ChangeNotifier {
         : _cookProgress;
     final nextRecipeImages = Map<String, RecipeImage>.of(_recipeImages);
     final removedImage = nextRecipeImages.remove(recipeId);
+    final nextAssessments = _expertAssessments
+        .where((e) => e.recipeId != recipeId)
+        .toList();
     final nextCollections = <String, String>{
+      'expert_assessments': jsonEncode(
+        nextAssessments.map((e) => e.toJson()).toList(),
+      ),
       'personal_recipes': json.encode(
         nextPersonalRecipes.map((r) => r.toJson()).toList(),
       ),
@@ -413,6 +431,9 @@ class AppState extends ChangeNotifier {
       ),
     };
     final previousCollections = <String, String>{
+      'expert_assessments': jsonEncode(
+        _expertAssessments.map((e) => e.toJson()).toList(),
+      ),
       'personal_recipes': json.encode(
         _personalRecipes.map((r) => r.toJson()).toList(),
       ),
@@ -443,12 +464,65 @@ class AppState extends ChangeNotifier {
       rethrow;
     }
 
+    _expertAssessments = nextAssessments;
     _personalRecipes = nextPersonalRecipes;
     _saved = nextSaved;
     _history = nextHistory;
     _mealPlan = nextMealPlan;
     _cookProgress = nextCookProgress;
     _recipeImages = nextRecipeImages;
+    notifyListeners();
+  }
+
+  Future<void> saveExpertAssessment(ExpertAssessment entry) =>
+      _queueAssessment(() async {
+        final recipe = await recipeById(entry.recipeId);
+        if (recipe == null ||
+            expertRecipeFingerprint(recipe) != entry.recipeFingerprint) {
+          throw const FormatException(
+            'recipe changed before assessment was saved',
+          );
+        }
+        if (_expertAssessments.any((e) => e.id == entry.id)) {
+          throw const FormatException('assessment already exists');
+        }
+        await _persistAssessments([..._expertAssessments, entry]);
+      });
+
+  Future<void> deleteExpertAssessment(String id) => _queueAssessment(() async {
+    await _persistAssessments(
+      _expertAssessments.where((e) => e.id != id).toList(),
+    );
+  });
+
+  Future<void> _queueAssessment(Future<void> Function() action) {
+    final result = _assessmentWork.then((_) => action());
+    _assessmentWork = result.then<void>(
+      (_) {},
+      onError: (Object _, StackTrace __) {},
+    );
+    return result;
+  }
+
+  Future<void> _persistAssessments(List<ExpertAssessment> next) async {
+    if (!expertAssessmentsFit(next)) {
+      throw const FormatException('assessment storage limit');
+    }
+    final previous = jsonEncode(
+      _expertAssessments.map((e) => e.toJson()).toList(),
+    );
+    try {
+      await _writeJson(
+        'expert_assessments',
+        next.map((e) => e.toJson()).toList(),
+      );
+    } catch (_) {
+      try {
+        await store.putCollection('expert_assessments', previous);
+      } catch (_) {}
+      rethrow;
+    }
+    _expertAssessments = next;
     notifyListeners();
   }
 
@@ -697,15 +771,22 @@ class AppState extends ChangeNotifier {
     contentRequests: _contentRequests,
     personalRecipes: _personalRecipes,
     recipeImages: _recipeImages.values.toList(),
+    expertAssessments: _expertAssessments,
   );
 
   /// Applies an imported backup. [merge] keeps existing data and unions the
   /// incoming; otherwise the import replaces local state. Never touches the
   /// bundled corpus.
-  Future<void> applyBackup(BackupData incoming, {required bool merge}) async {
+  Future<void> applyBackup(BackupData incoming, {required bool merge}) =>
+      _queueAssessment(() => _applyBackup(incoming, merge: merge));
+
+  Future<void> _applyBackup(BackupData incoming, {required bool merge}) async {
     final data = merge
         ? BackupService.merge(buildBackup(), incoming)
         : incoming;
+    if (!expertAssessmentsFit(data.expertAssessments)) {
+      throw const DecryptionException(DecryptionFailure.tooLarge);
+    }
     if (data.personalRecipes.length > maxPersonalRecipes) {
       throw const DecryptionException(DecryptionFailure.invalidFormat);
     }
@@ -719,6 +800,13 @@ class AppState extends ChangeNotifier {
     for (final image in data.recipeImages) {
       if (!personalIds.contains(image.recipeId) &&
           await corpus.recipeById(image.recipeId) == null) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+    }
+
+    for (final entry in data.expertAssessments) {
+      if (!personalIds.contains(entry.recipeId) &&
+          await corpus.recipeById(entry.recipeId) == null) {
         throw const DecryptionException(DecryptionFailure.invalidFormat);
       }
     }
@@ -747,6 +835,9 @@ class AppState extends ChangeNotifier {
     }
 
     final nextCollections = <String, String>{
+      'expert_assessments': jsonEncode(
+        data.expertAssessments.map((e) => e.toJson()).toList(),
+      ),
       'saved': json.encode(nextSaved.map((s) => s.toJson()).toList()),
       'meal_plan': json.encode(nextMealPlan),
       'history': json.encode(nextHistory.map((h) => h.toJson()).toList()),
@@ -770,6 +861,9 @@ class AppState extends ChangeNotifier {
           : json.encode(nextCookProgress.toJson()),
     };
     final oldCollections = <String, String>{
+      'expert_assessments': jsonEncode(
+        _expertAssessments.map((e) => e.toJson()).toList(),
+      ),
       'saved': json.encode(_saved.map((s) => s.toJson()).toList()),
       'meal_plan': json.encode(_mealPlan),
       'history': json.encode(_history.map((h) => h.toJson()).toList()),
@@ -820,6 +914,7 @@ class AppState extends ChangeNotifier {
       rethrow;
     }
 
+    _expertAssessments = List.of(data.expertAssessments);
     _profile = data.profile;
     _saved = nextSaved;
     _mealPlan = nextMealPlan;
@@ -835,7 +930,9 @@ class AppState extends ChangeNotifier {
   }
 
   /// Full reset (troubleshooting: "reset profile").
-  Future<void> resetEverything() async {
+  Future<void> resetEverything() => _queueAssessment(_resetEverything);
+
+  Future<void> _resetEverything() async {
     await store.clearAll();
     _profile = const Profile();
     _onboarded = false;
@@ -846,6 +943,7 @@ class AppState extends ChangeNotifier {
     _shoppingHistory = [];
     _contentRequests = [];
     _personalRecipes = [];
+    _expertAssessments = [];
     _recipeImages = {};
     _cookProgress = null;
     notifyListeners();

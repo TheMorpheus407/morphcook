@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import '../../models/collections.dart';
+import '../../models/expert_assessment.dart';
 import '../../models/personal_recipe.dart';
 import '../../models/profile.dart';
 import '../../models/recipe_image.dart';
@@ -24,6 +25,7 @@ class BackupData {
   final List<String> contentRequests;
   final List<PersonalRecipe> personalRecipes;
   final List<RecipeImage> recipeImages;
+  final List<ExpertAssessment> expertAssessments;
 
   const BackupData({
     required this.profile,
@@ -34,6 +36,7 @@ class BackupData {
     this.contentRequests = const [],
     this.personalRecipes = const [],
     this.recipeImages = const [],
+    this.expertAssessments = const [],
   });
 
   Map<String, dynamic> toJson(DateTime exportedAt) => {
@@ -46,6 +49,8 @@ class BackupData {
     'history': history.map((h) => h.toJson()).toList(),
     'shopping_history': shoppingHistory.map((s) => s.toJson()).toList(),
     if (contentRequests.isNotEmpty) 'content_requests': contentRequests,
+    if (expertAssessments.isNotEmpty)
+      'expert_assessments': expertAssessments.map((e) => e.toJson()).toList(),
     if (personalRecipes.isNotEmpty)
       'personal_recipes': personalRecipes.map((r) => r.toJson()).toList(),
     if (recipeImages.isNotEmpty)
@@ -110,6 +115,16 @@ class BackupData {
       if (!personalRecipesFitBackup(personalRecipes)) {
         throw const DecryptionException(DecryptionFailure.tooLarge);
       }
+      final assessmentJson = json['expert_assessments'] as List? ?? const [];
+      if (assessmentJson.length > maxExpertAssessments) {
+        throw const DecryptionException(DecryptionFailure.tooLarge);
+      }
+      final assessments = assessmentJson
+          .map((e) => ExpertAssessment.fromJson(e as Map<String, dynamic>))
+          .toList();
+      if (!expertAssessmentsFit(assessments)) {
+        throw const DecryptionException(DecryptionFailure.tooLarge);
+      }
       return BackupData(
         profile: Profile.fromJson(profileJson),
         saved: saved,
@@ -132,6 +147,7 @@ class BackupData {
         ),
         personalRecipes: personalRecipes,
         recipeImages: images,
+        expertAssessments: assessments,
       );
     } on DecryptionException {
       rethrow;
@@ -161,7 +177,8 @@ class BackupService {
     DateTime? exportedAt,
     bool includePlainGzip = true,
   }) {
-    if (!personalRecipesFitBackup(data.personalRecipes)) {
+    if (!expertAssessmentsFit(data.expertAssessments) ||
+        !personalRecipesFitBackup(data.personalRecipes)) {
       throw const DecryptionException(DecryptionFailure.tooLarge);
     }
     if (data.personalRecipes.length > maxPersonalRecipes ||
@@ -261,6 +278,24 @@ class BackupService {
             incoming.recipeImages.length) {
       throw const DecryptionException(DecryptionFailure.invalidFormat);
     }
+    if (!expertAssessmentsFit(current.expertAssessments) ||
+        !expertAssessmentsFit(incoming.expertAssessments)) {
+      throw const DecryptionException(DecryptionFailure.tooLarge);
+    }
+    final assessments = {
+      for (final entry in current.expertAssessments) entry.id: entry,
+    };
+    for (final entry in incoming.expertAssessments) {
+      final existing = assessments[entry.id];
+      if (existing != null &&
+          jsonEncode(existing.toJson()) != jsonEncode(entry.toJson())) {
+        throw const DecryptionException(DecryptionFailure.invalidFormat);
+      }
+      assessments[entry.id] = entry;
+    }
+    if (!expertAssessmentsFit(assessments.values)) {
+      throw const DecryptionException(DecryptionFailure.tooLarge);
+    }
     final savedIds = current.saved.map((s) => s.recipeId).toSet();
     final saved = [
       ...current.saved,
@@ -335,6 +370,7 @@ class BackupService {
       }.toList(),
       personalRecipes: personalById.values.toList(),
       recipeImages: imagesByRecipe.values.toList(),
+      expertAssessments: assessments.values.toList(),
     );
   }
 }

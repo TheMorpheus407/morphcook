@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import 'data/app_state.dart';
 import 'data/corpus.dart';
+import 'data/native_licenses.dart';
 import 'data/store.dart';
 import 'ui/screens/home_screen.dart';
 import 'ui/screens/cookbook_screen.dart';
@@ -17,6 +18,7 @@ import 'ui/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  registerNativeLicenses();
   // OFL fonts must ship with their license text; surface it on the
   // standard licenses page.
   LicenseRegistry.addLicense(() async* {

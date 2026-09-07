@@ -37,6 +37,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
@@ -52,7 +53,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Native tests can coexist with the store-signed app and its data.
+            if (providers.gradleProperty("morphcookPdfTestApp").orNull == "true") {
+                applicationIdSuffix = ".pdfimporttest"
+            }
+        }
         release {
+            proguardFiles("proguard-rules.pro")
             signingConfig = if (keystoreProperties.getProperty("storeFile") != null) {
                 signingConfigs.getByName("release")
             } else {
@@ -65,4 +73,10 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    implementation("com.tom-roush:pdfbox-android:2.0.27.0")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
 }

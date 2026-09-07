@@ -21,7 +21,8 @@ device:
 - your profile (name, language, dietary avoidances, calorie target, time
   budget, accessibility preferences)
 - saved recipes, cooking history, meal plans, shopping lists
-- recipes you write yourself and photos you choose for recipes
+- recipes you write or import and photos you choose for recipes
+- attributed expert assessment notes you choose to record
 - locally logged searches that returned no results (used only inside your
   own backup file, so missing dishes can be reported *by you* if you
   choose to share a backup)
@@ -38,12 +39,34 @@ default. You can remove a photo or delete a personal recipe from its detail page
 Website dietary claims are retained as unverified text and do not qualify an
 imported recipe for dietary or allergy filtering.
 
+## PDF imports and expert assessment notes
+
+Selected PDFs are processed on your device without uploading them. The importer
+extracts selectable text and opens a draft for your review. The original PDF is
+not retained as part of the saved recipe; temporary picker copies are cleaned
+up after reading. Extracted text stays in the import/editor screen until you
+leave it. Only the recipe you explicitly save enters your cookbook.
+
+Expert assessments are private notes you enter, including the person's name,
+qualifications, date, assessment and optional source. MorphCook does not verify
+credentials or supply professional reviews. These notes are included in full
+backups and excluded from recipe sharing. You can delete individual notes.
+
+## Feedback
+
+The feedback form opens a draft in your browser on GitHub only when you choose
+that action. It includes the title and message you entered, without adding your
+profile, recipes, diagnostic logs or other app data. You review and submit the
+draft on GitHub, where submitted issues are public. GitHub's privacy policy
+applies to browser requests. You can instead copy your draft to the clipboard.
+The form holds its text only while it is open and does not submit automatically.
+
 ## Sharing recipes and cookbooks
 
 Sharing a recipe or cookbook creates a ZIP containing a recipe file and a readable text file.
 These contain only the chosen recipe (or all saved and personal recipes),
 source attribution, and photos if you explicitly include them. They do not
-include your profile, searches, meal plans, shopping lists or cooking history.
+include your profile, searches, meal plans, shopping lists, cooking history or expert assessment notes.
 The operating system handles the selected transfer, such as Bluetooth or
 Quick Share. These recipe files are not password-encrypted. Original photo
 metadata travels with included photos. Importing a received file adds recipes
@@ -51,7 +74,7 @@ without replacing your existing cookbook or other app data.
 
 ## Backups
 
-The backup includes your personal recipes and chosen recipe photos. It writes a
+The backup includes your profile, collections, personal recipes, chosen recipe photos and expert assessment notes. It writes a
 file (`morphcook-backup.json` / `.json.gz`) and hands it to the **system share
 sheet**. Where it goes from
 there is entirely your choice and handled by your device's OS and the app
@@ -69,7 +92,7 @@ MorphCook sharing-cache files.
 
 The app requests no sensitive permissions. It does not access your
 location, contacts, camera, or microphone. The system file picker is opened
-only when you explicitly choose a recipe photo, received recipe file or a backup to import. Selected
+only when you explicitly choose a PDF, recipe photo, received recipe file or a backup to import. Selected
 photo files are copied byte-for-byte into the app's private storage; embedded
 metadata in that file (such as camera details or a location tag) therefore also
 travels in an exported backup. MorphCook does not inspect that metadata. Broad

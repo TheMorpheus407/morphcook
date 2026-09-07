@@ -44,6 +44,9 @@ what's inside:
   = 5 cloves) and sorts by aisle
 · cook mode: dark, step by step, with timers, a servings scaler and a
   visual flash alert for deaf and hard-of-hearing cooks
+· import recipe links or text PDFs and review before saving
+· share a recipe or cookbook through Bluetooth, Quick Share or other sharing apps
+· offline user manual, feedback drafts and private expert assessment notes
 · encrypted, file-based backups you fully own
 
 optional website imports let you save a recipe link and its photo for offline use.
@@ -79,6 +82,9 @@ Was drin ist:
   (2 Zehen + 3 Zehen = 5 Zehen) und nach Gängen sortiert
 · Kochmodus: dunkel, Schritt für Schritt, mit Timern, Portionsregler
   und visuellem Blitz-Alarm für gehörlose und schwerhörige Köch:innen
+· Rezept-Links oder Text-PDFs importieren und vor dem Speichern prüfen
+· Rezepte oder Kochbücher per Bluetooth, Quick Share oder anderer App teilen
+· Offline-Anleitung, Feedback-Entwürfe und private fachliche Einschätzungen
 · verschlüsselte, dateibasierte Backups, die dir gehören
 
 Optionale Webseiten-Importe speichern Rezepte und auf Wunsch Fotos offline.
@@ -98,13 +104,20 @@ Gerät, bis du sie selbst exportierst.
 
 ## Console questionnaires (answers)
 
-- **Data safety**: no data collected, no data shared, data not encrypted
-  in transit (n/a — no transmission), users can request deletion (n/a —
-  nothing collected). App does not use the `INTERNET` permission.
+- **Data handling**: profile, recipes, PDF text and assessment notes are
+  processed locally. There is no developer collection server or analytics SDK.
+  Explicit URL/photo imports contact the chosen website, exposing its requested
+  URL and the device's IP address. `INTERNET` is required for that feature.
+  Exports and feedback drafts go only to the recipient/browser chosen by the
+  user. The updated privacy policy describes these actions; the app never
+  automatically uploads its private collections.
 - **Content rating (IARC)**: no violence/sex/profanity/drugs/gambling, no
-  user-generated content, no data sharing → expect "Everyone / USK 0".
+  public in-app feeds or chat. Recipes and assessment notes are local;
+  explicit file sharing and external feedback are user-controlled.
 - **Target audience**: 13+ (avoids the children's-app policy track).
 - **Ads**: none. **In-app purchases**: none.
 - **App access**: full access without credentials (no login).
 - **Health claims**: none made — calorie numbers are informational; halal/
-  kosher wording is "compatible ingredients", never "certified".
+  kosher wording is "compatible ingredients", never "certified". Expert notes
+  are user-recorded, attributed and unverified; the app provides no professional
+  assessments and does not change dietary or nutrition labels from those notes.

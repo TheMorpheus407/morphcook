@@ -1,3 +1,4 @@
+import 'expert_assessments_screen.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -304,6 +305,22 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
               Text('${s('sourceAuthor')}: ${personal!.sourceAuthor}'),
             if (personal?.sourceDiet != null)
               Text('${s('sourceDiet')}: ${personal!.sourceDiet}'),
+            ListTile(
+              key: const ValueKey('open-expert-assessments'),
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.fact_check_outlined),
+              title: Text(
+                lang == 'de'
+                    ? 'Fachliche Einschätzungen'
+                    : 'Expert assessments',
+              ),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => ExpertAssessmentsScreen(recipe: recipe),
+                ),
+              ),
+            ),
             if (personal == null &&
                 !state.matcher.isVisible(
                   recipe,

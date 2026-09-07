@@ -77,3 +77,13 @@ line. Zero migrations, zero engine changes.
 ## License
 
 TBD — intentionally not added yet (see SPEC.md).
+
+## Production imports, sharing and help
+
+The cookbook imports website links and selectable-text PDFs (including
+Sonnet-generated recipes), with a review step before saving. Recipe sharing
+exports one recipe or the cookbook as a Bluetooth-compatible ZIP with optional
+photos. Settings includes an offline EN/DE manual and a feedback composer.
+Recipe details offer private attributed expert assessment notes; MorphCook
+does not supply professional reviews or verify credentials. Notes are included
+in full backups and excluded from recipe sharing.

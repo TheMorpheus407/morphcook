@@ -55,3 +55,40 @@ Validation: Flutter 3.38.3 analysis clean; full suite 248 passing tests;
 Android release APK built and installed. Android API 34 resolves the ZIP SEND
 intent to its Bluetooth activity. Actual radio transfer requires a second
 device and depends on the receiving device's available sharing apps.
+
+## Issue 8 — manual, feedback, PDF imports and expert assessments
+
+Settings includes a searchable offline English/German manual and a feedback
+composer. Feedback opens an explicit GitHub draft for the user to submit, with
+an offline clipboard fallback; it does not attach private app data. Cookbook
+PDF import extracts selectable text locally on Android and opens editable
+recipe drafts. Ambiguous layouts retain their complete source text for manual
+entry. Scanned/protected PDFs and size limits have explicit explanations.
+
+Recipe details offer a way to share a recipe for professional review and record
+private, attributed assessments with qualifications, date, context and source.
+These notes are included in full backups, excluded from recipe sharing, and
+marked when the recipe changes. MorphCook supplies no professional reviews or
+verified credentials and does not derive dietary or nutrition labels from notes.
+
+Reviewers: `review6_a`, `release_audit`, `web_import`. All independently approved
+the complete final change, including the release-only optional-decoder rule.
+Each disclosed their separate implementation contribution (manual/feedback,
+native PDF extraction/licensing, or PDF text parsing) and reviewed the complete
+integration and corrections independently.
+
+Corrective rounds addressed manual navigation state, private-note mutation
+races during deletion/restore/reset, strict offscreen date validation, quadratic
+heading/duration parsing, bounded ingredient continuations, native malformed-PDF
+containment, required dependency notices, and PDFBox's optional JP2 decoder in
+release shrinking. Every reported issue has regression coverage.
+
+Validation: Flutter 3.38.3 analysis clean; all 299 Flutter tests pass. All 12
+native Android API 34 tests pass using real generated PDFs, including embedded
+Unicode, compressed text, scans, encryption/permissions, byte/page/text/operator
+limits, scratch cleanup, deeply nested malformed content, and JPEG2000 paths
+without an image decoder. The release APK builds and installs successfully;
+all native license assets match their sources. A real release-APK smoke test
+selected a compressed PDF through Android's picker, extracted the expected
+ingredients/steps, reviewed its draft, saved it, and returned to the cookbook
+with the new recipe. Native test commands are in `app/android/PDF_IMPORT_TESTS.md`.

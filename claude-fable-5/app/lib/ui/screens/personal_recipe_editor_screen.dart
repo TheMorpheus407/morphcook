@@ -14,12 +14,14 @@ import '../widgets/decor.dart';
 class PersonalRecipeEditorScreen extends StatefulWidget {
   final PersonalRecipe? recipe;
   final bool importing;
+  final String? importSourceText;
   final Uint8List? importImage;
 
   const PersonalRecipeEditorScreen({
     super.key,
     this.recipe,
     this.importing = false,
+    this.importSourceText,
     this.importImage,
   });
 
@@ -92,6 +94,22 @@ class _PersonalRecipeEditorScreenState
               s('privateRecipeHint'),
               style: morph.text.handAt(17, color: morph.colors.inkSoft),
             ),
+            if (widget.importSourceText != null)
+              ExpansionTile(
+                title: Text(
+                  state.lang == 'de'
+                      ? 'Originaltext aus dem PDF'
+                      : 'Original PDF text',
+                ),
+                children: [
+                  SizedBox(
+                    height: 240,
+                    child: SingleChildScrollView(
+                      child: SelectableText(widget.importSourceText!),
+                    ),
+                  ),
+                ],
+              ),
             if (widget.importing) ...[
               const SizedBox(height: 12),
               Text(

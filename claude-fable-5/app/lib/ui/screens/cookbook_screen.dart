@@ -1,3 +1,4 @@
+import 'pdf_import_screen.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart' hide Page;
@@ -161,6 +162,18 @@ class _CookbookScreenState extends State<CookbookScreen> {
                     ),
                   ),
                   icon: const Icon(Icons.link),
+                ),
+                IconButton(
+                  key: const ValueKey('open-pdf-import'),
+                  tooltip: state.lang == 'de'
+                      ? 'PDF importieren'
+                      : 'Import PDF',
+                  icon: const Icon(Icons.picture_as_pdf_outlined),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const PdfImportScreen(),
+                    ),
+                  ),
                 ),
                 IconButton(
                   key: const ValueKey('add-personal-recipe'),

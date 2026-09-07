@@ -679,6 +679,11 @@ const _ingredientUnits = <String, String>{
   'quarts': 'quart',
 };
 
+/// Conservatively parse an imported ingredient, preserving uncertain amounts
+/// as an unscaled original line. Shared by website and selectable-text PDF imports.
+PersonalRecipeIngredient parseImportedIngredientLine(String line) =>
+    _ingredient(line);
+
 PersonalRecipeIngredient _ingredient(String line) {
   PersonalRecipeIngredient raw() => PersonalRecipeIngredient(
     name: line,

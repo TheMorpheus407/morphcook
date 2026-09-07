@@ -5,6 +5,7 @@ import '../../data/app_state.dart';
 import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
+import 'user_manual_screen.dart';
 
 /// Help center: searchable FAQ with category filters. UI copy elsewhere
 /// deep-links here via [initialEntryId].
@@ -51,6 +52,16 @@ class _FaqScreenState extends State<FaqScreen> {
       appBar: AppBar(
         title: Text(s('helpCenter'),
             style: morph.text.display.copyWith(fontSize: 22)),
+        actions: [
+          IconButton(
+            key: const ValueKey('faq-manual'),
+            tooltip: lang == 'de' ? 'Bedienungsanleitung' : 'User manual',
+            icon: const Icon(Icons.menu_book_outlined),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const UserManualScreen()),
+            ),
+          ),
+        ],
       ),
       body: PaperBackground(
         child: Column(

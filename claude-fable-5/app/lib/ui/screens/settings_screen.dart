@@ -15,8 +15,10 @@ import '../strings.dart';
 import '../theme.dart';
 import '../widgets/decor.dart';
 import 'faq_screen.dart';
+import 'feedback_screen.dart';
 import 'insights_screen.dart';
 import 'shopping_list_screen.dart';
+import 'user_manual_screen.dart';
 
 const _patreonUrl = 'https://www.patreon.com/c/themorpheus';
 const _websiteUrl = 'https://www.the-morpheus.de/';
@@ -306,9 +308,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
               context,
             ).push(MaterialPageRoute(builder: (_) => const FaqScreen())),
           ),
+          _linkRow(
+            Icons.menu_book_outlined,
+            lang == 'de' ? 'Bedienungsanleitung' : 'User manual',
+            () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const UserManualScreen()),
+            ),
+          ),
+          _linkRow(
+            Icons.feedback_outlined,
+            'Feedback',
+            () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const FeedbackScreen()),
+            ),
+          ),
 
           SectionHeader(title: s('aboutSupport')),
           _supportCard(s),
+          _linkRow(
+            Icons.description_outlined,
+            lang == 'de' ? 'Lizenzen' : 'Licenses',
+            () => showLicensePage(context: context, applicationName: 'MorphCook'),
+          ),
 
           const SizedBox(height: 18),
           _linkRow(
