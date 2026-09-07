@@ -1,0 +1,664 @@
+{
+  "version": "2026.09.02",
+  "schema_version": 1,
+  "generated_at": "2026-09-02T00:07:03.279831Z",
+  "partitions": [
+    {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "kind": "frequency",
+      "description": "Top-frequency dishes; loaded at launch.",
+      "recipe_count": 104,
+      "dish_ids": [
+        "alfredo",
+        "bibimbap",
+        "burger",
+        "caesar-salad",
+        "carbonara",
+        "chili",
+        "doener",
+        "falafel",
+        "fried-rice",
+        "green-curry",
+        "kaesespaetzle",
+        "koefte",
+        "lahmacun",
+        "lasagne",
+        "pad-thai",
+        "pancakes",
+        "pizza-margherita",
+        "porridge",
+        "ramen",
+        "risotto",
+        "shakshuka"
+      ],
+      "cuisine_tags": [
+        "american",
+        "british",
+        "chinese",
+        "german",
+        "italian",
+        "italian-american",
+        "japanese",
+        "korean",
+        "levantine",
+        "north-african",
+        "swabian",
+        "tex-mex",
+        "thai",
+        "turkish"
+      ]
+    },
+    {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "kind": "frequency",
+      "description": "Rarely used dishes; loaded on demand.",
+      "recipe_count": 32,
+      "dish_ids": [
+        "bircher-muesli",
+        "gulasch",
+        "hummus-plate",
+        "mercimek",
+        "minestrone",
+        "miso-soup",
+        "sushi-bowl",
+        "tiramisu"
+      ],
+      "cuisine_tags": [
+        "german",
+        "hungarian",
+        "italian",
+        "japanese",
+        "levantine",
+        "swiss",
+        "turkish"
+      ]
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "kind": "cuisine",
+      "description": "Discovery bundle for italian cooking; loaded on demand.",
+      "recipe_count": 34,
+      "dish_ids": [
+        "alfredo",
+        "carbonara",
+        "lasagne",
+        "minestrone",
+        "pizza-margherita",
+        "risotto",
+        "tiramisu"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "italian-american"
+      ]
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "kind": "cuisine",
+      "description": "Discovery bundle for asian cooking; loaded on demand.",
+      "recipe_count": 32,
+      "dish_ids": [
+        "bibimbap",
+        "fried-rice",
+        "green-curry",
+        "miso-soup",
+        "pad-thai",
+        "ramen",
+        "sushi-bowl"
+      ],
+      "cuisine_tags": [
+        "chinese",
+        "japanese",
+        "korean",
+        "thai"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "kind": "cuisine",
+      "description": "Discovery bundle for middle-eastern cooking; loaded on demand.",
+      "recipe_count": 31,
+      "dish_ids": [
+        "doener",
+        "falafel",
+        "hummus-plate",
+        "koefte",
+        "lahmacun",
+        "mercimek",
+        "shakshuka"
+      ],
+      "cuisine_tags": [
+        "german",
+        "levantine",
+        "north-african",
+        "turkish"
+      ]
+    }
+  ],
+  "loading_strategy": {
+    "eager": [
+      "core"
+    ],
+    "lazy": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern"
+    ],
+    "prefetch_on_idle": [
+      "extended"
+    ]
+  },
+  "cross_references": {
+    "alfredo-classic-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "alfredo-vegan-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "alfredo-gluten-free-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "alfredo-keto-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "alfredo-halal-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "bibimbap-classic-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "bibimbap-classic-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "bibimbap-vegan-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "bibimbap-gluten-free-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "bibimbap-keto-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "bircher-muesli-classic-easy": [
+      "extended"
+    ],
+    "bircher-muesli-vegan-easy": [
+      "extended"
+    ],
+    "bircher-muesli-keto-easy": [
+      "extended"
+    ],
+    "bircher-muesli-gluten-free-easy": [
+      "extended"
+    ],
+    "burger-classic-easy": [
+      "core"
+    ],
+    "burger-halal-easy": [
+      "core"
+    ],
+    "burger-vegetarian-medium": [
+      "core"
+    ],
+    "burger-vegan-medium": [
+      "core"
+    ],
+    "burger-gluten-free-easy": [
+      "core"
+    ],
+    "burger-keto-easy": [
+      "core"
+    ],
+    "caesar-salad-classic-easy": [
+      "core"
+    ],
+    "caesar-salad-vegetarian-easy": [
+      "core"
+    ],
+    "caesar-salad-vegan-easy": [
+      "core"
+    ],
+    "caesar-salad-gluten-free-easy": [
+      "core"
+    ],
+    "caesar-salad-keto-easy": [
+      "core"
+    ],
+    "carbonara-classic-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "carbonara-halal-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "carbonara-vegetarian-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "carbonara-vegan-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "carbonara-gluten-free-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "chili-classic-medium": [
+      "core"
+    ],
+    "chili-vegan-medium": [
+      "core"
+    ],
+    "chili-keto-medium": [
+      "core"
+    ],
+    "chili-halal-medium": [
+      "core"
+    ],
+    "doener-classic-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-classic-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-vegan-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-vegetarian-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-keto-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-halal-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "doener-gluten-free-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "falafel-classic-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "falafel-classic-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "falafel-classic-hard": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "falafel-gluten-free-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "falafel-keto-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "fried-rice-classic-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "fried-rice-classic-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "fried-rice-vegan-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "fried-rice-keto-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "fried-rice-pescatarian-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "green-curry-classic-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "green-curry-vegan-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "green-curry-pescatarian-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "green-curry-keto-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "gulasch-classic-hard": [
+      "extended"
+    ],
+    "gulasch-halal-hard": [
+      "extended"
+    ],
+    "gulasch-vegan-medium": [
+      "extended"
+    ],
+    "gulasch-classic-medium": [
+      "extended"
+    ],
+    "gulasch-keto-medium": [
+      "extended"
+    ],
+    "hummus-plate-classic-easy": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "hummus-plate-classic-hard": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "hummus-plate-keto-easy": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "kaesespaetzle-classic-medium": [
+      "core"
+    ],
+    "kaesespaetzle-classic-easy": [
+      "core"
+    ],
+    "kaesespaetzle-vegan-medium": [
+      "core"
+    ],
+    "kaesespaetzle-gluten-free-medium": [
+      "core"
+    ],
+    "kaesespaetzle-keto-easy": [
+      "core"
+    ],
+    "koefte-classic-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "koefte-halal-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "koefte-vegan-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "koefte-vegetarian-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "koefte-gluten-free-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "lahmacun-classic-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "lahmacun-vegan-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "lahmacun-gluten-free-hard": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "lahmacun-halal-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "lasagne-classic-hard": [
+      "core",
+      "cuisine-italian"
+    ],
+    "lasagne-classic-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "lasagne-vegetarian-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "lasagne-vegan-hard": [
+      "core",
+      "cuisine-italian"
+    ],
+    "lasagne-gluten-free-hard": [
+      "core",
+      "cuisine-italian"
+    ],
+    "lasagne-keto-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "mercimek-classic-easy": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "mercimek-classic-medium": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "mercimek-gluten-free-easy": [
+      "extended",
+      "cuisine-middle-eastern"
+    ],
+    "minestrone-classic-easy": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "minestrone-vegan-easy": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "minestrone-classic-medium": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "minestrone-keto-easy": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "miso-soup-classic-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "miso-soup-vegan-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "miso-soup-pescatarian-medium": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "pad-thai-classic-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "pad-thai-vegan-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "pad-thai-halal-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "pad-thai-keto-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "pad-thai-gluten-free-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "pancakes-classic-easy": [
+      "core"
+    ],
+    "pancakes-vegan-easy": [
+      "core"
+    ],
+    "pancakes-gluten-free-easy": [
+      "core"
+    ],
+    "pancakes-keto-easy": [
+      "core"
+    ],
+    "pancakes-classic-medium": [
+      "core"
+    ],
+    "pizza-margherita-classic-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "pizza-margherita-classic-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "pizza-margherita-vegan-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "pizza-margherita-gluten-free-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "pizza-margherita-keto-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "porridge-classic-easy": [
+      "core"
+    ],
+    "porridge-vegan-easy": [
+      "core"
+    ],
+    "porridge-gluten-free-easy": [
+      "core"
+    ],
+    "porridge-keto-easy": [
+      "core"
+    ],
+    "porridge-classic-medium": [
+      "core"
+    ],
+    "ramen-classic-hard": [
+      "core",
+      "cuisine-asian"
+    ],
+    "ramen-classic-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "ramen-vegan-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "ramen-gluten-free-medium": [
+      "core",
+      "cuisine-asian"
+    ],
+    "ramen-keto-easy": [
+      "core",
+      "cuisine-asian"
+    ],
+    "risotto-classic-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "risotto-vegan-medium": [
+      "core",
+      "cuisine-italian"
+    ],
+    "risotto-pescatarian-hard": [
+      "core",
+      "cuisine-italian"
+    ],
+    "risotto-keto-easy": [
+      "core",
+      "cuisine-italian"
+    ],
+    "shakshuka-classic-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "shakshuka-vegan-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "shakshuka-halal-medium": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "shakshuka-keto-easy": [
+      "core",
+      "cuisine-middle-eastern"
+    ],
+    "sushi-bowl-classic-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "sushi-bowl-vegan-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "sushi-bowl-pescatarian-medium": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "sushi-bowl-keto-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "sushi-bowl-gluten-free-easy": [
+      "extended",
+      "cuisine-asian"
+    ],
+    "tiramisu-classic-medium": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "tiramisu-classic-easy": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "tiramisu-vegan-medium": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "tiramisu-gluten-free-medium": [
+      "extended",
+      "cuisine-italian"
+    ],
+    "tiramisu-keto-medium": [
+      "extended",
+      "cuisine-italian"
+    ]
+  }
+}

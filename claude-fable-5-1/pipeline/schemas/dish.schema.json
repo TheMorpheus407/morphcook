@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.app/schemas/dish.schema.json",
+  "title": "MorphCook dish source file",
+  "type": "object",
+  "required": ["dish", "recipes"],
+  "additionalProperties": false,
+  "properties": {
+    "dish": {
+      "type": "object",
+      "required": ["id", "name", "hero_text", "caption", "stripe_color", "cuisine_tags", "frequency_tier", "meal_types"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+        "name": {"$ref": "ltext.schema.json"},
+        "hero_text": {"$ref": "ltext.schema.json"},
+        "caption": {"$ref": "ltext.schema.json"},
+        "stripe_color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+        "cuisine_tags": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "frequency_tier": {"enum": ["core", "extended"]},
+        "meal_types": {"type": "array", "minItems": 1, "items": {"enum": ["breakfast", "lunch", "dinner", "snack", "dessert"]}},
+        "tags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "new_ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "parent", "kind", "flags", "aisle"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"$ref": "ltext.schema.json"},
+          "parent": {"type": ["string", "null"]},
+          "kind": {"enum": ["category", "item"]},
+          "flags": {"type": "array", "items": {"type": "string"}},
+          "aisle": {"type": "string"}
+        }
+      }
+    },
+    "recipes": {"type": "array", "minItems": 1, "items": {"$ref": "recipe.schema.json"}}
+  }
+}

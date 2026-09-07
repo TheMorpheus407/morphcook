@@ -1,0 +1,213 @@
+{
+  "dish": {
+    "id": "carbonara",
+    "name": {"en": "Carbonara", "de": "Carbonara"},
+    "hero_text": {
+      "en": "Rome's case for doing less: pasta, cured pork, egg, sharp cheese and an unreasonable amount of black pepper. The sauce happens in the seconds after the pan leaves the heat.",
+      "de": "Roms Plädoyer fürs Weglassen: Pasta, gepökeltes Schweinefleisch, Ei, kräftiger Käse und unanständig viel schwarzer Pfeffer. Die Sauce entsteht in den Sekunden, nachdem die Pfanne vom Herd kommt."
+    },
+    "caption": {"en": "no cream. we've talked about this.", "de": "keine sahne. wir hatten das thema."},
+    "stripe_color": "#D8B25C",
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "core",
+    "meal_types": ["dinner"],
+    "tags": ["pasta", "comfort", "weeknight"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "carbonara-classic-easy",
+      "title": {"en": "Roman Carbonara", "de": "Römische Carbonara"},
+      "margin_note": {"en": "off the heat. always off the heat", "de": "vom herd. immer vom herd"},
+      "intro": {
+        "en": "Guanciale rendered slow until it crackles, spaghetti cooked a minute short, and a paste of yolks and pecorino that turns into sauce in the warm pan with a little pasta water. Twenty minutes, four ingredients, one rule about the heat.",
+        "de": "Guanciale langsam ausgelassen, bis er knistert, Spaghetti eine Minute zu kurz gekocht, und eine Paste aus Eigelb und Pecorino, die in der warmen Pfanne mit etwas Nudelwasser zur Sauce wird. Zwanzig Minuten, vier Zutaten, eine Regel zur Hitze."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["pork", "egg", "dairy", "gluten", "meat-dairy-combo"],
+      "extra_attributes": [],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 860,
+      "macros": {"protein_g": 33, "carbs_g": 72, "fat_g": 48},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "spaghetti", "amount": 200, "unit": "g"},
+        {"id": "guanciale", "amount": 100, "unit": "g", "note": {"en": "rind off, cut into thick matchsticks", "de": "ohne Schwarte, in dicke Stifte geschnitten"}},
+        {"id": "egg-yolk", "amount": 4, "unit": "piece"},
+        {"id": "pecorino", "amount": 60, "unit": "g", "note": {"en": "finely grated, plus more to serve", "de": "fein gerieben, plus etwas zum Servieren"}},
+        {"id": "black-pepper", "amount": 1, "unit": "tsp", "note": {"en": "coarsely ground", "de": "grob gemahlen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste", "note": {"en": "for the water only, and less than usual", "de": "nur fürs Nudelwasser, und weniger als sonst"}}
+      ],
+      "steps": [
+        {"text": {"en": "Bring a big pot of water to the boil and salt it lightly; the guanciale and pecorino bring plenty of their own.", "de": "Einen großen Topf Wasser aufkochen und nur leicht salzen; Guanciale und Pecorino bringen selbst genug Salz mit."}},
+        {"text": {"en": "Put the guanciale in a cold, wide pan and set it over medium-low heat. Let the fat render slowly until the pieces are golden and crisp at the edges and swimming in clear fat. Turn off the heat and leave it in the pan.", "de": "Den Guanciale in eine kalte, weite Pfanne geben und bei mittlerer bis niedriger Hitze langsam auslassen, bis die Stücke goldbraun und an den Rändern knusprig sind und im klaren Fett schwimmen. Herd ausschalten, alles in der Pfanne lassen."}, "timer_seconds": 600},
+        {"text": {"en": "Whisk the yolks with the pecorino and the pepper in a bowl until you have a thick, grainy paste. It looks too stiff. That's correct.", "de": "Die Eigelbe mit dem Pecorino und dem Pfeffer in einer Schüssel zu einer dicken, körnigen Paste verrühren. Sie wirkt zu fest. Das ist richtig so."}},
+        {"text": {"en": "Cook the spaghetti until a minute short of al dente. Just before draining, scoop out a cup of the cooking water.", "de": "Die Spaghetti kochen, bis sie eine Minute vor al dente sind. Kurz vor dem Abgießen eine Tasse Nudelwasser abschöpfen."}, "timer_seconds": 480},
+        {"text": {"en": "Stir a couple of spoonfuls of the hot pasta water into the egg paste to loosen it to the thickness of cream. This also takes the edge off the heat shock later.", "de": "Ein paar Löffel des heißen Nudelwassers in die Eipaste rühren, bis sie sahnig fließt. Das mildert später auch den Temperaturschock."}},
+        {"text": {"en": "Tip the drained pasta into the guanciale pan, still off the heat, and toss so every strand is coated in fat. Pour the egg mixture over and toss without pause, adding pasta water a splash at a time, until the sauce turns glossy and clings. If it looks thin, keep tossing; if it looks like scrambled egg, the pan was too hot.", "de": "Die abgegossene Pasta in die Guanciale-Pfanne geben, weiterhin ohne Hitze, und schwenken, bis jeder Strang mit Fett überzogen ist. Die Eimischung darübergießen und ohne Pause schwenken, dabei schluckweise Nudelwasser zugeben, bis die Sauce glänzt und an der Pasta haftet. Wirkt sie dünn, weiterschwenken; sieht sie nach Rührei aus, war die Pfanne zu heiß."}},
+        {"text": {"en": "Straight onto warm plates, more pecorino, more pepper. It waits for nobody.", "de": "Sofort auf warme Teller, mehr Pecorino, mehr Pfeffer. Sie wartet auf niemanden."}}
+      ]
+    },
+    {
+      "id": "carbonara-halal-easy",
+      "title": {"en": "Smoked Turkey Carbonara", "de": "Carbonara mit geräucherter Pute"},
+      "margin_note": {"en": "the turkey brings smoke, the oil brings the rest", "de": "die pute bringt den rauch, das öl den rest"},
+      "intro": {
+        "en": "Thick-cut smoked turkey breast fried in olive oil with a crushed clove of garlic until the edges catch, then the classic yolk-and-pecorino finish. Written for a kitchen that keeps pork and alcohol out entirely, and it doesn't miss either.",
+        "de": "Dick geschnittene geräucherte Putenbrust, in Olivenöl mit einer angedrückten Knoblauchzehe gebraten, bis die Ränder Farbe nehmen, dann das klassische Finish aus Eigelb und Pecorino. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich nichts verloren haben, und es fehlt beides nicht."
+      },
+      "variant": {"diet": "halal", "effort": "easy"},
+      "contains": ["poultry", "egg", "dairy", "gluten", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 780,
+      "macros": {"protein_g": 42, "carbs_g": 72, "fat_g": 36},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "spaghetti", "amount": 200, "unit": "g"},
+        {"id": "turkey-breast", "amount": 150, "unit": "g", "note": {"en": "smoked, in one thick slice", "de": "geräuchert, am Stück"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "garlic", "amount": 1, "unit": "clove", "note": {"en": "crushed, skin on", "de": "angedrückt, mit Schale"}},
+        {"id": "egg-yolk", "amount": 4, "unit": "piece"},
+        {"id": "pecorino", "amount": 60, "unit": "g", "note": {"en": "finely grated, plus more to serve", "de": "fein gerieben, plus etwas zum Servieren"}},
+        {"id": "black-pepper", "amount": 1, "unit": "tsp", "note": {"en": "coarsely ground", "de": "grob gemahlen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cut the turkey into batons about the size of your little finger. Bring a large pot of water to the boil and salt it lightly.", "de": "Die Pute in Stifte schneiden, etwa so groß wie dein kleiner Finger. Einen großen Topf Wasser aufkochen und leicht salzen."}},
+        {"text": {"en": "Warm the oil with the crushed garlic clove in a wide pan over medium heat until the garlic smells toasty, then fish it out. Add the turkey and fry until the edges are browned and a little crisp. Turkey won't render fat the way cured pork does, so the oil is doing that job; don't skimp on it. Turn off the heat.", "de": "Das Öl mit der angedrückten Knoblauchzehe in einer weiten Pfanne bei mittlerer Hitze erwärmen, bis der Knoblauch geröstet duftet, dann herausnehmen. Die Pute dazugeben und braten, bis die Ränder gebräunt und leicht knusprig sind. Pute gibt kein Fett ab wie gepökeltes Schwein, das übernimmt hier das Öl; also nicht sparen. Herd ausschalten."}, "timer_seconds": 420},
+        {"text": {"en": "Whisk yolks, pecorino and pepper into a thick paste.", "de": "Eigelbe, Pecorino und Pfeffer zu einer dicken Paste verrühren."}},
+        {"text": {"en": "Cook the spaghetti until a minute short of done. Keep a cup of the water.", "de": "Die Spaghetti kochen, bis sie eine Minute vor dem Punkt sind. Eine Tasse Nudelwasser aufheben."}, "timer_seconds": 480},
+        {"text": {"en": "Loosen the egg paste with a few spoonfuls of the hot pasta water.", "de": "Die Eipaste mit ein paar Löffeln heißem Nudelwasser glatt rühren."}},
+        {"text": {"en": "Pasta into the turkey pan, off the heat, tossed in the garlicky oil. Then the egg mixture, tossing all the time and adding pasta water bit by bit until it's a glossy sauce that coats every strand.", "de": "Die Pasta in die Pfanne zur Pute geben, ohne Hitze, im Knoblauchöl schwenken. Dann die Eimischung dazu, ständig schwenken und nach und nach Nudelwasser zugeben, bis eine glänzende Sauce jeden Strang überzieht."}},
+        {"text": {"en": "Plates, more pecorino, a heavy hand with the pepper mill.", "de": "Auf die Teller, mehr Pecorino, und bei der Pfeffermühle nicht zurückhalten."}}
+      ]
+    },
+    {
+      "id": "carbonara-vegetarian-easy",
+      "title": {"en": "Mushroom Carbonara", "de": "Pilz-Carbonara"},
+      "margin_note": {"en": "brown the mushrooms properly or don't bother", "de": "die pilze richtig bräunen, sonst kannst du es lassen"},
+      "intro": {
+        "en": "Mushrooms seared hard in a hot pan until their edges are dark and chewy, finished with butter, garlic and thyme, doing the job the pork usually does. The yolk-and-cheese sauce doesn't change; it never needed meat to be good.",
+        "de": "Pilze in einer heißen Pfanne scharf angebraten, bis die Ränder dunkel und bissfest sind, mit Butter, Knoblauch und Thymian abgerundet, so übernehmen sie die Rolle des Specks. Die Sauce aus Eigelb und Käse bleibt, wie sie ist; sie hat nie Fleisch gebraucht, um gut zu sein."
+      },
+      "variant": {"diet": "vegetarian", "effort": "easy"},
+      "contains": ["egg", "dairy", "gluten", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 740,
+      "macros": {"protein_g": 30, "carbs_g": 74, "fat_g": 36},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "spaghetti", "amount": 200, "unit": "g"},
+        {"id": "button-mushroom", "amount": 250, "unit": "g", "note": {"en": "or a mix with shiitake, sliced thick", "de": "oder gemischt mit Shiitake, dick geschnitten"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "butter", "amount": 20, "unit": "g"},
+        {"id": "garlic", "amount": 1, "unit": "clove", "note": {"en": "finely chopped", "de": "fein gehackt"}},
+        {"id": "thyme", "amount": 3, "unit": "sprig"},
+        {"id": "egg-yolk", "amount": 4, "unit": "piece"},
+        {"id": "pecorino", "amount": 60, "unit": "g", "note": {"en": "or parmesan; pick a vegetarian hard cheese if the rennet matters to you", "de": "oder Parmesan; wenn dir das Lab wichtig ist, nimm einen vegetarischen Hartkäse"}},
+        {"id": "black-pepper", "amount": 1, "unit": "tsp", "note": {"en": "coarsely ground", "de": "grob gemahlen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Boil a large pot of water and salt it. Wipe the mushrooms rather than washing them and slice them thick.", "de": "Einen großen Topf Wasser aufkochen und salzen. Die Pilze abreiben statt waschen und dick in Scheiben schneiden."}},
+        {"text": {"en": "Heat the oil in a wide pan until it shimmers. Lay the mushrooms in a single layer and leave them alone until the undersides are deep brown, then turn and repeat. They will squeak and shrink; that's the water leaving, which is what you want.", "de": "Das Öl in einer weiten Pfanne erhitzen, bis es flimmert. Die Pilze in einer Lage hineinlegen und in Ruhe lassen, bis die Unterseiten tief braun sind, dann wenden und wiederholen. Sie quietschen und schrumpfen; das ist das Wasser, das rausgeht, und genau das willst du."}, "timer_seconds": 480},
+        {"text": {"en": "Drop in the butter, garlic, thyme leaves, salt and a good grind of pepper. Toss for a minute until it smells like a forest floor, then turn off the heat.", "de": "Butter, Knoblauch, Thymianblätter, Salz und ordentlich Pfeffer dazugeben. Eine Minute schwenken, bis es nach Waldboden duftet, dann den Herd ausschalten."}},
+        {"text": {"en": "Whisk the yolks with the cheese and the rest of the pepper into a stiff paste.", "de": "Die Eigelbe mit dem Käse und dem restlichen Pfeffer zu einer festen Paste verrühren."}},
+        {"text": {"en": "Cook the spaghetti a minute short of al dente and keep a cup of the water.", "de": "Die Spaghetti eine Minute kürzer als al dente kochen und eine Tasse Nudelwasser aufheben."}, "timer_seconds": 480},
+        {"text": {"en": "Pasta into the mushroom pan, off the heat. Loosen the egg paste with a splash of pasta water, pour it over and toss steadily, adding water as needed, until the sauce is silky and clings to the strands.", "de": "Die Pasta zu den Pilzen in die Pfanne geben, ohne Hitze. Die Eipaste mit einem Schuss Nudelwasser glatt rühren, darübergießen und gleichmäßig schwenken, bei Bedarf Wasser zugeben, bis die Sauce seidig ist und an den Nudeln haftet."}},
+        {"text": {"en": "Serve at once with more cheese and pepper. Thyme sprigs on the plate are decoration; take them off before eating.", "de": "Sofort mit mehr Käse und Pfeffer servieren. Die Thymianzweige sind nur Deko; vor dem Essen rausnehmen."}}
+      ]
+    },
+    {
+      "id": "carbonara-vegan-medium",
+      "title": {"en": "Smoked Tofu Carbonara", "de": "Carbonara mit Räuchertofu"},
+      "margin_note": {"en": "cashews for the silk, tofu for the smoke", "de": "cashews für die seide, tofu für den rauch"},
+      "intro": {
+        "en": "Batons of smoked tofu fried crisp with paprika and a splash of soy for the bacon corner of the plate, and a cashew cream with nutritional yeast, miso and lemon for the rest. A different sauce, made honestly; it doesn't pretend to be egg, it's just very good on spaghetti.",
+        "de": "Räuchertofu in Stiften, knusprig gebraten mit Paprika und einem Schuss Soja, das ist die Speck-Ecke des Tellers, und eine Cashewcreme mit Hefeflocken, Miso und Zitrone für den Rest. Eine andere Sauce, ehrlich gemacht; sie tut nicht so, als wäre sie Ei, sie ist einfach sehr gut auf Spaghetti."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["soy", "cashews", "tree-nuts", "gluten", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 790,
+      "macros": {"protein_g": 34, "carbs_g": 82, "fat_g": 36},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "comfort", "weeknight"],
+      "ingredients": [
+        {"id": "spaghetti", "amount": 200, "unit": "g"},
+        {"id": "smoked-tofu", "amount": 200, "unit": "g", "note": {"en": "cut into thick matchsticks", "de": "in dicke Stifte geschnitten"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "smoked-paprika", "amount": 1, "unit": "tsp"},
+        {"id": "soy-sauce", "amount": 1, "unit": "tbsp"},
+        {"id": "cashews", "amount": 80, "unit": "g"},
+        {"id": "nutritional-yeast", "amount": 3, "unit": "tbsp"},
+        {"id": "miso", "amount": 1, "unit": "tsp", "note": {"en": "white or shiro", "de": "hell (Shiro)"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "turmeric", "amount": 1, "unit": "pinch", "note": {"en": "for colour only", "de": "nur für die Farbe"}},
+        {"id": "black-pepper", "amount": 1, "unit": "tsp", "note": {"en": "coarsely ground", "de": "grob gemahlen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cover the cashews with just-boiled water and let them soak while you do everything else.", "de": "Die Cashews mit kochend heißem Wasser bedecken und einweichen lassen, während du den Rest erledigst."}, "timer_seconds": 900},
+        {"text": {"en": "Bring a large pot of salted water to the boil. Pat the tofu dry; wet tofu steams instead of crisping.", "de": "Einen großen Topf Salzwasser aufkochen. Den Tofu trocken tupfen; nasser Tofu dämpft, statt knusprig zu werden."}},
+        {"text": {"en": "Heat two tablespoons of oil in a wide pan over medium-high. Fry the tofu batons in a single layer, turning only when a side has gone golden. Dust with smoked paprika, splash in the soy sauce, toss for thirty seconds until it sizzles dry, then turn off the heat.", "de": "Zwei Esslöffel Öl in einer weiten Pfanne bei mittlerer bis hoher Hitze erhitzen. Die Tofustifte in einer Lage braten und erst wenden, wenn eine Seite goldbraun ist. Mit Rauchpaprika bestäuben, die Sojasauce dazugeben, dreißig Sekunden schwenken, bis es trocken zischt, dann den Herd ausschalten."}, "timer_seconds": 480},
+        {"text": {"en": "Drain the cashews and blend them with the nutritional yeast, miso, garlic, the juice of the half lemon, turmeric, the remaining oil, pepper and about 150 ml of hot water until completely smooth. It should pour like single cream. Taste for salt.", "de": "Die Cashews abgießen und mit Hefeflocken, Miso, Knoblauch, dem Saft der halben Zitrone, Kurkuma, dem restlichen Öl, Pfeffer und etwa 150 ml heißem Wasser vollkommen glatt pürieren. Die Creme sollte wie Sahne fließen. Mit Salz abschmecken."}},
+        {"text": {"en": "Cook the spaghetti until just al dente. Keep a cup of the water before draining.", "de": "Die Spaghetti al dente kochen. Vor dem Abgießen eine Tasse Nudelwasser aufheben."}, "timer_seconds": 540},
+        {"text": {"en": "Return the drained pasta to its pot off the heat, pour in the cashew cream and toss, adding pasta water a splash at a time until the sauce is glossy and every strand is coated. It thickens fast as it sits, so err on the loose side.", "de": "Die abgegossene Pasta ohne Hitze zurück in den Topf geben, die Cashewcreme dazugießen und schwenken, dabei schluckweise Nudelwasser zugeben, bis die Sauce glänzt und jeden Strang überzieht. Sie dickt beim Stehen schnell nach, also lieber etwas zu flüssig."}},
+        {"text": {"en": "Fold in most of the tofu.", "de": "Den Großteil des Tofus unterheben."}},
+        {"text": {"en": "Plates, the rest of the tofu on top, a lot of coarse black pepper, a last squeeze of lemon if it needs lifting.", "de": "Auf die Teller, den restlichen Tofu obendrauf, viel grober schwarzer Pfeffer, und ein letzter Spritzer Zitrone, falls es noch Frische braucht."}}
+      ]
+    },
+    {
+      "id": "carbonara-gluten-free-easy",
+      "title": {"en": "Gluten-Free Carbonara", "de": "Glutenfreie Carbonara"},
+      "margin_note": {"en": "the pasta water is cloudier. that's a gift", "de": "das nudelwasser ist trüber. ein geschenk"},
+      "intro": {
+        "en": "Guanciale, yolks and pecorino, exactly as in Rome, on gluten-free spaghetti from corn and rice. The swap changes two things: the pasta turns from firm to soft in a heartbeat, so pull it early, and the starchy water binds the sauce even better than wheat water does.",
+        "de": "Guanciale, Eigelb und Pecorino, genau wie in Rom, auf glutenfreien Spaghetti aus Mais und Reis. Der Tausch ändert zwei Dinge: Die Pasta kippt in Sekunden von fest zu weich, also früh rausnehmen, und das stärkehaltige Wasser bindet die Sauce sogar besser als Weizenwasser."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["pork", "egg", "dairy", "meat-dairy-combo"],
+      "extra_attributes": [],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 850,
+      "macros": {"protein_g": 32, "carbs_g": 74, "fat_g": 46},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "gluten-free-pasta", "amount": 200, "unit": "g", "note": {"en": "spaghetti, a corn-and-rice blend", "de": "Spaghetti, eine Mais-Reis-Mischung"}},
+        {"id": "guanciale", "amount": 100, "unit": "g", "note": {"en": "rind off, in thick matchsticks", "de": "ohne Schwarte, in dicken Stiften"}},
+        {"id": "egg-yolk", "amount": 4, "unit": "piece"},
+        {"id": "pecorino", "amount": 60, "unit": "g", "note": {"en": "finely grated, plus more to serve", "de": "fein gerieben, plus etwas zum Servieren"}},
+        {"id": "black-pepper", "amount": 1, "unit": "tsp", "note": {"en": "coarsely ground", "de": "grob gemahlen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste", "note": {"en": "for the water, lightly", "de": "fürs Wasser, sparsam"}}
+      ],
+      "steps": [
+        {"text": {"en": "Big pot of water, lightly salted, on to boil. Gluten-free pasta likes a lot of water and a proper rolling boil.", "de": "Einen großen Topf Wasser leicht salzen und aufkochen. Glutenfreie Pasta braucht viel Wasser und einen kräftig sprudelnden Topf."}},
+        {"text": {"en": "Render the guanciale from a cold pan over medium-low heat until the fat is clear and the pieces are golden and crisp at the edges. Turn off the heat, leave everything in the pan.", "de": "Den Guanciale in einer kalten Pfanne bei mittlerer bis niedriger Hitze auslassen, bis das Fett klar ist und die Stücke goldbraun mit knusprigen Rändern. Herd ausschalten, alles in der Pfanne lassen."}, "timer_seconds": 600},
+        {"text": {"en": "Whisk yolks, pecorino and pepper into a thick paste.", "de": "Eigelbe, Pecorino und Pfeffer zu einer dicken Paste verrühren."}},
+        {"text": {"en": "Cook the spaghetti, stirring in the first minute so the strands don't weld together, and start tasting two minutes before the packet says. Pull it while there is still a firm thread in the middle. Scoop out a cup of the cloudy water, then drain and do not rinse.", "de": "Die Spaghetti kochen, in der ersten Minute rühren, damit die Stränge nicht zusammenkleben, und zwei Minuten vor der Packungsangabe anfangen zu probieren. Rausnehmen, solange in der Mitte noch ein fester Kern ist. Eine Tasse vom trüben Wasser abschöpfen, dann abgießen und nicht abschrecken."}, "timer_seconds": 420},
+        {"text": {"en": "Loosen the egg paste with a few spoonfuls of that hot water.", "de": "Die Eipaste mit ein paar Löffeln von dem heißen Wasser glatt rühren."}},
+        {"text": {"en": "Pasta into the guanciale pan, off the heat, tossed in the fat. Pour in the egg mixture and keep tossing, adding pasta water splash by splash, until the sauce is glossy and hugs the strands. Gluten-free pasta absorbs quickly, so work a little faster than you would with wheat.", "de": "Die Pasta in die Guanciale-Pfanne geben, ohne Hitze, im Fett schwenken. Die Eimischung dazugießen und weiterschwenken, schluckweise Nudelwasser zugeben, bis die Sauce glänzt und die Stränge umhüllt. Glutenfreie Pasta saugt schnell, also etwas zügiger arbeiten als bei Weizen."}},
+        {"text": {"en": "Warm plates, more pecorino, more pepper, no waiting.", "de": "Warme Teller, mehr Pecorino, mehr Pfeffer, nicht warten."}}
+      ]
+    }
+  ]
+}

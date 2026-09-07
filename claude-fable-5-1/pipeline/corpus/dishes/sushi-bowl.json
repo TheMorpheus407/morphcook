@@ -1,0 +1,252 @@
+{
+  "dish": {
+    "id": "sushi-bowl",
+    "name": {"en": "Sushi Bowl", "de": "Sushi Bowl"},
+    "hero_text": {
+      "en": "Everything you love about sushi, unrolled into a bowl. Seasoned rice still faintly warm, something cold and glossy on top, and no bamboo mat anywhere in sight.",
+      "de": "Alles, was du an Sushi magst, ausgerollt in eine Schüssel. Gewürzter Reis, noch leicht warm, obendrauf etwas Kaltes, Glänzendes, und weit und breit keine Bambusmatte."
+    },
+    "caption": {"en": "chopsticks optional, napkin mandatory", "de": "stäbchen optional, serviette pflicht"},
+    "stripe_color": "#D9A69A",
+    "cuisine_tags": ["japanese"],
+    "frequency_tier": "extended",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["bowl", "rice", "fresh"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "sushi-bowl-classic-easy",
+      "title": {"en": "Salmon Sushi Bowl", "de": "Lachs-Sushi-Bowl"},
+      "margin_note": {"en": "all the sushi, none of the rolling", "de": "das ganze sushi, ohne das rollen"},
+      "intro": {
+        "en": "Sashimi-grade salmon over warm, vinegar-seasoned rice with cool cucumber, avocado and a shower of nori and sesame. Everything a sushi roll wants to be, without the wrestling match with the bamboo mat.",
+        "de": "Sashimi-Lachs auf warmem, mit Essig gewürztem Reis, dazu kühle Gurke, Avocado und ein Regen aus Nori und Sesam. Alles, was eine Sushi-Rolle sein will, nur ohne den Ringkampf mit der Bambusmatte."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["fish", "gluten", "soy", "sesame", "mustard", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer", "raw"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {"protein_g": 33, "carbs_g": 74, "fat_g": 32},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["bowl", "rice", "fresh"],
+      "ingredients": [
+        {"id": "sushi-rice", "amount": 150, "unit": "g"},
+        {"id": "water", "amount": 200, "unit": "ml"},
+        {"id": "rice-vinegar", "amount": 3, "unit": "tbsp"},
+        {"id": "sugar", "amount": 1, "unit": "tbsp"},
+        {"id": "salt", "amount": 1, "unit": "tsp"},
+        {"id": "salmon", "amount": 250, "unit": "g", "note": {"en": "sashimi-grade, skinless", "de": "Sashimi-Qualität, ohne Haut"}},
+        {"id": "cucumber", "amount": 0.5, "unit": "piece"},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 3, "unit": "tbsp"},
+        {"id": "pickled-ginger", "amount": 2, "unit": "tbsp"},
+        {"id": "wasabi", "amount": 1, "unit": "tsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Rinse the rice in a sieve under cold water, swirling with your hand, until the water runs almost clear. Let it drain for ten minutes.", "de": "Den Reis in einem Sieb unter kaltem Wasser waschen und dabei mit der Hand durchrühren, bis das Wasser fast klar bleibt. Zehn Minuten abtropfen lassen."}, "timer_seconds": 600},
+        {"text": {"en": "Rice and water into a small pot with a tight lid. Bring to the boil, drop to the lowest heat and cook, lid on, without lifting it.", "de": "Reis und Wasser in einen kleinen Topf mit gut schließendem Deckel geben. Aufkochen, auf die kleinste Stufe stellen und mit Deckel garen, ohne ihn zu heben."}, "timer_seconds": 720},
+        {"text": {"en": "Take the pot off the heat and leave it alone, lid still on, so the rice finishes in its own steam.", "de": "Den Topf vom Herd nehmen und in Ruhe lassen, Deckel bleibt drauf, damit der Reis im eigenen Dampf fertig wird."}, "timer_seconds": 600},
+        {"text": {"en": "Warm the rice vinegar, sugar and salt in a tiny pan just until dissolved. Tip the rice into a wide bowl, drizzle the seasoning over it and fold it in with a cutting motion, fanning it with a magazine if you're feeling authentic. Let it cool to body temperature.", "de": "Reisessig, Zucker und Salz in einem kleinen Topf erwärmen, bis sich alles gelöst hat. Den Reis in eine weite Schüssel geben, die Würze darüberträufeln und mit schneidenden Bewegungen unterheben, dabei mit einer Zeitschrift fächeln, wenn du es authentisch magst. Auf Körpertemperatur abkühlen lassen."}},
+        {"text": {"en": "Slice the salmon across the grain into finger-thick pieces with a long, very sharp knife, one clean pull per slice. Back into the fridge until the last minute.", "de": "Den Lachs quer zur Faser in fingerdicke Stücke schneiden, mit einem langen, sehr scharfen Messer und einem sauberen Zug pro Scheibe. Bis zur letzten Minute zurück in den Kühlschrank."}},
+        {"text": {"en": "Cucumber into thin half-moons, avocado into slices, spring onion into fine rings. Cut the nori into thin strips with scissors. Toast the sesame seeds in a dry pan until they smell nutty.", "de": "Gurke in dünne Halbmonde, Avocado in Scheiben, Frühlingszwiebel in feine Ringe schneiden. Die Nori mit der Schere in dünne Streifen schneiden. Sesam in einer trockenen Pfanne rösten, bis er nussig duftet."}},
+        {"text": {"en": "Rice into bowls, salmon fanned over one side, cucumber and avocado next to it, then nori, sesame and spring onion over everything. Soy sauce, pickled ginger and wasabi on the side, mixed to taste at the table.", "de": "Reis in Schüsseln, den Lachs auf einer Seite fächerförmig auflegen, Gurke und Avocado daneben, dann Nori, Sesam und Frühlingszwiebel über alles streuen. Sojasauce, eingelegten Ingwer und Wasabi daneben stellen und am Tisch nach Geschmack mischen."}}
+      ]
+    },
+    {
+      "id": "sushi-bowl-vegan-easy",
+      "title": {"en": "Crispy Tofu Sushi Bowl", "de": "Knusper-Tofu-Sushi-Bowl"},
+      "margin_note": {"en": "press the tofu, thank yourself later", "de": "tofu ausdrücken, später dankbar sein"},
+      "intro": {
+        "en": "Tofu cubes marinated in soy, ginger and sesame oil, dusted in cornstarch and fried until the corners crackle, over seasoned rice with edamame, avocado and a spicy mayo. Written from scratch for the plant side of the table, not a salmon bowl with the salmon taken out.",
+        "de": "Tofuwürfel, in Soja, Ingwer und Sesamöl mariniert, in Stärke gewälzt und gebraten, bis die Ecken knistern, auf gewürztem Reis mit Edamame, Avocado und scharfer Mayo. Von Grund auf für die pflanzliche Seite des Tisches geschrieben, keine Lachs-Bowl, bei der bloß der Lachs fehlt."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "gluten", "sesame", "mustard", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 55,
+      "servings": 2,
+      "calories_per_serving": 860,
+      "macros": {"protein_g": 31, "carbs_g": 84, "fat_g": 44},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["bowl", "rice", "weeknight"],
+      "ingredients": [
+        {"id": "firm-tofu", "amount": 300, "unit": "g", "note": {"en": "well pressed", "de": "gut ausgedrückt"}},
+        {"id": "soy-sauce", "amount": 3, "unit": "tbsp"},
+        {"id": "ginger", "amount": 1, "unit": "piece", "note": {"en": "thumb-sized", "de": "daumengroß"}},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "maple-syrup", "amount": 1, "unit": "tsp"},
+        {"id": "cornstarch", "amount": 2, "unit": "tbsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "sushi-rice", "amount": 150, "unit": "g"},
+        {"id": "water", "amount": 200, "unit": "ml"},
+        {"id": "rice-vinegar", "amount": 3, "unit": "tbsp"},
+        {"id": "sugar", "amount": 1, "unit": "tbsp"},
+        {"id": "salt", "amount": 1, "unit": "tsp"},
+        {"id": "edamame", "amount": 150, "unit": "g", "note": {"en": "shelled, frozen is fine", "de": "geschält, TK geht gut"}},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "cucumber", "amount": 0.5, "unit": "piece"},
+        {"id": "vegan-mayo", "amount": 3, "unit": "tbsp"},
+        {"id": "sriracha", "amount": 1, "unit": "tbsp"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"}
+      ],
+      "steps": [
+        {"text": {"en": "Wrap the tofu in a clean tea towel, set a heavy pan or a couple of books on top and let it press. Then cut it into 2 cm cubes.", "de": "Den Tofu in ein sauberes Geschirrtuch wickeln, eine schwere Pfanne oder ein paar Bücher draufstellen und pressen lassen. Dann in 2 cm große Würfel schneiden."}, "timer_seconds": 900},
+        {"text": {"en": "Stir soy sauce, grated ginger, sesame oil and maple syrup together, toss the tofu cubes in it and let them sit while the rice cooks.", "de": "Sojasauce, geriebenen Ingwer, Sesamöl und Ahornsirup verrühren, die Tofuwürfel darin wenden und ziehen lassen, während der Reis kocht."}},
+        {"text": {"en": "Rinse the rice until the water runs nearly clear. Cook it with the water in a lidded pot on the lowest heat for twelve minutes, then leave it off the heat, lid on, for ten more.", "de": "Den Reis waschen, bis das Wasser fast klar bleibt. Mit dem Wasser im geschlossenen Topf auf kleinster Stufe zwölf Minuten garen, dann vom Herd nehmen und mit Deckel noch zehn Minuten stehen lassen."}, "timer_seconds": 1320},
+        {"text": {"en": "Warm rice vinegar, sugar and salt until dissolved, fold into the hot rice with a cutting motion and let it cool a little.", "de": "Reisessig, Zucker und Salz erwärmen, bis sich alles gelöst hat, mit schneidenden Bewegungen unter den heißen Reis heben und etwas abkühlen lassen."}},
+        {"text": {"en": "Boil the edamame in salted water for three minutes, drain. Slice avocado and cucumber, cut the spring onion into rings, snip the nori into strips. Stir the vegan mayo with the sriracha.", "de": "Die Edamame drei Minuten in Salzwasser kochen, abgießen. Avocado und Gurke in Scheiben schneiden, Frühlingszwiebel in Ringe, Nori mit der Schere in Streifen. Vegane Mayo mit der Sriracha verrühren."}, "timer_seconds": 180},
+        {"text": {"en": "Lift the tofu out of the marinade, keep the marinade, and toss the cubes in cornstarch. Fry in hot oil, turning now and then, until every side is golden and crisp. Pour in the leftover marinade for the last thirty seconds so it glazes.", "de": "Den Tofu aus der Marinade heben, Marinade aufbewahren, und die Würfel in Speisestärke wälzen. In heißem Öl braten und ab und zu wenden, bis alle Seiten goldbraun und knusprig sind. Für die letzten dreißig Sekunden die restliche Marinade dazugießen, damit sie glasiert."}, "timer_seconds": 480},
+        {"text": {"en": "Rice into bowls, tofu on one side, edamame, avocado and cucumber around it. Nori, sesame seeds and spring onion over the top, spicy mayo in loose stripes.", "de": "Reis in Schüsseln, Tofu auf eine Seite, Edamame, Avocado und Gurke drumherum. Nori, Sesam und Frühlingszwiebel darüber, die scharfe Mayo in lockeren Streifen obendrauf."}}
+      ]
+    },
+    {
+      "id": "sushi-bowl-pescatarian-medium",
+      "title": {"en": "Tuna And Salmon Poke Bowl", "de": "Poke-Bowl mit Thunfisch und Lachs"},
+      "margin_note": {"en": "make the ponzu first, then everything else", "de": "erst die ponzu, dann alles andere"},
+      "intro": {
+        "en": "Two fish, one dressing: cubes of raw tuna and salmon tossed in a homemade ponzu-style sauce of soy, citrus, mirin and kombu, spooned over rice with edamame, radish and avocado. The half hour the ponzu spends steeping is what makes this a medium.",
+        "de": "Zwei Fische, eine Sauce: rohe Thunfisch- und Lachswürfel in einer selbst gemachten Ponzu aus Soja, Zitrus, Mirin und Kombu, auf Reis mit Edamame, Radieschen und Avocado. Die halbe Stunde, in der die Ponzu zieht, macht aus dem Rezept ein mittleres."
+      },
+      "variant": {"diet": "pescatarian", "effort": "medium"},
+      "contains": ["fish", "soy", "gluten", "alcohol", "added-sugar", "sesame", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["raw", "simmer"],
+      "time_minutes": 60,
+      "servings": 2,
+      "calories_per_serving": 820,
+      "macros": {"protein_g": 47, "carbs_g": 86, "fat_g": 32},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["bowl", "rice", "fresh"],
+      "ingredients": [
+        {"id": "tuna", "amount": 150, "unit": "g", "note": {"en": "sashimi-grade", "de": "Sashimi-Qualität"}},
+        {"id": "salmon", "amount": 150, "unit": "g", "note": {"en": "sashimi-grade, skinless", "de": "Sashimi-Qualität, ohne Haut"}},
+        {"id": "soy-sauce", "amount": 4, "unit": "tbsp"},
+        {"id": "mirin", "amount": 2, "unit": "tbsp"},
+        {"id": "rice-vinegar", "amount": 4, "unit": "tbsp", "note": {"en": "3 for the rice, 1 for the ponzu", "de": "3 für den Reis, 1 für die Ponzu"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "orange-juice", "amount": 3, "unit": "tbsp", "note": {"en": "freshly squeezed", "de": "frisch gepresst"}},
+        {"id": "kombu", "amount": 1, "unit": "piece", "note": {"en": "about 5 cm", "de": "etwa 5 cm"}},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "sushi-rice", "amount": 150, "unit": "g"},
+        {"id": "water", "amount": 200, "unit": "ml"},
+        {"id": "sugar", "amount": 1, "unit": "tbsp"},
+        {"id": "salt", "amount": 1, "unit": "tsp"},
+        {"id": "edamame", "amount": 100, "unit": "g", "note": {"en": "shelled", "de": "geschält"}},
+        {"id": "radish", "amount": 4, "unit": "piece"},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "pickled-ginger", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "The ponzu: warm the mirin in a small pan for a minute to soften its edge, then take it off the heat and add the soy sauce, orange juice, the juice of the lime, a tablespoon of rice vinegar and the kombu. Leave it to steep, then fish the kombu out.", "de": "Die Ponzu: Mirin in einem kleinen Topf eine Minute erwärmen, damit er milder wird, dann vom Herd nehmen und Sojasauce, Orangensaft, den Saft der Limette, einen Esslöffel Reisessig und das Kombu dazugeben. Ziehen lassen, dann das Kombu herausfischen."}, "timer_seconds": 1800},
+        {"text": {"en": "Meanwhile rinse the rice until the water runs nearly clear, cook it with the water in a lidded pot on the lowest heat for twelve minutes, then rest it off the heat with the lid on for ten.", "de": "Währenddessen den Reis waschen, bis das Wasser fast klar bleibt, mit dem Wasser im geschlossenen Topf auf kleinster Stufe zwölf Minuten garen, dann vom Herd nehmen und mit Deckel zehn Minuten stehen lassen."}, "timer_seconds": 1320},
+        {"text": {"en": "Warm the remaining rice vinegar with the sugar and salt until dissolved, fold it through the hot rice and let the rice cool to lukewarm.", "de": "Den restlichen Reisessig mit Zucker und Salz erwärmen, bis sich alles gelöst hat, unter den heißen Reis heben und den Reis lauwarm abkühlen lassen."}},
+        {"text": {"en": "With a very sharp knife, cut the tuna and the salmon into 2 cm cubes. Keep them in separate bowls in the fridge; they take on the dressing at different speeds.", "de": "Thunfisch und Lachs mit einem sehr scharfen Messer in 2 cm große Würfel schneiden. In getrennten Schüsseln im Kühlschrank aufbewahren; sie nehmen das Dressing unterschiedlich schnell an."}},
+        {"text": {"en": "Boil the edamame in salted water for three minutes and drain. Slice the radishes paper thin, the avocado into wedges, the spring onion into rings. Snip the nori into strips and toast the sesame seeds in a dry pan.", "de": "Die Edamame drei Minuten in Salzwasser kochen und abgießen. Radieschen hauchdünn hobeln, Avocado in Spalten, Frühlingszwiebel in Ringe schneiden. Nori mit der Schere in Streifen schneiden und den Sesam in einer trockenen Pfanne rösten."}, "timer_seconds": 180},
+        {"text": {"en": "Ten minutes before you eat, spoon a few tablespoons of ponzu and the sesame oil over each fish and toss gently. Not longer than that: the citrus starts to cure the fish and the texture goes.", "de": "Zehn Minuten vor dem Essen ein paar Esslöffel Ponzu und das Sesamöl über beide Fische geben und vorsichtig mischen. Nicht länger: Die Zitrussäure fängt an, den Fisch zu garen, und die Textur geht verloren."}, "timer_seconds": 600},
+        {"text": {"en": "Rice into bowls, tuna on one side, salmon on the other, edamame, radish and avocado in between. Nori, sesame and spring onion on top, pickled ginger at the edge, the rest of the ponzu in a small bowl for pouring.", "de": "Reis in Schüsseln, Thunfisch auf die eine Seite, Lachs auf die andere, Edamame, Radieschen und Avocado dazwischen. Nori, Sesam und Frühlingszwiebel obendrauf, eingelegter Ingwer an den Rand, die restliche Ponzu in einem Schälchen zum Nachgießen."}}
+      ]
+    },
+    {
+      "id": "sushi-bowl-keto-easy",
+      "title": {"en": "Keto Salmon Sushi Bowl", "de": "Keto-Lachs-Sushi-Bowl"},
+      "margin_note": {"en": "cauliflower rice, lightly tamed", "de": "blumenkohlreis, leicht gezähmt"},
+      "intro": {
+        "en": "Cauliflower rice given a minute in a hot pan, then seasoned with rice vinegar and sesame oil so it behaves like sushi rice, under raw salmon, avocado, cucumber and a chili mayo. It keeps well under twenty grams of carbs and still tastes like the real thing.",
+        "de": "Blumenkohlreis, kurz in der heißen Pfanne geschwenkt und dann mit Reisessig und Sesamöl gewürzt, damit er sich wie Sushireis benimmt, darunter roher Lachs, Avocado, Gurke und eine Chili-Mayo. Bleibt deutlich unter zwanzig Gramm Kohlenhydraten und schmeckt trotzdem nach dem Original."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["fish", "soy", "sesame", "egg", "mustard", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["sauté", "raw"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 640,
+      "macros": {"protein_g": 32, "carbs_g": 15, "fat_g": 50},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["bowl", "light", "quick"],
+      "ingredients": [
+        {"id": "cauliflower-rice", "amount": 400, "unit": "g", "note": {"en": "fresh or frozen", "de": "frisch oder TK"}},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "rice-vinegar", "amount": 2, "unit": "tbsp"},
+        {"id": "salt", "amount": 0.5, "unit": "tsp"},
+        {"id": "salmon", "amount": 250, "unit": "g", "note": {"en": "sashimi-grade, skinless", "de": "Sashimi-Qualität, ohne Haut"}},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "cucumber", "amount": 0.5, "unit": "piece"},
+        {"id": "tamari", "amount": 2, "unit": "tbsp"},
+        {"id": "mayonnaise", "amount": 3, "unit": "tbsp"},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat half the sesame oil in a wide pan over high heat, add the cauliflower rice and toss it until it loses its raw smell but still has bite. Mush is the enemy here. Off the heat, stir in the rice vinegar and salt and spread it on a plate to cool.", "de": "Die Hälfte des Sesamöls in einer weiten Pfanne stark erhitzen, den Blumenkohlreis dazugeben und schwenken, bis er nicht mehr roh riecht, aber noch Biss hat. Matsch ist hier der Feind. Vom Herd nehmen, Reisessig und Salz unterrühren und auf einem Teller ausbreiten zum Abkühlen."}, "timer_seconds": 180},
+        {"text": {"en": "Slice the salmon into finger-thick pieces with a long, sharp knife and keep it cold until the last moment.", "de": "Den Lachs mit einem langen, scharfen Messer in fingerdicke Stücke schneiden und bis zuletzt kalt stellen."}},
+        {"text": {"en": "The chili mayo: mayonnaise, chili flakes, a squeeze of lime and a teaspoon of the tamari, stirred smooth.", "de": "Die Chili-Mayo: Mayonnaise, Chiliflocken, ein Spritzer Limette und ein Teelöffel vom Tamari, glatt gerührt."}},
+        {"text": {"en": "Avocado into slices, cucumber into thin half-moons, spring onion into rings. Snip the nori into strips and toast the sesame seeds in a dry pan until golden.", "de": "Avocado in Scheiben, Gurke in dünne Halbmonde, Frühlingszwiebel in Ringe schneiden. Nori mit der Schere in Streifen schneiden und den Sesam in einer trockenen Pfanne goldbraun rösten."}},
+        {"text": {"en": "Cauliflower rice into bowls, salmon fanned on top, avocado and cucumber alongside. Nori, sesame and spring onion over everything, chili mayo dotted on, the rest of the tamari and sesame oil drizzled over, the other lime half squeezed at the table.", "de": "Blumenkohlreis in Schüsseln, den Lachs fächerförmig darauf, Avocado und Gurke daneben. Nori, Sesam und Frühlingszwiebel über alles, die Chili-Mayo in Tupfen, restliches Tamari und Sesamöl darüberträufeln, die zweite Limettenhälfte am Tisch ausdrücken."}}
+      ]
+    },
+    {
+      "id": "sushi-bowl-gluten-free-easy",
+      "title": {"en": "Seared Salmon Sushi Bowl", "de": "Sushi-Bowl mit gebratenem Lachs"},
+      "margin_note": {"en": "tamari does the soy sauce job", "de": "tamari übernimmt den job der sojasauce"},
+      "intro": {
+        "en": "Sushi rice, a salmon fillet seared skin-side down until it crackles, edamame, avocado and carrot ribbons, with a tamari-ginger dressing instead of soy sauce, which is quietly wheat-based. Reach for certified gluten-free tamari, pickled ginger and wasabi; the rest of the bowl was never the problem.",
+        "de": "Sushireis, ein Lachsfilet auf der Haut gebraten, bis sie knistert, Edamame, Avocado und Karottenstreifen, dazu ein Tamari-Ingwer-Dressing statt Sojasauce, die heimlich auf Weizen basiert. Nimm zertifiziert glutenfreies Tamari, eingelegten Ingwer und Wasabi; der Rest der Bowl war nie das Problem."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["fish", "soy", "sesame", "mustard", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 850,
+      "macros": {"protein_g": 42, "carbs_g": 76, "fat_g": 42},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["bowl", "rice", "weeknight"],
+      "ingredients": [
+        {"id": "sushi-rice", "amount": 150, "unit": "g"},
+        {"id": "water", "amount": 200, "unit": "ml"},
+        {"id": "rice-vinegar", "amount": 3, "unit": "tbsp"},
+        {"id": "sugar", "amount": 1, "unit": "tbsp"},
+        {"id": "salt", "amount": 1, "unit": "tsp"},
+        {"id": "salmon", "amount": 250, "unit": "g", "note": {"en": "two small fillets, skin on", "de": "zwei kleine Filets, mit Haut"}},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "tamari", "amount": 3, "unit": "tbsp", "note": {"en": "certified gluten-free", "de": "zertifiziert glutenfrei"}},
+        {"id": "ginger", "amount": 1, "unit": "piece", "note": {"en": "thumb-sized", "de": "daumengroß"}},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "edamame", "amount": 100, "unit": "g", "note": {"en": "shelled", "de": "geschält"}},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "carrot", "amount": 1, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "pickled-ginger", "amount": 2, "unit": "tbsp", "note": {"en": "check the label", "de": "Etikett prüfen"}},
+        {"id": "wasabi", "amount": 1, "unit": "tsp", "note": {"en": "certified gluten-free", "de": "zertifiziert glutenfrei"}}
+      ],
+      "steps": [
+        {"text": {"en": "Rinse the rice until the water runs nearly clear. Cook it with the water in a lidded pot on the lowest heat for twelve minutes, then rest it off the heat with the lid on for ten.", "de": "Den Reis waschen, bis das Wasser fast klar bleibt. Mit dem Wasser im geschlossenen Topf auf kleinster Stufe zwölf Minuten garen, dann vom Herd nehmen und mit Deckel zehn Minuten stehen lassen."}, "timer_seconds": 1320},
+        {"text": {"en": "Warm the rice vinegar, sugar and salt until dissolved, fold through the hot rice and let it cool to lukewarm.", "de": "Reisessig, Zucker und Salz erwärmen, bis sich alles gelöst hat, unter den heißen Reis heben und lauwarm abkühlen lassen."}},
+        {"text": {"en": "The dressing: tamari, finely grated ginger, sesame oil and the juice of half the lime, stirred together.", "de": "Das Dressing: Tamari, fein geriebener Ingwer, Sesamöl und der Saft einer halben Limette, verrührt."}},
+        {"text": {"en": "Boil the edamame in salted water for three minutes, drain. Shave the carrot into ribbons with a peeler, slice the avocado, snip the nori into strips, toast the sesame seeds in a dry pan.", "de": "Die Edamame drei Minuten in Salzwasser kochen, abgießen. Die Karotte mit dem Sparschäler in Streifen hobeln, Avocado in Scheiben schneiden, Nori mit der Schere in Streifen schneiden, Sesam in einer trockenen Pfanne rösten."}, "timer_seconds": 180},
+        {"text": {"en": "Pat the salmon dry and salt the skin. Heat the oil in a pan until it shimmers, lay the fillets in skin-side down, press them flat with a spatula for ten seconds and leave them until the skin is crisp and the flesh has turned opaque halfway up. Flip for one more minute, then rest and break into large flakes.", "de": "Den Lachs trocken tupfen und die Haut salzen. Öl in einer Pfanne erhitzen, bis es flimmert, die Filets mit der Haut nach unten einlegen, zehn Sekunden mit dem Pfannenwender flach drücken und liegen lassen, bis die Haut knusprig ist und das Fleisch bis zur Hälfte hell geworden ist. Wenden, noch eine Minute, dann ruhen lassen und in große Stücke zerteilen."}, "timer_seconds": 240},
+        {"text": {"en": "Rice into bowls, salmon flakes with their crisp skin on top, edamame, carrot and avocado around them. Nori, sesame and the dressing over everything, pickled ginger and wasabi on the side, the other lime half for squeezing.", "de": "Reis in Schüsseln, Lachsstücke mit der knusprigen Haut obendrauf, Edamame, Karotte und Avocado drumherum. Nori, Sesam und das Dressing über alles, eingelegter Ingwer und Wasabi daneben, die zweite Limettenhälfte zum Ausdrücken."}}
+      ]
+    }
+  ]
+}

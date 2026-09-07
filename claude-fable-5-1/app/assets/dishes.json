@@ -1,0 +1,1133 @@
+{
+  "schema_version": 1,
+  "version": "2026.09.02",
+  "dishes": [
+    {
+      "id": "alfredo",
+      "name": {
+        "en": "Alfredo",
+        "de": "Alfredo"
+      },
+      "hero_text": {
+        "en": "A Roman restaurant trick that crossed the Atlantic and came back wearing cream. Butter, cheese and the starchy water nobody used to save, turned into something that clings to every ribbon.",
+        "de": "Ein römischer Restauranttrick, der über den Atlantik ging und mit Sahne zurückkam. Butter, Käse und das stärkehaltige Nudelwasser, das früher niemand aufgehoben hat, werden zu etwas, das an jeder Nudel hängen bleibt."
+      },
+      "caption": {
+        "en": "twirl it while it's hot, the sauce waits for no one",
+        "de": "sofort auf die gabel, die sauce wartet auf niemanden"
+      },
+      "stripe_color": "#BFA98F",
+      "variant_ids": [
+        "alfredo-classic-easy",
+        "alfredo-vegan-easy",
+        "alfredo-gluten-free-easy",
+        "alfredo-keto-easy",
+        "alfredo-halal-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "italian-american"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "comfort",
+        "quick"
+      ]
+    },
+    {
+      "id": "bibimbap",
+      "name": {
+        "en": "Bibimbap",
+        "de": "Bibimbap"
+      },
+      "hero_text": {
+        "en": "Rice at the bottom, vegetables arranged in neat little piles on top, meat, a fried egg with a runny yolk, a spoon of chili paste. Then you destroy the arrangement with your spoon, which is the whole point.",
+        "de": "Unten Reis, obendrauf Gemüse in ordentlichen kleinen Häufchen, Fleisch, ein Spiegelei mit flüssigem Dotter, ein Löffel Chilipaste. Dann zerstörst du die ganze Ordnung mit dem Löffel, und genau darum geht es."
+      },
+      "caption": {
+        "en": "arrange it, admire it, mix it",
+        "de": "anrichten, bewundern, umrühren"
+      },
+      "stripe_color": "#B5654A",
+      "variant_ids": [
+        "bibimbap-classic-medium",
+        "bibimbap-classic-easy",
+        "bibimbap-vegan-medium",
+        "bibimbap-gluten-free-medium",
+        "bibimbap-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "korean"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "bowl",
+        "rice",
+        "fresh"
+      ]
+    },
+    {
+      "id": "bircher-muesli",
+      "name": {
+        "en": "Bircher Muesli",
+        "de": "Bircher Müsli"
+      },
+      "hero_text": {
+        "en": "A Zurich doctor's idea of breakfast from around 1900 that never went out of fashion: oats softened overnight, a whole grated apple, something creamy, something crunchy. The bowl you stir together half asleep and thank yourself for in the morning.",
+        "de": "Die Frühstücksidee eines Zürcher Arztes von etwa 1900, die nie aus der Mode kam: über Nacht eingeweichte Haferflocken, ein ganzer geriebener Apfel, etwas Cremiges, etwas Knuspriges. Die Schüssel, die du halb im Schlaf zusammenrührst und für die du dir morgens dankbar bist."
+      },
+      "caption": {
+        "en": "fridge door, 7 a.m., spoon already in",
+        "de": "kühlschranktür, 7 uhr, löffel schon drin"
+      },
+      "stripe_color": "#D9A69A",
+      "variant_ids": [
+        "bircher-muesli-classic-easy",
+        "bircher-muesli-vegan-easy",
+        "bircher-muesli-keto-easy",
+        "bircher-muesli-gluten-free-easy"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "swiss"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "sweet",
+        "fresh",
+        "light",
+        "meal-prep"
+      ]
+    },
+    {
+      "id": "burger",
+      "name": {
+        "en": "Burger",
+        "de": "Burger"
+      },
+      "hero_text": {
+        "en": "A soft bun, a patty with a real crust, something sharp, something cold and crunchy. Two hands, a stack of napkins, no cutlery in sight.",
+        "de": "Ein weiches Brötchen, ein Patty mit richtiger Kruste, etwas Säure, etwas Kaltes und Knackiges. Zwei Hände, ein Stapel Servietten, kein Besteck weit und breit."
+      },
+      "caption": {
+        "en": "diner counter, ketchup on your knuckles",
+        "de": "diner-theke, ketchup an den fingern"
+      },
+      "stripe_color": "#A67B5B",
+      "variant_ids": [
+        "burger-classic-easy",
+        "burger-halal-easy",
+        "burger-vegetarian-medium",
+        "burger-vegan-medium",
+        "burger-gluten-free-easy",
+        "burger-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "street-food",
+        "bread",
+        "grilled"
+      ]
+    },
+    {
+      "id": "caesar-salad",
+      "name": {
+        "en": "Caesar Salad",
+        "de": "Caesar Salad"
+      },
+      "hero_text": {
+        "en": "Invented in Tijuana, adopted by every hotel bar in America, still the best argument for eating lettuce. Cold crisp romaine, a dressing with anchovy and lemon in it, croutons that actually crunch, cheese over everything.",
+        "de": "In Tijuana erfunden, von jeder Hotelbar Amerikas adoptiert und immer noch das beste Argument für Salat. Kalter, knackiger Römersalat, ein Dressing mit Sardellen und Zitrone, Croutons, die wirklich knacken, Käse über alles."
+      },
+      "caption": {
+        "en": "big bowl, cold leaves, more pepper",
+        "de": "große schüssel, kalte blätter, mehr pfeffer"
+      },
+      "stripe_color": "#7A8C6E",
+      "variant_ids": [
+        "caesar-salad-classic-easy",
+        "caesar-salad-vegetarian-easy",
+        "caesar-salad-vegan-easy",
+        "caesar-salad-gluten-free-easy",
+        "caesar-salad-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "salad",
+        "fresh"
+      ]
+    },
+    {
+      "id": "carbonara",
+      "name": {
+        "en": "Carbonara",
+        "de": "Carbonara"
+      },
+      "hero_text": {
+        "en": "Rome's case for doing less: pasta, cured pork, egg, sharp cheese and an unreasonable amount of black pepper. The sauce happens in the seconds after the pan leaves the heat.",
+        "de": "Roms Plädoyer fürs Weglassen: Pasta, gepökeltes Schweinefleisch, Ei, kräftiger Käse und unanständig viel schwarzer Pfeffer. Die Sauce entsteht in den Sekunden, nachdem die Pfanne vom Herd kommt."
+      },
+      "caption": {
+        "en": "no cream. we've talked about this.",
+        "de": "keine sahne. wir hatten das thema."
+      },
+      "stripe_color": "#D8B25C",
+      "variant_ids": [
+        "carbonara-classic-easy",
+        "carbonara-halal-easy",
+        "carbonara-vegetarian-easy",
+        "carbonara-vegan-medium",
+        "carbonara-gluten-free-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "pasta",
+        "comfort",
+        "weeknight"
+      ]
+    },
+    {
+      "id": "chili",
+      "name": {
+        "en": "Chili",
+        "de": "Chili"
+      },
+      "hero_text": {
+        "en": "A pot of dark red comfort that tastes better tomorrow. Simmered slowly, spiced without shyness, ladled over whatever is around, and argued about endlessly by people who all believe theirs is the real one.",
+        "de": "Ein Topf dunkelrote Wohltat, der morgen noch besser schmeckt. Langsam geköchelt, ohne Scheu gewürzt, über alles gelöffelt, was gerade da ist, und endlos diskutiert von Leuten, die alle glauben, ihres sei das einzig wahre."
+      },
+      "caption": {
+        "en": "second day, bigger bowl",
+        "de": "zweiter tag, größere schüssel"
+      },
+      "stripe_color": "#B5654A",
+      "variant_ids": [
+        "chili-classic-medium",
+        "chili-vegan-medium",
+        "chili-keto-medium",
+        "chili-halal-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "tex-mex"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "spicy",
+        "one-pot",
+        "hearty"
+      ]
+    },
+    {
+      "id": "doener",
+      "name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero_text": {
+        "en": "Berlin's late-night love letter to Istanbul. Warm bread, something charred and spiced, a heap of cabbage and the garlic sauce that makes it all forgivable.",
+        "de": "Berlins nächtlicher Liebesbrief an Istanbul. Warmes Brot, etwas Angeröstetes mit Gewürzen, ein Berg Kraut und die Knoblauchsauce, die alles verzeiht."
+      },
+      "caption": {
+        "en": "corner shop, 2 a.m., extra sauce",
+        "de": "imbiss, 2 uhr nachts, extra sauce"
+      },
+      "stripe_color": "#C9A27E",
+      "variant_ids": [
+        "doener-classic-easy",
+        "doener-classic-medium",
+        "doener-vegan-easy",
+        "doener-vegetarian-medium",
+        "doener-keto-easy",
+        "doener-halal-medium",
+        "doener-gluten-free-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish",
+        "german"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "street-food",
+        "bread",
+        "grilled"
+      ]
+    },
+    {
+      "id": "falafel",
+      "name": {
+        "en": "Falafel",
+        "de": "Falafel"
+      },
+      "hero_text": {
+        "en": "Chickpeas, a small forest of herbs and a pan of very hot oil. Crisp outside, green and fluffy inside, and somehow better from a paper bag on the street than from any plate.",
+        "de": "Kichererbsen, ein kleiner Wald aus Kräutern und ein Topf sehr heißes Öl. Außen knusprig, innen grün und fluffig, und aus der Papiertüte auf der Straße irgendwie immer besser als von jedem Teller."
+      },
+      "caption": {
+        "en": "green inside, that's how you know",
+        "de": "innen grün, daran erkennst du sie"
+      },
+      "stripe_color": "#7A8C6E",
+      "variant_ids": [
+        "falafel-classic-easy",
+        "falafel-classic-medium",
+        "falafel-classic-hard",
+        "falafel-gluten-free-medium",
+        "falafel-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "levantine"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "street-food",
+        "bread",
+        "fresh"
+      ]
+    },
+    {
+      "id": "fried-rice",
+      "name": {
+        "en": "Fried Rice",
+        "de": "Gebratener Reis"
+      },
+      "hero_text": {
+        "en": "The dish that exists because yesterday's rice was too good to throw away. A screaming-hot pan, a few eggs, whatever is in the drawer, and ten minutes of not overthinking it.",
+        "de": "Das Gericht, das es nur gibt, weil der Reis von gestern zu schade zum Wegwerfen war. Eine glühend heiße Pfanne, ein paar Eier, was das Gemüsefach hergibt, und zehn Minuten, in denen du nicht zu viel nachdenkst."
+      },
+      "caption": {
+        "en": "leftover rice, tuesday, the good pan",
+        "de": "reis von gestern, dienstag, die gute pfanne"
+      },
+      "stripe_color": "#D8B25C",
+      "variant_ids": [
+        "fried-rice-classic-easy",
+        "fried-rice-classic-medium",
+        "fried-rice-vegan-easy",
+        "fried-rice-keto-easy",
+        "fried-rice-pescatarian-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "chinese"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "rice",
+        "quick",
+        "weeknight"
+      ]
+    },
+    {
+      "id": "green-curry",
+      "name": {
+        "en": "Green Curry",
+        "de": "Grünes Curry"
+      },
+      "hero_text": {
+        "en": "Thai green curry is a bowl of contradictions that get along: fierce chili and cooling coconut, sweet and salty and sour in the same spoonful, basil thrown in at the last second like an afterthought that was the plan all along.",
+        "de": "Grünes Thai-Curry ist eine Schüssel voller Gegensätze, die sich prächtig verstehen: scharfe Chili und kühlende Kokosmilch, süß, salzig und sauer im selben Löffel, Basilikum in letzter Sekunde dazu, als wäre es ein Nachgedanke, dabei war es von Anfang an der Plan."
+      },
+      "caption": {
+        "en": "coconut cream splitting, on purpose",
+        "de": "kokoscreme, die sich trennt, mit absicht"
+      },
+      "stripe_color": "#7A8C6E",
+      "variant_ids": [
+        "green-curry-classic-easy",
+        "green-curry-vegan-easy",
+        "green-curry-pescatarian-medium",
+        "green-curry-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "thai"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "spicy",
+        "comfort",
+        "one-pot"
+      ]
+    },
+    {
+      "id": "gulasch",
+      "name": {
+        "en": "Goulash",
+        "de": "Gulasch"
+      },
+      "hero_text": {
+        "en": "Paprika, onions and time. A pot that started on the Hungarian plains, moved into every German kitchen and never left. The sauce should be dark, glossy and slightly more than you need.",
+        "de": "Paprika, Zwiebeln und Zeit. Ein Topf, der in der ungarischen Puszta angefangen hat, in jede deutsche Küche eingezogen ist und nie wieder ausgezogen. Die Sauce darf dunkel, glänzend und ein bisschen zu viel sein."
+      },
+      "caption": {
+        "en": "sunday, lid on, the whole flat smells right",
+        "de": "sonntag, deckel drauf, die ganze wohnung riecht richtig"
+      },
+      "stripe_color": "#9C6B7D",
+      "variant_ids": [
+        "gulasch-classic-hard",
+        "gulasch-halal-hard",
+        "gulasch-vegan-medium",
+        "gulasch-classic-medium",
+        "gulasch-keto-medium"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "hungarian",
+        "german"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "hearty",
+        "one-pot"
+      ]
+    },
+    {
+      "id": "hummus-plate",
+      "name": {
+        "en": "Hummus Plate",
+        "de": "Hummus-Teller"
+      },
+      "hero_text": {
+        "en": "A wide plate, a thick swirl of hummus with a puddle of olive oil in the middle, and whatever is around to scoop it up with. Lunch in Beirut, dinner in any kitchen where nobody feels like cooking.",
+        "de": "Ein großer Teller, ein dicker Schwung Hummus mit einer Pfütze Olivenöl in der Mitte und alles, was gerade da ist, zum Dippen. In Beirut ein Mittagessen, bei uns das Abendessen, wenn niemand kochen will."
+      },
+      "caption": {
+        "en": "warm pita, cold plate, too much olive oil",
+        "de": "warmes pita, kalter teller, zu viel olivenöl"
+      },
+      "stripe_color": "#BFA98F",
+      "variant_ids": [
+        "hummus-plate-classic-easy",
+        "hummus-plate-classic-hard",
+        "hummus-plate-keto-easy"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "levantine"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "lunch",
+        "snack"
+      ],
+      "tags": [
+        "fresh",
+        "light",
+        "meal-prep"
+      ]
+    },
+    {
+      "id": "kaesespaetzle",
+      "name": {
+        "en": "Käsespätzle",
+        "de": "Käsespätzle"
+      },
+      "hero_text": {
+        "en": "Swabia's answer to mac and cheese, and the older, better one. Ragged egg noodles, layers of melting alpine cheese and a tangle of onions fried until sweet and crisp.",
+        "de": "Die schwäbische Antwort auf Mac and Cheese, und die ältere, bessere. Ungleichmäßige Eiernudeln, Schichten aus schmelzendem Bergkäse und ein Haufen Zwiebeln, gebraten, bis sie süß und knusprig sind."
+      },
+      "caption": {
+        "en": "alpine hut, foggy windows, second helping",
+        "de": "berghütte, beschlagene fenster, nachschlag"
+      },
+      "stripe_color": "#D8B25C",
+      "variant_ids": [
+        "kaesespaetzle-classic-medium",
+        "kaesespaetzle-classic-easy",
+        "kaesespaetzle-vegan-medium",
+        "kaesespaetzle-gluten-free-medium",
+        "kaesespaetzle-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german",
+        "swabian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "pasta",
+        "hearty"
+      ]
+    },
+    {
+      "id": "koefte",
+      "name": {
+        "en": "Köfte",
+        "de": "Köfte"
+      },
+      "hero_text": {
+        "en": "Minced meat, grated onion and a lot of parsley, pressed into flat ovals and cooked until the outside is dark and the inside stays soft. Every Turkish family has its own version and every one of them is right.",
+        "de": "Hackfleisch, geriebene Zwiebel und viel Petersilie, zu flachen Ovalen gedrückt und gebraten, bis sie außen dunkel sind und innen weich bleiben. Jede türkische Familie hat ihre eigene Version, und jede davon ist richtig."
+      },
+      "caption": {
+        "en": "grill marks, sumac onions, bread underneath",
+        "de": "grillstreifen, sumach-zwiebeln, brot darunter"
+      },
+      "stripe_color": "#A67B5B",
+      "variant_ids": [
+        "koefte-classic-easy",
+        "koefte-halal-easy",
+        "koefte-vegan-medium",
+        "koefte-vegetarian-medium",
+        "koefte-gluten-free-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "grilled",
+        "street-food",
+        "family"
+      ]
+    },
+    {
+      "id": "lahmacun",
+      "name": {
+        "en": "Lahmacun",
+        "de": "Lahmacun"
+      },
+      "hero_text": {
+        "en": "A dough rolled thinner than seems possible, a spiced paste of tomato, pepper and minced meat scraped over it almost transparently, baked hard and fast. Then parsley, lemon and sumac onions, rolled up and eaten standing.",
+        "de": "Ein Teig, dünner ausgerollt, als du für möglich hältst, darauf hauchdünn eine würzige Paste aus Tomate, Paprika und Hackfleisch, kurz und heiß gebacken. Dann Petersilie, Zitrone und Sumach-Zwiebeln, aufrollen und im Stehen essen."
+      },
+      "caption": {
+        "en": "thin as paper, rolled with lemon",
+        "de": "dünn wie papier, mit zitrone gerollt"
+      },
+      "stripe_color": "#C27C5A",
+      "variant_ids": [
+        "lahmacun-classic-medium",
+        "lahmacun-vegan-medium",
+        "lahmacun-gluten-free-hard",
+        "lahmacun-halal-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "street-food",
+        "bread",
+        "baked"
+      ]
+    },
+    {
+      "id": "lasagne",
+      "name": {
+        "en": "Lasagne",
+        "de": "Lasagne"
+      },
+      "hero_text": {
+        "en": "Layers of pasta, something slow and red, something white and soft, baked until the corners go dark and the middle barely holds. The dish that makes a kitchen smell like Sunday.",
+        "de": "Schichten aus Pasta, etwas Langsames, Rotes, etwas Weißes, Weiches, gebacken, bis die Ecken dunkel werden und die Mitte gerade so hält. Das Gericht, nach dem eine Küche wie Sonntag riecht."
+      },
+      "caption": {
+        "en": "the corner piece is the best piece, don't argue",
+        "de": "das eckstück ist das beste stück, keine diskussion"
+      },
+      "stripe_color": "#B5654A",
+      "variant_ids": [
+        "lasagne-classic-hard",
+        "lasagne-classic-medium",
+        "lasagne-vegetarian-medium",
+        "lasagne-vegan-hard",
+        "lasagne-gluten-free-hard",
+        "lasagne-keto-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "baked",
+        "comfort",
+        "family",
+        "pasta"
+      ]
+    },
+    {
+      "id": "mercimek",
+      "name": {
+        "en": "Mercimek Çorbası",
+        "de": "Mercimek Çorbası"
+      },
+      "hero_text": {
+        "en": "The soup every Turkish kitchen keeps on standby: red lentils cooked down to velvet with onion, carrot and a little tomato, finished with lemon and a spoon of chili butter. It costs almost nothing and fixes most things.",
+        "de": "Die Suppe, die in jeder türkischen Küche auf Abruf steht: rote Linsen, mit Zwiebel, Karotte und etwas Tomate samtig gekocht, am Ende Zitrone und ein Löffel Chilibutter. Kostet fast nichts und richtet fast alles."
+      },
+      "caption": {
+        "en": "lemon wedge, chili butter, second bowl",
+        "de": "zitronenspalte, chilibutter, zweite schüssel"
+      },
+      "stripe_color": "#D8B25C",
+      "variant_ids": [
+        "mercimek-classic-easy",
+        "mercimek-classic-medium",
+        "mercimek-gluten-free-easy"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "comfort",
+        "one-pot"
+      ]
+    },
+    {
+      "id": "minestrone",
+      "name": {
+        "en": "Minestrone",
+        "de": "Minestrone"
+      },
+      "hero_text": {
+        "en": "The soup that follows the seasons and the vegetable drawer. Beans, something green, something starchy, a long slow simmer, and cheese on top because it is still Italy.",
+        "de": "Die Suppe, die sich nach der Jahreszeit und dem Gemüsefach richtet. Bohnen, etwas Grünes, etwas Sättigendes, ein langes, ruhiges Köcheln, und Käse obendrauf, weil es eben doch Italien ist."
+      },
+      "caption": {
+        "en": "whatever the drawer gives, cooked slow",
+        "de": "was das gemüsefach hergibt, langsam gekocht"
+      },
+      "stripe_color": "#7A8C6E",
+      "variant_ids": [
+        "minestrone-classic-easy",
+        "minestrone-vegan-easy",
+        "minestrone-classic-medium",
+        "minestrone-keto-easy"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "one-pot",
+        "comfort"
+      ]
+    },
+    {
+      "id": "miso-soup",
+      "name": {
+        "en": "Miso Soup",
+        "de": "Misosuppe"
+      },
+      "hero_text": {
+        "en": "The quiet start to a Japanese morning and the cure for most evenings. A broth that takes minutes, a spoon of fermented soybean paste, and whatever soft things you drop in.",
+        "de": "Der leise Anfang eines japanischen Morgens und die Rettung der meisten Abende. Eine Brühe, die Minuten braucht, ein Löffel fermentierte Sojabohnenpaste und was du sonst noch Weiches hineingibst."
+      },
+      "caption": {
+        "en": "steam, a spoon, no hurry",
+        "de": "dampf, ein löffel, keine eile"
+      },
+      "stripe_color": "#6F8F8A",
+      "variant_ids": [
+        "miso-soup-classic-easy",
+        "miso-soup-vegan-easy",
+        "miso-soup-pescatarian-medium"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "japanese"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "breakfast",
+        "snack",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "light",
+        "quick"
+      ]
+    },
+    {
+      "id": "pad-thai",
+      "name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero_text": {
+        "en": "Bangkok's street-corner stir-fry: soft rice noodles tossed through a sweet-sour tamarind sauce, egg, crushed peanuts and a squeeze of lime. Fast, loud and better with the windows open.",
+        "de": "Bangkoks Pfannengericht von der Straßenecke: weiche Reisnudeln in süßsaurer Tamarindensauce, Ei, zerstoßene Erdnüsse und ein Spritzer Limette. Schnell, laut und am besten bei offenem Fenster."
+      },
+      "caption": {
+        "en": "wok, plastic stool, extra lime",
+        "de": "wok, plastikhocker, extra limette"
+      },
+      "stripe_color": "#C9A27E",
+      "variant_ids": [
+        "pad-thai-classic-medium",
+        "pad-thai-vegan-easy",
+        "pad-thai-halal-easy",
+        "pad-thai-keto-easy",
+        "pad-thai-gluten-free-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "thai"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "noodles",
+        "street-food"
+      ]
+    },
+    {
+      "id": "pancakes",
+      "name": {
+        "en": "Pancakes",
+        "de": "Pancakes"
+      },
+      "hero_text": {
+        "en": "Thick, soft, a little tangy, stacked too high. The American breakfast that turns a Sunday into an event and makes butter and syrup look like a food group.",
+        "de": "Dick, weich, ein bisschen säuerlich und viel zu hoch gestapelt. Das amerikanische Frühstück, das aus einem Sonntag ein Ereignis macht und Butter und Sirup wie eine Lebensmittelgruppe aussehen lässt."
+      },
+      "caption": {
+        "en": "sunday, still in pajamas, syrup everywhere",
+        "de": "sonntag, noch im schlafanzug, überall sirup"
+      },
+      "stripe_color": "#C9A27E",
+      "variant_ids": [
+        "pancakes-classic-easy",
+        "pancakes-vegan-easy",
+        "pancakes-gluten-free-easy",
+        "pancakes-keto-easy",
+        "pancakes-classic-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "sweet",
+        "comfort",
+        "family"
+      ]
+    },
+    {
+      "id": "pizza-margherita",
+      "name": {
+        "en": "Pizza Margherita",
+        "de": "Pizza Margherita"
+      },
+      "hero_text": {
+        "en": "Tomato, mozzarella, basil and a crust with some character. The pizza that proves three toppings are plenty when the base is right.",
+        "de": "Tomate, Mozzarella, Basilikum und ein Boden mit Charakter. Die Pizza, die beweist, dass drei Beläge völlig reichen, wenn der Teig stimmt."
+      },
+      "caption": {
+        "en": "blistered edges, torn basil, no delivery app",
+        "de": "blasen am rand, gezupftes basilikum, keine lieferapp"
+      },
+      "stripe_color": "#C27C5A",
+      "variant_ids": [
+        "pizza-margherita-classic-medium",
+        "pizza-margherita-classic-easy",
+        "pizza-margherita-vegan-medium",
+        "pizza-margherita-gluten-free-medium",
+        "pizza-margherita-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "baked",
+        "bread",
+        "family"
+      ]
+    },
+    {
+      "id": "porridge",
+      "name": {
+        "en": "Porridge",
+        "de": "Porridge"
+      },
+      "hero_text": {
+        "en": "Oats, liquid, salt and a low flame. The most forgiving breakfast there is, and the one you'll still be making in thirty years.",
+        "de": "Hafer, Flüssigkeit, Salz und eine kleine Flamme. Das gnädigste Frühstück überhaupt, und das, was du in dreißig Jahren immer noch kochen wirst."
+      },
+      "caption": {
+        "en": "grey morning, warm bowl, spoon already in",
+        "de": "grauer morgen, warme schüssel, löffel steckt schon drin"
+      },
+      "stripe_color": "#BFA98F",
+      "variant_ids": [
+        "porridge-classic-easy",
+        "porridge-vegan-easy",
+        "porridge-gluten-free-easy",
+        "porridge-keto-easy",
+        "porridge-classic-medium"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "british"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        "comfort",
+        "sweet",
+        "quick"
+      ]
+    },
+    {
+      "id": "ramen",
+      "name": {
+        "en": "Ramen",
+        "de": "Ramen"
+      },
+      "hero_text": {
+        "en": "A bowl of hot broth that took somebody hours, springy noodles, a soft egg, and the hush of a counter where nobody talks. Ramen is patience you can drink.",
+        "de": "Eine Schale heiße Brühe, in der Stunden stecken, bissfeste Nudeln, ein weiches Ei und die Stille an einer Theke, an der niemand redet. Ramen ist Geduld zum Trinken."
+      },
+      "caption": {
+        "en": "counter seat, steam on the glasses",
+        "de": "thekenplatz, beschlagene brille"
+      },
+      "stripe_color": "#8A9BA8",
+      "variant_ids": [
+        "ramen-classic-hard",
+        "ramen-classic-easy",
+        "ramen-vegan-medium",
+        "ramen-gluten-free-medium",
+        "ramen-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "japanese"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "noodles",
+        "comfort"
+      ]
+    },
+    {
+      "id": "risotto",
+      "name": {
+        "en": "Risotto",
+        "de": "Risotto"
+      },
+      "hero_text": {
+        "en": "Rice that gets stirred into something creamy without a drop of cream. Twenty minutes at the stove, a ladle in one hand, a glass of something in the other, and it's done when it's done.",
+        "de": "Reis, der durch Rühren cremig wird, ohne einen Tropfen Sahne. Zwanzig Minuten am Herd, eine Kelle in der einen Hand, ein Glas in der anderen, und fertig ist es, wenn es fertig ist."
+      },
+      "caption": {
+        "en": "the wave test: shake the pan, it should ripple",
+        "de": "die wellenprobe: pfanne rütteln, es muss schwappen"
+      },
+      "stripe_color": "#D8B25C",
+      "variant_ids": [
+        "risotto-classic-medium",
+        "risotto-vegan-medium",
+        "risotto-pescatarian-hard",
+        "risotto-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "rice",
+        "comfort",
+        "one-pot"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero_text": {
+        "en": "Eggs poached in a pan of peppers and tomatoes cooked down soft and sweet, spooned up with bread straight from the pan. Breakfast in Tel Aviv, dinner in Tunis, and whatever meal you need it to be in your kitchen.",
+        "de": "Eier, pochiert in einer Pfanne voll Paprika und Tomaten, die weich und süß eingekocht sind, direkt aus der Pfanne mit Brot aufgetunkt. Frühstück in Tel Aviv, Abendessen in Tunis, und in deiner Küche die Mahlzeit, die du gerade brauchst."
+      },
+      "caption": {
+        "en": "one pan, yolks still soft",
+        "de": "eine pfanne, das eigelb noch weich"
+      },
+      "stripe_color": "#B5654A",
+      "variant_ids": [
+        "shakshuka-classic-easy",
+        "shakshuka-vegan-easy",
+        "shakshuka-halal-medium",
+        "shakshuka-keto-easy"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "north-african",
+        "levantine"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "tags": [
+        "one-pot",
+        "comfort",
+        "spicy"
+      ]
+    },
+    {
+      "id": "sushi-bowl",
+      "name": {
+        "en": "Sushi Bowl",
+        "de": "Sushi Bowl"
+      },
+      "hero_text": {
+        "en": "Everything you love about sushi, unrolled into a bowl. Seasoned rice still faintly warm, something cold and glossy on top, and no bamboo mat anywhere in sight.",
+        "de": "Alles, was du an Sushi magst, ausgerollt in eine Schüssel. Gewürzter Reis, noch leicht warm, obendrauf etwas Kaltes, Glänzendes, und weit und breit keine Bambusmatte."
+      },
+      "caption": {
+        "en": "chopsticks optional, napkin mandatory",
+        "de": "stäbchen optional, serviette pflicht"
+      },
+      "stripe_color": "#D9A69A",
+      "variant_ids": [
+        "sushi-bowl-classic-easy",
+        "sushi-bowl-vegan-easy",
+        "sushi-bowl-pescatarian-medium",
+        "sushi-bowl-keto-easy",
+        "sushi-bowl-gluten-free-easy"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "japanese"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "bowl",
+        "rice",
+        "fresh"
+      ]
+    },
+    {
+      "id": "tiramisu",
+      "name": {
+        "en": "Tiramisù",
+        "de": "Tiramisù"
+      },
+      "hero_text": {
+        "en": "Coffee-soaked biscuits, a cloud of mascarpone, a dusting of cocoa. The dessert every Italian nonna claims she invented, and every one of them is right.",
+        "de": "Kaffeegetränkte Löffelbiskuits, eine Wolke aus Mascarpone, ein Hauch Kakao. Das Dessert, das jede italienische Nonna erfunden haben will, und alle haben recht."
+      },
+      "caption": {
+        "en": "second helping, no witnesses",
+        "de": "nachschlag, keine zeugen"
+      },
+      "stripe_color": "#A67B5B",
+      "variant_ids": [
+        "tiramisu-classic-medium",
+        "tiramisu-classic-easy",
+        "tiramisu-vegan-medium",
+        "tiramisu-gluten-free-medium",
+        "tiramisu-keto-medium"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "dessert"
+      ],
+      "tags": [
+        "sweet"
+      ]
+    }
+  ]
+}

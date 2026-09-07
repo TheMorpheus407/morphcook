@@ -1,0 +1,222 @@
+{
+  "dish": {
+    "id": "pancakes",
+    "name": {"en": "Pancakes", "de": "Pancakes"},
+    "hero_text": {
+      "en": "Thick, soft, a little tangy, stacked too high. The American breakfast that turns a Sunday into an event and makes butter and syrup look like a food group.",
+      "de": "Dick, weich, ein bisschen säuerlich und viel zu hoch gestapelt. Das amerikanische Frühstück, das aus einem Sonntag ein Ereignis macht und Butter und Sirup wie eine Lebensmittelgruppe aussehen lässt."
+    },
+    "caption": {"en": "sunday, still in pajamas, syrup everywhere", "de": "sonntag, noch im schlafanzug, überall sirup"},
+    "stripe_color": "#C9A27E",
+    "cuisine_tags": ["american"],
+    "frequency_tier": "core",
+    "meal_types": ["breakfast"],
+    "tags": ["sweet", "comfort", "family"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "pancakes-classic-easy",
+      "title": {"en": "Buttermilk Pancakes", "de": "Buttermilch-Pancakes"},
+      "margin_note": {"en": "lumps in the batter are correct", "de": "klümpchen im teig sind richtig so"},
+      "intro": {
+        "en": "The diner stack: buttermilk for tang and lift, a little melted butter in the batter, cooked in a medium-hot pan until bubbles pop on top and the underside is the colour of toast. Overmixing is the only way to get this wrong.",
+        "de": "Der Diner-Stapel: Buttermilch für Säure und Luft, etwas zerlassene Butter im Teig, bei mittlerer Hitze gebacken, bis oben die Bläschen platzen und die Unterseite toastbraun ist. Zu viel rühren ist der einzige Weg, das zu vermasseln."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["gluten", "dairy", "lactose", "egg", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 710,
+      "macros": {"protein_g": 18, "carbs_g": 112, "fat_g": 21},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "comfort", "family"],
+      "ingredients": [
+        {"id": "all-purpose-flour", "amount": 180, "unit": "g"},
+        {"id": "sugar", "amount": 2, "unit": "tbsp"},
+        {"id": "baking-powder", "amount": 2, "unit": "tsp"},
+        {"id": "baking-soda", "amount": 0.5, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "buttermilk", "amount": 300, "unit": "ml"},
+        {"id": "egg", "amount": 1, "unit": "piece"},
+        {"id": "butter", "amount": 40, "unit": "g", "note": {"en": "30 g melted for the batter, the rest for the pan", "de": "30 g zerlassen für den Teig, der Rest für die Pfanne"}},
+        {"id": "maple-syrup", "amount": 4, "unit": "tbsp", "note": {"en": "to serve", "de": "zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Whisk the flour, sugar, baking powder, baking soda and salt together in a large bowl.", "de": "Mehl, Zucker, Backpulver, Natron und Salz in einer großen Schüssel verquirlen."}},
+        {"text": {"en": "Melt most of the butter and let it cool a little. In a jug, whisk the buttermilk with the egg and the melted butter.", "de": "Den Großteil der Butter zerlassen und etwas abkühlen lassen. In einem Messbecher die Buttermilch mit dem Ei und der zerlassenen Butter verquirlen."}},
+        {"text": {"en": "Pour the wet into the dry and stir with a fork just until no dry streaks remain. Lumps are fine, lumps are even good. Let the batter rest while the pan heats.", "de": "Das Flüssige zum Trockenen gießen und mit einer Gabel nur so lange rühren, bis keine trockenen Stellen mehr da sind. Klümpchen sind okay, Klümpchen sind sogar gut. Den Teig ruhen lassen, während die Pfanne heiß wird."}, "timer_seconds": 300},
+        {"text": {"en": "Heat a heavy pan over medium heat and wipe it with a little of the remaining butter. The first pancake is the test: a small ladle of batter, and don't spread it.", "de": "Eine schwere Pfanne bei mittlerer Hitze erwärmen und mit etwas von der restlichen Butter auswischen. Der erste Pancake ist der Test: eine kleine Kelle Teig, und nicht verstreichen."}},
+        {"text": {"en": "Cook until bubbles rise and pop on the surface and the edges look dry, then flip once and give it another minute or two. Never press down with the spatula; that squashes the air you just made.", "de": "Backen, bis an der Oberfläche Bläschen aufsteigen und platzen und die Ränder trocken aussehen, dann einmal wenden und noch ein bis zwei Minuten backen. Nie mit dem Wender andrücken; das quetscht die Luft raus, die du gerade eingebaut hast."}, "timer_seconds": 150},
+        {"text": {"en": "Keep the finished ones on a plate in a low oven while you cook the rest, wiping the pan and adding a trace of butter between batches.", "de": "Die fertigen Pancakes auf einem Teller im lauwarmen Ofen warm halten, während du den Rest backst, die Pfanne zwischendurch auswischen und mit einer Spur Butter nachfetten."}},
+        {"text": {"en": "Stack, top with a knob of butter and pour the maple syrup over. Eat immediately; pancakes don't wait for anyone.", "de": "Stapeln, ein Stück Butter obendrauf und den Ahornsirup darübergießen. Sofort essen; Pancakes warten auf niemanden."}}
+      ]
+    },
+    {
+      "id": "pancakes-vegan-easy",
+      "title": {"en": "Oat Milk Pancakes", "de": "Hafermilch-Pancakes"},
+      "margin_note": {"en": "flax egg, oat milk, nobody will notice", "de": "leinsamen-ei, hafermilch, keiner merkt's"},
+      "intro": {
+        "en": "A flax egg for binding, oat milk soured with a spoon of vinegar so the baking soda has something to react with, and a batter that rises just as proudly as the dairy version. Written for the plant kitchen from the ground up; the fluff is real.",
+        "de": "Ein Leinsamen-Ei zum Binden, Hafermilch mit einem Löffel Essig gesäuert, damit das Natron etwas zum Reagieren hat, und ein Teig, der genauso stolz aufgeht wie die Milchversion. Von Grund auf für die pflanzliche Küche geschrieben; die Fluffigkeit ist echt."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["gluten", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 760,
+      "macros": {"protein_g": 12, "carbs_g": 124, "fat_g": 23},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "comfort", "family"],
+      "ingredients": [
+        {"id": "flaxseed", "amount": 1, "unit": "tbsp"},
+        {"id": "water", "amount": 3, "unit": "tbsp"},
+        {"id": "oat-milk", "amount": 300, "unit": "ml"},
+        {"id": "apple-cider-vinegar", "amount": 1, "unit": "tsp"},
+        {"id": "all-purpose-flour", "amount": 180, "unit": "g"},
+        {"id": "sugar", "amount": 2, "unit": "tbsp"},
+        {"id": "baking-powder", "amount": 2, "unit": "tsp"},
+        {"id": "baking-soda", "amount": 0.5, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp", "note": {"en": "2 for the batter, 1 for the pan", "de": "2 für den Teig, 1 für die Pfanne"}},
+        {"id": "blueberries", "amount": 100, "unit": "g", "note": {"en": "to serve", "de": "zum Servieren"}},
+        {"id": "maple-syrup", "amount": 4, "unit": "tbsp", "note": {"en": "to serve", "de": "zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "The flax egg: stir the ground flaxseed into the water in a small bowl and leave it until it turns thick and gel-like.", "de": "Das Leinsamen-Ei: die geschroteten Leinsamen in einer kleinen Schüssel mit dem Wasser verrühren und stehen lassen, bis es dick und gelartig wird."}, "timer_seconds": 300},
+        {"text": {"en": "Stir the vinegar into the oat milk and let it stand. It will thicken slightly and look a bit odd; that's the plan.", "de": "Den Essig in die Hafermilch rühren und stehen lassen. Sie wird leicht dicklich und sieht etwas merkwürdig aus; genau so soll es sein."}},
+        {"text": {"en": "Whisk the flour, sugar, baking powder, baking soda, salt and cinnamon in a large bowl.", "de": "Mehl, Zucker, Backpulver, Natron, Salz und Zimt in einer großen Schüssel verquirlen."}},
+        {"text": {"en": "Add the flax egg and two tablespoons of oil to the oat milk, pour it into the dry ingredients and fold until just combined. The lumps stay.", "de": "Leinsamen-Ei und zwei Esslöffel Öl zur Hafermilch geben, alles zu den trockenen Zutaten gießen und nur so lange unterheben, bis es gerade zusammenkommt. Die Klümpchen bleiben."}},
+        {"text": {"en": "Heat a pan over medium heat with a thin film of oil. A small ladle per pancake; cook until bubbles show and the edges look dry, then flip and give it another minute or two. Plant batter browns a touch slower than the dairy kind, so be patient and don't crank the heat.", "de": "Eine Pfanne mit einem dünnen Ölfilm bei mittlerer Hitze erwärmen. Eine kleine Kelle pro Pancake; backen, bis Bläschen erscheinen und die Ränder trocken aussehen, dann wenden und noch ein bis zwei Minuten backen. Pflanzlicher Teig bräunt etwas langsamer als der mit Milch, also Geduld und die Hitze nicht hochdrehen."}, "timer_seconds": 150},
+        {"text": {"en": "Keep the finished pancakes warm in a low oven and wipe the pan between batches.", "de": "Die fertigen Pancakes im lauwarmen Ofen warm halten und die Pfanne zwischen den Durchgängen auswischen."}},
+        {"text": {"en": "Stack, scatter the blueberries over and pour on the maple syrup while everything is still hot.", "de": "Stapeln, die Blaubeeren darüberstreuen und den Ahornsirup darübergießen, solange alles noch heiß ist."}}
+      ]
+    },
+    {
+      "id": "pancakes-gluten-free-easy",
+      "title": {"en": "Gluten-Free Lemon Pancakes", "de": "Glutenfreie Zitronen-Pancakes"},
+      "margin_note": {"en": "let the batter sit, the flour needs it", "de": "den teig stehen lassen, das mehl braucht das"},
+      "intro": {
+        "en": "A certified gluten-free flour blend stands in for wheat, and a ten-minute rest lets it drink up the buttermilk so the pancakes stay tender instead of sandy. Lemon zest and blueberries, because gluten-free flours like a bit of company. Check that your baking powder is labelled gluten-free too.",
+        "de": "Eine zertifiziert glutenfreie Mehlmischung ersetzt den Weizen, und zehn Minuten Ruhezeit lassen sie die Buttermilch aufsaugen, damit die Pancakes zart bleiben statt sandig. Zitronenschale und Blaubeeren, weil glutenfreie Mehle ein bisschen Gesellschaft mögen. Prüf auch, ob dein Backpulver als glutenfrei gekennzeichnet ist."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["dairy", "lactose", "egg", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["pan-fry"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 760,
+      "macros": {"protein_g": 13, "carbs_g": 126, "fat_g": 21},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "comfort", "fresh"],
+      "ingredients": [
+        {"id": "gluten-free-flour", "amount": 180, "unit": "g", "note": {"en": "certified gluten-free blend", "de": "zertifiziert glutenfreie Mischung"}},
+        {"id": "sugar", "amount": 2, "unit": "tbsp"},
+        {"id": "baking-powder", "amount": 2, "unit": "tsp", "note": {"en": "labelled gluten-free", "de": "als glutenfrei gekennzeichnet"}},
+        {"id": "baking-soda", "amount": 0.5, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "buttermilk", "amount": 300, "unit": "ml"},
+        {"id": "egg", "amount": 1, "unit": "piece"},
+        {"id": "butter", "amount": 40, "unit": "g", "note": {"en": "30 g melted for the batter, the rest for the pan", "de": "30 g zerlassen für den Teig, der Rest für die Pfanne"}},
+        {"id": "lemon", "amount": 1, "unit": "piece", "note": {"en": "zest only", "de": "nur die Schale"}},
+        {"id": "blueberries", "amount": 100, "unit": "g"},
+        {"id": "maple-syrup", "amount": 4, "unit": "tbsp", "note": {"en": "to serve", "de": "zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Whisk the flour blend, sugar, baking powder, baking soda and salt in a large bowl.", "de": "Mehlmischung, Zucker, Backpulver, Natron und Salz in einer großen Schüssel verquirlen."}},
+        {"text": {"en": "In a jug, whisk the buttermilk with the egg, the melted butter and the finely grated lemon zest.", "de": "In einem Messbecher die Buttermilch mit dem Ei, der zerlassenen Butter und der fein abgeriebenen Zitronenschale verquirlen."}},
+        {"text": {"en": "Stir the wet into the dry until smooth. Unlike wheat batter, this one can take a proper mixing; there's no gluten to toughen. Then let it rest. It thickens visibly; if it turns stiff, loosen it with a splash more buttermilk.", "de": "Das Flüssige unter das Trockene rühren, bis der Teig glatt ist. Anders als Weizenteig verträgt der hier ordentliches Rühren; es gibt kein Gluten, das zäh werden könnte. Dann ruhen lassen. Er wird sichtbar dicker; wird er steif, mit einem Schuss Buttermilch wieder lockern."}, "timer_seconds": 600},
+        {"text": {"en": "Heat a heavy pan over medium heat and wipe it with butter. Ladle in small pancakes and drop a few blueberries onto each wet top.", "de": "Eine schwere Pfanne bei mittlerer Hitze erwärmen und mit Butter auswischen. Kleine Pancakes hineingeben und ein paar Blaubeeren auf jede noch feuchte Oberseite drücken."}},
+        {"text": {"en": "Cook until bubbles appear and the edges turn matte, then flip carefully. Gluten-free pancakes are fragile until they set, so use a wide, thin spatula. Another two minutes on the second side.", "de": "Backen, bis Bläschen erscheinen und die Ränder matt werden, dann vorsichtig wenden. Glutenfreie Pancakes sind empfindlich, bis sie gestockt sind, also einen breiten, dünnen Wender nehmen. Noch zwei Minuten auf der zweiten Seite."}, "timer_seconds": 180},
+        {"text": {"en": "Keep them warm in a low oven while you finish the batter, re-buttering the pan lightly each time.", "de": "Im lauwarmen Ofen warm halten, bis der Teig aufgebraucht ist, die Pfanne jedes Mal leicht nachbuttern."}},
+        {"text": {"en": "Stack, scatter the remaining blueberries over and finish with maple syrup and a little more lemon zest if you have it.", "de": "Stapeln, die restlichen Blaubeeren darüberstreuen und mit Ahornsirup und noch etwas Zitronenschale servieren, falls du welche übrig hast."}}
+      ]
+    },
+    {
+      "id": "pancakes-keto-easy",
+      "title": {"en": "Almond Flour Pancakes", "de": "Mandelmehl-Pancakes"},
+      "margin_note": {"en": "small pancakes flip, big ones tear", "de": "kleine pancakes lassen sich wenden, große reißen"},
+      "intro": {
+        "en": "Cream cheese and eggs whisked with almond flour into a batter that fries up soft and rich, with erythritol standing in for sugar. Well under twenty grams of carbs per plate, raspberries included. Keep them palm-sized; without gluten they have nothing to hold on to.",
+        "de": "Frischkäse und Eier mit Mandelmehl zu einem Teig verrührt, der weich und reichhaltig ausbäckt, mit Erythrit statt Zucker. Deutlich unter zwanzig Gramm Kohlenhydrate pro Teller, Himbeeren inklusive. Halt sie handtellergroß; ohne Gluten haben sie nichts, was sie zusammenhält."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["almonds", "tree-nuts", "dairy", "lactose", "egg"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["pan-fry"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 650,
+      "macros": {"protein_g": 24, "carbs_g": 12, "fat_g": 56},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "light"],
+      "ingredients": [
+        {"id": "almond-flour", "amount": 100, "unit": "g"},
+        {"id": "cream-cheese", "amount": 100, "unit": "g", "note": {"en": "full fat, at room temperature", "de": "Vollfett, zimmerwarm"}},
+        {"id": "egg", "amount": 3, "unit": "piece"},
+        {"id": "erythritol", "amount": 1, "unit": "tbsp"},
+        {"id": "baking-powder", "amount": 1, "unit": "tsp"},
+        {"id": "vanilla", "amount": 1, "unit": "pinch", "note": {"en": "ground, or the seeds of half a pod", "de": "gemahlen, oder das Mark einer halben Schote"}},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "butter", "amount": 20, "unit": "g", "note": {"en": "for the pan", "de": "für die Pfanne"}},
+        {"id": "raspberries", "amount": 80, "unit": "g", "note": {"en": "to serve", "de": "zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Whisk the cream cheese in a bowl until smooth, then add the eggs one at a time, whisking until there are no lumps. A stick blender gets there faster.", "de": "Den Frischkäse in einer Schüssel glatt rühren, dann die Eier einzeln dazugeben und verquirlen, bis keine Klümpchen mehr da sind. Mit dem Pürierstab geht es schneller."}},
+        {"text": {"en": "Stir in the almond flour, erythritol, baking powder, vanilla, cinnamon and salt. The batter is looser than a wheat batter. Let it sit so the almond flour can absorb some liquid.", "de": "Mandelmehl, Erythrit, Backpulver, Vanille, Zimt und Salz unterrühren. Der Teig ist flüssiger als ein Weizenteig. Kurz stehen lassen, damit das Mandelmehl etwas Flüssigkeit aufnehmen kann."}, "timer_seconds": 300},
+        {"text": {"en": "Heat a non-stick pan over medium-low, lower than you'd use for wheat pancakes: almond flour burns before the middle sets. Melt a little butter in it.", "de": "Eine beschichtete Pfanne bei mittlerer bis niedriger Hitze erwärmen, niedriger als bei Weizen-Pancakes: Mandelmehl verbrennt, bevor die Mitte stockt. Etwas Butter darin zerlassen."}},
+        {"text": {"en": "Two tablespoons of batter per pancake, about 8 cm across. Cook until the edges look set and a few small bubbles show, then flip with a thin spatula in one confident move and cook the other side for another minute or two.", "de": "Zwei Esslöffel Teig pro Pancake, etwa 8 cm Durchmesser. Backen, bis die Ränder fest aussehen und ein paar kleine Bläschen erscheinen, dann mit einem dünnen Wender in einer entschlossenen Bewegung wenden und die zweite Seite noch ein bis zwei Minuten backen."}, "timer_seconds": 150},
+        {"text": {"en": "Keep the finished ones warm on a plate and add a little more butter for each new batch.", "de": "Die fertigen Pancakes auf einem Teller warm halten und für jeden neuen Durchgang etwas Butter nachlegen."}},
+        {"text": {"en": "Serve with the raspberries and a knob of butter. If you want syrup, make sure it's a sugar-free one; the carbs are tight here.", "de": "Mit den Himbeeren und einem Stück Butter servieren. Wenn du Sirup willst, nimm einen zuckerfreien; die Kohlenhydrate sind hier knapp bemessen."}}
+      ]
+    },
+    {
+      "id": "pancakes-classic-medium",
+      "title": {"en": "Soufflé Pancakes", "de": "Soufflé-Pancakes"},
+      "margin_note": {"en": "whip, fold, lid on, don't peek", "de": "aufschlagen, unterheben, deckel drauf, nicht gucken"},
+      "intro": {
+        "en": "The tall, wobbling Tokyo café pancake: a stiff meringue folded into a small yolk batter, mounded in a lidded pan and steamed as much as fried. They need low heat and your full attention for ten minutes, and they sink a little the moment they're served. That's part of the charm.",
+        "de": "Der hohe, wackelnde Pancake aus dem Tokioter Café: steifer Eischnee, unter einen kleinen Eigelbteig gehoben, in der Pfanne mit Deckel aufgetürmt und eher gedämpft als gebraten. Braucht wenig Hitze und zehn Minuten deine volle Aufmerksamkeit, und sinkt beim Servieren ein bisschen ein. Das gehört dazu."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["egg", "dairy", "lactose", "gluten", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["pan-fry", "steam"],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 360,
+      "macros": {"protein_g": 12, "carbs_g": 50, "fat_g": 13},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "festive"],
+      "ingredients": [
+        {"id": "egg", "amount": 3, "unit": "piece", "note": {"en": "cold, to be separated", "de": "kalt, zum Trennen"}},
+        {"id": "whole-milk", "amount": 40, "unit": "ml"},
+        {"id": "all-purpose-flour", "amount": 40, "unit": "g"},
+        {"id": "baking-powder", "amount": 0.5, "unit": "tsp"},
+        {"id": "vanilla", "amount": 1, "unit": "pinch", "note": {"en": "ground", "de": "gemahlen"}},
+        {"id": "sugar", "amount": 30, "unit": "g"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece", "note": {"en": "a few drops of juice for the whites", "de": "ein paar Tropfen Saft für den Eischnee"}},
+        {"id": "butter", "amount": 10, "unit": "g", "note": {"en": "for the pan", "de": "für die Pfanne"}},
+        {"id": "water", "amount": 3, "unit": "tbsp", "note": {"en": "for steaming", "de": "zum Dämpfen"}},
+        {"id": "powdered-sugar", "amount": 1, "unit": "tbsp", "note": {"en": "to dust", "de": "zum Bestäuben"}},
+        {"id": "maple-syrup", "amount": 2, "unit": "tbsp", "note": {"en": "to serve", "de": "zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Separate the eggs: yolks in one bowl, whites in a spotlessly clean, dry one. A trace of yolk or grease and the meringue won't climb.", "de": "Die Eier trennen: Eigelb in eine Schüssel, Eiweiß in eine makellos saubere, trockene. Eine Spur Eigelb oder Fett, und der Eischnee steigt nicht."}},
+        {"text": {"en": "Whisk the yolks with the milk and vanilla, sift in the flour and baking powder and whisk to a smooth, thick batter.", "de": "Die Eigelbe mit Milch und Vanille verquirlen, Mehl und Backpulver darübersieben und zu einem glatten, dicken Teig rühren."}},
+        {"text": {"en": "Beat the whites with a few drops of lemon juice until foamy, then add the sugar in three goes, beating on until you have stiff, glossy peaks that hold their shape when you lift the whisk.", "de": "Das Eiweiß mit ein paar Tropfen Zitronensaft schaumig schlagen, dann den Zucker in drei Portionen dazugeben und weiterschlagen, bis der Schnee steif und glänzend ist und Spitzen bildet, die stehen bleiben, wenn du den Schneebesen hebst."}, "timer_seconds": 240},
+        {"text": {"en": "Fold a third of the meringue into the yolk batter to loosen it, then fold in the rest in two additions with a spatula, gently, just until no white streaks remain. The air is the whole point.", "de": "Ein Drittel des Eischnees unter den Eigelbteig heben, um ihn zu lockern, dann den Rest in zwei Portionen mit dem Teigschaber unterheben, sanft und nur so lange, bis keine weißen Streifen mehr zu sehen sind. Die Luft ist der ganze Sinn der Sache."}},
+        {"text": {"en": "Heat a non-stick pan over the lowest heat, grease it with the butter and wipe off the excess. Spoon the batter into tall mounds, a second scoop on top of each after a minute. Add a tablespoon of water at the edge of the pan and put the lid on.", "de": "Eine beschichtete Pfanne auf der kleinsten Stufe erwärmen, mit der Butter fetten und das Überschüssige abwischen. Den Teig zu hohen Hügeln in die Pfanne setzen, nach einer Minute noch einen Löffel obendrauf. Einen Esslöffel Wasser an den Pfannenrand geben und den Deckel drauflegen."}, "timer_seconds": 300},
+        {"text": {"en": "After five minutes, lift a pancake gently at the edge: the underside should be pale gold. Turn each one over with a wide spatula and a steady hand, add another spoon of water, lid back on, and steam the second side.", "de": "Nach fünf Minuten einen Pancake vorsichtig am Rand anheben: Die Unterseite sollte hellgolden sein. Jeden mit einem breiten Wender und ruhiger Hand umdrehen, noch einen Löffel Wasser dazu, Deckel wieder drauf und die zweite Seite dämpfen."}, "timer_seconds": 270},
+        {"text": {"en": "Onto plates the moment they're done: dust with powdered sugar, pour over the maple syrup. Photos are allowed, but be quick about it.", "de": "Sofort auf die Teller: mit Puderzucker bestäuben, Ahornsirup darübergießen. Fotos sind erlaubt, aber mach schnell."}}
+      ]
+    }
+  ]
+}

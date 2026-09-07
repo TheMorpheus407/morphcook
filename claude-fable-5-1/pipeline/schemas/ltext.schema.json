@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.app/schemas/ltext.schema.json",
+  "title": "Localised text",
+  "type": "object",
+  "properties": {
+    "en": {"type": "string", "minLength": 1},
+    "de": {"type": "string", "minLength": 1}
+  },
+  "required": ["en", "de"],
+  "additionalProperties": {"type": "string"}
+}

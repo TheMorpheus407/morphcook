@@ -1,0 +1,236 @@
+{
+  "dish": {
+    "id": "fried-rice",
+    "name": {"en": "Fried Rice", "de": "Gebratener Reis"},
+    "hero_text": {
+      "en": "The dish that exists because yesterday's rice was too good to throw away. A screaming-hot pan, a few eggs, whatever is in the drawer, and ten minutes of not overthinking it.",
+      "de": "Das Gericht, das es nur gibt, weil der Reis von gestern zu schade zum Wegwerfen war. Eine glühend heiße Pfanne, ein paar Eier, was das Gemüsefach hergibt, und zehn Minuten, in denen du nicht zu viel nachdenkst."
+    },
+    "caption": {"en": "leftover rice, tuesday, the good pan", "de": "reis von gestern, dienstag, die gute pfanne"},
+    "stripe_color": "#D8B25C",
+    "cuisine_tags": ["chinese"],
+    "frequency_tier": "core",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["rice", "quick", "weeknight"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "fried-rice-classic-easy",
+      "title": {"en": "Egg Fried Rice", "de": "Gebratener Reis mit Ei"},
+      "margin_note": {"en": "cold rice or it turns to porridge", "de": "kalter reis, sonst wird's brei"},
+      "intro": {
+        "en": "Day-old rice, three eggs, peas and carrot, spring onions, a splash of soy. The pan does most of the work; your job is to keep the rice moving and to stop before it dries out.",
+        "de": "Reis von gestern, drei Eier, Erbsen und Karotte, Frühlingszwiebeln, ein Schuss Soja. Die Pfanne macht die meiste Arbeit; du hältst den Reis in Bewegung und hörst auf, bevor er trocken wird."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["egg", "soy", "gluten", "sesame", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["stir-fry"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 660,
+      "macros": {"protein_g": 19, "carbs_g": 79, "fat_g": 30},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["rice", "quick", "weeknight"],
+      "ingredients": [
+        {"id": "jasmine-rice", "amount": 180, "unit": "g", "note": {"en": "cooked the day before and chilled, about 500 g cooked", "de": "am Vortag gekocht und kalt gestellt, etwa 500 g gekocht"}},
+        {"id": "egg", "amount": 3, "unit": "piece"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "ginger", "amount": 10, "unit": "g"},
+        {"id": "carrot", "amount": 1, "unit": "piece", "note": {"en": "small, finely diced", "de": "klein, fein gewürfelt"}},
+        {"id": "green-peas", "amount": 100, "unit": "g", "note": {"en": "frozen is fine", "de": "TK ist völlig okay"}},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 2, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "white-pepper", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Break the cold rice up with your fingers so there are no clumps. Beat the eggs with a pinch of salt. Slice the spring onions, keeping the white and green parts separate; finely chop garlic and ginger; dice the carrot small.", "de": "Den kalten Reis mit den Fingern auflockern, damit keine Klumpen bleiben. Die Eier mit einer Prise Salz verquirlen. Frühlingszwiebeln in Ringe schneiden, Weiß und Grün getrennt halten; Knoblauch und Ingwer fein hacken; die Karotte klein würfeln."}},
+        {"text": {"en": "Heat a tablespoon of oil in your widest pan over high heat. Pour in the eggs, let them set for a few seconds, then scramble loosely into big soft curds. Tip them out onto a plate while still glossy.", "de": "Einen Esslöffel Öl in deiner größten Pfanne stark erhitzen. Die Eier hineingeben, ein paar Sekunden stocken lassen, dann locker zu großen, weichen Flocken rühren. Noch glänzend auf einen Teller geben."}},
+        {"text": {"en": "Add the rest of the oil. Fry the carrot for a minute, then the spring onion whites, garlic and ginger until fragrant, about thirty seconds. Don't let the garlic brown.", "de": "Das restliche Öl in die Pfanne. Karotte eine Minute anbraten, dann das Weiße der Frühlingszwiebeln, Knoblauch und Ingwer dazu, bis es duftet, etwa dreißig Sekunden. Der Knoblauch darf nicht braun werden."}},
+        {"text": {"en": "Add the rice and spread it out. Leave it alone for a minute so the bottom toasts, then toss. Repeat until every grain is hot and some have caught a little colour.", "de": "Den Reis zugeben und flach verteilen. Eine Minute nicht anrühren, damit die Unterseite röstet, dann durchschwenken. So lange wiederholen, bis jedes Korn heiß ist und ein paar davon Farbe bekommen haben."}, "timer_seconds": 180},
+        {"text": {"en": "Add the peas straight from the freezer, the soy sauce poured around the edge of the pan so it sizzles, and the white pepper. Toss for another minute.", "de": "Die Erbsen direkt aus dem Gefrierfach dazu, die Sojasauce am Pfannenrand entlanggießen, damit sie zischt, dazu den weißen Pfeffer. Noch eine Minute schwenken."}},
+        {"text": {"en": "Return the eggs, add the spring onion greens and the sesame oil, toss once, taste for salt. Eat immediately, straight from the pan if nobody is watching.", "de": "Die Eier zurück in die Pfanne, das Grüne der Frühlingszwiebeln und das Sesamöl dazu, einmal schwenken, mit Salz abschmecken. Sofort essen, notfalls direkt aus der Pfanne, wenn keiner hinschaut."}}
+      ]
+    },
+    {
+      "id": "fried-rice-classic-medium",
+      "title": {"en": "Wok Chicken Fried Rice", "de": "Hähnchen-Bratreis aus dem Wok"},
+      "margin_note": {"en": "small batches, big flame", "de": "kleine portionen, große flamme"},
+      "intro": {
+        "en": "Velveted chicken thigh, rice fried in batches so it actually sears instead of steaming, and a sauce of soy, oyster and a little Shaoxing. This is the version where you learn what the wok is for.",
+        "de": "Zart marinierte Hähnchenschenkel, Reis in Portionen gebraten, damit er wirklich röstet statt zu dämpfen, und eine Sauce aus Soja, Auster und etwas Shaoxing. Bei dieser Version verstehst du, wofür der Wok da ist."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["poultry", "egg", "soy", "gluten", "alcohol", "molluscs", "added-sugar", "sesame", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 830,
+      "macros": {"protein_g": 40, "carbs_g": 78, "fat_g": 40},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["rice", "hearty"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 300, "unit": "g", "note": {"en": "boneless, skinless, cut into small pieces", "de": "ohne Knochen und Haut, klein geschnitten"}},
+        {"id": "cornstarch", "amount": 2, "unit": "tsp"},
+        {"id": "shaoxing-wine", "amount": 1, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 2, "unit": "tbsp"},
+        {"id": "oyster-sauce", "amount": 1, "unit": "tbsp"},
+        {"id": "sugar", "amount": 0.5, "unit": "tsp"},
+        {"id": "white-pepper", "amount": 0.5, "unit": "tsp"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g", "note": {"en": "cooked the day before and chilled, about 500 g cooked", "de": "am Vortag gekocht und kalt gestellt, etwa 500 g gekocht"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "ginger", "amount": 15, "unit": "g"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "bean-sprouts", "amount": 100, "unit": "g"},
+        {"id": "green-peas", "amount": 80, "unit": "g"},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Toss the chicken with the cornstarch, half the Shaoxing wine, a teaspoon of the soy sauce and a pinch of salt. Let it sit while you prep. This thin coating is what keeps it silky in the heat.", "de": "Das Hähnchen mit Speisestärke, der Hälfte des Shaoxing-Weins, einem Teelöffel der Sojasauce und einer Prise Salz vermengen. Ziehen lassen, während du den Rest vorbereitest. Diese dünne Schicht hält das Fleisch in der Hitze zart."}, "timer_seconds": 900},
+        {"text": {"en": "Stir together the remaining soy sauce, the oyster sauce, sugar and white pepper in a small bowl. Break up the cold rice with your hands. Beat the eggs. Slice spring onions, whites and greens apart; mince garlic and ginger.", "de": "Restliche Sojasauce, Austernsauce, Zucker und weißen Pfeffer in einer kleinen Schale verrühren. Den kalten Reis mit den Händen auflockern. Eier verquirlen. Frühlingszwiebeln schneiden, Weiß und Grün getrennt; Knoblauch und Ingwer fein hacken."}},
+        {"text": {"en": "Get the wok smoking hot with a tablespoon of oil. Sear the chicken in a single layer, no stirring, until the edges brown, then toss until just cooked through. Out onto a plate.", "de": "Den Wok mit einem Esslöffel Öl rauchend heiß werden lassen. Das Hähnchen in einer Lage anbraten, ohne zu rühren, bis die Ränder braun sind, dann schwenken, bis es gerade durch ist. Auf einen Teller."}, "timer_seconds": 240},
+        {"text": {"en": "A little more oil, then the eggs. Scramble them loosely, still soft, and push them out alongside the chicken.", "de": "Etwas mehr Öl, dann die Eier. Locker verrühren, noch weich, und zum Hähnchen auf den Teller schieben."}},
+        {"text": {"en": "Remaining oil, high heat: spring onion whites, garlic and ginger for twenty seconds. Add half the rice and press it against the hot metal. Wait, toss, wait. Then the second half the same way. Wok hei lives in those pauses.", "de": "Restliches Öl, volle Hitze: das Weiße der Frühlingszwiebeln, Knoblauch und Ingwer für zwanzig Sekunden. Die Hälfte des Reises dazu und gegen das heiße Metall drücken. Warten, schwenken, warten. Dann die zweite Hälfte genauso. Das Röstaroma entsteht genau in diesen Pausen."}, "timer_seconds": 240},
+        {"text": {"en": "Peas and bean sprouts in, then the sauce poured around the rim of the wok so it hits hot metal and caramelises. Toss hard for a minute.", "de": "Erbsen und Sprossen dazu, dann die Sauce am Wokrand entlanggießen, damit sie auf heißes Metall trifft und karamellisiert. Eine Minute kräftig durchschwenken."}},
+        {"text": {"en": "Chicken and eggs back in, the last splash of Shaoxing, spring onion greens, sesame oil. One more toss and straight into bowls.", "de": "Hähnchen und Eier zurück, der letzte Schuss Shaoxing, das Grüne der Frühlingszwiebeln, Sesamöl. Einmal durchschwenken und ab in die Schüsseln."}}
+      ]
+    },
+    {
+      "id": "fried-rice-vegan-easy",
+      "title": {"en": "Tofu Scramble Fried Rice", "de": "Bratreis mit Tofu-Rührei"},
+      "margin_note": {"en": "turmeric for the colour, patience for the crust", "de": "kurkuma für die farbe, geduld für die kruste"},
+      "intro": {
+        "en": "Crumbled tofu fried until the edges go golden, tinted with turmeric and a spoon of nutritional yeast so it does the egg's job in the rice. Peas, carrot, spring onion, soy. The rest is the same happy chaos.",
+        "de": "Zerbröselter Tofu, gebraten bis die Ränder goldbraun sind, mit Kurkuma gefärbt und einem Löffel Hefeflocken, damit er im Reis die Rolle vom Ei übernimmt. Erbsen, Karotte, Frühlingszwiebel, Soja. Der Rest ist das gewohnte fröhliche Chaos."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "gluten", "sesame", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["stir-fry", "pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 730,
+      "macros": {"protein_g": 31, "carbs_g": 80, "fat_g": 32},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["rice", "quick", "weeknight"],
+      "ingredients": [
+        {"id": "firm-tofu", "amount": 250, "unit": "g", "note": {"en": "pressed dry", "de": "gut ausgedrückt"}},
+        {"id": "turmeric", "amount": 0.5, "unit": "tsp"},
+        {"id": "nutritional-yeast", "amount": 1, "unit": "tbsp"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g", "note": {"en": "cooked the day before and chilled, about 500 g cooked", "de": "am Vortag gekocht und kalt gestellt, etwa 500 g gekocht"}},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "ginger", "amount": 10, "unit": "g"},
+        {"id": "carrot", "amount": 1, "unit": "piece", "note": {"en": "small, finely diced", "de": "klein, fein gewürfelt"}},
+        {"id": "green-peas", "amount": 100, "unit": "g"},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 2, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "white-pepper", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Press the tofu between kitchen paper for a few minutes, then crumble it with your hands into uneven pieces, some small, some the size of a hazelnut. Toss with turmeric, nutritional yeast and a pinch of salt.", "de": "Den Tofu ein paar Minuten zwischen Küchenpapier pressen, dann mit den Händen in ungleiche Stücke bröseln, manche klein, manche haselnussgroß. Mit Kurkuma, Hefeflocken und einer Prise Salz vermengen."}},
+        {"text": {"en": "Loosen the cold rice with your fingers. Slice the spring onions, whites and greens separate. Mince garlic and ginger, dice the carrot small.", "de": "Den kalten Reis mit den Fingern auflockern. Frühlingszwiebeln in Ringe schneiden, Weiß und Grün getrennt. Knoblauch und Ingwer fein hacken, Karotte klein würfeln."}},
+        {"text": {"en": "Heat half the oil in a wide pan until it shimmers. Add the tofu, spread it out and leave it alone until the underside is golden and crisp, then turn and repeat. Scoop out onto a plate.", "de": "Die Hälfte des Öls in einer weiten Pfanne erhitzen, bis es flirrt. Den Tofu hineingeben, verteilen und in Ruhe lassen, bis die Unterseite goldbraun und knusprig ist, dann wenden und wiederholen. Auf einen Teller geben."}, "timer_seconds": 360},
+        {"text": {"en": "Remaining oil, high heat. Carrot for a minute, then spring onion whites, garlic and ginger until fragrant.", "de": "Restliches Öl, hohe Hitze. Karotte eine Minute, dann das Weiße der Frühlingszwiebeln, Knoblauch und Ingwer, bis es duftet."}},
+        {"text": {"en": "Rice in. Spread, wait, toss, until it is hot through and a few grains have toasted. Peas straight from frozen, soy sauce around the edge, white pepper.", "de": "Reis rein. Verteilen, warten, schwenken, bis er durch und durch heiß ist und ein paar Körner geröstet sind. Erbsen direkt aus dem Frost, Sojasauce am Rand entlang, weißer Pfeffer."}, "timer_seconds": 180},
+        {"text": {"en": "Fold the tofu back in with the spring onion greens and sesame oil. Taste, salt if needed, eat while the crust is still crunchy.", "de": "Den Tofu mit dem Grünen der Frühlingszwiebeln und dem Sesamöl unterheben. Abschmecken, bei Bedarf salzen, essen, solange die Kruste noch knuspert."}}
+      ]
+    },
+    {
+      "id": "fried-rice-keto-easy",
+      "title": {"en": "Cauliflower Fried Rice", "de": "Blumenkohl-Bratreis"},
+      "margin_note": {"en": "dry pan, dry cauliflower, no soggy middle", "de": "trockene pfanne, trockener blumenkohl, kein matsch"},
+      "intro": {
+        "en": "Riced cauliflower stands in for the rice and, given enough heat, does a surprisingly good impression. Chicken thigh, three eggs, ginger, spring onion and tamari make it a proper meal rather than a side pretending.",
+        "de": "Blumenkohlreis übernimmt die Rolle des Reises und macht das mit genug Hitze erstaunlich überzeugend. Hähnchenschenkel, drei Eier, Ingwer, Frühlingszwiebel und Tamari machen daraus eine echte Mahlzeit statt einer Beilage, die so tut als ob."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["poultry", "egg", "soy", "sesame", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 640,
+      "macros": {"protein_g": 38, "carbs_g": 14, "fat_g": 47},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["quick", "weeknight", "bowl"],
+      "ingredients": [
+        {"id": "cauliflower-rice", "amount": 500, "unit": "g", "note": {"en": "fresh or from a bag; pat dry", "de": "frisch oder aus der Packung; trocken tupfen"}},
+        {"id": "chicken-thigh", "amount": 250, "unit": "g", "note": {"en": "boneless, skinless, in small pieces", "de": "ohne Knochen und Haut, klein geschnitten"}},
+        {"id": "egg", "amount": 3, "unit": "piece"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "ginger", "amount": 10, "unit": "g"},
+        {"id": "tamari", "amount": 2, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"},
+        {"id": "white-pepper", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "If you are ricing a whole cauliflower, pulse the florets in a food processor until they look like coarse couscous. Either way, spread the cauliflower on a towel and press it dry; water is the enemy here.", "de": "Wenn du einen ganzen Blumenkohl verarbeitest: Röschen im Mixer kurz pulsen, bis sie wie grober Couscous aussehen. So oder so den Blumenkohl auf einem Tuch ausbreiten und trocken drücken; Wasser ist hier der Feind."}},
+        {"text": {"en": "Cut the chicken into small pieces and season with salt and white pepper. Beat the eggs. Slice spring onions, whites and greens apart. Mince garlic and ginger.", "de": "Das Hähnchen klein schneiden, mit Salz und weißem Pfeffer würzen. Eier verquirlen. Frühlingszwiebeln schneiden, Weiß und Grün getrennt. Knoblauch und Ingwer fein hacken."}},
+        {"text": {"en": "Heat a tablespoon of oil in a wide pan over high heat and brown the chicken hard, tossing only once it has colour. Out onto a plate.", "de": "Einen Esslöffel Öl in einer weiten Pfanne stark erhitzen und das Hähnchen kräftig anbraten, erst schwenken, wenn es Farbe hat. Auf einen Teller."}, "timer_seconds": 300},
+        {"text": {"en": "Another tablespoon of oil, then the eggs, scrambled loosely into soft folds. Out to join the chicken.", "de": "Noch ein Esslöffel Öl, dann die Eier, locker zu weichen Flocken gerührt. Zum Hähnchen auf den Teller."}},
+        {"text": {"en": "Last of the oil, spring onion whites, garlic and ginger for twenty seconds, then all the cauliflower. Spread it thin and leave it for a full minute before tossing. Keep going until it has lost its raw squeak and picked up brown edges.", "de": "Das restliche Öl, das Weiße der Frühlingszwiebeln, Knoblauch und Ingwer für zwanzig Sekunden, dann der ganze Blumenkohl. Dünn verteilen und eine volle Minute liegen lassen, bevor du schwenkst. Weitermachen, bis er nicht mehr roh quietscht und braune Ränder hat."}, "timer_seconds": 300},
+        {"text": {"en": "Tamari around the edge of the pan, chicken and eggs back in, spring onion greens, sesame oil, chili flakes. Toss, taste, serve hot.", "de": "Tamari am Pfannenrand entlang, Hähnchen und Eier zurück, das Grüne der Frühlingszwiebeln, Sesamöl, Chiliflocken. Schwenken, abschmecken, heiß servieren."}}
+      ]
+    },
+    {
+      "id": "fried-rice-pescatarian-easy",
+      "title": {"en": "Shrimp Fried Rice", "de": "Bratreis mit Garnelen"},
+      "margin_note": {"en": "shrimp go in last and come out first", "de": "garnelen kommen zuletzt rein und zuerst raus"},
+      "intro": {
+        "en": "Sweet shrimp seared for barely a minute, then folded through egg-flecked rice with fish sauce, lime and a handful of cilantro. It leans a little Thai and nobody has ever complained.",
+        "de": "Süße Garnelen, kaum eine Minute scharf angebraten, dann unter Reis mit Ei, Fischsauce, Limette und einer Handvoll Koriander gehoben. Das Ganze lehnt sich ein bisschen Richtung Thailand, und beschwert hat sich noch niemand."
+      },
+      "variant": {"diet": "pescatarian", "effort": "easy"},
+      "contains": ["shellfish", "fish", "egg", "soy", "gluten", "sesame", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 710,
+      "macros": {"protein_g": 38, "carbs_g": 76, "fat_g": 28},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["rice", "quick", "weeknight"],
+      "ingredients": [
+        {"id": "shrimp", "amount": 250, "unit": "g", "note": {"en": "raw, peeled and deveined", "de": "roh, geschält und entdarmt"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g", "note": {"en": "cooked the day before and chilled, about 500 g cooked", "de": "am Vortag gekocht und kalt gestellt, etwa 500 g gekocht"}},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "ginger", "amount": 10, "unit": "g"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "fresh-chili", "amount": 1, "unit": "piece"},
+        {"id": "green-peas", "amount": 80, "unit": "g"},
+        {"id": "vegetable-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 1, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 1, "unit": "tbsp"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "cilantro", "amount": 0.5, "unit": "bunch"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "white-pepper", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Pat the shrimp very dry and season with a pinch of salt and white pepper. Loosen the cold rice. Beat the eggs. Slice spring onions, whites and greens apart, mince garlic and ginger, slice the chili thin.", "de": "Garnelen sehr gut trocken tupfen, mit einer Prise Salz und weißem Pfeffer würzen. Den kalten Reis auflockern. Eier verquirlen. Frühlingszwiebeln schneiden, Weiß und Grün getrennt, Knoblauch und Ingwer fein hacken, Chili in dünne Ringe schneiden."}},
+        {"text": {"en": "Heat a tablespoon of oil in a wide pan until it shimmers. Sear the shrimp in one layer, about forty seconds a side, until just pink. Out onto a plate before they curl into tight rings.", "de": "Einen Esslöffel Öl in einer weiten Pfanne erhitzen, bis es flirrt. Garnelen in einer Lage anbraten, etwa vierzig Sekunden pro Seite, bis sie gerade rosa sind. Raus auf einen Teller, bevor sie sich zu engen Ringen zusammenrollen."}},
+        {"text": {"en": "A little more oil, then the eggs, scrambled loosely and taken out while still soft.", "de": "Etwas mehr Öl, dann die Eier, locker gerührt und noch weich wieder rausgenommen."}},
+        {"text": {"en": "Remaining oil, high heat: spring onion whites, garlic, ginger and chili for twenty seconds. Rice in, spread out, and let it toast before tossing. Keep at it until the grains are hot and separate.", "de": "Restliches Öl, hohe Hitze: das Weiße der Frühlingszwiebeln, Knoblauch, Ingwer und Chili für zwanzig Sekunden. Reis rein, verteilen und rösten lassen, bevor du schwenkst. Weiter so, bis die Körner heiß und locker sind."}, "timer_seconds": 180},
+        {"text": {"en": "Peas, fish sauce and soy sauce around the rim of the pan. Toss for a minute.", "de": "Erbsen, Fischsauce und Sojasauce am Pfannenrand entlang. Eine Minute schwenken."}},
+        {"text": {"en": "Shrimp and eggs back in, spring onion greens, sesame oil, a big squeeze of lime, torn cilantro. Toss once, taste, and serve with the other lime half on the side.", "de": "Garnelen und Eier zurück, das Grüne der Frühlingszwiebeln, Sesamöl, ein kräftiger Spritzer Limette, gezupfter Koriander. Einmal schwenken, abschmecken und mit der zweiten Limettenhälfte servieren."}}
+      ]
+    }
+  ]
+}

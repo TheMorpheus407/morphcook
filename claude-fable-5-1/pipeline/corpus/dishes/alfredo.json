@@ -1,0 +1,213 @@
+{
+  "dish": {
+    "id": "alfredo",
+    "name": {"en": "Alfredo", "de": "Alfredo"},
+    "hero_text": {
+      "en": "A Roman restaurant trick that crossed the Atlantic and came back wearing cream. Butter, cheese and the starchy water nobody used to save, turned into something that clings to every ribbon.",
+      "de": "Ein römischer Restauranttrick, der über den Atlantik ging und mit Sahne zurückkam. Butter, Käse und das stärkehaltige Nudelwasser, das früher niemand aufgehoben hat, werden zu etwas, das an jeder Nudel hängen bleibt."
+    },
+    "caption": {"en": "twirl it while it's hot, the sauce waits for no one", "de": "sofort auf die gabel, die sauce wartet auf niemanden"},
+    "stripe_color": "#BFA98F",
+    "cuisine_tags": ["italian", "italian-american"],
+    "frequency_tier": "core",
+    "meal_types": ["dinner"],
+    "tags": ["pasta", "comfort", "quick"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "alfredo-classic-easy",
+      "title": {"en": "Fettuccine Alfredo", "de": "Fettuccine Alfredo"},
+      "margin_note": {"en": "no cream. really. trust the water", "de": "keine sahne. wirklich. vertrau dem nudelwasser"},
+      "intro": {
+        "en": "The original, the way Alfredo di Lelio made it in 1914: fettuccine, a shocking amount of butter, finely grated parmesan and a ladle of pasta water, tossed until the whole thing turns glossy. Cream was never in the room.",
+        "de": "Das Original, wie Alfredo di Lelio es 1914 gemacht hat: Fettuccine, unverschämt viel Butter, fein geriebener Parmesan und eine Kelle Nudelwasser, geschwenkt, bis alles glänzt. Sahne war nie im Raum."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["gluten", "egg", "dairy"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {"protein_g": 24, "carbs_g": 78, "fat_g": 36},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "quick", "comfort"],
+      "ingredients": [
+        {"id": "fettuccine", "amount": 250, "unit": "g", "note": {"en": "egg fettuccine if you can find it", "de": "Eierfettuccine, wenn du welche findest"}},
+        {"id": "butter", "amount": 80, "unit": "g", "note": {"en": "cold, cubed", "de": "kalt, gewürfelt"}},
+        {"id": "parmesan", "amount": 100, "unit": "g", "note": {"en": "finely grated, the real thing", "de": "fein gerieben, der echte"}},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Bring a large pot of water to the boil and salt it less than you would for other pasta; the cheese brings plenty. Cook the fettuccine until just short of al dente.", "de": "Einen großen Topf Wasser aufkochen und weniger salzen als sonst; der Käse bringt genug mit. Die Fettuccine kochen, bis sie knapp vor al dente sind."}, "timer_seconds": 480},
+        {"text": {"en": "While the pasta cooks, put the cubed butter in a wide pan and warm it just enough to soften, then take it off the heat. Grate the parmesan as finely as your grater allows; coarse cheese clumps.", "de": "Während die Nudeln kochen, die Butterwürfel in eine weite Pfanne geben, gerade so weit erwärmen, dass sie weich werden, dann vom Herd nehmen. Den Parmesan so fein reiben, wie es deine Reibe hergibt; grober Käse klumpt."}},
+        {"text": {"en": "Scoop out a good cup of pasta water before draining. Lift the fettuccine straight into the butter pan with tongs, dripping wet.", "de": "Vor dem Abgießen eine gute Tasse Nudelwasser abschöpfen. Die Fettuccine tropfnass mit einer Zange direkt in die Butterpfanne heben."}},
+        {"text": {"en": "Over the lowest heat, add half the parmesan and a splash of pasta water and toss, toss, toss. Add the rest of the cheese and more water a splash at a time until the sauce turns glossy and coats every strand. If it looks greasy, more water; if it looks thin, more tossing.", "de": "Bei kleinster Hitze die Hälfte des Parmesans und einen Schuss Nudelwasser dazugeben und schwenken, schwenken, schwenken. Den restlichen Käse und schluckweise mehr Wasser dazu, bis die Sauce glänzt und jede Nudel überzieht. Sieht es fettig aus: mehr Wasser. Sieht es dünn aus: mehr schwenken."}},
+        {"text": {"en": "A pinch of nutmeg, a lot of black pepper, taste for salt. Plates should be warm; this sauce tightens as it cools. Eat immediately.", "de": "Eine Prise Muskat, viel schwarzer Pfeffer, mit Salz abschmecken. Die Teller sollten warm sein; diese Sauce zieht beim Abkühlen an. Sofort essen."}}
+      ]
+    },
+    {
+      "id": "alfredo-vegan-easy",
+      "title": {"en": "Vegan Alfredo", "de": "Veganer Alfredo"},
+      "margin_note": {"en": "cashews do the heavy lifting", "de": "cashews machen hier die ganze arbeit"},
+      "intro": {
+        "en": "Soaked cashews blended silky with oat cream, nutritional yeast, garlic and lemon, then loosened with pasta water until it slips over the noodles the way butter and parmesan would. Rich, a little tangy, entirely plant-based.",
+        "de": "Eingeweichte Cashews, seidig püriert mit Hafercreme, Hefeflocken, Knoblauch und Zitrone, dann mit Nudelwasser gelockert, bis die Sauce über die Nudeln gleitet wie sonst Butter und Parmesan. Reichhaltig, leicht säuerlich, komplett pflanzlich."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["gluten", "cashews", "tree-nuts", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 700,
+      "macros": {"protein_g": 24, "carbs_g": 88, "fat_g": 28},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "quick", "comfort"],
+      "ingredients": [
+        {"id": "spaghetti", "amount": 250, "unit": "g", "note": {"en": "or any egg-free ribbon pasta", "de": "oder eine andere Bandnudel ohne Ei"}},
+        {"id": "cashews", "amount": 80, "unit": "g", "note": {"en": "soaked in hot water while you cook", "de": "in heißem Wasser eingeweicht, während du kochst"}},
+        {"id": "oat-cream", "amount": 150, "unit": "ml"},
+        {"id": "nutritional-yeast", "amount": 3, "unit": "tbsp"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "vegan-butter", "amount": 1, "unit": "tbsp"},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cover the cashews with just-boiled water and let them soften while you get the pasta water on.", "de": "Die Cashews mit kochendem Wasser bedecken und weich werden lassen, während du das Nudelwasser aufsetzt."}, "timer_seconds": 1200},
+        {"text": {"en": "Cook the pasta in well-salted water until just short of al dente. Save a cup of the water before draining.", "de": "Die Nudeln in gut gesalzenem Wasser kochen, bis sie knapp vor al dente sind. Vor dem Abgießen eine Tasse Nudelwasser aufheben."}, "timer_seconds": 540},
+        {"text": {"en": "Drain the cashews and blend them with the oat cream, nutritional yeast, garlic, a squeeze of lemon, the nutmeg and salt until completely smooth. Add a splash of pasta water if the blender struggles.", "de": "Die Cashews abgießen und mit Hafercreme, Hefeflocken, Knoblauch, einem Spritzer Zitrone, Muskat und Salz pürieren, bis wirklich nichts mehr körnig ist. Wenn der Mixer sich schwertut, einen Schuss Nudelwasser dazu."}},
+        {"text": {"en": "Melt the vegan butter in a wide pan over low heat, pour in the sauce and warm it gently; it thickens fast, so keep pasta water at hand.", "de": "Die vegane Butter in einer weiten Pfanne bei kleiner Hitze schmelzen, die Sauce dazugießen und sanft erwärmen; sie dickt schnell ein, also Nudelwasser griffbereit halten."}},
+        {"text": {"en": "Tip in the pasta and toss until every strand is coated, adding pasta water until the sauce is loose and glossy rather than pasty.", "de": "Die Nudeln dazugeben und schwenken, bis alles überzogen ist, dabei Nudelwasser zugießen, bis die Sauce locker glänzt und nicht pappig ist."}},
+        {"text": {"en": "Taste for salt and lemon, plenty of black pepper, chopped parsley on top. It waits about as long as the original does, which is not at all.", "de": "Mit Salz und Zitrone abschmecken, viel schwarzer Pfeffer, gehackte Petersilie obendrauf. Wartet ungefähr so lange wie das Original, also gar nicht."}}
+      ]
+    },
+    {
+      "id": "alfredo-gluten-free-easy",
+      "title": {"en": "Gluten-Free Alfredo", "de": "Glutenfreier Alfredo"},
+      "margin_note": {"en": "gluten-free water is starchy too", "de": "auch glutenfreies nudelwasser hat stärke"},
+      "intro": {
+        "en": "Gluten-free pasta gives up less starch, so this version leans on a little cream to help the parmesan and butter hold together. Corn-and-rice fettuccine works best; cook it a minute shy and finish it in the sauce.",
+        "de": "Glutenfreie Nudeln geben weniger Stärke ab, deshalb hilft hier ein Schuss Sahne, damit Parmesan und Butter zusammenhalten. Mais-Reis-Fettuccine funktionieren am besten; eine Minute kürzer kochen und in der Sauce fertig garen."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["dairy", "lactose", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 750,
+      "macros": {"protein_g": 22, "carbs_g": 76, "fat_g": 40},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "quick", "comfort"],
+      "ingredients": [
+        {"id": "gluten-free-pasta", "amount": 250, "unit": "g", "note": {"en": "fettuccine or tagliatelle shape, corn-rice blend", "de": "Fettuccine- oder Tagliatelle-Form, aus Mais und Reis"}},
+        {"id": "butter", "amount": 60, "unit": "g"},
+        {"id": "heavy-cream", "amount": 120, "unit": "ml"},
+        {"id": "parmesan", "amount": 80, "unit": "g", "note": {"en": "finely grated", "de": "fein gerieben"}},
+        {"id": "garlic", "amount": 1, "unit": "clove", "note": {"en": "whole, smashed", "de": "ganz, angedrückt"}},
+        {"id": "lemon", "amount": 0.5, "unit": "piece", "note": {"en": "zest only", "de": "nur der Abrieb"}},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Boil a large pot of salted water. Gluten-free pasta foams and sticks more than wheat, so use more water than feels necessary and stir in the first minute. Cook one minute less than the packet says.", "de": "Einen großen Topf Salzwasser aufkochen. Glutenfreie Nudeln schäumen und kleben mehr als Weizennudeln, also mehr Wasser nehmen, als dir nötig erscheint, und in der ersten Minute umrühren. Eine Minute kürzer kochen, als auf der Packung steht."}, "timer_seconds": 480},
+        {"text": {"en": "Meanwhile melt the butter with the smashed garlic clove in a wide pan over low heat until it smells sweet. Fish the garlic out.", "de": "Währenddessen die Butter mit der angedrückten Knoblauchzehe in einer weiten Pfanne bei kleiner Hitze schmelzen, bis es süßlich duftet. Den Knoblauch wieder rausfischen."}},
+        {"text": {"en": "Pour in the cream, bring to a bare simmer and let it reduce a little.", "de": "Sahne dazugießen, gerade so köcheln lassen und leicht einreduzieren."}, "timer_seconds": 180},
+        {"text": {"en": "Save a cup of pasta water, drain the pasta without rinsing, and tip it into the cream. Add the parmesan in two goes, tossing between, with splashes of pasta water until glossy.", "de": "Eine Tasse Nudelwasser abschöpfen, die Nudeln abgießen, nicht abspülen, und in die Sahne geben. Den Parmesan in zwei Portionen dazu, dazwischen schwenken, mit Schlucken Nudelwasser, bis alles glänzt."}},
+        {"text": {"en": "Nutmeg, black pepper, a little lemon zest, taste for salt. Gluten-free pasta goes from perfect to soft quickly, so serve the moment it's coated.", "de": "Muskat, schwarzer Pfeffer, etwas Zitronenabrieb, mit Salz abschmecken. Glutenfreie Nudeln kippen schnell von perfekt zu weich, also servieren, sobald alles überzogen ist."}}
+      ]
+    },
+    {
+      "id": "alfredo-keto-easy",
+      "title": {"en": "Keto Zucchini Alfredo", "de": "Keto-Zucchini-Alfredo"},
+      "margin_note": {"en": "ribbons, not noodles, and that's fine", "de": "streifen statt nudeln, und das ist okay"},
+      "intro": {
+        "en": "Wide zucchini ribbons, barely warmed through in a butter-cream-parmesan sauce so they stay crisp instead of collapsing into a puddle. Salt them first and squeeze; that one step is the difference between alfredo and soup.",
+        "de": "Breite Zucchinistreifen, in einer Butter-Sahne-Parmesan-Sauce nur kurz erwärmt, damit sie knackig bleiben und nicht zur Pfütze zerfallen. Vorher salzen und ausdrücken; dieser eine Schritt entscheidet zwischen Alfredo und Suppe."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "lactose", "high-fodmap"],
+      "extra_attributes": ["keto", "one-pot"],
+      "technique": ["sauté"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {"protein_g": 16, "carbs_g": 11, "fat_g": 42},
+      "meal_types": ["dinner"],
+      "tags": ["light", "quick", "weeknight"],
+      "ingredients": [
+        {"id": "zucchini", "amount": 3, "unit": "piece", "note": {"en": "medium, firm", "de": "mittelgroß, fest"}},
+        {"id": "butter", "amount": 40, "unit": "g"},
+        {"id": "heavy-cream", "amount": 150, "unit": "ml"},
+        {"id": "cream-cheese", "amount": 30, "unit": "g"},
+        {"id": "parmesan", "amount": 70, "unit": "g", "note": {"en": "finely grated", "de": "fein gerieben"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece", "note": {"en": "zest only", "de": "nur der Abrieb"}},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Shave the zucchini lengthways into wide ribbons with a vegetable peeler, stopping when you hit the seedy core. Toss with a teaspoon of salt in a colander and leave to weep.", "de": "Die Zucchini mit einem Sparschäler längs in breite Streifen hobeln, bis du zum weichen Kern mit den Samen kommst. In einem Sieb mit einem Teelöffel Salz vermengen und Wasser ziehen lassen."}, "timer_seconds": 900},
+        {"text": {"en": "Squeeze the ribbons gently in a clean tea towel; they should feel dry and a little bendy.", "de": "Die Streifen in einem sauberen Geschirrtuch vorsichtig ausdrücken; sie sollten trocken und leicht biegsam sein."}},
+        {"text": {"en": "Melt the butter in a wide pan over medium heat and soften the grated garlic for half a minute without browning. Pour in the cream, add the cream cheese and let it bubble until it thickens slightly.", "de": "Die Butter in einer weiten Pfanne bei mittlerer Hitze schmelzen und den geriebenen Knoblauch eine halbe Minute weich werden lassen, ohne dass er bräunt. Sahne dazugießen, Frischkäse dazu und blubbern lassen, bis es leicht andickt."}, "timer_seconds": 180},
+        {"text": {"en": "Off the heat, stir in the parmesan, nutmeg, lemon zest and a lot of black pepper.", "de": "Vom Herd nehmen, Parmesan, Muskat, Zitronenabrieb und viel schwarzen Pfeffer einrühren."}},
+        {"text": {"en": "Add the ribbons and toss for one minute, no more, just until warm and coated. Parsley on top. Eat now; zucchini keeps giving up water the longer it sits.", "de": "Die Streifen dazugeben und eine Minute schwenken, nicht länger, nur bis sie warm und überzogen sind. Petersilie drüber. Sofort essen; Zucchini gibt weiter Wasser ab, je länger sie steht."}}
+      ]
+    },
+    {
+      "id": "alfredo-halal-medium",
+      "title": {"en": "Chicken Alfredo", "de": "Hähnchen-Alfredo"},
+      "margin_note": {"en": "the chicken pan makes the sauce", "de": "die hähnchenpfanne macht die sauce"},
+      "intro": {
+        "en": "Seared chicken breast, then a sauce built in the same pan from chicken stock, cream and parmesan, with fettuccine tossed through at the end. No wine anywhere in it; the stock and the browned bits do that job. Written for a kitchen that keeps pork and alcohol out entirely.",
+        "de": "Scharf angebratene Hähnchenbrust, dann eine Sauce, die in derselben Pfanne aus Hühnerbrühe, Sahne und Parmesan entsteht, zum Schluss die Fettuccine darin geschwenkt. Nirgends Wein; die Brühe und der Bratensatz übernehmen das. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich nichts verloren haben."
+      },
+      "variant": {"diet": "halal", "effort": "medium"},
+      "contains": ["poultry", "celery", "dairy", "lactose", "gluten", "egg", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 860,
+      "macros": {"protein_g": 58, "carbs_g": 78, "fat_g": 36},
+      "meal_types": ["dinner"],
+      "tags": ["pasta", "comfort", "hearty"],
+      "ingredients": [
+        {"id": "chicken-breast", "amount": 350, "unit": "g"},
+        {"id": "fettuccine", "amount": 250, "unit": "g"},
+        {"id": "italian-herbs", "amount": 1, "unit": "tsp"},
+        {"id": "olive-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "butter", "amount": 40, "unit": "g"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "chicken-stock", "amount": 150, "unit": "ml", "note": {"en": "check the label if you use a cube", "de": "beim Würfel kurz aufs Etikett schauen"}},
+        {"id": "heavy-cream", "amount": 150, "unit": "ml"},
+        {"id": "parmesan", "amount": 80, "unit": "g", "note": {"en": "finely grated", "de": "fein gerieben"}},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Slice the chicken breasts horizontally into thin cutlets and pat dry. Season with salt, pepper and the dried herbs.", "de": "Die Hähnchenbrust waagerecht in dünne Schnitzel teilen und trocken tupfen. Mit Salz, Pfeffer und den Kräutern würzen."}},
+        {"text": {"en": "Heat the oil in a wide pan over high heat and sear the cutlets until deeply golden on both sides and just cooked through. Move to a plate and rest.", "de": "Das Öl in einer weiten Pfanne stark erhitzen und die Schnitzel von beiden Seiten tief goldbraun braten, bis sie gerade durch sind. Auf einen Teller legen und ruhen lassen."}, "timer_seconds": 480},
+        {"text": {"en": "Get the pasta on: well-salted water, fettuccine cooked one minute shy of al dente. Keep a cup of the water.", "de": "Die Nudeln aufsetzen: gut gesalzenes Wasser, die Fettuccine eine Minute kürzer als al dente kochen. Eine Tasse Nudelwasser aufheben."}, "timer_seconds": 480},
+        {"text": {"en": "Lower the heat under the chicken pan, add the butter and grated garlic, and scrape up the browned bits as it foams. Pour in the stock and let it reduce by half.", "de": "Die Hitze unter der Hähnchenpfanne runterdrehen, Butter und geriebenen Knoblauch dazu, und den Bratensatz lösen, während es schäumt. Die Brühe dazugießen und um die Hälfte einkochen lassen."}, "timer_seconds": 240},
+        {"text": {"en": "Add the cream and simmer until it coats a spoon. Off the heat, stir in the parmesan and nutmeg.", "de": "Sahne dazu und köcheln, bis sie einen Löffel überzieht. Vom Herd nehmen, Parmesan und Muskat einrühren."}, "timer_seconds": 180},
+        {"text": {"en": "Slice the chicken. Tip the fettuccine into the sauce, toss with pasta water until glossy, and fold in the chicken with any juices from the plate.", "de": "Das Hähnchen in Streifen schneiden. Die Fettuccine in die Sauce geben, mit Nudelwasser schwenken, bis alles glänzt, und das Hähnchen mitsamt dem Saft vom Teller unterheben."}},
+        {"text": {"en": "Lemon, parsley, black pepper. Taste for salt last; the stock and cheese have already done most of it.", "de": "Zitrone, Petersilie, schwarzer Pfeffer. Erst zum Schluss salzen; Brühe und Käse haben das meiste schon erledigt."}}
+      ]
+    }
+  ]
+}

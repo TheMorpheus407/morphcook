@@ -1,0 +1,203 @@
+{
+  "dish": {
+    "id": "shakshuka",
+    "name": {"en": "Shakshuka", "de": "Shakshuka"},
+    "hero_text": {
+      "en": "Eggs poached in a pan of peppers and tomatoes cooked down soft and sweet, spooned up with bread straight from the pan. Breakfast in Tel Aviv, dinner in Tunis, and whatever meal you need it to be in your kitchen.",
+      "de": "Eier, pochiert in einer Pfanne voll Paprika und Tomaten, die weich und süß eingekocht sind, direkt aus der Pfanne mit Brot aufgetunkt. Frühstück in Tel Aviv, Abendessen in Tunis, und in deiner Küche die Mahlzeit, die du gerade brauchst."
+    },
+    "caption": {"en": "one pan, yolks still soft", "de": "eine pfanne, das eigelb noch weich"},
+    "stripe_color": "#B5654A",
+    "cuisine_tags": ["north-african", "levantine"],
+    "frequency_tier": "core",
+    "meal_types": ["breakfast", "lunch"],
+    "tags": ["one-pot", "comfort", "spicy"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "shakshuka-classic-easy",
+      "title": {"en": "Classic Shakshuka", "de": "Klassische Shakshuka"},
+      "margin_note": {"en": "the yolks should still run", "de": "das eigelb muss noch laufen"},
+      "intro": {
+        "en": "Onion and red pepper cooked slowly until they collapse, a tin of tomatoes, cumin and paprika, then eggs cracked straight into the sauce and cooked under a lid until the whites set. Feta on top, bread on the side, the pan in the middle of the table.",
+        "de": "Zwiebel und rote Paprika langsam weich geschmort, eine Dose Tomaten, Kreuzkümmel und Paprikapulver, dann die Eier direkt in die Sauce geschlagen und unter dem Deckel gestockt, bis das Eiweiß fest ist. Feta obendrauf, Brot daneben, die Pfanne mitten auf den Tisch."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["egg", "dairy", "lactose", "gluten", "high-fodmap"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {"protein_g": 26, "carbs_g": 42, "fat_g": 28},
+      "meal_types": ["breakfast", "lunch"],
+      "tags": ["one-pot", "comfort", "weeknight"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red", "de": "rot"}},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "cumin", "amount": 1.5, "unit": "tsp"},
+        {"id": "sweet-paprika", "amount": 2, "unit": "tsp"},
+        {"id": "chili-flakes", "amount": 0.5, "unit": "tsp"},
+        {"id": "tomato-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "canned-tomato", "amount": 1, "unit": "can", "note": {"en": "400 g, whole or chopped", "de": "400 g, ganz oder gestückelt"}},
+        {"id": "egg", "amount": 4, "unit": "piece"},
+        {"id": "feta", "amount": 80, "unit": "g"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "sourdough", "amount": 4, "unit": "slice"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Warm the olive oil in a wide pan over medium heat. Add the onion and pepper, cut into strips, with a pinch of salt, and cook slowly until they are soft and sweet and starting to catch at the edges. This takes longer than you think and is where the flavour lives.", "de": "Olivenöl in einer weiten Pfanne bei mittlerer Hitze erwärmen. Zwiebel und Paprika in Streifen mit einer Prise Salz hineingeben und langsam schmoren, bis sie weich und süß sind und an den Rändern Farbe nehmen. Das dauert länger, als du denkst, und genau hier entsteht der Geschmack."}, "timer_seconds": 600},
+        {"text": {"en": "Stir in the garlic, cumin, paprika, chili flakes and tomato paste and fry for a minute until it smells toasty.", "de": "Knoblauch, Kreuzkümmel, Paprika, Chiliflocken und Tomatenmark unterrühren und eine Minute anrösten, bis es nussig duftet."}},
+        {"text": {"en": "Add the tomatoes, crushing them with a spoon, and a splash of water to rinse out the tin. Simmer uncovered until the sauce is thick enough that a hollow made with a spoon stays put. Taste for salt.", "de": "Tomaten dazugeben, mit dem Löffel zerdrücken, und einen Schuss Wasser zum Ausspülen der Dose. Offen köcheln lassen, bis die Sauce so dick ist, dass eine Mulde vom Löffel stehen bleibt. Mit Salz abschmecken."}, "timer_seconds": 600},
+        {"text": {"en": "Make hollows in the sauce with the back of a spoon and crack an egg into each. Season the eggs, put the lid on and cook over low heat until the whites are set and the yolks still wobble.", "de": "Mit dem Löffelrücken Mulden in die Sauce drücken und in jede ein Ei schlagen. Eier salzen und pfeffern, Deckel drauf und bei kleiner Hitze garen, bis das Eiweiß fest ist und das Eigelb noch wackelt."}, "timer_seconds": 360},
+        {"text": {"en": "Toast the bread while the eggs cook.", "de": "Währenddessen das Brot toasten."}},
+        {"text": {"en": "Crumble the feta over the top, scatter the parsley, and bring the pan to the table with the bread. Everyone eats from the pan; that is the rule.", "de": "Feta darüberbröseln, Petersilie darüberstreuen und die Pfanne mit dem Brot auf den Tisch stellen. Alle essen aus der Pfanne; so will es die Regel."}}
+      ]
+    },
+    {
+      "id": "shakshuka-vegan-easy",
+      "title": {"en": "Vegan Shakshuka", "de": "Vegane Shakshuka"},
+      "margin_note": {"en": "the tofu does the egg's job", "de": "der tofu übernimmt für das ei"},
+      "intro": {
+        "en": "The same slow pepper-and-tomato base, made heartier with chickpeas, with spoonfuls of silken tofu nestled into the sauce like poached eggs and dusted with turmeric so they turn gold. Vegan feta on top, tahini on the way out the door.",
+        "de": "Dieselbe langsam geschmorte Paprika-Tomaten-Basis, mit Kichererbsen etwas kräftiger, dazu Löffel voll Seidentofu wie pochierte Eier in die Sauce gesetzt und mit Kurkuma bestäubt, bis sie golden werden. Veganer Feta obendrauf, Tahini zum Schluss."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "sesame", "gluten", "high-fodmap"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {"protein_g": 24, "carbs_g": 58, "fat_g": 24},
+      "meal_types": ["breakfast", "lunch"],
+      "tags": ["one-pot", "comfort", "weeknight"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red", "de": "rot"}},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "cumin", "amount": 1.5, "unit": "tsp"},
+        {"id": "smoked-paprika", "amount": 2, "unit": "tsp"},
+        {"id": "chili-flakes", "amount": 0.5, "unit": "tsp"},
+        {"id": "tomato-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "canned-tomato", "amount": 1, "unit": "can", "note": {"en": "400 g", "de": "400 g"}},
+        {"id": "chickpeas", "amount": 1, "unit": "can", "note": {"en": "drained", "de": "abgetropft"}},
+        {"id": "silken-tofu", "amount": 300, "unit": "g"},
+        {"id": "turmeric", "amount": 0.5, "unit": "tsp"},
+        {"id": "vegan-feta", "amount": 60, "unit": "g"},
+        {"id": "tahini", "amount": 2, "unit": "tbsp"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "cilantro", "amount": 0.5, "unit": "bunch"},
+        {"id": "pita", "amount": 2, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cook the onion and pepper, cut into strips, in the olive oil with a pinch of salt over medium heat until soft, sweet and lightly browned at the edges. Do not rush it.", "de": "Zwiebel und Paprika in Streifen im Olivenöl mit einer Prise Salz bei mittlerer Hitze schmoren, bis sie weich, süß und an den Rändern leicht gebräunt sind. Keine Eile."}, "timer_seconds": 600},
+        {"text": {"en": "Add the garlic, cumin, smoked paprika, chili flakes and tomato paste; fry for a minute. Tip in the tomatoes and the drained chickpeas, crush the tomatoes and simmer until thick.", "de": "Knoblauch, Kreuzkümmel, Rauchpaprika, Chiliflocken und Tomatenmark dazu; eine Minute anrösten. Tomaten und abgetropfte Kichererbsen hineingeben, Tomaten zerdrücken und dick einköcheln lassen."}, "timer_seconds": 600},
+        {"text": {"en": "Drain the silken tofu gently and cut it into thick slabs, or scoop it with a large spoon. Make hollows in the sauce and set a piece into each one, then dust the tops with turmeric, salt and pepper.", "de": "Seidentofu vorsichtig abtropfen lassen und in dicke Stücke schneiden oder mit einem großen Löffel abstechen. Mulden in die Sauce drücken, in jede ein Stück setzen und die Oberseite mit Kurkuma, Salz und Pfeffer bestäuben."}},
+        {"text": {"en": "Cover and cook over low heat until the tofu is hot all the way through and the turmeric has turned it gold.", "de": "Deckel drauf und bei kleiner Hitze garen, bis der Tofu durchgehend heiß ist und die Kurkuma ihn goldgelb gefärbt hat."}, "timer_seconds": 300},
+        {"text": {"en": "Stir the tahini with the lemon juice, a pinch of salt and enough water to make it drizzle. Warm the pita.", "de": "Tahini mit Zitronensaft, einer Prise Salz und so viel Wasser verrühren, dass sie sich träufeln lässt. Pita aufwärmen."}},
+        {"text": {"en": "Crumble the vegan feta over the pan, drizzle with tahini, scatter the cilantro. Bread on the side, pan on the table.", "de": "Veganen Feta über die Pfanne bröseln, mit Tahini beträufeln, Koriander darüber. Brot daneben, Pfanne auf den Tisch."}}
+      ]
+    },
+    {
+      "id": "shakshuka-halal-medium",
+      "title": {"en": "Spiced Lamb Shakshuka", "de": "Shakshuka mit Lammhack"},
+      "margin_note": {"en": "harissa in the lamb, harissa in the sauce", "de": "harissa im lamm, harissa in der sauce"},
+      "intro": {
+        "en": "Little merguez-style lamb balls, spiced with harissa, cumin and coriander, browned first and then buried in the pepper-tomato sauce before the eggs go in. Written for a kitchen that keeps pork and alcohol out entirely; the lamb brings the depth that other versions borrow from chorizo.",
+        "de": "Kleine Lammhackbällchen nach Merguez-Art, gewürzt mit Harissa, Kreuzkümmel und Koriander, erst angebraten und dann in der Paprika-Tomaten-Sauce versenkt, bevor die Eier hineinkommen. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich nichts verloren haben; das Lamm bringt die Tiefe, die andere Versionen aus Chorizo holen."
+      },
+      "variant": {"diet": "halal", "effort": "medium"},
+      "contains": ["lamb", "egg", "gluten", "sesame", "high-fodmap"],
+      "extra_attributes": ["high-protein", "one-pot"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {"protein_g": 44, "carbs_g": 40, "fat_g": 42},
+      "meal_types": ["breakfast", "lunch"],
+      "tags": ["one-pot", "spicy", "hearty"],
+      "ingredients": [
+        {"id": "ground-lamb", "amount": 300, "unit": "g"},
+        {"id": "harissa", "amount": 2, "unit": "tbsp"},
+        {"id": "cumin", "amount": 2, "unit": "tsp"},
+        {"id": "coriander-seed", "amount": 1, "unit": "tsp", "note": {"en": "ground", "de": "gemahlen"}},
+        {"id": "sweet-paprika", "amount": 2, "unit": "tsp"},
+        {"id": "garlic", "amount": 4, "unit": "clove"},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red", "de": "rot"}},
+        {"id": "tomato-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "canned-tomato", "amount": 1, "unit": "can", "note": {"en": "400 g", "de": "400 g"}},
+        {"id": "egg", "amount": 4, "unit": "piece"},
+        {"id": "cilantro", "amount": 0.5, "unit": "bunch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "flatbread", "amount": 1, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Mix the lamb with a tablespoon of harissa, half the cumin, the coriander, one grated garlic clove, salt and pepper. Roll it into walnut-sized balls with wet hands.", "de": "Lammhack mit einem Esslöffel Harissa, der Hälfte des Kreuzkümmels, dem Koriander, einer geriebenen Knoblauchzehe, Salz und Pfeffer vermengen. Mit nassen Händen walnussgroße Bällchen rollen."}},
+        {"text": {"en": "Heat the oil in a wide pan and brown the balls hard on all sides; they need not be cooked through yet. Lift them out and leave the fat behind.", "de": "Öl in einer weiten Pfanne erhitzen und die Bällchen rundum kräftig anbraten; sie müssen noch nicht durch sein. Herausnehmen, das Fett bleibt in der Pfanne."}, "timer_seconds": 300},
+        {"text": {"en": "Cook the onion and pepper, cut into strips, in that fat with a pinch of salt until soft and sweet.", "de": "Zwiebel und Paprika in Streifen in diesem Fett mit einer Prise Salz schmoren, bis sie weich und süß sind."}, "timer_seconds": 600},
+        {"text": {"en": "Add the remaining garlic and cumin, the paprika, the second spoon of harissa and the tomato paste; fry briefly. Tip in the tomatoes, crush them, and simmer until thick.", "de": "Restlichen Knoblauch und Kreuzkümmel, Paprikapulver, den zweiten Löffel Harissa und Tomatenmark dazugeben; kurz anrösten. Tomaten hinein, zerdrücken und dick einköcheln lassen."}, "timer_seconds": 480},
+        {"text": {"en": "Return the lamb balls to the sauce and let them finish cooking in it for a few minutes.", "de": "Die Lammbällchen zurück in die Sauce geben und darin ein paar Minuten fertig garen."}, "timer_seconds": 240},
+        {"text": {"en": "Make hollows between the meatballs, crack in the eggs, season, cover and cook over low heat until the whites set.", "de": "Zwischen den Bällchen Mulden drücken, die Eier hineinschlagen, würzen, Deckel drauf und bei kleiner Hitze garen, bis das Eiweiß fest ist."}, "timer_seconds": 360},
+        {"text": {"en": "Squeeze the lemon over, scatter the cilantro, and serve with warm flatbread for scooping.", "de": "Zitrone darüberpressen, Koriander darüberstreuen und mit warmem Fladenbrot zum Tunken servieren."}}
+      ]
+    },
+    {
+      "id": "shakshuka-keto-easy",
+      "title": {"en": "Keto Shakshuka", "de": "Keto-Shakshuka"},
+      "margin_note": {"en": "halloumi is the bread now", "de": "halloumi ist jetzt das brot"},
+      "intro": {
+        "en": "Shakshuka was nearly keto already; this version leans on peppers and cherry tomatoes instead of a tin, wilts spinach into the sauce and swaps the bread for seared halloumi fingers that scoop just as well. Avocado on top because it belongs there.",
+        "de": "Shakshuka war fast schon keto; diese Version setzt auf Paprika und Kirschtomaten statt auf die Dose, lässt Spinat in die Sauce zusammenfallen und tauscht das Brot gegen angebratene Halloumi-Streifen, die genauso gut tunken. Avocado obendrauf, weil sie da hingehört."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["egg", "dairy", "lactose", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["sauté", "simmer", "pan-fry"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 600,
+      "macros": {"protein_g": 32, "carbs_g": 15, "fat_g": 46},
+      "meal_types": ["breakfast", "lunch"],
+      "tags": ["weeknight", "fresh"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red", "de": "rot"}},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "cumin", "amount": 1, "unit": "tsp"},
+        {"id": "smoked-paprika", "amount": 1, "unit": "tsp"},
+        {"id": "chili-flakes", "amount": 0.5, "unit": "tsp"},
+        {"id": "cherry-tomato", "amount": 200, "unit": "g"},
+        {"id": "spinach", "amount": 100, "unit": "g"},
+        {"id": "egg", "amount": 4, "unit": "piece"},
+        {"id": "halloumi", "amount": 150, "unit": "g"},
+        {"id": "avocado", "amount": 0.5, "unit": "piece"},
+        {"id": "cilantro", "amount": 0.5, "unit": "bunch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cook the pepper, cut into strips, in two tablespoons of the olive oil over medium heat with a pinch of salt until soft and browning at the edges. Add the sliced spring onions and garlic for the last minute.", "de": "Paprika in Streifen in zwei Esslöffeln Olivenöl bei mittlerer Hitze mit einer Prise Salz schmoren, bis sie weich ist und an den Rändern bräunt. In der letzten Minute die geschnittenen Frühlingszwiebeln und den Knoblauch dazugeben."}, "timer_seconds": 480},
+        {"text": {"en": "Stir in the cumin, smoked paprika and chili flakes, then the halved cherry tomatoes. Cook, pressing the tomatoes with a spoon as they soften, until you have a rough, jammy sauce.", "de": "Kreuzkümmel, Rauchpaprika und Chiliflocken unterrühren, dann die halbierten Kirschtomaten. Weiterkochen und die Tomaten beim Weichwerden mit dem Löffel zerdrücken, bis eine grobe, marmeladige Sauce entsteht."}, "timer_seconds": 480},
+        {"text": {"en": "Add the spinach in handfuls and let it collapse into the sauce. Taste for salt.", "de": "Spinat handvollweise dazugeben und in die Sauce zusammenfallen lassen. Mit Salz abschmecken."}},
+        {"text": {"en": "Make hollows, crack in the eggs, season, cover and cook over low heat until the whites are set and the yolks still soft.", "de": "Mulden drücken, Eier hineinschlagen, würzen, Deckel drauf und bei kleiner Hitze garen, bis das Eiweiß fest und das Eigelb noch weich ist."}, "timer_seconds": 360},
+        {"text": {"en": "Meanwhile cut the halloumi into fingers and sear them in the last of the oil in a second pan until golden on both sides.", "de": "Währenddessen den Halloumi in Streifen schneiden und im restlichen Öl in einer zweiten Pfanne von beiden Seiten goldbraun braten."}, "timer_seconds": 240},
+        {"text": {"en": "Slice the avocado over the eggs, squeeze the lemon over, scatter the cilantro. Use the halloumi to scoop, exactly as you would bread.", "de": "Avocado in Scheiben über die Eier legen, Zitrone darüberpressen, Koriander darüberstreuen. Mit dem Halloumi tunken, genau wie sonst mit Brot."}}
+      ]
+    }
+  ]
+}

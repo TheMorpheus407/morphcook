@@ -1,0 +1,250 @@
+{
+  "dish": {
+    "id": "ramen",
+    "name": {"en": "Ramen", "de": "Ramen"},
+    "hero_text": {
+      "en": "A bowl of hot broth that took somebody hours, springy noodles, a soft egg, and the hush of a counter where nobody talks. Ramen is patience you can drink.",
+      "de": "Eine Schale heiße Brühe, in der Stunden stecken, bissfeste Nudeln, ein weiches Ei und die Stille an einer Theke, an der niemand redet. Ramen ist Geduld zum Trinken."
+    },
+    "caption": {"en": "counter seat, steam on the glasses", "de": "thekenplatz, beschlagene brille"},
+    "stripe_color": "#8A9BA8",
+    "cuisine_tags": ["japanese"],
+    "frequency_tier": "core",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["soup", "noodles", "comfort"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "ramen-classic-hard",
+      "title": {"en": "Shoyu Ramen with Chashu", "de": "Shoyu-Ramen mit Chashu"},
+      "margin_note": {"en": "a sunday, a big pot, no plans", "de": "ein sonntag, ein großer topf, keine pläne"},
+      "intro": {
+        "en": "Pork shoulder braised slowly in soy, sake and mirin until it slices like butter, the braising liquid doubling as the tare that seasons a clear chicken-and-dashi broth. Marinated soft eggs, springy noodles, nori. Start after breakfast and eat by dark.",
+        "de": "Schweineschulter langsam in Soja, Sake und Mirin geschmort, bis sie sich wie Butter schneiden lässt, und die Schmorflüssigkeit wird zur Tare, die eine klare Hühner-Dashi-Brühe würzt. Marinierte weiche Eier, bissfeste Nudeln, Nori. Nach dem Frühstück anfangen, bis zum Dunkelwerden essen."
+      },
+      "variant": {"diet": "classic", "effort": "hard"},
+      "contains": ["pork", "poultry", "celery", "fish", "egg", "gluten", "soy", "alcohol", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer"],
+      "time_minutes": 180,
+      "servings": 4,
+      "calories_per_serving": 920,
+      "macros": {"protein_g": 52, "carbs_g": 70, "fat_g": 44},
+      "meal_types": ["dinner"],
+      "tags": ["soup", "noodles", "festive", "hearty"],
+      "ingredients": [
+        {"id": "pork-shoulder", "amount": 600, "unit": "g", "note": {"en": "boneless, in one piece, tied", "de": "ohne Knochen, am Stück, gebunden"}},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 150, "unit": "ml"},
+        {"id": "mirin", "amount": 100, "unit": "ml"},
+        {"id": "sake", "amount": 100, "unit": "ml"},
+        {"id": "sugar", "amount": 2, "unit": "tbsp"},
+        {"id": "water", "amount": 400, "unit": "ml"},
+        {"id": "ginger", "amount": 30, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "garlic", "amount": 4, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
+        {"id": "spring-onion", "amount": 6, "unit": "piece", "note": {"en": "whites for the pot, greens for the bowls", "de": "das Weiße in den Topf, das Grün in die Schalen"}},
+        {"id": "egg", "amount": 4, "unit": "piece"},
+        {"id": "chicken-stock", "amount": 1.5, "unit": "l", "note": {"en": "unsalted if you can get it", "de": "möglichst ungesalzen"}},
+        {"id": "kombu", "amount": 1, "unit": "sheet", "note": {"en": "about 10 g", "de": "etwa 10 g"}},
+        {"id": "bonito-flakes", "amount": 15, "unit": "g"},
+        {"id": "ramen-noodles", "amount": 400, "unit": "g", "note": {"en": "fresh; 360 g if dried", "de": "frisch; 360 g, wenn getrocknet"}},
+        {"id": "nori", "amount": 2, "unit": "sheet", "note": {"en": "cut into quarters", "de": "geviertelt"}},
+        {"id": "white-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oil in a heavy pot and brown the pork on all sides until deeply coloured. Take your time; this is where the flavour starts.", "de": "Öl in einem schweren Topf erhitzen und das Fleisch rundum kräftig anbraten. Lass dir Zeit, hier fängt der Geschmack an."}, "timer_seconds": 600},
+        {"text": {"en": "Add soy sauce, mirin, sake, sugar, water, most of the ginger, the garlic and the spring onion whites. Bring to a simmer, cover, and let it barely bubble, turning the meat every half hour, until a skewer slides in with no resistance.", "de": "Sojasauce, Mirin, Sake, Zucker, Wasser, den Großteil des Ingwers, den Knoblauch und das Weiße der Frühlingszwiebeln dazugeben. Aufkochen, Deckel drauf und nur ganz leise köcheln lassen, das Fleisch jede halbe Stunde wenden, bis ein Spieß ohne Widerstand hineingleitet."}, "timer_seconds": 7200},
+        {"text": {"en": "Meanwhile, lower the eggs into boiling water for six and a half minutes, then straight into iced water. Peel them once cold.", "de": "In der Zwischenzeit die Eier für sechseinhalb Minuten in kochendes Wasser geben, dann sofort in Eiswasser. Kalt pellen."}, "timer_seconds": 390},
+        {"text": {"en": "Ladle a cup of the braising liquid into a small bowl, top up with a splash of water and submerge the eggs. Leave them in the fridge until serving; longer is better, overnight is best.", "de": "Eine Tasse Schmorflüssigkeit in eine kleine Schüssel geben, mit einem Schuss Wasser strecken und die Eier darin versenken. Bis zum Servieren in den Kühlschrank; länger ist besser, über Nacht am besten."}},
+        {"text": {"en": "Broth: bring the stock, kombu and the last slices of ginger to just below the boil over low heat. Pull the kombu out before it bubbles, turn off the heat, add the bonito flakes and steep for five minutes. Strain.", "de": "Brühe: Fond, Kombu und die letzten Ingwerscheiben bei kleiner Hitze bis kurz vor den Siedepunkt bringen. Den Kombu herausnehmen, bevor es sprudelt, Hitze aus, Bonitoflocken dazu und fünf Minuten ziehen lassen. Abseihen."}, "timer_seconds": 1800},
+        {"text": {"en": "Lift the pork out and rest it on a board. Strain the braising liquid; that is now your tare. Reduce it a little if it tastes thin.", "de": "Das Fleisch herausheben und auf einem Brett ruhen lassen. Die Schmorflüssigkeit abseihen, das ist jetzt deine Tare. Wenn sie dünn schmeckt, etwas einkochen."}},
+        {"text": {"en": "Slice the chashu thinly and sear the slices in a dry pan until the edges catch. Cook the noodles in plenty of boiling water per the packet and drain well.", "de": "Chashu dünn aufschneiden und die Scheiben in einer trockenen Pfanne braten, bis die Ränder Farbe nehmen. Nudeln in reichlich kochendem Wasser nach Packung garen und gut abtropfen lassen."}, "timer_seconds": 180},
+        {"text": {"en": "Three tablespoons of tare into each hot bowl, then boiling broth, then noodles. Chashu, a halved egg, spring onion greens, nori, white pepper. Eat immediately, loudly.", "de": "Drei Esslöffel Tare in jede vorgewärmte Schale, dann kochend heiße Brühe, dann Nudeln. Chashu, ein halbiertes Ei, Frühlingszwiebelgrün, Nori, weißer Pfeffer. Sofort essen, gern laut."}}
+      ]
+    },
+    {
+      "id": "ramen-classic-easy",
+      "title": {"en": "Weeknight Chicken Ramen", "de": "Feierabend-Ramen mit Hähnchen"},
+      "margin_note": {"en": "the egg timer is not optional", "de": "die eieruhr ist nicht optional"},
+      "intro": {
+        "en": "Chicken thighs poached in stock with ginger and garlic, the same stock seasoned with soy and a little sesame oil, then noodles, a soft egg, spinach and sweetcorn. Thirty minutes, one pot plus a small one for the eggs.",
+        "de": "Hähnchenkeulen in Brühe mit Ingwer und Knoblauch pochiert, dieselbe Brühe mit Soja und etwas Sesamöl abgeschmeckt, dann Nudeln, ein weiches Ei, Spinat und Mais. Dreißig Minuten, ein Topf und ein kleiner für die Eier."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["poultry", "celery", "egg", "gluten", "soy", "sesame", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer", "poach"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 760,
+      "macros": {"protein_g": 44, "carbs_g": 68, "fat_g": 30},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "noodles", "weeknight", "quick", "comfort"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 300, "unit": "g", "note": {"en": "boneless, skinless", "de": "ohne Knochen und Haut"}},
+        {"id": "chicken-stock", "amount": 1, "unit": "l"},
+        {"id": "ginger", "amount": 20, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "garlic", "amount": 2, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
+        {"id": "soy-sauce", "amount": 3, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "ramen-noodles", "amount": 200, "unit": "g", "note": {"en": "fresh; 180 g if dried", "de": "frisch; 180 g, wenn getrocknet"}},
+        {"id": "spinach", "amount": 100, "unit": "g"},
+        {"id": "corn", "amount": 100, "unit": "g", "note": {"en": "tinned, drained", "de": "aus der Dose, abgetropft"}},
+        {"id": "spring-onion", "amount": 3, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet", "note": {"en": "cut into strips", "de": "in Streifen"}},
+        {"id": "chili-oil", "amount": 1, "unit": "tsp", "note": {"en": "optional", "de": "optional"}},
+        {"id": "white-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Bring the stock, ginger and garlic to a simmer in a pot. Slide in the chicken thighs and poach gently until cooked through. Lift them out and slice.", "de": "Fond, Ingwer und Knoblauch in einem Topf zum Köcheln bringen. Hähnchenkeulen hineingeben und sanft pochieren, bis sie durch sind. Herausnehmen und aufschneiden."}, "timer_seconds": 900},
+        {"text": {"en": "While the chicken poaches, boil the eggs for six and a half minutes, then cool them in cold water and peel.", "de": "Während das Hähnchen pochiert, die Eier sechseinhalb Minuten kochen, dann in kaltem Wasser abschrecken und pellen."}, "timer_seconds": 390},
+        {"text": {"en": "Season the broth with soy sauce and sesame oil. Taste; it should be a touch saltier than you'd sip on its own.", "de": "Brühe mit Sojasauce und Sesamöl abschmecken. Probieren, sie darf etwas salziger sein, als du sie pur trinken würdest."}},
+        {"text": {"en": "Cook the noodles in a separate pot of boiling water per the packet. Drop the spinach into the broth for the last minute so it just wilts.", "de": "Nudeln in einem zweiten Topf mit kochendem Wasser nach Packung garen. Den Spinat in der letzten Minute in die Brühe geben, nur bis er zusammenfällt."}, "timer_seconds": 180},
+        {"text": {"en": "Drain the noodles and divide between hot bowls. Ladle the broth and spinach over them.", "de": "Nudeln abgießen und auf vorgewärmte Schalen verteilen. Brühe und Spinat darüber schöpfen."}},
+        {"text": {"en": "Top with the sliced chicken, a halved egg, corn, spring onion, nori, white pepper and chili oil if you like.", "de": "Mit Hähnchen, einem halbierten Ei, Mais, Frühlingszwiebeln, Nori, weißem Pfeffer und nach Lust Chiliöl belegen."}}
+      ]
+    },
+    {
+      "id": "ramen-vegan-medium",
+      "title": {"en": "Miso Shiitake Ramen", "de": "Miso-Shiitake-Ramen"},
+      "margin_note": {"en": "dried shiitake do the heavy lifting", "de": "getrocknete shiitake machen die schwere arbeit"},
+      "intro": {
+        "en": "A broth built on dried shiitake and kombu, rounded off with white miso and a splash of soy milk for that creamy, almost tonkotsu weight. Crisp tofu, seared mushrooms, bok choy and chili oil on top. Every bit of depth here comes from plants, and there is a lot of it.",
+        "de": "Eine Brühe auf Basis von getrockneten Shiitake und Kombu, abgerundet mit hellem Miso und einem Schuss Sojamilch für diese cremige, fast tonkotsu-artige Fülle. Obendrauf knuspriger Tofu, angebratene Pilze, Pak Choi und Chiliöl. Die ganze Tiefe hier kommt aus Pflanzen, und davon gibt es reichlich."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["soy", "gluten", "sesame", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["simmer", "pan-fry"],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {"protein_g": 30, "carbs_g": 82, "fat_g": 28},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "noodles", "comfort"],
+      "ingredients": [
+        {"id": "shiitake", "amount": 40, "unit": "g", "note": {"en": "dried; they become the topping too", "de": "getrocknet; sie werden auch das Topping"}},
+        {"id": "kombu", "amount": 1, "unit": "sheet"},
+        {"id": "water", "amount": 1.5, "unit": "l"},
+        {"id": "garlic", "amount": 3, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
+        {"id": "ginger", "amount": 20, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "miso", "amount": 3, "unit": "tbsp", "note": {"en": "white shiro miso", "de": "helles Shiro-Miso"}},
+        {"id": "soy-sauce", "amount": 2, "unit": "tbsp"},
+        {"id": "soy-milk", "amount": 150, "unit": "ml", "note": {"en": "unsweetened", "de": "ungesüßt"}},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "firm-tofu", "amount": 200, "unit": "g"},
+        {"id": "cornstarch", "amount": 1, "unit": "tbsp"},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "bok-choy", "amount": 2, "unit": "piece"},
+        {"id": "ramen-noodles", "amount": 200, "unit": "g", "note": {"en": "check they're egg-free; most dried ones are", "de": "auf Ei-frei achten, die meisten getrockneten sind es"}},
+        {"id": "corn", "amount": 80, "unit": "g"},
+        {"id": "nori", "amount": 1, "unit": "sheet"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tsp", "note": {"en": "toasted", "de": "geröstet"}},
+        {"id": "chili-oil", "amount": 2, "unit": "tsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Put the dried shiitake and kombu in a pot with the water and let them soak for half an hour before you turn on the heat. Cold-steeping pulls out more flavour.", "de": "Getrocknete Shiitake und Kombu mit dem Wasser in einen Topf geben und eine halbe Stunde einweichen, bevor du den Herd anmachst. Kaltes Ziehen holt mehr Geschmack raus."}, "timer_seconds": 1800},
+        {"text": {"en": "Add the garlic, ginger and the spring onion whites, bring to just under a boil, remove the kombu, and simmer gently for twenty minutes. Fish out the shiitake, slice them and keep them for the topping.", "de": "Knoblauch, Ingwer und das Weiße der Frühlingszwiebeln dazugeben, bis kurz vor den Siedepunkt erhitzen, den Kombu herausnehmen und zwanzig Minuten sanft köcheln lassen. Die Shiitake herausfischen, in Scheiben schneiden und als Topping beiseitelegen."}, "timer_seconds": 1200},
+        {"text": {"en": "Pat the tofu dry, cut it into slabs and toss with the cornstarch. Fry in the vegetable oil until crisp on both sides, then sear the sliced shiitake in the same pan with a drop of the sesame oil.", "de": "Tofu trocken tupfen, in Scheiben schneiden, mit Speisestärke vermengen. Im Pflanzenöl von beiden Seiten knusprig braten, dann die Shiitake-Scheiben mit einem Tropfen Sesamöl in derselben Pfanne anbraten."}, "timer_seconds": 480},
+        {"text": {"en": "Strain the broth, return it to the pot and keep it just below a simmer. Whisk the miso with a ladle of broth in a bowl until smooth, then stir it back in with the soy sauce, soy milk and the rest of the sesame oil. Don't let it boil after this.", "de": "Brühe abseihen, zurück in den Topf und knapp unter dem Siedepunkt halten. Miso mit einer Kelle Brühe in einer Schüssel glatt rühren, dann zusammen mit Sojasauce, Sojamilch und dem restlichen Sesamöl zurückrühren. Ab jetzt nicht mehr kochen lassen."}},
+        {"text": {"en": "Halve the bok choy lengthways and blanch it in the broth for a minute. Lift it out.", "de": "Pak Choi längs halbieren und eine Minute in der Brühe blanchieren. Herausheben."}},
+        {"text": {"en": "Cook the noodles in a separate pot of boiling water per the packet and drain.", "de": "Nudeln in einem zweiten Topf mit kochendem Wasser nach Packung garen und abgießen."}, "timer_seconds": 180},
+        {"text": {"en": "Noodles into hot bowls, broth over the top.", "de": "Nudeln in vorgewärmte Schalen, Brühe darüber."}},
+        {"text": {"en": "Top with tofu, shiitake, bok choy, corn, spring onion greens, nori, sesame seeds and a swirl of chili oil.", "de": "Mit Tofu, Shiitake, Pak Choi, Mais, Frühlingszwiebelgrün, Nori, Sesam und einem Schwung Chiliöl belegen."}}
+      ]
+    },
+    {
+      "id": "ramen-gluten-free-medium",
+      "title": {"en": "Gluten-Free Tamari Ramen", "de": "Glutenfreies Tamari-Ramen"},
+      "margin_note": {"en": "the soy sauce was the trap", "de": "die sojasauce war die falle"},
+      "intro": {
+        "en": "Ramen noodles are wheat, and ordinary soy sauce is too, so this bowl swaps in rice noodles and seasons a chicken-and-dashi broth with tamari instead. Shredded poached chicken, tamari-marinated eggs and bok choy on top. Read the label on the stock cube; that one catches people.",
+        "de": "Ramen-Nudeln sind Weizen, normale Sojasauce auch, deshalb kommen hier Reisnudeln in die Schale und eine Hühner-Dashi-Brühe, die mit Tamari gewürzt wird. Obendrauf gezupftes pochiertes Hähnchen, in Tamari marinierte Eier und Pak Choi. Lies das Etikett vom Brühwürfel, an dem scheitern die meisten."
+      },
+      "variant": {"diet": "gluten-free", "effort": "medium"},
+      "contains": ["poultry", "celery", "fish", "egg", "soy", "sesame", "high-fodmap", "added-sugar"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer", "poach"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 690,
+      "macros": {"protein_g": 42, "carbs_g": 62, "fat_g": 26},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "noodles", "comfort"],
+      "ingredients": [
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "tamari", "amount": 4, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 1, "unit": "tsp"},
+        {"id": "chicken-thigh", "amount": 300, "unit": "g", "note": {"en": "boneless, skinless", "de": "ohne Knochen und Haut"}},
+        {"id": "chicken-stock", "amount": 1, "unit": "l", "note": {"en": "labelled gluten-free", "de": "als glutenfrei gekennzeichnet"}},
+        {"id": "kombu", "amount": 1, "unit": "sheet"},
+        {"id": "ginger", "amount": 20, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "garlic", "amount": 2, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
+        {"id": "bonito-flakes", "amount": 10, "unit": "g"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "rice-noodles", "amount": 160, "unit": "g", "note": {"en": "thin; vermicelli or flat both work", "de": "dünn; Vermicelli oder flache gehen beide"}},
+        {"id": "bok-choy", "amount": 2, "unit": "piece"},
+        {"id": "spring-onion", "amount": 3, "unit": "piece"},
+        {"id": "nori", "amount": 1, "unit": "sheet", "note": {"en": "cut into strips", "de": "in Streifen"}},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tsp", "note": {"en": "toasted", "de": "geröstet"}},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "Boil the eggs for six and a half minutes, chill in cold water, peel. Sit them in a small bowl with two tablespoons of the tamari, the sugar and a splash of water while everything else happens; turn them once.", "de": "Eier sechseinhalb Minuten kochen, kalt abschrecken, pellen. In einer kleinen Schüssel mit zwei Esslöffeln Tamari, dem Zucker und einem Schuss Wasser marinieren, während der Rest passiert; einmal wenden."}, "timer_seconds": 390},
+        {"text": {"en": "Bring the stock, kombu, ginger and garlic to just under a boil. Remove the kombu, slide in the chicken and poach gently until cooked through.", "de": "Fond, Kombu, Ingwer und Knoblauch bis kurz vor den Siedepunkt bringen. Kombu herausnehmen, Hähnchen hineingeben und sanft pochieren, bis es durch ist."}, "timer_seconds": 900},
+        {"text": {"en": "Lift the chicken out and shred it with two forks. Turn off the heat under the broth, add the bonito flakes, steep for five minutes, strain.", "de": "Hähnchen herausnehmen und mit zwei Gabeln zerzupfen. Hitze unter der Brühe aus, Bonitoflocken dazu, fünf Minuten ziehen lassen, abseihen."}, "timer_seconds": 300},
+        {"text": {"en": "Season the broth with the remaining tamari and the sesame oil. Halve the bok choy and blanch it in the broth for a minute.", "de": "Brühe mit dem restlichen Tamari und dem Sesamöl abschmecken. Pak Choi halbieren und eine Minute in der Brühe blanchieren."}},
+        {"text": {"en": "Cook the rice noodles per the packet, drain and rinse briefly so they don't clump.", "de": "Reisnudeln nach Packung garen, abgießen und kurz abspülen, damit sie nicht verkleben."}, "timer_seconds": 180},
+        {"text": {"en": "Noodles into hot bowls, broth over.", "de": "Nudeln in vorgewärmte Schalen, Brühe darüber."}},
+        {"text": {"en": "Top with chicken, halved eggs, bok choy, spring onion, nori, sesame seeds and a pinch of chili flakes.", "de": "Mit Hähnchen, halbierten Eiern, Pak Choi, Frühlingszwiebeln, Nori, Sesam und einer Prise Chiliflocken belegen."}}
+      ]
+    },
+    {
+      "id": "ramen-keto-easy",
+      "title": {"en": "Keto Ramen with Cabbage Noodles", "de": "Keto-Ramen mit Kohlnudeln"},
+      "margin_note": {"en": "the broth carries it, not the noodles", "de": "die brühe trägt es, nicht die nudeln"},
+      "intro": {
+        "en": "Ribbons of napa cabbage take the place of noodles, softening in a soy-ginger chicken broth just enough to twirl. Seared chicken thigh, a jammy egg, sesame and chili oil. Zucchini noodles work too if that's what's in the drawer.",
+        "de": "Streifen von Chinakohl übernehmen die Rolle der Nudeln und werden in einer Soja-Ingwer-Hühnerbrühe gerade so weich, dass du sie aufdrehen kannst. Angebratene Hähnchenkeule, ein wachsweiches Ei, Sesam und Chiliöl. Zucchininudeln gehen auch, wenn die gerade in der Schublade liegen."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["poultry", "celery", "egg", "gluten", "soy", "sesame", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["simmer", "pan-fry"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 520,
+      "macros": {"protein_g": 40, "carbs_g": 9, "fat_g": 34},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "light", "weeknight"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 300, "unit": "g", "note": {"en": "boneless, skin on if you like", "de": "ohne Knochen, gern mit Haut"}},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "chicken-stock", "amount": 1, "unit": "l"},
+        {"id": "ginger", "amount": 20, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "garlic", "amount": 2, "unit": "clove", "note": {"en": "smashed", "de": "angedrückt"}},
+        {"id": "soy-sauce", "amount": 3, "unit": "tbsp"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "napa-cabbage", "amount": 300, "unit": "g", "note": {"en": "cut into long thin ribbons", "de": "in lange dünne Streifen geschnitten"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "spring-onion", "amount": 3, "unit": "piece"},
+        {"id": "sesame-seeds", "amount": 1, "unit": "tsp", "note": {"en": "toasted", "de": "geröstet"}},
+        {"id": "chili-oil", "amount": 2, "unit": "tsp"},
+        {"id": "nori", "amount": 1, "unit": "sheet", "note": {"en": "cut into strips", "de": "in Streifen"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Boil the eggs for six and a half minutes, chill them in cold water and peel.", "de": "Eier sechseinhalb Minuten kochen, in kaltem Wasser abschrecken und pellen."}, "timer_seconds": 390},
+        {"text": {"en": "Bring the stock, ginger and garlic to a simmer and let it go for ten minutes to pick up flavour. Season with soy sauce and sesame oil.", "de": "Fond, Ingwer und Knoblauch zum Köcheln bringen und zehn Minuten ziehen lassen, damit die Brühe Geschmack annimmt. Mit Sojasauce und Sesamöl abschmecken."}, "timer_seconds": 600},
+        {"text": {"en": "Season the chicken with salt and pepper and sear it in the oil, skin side first, until golden and cooked through. Rest it briefly, then slice.", "de": "Hähnchen salzen und pfeffern und im Öl braten, zuerst auf der Hautseite, bis es goldbraun und durch ist. Kurz ruhen lassen, dann aufschneiden."}, "timer_seconds": 600},
+        {"text": {"en": "Drop the cabbage ribbons into the broth and simmer just until tender with a little bite, two minutes at most.", "de": "Kohlstreifen in die Brühe geben und nur so lange köcheln, bis sie weich sind und noch etwas Biss haben, höchstens zwei Minuten."}},
+        {"text": {"en": "Ladle cabbage and broth into hot bowls.", "de": "Kohl und Brühe in vorgewärmte Schalen schöpfen."}},
+        {"text": {"en": "Top with sliced chicken, a halved egg, spring onion, sesame seeds, nori and chili oil.", "de": "Mit Hähnchen, einem halbierten Ei, Frühlingszwiebeln, Sesam, Nori und Chiliöl belegen."}}
+      ]
+    }
+  ]
+}

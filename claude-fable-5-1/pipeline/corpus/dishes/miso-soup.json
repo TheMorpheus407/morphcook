@@ -1,0 +1,137 @@
+{
+  "dish": {
+    "id": "miso-soup",
+    "name": {"en": "Miso Soup", "de": "Misosuppe"},
+    "hero_text": {
+      "en": "The quiet start to a Japanese morning and the cure for most evenings. A broth that takes minutes, a spoon of fermented soybean paste, and whatever soft things you drop in.",
+      "de": "Der leise Anfang eines japanischen Morgens und die Rettung der meisten Abende. Eine Brühe, die Minuten braucht, ein Löffel fermentierte Sojabohnenpaste und was du sonst noch Weiches hineingibst."
+    },
+    "caption": {"en": "steam, a spoon, no hurry", "de": "dampf, ein löffel, keine eile"},
+    "stripe_color": "#6F8F8A",
+    "cuisine_tags": ["japanese"],
+    "frequency_tier": "extended",
+    "meal_types": ["breakfast", "snack", "dinner"],
+    "tags": ["soup", "light", "quick"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "miso-soup-classic-easy",
+      "title": {"en": "Classic Miso Soup", "de": "Klassische Misosuppe"},
+      "margin_note": {"en": "never boil the miso", "de": "miso niemals kochen"},
+      "intro": {
+        "en": "A proper dashi from kombu and bonito flakes, which sounds like a project and takes fifteen minutes, then silken tofu, wakame and spring onion with the miso whisked in off the heat. The bowl you didn't know you wanted at breakfast.",
+        "de": "Ein richtiger Dashi aus Kombu und Bonitoflocken, was nach Projekt klingt und fünfzehn Minuten dauert, dann Seidentofu, Wakame und Frühlingszwiebel, und die Misopaste wird abseits vom Herd eingerührt. Die Schüssel, von der du nicht wusstest, dass du sie zum Frühstück willst."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["fish", "soy"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["simmer"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 120,
+      "macros": {"protein_g": 10, "carbs_g": 8, "fat_g": 5},
+      "meal_types": ["breakfast", "snack", "dinner"],
+      "tags": ["soup", "light", "quick"],
+      "ingredients": [
+        {"id": "water", "amount": 800, "unit": "ml"},
+        {"id": "kombu", "amount": 1, "unit": "piece", "note": {"en": "about 10 cm", "de": "etwa 10 cm"}},
+        {"id": "bonito-flakes", "amount": 15, "unit": "g"},
+        {"id": "miso", "amount": 3, "unit": "tbsp", "note": {"en": "white or mixed", "de": "hell oder gemischt"}},
+        {"id": "silken-tofu", "amount": 200, "unit": "g"},
+        {"id": "wakame", "amount": 2, "unit": "tsp", "note": {"en": "dried", "de": "getrocknet"}},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"}
+      ],
+      "steps": [
+        {"text": {"en": "Wipe the kombu with a damp cloth but leave the white powder on it, that's flavour, not dirt. Put it in a pot with the cold water and let it sit if you have the time.", "de": "Das Kombu mit einem feuchten Tuch abwischen, den weißen Belag aber dranlassen, das ist Geschmack, kein Schmutz. Mit dem kalten Wasser in einen Topf geben und ziehen lassen, wenn du die Zeit hast."}, "timer_seconds": 600},
+        {"text": {"en": "Bring it slowly up over medium heat until small bubbles gather at the edge. Fish the kombu out just before it boils; leave it in and the broth turns slimy and bitter.", "de": "Bei mittlerer Hitze langsam erwärmen, bis sich am Rand kleine Bläschen sammeln. Das Kombu kurz vor dem Kochen herausnehmen; bleibt es drin, wird die Brühe schleimig und bitter."}},
+        {"text": {"en": "Take the pot off the heat, scatter in the bonito flakes and let them steep without stirring.", "de": "Den Topf vom Herd nehmen, die Bonitoflocken hineinstreuen und ohne Rühren ziehen lassen."}, "timer_seconds": 120},
+        {"text": {"en": "Strain through a fine sieve into a clean pot without pressing the flakes. That pale golden liquid is your dashi.", "de": "Durch ein feines Sieb in einen sauberen Topf gießen, ohne die Flocken auszudrücken. Diese blassgoldene Flüssigkeit ist dein Dashi."}},
+        {"text": {"en": "Soak the wakame in a bowl of cold water until it unfurls, then squeeze it out. Cut the silken tofu into 1 cm cubes, ideally in the palm of your hand so it doesn't break. Slice the spring onion into thin rings.", "de": "Das Wakame in einer Schüssel mit kaltem Wasser einweichen, bis es sich entfaltet, dann ausdrücken. Den Seidentofu in 1 cm große Würfel schneiden, am besten in der Handfläche, damit er nicht zerbricht. Die Frühlingszwiebel in dünne Ringe schneiden."}, "timer_seconds": 300},
+        {"text": {"en": "Bring the dashi back to a gentle simmer, slide in the tofu and wakame and let them warm through for a minute.", "de": "Den Dashi wieder sanft zum Simmern bringen, Tofu und Wakame hineingleiten lassen und eine Minute durchwärmen."}},
+        {"text": {"en": "Off the heat. Put the miso in a ladle, dip the ladle into the broth and stir with chopsticks until it dissolves, then stir it through the pot. Taste, add a little more if you like. It must not boil again; that kills the aroma.", "de": "Vom Herd nehmen. Die Misopaste in eine Kelle geben, die Kelle in die Brühe tauchen und mit Stäbchen rühren, bis sie sich auflöst, dann im Topf verrühren. Probieren, bei Bedarf etwas mehr dazugeben. Nicht wieder aufkochen; das nimmt ihr das Aroma."}},
+        {"text": {"en": "Ladle into bowls, spring onion on top. Eat it now, while it steams.", "de": "In Schüsseln füllen, Frühlingszwiebel obendrauf. Sofort essen, solange es dampft."}}
+      ]
+    },
+    {
+      "id": "miso-soup-vegan-easy",
+      "title": {"en": "Kombu-Shiitake Miso Soup", "de": "Kombu-Shiitake-Misosuppe"},
+      "margin_note": {"en": "the mushrooms do the bonito's job", "de": "die pilze machen den job der bonitoflocken"},
+      "intro": {
+        "en": "Dried shiitake and kombu steeped together make a dashi that's deeper and earthier than the fish version, and entirely plant-based. Firm tofu, wakame and the sliced mushrooms go back into the bowl, so nothing is wasted.",
+        "de": "Getrocknete Shiitake und Kombu zusammen ziehen lassen, und du hast einen Dashi, der tiefer und erdiger ist als die Fischversion, und komplett pflanzlich. Fester Tofu, Wakame und die aufgeschnittenen Pilze wandern zurück in die Schüssel, nichts geht verloren."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "high-fodmap"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["simmer"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 190,
+      "macros": {"protein_g": 15, "carbs_g": 14, "fat_g": 8},
+      "meal_types": ["breakfast", "snack", "dinner"],
+      "tags": ["soup", "light"],
+      "ingredients": [
+        {"id": "water", "amount": 800, "unit": "ml"},
+        {"id": "kombu", "amount": 1, "unit": "piece", "note": {"en": "about 10 cm", "de": "etwa 10 cm"}},
+        {"id": "shiitake", "amount": 6, "unit": "piece", "note": {"en": "dried", "de": "getrocknet"}},
+        {"id": "miso", "amount": 3, "unit": "tbsp", "note": {"en": "white or red, both work", "de": "hell oder dunkel, beides geht"}},
+        {"id": "firm-tofu", "amount": 150, "unit": "g"},
+        {"id": "wakame", "amount": 2, "unit": "tsp", "note": {"en": "dried", "de": "getrocknet"}},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"}
+      ],
+      "steps": [
+        {"text": {"en": "Wipe the kombu with a damp cloth. Put it in a pot with the dried shiitake and the cold water and let everything steep. Overnight in the fridge is even better, if you think of it the evening before.", "de": "Das Kombu mit einem feuchten Tuch abwischen. Mit den getrockneten Shiitake und dem kalten Wasser in einen Topf geben und alles ziehen lassen. Über Nacht im Kühlschrank ist noch besser, falls du am Vorabend daran denkst."}, "timer_seconds": 1800},
+        {"text": {"en": "Warm it slowly over medium heat until it's just short of boiling and pull out the kombu. Let the shiitake simmer very gently a little longer, then lift them out too.", "de": "Bei mittlerer Hitze langsam erwärmen, bis es kurz vor dem Kochen ist, und das Kombu herausnehmen. Die Shiitake noch etwas ganz sanft simmern lassen, dann ebenfalls herausheben."}, "timer_seconds": 300},
+        {"text": {"en": "Trim the tough stems off the shiitake and slice the caps thinly. Soak the wakame in cold water until it opens up, then squeeze it. Cut the tofu into 1.5 cm cubes and the spring onion into rings.", "de": "Die harten Stiele der Shiitake abschneiden und die Hüte in dünne Scheiben schneiden. Das Wakame in kaltem Wasser einweichen, bis es sich entfaltet, dann ausdrücken. Den Tofu in 1,5 cm große Würfel und die Frühlingszwiebel in Ringe schneiden."}, "timer_seconds": 300},
+        {"text": {"en": "Bring the dashi back to a gentle simmer, add the tofu, mushroom slices and wakame and let them warm through for a couple of minutes.", "de": "Den Dashi wieder sanft zum Simmern bringen, Tofu, Pilzscheiben und Wakame dazugeben und ein paar Minuten durchwärmen."}},
+        {"text": {"en": "Off the heat, dissolve the miso in a ladle of broth and stir it back in. Taste; the shiitake dashi is already savoury, so go carefully with extra miso.", "de": "Vom Herd nehmen, die Misopaste in einer Kelle Brühe auflösen und wieder einrühren. Probieren; der Shiitake-Dashi ist schon kräftig, also vorsichtig mit zusätzlichem Miso."}},
+        {"text": {"en": "Into bowls, spring onion over the top. Steam first, then sip.", "de": "In Schüsseln füllen, Frühlingszwiebel darüber. Erst Dampf, dann Schlürfen."}}
+      ]
+    },
+    {
+      "id": "miso-soup-pescatarian-medium",
+      "title": {"en": "Salmon And Udon Miso Soup", "de": "Misosuppe mit Lachs und Udon"},
+      "margin_note": {"en": "a soup that counts as dinner", "de": "eine suppe, die als abendessen durchgeht"},
+      "intro": {
+        "en": "A bonito-kombu dashi sharpened with sake and mirin, chunks of salmon poached in it until just opaque, fat udon noodles and bok choy underneath. This is the miso soup you eat with chopsticks first and a spoon second. The udon are wheat, so this one is not gluten-free.",
+        "de": "Ein Bonito-Kombu-Dashi, mit Sake und Mirin geschärft, darin Lachsstücke pochiert, bis sie gerade eben durch sind, dicke Udon-Nudeln und Pak Choi darunter. Diese Misosuppe isst du erst mit Stäbchen und dann mit dem Löffel. Udon sind aus Weizen, glutenfrei ist das hier also nicht."
+      },
+      "variant": {"diet": "pescatarian", "effort": "medium"},
+      "contains": ["fish", "soy", "gluten", "alcohol", "added-sugar", "sesame"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer", "poach"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 680,
+      "macros": {"protein_g": 45, "carbs_g": 66, "fat_g": 25},
+      "meal_types": ["dinner"],
+      "tags": ["soup", "noodles", "hearty"],
+      "ingredients": [
+        {"id": "water", "amount": 1, "unit": "l"},
+        {"id": "kombu", "amount": 1, "unit": "piece", "note": {"en": "about 10 cm", "de": "etwa 10 cm"}},
+        {"id": "bonito-flakes", "amount": 20, "unit": "g"},
+        {"id": "sake", "amount": 2, "unit": "tbsp"},
+        {"id": "mirin", "amount": 1, "unit": "tbsp"},
+        {"id": "ginger", "amount": 1, "unit": "piece", "note": {"en": "thumb-sized, sliced", "de": "daumengroß, in Scheiben"}},
+        {"id": "salmon", "amount": 300, "unit": "g", "note": {"en": "skinless fillet", "de": "Filet ohne Haut"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "udon-noodles", "amount": 400, "unit": "g", "note": {"en": "fresh or frozen; 200 g if dried", "de": "frisch oder TK; 200 g, wenn getrocknet"}},
+        {"id": "bok-choy", "amount": 2, "unit": "piece"},
+        {"id": "miso", "amount": 4, "unit": "tbsp", "note": {"en": "red or mixed", "de": "dunkel oder gemischt"}},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"},
+        {"id": "sesame-oil", "amount": 1, "unit": "tsp"},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch", "note": {"en": "or shichimi", "de": "oder Shichimi"}}
+      ],
+      "steps": [
+        {"text": {"en": "Wipe the kombu and put it in a large pot with the cold water. Let it stand, then heat slowly and lift the kombu out just before the water boils.", "de": "Das Kombu abwischen und mit dem kalten Wasser in einen großen Topf geben. Stehen lassen, dann langsam erhitzen und das Kombu kurz vor dem Kochen herausnehmen."}, "timer_seconds": 600},
+        {"text": {"en": "Off the heat, add the bonito flakes and let them steep for two minutes, then strain into a clean pot. Add the sake, mirin and ginger slices and simmer gently so the alcohol softens into the broth.", "de": "Vom Herd nehmen, die Bonitoflocken dazugeben und zwei Minuten ziehen lassen, dann in einen sauberen Topf abseihen. Sake, Mirin und Ingwerscheiben dazugeben und sanft simmern lassen, damit der Alkohol sich in die Brühe fügt."}, "timer_seconds": 300},
+        {"text": {"en": "Cut the salmon into 3 cm chunks and salt them lightly. Halve the bok choy lengthwise, or quarter it if the heads are big. Slice the spring onion into rings.", "de": "Den Lachs in 3 cm große Stücke schneiden und leicht salzen. Den Pak Choi längs halbieren, oder vierteln, wenn die Köpfe groß sind. Die Frühlingszwiebel in Ringe schneiden."}},
+        {"text": {"en": "Cook the udon in a separate pot of boiling water as the packet says, drain and rinse briefly under warm water to shed the starch. Divide between two deep bowls.", "de": "Die Udon in einem zweiten Topf mit kochendem Wasser nach Packungsangabe garen, abgießen und kurz unter warmem Wasser abspülen, damit die Stärke abgeht. Auf zwei tiefe Schüsseln verteilen."}, "timer_seconds": 180},
+        {"text": {"en": "Drop the dashi to the barest simmer and lower in the salmon. Poach without stirring until the chunks turn opaque and just flake, adding the bok choy for the last two minutes.", "de": "Den Dashi auf das leiseste Simmern zurückdrehen und den Lachs hineingleiten lassen. Ohne Rühren pochieren, bis die Stücke hell werden und gerade eben zerfallen, den Pak Choi für die letzten zwei Minuten dazugeben."}, "timer_seconds": 240},
+        {"text": {"en": "Off the heat. Dissolve the miso in a ladle of broth, stir it back in and taste. It should be savoury and rounded, not salty.", "de": "Vom Herd nehmen. Die Misopaste in einer Kelle Brühe auflösen, wieder einrühren und probieren. Sie soll kräftig und rund schmecken, nicht salzig."}},
+        {"text": {"en": "Ladle salmon, bok choy and broth over the noodles. Spring onion, a few drops of sesame oil and chili flakes on top.", "de": "Lachs, Pak Choi und Brühe über die Nudeln schöpfen. Frühlingszwiebel, ein paar Tropfen Sesamöl und Chiliflocken obendrauf."}}
+      ]
+    }
+  ]
+}

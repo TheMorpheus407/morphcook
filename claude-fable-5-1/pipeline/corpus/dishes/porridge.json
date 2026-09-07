@@ -1,0 +1,200 @@
+{
+  "dish": {
+    "id": "porridge",
+    "name": {"en": "Porridge", "de": "Porridge"},
+    "hero_text": {
+      "en": "Oats, liquid, salt and a low flame. The most forgiving breakfast there is, and the one you'll still be making in thirty years.",
+      "de": "Hafer, Flüssigkeit, Salz und eine kleine Flamme. Das gnädigste Frühstück überhaupt, und das, was du in dreißig Jahren immer noch kochen wirst."
+    },
+    "caption": {"en": "grey morning, warm bowl, spoon already in", "de": "grauer morgen, warme schüssel, löffel steckt schon drin"},
+    "stripe_color": "#BFA98F",
+    "cuisine_tags": ["british"],
+    "frequency_tier": "core",
+    "meal_types": ["breakfast"],
+    "tags": ["comfort", "sweet", "quick"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "porridge-classic-easy",
+      "title": {"en": "Classic Porridge", "de": "Klassisches Porridge"},
+      "margin_note": {"en": "salt first, sugar second", "de": "erst salz, dann zucker"},
+      "intro": {
+        "en": "Rolled oats stirred slowly in milk with a proper pinch of salt until they turn thick and glossy. Sugar or butter on top are your business; the salt is not up for discussion.",
+        "de": "Haferflocken, langsam in Milch gerührt, mit einer ordentlichen Prise Salz, bis sie dick und glänzend sind. Zucker oder Butter obendrauf sind deine Sache; beim Salz gibt es nichts zu diskutieren."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["dairy", "lactose", "added-sugar", "gluten"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 350,
+      "macros": {"protein_g": 13, "carbs_g": 43, "fat_g": 14},
+      "meal_types": ["breakfast"],
+      "tags": ["comfort", "quick", "sweet"],
+      "ingredients": [
+        {"id": "rolled-oats", "amount": 100, "unit": "g"},
+        {"id": "whole-milk", "amount": 350, "unit": "ml"},
+        {"id": "water", "amount": 150, "unit": "ml"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "butter", "amount": 10, "unit": "g", "note": {"en": "for the top, optional", "de": "obendrauf, wenn du magst"}},
+        {"id": "brown-sugar", "amount": 2, "unit": "tsp", "note": {"en": "or honey, or nothing at all", "de": "oder Honig, oder gar nichts"}}
+      ],
+      "steps": [
+        {"text": {"en": "Tip the oats into a small heavy pan with the milk, water and salt. Set it over medium-low heat.", "de": "Haferflocken mit Milch, Wasser und Salz in einen kleinen schweren Topf geben. Auf mittlere bis kleine Hitze stellen."}},
+        {"text": {"en": "Bring it slowly to a bare simmer, stirring now and then so nothing sticks. It will look thin and unpromising for a while. Keep going.", "de": "Langsam bis knapp unter den Siedepunkt bringen, dabei ab und zu rühren, damit nichts ansetzt. Es sieht eine Weile dünn und wenig vielversprechend aus. Dranbleiben."}},
+        {"text": {"en": "Once it starts to thicken, stir more or less constantly with a wooden spoon in slow figure-eights until the oats are soft and the porridge holds a slow, heavy ripple.", "de": "Sobald es andickt, mehr oder weniger ständig mit dem Holzlöffel in langsamen Achten rühren, bis die Flocken weich sind und das Porridge nur noch träge Blasen wirft."}, "timer_seconds": 300},
+        {"text": {"en": "Take it off the heat and let it sit for a minute; it firms up more than you'd expect. Taste for salt.", "de": "Vom Herd nehmen und eine Minute stehen lassen; es wird fester, als du denkst. Auf Salz abschmecken."}, "timer_seconds": 60},
+        {"text": {"en": "Spoon into warm bowls. A small knob of butter and a scatter of brown sugar on top, or a moat of cold milk around the edge.", "de": "In vorgewärmte Schüsseln füllen. Ein kleines Stück Butter und etwas brauner Zucker obendrauf, oder ein Ring kalte Milch am Rand."}}
+      ]
+    },
+    {
+      "id": "porridge-vegan-easy",
+      "title": {"en": "Banana Oat Milk Porridge", "de": "Bananen-Porridge mit Hafermilch"},
+      "margin_note": {"en": "the banana does the sweetening", "de": "die banane übernimmt das süßen"},
+      "intro": {
+        "en": "Oats cooked in oat milk with a ripe banana mashed straight into the pot, so the whole thing turns custardy and gently sweet without a spoon of sugar. The second banana goes on top, sliced, for people who like to see what they're eating.",
+        "de": "Haferflocken in Hafermilch gekocht, mit einer reifen Banane, die direkt im Topf zerdrückt wird, damit alles cremig und sanft süß wird, ganz ohne Zucker. Die zweite Banane kommt in Scheiben obendrauf, für alle, die gern sehen, was sie essen."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["added-sugar", "gluten"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 440,
+      "macros": {"protein_g": 12, "carbs_g": 73, "fat_g": 11},
+      "meal_types": ["breakfast"],
+      "tags": ["comfort", "quick", "sweet"],
+      "ingredients": [
+        {"id": "rolled-oats", "amount": 100, "unit": "g"},
+        {"id": "oat-milk", "amount": 450, "unit": "ml"},
+        {"id": "banana", "amount": 2, "unit": "piece", "note": {"en": "ripe, spotty", "de": "reif, mit braunen Punkten"}},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "pumpkin-seeds", "amount": 2, "unit": "tbsp"},
+        {"id": "maple-syrup", "amount": 2, "unit": "tsp", "note": {"en": "only if the bananas were pale", "de": "nur, wenn die Bananen noch blass waren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Toast the pumpkin seeds in a dry pan over medium heat until they pop and smell nutty. Tip them out and set aside.", "de": "Kürbiskerne in einer trockenen Pfanne bei mittlerer Hitze rösten, bis sie knacken und nussig riechen. Herausnehmen und beiseitestellen."}, "timer_seconds": 180},
+        {"text": {"en": "Peel one banana and mash it in the bottom of a small pan with a fork until nearly smooth. Add the oats, oat milk, cinnamon and salt.", "de": "Eine Banane schälen und im Topf mit der Gabel fast glatt zerdrücken. Haferflocken, Hafermilch, Zimt und Salz dazugeben."}},
+        {"text": {"en": "Bring to a gentle simmer over medium heat, stirring often. Oat milk likes to catch on the bottom, so don't wander off.", "de": "Bei mittlerer Hitze unter häufigem Rühren sanft aufkochen. Hafermilch setzt gern an, also nicht weglaufen."}},
+        {"text": {"en": "Turn the heat low and keep stirring until thick, creamy and soft. It should fall lazily off the spoon.", "de": "Hitze klein stellen und weiterrühren, bis es dick, cremig und weich ist. Es sollte träge vom Löffel fallen."}, "timer_seconds": 300},
+        {"text": {"en": "Slice the second banana. Spoon the porridge into bowls, top with banana and pumpkin seeds and, only if the bananas weren't sweet enough, a thread of maple syrup.", "de": "Die zweite Banane in Scheiben schneiden. Porridge in Schüsseln füllen, mit Banane und Kürbiskernen belegen und, nur wenn die Bananen nicht süß genug waren, mit einem Faden Ahornsirup."}}
+      ]
+    },
+    {
+      "id": "porridge-gluten-free-easy",
+      "title": {"en": "Gluten-Free Blueberry Porridge", "de": "Glutenfreies Blaubeer-Porridge"},
+      "margin_note": {"en": "certified oats, purple bowl", "de": "zertifizierter hafer, lila schüssel"},
+      "intro": {
+        "en": "Oats are naturally gluten-free but almost never milled that way, so this one insists on certified gluten-free oats. Half milk, half water, a pinch of salt, and blueberries stirred in at the very end so they burst and streak everything violet.",
+        "de": "Hafer ist von Natur aus glutenfrei, wird aber fast nie so verarbeitet, deshalb besteht dieses Rezept auf zertifiziert glutenfreien Flocken. Halb Milch, halb Wasser, eine Prise Salz, und ganz am Ende Blaubeeren, die aufplatzen und alles violett färben."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["dairy", "lactose", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 330,
+      "macros": {"protein_g": 12, "carbs_g": 48, "fat_g": 9},
+      "meal_types": ["breakfast"],
+      "tags": ["comfort", "quick", "sweet", "fresh"],
+      "ingredients": [
+        {"id": "gluten-free-oats", "amount": 100, "unit": "g", "note": {"en": "certified gluten-free", "de": "zertifiziert glutenfrei"}},
+        {"id": "whole-milk", "amount": 300, "unit": "ml"},
+        {"id": "water", "amount": 200, "unit": "ml"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "blueberries", "amount": 100, "unit": "g", "note": {"en": "fresh or frozen", "de": "frisch oder tiefgekühlt"}},
+        {"id": "lemon", "amount": 0.5, "unit": "piece", "note": {"en": "zest only", "de": "nur die Schale"}},
+        {"id": "maple-syrup", "amount": 2, "unit": "tsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Put the oats, milk, water and salt in a small pan over medium heat.", "de": "Haferflocken, Milch, Wasser und Salz in einen kleinen Topf geben und bei mittlerer Hitze erwärmen."}},
+        {"text": {"en": "Bring to a simmer, stirring, then drop the heat and keep stirring until the oats soften and the porridge thickens to a slow, heavy bubble. Gluten-free oats sometimes take a minute or two longer.", "de": "Unter Rühren aufkochen, dann Hitze reduzieren und weiterrühren, bis die Flocken weich sind und das Porridge dick ist und nur noch langsam blubbert. Glutenfreie Flocken brauchen manchmal ein, zwei Minuten länger."}, "timer_seconds": 420},
+        {"text": {"en": "Grate in a little lemon zest and stir in most of the blueberries. Cook for one more minute, just until they start to burst and bleed.", "de": "Etwas Zitronenschale hineinreiben und den Großteil der Blaubeeren unterrühren. Noch eine Minute kochen, gerade so lange, bis sie aufplatzen und Farbe abgeben."}, "timer_seconds": 60},
+        {"text": {"en": "Off the heat, let it sit for a minute so it settles, then taste for salt.", "de": "Vom Herd nehmen, eine Minute ruhen lassen, dann auf Salz abschmecken."}, "timer_seconds": 60},
+        {"text": {"en": "Divide between bowls, top with the remaining berries and a thin drizzle of maple syrup.", "de": "Auf Schüsseln verteilen, mit den restlichen Beeren und einem dünnen Faden Ahornsirup toppen."}}
+      ]
+    },
+    {
+      "id": "porridge-keto-easy",
+      "title": {"en": "Keto Noatmeal", "de": "Keto-Noatmeal"},
+      "margin_note": {"en": "no oats, still a porridge", "de": "kein hafer, trotzdem porridge"},
+      "intro": {
+        "en": "Chia, hemp hearts and coconut simmered in coconut milk until they thicken into something that behaves exactly like porridge and stays under twenty grams of carbs. Cinnamon and a few raspberries make it breakfast rather than a science project.",
+        "de": "Chia, Hanfsamen und Kokos, in Kokosmilch geköchelt, bis sie sich zu etwas verdicken, das sich genau wie Porridge verhält und unter zwanzig Gramm Kohlenhydrate bleibt. Zimt und ein paar Himbeeren machen daraus ein Frühstück statt ein Chemieexperiment."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": [],
+      "extra_attributes": ["keto"],
+      "technique": ["simmer"],
+      "time_minutes": 10,
+      "servings": 2,
+      "calories_per_serving": 450,
+      "macros": {"protein_g": 12, "carbs_g": 17, "fat_g": 38},
+      "meal_types": ["breakfast"],
+      "tags": ["quick", "light", "sweet"],
+      "ingredients": [
+        {"id": "chia-seeds", "amount": 3, "unit": "tbsp"},
+        {"id": "hemp-seeds", "amount": 4, "unit": "tbsp", "note": {"en": "hulled hemp hearts", "de": "geschälte Hanfsamen"}},
+        {"id": "coconut-flakes", "amount": 3, "unit": "tbsp", "note": {"en": "unsweetened", "de": "ungesüßt"}},
+        {"id": "coconut-milk", "amount": 200, "unit": "ml", "note": {"en": "full-fat, from a can", "de": "Vollfett, aus der Dose"}},
+        {"id": "water", "amount": 100, "unit": "ml"},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "vanilla", "amount": 1, "unit": "pinch", "note": {"en": "ground, or a scrape of pod", "de": "gemahlen, oder etwas ausgekratzte Schote"}},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "erythritol", "amount": 1, "unit": "tbsp", "note": {"en": "optional", "de": "optional"}},
+        {"id": "raspberries", "amount": 60, "unit": "g"}
+      ],
+      "steps": [
+        {"text": {"en": "Toast the coconut flakes in a dry pan over medium heat until golden at the edges. They go from pale to burnt fast, so stir. Set half aside for the top.", "de": "Kokosflocken in einer trockenen Pfanne bei mittlerer Hitze rösten, bis die Ränder goldbraun sind. Von blass zu verbrannt geht es schnell, also rühren. Die Hälfte für obendrauf beiseitelegen."}},
+        {"text": {"en": "In a small pan, whisk the coconut milk with the water, chia, hemp seeds, the rest of the coconut, cinnamon, vanilla, salt and erythritol if using.", "de": "In einem kleinen Topf Kokosmilch mit Wasser, Chia, Hanfsamen, den restlichen Kokosflocken, Zimt, Vanille, Salz und, wenn du magst, Erythrit verquirlen."}},
+        {"text": {"en": "Bring to a gentle simmer over medium-low heat, stirring constantly. The chia swells fast and the whole thing turns thick and glossy within a few minutes.", "de": "Bei mittlerer bis kleiner Hitze unter ständigem Rühren sanft aufkochen. Die Chiasamen quellen schnell, und innerhalb weniger Minuten wird alles dick und glänzend."}, "timer_seconds": 240},
+        {"text": {"en": "Pull it off the heat when it's slightly looser than you want it and let it sit for two minutes. It keeps thickening as it stands.", "de": "Vom Herd nehmen, wenn es noch etwas flüssiger ist, als du es haben willst, und zwei Minuten stehen lassen. Es dickt beim Stehen weiter nach."}, "timer_seconds": 120},
+        {"text": {"en": "Spoon into bowls, top with the reserved coconut and the raspberries. A splash of cold coconut milk on top if you like a contrast.", "de": "In Schüsseln füllen, mit den beiseitegelegten Kokosflocken und den Himbeeren toppen. Ein Schuss kalte Kokosmilch obendrauf, wenn du Kontrast magst."}}
+      ]
+    },
+    {
+      "id": "porridge-classic-medium",
+      "title": {"en": "Baked Berry Oatmeal", "de": "Ofen-Porridge mit Beeren"},
+      "margin_note": {"en": "porridge you can cut into squares", "de": "porridge zum in stücke schneiden"},
+      "intro": {
+        "en": "Oats, milk, eggs and a little butter baked into a soft, sliceable slab, with berries sinking into the top as it sets. It's porridge for a table of people, and it reheats better than it has any right to.",
+        "de": "Hafer, Milch, Eier und ein bisschen Butter, im Ofen zu einer weichen, schneidbaren Platte gebacken, in die die Beeren beim Festwerden einsinken. Porridge für einen vollen Tisch, und aufgewärmt schmeckt es besser, als es dürfte."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["dairy", "lactose", "egg", "added-sugar", "gluten"],
+      "extra_attributes": [],
+      "technique": ["bake"],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 440,
+      "macros": {"protein_g": 13, "carbs_g": 55, "fat_g": 18},
+      "meal_types": ["breakfast"],
+      "tags": ["baked", "family", "sweet"],
+      "ingredients": [
+        {"id": "rolled-oats", "amount": 200, "unit": "g"},
+        {"id": "baking-powder", "amount": 1, "unit": "tsp"},
+        {"id": "cinnamon", "amount": 1, "unit": "tsp"},
+        {"id": "salt", "amount": 0.5, "unit": "tsp"},
+        {"id": "whole-milk", "amount": 400, "unit": "ml"},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "butter", "amount": 40, "unit": "g", "note": {"en": "melted, plus a little for the dish", "de": "geschmolzen, plus etwas für die Form"}},
+        {"id": "maple-syrup", "amount": 60, "unit": "ml"},
+        {"id": "vanilla", "amount": 1, "unit": "pinch", "note": {"en": "ground, or the seeds of half a pod", "de": "gemahlen, oder das Mark einer halben Schote"}},
+        {"id": "mixed-berries", "amount": 250, "unit": "g", "note": {"en": "frozen is fine, don't thaw", "de": "tiefgekühlt geht, nicht auftauen"}}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 180 °C. Butter a smallish baking dish, roughly 20 cm square.", "de": "Ofen auf 180 °C vorheizen. Eine kleinere Auflaufform, etwa 20 cm im Quadrat, buttern."}},
+        {"text": {"en": "In a bowl, mix the oats with the baking powder, cinnamon and salt.", "de": "In einer Schüssel Haferflocken mit Backpulver, Zimt und Salz mischen."}},
+        {"text": {"en": "In a jug, whisk the milk, eggs, melted butter, maple syrup and vanilla until smooth.", "de": "In einem Krug Milch, Eier, geschmolzene Butter, Ahornsirup und Vanille glatt rühren."}},
+        {"text": {"en": "Stir two thirds of the berries into the oats, then pour over the milk mixture and stir once. Scrape into the dish and scatter the remaining berries on top.", "de": "Zwei Drittel der Beeren unter die Haferflocken heben, die Milchmischung darübergießen und einmal umrühren. In die Form füllen und die restlichen Beeren obenauf verteilen."}},
+        {"text": {"en": "Bake until the top is golden, the edges pull away slightly and the centre no longer wobbles when you nudge the dish.", "de": "Backen, bis die Oberfläche goldbraun ist, die Ränder sich leicht lösen und die Mitte nicht mehr wackelt, wenn du an der Form rüttelst."}, "timer_seconds": 2100},
+        {"text": {"en": "Let it rest so it firms up enough to cut. Serve warm in squares, with cold milk or a spoonful of yogurt.", "de": "Ruhen lassen, bis es fest genug zum Schneiden ist. Warm in Stücken servieren, mit kalter Milch oder einem Löffel Joghurt."}, "timer_seconds": 600}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "dish": {
+    "id": "caesar-salad",
+    "name": {"en": "Caesar Salad", "de": "Caesar Salad"},
+    "hero_text": {
+      "en": "Invented in Tijuana, adopted by every hotel bar in America, still the best argument for eating lettuce. Cold crisp romaine, a dressing with anchovy and lemon in it, croutons that actually crunch, cheese over everything.",
+      "de": "In Tijuana erfunden, von jeder Hotelbar Amerikas adoptiert und immer noch das beste Argument für Salat. Kalter, knackiger Römersalat, ein Dressing mit Sardellen und Zitrone, Croutons, die wirklich knacken, Käse über alles."
+    },
+    "caption": {"en": "big bowl, cold leaves, more pepper", "de": "große schüssel, kalte blätter, mehr pfeffer"},
+    "stripe_color": "#7A8C6E",
+    "cuisine_tags": ["american"],
+    "frequency_tier": "core",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["salad", "fresh"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "caesar-salad-classic-easy",
+      "title": {"en": "Classic Chicken Caesar", "de": "Klassischer Caesar Salad mit Hähnchen"},
+      "margin_note": {"en": "the anchovy is not up for discussion", "de": "die sardelle steht nicht zur debatte"},
+      "intro": {
+        "en": "A proper Caesar built in a big bowl: yolk, garlic and anchovy whisked with lemon and oil into something glossy, sourdough torn and fried in olive oil, a seared chicken breast sliced over the top. Make the dressing by hand once and the bottle in the fridge door is finished.",
+        "de": "Ein richtiger Caesar, in einer großen Schüssel gebaut: Eigelb, Knoblauch und Sardelle mit Zitrone und Öl zu etwas Glänzendem verrührt, gezupftes Sauerteigbrot in Olivenöl geröstet, eine gebratene Hähnchenbrust in Scheiben obendrauf. Einmal das Dressing selbst gemacht, und die Flasche in der Kühlschranktür hat ausgedient."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["poultry", "gluten", "egg", "fish", "high-fodmap", "mustard", "sulphites", "added-sugar", "dairy", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "raw"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 640,
+      "macros": {"protein_g": 46, "carbs_g": 24, "fat_g": 40},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["salad", "quick", "fresh"],
+      "ingredients": [
+        {"id": "romaine", "amount": 2, "unit": "piece", "note": {"en": "hearts", "de": "Herzen"}},
+        {"id": "chicken-breast", "amount": 300, "unit": "g"},
+        {"id": "sourdough", "amount": 2, "unit": "slice", "note": {"en": "thick, a day old", "de": "dick, vom Vortag"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "egg-yolk", "amount": 1, "unit": "piece", "note": {"en": "very fresh", "de": "sehr frisch"}},
+        {"id": "anchovies", "amount": 4, "unit": "piece", "note": {"en": "fillets in oil", "de": "Filets in Öl"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "dijon-mustard", "amount": 1, "unit": "tsp"},
+        {"id": "worcestershire-sauce", "amount": 1, "unit": "tsp"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "extra-virgin-olive-oil", "amount": 60, "unit": "ml"},
+        {"id": "parmesan", "amount": 40, "unit": "g"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Tear the bread into rough bite-sized pieces, toss with two tablespoons of olive oil and a pinch of salt, and fry in a wide pan over medium heat, turning now and then, until golden and crisp all over. Tip onto a plate.", "de": "Das Brot in grobe, mundgerechte Stücke zupfen, mit zwei Esslöffeln Olivenöl und einer Prise Salz vermengen und in einer weiten Pfanne bei mittlerer Hitze rösten, ab und zu wenden, bis es rundum goldbraun und knusprig ist. Auf einen Teller kippen."}, "timer_seconds": 480},
+        {"text": {"en": "Pat the chicken dry, season with salt and pepper and cook in the remaining oil over medium-high heat until golden on both sides and just cooked through. Rest it on a board while you do the rest.", "de": "Das Hähnchen trocken tupfen, mit Salz und Pfeffer würzen und im restlichen Öl bei mittelhoher Hitze braten, bis es beidseitig goldbraun und gerade durch ist. Auf einem Brett ruhen lassen, während du den Rest machst."}, "timer_seconds": 720},
+        {"text": {"en": "The dressing: mash the anchovies and garlic with a pinch of salt into a paste with the flat of a knife. Scrape into a bowl and whisk in the yolk, mustard, Worcestershire and the juice of half the lemon. Now the oil, drop by drop at first, then in a thin stream, whisking all the while, until it's thick and glossy. Grate in half the parmesan and plenty of pepper.", "de": "Das Dressing: Sardellen und Knoblauch mit einer Prise Salz mit der flachen Messerseite zu einer Paste zerdrücken. In eine Schüssel kratzen und Eigelb, Senf, Worcestershiresauce und den Saft einer halben Zitrone unterschlagen. Jetzt das Öl, erst tropfenweise, dann in dünnem Strahl, dabei immer weiterschlagen, bis es dick und glänzend ist. Die Hälfte des Parmesans hineinreiben, reichlich Pfeffer."}},
+        {"text": {"en": "Taste it. It should be sharp, salty and slightly too much on its own; add more lemon if it tastes flat.", "de": "Probieren. Pur soll es scharf, salzig und ein bisschen zu viel sein; wenn es flach schmeckt, mehr Zitrone."}},
+        {"text": {"en": "Separate the romaine leaves, wash them and dry them properly (wet leaves will not hold dressing). Tear the big ones, leave the small ones whole, and keep them cold until the last minute.", "de": "Die Salatblätter ablösen, waschen und richtig trocken schleudern (an nassen Blättern hält kein Dressing). Große Blätter zerteilen, kleine ganz lassen, und bis zum letzten Moment kalt halten."}},
+        {"text": {"en": "Toss the leaves with most of the dressing, using your hands, until every leaf is coated. Slice the chicken.", "de": "Die Blätter mit dem Großteil des Dressings vermengen, am besten mit den Händen, bis jedes Blatt überzogen ist. Das Hähnchen aufschneiden."}},
+        {"text": {"en": "Croutons, chicken, the rest of the dressing, the rest of the parmesan shaved over in curls, and more pepper than seems reasonable.", "de": "Croutons, Hähnchen, das restliche Dressing, den restlichen Parmesan in Spänen darüber, und mehr Pfeffer, als vernünftig scheint."}}
+      ]
+    },
+    {
+      "id": "caesar-salad-vegetarian-easy",
+      "title": {"en": "Caper Caesar With Jammy Eggs", "de": "Caesar Salad mit Kapern und wachsweichen Eiern"},
+      "margin_note": {"en": "capers bring the salt the anchovy used to", "de": "kapern bringen das salz, das sonst die sardelle bringt"},
+      "intro": {
+        "en": "Capers mashed into the dressing for the briny hit, more capers fried until they open like tiny flowers, and soft-boiled eggs where the chicken would go. One honest note: classic Parmigiano is made with animal rennet, so reach for a vegetarian hard cheese if that matters to you.",
+        "de": "Kapern im Dressing zerdrückt für die salzige Tiefe, noch mehr Kapern gebraten, bis sie wie kleine Blüten aufgehen, und wachsweiche Eier dort, wo sonst das Hähnchen liegt. Ehrlicherweise: Klassischer Parmesan wird mit tierischem Lab gemacht, nimm also einen vegetarischen Hartkäse, wenn dir das wichtig ist."
+      },
+      "variant": {"diet": "vegetarian", "effort": "easy"},
+      "contains": ["egg", "high-fodmap", "mustard", "sulphites", "dairy", "gluten"],
+      "extra_attributes": [],
+      "technique": ["pan-fry", "raw"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 540,
+      "macros": {"protein_g": 22, "carbs_g": 26, "fat_g": 38},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["salad", "quick", "fresh"],
+      "ingredients": [
+        {"id": "romaine", "amount": 2, "unit": "piece", "note": {"en": "hearts", "de": "Herzen"}},
+        {"id": "egg", "amount": 2, "unit": "piece", "note": {"en": "for the jammy eggs", "de": "für die wachsweichen Eier"}},
+        {"id": "egg-yolk", "amount": 1, "unit": "piece", "note": {"en": "very fresh, for the dressing", "de": "sehr frisch, fürs Dressing"}},
+        {"id": "capers", "amount": 3, "unit": "tbsp", "note": {"en": "drained, keep a spoon of the brine", "de": "abgetropft, einen Löffel Lake aufheben"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "dijon-mustard", "amount": 1, "unit": "tsp"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "extra-virgin-olive-oil", "amount": 60, "unit": "ml"},
+        {"id": "parmesan", "amount": 40, "unit": "g", "note": {"en": "or a vegetarian hard cheese", "de": "oder ein vegetarischer Hartkäse"}},
+        {"id": "sourdough", "amount": 2, "unit": "slice", "note": {"en": "thick, a day old", "de": "dick, vom Vortag"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Lower the eggs into boiling water and cook for six and a half minutes, then straight into cold water. Peel once cool enough to handle.", "de": "Die Eier in kochendes Wasser geben und sechseinhalb Minuten kochen, dann sofort in kaltes Wasser. Schälen, sobald sie sich anfassen lassen."}, "timer_seconds": 390},
+        {"text": {"en": "Tear the bread into bite-sized pieces, toss with two tablespoons of oil and salt, and fry over medium heat until golden on all sides. Set aside.", "de": "Das Brot in mundgerechte Stücke zupfen, mit zwei Esslöffeln Öl und Salz vermengen und bei mittlerer Hitze rundum goldbraun rösten. Beiseitestellen."}, "timer_seconds": 480},
+        {"text": {"en": "Pat a tablespoon of the capers dry and fry them in the remaining oil over high heat until they crackle and open up. Lift out onto kitchen paper; they crisp as they cool.", "de": "Einen Esslöffel Kapern trocken tupfen und im restlichen Öl bei starker Hitze braten, bis sie knistern und aufplatzen. Auf Küchenpapier heben; beim Abkühlen werden sie knusprig."}},
+        {"text": {"en": "The dressing: mash the remaining capers with the garlic and a pinch of salt into a rough paste. Whisk in the yolk, mustard, a spoon of caper brine and the juice of half the lemon, then the oil slowly until it thickens. Grate in half the cheese and a lot of pepper.", "de": "Das Dressing: Die restlichen Kapern mit Knoblauch und einer Prise Salz grob zerdrücken. Eigelb, Senf, einen Löffel Kapernlake und den Saft einer halben Zitrone unterschlagen, dann langsam das Öl, bis es dick wird. Die Hälfte des Käses hineinreiben, viel Pfeffer."}},
+        {"text": {"en": "Wash and dry the romaine thoroughly, tear into big pieces and keep cold.", "de": "Römersalat waschen, gründlich trocknen, in große Stücke zupfen und kalt stellen."}},
+        {"text": {"en": "Toss the leaves with most of the dressing by hand until they shine.", "de": "Die Blätter mit dem Großteil des Dressings mit den Händen vermengen, bis sie glänzen."}},
+        {"text": {"en": "Halve the eggs and set them on top with the croutons, fried capers, the rest of the cheese in shavings, a squeeze of lemon and pepper.", "de": "Die Eier halbieren und mit Croutons, gebratenen Kapern, dem restlichen Käse in Spänen, einem Spritzer Zitrone und Pfeffer darauf anrichten."}}
+      ]
+    },
+    {
+      "id": "caesar-salad-vegan-easy",
+      "title": {"en": "Vegan Tempeh Caesar", "de": "Veganer Caesar Salad mit Tempeh"},
+      "margin_note": {"en": "cashews make a dressing that actually clings", "de": "cashews machen ein dressing, das wirklich haftet"},
+      "intro": {
+        "en": "A blended cashew dressing with lemon, capers, mustard and nutritional yeast for the salty, cheesy depth, thin slabs of tempeh glazed in tamari and smoked paprika, and croutons from whatever good bread is going stale. It stands entirely on its own.",
+        "de": "Ein gemixtes Cashew-Dressing mit Zitrone, Kapern, Senf und Hefeflocken für die salzige, käsige Tiefe, dünne Tempeh-Scheiben in Tamari und Rauchpaprika glasiert, und Croutons aus dem guten Brot, das gerade alt wird. Steht komplett für sich."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "added-sugar", "cashews", "tree-nuts", "mustard", "sulphites", "high-fodmap", "gluten"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "raw"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 590,
+      "macros": {"protein_g": 32, "carbs_g": 42, "fat_g": 34},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["salad", "fresh", "quick"],
+      "ingredients": [
+        {"id": "romaine", "amount": 2, "unit": "piece", "note": {"en": "hearts", "de": "Herzen"}},
+        {"id": "tempeh", "amount": 200, "unit": "g", "note": {"en": "sliced 1 cm thick", "de": "in 1 cm dicke Scheiben"}},
+        {"id": "tamari", "amount": 2, "unit": "tbsp"},
+        {"id": "maple-syrup", "amount": 1, "unit": "tsp"},
+        {"id": "smoked-paprika", "amount": 1, "unit": "tsp"},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "cashews", "amount": 60, "unit": "g", "note": {"en": "raw, unsalted", "de": "roh, ungesalzen"}},
+        {"id": "water", "amount": 80, "unit": "ml"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "capers", "amount": 1, "unit": "tbsp", "note": {"en": "plus a teaspoon of the brine", "de": "plus ein Teelöffel Lake"}},
+        {"id": "dijon-mustard", "amount": 1, "unit": "tsp"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "nutritional-yeast", "amount": 2, "unit": "tbsp"},
+        {"id": "sourdough", "amount": 2, "unit": "slice", "note": {"en": "thick, a day old", "de": "dick, vom Vortag"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Cover the cashews with boiling water and leave them to soften while you do everything else.", "de": "Die Cashews mit kochendem Wasser bedecken und weich werden lassen, während du den Rest erledigst."}, "timer_seconds": 900},
+        {"text": {"en": "Stir together the tamari, maple syrup and smoked paprika, coat the tempeh slices in it and let them sit.", "de": "Tamari, Ahornsirup und Rauchpaprika verrühren, die Tempeh-Scheiben darin wenden und ziehen lassen."}},
+        {"text": {"en": "Tear the bread into bite-sized pieces, toss with half the oil and a pinch of salt, and fry over medium heat until golden and crisp. Set aside.", "de": "Das Brot in mundgerechte Stücke zupfen, mit der Hälfte des Öls und einer Prise Salz vermengen und bei mittlerer Hitze goldbraun und knusprig rösten. Beiseitestellen."}, "timer_seconds": 480},
+        {"text": {"en": "Lift the tempeh out of its marinade and fry in the remaining oil over medium-high heat until dark at the edges on both sides. Pour the leftover marinade in for the final half minute so it glazes.", "de": "Tempeh aus der Marinade heben und im restlichen Öl bei mittelhoher Hitze beidseitig braten, bis die Ränder dunkel sind. Für die letzte halbe Minute die übrige Marinade dazugießen, damit es glasiert."}, "timer_seconds": 360},
+        {"text": {"en": "Drain the cashews and blend them with the water, the juice of half the lemon, capers and brine, mustard, garlic, nutritional yeast and a pinch of salt until completely smooth. Thin with a little more water if needed; you want pourable cream. It should taste sharper than seems sensible.", "de": "Cashews abgießen und mit Wasser, dem Saft einer halben Zitrone, Kapern samt Lake, Senf, Knoblauch, Hefeflocken und einer Prise Salz komplett glatt mixen. Bei Bedarf mit etwas mehr Wasser verdünnen; es soll fließen wie Sahne. Es darf schärfer schmecken, als vernünftig scheint."}},
+        {"text": {"en": "Wash and dry the romaine well, tear it into big pieces and keep it cold.", "de": "Römersalat gut waschen und trocknen, in große Stücke zupfen und kalt stellen."}},
+        {"text": {"en": "Toss the leaves with most of the dressing. Tempeh on top, croutons, the last of the dressing, black pepper, a little more nutritional yeast if you like it cheesier, and lemon to finish.", "de": "Die Blätter mit dem Großteil des Dressings vermengen. Tempeh obendrauf, Croutons, der Rest vom Dressing, schwarzer Pfeffer, noch ein paar Hefeflocken, wenn du es käsiger magst, und zum Schluss Zitrone."}}
+      ]
+    },
+    {
+      "id": "caesar-salad-gluten-free-easy",
+      "title": {"en": "Gluten-Free Chicken Caesar", "de": "Glutenfreier Caesar Salad mit Hähnchen"},
+      "margin_note": {"en": "croutons fried in the chicken fat, obviously", "de": "croutons im hähnchenfett geröstet, logisch"},
+      "intro": {
+        "en": "Crisp-skinned chicken thighs, and gluten-free bread cubed and fried in the fat they leave behind, which is the best thing that has ever happened to gluten-free bread. The Worcestershire stays out because most bottles contain malt vinegar; the anchovies carry the dressing on their own.",
+        "de": "Hähnchenschenkel mit knuspriger Haut, und glutenfreies Brot, gewürfelt und im zurückgebliebenen Fett geröstet, was das Beste ist, was glutenfreiem Brot je passiert ist. Die Worcestershiresauce bleibt draußen, weil in den meisten Flaschen Malzessig steckt; die Sardellen tragen das Dressing allein."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["poultry", "egg", "fish", "high-fodmap", "mustard", "sulphites", "dairy", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "raw"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 650,
+      "macros": {"protein_g": 44, "carbs_g": 22, "fat_g": 42},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["salad", "quick", "fresh"],
+      "ingredients": [
+        {"id": "romaine", "amount": 2, "unit": "piece", "note": {"en": "hearts", "de": "Herzen"}},
+        {"id": "chicken-thigh", "amount": 350, "unit": "g", "note": {"en": "boneless, skin on", "de": "ohne Knochen, mit Haut"}},
+        {"id": "gluten-free-bread", "amount": 3, "unit": "slice", "note": {"en": "cut into cubes", "de": "gewürfelt"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "egg-yolk", "amount": 1, "unit": "piece", "note": {"en": "very fresh", "de": "sehr frisch"}},
+        {"id": "anchovies", "amount": 4, "unit": "piece", "note": {"en": "fillets in oil", "de": "Filets in Öl"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "dijon-mustard", "amount": 1, "unit": "tsp"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "extra-virgin-olive-oil", "amount": 60, "unit": "ml"},
+        {"id": "parmesan", "amount": 40, "unit": "g"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Pat the thighs dry and season well. Lay them skin-side down in a cold pan with a tablespoon of oil, turn the heat to medium and leave them alone until the skin is deep gold and lets go of the pan. Flip, cook a few minutes more until done, then rest on a board.", "de": "Die Schenkel trocken tupfen und gut würzen. Mit der Hautseite nach unten in eine kalte Pfanne mit einem Esslöffel Öl legen, mittlere Hitze, und in Ruhe lassen, bis die Haut tief goldbraun ist und sich von der Pfanne löst. Wenden, noch ein paar Minuten fertig braten, dann auf einem Brett ruhen lassen."}, "timer_seconds": 900},
+        {"text": {"en": "Tip the bread cubes into the same pan with the rendered fat and the remaining oil. Toss over medium heat until golden and crisp; gluten-free bread takes a little longer to crisp and then goes from pale to burnt fast, so stay with it.", "de": "Die Brotwürfel in dieselbe Pfanne mit dem ausgelassenen Fett und dem restlichen Öl geben. Bei mittlerer Hitze schwenken, bis sie goldbraun und knusprig sind; glutenfreies Brot braucht etwas länger, bis es knuspert, und wird dann schnell von blass zu verbrannt, also dranbleiben."}, "timer_seconds": 420},
+        {"text": {"en": "The dressing: mash the anchovies and garlic with a pinch of salt to a paste, whisk in the yolk, mustard and the juice of half the lemon, then add the oil in a thin stream until glossy and thick. Half the parmesan grated in, pepper to taste.", "de": "Das Dressing: Sardellen und Knoblauch mit einer Prise Salz zu einer Paste zerdrücken, Eigelb, Senf und den Saft einer halben Zitrone unterschlagen, dann das Öl in dünnem Strahl dazugeben, bis es glänzend und dick ist. Die Hälfte des Parmesans hineinreiben, Pfeffer nach Geschmack."}},
+        {"text": {"en": "Wash the romaine, dry it completely and tear into big pieces. Keep cold.", "de": "Römersalat waschen, komplett trocknen und in große Stücke zupfen. Kalt halten."}},
+        {"text": {"en": "Toss the leaves with most of the dressing until every surface shines.", "de": "Die Blätter mit dem Großteil des Dressings vermengen, bis jede Fläche glänzt."}},
+        {"text": {"en": "Slice the chicken, lay it over the leaves with the croutons, the rest of the dressing and the rest of the parmesan in shavings. Lemon, pepper, done.", "de": "Das Hähnchen aufschneiden, mit Croutons, dem restlichen Dressing und dem restlichen Parmesan in Spänen auf den Salat legen. Zitrone, Pfeffer, fertig."}}
+      ]
+    },
+    {
+      "id": "caesar-salad-keto-easy",
+      "title": {"en": "Keto Caesar With Parmesan Crisps", "de": "Keto Caesar Salad mit Parmesan-Chips"},
+      "margin_note": {"en": "the crisps make the croutons a memory", "de": "mit den chips sind die croutons schnell vergessen"},
+      "intro": {
+        "en": "Parmesan baked into lacy, shattering crisps to stand in for croutons, chicken thighs with proper colour, half an avocado, and a dressing that was keto all along: yolk, anchovy, mustard, lemon, good oil. The bowl was never the problem.",
+        "de": "Parmesan zu spitzenartigen, splitternden Chips gebacken statt Croutons, Hähnchenschenkel mit ordentlich Farbe, eine halbe Avocado, und ein Dressing, das schon immer keto war: Eigelb, Sardelle, Senf, Zitrone, gutes Öl. Die Schüssel war nie das Problem."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["poultry", "dairy", "high-fodmap", "egg", "fish", "mustard", "sulphites", "meat-dairy-combo"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["bake", "pan-fry", "raw"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 700,
+      "macros": {"protein_g": 50, "carbs_g": 7, "fat_g": 52},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["salad", "quick", "fresh"],
+      "ingredients": [
+        {"id": "romaine", "amount": 2, "unit": "piece", "note": {"en": "hearts", "de": "Herzen"}},
+        {"id": "chicken-thigh", "amount": 350, "unit": "g", "note": {"en": "boneless, skinless", "de": "ohne Knochen und Haut"}},
+        {"id": "parmesan", "amount": 70, "unit": "g", "note": {"en": "finely grated, most of it for the crisps", "de": "fein gerieben, das meiste für die Chips"}},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "egg-yolk", "amount": 1, "unit": "piece", "note": {"en": "very fresh", "de": "sehr frisch"}},
+        {"id": "anchovies", "amount": 4, "unit": "piece", "note": {"en": "fillets in oil", "de": "Filets in Öl"}},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "dijon-mustard", "amount": 1, "unit": "tsp"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "extra-virgin-olive-oil", "amount": 60, "unit": "ml"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 200 °C. Spoon small heaps of parmesan onto a lined tray, well spaced, and flatten each into a thin disc. Bake until golden and bubbling, then leave them on the tray; they turn crisp as they cool.", "de": "Ofen auf 200 °C vorheizen. Kleine Häufchen Parmesan mit Abstand auf ein Blech mit Backpapier setzen und jedes zu einer dünnen Scheibe flach drücken. Backen, bis sie goldbraun sind und Blasen werfen, dann auf dem Blech lassen; beim Abkühlen werden sie knusprig."}, "timer_seconds": 360},
+        {"text": {"en": "Pat the thighs dry, season with salt and pepper and fry in the olive oil over medium-high heat until deeply browned on both sides and cooked through. Rest, then slice.", "de": "Die Schenkel trocken tupfen, mit Salz und Pfeffer würzen und im Olivenöl bei mittelhoher Hitze beidseitig kräftig braun und durch braten. Ruhen lassen, dann aufschneiden."}, "timer_seconds": 720},
+        {"text": {"en": "The dressing: anchovies and garlic mashed with salt to a paste, then the yolk, mustard and the juice of half the lemon whisked in, then the oil in a slow stream until it holds a ribbon. Stir in a spoon of the grated parmesan and a lot of pepper.", "de": "Das Dressing: Sardellen und Knoblauch mit Salz zu einer Paste zerdrücken, dann Eigelb, Senf und den Saft einer halben Zitrone unterschlagen, dann das Öl in langsamem Strahl, bis es dick vom Schneebesen läuft. Einen Löffel vom geriebenen Parmesan und viel Pfeffer unterrühren."}},
+        {"text": {"en": "Wash and dry the romaine, tear into big pieces and keep cold. Halve, stone and slice the avocado.", "de": "Römersalat waschen und trocknen, in große Stücke zupfen und kalt stellen. Avocado halbieren, entkernen und in Scheiben schneiden."}},
+        {"text": {"en": "Toss the leaves with most of the dressing until they shine.", "de": "Die Blätter mit dem Großteil des Dressings vermengen, bis sie glänzen."}},
+        {"text": {"en": "Chicken and avocado over the top, the crisps broken into shards, the rest of the dressing, any leftover parmesan, lemon and pepper.", "de": "Hähnchen und Avocado obendrauf, die Chips in Scherben gebrochen, das restliche Dressing, was vom Parmesan noch übrig ist, Zitrone und Pfeffer."}}
+      ]
+    }
+  ]
+}

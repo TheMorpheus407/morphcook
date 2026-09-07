@@ -1,0 +1,199 @@
+{
+  "dish": {
+    "id": "green-curry",
+    "name": {"en": "Green Curry", "de": "Grünes Curry"},
+    "hero_text": {
+      "en": "Thai green curry is a bowl of contradictions that get along: fierce chili and cooling coconut, sweet and salty and sour in the same spoonful, basil thrown in at the last second like an afterthought that was the plan all along.",
+      "de": "Grünes Thai-Curry ist eine Schüssel voller Gegensätze, die sich prächtig verstehen: scharfe Chili und kühlende Kokosmilch, süß, salzig und sauer im selben Löffel, Basilikum in letzter Sekunde dazu, als wäre es ein Nachgedanke, dabei war es von Anfang an der Plan."
+    },
+    "caption": {"en": "coconut cream splitting, on purpose", "de": "kokoscreme, die sich trennt, mit absicht"},
+    "stripe_color": "#7A8C6E",
+    "cuisine_tags": ["thai"],
+    "frequency_tier": "core",
+    "meal_types": ["dinner"],
+    "tags": ["spicy", "comfort", "one-pot"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "green-curry-classic-easy",
+      "title": {"en": "Weeknight Green Chicken Curry", "de": "Grünes Hähnchencurry für unter der Woche"},
+      "margin_note": {"en": "fry the paste in the thick coconut cream first", "de": "die paste zuerst in der dicken kokoscreme anbraten"},
+      "intro": {
+        "en": "A jar of good store-bought paste, a can of coconut milk, chicken thighs, green beans and eggplant. The one thing that separates this from takeaway is frying the paste in the thick cream off the top of the can until it smells like it means it. Store pastes almost always contain shrimp; the label will tell you.",
+        "de": "Ein Glas gute Currypaste aus dem Laden, eine Dose Kokosmilch, Hähnchenschenkel, grüne Bohnen und Aubergine. Was diese Version vom Lieferservice unterscheidet: die Paste in der dicken Creme von der Dosenoberseite anbraten, bis sie ernsthaft duftet. Fertige Pasten enthalten fast immer Garnelen, ein Blick aufs Etikett genügt."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["poultry", "fish", "shellfish", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 1030,
+      "macros": {"protein_g": 40, "carbs_g": 86, "fat_g": 58},
+      "meal_types": ["dinner"],
+      "tags": ["spicy", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 350, "unit": "g", "note": {"en": "boneless, skinless, bite-size pieces", "de": "ohne Knochen und Haut, mundgerecht geschnitten"}},
+        {"id": "green-curry-paste", "amount": 3, "unit": "tbsp", "note": {"en": "store-bought; most contain shrimp paste", "de": "aus dem Glas; die meisten enthalten Garnelenpaste"}},
+        {"id": "coconut-milk", "amount": 400, "unit": "ml", "note": {"en": "one can, full fat, not shaken", "de": "eine Dose, Vollfett, nicht geschüttelt"}},
+        {"id": "fish-sauce", "amount": 1.5, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 1, "unit": "tsp", "note": {"en": "or palm sugar", "de": "oder Palmzucker"}},
+        {"id": "kaffir-lime-leaves", "amount": 4, "unit": "leaf"},
+        {"id": "green-beans", "amount": 150, "unit": "g"},
+        {"id": "eggplant", "amount": 1, "unit": "piece", "note": {"en": "small, in chunks", "de": "klein, in Stücken"}},
+        {"id": "thai-basil", "amount": 1, "unit": "handful"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g"},
+        {"id": "water", "amount": 100, "unit": "ml"},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Rinse the rice until the water runs nearly clear and put it on to cook. It will be ready by the time the curry is.", "de": "Den Reis waschen, bis das Wasser fast klar ist, und aufsetzen. Er ist fertig, wenn das Curry fertig ist."}, "timer_seconds": 900},
+        {"text": {"en": "Open the coconut milk without shaking it and spoon the thick cream from the top into a wide pot with the oil. Heat until it bubbles and the fat starts to separate at the edges.", "de": "Die Kokosmilch öffnen, ohne sie zu schütteln, und die dicke Creme von oben zusammen mit dem Öl in einen weiten Topf geben. Erhitzen, bis es blubbert und sich das Fett an den Rändern absetzt."}},
+        {"text": {"en": "Add the curry paste and fry it in the cream, stirring, until it darkens a shade and the kitchen smells of lemongrass and chili.", "de": "Die Currypaste dazu und in der Creme unter Rühren anbraten, bis sie eine Nuance dunkler wird und die Küche nach Zitronengras und Chili riecht."}, "timer_seconds": 120},
+        {"text": {"en": "Add the chicken and turn it in the paste until the outside has gone opaque. Pour in the rest of the coconut milk and the water, add the lime leaves, torn, and the sugar. Bring to a gentle simmer.", "de": "Das Hähnchen dazugeben und in der Paste wenden, bis es außen nicht mehr glasig ist. Restliche Kokosmilch und Wasser angießen, die zerrissenen Limettenblätter und den Zucker dazu. Sanft köcheln lassen."}},
+        {"text": {"en": "Add the eggplant, then after a few minutes the beans, trimmed and halved. Simmer until the chicken is cooked through and the vegetables are tender but not collapsing.", "de": "Aubergine dazu, nach ein paar Minuten die geputzten, halbierten Bohnen. Köcheln, bis das Hähnchen durch ist und das Gemüse weich, aber nicht zerfallen."}, "timer_seconds": 600},
+        {"text": {"en": "Off the heat: fish sauce, a squeeze of lime, most of the basil. Taste. It should be salty first, then sweet, then sour, and the heat should arrive last. Adjust, then serve over rice with the rest of the basil on top.", "de": "Vom Herd: Fischsauce, ein Spritzer Limette, der Großteil vom Basilikum. Probieren. Es sollte erst salzig sein, dann süß, dann sauer, und die Schärfe kommt zuletzt. Nachjustieren, dann auf Reis mit dem restlichen Basilikum servieren."}}
+      ]
+    },
+    {
+      "id": "green-curry-vegan-easy",
+      "title": {"en": "Vegan Green Curry", "de": "Veganes Grünes Curry"},
+      "margin_note": {"en": "crisp the tofu, or it will sulk in the sauce", "de": "den tofu knusprig braten, sonst schmollt er in der sauce"},
+      "intro": {
+        "en": "Golden tofu cubes, a vegan paste with all the lemongrass and none of the shrimp, red pepper and green beans in coconut milk, spinach wilted in at the end. Soy sauce and a little sugar stand in for fish sauce, and lime does the rest.",
+        "de": "Goldbraune Tofuwürfel, eine vegane Paste mit dem ganzen Zitronengras und ohne Garnelen, rote Paprika und grüne Bohnen in Kokosmilch, zum Schluss Spinat untergehoben. Sojasauce und etwas Zucker ersetzen die Fischsauce, die Limette erledigt den Rest."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "gluten", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry", "simmer"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 1010,
+      "macros": {"protein_g": 32, "carbs_g": 90, "fat_g": 58},
+      "meal_types": ["dinner"],
+      "tags": ["spicy", "weeknight", "comfort"],
+      "ingredients": [
+        {"id": "firm-tofu", "amount": 350, "unit": "g", "note": {"en": "pressed dry, in cubes", "de": "gut ausgedrückt, gewürfelt"}},
+        {"id": "cornstarch", "amount": 1, "unit": "tbsp"},
+        {"id": "vegetable-oil", "amount": 1.5, "unit": "tbsp"},
+        {"id": "vegan-green-curry-paste", "amount": 3, "unit": "tbsp"},
+        {"id": "coconut-milk", "amount": 400, "unit": "ml", "note": {"en": "one can, full fat, not shaken", "de": "eine Dose, Vollfett, nicht geschüttelt"}},
+        {"id": "soy-sauce", "amount": 1.5, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 1, "unit": "tsp"},
+        {"id": "kaffir-lime-leaves", "amount": 4, "unit": "leaf"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red, in strips", "de": "rot, in Streifen"}},
+        {"id": "green-beans", "amount": 150, "unit": "g"},
+        {"id": "spinach", "amount": 100, "unit": "g"},
+        {"id": "thai-basil", "amount": 1, "unit": "handful"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g"},
+        {"id": "water", "amount": 100, "unit": "ml"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Rinse the rice and set it cooking. Press the tofu dry, cut it into cubes and toss with the cornstarch and a pinch of salt.", "de": "Reis waschen und aufsetzen. Tofu trocken pressen, würfeln und mit Speisestärke und einer Prise Salz vermengen."}, "timer_seconds": 900},
+        {"text": {"en": "Fry the tofu in the oil in a wide pan over medium-high heat, turning now and then, until golden on most sides. Set aside.", "de": "Den Tofu im Öl in einer weiten Pfanne bei mittelhoher Hitze braten, ab und zu wenden, bis er fast rundum goldbraun ist. Beiseitestellen."}, "timer_seconds": 480},
+        {"text": {"en": "In the same pan, spoon in the thick cream from the top of the coconut can and let it bubble until the oil separates. Add the curry paste and fry it for a couple of minutes until fragrant.", "de": "In derselben Pfanne die dicke Creme von der Dosenoberseite blubbern lassen, bis sich das Öl absetzt. Currypaste dazu und ein paar Minuten anbraten, bis sie duftet."}, "timer_seconds": 120},
+        {"text": {"en": "Pour in the rest of the coconut milk and the water, add the torn lime leaves, sugar and soy sauce. Bring to a simmer, then add the pepper and the trimmed beans and cook until they are just tender.", "de": "Restliche Kokosmilch und Wasser angießen, zerrissene Limettenblätter, Zucker und Sojasauce dazu. Aufkochen, dann Paprika und geputzte Bohnen hinein und garen, bis sie gerade weich sind."}, "timer_seconds": 480},
+        {"text": {"en": "Return the tofu, add the spinach in handfuls and let it collapse into the sauce.", "de": "Tofu zurück in die Pfanne, den Spinat handvollweise dazugeben und in der Sauce zusammenfallen lassen."}},
+        {"text": {"en": "Off the heat, lime juice and most of the basil. Taste for salt, sweetness and sourness, adjust, and serve over rice with the last basil leaves.", "de": "Vom Herd, Limettensaft und das meiste Basilikum. Auf Salz, Süße und Säure abschmecken, nachjustieren, auf Reis mit den letzten Basilikumblättern servieren."}}
+      ]
+    },
+    {
+      "id": "green-curry-pescatarian-medium",
+      "title": {"en": "Prawn Green Curry with Homemade Paste", "de": "Garnelencurry mit selbstgemachter grüner Paste"},
+      "margin_note": {"en": "the paste is the recipe; the curry is ten minutes", "de": "die paste ist das rezept; das curry dauert zehn minuten"},
+      "intro": {
+        "en": "Fresh green chilies, lemongrass, shallots, garlic, cilantro stems and a dab of shrimp paste, pounded or blitzed into something far brighter than any jar. Prawns go in at the very end and need only a couple of minutes.",
+        "de": "Frische grüne Chilis, Zitronengras, Schalotten, Knoblauch, Korianderstiele und ein Klecks Garnelenpaste, gestampft oder gemixt zu etwas, das viel heller und frischer schmeckt als alles aus dem Glas. Die Garnelen kommen ganz zum Schluss dazu und brauchen nur ein paar Minuten."
+      },
+      "variant": {"diet": "pescatarian", "effort": "medium"},
+      "contains": ["shellfish", "fish", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer"],
+      "time_minutes": 60,
+      "servings": 2,
+      "calories_per_serving": 950,
+      "macros": {"protein_g": 46, "carbs_g": 90, "fat_g": 46},
+      "meal_types": ["dinner"],
+      "tags": ["spicy", "fresh"],
+      "ingredients": [
+        {"id": "fresh-chili", "amount": 6, "unit": "piece", "note": {"en": "green, medium-hot, seeds in if you dare", "de": "grün, mittelscharf, mit Kernen, wenn du dich traust"}},
+        {"id": "shallot", "amount": 3, "unit": "piece"},
+        {"id": "garlic", "amount": 4, "unit": "clove"},
+        {"id": "lemongrass", "amount": 2, "unit": "stalk", "note": {"en": "tender inner part only", "de": "nur der zarte innere Teil"}},
+        {"id": "ginger", "amount": 20, "unit": "g", "note": {"en": "or galangal if you can get it", "de": "oder Galgant, falls du welchen bekommst"}},
+        {"id": "kaffir-lime-leaves", "amount": 6, "unit": "leaf", "note": {"en": "2 finely sliced for the paste, 4 for the pot", "de": "2 fein geschnitten für die Paste, 4 für den Topf"}},
+        {"id": "cilantro", "amount": 1, "unit": "bunch", "note": {"en": "stems and roots for the paste, leaves to serve", "de": "Stiele und Wurzeln für die Paste, Blätter zum Servieren"}},
+        {"id": "coriander-seed", "amount": 1, "unit": "tsp"},
+        {"id": "cumin", "amount": 0.5, "unit": "tsp"},
+        {"id": "white-pepper", "amount": 0.5, "unit": "tsp"},
+        {"id": "shrimp-paste", "amount": 1, "unit": "tsp"},
+        {"id": "lime", "amount": 1, "unit": "piece", "note": {"en": "zest for the paste, juice for the pot", "de": "Abrieb für die Paste, Saft für den Topf"}},
+        {"id": "salt", "amount": 0.5, "unit": "tsp"},
+        {"id": "shrimp", "amount": 400, "unit": "g", "note": {"en": "raw king prawns, peeled, tails on if you like", "de": "rohe Riesengarnelen, geschält, gern mit Schwanz"}},
+        {"id": "coconut-milk", "amount": 400, "unit": "ml", "note": {"en": "one can, full fat, not shaken", "de": "eine Dose, Vollfett, nicht geschüttelt"}},
+        {"id": "fish-sauce", "amount": 1.5, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 1, "unit": "tsp"},
+        {"id": "green-beans", "amount": 100, "unit": "g"},
+        {"id": "eggplant", "amount": 1, "unit": "piece", "note": {"en": "small, in chunks", "de": "klein, in Stücken"}},
+        {"id": "thai-basil", "amount": 1, "unit": "handful"},
+        {"id": "jasmine-rice", "amount": 180, "unit": "g"},
+        {"id": "vegetable-oil", "amount": 1, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Toast the coriander seeds, cumin and white pepper in a dry pan for a minute, then grind them fine.", "de": "Koriandersamen, Kreuzkümmel und weißen Pfeffer in einer trockenen Pfanne eine Minute rösten, dann fein mahlen."}},
+        {"text": {"en": "Roughly chop the chilies, shallots, garlic, lemongrass, ginger, two lime leaves and the cilantro stems. Pound in a mortar with the salt, spices, shrimp paste and lime zest until you have a rough, wet paste, or blitz in a small blender with a spoonful of water. It will be fierce. That is correct.", "de": "Chilis, Schalotten, Knoblauch, Zitronengras, Ingwer, zwei Limettenblätter und die Korianderstiele grob hacken. Im Mörser mit Salz, Gewürzen, Garnelenpaste und Limettenabrieb zu einer groben, feuchten Paste stampfen, oder mit einem Löffel Wasser im kleinen Mixer zerkleinern. Sie wird gnadenlos scharf sein. Das ist richtig so."}, "timer_seconds": 600},
+        {"text": {"en": "Rinse the rice and set it cooking.", "de": "Reis waschen und aufsetzen."}, "timer_seconds": 900},
+        {"text": {"en": "Spoon the thick cream from the top of the coconut can into a wide pot with the oil and heat until it splits. Add the paste and fry it, stirring, until it darkens and the raw edge of the shallots is gone.", "de": "Die dicke Creme von der Dosenoberseite mit dem Öl in einen weiten Topf geben und erhitzen, bis sie sich trennt. Die Paste dazu und unter Rühren anbraten, bis sie dunkler wird und die Schalotten nicht mehr roh riechen."}, "timer_seconds": 240},
+        {"text": {"en": "Pour in the rest of the coconut milk, the remaining lime leaves, torn, the sugar and the fish sauce. Simmer with the eggplant chunks and halved beans until tender.", "de": "Die restliche Kokosmilch, die übrigen zerrissenen Limettenblätter, Zucker und Fischsauce dazu. Mit den Auberginenstücken und den halbierten Bohnen köcheln, bis alles weich ist."}, "timer_seconds": 600},
+        {"text": {"en": "Drop in the prawns and cook only until they turn pink and curl loosely, a couple of minutes at most.", "de": "Die Garnelen hineingeben und nur so lange garen, bis sie rosa sind und sich locker krümmen, höchstens ein paar Minuten."}, "timer_seconds": 120},
+        {"text": {"en": "Off the heat, lime juice and basil. Taste: salty, sweet, sour, then heat. Serve over rice with the cilantro leaves.", "de": "Vom Herd, Limettensaft und Basilikum. Abschmecken: salzig, süß, sauer, dann Schärfe. Auf Reis mit den Korianderblättern servieren."}}
+      ]
+    },
+    {
+      "id": "green-curry-keto-easy",
+      "title": {"en": "Keto Green Curry", "de": "Keto-Grüncurry"},
+      "margin_note": {"en": "the vegetables are the rice now", "de": "das gemüse ist jetzt der reis"},
+      "intro": {
+        "en": "Chicken thighs in a thick, unsweetened green curry that skips the rice and doubles down on what was under it: zucchini ribbons, broccoli and a heap of spinach soaking up all that coconut. A bowl and a spoon, no side needed.",
+        "de": "Hähnchenschenkel in einem dicken, ungesüßten grünen Curry, das den Reis weglässt und stattdessen bei allem anderen nachlegt: Zucchinistreifen, Brokkoli und ein Berg Spinat, der die ganze Kokosmilch aufsaugt. Eine Schüssel, ein Löffel, keine Beilage nötig."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["poultry", "fish", "shellfish", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein", "one-pot"],
+      "technique": ["simmer"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 790,
+      "macros": {"protein_g": 42, "carbs_g": 16, "fat_g": 62},
+      "meal_types": ["dinner"],
+      "tags": ["spicy", "one-pot", "bowl"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 400, "unit": "g", "note": {"en": "boneless, skinless, bite-size pieces", "de": "ohne Knochen und Haut, mundgerecht geschnitten"}},
+        {"id": "green-curry-paste", "amount": 2.5, "unit": "tbsp", "note": {"en": "store-bought; contains shrimp, check it for added sugar", "de": "aus dem Glas; enthält Garnelen, auf zugesetzten Zucker achten"}},
+        {"id": "coconut-milk", "amount": 400, "unit": "ml", "note": {"en": "one can, full fat, not shaken", "de": "eine Dose, Vollfett, nicht geschüttelt"}},
+        {"id": "coconut-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 1.5, "unit": "tbsp"},
+        {"id": "kaffir-lime-leaves", "amount": 4, "unit": "leaf"},
+        {"id": "broccoli", "amount": 150, "unit": "g"},
+        {"id": "zucchini", "amount": 1, "unit": "piece"},
+        {"id": "spinach", "amount": 100, "unit": "g"},
+        {"id": "thai-basil", "amount": 1, "unit": "handful"},
+        {"id": "lime", "amount": 0.5, "unit": "piece"},
+        {"id": "fresh-chili", "amount": 1, "unit": "piece", "note": {"en": "sliced, to serve", "de": "in Ringen, zum Servieren"}}
+      ],
+      "steps": [
+        {"text": {"en": "Cut the chicken into bite-size pieces. Break the broccoli into small florets. Shave the zucchini into ribbons with a peeler, or slice it into half-moons if ribbons feel like effort.", "de": "Hähnchen mundgerecht schneiden. Brokkoli in kleine Röschen teilen. Zucchini mit dem Sparschäler in Streifen hobeln oder in Halbmonde schneiden, wenn dir Streifen zu viel Aufwand sind."}},
+        {"text": {"en": "Heat the coconut oil with the thick cream from the top of the coconut can in a wide pot until it bubbles and the oil separates. Fry the paste in it for a couple of minutes until it smells sharp and green.", "de": "Kokosöl mit der dicken Creme von der Dosenoberseite in einem weiten Topf erhitzen, bis es blubbert und sich das Öl absetzt. Die Paste darin ein paar Minuten anbraten, bis sie scharf und grün duftet."}, "timer_seconds": 120},
+        {"text": {"en": "Add the chicken and coat it in the paste. Pour in the remaining coconut milk, add the torn lime leaves and the fish sauce, and simmer until the chicken is just cooked.", "de": "Hähnchen dazu und in der Paste wenden. Restliche Kokosmilch angießen, zerrissene Limettenblätter und Fischsauce dazu, köcheln, bis das Hähnchen gerade durch ist."}, "timer_seconds": 600},
+        {"text": {"en": "Broccoli in for four minutes, then the zucchini for two. The sauce should be thick enough to coat a spoon; if it isn't, let it bubble a little longer with the lid off.", "de": "Brokkoli für vier Minuten hinein, dann die Zucchini für zwei. Die Sauce sollte dick genug sein, um an einem Löffel zu haften; wenn nicht, ohne Deckel noch etwas einkochen lassen."}, "timer_seconds": 360},
+        {"text": {"en": "Off the heat, fold in the spinach until it wilts, then the basil and lime juice. Taste for salt and adjust with more fish sauce.", "de": "Vom Herd, Spinat unterheben, bis er zusammenfällt, dann Basilikum und Limettensaft. Mit Fischsauce nachsalzen, falls nötig."}},
+        {"text": {"en": "Ladle into bowls and scatter the sliced chili over the top.", "de": "In Schüsseln füllen und die Chiliringe darüberstreuen."}}
+      ]
+    }
+  ]
+}

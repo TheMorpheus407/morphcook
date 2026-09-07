@@ -1,0 +1,159 @@
+{
+  "dish": {
+    "id": "hummus-plate",
+    "name": {"en": "Hummus Plate", "de": "Hummus-Teller"},
+    "hero_text": {
+      "en": "A wide plate, a thick swirl of hummus with a puddle of olive oil in the middle, and whatever is around to scoop it up with. Lunch in Beirut, dinner in any kitchen where nobody feels like cooking.",
+      "de": "Ein großer Teller, ein dicker Schwung Hummus mit einer Pfütze Olivenöl in der Mitte und alles, was gerade da ist, zum Dippen. In Beirut ein Mittagessen, bei uns das Abendessen, wenn niemand kochen will."
+    },
+    "caption": {"en": "warm pita, cold plate, too much olive oil", "de": "warmes pita, kalter teller, zu viel olivenöl"},
+    "stripe_color": "#BFA98F",
+    "cuisine_tags": ["levantine"],
+    "frequency_tier": "extended",
+    "meal_types": ["lunch", "snack"],
+    "tags": ["fresh", "light", "meal-prep"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "hummus-plate-classic-easy",
+      "title": {"en": "Classic Hummus Plate", "de": "Klassischer Hummus-Teller"},
+      "margin_note": {"en": "ice cubes are the whole trick", "de": "eiswürfel sind der ganze trick"},
+      "intro": {
+        "en": "Canned chickpeas, blitzed with tahini, lemon and garlic until they go pale and whipped, spread on a plate with warm pita and a pile of crunchy things. Twenty minutes, and most of that is the blender running.",
+        "de": "Kichererbsen aus der Dose, mit Tahini, Zitrone und Knoblauch püriert, bis sie hell und luftig werden, auf einem Teller ausgestrichen, dazu warmes Pita und ein Haufen knackiges Gemüse. Zwanzig Minuten, und die meiste Zeit davon läuft der Mixer."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["gluten", "sesame", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 680,
+      "macros": {"protein_g": 21, "carbs_g": 72, "fat_g": 34},
+      "meal_types": ["lunch", "snack"],
+      "tags": ["fresh", "quick", "bread"],
+      "ingredients": [
+        {"id": "chickpeas", "amount": 1, "unit": "can", "note": {"en": "400 g, drained and rinsed", "de": "400 g, abgegossen und abgespült"}},
+        {"id": "tahini", "amount": 4, "unit": "tbsp"},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "cumin", "amount": 0.5, "unit": "tsp"},
+        {"id": "ice", "amount": 4, "unit": "piece", "note": {"en": "cubes, or very cold water", "de": "Würfel, oder sehr kaltes Wasser"}},
+        {"id": "extra-virgin-olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "sweet-paprika", "amount": 1, "unit": "tsp"},
+        {"id": "parsley", "amount": 0.25, "unit": "bunch"},
+        {"id": "pita", "amount": 2, "unit": "piece"},
+        {"id": "cucumber", "amount": 0.5, "unit": "piece"},
+        {"id": "carrot", "amount": 1, "unit": "piece"},
+        {"id": "radish", "amount": 4, "unit": "piece"},
+        {"id": "cherry-tomato", "amount": 6, "unit": "piece"},
+        {"id": "olives", "amount": 40, "unit": "g"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Drain and rinse the chickpeas and tip them into a food processor with the tahini, the juice of half the lemon, the garlic, cumin and a good pinch of salt. Blitz to a rough, stiff paste.", "de": "Kichererbsen abgießen, abspülen und mit Tahini, dem Saft einer halben Zitrone, Knoblauch, Kreuzkümmel und einer ordentlichen Prise Salz in den Mixer geben. Zu einer groben, festen Paste pürieren."}},
+        {"text": {"en": "With the motor running, drop in the ice cubes one at a time and keep going. It will look wrong for a minute, then suddenly turn pale and fluffy. Scrape down the sides and let it run a bit longer than feels reasonable.", "de": "Bei laufendem Mixer die Eiswürfel einzeln dazugeben und weiterlaufen lassen. Eine Minute lang sieht das falsch aus, dann wird es plötzlich hell und luftig. Die Ränder abkratzen und noch etwas länger laufen lassen, als dir vernünftig vorkommt."}, "timer_seconds": 180},
+        {"text": {"en": "Taste. It almost certainly wants more lemon and more salt than you think. Adjust, blitz once more.", "de": "Probieren. Ziemlich sicher will es mehr Zitrone und mehr Salz, als du denkst. Nachwürzen, noch einmal kurz mixen."}},
+        {"text": {"en": "Cut the cucumber and carrot into batons, halve the radishes and tomatoes, chop the parsley.", "de": "Gurke und Karotte in Stifte schneiden, Radieschen und Tomaten halbieren, Petersilie hacken."}},
+        {"text": {"en": "Warm the pita in a dry pan or a toaster until it puffs and softens, then cut into wedges.", "de": "Pita in einer trockenen Pfanne oder im Toaster aufwärmen, bis es sich aufbläht und weich wird, dann in Ecken schneiden."}, "timer_seconds": 120},
+        {"text": {"en": "Spread the hummus over a wide plate with the back of a spoon, swirling a well into the middle. Pour the olive oil into the well, dust with paprika, scatter parsley. Vegetables, olives and pita around the edge. Eat with your hands.", "de": "Hummus mit dem Löffelrücken auf einem großen Teller ausstreichen und in der Mitte eine Mulde ziehen. Olivenöl in die Mulde gießen, Paprika darüberstäuben, Petersilie darüberstreuen. Gemüse, Oliven und Pita drumherum. Mit den Händen essen."}}
+      ]
+    },
+    {
+      "id": "hummus-plate-classic-hard",
+      "title": {"en": "Hummus Plate From Scratch", "de": "Hummus-Teller von Grund auf"},
+      "margin_note": {"en": "overnight soak, baking soda, silk", "de": "über nacht einweichen, natron, seide"},
+      "intro": {
+        "en": "Dried chickpeas soaked overnight and simmered with baking soda until they collapse at a touch, then whipped with a tahini-lemon base into something closer to silk than dip. Finished with the whole chickpeas you saved, a za'atar pine-nut oil and a sumac onion salad. A slow Sunday, not a weeknight.",
+        "de": "Getrocknete Kichererbsen, über Nacht eingeweicht und mit Natron gekocht, bis sie beim Anfassen zerfallen, dann mit einer Tahini-Zitronen-Basis zu etwas aufgeschlagen, das eher Seide ist als Dip. Obendrauf die ganzen Kichererbsen, die du beiseitegelegt hast, ein Za'atar-Pinienkern-Öl und ein Sumach-Zwiebel-Salat. Ein langsamer Sonntag, kein Wochentag."
+      },
+      "variant": {"diet": "classic", "effort": "hard"},
+      "contains": ["gluten", "sesame", "pine-nuts", "tree-nuts", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["simmer"],
+      "time_minutes": 110,
+      "servings": 4,
+      "calories_per_serving": 800,
+      "macros": {"protein_g": 24, "carbs_g": 82, "fat_g": 42},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["festive", "bread", "meal-prep"],
+      "ingredients": [
+        {"id": "chickpeas", "amount": 250, "unit": "g", "note": {"en": "dried", "de": "getrocknet"}},
+        {"id": "baking-soda", "amount": 1, "unit": "tsp"},
+        {"id": "tahini", "amount": 120, "unit": "g", "note": {"en": "a runny, good one", "de": "ein flüssiges, gutes"}},
+        {"id": "lemon", "amount": 2, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "cumin", "amount": 1, "unit": "tsp"},
+        {"id": "ice", "amount": 6, "unit": "piece", "note": {"en": "cubes", "de": "Würfel"}},
+        {"id": "extra-virgin-olive-oil", "amount": 5, "unit": "tbsp"},
+        {"id": "pine-nuts", "amount": 30, "unit": "g"},
+        {"id": "zaatar", "amount": 2, "unit": "tsp"},
+        {"id": "sweet-paprika", "amount": 0.5, "unit": "tsp"},
+        {"id": "red-onion", "amount": 1, "unit": "piece"},
+        {"id": "sumac", "amount": 1, "unit": "tsp"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "cherry-tomato", "amount": 150, "unit": "g"},
+        {"id": "cucumber", "amount": 1, "unit": "piece"},
+        {"id": "pita", "amount": 4, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "The night before: cover the dried chickpeas with at least three times their volume of cold water and half the baking soda. Leave them on the counter overnight; they will double in size.", "de": "Am Vorabend: Die getrockneten Kichererbsen mit mindestens der dreifachen Menge kaltem Wasser und der Hälfte des Natrons bedecken. Über Nacht auf der Arbeitsfläche stehen lassen, sie verdoppeln ihre Größe."}},
+        {"text": {"en": "Drain, rinse, and tip into a large pot with the rest of the baking soda and fresh water to cover by a hand's width. Bring to the boil, skim the grey foam, then simmer, lid ajar, until a chickpea squashes to nothing between two fingers. Skins will float up; skim those too when you remember.", "de": "Abgießen, abspülen und mit dem restlichen Natron in einen großen Topf geben, mit frischem Wasser eine Handbreit bedecken. Aufkochen, den grauen Schaum abschöpfen, dann mit halb aufgelegtem Deckel köcheln, bis sich eine Kichererbse zwischen zwei Fingern komplett zerdrücken lässt. Die Häutchen schwimmen oben, die schöpfst du ab, wenn du dran denkst."}, "timer_seconds": 4800},
+        {"text": {"en": "Fish out a small ladle of whole chickpeas for the top and keep them warm. Drain the rest, saving a cup of the cooking water.", "de": "Eine kleine Kelle ganze Kichererbsen für obendrauf herausfischen und warm halten. Den Rest abgießen und eine Tasse Kochwasser aufheben."}},
+        {"text": {"en": "Now the base, which matters more than the chickpeas: tahini, the juice of one and a half lemons, garlic and salt into the food processor. Blitz. It will seize into a stiff clump, then, as you add a couple of ice cubes, loosen into a pale cream. That is what you want.", "de": "Jetzt die Basis, die wichtiger ist als die Kichererbsen: Tahini, den Saft von anderthalb Zitronen, Knoblauch und Salz in den Mixer. Pürieren. Erst zieht es sich zu einem festen Klumpen zusammen, dann, mit ein paar Eiswürfeln, wird daraus eine helle Creme. Genau so soll es sein."}},
+        {"text": {"en": "Add the warm chickpeas and the cumin and let the machine run. Keep feeding in ice cubes until it is smooth enough that you stop seeing skins, then a minute longer. Loosen with cooking water if it fights the blade. Taste for lemon and salt.", "de": "Die warmen Kichererbsen und den Kreuzkümmel dazugeben und die Maschine laufen lassen. So lange Eiswürfel nachlegen, bis keine Häutchen mehr zu sehen sind, dann noch eine Minute länger. Mit Kochwasser lockern, wenn es sich gegen das Messer wehrt. Auf Zitrone und Salz abschmecken."}, "timer_seconds": 240},
+        {"text": {"en": "Slice the red onion into thin half-moons, salt it, add the sumac, chopped parsley and the last of the lemon juice, and squeeze it with your hands until it wilts. Halve the tomatoes, dice the cucumber, toss everything together.", "de": "Rote Zwiebel in dünne Halbmonde schneiden, salzen, Sumach, gehackte Petersilie und den restlichen Zitronensaft dazugeben und mit den Händen kneten, bis sie zusammenfällt. Tomaten halbieren, Gurke würfeln, alles vermengen."}},
+        {"text": {"en": "Warm two tablespoons of the olive oil in a small pan and toast the pine nuts in it until golden, shaking constantly. Off the heat, stir in the za'atar.", "de": "Zwei Esslöffel Olivenöl in einer kleinen Pfanne erwärmen und die Pinienkerne darin unter ständigem Schwenken goldbraun rösten. Vom Herd nehmen, Za'atar einrühren."}, "timer_seconds": 120},
+        {"text": {"en": "Warm the pita. Spread the hummus thickly on a platter, run a spoon around to make a wide moat, and fill it with the reserved chickpeas, the pine-nut oil and the remaining olive oil. Paprika over the top, salad alongside, bread everywhere.", "de": "Pita aufwärmen. Hummus dick auf einer Platte verstreichen, mit dem Löffel einen breiten Graben ziehen und diesen mit den beiseitegelegten Kichererbsen, dem Pinienkern-Öl und dem restlichen Olivenöl füllen. Paprika darüber, Salat daneben, Brot überall."}}
+      ]
+    },
+    {
+      "id": "hummus-plate-keto-easy",
+      "title": {"en": "Roasted Cauliflower Hummus Plate", "de": "Keto-Hummus-Teller mit geröstetem Blumenkohl"},
+      "margin_note": {"en": "roast it dark, then it tastes of something", "de": "richtig dunkel rösten, dann schmeckt es nach was"},
+      "intro": {
+        "en": "Cauliflower roasted until the edges char, then blended hot with tahini, lemon, garlic and a lot of good olive oil into something that scoops and swirls exactly like hummus. Around it: cucumber, celery, radishes, olives and feta instead of bread. Nobody misses the chickpeas as much as they expect to.",
+        "de": "Blumenkohl, geröstet bis die Ränder schwarz werden, dann noch heiß mit Tahini, Zitrone, Knoblauch und viel gutem Olivenöl zu etwas püriert, das sich genau wie Hummus streichen und dippen lässt. Drumherum Gurke, Sellerie, Radieschen, Oliven und Feta statt Brot. Die Kichererbsen vermisst am Ende niemand so sehr wie erwartet."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "lactose", "sesame", "celery", "high-fodmap"],
+      "extra_attributes": ["keto"],
+      "technique": ["roast"],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 570,
+      "macros": {"protein_g": 14, "carbs_g": 17, "fat_g": 50},
+      "meal_types": ["lunch", "snack"],
+      "tags": ["light", "fresh", "meal-prep"],
+      "ingredients": [
+        {"id": "cauliflower", "amount": 350, "unit": "g", "note": {"en": "in small florets", "de": "in kleinen Röschen"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp", "note": {"en": "for roasting", "de": "zum Rösten"}},
+        {"id": "tahini", "amount": 3, "unit": "tbsp"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "cumin", "amount": 0.5, "unit": "tsp"},
+        {"id": "smoked-paprika", "amount": 0.5, "unit": "tsp"},
+        {"id": "extra-virgin-olive-oil", "amount": 2, "unit": "tbsp", "note": {"en": "for finishing", "de": "zum Beträufeln"}},
+        {"id": "water", "amount": 3, "unit": "tbsp"},
+        {"id": "cucumber", "amount": 0.5, "unit": "piece"},
+        {"id": "celery-stalk", "amount": 2, "unit": "stalk"},
+        {"id": "radish", "amount": 6, "unit": "piece"},
+        {"id": "olives", "amount": 50, "unit": "g"},
+        {"id": "feta", "amount": 80, "unit": "g"},
+        {"id": "parsley", "amount": 0.25, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 220 °C. Toss the cauliflower florets with the olive oil, salt and pepper, spread them out on a tray with space between them, and roast until the edges are properly dark, not just golden. That char is the flavour.", "de": "Ofen auf 220 °C vorheizen. Die Blumenkohlröschen mit Olivenöl, Salz und Pfeffer vermengen, mit Abstand auf einem Blech verteilen und rösten, bis die Ränder richtig dunkel sind, nicht nur goldbraun. Diese Röstung ist der Geschmack."}, "timer_seconds": 1500},
+        {"text": {"en": "While it roasts, cut the cucumber into batons and the celery into sticks, halve the radishes, cube the feta. Arrange them on a plate with the olives so they are waiting.", "de": "Währenddessen Gurke in Stifte und Sellerie in Stangen schneiden, Radieschen halbieren, Feta würfeln. Zusammen mit den Oliven auf einem Teller anrichten, damit alles bereitsteht."}},
+        {"text": {"en": "Tip the hot cauliflower into a blender with the tahini, lemon juice, garlic, cumin, smoked paprika and a pinch of salt. Blitz, adding the water a spoonful at a time, until it turns thick and creamy. It needs less liquid than chickpeas would.", "de": "Den heißen Blumenkohl mit Tahini, Zitronensaft, Knoblauch, Kreuzkümmel, Rauchpaprika und einer Prise Salz in den Mixer geben. Pürieren und dabei das Wasser löffelweise zugeben, bis es dick und cremig wird. Es braucht weniger Flüssigkeit als Kichererbsen."}},
+        {"text": {"en": "Taste. Lemon and salt again, probably. It should taste roasted and nutty with the tahini clearly there.", "de": "Probieren. Wahrscheinlich noch mal Zitrone und Salz. Es soll geröstet und nussig schmecken, mit deutlich spürbarem Tahini."}},
+        {"text": {"en": "Spread it on a wide plate, swirl a well in the middle and pour in the extra-virgin oil. Dust with a little more smoked paprika and the chopped parsley.", "de": "Auf einem großen Teller verstreichen, in der Mitte eine Mulde ziehen und das Olivenöl hineingießen. Mit etwas mehr Rauchpaprika und der gehackten Petersilie bestreuen."}},
+        {"text": {"en": "Vegetable sticks, olives and feta around the edge, and eat straight from the plate. It keeps in the fridge for three days and is arguably better cold.", "de": "Gemüsestifte, Oliven und Feta rundherum, und direkt vom Teller essen. Hält sich drei Tage im Kühlschrank und ist kalt womöglich noch besser."}}
+      ]
+    }
+  ]
+}

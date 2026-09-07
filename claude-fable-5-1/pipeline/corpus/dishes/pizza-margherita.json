@@ -1,0 +1,225 @@
+{
+  "dish": {
+    "id": "pizza-margherita",
+    "name": {"en": "Pizza Margherita", "de": "Pizza Margherita"},
+    "hero_text": {
+      "en": "Tomato, mozzarella, basil and a crust with some character. The pizza that proves three toppings are plenty when the base is right.",
+      "de": "Tomate, Mozzarella, Basilikum und ein Boden mit Charakter. Die Pizza, die beweist, dass drei Beläge völlig reichen, wenn der Teig stimmt."
+    },
+    "caption": {"en": "blistered edges, torn basil, no delivery app", "de": "blasen am rand, gezupftes basilikum, keine lieferapp"},
+    "stripe_color": "#C27C5A",
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "core",
+    "meal_types": ["dinner"],
+    "tags": ["baked", "bread", "family"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "pizza-margherita-classic-medium",
+      "title": {"en": "Margherita From Scratch", "de": "Margherita mit eigenem Teig"},
+      "margin_note": {"en": "the dough does the talking", "de": "der teig macht die musik"},
+      "intro": {
+        "en": "A slow, wet dough that you mostly leave alone, a sauce that is just crushed tomatoes and salt, and mozzarella torn on by hand. Give the oven every degree it has and the base will blister the way it should.",
+        "de": "Ein weicher, feuchter Teig, den du meistens einfach in Ruhe lässt, eine Sauce aus nichts als Tomaten und Salz, und Mozzarella, von Hand zerrupft. Gib dem Ofen jedes Grad, das er hat, dann wirft der Boden Blasen, wie er soll."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["dairy", "lactose", "gluten"],
+      "extra_attributes": [],
+      "technique": ["bake"],
+      "time_minutes": 150,
+      "servings": 4,
+      "calories_per_serving": 870,
+      "macros": {"protein_g": 37, "carbs_g": 115, "fat_g": 30},
+      "meal_types": ["dinner"],
+      "tags": ["baked", "bread", "family"],
+      "ingredients": [
+        {"id": "all-purpose-flour", "amount": 600, "unit": "g", "note": {"en": "Type 00 or 550 if you can get it", "de": "Type 00 oder 550, wenn du es bekommst"}},
+        {"id": "dry-yeast", "amount": 1, "unit": "tsp"},
+        {"id": "water", "amount": 390, "unit": "ml", "note": {"en": "lukewarm", "de": "lauwarm"}},
+        {"id": "salt", "amount": 12, "unit": "g", "note": {"en": "for the dough, plus a pinch for the sauce", "de": "für den Teig, plus eine Prise für die Sauce"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp", "note": {"en": "for the dough and the bowl", "de": "für den Teig und die Schüssel"}},
+        {"id": "passata", "amount": 300, "unit": "g", "note": {"en": "or a can of whole tomatoes, crushed by hand", "de": "oder eine Dose ganze Tomaten, mit der Hand zerdrückt"}},
+        {"id": "mozzarella", "amount": 400, "unit": "g", "note": {"en": "fior di latte, drained well", "de": "Fior di Latte, gut abgetropft"}},
+        {"id": "basil", "amount": 1, "unit": "bunch"},
+        {"id": "extra-virgin-olive-oil", "amount": 3, "unit": "tbsp", "note": {"en": "for finishing", "de": "zum Beträufeln"}},
+        {"id": "semolina", "amount": 2, "unit": "tbsp", "note": {"en": "for dusting", "de": "zum Bestäuben"}}
+      ],
+      "steps": [
+        {"text": {"en": "Stir the yeast into the lukewarm water and let it sit for a few minutes. Mix flour and salt in a large bowl, pour in the water and a tablespoon of oil, and stir until there is no dry flour left. It will be shaggy and sticky. That's right.", "de": "Die Hefe im lauwarmen Wasser auflösen und ein paar Minuten stehen lassen. Mehl und Salz in einer großen Schüssel mischen, Wasser und einen Esslöffel Öl dazugießen und rühren, bis kein trockenes Mehl mehr zu sehen ist. Der Teig ist zottelig und klebrig. Genau so soll er sein."}},
+        {"text": {"en": "Knead on a lightly oiled counter for eight to ten minutes, until smooth and stretchy. Wet hands help more than extra flour. Shape into a ball, oil the bowl, put the dough back in and cover.", "de": "Auf einer leicht geölten Arbeitsfläche acht bis zehn Minuten kneten, bis der Teig glatt und elastisch ist. Nasse Hände helfen mehr als zusätzliches Mehl. Zu einer Kugel formen, die Schüssel ölen, den Teig zurücklegen und abdecken."}},
+        {"text": {"en": "Let it rise at room temperature until doubled. If you have time, put it in the fridge overnight instead; the flavour gets noticeably better and the dough easier to handle.", "de": "Bei Zimmertemperatur gehen lassen, bis sich das Volumen verdoppelt hat. Wenn du Zeit hast, stell die Schüssel stattdessen über Nacht in den Kühlschrank; der Geschmack wird spürbar besser und der Teig lässt sich leichter formen."}, "timer_seconds": 5400},
+        {"text": {"en": "Divide into equal balls about the size of a large orange, one per pizza, tuck the edges under to tighten them, and rest on a floured tray under a cloth. Meanwhile put a pizza stone or an upside-down baking tray in the oven and heat it as high as it goes.", "de": "In gleich große Kugeln teilen, etwa so groß wie eine dicke Orange, eine pro Pizza. Die Ränder nach unten einschlagen, damit sie straff werden, und auf einem bemehlten Blech unter einem Tuch ruhen lassen. Währenddessen einen Pizzastein oder ein umgedrehtes Backblech in den Ofen schieben und ihn so heiß aufheizen, wie er kann."}, "timer_seconds": 1800},
+        {"text": {"en": "Sauce: passata, a pinch of salt, a splash of good oil, stirred. No cooking, no garlic, no herbs. Tear the mozzarella into pieces and let it drain on kitchen paper; wet cheese makes a soggy pizza.", "de": "Sauce: Passata, eine Prise Salz, ein Schuss gutes Öl, verrührt. Nicht kochen, kein Knoblauch, keine Kräuter. Den Mozzarella in Stücke zupfen und auf Küchenpapier abtropfen lassen; nasser Käse macht die Pizza matschig."}},
+        {"text": {"en": "Dust a ball with semolina and press it out from the centre with your fingertips, leaving a fat rim. Pick it up and let gravity stretch it over your knuckles until it is thin in the middle. No rolling pin, it flattens the bubbles you worked for.", "de": "Eine Kugel mit Grieß bestäuben und mit den Fingerspitzen von der Mitte aus flach drücken, dabei einen dicken Rand stehen lassen. Anheben und die Schwerkraft den Teig über deinen Knöcheln dehnen lassen, bis er in der Mitte dünn ist. Kein Nudelholz, das drückt die Blasen platt, für die du gearbeitet hast."}},
+        {"text": {"en": "Move the base onto a semolina-dusted board or parchment, spread a thin layer of sauce, scatter mozzarella. Slide onto the hot stone and bake until the rim is blistered and the cheese is bubbling with a few brown spots.", "de": "Den Boden auf ein mit Grieß bestäubtes Brett oder Backpapier ziehen, dünn mit Sauce bestreichen, Mozzarella darauf verteilen. Auf den heißen Stein schieben und backen, bis der Rand Blasen wirft und der Käse mit ein paar braunen Flecken blubbert."}, "timer_seconds": 480},
+        {"text": {"en": "Basil leaves and a thread of olive oil go on after the oven, never before. Repeat with the other balls while people eat the first one.", "de": "Basilikumblätter und ein Faden Olivenöl kommen nach dem Ofen drauf, nie davor. Mit den restlichen Kugeln genauso weitermachen, während die erste schon gegessen wird."}}
+      ]
+    },
+    {
+      "id": "pizza-margherita-classic-easy",
+      "title": {"en": "Weeknight Margherita", "de": "Margherita unter der Woche"},
+      "margin_note": {"en": "bought dough, clear conscience", "de": "gekaufter teig, reines gewissen"},
+      "intro": {
+        "en": "A fresh dough from the chilled aisle, a hot oven and fifteen minutes of your evening. Get the mozzarella dry and the oven really hot and nobody will ask where the dough came from.",
+        "de": "Ein frischer Teig aus dem Kühlregal, ein heißer Ofen und eine Viertelstunde deines Abends. Trockne den Mozzarella gut ab und heiz den Ofen richtig hoch, dann fragt niemand, wo der Teig herkommt."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["dairy", "lactose", "gluten"],
+      "extra_attributes": [],
+      "technique": ["bake"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 780,
+      "macros": {"protein_g": 30, "carbs_g": 100, "fat_g": 28},
+      "meal_types": ["dinner"],
+      "tags": ["baked", "weeknight", "bread"],
+      "ingredients": [
+        {"id": "pizza-dough", "amount": 400, "unit": "g", "note": {"en": "fresh, from the chilled aisle", "de": "frisch, aus dem Kühlregal"}},
+        {"id": "passata", "amount": 150, "unit": "g"},
+        {"id": "mozzarella", "amount": 200, "unit": "g", "note": {"en": "drained", "de": "abgetropft"}},
+        {"id": "dried-oregano", "amount": 1, "unit": "pinch"},
+        {"id": "basil", "amount": 1, "unit": "handful"},
+        {"id": "extra-virgin-olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Take the dough out of the fridge and let it lose its chill on the counter; cold dough springs back and tears. Put a baking tray in the oven and heat it as hot as it goes.", "de": "Den Teig aus dem Kühlschrank nehmen und auf der Arbeitsfläche Zimmertemperatur annehmen lassen; kalter Teig zieht sich zusammen und reißt. Ein Backblech in den Ofen schieben und ihn so heiß wie möglich vorheizen."}, "timer_seconds": 900},
+        {"text": {"en": "Tear the mozzarella into rough pieces and leave them on kitchen paper. Stir the passata with a pinch of salt, the oregano and a teaspoon of the oil.", "de": "Den Mozzarella grob zerrupfen und auf Küchenpapier legen. Die Passata mit einer Prise Salz, dem Oregano und einem Teelöffel Öl verrühren."}},
+        {"text": {"en": "Unroll or stretch the dough on a sheet of parchment. If it fights you, wait five minutes and try again.", "de": "Den Teig auf einem Bogen Backpapier ausrollen oder auseinanderziehen. Wenn er sich wehrt, fünf Minuten warten und noch einmal probieren."}},
+        {"text": {"en": "Spread the sauce thin, leaving a bare rim, and scatter the mozzarella. Less than you think; it spreads.", "de": "Die Sauce dünn verstreichen, einen freien Rand lassen, und den Mozzarella darauf verteilen. Weniger, als du denkst; er läuft auseinander."}},
+        {"text": {"en": "Slide the pizza on its parchment onto the hot tray. Bake until the edges are deep gold and the cheese has a few brown blisters.", "de": "Die Pizza samt Backpapier auf das heiße Blech ziehen. Backen, bis der Rand tief goldbraun ist und der Käse ein paar braune Blasen hat."}, "timer_seconds": 600},
+        {"text": {"en": "Out of the oven: basil, the rest of the oil, a grind of pepper. Slice and eat while the cheese still stretches.", "de": "Aus dem Ofen: Basilikum, das restliche Öl, etwas Pfeffer aus der Mühle. Schneiden und essen, solange der Käse noch Fäden zieht."}}
+      ]
+    },
+    {
+      "id": "pizza-margherita-vegan-medium",
+      "title": {"en": "Vegan Margherita", "de": "Vegane Margherita"},
+      "margin_note": {"en": "the sauce carries more here, let it", "de": "hier trägt die sauce mehr, lass sie"},
+      "intro": {
+        "en": "The same slow dough, but the tomato sauce gets a short simmer with garlic and oregano so it has something to say, and a bright basil oil goes on at the end. Vegan mozzarella melts best in small torn pieces and a very hot oven.",
+        "de": "Derselbe langsame Teig, aber die Tomatensauce köchelt kurz mit Knoblauch und Oregano, damit sie etwas zu erzählen hat, und zum Schluss kommt ein grünes Basilikumöl obendrauf. Veganer Mozzarella schmilzt am besten in kleinen Stücken und bei sehr hoher Hitze."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["gluten", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["bake", "simmer"],
+      "time_minutes": 150,
+      "servings": 4,
+      "calories_per_serving": 820,
+      "macros": {"protein_g": 17, "carbs_g": 120, "fat_g": 28},
+      "meal_types": ["dinner"],
+      "tags": ["baked", "bread", "family"],
+      "ingredients": [
+        {"id": "all-purpose-flour", "amount": 600, "unit": "g", "note": {"en": "Type 00 or 550 if you can get it", "de": "Type 00 oder 550, wenn du es bekommst"}},
+        {"id": "dry-yeast", "amount": 1, "unit": "tsp"},
+        {"id": "water", "amount": 390, "unit": "ml", "note": {"en": "lukewarm", "de": "lauwarm"}},
+        {"id": "salt", "amount": 12, "unit": "g", "note": {"en": "for the dough, plus a pinch for the sauce", "de": "für den Teig, plus eine Prise für die Sauce"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp", "note": {"en": "dough, bowl and sauce", "de": "für Teig, Schüssel und Sauce"}},
+        {"id": "passata", "amount": 350, "unit": "g"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "dried-oregano", "amount": 1, "unit": "tsp"},
+        {"id": "vegan-mozzarella", "amount": 250, "unit": "g", "note": {"en": "a melting kind, torn or grated", "de": "eine schmelzende Sorte, gezupft oder gerieben"}},
+        {"id": "basil", "amount": 1, "unit": "bunch"},
+        {"id": "extra-virgin-olive-oil", "amount": 4, "unit": "tbsp", "note": {"en": "for the basil oil", "de": "für das Basilikumöl"}},
+        {"id": "semolina", "amount": 2, "unit": "tbsp", "note": {"en": "for dusting", "de": "zum Bestäuben"}},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "Dissolve the yeast in the lukewarm water. Mix flour and salt, add the water and a tablespoon of oil, and stir into a rough, sticky mass. Knead on an oiled surface for eight minutes until it turns smooth and springs back when you poke it.", "de": "Die Hefe im lauwarmen Wasser auflösen. Mehl und Salz mischen, Wasser und einen Esslöffel Öl dazugeben und zu einer groben, klebrigen Masse verrühren. Auf einer geölten Fläche acht Minuten kneten, bis der Teig glatt ist und zurückfedert, wenn du hineindrückst."}},
+        {"text": {"en": "Ball it up, oil the bowl, cover and let it double. An overnight rest in the fridge is even better and needs no attention from you.", "de": "Zu einer Kugel formen, die Schüssel ölen, abdecken und gehen lassen, bis sich das Volumen verdoppelt hat. Eine Nacht im Kühlschrank ist noch besser und braucht keinerlei Aufmerksamkeit von dir."}, "timer_seconds": 5400},
+        {"text": {"en": "Sauce: warm a tablespoon of oil with the sliced garlic until it smells sweet, add passata, oregano and a pinch of salt, and let it simmer gently until it thickens a little. Taste; it should be slightly bolder than you'd want on its own.", "de": "Sauce: einen Esslöffel Öl mit dem in Scheiben geschnittenen Knoblauch erwärmen, bis es süßlich duftet, Passata, Oregano und eine Prise Salz dazugeben und sanft köcheln lassen, bis sie etwas eindickt. Probieren; sie darf pur ruhig eine Spur zu kräftig sein."}, "timer_seconds": 900},
+        {"text": {"en": "Basil oil: blitz most of the basil with the extra virgin olive oil and a pinch of salt until bright green. Keep a few whole leaves back.", "de": "Basilikumöl: den Großteil des Basilikums mit dem nativen Olivenöl und einer Prise Salz pürieren, bis es leuchtend grün ist. Ein paar ganze Blätter zurückbehalten."}},
+        {"text": {"en": "Divide the dough into equal balls, one per pizza, tighten them, rest under a cloth. Put a stone or an upside-down tray in the oven and heat it to the maximum.", "de": "Den Teig in gleich große Kugeln teilen, eine pro Pizza, straff formen, unter einem Tuch ruhen lassen. Einen Stein oder ein umgedrehtes Blech in den Ofen geben und auf höchster Stufe vorheizen."}, "timer_seconds": 1800},
+        {"text": {"en": "Stretch a ball with your fingers on a semolina-dusted board, keeping a thick rim. Spread a thin layer of the cooked sauce and scatter the vegan mozzarella in small pieces; it browns better spread out than in clumps.", "de": "Eine Kugel auf einem mit Grieß bestäubten Brett mit den Fingern dehnen, den Rand dick lassen. Dünn mit der gekochten Sauce bestreichen und den veganen Mozzarella in kleinen Stücken verteilen; verteilt bräunt er besser als in Klumpen."}},
+        {"text": {"en": "Bake on the hot stone until the rim is puffed and charred in places and the cheese has gone glossy.", "de": "Auf dem heißen Stein backen, bis der Rand aufgegangen und stellenweise dunkel ist und der Käse glänzt."}, "timer_seconds": 480},
+        {"text": {"en": "Spoon basil oil over the hot pizza, add the whole leaves and a pinch of chili flakes if you like. Repeat for the rest.", "de": "Das Basilikumöl über die heiße Pizza löffeln, die ganzen Blätter und nach Lust eine Prise Chiliflocken dazu. Mit den restlichen Kugeln genauso."}}
+      ]
+    },
+    {
+      "id": "pizza-margherita-gluten-free-medium",
+      "title": {"en": "Gluten-Free Margherita", "de": "Glutenfreie Margherita"},
+      "margin_note": {"en": "it's a batter, not a dough. trust it", "de": "das ist eher ein teig zum streichen. vertrau ihm"},
+      "intro": {
+        "en": "Gluten-free flour blend with psyllium husk instead of wheat: it never becomes a dough you can stretch, so you spread it with wet hands and bake it once on its own before it sees any tomato. Crisp underneath, soft inside, no apologies.",
+        "de": "Glutenfreie Mehlmischung mit Flohsamenschalen statt Weizen: Daraus wird nie ein Teig, den du dehnen kannst, also streichst du ihn mit nassen Händen aus und backst ihn einmal vor, bevor er Tomate sieht. Unten knusprig, innen weich, keine Entschuldigung nötig."
+      },
+      "variant": {"diet": "gluten-free", "effort": "medium"},
+      "contains": ["dairy", "lactose"],
+      "extra_attributes": [],
+      "technique": ["bake"],
+      "time_minutes": 90,
+      "servings": 2,
+      "calories_per_serving": 850,
+      "macros": {"protein_g": 30, "carbs_g": 108, "fat_g": 32},
+      "meal_types": ["dinner"],
+      "tags": ["baked", "bread"],
+      "ingredients": [
+        {"id": "gluten-free-flour", "amount": 260, "unit": "g", "note": {"en": "a bread or pizza blend", "de": "eine Brot- oder Pizzamischung"}},
+        {"id": "psyllium-husk", "amount": 2, "unit": "tbsp"},
+        {"id": "dry-yeast", "amount": 1, "unit": "tsp"},
+        {"id": "water", "amount": 260, "unit": "ml", "note": {"en": "lukewarm", "de": "lauwarm"}},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "salt", "amount": 1, "unit": "tsp"},
+        {"id": "passata", "amount": 150, "unit": "g"},
+        {"id": "mozzarella", "amount": 200, "unit": "g", "note": {"en": "drained", "de": "abgetropft"}},
+        {"id": "dried-oregano", "amount": 1, "unit": "pinch"},
+        {"id": "basil", "amount": 1, "unit": "handful"},
+        {"id": "extra-virgin-olive-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Stir the yeast into the lukewarm water and leave it until it looks a little foamy.", "de": "Die Hefe ins lauwarme Wasser rühren und stehen lassen, bis es leicht schäumt."}, "timer_seconds": 600},
+        {"text": {"en": "Whisk flour, psyllium and salt together. Pour in the yeast water and two tablespoons of oil and beat with a spoon for a minute or two. It will thicken as the psyllium drinks; you end up with something between batter and dough.", "de": "Mehl, Flohsamenschalen und Salz vermischen. Das Hefewasser und zwei Esslöffel Öl dazugießen und ein bis zwei Minuten mit einem Löffel kräftig schlagen. Die Masse dickt an, während die Flohsamen Wasser ziehen; am Ende hast du etwas zwischen Teig und Brei."}},
+        {"text": {"en": "Cover and let it rise somewhere warm. It won't double, but it will puff and smell like bread.", "de": "Abdecken und an einem warmen Ort gehen lassen. Er verdoppelt sich nicht, aber er geht auf und riecht nach Brot."}, "timer_seconds": 2700},
+        {"text": {"en": "Heat the oven to 240 °C with a tray inside. Tear the mozzarella and leave it on kitchen paper. Season the passata with a pinch of salt and the oregano.", "de": "Den Ofen mit einem Blech darin auf 240 °C vorheizen. Den Mozzarella zerrupfen und auf Küchenpapier legen. Die Passata mit einer Prise Salz und dem Oregano abschmecken."}},
+        {"text": {"en": "Divide the dough between sheets of oiled parchment, one per pizza. With wet hands, press each out into a thin round, thicker at the edge. Brush the tops with the last of the oil.", "de": "Den Teig auf geölte Bögen Backpapier verteilen, einer pro Pizza. Mit nassen Händen jeweils zu einem dünnen Kreis drücken, am Rand etwas dicker. Die Oberfläche mit dem restlichen Öl bestreichen."}},
+        {"text": {"en": "Slide the bases on their parchment onto the hot tray and bake until set and lightly golden underneath. This first bake is what keeps the middle from going gummy.", "de": "Die Böden samt Backpapier auf das heiße Blech ziehen und backen, bis sie fest und unten leicht goldbraun sind. Dieses Vorbacken sorgt dafür, dass die Mitte nicht gummig wird."}, "timer_seconds": 600},
+        {"text": {"en": "Sauce, mozzarella, back in the oven until the cheese bubbles and the rim is properly browned.", "de": "Sauce, Mozzarella, zurück in den Ofen, bis der Käse blubbert und der Rand richtig braun ist."}, "timer_seconds": 480},
+        {"text": {"en": "Basil, a thread of olive oil, pepper. Let it sit two minutes before cutting; gluten-free bases firm up as they cool slightly.", "de": "Basilikum, ein Faden Olivenöl, Pfeffer. Zwei Minuten stehen lassen, bevor du schneidest; glutenfreie Böden werden beim leichten Abkühlen fester."}, "timer_seconds": 120}
+      ]
+    },
+    {
+      "id": "pizza-margherita-keto-easy",
+      "title": {"en": "Fathead Margherita", "de": "Keto-Margherita mit Mandelboden"},
+      "margin_note": {"en": "cheese in the crust, cheese on top", "de": "käse im boden, käse obendrauf"},
+      "intro": {
+        "en": "A crust of melted mozzarella, cream cheese, almond flour and an egg, rolled thin and baked crisp before it gets its tomato and more mozzarella. It holds a slice like pizza, tastes like pizza, and keeps the carbs where keto wants them.",
+        "de": "Ein Boden aus geschmolzenem Mozzarella, Frischkäse, Mandelmehl und einem Ei, dünn ausgerollt und knusprig gebacken, bevor Tomate und noch mehr Mozzarella draufkommen. Man kann ihn wie Pizza in die Hand nehmen, er schmeckt wie Pizza, und die Kohlenhydrate bleiben da, wo Keto sie haben will."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "lactose", "egg", "almonds", "tree-nuts"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["bake"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 760,
+      "macros": {"protein_g": 43, "carbs_g": 15, "fat_g": 60},
+      "meal_types": ["dinner"],
+      "tags": ["baked", "weeknight"],
+      "ingredients": [
+        {"id": "mozzarella", "amount": 170, "unit": "g", "note": {"en": "grated, the firm low-moisture kind, for the crust", "de": "gerieben, die feste Sorte vom Block, für den Boden"}},
+        {"id": "cream-cheese", "amount": 30, "unit": "g"},
+        {"id": "almond-flour", "amount": 85, "unit": "g"},
+        {"id": "egg", "amount": 1, "unit": "piece"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "dried-oregano", "amount": 1, "unit": "tsp"},
+        {"id": "passata", "amount": 60, "unit": "g"},
+        {"id": "mozzarella", "amount": 100, "unit": "g", "note": {"en": "fresh, torn and drained, for the top", "de": "frisch, gezupft und abgetropft, für obendrauf"}},
+        {"id": "basil", "amount": 1, "unit": "handful"},
+        {"id": "extra-virgin-olive-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 200 °C. Put the grated mozzarella and the cream cheese in a bowl and melt them in the microwave in short bursts, stirring between, until you can stir it into one stretchy mass. A small pan over low heat works too.", "de": "Den Ofen auf 200 °C vorheizen. Den geriebenen Mozzarella und den Frischkäse in eine Schüssel geben und in der Mikrowelle in kurzen Schüben schmelzen, zwischendurch rühren, bis sich alles zu einer dehnbaren Masse verrühren lässt. Ein kleiner Topf bei niedriger Hitze geht auch."}},
+        {"text": {"en": "Add almond flour, egg, salt and half the oregano while it's still hot and mix with a spoon, then knead with oiled hands until it is one smooth, slightly tacky dough. If it cools and stiffens, ten seconds of microwave brings it back.", "de": "Mandelmehl, Ei, Salz und die Hälfte des Oreganos dazugeben, solange die Masse heiß ist, mit dem Löffel verrühren und dann mit geölten Händen kneten, bis ein glatter, leicht klebriger Teig entsteht. Wenn er abkühlt und fest wird, helfen zehn Sekunden Mikrowelle."}},
+        {"text": {"en": "Roll it out between two sheets of parchment to a thin round, peel off the top sheet and prick all over with a fork so it doesn't balloon.", "de": "Zwischen zwei Bögen Backpapier dünn und rund ausrollen, das obere Papier abziehen und den Boden rundum mit einer Gabel einstechen, damit er keine Blasen wirft."}},
+        {"text": {"en": "Bake the naked base until golden and firm, flipping it halfway if the underside is pale.", "de": "Den Boden ohne Belag backen, bis er goldbraun und fest ist, nach der Hälfte wenden, falls die Unterseite noch blass ist."}, "timer_seconds": 600},
+        {"text": {"en": "Stir the passata with the rest of the oregano and a pinch of salt. Spread it thinly on the base and scatter the fresh mozzarella over it.", "de": "Die Passata mit dem restlichen Oregano und einer Prise Salz verrühren. Dünn auf dem Boden verstreichen und den frischen Mozzarella darauf verteilen."}},
+        {"text": {"en": "Back in the oven until the cheese melts and takes on colour at the edges.", "de": "Zurück in den Ofen, bis der Käse geschmolzen ist und an den Rändern Farbe bekommt."}, "timer_seconds": 420},
+        {"text": {"en": "Basil, olive oil, pepper. Let it stand a minute so the crust sets, then slice.", "de": "Basilikum, Olivenöl, Pfeffer. Eine Minute stehen lassen, damit der Boden fest wird, dann schneiden."}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "dish": {
+    "id": "mercimek",
+    "name": {
+      "en": "Mercimek Çorbası",
+      "de": "Mercimek Çorbası"
+    },
+    "hero_text": {
+      "en": "The soup every Turkish kitchen keeps on standby: red lentils cooked down to velvet with onion, carrot and a little tomato, finished with lemon and a spoon of chili butter. It costs almost nothing and fixes most things.",
+      "de": "Die Suppe, die in jeder türkischen Küche auf Abruf steht: rote Linsen, mit Zwiebel, Karotte und etwas Tomate samtig gekocht, am Ende Zitrone und ein Löffel Chilibutter. Kostet fast nichts und richtet fast alles."
+    },
+    "caption": {
+      "en": "lemon wedge, chili butter, second bowl",
+      "de": "zitronenspalte, chilibutter, zweite schüssel"
+    },
+    "stripe_color": "#D8B25C",
+    "cuisine_tags": [
+      "turkish"
+    ],
+    "frequency_tier": "extended",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "soup",
+      "comfort",
+      "one-pot"
+    ]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "mercimek-classic-easy",
+      "title": {
+        "en": "Everyday Mercimek",
+        "de": "Mercimek für jeden Tag"
+      },
+      "margin_note": {
+        "en": "the lemon is not a suggestion",
+        "de": "die zitrone ist kein vorschlag"
+      },
+      "intro": {
+        "en": "Onion, carrot and red lentils simmered until they collapse, blitzed smooth and finished with lemon and a paprika butter that turns the top of the bowl red. Half an hour, one pot, the kind of soup you make without thinking.",
+        "de": "Zwiebel, Karotte und rote Linsen, geköchelt bis sie zerfallen, glatt püriert und mit Zitrone und einer Paprikabutter abgeschlossen, die die Suppe oben rot färbt. Eine halbe Stunde, ein Topf, die Art Suppe, die du kochst, ohne nachzudenken."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "celery",
+        "high-fodmap"
+      ],
+      "extra_attributes": [
+        "one-pot"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "time_minutes": 35,
+      "servings": 4,
+      "calories_per_serving": 390,
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 50,
+        "fat_g": 14
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "weeknight",
+        "comfort",
+        "one-pot"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "amount": 1,
+          "unit": "l"
+        },
+        {
+          "id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "pul biber if you have it",
+            "de": "Pul Biber, wenn du hast"
+          }
+        },
+        {
+          "id": "pita",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "to serve",
+            "de": "zum Servieren"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Rinse the lentils in a sieve until the water runs clear. Dice the onion and carrot small; it all gets blended, so there is no need for pretty.",
+            "de": "Die Linsen in einem Sieb abspülen, bis das Wasser klar bleibt. Zwiebel und Karotte klein würfeln, es wird sowieso püriert, also muss es nicht schön sein."
+          }
+        },
+        {
+          "text": {
+            "en": "Sweat the onion and carrot in the olive oil in a large pot with a pinch of salt until soft but not coloured. Stir in the tomato paste, cumin and half the paprika and let them toast for a minute.",
+            "de": "Zwiebel und Karotte im Olivenöl in einem großen Topf mit einer Prise Salz weich dünsten, ohne dass sie Farbe nehmen. Tomatenmark, Kreuzkümmel und die Hälfte des Paprikas einrühren und eine Minute anrösten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add the lentils and the stock. Bring to the boil, then drop to a simmer with the lid ajar until the lentils have completely fallen apart. Stir now and then so nothing catches on the bottom.",
+            "de": "Linsen und Brühe dazugeben. Aufkochen, dann bei halb aufgelegtem Deckel köcheln, bis die Linsen vollständig zerfallen sind. Ab und zu umrühren, damit nichts am Boden ansetzt."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Blend with a stick blender until smooth. Thin with a little water if it is thicker than you like, then season with salt, pepper and the juice of half the lemon. It should taste bright, not just warm.",
+            "de": "Mit dem Stabmixer glatt pürieren. Wenn sie dicker ist, als du magst, mit etwas Wasser verdünnen, dann mit Salz, Pfeffer und dem Saft einer halben Zitrone abschmecken. Sie soll frisch schmecken, nicht nur warm."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a small pan until it foams. Pull it off the heat, stir in the rest of the paprika and the chili flakes, and swirl; it goes deep red in seconds and burns just as fast.",
+            "de": "Butter in einer kleinen Pfanne schmelzen, bis sie schäumt. Vom Herd ziehen, das restliche Paprika und die Chiliflocken einrühren und schwenken, sie wird in Sekunden tiefrot und verbrennt genauso schnell."
+          }
+        },
+        {
+          "text": {
+            "en": "Ladle into bowls, spoon the red butter over the top, and put the remaining lemon in wedges and the warmed pita on the table.",
+            "de": "In Schüsseln füllen, die rote Butter darüberlöffeln, die restliche Zitrone in Spalten und das aufgewärmte Pita auf den Tisch stellen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercimek-classic-medium",
+      "title": {
+        "en": "Mercimek With Bulgur and Mint Butter",
+        "de": "Mercimek mit Bulgur und Minzbutter"
+      },
+      "margin_note": {
+        "en": "dried mint, not fresh, and it matters",
+        "de": "getrocknete minze, nicht frische, das ist wichtig"
+      },
+      "intro": {
+        "en": "The south-eastern version: lentils and coarse bulgur cooked together so the soup keeps some texture instead of being blended smooth, then a butter sizzled with dried mint and chili spooned over at the last second. On a cold night it is closer to a stew than a starter.",
+        "de": "Die Version aus dem Südosten: Linsen und grober Bulgur zusammen gekocht, damit die Suppe Biss behält statt glatt püriert zu werden, und im letzten Moment eine Butter darüber, in der getrocknete Minze und Chili aufgeschäumt sind. An einem kalten Abend ist das eher Eintopf als Vorspeise."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium"
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "celery",
+        "high-fodmap"
+      ],
+      "extra_attributes": [
+        "one-pot"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 390,
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 48,
+        "fat_g": 15
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "hearty",
+        "comfort",
+        "one-pot"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "bulgur",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "coarse",
+            "de": "grob"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "amount": 1.2,
+          "unit": "l"
+        },
+        {
+          "id": "butter",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "id": "dried-mint",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "parsley",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Rinse the lentils well. Dice the onion finely, grate the carrot on the coarse side of a box grater, chop the garlic.",
+            "de": "Die Linsen gründlich abspülen. Zwiebel fein würfeln, Karotte auf der groben Seite der Reibe raspeln, Knoblauch hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Soften the onion in the oil with a pinch of salt over medium heat. Add the garlic, carrot, tomato paste, cumin and paprika and keep stirring until the paste darkens a shade and smells sweet rather than raw.",
+            "de": "Zwiebel im Öl mit einer Prise Salz bei mittlerer Hitze weich dünsten. Knoblauch, Karotte, Tomatenmark, Kreuzkümmel und Paprika dazugeben und rühren, bis das Mark eine Nuance dunkler wird und süß statt roh riecht."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Add the lentils, bulgur and stock. Bring to the boil, then simmer partly covered, stirring more often than you would for a plain lentil soup, because bulgur likes to settle and catch. Cook until both are tender and the soup is thick.",
+            "de": "Linsen, Bulgur und Brühe dazugeben. Aufkochen, dann halb zugedeckt köcheln lassen und öfter umrühren als bei einer normalen Linsensuppe, weil Bulgur gern absinkt und ansetzt. Kochen, bis beides weich und die Suppe dick ist."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Do not blend it. If you want it a little silkier, give it three or four pulses with a stick blender and stop while it still has body. Season with salt, pepper and the juice of half the lemon.",
+            "de": "Nicht pürieren. Wenn du es etwas samtiger willst, drei, vier Mal kurz mit dem Stabmixer reinhalten und aufhören, solange noch Biss da ist. Mit Salz, Pfeffer und dem Saft einer halben Zitrone abschmecken."
+          }
+        },
+        {
+          "text": {
+            "en": "Take the pot off the heat and let the soup sit while you make the butter. It thickens as it stands, which is the point.",
+            "de": "Den Topf vom Herd nehmen und die Suppe stehen lassen, während du die Butter machst. Sie dickt beim Stehen nach, und genau das soll sie."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a small pan until it foams and smells nutty. Off the heat, crumble in the dried mint and the chili flakes and swirl. It goes fragrant in seconds; dried mint burns if you leave it on the flame.",
+            "de": "Butter in einer kleinen Pfanne schmelzen, bis sie schäumt und nussig riecht. Vom Herd nehmen, die getrocknete Minze und die Chiliflocken hineinbröseln und schwenken. Der Duft kommt sofort, und getrocknete Minze verbrennt, wenn sie auf der Flamme bleibt."
+          }
+        },
+        {
+          "text": {
+            "en": "Bowls, mint butter over the top, chopped parsley, the rest of the lemon in wedges on the table. Leftovers set almost solid overnight; loosen with water when you reheat them.",
+            "de": "In Schüsseln füllen, Minzbutter darüber, gehackte Petersilie, die restliche Zitrone in Spalten auf den Tisch. Reste werden über Nacht fast fest, beim Aufwärmen mit Wasser wieder lockern."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercimek-gluten-free-easy",
+      "title": {
+        "en": "Gluten-Free Mercimek",
+        "de": "Glutenfreie Mercimek"
+      },
+      "margin_note": {
+        "en": "check the stock cube; everything else is safe",
+        "de": "brühwürfel prüfen, alles andere ist sicher"
+      },
+      "intro": {
+        "en": "Red lentil soup is nearly gluten-free by nature; the trouble hides in the stock cube, the bread and the spoon of flour some recipes stir in for body. This one gets its thickness from a small potato and a little rice instead, and has toasted gluten-free flatbread for dunking.",
+        "de": "Rote Linsensuppe ist von Natur aus fast glutenfrei, die Fallen verstecken sich im Brühwürfel, im Brot und im Löffel Mehl, den manche Rezepte zum Binden reinrühren. Diese hier bekommt ihre Dicke stattdessen von einer kleinen Kartoffel und etwas Reis, und zum Eintunken gibt es geröstetes glutenfreies Fladenbrot."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "easy"
+      },
+      "contains": [
+        "dairy",
+        "celery",
+        "high-fodmap"
+      ],
+      "extra_attributes": [
+        "one-pot"
+      ],
+      "technique": [
+        "simmer"
+      ],
+      "time_minutes": 40,
+      "servings": 4,
+      "calories_per_serving": 450,
+      "macros": {
+        "protein_g": 15,
+        "carbs_g": 62,
+        "fat_g": 15
+      },
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        "soup",
+        "weeknight",
+        "comfort",
+        "one-pot"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "id": "basmati-rice",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "potato",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "small",
+            "de": "klein"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "carrot",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "amount": 1,
+          "unit": "l",
+          "note": {
+            "en": "check the label for gluten",
+            "de": "auf dem Etikett nach Gluten schauen"
+          }
+        },
+        {
+          "id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "chili-flakes",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "gluten-free-flatbread",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Rinse the lentils and rice together in a sieve until the water runs clear. Dice the onion, carrot and peeled potato small.",
+            "de": "Linsen und Reis zusammen in einem Sieb abspülen, bis das Wasser klar bleibt. Zwiebel, Karotte und die geschälte Kartoffel klein würfeln."
+          }
+        },
+        {
+          "text": {
+            "en": "Sweat the onion, carrot and potato in the oil with a pinch of salt until the onion turns translucent. Add the tomato paste, cumin and half the paprika and stir for a minute.",
+            "de": "Zwiebel, Karotte und Kartoffel im Öl mit einer Prise Salz dünsten, bis die Zwiebel glasig ist. Tomatenmark, Kreuzkümmel und die Hälfte des Paprikas dazugeben und eine Minute rühren."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add the lentils, rice and stock. Bring to the boil, then simmer with the lid ajar until a piece of potato crushes against the side of the pot with no resistance.",
+            "de": "Linsen, Reis und Brühe dazugeben. Aufkochen, dann mit halb aufgelegtem Deckel köcheln, bis sich ein Kartoffelstück ohne Widerstand an der Topfwand zerdrücken lässt."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Blend smooth with a stick blender. The rice and potato give it the body that flour would otherwise; if it is too thick, loosen with water. Season with salt, pepper and the juice of half the lemon.",
+            "de": "Mit dem Stabmixer glatt pürieren. Reis und Kartoffel geben ihr die Bindung, die sonst das Mehl übernehmen würde, wenn sie zu dick ist, mit Wasser verdünnen. Mit Salz, Pfeffer und dem Saft einer halben Zitrone abschmecken."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a small pan, pull it off the heat and stir in the rest of the paprika and the chili flakes until it turns red.",
+            "de": "Butter in einer kleinen Pfanne schmelzen, vom Herd ziehen und das restliche Paprika und die Chiliflocken einrühren, bis sie rot ist."
+          }
+        },
+        {
+          "text": {
+            "en": "Toast the gluten-free flatbreads in a dry pan until they are spotted and crisp at the edges, then cut into strips. Bowls, chili butter, lemon wedges, bread for dunking.",
+            "de": "Die glutenfreien Fladenbrote in einer trockenen Pfanne rösten, bis sie Flecken haben und an den Rändern knusprig sind, dann in Streifen schneiden. Schüsseln, Chilibutter, Zitronenspalten, Brot zum Eintunken."
+          },
+          "timer_seconds": 120
+        }
+      ]
+    }
+  ]
+}

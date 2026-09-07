@@ -1,0 +1,283 @@
+{
+  "dish": {
+    "id": "burger",
+    "name": {"en": "Burger", "de": "Burger"},
+    "hero_text": {
+      "en": "A soft bun, a patty with a real crust, something sharp, something cold and crunchy. Two hands, a stack of napkins, no cutlery in sight.",
+      "de": "Ein weiches Brötchen, ein Patty mit richtiger Kruste, etwas Säure, etwas Kaltes und Knackiges. Zwei Hände, ein Stapel Servietten, kein Besteck weit und breit."
+    },
+    "caption": {"en": "diner counter, ketchup on your knuckles", "de": "diner-theke, ketchup an den fingern"},
+    "stripe_color": "#A67B5B",
+    "cuisine_tags": ["american"],
+    "frequency_tier": "core",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["street-food", "bread", "grilled"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "burger-classic-easy",
+      "title": {"en": "Bacon Cheeseburger", "de": "Bacon-Cheeseburger"},
+      "margin_note": {"en": "leave the spatula alone", "de": "lass den pfannenwender in ruhe"},
+      "intro": {
+        "en": "Coarse beef, salted only on the outside and seared until the crust is almost black, with crisp bacon, melting cheddar and a buttered bun. The pickles and raw onion are there to cut through all that fat, so don't skip them.",
+        "de": "Grobes Rinderhack, nur außen gesalzen und scharf angebraten, bis die Kruste fast schwarz ist, dazu knuspriger Bacon, schmelzender Cheddar und ein gebuttertes Brötchen. Gurken und rohe Zwiebel bringen die Säure gegen das viele Fett, also nicht weglassen."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["beef", "pork", "dairy", "gluten", "sesame", "egg", "mustard", "added-sugar", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 940,
+      "macros": {"protein_g": 45, "carbs_g": 38, "fat_g": 67},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["street-food", "weeknight", "bread"],
+      "ingredients": [
+        {"id": "ground-beef", "amount": 300, "unit": "g", "note": {"en": "20 % fat, coarsely ground", "de": "20 % Fett, grob gewolft"}},
+        {"id": "bacon", "amount": 4, "unit": "slice"},
+        {"id": "cheddar", "amount": 60, "unit": "g", "note": {"en": "in thin slices", "de": "in dünnen Scheiben"}},
+        {"id": "burger-bun", "amount": 2, "unit": "piece"},
+        {"id": "butter", "amount": 15, "unit": "g", "note": {"en": "for the buns", "de": "für die Brötchen"}},
+        {"id": "iceberg", "amount": 2, "unit": "leaf"},
+        {"id": "fresh-tomato", "amount": 1, "unit": "piece"},
+        {"id": "red-onion", "amount": 0.5, "unit": "piece"},
+        {"id": "pickled-cucumber", "amount": 2, "unit": "piece"},
+        {"id": "ketchup", "amount": 2, "unit": "tbsp"},
+        {"id": "mayonnaise", "amount": 2, "unit": "tbsp"},
+        {"id": "mustard", "amount": 1, "unit": "tsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Divide the beef into equal portions and shape each into a loose ball, then flatten gently into a patty a little wider than the bun. Don't knead it. Press a shallow dimple into the centre with your thumb.", "de": "Das Hack in gleich große Portionen teilen, locker zu Kugeln formen und sanft zu Patties drücken, etwas breiter als das Brötchen. Nicht kneten. Mit dem Daumen eine kleine Mulde in die Mitte drücken."}},
+        {"text": {"en": "Stir the ketchup, mayonnaise and mustard into a sauce. Slice the tomato and onion thin, halve the pickles lengthways, split the buns.", "de": "Ketchup, Mayonnaise und Senf zu einer Sauce verrühren. Tomate und Zwiebel dünn schneiden, Gurken längs halbieren, Brötchen aufschneiden."}},
+        {"text": {"en": "Fry the bacon in a cold pan set over medium heat, turning, until crisp. Lift out onto paper and leave the fat in the pan.", "de": "Bacon in einer kalten Pfanne bei mittlerer Hitze auslassen und wenden, bis er knusprig ist. Auf Küchenpapier legen, das Fett bleibt in der Pfanne."}, "timer_seconds": 360},
+        {"text": {"en": "Turn the heat up high. Salt and pepper the patties generously on both sides and lay them in the bacon fat. Leave them alone until a dark crust forms, then flip, top with the cheddar and cook until just pink inside. Don't press them.", "de": "Hitze hochdrehen. Patties von beiden Seiten großzügig salzen und pfeffern und ins Baconfett legen. In Ruhe lassen, bis sich eine dunkle Kruste bildet, dann wenden, mit Cheddar belegen und braten, bis sie innen gerade noch rosa sind. Nicht andrücken."}, "timer_seconds": 360},
+        {"text": {"en": "Butter the cut sides of the buns and toast them in the same pan for a minute, or under the grill.", "de": "Die Schnittflächen der Brötchen buttern und in derselben Pfanne eine Minute rösten, oder unter dem Grill."}, "timer_seconds": 60},
+        {"text": {"en": "Sauce on both halves. Bottom bun: lettuce, patty with its cheese, bacon, tomato, onion, pickles. Lid on, press lightly, eat immediately.", "de": "Sauce auf beide Hälften. Unten: Salat, Patty mit Käse, Bacon, Tomate, Zwiebel, Gurken. Deckel drauf, leicht andrücken, sofort essen."}}
+      ]
+    },
+    {
+      "id": "burger-halal-easy",
+      "title": {"en": "Spiced Beef and Lamb Burger", "de": "Gewürzter Rind-Lamm-Burger"},
+      "margin_note": {"en": "lamb fat is the secret", "de": "lammfett ist das geheimnis"},
+      "intro": {
+        "en": "Beef and lamb pressed into one patty with cumin and garlic, seared hard, with sumac onions and a harissa mayo that wakes the whole thing up. Written for a kitchen that keeps pork and alcohol out entirely, so no bacon and nothing boozy anywhere near the sauce.",
+        "de": "Rind und Lamm zu einem Patty mit Kreuzkümmel und Knoblauch geformt, scharf angebraten, dazu Sumach-Zwiebeln und eine Harissa-Mayo, die das Ganze wachrüttelt. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich nichts verloren haben, also kein Bacon und nichts Hochprozentiges in der Sauce."
+      },
+      "variant": {"diet": "halal", "effort": "easy"},
+      "contains": ["beef", "lamb", "gluten", "sesame", "egg", "mustard", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 800,
+      "macros": {"protein_g": 40, "carbs_g": 38, "fat_g": 54},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["street-food", "bread", "hearty"],
+      "ingredients": [
+        {"id": "ground-beef", "amount": 200, "unit": "g", "note": {"en": "or all beef, if that's what the butcher has", "de": "oder nur Rind, wenn der Metzger nichts anderes hat"}},
+        {"id": "ground-lamb", "amount": 160, "unit": "g"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "cumin", "amount": 1, "unit": "tsp"},
+        {"id": "sweet-paprika", "amount": 1, "unit": "tsp"},
+        {"id": "red-onion", "amount": 1, "unit": "piece"},
+        {"id": "sumac", "amount": 1, "unit": "tsp"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "mayonnaise", "amount": 3, "unit": "tbsp"},
+        {"id": "harissa", "amount": 1, "unit": "tbsp", "note": {"en": "more if you like heat", "de": "mehr, wenn du es scharf magst"}},
+        {"id": "burger-bun", "amount": 2, "unit": "piece"},
+        {"id": "romaine", "amount": 2, "unit": "leaf"},
+        {"id": "fresh-tomato", "amount": 1, "unit": "piece"},
+        {"id": "pickled-cucumber", "amount": 2, "unit": "piece"},
+        {"id": "olive-oil", "amount": 1, "unit": "tbsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Mix the beef and lamb with one grated garlic clove, the cumin, paprika, a good pinch of salt and pepper. Work it as little as possible, then shape into loose, thick patties a little wider than the buns.", "de": "Rind und Lamm mit einer geriebenen Knoblauchzehe, Kreuzkümmel, Paprika, einer guten Prise Salz und Pfeffer vermengen. So wenig wie möglich durchkneten, dann zu lockeren, dicken Patties formen, etwas breiter als die Brötchen."}},
+        {"text": {"en": "Let the patties rest in the fridge while you make everything else. Cold meat holds together better in the pan.", "de": "Die Patties im Kühlschrank ruhen lassen, während du den Rest machst. Kaltes Fleisch hält in der Pfanne besser zusammen."}, "timer_seconds": 600},
+        {"text": {"en": "Slice the onion into thin half-moons, toss with sumac, a pinch of salt, the chopped parsley and a squeeze of lemon. Squeeze it with your hands until it softens a little.", "de": "Zwiebel in dünne Halbmonde schneiden, mit Sumach, einer Prise Salz, gehackter Petersilie und einem Spritzer Zitrone vermengen. Mit den Händen kneten, bis sie etwas weicher wird."}},
+        {"text": {"en": "Stir the mayonnaise with the harissa, the remaining garlic grated fine and a little lemon. Slice the tomato, halve the pickles lengthways.", "de": "Mayonnaise mit Harissa, dem restlichen fein geriebenen Knoblauch und etwas Zitrone verrühren. Tomate in Scheiben schneiden, Gurken längs halbieren."}},
+        {"text": {"en": "Heat the oil in a heavy pan until it shimmers. Sear the patties without moving them until a dark crust forms, then flip and cook to your liking. Lamb fat spits, so stand back.", "de": "Öl in einer schweren Pfanne erhitzen, bis es flimmert. Patties braten, ohne sie zu bewegen, bis eine dunkle Kruste entsteht, dann wenden und nach Geschmack fertig braten. Lammfett spritzt, also Abstand halten."}, "timer_seconds": 420},
+        {"text": {"en": "Toast the cut buns in the pan juices for a minute.", "de": "Die aufgeschnittenen Brötchen eine Minute im Bratensatz rösten."}, "timer_seconds": 60},
+        {"text": {"en": "Harissa mayo on both halves, then romaine, patty, tomato, pickles and a heap of sumac onions.", "de": "Harissa-Mayo auf beide Hälften, dann Römersalat, Patty, Tomate, Gurken und ein Berg Sumach-Zwiebeln."}}
+      ]
+    },
+    {
+      "id": "burger-vegetarian-medium",
+      "title": {"en": "Halloumi Portobello Burger", "de": "Halloumi-Portobello-Burger"},
+      "margin_note": {"en": "two things that brown properly", "de": "zwei dinge, die wirklich bräunen"},
+      "intro": {
+        "en": "A whole roasted portobello, marinated in garlic, thyme and balsamic until it goes dark and juicy, stacked with a thick slab of seared halloumi, rocket and a mint yogurt. Nothing here is pretending to be a patty, and it doesn't need to.",
+        "de": "Ein ganzer gerösteter Portobello, in Knoblauch, Thymian und Balsamico mariniert, bis er dunkel und saftig ist, geschichtet mit einer dicken Scheibe gebratenem Halloumi, Rucola und Minzjoghurt. Nichts hier tut so, als wäre es ein Patty, und das muss es auch nicht."
+      },
+      "variant": {"diet": "vegetarian", "effort": "medium"},
+      "contains": ["dairy", "lactose", "gluten", "sesame", "high-fodmap", "sulphites"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["roast", "pan-fry"],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 690,
+      "macros": {"protein_g": 34, "carbs_g": 39, "fat_g": 44},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["street-food", "bread", "fresh"],
+      "ingredients": [
+        {"id": "portobello", "amount": 2, "unit": "piece", "note": {"en": "large", "de": "groß"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "thyme", "amount": 3, "unit": "sprig"},
+        {"id": "balsamic-vinegar", "amount": 1, "unit": "tbsp"},
+        {"id": "halloumi", "amount": 200, "unit": "g"},
+        {"id": "greek-yogurt", "amount": 100, "unit": "g"},
+        {"id": "mint", "amount": 8, "unit": "leaf"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "burger-bun", "amount": 2, "unit": "piece"},
+        {"id": "rocket", "amount": 1, "unit": "handful"},
+        {"id": "fresh-tomato", "amount": 1, "unit": "piece"},
+        {"id": "red-onion", "amount": 0.5, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 200 °C. Wipe the mushrooms and snap out the stems. Whisk the oil with one grated garlic clove, the thyme leaves, balsamic, salt and pepper and brush it all over the caps, gills side up.", "de": "Ofen auf 200 °C vorheizen. Pilze abwischen, Stiele herausbrechen. Öl mit einer geriebenen Knoblauchzehe, den Thymianblättchen, Balsamico, Salz und Pfeffer verquirlen und die Hüte rundum damit einpinseln, Lamellen nach oben."}},
+        {"text": {"en": "Leave them to soak up the marinade for a bit; they'll drink it.", "de": "Kurz in der Marinade ziehen lassen; die Pilze saugen sie auf."}, "timer_seconds": 600},
+        {"text": {"en": "Roast the mushrooms gills-side up on a tray until they collapse a little and the edges darken. Pour any juices from the caps back over them.", "de": "Pilze mit den Lamellen nach oben auf einem Blech rösten, bis sie etwas zusammenfallen und die Ränder dunkel werden. Den Saft aus den Hüten wieder darübergießen."}, "timer_seconds": 1200},
+        {"text": {"en": "Meanwhile stir the yogurt with finely chopped mint, the other garlic clove grated, lemon juice and a pinch of salt. Slice the tomato and onion thin.", "de": "Währenddessen Joghurt mit fein gehackter Minze, der zweiten geriebenen Knoblauchzehe, Zitronensaft und einer Prise Salz verrühren. Tomate und Zwiebel dünn schneiden."}},
+        {"text": {"en": "Cut the halloumi into thick slabs and pat them dry. Fry in a dry non-stick pan over medium-high heat until deeply golden on both sides and soft in the middle.", "de": "Halloumi in dicke Scheiben schneiden und trocken tupfen. In einer trockenen beschichteten Pfanne bei mittelhoher Hitze braten, bis er beidseitig tief goldbraun und innen weich ist."}, "timer_seconds": 300},
+        {"text": {"en": "Toast the buns cut-side down in the halloumi pan for a minute.", "de": "Brötchen mit der Schnittfläche nach unten eine Minute in der Halloumi-Pfanne rösten."}, "timer_seconds": 60},
+        {"text": {"en": "Mint yogurt on the base, then rocket, the mushroom, halloumi, tomato and onion. More yogurt on the lid.", "de": "Minzjoghurt auf die untere Hälfte, dann Rucola, Pilz, Halloumi, Tomate und Zwiebel. Noch mehr Joghurt auf den Deckel."}}
+      ]
+    },
+    {
+      "id": "burger-vegan-medium",
+      "title": {"en": "Black Bean Burger", "de": "Black-Bean-Burger"},
+      "margin_note": {"en": "dry beans make a patty, wet beans make soup", "de": "trockene bohnen werden patty, nasse bohnen werden suppe"},
+      "intro": {
+        "en": "Black beans dried out in the oven first so the patty actually holds, then mashed with smoked paprika, cumin, garlic and a flax egg and pan-fried until the crust crackles. Smoky lime mayo and avocado on top; ordinary lettuce and pickles underneath, because it's still a burger.",
+        "de": "Schwarze Bohnen, die erst im Ofen trocknen, damit das Patty wirklich hält, dann mit Rauchpaprika, Kreuzkümmel, Knoblauch und Leinsamen-Ei zerdrückt und in der Pfanne gebraten, bis die Kruste knackt. Obendrauf rauchige Limetten-Mayo und Avocado; darunter ganz normaler Salat und Gurken, denn es ist immer noch ein Burger."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["gluten", "sesame", "soy", "mustard", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["bake", "pan-fry"],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 840,
+      "macros": {"protein_g": 28, "carbs_g": 100, "fat_g": 36},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["street-food", "bread", "hearty"],
+      "ingredients": [
+        {"id": "black-beans", "amount": 2, "unit": "can", "note": {"en": "400 g each, drained and rinsed", "de": "à 400 g, abgetropft und abgespült"}},
+        {"id": "red-onion", "amount": 1, "unit": "piece", "note": {"en": "half for the patties, half sliced for the top", "de": "eine Hälfte für die Patties, eine Hälfte in Ringen obendrauf"}},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "flaxseed", "amount": 1, "unit": "tbsp", "note": {"en": "ground", "de": "geschrotet"}},
+        {"id": "breadcrumbs", "amount": 40, "unit": "g"},
+        {"id": "cumin", "amount": 1, "unit": "tsp"},
+        {"id": "smoked-paprika", "amount": 2, "unit": "tsp"},
+        {"id": "tomato-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 1, "unit": "tbsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "vegan-mayo", "amount": 2, "unit": "tbsp"},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "burger-bun", "amount": 2, "unit": "piece"},
+        {"id": "romaine", "amount": 2, "unit": "leaf"},
+        {"id": "pickled-cucumber", "amount": 2, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 180 °C. Spread the drained beans on a lined tray and bake until the skins split and they look dry and a bit shrivelled. This is the step everyone skips and then wonders why the patty fell apart.", "de": "Ofen auf 180 °C vorheizen. Die abgetropften Bohnen auf einem Blech mit Backpapier verteilen und backen, bis die Haut aufplatzt und sie trocken und leicht schrumpelig aussehen. Diesen Schritt lassen alle weg und wundern sich dann, warum das Patty zerfällt."}, "timer_seconds": 900},
+        {"text": {"en": "Stir the ground flaxseed with three tablespoons of water and leave it to turn into a gel.", "de": "Geschrotete Leinsamen mit drei Esslöffeln Wasser verrühren und stehen lassen, bis ein Gel entsteht."}, "timer_seconds": 300},
+        {"text": {"en": "Finely chop half the onion and the garlic and soften them in a little of the oil until translucent. Add the cumin, paprika and tomato paste for the last minute.", "de": "Die halbe Zwiebel und den Knoblauch fein hacken und in etwas Öl glasig dünsten. Kreuzkümmel, Paprika und Tomatenmark in der letzten Minute dazugeben."}, "timer_seconds": 300},
+        {"text": {"en": "Mash the beans roughly in a bowl, leaving plenty of texture. Add the onion mixture, flax gel, breadcrumbs, soy sauce, salt and pepper and mix with your hands until it holds when squeezed. Shape into thick patties and chill.", "de": "Bohnen in einer Schüssel grob zerdrücken, ruhig mit viel Struktur. Zwiebelmischung, Leinsamen-Gel, Semmelbrösel, Sojasauce, Salz und Pfeffer dazugeben und mit den Händen mischen, bis die Masse beim Zusammendrücken hält. Zu dicken Patties formen und kalt stellen."}, "timer_seconds": 900},
+        {"text": {"en": "Stir the vegan mayo with the zest and juice of half the lime, a pinch of smoked paprika and salt. Slice the avocado and the rest of the onion, halve the pickles.", "de": "Vegane Mayo mit Abrieb und Saft einer halben Limette, einer Prise Rauchpaprika und Salz verrühren. Avocado und die restliche Zwiebel in Scheiben schneiden, Gurken halbieren."}},
+        {"text": {"en": "Heat the remaining oil in a non-stick pan over medium heat. Fry the patties without touching them until a proper crust forms, then flip carefully and do the other side.", "de": "Das restliche Öl in einer beschichteten Pfanne bei mittlerer Hitze erhitzen. Patties braten, ohne sie anzufassen, bis sich eine richtige Kruste bildet, dann vorsichtig wenden und die zweite Seite braten."}, "timer_seconds": 480},
+        {"text": {"en": "Toast the buns in the pan. Lime mayo on both halves, romaine, patty, avocado, onion, pickles, a squeeze of the remaining lime.", "de": "Brötchen in der Pfanne rösten. Limetten-Mayo auf beide Hälften, Römersalat, Patty, Avocado, Zwiebel, Gurken, ein Spritzer von der restlichen Limette."}}
+      ]
+    },
+    {
+      "id": "burger-gluten-free-easy",
+      "title": {"en": "Gluten-Free Cheeseburger", "de": "Glutenfreier Cheeseburger"},
+      "margin_note": {"en": "read the ketchup label once", "de": "einmal das ketchup-etikett lesen"},
+      "intro": {
+        "en": "The same seared beef and melting cheddar on a gluten-free bun, toasted in butter so it stops being crumbly and starts being bread. Ketchup and mayonnaise are usually fine and the beef is naturally clean; read the labels once and then never think about it again.",
+        "de": "Dasselbe scharf angebratene Rind mit schmelzendem Cheddar auf einem glutenfreien Brötchen, in Butter geröstet, damit es aufhört zu bröseln und anfängt, Brot zu sein. Ketchup und Mayonnaise sind meist unbedenklich, das Hack sowieso; einmal die Etiketten lesen und dann nie wieder drüber nachdenken."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["beef", "dairy", "egg", "mustard", "added-sugar", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 860,
+      "macros": {"protein_g": 38, "carbs_g": 43, "fat_g": 60},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["street-food", "weeknight", "bread"],
+      "ingredients": [
+        {"id": "ground-beef", "amount": 300, "unit": "g", "note": {"en": "20 % fat", "de": "20 % Fett"}},
+        {"id": "cheddar", "amount": 60, "unit": "g", "note": {"en": "sliced; check pre-sliced packs for starch", "de": "in Scheiben; bei fertig geschnittenem Käse auf Stärke achten"}},
+        {"id": "gluten-free-bun", "amount": 2, "unit": "piece"},
+        {"id": "butter", "amount": 15, "unit": "g"},
+        {"id": "iceberg", "amount": 2, "unit": "leaf"},
+        {"id": "fresh-tomato", "amount": 1, "unit": "piece"},
+        {"id": "red-onion", "amount": 0.5, "unit": "piece"},
+        {"id": "pickled-cucumber", "amount": 2, "unit": "piece"},
+        {"id": "ketchup", "amount": 2, "unit": "tbsp", "note": {"en": "check the label", "de": "Etikett prüfen"}},
+        {"id": "mayonnaise", "amount": 2, "unit": "tbsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Shape the beef into loose patties slightly wider than the buns, with a dimple in the middle of each. Keep them cold.", "de": "Hack zu lockeren Patties formen, etwas breiter als die Brötchen, mit einer Mulde in der Mitte. Kalt halten."}},
+        {"text": {"en": "Slice the tomato and onion thin, halve the pickles, tear the lettuce. Stir the ketchup and mayonnaise together.", "de": "Tomate und Zwiebel dünn schneiden, Gurken halbieren, Salat zupfen. Ketchup und Mayonnaise verrühren."}},
+        {"text": {"en": "Heat a heavy pan until very hot. Salt and pepper the patties on both sides and sear without moving until a dark crust forms. Flip, lay the cheddar on top and cook until just pink inside.", "de": "Eine schwere Pfanne sehr heiß werden lassen. Patties beidseitig salzen und pfeffern und braten, ohne sie zu bewegen, bis eine dunkle Kruste entsteht. Wenden, Cheddar auflegen und braten, bis sie innen gerade noch rosa sind."}, "timer_seconds": 360},
+        {"text": {"en": "Butter the cut sides of the gluten-free buns and toast them in a second pan, or under the grill, until golden and warm through. Cold gluten-free bread crumbles; warm, it behaves.", "de": "Die Schnittflächen der glutenfreien Brötchen buttern und in einer zweiten Pfanne oder unter dem Grill rösten, bis sie goldbraun und durchgewärmt sind. Kaltes glutenfreies Brot bröselt, warm benimmt es sich."}, "timer_seconds": 120},
+        {"text": {"en": "Sauce on both halves, then lettuce, patty and cheese, tomato, onion, pickles. Lid on.", "de": "Sauce auf beide Hälften, dann Salat, Patty mit Käse, Tomate, Zwiebel, Gurken. Deckel drauf."}}
+      ]
+    },
+    {
+      "id": "burger-keto-easy",
+      "title": {"en": "Keto Lettuce Wrap Burger", "de": "Keto-Burger im Salatblatt"},
+      "margin_note": {"en": "the crunch comes from the lettuce now", "de": "der crunch kommt jetzt vom salat"},
+      "intro": {
+        "en": "A bacon cheeseburger with the bun swapped for two layers of crisp iceberg, which turns out to be an upgrade for the burger and a downgrade for your shirt. Avocado and mayonnaise carry the richness the bread used to.",
+        "de": "Ein Bacon-Cheeseburger, bei dem das Brötchen gegen zwei Lagen knackigen Eisbergsalat getauscht ist, was sich als Upgrade für den Burger und als Downgrade für dein Hemd herausstellt. Avocado und Mayonnaise bringen die Fülle, die sonst das Brot geliefert hat."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["beef", "pork", "dairy", "egg", "mustard", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["pan-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 830,
+      "macros": {"protein_g": 39, "carbs_g": 12, "fat_g": 69},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["weeknight", "fresh"],
+      "ingredients": [
+        {"id": "ground-beef", "amount": 300, "unit": "g", "note": {"en": "20 % fat", "de": "20 % Fett"}},
+        {"id": "bacon", "amount": 4, "unit": "slice"},
+        {"id": "cheddar", "amount": 60, "unit": "g", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "lettuce-wraps", "amount": 8, "unit": "leaf", "note": {"en": "large outer iceberg leaves, kept whole", "de": "große äußere Eisbergblätter, im Ganzen"}},
+        {"id": "fresh-tomato", "amount": 1, "unit": "piece"},
+        {"id": "red-onion", "amount": 0.25, "unit": "piece"},
+        {"id": "pickled-cucumber", "amount": 2, "unit": "piece"},
+        {"id": "avocado", "amount": 1, "unit": "piece"},
+        {"id": "mayonnaise", "amount": 2, "unit": "tbsp"},
+        {"id": "mustard", "amount": 1, "unit": "tsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Peel the outer leaves off the iceberg carefully, rinse, and dry them thoroughly. Wet lettuce is a sad wrapper.", "de": "Die äußeren Blätter vorsichtig vom Eisberg lösen, abspülen und gründlich trocknen. Nasser Salat ist eine traurige Hülle."}},
+        {"text": {"en": "Shape the beef into patties with a dimple in the middle. Fry the bacon in a cold pan over medium heat until crisp, then lift out and keep the fat.", "de": "Hack zu Patties formen, Mulde in die Mitte. Bacon in einer kalten Pfanne bei mittlerer Hitze knusprig braten, herausnehmen; das Fett bleibt drin."}, "timer_seconds": 360},
+        {"text": {"en": "Stir the mayonnaise with the mustard. Slice tomato, onion and avocado, halve the pickles.", "de": "Mayonnaise mit Senf verrühren. Tomate, Zwiebel und Avocado in Scheiben schneiden, Gurken halbieren."}},
+        {"text": {"en": "Turn the heat up. Salt and pepper the patties and sear them in the bacon fat until crusted underneath, then flip, add the cheddar and cook until just pink in the middle.", "de": "Hitze hochdrehen. Patties salzen und pfeffern und im Baconfett braten, bis die Unterseite eine Kruste hat, dann wenden, Cheddar auflegen und braten, bis sie in der Mitte gerade noch rosa sind."}, "timer_seconds": 360},
+        {"text": {"en": "Stack two lettuce leaves as the base, spread with mustard mayo, then patty, bacon, avocado, tomato, onion and pickles. Two more leaves on top, wrap tightly in a square of baking paper and cut through the middle.", "de": "Zwei Salatblätter als Boden übereinanderlegen, mit Senf-Mayo bestreichen, dann Patty, Bacon, Avocado, Tomate, Zwiebel und Gurken. Zwei weitere Blätter obendrauf, fest in ein Stück Backpapier wickeln und in der Mitte durchschneiden."}}
+      ]
+    }
+  ]
+}

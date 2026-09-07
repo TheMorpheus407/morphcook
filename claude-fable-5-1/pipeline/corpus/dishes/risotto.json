@@ -1,0 +1,203 @@
+{
+  "dish": {
+    "id": "risotto",
+    "name": {"en": "Risotto", "de": "Risotto"},
+    "hero_text": {
+      "en": "Rice that gets stirred into something creamy without a drop of cream. Twenty minutes at the stove, a ladle in one hand, a glass of something in the other, and it's done when it's done.",
+      "de": "Reis, der durch Rühren cremig wird, ohne einen Tropfen Sahne. Zwanzig Minuten am Herd, eine Kelle in der einen Hand, ein Glas in der anderen, und fertig ist es, wenn es fertig ist."
+    },
+    "caption": {"en": "the wave test: shake the pan, it should ripple", "de": "die wellenprobe: pfanne rütteln, es muss schwappen"},
+    "stripe_color": "#D8B25C",
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "core",
+    "meal_types": ["dinner"],
+    "tags": ["rice", "comfort", "one-pot"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "risotto-classic-medium",
+      "title": {"en": "Mushroom Risotto", "de": "Pilzrisotto"},
+      "margin_note": {"en": "warm stock, patience, cold butter at the end", "de": "warme brühe, geduld, kalte butter zum schluss"},
+      "intro": {
+        "en": "Mushrooms fried hard and separately so they actually brown, then a slow risotto of shallot, wine and warm stock, finished off the heat with cold butter and parmesan. Vegetarian by nature, no substitutions needed.",
+        "de": "Pilze scharf und getrennt gebraten, damit sie wirklich bräunen, dann ein langsames Risotto aus Schalotte, Wein und warmer Brühe, vom Herd genommen mit kalter Butter und Parmesan vollendet. Von Natur aus vegetarisch, nichts muss ersetzt werden."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["dairy", "alcohol", "sulphites", "celery", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 620,
+      "macros": {"protein_g": 18, "carbs_g": 78, "fat_g": 26},
+      "meal_types": ["dinner"],
+      "tags": ["rice", "comfort", "hearty"],
+      "ingredients": [
+        {"id": "arborio-rice", "amount": 180, "unit": "g"},
+        {"id": "button-mushroom", "amount": 300, "unit": "g", "note": {"en": "or mixed, torn", "de": "oder gemischt, zerpflückt"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "butter", "amount": 50, "unit": "g", "note": {"en": "cold; a knob for the mushrooms, the rest for the end", "de": "kalt; ein Stück für die Pilze, der Rest für den Schluss"}},
+        {"id": "shallot", "amount": 1, "unit": "piece"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "white-wine", "amount": 100, "unit": "ml", "note": {"en": "dry", "de": "trocken"}},
+        {"id": "vegetable-stock", "amount": 800, "unit": "ml"},
+        {"id": "thyme", "amount": 3, "unit": "sprig"},
+        {"id": "parmesan", "amount": 50, "unit": "g", "note": {"en": "grated", "de": "gerieben"}},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Bring the stock to a simmer in a small pot and keep it there. Cold stock stops the rice every time you add it.", "de": "Die Brühe in einem kleinen Topf zum Köcheln bringen und heiß halten. Kalte Brühe stoppt den Reis bei jeder Zugabe."}},
+        {"text": {"en": "Fry the mushrooms in the oil over high heat in a wide pan, in a single layer and without stirring at first, until browned and squeaky. Add the thyme leaves, salt and a knob of butter at the end, then tip onto a plate.", "de": "Die Pilze im Öl bei starker Hitze in einer weiten Pfanne braten, in einer Lage und anfangs ohne Rühren, bis sie gebräunt und knusprig sind. Zum Schluss Thymianblätter, Salz und ein Stück Butter dazu, dann auf einen Teller geben."}, "timer_seconds": 480},
+        {"text": {"en": "In the same pan, over medium heat, soften the finely chopped shallot and garlic in a little more butter until translucent.", "de": "In derselben Pfanne bei mittlerer Hitze die fein gehackte Schalotte und den Knoblauch in etwas mehr Butter glasig dünsten."}, "timer_seconds": 180},
+        {"text": {"en": "Add the rice and stir until the grains turn translucent at the edges and smell toasty. Pour in the wine and stir until it has gone.", "de": "Den Reis dazu und rühren, bis die Körner an den Rändern glasig werden und geröstet riechen. Den Wein dazugießen und rühren, bis er verschwunden ist."}, "timer_seconds": 120},
+        {"text": {"en": "Add hot stock a ladle at a time, stirring often but not constantly, and waiting until each ladle is almost absorbed before the next. Taste from about fifteen minutes in; you want tender with a faint bite.", "de": "Heiße Brühe kellenweise dazugeben, oft rühren, aber nicht ständig, und warten, bis jede Kelle fast aufgesogen ist, bevor die nächste kommt. Ab etwa fünfzehn Minuten probieren; es soll zart sein mit einem Hauch Biss."}, "timer_seconds": 1080},
+        {"text": {"en": "Stir the mushrooms back in with their juices and a last splash of stock; the risotto should be looser than you think it should be.", "de": "Die Pilze mit ihrem Saft und einem letzten Schuss Brühe wieder einrühren; das Risotto sollte flüssiger sein, als du meinst."}},
+        {"text": {"en": "Off the heat: the cold butter and parmesan, beaten in hard until glossy. Lid on, rest two minutes.", "de": "Vom Herd: die kalte Butter und der Parmesan, kräftig eingerührt, bis es glänzt. Deckel drauf, zwei Minuten ruhen lassen."}, "timer_seconds": 120},
+        {"text": {"en": "Pepper, a squeeze of lemon, parsley. Shake the pan; it should ripple like a wave. Serve on warm plates.", "de": "Pfeffer, ein Spritzer Zitrone, Petersilie. Die Pfanne rütteln; es sollte wie eine Welle schwappen. Auf warmen Tellern servieren."}}
+      ]
+    },
+    {
+      "id": "risotto-vegan-medium",
+      "title": {"en": "Vegan Miso Mushroom Risotto", "de": "Veganes Miso-Pilzrisotto"},
+      "margin_note": {"en": "miso does what parmesan did", "de": "miso übernimmt den job vom parmesan"},
+      "intro": {
+        "en": "Shiitake and button mushrooms for depth, a spoon of white miso and vegan butter beaten in at the end where the cheese would go. It comes out just as creamy, a shade more savoury, and nobody needs to ask.",
+        "de": "Shiitake und Champignons für die Tiefe, ein Löffel helles Miso und vegane Butter zum Schluss eingerührt, wo sonst der Käse hinkäme. Es wird genauso cremig, eine Spur würziger, und niemand muss nachfragen."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["soy", "alcohol", "sulphites", "celery", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 560,
+      "macros": {"protein_g": 14, "carbs_g": 80, "fat_g": 20},
+      "meal_types": ["dinner"],
+      "tags": ["rice", "comfort"],
+      "ingredients": [
+        {"id": "arborio-rice", "amount": 180, "unit": "g"},
+        {"id": "shiitake", "amount": 150, "unit": "g", "note": {"en": "stems removed and kept, caps sliced", "de": "Stiele entfernt und aufgehoben, Hüte in Scheiben"}},
+        {"id": "button-mushroom", "amount": 150, "unit": "g"},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "shallot", "amount": 1, "unit": "piece"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "white-wine", "amount": 100, "unit": "ml", "note": {"en": "dry", "de": "trocken"}},
+        {"id": "vegetable-stock", "amount": 800, "unit": "ml"},
+        {"id": "miso", "amount": 1, "unit": "tbsp", "note": {"en": "white, mild", "de": "hell, mild"}},
+        {"id": "vegan-butter", "amount": 40, "unit": "g", "note": {"en": "cold", "de": "kalt"}},
+        {"id": "nutritional-yeast", "amount": 2, "unit": "tbsp"},
+        {"id": "thyme", "amount": 2, "unit": "sprig"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "chives", "amount": 0.5, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Keep the stock at a simmer in a small pot. Drop the shiitake stems into it for extra depth; fish them out before you start ladling.", "de": "Die Brühe in einem kleinen Topf köcheln lassen. Die Shiitake-Stiele für mehr Tiefe hineinwerfen; vor dem ersten Kellen wieder rausfischen."}},
+        {"text": {"en": "Fry both mushrooms in two tablespoons of oil over high heat, in a single layer, until browned and the pan is dry. Thyme, salt, then onto a plate.", "de": "Beide Pilzsorten in zwei Esslöffeln Öl bei starker Hitze in einer Lage braten, bis sie gebräunt sind und die Pfanne trocken ist. Thymian, Salz, dann auf einen Teller."}, "timer_seconds": 480},
+        {"text": {"en": "Soften the chopped shallot and garlic in the remaining oil over medium heat.", "de": "Die gehackte Schalotte und den Knoblauch im restlichen Öl bei mittlerer Hitze weich dünsten."}, "timer_seconds": 180},
+        {"text": {"en": "Toast the rice in the pan until the edges go glassy, then add the wine and stir until absorbed.", "de": "Den Reis in der Pfanne rösten, bis die Ränder glasig werden, dann den Wein dazu und rühren, bis er aufgesogen ist."}, "timer_seconds": 120},
+        {"text": {"en": "Ladle in hot stock a little at a time, stirring often, letting each addition almost disappear before the next. Start tasting after fifteen minutes.", "de": "Heiße Brühe nach und nach einkellen, oft rühren, jede Zugabe fast verschwinden lassen, bevor die nächste kommt. Nach fünfzehn Minuten anfangen zu probieren."}, "timer_seconds": 1080},
+        {"text": {"en": "Loosen the miso in a spoonful of hot stock so it doesn't clump. Stir the mushrooms back in with one more ladle; keep it loose.", "de": "Das Miso in einem Löffel heißer Brühe glatt rühren, damit es nicht klumpt. Die Pilze mit einer weiteren Kelle wieder einrühren; flüssig halten."}},
+        {"text": {"en": "Off the heat, beat in the miso, cold vegan butter and nutritional yeast until the whole thing turns glossy. Lid on for two minutes.", "de": "Vom Herd, Miso, kalte vegane Butter und Hefeflocken kräftig einrühren, bis alles glänzt. Zwei Minuten Deckel drauf."}, "timer_seconds": 120},
+        {"text": {"en": "Taste for salt last; miso is salty already. Lemon, pepper, snipped chives.", "de": "Erst zum Schluss salzen; Miso ist schon salzig. Zitrone, Pfeffer, geschnittener Schnittlauch."}}
+      ]
+    },
+    {
+      "id": "risotto-pescatarian-hard",
+      "title": {"en": "Saffron Seafood Risotto", "de": "Safran-Risotto mit Meeresfrüchten"},
+      "margin_note": {"en": "shells make the stock, don't throw them away", "de": "die schalen machen die brühe, nicht wegwerfen"},
+      "intro": {
+        "en": "Shrimp shells simmered into a quick stock, saffron steeped in it, then a risotto that takes mussels, squid and the shrimp in the last minutes so nothing overcooks. No cheese at the end; butter and the sea do the finishing. A project, but a calm one.",
+        "de": "Garnelenschalen zu einer schnellen Brühe geköchelt, Safran darin gezogen, dann ein Risotto, das Muscheln, Tintenfisch und die Garnelen erst in den letzten Minuten aufnimmt, damit nichts übergart. Kein Käse zum Schluss; Butter und das Meer übernehmen das. Ein Projekt, aber ein ruhiges."
+      },
+      "variant": {"diet": "pescatarian", "effort": "hard"},
+      "contains": ["shellfish", "molluscs", "dairy", "alcohol", "sulphites", "celery", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["simmer", "sauté"],
+      "time_minutes": 75,
+      "servings": 2,
+      "calories_per_serving": 630,
+      "macros": {"protein_g": 44, "carbs_g": 76, "fat_g": 16},
+      "meal_types": ["dinner"],
+      "tags": ["rice", "festive", "fresh"],
+      "ingredients": [
+        {"id": "shrimp", "amount": 300, "unit": "g", "note": {"en": "raw, shell on", "de": "roh, mit Schale"}},
+        {"id": "mussels", "amount": 400, "unit": "g", "note": {"en": "scrubbed, beards pulled", "de": "geputzt, Bärte entfernt"}},
+        {"id": "squid", "amount": 150, "unit": "g", "note": {"en": "cleaned, in rings", "de": "geputzt, in Ringen"}},
+        {"id": "arborio-rice", "amount": 180, "unit": "g"},
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "shallot", "amount": 2, "unit": "piece"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "fennel", "amount": 0.5, "unit": "piece"},
+        {"id": "white-wine", "amount": 150, "unit": "ml", "note": {"en": "dry", "de": "trocken"}},
+        {"id": "vegetable-stock", "amount": 700, "unit": "ml"},
+        {"id": "saffron", "amount": 1, "unit": "pinch", "note": {"en": "a good pinch of threads", "de": "eine gute Prise Fäden"}},
+        {"id": "cherry-tomato", "amount": 6, "unit": "piece"},
+        {"id": "butter", "amount": 30, "unit": "g", "note": {"en": "cold", "de": "kalt"}},
+        {"id": "lemon", "amount": 1, "unit": "piece"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Peel the shrimp, keep the shells, and refrigerate the meat. Fry the shells in a tablespoon of oil until pink and toasty, add the stock and half a shallot, and simmer. Strain, add the saffron, and keep it hot.", "de": "Die Garnelen schälen, die Schalen aufheben, das Fleisch kalt stellen. Die Schalen in einem Esslöffel Öl braten, bis sie rosa und geröstet sind, Brühe und eine halbe Schalotte dazu und köcheln. Durchsieben, Safran dazugeben und heiß halten."}, "timer_seconds": 1200},
+        {"text": {"en": "Tap any open mussels; discard the ones that don't close. Put them in a hot pot with a splash of the wine, lid on, and shake until they open. Pull most from their shells, keep a few whole, and strain the liquor into the stock.", "de": "Offene Muscheln antippen; die, die sich nicht schließen, wegwerfen. In einen heißen Topf mit einem Schuss Wein, Deckel drauf, und rütteln, bis sie aufgehen. Die meisten aus den Schalen lösen, ein paar ganz lassen, und den Sud durch ein Sieb zur Brühe gießen."}, "timer_seconds": 240},
+        {"text": {"en": "Finely chop the remaining shallot, the garlic and the fennel. Soften in the rest of the oil over medium heat until sweet.", "de": "Die restliche Schalotte, den Knoblauch und den Fenchel fein hacken. Im restlichen Öl bei mittlerer Hitze süß und weich dünsten."}, "timer_seconds": 300},
+        {"text": {"en": "Add the rice and toast until the edges go glassy. Pour in the rest of the wine and stir until absorbed.", "de": "Den Reis dazu und rösten, bis die Ränder glasig sind. Den restlichen Wein dazugießen und rühren, bis er aufgesogen ist."}, "timer_seconds": 120},
+        {"text": {"en": "Ladle in the saffron stock a little at a time, stirring often, until the rice is almost tender. It will turn a deep gold as it goes.", "de": "Die Safranbrühe nach und nach einkellen, oft rühren, bis der Reis fast weich ist. Er wird dabei tiefgolden."}, "timer_seconds": 900},
+        {"text": {"en": "Add the halved tomatoes and the squid; they need only a couple of minutes.", "de": "Die halbierten Tomaten und den Tintenfisch dazu; die brauchen nur ein paar Minuten."}, "timer_seconds": 120},
+        {"text": {"en": "Then the shrimp and the mussel meat with a last ladle of stock. Stir until the shrimp turn pink and curl; do not walk away.", "de": "Dann die Garnelen und das Muschelfleisch mit einer letzten Kelle Brühe. Rühren, bis die Garnelen rosa werden und sich krümmen; nicht weggehen."}, "timer_seconds": 180},
+        {"text": {"en": "Off the heat, beat in the cold butter until glossy. No cheese here; it would fight the sea. Lid on for a minute.", "de": "Vom Herd, die kalte Butter kräftig einrühren, bis es glänzt. Kein Käse hier; er würde sich mit dem Meer streiten. Eine Minute Deckel drauf."}, "timer_seconds": 60},
+        {"text": {"en": "Lemon zest and juice, parsley, chili flakes, pepper. Top with the whole mussels. Serve looser than feels right.", "de": "Zitronenabrieb und -saft, Petersilie, Chiliflocken, Pfeffer. Die ganzen Muscheln obendrauf. Flüssiger servieren, als es sich richtig anfühlt."}}
+      ]
+    },
+    {
+      "id": "risotto-keto-easy",
+      "title": {"en": "Keto Cauliflower Risotto", "de": "Keto-Blumenkohl-Risotto"},
+      "margin_note": {"en": "twelve minutes, no stirring anxiety", "de": "zwölf minuten, keine rührpanik"},
+      "intro": {
+        "en": "Cauliflower rice cooked in butter with mushrooms and thyme, then bound with cream cheese, a little cream and parmesan until it goes properly creamy. It doesn't stand in for arborio; it's its own thing, and a very good one on a tired evening.",
+        "de": "Blumenkohlreis in Butter mit Pilzen und Thymian gegart, dann mit Frischkäse, etwas Sahne und Parmesan gebunden, bis es richtig cremig ist. Er gibt nicht vor, Arborio zu sein; er ist sein eigenes Ding, und an einem müden Abend ein sehr gutes."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "lactose", "high-fodmap"],
+      "extra_attributes": ["keto", "one-pot"],
+      "technique": ["sauté"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {"protein_g": 16, "carbs_g": 15, "fat_g": 40},
+      "meal_types": ["dinner"],
+      "tags": ["light", "quick", "weeknight", "one-pot"],
+      "ingredients": [
+        {"id": "cauliflower-rice", "amount": 400, "unit": "g", "note": {"en": "fresh or frozen, not thawed", "de": "frisch oder TK, nicht auftauen"}},
+        {"id": "button-mushroom", "amount": 150, "unit": "g"},
+        {"id": "butter", "amount": 40, "unit": "g"},
+        {"id": "garlic", "amount": 1, "unit": "clove"},
+        {"id": "thyme", "amount": 2, "unit": "sprig"},
+        {"id": "heavy-cream", "amount": 80, "unit": "ml"},
+        {"id": "cream-cheese", "amount": 60, "unit": "g"},
+        {"id": "parmesan", "amount": 40, "unit": "g", "note": {"en": "grated", "de": "gerieben"}},
+        {"id": "nutmeg", "amount": 1, "unit": "pinch"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Slice the mushrooms and fry them in half the butter in a wide pan over high heat until browned. Salt, then push them to the side.", "de": "Die Pilze in Scheiben schneiden und in der Hälfte der Butter in einer weiten Pfanne bei starker Hitze braten, bis sie gebräunt sind. Salzen, dann an den Rand schieben."}, "timer_seconds": 300},
+        {"text": {"en": "Add the rest of the butter, the grated garlic and thyme leaves, then the cauliflower rice. Stir over medium-high heat until it loses its raw smell and any frozen water has cooked off.", "de": "Die restliche Butter, den geriebenen Knoblauch und die Thymianblätter dazu, dann den Blumenkohlreis. Bei mittelhoher Hitze rühren, bis der rohe Geruch weg ist und eventuelles Tauwasser verkocht ist."}, "timer_seconds": 360},
+        {"text": {"en": "Pour in the cream, add the cream cheese and stir until it melts into a sauce that coats every grain.", "de": "Sahne dazugießen, Frischkäse dazu und rühren, bis er zu einer Sauce schmilzt, die jedes Korn überzieht."}, "timer_seconds": 120},
+        {"text": {"en": "Off the heat, stir in the parmesan and a grating of nutmeg. It should be loose and creamy; a splash of water if it seizes.", "de": "Vom Herd, Parmesan und etwas Muskat einrühren. Es sollte locker und cremig sein; ein Schuss Wasser, falls es fest wird."}},
+        {"text": {"en": "Taste. Salt, lots of pepper, a squeeze of lemon.", "de": "Probieren. Salz, viel Pfeffer, ein Spritzer Zitrone."}},
+        {"text": {"en": "Parsley on top, warm bowls, done before the real thing would have finished toasting its rice.", "de": "Petersilie drüber, warme Schüsseln, fertig, bevor das echte Risotto seinen Reis überhaupt fertig geröstet hätte."}}
+      ]
+    }
+  ]
+}

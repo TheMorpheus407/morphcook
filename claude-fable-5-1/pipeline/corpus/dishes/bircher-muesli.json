@@ -1,0 +1,174 @@
+{
+  "dish": {
+    "id": "bircher-muesli",
+    "name": {"en": "Bircher Muesli", "de": "Bircher Müsli"},
+    "hero_text": {
+      "en": "A Zurich doctor's idea of breakfast from around 1900 that never went out of fashion: oats softened overnight, a whole grated apple, something creamy, something crunchy. The bowl you stir together half asleep and thank yourself for in the morning.",
+      "de": "Die Frühstücksidee eines Zürcher Arztes von etwa 1900, die nie aus der Mode kam: über Nacht eingeweichte Haferflocken, ein ganzer geriebener Apfel, etwas Cremiges, etwas Knuspriges. Die Schüssel, die du halb im Schlaf zusammenrührst und für die du dir morgens dankbar bist."
+    },
+    "caption": {"en": "fridge door, 7 a.m., spoon already in", "de": "kühlschranktür, 7 uhr, löffel schon drin"},
+    "stripe_color": "#D9A69A",
+    "cuisine_tags": ["swiss"],
+    "frequency_tier": "extended",
+    "meal_types": ["breakfast"],
+    "tags": ["sweet", "fresh", "light", "meal-prep"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "bircher-muesli-classic-easy",
+      "title": {"en": "Classic Bircher Muesli", "de": "Klassisches Bircher Müsli"},
+      "margin_note": {"en": "grate the apple, skin and all", "de": "den apfel mit schale reiben"},
+      "intro": {
+        "en": "Rolled oats soaked overnight in milk and yogurt, a whole apple grated in at the last minute so it stays bright, toasted hazelnuts and a thread of honey. Cold, creamy, a little tart, and ready before you are.",
+        "de": "Haferflocken, über Nacht in Milch und Joghurt eingeweicht, morgens ein ganzer Apfel frisch hineingerieben, damit er hell bleibt, geröstete Haselnüsse und ein Faden Honig. Kalt, cremig, leicht säuerlich und fertig, bevor du es bist."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["dairy", "lactose", "tree-nuts", "hazelnuts", "honey", "high-fodmap", "gluten"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {"protein_g": 15, "carbs_g": 64, "fat_g": 18},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "fresh", "meal-prep"],
+      "ingredients": [
+        {"id": "rolled-oats", "amount": 100, "unit": "g", "note": {"en": "fine or regular, not instant", "de": "zart oder kernig, keine Instantflocken"}},
+        {"id": "whole-milk", "amount": 150, "unit": "ml"},
+        {"id": "plain-yogurt", "amount": 200, "unit": "g"},
+        {"id": "apple", "amount": 1, "unit": "piece", "note": {"en": "tart, like Boskoop or Elstar", "de": "säuerlich, etwa Boskoop oder Elstar"}},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "hazelnuts", "amount": 30, "unit": "g"},
+        {"id": "honey", "amount": 1, "unit": "tbsp"},
+        {"id": "cinnamon", "amount": 1, "unit": "pinch"},
+        {"id": "mixed-berries", "amount": 100, "unit": "g", "note": {"en": "fresh or frozen", "de": "frisch oder TK"}},
+        {"id": "salt", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "The evening before: stir the oats, milk, yogurt and a pinch of salt together in a bowl or jar. Cover and put it in the fridge overnight; the oats will drink most of the liquid.", "de": "Am Vorabend: Haferflocken, Milch, Joghurt und eine Prise Salz in einer Schüssel oder einem Glas verrühren. Abdecken und über Nacht in den Kühlschrank stellen; die Flocken saugen den Großteil der Flüssigkeit auf."}},
+        {"text": {"en": "In the morning, toast the hazelnuts in a dry pan over medium heat, shaking now and then, until the skins crack and they smell like a bakery. Let them cool, then chop roughly.", "de": "Morgens die Haselnüsse in einer trockenen Pfanne bei mittlerer Hitze rösten, ab und zu schwenken, bis die Häutchen aufplatzen und es nach Bäckerei riecht. Abkühlen lassen, dann grob hacken."}, "timer_seconds": 240},
+        {"text": {"en": "Grate the apple on the coarse side of a box grater, skin and all, straight into the oats. Squeeze the lemon over and stir at once so it stays pale. If it is stiffer than you like, loosen with a splash of milk.", "de": "Den Apfel mit Schale auf der groben Seite der Reibe direkt in die Haferflocken reiben. Zitrone darüberpressen und sofort umrühren, damit er hell bleibt. Wenn es dir zu fest ist, mit einem Schuss Milch lockern."}},
+        {"text": {"en": "Stir in the honey and the cinnamon. Taste; it should be gently sweet and a little tart, and nowhere near dessert.", "de": "Honig und Zimt unterrühren. Probieren; es soll sanft süß und leicht säuerlich sein, weit weg von Nachtisch."}},
+        {"text": {"en": "Spoon into bowls and top with the berries, the hazelnuts and a last thread of honey.", "de": "In Schüsseln füllen und mit den Beeren, den Haselnüssen und einem letzten Faden Honig anrichten."}}
+      ]
+    },
+    {
+      "id": "bircher-muesli-vegan-easy",
+      "title": {"en": "Vegan Bircher Muesli", "de": "Veganes Bircher Müsli"},
+      "margin_note": {"en": "the chia is there for the creaminess", "de": "die chiasamen sind für die cremigkeit da"},
+      "intro": {
+        "en": "Oats and a spoon of chia soaked in oat milk and soy yogurt until they set into something thick and spoonable, then grated apple, maple syrup and toasted almonds. Coconut yogurt works too if you like it a touch sweeter.",
+        "de": "Haferflocken und ein Löffel Chiasamen, in Hafermilch und Sojajoghurt eingeweicht, bis daraus eine dicke, löffelbare Masse wird, dann geriebener Apfel, Ahornsirup und geröstete Mandeln. Kokosjoghurt geht auch, wenn du es einen Tick süßer magst."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "tree-nuts", "almonds", "added-sugar", "high-fodmap", "gluten"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 490,
+      "macros": {"protein_g": 15, "carbs_g": 67, "fat_g": 17},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "fresh", "meal-prep"],
+      "ingredients": [
+        {"id": "rolled-oats", "amount": 100, "unit": "g"},
+        {"id": "chia-seeds", "amount": 1, "unit": "tbsp"},
+        {"id": "oat-milk", "amount": 200, "unit": "ml"},
+        {"id": "soy-yogurt", "amount": 200, "unit": "g", "note": {"en": "unsweetened; or coconut yogurt", "de": "ungesüßt; oder Kokosjoghurt"}},
+        {"id": "apple", "amount": 1, "unit": "piece"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "almonds", "amount": 30, "unit": "g", "note": {"en": "flaked or roughly chopped", "de": "gehobelt oder grob gehackt"}},
+        {"id": "maple-syrup", "amount": 1, "unit": "tbsp"},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "raspberries", "amount": 100, "unit": "g"},
+        {"id": "salt", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "The evening before: stir the oats, chia, oat milk, soy yogurt and a pinch of salt together in a jar. Give it a second stir after a few minutes so the chia does not sink into a lump, then cover and refrigerate overnight.", "de": "Am Vorabend: Haferflocken, Chiasamen, Hafermilch, Sojajoghurt und eine Prise Salz in einem Glas verrühren. Nach ein paar Minuten noch einmal umrühren, damit die Chiasamen nicht als Klumpen absinken, dann abdecken und über Nacht kalt stellen."}},
+        {"text": {"en": "In the morning, toast the almonds in a dry pan until golden at the edges. Tip them out immediately; they keep cooking in the pan.", "de": "Morgens die Mandeln in einer trockenen Pfanne rösten, bis die Ränder goldbraun sind. Sofort aus der Pfanne nehmen; darin rösten sie sonst weiter."}, "timer_seconds": 180},
+        {"text": {"en": "The muesli will have set quite firm. Loosen it with a splash of oat milk, then grate the apple straight in, skin on, squeeze the lemon over and stir.", "de": "Das Müsli ist über Nacht ziemlich fest geworden. Mit einem Schuss Hafermilch lockern, dann den Apfel mit Schale direkt hineinreiben, Zitrone darüberpressen und umrühren."}},
+        {"text": {"en": "Stir in the maple syrup and cinnamon. Taste and adjust; soy yogurt is tarter than dairy, so it may want a little more syrup.", "de": "Ahornsirup und Zimt unterrühren. Probieren und nachjustieren; Sojajoghurt ist säuerlicher als Kuhmilchjoghurt, vielleicht braucht es einen Tick mehr Sirup."}},
+        {"text": {"en": "Bowls, then raspberries and the toasted almonds on top.", "de": "In Schüsseln füllen, Himbeeren und die gerösteten Mandeln obendrauf."}}
+      ]
+    },
+    {
+      "id": "bircher-muesli-keto-easy",
+      "title": {"en": "Keto Bircher Muesli", "de": "Keto-Bircher-Müsli"},
+      "margin_note": {"en": "the apple was the one thing we had to let go", "de": "der apfel war das einzige, was gehen musste"},
+      "intro": {
+        "en": "No oats, no apple, and still recognisably a Bircher: chia and hemp seeds set overnight in almond milk with coconut flakes and full-fat yogurt, cinnamon and lemon standing in for the apple, raspberries and walnuts on top. Thick, cold and quietly filling.",
+        "de": "Keine Haferflocken, kein Apfel, und trotzdem eindeutig ein Bircher: Chia- und Hanfsamen, über Nacht in Mandelmilch mit Kokosraspeln und vollfettem Joghurt eingeweicht, Zimt und Zitrone übernehmen den Part vom Apfel, obendrauf Himbeeren und Walnüsse. Dick, kalt und auf stille Art sättigend."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "lactose", "tree-nuts", "almonds", "walnuts"],
+      "extra_attributes": ["keto"],
+      "technique": ["raw"],
+      "time_minutes": 20,
+      "servings": 2,
+      "calories_per_serving": 460,
+      "macros": {"protein_g": 15, "carbs_g": 12, "fat_g": 37},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "light", "meal-prep"],
+      "ingredients": [
+        {"id": "chia-seeds", "amount": 30, "unit": "g"},
+        {"id": "hemp-seeds", "amount": 30, "unit": "g", "note": {"en": "hulled", "de": "geschält"}},
+        {"id": "coconut-flakes", "amount": 30, "unit": "g"},
+        {"id": "almond-milk", "amount": 250, "unit": "ml", "note": {"en": "unsweetened", "de": "ungesüßt"}},
+        {"id": "greek-yogurt", "amount": 150, "unit": "g", "note": {"en": "full fat", "de": "Vollfett"}},
+        {"id": "erythritol", "amount": 1, "unit": "tbsp", "note": {"en": "or a few drops of stevia", "de": "oder ein paar Tropfen Stevia"}},
+        {"id": "cinnamon", "amount": 0.5, "unit": "tsp"},
+        {"id": "vanilla", "amount": 0.5, "unit": "tsp", "note": {"en": "ground, or the seeds of half a pod", "de": "gemahlen, oder das Mark einer halben Schote"}},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "walnuts", "amount": 30, "unit": "g"},
+        {"id": "raspberries", "amount": 80, "unit": "g"},
+        {"id": "salt", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "The evening before: stir chia, hemp seeds, half the coconut flakes, almond milk, yogurt, erythritol, cinnamon, vanilla and a pinch of salt together in a jar. Wait ten minutes and stir again, thoroughly, to break up any chia clumps, then cover and refrigerate overnight.", "de": "Am Vorabend: Chiasamen, Hanfsamen, die Hälfte der Kokosraspeln, Mandelmilch, Joghurt, Erythrit, Zimt, Vanille und eine Prise Salz in einem Glas verrühren. Zehn Minuten warten und noch einmal gründlich umrühren, damit keine Chia-Klumpen bleiben, dann abdecken und über Nacht kalt stellen."}, "timer_seconds": 600},
+        {"text": {"en": "In the morning, toast the remaining coconut flakes and the walnuts in a dry pan over medium heat until the coconut is golden. Watch it; it goes from golden to burnt in seconds.", "de": "Morgens die restlichen Kokosraspeln und die Walnüsse in einer trockenen Pfanne bei mittlerer Hitze rösten, bis die Kokosraspeln goldbraun sind. Aufpassen, von goldbraun zu verbrannt dauert es Sekunden."}, "timer_seconds": 180},
+        {"text": {"en": "Stir the muesli well. Grate in a little lemon zest and add a squeeze of juice; together with the cinnamon it does a surprisingly good impression of apple. Loosen with almond milk if it has set too firm.", "de": "Das Müsli gut durchrühren. Etwas Zitronenschale hineinreiben und einen Spritzer Saft dazu; zusammen mit dem Zimt erinnert das erstaunlich an Apfel. Falls es zu fest geworden ist, mit Mandelmilch lockern."}},
+        {"text": {"en": "Fold in the raspberries, crushing a few against the side so they streak the muesli pink.", "de": "Himbeeren unterheben und ein paar davon an der Glaswand zerdrücken, damit sie das Müsli rosa durchziehen."}},
+        {"text": {"en": "Spoon into bowls and finish with the toasted coconut and walnuts.", "de": "In Schüsseln füllen und mit den gerösteten Kokosraspeln und Walnüssen anrichten."}}
+      ]
+    },
+    {
+      "id": "bircher-muesli-gluten-free-easy",
+      "title": {"en": "Gluten-Free Bircher Muesli", "de": "Glutenfreies Bircher Müsli"},
+      "margin_note": {"en": "the label on the oats is the whole trick", "de": "das etikett auf den haferflocken ist der ganze trick"},
+      "intro": {
+        "en": "Oats carry no gluten of their own, but ordinary ones are milled alongside wheat, so this one starts with certified gluten-free oats and soaks them in apple juice and yogurt the way Bircher-Benner's original did. Grated apple, walnuts, honey, done.",
+        "de": "Hafer enthält von sich aus kein Gluten, aber normale Flocken laufen über dieselben Mühlen wie Weizen. Deshalb beginnt dieses Rezept mit zertifiziert glutenfreien Haferflocken und weicht sie wie im Original von Bircher-Benner in Apfelsaft und Joghurt ein. Geriebener Apfel, Walnüsse, Honig, fertig."
+      },
+      "variant": {"diet": "gluten-free", "effort": "easy"},
+      "contains": ["dairy", "lactose", "tree-nuts", "walnuts", "honey", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 470,
+      "macros": {"protein_g": 13, "carbs_g": 65, "fat_g": 17},
+      "meal_types": ["breakfast"],
+      "tags": ["sweet", "fresh", "meal-prep"],
+      "ingredients": [
+        {"id": "gluten-free-oats", "amount": 100, "unit": "g", "note": {"en": "certified; it says so on the packet", "de": "zertifiziert; steht auf der Packung"}},
+        {"id": "apple-juice", "amount": 150, "unit": "ml", "note": {"en": "cloudy", "de": "naturtrüb"}},
+        {"id": "greek-yogurt", "amount": 150, "unit": "g"},
+        {"id": "apple", "amount": 1, "unit": "piece"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece"},
+        {"id": "walnuts", "amount": 30, "unit": "g"},
+        {"id": "honey", "amount": 2, "unit": "tsp"},
+        {"id": "cinnamon", "amount": 1, "unit": "pinch"},
+        {"id": "strawberries", "amount": 100, "unit": "g"},
+        {"id": "salt", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "The evening before: check the packet says gluten-free, then stir the oats, apple juice, yogurt and a pinch of salt together in a bowl. Cover and refrigerate overnight.", "de": "Am Vorabend: kurz prüfen, dass auf der Packung glutenfrei steht, dann Haferflocken, Apfelsaft, Joghurt und eine Prise Salz in einer Schüssel verrühren. Abdecken und über Nacht kalt stellen."}},
+        {"text": {"en": "In the morning, toast the walnuts in a dry pan until they smell nutty and darken a shade, then chop them roughly.", "de": "Morgens die Walnüsse in einer trockenen Pfanne rösten, bis sie nussig duften und eine Nuance dunkler sind, dann grob hacken."}, "timer_seconds": 180},
+        {"text": {"en": "Grate the apple, skin and all, straight into the oats and squeeze the lemon over it so it keeps its colour. Stir; add a splash more juice if it has gone stiff.", "de": "Den Apfel mit Schale direkt in die Haferflocken reiben und die Zitrone darüberpressen, damit er nicht braun wird. Umrühren; wenn es zu fest geworden ist, einen Schuss Apfelsaft dazugeben."}},
+        {"text": {"en": "Stir in the honey and the cinnamon and taste. The apple juice already brings sweetness, so go carefully.", "de": "Honig und Zimt unterrühren und probieren. Der Apfelsaft bringt schon Süße mit, also lieber vorsichtig."}},
+        {"text": {"en": "Serve with the sliced strawberries and the walnuts on top.", "de": "Mit den Erdbeerscheiben und den Walnüssen obendrauf servieren."}}
+      ]
+    }
+  ]
+}

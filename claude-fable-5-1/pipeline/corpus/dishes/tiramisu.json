@@ -1,0 +1,218 @@
+{
+  "dish": {
+    "id": "tiramisu",
+    "name": {"en": "Tiramisù", "de": "Tiramisù"},
+    "hero_text": {
+      "en": "Coffee-soaked biscuits, a cloud of mascarpone, a dusting of cocoa. The dessert every Italian nonna claims she invented, and every one of them is right.",
+      "de": "Kaffeegetränkte Löffelbiskuits, eine Wolke aus Mascarpone, ein Hauch Kakao. Das Dessert, das jede italienische Nonna erfunden haben will, und alle haben recht."
+    },
+    "caption": {"en": "second helping, no witnesses", "de": "nachschlag, keine zeugen"},
+    "stripe_color": "#A67B5B",
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "extended",
+    "meal_types": ["dessert"],
+    "tags": ["sweet"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "tiramisu-classic-medium",
+      "title": {"en": "Classic Tiramisù", "de": "Klassisches Tiramisù"},
+      "margin_note": {"en": "the zabaione is the quiet hero", "de": "die zabaione ist der stille held"},
+      "intro": {
+        "en": "Egg yolks whisked warm over a water bath until they go pale and ribbony, folded into mascarpone with stiff whites, layered with espresso-dipped ladyfingers. The marsala is optional; the four hours in the fridge are not.",
+        "de": "Eigelb über dem Wasserbad warm aufgeschlagen, bis es hell und cremig ist, mit Mascarpone und steifem Eischnee verbunden, geschichtet mit in Espresso getunkten Löffelbiskuits. Der Marsala ist optional, die vier Stunden im Kühlschrank nicht."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["dairy", "lactose", "egg", "gluten", "caffeine", "added-sugar", "alcohol", "sulphites"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 270,
+      "servings": 4,
+      "calories_per_serving": 610,
+      "macros": {"protein_g": 12, "carbs_g": 50, "fat_g": 38},
+      "meal_types": ["dessert"],
+      "tags": ["sweet", "festive"],
+      "ingredients": [
+        {"id": "egg", "amount": 3, "unit": "piece", "note": {"en": "very fresh, separated", "de": "sehr frisch, getrennt"}},
+        {"id": "sugar", "amount": 70, "unit": "g"},
+        {"id": "mascarpone", "amount": 250, "unit": "g", "note": {"en": "cold, straight from the fridge", "de": "kalt, direkt aus dem Kühlschrank"}},
+        {"id": "espresso", "amount": 200, "unit": "ml", "note": {"en": "strong, cooled", "de": "stark, abgekühlt"}},
+        {"id": "marsala", "amount": 3, "unit": "tbsp", "note": {"en": "optional; leave it out and nothing breaks", "de": "optional; ohne geht es genauso"}},
+        {"id": "ladyfingers", "amount": 200, "unit": "g", "note": {"en": "about 24", "de": "etwa 24 Stück"}},
+        {"id": "cocoa-powder", "amount": 2, "unit": "tbsp", "note": {"en": "unsweetened", "de": "ungesüßt"}},
+        {"id": "salt", "amount": 1, "unit": "pinch"}
+      ],
+      "steps": [
+        {"text": {"en": "Brew the espresso and let it cool completely in a shallow bowl. Stir in the marsala if you're using it.", "de": "Den Espresso kochen und in einer flachen Schüssel ganz abkühlen lassen. Wenn du Marsala nimmst, jetzt einrühren."}},
+        {"text": {"en": "Set a heatproof bowl over a pan of barely simmering water. Whisk the yolks with the sugar until pale, thick and warm to the touch, like a loose zabaione. Take it off the heat and whisk a minute more to cool.", "de": "Eine hitzefeste Schüssel über einen Topf mit leicht siedendem Wasser setzen. Eigelb mit dem Zucker aufschlagen, bis die Masse hell, dick und handwarm ist, wie eine lockere Zabaione. Vom Topf nehmen und noch eine Minute kalt schlagen."}, "timer_seconds": 300},
+        {"text": {"en": "Beat the mascarpone briefly to loosen it, then fold the yolk mixture in with a spatula. Stop as soon as it's smooth; overworked mascarpone turns grainy.", "de": "Mascarpone kurz glatt rühren, dann die Eigelbmasse mit einem Teigschaber unterheben. Sobald es glatt ist, aufhören, zu lange gerührte Mascarpone wird körnig."}},
+        {"text": {"en": "Whisk the egg whites with the salt to firm peaks. Fold them into the cream in two additions, keeping as much air as you can.", "de": "Eiweiß mit dem Salz steif schlagen. In zwei Portionen unter die Creme heben, dabei so viel Luft wie möglich drinlassen."}},
+        {"text": {"en": "Dip the ladyfingers one at a time in the espresso, a second per side and no longer, and lay them side by side in a dish about 20 cm across. Spread half the cream on top.", "de": "Die Löffelbiskuits einzeln in den Espresso tauchen, eine Sekunde pro Seite, nicht länger, und dicht an dicht in eine Form von etwa 20 cm legen. Die Hälfte der Creme darauf verstreichen."}},
+        {"text": {"en": "Second layer of dipped ladyfingers, then the remaining cream, smoothed but not too neatly.", "de": "Zweite Lage getunkte Biskuits, dann die restliche Creme, glatt gestrichen, aber nicht zu ordentlich."}},
+        {"text": {"en": "Cover and chill for at least four hours, overnight if you can wait. Dust thickly with cocoa right before serving, never earlier.", "de": "Abdecken und mindestens vier Stunden kühlen, besser über Nacht. Erst kurz vor dem Servieren dick mit Kakao bestäuben, nie früher."}, "timer_seconds": 14400}
+      ]
+    },
+    {
+      "id": "tiramisu-classic-easy",
+      "title": {"en": "Quick Tiramisù Without Raw Egg", "de": "Schnelles Tiramisù ohne rohes Ei"},
+      "margin_note": {"en": "twenty minutes, then hands off", "de": "zwanzig minuten, dann finger weg"},
+      "intro": {
+        "en": "Mascarpone whipped with cold cream and a little vanilla, no water bath, no separating eggs. The ladyfingers still have egg baked into them, the cream doesn't, and the whole thing is in the fridge before the espresso has gone cold.",
+        "de": "Mascarpone mit kalter Sahne und etwas Vanille aufgeschlagen, ohne Wasserbad und ohne Eiertrennen. In den Löffelbiskuits steckt weiterhin Ei, in der Creme nicht, und das Ganze steht im Kühlschrank, bevor der Espresso kalt ist."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["dairy", "lactose", "egg", "gluten", "caffeine", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 140,
+      "servings": 4,
+      "calories_per_serving": 680,
+      "macros": {"protein_g": 9, "carbs_g": 46, "fat_g": 50},
+      "meal_types": ["dessert"],
+      "tags": ["sweet", "quick"],
+      "ingredients": [
+        {"id": "mascarpone", "amount": 250, "unit": "g"},
+        {"id": "heavy-cream", "amount": 200, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
+        {"id": "powdered-sugar", "amount": 50, "unit": "g"},
+        {"id": "vanilla", "amount": 0.5, "unit": "tsp", "note": {"en": "ground, or the seeds of half a pod", "de": "gemahlen, oder das Mark einer halben Schote"}},
+        {"id": "espresso", "amount": 150, "unit": "ml", "note": {"en": "cooled", "de": "abgekühlt"}},
+        {"id": "ladyfingers", "amount": 200, "unit": "g"},
+        {"id": "cocoa-powder", "amount": 2, "unit": "tbsp", "note": {"en": "unsweetened", "de": "ungesüßt"}}
+      ],
+      "steps": [
+        {"text": {"en": "Brew the espresso, pour it into a shallow bowl and let it cool while you make the cream.", "de": "Espresso kochen, in eine flache Schüssel gießen und abkühlen lassen, während du die Creme machst."}},
+        {"text": {"en": "Whip the cream with the powdered sugar and vanilla until it holds soft peaks. Cold bowl, cold cream, it goes faster.", "de": "Sahne mit Puderzucker und Vanille aufschlagen, bis sie weiche Spitzen bildet. Kalte Schüssel, kalte Sahne, dann geht es schneller."}},
+        {"text": {"en": "Stir the mascarpone smooth in a second bowl, then fold the whipped cream in gently. It should be just thick enough to hold a spoon upright.", "de": "Mascarpone in einer zweiten Schüssel glatt rühren, dann die Sahne vorsichtig unterheben. Die Creme sollte gerade so dick sein, dass ein Löffel darin stehen bleibt."}},
+        {"text": {"en": "Dip the ladyfingers briefly in the espresso and line the bottom of a dish with them. Spread half the cream over the top.", "de": "Löffelbiskuits kurz in den Espresso tauchen und den Boden einer Form damit auslegen. Die Hälfte der Creme darauf verteilen."}},
+        {"text": {"en": "Repeat with the remaining ladyfingers and cream.", "de": "Mit den restlichen Biskuits und der Creme wiederholen."}},
+        {"text": {"en": "Chill for at least two hours. Dust with cocoa just before it goes on the table.", "de": "Mindestens zwei Stunden kalt stellen. Erst kurz vor dem Servieren mit Kakao bestäuben."}, "timer_seconds": 7200}
+      ]
+    },
+    {
+      "id": "tiramisu-vegan-medium",
+      "title": {"en": "Vegan Tiramisù", "de": "Veganes Tiramisù"},
+      "margin_note": {"en": "cashews, patience, a hot oven", "de": "cashews, geduld, ein heißer ofen"},
+      "intro": {
+        "en": "A quick vanilla sponge baked on a tray stands in for the ladyfingers, and soaked cashews blended with thick coconut cream make a filling that sets like the real thing. Decaf works just as well if you'd rather not stare at the ceiling at 2 a.m.",
+        "de": "Ein schneller Vanillebiskuit vom Blech ersetzt die Löffelbiskuits, und eingeweichte Cashews mit fester Kokoscreme püriert ergeben eine Füllung, die fest wird wie das Original. Mit entkoffeiniertem Espresso geht es genauso, falls du nachts um zwei lieber nicht die Decke anstarren willst."
+      },
+      "variant": {"diet": "vegan", "effort": "medium"},
+      "contains": ["cashews", "tree-nuts", "gluten", "caffeine", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["bake"],
+      "time_minutes": 300,
+      "servings": 4,
+      "calories_per_serving": 650,
+      "macros": {"protein_g": 12, "carbs_g": 62, "fat_g": 40},
+      "meal_types": ["dessert"],
+      "tags": ["sweet", "baked"],
+      "ingredients": [
+        {"id": "cashews", "amount": 150, "unit": "g", "note": {"en": "unsalted", "de": "ungesalzen"}},
+        {"id": "coconut-cream", "amount": 150, "unit": "ml", "note": {"en": "the solid part from a chilled can", "de": "der feste Teil aus einer gekühlten Dose"}},
+        {"id": "maple-syrup", "amount": 3, "unit": "tbsp"},
+        {"id": "lemon", "amount": 0.5, "unit": "piece", "note": {"en": "juice only", "de": "nur der Saft"}},
+        {"id": "vanilla", "amount": 0.5, "unit": "tsp", "note": {"en": "ground", "de": "gemahlen"}},
+        {"id": "all-purpose-flour", "amount": 120, "unit": "g"},
+        {"id": "sugar", "amount": 60, "unit": "g"},
+        {"id": "baking-powder", "amount": 1.5, "unit": "tsp"},
+        {"id": "oat-milk", "amount": 120, "unit": "ml"},
+        {"id": "vegetable-oil", "amount": 40, "unit": "ml"},
+        {"id": "apple-cider-vinegar", "amount": 1, "unit": "tsp"},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "espresso", "amount": 200, "unit": "ml", "note": {"en": "or decaf, cooled", "de": "oder entkoffeiniert, abgekühlt"}},
+        {"id": "cocoa-powder", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Cover the cashews with boiling water and leave them to soften while you bake the sponge.", "de": "Cashews mit kochendem Wasser bedecken und weich werden lassen, während du den Biskuit backst."}, "timer_seconds": 1800},
+        {"text": {"en": "Heat the oven to 180 °C and line a small baking tray with paper. Whisk flour, sugar, baking powder and salt together in a bowl.", "de": "Ofen auf 180 °C vorheizen, ein kleines Blech mit Backpapier auslegen. Mehl, Zucker, Backpulver und Salz in einer Schüssel verrühren."}},
+        {"text": {"en": "Stir oat milk, oil, vinegar and half the vanilla into the dry mix until just combined. Pour it onto the tray about a finger thick and bake until golden and springy.", "de": "Hafermilch, Öl, Essig und die Hälfte der Vanille unterrühren, nur bis alles verbunden ist. Etwa fingerdick aufs Blech gießen und backen, bis der Biskuit goldbraun ist und zurückfedert."}, "timer_seconds": 900},
+        {"text": {"en": "Let the sponge cool completely, then cut it into finger-width strips.", "de": "Biskuit ganz abkühlen lassen, dann in fingerbreite Streifen schneiden."}},
+        {"text": {"en": "Drain the cashews and blend them with coconut cream, maple syrup, lemon juice, the rest of the vanilla and a pinch of salt until completely smooth. Scrape the sides down twice; it takes longer than you'd think.", "de": "Cashews abgießen und mit Kokoscreme, Ahornsirup, Zitronensaft, der restlichen Vanille und einer Prise Salz ganz glatt pürieren. Zwischendurch zweimal den Rand abschaben, es dauert länger, als du denkst."}},
+        {"text": {"en": "Dip the sponge strips in the espresso and lay them in a dish. Spread half the cashew cream over them.", "de": "Die Biskuitstreifen in den Espresso tunken und in eine Form legen. Die Hälfte der Cashewcreme darauf verstreichen."}},
+        {"text": {"en": "Second layer of dipped sponge, then the rest of the cream.", "de": "Zweite Lage getunkter Biskuit, dann der Rest der Creme."}},
+        {"text": {"en": "Chill for at least four hours so the cream firms up. Dust with cocoa just before serving.", "de": "Mindestens vier Stunden kühlen, damit die Creme fest wird. Kurz vor dem Servieren mit Kakao bestäuben."}, "timer_seconds": 14400}
+      ]
+    },
+    {
+      "id": "tiramisu-gluten-free-medium",
+      "title": {"en": "Gluten-Free Tiramisù", "de": "Glutenfreies Tiramisù"},
+      "margin_note": {"en": "the biscuits were the only catch", "de": "die biskuits waren der einzige haken"},
+      "intro": {
+        "en": "Gluten-free ladyfingers soak up espresso exactly like the wheat ones, so the rest can stay as it should be: warm-whisked yolks, mascarpone, softly whipped cream and a whisper of orange zest in the coffee.",
+        "de": "Glutenfreie Löffelbiskuits saugen den Espresso genauso auf wie die aus Weizen, also bleibt der Rest, wie er sein soll: warm aufgeschlagenes Eigelb, Mascarpone, locker geschlagene Sahne und ein Hauch Orangenschale im Kaffee."
+      },
+      "variant": {"diet": "gluten-free", "effort": "medium"},
+      "contains": ["dairy", "lactose", "egg", "caffeine", "added-sugar"],
+      "extra_attributes": [],
+      "technique": ["raw"],
+      "time_minutes": 275,
+      "servings": 4,
+      "calories_per_serving": 690,
+      "macros": {"protein_g": 11, "carbs_g": 50, "fat_g": 46},
+      "meal_types": ["dessert"],
+      "tags": ["sweet", "festive"],
+      "ingredients": [
+        {"id": "gluten-free-ladyfingers", "amount": 200, "unit": "g"},
+        {"id": "mascarpone", "amount": 250, "unit": "g"},
+        {"id": "egg-yolk", "amount": 3, "unit": "piece", "note": {"en": "keep the whites for tomorrow's omelette", "de": "das Eiweiß hebst du fürs Omelett von morgen auf"}},
+        {"id": "sugar", "amount": 60, "unit": "g"},
+        {"id": "heavy-cream", "amount": 150, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
+        {"id": "espresso", "amount": 200, "unit": "ml", "note": {"en": "cooled", "de": "abgekühlt"}},
+        {"id": "orange", "amount": 1, "unit": "piece", "note": {"en": "zest only, unwaxed", "de": "nur die Schale, unbehandelt"}},
+        {"id": "cocoa-powder", "amount": 2, "unit": "tbsp", "note": {"en": "check the label; pure cocoa is usually gluten-free", "de": "aufs Etikett schauen, reiner Kakao ist meist glutenfrei"}}
+      ],
+      "steps": [
+        {"text": {"en": "Brew the espresso, grate the orange zest into it and let it cool in a shallow bowl.", "de": "Espresso kochen, die Orangenschale hineinreiben und in einer flachen Schüssel abkühlen lassen."}},
+        {"text": {"en": "Whisk the yolks and sugar in a bowl set over barely simmering water until pale, thick and warm. Off the heat, keep whisking until it cools to room temperature.", "de": "Eigelb und Zucker in einer Schüssel über leicht siedendem Wasser aufschlagen, bis die Masse hell, dick und warm ist. Vom Topf nehmen und weiterschlagen, bis sie Zimmertemperatur hat."}, "timer_seconds": 300},
+        {"text": {"en": "Fold the mascarpone into the yolks until just smooth.", "de": "Mascarpone unter das Eigelb heben, nur bis alles glatt ist."}},
+        {"text": {"en": "Whip the cream to soft peaks and fold it in as well. The cream should be thick but still fall slowly from a spoon.", "de": "Sahne cremig schlagen und ebenfalls unterheben. Die Creme sollte dick sein, aber noch langsam vom Löffel fallen."}},
+        {"text": {"en": "Gluten-free ladyfingers soften faster, so dip each one for barely a second and lay them in a dish. Spread half the cream on top.", "de": "Glutenfreie Löffelbiskuits weichen schneller durch, also jeden nur ganz kurz eintauchen und in eine Form legen. Die Hälfte der Creme darauf verstreichen."}},
+        {"text": {"en": "Repeat with the remaining ladyfingers and cream.", "de": "Mit den restlichen Biskuits und der Creme wiederholen."}},
+        {"text": {"en": "Chill for at least four hours. Dust with cocoa right before serving.", "de": "Mindestens vier Stunden kühlen. Erst kurz vor dem Servieren mit Kakao bestäuben."}, "timer_seconds": 14400}
+      ]
+    },
+    {
+      "id": "tiramisu-keto-medium",
+      "title": {"en": "Keto Tiramisù", "de": "Keto-Tiramisù"},
+      "margin_note": {"en": "almond sponge, real espresso, no sugar", "de": "mandelbiskuit, echter espresso, kein zucker"},
+      "intro": {
+        "en": "A thin almond-flour sponge baked and cut into fingers, drenched in espresso and layered with a mascarpone cream sweetened with erythritol. It tastes like tiramisù because, apart from the sugar and the flour, it is one.",
+        "de": "Ein dünner Mandelbiskuit, gebacken und in Streifen geschnitten, mit Espresso getränkt und mit einer Mascarponecreme geschichtet, die mit Erythrit gesüßt ist. Es schmeckt nach Tiramisù, weil es bis auf Zucker und Mehl eines ist."
+      },
+      "variant": {"diet": "keto", "effort": "medium"},
+      "contains": ["almonds", "tree-nuts", "egg", "dairy", "lactose", "caffeine"],
+      "extra_attributes": ["keto"],
+      "technique": ["bake"],
+      "time_minutes": 220,
+      "servings": 4,
+      "calories_per_serving": 650,
+      "macros": {"protein_g": 16, "carbs_g": 9, "fat_g": 62},
+      "meal_types": ["dessert"],
+      "tags": ["sweet", "baked"],
+      "ingredients": [
+        {"id": "almond-flour", "amount": 100, "unit": "g"},
+        {"id": "egg", "amount": 3, "unit": "piece"},
+        {"id": "erythritol", "amount": 80, "unit": "g", "note": {"en": "powdered; blitz granules in a blender", "de": "gepudert; Granulat kurz im Mixer mahlen"}},
+        {"id": "butter", "amount": 30, "unit": "g", "note": {"en": "melted", "de": "geschmolzen"}},
+        {"id": "baking-powder", "amount": 1, "unit": "tsp"},
+        {"id": "vanilla", "amount": 0.5, "unit": "tsp", "note": {"en": "ground", "de": "gemahlen"}},
+        {"id": "salt", "amount": 1, "unit": "pinch"},
+        {"id": "mascarpone", "amount": 250, "unit": "g"},
+        {"id": "heavy-cream", "amount": 150, "unit": "ml", "note": {"en": "cold", "de": "kalt"}},
+        {"id": "espresso", "amount": 200, "unit": "ml", "note": {"en": "cooled", "de": "abgekühlt"}},
+        {"id": "cocoa-powder", "amount": 1, "unit": "tbsp", "note": {"en": "unsweetened", "de": "ungesüßt"}}
+      ],
+      "steps": [
+        {"text": {"en": "Heat the oven to 180 °C and line a small tray with baking paper. Separate the eggs.", "de": "Ofen auf 180 °C vorheizen, ein kleines Blech mit Backpapier auslegen. Eier trennen."}},
+        {"text": {"en": "Whisk the whites with the salt to firm peaks. In another bowl, beat the yolks with a third of the erythritol, the melted butter and the vanilla until pale.", "de": "Eiweiß mit dem Salz steif schlagen. In einer zweiten Schüssel Eigelb mit einem Drittel des Erythrits, der geschmolzenen Butter und der Vanille hell aufschlagen."}},
+        {"text": {"en": "Stir the almond flour and baking powder into the yolks, then fold in the whites in two additions. Spread the batter a finger thick on the tray.", "de": "Mandelmehl und Backpulver unter das Eigelb rühren, dann das Eiweiß in zwei Portionen unterheben. Den Teig fingerdick aufs Blech streichen."}},
+        {"text": {"en": "Bake until golden and just firm to the touch. Cool completely, then cut into fingers.", "de": "Backen, bis der Biskuit goldbraun und gerade eben fest ist. Ganz abkühlen lassen, dann in Streifen schneiden."}, "timer_seconds": 780},
+        {"text": {"en": "Whip the cream with the remaining erythritol to soft peaks. Stir the mascarpone smooth and fold the cream in.", "de": "Sahne mit dem restlichen Erythrit cremig schlagen. Mascarpone glatt rühren und die Sahne unterheben."}},
+        {"text": {"en": "Almond sponge drinks faster than ladyfingers: dip each finger in the espresso for a moment and lay them in a dish. Half the cream on top.", "de": "Mandelbiskuit saugt schneller als Löffelbiskuit: jeden Streifen nur kurz in den Espresso tauchen und in eine Form legen. Die Hälfte der Creme darauf."}},
+        {"text": {"en": "Second layer of sponge, then the rest of the cream.", "de": "Zweite Lage Biskuit, dann der Rest der Creme."}},
+        {"text": {"en": "Chill for at least three hours. Dust with cocoa before serving.", "de": "Mindestens drei Stunden kühlen. Vor dem Servieren mit Kakao bestäuben."}, "timer_seconds": 10800}
+      ]
+    }
+  ]
+}

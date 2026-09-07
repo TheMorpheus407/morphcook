@@ -1,0 +1,1144 @@
+{
+  "dish": {
+    "id": "gulasch",
+    "name": {
+      "en": "Goulash",
+      "de": "Gulasch"
+    },
+    "hero_text": {
+      "en": "Paprika, onions and time. A pot that started on the Hungarian plains, moved into every German kitchen and never left. The sauce should be dark, glossy and slightly more than you need.",
+      "de": "Paprika, Zwiebeln und Zeit. Ein Topf, der in der ungarischen Puszta angefangen hat, in jede deutsche Küche eingezogen ist und nie wieder ausgezogen. Die Sauce darf dunkel, glänzend und ein bisschen zu viel sein."
+    },
+    "caption": {
+      "en": "sunday, lid on, the whole flat smells right",
+      "de": "sonntag, deckel drauf, die ganze wohnung riecht richtig"
+    },
+    "stripe_color": "#9C6B7D",
+    "cuisine_tags": [
+      "hungarian",
+      "german"
+    ],
+    "frequency_tier": "extended",
+    "meal_types": [
+      "dinner"
+    ],
+    "tags": [
+      "comfort",
+      "hearty",
+      "one-pot"
+    ]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "gulasch-classic-hard",
+      "title": {
+        "en": "Slow-Braised Beef Goulash",
+        "de": "Langsam geschmortes Rindergulasch"
+      },
+      "margin_note": {
+        "en": "as much onion as beef, no shortcuts",
+        "de": "so viel zwiebel wie fleisch, keine abkürzungen"
+      },
+      "intro": {
+        "en": "Beef chuck and its own weight in onions, cooked down for three hours with sweet paprika, caraway and a glass of red wine until the sauce turns almost black and needs no flour at all. Spätzle underneath to catch it. If you can, make it the day before; it only gets better.",
+        "de": "Rinderschulter und genauso viel Zwiebeln, drei Stunden mit Paprika, Kümmel und einem Glas Rotwein geschmort, bis die Sauce fast schwarz ist und kein Mehl mehr braucht. Spätzle darunter, damit nichts verloren geht. Wenn du kannst, koch es am Vortag, es wird nur besser."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "hard"
+      },
+      "contains": [
+        "beef",
+        "celery",
+        "alcohol",
+        "sulphites",
+        "high-fodmap",
+        "gluten",
+        "egg"
+      ],
+      "extra_attributes": [
+        "high-protein"
+      ],
+      "technique": [
+        "sauté",
+        "simmer"
+      ],
+      "time_minutes": 210,
+      "servings": 4,
+      "calories_per_serving": 760,
+      "macros": {
+        "protein_g": 52,
+        "carbs_g": 44,
+        "fat_g": 34
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "hearty",
+        "festive"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-chuck",
+          "amount": 1,
+          "unit": "kg",
+          "note": {
+            "en": "cut into 4 cm cubes",
+            "de": "in 4 cm große Würfel geschnitten"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 1,
+          "unit": "kg",
+          "note": {
+            "en": "sliced into thin half-moons",
+            "de": "in dünne Halbmonde geschnitten"
+          }
+        },
+        {
+          "id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "caraway",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "lightly crushed",
+            "de": "leicht zerstoßen"
+          }
+        },
+        {
+          "id": "dried-marjoram",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "red-wine",
+          "amount": 250,
+          "unit": "ml",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "id": "beef-stock",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red",
+            "de": "rot"
+          }
+        },
+        {
+          "id": "apple-cider-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spaetzle",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "fresh, from the chilled aisle",
+            "de": "frisch, aus dem Kühlregal"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pat the beef dry and salt it. Heat the oil in a heavy pot until it shimmers and brown the cubes in batches, dark on at least two sides, without crowding the pot. Set them aside on a plate as they're done.",
+            "de": "Das Fleisch trocken tupfen und salzen. Öl in einem schweren Topf stark erhitzen und die Würfel portionsweise anbraten, auf mindestens zwei Seiten richtig dunkel, ohne den Topf zu überfüllen. Fertige Stücke auf einem Teller parken."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Turn the heat down, add the onions with a good pinch of salt and cook them slowly, stirring now and then, until they have collapsed into a soft golden heap. Don't rush this; the onions are your thickener.",
+            "de": "Hitze runterdrehen, die Zwiebeln mit einer ordentlichen Prise Salz dazugeben und langsam schmoren, ab und zu umrühren, bis sie zu einem weichen, goldgelben Haufen zusammengefallen sind. Keine Eile, die Zwiebeln sind deine Bindung."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Stir in the garlic, caraway, marjoram and tomato paste and cook for a minute. Take the pot off the heat, add both paprikas and stir them through; paprika turns bitter the moment it scorches.",
+            "de": "Knoblauch, Kümmel, Majoran und Tomatenmark einrühren und eine Minute mitrösten. Den Topf vom Herd nehmen, beide Paprikasorten dazugeben und unterrühren; Paprika wird bitter, sobald es anbrennt."
+          }
+        },
+        {
+          "text": {
+            "en": "Back on the heat, pour in the wine and scrape up everything stuck to the bottom. Let it bubble down by about half.",
+            "de": "Zurück auf den Herd, den Wein angießen und alles vom Boden lösen. Etwa um die Hälfte einkochen lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Return the beef and its juices, add the stock, bay leaves and a little pepper. Bring to the barest simmer, set the lid slightly ajar and leave it on the lowest flame (or in a 150 °C oven) until a fork slides into the meat with no resistance. Stir now and again.",
+            "de": "Fleisch samt Saft zurück in den Topf, Brühe, Lorbeer und etwas Pfeffer dazu. Gerade so zum Köcheln bringen, Deckel schräg auflegen und auf kleinster Flamme (oder im Ofen bei 150 °C) schmoren, bis eine Gabel ohne Widerstand ins Fleisch gleitet. Zwischendurch umrühren."
+          },
+          "timer_seconds": 9000
+        },
+        {
+          "text": {
+            "en": "For the last twenty minutes, add the diced pepper. If the sauce is thinner than you'd like, take the lid off and let it reduce.",
+            "de": "Für die letzten zwanzig Minuten die gewürfelte Paprika dazugeben. Ist die Sauce dünner, als du sie magst, Deckel ab und einkochen lassen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Fish out the bay leaves. Season with the vinegar, salt and pepper; the vinegar should be a whisper, not a flavour. Let the pot sit for ten minutes with the heat off.",
+            "de": "Lorbeerblätter herausfischen. Mit Essig, Salz und Pfeffer abschmecken; der Essig soll nur andeuten, nicht schmecken. Den Topf zehn Minuten bei ausgeschaltetem Herd stehen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Fry the Spätzle in a little oil until the edges catch, or simply warm them in salted water. Heap them into deep plates and spoon the goulash over, generously.",
+            "de": "Die Spätzle in etwas Öl anbraten, bis die Ränder Farbe nehmen, oder einfach in Salzwasser erwärmen. In tiefe Teller häufen und das Gulasch großzügig darüber löffeln."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulasch-halal-hard",
+      "title": {
+        "en": "Kettle Goulash With Pinched Noodles",
+        "de": "Kesselgulasch mit Csipetke"
+      },
+      "margin_note": {
+        "en": "the potatoes cook in the pot, not beside it",
+        "de": "die kartoffeln garen im topf, nicht daneben"
+      },
+      "intro": {
+        "en": "The Hungarian original as a thick soup-stew: beef, a mountain of onion and a heavy hand of paprika, then potatoes, carrots and small pinched flour dumplings cooked straight in the pot. Beef stock and a splash of vinegar stand in for wine. Written for a kitchen that keeps pork and alcohol out entirely, with halal-compatible ingredients throughout.",
+        "de": "Das ungarische Original als dicker Eintopf: Rind, ein Berg Zwiebeln und ordentlich Paprika, dann Kartoffeln, Möhren und kleine abgezupfte Teignocken, die direkt im Topf garen. Rinderbrühe und ein Schuss Essig übernehmen den Part des Weins. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich draußen bleiben, mit durchgehend halal-kompatiblen Zutaten."
+      },
+      "variant": {
+        "diet": "halal",
+        "effort": "hard"
+      },
+      "contains": [
+        "beef",
+        "celery",
+        "high-fodmap",
+        "gluten",
+        "egg"
+      ],
+      "extra_attributes": [
+        "high-protein",
+        "one-pot"
+      ],
+      "technique": [
+        "sauté",
+        "simmer"
+      ],
+      "time_minutes": 180,
+      "servings": 4,
+      "calories_per_serving": 650,
+      "macros": {
+        "protein_g": 50,
+        "carbs_g": 44,
+        "fat_g": 26
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "hearty",
+        "one-pot",
+        "family"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-chuck",
+          "amount": 1,
+          "unit": "kg",
+          "note": {
+            "en": "cut into 3 cm cubes",
+            "de": "in 3 cm große Würfel geschnitten"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "large, finely diced",
+            "de": "groß, fein gewürfelt"
+          }
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "caraway",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "dried-marjoram",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fresh-tomato",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "one red, one yellow",
+            "de": "eine rote, eine gelbe"
+          }
+        },
+        {
+          "id": "beef-stock",
+          "amount": 1.2,
+          "unit": "l",
+          "note": {
+            "en": "or homemade",
+            "de": "oder selbst gekocht"
+          }
+        },
+        {
+          "id": "potato",
+          "amount": 500,
+          "unit": "g",
+          "note": {
+            "en": "waxy, in chunky dice",
+            "de": "festkochend, grob gewürfelt"
+          }
+        },
+        {
+          "id": "carrot",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "all-purpose-flour",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "for the csipetke",
+            "de": "für die Csipetke"
+          }
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "apple-cider-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parsley",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Warm the oil in a big pot and cook the onions with a pinch of salt over medium-low heat until soft and golden, stirring often enough that nothing catches.",
+            "de": "Öl in einem großen Topf erwärmen und die Zwiebeln mit einer Prise Salz bei mittlerer bis kleiner Hitze weich und goldgelb dünsten, dabei oft genug rühren, dass nichts ansetzt."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Turn the heat up, add the beef, garlic, caraway and marjoram and stir until the meat has lost its raw colour on all sides. It won't brown properly in the onions and it doesn't need to; this style stews rather than sears.",
+            "de": "Hitze hochdrehen, Fleisch, Knoblauch, Kümmel und Majoran dazugeben und rühren, bis das Fleisch rundum keine rohe Farbe mehr hat. In den Zwiebeln bräunt es nicht richtig, das muss es auch nicht; diese Art Gulasch schmort, sie brät nicht."
+          }
+        },
+        {
+          "text": {
+            "en": "Pull the pot off the heat, stir in the paprika and tomato paste, then the tomatoes, salt and pepper. Pour in enough stock to just cover the meat, bring to a gentle simmer, lid on, and leave it on low until the beef is almost tender.",
+            "de": "Topf vom Herd ziehen, Paprika und Tomatenmark einrühren, dann Tomaten, Salz und Pfeffer. So viel Brühe angießen, dass das Fleisch gerade bedeckt ist, sanft zum Köcheln bringen, Deckel drauf und auf kleiner Flamme schmoren, bis das Fleisch fast weich ist."
+          },
+          "timer_seconds": 5400
+        },
+        {
+          "text": {
+            "en": "Meanwhile, the csipetke: knead the flour with the egg and a pinch of salt into a stiff, smooth dough, adding a teaspoon of water only if it refuses to come together. Cover with the upturned bowl and forget about it.",
+            "de": "In der Zwischenzeit die Csipetke: Mehl mit dem Ei und einer Prise Salz zu einem festen, glatten Teig kneten, nur wenn er partout nicht zusammenkommt, einen Teelöffel Wasser dazugeben. Mit der umgedrehten Schüssel abdecken und vergessen."
+          }
+        },
+        {
+          "text": {
+            "en": "Add the potatoes, carrots and the diced peppers to the pot, top up with the remaining stock and simmer until the potatoes are just about tender.",
+            "de": "Kartoffeln, Möhren und die gewürfelte Paprika in den Topf geben, mit der restlichen Brühe auffüllen und köcheln lassen, bis die Kartoffeln gerade eben weich sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Pinch fingernail-sized bits off the dough straight into the simmering pot, working quickly so the first ones don't overcook. Cook until they float and turn firm.",
+            "de": "Fingernagelgroße Stücke vom Teig zupfen und direkt in den köchelnden Topf fallen lassen, zügig, damit die ersten nicht verkochen. Garen, bis sie oben schwimmen und fest sind."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Stir in the vinegar and season generously; it should taste of paprika first and salt second. Turn off the heat and let it settle for ten minutes with the lid on.",
+            "de": "Essig einrühren und kräftig abschmecken; es soll zuerst nach Paprika und dann nach Salz schmecken. Herd aus und zehn Minuten mit Deckel ruhen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Ladle into deep bowls, plenty of broth in every bowl, chopped parsley over the top.",
+            "de": "In tiefe Schalen schöpfen, reichlich Brühe in jede Schale, gehackte Petersilie obendrauf."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulasch-vegan-medium",
+      "title": {
+        "en": "Mushroom & Jackfruit Goulash",
+        "de": "Pilz-Jackfruit-Gulasch"
+      },
+      "margin_note": {
+        "en": "brown the mushrooms properly or don't bother",
+        "de": "die pilze richtig anbraten, sonst kannst du es lassen"
+      },
+      "intro": {
+        "en": "Mushrooms fried hard for the savoury depth, young jackfruit pulled into shreds that drink up sauce, and the same onion, paprika and caraway base as the beef version, done in an hour instead of an afternoon. Boiled potatoes on the side, a spoon of oat cream on top.",
+        "de": "Pilze scharf angebraten für die herzhafte Tiefe, junge Jackfruit in Fasern gezupft, die die Sauce aufsaugen, und dieselbe Basis aus Zwiebeln, Paprika und Kümmel wie beim Rindfleisch, nur in einer Stunde statt an einem Nachmittag. Salzkartoffeln dazu, ein Löffel Hafersahne obendrauf."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "contains": [
+        "high-fodmap",
+        "celery",
+        "soy"
+      ],
+      "extra_attributes": [],
+      "technique": [
+        "sauté",
+        "simmer"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 430,
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 58,
+        "fat_g": 16
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "weeknight",
+        "hearty"
+      ],
+      "ingredients": [
+        {
+          "id": "button-mushroom",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "quartered",
+            "de": "geviertelt"
+          }
+        },
+        {
+          "id": "oyster-mushroom",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "torn into strips",
+            "de": "in Streifen gezupft"
+          }
+        },
+        {
+          "id": "jackfruit",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "young, in brine, drained and rinsed",
+            "de": "jung, in Salzlake, abgetropft und abgespült"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Streifen"
+          }
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "caraway",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "dried-marjoram",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red, diced",
+            "de": "rot, gewürfelt"
+          }
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "apple-cider-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "potato",
+          "amount": 700,
+          "unit": "g",
+          "note": {
+            "en": "waxy",
+            "de": "festkochend"
+          }
+        },
+        {
+          "id": "oat-cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "parsley",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Peel the potatoes, cut into even chunks, cover with cold salted water and bring to the boil. Cook until a knife slides through, then drain and keep warm under the lid.",
+            "de": "Kartoffeln schälen, in gleich große Stücke schneiden, mit kaltem Salzwasser bedecken und aufkochen. Kochen, bis ein Messer leicht hineingleitet, dann abgießen und unter dem Deckel warm halten."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Squeeze the jackfruit dry in your hands, cut away any hard core pieces and pull the rest into rough shreds.",
+            "de": "Die Jackfruit mit den Händen ausdrücken, harte Kernstücke wegschneiden und den Rest grob in Fasern zupfen."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat half the oil in your widest pan until it's properly hot. Fry the mushrooms in batches, spread out and left alone until the undersides are deeply browned, then tossed once. Salt them at the end, not the start. Tip onto a plate.",
+            "de": "Die Hälfte des Öls in deiner größten Pfanne richtig heiß werden lassen. Die Pilze portionsweise braten, ausgebreitet und in Ruhe gelassen, bis die Unterseiten tief gebräunt sind, dann einmal wenden. Erst am Ende salzen, nicht am Anfang. Auf einen Teller kippen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Fry the jackfruit shreds in the same pan for a few minutes until the edges go crisp and a little charred. Add to the mushrooms.",
+            "de": "Die Jackfruit-Fasern in derselben Pfanne ein paar Minuten braten, bis die Ränder knusprig und leicht angekokelt sind. Zu den Pilzen geben."
+          }
+        },
+        {
+          "text": {
+            "en": "Lower the heat, add the remaining oil and the onions with a pinch of salt. Cook until soft and golden, stirring now and then.",
+            "de": "Hitze runter, restliches Öl und die Zwiebeln mit einer Prise Salz dazugeben. Weich und goldgelb dünsten, ab und zu rühren."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Stir in the garlic, caraway, marjoram and tomato paste for a minute. Off the heat, add both paprikas and the tamari, then the stock and bay leaf. Return the mushrooms and jackfruit and simmer, uncovered, adding the diced pepper for the last ten minutes.",
+            "de": "Knoblauch, Kümmel, Majoran und Tomatenmark eine Minute mitrösten. Vom Herd, beide Paprikasorten und Tamari einrühren, dann Brühe und Lorbeer. Pilze und Jackfruit zurück in die Pfanne und offen köcheln lassen, die gewürfelte Paprika für die letzten zehn Minuten dazu."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Take out the bay leaf, add the vinegar, then salt and pepper until it tastes rounded. The sauce should coat a spoon; give it a few more minutes if it doesn't.",
+            "de": "Lorbeer rausnehmen, Essig dazu, dann mit Salz und Pfeffer abschmecken, bis es rund schmeckt. Die Sauce soll einen Löffel überziehen; wenn nicht, noch ein paar Minuten."
+          }
+        },
+        {
+          "text": {
+            "en": "Potatoes on the plate, goulash over them, a swirl of oat cream and a scatter of parsley.",
+            "de": "Kartoffeln auf den Teller, Gulasch darüber, ein Klecks Hafersahne und Petersilie drüber."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulasch-classic-medium",
+      "title": {
+        "en": "Weeknight Goulash",
+        "de": "Feierabend-Gulasch"
+      },
+      "margin_note": {
+        "en": "forty-five minutes, one wide pan",
+        "de": "fünfundvierzig minuten, eine weite pfanne"
+      },
+      "intro": {
+        "en": "Thin beef strips instead of cubes, so the sauce needs half an hour rather than half a day. Onions, paprika, a spoon of tomato paste, stock, and sour cream stirred in at the end to round everything off. Ribbon noodles underneath, because that's how it landed on the table at home.",
+        "de": "Dünne Rindfleischstreifen statt Würfel, damit die Sauce eine halbe Stunde braucht und keinen halben Tag. Zwiebeln, Paprika, ein Löffel Tomatenmark, Brühe, und zum Schluss saure Sahne, die alles rund macht. Darunter Bandnudeln, weil es zuhause genau so auf den Tisch kam."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium"
+      },
+      "contains": [
+        "beef",
+        "celery",
+        "high-fodmap",
+        "dairy",
+        "lactose",
+        "gluten",
+        "egg",
+        "meat-dairy-combo"
+      ],
+      "extra_attributes": [
+        "high-protein"
+      ],
+      "technique": [
+        "pan-fry",
+        "simmer"
+      ],
+      "time_minutes": 45,
+      "servings": 4,
+      "calories_per_serving": 640,
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 60,
+        "fat_g": 24
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "weeknight",
+        "comfort",
+        "pasta"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-strips",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "finger-thick, from the round or sirloin",
+            "de": "fingerdick, aus der Keule oder vom Roastbeef"
+          }
+        },
+        {
+          "id": "all-purpose-flour",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "butter",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in Streifen"
+          }
+        },
+        {
+          "id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "caraway",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "beef-stock",
+          "amount": 400,
+          "unit": "ml"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red, diced",
+            "de": "rot, gewürfelt"
+          }
+        },
+        {
+          "id": "sour-cream",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "id": "fettuccine",
+          "amount": 320,
+          "unit": "g"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pat the beef strips dry and toss them with the flour, salt and pepper until lightly dusted.",
+            "de": "Die Fleischstreifen trocken tupfen und mit Mehl, Salz und Pfeffer vermengen, bis sie leicht bestäubt sind."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat the oil in a wide pan over high heat. Sear the strips in two batches until browned but not cooked through, and set aside.",
+            "de": "Öl in einer weiten Pfanne bei starker Hitze erhitzen. Die Streifen in zwei Portionen anbraten, bis sie gebräunt, aber noch nicht durch sind, und beiseitestellen."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Drop the butter into the same pan, then the onions with a pinch of salt. Cook over medium heat until soft and starting to colour.",
+            "de": "Butter in dieselbe Pfanne, dann die Zwiebeln mit einer Prise Salz. Bei mittlerer Hitze weich dünsten, bis sie leicht Farbe nehmen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add the garlic, caraway and tomato paste and stir for a minute. Off the heat, stir in both paprikas, then pour in the stock and scrape the pan clean. Return the beef, add the pepper and simmer gently with the lid ajar until the sauce has thickened and the beef is tender.",
+            "de": "Knoblauch, Kümmel und Tomatenmark dazu und eine Minute rühren. Vom Herd, beide Paprikasorten einrühren, dann die Brühe angießen und den Pfannenboden sauber kratzen. Fleisch zurück in die Pfanne, Paprika dazu, Deckel schräg auflegen und sanft köcheln lassen, bis die Sauce gebunden und das Fleisch zart ist."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "While it simmers, cook the noodles in plenty of salted water until just tender. Drain, keeping back a splash of the water.",
+            "de": "Währenddessen die Nudeln in reichlich Salzwasser bissfest kochen. Abgießen, einen Schluck Nudelwasser aufheben."
+          }
+        },
+        {
+          "text": {
+            "en": "Off the heat, stir most of the sour cream into the goulash. Taste, then salt and pepper; loosen with a spoon of pasta water if it's gone too thick.",
+            "de": "Vom Herd, den Großteil der sauren Sahne unter das Gulasch rühren. Probieren, dann Salz und Pfeffer; falls es zu dick geworden ist, mit einem Löffel Nudelwasser lockern."
+          }
+        },
+        {
+          "text": {
+            "en": "Noodles in the bowl, goulash over, a last spoon of sour cream and a handful of snipped chives.",
+            "de": "Nudeln in die Schüssel, Gulasch darüber, ein letzter Löffel saure Sahne und eine Handvoll Schnittlauchröllchen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulasch-keto-medium",
+      "title": {
+        "en": "Keto Goulash With Celeriac Mash",
+        "de": "Keto-Gulasch mit Selleriepüree"
+      },
+      "margin_note": {
+        "en": "the onions do the thickening",
+        "de": "die zwiebeln übernehmen die bindung"
+      },
+      "intro": {
+        "en": "Slow-braised beef chuck with paprika and caraway, no flour, no potatoes; the sauce thickens on onions and patience alone. Underneath, a buttery celeriac mash that does everything mashed potato does, at a fraction of the carbs.",
+        "de": "Langsam geschmorte Rinderschulter mit Paprika und Kümmel, ohne Mehl, ohne Kartoffeln; die Sauce bindet allein über Zwiebeln und Geduld. Darunter ein buttriges Selleriepüree, das alles kann, was Kartoffelpüree kann, mit einem Bruchteil der Kohlenhydrate."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "medium"
+      },
+      "contains": [
+        "beef",
+        "celery",
+        "high-fodmap",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo"
+      ],
+      "extra_attributes": [
+        "keto",
+        "high-protein"
+      ],
+      "technique": [
+        "sauté",
+        "simmer"
+      ],
+      "time_minutes": 150,
+      "servings": 4,
+      "calories_per_serving": 690,
+      "macros": {
+        "protein_g": 52,
+        "carbs_g": 15,
+        "fat_g": 46
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "hearty",
+        "meal-prep"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-chuck",
+          "amount": 1,
+          "unit": "kg",
+          "note": {
+            "en": "cut into 4 cm cubes",
+            "de": "in 4 cm große Würfel geschnitten"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "medium, sliced thin",
+            "de": "mittelgroß, in dünne Streifen"
+          }
+        },
+        {
+          "id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sweet-paprika",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "caraway",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "dried-marjoram",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tomato-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "beef-stock",
+          "amount": 600,
+          "unit": "ml"
+        },
+        {
+          "id": "bay-leaf",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "red, diced",
+            "de": "rot, gewürfelt"
+          }
+        },
+        {
+          "id": "apple-cider-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sour-cream",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "full fat",
+            "de": "Vollfett"
+          }
+        },
+        {
+          "id": "celeriac",
+          "amount": 500,
+          "unit": "g",
+          "note": {
+            "en": "peeled and diced",
+            "de": "geschält und gewürfelt"
+          }
+        },
+        {
+          "id": "butter",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "id": "heavy-cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "parsley",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Dry and salt the beef. Brown it in batches in hot oil in a heavy pot, getting real colour on at least two sides, and set aside.",
+            "de": "Fleisch trocken tupfen und salzen. In heißem Öl in einem schweren Topf portionsweise anbraten, auf mindestens zwei Seiten richtig Farbe nehmen lassen, beiseitestellen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Turn the heat down and cook the onions with a pinch of salt until soft, golden and reduced to a fraction of their volume.",
+            "de": "Hitze runter und die Zwiebeln mit einer Prise Salz dünsten, bis sie weich, goldgelb und auf einen Bruchteil zusammengefallen sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Stir in the garlic, caraway, marjoram and tomato paste. Off the heat, add both paprikas and stir until the onions are stained red.",
+            "de": "Knoblauch, Kümmel, Majoran und Tomatenmark einrühren. Vom Herd, beide Paprikasorten dazu und rühren, bis die Zwiebeln rot gefärbt sind."
+          }
+        },
+        {
+          "text": {
+            "en": "Return the beef with its juices, add the stock, bay leaves and pepper. Simmer with the lid slightly ajar on the lowest heat, stirring occasionally, until the meat is fork-tender.",
+            "de": "Fleisch samt Saft zurück, Brühe, Lorbeer und Pfeffer dazu. Bei kleinster Hitze mit schräg aufgelegtem Deckel schmoren, gelegentlich rühren, bis das Fleisch gabelzart ist."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "For the last twenty minutes, stir in the diced pepper and take the lid off so the sauce can tighten.",
+            "de": "Für die letzten zwanzig Minuten die gewürfelte Paprika einrühren und den Deckel abnehmen, damit die Sauce eindickt."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Meanwhile, boil the celeriac in salted water until completely soft. Drain well and let it steam dry in the pot for a minute, then blend with the butter, cream, nutmeg and salt until silky.",
+            "de": "Währenddessen den Sellerie in Salzwasser komplett weich kochen. Gut abgießen, im Topf eine Minute ausdampfen lassen, dann mit Butter, Sahne, Muskat und Salz cremig pürieren."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Remove the bay leaves. Off the heat, stir in the vinegar and the sour cream, then season until it tastes deep and slightly sharp.",
+            "de": "Lorbeer entfernen. Vom Herd, Essig und saure Sahne einrühren, dann abschmecken, bis es tief und leicht säuerlich schmeckt."
+          }
+        },
+        {
+          "text": {
+            "en": "A bed of celeriac mash, goulash on top, parsley over everything.",
+            "de": "Ein Bett aus Selleriepüree, Gulasch darauf, Petersilie über alles."
+          }
+        }
+      ]
+    }
+  ]
+}

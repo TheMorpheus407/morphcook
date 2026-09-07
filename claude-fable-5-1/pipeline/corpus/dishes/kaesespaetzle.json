@@ -1,0 +1,876 @@
+{
+  "dish": {
+    "id": "kaesespaetzle",
+    "name": {
+      "en": "Käsespätzle",
+      "de": "Käsespätzle"
+    },
+    "hero_text": {
+      "en": "Swabia's answer to mac and cheese, and the older, better one. Ragged egg noodles, layers of melting alpine cheese and a tangle of onions fried until sweet and crisp.",
+      "de": "Die schwäbische Antwort auf Mac and Cheese, und die ältere, bessere. Ungleichmäßige Eiernudeln, Schichten aus schmelzendem Bergkäse und ein Haufen Zwiebeln, gebraten, bis sie süß und knusprig sind."
+    },
+    "caption": {
+      "en": "alpine hut, foggy windows, second helping",
+      "de": "berghütte, beschlagene fenster, nachschlag"
+    },
+    "stripe_color": "#D8B25C",
+    "cuisine_tags": [
+      "german",
+      "swabian"
+    ],
+    "frequency_tier": "core",
+    "meal_types": [
+      "dinner"
+    ],
+    "tags": [
+      "comfort",
+      "pasta",
+      "hearty"
+    ]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "kaesespaetzle-classic-medium",
+      "title": {
+        "en": "Käsespätzle from Scratch",
+        "de": "Hausgemachte Käsespätzle"
+      },
+      "margin_note": {
+        "en": "beat the batter until it blisters",
+        "de": "den teig schlagen, bis er blasen wirft"
+      },
+      "intro": {
+        "en": "Spätzle batter beaten by hand until it blisters, pressed into boiling water, then layered still steaming with grated emmental and gruyère so the cheese melts into strings. Onions fried slowly in butter go on top, and a green salad goes next to it, ideally.",
+        "de": "Spätzleteig, von Hand geschlagen, bis er Blasen wirft, in kochendes Wasser gedrückt, dann noch dampfend mit geriebenem Emmentaler und Gruyère geschichtet, damit der Käse Fäden zieht. Obendrauf langsam in Butter gebratene Zwiebeln, daneben idealerweise ein grüner Salat."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "medium"
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy",
+        "high-fodmap"
+      ],
+      "extra_attributes": [],
+      "technique": [
+        "simmer",
+        "bake"
+      ],
+      "time_minutes": 60,
+      "servings": 4,
+      "calories_per_serving": 870,
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 80,
+        "fat_g": 44
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "pasta",
+        "hearty",
+        "family"
+      ],
+      "ingredients": [
+        {
+          "id": "all-purpose-flour",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "id": "water",
+          "amount": 150,
+          "unit": "ml",
+          "note": {
+            "en": "cold, sparkling if you have it",
+            "de": "kalt, gern mit Kohlensäure"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "emmental",
+          "amount": 180,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "gruyere",
+          "amount": 120,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the onions into thin rings. Melt half the butter with the oil in a wide pan over medium-low heat and cook the onions slowly, stirring now and then, until deep gold and crisp at the edges. This takes longer than you think and can't be rushed.",
+            "de": "Zwiebeln in dünne Ringe schneiden. Die Hälfte der Butter mit dem Öl in einer weiten Pfanne bei mittlerer bis kleiner Hitze schmelzen und die Zwiebeln langsam braten, ab und zu rühren, bis sie tief goldbraun sind und an den Rändern knusprig. Das dauert länger, als du denkst, und lässt sich nicht beschleunigen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Meanwhile, mix the flour with the salt and nutmeg in a bowl. Add the eggs and water and beat with a wooden spoon, hard, until the batter is smooth, elastic and starts to throw bubbles. Let it rest.",
+            "de": "Währenddessen Mehl mit Salz und Muskat in einer Schüssel mischen. Eier und Wasser dazugeben und mit dem Holzlöffel kräftig schlagen, bis der Teig glatt und elastisch ist und Blasen wirft. Ruhen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Bring a big pot of well-salted water to the boil. Heat the oven to 160 °C and butter a large oven dish.",
+            "de": "Einen großen Topf mit gut gesalzenem Wasser aufkochen. Ofen auf 160 °C vorheizen und eine große Auflaufform buttern."
+          }
+        },
+        {
+          "text": {
+            "en": "Press the batter through a spätzle press or a coarse grater held over the pot, in batches, or scrape thin strips off a wet board with a knife. As soon as they float, lift them out with a slotted spoon.",
+            "de": "Den Teig portionsweise durch eine Spätzlepresse oder ein grobes Sieb über dem Topf drücken, oder mit dem Messer dünne Streifen von einem nassen Brett schaben. Sobald sie oben schwimmen, mit dem Schaumlöffel herausheben."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Layer the hot spätzle into the dish with the mixed cheeses, a few grinds of pepper and a little of the onion butter between layers, ending with cheese.",
+            "de": "Die heißen Spätzle abwechselnd mit dem gemischten Käse, etwas Pfeffer und ein wenig Zwiebelbutter in die Form schichten. Mit Käse abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "Into the oven until the cheese has melted through and the top has a few golden spots.",
+            "de": "In den Ofen, bis der Käse durchgeschmolzen ist und die Oberfläche ein paar goldene Stellen hat."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Pile the crispy onions on top, scatter with chives and take the dish to the table. Serve with a sharp green salad if you want to feel virtuous.",
+            "de": "Die knusprigen Zwiebeln obenauf häufen, mit Schnittlauch bestreuen und die Form auf den Tisch stellen. Dazu ein säuerlicher grüner Salat, wenn du dich tugendhaft fühlen willst."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaesespaetzle-classic-easy",
+      "title": {
+        "en": "Quick Pan Käsespätzle",
+        "de": "Schnelle Pfannen-Käsespätzle"
+      },
+      "margin_note": {
+        "en": "shop spätzle, no shame",
+        "de": "spätzle aus der packung, kein drama"
+      },
+      "intro": {
+        "en": "Fresh spätzle from the chilled aisle, tossed in a pan with butter-fried onions and enough emmental to make everything string together. Twenty-five minutes, one pan, and nobody at the table asks where the spätzle came from.",
+        "de": "Frische Spätzle aus dem Kühlregal, in der Pfanne mit Butterzwiebeln geschwenkt und mit so viel Emmentaler, dass alles Fäden zieht. Fünfundzwanzig Minuten, eine Pfanne, und niemand am Tisch fragt, wo die Spätzle herkommen."
+      },
+      "variant": {
+        "diet": "classic",
+        "effort": "easy"
+      },
+      "contains": [
+        "gluten",
+        "egg",
+        "dairy",
+        "lactose",
+        "high-fodmap"
+      ],
+      "extra_attributes": [
+        "one-pot"
+      ],
+      "technique": [
+        "pan-fry"
+      ],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 720,
+      "macros": {
+        "protein_g": 35,
+        "carbs_g": 55,
+        "fat_g": 39
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "pasta",
+        "weeknight",
+        "one-pot"
+      ],
+      "ingredients": [
+        {
+          "id": "spaetzle",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "fresh, from the chilled aisle",
+            "de": "frisch, aus dem Kühlregal"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "emmental",
+          "amount": 160,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "whole-milk",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the onions into thin rings. Melt the butter in a large non-stick pan over medium heat and fry the onions, stirring occasionally, until golden and starting to crisp. Scoop half of them out onto a plate.",
+            "de": "Zwiebeln in dünne Ringe schneiden. Butter in einer großen beschichteten Pfanne bei mittlerer Hitze schmelzen und die Zwiebeln unter gelegentlichem Rühren braten, bis sie goldbraun sind und anfangen zu knuspern. Die Hälfte auf einen Teller nehmen."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Add the spätzle to the pan with the remaining onions and fry, tossing, until they're heated through and a few have caught golden edges.",
+            "de": "Spätzle zu den restlichen Zwiebeln in die Pfanne geben und unter Schwenken braten, bis sie heiß sind und ein paar goldene Ränder bekommen haben."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Turn the heat low. Pour in the milk, scatter over the emmental, grate in the nutmeg, add pepper. Fold gently, just until the cheese melts into strings.",
+            "de": "Hitze klein stellen. Milch angießen, Emmentaler darüberstreuen, Muskat hineinreiben, pfeffern. Vorsichtig wenden, gerade so lange, bis der Käse Fäden zieht."
+          }
+        },
+        {
+          "text": {
+            "en": "Taste for salt; the cheese usually brings enough. Put a lid on for a minute so the top layer melts too.",
+            "de": "Auf Salz abschmecken; meist bringt der Käse genug mit. Eine Minute Deckel drauf, damit auch die oberste Schicht schmilzt."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "Serve straight from the pan with the reserved crispy onions and chives on top.",
+            "de": "Direkt aus der Pfanne servieren, mit den beiseitegestellten knusprigen Zwiebeln und Schnittlauch obendrauf."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaesespaetzle-vegan-medium",
+      "title": {
+        "en": "Vegan Käsespätzle",
+        "de": "Vegane Käsespätzle"
+      },
+      "margin_note": {
+        "en": "cashews melt if you ask nicely",
+        "de": "cashews schmelzen, wenn man nett fragt"
+      },
+      "intro": {
+        "en": "Eggless spätzle from flour, a pinch of turmeric and fizzy water, beaten until elastic and pressed into the pot like the real thing. The cheese is a blended cashew and nutritional yeast sauce that goes stretchy in the pan, and the onions are exactly as they've always been.",
+        "de": "Spätzle ohne Ei, aus Mehl, einer Prise Kurkuma und Sprudelwasser, elastisch geschlagen und wie das Original in den Topf gedrückt. Der Käse ist eine gemixte Sauce aus Cashews und Hefeflocken, die in der Pfanne schön zäh wird, und die Zwiebeln sind genau so, wie sie immer waren."
+      },
+      "variant": {
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "contains": [
+        "gluten",
+        "cashews",
+        "tree-nuts",
+        "soy",
+        "high-fodmap"
+      ],
+      "extra_attributes": [],
+      "technique": [
+        "simmer",
+        "pan-fry"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 950,
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 118,
+        "fat_g": 42
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "pasta",
+        "hearty"
+      ],
+      "ingredients": [
+        {
+          "id": "cashews",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "soaked in hot water while you make the batter",
+            "de": "in heißem Wasser eingeweicht, während du den Teig machst"
+          }
+        },
+        {
+          "id": "all-purpose-flour",
+          "amount": 220,
+          "unit": "g"
+        },
+        {
+          "id": "cornstarch",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "turmeric",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "water",
+          "amount": 150,
+          "unit": "ml",
+          "note": {
+            "en": "cold sparkling water",
+            "de": "kaltes Sprudelwasser"
+          }
+        },
+        {
+          "id": "oat-milk",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "nutritional-yeast",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "amount": 0.5,
+          "unit": "piece"
+        },
+        {
+          "id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "miso",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "white, the mild kind",
+            "de": "hell, die milde Sorte"
+          }
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "vegan-butter",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cover the cashews with boiling water and leave them to soften.",
+            "de": "Cashews mit kochendem Wasser bedecken und weich werden lassen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Mix the flour, cornstarch, turmeric and salt. Pour in the sparkling water and beat with a wooden spoon until the batter is smooth, thick and elastic and throws bubbles. It should tear slowly off the spoon. Let it rest.",
+            "de": "Mehl, Speisestärke, Kurkuma und Salz mischen. Sprudelwasser dazugießen und mit dem Holzlöffel schlagen, bis der Teig glatt, dick und elastisch ist und Blasen wirft. Er sollte langsam vom Löffel reißen. Ruhen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Slice the onions into rings. Fry them in the oil and vegan butter over medium-low heat, stirring now and then, until deep gold and crisp at the edges.",
+            "de": "Zwiebeln in Ringe schneiden. In Öl und veganer Butter bei mittlerer bis kleiner Hitze braten, ab und zu rühren, bis sie tief goldbraun sind und an den Rändern knusprig."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Drain the cashews and blend them with the oat milk, nutritional yeast, lemon juice, garlic, miso, nutmeg and a pinch of salt until completely smooth. It should be pourable and taste slightly too sharp; the spätzle will soften it.",
+            "de": "Cashews abgießen und mit Hafermilch, Hefeflocken, Zitronensaft, Knoblauch, Miso, Muskat und einer Prise Salz ganz glatt mixen. Die Sauce sollte gießfähig sein und ein bisschen zu kräftig schmecken; die Spätzle mildern sie ab."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring a big pot of salted water to the boil. Press the batter through a spätzle press or a coarse grater in batches. Lift them out as soon as they float.",
+            "de": "Einen großen Topf Salzwasser aufkochen. Teig portionsweise durch eine Spätzlepresse oder ein grobes Sieb drücken. Herausheben, sobald sie oben schwimmen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Lift most of the onions out of their pan. Add the drained spätzle to the pan with the remaining onions and pour in the cashew sauce. Stir over low heat until it thickens, coats everything and goes a little stretchy.",
+            "de": "Die meisten Zwiebeln aus der Pfanne nehmen. Die abgetropften Spätzle zu den restlichen Zwiebeln geben und die Cashewsauce dazugießen. Bei kleiner Hitze rühren, bis sie andickt, alles überzieht und leicht zäh wird."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Pepper, chives and the crispy onions on top. Serve in warm bowls.",
+            "de": "Pfeffer, Schnittlauch und die knusprigen Zwiebeln obendrauf. In warmen Schüsseln servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaesespaetzle-gluten-free-medium",
+      "title": {
+        "en": "Gluten-Free Buckwheat Käsespätzle",
+        "de": "Glutenfreie Buchweizen-Käsespätzle"
+      },
+      "margin_note": {
+        "en": "buckwheat has no wheat in it, despite everything",
+        "de": "buchweizen ist kein weizen, trotz des namens"
+      },
+      "intro": {
+        "en": "Buckwheat and rice flour stand in for wheat, with a little psyllium so the batter holds together in the water. The spätzle come out darker, nuttier and slightly softer than the original, which turns out to suit the cheese and onions perfectly.",
+        "de": "Buchweizen- und Reismehl ersetzen den Weizen, mit etwas Flohsamenschalen, damit der Teig im Wasser zusammenhält. Die Spätzle werden dunkler, nussiger und ein bisschen weicher als das Original, was zu Käse und Zwiebeln erstaunlich gut passt."
+      },
+      "variant": {
+        "diet": "gluten-free",
+        "effort": "medium"
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "high-fodmap"
+      ],
+      "extra_attributes": [],
+      "technique": [
+        "simmer",
+        "pan-fry"
+      ],
+      "time_minutes": 50,
+      "servings": 2,
+      "calories_per_serving": 960,
+      "macros": {
+        "protein_g": 40,
+        "carbs_g": 84,
+        "fat_g": 52
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "pasta",
+        "hearty"
+      ],
+      "ingredients": [
+        {
+          "id": "buckwheat-flour",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "id": "rice-flour",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "id": "cornstarch",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "psyllium-husk",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "egg",
+          "amount": 3,
+          "unit": "piece"
+        },
+        {
+          "id": "water",
+          "amount": 100,
+          "unit": "ml",
+          "note": {
+            "en": "cold",
+            "de": "kalt"
+          }
+        },
+        {
+          "id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "emmental",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "gruyere",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "grated; check pre-grated packs for starch",
+            "de": "gerieben; bei fertig geriebenem Käse auf Stärke achten"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the onions into rings. Fry them slowly in the oil and half the butter over medium-low heat until golden and crisp at the edges. Set aside on a plate.",
+            "de": "Zwiebeln in Ringe schneiden. In Öl und der Hälfte der Butter bei mittlerer bis kleiner Hitze langsam braten, bis sie goldbraun und an den Rändern knusprig sind. Auf einem Teller beiseitestellen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Whisk the buckwheat flour, rice flour, cornstarch, psyllium, salt and nutmeg. Add the eggs and water and beat hard with a wooden spoon until smooth and thick. It will feel stiffer than a wheat batter; that's fine. Rest it so the psyllium swells.",
+            "de": "Buchweizenmehl, Reismehl, Speisestärke, Flohsamenschalen, Salz und Muskat mischen. Eier und Wasser dazugeben und mit dem Holzlöffel kräftig schlagen, bis der Teig glatt und dick ist. Er fühlt sich fester an als Weizenteig, das ist in Ordnung. Ruhen lassen, damit die Flohsamenschalen quellen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Bring a large pot of salted water to a rolling boil.",
+            "de": "Einen großen Topf Salzwasser sprudelnd aufkochen."
+          }
+        },
+        {
+          "text": {
+            "en": "Press the batter through a spätzle press or a coarse grater in small batches. Gluten-free spätzle are fragile, so keep the water boiling steadily and don't crowd the pot. Lift them out the moment they float.",
+            "de": "Den Teig in kleinen Portionen durch eine Spätzlepresse oder ein grobes Sieb drücken. Glutenfreie Spätzle sind empfindlich, also das Wasser gleichmäßig kochen lassen und nicht zu viele auf einmal hineingeben. Herausheben, sobald sie oben schwimmen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Melt the rest of the butter in the onion pan over low heat. Add the drained spätzle and both cheeses, pepper generously and fold gently until the cheese melts into strings. A splash of the cooking water loosens it if needed.",
+            "de": "Die restliche Butter in der Zwiebelpfanne bei kleiner Hitze schmelzen. Abgetropfte Spätzle und beide Käsesorten dazugeben, großzügig pfeffern und vorsichtig wenden, bis der Käse Fäden zieht. Ein Schuss Kochwasser lockert es bei Bedarf."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Crispy onions and chives on top, straight to the table.",
+            "de": "Knusprige Zwiebeln und Schnittlauch obendrauf, direkt auf den Tisch."
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaesespaetzle-keto-easy",
+      "title": {
+        "en": "Keto Cabbage Käsespätzle",
+        "de": "Keto-Käsespätzle aus Weißkohl"
+      },
+      "margin_note": {
+        "en": "cabbage, cut thin enough, forgives a lot",
+        "de": "kraut, dünn genug geschnitten, verzeiht viel"
+      },
+      "intro": {
+        "en": "White cabbage sliced into thin ribbons and softened in butter until it mimics the bite of spätzle, then baked under emmental, gruyère and a little cream until bubbling. The fried onions stay, and the whole thing lands well under twenty grams of carbs.",
+        "de": "Weißkohl in dünne Streifen geschnitten und in Butter weich gedünstet, bis er den Biss von Spätzle nachahmt, dann unter Emmentaler, Gruyère und etwas Sahne überbacken, bis es blubbert. Die Röstzwiebeln bleiben, und das Ganze landet deutlich unter zwanzig Gramm Kohlenhydrate."
+      },
+      "variant": {
+        "diet": "keto",
+        "effort": "easy"
+      },
+      "contains": [
+        "dairy",
+        "lactose",
+        "egg",
+        "high-fodmap"
+      ],
+      "extra_attributes": [
+        "keto"
+      ],
+      "technique": [
+        "sauté",
+        "bake"
+      ],
+      "time_minutes": 45,
+      "servings": 2,
+      "calories_per_serving": 770,
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 18,
+        "fat_g": 62
+      },
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        "comfort",
+        "baked",
+        "hearty"
+      ],
+      "ingredients": [
+        {
+          "id": "white-cabbage",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "sliced into thin ribbons, like tagliatelle",
+            "de": "in dünne Streifen geschnitten, wie Bandnudeln"
+          }
+        },
+        {
+          "id": "yellow-onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "small",
+            "de": "klein"
+          }
+        },
+        {
+          "id": "butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "id": "emmental",
+          "amount": 120,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "gruyere",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "id": "heavy-cream",
+          "amount": 80,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "chives",
+          "amount": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "amount": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "amount": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the oven to 200 °C. Slice the onion into thin rings and the cabbage into ribbons roughly the width of a spätzle, discarding the thick core.",
+            "de": "Ofen auf 200 °C vorheizen. Zwiebel in dünne Ringe und den Kohl in Streifen etwa so breit wie eine Spätzle schneiden, den dicken Strunk weglassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a wide pan over medium heat and fry the onion rings until golden and crisp at the edges. Lift them out and keep the butter.",
+            "de": "Butter in einer weiten Pfanne bei mittlerer Hitze schmelzen und die Zwiebelringe braten, bis sie goldbraun und an den Rändern knusprig sind. Herausnehmen, die Butter bleibt in der Pfanne."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add the cabbage to the pan with a good pinch of salt. Cook, tossing, until it wilts, softens and takes on colour at the edges but still has bite.",
+            "de": "Kohl mit einer guten Prise Salz in die Pfanne geben. Unter Schwenken braten, bis er zusammenfällt, weich wird und an den Rändern Farbe nimmt, aber noch Biss hat."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Whisk the cream with the egg, nutmeg and pepper. Off the heat, fold it through the cabbage together with most of the cheese.",
+            "de": "Sahne mit Ei, Muskat und Pfeffer verquirlen. Vom Herd nehmen und zusammen mit dem Großteil des Käses unter den Kohl heben."
+          }
+        },
+        {
+          "text": {
+            "en": "Tip into a small buttered oven dish, scatter the remaining cheese over the top and bake until golden and bubbling at the edges.",
+            "de": "In eine kleine gebutterte Auflaufform füllen, den restlichen Käse darüberstreuen und backen, bis es goldbraun ist und an den Rändern blubbert."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Let it settle for a couple of minutes, then top with the crispy onions and chives.",
+            "de": "Ein paar Minuten setzen lassen, dann mit Röstzwiebeln und Schnittlauch toppen."
+          },
+          "timer_seconds": 120
+        }
+      ]
+    }
+  ]
+}

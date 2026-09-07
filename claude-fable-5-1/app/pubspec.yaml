@@ -1,0 +1,75 @@
+name: morphcook
+description: "MorphCook — the same dish exists for every body. Offline-first cookbook of fully-authored dietary variants."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State: boring on purpose (ChangeNotifier + Provider).
+  provider: ^6.1.5
+
+  # Local state.
+  shared_preferences: ^2.5.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # Backup/restore via OS share sheet + file picker. No cloud, no OAuth.
+  share_plus: ^13.3.0
+  file_picker: ^12.1.0
+  cross_file: ^0.3.4
+
+  # AES-256-GCM + PBKDF2 for optional backup encryption (pure Dart).
+  pointycastle: ^4.0.0
+
+  # Morph / fade transitions when switching variants.
+  flutter_animate: ^4.5.2
+
+  collection: ^1.19.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/partition-manifest.json
+    - assets/core-recipes.json
+    - assets/extended-recipes.json
+    - assets/cuisine-italian.json
+    - assets/cuisine-asian.json
+    - assets/cuisine-middle-eastern.json
+    - assets/dishes.json
+    - assets/ontology.json
+    - assets/ingredients.json
+    - assets/ingredient-guide.json
+    - assets/faqs.json
+    - assets/search-index.json
+    - assets/textures/grain.png
+
+  # Typography is bundled (OFL licences alongside the files), never fetched at runtime.
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay.ttf
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          style: italic
+    - family: JetBrains Mono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono.ttf
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          style: italic
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat.ttf

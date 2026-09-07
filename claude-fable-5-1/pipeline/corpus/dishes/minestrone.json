@@ -1,0 +1,212 @@
+{
+  "dish": {
+    "id": "minestrone",
+    "name": {"en": "Minestrone", "de": "Minestrone"},
+    "hero_text": {
+      "en": "The soup that follows the seasons and the vegetable drawer. Beans, something green, something starchy, a long slow simmer, and cheese on top because it is still Italy.",
+      "de": "Die Suppe, die sich nach der Jahreszeit und dem Gemüsefach richtet. Bohnen, etwas Grünes, etwas Sättigendes, ein langes, ruhiges Köcheln, und Käse obendrauf, weil es eben doch Italien ist."
+    },
+    "caption": {"en": "whatever the drawer gives, cooked slow", "de": "was das gemüsefach hergibt, langsam gekocht"},
+    "stripe_color": "#7A8C6E",
+    "cuisine_tags": ["italian"],
+    "frequency_tier": "extended",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["soup", "one-pot", "comfort"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "minestrone-classic-easy",
+      "title": {"en": "Everyday Minestrone", "de": "Minestrone für jeden Tag"},
+      "margin_note": {"en": "the parmesan rind goes in the pot, not the bin", "de": "die parmesanrinde gehört in den topf, nicht in den müll"},
+      "intro": {
+        "en": "Onion, carrot and celery cooked soft, then tomatoes, beans, potato, a handful of pasta and whatever greens you have, simmered until the flavours agree with each other. Parmesan on top, and its rind in the pot from the start. Vegetarian by nature, not by design.",
+        "de": "Zwiebel, Karotte und Sellerie weich gedünstet, dann Tomaten, Bohnen, Kartoffel, eine Handvoll Pasta und das Grünzeug, das gerade da ist, geköchelt, bis sich die Aromen einig sind. Parmesan obendrauf, und seine Rinde von Anfang an im Topf. Vegetarisch, weil das eben so ist, nicht weil es geplant war."
+      },
+      "variant": {"diet": "classic", "effort": "easy"},
+      "contains": ["dairy", "gluten", "celery", "high-fodmap"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 340,
+      "macros": {"protein_g": 15, "carbs_g": 48, "fat_g": 10},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "one-pot", "comfort", "family"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"id": "carrot", "amount": 2, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "celery-stalk", "amount": 2, "unit": "stalk", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "garlic", "amount": 2, "unit": "clove", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "potato", "amount": 1, "unit": "piece", "note": {"en": "waxy, diced small", "de": "festkochend, klein gewürfelt"}},
+        {"id": "canned-tomato", "amount": 1, "unit": "can"},
+        {"id": "vegetable-stock", "amount": 1.2, "unit": "l"},
+        {"id": "bay-leaf", "amount": 1, "unit": "leaf"},
+        {"id": "parmesan", "amount": 40, "unit": "g", "note": {"en": "grated, plus the rind if you have one", "de": "gerieben, plus die Rinde, falls du eine hast"}},
+        {"id": "white-beans", "amount": 1, "unit": "can", "note": {"en": "cannellini or borlotti, drained", "de": "Cannellini oder Borlotti, abgetropft"}},
+        {"id": "zucchini", "amount": 1, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "orzo", "amount": 80, "unit": "g", "note": {"en": "or any small pasta", "de": "oder eine andere kleine Pasta"}},
+        {"id": "kale", "amount": 150, "unit": "g", "note": {"en": "or chard or savoy, ribs removed, shredded", "de": "oder Mangold oder Wirsing, ohne Strunk, in Streifen"}},
+        {"id": "extra-virgin-olive-oil", "amount": 1, "unit": "tbsp", "note": {"en": "to finish", "de": "zum Beträufeln"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Warm the oil in a large pot over medium heat. Add onion, carrot and celery with a pinch of salt and cook gently, stirring now and then, until soft and sweet but not browned. Don't rush this part; it is most of the flavour.", "de": "Das Öl in einem großen Topf bei mittlerer Hitze erwärmen. Zwiebel, Karotte und Sellerie mit einer Prise Salz dazugeben und sanft dünsten, ab und zu rühren, bis alles weich und süßlich ist, aber nicht braun. Hier nicht hetzen; das ist der Großteil des Geschmacks."}, "timer_seconds": 600},
+        {"text": {"en": "Stir in the garlic for a minute, then the tomatoes, stock, potato, bay leaf and the parmesan rind. Bring to a simmer.", "de": "Den Knoblauch eine Minute mitrühren, dann Tomaten, Brühe, Kartoffel, Lorbeer und die Parmesanrinde dazugeben. Aufkochen und auf Köcheln herunterschalten."}},
+        {"text": {"en": "Simmer, lid half on, until the potato is nearly tender.", "de": "Mit halb aufgelegtem Deckel köcheln lassen, bis die Kartoffel fast weich ist."}, "timer_seconds": 900},
+        {"text": {"en": "Add the beans, zucchini and pasta and cook until the pasta is just done. If the soup gets too thick, top up with a little water; it should be a soup, not a stew.", "de": "Bohnen, Zucchini und Pasta dazugeben und kochen, bis die Pasta gerade gar ist. Wird die Suppe zu dick, etwas Wasser nachgießen; es soll eine Suppe bleiben, kein Eintopf."}, "timer_seconds": 600},
+        {"text": {"en": "Stir in the greens and let them wilt for a few minutes.", "de": "Das Grünzeug unterrühren und ein paar Minuten zusammenfallen lassen."}, "timer_seconds": 180},
+        {"text": {"en": "Fish out the bay leaf and what's left of the rind. Taste and season generously; beans and potato need more salt than you think.", "de": "Lorbeerblatt und die Reste der Rinde herausfischen. Abschmecken und großzügig salzen; Bohnen und Kartoffel brauchen mehr Salz, als man denkt."}},
+        {"text": {"en": "Ladle into bowls, grated parmesan, pepper, a thread of good oil. Better the next day, if there is any.", "de": "In Schüsseln füllen, geriebener Parmesan, Pfeffer, ein Faden gutes Öl. Am nächsten Tag noch besser, falls etwas übrig bleibt."}}
+      ]
+    },
+    {
+      "id": "minestrone-vegan-easy",
+      "title": {"en": "Vegan Minestrone", "de": "Vegane Minestrone"},
+      "margin_note": {"en": "browned tomato paste is the secret handshake", "de": "angeröstetes tomatenmark ist der geheime handschlag"},
+      "intro": {
+        "en": "Without the cheese, the depth has to come from somewhere else: tomato paste caramelised in the soffritto, a sprig of rosemary, and a finish of lemon zest, parsley and green olive oil that wakes the whole pot up. Nobody will notice what isn't there.",
+        "de": "Ohne Käse muss die Tiefe woanders herkommen: Tomatenmark, das im Soffritto karamellisiert, ein Zweig Rosmarin, und zum Schluss Zitronenschale, Petersilie und grünes Olivenöl, die den ganzen Topf aufwecken. Was fehlt, merkt niemand."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["gluten", "celery", "high-fodmap"],
+      "extra_attributes": ["one-pot"],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 50,
+      "servings": 4,
+      "calories_per_serving": 330,
+      "macros": {"protein_g": 12, "carbs_g": 50, "fat_g": 9},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "one-pot", "fresh", "family"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 3, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"id": "carrot", "amount": 2, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "celery-stalk", "amount": 2, "unit": "stalk", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "garlic", "amount": 3, "unit": "clove", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "tomato-paste", "amount": 2, "unit": "tbsp"},
+        {"id": "rosemary", "amount": 1, "unit": "sprig"},
+        {"id": "canned-tomato", "amount": 1, "unit": "can"},
+        {"id": "vegetable-stock", "amount": 1.2, "unit": "l"},
+        {"id": "white-beans", "amount": 1, "unit": "can", "note": {"en": "drained and rinsed", "de": "abgetropft und abgespült"}},
+        {"id": "green-beans", "amount": 150, "unit": "g", "note": {"en": "trimmed, in short lengths", "de": "geputzt, in kurze Stücke geschnitten"}},
+        {"id": "zucchini", "amount": 1, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "orzo", "amount": 80, "unit": "g", "note": {"en": "or another small pasta", "de": "oder eine andere kleine Pasta"}},
+        {"id": "chard", "amount": 150, "unit": "g", "note": {"en": "stems diced, leaves shredded", "de": "Stiele gewürfelt, Blätter in Streifen"}},
+        {"id": "parsley", "amount": 0.5, "unit": "bunch"},
+        {"id": "lemon", "amount": 1, "unit": "piece", "note": {"en": "zest only", "de": "nur die Schale"}},
+        {"id": "extra-virgin-olive-oil", "amount": 2, "unit": "tbsp", "note": {"en": "to finish", "de": "zum Beträufeln"}},
+        {"id": "chili-flakes", "amount": 1, "unit": "pinch"},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Sweat onion, carrot, celery and the diced chard stems in the oil with a pinch of salt over medium heat until soft and glossy.", "de": "Zwiebel, Karotte, Sellerie und die gewürfelten Mangoldstiele im Öl mit einer Prise Salz bei mittlerer Hitze weich und glänzend dünsten."}, "timer_seconds": 600},
+        {"text": {"en": "Push the vegetables aside, drop the tomato paste onto the bare patch and let it fry until it darkens a shade and smells sweet. Stir in the garlic and rosemary.", "de": "Das Gemüse zur Seite schieben, das Tomatenmark auf die freie Stelle geben und anrösten, bis es eine Nuance dunkler wird und süßlich duftet. Knoblauch und Rosmarin unterrühren."}},
+        {"text": {"en": "Tomatoes, stock, a grind of pepper. Bring to a simmer and let it go, half covered.", "de": "Tomaten, Brühe, etwas Pfeffer. Aufkochen, dann halb zugedeckt köcheln lassen."}, "timer_seconds": 900},
+        {"text": {"en": "Add the white beans, green beans, zucchini and pasta. Cook until the pasta is done and the green beans have lost their squeak.", "de": "Weiße Bohnen, grüne Bohnen, Zucchini und Pasta dazugeben. Kochen, bis die Pasta gar ist und die grünen Bohnen nicht mehr quietschen."}, "timer_seconds": 600},
+        {"text": {"en": "Stir in the chard leaves and let them collapse. Pull out the rosemary stalk.", "de": "Die Mangoldblätter unterrühren und zusammenfallen lassen. Den Rosmarinzweig herausnehmen."}, "timer_seconds": 180},
+        {"text": {"en": "Chop the parsley fine and mix it with the lemon zest and a pinch of salt.", "de": "Die Petersilie fein hacken und mit der Zitronenschale und einer Prise Salz vermischen."}},
+        {"text": {"en": "Season the soup properly, then ladle out and top each bowl with the parsley-lemon mix, a generous pour of extra virgin olive oil and a pinch of chili.", "de": "Die Suppe kräftig abschmecken, dann ausschöpfen und jede Schüssel mit der Petersilien-Zitronen-Mischung, einem großzügigen Schuss nativem Olivenöl und einer Prise Chili toppen."}}
+      ]
+    },
+    {
+      "id": "minestrone-classic-medium",
+      "title": {"en": "Slow Minestrone With Pancetta and Pesto", "de": "Langsame Minestrone mit Pancetta und Pesto"},
+      "margin_note": {"en": "soak the beans tonight, thank yourself tomorrow", "de": "bohnen heute einweichen, morgen dankbar sein"},
+      "intro": {
+        "en": "Dried beans soaked overnight and cooked in the pot with rendered pancetta, a parmesan rind and time. A spoon of homemade basil pesto stirred through each bowl at the end; the Ligurian way, and the reason this one is worth the extra hour.",
+        "de": "Getrocknete Bohnen, über Nacht eingeweicht und im Topf mit ausgelassener Pancetta, einer Parmesanrinde und Zeit gegart. Zum Schluss kommt ein Löffel selbstgemachtes Basilikumpesto in jede Schüssel; so macht man es in Ligurien, und deshalb lohnt sich hier die Extrastunde."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["pork", "dairy", "gluten", "celery", "pine-nuts", "tree-nuts", "high-fodmap", "meat-dairy-combo"],
+      "extra_attributes": [],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 120,
+      "servings": 4,
+      "calories_per_serving": 480,
+      "macros": {"protein_g": 22, "carbs_g": 50, "fat_g": 22},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "comfort", "hearty", "family"],
+      "ingredients": [
+        {"id": "white-beans", "amount": 200, "unit": "g", "note": {"en": "dried cannellini or borlotti, soaked overnight", "de": "getrocknete Cannellini oder Borlotti, über Nacht eingeweicht"}},
+        {"id": "bacon", "amount": 100, "unit": "g", "note": {"en": "pancetta in one piece, diced; thick smoked bacon also works", "de": "Pancetta am Stück, gewürfelt; durchwachsener Räucherspeck geht auch"}},
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 1, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"id": "carrot", "amount": 2, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "celery-stalk", "amount": 2, "unit": "stalk", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "garlic", "amount": 3, "unit": "clove", "note": {"en": "two for the soup, one for the pesto", "de": "zwei für die Suppe, eine fürs Pesto"}},
+        {"id": "tomato-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "canned-tomato", "amount": 1, "unit": "can"},
+        {"id": "vegetable-stock", "amount": 1.5, "unit": "l"},
+        {"id": "bay-leaf", "amount": 1, "unit": "leaf"},
+        {"id": "parmesan", "amount": 60, "unit": "g", "note": {"en": "grated, plus the rind for the pot", "de": "gerieben, plus die Rinde für den Topf"}},
+        {"id": "potato", "amount": 1, "unit": "piece", "note": {"en": "waxy, diced", "de": "festkochend, gewürfelt"}},
+        {"id": "zucchini", "amount": 1, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "orzo", "amount": 80, "unit": "g", "note": {"en": "or any small pasta", "de": "oder eine andere kleine Pasta"}},
+        {"id": "kale", "amount": 150, "unit": "g", "note": {"en": "cavolo nero if you can find it, shredded", "de": "am liebsten Schwarzkohl, wenn du ihn bekommst, in Streifen"}},
+        {"id": "basil", "amount": 1, "unit": "bunch"},
+        {"id": "pine-nuts", "amount": 30, "unit": "g"},
+        {"id": "extra-virgin-olive-oil", "amount": 60, "unit": "ml", "note": {"en": "for the pesto", "de": "fürs Pesto"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "The night before, cover the dried beans with plenty of cold water and leave them on the counter. Drain and rinse before you start.", "de": "Am Vorabend die getrockneten Bohnen mit reichlich kaltem Wasser bedecken und auf der Arbeitsfläche stehen lassen. Vor dem Kochen abgießen und abspülen."}},
+        {"text": {"en": "Put the diced pancetta in a large cold pot with the olive oil and set it over medium heat. Let it render slowly until the pieces are golden and crisp. Lift half of them out onto a plate for later.", "de": "Die gewürfelte Pancetta mit dem Olivenöl in einen großen kalten Topf geben und bei mittlerer Hitze langsam auslassen, bis die Stücke goldbraun und knusprig sind. Die Hälfte davon für später auf einen Teller heben."}, "timer_seconds": 480},
+        {"text": {"en": "Onion, carrot and celery into the fat with a pinch of salt. Cook slow and low until soft and sweet, then stir in two sliced garlic cloves and the tomato paste and let it fry for a minute.", "de": "Zwiebel, Karotte und Sellerie mit einer Prise Salz ins Fett geben. Bei niedriger Hitze langsam weich und süß dünsten, dann zwei in Scheiben geschnittene Knoblauchzehen und das Tomatenmark unterrühren und eine Minute anrösten."}, "timer_seconds": 600},
+        {"text": {"en": "Add the drained beans, tomatoes, stock, bay leaf and the parmesan rind. Bring to the boil, then drop to the gentlest simmer and cook, lid ajar, until the beans are creamy inside. Don't salt until they are; salt early and they stay stubborn.", "de": "Die abgetropften Bohnen, Tomaten, Brühe, Lorbeer und die Parmesanrinde dazugeben. Aufkochen, dann auf kleinste Hitze zurückdrehen und mit leicht geöffnetem Deckel köcheln, bis die Bohnen innen cremig sind. Erst dann salzen; salzt du zu früh, bleiben sie stur."}, "timer_seconds": 3600},
+        {"text": {"en": "Meanwhile, the pesto: pound or blitz the basil with the pine nuts, the last garlic clove and a pinch of salt, then work in the extra virgin olive oil and most of the grated parmesan. Keep it coarse; it's a condiment, not a purée.", "de": "Währenddessen das Pesto: Basilikum mit Pinienkernen, der letzten Knoblauchzehe und einer Prise Salz im Mörser zerstoßen oder kurz mixen, dann das native Olivenöl und den Großteil des geriebenen Parmesans einarbeiten. Ruhig grob lassen; es ist ein Würzmittel, kein Püree."}},
+        {"text": {"en": "Add the potato and zucchini to the pot and cook until the potato is nearly tender, then the pasta until just done.", "de": "Kartoffel und Zucchini in den Topf geben und kochen, bis die Kartoffel fast weich ist, dann die Pasta, bis sie gerade gar ist."}, "timer_seconds": 900},
+        {"text": {"en": "Stir in the kale and let it soften. Take out the bay leaf and the rind, taste, and season properly now.", "de": "Den Kohl unterrühren und weich werden lassen. Lorbeer und Rinde herausnehmen, probieren, und jetzt richtig abschmecken."}, "timer_seconds": 300},
+        {"text": {"en": "Ladle into bowls. A spoon of pesto swirled into each, the reserved crisp pancetta on top, the rest of the parmesan, pepper.", "de": "In Schüsseln füllen. In jede einen Löffel Pesto einrühren, die knusprige Pancetta obendrauf, der restliche Parmesan, Pfeffer."}}
+      ]
+    },
+    {
+      "id": "minestrone-keto-easy",
+      "title": {"en": "Keto Minestrone", "de": "Keto-Minestrone"},
+      "margin_note": {"en": "cauliflower does the potato's job", "de": "blumenkohl übernimmt den job der kartoffel"},
+      "intro": {
+        "en": "All the soffritto depth and the parmesan-rind broth, none of the beans or pasta. Cauliflower florets and zucchini give it body, kale gives it green, and a heavy pour of olive oil at the end gives it what keto actually runs on.",
+        "de": "Die ganze Tiefe des Soffritto und die Brühe mit Parmesanrinde, aber keine Bohnen und keine Pasta. Blumenkohlröschen und Zucchini geben Körper, Grünkohl das Grün, und ein kräftiger Schuss Olivenöl zum Schluss liefert das, wovon Keto eigentlich lebt."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["dairy", "celery", "high-fodmap"],
+      "extra_attributes": ["keto", "one-pot"],
+      "technique": ["sauté", "simmer"],
+      "time_minutes": 40,
+      "servings": 2,
+      "calories_per_serving": 370,
+      "macros": {"protein_g": 12, "carbs_g": 16, "fat_g": 28},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["soup", "one-pot", "light"],
+      "ingredients": [
+        {"id": "olive-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "yellow-onion", "amount": 0.5, "unit": "piece", "note": {"en": "finely diced", "de": "fein gewürfelt"}},
+        {"id": "celery-stalk", "amount": 2, "unit": "stalk", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "garlic", "amount": 2, "unit": "clove", "note": {"en": "sliced", "de": "in Scheiben"}},
+        {"id": "canned-tomato", "amount": 200, "unit": "g", "note": {"en": "half a can", "de": "eine halbe Dose"}},
+        {"id": "vegetable-stock", "amount": 800, "unit": "ml"},
+        {"id": "rosemary", "amount": 1, "unit": "sprig"},
+        {"id": "parmesan", "amount": 40, "unit": "g", "note": {"en": "grated, plus a rind for the pot", "de": "gerieben, plus eine Rinde für den Topf"}},
+        {"id": "cauliflower", "amount": 150, "unit": "g", "note": {"en": "in small florets", "de": "in kleinen Röschen"}},
+        {"id": "zucchini", "amount": 1, "unit": "piece", "note": {"en": "diced", "de": "gewürfelt"}},
+        {"id": "kale", "amount": 60, "unit": "g", "note": {"en": "ribs removed, shredded", "de": "ohne Strunk, in Streifen"}},
+        {"id": "basil", "amount": 1, "unit": "handful"},
+        {"id": "extra-virgin-olive-oil", "amount": 2, "unit": "tbsp", "note": {"en": "to finish", "de": "zum Beträufeln"}},
+        {"id": "salt", "amount": null, "unit": "to-taste"},
+        {"id": "black-pepper", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Soften the onion and celery in the olive oil over medium heat with a pinch of salt until translucent. Add the garlic for the last minute.", "de": "Zwiebel und Sellerie im Olivenöl bei mittlerer Hitze mit einer Prise Salz glasig dünsten. Den Knoblauch für die letzte Minute dazugeben."}, "timer_seconds": 480},
+        {"text": {"en": "Tomatoes, stock, rosemary, the parmesan rind. Bring to a simmer and let the broth take on the rind.", "de": "Tomaten, Brühe, Rosmarin, die Parmesanrinde. Aufkochen und köcheln lassen, damit die Brühe die Rinde aufnimmt."}, "timer_seconds": 600},
+        {"text": {"en": "Add the cauliflower and cook until it's just tender; it's the potato of this soup and shouldn't fall apart.", "de": "Den Blumenkohl dazugeben und kochen, bis er gerade weich ist; er ist die Kartoffel dieser Suppe und soll nicht zerfallen."}, "timer_seconds": 480},
+        {"text": {"en": "Stir in the zucchini and kale and cook until the kale is soft and the zucchini still has a little bite.", "de": "Zucchini und Grünkohl unterrühren und kochen, bis der Kohl weich ist und die Zucchini noch etwas Biss hat."}, "timer_seconds": 300},
+        {"text": {"en": "Fish out the rosemary and the rind. Season with salt and plenty of pepper.", "de": "Rosmarin und Rinde herausfischen. Mit Salz und reichlich Pfeffer abschmecken."}},
+        {"text": {"en": "Bowls, grated parmesan, torn basil, and a properly generous pour of extra virgin olive oil; don't measure it with your conscience.", "de": "Schüsseln, geriebener Parmesan, gezupftes Basilikum, und ein wirklich großzügiger Schuss natives Olivenöl; nicht mit dem Gewissen abmessen."}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.app/schemas/recipe.schema.json",
+  "title": "MorphCook recipe (corpus source)",
+  "type": "object",
+  "required": ["id", "title", "margin_note", "intro", "variant", "contains", "technique", "time_minutes", "servings", "calories_per_serving", "macros", "meal_types", "ingredients", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+    "title": {"$ref": "ltext.schema.json"},
+    "margin_note": {"$ref": "ltext.schema.json"},
+    "intro": {"$ref": "ltext.schema.json"},
+    "variant": {
+      "type": "object",
+      "required": ["diet", "effort"],
+      "additionalProperties": false,
+      "properties": {
+        "diet": {"enum": ["classic", "vegetarian", "vegan", "pescatarian", "keto", "halal", "gluten-free"]},
+        "effort": {"enum": ["easy", "medium", "hard"]}
+      }
+    },
+    "contains": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "extra_attributes": {"type": "array", "items": {"enum": ["keto", "high-protein", "one-pot"]}, "uniqueItems": true},
+    "technique": {"type": "array", "minItems": 1, "items": {"enum": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"]}},
+    "time_minutes": {"type": "integer", "minimum": 1},
+    "servings": {"type": "integer", "minimum": 1},
+    "calories_per_serving": {"type": "integer", "minimum": 1},
+    "macros": {
+      "type": "object",
+      "required": ["protein_g", "carbs_g", "fat_g"],
+      "additionalProperties": false,
+      "properties": {
+        "protein_g": {"type": "number", "minimum": 0},
+        "carbs_g": {"type": "number", "minimum": 0},
+        "fat_g": {"type": "number", "minimum": 0}
+      }
+    },
+    "meal_types": {"type": "array", "minItems": 1, "items": {"enum": ["breakfast", "lunch", "dinner", "snack", "dessert"]}},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "ingredients": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "amount", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "amount": {"type": ["number", "null"], "exclusiveMinimum": 0},
+          "unit": {"enum": ["g", "kg", "ml", "l", "tsp", "tbsp", "cup", "piece", "clove", "slice", "bunch", "can", "sprig", "leaf", "stalk", "handful", "pinch", "sheet", "to-taste"]},
+          "note": {"$ref": "ltext.schema.json"},
+          "name": {"$ref": "ltext.schema.json"}
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": {"$ref": "ltext.schema.json"},
+          "timer_seconds": {"type": "integer", "minimum": 60}
+        }
+      }
+    }
+  }
+}

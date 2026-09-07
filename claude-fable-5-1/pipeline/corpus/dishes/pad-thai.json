@@ -1,0 +1,242 @@
+{
+  "dish": {
+    "id": "pad-thai",
+    "name": {"en": "Pad Thai", "de": "Pad Thai"},
+    "hero_text": {
+      "en": "Bangkok's street-corner stir-fry: soft rice noodles tossed through a sweet-sour tamarind sauce, egg, crushed peanuts and a squeeze of lime. Fast, loud and better with the windows open.",
+      "de": "Bangkoks Pfannengericht von der Straßenecke: weiche Reisnudeln in süßsaurer Tamarindensauce, Ei, zerstoßene Erdnüsse und ein Spritzer Limette. Schnell, laut und am besten bei offenem Fenster."
+    },
+    "caption": {"en": "wok, plastic stool, extra lime", "de": "wok, plastikhocker, extra limette"},
+    "stripe_color": "#C9A27E",
+    "cuisine_tags": ["thai"],
+    "frequency_tier": "core",
+    "meal_types": ["lunch", "dinner"],
+    "tags": ["noodles", "street-food"]
+  },
+  "new_ingredients": [],
+  "recipes": [
+    {
+      "id": "pad-thai-classic-medium",
+      "title": {"en": "Classic Pad Thai", "de": "Klassisches Pad Thai"},
+      "margin_note": {"en": "cook it in two batches, always", "de": "immer in zwei portionen braten"},
+      "intro": {
+        "en": "Prawns and pressed tofu, an egg scrambled straight in the pan, and the holy trinity of tamarind, fish sauce and palm sugar. Soak the noodles properly, get the pan very hot, and don't try to feed a crowd from one wok.",
+        "de": "Garnelen und fester Tofu, ein Ei direkt in der Pfanne verrührt, dazu die heilige Dreifaltigkeit aus Tamarinde, Fischsauce und Palmzucker. Nudeln ordentlich einweichen, Pfanne richtig heiß, und keine Großfamilie aus einem einzigen Wok füttern."
+      },
+      "variant": {"diet": "classic", "effort": "medium"},
+      "contains": ["shellfish", "fish", "egg", "soy", "peanuts", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 840,
+      "macros": {"protein_g": 40, "carbs_g": 88, "fat_g": 34},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["noodles", "street-food"],
+      "ingredients": [
+        {"id": "rice-noodles", "amount": 160, "unit": "g", "note": {"en": "flat, 3–5 mm wide", "de": "flach, 3–5 mm breit"}},
+        {"id": "shrimp", "amount": 200, "unit": "g", "note": {"en": "peeled, deveined", "de": "geschält, entdarmt"}},
+        {"id": "firm-tofu", "amount": 100, "unit": "g", "note": {"en": "pressed, cut into small cubes", "de": "ausgedrückt, in kleine Würfel"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "tamarind-paste", "amount": 2, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 2.5, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 2, "unit": "tbsp", "note": {"en": "palm sugar if you have it", "de": "Palmzucker, wenn du hast"}},
+        {"id": "water", "amount": 3, "unit": "tbsp"},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "shallot", "amount": 2, "unit": "piece"},
+        {"id": "bean-sprouts", "amount": 150, "unit": "g"},
+        {"id": "chives", "amount": 1, "unit": "bunch", "note": {"en": "garlic chives if you can find them", "de": "Knoblauch-Schnittlauch, falls du ihn findest"}},
+        {"id": "roasted-peanuts", "amount": 40, "unit": "g", "note": {"en": "crushed", "de": "grob zerstoßen"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "chili-flakes", "amount": 1, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Soak the noodles in warm water until pliable but still a little firm, then drain. They finish cooking in the pan.", "de": "Nudeln in warmem Wasser einweichen, bis sie biegsam, aber noch leicht fest sind, dann abgießen. Fertig garen sie in der Pfanne."}, "timer_seconds": 1200},
+        {"text": {"en": "Stir tamarind, fish sauce, sugar and the water together in a small pan and warm until the sugar dissolves. Taste: sour first, then sweet, then salty.", "de": "Tamarinde, Fischsauce, Zucker und das Wasser in einem kleinen Topf verrühren und erwärmen, bis sich der Zucker löst. Probieren: erst sauer, dann süß, dann salzig."}},
+        {"text": {"en": "Slice the shallots and garlic, cut the chives into finger lengths, pat the prawns dry. Line everything up next to the stove; there's no time to chop once the pan is hot.", "de": "Schalotten und Knoblauch schneiden, Schnittlauch in fingerlange Stücke, Garnelen trocken tupfen. Alles neben den Herd stellen, sobald die Pfanne heiß ist, bleibt keine Zeit zum Schneiden."}},
+        {"text": {"en": "Heat half the oil in a wok until it smokes. Fry the tofu until golden, then add shallots, garlic and prawns and cook until the prawns just turn pink. If your pan is small, do all of this in two rounds.", "de": "Die Hälfte des Öls im Wok rauchend heiß werden lassen. Tofu goldbraun braten, dann Schalotten, Knoblauch und Garnelen dazu und braten, bis die Garnelen gerade rosa sind. Bei einer kleinen Pfanne das Ganze in zwei Runden."}},
+        {"text": {"en": "Push everything to one side, crack the eggs into the gap and scramble them roughly with the spatula.", "de": "Alles an den Rand schieben, die Eier in die Lücke schlagen und mit dem Pfannenwender grob verrühren."}},
+        {"text": {"en": "Add the noodles and the sauce and toss hard for a couple of minutes until the noodles are tender and have drunk up the sauce. A splash of water if they stick.", "de": "Nudeln und Sauce dazugeben und ein paar Minuten kräftig durchschwenken, bis die Nudeln weich sind und die Sauce aufgesogen haben. Wenn sie ansetzen, ein Schuss Wasser."}},
+        {"text": {"en": "Off the heat, toss through most of the sprouts and chives. Serve with peanuts, chili flakes, the rest of the sprouts and a wedge of lime.", "de": "Vom Herd nehmen, den Großteil der Sprossen und des Schnittlauchs unterheben. Mit Erdnüssen, Chiliflocken, den restlichen Sprossen und einem Limettenspalt servieren."}}
+      ]
+    },
+    {
+      "id": "pad-thai-vegan-easy",
+      "title": {"en": "Vegan Pad Thai", "de": "Veganes Pad Thai"},
+      "margin_note": {"en": "crisp tofu is the whole argument", "de": "knuspriger tofu ist das ganze argument"},
+      "intro": {
+        "en": "Tofu tossed in cornstarch and fried until it crackles, rice noodles in a tamarind-soy sauce, carrot ribbons and a fistful of sprouts. Soy sauce and a little extra lime step in for the fish sauce, and nothing goes missing.",
+        "de": "Tofu in Speisestärke gewälzt und gebraten, bis er knistert, Reisnudeln in Tamarinden-Soja-Sauce, Karottenstreifen und eine Handvoll Sprossen. Sojasauce und etwas mehr Limette übernehmen den Job der Fischsauce, und es fehlt nichts."
+      },
+      "variant": {"diet": "vegan", "effort": "easy"},
+      "contains": ["soy", "gluten", "peanuts", "added-sugar", "high-fodmap"],
+      "extra_attributes": [],
+      "technique": ["stir-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 800,
+      "macros": {"protein_g": 30, "carbs_g": 90, "fat_g": 34},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["noodles", "weeknight", "quick"],
+      "ingredients": [
+        {"id": "firm-tofu", "amount": 300, "unit": "g", "note": {"en": "pressed dry", "de": "gut ausgedrückt"}},
+        {"id": "cornstarch", "amount": 1, "unit": "tbsp"},
+        {"id": "rice-noodles", "amount": 160, "unit": "g", "note": {"en": "flat", "de": "flach"}},
+        {"id": "tamarind-paste", "amount": 2, "unit": "tbsp"},
+        {"id": "soy-sauce", "amount": 3, "unit": "tbsp"},
+        {"id": "brown-sugar", "amount": 1.5, "unit": "tbsp"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "carrot", "amount": 1, "unit": "piece", "note": {"en": "in thin ribbons", "de": "in dünnen Streifen"}},
+        {"id": "bean-sprouts", "amount": 150, "unit": "g"},
+        {"id": "roasted-peanuts", "amount": 40, "unit": "g", "note": {"en": "crushed", "de": "grob zerstoßen"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "chili-flakes", "amount": 1, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"},
+        {"id": "salt", "amount": null, "unit": "to-taste"}
+      ],
+      "steps": [
+        {"text": {"en": "Soak the noodles in warm water until bendy, then drain.", "de": "Nudeln in warmem Wasser einweichen, bis sie biegsam sind, dann abgießen."}, "timer_seconds": 1200},
+        {"text": {"en": "Cut the tofu into thumb-sized pieces and toss with the cornstarch and a pinch of salt.", "de": "Tofu in daumengroße Stücke schneiden und mit Speisestärke und einer Prise Salz vermengen."}},
+        {"text": {"en": "Whisk tamarind, soy sauce, sugar and the juice of half the lime. Slice the garlic and spring onions, shave the carrot into ribbons with a peeler.", "de": "Tamarinde, Sojasauce, Zucker und den Saft einer halben Limette verrühren. Knoblauch und Frühlingszwiebeln schneiden, die Karotte mit dem Sparschäler in Streifen hobeln."}},
+        {"text": {"en": "Heat the oil in a wide pan over high heat and fry the tofu with room around each piece until crisp and golden on all sides. Add the garlic and the white parts of the spring onions for the last minute.", "de": "Öl in einer weiten Pfanne stark erhitzen und den Tofu mit Platz drumherum rundum knusprig und goldbraun braten. Knoblauch und die weißen Teile der Frühlingszwiebeln in der letzten Minute dazu."}, "timer_seconds": 480},
+        {"text": {"en": "Add noodles, carrot and sauce. Toss over high heat until the noodles are tender and glossy, with a splash of water if they catch.", "de": "Nudeln, Karotte und Sauce dazugeben. Bei starker Hitze schwenken, bis die Nudeln weich und glänzend sind, bei Bedarf einen Schuss Wasser dazu."}},
+        {"text": {"en": "Fold in most of the sprouts and the green spring onion. Top with peanuts, chili flakes, the remaining sprouts and lime wedges.", "de": "Den Großteil der Sprossen und das Grün der Frühlingszwiebeln unterheben. Mit Erdnüssen, Chiliflocken, restlichen Sprossen und Limettenspalten anrichten."}}
+      ]
+    },
+    {
+      "id": "pad-thai-halal-easy",
+      "title": {"en": "Chicken Pad Thai", "de": "Pad Thai mit Hähnchen"},
+      "margin_note": {"en": "thigh meat, always thigh meat", "de": "keule, immer keule"},
+      "intro": {
+        "en": "Chicken thigh seared in strips, egg scrambled into the noodles and a tamarind sauce that needs nothing beyond fish sauce, sugar and lime. Written for a kitchen that keeps pork and alcohol out entirely, so the sauce skips oyster sauce and cooking wine and gets its depth from tamarind and fish sauce alone.",
+        "de": "Hähnchenkeule in Streifen scharf angebraten, Ei in die Nudeln gerührt und eine Tamarindensauce, die außer Fischsauce, Zucker und Limette nichts braucht. Geschrieben für eine Küche, in der Schwein und Alkohol grundsätzlich nichts verloren haben: Die Sauce kommt ohne Austernsauce und Kochwein aus und holt ihre Tiefe allein aus Tamarinde und Fischsauce."
+      },
+      "variant": {"diet": "halal", "effort": "easy"},
+      "contains": ["poultry", "fish", "egg", "peanuts", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 30,
+      "servings": 2,
+      "calories_per_serving": 880,
+      "macros": {"protein_g": 46, "carbs_g": 86, "fat_g": 36},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["noodles", "weeknight", "street-food"],
+      "ingredients": [
+        {"id": "chicken-thigh", "amount": 300, "unit": "g", "note": {"en": "boneless, skinless, in thin strips", "de": "ohne Knochen und Haut, in dünnen Streifen"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "rice-noodles", "amount": 160, "unit": "g", "note": {"en": "flat", "de": "flach"}},
+        {"id": "tamarind-paste", "amount": 2, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 2, "unit": "tbsp", "note": {"en": "fish and salt only; check the label", "de": "nur Fisch und Salz, aufs Etikett schauen"}},
+        {"id": "brown-sugar", "amount": 1.5, "unit": "tbsp"},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "spring-onion", "amount": 4, "unit": "piece"},
+        {"id": "bean-sprouts", "amount": 150, "unit": "g"},
+        {"id": "roasted-peanuts", "amount": 40, "unit": "g", "note": {"en": "crushed", "de": "grob zerstoßen"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "chili-flakes", "amount": 1, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Soak the noodles in warm water until pliable, then drain.", "de": "Nudeln in warmem Wasser einweichen, bis sie biegsam sind, dann abgießen."}, "timer_seconds": 1200},
+        {"text": {"en": "Stir tamarind, fish sauce and sugar together until the sugar dissolves. On its own it should taste sharp and a little too strong.", "de": "Tamarinde, Fischsauce und Zucker verrühren, bis sich der Zucker löst. Pur sollte es sauer und etwas zu kräftig schmecken."}},
+        {"text": {"en": "Slice the garlic and spring onions, keeping white and green apart. Pat the chicken strips dry so they brown instead of steaming.", "de": "Knoblauch und Frühlingszwiebeln schneiden, Weiß und Grün getrennt halten. Die Hähnchenstreifen trocken tupfen, damit sie bräunen statt dämpfen."}},
+        {"text": {"en": "Heat the oil in a wok until it shimmers. Sear the chicken in a single layer until browned at the edges and cooked through, then add the garlic and the spring onion whites.", "de": "Öl im Wok erhitzen, bis es flimmert. Das Hähnchen in einer Lage braten, bis die Ränder braun und das Fleisch durch ist, dann Knoblauch und das Weiße der Frühlingszwiebeln dazu."}, "timer_seconds": 360},
+        {"text": {"en": "Push the chicken aside, crack the eggs into the empty half of the pan and scramble them until just set.", "de": "Hähnchen zur Seite schieben, die Eier in die freie Hälfte der Pfanne schlagen und grob verrühren, bis sie gerade stocken."}},
+        {"text": {"en": "Add the noodles and the sauce and toss over high heat until the noodles are soft and coated. A splash of water helps if they stick.", "de": "Nudeln und Sauce dazugeben und bei starker Hitze schwenken, bis die Nudeln weich und überzogen sind. Wenn sie ansetzen, hilft ein Schuss Wasser."}},
+        {"text": {"en": "Fold in most of the sprouts and the spring onion greens. Peanuts, chili flakes, the last of the sprouts and lime wedges on top.", "de": "Den Großteil der Sprossen und das Frühlingszwiebelgrün unterheben. Erdnüsse, Chiliflocken, die letzten Sprossen und Limettenspalten obendrauf."}}
+      ]
+    },
+    {
+      "id": "pad-thai-keto-easy",
+      "title": {"en": "Keto Pad Thai with Zucchini Noodles", "de": "Keto-Pad-Thai mit Zucchininudeln"},
+      "margin_note": {"en": "salt the zucchini, or it's soup", "de": "zucchini salzen, sonst wird es suppe"},
+      "intro": {
+        "en": "Spiralised zucchini stands in for the rice noodles, salted and squeezed first so it stays a noodle instead of turning into broth. Prawns, egg, a lighter tamarind sauce, and all the peanuts and lime you want.",
+        "de": "Spiralisierte Zucchini ersetzt die Reisnudeln, vorher gesalzen und ausgedrückt, damit sie Nudel bleibt und nicht zur Brühe wird. Garnelen, Ei, eine leichtere Tamarindensauce und so viel Erdnüsse und Limette, wie du magst."
+      },
+      "variant": {"diet": "keto", "effort": "easy"},
+      "contains": ["shellfish", "fish", "egg", "peanuts", "high-fodmap"],
+      "extra_attributes": ["keto", "high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 25,
+      "servings": 2,
+      "calories_per_serving": 480,
+      "macros": {"protein_g": 36, "carbs_g": 16, "fat_g": 30},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["noodles", "light", "quick"],
+      "ingredients": [
+        {"id": "zucchini", "amount": 400, "unit": "g", "note": {"en": "2 medium, spiralised or peeled into ribbons", "de": "2 mittlere, spiralisiert oder mit dem Sparschäler in Streifen"}},
+        {"id": "salt", "amount": 1, "unit": "tsp", "note": {"en": "for drawing out the water", "de": "zum Entwässern"}},
+        {"id": "shrimp", "amount": 250, "unit": "g", "note": {"en": "peeled, deveined", "de": "geschält, entdarmt"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "tamarind-paste", "amount": 1, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 2, "unit": "tbsp"},
+        {"id": "erythritol", "amount": 1, "unit": "tsp"},
+        {"id": "garlic", "amount": 2, "unit": "clove"},
+        {"id": "spring-onion", "amount": 2, "unit": "piece"},
+        {"id": "bean-sprouts", "amount": 100, "unit": "g"},
+        {"id": "roasted-peanuts", "amount": 30, "unit": "g", "note": {"en": "crushed", "de": "grob zerstoßen"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "chili-flakes", "amount": 1, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Toss the zucchini noodles with the salt in a colander and let them drain while you prep the rest. Squeeze them gently in a clean towel before they hit the pan.", "de": "Zucchininudeln mit dem Salz in einem Sieb vermengen und abtropfen lassen, während du den Rest vorbereitest. Vor dem Braten sanft in einem sauberen Küchentuch ausdrücken."}, "timer_seconds": 900},
+        {"text": {"en": "Stir tamarind, fish sauce, erythritol and the juice of half the lime into a sauce.", "de": "Tamarinde, Fischsauce, Erythrit und den Saft einer halben Limette zu einer Sauce verrühren."}},
+        {"text": {"en": "Heat the oil in a wide pan over high heat. Fry the prawns with the sliced garlic until they just turn pink, then push them to the side.", "de": "Öl in einer weiten Pfanne stark erhitzen. Garnelen mit dem geschnittenen Knoblauch braten, bis sie gerade rosa sind, dann zur Seite schieben."}},
+        {"text": {"en": "Crack the eggs into the gap and scramble them until barely set.", "de": "Eier in die Lücke schlagen und verrühren, bis sie gerade eben stocken."}},
+        {"text": {"en": "Add the zucchini and the sauce and toss for a minute at most. Any longer and the noodles collapse.", "de": "Zucchini und Sauce dazugeben und höchstens eine Minute schwenken. Länger, und die Nudeln fallen zusammen."}},
+        {"text": {"en": "Off the heat, fold in the sprouts and spring onion. Serve with peanuts, chili flakes and lime wedges.", "de": "Vom Herd nehmen, Sprossen und Frühlingszwiebeln unterheben. Mit Erdnüssen, Chiliflocken und Limettenspalten servieren."}}
+      ]
+    },
+    {
+      "id": "pad-thai-gluten-free-medium",
+      "title": {"en": "Gluten-Free Prawn Pad Thai", "de": "Glutenfreies Pad Thai mit Garnelen"},
+      "margin_note": {"en": "the noodles were never the problem", "de": "die nudeln waren nie das problem"},
+      "intro": {
+        "en": "Rice noodles are gluten-free by nature; the trouble hides in the sauce, where soy and oyster sauce sneak into a lot of recipes. Here tamari does that job next to tamarind, fish sauce and palm sugar, with prawns, egg and red pepper for crunch.",
+        "de": "Reisnudeln sind von Natur aus glutenfrei, das Problem steckt in der Sauce, wo sich in vielen Rezepten Soja- und Austernsauce einschleichen. Hier übernimmt Tamari den Job, neben Tamarinde, Fischsauce und Palmzucker, dazu Garnelen, Ei und rote Paprika für den Biss."
+      },
+      "variant": {"diet": "gluten-free", "effort": "medium"},
+      "contains": ["shellfish", "fish", "egg", "soy", "peanuts", "added-sugar", "high-fodmap"],
+      "extra_attributes": ["high-protein"],
+      "technique": ["stir-fry"],
+      "time_minutes": 35,
+      "servings": 2,
+      "calories_per_serving": 790,
+      "macros": {"protein_g": 36, "carbs_g": 88, "fat_g": 30},
+      "meal_types": ["lunch", "dinner"],
+      "tags": ["noodles", "street-food"],
+      "ingredients": [
+        {"id": "rice-noodles", "amount": 160, "unit": "g", "note": {"en": "flat; the pack should list rice flour only", "de": "flach; auf der Packung sollte nur Reismehl stehen"}},
+        {"id": "shrimp", "amount": 200, "unit": "g", "note": {"en": "peeled, deveined", "de": "geschält, entdarmt"}},
+        {"id": "egg", "amount": 2, "unit": "piece"},
+        {"id": "tamarind-paste", "amount": 2, "unit": "tbsp", "note": {"en": "check for wheat-based thickeners", "de": "auf Weizen als Bindemittel prüfen"}},
+        {"id": "tamari", "amount": 2, "unit": "tbsp"},
+        {"id": "fish-sauce", "amount": 1, "unit": "tbsp", "note": {"en": "fish and salt only", "de": "nur Fisch und Salz"}},
+        {"id": "brown-sugar", "amount": 1.5, "unit": "tbsp"},
+        {"id": "water", "amount": 3, "unit": "tbsp"},
+        {"id": "garlic", "amount": 3, "unit": "clove"},
+        {"id": "shallot", "amount": 1, "unit": "piece"},
+        {"id": "bell-pepper", "amount": 1, "unit": "piece", "note": {"en": "red, in thin strips", "de": "rot, in dünnen Streifen"}},
+        {"id": "bean-sprouts", "amount": 150, "unit": "g"},
+        {"id": "spring-onion", "amount": 3, "unit": "piece"},
+        {"id": "roasted-peanuts", "amount": 40, "unit": "g", "note": {"en": "crushed; plain roasted, not coated", "de": "grob zerstoßen; pur geröstet, nicht ummantelt"}},
+        {"id": "lime", "amount": 1, "unit": "piece"},
+        {"id": "chili-flakes", "amount": 1, "unit": "tsp"},
+        {"id": "vegetable-oil", "amount": 2, "unit": "tbsp"}
+      ],
+      "steps": [
+        {"text": {"en": "Soak the noodles in warm water until pliable but still slightly firm, then drain.", "de": "Nudeln in warmem Wasser einweichen, bis sie biegsam, aber noch leicht fest sind, dann abgießen."}, "timer_seconds": 1200},
+        {"text": {"en": "Warm tamarind, tamari, fish sauce, sugar and the water in a small pan until the sugar dissolves and the sauce thickens slightly. Let it cool a little.", "de": "Tamarinde, Tamari, Fischsauce, Zucker und das Wasser in einem kleinen Topf erwärmen, bis sich der Zucker löst und die Sauce leicht andickt. Etwas abkühlen lassen."}, "timer_seconds": 180},
+        {"text": {"en": "Slice shallot, garlic, pepper and spring onions. Pat the prawns dry.", "de": "Schalotte, Knoblauch, Paprika und Frühlingszwiebeln schneiden. Garnelen trocken tupfen."}},
+        {"text": {"en": "Heat the oil in a wok until it smokes. Fry shallot, garlic and pepper for a minute, then add the prawns and cook until they curl and turn pink.", "de": "Öl im Wok rauchend heiß werden lassen. Schalotte, Knoblauch und Paprika eine Minute braten, dann die Garnelen dazu und braten, bis sie sich krümmen und rosa sind."}},
+        {"text": {"en": "Push everything to the side, crack in the eggs and scramble them roughly.", "de": "Alles zur Seite schieben, die Eier hineinschlagen und grob verrühren."}},
+        {"text": {"en": "Add noodles and sauce and toss over high heat until the noodles are tender and glossy. Work in two rounds if the pan is small.", "de": "Nudeln und Sauce dazugeben, bei starker Hitze schwenken, bis die Nudeln weich und glänzend sind. Bei kleiner Pfanne in zwei Runden."}},
+        {"text": {"en": "Fold in most of the sprouts and the spring onion greens. Peanuts, chili flakes, the rest of the sprouts and lime wedges on top.", "de": "Den Großteil der Sprossen und das Grün der Frühlingszwiebeln unterheben. Erdnüsse, Chiliflocken, restliche Sprossen und Limettenspalten obendrauf."}}
+      ]
+    }
+  ]
+}
