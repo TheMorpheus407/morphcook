@@ -5,6 +5,31 @@ class S {
   const S(this.lang);
 
   static const _en = <String, String>{
+    'sharedPhotoPreview': 'photos included',
+    "recipeSharingTitle": "share & receive recipes",
+    "shareRecipe": "share this recipe",
+    "shareCookbook": "share cookbook",
+    "shareCookbookHint":
+        "Share all saved and personal recipes. Choose Bluetooth, Quick Share or another available app in the system share sheet. The recipient can import the ZIP into MorphCook or unzip it to read the text file. Wait for a transfer to finish before sharing another file.",
+    "sharePhotos": "include saved photos",
+    "sharePhotosHint":
+        "Off saves storage and transfer time. Photo metadata is included with the original files.",
+    "shareFile": "open share sheet",
+    "shareEmpty": "There are no recipes to share yet.",
+    "shareFailed":
+        "Could not prepare or share these recipes. Check storage and try again.",
+    "importSharedFile": "open received recipe file",
+    "sharedImportPreview": "recipes in this file",
+    "sharedImportHint":
+        "Import adds recipes to your cookbook and keeps your existing data. Identical recipes are skipped; conflicting copies are kept separately. Recipes from other people have no verified diet, allergy or nutrition labels. Only recipes and selected photos are shared; your profile, plans and history stay private.",
+    "confirmSharedImport": "add to cookbook",
+    "sharedImportFailed":
+        "This recipe file could not be imported. Check the file and available storage.",
+    "sharedImportTooLarge":
+        "This file exceeds the recipe or photo storage limits. Share fewer recipes or leave photos out.",
+    "sharedImportSuccess": "recipes added",
+    "sharedImportAlreadyPresent": "These recipes are already in your cookbook.",
+
     'originalAmount': 'original amount · not scaled',
     "sourceAuthor": "author (website claim)",
     "sourceDiet": "diet (website claim, unverified)",
@@ -273,6 +298,32 @@ class S {
   };
 
   static const _de = <String, String>{
+    'sharedPhotoPreview': 'enthaltene Fotos',
+    "recipeSharingTitle": "Rezepte teilen & empfangen",
+    "shareRecipe": "dieses Rezept teilen",
+    "shareCookbook": "Kochbuch teilen",
+    "shareCookbookHint":
+        "Teile alle gespeicherten und eigenen Rezepte. Wähle Bluetooth, Quick Share oder eine andere verfügbare App im Teilen-Menü. Empfänger können die ZIP-Datei in MorphCook importieren oder zum Lesen der Textdatei entpacken. Warte auf das Ende einer Übertragung, bevor du erneut teilst.",
+    "sharePhotos": "gespeicherte Fotos einschließen",
+    "sharePhotosHint":
+        "Ausgeschaltet spart es Speicher und Übertragungszeit. Die Metadaten der Originalfotos werden mitgeteilt.",
+    "shareFile": "Teilen-Menü öffnen",
+    "shareEmpty": "Noch keine Rezepte zum Teilen vorhanden.",
+    "shareFailed":
+        "Rezepte konnten nicht vorbereitet oder geteilt werden. Prüfe den Speicher und versuche es erneut.",
+    "importSharedFile": "empfangene Rezeptdatei öffnen",
+    "sharedImportPreview": "Rezepte in dieser Datei",
+    "sharedImportHint":
+        "Der Import ergänzt dein Kochbuch und erhält vorhandene Daten. Identische Rezepte werden übersprungen, abweichende Kopien separat gespeichert. Rezepte anderer Personen haben keine geprüften Ernährungs-, Allergie- oder Nährwertangaben. Geteilt werden nur Rezepte und ausgewählte Fotos; Profil, Pläne und Verlauf bleiben privat.",
+    "confirmSharedImport": "zum Kochbuch hinzufügen",
+    "sharedImportFailed":
+        "Die Rezeptdatei konnte nicht importiert werden. Prüfe die Datei und den verfügbaren Speicher.",
+    "sharedImportTooLarge":
+        "Die Datei überschreitet die Grenzen für Rezepte oder Fotos. Teile weniger Rezepte oder lasse Fotos weg.",
+    "sharedImportSuccess": "Rezepte hinzugefügt",
+    "sharedImportAlreadyPresent":
+        "Diese Rezepte sind bereits in deinem Kochbuch.",
+
     'originalAmount': 'Originalmenge · nicht umgerechnet',
     "sourceAuthor": "Autor (Angabe der Webseite)",
     "sourceDiet": "Ernährung (Angabe der Webseite, ungeprüft)",

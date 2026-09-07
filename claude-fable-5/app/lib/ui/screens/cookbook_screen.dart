@@ -12,6 +12,7 @@ import '../theme.dart';
 import '../widgets/decor.dart';
 import '../widgets/recipe_row.dart';
 import 'personal_recipe_editor_screen.dart';
+import 'recipe_sharing_screen.dart';
 import 'website_import_screen.dart';
 
 /// The cookbook: saved variants (offset-paginated, 30/page) and the
@@ -140,6 +141,16 @@ class _CookbookScreenState extends State<CookbookScreen> {
                     s('yourCookbook'),
                     style: morph.text.display.copyWith(fontSize: 30),
                   ),
+                ),
+                IconButton(
+                  key: const ValueKey('open-recipe-sharing'),
+                  tooltip: s('recipeSharingTitle'),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const RecipeSharingScreen(),
+                    ),
+                  ),
+                  icon: const Icon(Icons.share_outlined),
                 ),
                 IconButton(
                   key: const ValueKey('import-website-recipe'),

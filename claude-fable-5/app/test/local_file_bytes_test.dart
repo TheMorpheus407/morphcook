@@ -43,6 +43,29 @@ void main() {
     );
   });
 
+  test(
+    'startup retains fresh share copies and removes stale files individually',
+    () async {
+      final root = await Directory.systemTemp.createTemp(
+        'morphcook-cleanup-age-',
+      );
+      addTearDown(() => root.delete(recursive: true));
+      final cache = await Directory('${root.path}/share_plus').create();
+      final old = await File('${cache.path}/old.zip').writeAsString('old');
+      await old.setLastModified(
+        DateTime.now().subtract(const Duration(days: 2)),
+      );
+      final fresh = await File(
+        '${cache.path}/fresh.zip',
+      ).writeAsString('active transfer');
+      await clearMorphCookTemporaryFilesIn(root);
+      expect(await old.exists(), isFalse);
+      expect(await fresh.readAsString(), 'active transfer');
+      await clearMorphCookTemporaryFilesIn(root, minimumAge: Duration.zero);
+      expect(await cache.exists(), isFalse);
+    },
+  );
+
   test('stale backup cleanup includes the share_plus Android cache', () async {
     final root = await Directory.systemTemp.createTemp('morphcook-cleanup-');
     addTearDown(() async {
@@ -59,7 +82,7 @@ void main() {
     ).writeAsString('copied backup');
     await File('${unrelated.path}/unrelated.txt').writeAsString('keep');
 
-    await clearMorphCookTemporaryFilesIn(root);
+    await clearMorphCookTemporaryFilesIn(root, minimumAge: Duration.zero);
 
     expect(await export.exists(), isFalse);
     expect(await shareCache.exists(), isFalse);

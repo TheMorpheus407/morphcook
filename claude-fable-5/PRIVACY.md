@@ -38,6 +38,17 @@ default. You can remove a photo or delete a personal recipe from its detail page
 Website dietary claims are retained as unverified text and do not qualify an
 imported recipe for dietary or allergy filtering.
 
+## Sharing recipes and cookbooks
+
+Sharing a recipe or cookbook creates a ZIP containing a recipe file and a readable text file.
+These contain only the chosen recipe (or all saved and personal recipes),
+source attribution, and photos if you explicitly include them. They do not
+include your profile, searches, meal plans, shopping lists or cooking history.
+The operating system handles the selected transfer, such as Bluetooth or
+Quick Share. These recipe files are not password-encrypted. Original photo
+metadata travels with included photos. Importing a received file adds recipes
+without replacing your existing cookbook or other app data.
+
 ## Backups
 
 The backup includes your personal recipes and chosen recipe photos. It writes a
@@ -50,14 +61,15 @@ sidecar. Password-protected exports ask you to enter the password twice. We
 cannot recover that password — nobody can, that's the point. MorphCook removes
 its source export directory after the system share sheet closes. On Android,
 the sharing component keeps a separate app-private cache copy long enough for
-the receiving app to read it; MorphCook cleans stale sharing-cache copies the
-next time Settings is initialized or you reset the app.
+the receiving app to read it; MorphCook cleans sharing-cache files older than one day when the app starts. Recent
+copies remain available for the receiving app. Resetting the app removes all
+MorphCook sharing-cache files.
 
 ## Permissions
 
 The app requests no sensitive permissions. It does not access your
 location, contacts, camera, or microphone. The system file picker is opened
-only when you explicitly choose a recipe photo or a backup to import. Selected
+only when you explicitly choose a recipe photo, received recipe file or a backup to import. Selected
 photo files are copied byte-for-byte into the app's private storage; embedded
 metadata in that file (such as camera details or a location tag) therefore also
 travels in an exported backup. MorphCook does not inspect that metadata. Broad

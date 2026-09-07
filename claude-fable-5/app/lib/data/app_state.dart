@@ -15,6 +15,7 @@ import '../models/personal_recipe.dart';
 import '../models/profile.dart';
 import '../models/recipe.dart';
 import '../models/recipe_image.dart';
+import '../models/recipe_share.dart';
 import 'corpus.dart';
 import 'store.dart';
 
@@ -237,6 +238,139 @@ class AppState extends ChangeNotifier {
     _saved = nextSaved;
     if (invalidateCookProgress) _cookProgress = null;
     notifyListeners();
+  }
+
+  Future<void> _sharedRecipeImportTail = Future<void>.value();
+
+  /// Add received recipes without applying backup/profile/history state.
+  /// Conflicts become deterministic copies, so importing a file twice does not
+  /// keep creating copies. Local content and photos are never overwritten.
+  Future<int> importSharedRecipes(RecipeShareData data) {
+    final result = _sharedRecipeImportTail.then(
+      (_) => _importSharedRecipes(data),
+    );
+    _sharedRecipeImportTail = result.then<void>((_) {}, onError: (Object _) {});
+    return result;
+  }
+
+  Future<int> _importSharedRecipes(RecipeShareData data) async {
+    final nextRecipes = {
+      for (final recipe in _personalRecipes) recipe.id: recipe,
+    };
+    final nextImages = Map<String, RecipeImage>.of(_recipeImages);
+    final incomingImages = {
+      for (final image in data.images) image.recipeId: image,
+    };
+    final addedRecipes = <PersonalRecipe>[];
+    final addedImages = <String, RecipeImage>{};
+
+    for (final incoming in data.recipes) {
+      final image = incomingImages[incoming.id];
+      final content = recipeShareContent(incoming);
+      final contentDigest = recipeShareDigest(utf8.encode(content));
+      String? imageDigest;
+      var targetId = incoming.id;
+      var conflict = 0;
+      while (nextRecipes.containsKey(targetId)) {
+        final existing = nextRecipes[targetId]!;
+        final existingImage = nextImages[targetId];
+        if (recipeShareContent(existing) == content &&
+            (image == null ||
+                existingImage == null ||
+                listEquals(existingImage.bytes, image.bytes))) {
+          break;
+        }
+        if (conflict > 0 && image != null) {
+          imageDigest ??= recipeShareDigest(image.bytes);
+        }
+        targetId = sharedPersonalRecipeId(
+          'morphcook-share:${incoming.id}:$contentDigest:${conflict == 0 ? '' : imageDigest ?? ''}:$conflict',
+        );
+        conflict++;
+      }
+      if (!nextRecipes.containsKey(targetId)) {
+        final copy = targetId == incoming.id
+            ? incoming
+            : remapSharedRecipe(incoming, targetId);
+        nextRecipes[targetId] = copy;
+        addedRecipes.add(copy);
+      }
+      if (image != null && !nextImages.containsKey(targetId)) {
+        final copy = targetId == image.recipeId
+            ? image
+            : RecipeImage(
+                recipeId: targetId,
+                bytes: image.bytes,
+                updatedAt: image.updatedAt,
+              );
+        nextImages[targetId] = copy;
+        addedImages[targetId] = copy;
+      }
+    }
+    if (nextRecipes.length > maxPersonalRecipes) {
+      throw const PersonalRecipeLimitException(PersonalRecipeLimitReason.count);
+    }
+    if (!personalRecipesFitBackup(nextRecipes.values)) {
+      throw const PersonalRecipeLimitException(
+        PersonalRecipeLimitReason.backupSize,
+      );
+    }
+    if (nextImages.length > maxBackupRecipeImages ||
+        nextImages.values.fold<int>(
+              0,
+              (size, image) => size + image.bytes.length,
+            ) >
+            maxBackupImageBytes) {
+      throw const RecipeShareException(RecipeShareFailure.tooLarge);
+    }
+    if (addedRecipes.isEmpty && addedImages.isEmpty) return 0;
+    final now = DateTime.now();
+    final nextSaved = [
+      ..._saved,
+      for (final recipe in addedRecipes)
+        if (!isSaved(recipe.id)) SavedRecipe(recipeId: recipe.id, savedAt: now),
+    ];
+    final previousCollections = <String, String>{
+      'personal_recipes': jsonEncode(
+        _personalRecipes.map((recipe) => recipe.toJson()).toList(),
+      ),
+      'saved': jsonEncode(_saved.map((recipe) => recipe.toJson()).toList()),
+      'recipe_image_metadata': jsonEncode(
+        _recipeImages.values.map((image) => image.metadata.toJson()).toList(),
+      ),
+    };
+    final nextCollections = <String, String>{
+      'personal_recipes': jsonEncode(
+        nextRecipes.values.map((recipe) => recipe.toJson()).toList(),
+      ),
+      'saved': jsonEncode(nextSaved.map((recipe) => recipe.toJson()).toList()),
+      'recipe_image_metadata': jsonEncode(
+        nextImages.values.map((image) => image.metadata.toJson()).toList(),
+      ),
+    };
+    try {
+      if (addedImages.isNotEmpty) {
+        await store.putRecipeImageBytesBatch({
+          for (final image in addedImages.values) image.recipeId: image.bytes,
+        });
+      }
+      await store.putCollections(nextCollections);
+    } catch (_) {
+      // Restore each independent storage component even if another rollback
+      // operation fails. No in-memory state is published before both writes.
+      try {
+        await store.putCollections(previousCollections);
+      } catch (_) {}
+      try {
+        await store.removeRecipeImageBytesBatch(addedImages.keys);
+      } catch (_) {}
+      rethrow;
+    }
+    _personalRecipes = nextRecipes.values.toList();
+    _saved = nextSaved;
+    _recipeImages = nextImages;
+    notifyListeners();
+    return addedRecipes.length;
   }
 
   /// Deletes the owned recipe and every reference that cannot be rendered

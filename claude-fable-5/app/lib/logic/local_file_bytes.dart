@@ -61,33 +61,58 @@ Future<void> clearPickerTemporaryFiles() async {
   }
 }
 
-/// Removes backup artifacts created by MorphCook and by share_plus from the
-/// app-private cache directory. Android's share implementation copies every
-/// shared XFile into a `share_plus` child directory, so deleting only the
-/// source export would otherwise leave a complete backup behind.
+/// Serialize creation of native share copies with cache cleanup. A chooser
+/// returning does not mean that its receiving app has read the file yet.
+Future<void> _shareFileWork = Future<void>.value();
+
+Future<T> withMorphCookShareFiles<T>(Future<T> Function() action) {
+  final result = _shareFileWork.then((_) => action());
+  _shareFileWork = result.then<void>(
+    (_) {},
+    onError: (Object _, StackTrace __) {},
+  );
+  return result;
+}
+
+/// Normal startup removes files older than a day and retains recent transfer
+/// copies. Explicit reset can pass Duration.zero to remove all private copies.
 Future<void> clearMorphCookTemporaryFilesIn(
-  Directory temporaryDirectory,
-) async {
+  Directory temporaryDirectory, {
+  Duration minimumAge = const Duration(days: 1),
+  DateTime? now,
+}) => withMorphCookShareFiles(() async {
+  final cutoff = (now ?? DateTime.now()).subtract(minimumAge);
+  Future<void> removeStale(FileSystemEntity entity) async {
+    try {
+      if (entity is Directory) {
+        await for (final child in entity.list(followLinks: false)) {
+          await removeStale(child);
+        }
+        // A fresh child protects the directory. Non-recursive removal also
+        // handles another process creating a file during cleanup safely.
+        await entity.delete();
+      } else if (minimumAge == Duration.zero ||
+          !(await entity.stat()).modified.isAfter(cutoff)) {
+        await entity.delete();
+      }
+    } catch (_) {
+      // Cleanup is best effort and must preserve files still in use.
+    }
+  }
+
   try {
-    await for (final entity in temporaryDirectory.list()) {
-      final segments = entity.uri.pathSegments
-          .where((segment) => segment.isNotEmpty)
-          .toList();
+    await for (final entity in temporaryDirectory.list(followLinks: false)) {
+      final segments = entity.uri.pathSegments.where((s) => s.isNotEmpty);
       if (segments.isEmpty) continue;
       final name = segments.last;
-      if (name != 'share_plus' &&
-          !name.startsWith('morphcook-export-') &&
-          name != 'morphcook-backup.json' &&
-          name != 'morphcook-backup.json.gz') {
-        continue;
-      }
-      try {
-        await entity.delete(recursive: true);
-      } catch (_) {
-        // Cache cleanup is best-effort; another process may remove it first.
+      if (name == 'share_plus' ||
+          name.startsWith('morphcook-export-') ||
+          name == 'morphcook-backup.json' ||
+          name == 'morphcook-backup.json.gz') {
+        await removeStale(entity);
       }
     }
   } catch (_) {
-    // A platform may clean or replace its cache directory concurrently.
+    // The operating system may clean the cache concurrently.
   }
-}
+});

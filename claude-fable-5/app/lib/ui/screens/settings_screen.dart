@@ -639,8 +639,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
         await gzFile.writeAsBytes(export.gzipFile!, flush: true);
         files.add(XFile(gzFile.path));
       }
-      await SharePlus.instance.share(
-        ShareParams(files: files, subject: 'morphcook backup'),
+      await withMorphCookShareFiles(
+        () => SharePlus.instance.share(
+          ShareParams(files: files, subject: 'morphcook backup'),
+        ),
       );
     } on DecryptionException catch (error) {
       _toast(error.message);
@@ -845,15 +847,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
     if (confirmed == true) {
       await state.resetEverything();
-      await _clearMorphCookTemporaryFiles();
+      await _clearMorphCookTemporaryFiles(reset: true);
     }
   }
 
-  Future<void> _clearMorphCookTemporaryFiles() async {
-    await clearPickerTemporaryFiles();
+  Future<void> _clearMorphCookTemporaryFiles({bool reset = false}) async {
+    await withMorphCookShareFiles(clearPickerTemporaryFiles);
     try {
       final temp = await getTemporaryDirectory();
-      await clearMorphCookTemporaryFilesIn(temp);
+      await clearMorphCookTemporaryFilesIn(
+        temp,
+        minimumAge: reset ? Duration.zero : const Duration(days: 1),
+      );
     } catch (_) {
       // A platform may clean its cache concurrently; nothing remains to do.
     }

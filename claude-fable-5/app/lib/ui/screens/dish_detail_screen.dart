@@ -17,6 +17,7 @@ import 'cook_mode_screen.dart';
 import 'faq_screen.dart';
 import 'guide_sheet.dart';
 import 'personal_recipe_editor_screen.dart';
+import 'recipe_sharing_screen.dart';
 
 const _dimensions = ['diet', 'effort', 'calorie'];
 
@@ -173,6 +174,16 @@ class _DishDetailScreenState extends State<DishDetailScreen> {
           style: morph.text.display.copyWith(fontSize: 22),
         ),
         actions: [
+          IconButton(
+            key: const ValueKey('share-detail-recipe'),
+            icon: const Icon(Icons.share_outlined),
+            tooltip: s('shareRecipe'),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => RecipeSharingScreen(recipeId: recipe.id),
+              ),
+            ),
+          ),
           if (personal != null)
             IconButton(
               key: const ValueKey('edit-personal-recipe'),

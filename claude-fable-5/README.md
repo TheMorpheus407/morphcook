@@ -12,8 +12,8 @@ whole grid stays yours. Not a substitution engine, and never a compromise.
 telemetry, no runtime AI. The bilingual (EN/DE) recipe corpus ships bundled
 and is generated offline by a multi-agent pipeline, then human-reviewed.
 People can also import recipe links from websites on request, review them, and
-keep recipes and optional photos locally; both travel
-through a MorphCook backup only when someone explicitly exports it. The phone's
+keep recipes and optional photos locally; both can be shared through a recipe file or MorphCook backup when someone
+explicitly exports them. Recipe sharing excludes profile, plans and history. The phone's
 own OS-level device backup may separately include app data when enabled.
 
 ## Layout

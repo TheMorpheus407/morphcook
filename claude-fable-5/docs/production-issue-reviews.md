@@ -29,3 +29,29 @@ Validation: Flutter 3.38.3 analysis clean; full suite 211 passing tests;
 20 parser tests passed after strengthening the expansion regression;
 Android release APK builds successfully. Website availability remains subject
 to the source site's access policy and published recipe data.
+
+## Issue 7 — share recipes and cookbooks
+
+Recipe details can share one recipe; the cookbook can share all saved and
+personal recipes. Android receives one Bluetooth-compatible ZIP containing
+readable recipe text and importable JSON. Photos are optional. Recipients
+preview and confirm additions without replacing their profile, plans,
+shopping list, cooking progress, or existing recipes. Duplicate imports are
+idempotent and conflicting recipes/photos receive separate local copies.
+
+Regression coverage: localized bundled recipes, source/raw-amount round trips,
+photo opt-in, duplicate/conflict handling, persistence rollback, unrelated-data
+preservation, bounded JSON/ZIP decoding, dense valid cookbooks, native share
+files, cache lifetime, preview/cancel, and navigation during import.
+
+Reviewers: `review6_a`, `release_audit`, `web_import`. All independently approved
+the complete change after iterations covering Bluetooth MIME compatibility,
+bounded archive inflation, receiver-copy lifetime, import navigation, and
+pre-decode JSON limits that also accept the full valid format envelope.
+Each reviewer contributed a separate implementation portion, disclosed that
+contribution, and reviewed the complete integration and subsequent corrections.
+
+Validation: Flutter 3.38.3 analysis clean; full suite 248 passing tests;
+Android release APK built and installed. Android API 34 resolves the ZIP SEND
+intent to its Bluetooth activity. Actual radio transfer requires a second
+device and depends on the receiving device's available sharing apps.
