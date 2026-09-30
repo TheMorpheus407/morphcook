@@ -1,0 +1,2800 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {
+      "id": "dairy",
+      "name": {
+        "en": "dairy",
+        "de": "Milchprodukte"
+      },
+      "parent": null,
+      "flags": [
+        "dairy"
+      ],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "cow-milk",
+      "name": {
+        "en": "cow milk",
+        "de": "Kuhmilch"
+      },
+      "parent": "dairy",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "whole-milk",
+      "name": {
+        "en": "whole milk",
+        "de": "Vollmilch"
+      },
+      "parent": "cow-milk",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "skim-milk",
+      "name": {
+        "en": "skim milk",
+        "de": "Magermilch"
+      },
+      "parent": "cow-milk",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "goat-milk",
+      "name": {
+        "en": "goat milk",
+        "de": "Ziegenmilch"
+      },
+      "parent": "dairy",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "cream",
+      "name": {
+        "en": "cream",
+        "de": "Sahne"
+      },
+      "parent": "dairy",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "heavy-cream",
+      "name": {
+        "en": "heavy cream",
+        "de": "Schlagsahne"
+      },
+      "parent": "cream",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "liquid"
+    },
+    {
+      "id": "sour-cream",
+      "name": {
+        "en": "sour cream",
+        "de": "Schmand"
+      },
+      "parent": "cream",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "sauce"
+    },
+    {
+      "id": "yogurt",
+      "name": {
+        "en": "yogurt",
+        "de": "Joghurt"
+      },
+      "parent": "dairy",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "sauce"
+    },
+    {
+      "id": "greek-yogurt",
+      "name": {
+        "en": "greek yogurt",
+        "de": "griechischer Joghurt"
+      },
+      "parent": "yogurt",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "sauce"
+    },
+    {
+      "id": "butter",
+      "name": {
+        "en": "butter",
+        "de": "Butter"
+      },
+      "parent": "dairy",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "cheese",
+      "name": {
+        "en": "cheese",
+        "de": "Käse"
+      },
+      "parent": "dairy",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "parmesan",
+      "name": {
+        "en": "parmesan",
+        "de": "Parmesan"
+      },
+      "parent": "cheese",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "pecorino",
+      "name": {
+        "en": "pecorino",
+        "de": "Pecorino"
+      },
+      "parent": "cheese",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "feta",
+      "name": {
+        "en": "feta",
+        "de": "Feta"
+      },
+      "parent": "cheese",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "mozzarella",
+      "name": {
+        "en": "mozzarella",
+        "de": "Mozzarella"
+      },
+      "parent": "cheese",
+      "flags": [
+        "lactose"
+      ],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "cheddar",
+      "name": {
+        "en": "cheddar",
+        "de": "Cheddar"
+      },
+      "parent": "cheese",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "eggs",
+      "name": {
+        "en": "eggs",
+        "de": "Eier"
+      },
+      "parent": null,
+      "flags": [
+        "egg"
+      ],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "egg",
+      "name": {
+        "en": "egg",
+        "de": "Ei"
+      },
+      "parent": "eggs",
+      "flags": [],
+      "aisle": "dairy",
+      "type": "solid"
+    },
+    {
+      "id": "meat",
+      "name": {
+        "en": "meat",
+        "de": "Fleisch"
+      },
+      "parent": null,
+      "flags": [
+        "meat"
+      ],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "beef",
+      "name": {
+        "en": "beef",
+        "de": "Rindfleisch"
+      },
+      "parent": "meat",
+      "flags": [
+        "beef"
+      ],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "ground-beef",
+      "name": {
+        "en": "ground beef",
+        "de": "Rinderhack"
+      },
+      "parent": "beef",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "beef-chuck",
+      "name": {
+        "en": "beef chuck, in chunks",
+        "de": "Rindernacken, gewürfelt"
+      },
+      "parent": "beef",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "beef-sirloin",
+      "name": {
+        "en": "beef sirloin, thinly sliced",
+        "de": "Rinderhüfte, dünn geschnitten"
+      },
+      "parent": "beef",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "lamb",
+      "name": {
+        "en": "lamb",
+        "de": "Lammfleisch"
+      },
+      "parent": "meat",
+      "flags": [
+        "lamb"
+      ],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "ground-lamb",
+      "name": {
+        "en": "ground lamb",
+        "de": "Lammhack"
+      },
+      "parent": "lamb",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "pork",
+      "name": {
+        "en": "pork",
+        "de": "Schweinefleisch"
+      },
+      "parent": "meat",
+      "flags": [
+        "pork"
+      ],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "pork-belly",
+      "name": {
+        "en": "pork belly",
+        "de": "Schweinebauch"
+      },
+      "parent": "pork",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "pork-cutlet",
+      "name": {
+        "en": "pork cutlet",
+        "de": "Schweineschnitzel"
+      },
+      "parent": "pork",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "pancetta",
+      "name": {
+        "en": "pancetta",
+        "de": "Pancetta"
+      },
+      "parent": "pork",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "poultry",
+      "name": {
+        "en": "poultry",
+        "de": "Geflügel"
+      },
+      "parent": "meat",
+      "flags": [
+        "poultry"
+      ],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "chicken-breast",
+      "name": {
+        "en": "chicken breast",
+        "de": "Hähnchenbrust"
+      },
+      "parent": "poultry",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "chicken-thigh",
+      "name": {
+        "en": "chicken thigh, boneless",
+        "de": "Hähnchenschenkel, ohne Knochen"
+      },
+      "parent": "poultry",
+      "flags": [],
+      "aisle": "meat",
+      "type": "solid"
+    },
+    {
+      "id": "seafood",
+      "name": {
+        "en": "seafood",
+        "de": "Meeresfrüchte & Fisch"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "fish",
+      "type": "solid"
+    },
+    {
+      "id": "fish",
+      "name": {
+        "en": "fish",
+        "de": "Fisch"
+      },
+      "parent": "seafood",
+      "flags": [
+        "fish"
+      ],
+      "aisle": "fish",
+      "type": "solid"
+    },
+    {
+      "id": "anchovies",
+      "name": {
+        "en": "anchovy fillets",
+        "de": "Sardellenfilets"
+      },
+      "parent": "fish",
+      "flags": [],
+      "aisle": "fish",
+      "type": "solid"
+    },
+    {
+      "id": "fish-sauce",
+      "name": {
+        "en": "fish sauce",
+        "de": "Fischsauce"
+      },
+      "parent": "fish",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "shellfish",
+      "name": {
+        "en": "shellfish",
+        "de": "Krebstiere"
+      },
+      "parent": "seafood",
+      "flags": [
+        "shellfish"
+      ],
+      "aisle": "fish",
+      "type": "solid"
+    },
+    {
+      "id": "shrimp",
+      "name": {
+        "en": "shrimp",
+        "de": "Garnelen"
+      },
+      "parent": "shellfish",
+      "flags": [],
+      "aisle": "fish",
+      "type": "solid"
+    },
+    {
+      "id": "nuts",
+      "name": {
+        "en": "nuts",
+        "de": "Nüsse"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "tree-nuts",
+      "name": {
+        "en": "tree nuts",
+        "de": "Schalenfrüchte"
+      },
+      "parent": "nuts",
+      "flags": [
+        "tree-nuts"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "walnuts",
+      "name": {
+        "en": "walnuts",
+        "de": "Walnüsse"
+      },
+      "parent": "tree-nuts",
+      "flags": [
+        "walnuts"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "almonds",
+      "name": {
+        "en": "almonds",
+        "de": "Mandeln"
+      },
+      "parent": "tree-nuts",
+      "flags": [
+        "almonds"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "ground-almonds",
+      "name": {
+        "en": "ground almonds",
+        "de": "gemahlene Mandeln"
+      },
+      "parent": "almonds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "powder"
+    },
+    {
+      "id": "pistachios",
+      "name": {
+        "en": "pistachios",
+        "de": "Pistazien"
+      },
+      "parent": "tree-nuts",
+      "flags": [
+        "pistachios"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "cashews",
+      "name": {
+        "en": "cashews",
+        "de": "Cashewkerne"
+      },
+      "parent": "tree-nuts",
+      "flags": [
+        "cashews"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "hazelnuts",
+      "name": {
+        "en": "hazelnuts",
+        "de": "Haselnüsse"
+      },
+      "parent": "tree-nuts",
+      "flags": [
+        "hazelnuts"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "peanuts",
+      "name": {
+        "en": "peanuts",
+        "de": "Erdnüsse"
+      },
+      "parent": "nuts",
+      "flags": [
+        "peanuts"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "peanut-butter",
+      "name": {
+        "en": "peanut butter",
+        "de": "Erdnussbutter"
+      },
+      "parent": "peanuts",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "sauce"
+    },
+    {
+      "id": "seeds",
+      "name": {
+        "en": "seeds",
+        "de": "Saaten"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "sesame-seeds",
+      "name": {
+        "en": "sesame seeds",
+        "de": "Sesam"
+      },
+      "parent": "seeds",
+      "flags": [
+        "sesame"
+      ],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "tahini",
+      "name": {
+        "en": "tahini",
+        "de": "Tahini"
+      },
+      "parent": "sesame-seeds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "sauce"
+    },
+    {
+      "id": "sunflower-seeds",
+      "name": {
+        "en": "sunflower seeds",
+        "de": "Sonnenblumenkerne"
+      },
+      "parent": "seeds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "pumpkin-seeds",
+      "name": {
+        "en": "pumpkin seeds",
+        "de": "Kürbiskerne"
+      },
+      "parent": "seeds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "chia-seeds",
+      "name": {
+        "en": "chia seeds",
+        "de": "Chiasamen"
+      },
+      "parent": "seeds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "solid"
+    },
+    {
+      "id": "flaxseed",
+      "name": {
+        "en": "ground flaxseed",
+        "de": "geschrotete Leinsamen"
+      },
+      "parent": "seeds",
+      "flags": [],
+      "aisle": "nuts",
+      "type": "powder"
+    },
+    {
+      "id": "grains",
+      "name": {
+        "en": "grains & pasta",
+        "de": "Getreide & Nudeln"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "wheat",
+      "name": {
+        "en": "wheat",
+        "de": "Weizen"
+      },
+      "parent": "grains",
+      "flags": [
+        "gluten"
+      ],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "wheat-flour",
+      "name": {
+        "en": "wheat flour",
+        "de": "Weizenmehl"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "fettuccine",
+      "name": {
+        "en": "fettuccine",
+        "de": "Fettuccine"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "spaghetti",
+      "name": {
+        "en": "spaghetti",
+        "de": "Spaghetti"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "ramen-noodles",
+      "name": {
+        "en": "ramen noodles",
+        "de": "Ramen-Nudeln"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "panko",
+      "name": {
+        "en": "panko breadcrumbs",
+        "de": "Panko-Paniermehl"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": {
+        "en": "breadcrumbs",
+        "de": "Semmelbrösel"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "bulgur",
+      "name": {
+        "en": "bulgur",
+        "de": "Bulgur"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "seitan",
+      "name": {
+        "en": "seitan",
+        "de": "Seitan"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "solid"
+    },
+    {
+      "id": "flatbread",
+      "name": {
+        "en": "flatbread (pide)",
+        "de": "Fladenbrot"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "bakery",
+      "type": "solid"
+    },
+    {
+      "id": "sourdough",
+      "name": {
+        "en": "sourdough bread",
+        "de": "Sauerteigbrot"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "bakery",
+      "type": "solid"
+    },
+    {
+      "id": "flour-tortilla",
+      "name": {
+        "en": "flour tortillas",
+        "de": "Weizentortillas"
+      },
+      "parent": "wheat",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "oats",
+      "name": {
+        "en": "rolled oats",
+        "de": "Haferflocken"
+      },
+      "parent": "grains",
+      "flags": [
+        "gluten"
+      ],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "gf-oats",
+      "name": {
+        "en": "certified gluten-free oats",
+        "de": "glutenfreie Haferflocken"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "rice",
+      "name": {
+        "en": "rice",
+        "de": "Reis"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "arborio-rice",
+      "name": {
+        "en": "arborio rice",
+        "de": "Risottoreis"
+      },
+      "parent": "rice",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "basmati-rice",
+      "name": {
+        "en": "basmati rice",
+        "de": "Basmatireis"
+      },
+      "parent": "rice",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "jasmine-rice",
+      "name": {
+        "en": "jasmine rice",
+        "de": "Jasminreis"
+      },
+      "parent": "rice",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "rice-noodles",
+      "name": {
+        "en": "flat rice noodles",
+        "de": "breite Reisnudeln"
+      },
+      "parent": "rice",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "rice-flour",
+      "name": {
+        "en": "rice flour",
+        "de": "Reismehl"
+      },
+      "parent": "rice",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "gf-pasta",
+      "name": {
+        "en": "gluten-free fettuccine (rice & corn)",
+        "de": "glutenfreie Fettuccine (Reis & Mais)"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "gf-flour",
+      "name": {
+        "en": "gluten-free flour blend",
+        "de": "glutenfreie Mehlmischung"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "gf-breadcrumbs",
+      "name": {
+        "en": "gluten-free breadcrumbs",
+        "de": "glutenfreies Paniermehl"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "pasta",
+      "type": "solid"
+    },
+    {
+      "id": "corn-tortilla",
+      "name": {
+        "en": "corn tortillas",
+        "de": "Maistortillas"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "cornstarch",
+      "name": {
+        "en": "cornstarch",
+        "de": "Speisestärke"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "buckwheat-noodles",
+      "name": {
+        "en": "100% buckwheat soba",
+        "de": "100% Buchweizen-Soba"
+      },
+      "parent": "grains",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "legumes",
+      "name": {
+        "en": "legumes",
+        "de": "Hülsenfrüchte"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "chickpeas",
+      "name": {
+        "en": "chickpeas, cooked",
+        "de": "Kichererbsen, gegart"
+      },
+      "parent": "legumes",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "dried-chickpeas",
+      "name": {
+        "en": "dried chickpeas",
+        "de": "getrocknete Kichererbsen"
+      },
+      "parent": "chickpeas",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "chickpea-flour",
+      "name": {
+        "en": "chickpea flour",
+        "de": "Kichererbsenmehl"
+      },
+      "parent": "legumes",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "lentils",
+      "name": {
+        "en": "lentils",
+        "de": "Linsen"
+      },
+      "parent": "legumes",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "red-lentils",
+      "name": {
+        "en": "red lentils",
+        "de": "rote Linsen"
+      },
+      "parent": "lentils",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "brown-lentils",
+      "name": {
+        "en": "brown lentils",
+        "de": "braune Linsen"
+      },
+      "parent": "lentils",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "beans",
+      "name": {
+        "en": "beans",
+        "de": "Bohnen"
+      },
+      "parent": "legumes",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "kidney-beans",
+      "name": {
+        "en": "kidney beans",
+        "de": "Kidneybohnen"
+      },
+      "parent": "beans",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "black-beans",
+      "name": {
+        "en": "black beans",
+        "de": "schwarze Bohnen"
+      },
+      "parent": "beans",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "soy",
+      "name": {
+        "en": "soy",
+        "de": "Soja"
+      },
+      "parent": "legumes",
+      "flags": [
+        "soy"
+      ],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "tofu",
+      "name": {
+        "en": "firm tofu",
+        "de": "fester Tofu"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "solid"
+    },
+    {
+      "id": "silken-tofu",
+      "name": {
+        "en": "silken tofu",
+        "de": "Seidentofu"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "solid"
+    },
+    {
+      "id": "smoked-tofu",
+      "name": {
+        "en": "smoked tofu",
+        "de": "Räuchertofu"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "solid"
+    },
+    {
+      "id": "soy-sauce",
+      "name": {
+        "en": "soy sauce",
+        "de": "Sojasauce"
+      },
+      "parent": "soy",
+      "flags": [
+        "gluten"
+      ],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "tamari",
+      "name": {
+        "en": "tamari (gluten-free)",
+        "de": "Tamari (glutenfrei)"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "miso",
+      "name": {
+        "en": "white miso",
+        "de": "helle Misopaste"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "soy-milk",
+      "name": {
+        "en": "soy milk",
+        "de": "Sojadrink"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "liquid"
+    },
+    {
+      "id": "soy-yogurt",
+      "name": {
+        "en": "plain soy yogurt",
+        "de": "Sojajoghurt natur"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "sauce"
+    },
+    {
+      "id": "tvp",
+      "name": {
+        "en": "soy mince (dry)",
+        "de": "Sojagranulat"
+      },
+      "parent": "soy",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "solid"
+    },
+    {
+      "id": "vegetables",
+      "name": {
+        "en": "vegetables",
+        "de": "Gemüse"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "alliums",
+      "name": {
+        "en": "onions & garlic",
+        "de": "Zwiebeln & Knoblauch"
+      },
+      "parent": "vegetables",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "onion",
+      "name": {
+        "en": "onion",
+        "de": "Zwiebel"
+      },
+      "parent": "alliums",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "red-onion",
+      "name": {
+        "en": "red onion",
+        "de": "rote Zwiebel"
+      },
+      "parent": "alliums",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "garlic",
+      "name": {
+        "en": "garlic",
+        "de": "Knoblauch"
+      },
+      "parent": "alliums",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "leek",
+      "name": {
+        "en": "leek",
+        "de": "Lauch"
+      },
+      "parent": "alliums",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "shallot",
+      "name": {
+        "en": "shallot",
+        "de": "Schalotte"
+      },
+      "parent": "alliums",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "spring-onion",
+      "name": {
+        "en": "spring onion, green tops",
+        "de": "Frühlingszwiebel, nur das Grün"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "garlic-oil",
+      "name": {
+        "en": "garlic-infused oil",
+        "de": "Knoblauchöl"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "oil"
+    },
+    {
+      "id": "peppers",
+      "name": {
+        "en": "peppers",
+        "de": "Paprika & Chilis"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "bell-pepper",
+      "name": {
+        "en": "bell pepper",
+        "de": "Paprikaschote"
+      },
+      "parent": "peppers",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "chili-pepper",
+      "name": {
+        "en": "fresh chili",
+        "de": "frische Chili"
+      },
+      "parent": "peppers",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "jalapeno",
+      "name": {
+        "en": "jalapeño",
+        "de": "Jalapeño"
+      },
+      "parent": "peppers",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "tomatoes",
+      "name": {
+        "en": "tomatoes",
+        "de": "Tomaten"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "tomato",
+      "name": {
+        "en": "tomato",
+        "de": "Tomate"
+      },
+      "parent": "tomatoes",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "cherry-tomatoes",
+      "name": {
+        "en": "cherry tomatoes",
+        "de": "Kirschtomaten"
+      },
+      "parent": "tomatoes",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "canned-tomatoes",
+      "name": {
+        "en": "crushed tomatoes",
+        "de": "gehackte Tomaten"
+      },
+      "parent": "tomatoes",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "tomato-paste",
+      "name": {
+        "en": "tomato paste",
+        "de": "Tomatenmark"
+      },
+      "parent": "tomatoes",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "leafy-greens",
+      "name": {
+        "en": "leafy greens",
+        "de": "Blattgemüse"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "romaine",
+      "name": {
+        "en": "romaine lettuce",
+        "de": "Römersalat"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "spinach",
+      "name": {
+        "en": "baby spinach",
+        "de": "Babyspinat"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "red-cabbage",
+      "name": {
+        "en": "red cabbage",
+        "de": "Rotkohl"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "white-cabbage",
+      "name": {
+        "en": "white cabbage",
+        "de": "Weißkohl"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "bok-choy",
+      "name": {
+        "en": "bok choy",
+        "de": "Pak Choi"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "kale",
+      "name": {
+        "en": "kale",
+        "de": "Grünkohl"
+      },
+      "parent": "leafy-greens",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "roots",
+      "name": {
+        "en": "roots & tubers",
+        "de": "Wurzeln & Knollen"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "carrot",
+      "name": {
+        "en": "carrot",
+        "de": "Karotte"
+      },
+      "parent": "roots",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "celery-stalk",
+      "name": {
+        "en": "celery stalk",
+        "de": "Staudensellerie"
+      },
+      "parent": "roots",
+      "flags": [
+        "celery"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "celeriac",
+      "name": {
+        "en": "celeriac",
+        "de": "Knollensellerie"
+      },
+      "parent": "roots",
+      "flags": [
+        "celery"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "potato",
+      "name": {
+        "en": "potato",
+        "de": "Kartoffel"
+      },
+      "parent": "roots",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "sweet-potato",
+      "name": {
+        "en": "sweet potato",
+        "de": "Süßkartoffel"
+      },
+      "parent": "roots",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "ginger",
+      "name": {
+        "en": "fresh ginger",
+        "de": "frischer Ingwer"
+      },
+      "parent": "roots",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "cucumber",
+      "name": {
+        "en": "cucumber",
+        "de": "Gurke"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "zucchini",
+      "name": {
+        "en": "zucchini",
+        "de": "Zucchini"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "eggplant",
+      "name": {
+        "en": "eggplant",
+        "de": "Aubergine"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "mushrooms",
+      "name": {
+        "en": "mushrooms",
+        "de": "Pilze"
+      },
+      "parent": "vegetables",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "cremini",
+      "name": {
+        "en": "cremini mushrooms",
+        "de": "braune Champignons"
+      },
+      "parent": "mushrooms",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "shiitake",
+      "name": {
+        "en": "shiitake",
+        "de": "Shiitake"
+      },
+      "parent": "mushrooms",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "oyster-mushrooms",
+      "name": {
+        "en": "oyster mushrooms",
+        "de": "Austernpilze"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "bean-sprouts",
+      "name": {
+        "en": "bean sprouts",
+        "de": "Sojasprossen"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "cauliflower",
+      "name": {
+        "en": "cauliflower",
+        "de": "Blumenkohl"
+      },
+      "parent": "vegetables",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "broccoli",
+      "name": {
+        "en": "broccoli",
+        "de": "Brokkoli"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "peas",
+      "name": {
+        "en": "green peas",
+        "de": "Erbsen"
+      },
+      "parent": "vegetables",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "green-beans",
+      "name": {
+        "en": "green beans",
+        "de": "grüne Bohnen"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "corn",
+      "name": {
+        "en": "sweet corn",
+        "de": "Mais"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "avocado",
+      "name": {
+        "en": "avocado",
+        "de": "Avocado"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "nori",
+      "name": {
+        "en": "nori sheets",
+        "de": "Nori-Blätter"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "international",
+      "type": "solid"
+    },
+    {
+      "id": "pumpkin",
+      "name": {
+        "en": "pumpkin (hokkaido)",
+        "de": "Hokkaido-Kürbis"
+      },
+      "parent": "vegetables",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "fruit",
+      "name": {
+        "en": "fruit",
+        "de": "Obst"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "citrus",
+      "name": {
+        "en": "citrus",
+        "de": "Zitrusfrüchte"
+      },
+      "parent": "fruit",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "lemon",
+      "name": {
+        "en": "lemon",
+        "de": "Zitrone"
+      },
+      "parent": "citrus",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "lime",
+      "name": {
+        "en": "lime",
+        "de": "Limette"
+      },
+      "parent": "citrus",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "orange",
+      "name": {
+        "en": "orange",
+        "de": "Orange"
+      },
+      "parent": "citrus",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "apples",
+      "name": {
+        "en": "apples",
+        "de": "Äpfel"
+      },
+      "parent": "fruit",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "apple",
+      "name": {
+        "en": "apple",
+        "de": "Apfel"
+      },
+      "parent": "apples",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "banana",
+      "name": {
+        "en": "ripe banana",
+        "de": "reife Banane"
+      },
+      "parent": "fruit",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "berries",
+      "name": {
+        "en": "berries",
+        "de": "Beeren"
+      },
+      "parent": "fruit",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "blueberries",
+      "name": {
+        "en": "blueberries",
+        "de": "Heidelbeeren"
+      },
+      "parent": "berries",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "raspberries",
+      "name": {
+        "en": "raspberries",
+        "de": "Himbeeren"
+      },
+      "parent": "berries",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "strawberries",
+      "name": {
+        "en": "strawberries",
+        "de": "Erdbeeren"
+      },
+      "parent": "berries",
+      "flags": [],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "dates",
+      "name": {
+        "en": "medjool dates",
+        "de": "Medjool-Datteln"
+      },
+      "parent": "fruit",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "mango",
+      "name": {
+        "en": "mango",
+        "de": "Mango"
+      },
+      "parent": "fruit",
+      "flags": [
+        "high-fodmap"
+      ],
+      "aisle": "produce",
+      "type": "solid"
+    },
+    {
+      "id": "coconut-milk",
+      "name": {
+        "en": "coconut milk",
+        "de": "Kokosmilch"
+      },
+      "parent": "fruit",
+      "flags": [],
+      "aisle": "international",
+      "type": "liquid"
+    },
+    {
+      "id": "lingonberry-jam",
+      "name": {
+        "en": "lingonberry jam",
+        "de": "Preiselbeermarmelade"
+      },
+      "parent": "fruit",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "herbs",
+      "name": {
+        "en": "fresh herbs",
+        "de": "frische Kräuter"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "cilantro",
+      "name": {
+        "en": "cilantro",
+        "de": "Koriandergrün"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "parsley",
+      "name": {
+        "en": "flat-leaf parsley",
+        "de": "glatte Petersilie"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "mint",
+      "name": {
+        "en": "mint",
+        "de": "Minze"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "basil",
+      "name": {
+        "en": "basil",
+        "de": "Basilikum"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "thai-basil",
+      "name": {
+        "en": "thai basil",
+        "de": "Thai-Basilikum"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "dill",
+      "name": {
+        "en": "dill",
+        "de": "Dill"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "thyme",
+      "name": {
+        "en": "thyme",
+        "de": "Thymian"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "chives",
+      "name": {
+        "en": "chives",
+        "de": "Schnittlauch"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "lemongrass",
+      "name": {
+        "en": "lemongrass",
+        "de": "Zitronengras"
+      },
+      "parent": "herbs",
+      "flags": [],
+      "aisle": "herbs",
+      "type": "solid"
+    },
+    {
+      "id": "spices",
+      "name": {
+        "en": "spices",
+        "de": "Gewürze"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "salt",
+      "name": {
+        "en": "salt",
+        "de": "Salz"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "black-pepper",
+      "name": {
+        "en": "black pepper",
+        "de": "schwarzer Pfeffer"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "cumin",
+      "name": {
+        "en": "ground cumin",
+        "de": "Kreuzkümmel, gemahlen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "cumin-seeds",
+      "name": {
+        "en": "cumin seeds",
+        "de": "Kreuzkümmelsamen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "coriander",
+      "name": {
+        "en": "ground coriander",
+        "de": "Koriander, gemahlen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "paprika",
+      "name": {
+        "en": "sweet paprika",
+        "de": "Paprikapulver, edelsüß"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "smoked-paprika",
+      "name": {
+        "en": "smoked paprika",
+        "de": "geräuchertes Paprikapulver"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "chili-flakes",
+      "name": {
+        "en": "chili flakes",
+        "de": "Chiliflocken"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "pul-biber",
+      "name": {
+        "en": "pul biber (aleppo pepper)",
+        "de": "Pul Biber"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "cinnamon",
+      "name": {
+        "en": "ground cinnamon",
+        "de": "Zimt, gemahlen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "turmeric",
+      "name": {
+        "en": "ground turmeric",
+        "de": "Kurkuma, gemahlen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "oregano",
+      "name": {
+        "en": "dried oregano",
+        "de": "Oregano, getrocknet"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "nutmeg",
+      "name": {
+        "en": "nutmeg",
+        "de": "Muskatnuss"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "sumac",
+      "name": {
+        "en": "sumac",
+        "de": "Sumach"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "allspice",
+      "name": {
+        "en": "ground allspice",
+        "de": "Piment, gemahlen"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "garam-masala",
+      "name": {
+        "en": "garam masala",
+        "de": "Garam Masala"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "baking-powder",
+      "name": {
+        "en": "baking powder",
+        "de": "Backpulver"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "baking-soda",
+      "name": {
+        "en": "baking soda",
+        "de": "Natron"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "vanilla",
+      "name": {
+        "en": "ground vanilla",
+        "de": "gemahlene Vanille"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "baking",
+      "type": "spice"
+    },
+    {
+      "id": "cocoa",
+      "name": {
+        "en": "cocoa powder, unsweetened",
+        "de": "Kakaopulver, ungesüßt"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "espresso-powder",
+      "name": {
+        "en": "instant espresso powder",
+        "de": "Instant-Espressopulver"
+      },
+      "parent": "spices",
+      "flags": [
+        "caffeine"
+      ],
+      "aisle": "baking",
+      "type": "powder"
+    },
+    {
+      "id": "nutritional-yeast",
+      "name": {
+        "en": "nutritional yeast",
+        "de": "Hefeflocken"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "powder"
+    },
+    {
+      "id": "asafoetida",
+      "name": {
+        "en": "asafoetida (gluten-free)",
+        "de": "Asant (glutenfrei)"
+      },
+      "parent": "spices",
+      "flags": [],
+      "aisle": "spices",
+      "type": "spice"
+    },
+    {
+      "id": "condiments",
+      "name": {
+        "en": "oils & condiments",
+        "de": "Öle & Würzmittel"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "olive-oil",
+      "name": {
+        "en": "olive oil",
+        "de": "Olivenöl"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "oil"
+    },
+    {
+      "id": "neutral-oil",
+      "name": {
+        "en": "neutral oil",
+        "de": "neutrales Öl"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "oil"
+    },
+    {
+      "id": "sesame-oil",
+      "name": {
+        "en": "toasted sesame oil",
+        "de": "geröstetes Sesamöl"
+      },
+      "parent": "condiments",
+      "flags": [
+        "sesame"
+      ],
+      "aisle": "pantry",
+      "type": "oil"
+    },
+    {
+      "id": "coconut-oil",
+      "name": {
+        "en": "coconut oil",
+        "de": "Kokosöl"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "oil"
+    },
+    {
+      "id": "vegan-butter",
+      "name": {
+        "en": "plant butter",
+        "de": "Pflanzenbutter"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "solid"
+    },
+    {
+      "id": "white-wine-vinegar",
+      "name": {
+        "en": "white wine vinegar",
+        "de": "Weißweinessig"
+      },
+      "parent": "condiments",
+      "flags": [
+        "sulphites"
+      ],
+      "aisle": "pantry",
+      "type": "liquid"
+    },
+    {
+      "id": "rice-vinegar",
+      "name": {
+        "en": "rice vinegar",
+        "de": "Reisessig"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "liquid"
+    },
+    {
+      "id": "dijon-mustard",
+      "name": {
+        "en": "dijon mustard",
+        "de": "Dijon-Senf"
+      },
+      "parent": "condiments",
+      "flags": [
+        "mustard"
+      ],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "mayonnaise",
+      "name": {
+        "en": "mayonnaise",
+        "de": "Mayonnaise"
+      },
+      "parent": "condiments",
+      "flags": [
+        "egg",
+        "mustard"
+      ],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "vegan-mayo",
+      "name": {
+        "en": "vegan mayonnaise",
+        "de": "vegane Mayonnaise"
+      },
+      "parent": "condiments",
+      "flags": [
+        "soy",
+        "mustard"
+      ],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "worcestershire",
+      "name": {
+        "en": "worcestershire sauce",
+        "de": "Worcestershiresauce"
+      },
+      "parent": "condiments",
+      "flags": [
+        "fish"
+      ],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "capers",
+      "name": {
+        "en": "capers",
+        "de": "Kapern"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "harissa",
+      "name": {
+        "en": "harissa paste",
+        "de": "Harissapaste"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "pepper-paste",
+      "name": {
+        "en": "turkish pepper paste (biber salçası)",
+        "de": "Paprikamark (Biber Salçası)"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "sauce"
+    },
+    {
+      "id": "tamarind",
+      "name": {
+        "en": "tamarind paste",
+        "de": "Tamarindenpaste"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "green-curry-paste",
+      "name": {
+        "en": "green curry paste (with shrimp paste)",
+        "de": "grüne Currypaste (mit Garnelenpaste)"
+      },
+      "parent": "condiments",
+      "flags": [
+        "shellfish"
+      ],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "vegan-curry-paste",
+      "name": {
+        "en": "green curry paste, vegan",
+        "de": "grüne Currypaste, vegan"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "sriracha",
+      "name": {
+        "en": "sriracha",
+        "de": "Sriracha"
+      },
+      "parent": "condiments",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "vegetable-stock",
+      "name": {
+        "en": "vegetable stock",
+        "de": "Gemüsebrühe"
+      },
+      "parent": "condiments",
+      "flags": [
+        "celery"
+      ],
+      "aisle": "pantry",
+      "type": "liquid"
+    },
+    {
+      "id": "lowfodmap-stock",
+      "name": {
+        "en": "low-FODMAP vegetable stock (no onion/garlic)",
+        "de": "FODMAP-arme Gemüsebrühe (ohne Zwiebel/Knoblauch)"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "pantry",
+      "type": "liquid"
+    },
+    {
+      "id": "chicken-stock",
+      "name": {
+        "en": "chicken stock",
+        "de": "Hühnerbrühe"
+      },
+      "parent": "condiments",
+      "flags": [
+        "poultry",
+        "celery"
+      ],
+      "aisle": "pantry",
+      "type": "liquid"
+    },
+    {
+      "id": "kombu",
+      "name": {
+        "en": "kombu",
+        "de": "Kombu"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "international",
+      "type": "sauce"
+    },
+    {
+      "id": "water",
+      "name": {
+        "en": "water",
+        "de": "Wasser"
+      },
+      "parent": "condiments",
+      "flags": [],
+      "aisle": "other",
+      "type": "liquid"
+    },
+    {
+      "id": "sweeteners",
+      "name": {
+        "en": "sweeteners",
+        "de": "Süßungsmittel"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "sugar",
+      "name": {
+        "en": "sugar",
+        "de": "Zucker"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "brown-sugar",
+      "name": {
+        "en": "brown sugar",
+        "de": "brauner Zucker"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "palm-sugar",
+      "name": {
+        "en": "palm sugar",
+        "de": "Palmzucker"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "international",
+      "type": "sweetener"
+    },
+    {
+      "id": "maple-syrup",
+      "name": {
+        "en": "maple syrup",
+        "de": "Ahornsirup"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "baking",
+      "type": "liquid"
+    },
+    {
+      "id": "honey",
+      "name": {
+        "en": "honey",
+        "de": "Honig"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "honey",
+        "added-sugar"
+      ],
+      "aisle": "baking",
+      "type": "liquid"
+    },
+    {
+      "id": "erythritol",
+      "name": {
+        "en": "erythritol",
+        "de": "Erythrit"
+      },
+      "parent": "sweeteners",
+      "flags": [],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "dark-chocolate",
+      "name": {
+        "en": "dark chocolate (70%)",
+        "de": "Zartbitterschokolade (70%)"
+      },
+      "parent": "sweeteners",
+      "flags": [
+        "added-sugar"
+      ],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "sugar-free-chocolate",
+      "name": {
+        "en": "dark chocolate, no added sugar",
+        "de": "Zartbitterschokolade ohne Zuckerzusatz"
+      },
+      "parent": "sweeteners",
+      "flags": [],
+      "aisle": "baking",
+      "type": "sweetener"
+    },
+    {
+      "id": "plant-milks",
+      "name": {
+        "en": "plant milks",
+        "de": "Pflanzendrinks"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "chilled",
+      "type": "liquid"
+    },
+    {
+      "id": "oat-milk",
+      "name": {
+        "en": "oat milk",
+        "de": "Haferdrink"
+      },
+      "parent": "plant-milks",
+      "flags": [
+        "gluten"
+      ],
+      "aisle": "chilled",
+      "type": "liquid"
+    },
+    {
+      "id": "almond-milk",
+      "name": {
+        "en": "almond milk",
+        "de": "Mandeldrink"
+      },
+      "parent": "plant-milks",
+      "flags": [
+        "almonds"
+      ],
+      "aisle": "chilled",
+      "type": "liquid"
+    },
+    {
+      "id": "rice-milk",
+      "name": {
+        "en": "rice milk",
+        "de": "Reisdrink"
+      },
+      "parent": "plant-milks",
+      "flags": [],
+      "aisle": "chilled",
+      "type": "liquid"
+    },
+    {
+      "id": "drinks",
+      "name": {
+        "en": "wine & spirits",
+        "de": "Wein & Spirituosen"
+      },
+      "parent": null,
+      "flags": [],
+      "aisle": "drinks",
+      "type": "liquid"
+    },
+    {
+      "id": "white-wine",
+      "name": {
+        "en": "dry white wine",
+        "de": "trockener Weißwein"
+      },
+      "parent": "drinks",
+      "flags": [
+        "alcohol",
+        "sulphites"
+      ],
+      "aisle": "drinks",
+      "type": "liquid"
+    },
+    {
+      "id": "red-wine",
+      "name": {
+        "en": "dry red wine",
+        "de": "trockener Rotwein"
+      },
+      "parent": "drinks",
+      "flags": [
+        "alcohol",
+        "sulphites"
+      ],
+      "aisle": "drinks",
+      "type": "liquid"
+    },
+    {
+      "id": "mirin",
+      "name": {
+        "en": "mirin",
+        "de": "Mirin"
+      },
+      "parent": "drinks",
+      "flags": [
+        "alcohol",
+        "added-sugar"
+      ],
+      "aisle": "international",
+      "type": "liquid"
+    }
+  ]
+}

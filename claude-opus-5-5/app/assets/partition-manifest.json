@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.09.1",
+  "generated_at": "2026-09-22T18:33:10.494758Z",
+  "partitions": [
+    {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "kind": "frequency",
+      "load": "eager",
+      "recipe_count": 28,
+      "dish_ids": [
+        "doener",
+        "alfredo",
+        "pad-thai",
+        "shakshuka",
+        "pancakes",
+        "chili",
+        "overnight-oats"
+      ],
+      "bytes": 119847
+    },
+    {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "kind": "frequency",
+      "load": "lazy",
+      "recipe_count": 11,
+      "dish_ids": [
+        "caesar",
+        "brownies",
+        "schnitzel"
+      ],
+      "bytes": 47059
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "kind": "cuisine",
+      "load": "lazy",
+      "recipe_count": 8,
+      "dish_ids": [
+        "bolognese",
+        "risotto"
+      ],
+      "bytes": 35310
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "kind": "cuisine",
+      "load": "lazy",
+      "recipe_count": 8,
+      "dish_ids": [
+        "ramen",
+        "green-curry"
+      ],
+      "bytes": 35066
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "kind": "cuisine",
+      "load": "lazy",
+      "recipe_count": 6,
+      "dish_ids": [
+        "falafel",
+        "lentil-soup"
+      ],
+      "bytes": 27134
+    }
+  ],
+  "cross_references": {
+    "cuisine-middle-eastern": [
+      "doener",
+      "shakshuka"
+    ],
+    "cuisine-italian": [
+      "alfredo"
+    ],
+    "cuisine-asian": [
+      "pad-thai"
+    ],
+    "core": [
+      "bolognese"
+    ]
+  },
+  "loading_strategy": {
+    "eager": [
+      "core"
+    ],
+    "idle_prefetch": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern"
+    ],
+    "on_demand": true
+  },
+  "shared_files": [
+    "assets/dishes.json",
+    "assets/ontology.json",
+    "assets/ingredients.json",
+    "assets/ingredient-guide.json",
+    "assets/search-index.json",
+    "assets/faqs.json"
+  ]
+}

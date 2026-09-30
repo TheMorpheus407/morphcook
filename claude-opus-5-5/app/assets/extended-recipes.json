@@ -1,0 +1,1933 @@
+{
+  "schema_version": 1,
+  "partition_id": "extended",
+  "corpus_version": "2026.09.1",
+  "recipes": [
+    {
+      "id": "caesar-classic",
+      "dish_id": "caesar",
+      "title": {
+        "en": "Classic Caesar Salad",
+        "de": "Klassischer Caesar Salad"
+      },
+      "blurb": {
+        "en": "A proper emulsified dressing with anchovy, garlic and lemon, torn sourdough croutons and lots of parmesan.",
+        "de": "Ein richtig aufgeschlagenes Dressing mit Sardelle, Knoblauch und Zitrone, gezupfte Sauerteig-Croûtons und viel Parmesan."
+      },
+      "note": {
+        "en": "the anchovy melts. nobody will know.",
+        "de": "die sardelle schmilzt. niemand wird’s merken."
+      },
+      "cuisine": "american",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 540,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 30,
+        "fat_g": 40
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "fish",
+        "gluten",
+        "high-fodmap",
+        "mustard"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "bake",
+        "classic",
+        "dinner",
+        "lunch",
+        "medium",
+        "raw"
+      ],
+      "techniques": [
+        "raw",
+        "bake"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "salad",
+          "de": "salat"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "romaine",
+        "sourdough",
+        "olive-oil",
+        "anchovies",
+        "egg",
+        "garlic",
+        "lemon",
+        "dijon-mustard",
+        "worcestershire",
+        "parmesan",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "romaine",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "sourdough",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 6,
+          "unit": "tbsp"
+        },
+        {
+          "id": "anchovies",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "egg",
+          "qty": 1,
+          "unit": "pc",
+          "note": {
+            "en": "yolk only",
+            "de": "nur das Eigelb"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "worcestershire",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "parmesan",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the oven to 200 °C. Toss torn bread with two tablespoons of oil and bake until golden.",
+            "de": "Ofen auf 200 °C vorheizen. Gezupftes Brot mit zwei Esslöffeln Öl mischen und goldbraun backen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Mash anchovies and garlic to a paste. Whisk in yolk, lemon juice, mustard and Worcestershire, then the remaining oil in a thin stream.",
+            "de": "Sardellen und Knoblauch zu einer Paste zerdrücken. Eigelb, Zitronensaft, Senf und Worcestershire einrühren, dann das restliche Öl in dünnem Strahl."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir half the parmesan, finely grated, into the dressing.",
+            "de": "Die Hälfte des Parmesans fein gerieben unter das Dressing rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the leaves with the dressing, add croutons, and shave over the remaining cheese.",
+            "de": "Blätter mit dem Dressing mischen, Croûtons dazugeben und den restlichen Käse darüberhobeln."
+          }
+        }
+      ]
+    },
+    {
+      "id": "caesar-vegan",
+      "dish_id": "caesar",
+      "title": {
+        "en": "Vegan Caesar with Crispy Chickpeas",
+        "de": "Veganer Caesar mit knusprigen Kichererbsen"
+      },
+      "blurb": {
+        "en": "Capers bring the briny punch, nutritional yeast the cheesiness, roasted chickpeas the crunch.",
+        "de": "Kapern bringen die salzige Würze, Hefeflocken das Käsige, geröstete Kichererbsen den Biss."
+      },
+      "note": {
+        "en": "chop the capers — they spread further.",
+        "de": "kapern hacken — sie verteilen sich besser."
+      },
+      "cuisine": "american",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 460,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 14,
+        "carbs_g": 38,
+        "fat_g": 28
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "mustard",
+        "soy"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "dinner",
+        "easy",
+        "lunch",
+        "raw",
+        "roast",
+        "vegan"
+      ],
+      "techniques": [
+        "raw",
+        "roast"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "salad",
+          "de": "salat"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "romaine",
+        "chickpeas",
+        "sourdough",
+        "olive-oil",
+        "vegan-mayo",
+        "capers",
+        "garlic",
+        "lemon",
+        "dijon-mustard",
+        "nutritional-yeast",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "romaine",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "chickpeas",
+          "qty": 240,
+          "unit": "g"
+        },
+        {
+          "id": "sourdough",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "vegan-mayo",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "capers",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "nutritional-yeast",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Roast dried chickpeas and torn bread with the oil and salt at 200 °C until crisp.",
+            "de": "Getrocknete Kichererbsen und gezupftes Brot mit Öl und Salz bei 200 °C knusprig rösten."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "Blend mayo, capers, garlic, lemon juice, mustard and nutritional yeast into a thick dressing.",
+            "de": "Mayo, Kapern, Knoblauch, Zitronensaft, Senf und Hefeflocken zu einem dicken Dressing mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss with the leaves and scatter over chickpeas and croutons.",
+            "de": "Mit den Blättern mischen und Kichererbsen und Croûtons darüberstreuen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "caesar-chicken-gf",
+      "dish_id": "caesar",
+      "title": {
+        "en": "Chicken Caesar with Parmesan Crisps",
+        "de": "Hähnchen-Caesar mit Parmesan-Chips"
+      },
+      "blurb": {
+        "en": "Crisp little parmesan wafers stand in for croutons, and grilled chicken makes it dinner.",
+        "de": "Knusprige kleine Parmesan-Taler ersetzen die Croûtons, und gegrilltes Hähnchen macht daraus ein Abendessen."
+      },
+      "note": {
+        "en": "watch the crisps — 5 minutes, not 6.",
+        "de": "die chips beobachten — 5 minuten, nicht 6."
+      },
+      "cuisine": "american",
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 520,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 8,
+        "fat_g": 36
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "meat",
+        "meat-dairy-combo",
+        "mustard",
+        "poultry"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "bake",
+        "dinner",
+        "easy",
+        "gluten-free",
+        "grill",
+        "high-protein",
+        "lunch",
+        "raw"
+      ],
+      "techniques": [
+        "grill",
+        "bake",
+        "raw"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "salad",
+          "de": "salat"
+        },
+        {
+          "en": "low carb",
+          "de": "low carb"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "chicken-breast",
+        "romaine",
+        "parmesan",
+        "mayonnaise",
+        "anchovies",
+        "garlic",
+        "lemon",
+        "olive-oil",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-breast",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "romaine",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "parmesan",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "mayonnaise",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "anchovies",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bake small heaps of grated parmesan on a lined tray at 200 °C until lacy and golden.",
+            "de": "Kleine Häufchen geriebenen Parmesan auf einem Backblech bei 200 °C spitzenartig goldbraun backen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Season the chicken, brush with oil and grill or pan-fry until cooked through. Rest, then slice.",
+            "de": "Hähnchen würzen, mit Öl bestreichen und grillen oder braten, bis es gar ist. Ruhen lassen, dann aufschneiden."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Mash anchovies and garlic, stir into mayo with lemon juice and pepper.",
+            "de": "Sardellen und Knoblauch zerdrücken und mit Zitronensaft und Pfeffer in die Mayo rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss leaves with dressing, top with chicken and crisps.",
+            "de": "Blätter mit Dressing mischen, mit Hähnchen und Chips belegen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "brownies-classic",
+      "dish_id": "brownies",
+      "title": {
+        "en": "Fudgy Walnut Brownies",
+        "de": "Saftige Walnuss-Brownies"
+      },
+      "blurb": {
+        "en": "Dark chocolate, brown butter notes, a whisper of espresso and toasted walnuts. Underbake by two minutes.",
+        "de": "Dunkle Schokolade, ein Hauch Espresso und geröstete Walnüsse. Zwei Minuten zu kurz backen."
+      },
+      "note": {
+        "en": "whisk eggs & sugar till pale = crackly top.",
+        "de": "eier & zucker hell aufschlagen = rissige kruste."
+      },
+      "cuisine": "american",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 12,
+      "calories_per_serving": 290,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 4,
+        "carbs_g": 30,
+        "fat_g": 18
+      },
+      "contains": [
+        "added-sugar",
+        "caffeine",
+        "dairy",
+        "egg",
+        "gluten",
+        "lactose",
+        "tree-nuts",
+        "walnuts"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "bake",
+        "classic",
+        "dessert",
+        "easy",
+        "kid-friendly",
+        "snack"
+      ],
+      "techniques": [
+        "bake"
+      ],
+      "meal_types": [
+        "dessert",
+        "snack"
+      ],
+      "tags": [
+        {
+          "en": "baking",
+          "de": "backen"
+        },
+        {
+          "en": "chocolate",
+          "de": "schokolade"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "dark-chocolate",
+        "butter",
+        "sugar",
+        "egg",
+        "wheat-flour",
+        "cocoa",
+        "espresso-powder",
+        "vanilla",
+        "salt",
+        "walnuts"
+      ],
+      "ingredients": [
+        {
+          "id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "sugar",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "cocoa",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "espresso-powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "vanilla",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "walnuts",
+          "qty": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the oven to 180 °C and line a 20 × 20 cm tin. Melt chocolate and butter together gently.",
+            "de": "Ofen auf 180 °C vorheizen, eine 20 × 20 cm Form auslegen. Schokolade und Butter sanft zusammen schmelzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk eggs and sugar until pale and thick.",
+            "de": "Eier und Zucker hell und dick aufschlagen."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Fold in the chocolate, then flour, cocoa, espresso, vanilla and salt, then the walnuts.",
+            "de": "Schokolade unterheben, dann Mehl, Kakao, Espresso, Vanille und Salz, dann die Walnüsse."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake until the top is set but the middle still wobbles slightly.",
+            "de": "Backen, bis die Oberfläche fest ist, die Mitte aber noch leicht wackelt."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Cool completely in the tin before cutting.",
+            "de": "In der Form vollständig abkühlen lassen, dann schneiden."
+          },
+          "timer_seconds": 1800
+        }
+      ]
+    },
+    {
+      "id": "brownies-vegan",
+      "dish_id": "brownies",
+      "title": {
+        "en": "Vegan Fudge Brownies",
+        "de": "Vegane Fudge-Brownies"
+      },
+      "blurb": {
+        "en": "Flax “eggs” and coconut oil give chew and gloss; nobody at the bake sale will guess.",
+        "de": "Lein-„Eier“ und Kokosöl geben Biss und Glanz; auf dem Kuchenbasar errät es niemand."
+      },
+      "note": {
+        "en": "check the chocolate is dairy-free.",
+        "de": "prüfen, ob die schokolade milchfrei ist."
+      },
+      "cuisine": "american",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 12,
+      "calories_per_serving": 270,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 3,
+        "carbs_g": 32,
+        "fat_g": 15
+      },
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "soy"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "bake",
+        "dessert",
+        "easy",
+        "snack",
+        "vegan"
+      ],
+      "techniques": [
+        "bake"
+      ],
+      "meal_types": [
+        "dessert",
+        "snack"
+      ],
+      "tags": [
+        {
+          "en": "baking",
+          "de": "backen"
+        },
+        {
+          "en": "chocolate",
+          "de": "schokolade"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "flaxseed",
+        "water",
+        "dark-chocolate",
+        "coconut-oil",
+        "sugar",
+        "soy-milk",
+        "wheat-flour",
+        "cocoa",
+        "baking-powder",
+        "vanilla",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "flaxseed",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "water",
+          "qty": 135,
+          "unit": "ml"
+        },
+        {
+          "id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "coconut-oil",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "sugar",
+          "qty": 180,
+          "unit": "g"
+        },
+        {
+          "id": "soy-milk",
+          "qty": 80,
+          "unit": "ml"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "cocoa",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "vanilla",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Stir flaxseed with the water and leave to thicken.",
+            "de": "Leinsamen mit dem Wasser verrühren und andicken lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Heat the oven to 180 °C. Melt chocolate with coconut oil, then whisk in sugar, soy milk and the flax gel.",
+            "de": "Ofen auf 180 °C vorheizen. Schokolade mit Kokosöl schmelzen, dann Zucker, Sojadrink und das Leingel einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Fold in flour, cocoa, baking powder, vanilla and salt.",
+            "de": "Mehl, Kakao, Backpulver, Vanille und Salz unterheben."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake in a lined tin, then cool completely before cutting.",
+            "de": "In einer ausgelegten Form backen, dann vollständig abkühlen lassen und schneiden."
+          },
+          "timer_seconds": 1560
+        }
+      ]
+    },
+    {
+      "id": "brownies-sugar-free",
+      "dish_id": "brownies",
+      "title": {
+        "en": "No-added-sugar Almond Brownies",
+        "de": "Mandel-Brownies ohne Zuckerzusatz"
+      },
+      "blurb": {
+        "en": "Ground almonds and erythritol make a dense, truffle-like square — naturally gluten-free, too.",
+        "de": "Gemahlene Mandeln und Erythrit machen ein dichtes, trüffelartiges Stück — ganz nebenbei glutenfrei."
+      },
+      "note": {
+        "en": "powder the erythritol for a smoother crumb.",
+        "de": "erythrit fein mahlen für eine zartere krume."
+      },
+      "cuisine": "american",
+      "diet": "sugar-free",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 12,
+      "calories_per_serving": 240,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 6,
+        "carbs_g": 6,
+        "fat_g": 21
+      },
+      "contains": [
+        "almonds",
+        "dairy",
+        "egg",
+        "lactose",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "bake",
+        "dessert",
+        "medium",
+        "snack",
+        "sugar-free"
+      ],
+      "techniques": [
+        "bake"
+      ],
+      "meal_types": [
+        "dessert",
+        "snack"
+      ],
+      "tags": [
+        {
+          "en": "baking",
+          "de": "backen"
+        },
+        {
+          "en": "no added sugar",
+          "de": "ohne zuckerzusatz"
+        }
+      ],
+      "dimensions": {
+        "diet": "sugar-free",
+        "effort": "medium",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "sugar-free-chocolate",
+        "butter",
+        "erythritol",
+        "egg",
+        "ground-almonds",
+        "cocoa",
+        "vanilla",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "sugar-free-chocolate",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "erythritol",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "ground-almonds",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "cocoa",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "vanilla",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Melt chocolate and butter. Heat the oven to 170 °C.",
+            "de": "Schokolade und Butter schmelzen. Ofen auf 170 °C vorheizen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk eggs with powdered erythritol until thick, then fold in the chocolate.",
+            "de": "Eier mit gemahlenem Erythrit dick aufschlagen, dann die Schokolade unterheben."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Fold in almonds, cocoa, vanilla and salt and spread in a lined tin.",
+            "de": "Mandeln, Kakao, Vanille und Salz unterheben und in einer ausgelegten Form verstreichen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake, then chill before cutting — they firm up beautifully.",
+            "de": "Backen, dann vor dem Schneiden kühlen — sie werden wunderbar fest."
+          },
+          "timer_seconds": 1500
+        }
+      ]
+    },
+    {
+      "id": "brownies-gluten-free",
+      "dish_id": "brownies",
+      "title": {
+        "en": "Gluten-free Brownies",
+        "de": "Glutenfreie Brownies"
+      },
+      "blurb": {
+        "en": "A spoon of rice flour and plenty of cocoa — brownies barely need flour anyway.",
+        "de": "Ein Löffel Reismehl und viel Kakao — Brownies brauchen sowieso kaum Mehl."
+      },
+      "note": {
+        "en": "nobody can tell. nobody.",
+        "de": "keiner merkt es. keiner."
+      },
+      "cuisine": "american",
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 12,
+      "calories_per_serving": 285,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 4,
+        "carbs_g": 31,
+        "fat_g": 17
+      },
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "lactose"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "bake",
+        "dessert",
+        "easy",
+        "gluten-free",
+        "kid-friendly",
+        "snack"
+      ],
+      "techniques": [
+        "bake"
+      ],
+      "meal_types": [
+        "dessert",
+        "snack"
+      ],
+      "tags": [
+        {
+          "en": "baking",
+          "de": "backen"
+        },
+        {
+          "en": "chocolate",
+          "de": "schokolade"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "dark-chocolate",
+        "butter",
+        "sugar",
+        "egg",
+        "rice-flour",
+        "cocoa",
+        "vanilla",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "dark-chocolate",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "sugar",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "rice-flour",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "cocoa",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "vanilla",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Melt chocolate and butter; heat the oven to 180 °C.",
+            "de": "Schokolade und Butter schmelzen; Ofen auf 180 °C vorheizen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk eggs and sugar until pale, fold in the chocolate, then rice flour, cocoa, vanilla and salt.",
+            "de": "Eier und Zucker hell aufschlagen, Schokolade unterheben, dann Reismehl, Kakao, Vanille und Salz."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Bake in a lined tin until just set.",
+            "de": "In einer ausgelegten Form backen, bis sie gerade fest sind."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Cool fully before slicing.",
+            "de": "Vor dem Schneiden ganz abkühlen lassen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "schnitzel-classic",
+      "dish_id": "schnitzel",
+      "title": {
+        "en": "Pork Schnitzel with Potato Salad",
+        "de": "Schweineschnitzel mit Kartoffelsalat"
+      },
+      "blurb": {
+        "en": "Pounded thin, breaded loosely so the crust puffs and ripples, fried in plenty of fat, with a tangy warm potato salad.",
+        "de": "Dünn geklopft, locker paniert, damit die Kruste soufflieren kann, in reichlich Fett gebraten — dazu ein säuerlicher lauwarmer Kartoffelsalat."
+      },
+      "note": {
+        "en": "swirl the pan so the fat washes over the top.",
+        "de": "pfanne schwenken, damit das fett über die oberseite schwappt."
+      },
+      "cuisine": "german",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 780,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 62,
+        "fat_g": 38
+      },
+      "contains": [
+        "added-sugar",
+        "celery",
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo",
+        "mustard",
+        "pork",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "dinner",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "simmer"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        },
+        {
+          "en": "crispy",
+          "de": "knusprig"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "potato",
+        "onion",
+        "vegetable-stock",
+        "white-wine-vinegar",
+        "dijon-mustard",
+        "chives",
+        "pork-cutlet",
+        "wheat-flour",
+        "egg",
+        "breadcrumbs",
+        "neutral-oil",
+        "butter",
+        "lemon",
+        "lingonberry-jam",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "potato",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "white-wine-vinegar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "chives",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "pork-cutlet",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "breadcrumbs",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "lingonberry-jam",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the potatoes in their skins until just tender.",
+            "de": "Kartoffeln in der Schale knapp gar kochen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Warm the stock with finely diced onion, vinegar, mustard, salt and pepper. Peel and slice the warm potatoes into it and let them soak it up.",
+            "de": "Brühe mit fein gewürfelter Zwiebel, Essig, Senf, Salz und Pfeffer erwärmen. Die warmen Kartoffeln pellen, hineinschneiden und ziehen lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Pound the cutlets thin between sheets of baking paper. Season, then dredge in flour, beaten egg and breadcrumbs — don’t press the crumbs.",
+            "de": "Schnitzel zwischen Backpapier dünn klopfen. Würzen, dann durch Mehl, verquirltes Ei und Brösel ziehen — die Brösel nicht andrücken."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry in hot oil with the butter, swirling the pan, until golden and puffed, about three minutes a side.",
+            "de": "In heißem Öl mit der Butter braten und die Pfanne schwenken, bis sie golden und souffliert sind, etwa drei Minuten pro Seite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Stir oil and chives into the potato salad and serve with lemon and lingonberries.",
+            "de": "Öl und Schnittlauch unter den Kartoffelsalat rühren, mit Zitrone und Preiselbeeren servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "schnitzel-chicken",
+      "dish_id": "schnitzel",
+      "title": {
+        "en": "Chicken Schnitzel with Potato Salad",
+        "de": "Hähnchenschnitzel mit Kartoffelsalat"
+      },
+      "blurb": {
+        "en": "Butterflied chicken breast, the same rippled crust, the same warm potato salad. Made with halal-compatible ingredients.",
+        "de": "Aufgeklappte Hähnchenbrust, dieselbe gewellte Kruste, derselbe lauwarme Kartoffelsalat. Mit halal-kompatiblen Zutaten."
+      },
+      "note": {
+        "en": "butterfly, then pound. even thickness = even cooking.",
+        "de": "aufklappen, dann klopfen. gleiche dicke = gleich gar."
+      },
+      "cuisine": "german",
+      "diet": "halal",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 720,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 46,
+        "carbs_g": 62,
+        "fat_g": 30
+      },
+      "contains": [
+        "celery",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "meat",
+        "mustard",
+        "poultry",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "halal",
+        "high-protein",
+        "kid-friendly",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "simmer"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        },
+        {
+          "en": "crispy",
+          "de": "knusprig"
+        }
+      ],
+      "dimensions": {
+        "diet": "halal",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "potato",
+        "onion",
+        "vegetable-stock",
+        "white-wine-vinegar",
+        "dijon-mustard",
+        "chives",
+        "chicken-breast",
+        "wheat-flour",
+        "egg",
+        "breadcrumbs",
+        "neutral-oil",
+        "lemon",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "potato",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "white-wine-vinegar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "chives",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "chicken-breast",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "breadcrumbs",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the potatoes in their skins until just tender.",
+            "de": "Kartoffeln in der Schale knapp gar kochen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Make the potato salad dressing with warm stock, onion, vinegar and mustard; slice in the warm potatoes.",
+            "de": "Das Dressing aus warmer Brühe, Zwiebel, Essig und Senf anrühren; die warmen Kartoffeln hineinschneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Butterfly and pound the chicken, season, and bread it in flour, egg and crumbs.",
+            "de": "Hähnchen aufklappen, klopfen, würzen und in Mehl, Ei und Bröseln panieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry in hot oil until golden and cooked through, about four minutes a side.",
+            "de": "In heißem Öl goldbraun und durch braten, etwa vier Minuten pro Seite."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Serve with the potato salad, chives and lemon.",
+            "de": "Mit Kartoffelsalat, Schnittlauch und Zitrone servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "schnitzel-celeriac",
+      "dish_id": "schnitzel",
+      "title": {
+        "en": "Celeriac Schnitzel",
+        "de": "Sellerieschnitzel"
+      },
+      "blurb": {
+        "en": "Thick slices of celeriac, blanched until tender, then crumbed and fried — a German classic in its own right.",
+        "de": "Dicke Selleriescheiben, weich blanchiert, dann paniert und gebraten — ein deutscher Klassiker für sich."
+      },
+      "note": {
+        "en": "mustard in the batter. trust.",
+        "de": "senf in den backteig. vertrau mir."
+      },
+      "cuisine": "german",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 70,
+        "fat_g": 26
+      },
+      "contains": [
+        "celery",
+        "gluten",
+        "high-fodmap",
+        "mustard",
+        "soy",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "blanch",
+        "budget",
+        "dinner",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "vegan"
+      ],
+      "techniques": [
+        "blanch",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "celeriac",
+        "potato",
+        "onion",
+        "vegetable-stock",
+        "white-wine-vinegar",
+        "dijon-mustard",
+        "chives",
+        "wheat-flour",
+        "soy-milk",
+        "breadcrumbs",
+        "neutral-oil",
+        "lemon",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "celeriac",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "potato",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "white-wine-vinegar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "chives",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "soy-milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "breadcrumbs",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the potatoes and make the warm potato salad with stock, onion, vinegar and one teaspoon mustard.",
+            "de": "Kartoffeln kochen und mit Brühe, Zwiebel, Essig und einem Teelöffel Senf den lauwarmen Kartoffelsalat machen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Peel the celeriac, cut into 1 cm slices and blanch in salted water until just tender. Pat dry.",
+            "de": "Sellerie schälen, in 1 cm dicke Scheiben schneiden und in Salzwasser knapp weich blanchieren. Trocken tupfen."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Whisk flour, soy milk, the rest of the mustard and salt into a thick batter. Dip the slices, then coat in breadcrumbs.",
+            "de": "Mehl, Sojadrink, restlichen Senf und Salz zu einem dicken Backteig verquirlen. Scheiben eintauchen, dann in Bröseln wenden."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry in hot oil until golden, three minutes a side.",
+            "de": "In heißem Öl goldbraun braten, drei Minuten pro Seite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Serve with the potato salad, chives and lemon.",
+            "de": "Mit Kartoffelsalat, Schnittlauch und Zitrone servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "schnitzel-gluten-free",
+      "dish_id": "schnitzel",
+      "title": {
+        "en": "Gluten-free Pork Schnitzel",
+        "de": "Glutenfreies Schweineschnitzel"
+      },
+      "blurb": {
+        "en": "Rice flour and gluten-free crumbs fry up just as golden — keep the oil hot and the crumbs loose.",
+        "de": "Reismehl und glutenfreie Brösel werden genauso golden — das Öl heiß und die Brösel locker halten."
+      },
+      "note": {
+        "en": "check the stock cube for wheat!",
+        "de": "brühwürfel auf weizen prüfen!"
+      },
+      "cuisine": "german",
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 760,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 58,
+        "fat_g": 38
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "egg",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo",
+        "mustard",
+        "pork",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "gluten-free",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "simmer"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        },
+        {
+          "en": "crispy",
+          "de": "knusprig"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "potato",
+        "onion",
+        "vegetable-stock",
+        "white-wine-vinegar",
+        "dijon-mustard",
+        "chives",
+        "pork-cutlet",
+        "rice-flour",
+        "egg",
+        "gf-breadcrumbs",
+        "neutral-oil",
+        "butter",
+        "lemon",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "potato",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "white-wine-vinegar",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "dijon-mustard",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "chives",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "pork-cutlet",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "rice-flour",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "gf-breadcrumbs",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the potatoes and make the warm potato salad.",
+            "de": "Kartoffeln kochen und den lauwarmen Kartoffelsalat zubereiten."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Pound the cutlets thin, season and bread in rice flour, egg and gluten-free crumbs.",
+            "de": "Schnitzel dünn klopfen, würzen und in Reismehl, Ei und glutenfreien Bröseln panieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry in hot oil and butter, swirling, until golden — about three minutes a side.",
+            "de": "In heißem Öl und Butter unter Schwenken goldbraun braten — etwa drei Minuten pro Seite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Serve with the potato salad and lemon.",
+            "de": "Mit Kartoffelsalat und Zitrone servieren."
+          }
+        }
+      ]
+    }
+  ]
+}

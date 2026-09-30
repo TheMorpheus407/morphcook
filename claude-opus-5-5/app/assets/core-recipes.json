@@ -1,0 +1,4801 @@
+{
+  "schema_version": 1,
+  "partition_id": "core",
+  "corpus_version": "2026.09.1",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "Classic Döner",
+        "de": "Klassischer Döner"
+      },
+      "blurb": {
+        "en": "Paper-thin beef, charred at the edges, a garlicky yogurt sauce and a crunchy heap of salad. The one you queue for at 2am, made at home.",
+        "de": "Hauchdünnes Rindfleisch mit Röstkanten, Knoblauch-Joghurtsauce und ein knackiger Berg Salat. Der, für den man nachts um zwei ansteht — zu Hause gemacht."
+      },
+      "note": {
+        "en": "half-frozen beef slices like butter.",
+        "de": "angefrorenes fleisch schneidet sich wie butter."
+      },
+      "cuisine": "turkish",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 720,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 58,
+        "fat_g": 34
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "dinner",
+        "grill",
+        "high-protein",
+        "lunch",
+        "medium",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry",
+        "grill"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "street food",
+          "de": "streetfood"
+        },
+        {
+          "en": "wrap",
+          "de": "wrap"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "beef-sirloin",
+        "greek-yogurt",
+        "garlic",
+        "paprika",
+        "cumin",
+        "pul-biber",
+        "lemon",
+        "olive-oil",
+        "flatbread",
+        "red-cabbage",
+        "tomato",
+        "cucumber",
+        "red-onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-sirloin",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 350,
+          "unit": "g",
+          "note": {
+            "en": "150 g for the marinade, the rest for the sauce",
+            "de": "150 g für die Marinade, der Rest für die Sauce"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "flatbread",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "red-cabbage",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "red-onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the beef as thin as you can. Toss it with 150 g yogurt, one grated garlic clove, the paprika, cumin, half the lemon juice and a good pinch of salt.",
+            "de": "Das Rindfleisch so dünn wie möglich schneiden. Mit 150 g Joghurt, einer geriebenen Knoblauchzehe, Paprika, Kreuzkümmel, dem halben Zitronensaft und einer guten Prise Salz vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Let it marinate while you prep everything else — thirty minutes is plenty.",
+            "de": "Marinieren lassen, während du alles andere vorbereitest — dreißig Minuten reichen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "Shred the cabbage finely, slice tomatoes, cucumber and onion. Squeeze the remaining lemon over the onion and salt it lightly.",
+            "de": "Kohl fein hobeln, Tomaten, Gurke und Zwiebel in Scheiben schneiden. Den restlichen Zitronensaft über die Zwiebel geben und leicht salzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir the rest of the yogurt with the remaining garlic, grated, and a pinch of salt. That is your white sauce.",
+            "de": "Restlichen Joghurt mit dem übrigen, geriebenen Knoblauch und einer Prise Salz verrühren. Das ist deine weiße Sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "Get a heavy pan smoking hot with the oil. Sear the beef in small batches until the edges char, about three minutes per batch.",
+            "de": "Eine schwere Pfanne mit dem Öl rauchend heiß werden lassen. Das Fleisch portionsweise scharf anbraten, bis die Ränder dunkel werden — etwa drei Minuten pro Portion."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Warm the bread, split it, and fill: meat, salad, a generous spoon of sauce, a shake of pul biber.",
+            "de": "Brot aufwärmen, aufschneiden und füllen: Fleisch, Salat, ein großzügiger Löffel Sauce, etwas Pul Biber."
+          }
+        }
+      ]
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "Vegan Döner",
+        "de": "Veganer Döner"
+      },
+      "blurb": {
+        "en": "Torn seitan, crisped hard in a smoky marinade, tucked into warm bread with a tangy garlic sauce. Nobody at the table will ask where the meat went.",
+        "de": "Gezupfter Seitan, in rauchiger Marinade knusprig gebraten, im warmen Brot mit säuerlicher Knoblauchsauce. Niemand am Tisch wird nach dem Fleisch fragen."
+      },
+      "note": {
+        "en": "tear, don’t slice — more edges, more crunch.",
+        "de": "zupfen statt schneiden — mehr kanten, mehr knusper."
+      },
+      "cuisine": "turkish",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 610,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 66,
+        "fat_g": 22
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "high-protein",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "vegan"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "street food",
+          "de": "streetfood"
+        },
+        {
+          "en": "wrap",
+          "de": "wrap"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "seitan",
+        "soy-sauce",
+        "smoked-paprika",
+        "cumin",
+        "pul-biber",
+        "garlic",
+        "lemon",
+        "olive-oil",
+        "soy-yogurt",
+        "flatbread",
+        "red-cabbage",
+        "tomato",
+        "cucumber",
+        "red-onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "seitan",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "soy-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "soy-yogurt",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "flatbread",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "red-cabbage",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "red-onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Tear the seitan into thin, ragged strips. Toss with soy sauce, smoked paprika, cumin, one grated garlic clove and two tablespoons of oil.",
+            "de": "Seitan in dünne, unregelmäßige Streifen zupfen. Mit Sojasauce, Rauchpaprika, Kreuzkümmel, einer geriebenen Knoblauchzehe und zwei Esslöffeln Öl vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Let it sit for ten minutes while you slice the salad vegetables and dress the onion with a squeeze of lemon.",
+            "de": "Zehn Minuten ziehen lassen, während du das Salatgemüse schneidest und die Zwiebel mit etwas Zitrone beträufelst."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Stir the soy yogurt with the remaining garlic, a squeeze of lemon and salt.",
+            "de": "Sojajoghurt mit dem restlichen Knoblauch, etwas Zitronensaft und Salz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry the seitan in the remaining oil over high heat, pressing it flat, until dark and crisp — six to eight minutes.",
+            "de": "Seitan im restlichen Öl bei starker Hitze braten und dabei flach drücken, bis er dunkel und knusprig ist — sechs bis acht Minuten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Fill the warm bread with seitan, cabbage, tomato, cucumber, onion and plenty of sauce. Finish with pul biber.",
+            "de": "Warmes Brot mit Seitan, Kohl, Tomate, Gurke, Zwiebel und reichlich Sauce füllen. Mit Pul Biber abschließen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "doener-keto-bowl",
+      "dish_id": "doener",
+      "title": {
+        "en": "Keto Döner Bowl",
+        "de": "Keto-Döner-Bowl"
+      },
+      "blurb": {
+        "en": "Everything you love about the wrap, minus the wrap: charred beef over crisp lettuce, feta, and a thick garlic yogurt.",
+        "de": "Alles, was du am Döner liebst, nur ohne Brot: angeröstetes Rind auf knackigem Salat, Feta und ein dicker Knoblauchjoghurt."
+      },
+      "note": {
+        "en": "extra feta is never a mistake.",
+        "de": "extra feta ist nie ein fehler."
+      },
+      "cuisine": "turkish",
+      "diet": "keto",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 44,
+        "carbs_g": 12,
+        "fat_g": 38
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "dinner",
+        "easy",
+        "high-protein",
+        "keto",
+        "lunch",
+        "pan-fry",
+        "raw"
+      ],
+      "techniques": [
+        "pan-fry",
+        "raw"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "bowl",
+          "de": "bowl"
+        },
+        {
+          "en": "low carb",
+          "de": "low carb"
+        }
+      ],
+      "dimensions": {
+        "diet": "keto",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "beef-sirloin",
+        "greek-yogurt",
+        "garlic",
+        "paprika",
+        "cumin",
+        "pul-biber",
+        "lemon",
+        "olive-oil",
+        "romaine",
+        "red-cabbage",
+        "cucumber",
+        "cherry-tomatoes",
+        "feta",
+        "red-onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-sirloin",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "romaine",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "red-cabbage",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cherry-tomatoes",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "feta",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "red-onion",
+          "qty": 0.5,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Toss the sliced beef with the spices, half the lemon juice, a tablespoon of oil and salt. Ten minutes is enough.",
+            "de": "Das geschnittene Rind mit Gewürzen, halbem Zitronensaft, einem Esslöffel Öl und Salz vermengen. Zehn Minuten genügen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Chop the lettuce, shave the cabbage, halve the tomatoes and slice cucumber and onion. Divide between four bowls.",
+            "de": "Salat hacken, Kohl hobeln, Tomaten halbieren, Gurke und Zwiebel schneiden. Auf vier Schüsseln verteilen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir yogurt with grated garlic, the rest of the lemon and a pinch of salt.",
+            "de": "Joghurt mit geriebenem Knoblauch, restlicher Zitrone und einer Prise Salz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Sear the beef in the remaining oil in a very hot pan, in batches, about three minutes each.",
+            "de": "Rind im restlichen Öl in einer sehr heißen Pfanne portionsweise anbraten, jeweils etwa drei Minuten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Pile the beef on the salad, crumble over feta, spoon on the sauce and finish with pul biber.",
+            "de": "Fleisch auf den Salat häufen, Feta darüberbröseln, Sauce darauf geben und mit Pul Biber abschließen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "doener-halal-chicken",
+      "dish_id": "doener",
+      "title": {
+        "en": "Chicken Döner",
+        "de": "Hähnchen-Döner"
+      },
+      "blurb": {
+        "en": "Turmeric-gold chicken thighs, crisp at the edges and juicy inside. Made with halal-compatible ingredients — choose your meat from a halal butcher.",
+        "de": "Kurkuma-goldene Hähnchenschenkel, außen knusprig, innen saftig. Mit halal-kompatiblen Zutaten — das Fleisch vom Halal-Metzger wählen."
+      },
+      "note": {
+        "en": "thighs forgive you; breasts don’t.",
+        "de": "schenkel verzeihen alles, brust nicht."
+      },
+      "cuisine": "turkish",
+      "diet": "halal",
+      "effort": "easy",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 640,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 46,
+        "carbs_g": 56,
+        "fat_g": 22
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo",
+        "poultry"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "easy",
+        "grill",
+        "halal",
+        "high-protein",
+        "kid-friendly",
+        "lunch",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry",
+        "grill"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "street food",
+          "de": "streetfood"
+        },
+        {
+          "en": "wrap",
+          "de": "wrap"
+        }
+      ],
+      "dimensions": {
+        "diet": "halal",
+        "effort": "easy",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "chicken-thigh",
+        "greek-yogurt",
+        "garlic",
+        "paprika",
+        "turmeric",
+        "cumin",
+        "lemon",
+        "olive-oil",
+        "flatbread",
+        "red-cabbage",
+        "tomato",
+        "cucumber",
+        "red-onion",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 300,
+          "unit": "g",
+          "note": {
+            "en": "half for the marinade",
+            "de": "die Hälfte für die Marinade"
+          }
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "turmeric",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "flatbread",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "red-cabbage",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "red-onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the chicken into thin strips. Toss with half the yogurt, one grated garlic clove, paprika, turmeric, cumin, lemon juice and salt.",
+            "de": "Hähnchen in dünne Streifen schneiden. Mit der Hälfte des Joghurts, einer geriebenen Knoblauchzehe, Paprika, Kurkuma, Kreuzkümmel, Zitronensaft und Salz vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Marinate for fifteen minutes. Meanwhile slice the salad and stir the sauce from the remaining yogurt, garlic and salt.",
+            "de": "Fünfzehn Minuten marinieren. Inzwischen den Salat schneiden und aus restlichem Joghurt, Knoblauch und Salz die Sauce rühren."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Fry the chicken in hot oil without moving it too much, until golden and cooked through — about eight minutes.",
+            "de": "Hähnchen in heißem Öl braten, ohne es zu viel zu bewegen, bis es goldbraun und durchgegart ist — etwa acht Minuten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Fill warm bread with chicken, salad and sauce.",
+            "de": "Warmes Brot mit Hähnchen, Salat und Sauce füllen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "blurb": {
+        "en": "The silky, rich weeknight hug. Butter and parmesan emulsified with starchy pasta water until it clings to every ribbon.",
+        "de": "Die seidige, üppige Umarmung unter der Woche. Butter und Parmesan mit stärkehaltigem Nudelwasser gebunden, bis alles an jeder Nudel haftet."
+      },
+      "note": {
+        "en": "save a mug of pasta water. always.",
+        "de": "eine tasse nudelwasser aufheben. immer."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 780,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 70,
+        "fat_g": 44
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=800",
+        "classic",
+        "dinner",
+        "easy",
+        "kid-friendly",
+        "lunch",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "fettuccine",
+        "butter",
+        "heavy-cream",
+        "parmesan",
+        "garlic",
+        "nutmeg",
+        "parsley",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "fettuccine",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "heavy-cream",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring a big pot of well-salted water to the boil and cook the fettuccine one minute short of the packet time.",
+            "de": "Einen großen Topf gut gesalzenes Wasser aufkochen und die Fettuccine eine Minute kürzer als angegeben garen."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "Meanwhile melt the butter in a wide pan, add the garlic, grated, and let it sizzle for thirty seconds. Pour in the cream and simmer gently.",
+            "de": "Inzwischen die Butter in einer weiten Pfanne schmelzen, den geriebenen Knoblauch dreißig Sekunden darin brutzeln lassen. Sahne angießen und sanft köcheln."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Scoop out a mug of pasta water, then lift the pasta straight into the sauce.",
+            "de": "Eine Tasse Nudelwasser abschöpfen, dann die Nudeln direkt in die Sauce heben."
+          }
+        },
+        {
+          "text": {
+            "en": "Off the heat, add the parmesan in handfuls with splashes of pasta water, tossing until glossy. Season with nutmeg, pepper and parsley.",
+            "de": "Vom Herd nehmen, Parmesan händeweise mit Schlucken Nudelwasser zugeben und schwenken, bis alles glänzt. Mit Muskat, Pfeffer und Petersilie abschmecken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfredo-light",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Lighter Alfredo with Broccoli",
+        "de": "Leichtere Alfredo mit Brokkoli"
+      },
+      "blurb": {
+        "en": "Milk thickened with a spoon of starch does the work of cream here, and broccoli cooks right alongside the pasta.",
+        "de": "Milch mit einem Löffel Stärke übernimmt hier die Arbeit der Sahne, und der Brokkoli gart direkt mit den Nudeln."
+      },
+      "note": {
+        "en": "lemon zest makes it taste twice as rich.",
+        "de": "zitronenschale macht es doppelt so reichhaltig."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 520,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 27,
+        "carbs_g": 68,
+        "fat_g": 14
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "blanch",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "kid-friendly",
+        "lunch",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "blanch"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "light",
+          "de": "leicht"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "fettuccine",
+        "broccoli",
+        "skim-milk",
+        "cornstarch",
+        "parmesan",
+        "garlic",
+        "lemon",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "fettuccine",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "broccoli",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "skim-milk",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "cornstarch",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "parmesan",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the pasta in salted water. Add the broccoli florets for the last three minutes.",
+            "de": "Nudeln in Salzwasser garen. Brokkoliröschen für die letzten drei Minuten dazugeben."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "Whisk the cold milk with the cornstarch and grated garlic, then heat in a wide pan, stirring, until it thickens.",
+            "de": "Kalte Milch mit Stärke und geriebenem Knoblauch verquirlen, dann in einer weiten Pfanne unter Rühren erhitzen, bis sie andickt."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Take off the heat and stir in the parmesan until smooth.",
+            "de": "Vom Herd nehmen und den Parmesan glatt einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss in pasta and broccoli with a splash of cooking water. Finish with lemon zest and plenty of pepper.",
+            "de": "Nudeln und Brokkoli mit einem Schluck Kochwasser unterheben. Mit Zitronenschale und reichlich Pfeffer vollenden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Gluten-free Fettuccine Alfredo",
+        "de": "Glutenfreie Fettuccine Alfredo"
+      },
+      "blurb": {
+        "en": "Rice-and-corn ribbons hold the butter-parmesan sauce beautifully — they just need a gentler hand and a little more pasta water.",
+        "de": "Bandnudeln aus Reis und Mais halten die Butter-Parmesan-Sauce wunderbar — sie brauchen nur eine sanftere Hand und etwas mehr Nudelwasser."
+      },
+      "note": {
+        "en": "rinse gf pasta? never. the starch is the sauce.",
+        "de": "glutenfreie nudeln abspülen? nie. die stärke ist die sauce."
+      },
+      "cuisine": "italian",
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 770,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 24,
+        "carbs_g": 72,
+        "fat_g": 43
+      },
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=800",
+        "dinner",
+        "easy",
+        "gluten-free",
+        "kid-friendly",
+        "lunch",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "gf-pasta",
+        "butter",
+        "heavy-cream",
+        "parmesan",
+        "garlic",
+        "nutmeg",
+        "parsley",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "gf-pasta",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "butter",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "heavy-cream",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "parmesan",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the gluten-free pasta in plenty of salted water, stirring often in the first two minutes so it does not stick.",
+            "de": "Die glutenfreien Nudeln in reichlich Salzwasser garen und in den ersten zwei Minuten oft umrühren, damit nichts klebt."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Melt the butter with the grated garlic, pour in the cream and keep it at a bare simmer.",
+            "de": "Butter mit dem geriebenen Knoblauch schmelzen, Sahne angießen und knapp unter dem Siedepunkt halten."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Reserve a big mug of water, drain gently and add the pasta to the sauce.",
+            "de": "Eine große Tasse Wasser zurückbehalten, vorsichtig abgießen und die Nudeln in die Sauce geben."
+          }
+        },
+        {
+          "text": {
+            "en": "Off the heat, toss in the parmesan with generous splashes of water until creamy. Nutmeg, pepper, parsley.",
+            "de": "Vom Herd nehmen, Parmesan mit großzügigen Schlucken Wasser unterschwenken, bis es cremig ist. Muskat, Pfeffer, Petersilie."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Vegan Cashew Alfredo",
+        "de": "Vegane Cashew-Alfredo"
+      },
+      "blurb": {
+        "en": "Soaked cashews blended with nutritional yeast and lemon make a sauce so velvety it coats the back of a spoon.",
+        "de": "Eingeweichte Cashews, mit Hefeflocken und Zitrone püriert, ergeben eine Sauce, so samtig, dass sie den Löffelrücken überzieht."
+      },
+      "note": {
+        "en": "blend longer than you think. then a bit more.",
+        "de": "länger pürieren als gedacht. dann noch ein bisschen."
+      },
+      "cuisine": "italian",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 690,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 22,
+        "carbs_g": 82,
+        "fat_g": 30
+      },
+      "contains": [
+        "cashews",
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "lunch",
+        "medium",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "creamy",
+          "de": "cremig"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "fettuccine",
+        "cashews",
+        "nutritional-yeast",
+        "garlic",
+        "lemon",
+        "vegan-butter",
+        "water",
+        "nutmeg",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "fettuccine",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "cashews",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "nutritional-yeast",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "lemon",
+          "qty": 0.5,
+          "unit": "pc"
+        },
+        {
+          "id": "vegan-butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "water",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cover the cashews with boiling water and let them soak.",
+            "de": "Cashews mit kochendem Wasser bedecken und einweichen lassen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Drain, then blend with 300 ml fresh water, nutritional yeast, garlic, lemon juice and a big pinch of salt until completely smooth.",
+            "de": "Abgießen und mit 300 ml frischem Wasser, Hefeflocken, Knoblauch, Zitronensaft und einer großen Prise Salz völlig glatt pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook the pasta in salted water until al dente.",
+            "de": "Nudeln in Salzwasser al dente garen."
+          },
+          "timer_seconds": 540
+        },
+        {
+          "text": {
+            "en": "Melt the plant butter in a wide pan, pour in the cashew cream and warm through. Add the pasta with a splash of cooking water and toss. Nutmeg and pepper to finish.",
+            "de": "Pflanzenbutter in einer weiten Pfanne schmelzen, Cashewcreme dazugießen und erwärmen. Nudeln mit einem Schluck Kochwasser dazugeben und schwenken. Mit Muskat und Pfeffer vollenden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Pad Thai with Shrimp",
+        "de": "Pad Thai mit Garnelen"
+      },
+      "blurb": {
+        "en": "The street-stall classic: tamarind-glossed noodles, sweet shrimp, egg ribbons, and a crunch of peanuts.",
+        "de": "Der Garküchen-Klassiker: tamarindenglänzende Nudeln, süße Garnelen, Eierfäden und knackige Erdnüsse."
+      },
+      "note": {
+        "en": "have everything chopped before the wok gets hot.",
+        "de": "alles schnippeln, bevor der wok heiß wird."
+      },
+      "cuisine": "thai",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 650,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 32,
+        "carbs_g": 78,
+        "fat_g": 22
+      },
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "peanuts",
+        "shellfish",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "dinner",
+        "lunch",
+        "medium",
+        "stir-fry"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "street food",
+          "de": "streetfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "rice-noodles",
+        "shrimp",
+        "egg",
+        "tofu",
+        "bean-sprouts",
+        "spring-onion",
+        "garlic",
+        "shallot",
+        "peanuts",
+        "tamarind",
+        "fish-sauce",
+        "palm-sugar",
+        "chili-flakes",
+        "lime",
+        "neutral-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "tofu",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "bean-sprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "peanuts",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "tamarind",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the noodles in warm (not hot) water until pliable but still firm.",
+            "de": "Nudeln in warmem (nicht heißem) Wasser einweichen, bis sie biegsam, aber noch fest sind."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Stir tamarind, fish sauce and palm sugar together until dissolved. Toast and roughly crush the peanuts.",
+            "de": "Tamarinde, Fischsauce und Palmzucker verrühren, bis sich alles löst. Erdnüsse rösten und grob hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat the oil in a wok until shimmering. Fry diced tofu, then shallot and garlic, then the shrimp until just pink.",
+            "de": "Öl im Wok stark erhitzen. Gewürfelten Tofu braten, dann Schalotte und Knoblauch, dann die Garnelen, bis sie gerade rosa sind."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Push everything aside, crack in the eggs and scramble loosely.",
+            "de": "Alles an den Rand schieben, Eier hineinschlagen und locker stocken lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Add the drained noodles and sauce and toss for two minutes until glossy. Fold in sprouts and spring onion.",
+            "de": "Abgetropfte Nudeln und Sauce dazugeben und zwei Minuten schwenken, bis alles glänzt. Sprossen und Frühlingszwiebeln unterheben."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Serve with peanuts, chili flakes and lime wedges.",
+            "de": "Mit Erdnüssen, Chiliflocken und Limettenspalten servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-weeknight",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Weeknight Pad Thai",
+        "de": "Pad Thai für unter der Woche"
+      },
+      "blurb": {
+        "en": "A pantry shortcut sauce — lime, brown sugar, fish sauce and a squirt of sriracha — gets you ninety percent there in twenty minutes.",
+        "de": "Eine Abkürzungs-Sauce aus dem Vorrat — Limette, brauner Zucker, Fischsauce und ein Spritzer Sriracha — bringt dich in zwanzig Minuten fast ans Ziel."
+      },
+      "note": {
+        "en": "boiling water soaks noodles in 8 min flat.",
+        "de": "kochendes wasser weicht nudeln in 8 minuten ein."
+      },
+      "cuisine": "thai",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 590,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 28,
+        "carbs_g": 74,
+        "fat_g": 18
+      },
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "peanuts",
+        "shellfish"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "lunch",
+        "stir-fry"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "quick",
+          "de": "schnell"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "rice-noodles",
+        "shrimp",
+        "egg",
+        "bean-sprouts",
+        "spring-onion",
+        "garlic",
+        "peanuts",
+        "fish-sauce",
+        "brown-sugar",
+        "lime",
+        "sriracha",
+        "neutral-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "shrimp",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "bean-sprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "peanuts",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "brown-sugar",
+          "qty": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "sriracha",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pour boiling water over the noodles and leave them to soften.",
+            "de": "Kochendes Wasser über die Nudeln gießen und weich werden lassen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Mix fish sauce, brown sugar, the juice of one lime and the sriracha.",
+            "de": "Fischsauce, braunen Zucker, den Saft einer Limette und Sriracha mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir-fry garlic and shrimp in hot oil for two minutes, push aside and scramble the eggs.",
+            "de": "Knoblauch und Garnelen in heißem Öl zwei Minuten pfannenrühren, zur Seite schieben und die Eier stocken lassen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Toss in noodles and sauce, then sprouts and spring onion. Serve with peanuts and lime.",
+            "de": "Nudeln und Sauce unterschwenken, dann Sprossen und Frühlingszwiebeln. Mit Erdnüssen und Limette servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Vegan Pad Thai",
+        "de": "Veganes Pad Thai"
+      },
+      "blurb": {
+        "en": "Crisp tofu stands in for shrimp, tamari brings the salt, and nobody misses a thing.",
+        "de": "Knuspriger Tofu übernimmt für die Garnelen, Tamari bringt das Salz — und niemand vermisst etwas."
+      },
+      "note": {
+        "en": "press the tofu. patience = crunch.",
+        "de": "tofu pressen. geduld = knusper."
+      },
+      "cuisine": "thai",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 610,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 24,
+        "carbs_g": 80,
+        "fat_g": 22
+      },
+      "contains": [
+        "added-sugar",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "stir-fry",
+        "vegan"
+      ],
+      "techniques": [
+        "stir-fry",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "street food",
+          "de": "streetfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "rice-noodles",
+        "tofu",
+        "bean-sprouts",
+        "spring-onion",
+        "garlic",
+        "shallot",
+        "peanuts",
+        "tamarind",
+        "tamari",
+        "palm-sugar",
+        "chili-flakes",
+        "lime",
+        "neutral-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "tofu",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "bean-sprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "peanuts",
+          "qty": 50,
+          "unit": "g"
+        },
+        {
+          "id": "tamarind",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tamari",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the noodles in warm water. Press the tofu between towels, then cut into small cubes.",
+            "de": "Nudeln in warmem Wasser einweichen. Tofu zwischen Tüchern pressen und in kleine Würfel schneiden."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Whisk tamarind, tamari and palm sugar together.",
+            "de": "Tamarinde, Tamari und Palmzucker verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry the tofu in half the oil until golden on all sides. Set aside.",
+            "de": "Tofu in der Hälfte des Öls rundum goldbraun braten. Beiseitestellen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "In the remaining oil, fry shallot and garlic, add noodles and sauce and toss until glossy.",
+            "de": "Im restlichen Öl Schalotte und Knoblauch anbraten, Nudeln und Sauce dazugeben und schwenken, bis alles glänzt."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Fold through tofu, sprouts and spring onion. Serve with peanuts, chili and lime.",
+            "de": "Tofu, Sprossen und Frühlingszwiebeln unterheben. Mit Erdnüssen, Chili und Limette servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pad-thai-nut-free",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Nut-free Chicken Pad Thai",
+        "de": "Nussfreies Pad Thai mit Hähnchen"
+      },
+      "blurb": {
+        "en": "Toasted sunflower seeds bring the crunch and the nutty depth — without a single nut near the pan.",
+        "de": "Geröstete Sonnenblumenkerne bringen Biss und nussige Tiefe — ohne dass eine einzige Nuss in die Nähe der Pfanne kommt."
+      },
+      "note": {
+        "en": "toast the seeds dry, keep watching.",
+        "de": "kerne trocken rösten, dabei bleiben."
+      },
+      "cuisine": "thai",
+      "diet": "nut-free",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 620,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 76,
+        "fat_g": 20
+      },
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "meat",
+        "poultry"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "high-protein",
+        "lunch",
+        "medium",
+        "nut-free",
+        "roast",
+        "stir-fry"
+      ],
+      "techniques": [
+        "stir-fry",
+        "roast"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "allergy friendly",
+          "de": "allergikerfreundlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "nut-free",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "rice-noodles",
+        "chicken-thigh",
+        "egg",
+        "bean-sprouts",
+        "spring-onion",
+        "garlic",
+        "shallot",
+        "sunflower-seeds",
+        "tamarind",
+        "fish-sauce",
+        "palm-sugar",
+        "chili-flakes",
+        "lime",
+        "neutral-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-thigh",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "bean-sprouts",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "sunflower-seeds",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "tamarind",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the noodles in warm water. Toast the sunflower seeds in a dry pan until fragrant.",
+            "de": "Nudeln in warmem Wasser einweichen. Sonnenblumenkerne in einer trockenen Pfanne duftend rösten."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Mix tamarind, fish sauce and palm sugar.",
+            "de": "Tamarinde, Fischsauce und Palmzucker mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir-fry the sliced chicken in hot oil until cooked through, then add shallot and garlic.",
+            "de": "Geschnittenes Hähnchen in heißem Öl pfannenrühren, bis es durch ist, dann Schalotte und Knoblauch dazugeben."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Scramble the eggs at the side of the wok, then add noodles and sauce and toss.",
+            "de": "Eier am Rand des Woks stocken lassen, dann Nudeln und Sauce dazugeben und schwenken."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Fold in sprouts and spring onion. Serve with the seeds, chili and lime.",
+            "de": "Sprossen und Frühlingszwiebeln unterheben. Mit Kernen, Chili und Limette servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "blurb": {
+        "en": "Eggs poached in a harissa-warm tomato and pepper sauce, crumbled feta, torn herbs, bread for dragging.",
+        "de": "Eier, pochiert in einer harissawarmen Tomaten-Paprika-Sauce, zerbröselter Feta, gezupfte Kräuter, Brot zum Durchziehen."
+      },
+      "note": {
+        "en": "lid on = set whites, runny yolks.",
+        "de": "deckel drauf = festes eiweiß, flüssiges eigelb."
+      },
+      "cuisine": "north-african",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 460,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 22,
+        "carbs_g": 38,
+        "fat_g": 24
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "breakfast",
+        "budget",
+        "classic",
+        "easy",
+        "lunch",
+        "one-pot",
+        "poach",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "poach"
+      ],
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "tags": [
+        {
+          "en": "eggs",
+          "de": "eier"
+        },
+        {
+          "en": "brunch",
+          "de": "brunch"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "bell-pepper",
+        "garlic",
+        "cumin",
+        "smoked-paprika",
+        "harissa",
+        "canned-tomatoes",
+        "egg",
+        "feta",
+        "parsley",
+        "sourdough",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "bell-pepper",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "harissa",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "id": "feta",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "sourdough",
+          "qty": 4,
+          "unit": "slice"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften the sliced onion and peppers in the oil over medium heat.",
+            "de": "Zwiebel- und Paprikastreifen im Öl bei mittlerer Hitze weich dünsten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add garlic, cumin, paprika and harissa and fry for a minute until fragrant.",
+            "de": "Knoblauch, Kreuzkümmel, Paprika und Harissa dazugeben und eine Minute duftend anbraten."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "Pour in the tomatoes, season with salt and simmer until thick.",
+            "de": "Tomaten dazugießen, salzen und dick einköcheln lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Make six wells and crack an egg into each. Cover and cook until the whites are set.",
+            "de": "Sechs Mulden formen und in jede ein Ei schlagen. Zudecken und garen, bis das Eiweiß gestockt ist."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Crumble over the feta, scatter parsley, and bring the pan to the table with toasted bread.",
+            "de": "Feta darüberbröseln, Petersilie streuen und die Pfanne mit geröstetem Brot auf den Tisch stellen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shakshuka-slow",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Slow Shakshuka with Roasted Peppers",
+        "de": "Langsame Shakshuka mit gerösteten Paprika"
+      },
+      "blurb": {
+        "en": "A Sunday version: peppers blistered under the grill, a quick homemade chili paste, tomatoes cooked down until jammy.",
+        "de": "Eine Sonntagsversion: Paprika unter dem Grill geröstet, eine schnelle hausgemachte Chilipaste, Tomaten eingekocht, bis sie marmeladig sind."
+      },
+      "note": {
+        "en": "steam the charred peppers in a bowl — skins slip right off.",
+        "de": "geröstete paprika in einer schüssel abdecken — die haut rutscht ab."
+      },
+      "cuisine": "north-african",
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 75,
+      "time_bucket": ">60",
+      "servings": 4,
+      "calories_per_serving": 490,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 22,
+        "carbs_g": 40,
+        "fat_g": 27
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=600",
+        ">60",
+        "breakfast",
+        "broil",
+        "classic",
+        "hard",
+        "lunch",
+        "one-pot",
+        "poach",
+        "simmer"
+      ],
+      "techniques": [
+        "broil",
+        "simmer",
+        "poach"
+      ],
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "tags": [
+        {
+          "en": "eggs",
+          "de": "eier"
+        },
+        {
+          "en": "weekend",
+          "de": "wochenende"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "bell-pepper",
+        "chili-pepper",
+        "olive-oil",
+        "onion",
+        "garlic",
+        "cumin-seeds",
+        "coriander",
+        "smoked-paprika",
+        "canned-tomatoes",
+        "egg",
+        "feta",
+        "cilantro",
+        "sourdough",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "bell-pepper",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "chili-pepper",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 4,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin-seeds",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "id": "feta",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "sourdough",
+          "qty": 4,
+          "unit": "slice"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Grill the peppers and chilies under a hot broiler, turning, until blackened all over.",
+            "de": "Paprika und Chilis unter dem heißen Grill wenden, bis sie rundum schwarz sind."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Cover in a bowl for ten minutes, then peel, seed and slice.",
+            "de": "In einer abgedeckten Schüssel zehn Minuten ruhen lassen, dann häuten, entkernen und in Streifen schneiden."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Pound the chilies with two garlic cloves, toasted cumin seeds, coriander, paprika and two tablespoons of oil into a rough paste.",
+            "de": "Chilis mit zwei Knoblauchzehen, gerösteten Kreuzkümmelsamen, Koriander, Paprika und zwei Esslöffeln Öl zu einer groben Paste zerstoßen."
+          }
+        },
+        {
+          "text": {
+            "en": "Soften the onion and remaining garlic in the rest of the oil, add the paste, peppers and tomatoes and simmer slowly until jammy.",
+            "de": "Zwiebel und restlichen Knoblauch im übrigen Öl weich dünsten, Paste, Paprika und Tomaten dazugeben und langsam marmeladig einköcheln."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Make wells, add the eggs, cover and cook until just set. Finish with feta and cilantro.",
+            "de": "Mulden formen, Eier hineingeben, zudecken und garen, bis sie gerade gestockt sind. Mit Feta und Koriander vollenden."
+          },
+          "timer_seconds": 360
+        }
+      ]
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Vegan Shakshuka with Silken Tofu",
+        "de": "Vegane Shakshuka mit Seidentofu"
+      },
+      "blurb": {
+        "en": "Spoonfuls of silken tofu warm through in the sauce like soft custardy eggs, with chickpeas for heft.",
+        "de": "Löffelweise Seidentofu wird in der Sauce warm wie weiche, puddingzarte Eier — Kichererbsen sorgen für Substanz."
+      },
+      "note": {
+        "en": "a pinch of turmeric on the tofu = sunny yolks.",
+        "de": "eine prise kurkuma auf den tofu = sonnige dotter."
+      },
+      "cuisine": "north-african",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 420,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 46,
+        "fat_g": 16
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "breakfast",
+        "budget",
+        "easy",
+        "lunch",
+        "one-pot",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "tags": [
+        {
+          "en": "brunch",
+          "de": "brunch"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "bell-pepper",
+        "garlic",
+        "cumin",
+        "smoked-paprika",
+        "harissa",
+        "canned-tomatoes",
+        "chickpeas",
+        "silken-tofu",
+        "turmeric",
+        "parsley",
+        "sourdough",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "bell-pepper",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "harissa",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "chickpeas",
+          "qty": 240,
+          "unit": "g"
+        },
+        {
+          "id": "silken-tofu",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "turmeric",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "sourdough",
+          "qty": 4,
+          "unit": "slice"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften onion and peppers in the oil, then add garlic, spices and harissa for a minute.",
+            "de": "Zwiebel und Paprika im Öl weich dünsten, dann Knoblauch, Gewürze und Harissa eine Minute mitbraten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add tomatoes and chickpeas, season and simmer until thick.",
+            "de": "Tomaten und Kichererbsen dazugeben, würzen und dick einköcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Spoon in big dollops of silken tofu, dust with turmeric and salt, cover and warm through.",
+            "de": "Große Kleckse Seidentofu hineinsetzen, mit Kurkuma und Salz bestäuben, zudecken und durchwärmen."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Scatter with parsley and serve with toasted bread.",
+            "de": "Mit Petersilie bestreuen und mit geröstetem Brot servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shakshuka-low-fodmap",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Gentle Shakshuka",
+        "de": "Sanfte Shakshuka"
+      },
+      "blurb": {
+        "en": "All the warmth, none of the onion and garlic: garlic-infused oil and spring onion greens carry the flavour.",
+        "de": "Die ganze Wärme, ohne Zwiebel und Knoblauch: Knoblauchöl und das Grün von Frühlingszwiebeln tragen den Geschmack."
+      },
+      "note": {
+        "en": "infused oil gives flavour without the fructans.",
+        "de": "aromatisiertes öl bringt geschmack ohne fruktane."
+      },
+      "cuisine": "north-african",
+      "diet": "low-fodmap",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 330,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 16,
+        "fat_g": 22
+      },
+      "contains": [
+        "egg"
+      ],
+      "attributes": [
+        "<=30",
+        "<=400",
+        "breakfast",
+        "easy",
+        "low-fodmap",
+        "lunch",
+        "one-pot",
+        "poach",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "poach"
+      ],
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ],
+      "tags": [
+        {
+          "en": "eggs",
+          "de": "eier"
+        },
+        {
+          "en": "gut friendly",
+          "de": "darmfreundlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "low-fodmap",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "garlic-oil",
+        "spring-onion",
+        "bell-pepper",
+        "cumin",
+        "paprika",
+        "canned-tomatoes",
+        "spinach",
+        "egg",
+        "chives",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "garlic-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "bell-pepper",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "paprika",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "spinach",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "id": "chives",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften the peppers and spring onion greens in the garlic oil.",
+            "de": "Paprika und Frühlingszwiebelgrün im Knoblauchöl weich dünsten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Add the spices, then the tomatoes, season and simmer until thickened. Stir in the spinach to wilt.",
+            "de": "Gewürze, dann Tomaten dazugeben, salzen und eindicken lassen. Spinat unterrühren und zusammenfallen lassen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Crack in the eggs, cover and cook until just set.",
+            "de": "Eier hineinschlagen, zudecken und garen, bis sie gerade gestockt sind."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Finish with chives and plenty of black pepper.",
+            "de": "Mit Schnittlauch und reichlich schwarzem Pfeffer vollenden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pancakes-classic",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "Blueberry Buttermilk-style Pancakes",
+        "de": "Blaubeer-Pancakes"
+      },
+      "blurb": {
+        "en": "Fluffy, golden, a little crisp at the edge, with blueberries bursting in every other bite.",
+        "de": "Fluffig, golden, am Rand ein wenig knusprig, mit Blaubeeren, die bei jedem zweiten Bissen platzen."
+      },
+      "note": {
+        "en": "lumpy batter = tender pancakes. stop stirring.",
+        "de": "klumpiger teig = zarte pancakes. hör auf zu rühren."
+      },
+      "cuisine": "american",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 430,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 12,
+        "carbs_g": 62,
+        "fat_g": 15
+      },
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "gluten",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "breakfast",
+        "classic",
+        "easy",
+        "kid-friendly",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "sweet",
+          "de": "süß"
+        },
+        {
+          "en": "brunch",
+          "de": "brunch"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "wheat-flour",
+        "baking-powder",
+        "sugar",
+        "salt",
+        "whole-milk",
+        "egg",
+        "butter",
+        "blueberries",
+        "maple-syrup"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-flour",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "whole-milk",
+          "qty": 300,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "blueberries",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Whisk flour, baking powder, sugar and salt in a bowl.",
+            "de": "Mehl, Backpulver, Zucker und Salz in einer Schüssel verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the butter. Whisk milk, eggs and most of the butter, then fold into the dry ingredients — lumps are fine.",
+            "de": "Butter schmelzen. Milch, Eier und den Großteil der Butter verquirlen und unter die trockenen Zutaten heben — Klümpchen sind in Ordnung."
+          }
+        },
+        {
+          "text": {
+            "en": "Let the batter rest for five minutes.",
+            "de": "Den Teig fünf Minuten ruhen lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Brush a pan with butter. Ladle in small rounds, scatter blueberries, and flip when bubbles appear.",
+            "de": "Eine Pfanne mit Butter auspinseln. Kleine Kreise hineingeben, Blaubeeren daraufstreuen und wenden, wenn Blasen erscheinen."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "Stack high and pour over the maple syrup.",
+            "de": "Hoch stapeln und mit Ahornsirup übergießen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pancakes-vegan",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "Fluffy Vegan Pancakes",
+        "de": "Fluffige vegane Pancakes"
+      },
+      "blurb": {
+        "en": "Soy milk soured with a splash of vinegar and a mashed banana make these as tall and tender as any diner stack.",
+        "de": "Mit einem Schuss Essig gesäuerter Sojadrink und eine zerdrückte Banane machen sie so hoch und zart wie jeder Diner-Stapel."
+      },
+      "note": {
+        "en": "the vinegar trick = buttermilk without the butter.",
+        "de": "der essig-trick = buttermilch ohne milch."
+      },
+      "cuisine": "american",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 390,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 10,
+        "carbs_g": 66,
+        "fat_g": 9
+      },
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "soy"
+      ],
+      "attributes": [
+        "<=30",
+        "<=400",
+        "breakfast",
+        "budget",
+        "easy",
+        "kid-friendly",
+        "pan-fry",
+        "vegan"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "sweet",
+          "de": "süß"
+        },
+        {
+          "en": "brunch",
+          "de": "brunch"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "wheat-flour",
+        "baking-powder",
+        "salt",
+        "soy-milk",
+        "rice-vinegar",
+        "banana",
+        "neutral-oil",
+        "blueberries",
+        "maple-syrup"
+      ],
+      "ingredients": [
+        {
+          "id": "wheat-flour",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "soy-milk",
+          "qty": 320,
+          "unit": "ml"
+        },
+        {
+          "id": "rice-vinegar",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "blueberries",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Stir the vinegar into the soy milk and leave it to thicken slightly.",
+            "de": "Essig in den Sojadrink rühren und leicht andicken lassen."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Mash the banana, whisk in the soured milk and oil, then fold into flour, baking powder and salt.",
+            "de": "Banane zerdrücken, gesäuerten Drink und Öl unterrühren, dann unter Mehl, Backpulver und Salz heben."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook small ladles of batter in a lightly oiled pan, scattering blueberries on top. Flip when bubbles pop.",
+            "de": "Kleine Kellen Teig in einer leicht geölten Pfanne backen, Blaubeeren darauf verteilen. Wenden, wenn Blasen platzen."
+          },
+          "timer_seconds": 150
+        },
+        {
+          "text": {
+            "en": "Serve warm with maple syrup.",
+            "de": "Warm mit Ahornsirup servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pancakes-gluten-free",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "Gluten-free Raspberry Pancakes",
+        "de": "Glutenfreie Himbeer-Pancakes"
+      },
+      "blurb": {
+        "en": "A good gluten-free blend makes tender pancakes; a ten-minute rest makes them great.",
+        "de": "Eine gute glutenfreie Mischung macht zarte Pancakes; zehn Minuten Ruhe machen sie großartig."
+      },
+      "note": {
+        "en": "rest the batter — gf flour needs time to drink.",
+        "de": "teig ruhen lassen — glutenfreies mehl muss trinken."
+      },
+      "cuisine": "american",
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 420,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 11,
+        "carbs_g": 60,
+        "fat_g": 15
+      },
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "lactose"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "breakfast",
+        "easy",
+        "gluten-free",
+        "kid-friendly",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "sweet",
+          "de": "süß"
+        },
+        {
+          "en": "brunch",
+          "de": "brunch"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "gf-flour",
+        "baking-powder",
+        "sugar",
+        "salt",
+        "whole-milk",
+        "egg",
+        "butter",
+        "raspberries",
+        "maple-syrup"
+      ],
+      "ingredients": [
+        {
+          "id": "gf-flour",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "sugar",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "whole-milk",
+          "qty": 320,
+          "unit": "ml"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "raspberries",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "maple-syrup",
+          "qty": 4,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Whisk the dry ingredients, then stir in milk, eggs and melted butter until smooth.",
+            "de": "Trockene Zutaten verquirlen, dann Milch, Eier und geschmolzene Butter glatt einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Rest the batter so the flour can hydrate.",
+            "de": "Teig ruhen lassen, damit das Mehl quellen kann."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Cook in a buttered pan over medium-low heat, dotting with raspberries. Flip carefully.",
+            "de": "In einer gebutterten Pfanne bei mittlerer bis niedriger Hitze backen, mit Himbeeren belegen. Vorsichtig wenden."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Serve with maple syrup.",
+            "de": "Mit Ahornsirup servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pancakes-protein",
+      "dish_id": "pancakes",
+      "title": {
+        "en": "Oat & Yogurt Protein Pancakes",
+        "de": "Protein-Pancakes mit Hafer & Joghurt"
+      },
+      "blurb": {
+        "en": "Blitzed oats, eggs, thick yogurt and a banana: no added sugar, plenty of staying power.",
+        "de": "Gemixte Haferflocken, Eier, dicker Joghurt und eine Banane: kein zugesetzter Zucker, viel Ausdauer."
+      },
+      "note": {
+        "en": "blend, rest two minutes, fry. that’s it.",
+        "de": "mixen, zwei minuten ruhen, braten. fertig."
+      },
+      "cuisine": "american",
+      "diet": "high-protein",
+      "effort": "easy",
+      "time_minutes": 15,
+      "time_bucket": "<=15",
+      "servings": 2,
+      "calories_per_serving": 370,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 40,
+        "fat_g": 11
+      },
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "lactose"
+      ],
+      "attributes": [
+        "<=15",
+        "<=400",
+        "breakfast",
+        "easy",
+        "high-protein",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "fitness",
+          "de": "fitness"
+        },
+        {
+          "en": "no added sugar",
+          "de": "ohne zuckerzusatz"
+        }
+      ],
+      "dimensions": {
+        "diet": "high-protein",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "oats",
+        "egg",
+        "greek-yogurt",
+        "banana",
+        "baking-powder",
+        "cinnamon",
+        "neutral-oil",
+        "blueberries"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "blueberries",
+          "qty": 100,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Blend oats, eggs, yogurt, banana, baking powder and cinnamon until smooth.",
+            "de": "Haferflocken, Eier, Joghurt, Banane, Backpulver und Zimt glatt mixen."
+          }
+        },
+        {
+          "text": {
+            "en": "Let the batter thicken for two minutes.",
+            "de": "Den Teig zwei Minuten andicken lassen."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Fry small pancakes in a barely oiled pan over medium heat, two minutes a side.",
+            "de": "Kleine Pancakes in einer kaum geölten Pfanne bei mittlerer Hitze braten, zwei Minuten pro Seite."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Top with blueberries and an extra spoon of yogurt.",
+            "de": "Mit Blaubeeren und einem Extralöffel Joghurt servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chili-classic",
+      "dish_id": "chili",
+      "title": {
+        "en": "Chili con Carne",
+        "de": "Chili con Carne"
+      },
+      "blurb": {
+        "en": "Deeply browned beef, kidney beans, smoky paprika and a secret spoon of cocoa, simmered until everything tastes of everything.",
+        "de": "Kräftig angebratenes Rind, Kidneybohnen, rauchiger Paprika und ein geheimer Löffel Kakao — geköchelt, bis alles nach allem schmeckt."
+      },
+      "note": {
+        "en": "brown the meat properly. grey is not a colour.",
+        "de": "fleisch richtig anbraten. grau ist keine farbe."
+      },
+      "cuisine": "mexican",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 75,
+      "time_bucket": ">60",
+      "servings": 4,
+      "calories_per_serving": 610,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 40,
+        "carbs_g": 45,
+        "fat_g": 28
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=800",
+        ">60",
+        "classic",
+        "dinner",
+        "high-protein",
+        "meal-prep",
+        "medium",
+        "one-pot",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "stew",
+          "de": "eintopf"
+        },
+        {
+          "en": "spicy",
+          "de": "scharf"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "ground-beef",
+        "olive-oil",
+        "onion",
+        "garlic",
+        "bell-pepper",
+        "cumin",
+        "smoked-paprika",
+        "chili-flakes",
+        "oregano",
+        "cocoa",
+        "tomato-paste",
+        "canned-tomatoes",
+        "kidney-beans",
+        "sour-cream",
+        "cilantro",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "bell-pepper",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cocoa",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "kidney-beans",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "sour-cream",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Brown the beef in the oil over high heat, breaking it up, until dark and crusty. Scoop out.",
+            "de": "Das Rind im Öl bei starker Hitze krümelig und dunkel anbraten. Herausnehmen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Soften onion, garlic and pepper in the fat, then add the spices, cocoa and tomato paste for a minute.",
+            "de": "Zwiebel, Knoblauch und Paprika im Fett weich dünsten, dann Gewürze, Kakao und Tomatenmark eine Minute mitrösten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Return the beef, add tomatoes and beans with their liquid, season and simmer with the lid ajar.",
+            "de": "Fleisch zurückgeben, Tomaten und Bohnen mit Flüssigkeit dazugeben, würzen und mit leicht geöffnetem Deckel köcheln."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "Taste, adjust the salt and heat, and serve with sour cream and cilantro.",
+            "de": "Abschmecken, Salz und Schärfe anpassen, mit Schmand und Koriander servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chili-weeknight",
+      "dish_id": "chili",
+      "title": {
+        "en": "30-minute Chili",
+        "de": "30-Minuten-Chili"
+      },
+      "blurb": {
+        "en": "Half the pot-watching, all the comfort: a short simmer, sweet corn, and a melt of cheddar over the top.",
+        "de": "Halb so viel Topfgucken, der ganze Trost: kurzes Köcheln, süßer Mais und geschmolzener Cheddar obendrauf."
+      },
+      "note": {
+        "en": "a splash of the bean liquid thickens it fast.",
+        "de": "ein schluck bohnenwasser dickt es schnell an."
+      },
+      "cuisine": "mexican",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 36,
+        "carbs_g": 40,
+        "fat_g": 26
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "kid-friendly",
+        "one-pot",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "stew",
+          "de": "eintopf"
+        },
+        {
+          "en": "quick",
+          "de": "schnell"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "ground-beef",
+        "olive-oil",
+        "onion",
+        "garlic",
+        "cumin",
+        "smoked-paprika",
+        "oregano",
+        "canned-tomatoes",
+        "kidney-beans",
+        "corn",
+        "cheddar",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "kidney-beans",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "corn",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "cheddar",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Brown beef and onion in the oil, add garlic and spices for a minute.",
+            "de": "Rind und Zwiebel im Öl anbraten, Knoblauch und Gewürze eine Minute mitbraten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Add tomatoes, beans and corn, season and simmer briskly.",
+            "de": "Tomaten, Bohnen und Mais dazugeben, würzen und zügig köcheln."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Serve in bowls with grated cheddar melting on top.",
+            "de": "In Schüsseln mit geriebenem, schmelzendem Cheddar servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chili-slow",
+      "dish_id": "chili",
+      "title": {
+        "en": "Slow-braised Beef Chili",
+        "de": "Langsam geschmortes Rindfleisch-Chili"
+      },
+      "blurb": {
+        "en": "Chunks of chuck braised for three hours until they fall into shreds, with toasted cumin, dark chocolate and black beans.",
+        "de": "Rindernacken-Stücke drei Stunden geschmort, bis sie zerfallen — mit geröstetem Kreuzkümmel, dunkler Schokolade und schwarzen Bohnen."
+      },
+      "note": {
+        "en": "make it the day before. trust me.",
+        "de": "am vortag kochen. glaub mir."
+      },
+      "cuisine": "mexican",
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 210,
+      "time_bucket": ">60",
+      "servings": 6,
+      "calories_per_serving": 690,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 52,
+        "carbs_g": 34,
+        "fat_g": 36
+      },
+      "contains": [
+        "added-sugar",
+        "beef",
+        "high-fodmap",
+        "meat"
+      ],
+      "attributes": [
+        "<=800",
+        ">60",
+        "classic",
+        "dinner",
+        "hard",
+        "high-protein",
+        "meal-prep",
+        "one-pot",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "stew",
+          "de": "eintopf"
+        },
+        {
+          "en": "weekend",
+          "de": "wochenende"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "beef-chuck",
+        "olive-oil",
+        "onion",
+        "garlic",
+        "cumin-seeds",
+        "smoked-paprika",
+        "chili-flakes",
+        "tomato-paste",
+        "canned-tomatoes",
+        "water",
+        "dark-chocolate",
+        "black-beans",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-chuck",
+          "qty": 1000,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 5,
+          "unit": "clove"
+        },
+        {
+          "id": "cumin-seeds",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "id": "dark-chocolate",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Season the beef well and sear it in batches in the oil until deeply browned on all sides.",
+            "de": "Rind kräftig würzen und portionsweise im Öl rundum dunkel anbraten."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Toast the cumin seeds, add onion and garlic and cook until soft. Stir in paprika, chili and tomato paste.",
+            "de": "Kreuzkümmelsamen rösten, Zwiebel und Knoblauch dazugeben und weich dünsten. Paprika, Chili und Tomatenmark einrühren."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Return the beef with tomatoes and water. Cover and braise on the lowest heat.",
+            "de": "Rind mit Tomaten und Wasser zurückgeben. Zudecken und auf kleinster Stufe schmoren."
+          },
+          "timer_seconds": 9000
+        },
+        {
+          "text": {
+            "en": "Shred the beef with two forks, stir in the chocolate and beans and simmer uncovered to thicken.",
+            "de": "Fleisch mit zwei Gabeln zerzupfen, Schokolade und Bohnen einrühren und offen eindicken lassen."
+          },
+          "timer_seconds": 900
+        }
+      ]
+    },
+    {
+      "id": "chili-sin-carne",
+      "dish_id": "chili",
+      "title": {
+        "en": "Chili sin Carne",
+        "de": "Chili sin Carne"
+      },
+      "blurb": {
+        "en": "Two kinds of beans and sweet potato, cooked down with smoky spices and finished with avocado and lime.",
+        "de": "Zwei Bohnensorten und Süßkartoffel, mit rauchigen Gewürzen eingekocht und mit Avocado und Limette vollendet."
+      },
+      "note": {
+        "en": "a square of cocoa, a squeeze of lime. balance.",
+        "de": "etwas kakao, ein spritzer limette. balance."
+      },
+      "cuisine": "mexican",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 480,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 70,
+        "fat_g": 12
+      },
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "budget",
+        "dinner",
+        "lunch",
+        "meal-prep",
+        "medium",
+        "one-pot",
+        "sauté",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "stew",
+          "de": "eintopf"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "garlic",
+        "bell-pepper",
+        "sweet-potato",
+        "cumin",
+        "smoked-paprika",
+        "chili-flakes",
+        "oregano",
+        "cocoa",
+        "tomato-paste",
+        "canned-tomatoes",
+        "kidney-beans",
+        "black-beans",
+        "avocado",
+        "lime",
+        "cilantro",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "bell-pepper",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "sweet-potato",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "smoked-paprika",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "chili-flakes",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "cocoa",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "kidney-beans",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "black-beans",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "avocado",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cilantro",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften onion, garlic, pepper and diced sweet potato in the oil.",
+            "de": "Zwiebel, Knoblauch, Paprika und gewürfelte Süßkartoffel im Öl andünsten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Add spices, cocoa and tomato paste and fry for a minute.",
+            "de": "Gewürze, Kakao und Tomatenmark dazugeben und eine Minute rösten."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "Add tomatoes and both beans, season and simmer until the sweet potato is tender and the chili thick.",
+            "de": "Tomaten und beide Bohnensorten dazugeben, würzen und köcheln, bis die Süßkartoffel weich und das Chili dick ist."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "Serve with sliced avocado, lime and cilantro.",
+            "de": "Mit Avocadoscheiben, Limette und Koriander servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oats-classic",
+      "dish_id": "overnight-oats",
+      "title": {
+        "en": "Apple-Cinnamon Overnight Oats",
+        "de": "Apfel-Zimt-Overnight-Oats"
+      },
+      "blurb": {
+        "en": "Grated apple, cinnamon and walnuts folded into creamy oats. Ten minutes tonight, a jar tomorrow.",
+        "de": "Geriebener Apfel, Zimt und Walnüsse in cremigen Haferflocken. Zehn Minuten heute Abend, ein Glas morgen früh."
+      },
+      "note": {
+        "en": "plus a night in the fridge.",
+        "de": "plus eine nacht im kühlschrank."
+      },
+      "cuisine": "british",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "<=15",
+      "servings": 2,
+      "calories_per_serving": 420,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 52,
+        "fat_g": 16
+      },
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "honey",
+        "lactose",
+        "tree-nuts",
+        "walnuts"
+      ],
+      "attributes": [
+        "<=15",
+        "<=600",
+        "breakfast",
+        "budget",
+        "classic",
+        "easy",
+        "meal-prep",
+        "raw"
+      ],
+      "techniques": [
+        "raw"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "make ahead",
+          "de": "vorbereiten"
+        },
+        {
+          "en": "jar",
+          "de": "glas"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "oats",
+        "whole-milk",
+        "greek-yogurt",
+        "chia-seeds",
+        "honey",
+        "apple",
+        "cinnamon",
+        "walnuts"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "chia-seeds",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "honey",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "apple",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cinnamon",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "walnuts",
+          "qty": 30,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Stir oats, milk, yogurt, chia, honey and cinnamon together in a bowl.",
+            "de": "Haferflocken, Milch, Joghurt, Chia, Honig und Zimt in einer Schüssel verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Grate in the apple, stir again and divide between two jars.",
+            "de": "Den Apfel hineinreiben, nochmal umrühren und auf zwei Gläser verteilen."
+          }
+        },
+        {
+          "text": {
+            "en": "Close and refrigerate overnight — at least six hours.",
+            "de": "Verschließen und über Nacht kühlen — mindestens sechs Stunden."
+          }
+        },
+        {
+          "text": {
+            "en": "In the morning, loosen with a splash of milk and top with chopped walnuts.",
+            "de": "Morgens mit einem Schluck Milch lockern und mit gehackten Walnüssen bestreuen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oats-vegan",
+      "dish_id": "overnight-oats",
+      "title": {
+        "en": "Blueberry-Almond Overnight Oats",
+        "de": "Blaubeer-Mandel-Overnight-Oats"
+      },
+      "blurb": {
+        "en": "Oat milk and soy yogurt, maple for sweetness, blueberries that bleed purple into everything overnight.",
+        "de": "Haferdrink und Sojajoghurt, Ahorn für die Süße, Blaubeeren, die über Nacht alles lila färben."
+      },
+      "note": {
+        "en": "squash a few berries. prettier jar.",
+        "de": "ein paar beeren zerdrücken. schöneres glas."
+      },
+      "cuisine": "british",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "<=15",
+      "servings": 2,
+      "calories_per_serving": 390,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 13,
+        "carbs_g": 54,
+        "fat_g": 13
+      },
+      "contains": [
+        "added-sugar",
+        "almonds",
+        "gluten",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "<=15",
+        "<=400",
+        "breakfast",
+        "easy",
+        "meal-prep",
+        "raw",
+        "vegan"
+      ],
+      "techniques": [
+        "raw"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "make ahead",
+          "de": "vorbereiten"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "oats",
+        "oat-milk",
+        "soy-yogurt",
+        "chia-seeds",
+        "maple-syrup",
+        "blueberries",
+        "almonds"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "oat-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "soy-yogurt",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "chia-seeds",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "maple-syrup",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "blueberries",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "almonds",
+          "qty": 30,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mix oats, oat milk, soy yogurt, chia and maple syrup.",
+            "de": "Haferflocken, Haferdrink, Sojajoghurt, Chia und Ahornsirup mischen."
+          }
+        },
+        {
+          "text": {
+            "en": "Fold in the blueberries, lightly crushing a few, and spoon into jars.",
+            "de": "Blaubeeren unterheben, ein paar leicht zerdrücken, und in Gläser füllen."
+          }
+        },
+        {
+          "text": {
+            "en": "Refrigerate overnight, then top with chopped almonds.",
+            "de": "Über Nacht kühlen, dann mit gehackten Mandeln bestreuen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oats-gluten-free",
+      "dish_id": "overnight-oats",
+      "title": {
+        "en": "Raspberry & Seed Overnight Oats",
+        "de": "Himbeer-Kerne-Overnight-Oats"
+      },
+      "blurb": {
+        "en": "Certified gluten-free oats, rice milk and pumpkin seeds: free of gluten, dairy and nuts, full of crunch.",
+        "de": "Zertifiziert glutenfreier Hafer, Reisdrink und Kürbiskerne: frei von Gluten, Milch und Nüssen, voller Biss."
+      },
+      "note": {
+        "en": "check the oat label every time.",
+        "de": "das etikett jedes mal prüfen."
+      },
+      "cuisine": "british",
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "<=15",
+      "servings": 2,
+      "calories_per_serving": 380,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 11,
+        "carbs_g": 58,
+        "fat_g": 12
+      },
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": [
+        "<=15",
+        "<=400",
+        "breakfast",
+        "easy",
+        "gluten-free",
+        "meal-prep",
+        "raw"
+      ],
+      "techniques": [
+        "raw"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "make ahead",
+          "de": "vorbereiten"
+        },
+        {
+          "en": "allergy friendly",
+          "de": "allergikerfreundlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "gf-oats",
+        "rice-milk",
+        "chia-seeds",
+        "maple-syrup",
+        "banana",
+        "raspberries",
+        "pumpkin-seeds"
+      ],
+      "ingredients": [
+        {
+          "id": "gf-oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "rice-milk",
+          "qty": 250,
+          "unit": "ml"
+        },
+        {
+          "id": "chia-seeds",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "maple-syrup",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "raspberries",
+          "qty": 120,
+          "unit": "g"
+        },
+        {
+          "id": "pumpkin-seeds",
+          "qty": 30,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mash half the banana and stir with oats, rice milk, chia and maple syrup.",
+            "de": "Die halbe Banane zerdrücken und mit Hafer, Reisdrink, Chia und Ahornsirup verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Spoon into jars and refrigerate overnight.",
+            "de": "In Gläser füllen und über Nacht kühlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with raspberries, the rest of the banana, sliced, and pumpkin seeds.",
+            "de": "Mit Himbeeren, der restlichen Banane in Scheiben und Kürbiskernen belegen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "oats-sugar-free",
+      "dish_id": "overnight-oats",
+      "title": {
+        "en": "Banana-Strawberry Overnight Oats",
+        "de": "Bananen-Erdbeer-Overnight-Oats"
+      },
+      "blurb": {
+        "en": "Sweetened only by ripe banana and strawberries — you won’t miss the syrup.",
+        "de": "Nur mit reifer Banane und Erdbeeren gesüßt — den Sirup vermisst du nicht."
+      },
+      "note": {
+        "en": "spotty bananas are the sweetest.",
+        "de": "gefleckte bananen sind die süßesten."
+      },
+      "cuisine": "british",
+      "diet": "sugar-free",
+      "effort": "easy",
+      "time_minutes": 10,
+      "time_bucket": "<=15",
+      "servings": 2,
+      "calories_per_serving": 340,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 17,
+        "carbs_g": 46,
+        "fat_g": 9
+      },
+      "contains": [
+        "dairy",
+        "gluten",
+        "lactose"
+      ],
+      "attributes": [
+        "<=15",
+        "<=400",
+        "breakfast",
+        "budget",
+        "easy",
+        "meal-prep",
+        "raw",
+        "sugar-free"
+      ],
+      "techniques": [
+        "raw"
+      ],
+      "meal_types": [
+        "breakfast"
+      ],
+      "tags": [
+        {
+          "en": "make ahead",
+          "de": "vorbereiten"
+        },
+        {
+          "en": "no added sugar",
+          "de": "ohne zuckerzusatz"
+        }
+      ],
+      "dimensions": {
+        "diet": "sugar-free",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "oats",
+        "whole-milk",
+        "greek-yogurt",
+        "chia-seeds",
+        "banana",
+        "cinnamon",
+        "strawberries"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "id": "greek-yogurt",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "chia-seeds",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "banana",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "cinnamon",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "strawberries",
+          "qty": 150,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mash the banana well, then stir in oats, milk, yogurt, chia and cinnamon.",
+            "de": "Banane gut zerdrücken, dann Haferflocken, Milch, Joghurt, Chia und Zimt einrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Divide into jars and refrigerate overnight.",
+            "de": "Auf Gläser verteilen und über Nacht kühlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with sliced strawberries in the morning.",
+            "de": "Morgens mit geschnittenen Erdbeeren belegen."
+          }
+        }
+      ]
+    }
+  ]
+}

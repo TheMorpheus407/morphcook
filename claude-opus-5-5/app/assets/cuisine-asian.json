@@ -1,0 +1,1441 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-asian",
+  "corpus_version": "2026.09.1",
+  "recipes": [
+    {
+      "id": "ramen-pork",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Slow Pork Belly Ramen",
+        "de": "Ramen mit langsam gegartem Schweinebauch"
+      },
+      "blurb": {
+        "en": "Rolled pork belly braised in soy and mirin, a rich chicken-kombu broth, marinated eggs with sunset yolks.",
+        "de": "Gerollter Schweinebauch, in Soja und Mirin geschmort, eine kräftige Hühner-Kombu-Brühe, marinierte Eier mit Sonnenuntergangs-Dottern."
+      },
+      "note": {
+        "en": "6½ minutes for the eggs. set a timer, really.",
+        "de": "6½ minuten für die eier. wirklich timer stellen."
+      },
+      "cuisine": "japanese",
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 240,
+      "time_bucket": ">60",
+      "servings": 4,
+      "calories_per_serving": 890,
+      "calorie_bucket": ">800",
+      "macros": {
+        "protein_g": 42,
+        "carbs_g": 72,
+        "fat_g": 46
+      },
+      "contains": [
+        "added-sugar",
+        "alcohol",
+        "celery",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "meat",
+        "pork",
+        "poultry",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        ">60",
+        ">800",
+        "classic",
+        "dinner",
+        "hard",
+        "poach",
+        "roast",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "roast",
+        "poach"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "weekend",
+          "de": "wochenende"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": ">800"
+      },
+      "ingredient_ids": [
+        "pork-belly",
+        "soy-sauce",
+        "mirin",
+        "sugar",
+        "garlic",
+        "ginger",
+        "chicken-stock",
+        "kombu",
+        "shiitake",
+        "egg",
+        "ramen-noodles",
+        "spring-onion",
+        "nori",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "pork-belly",
+          "qty": 600,
+          "unit": "g"
+        },
+        {
+          "id": "soy-sauce",
+          "qty": 6,
+          "unit": "tbsp"
+        },
+        {
+          "id": "mirin",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garlic",
+          "qty": 4,
+          "unit": "clove"
+        },
+        {
+          "id": "ginger",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "chicken-stock",
+          "qty": 2,
+          "unit": "l"
+        },
+        {
+          "id": "kombu",
+          "qty": 1,
+          "unit": "sheet"
+        },
+        {
+          "id": "shiitake",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "id": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "ramen-noodles",
+          "qty": 480,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "nori",
+          "qty": 4,
+          "unit": "sheet"
+        },
+        {
+          "id": "sesame-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Roll and tie the pork belly. Brown it all over in a heavy pot.",
+            "de": "Den Schweinebauch rollen und binden. In einem schweren Topf rundum anbraten."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Add soy, mirin, sugar, half the garlic and ginger and water to half-cover. Braise, turning every half hour.",
+            "de": "Soja, Mirin, Zucker, die Hälfte von Knoblauch und Ingwer und Wasser bis zur halben Höhe dazugeben. Schmoren und jede halbe Stunde wenden."
+          },
+          "timer_seconds": 9000
+        },
+        {
+          "text": {
+            "en": "Meanwhile simmer the stock with kombu, shiitake and the rest of the garlic and ginger. Remove the kombu before it boils hard.",
+            "de": "Inzwischen die Brühe mit Kombu, Shiitake und restlichem Knoblauch und Ingwer köcheln. Kombu herausnehmen, bevor es sprudelnd kocht."
+          },
+          "timer_seconds": 2700
+        },
+        {
+          "text": {
+            "en": "Boil the eggs, chill in ice water, peel, and marinate in a few spoons of the braising liquid.",
+            "de": "Eier kochen, in Eiswasser abschrecken, pellen und in ein paar Löffeln Schmorflüssigkeit marinieren."
+          },
+          "timer_seconds": 390
+        },
+        {
+          "text": {
+            "en": "Season the broth with some braising liquid. Slice the pork and cook the noodles.",
+            "de": "Die Brühe mit etwas Schmorflüssigkeit abschmecken. Fleisch aufschneiden und Nudeln kochen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Build the bowls: noodles, broth, pork, halved egg, spring onion, nori, a drop of sesame oil.",
+            "de": "Schalen anrichten: Nudeln, Brühe, Fleisch, halbiertes Ei, Frühlingszwiebel, Nori, ein Tropfen Sesamöl."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ramen-quick-chicken",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Quick Chicken Ramen",
+        "de": "Schnelle Hühner-Ramen"
+      },
+      "blurb": {
+        "en": "Store-bought stock perked up with ginger, garlic and soy, poached chicken, greens and a soft egg.",
+        "de": "Gekaufte Brühe, aufgepeppt mit Ingwer, Knoblauch und Soja, pochiertes Hähnchen, Grünzeug und ein weiches Ei."
+      },
+      "note": {
+        "en": "poach, don’t boil. tender chicken.",
+        "de": "pochieren, nicht kochen. zartes hähnchen."
+      },
+      "cuisine": "japanese",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 40,
+        "carbs_g": 60,
+        "fat_g": 16
+      },
+      "contains": [
+        "celery",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "meat",
+        "poultry",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "classic",
+        "dinner",
+        "easy",
+        "high-protein",
+        "kid-friendly",
+        "lunch",
+        "poach",
+        "simmer"
+      ],
+      "techniques": [
+        "poach",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "quick",
+          "de": "schnell"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "chicken-stock",
+        "ginger",
+        "garlic",
+        "soy-sauce",
+        "chicken-breast",
+        "egg",
+        "ramen-noodles",
+        "bok-choy",
+        "spring-onion",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "id": "ginger",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "soy-sauce",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chicken-breast",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "egg",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "ramen-noodles",
+          "qty": 360,
+          "unit": "g"
+        },
+        {
+          "id": "bok-choy",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Simmer stock with sliced ginger, smashed garlic and soy sauce.",
+            "de": "Brühe mit Ingwerscheiben, angedrücktem Knoblauch und Sojasauce köcheln."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Slip in the chicken breast and poach gently until just cooked. Lift out and slice.",
+            "de": "Hähnchenbrust hineingleiten lassen und sanft pochieren, bis sie gerade gar ist. Herausheben und aufschneiden."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Soft-boil the eggs, cook the noodles, and wilt the bok choy in the broth.",
+            "de": "Eier weich kochen, Nudeln garen und Pak Choi in der Brühe zusammenfallen lassen."
+          },
+          "timer_seconds": 390
+        },
+        {
+          "text": {
+            "en": "Assemble with spring onion and a few drops of sesame oil.",
+            "de": "Mit Frühlingszwiebel und ein paar Tropfen Sesamöl anrichten."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ramen-miso-vegan",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Vegan Miso Ramen",
+        "de": "Vegane Miso-Ramen"
+      },
+      "blurb": {
+        "en": "A creamy miso-sesame broth, crisp tofu, sweet corn and bok choy — cosy, bright, deeply savoury.",
+        "de": "Eine cremige Miso-Sesam-Brühe, knuspriger Tofu, süßer Mais und Pak Choi — gemütlich, hell, tief würzig."
+      },
+      "note": {
+        "en": "never boil miso. stir it in at the end.",
+        "de": "miso nie kochen. am ende einrühren."
+      },
+      "cuisine": "japanese",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 620,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 28,
+        "carbs_g": 74,
+        "fat_g": 22
+      },
+      "contains": [
+        "celery",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "dinner",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "vegetable-stock",
+        "kombu",
+        "shiitake",
+        "ginger",
+        "garlic",
+        "miso",
+        "tahini",
+        "soy-sauce",
+        "tofu",
+        "neutral-oil",
+        "ramen-noodles",
+        "bok-choy",
+        "corn",
+        "spring-onion",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "vegetable-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "kombu",
+          "qty": 1,
+          "unit": "sheet"
+        },
+        {
+          "id": "shiitake",
+          "qty": 6,
+          "unit": "pc"
+        },
+        {
+          "id": "ginger",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "miso",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tahini",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "soy-sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tofu",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "ramen-noodles",
+          "qty": 360,
+          "unit": "g"
+        },
+        {
+          "id": "bok-choy",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "corn",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Simmer the stock with kombu, sliced shiitake, ginger and garlic. Remove the kombu.",
+            "de": "Brühe mit Kombu, Shiitake-Scheiben, Ingwer und Knoblauch köcheln. Kombu herausnehmen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Fry cubes of pressed tofu in the oil until golden.",
+            "de": "Gewürfelten, gepressten Tofu im Öl goldbraun braten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Whisk miso, tahini and soy with a ladle of broth, then stir back into the pot off the boil.",
+            "de": "Miso, Tahini und Soja mit einer Kelle Brühe verquirlen und abseits der Hitze zurück in den Topf rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook the noodles, wilt the bok choy, and assemble with tofu, corn, spring onion and sesame oil.",
+            "de": "Nudeln garen, Pak Choi zusammenfallen lassen und mit Tofu, Mais, Frühlingszwiebel und Sesamöl anrichten."
+          },
+          "timer_seconds": 180
+        }
+      ]
+    },
+    {
+      "id": "ramen-gluten-free",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Gluten-free Soba Chicken Ramen",
+        "de": "Glutenfreie Soba-Ramen mit Hähnchen"
+      },
+      "blurb": {
+        "en": "Nutty 100% buckwheat noodles and tamari make a gluten-free bowl that is anything but a compromise.",
+        "de": "Nussige Nudeln aus 100% Buchweizen und Tamari machen eine glutenfreie Schale, die alles andere als ein Kompromiss ist."
+      },
+      "note": {
+        "en": "rinse soba cold — they get slippery-silky.",
+        "de": "soba kalt abspülen — sie werden seidig glatt."
+      },
+      "cuisine": "japanese",
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 540,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 56,
+        "fat_g": 18
+      },
+      "contains": [
+        "celery",
+        "egg",
+        "high-fodmap",
+        "meat",
+        "poultry",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "gluten-free",
+        "high-protein",
+        "lunch",
+        "medium",
+        "pan-fry",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "noodles",
+          "de": "nudeln"
+        },
+        {
+          "en": "soup",
+          "de": "suppe"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "chicken-stock",
+        "ginger",
+        "garlic",
+        "tamari",
+        "chicken-thigh",
+        "neutral-oil",
+        "egg",
+        "buckwheat-noodles",
+        "bok-choy",
+        "spring-onion",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "id": "ginger",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "tamari",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chicken-thigh",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "egg",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "buckwheat-noodles",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "bok-choy",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 3,
+          "unit": "pc"
+        },
+        {
+          "id": "sesame-oil",
+          "qty": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Simmer the stock with ginger, garlic and tamari.",
+            "de": "Brühe mit Ingwer, Knoblauch und Tamari köcheln."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Pan-fry the chicken thighs skin-side down until crisp and cooked through, then slice.",
+            "de": "Hähnchenschenkel mit der Hautseite nach unten knusprig und durch braten, dann aufschneiden."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Soft-boil the eggs. Cook the soba, then rinse under cold water.",
+            "de": "Eier weich kochen. Soba garen und kalt abspülen."
+          },
+          "timer_seconds": 390
+        },
+        {
+          "text": {
+            "en": "Warm the noodles in the broth with the bok choy and assemble with chicken, eggs, spring onion and sesame oil.",
+            "de": "Nudeln mit Pak Choi in der Brühe erwärmen und mit Hähnchen, Eiern, Frühlingszwiebel und Sesamöl anrichten."
+          }
+        }
+      ]
+    },
+    {
+      "id": "curry-classic",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "Thai Green Chicken Curry",
+        "de": "Thailändisches grünes Curry mit Hähnchen"
+      },
+      "blurb": {
+        "en": "Curry paste fried in the thick coconut cream until it splits and smells incredible — that’s the whole secret.",
+        "de": "Currypaste in der dicken Kokoscreme gebraten, bis sie sich trennt und unglaublich duftet — das ist das ganze Geheimnis."
+      },
+      "note": {
+        "en": "don’t shake the can. you want the cream on top.",
+        "de": "dose nicht schütteln. die creme oben brauchst du."
+      },
+      "cuisine": "thai",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 640,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 62,
+        "fat_g": 28
+      },
+      "contains": [
+        "added-sugar",
+        "fish",
+        "meat",
+        "poultry",
+        "shellfish"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "dinner",
+        "fry",
+        "medium",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "fry"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "curry",
+          "de": "curry"
+        },
+        {
+          "en": "spicy",
+          "de": "scharf"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "coconut-milk",
+        "green-curry-paste",
+        "chicken-thigh",
+        "fish-sauce",
+        "palm-sugar",
+        "eggplant",
+        "green-beans",
+        "thai-basil",
+        "lime",
+        "neutral-oil",
+        "jasmine-rice"
+      ],
+      "ingredients": [
+        {
+          "id": "coconut-milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "chicken-thigh",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "eggplant",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "green-beans",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "thai-basil",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "jasmine-rice",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Rinse and cook the rice.",
+            "de": "Reis waschen und garen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Scoop the thick cream from the top of the can into a hot wok with the oil. Fry the curry paste in it until fragrant and oily.",
+            "de": "Die dicke Creme oben aus der Dose mit dem Öl in einen heißen Wok geben. Currypaste darin braten, bis sie duftet und sich Öl absetzt."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Add the chicken and stir until coated, then the rest of the coconut milk, fish sauce and palm sugar.",
+            "de": "Hähnchen dazugeben und wenden, dann restliche Kokosmilch, Fischsauce und Palmzucker."
+          }
+        },
+        {
+          "text": {
+            "en": "Add eggplant and beans and simmer until tender.",
+            "de": "Aubergine und Bohnen dazugeben und köcheln, bis sie weich sind."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Tear in the basil, squeeze in lime, and serve over rice.",
+            "de": "Basilikum hineinzupfen, Limette auspressen und über Reis servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "curry-vegan",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "Green Curry with Tofu & Broccoli",
+        "de": "Grünes Curry mit Tofu & Brokkoli"
+      },
+      "blurb": {
+        "en": "A shrimp-free paste, golden tofu and a heap of green vegetables — quicker than delivery.",
+        "de": "Eine Paste ohne Garnelen, goldener Tofu und ein Berg grünes Gemüse — schneller als der Lieferdienst."
+      },
+      "note": {
+        "en": "check the paste label for shrimp.",
+        "de": "auf dem etikett nach garnelen schauen."
+      },
+      "cuisine": "thai",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 580,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 66,
+        "fat_g": 26
+      },
+      "contains": [
+        "added-sugar",
+        "soy"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "budget",
+        "dinner",
+        "easy",
+        "pan-fry",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "curry",
+          "de": "curry"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "coconut-milk",
+        "vegan-curry-paste",
+        "tofu",
+        "tamari",
+        "palm-sugar",
+        "broccoli",
+        "green-beans",
+        "thai-basil",
+        "lime",
+        "neutral-oil",
+        "jasmine-rice"
+      ],
+      "ingredients": [
+        {
+          "id": "coconut-milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "id": "vegan-curry-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "tofu",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "tamari",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "broccoli",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "green-beans",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "thai-basil",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "jasmine-rice",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the rice. Fry cubed tofu in the oil until golden; set aside.",
+            "de": "Reis garen. Tofuwürfel im Öl goldbraun braten; beiseitestellen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Fry the curry paste in the thick coconut cream until fragrant.",
+            "de": "Currypaste in der dicken Kokoscreme duftend anbraten."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Add the rest of the coconut milk, tamari, sugar and vegetables. Simmer until just tender.",
+            "de": "Restliche Kokosmilch, Tamari, Zucker und Gemüse dazugeben. Köcheln, bis alles gerade gar ist."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Return the tofu, finish with basil and lime, serve over rice.",
+            "de": "Tofu zurückgeben, mit Basilikum und Limette vollenden, über Reis servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "curry-shrimp",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "Green Curry with Shrimp",
+        "de": "Grünes Curry mit Garnelen"
+      },
+      "blurb": {
+        "en": "Shrimp cook in three minutes, so this one is on the table before the rice is fluffed.",
+        "de": "Garnelen garen in drei Minuten — dieses Curry steht auf dem Tisch, bevor der Reis aufgelockert ist."
+      },
+      "note": {
+        "en": "add the shrimp last. pink = done.",
+        "de": "garnelen zuletzt. rosa = fertig."
+      },
+      "cuisine": "thai",
+      "diet": "pescatarian",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "<=30",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 30,
+        "carbs_g": 62,
+        "fat_g": 22
+      },
+      "contains": [
+        "added-sugar",
+        "fish",
+        "shellfish"
+      ],
+      "attributes": [
+        "<=30",
+        "<=600",
+        "dinner",
+        "easy",
+        "pescatarian",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "curry",
+          "de": "curry"
+        },
+        {
+          "en": "seafood",
+          "de": "meeresfrüchte"
+        }
+      ],
+      "dimensions": {
+        "diet": "pescatarian",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "coconut-milk",
+        "green-curry-paste",
+        "shrimp",
+        "fish-sauce",
+        "palm-sugar",
+        "green-beans",
+        "thai-basil",
+        "lime",
+        "neutral-oil",
+        "jasmine-rice"
+      ],
+      "ingredients": [
+        {
+          "id": "coconut-milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "id": "green-curry-paste",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "shrimp",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "green-beans",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "thai-basil",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "jasmine-rice",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the rice.",
+            "de": "Reis garen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Fry the paste in the coconut cream and oil, then add the rest of the milk, fish sauce, sugar and beans.",
+            "de": "Paste in Kokoscreme und Öl anbraten, dann restliche Milch, Fischsauce, Zucker und Bohnen dazugeben."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Add the shrimp and simmer just until pink.",
+            "de": "Garnelen dazugeben und köcheln, bis sie gerade rosa sind."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Finish with basil and lime.",
+            "de": "Mit Basilikum und Limette vollenden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "curry-low-fodmap",
+      "dish_id": "green-curry",
+      "title": {
+        "en": "Homemade-paste Green Curry",
+        "de": "Grünes Curry mit selbstgemachter Paste"
+      },
+      "blurb": {
+        "en": "A fresh paste of lemongrass, ginger, chili and cilantro, pounded with garlic oil instead of garlic — gentle and very green.",
+        "de": "Eine frische Paste aus Zitronengras, Ingwer, Chili und Koriander, mit Knoblauchöl statt Knoblauch — sanft und sehr grün."
+      },
+      "note": {
+        "en": "a blender works. a mortar is more fun.",
+        "de": "ein mixer geht. ein mörser macht mehr spaß."
+      },
+      "cuisine": "thai",
+      "diet": "low-fodmap",
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 600,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 32,
+        "carbs_g": 60,
+        "fat_g": 26
+      },
+      "contains": [
+        "fish",
+        "meat",
+        "poultry"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "fry",
+        "low-fodmap",
+        "medium",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "fry"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "curry",
+          "de": "curry"
+        },
+        {
+          "en": "gut friendly",
+          "de": "darmfreundlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "low-fodmap",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "lemongrass",
+        "ginger",
+        "chili-pepper",
+        "cilantro",
+        "spring-onion",
+        "cumin",
+        "coriander",
+        "garlic-oil",
+        "lime",
+        "coconut-milk",
+        "chicken-thigh",
+        "fish-sauce",
+        "green-beans",
+        "bok-choy",
+        "jasmine-rice"
+      ],
+      "ingredients": [
+        {
+          "id": "lemongrass",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "ginger",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "chili-pepper",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cilantro",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "spring-onion",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "cumin",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "garlic-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lime",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "coconut-milk",
+          "qty": 400,
+          "unit": "ml"
+        },
+        {
+          "id": "chicken-thigh",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "fish-sauce",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "green-beans",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "bok-choy",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "jasmine-rice",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the rice.",
+            "de": "Reis garen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Blend or pound lemongrass, ginger, chili, cilantro stems, spring onion greens, spices, lime zest and garlic oil to a paste.",
+            "de": "Zitronengras, Ingwer, Chili, Korianderstiele, Frühlingszwiebelgrün, Gewürze, Limettenschale und Knoblauchöl zu einer Paste mixen oder stoßen."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry the paste for two minutes, then add chicken and coconut milk.",
+            "de": "Paste zwei Minuten braten, dann Hähnchen und Kokosmilch dazugeben."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "en": "Simmer with fish sauce, beans and bok choy until the chicken is cooked.",
+            "de": "Mit Fischsauce, Bohnen und Pak Choi köcheln, bis das Hähnchen gar ist."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Finish with cilantro leaves and lime juice.",
+            "de": "Mit Korianderblättern und Limettensaft vollenden."
+          }
+        }
+      ]
+    }
+  ]
+}

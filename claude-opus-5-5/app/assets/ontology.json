@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "contains_flags": [
+    {"id": "pork", "parent": "meat", "label": {"en": "pork", "de": "Schwein"}},
+    {"id": "beef", "parent": "meat", "label": {"en": "beef", "de": "Rind"}},
+    {"id": "lamb", "parent": "meat", "label": {"en": "lamb", "de": "Lamm"}},
+    {"id": "poultry", "parent": "meat", "label": {"en": "poultry", "de": "Geflügel"}},
+    {"id": "meat", "label": {"en": "all meat", "de": "jegliches Fleisch"}},
+    {"id": "fish", "label": {"en": "fish", "de": "Fisch"}},
+    {"id": "shellfish", "label": {"en": "shellfish", "de": "Krebstiere"}},
+    {"id": "molluscs", "label": {"en": "molluscs", "de": "Weichtiere"}},
+    {"id": "egg", "label": {"en": "egg", "de": "Ei"}},
+    {"id": "dairy", "label": {"en": "dairy", "de": "Milchprodukte"}},
+    {"id": "lactose", "parent": "dairy", "label": {"en": "lactose", "de": "Laktose"}},
+    {"id": "gluten", "label": {"en": "gluten", "de": "Gluten"}},
+    {"id": "soy", "label": {"en": "soy", "de": "Soja"}},
+    {"id": "peanuts", "label": {"en": "peanuts", "de": "Erdnüsse"}},
+    {"id": "tree-nuts", "label": {"en": "tree nuts", "de": "Schalenfrüchte"}},
+    {"id": "almonds", "parent": "tree-nuts", "label": {"en": "almonds", "de": "Mandeln"}},
+    {"id": "walnuts", "parent": "tree-nuts", "label": {"en": "walnuts", "de": "Walnüsse"}},
+    {"id": "cashews", "parent": "tree-nuts", "label": {"en": "cashews", "de": "Cashews"}},
+    {"id": "hazelnuts", "parent": "tree-nuts", "label": {"en": "hazelnuts", "de": "Haselnüsse"}},
+    {"id": "pistachios", "parent": "tree-nuts", "label": {"en": "pistachios", "de": "Pistazien"}},
+    {"id": "sesame", "label": {"en": "sesame", "de": "Sesam"}},
+    {"id": "mustard", "label": {"en": "mustard", "de": "Senf"}},
+    {"id": "celery", "label": {"en": "celery", "de": "Sellerie"}},
+    {"id": "lupin", "label": {"en": "lupin", "de": "Lupine"}},
+    {"id": "sulphites", "label": {"en": "sulphites", "de": "Sulfite"}},
+    {"id": "alcohol", "label": {"en": "alcohol", "de": "Alkohol"}},
+    {"id": "caffeine", "label": {"en": "caffeine", "de": "Koffein"}},
+    {"id": "added-sugar", "label": {"en": "added sugar", "de": "zugesetzter Zucker"}},
+    {"id": "high-fodmap", "label": {"en": "high-FODMAP", "de": "FODMAP-reich"}},
+    {"id": "gelatin", "label": {"en": "gelatin", "de": "Gelatine"}},
+    {"id": "gelatin-non-halal", "parent": "gelatin", "label": {"en": "non-halal gelatin", "de": "nicht-halal Gelatine"}},
+    {"id": "gelatin-non-kosher", "parent": "gelatin", "label": {"en": "non-kosher gelatin", "de": "nicht-koschere Gelatine"}},
+    {"id": "honey", "label": {"en": "honey", "de": "Honig"}},
+    {"id": "meat-dairy-combo", "derived": true, "label": {"en": "meat with dairy", "de": "Fleisch mit Milch"}}
+  ],
+  "class_avoidance": ["dairy", "lactose", "egg", "gluten", "soy", "peanuts", "tree-nuts", "sesame", "fish", "shellfish", "molluscs", "mustard", "celery", "lupin", "sulphites", "pork", "beef", "lamb", "poultry", "alcohol", "caffeine", "added-sugar", "honey", "high-fodmap"],
+  "compound_flags": [
+    {"id": "vegan", "expands": ["meat", "fish", "shellfish", "molluscs", "egg", "dairy", "honey", "gelatin"], "label": {"en": "vegan", "de": "vegan"}},
+    {"id": "vegetarian", "expands": ["meat", "fish", "shellfish", "molluscs", "gelatin"], "label": {"en": "vegetarian", "de": "vegetarisch"}},
+    {"id": "pescatarian", "expands": ["meat", "gelatin-non-halal"], "label": {"en": "pescatarian", "de": "pescetarisch"}},
+    {"id": "halal", "expands": ["pork", "alcohol", "gelatin-non-halal"], "label": {"en": "halal-compatible", "de": "halal-kompatibel"}},
+    {"id": "kosher", "expands": ["pork", "shellfish", "molluscs", "meat-dairy-combo", "gelatin-non-kosher"], "label": {"en": "kosher-compatible", "de": "koscher-kompatibel"}},
+    {"id": "low-fodmap", "expands": ["high-fodmap"], "label": {"en": "low-FODMAP", "de": "FODMAP-arm"}},
+    {"id": "sugar-free", "expands": ["added-sugar"], "label": {"en": "no added sugar", "de": "ohne Zuckerzusatz"}},
+    {"id": "lactose-free", "expands": ["lactose"], "label": {"en": "lactose-free", "de": "laktosefrei"}},
+    {"id": "gluten-free", "expands": ["gluten"], "label": {"en": "gluten-free", "de": "glutenfrei"}},
+    {"id": "dairy-free", "expands": ["dairy"], "label": {"en": "dairy-free", "de": "milchfrei"}},
+    {"id": "nut-free", "expands": ["tree-nuts", "peanuts"], "label": {"en": "nut-free", "de": "nussfrei"}},
+    {"id": "alcohol-free", "expands": ["alcohol"], "label": {"en": "alcohol-free", "de": "alkoholfrei"}}
+  ],
+  "diet_choices": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free", "lactose-free", "dairy-free", "nut-free", "low-fodmap", "sugar-free", "alcohol-free"],
+  "certification_sensitive": ["halal", "kosher"],
+  "dimensions": [
+    {"id": "diet", "field": "diet", "label": {"en": "diet", "de": "ernährung"}},
+    {"id": "effort", "field": "effort", "label": {"en": "effort", "de": "aufwand"}},
+    {"id": "calorie_level", "field": "calorie_bucket", "label": {"en": "calorie level", "de": "kalorien"}}
+  ],
+  "dimension_values": {
+    "diet": {
+      "classic": {"en": "classic", "de": "klassisch"},
+      "vegan": {"en": "vegan", "de": "vegan"},
+      "vegetarian": {"en": "vegetarian", "de": "vegetarisch"},
+      "keto": {"en": "keto", "de": "keto"},
+      "low-carb": {"en": "low-carb", "de": "low-carb"},
+      "halal": {"en": "halal-compatible", "de": "halal-kompatibel"},
+      "gluten-free": {"en": "gluten-free", "de": "glutenfrei"},
+      "nut-free": {"en": "nut-free", "de": "nussfrei"},
+      "sugar-free": {"en": "no added sugar", "de": "ohne zucker"},
+      "high-protein": {"en": "high-protein", "de": "proteinreich"},
+      "low-fodmap": {"en": "low-FODMAP", "de": "FODMAP-arm"},
+      "pescatarian": {"en": "pescatarian", "de": "pescetarisch"}
+    },
+    "effort": {
+      "easy": {"en": "easy", "de": "einfach"},
+      "medium": {"en": "medium", "de": "mittel"},
+      "hard": {"en": "project", "de": "projekt"}
+    },
+    "calorie_bucket": {
+      "<=400": {"en": "≤400 kcal", "de": "≤400 kcal"},
+      "<=600": {"en": "≤600 kcal", "de": "≤600 kcal"},
+      "<=800": {"en": "≤800 kcal", "de": "≤800 kcal"},
+      ">800": {"en": ">800 kcal", "de": ">800 kcal"}
+    }
+  },
+  "attributes": {
+    "effort": ["easy", "medium", "hard"],
+    "time_bucket": [
+      {"id": "<=15", "max": 15, "label": {"en": "≤15 min", "de": "≤15 Min."}},
+      {"id": "<=30", "max": 30, "label": {"en": "≤30 min", "de": "≤30 Min."}},
+      {"id": "<=60", "max": 60, "label": {"en": "≤60 min", "de": "≤60 Min."}},
+      {"id": ">60", "max": null, "label": {"en": ">60 min", "de": ">60 Min."}}
+    ],
+    "calorie_bucket": [
+      {"id": "<=400", "max": 400},
+      {"id": "<=600", "max": 600},
+      {"id": "<=800", "max": 800},
+      {"id": ">800", "max": null}
+    ],
+    "technique": ["bake", "sauté", "simmer", "raw", "grill", "fry", "steam", "roast", "broil", "pan-fry", "deep-fry", "stir-fry", "poach", "blanch"],
+    "meal_type": ["breakfast", "lunch", "dinner", "snack", "dessert"],
+    "requirable": ["high-protein", "one-pot", "meal-prep", "kid-friendly", "budget"]
+  },
+  "labels": {
+    "technique": {
+      "bake": {"en": "bake", "de": "backen"},
+      "sauté": {"en": "sauté", "de": "sautieren"},
+      "simmer": {"en": "simmer", "de": "köcheln"},
+      "raw": {"en": "raw", "de": "roh"},
+      "grill": {"en": "grill", "de": "grillen"},
+      "fry": {"en": "fry", "de": "braten"},
+      "steam": {"en": "steam", "de": "dämpfen"},
+      "roast": {"en": "roast", "de": "rösten"},
+      "broil": {"en": "broil", "de": "überbacken"},
+      "pan-fry": {"en": "pan-fry", "de": "in der pfanne"},
+      "deep-fry": {"en": "deep-fry", "de": "frittieren"},
+      "stir-fry": {"en": "stir-fry", "de": "wok"},
+      "poach": {"en": "poach", "de": "pochieren"},
+      "blanch": {"en": "blanch", "de": "blanchieren"}
+    },
+    "meal_type": {
+      "breakfast": {"en": "breakfast", "de": "frühstück"},
+      "lunch": {"en": "lunch", "de": "mittag"},
+      "dinner": {"en": "dinner", "de": "abendessen"},
+      "snack": {"en": "snack", "de": "snack"},
+      "dessert": {"en": "dessert", "de": "dessert"}
+    },
+    "requirable": {
+      "high-protein": {"en": "high-protein", "de": "proteinreich"},
+      "one-pot": {"en": "one pot", "de": "ein topf"},
+      "meal-prep": {"en": "meal-prep friendly", "de": "vorkochen"},
+      "kid-friendly": {"en": "kid-friendly", "de": "kinderfreundlich"},
+      "budget": {"en": "budget", "de": "günstig"}
+    },
+    "cuisine": {
+      "turkish": {"en": "turkish", "de": "türkisch"},
+      "italian": {"en": "italian", "de": "italienisch"},
+      "thai": {"en": "thai", "de": "thailändisch"},
+      "japanese": {"en": "japanese", "de": "japanisch"},
+      "middle-eastern": {"en": "middle eastern", "de": "nahöstlich"},
+      "north-african": {"en": "north african", "de": "nordafrikanisch"},
+      "mexican": {"en": "tex-mex", "de": "tex-mex"},
+      "american": {"en": "american", "de": "amerikanisch"},
+      "german": {"en": "german", "de": "deutsch"},
+      "british": {"en": "british", "de": "britisch"},
+      "indian": {"en": "indian", "de": "indisch"},
+      "levantine": {"en": "levantine", "de": "levantinisch"}
+    }
+  },
+  "units": {
+    "g": {"kind": "mass", "to_base": 1, "label": {"en": "g", "de": "g"}},
+    "kg": {"kind": "mass", "to_base": 1000, "label": {"en": "kg", "de": "kg"}},
+    "ml": {"kind": "volume", "to_base": 1, "label": {"en": "ml", "de": "ml"}},
+    "l": {"kind": "volume", "to_base": 1000, "label": {"en": "l", "de": "l"}},
+    "tsp": {"kind": "volume", "to_base": 5, "label": {"en": "tsp", "de": "TL"}},
+    "tbsp": {"kind": "volume", "to_base": 15, "label": {"en": "tbsp", "de": "EL"}},
+    "cup": {"kind": "volume", "to_base": 240, "label": {"en": "cup", "de": "Tasse"}},
+    "pc": {"kind": "count", "to_base": 1, "label": {"en": "", "de": ""}},
+    "clove": {"kind": "count:clove", "to_base": 1, "label": {"en": "clove", "de": "Zehe"}, "plural": {"en": "cloves", "de": "Zehen"}},
+    "slice": {"kind": "count:slice", "to_base": 1, "label": {"en": "slice", "de": "Scheibe"}, "plural": {"en": "slices", "de": "Scheiben"}},
+    "bunch": {"kind": "count:bunch", "to_base": 1, "label": {"en": "bunch", "de": "Bund"}, "plural": {"en": "bunches", "de": "Bund"}},
+    "can": {"kind": "count:can", "to_base": 1, "label": {"en": "can", "de": "Dose"}, "plural": {"en": "cans", "de": "Dosen"}},
+    "pinch": {"kind": "count:pinch", "to_base": 1, "label": {"en": "pinch", "de": "Prise"}, "plural": {"en": "pinches", "de": "Prisen"}},
+    "sprig": {"kind": "count:sprig", "to_base": 1, "label": {"en": "sprig", "de": "Zweig"}, "plural": {"en": "sprigs", "de": "Zweige"}},
+    "sheet": {"kind": "count:sheet", "to_base": 1, "label": {"en": "sheet", "de": "Blatt"}, "plural": {"en": "sheets", "de": "Blätter"}},
+    "to-taste": {"kind": "taste", "to_base": 0, "label": {"en": "to taste", "de": "nach Geschmack"}}
+  },
+  "volume_convertible_types": ["liquid", "oil", "sauce", "spice", "powder", "sweetener"],
+  "aisles": [
+    {"id": "produce", "label": {"en": "produce", "de": "obst & gemüse"}},
+    {"id": "herbs", "label": {"en": "fresh herbs", "de": "frische kräuter"}},
+    {"id": "meat", "label": {"en": "butcher", "de": "metzgerei"}},
+    {"id": "fish", "label": {"en": "fishmonger", "de": "fischtheke"}},
+    {"id": "dairy", "label": {"en": "dairy & eggs", "de": "kühlregal & eier"}},
+    {"id": "chilled", "label": {"en": "chilled & tofu", "de": "gekühlt & tofu"}},
+    {"id": "bakery", "label": {"en": "bakery", "de": "bäckerei"}},
+    {"id": "pantry", "label": {"en": "pantry", "de": "vorratsregal"}},
+    {"id": "pasta", "label": {"en": "pasta, rice & grains", "de": "nudeln, reis & getreide"}},
+    {"id": "international", "label": {"en": "world foods", "de": "internationale küche"}},
+    {"id": "spices", "label": {"en": "spices", "de": "gewürze"}},
+    {"id": "baking", "label": {"en": "baking", "de": "backzutaten"}},
+    {"id": "nuts", "label": {"en": "nuts & seeds", "de": "nüsse & saaten"}},
+    {"id": "drinks", "label": {"en": "wine & drinks", "de": "wein & getränke"}},
+    {"id": "other", "label": {"en": "everything else", "de": "sonstiges"}}
+  ]
+}

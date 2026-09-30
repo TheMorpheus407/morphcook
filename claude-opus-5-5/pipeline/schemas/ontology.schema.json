@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "morphcook/ontology",
+  "type": "object",
+  "required": ["schema_version", "contains_flags", "compound_flags", "dimensions", "dimension_values", "attributes", "units", "aisles"],
+  "properties": {
+    "contains_flags": {"type": "array", "items": {"type": "object", "required": ["id", "label"], "properties": {"id": {"type": "string"}, "parent": {"type": "string"}}}},
+    "compound_flags": {"type": "array", "items": {"type": "object", "required": ["id", "expands", "label"]}},
+    "dimensions": {"type": "array", "items": {"type": "object", "required": ["id", "field", "label"]}},
+    "units": {"type": "object", "additionalProperties": {"type": "object", "required": ["kind", "to_base", "label"]}}
+  }
+}

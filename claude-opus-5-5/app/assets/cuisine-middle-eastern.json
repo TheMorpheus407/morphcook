@@ -1,0 +1,1139 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-middle-eastern",
+  "corpus_version": "2026.09.1",
+  "recipes": [
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Crispy Falafel in Pita",
+        "de": "Knusprige Falafel im Fladenbrot"
+      },
+      "blurb": {
+        "en": "Soaked — never cooked — chickpeas, a mountain of herbs, deep-fried until they shatter. Tahini, tomato, pickled onion.",
+        "de": "Eingeweichte — nie gekochte — Kichererbsen, ein Berg Kräuter, frittiert, bis sie knacken. Tahini, Tomate, eingelegte Zwiebel."
+      },
+      "note": {
+        "en": "soak the chickpeas the night before. canned ones fall apart.",
+        "de": "kichererbsen am vorabend einweichen. dosenware zerfällt."
+      },
+      "cuisine": "levantine",
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 60,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 690,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 22,
+        "carbs_g": 78,
+        "fat_g": 32
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "deep-fry",
+        "dinner",
+        "hard",
+        "lunch"
+      ],
+      "techniques": [
+        "deep-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "street food",
+          "de": "streetfood"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "dried-chickpeas",
+        "onion",
+        "garlic",
+        "parsley",
+        "cilantro",
+        "cumin",
+        "coriander",
+        "baking-soda",
+        "wheat-flour",
+        "neutral-oil",
+        "flatbread",
+        "tahini",
+        "lemon",
+        "tomato",
+        "cucumber",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "dried-chickpeas",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 3,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "baking-soda",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 1,
+          "unit": "l"
+        },
+        {
+          "id": "flatbread",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "tahini",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Drain the soaked chickpeas well and pulse with onion, garlic, herbs and spices until finely crumbly, not a paste.",
+            "de": "Eingeweichte Kichererbsen gut abtropfen und mit Zwiebel, Knoblauch, Kräutern und Gewürzen fein krümelig mixen, nicht zu einer Paste."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir in salt, baking soda and flour and chill the mix.",
+            "de": "Salz, Natron und Mehl einrühren und die Masse kühlen."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Heat the oil to 175 °C. Shape walnut-sized balls and fry in batches until deep brown.",
+            "de": "Öl auf 175 °C erhitzen. Walnussgroße Bällchen formen und portionsweise dunkelbraun frittieren."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "en": "Whisk tahini with lemon juice, salt and cold water until pale and pourable.",
+            "de": "Tahini mit Zitronensaft, Salz und kaltem Wasser hell und flüssig schlagen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stuff warm pita with falafel, tomato, cucumber and plenty of tahini sauce.",
+            "de": "Warmes Fladenbrot mit Falafel, Tomate, Gurke und reichlich Tahinisauce füllen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "falafel-baked",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Easy Baked Falafel",
+        "de": "Einfache Ofen-Falafel"
+      },
+      "blurb": {
+        "en": "Canned chickpeas, a hot oven and a brush of oil: less crackle, zero frying, weeknight friendly.",
+        "de": "Kichererbsen aus der Dose, ein heißer Ofen und ein Pinselstrich Öl: weniger Knacken, null Frittieren, alltagstauglich."
+      },
+      "note": {
+        "en": "pat the chickpeas bone dry first.",
+        "de": "kichererbsen vorher knochentrocken tupfen."
+      },
+      "cuisine": "levantine",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 520,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 19,
+        "carbs_g": 66,
+        "fat_g": 20
+      },
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "bake",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "lunch",
+        "meal-prep"
+      ],
+      "techniques": [
+        "bake"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        },
+        {
+          "en": "oven",
+          "de": "ofen"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "chickpeas",
+        "onion",
+        "garlic",
+        "parsley",
+        "cumin",
+        "coriander",
+        "wheat-flour",
+        "baking-powder",
+        "olive-oil",
+        "flatbread",
+        "tahini",
+        "lemon",
+        "tomato",
+        "cucumber",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "qty": 480,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 0.5,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "wheat-flour",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-powder",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "flatbread",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "tahini",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the oven to 200 °C. Pulse chickpeas, onion, garlic, parsley and spices, then mix in flour, baking powder and salt.",
+            "de": "Ofen auf 200 °C vorheizen. Kichererbsen, Zwiebel, Knoblauch, Petersilie und Gewürze mixen, dann Mehl, Backpulver und Salz untermischen."
+          }
+        },
+        {
+          "text": {
+            "en": "Shape into patties, brush with oil and bake, flipping halfway.",
+            "de": "Zu Talern formen, mit Öl bestreichen und backen, nach der Hälfte wenden."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Make a lemony tahini sauce and serve in pita with tomato and cucumber.",
+            "de": "Eine zitronige Tahinisauce rühren und mit Tomate und Gurke im Fladenbrot servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "falafel-gluten-free",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Gluten-free Falafel Bowl",
+        "de": "Glutenfreie Falafel-Bowl"
+      },
+      "blurb": {
+        "en": "Chickpea flour binds these pan-fried falafel; served over crisp lettuce with tahini and lemon instead of bread.",
+        "de": "Kichererbsenmehl bindet diese gebratenen Falafel; serviert auf knackigem Salat mit Tahini und Zitrone statt Brot."
+      },
+      "note": {
+        "en": "a little flatter = crispier in the pan.",
+        "de": "etwas flacher = knuspriger in der pfanne."
+      },
+      "cuisine": "levantine",
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 20,
+        "carbs_g": 52,
+        "fat_g": 30
+      },
+      "contains": [
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "gluten-free",
+        "lunch",
+        "medium",
+        "pan-fry"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "bowl",
+          "de": "bowl"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "gluten-free",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "dried-chickpeas",
+        "onion",
+        "garlic",
+        "parsley",
+        "cilantro",
+        "cumin",
+        "coriander",
+        "chickpea-flour",
+        "baking-soda",
+        "neutral-oil",
+        "romaine",
+        "tomato",
+        "cucumber",
+        "tahini",
+        "lemon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "dried-chickpeas",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "parsley",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cilantro",
+          "qty": 1,
+          "unit": "bunch"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "coriander",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "chickpea-flour",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "baking-soda",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "neutral-oil",
+          "qty": 6,
+          "unit": "tbsp"
+        },
+        {
+          "id": "romaine",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "tomato",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "cucumber",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "tahini",
+          "qty": 80,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pulse the soaked chickpeas with onion, garlic, herbs and spices until crumbly. Mix in chickpea flour, soda and salt.",
+            "de": "Eingeweichte Kichererbsen mit Zwiebel, Knoblauch, Kräutern und Gewürzen krümelig mixen. Kichererbsenmehl, Natron und Salz untermischen."
+          }
+        },
+        {
+          "text": {
+            "en": "Chill for fifteen minutes, then shape into small flat patties.",
+            "de": "Fünfzehn Minuten kühlen, dann zu kleinen flachen Talern formen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Pan-fry in the oil over medium-high heat, three minutes a side.",
+            "de": "Im Öl bei mittlerer bis hoher Hitze braten, drei Minuten pro Seite."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Serve over chopped lettuce, tomato and cucumber with tahini-lemon sauce.",
+            "de": "Auf gehacktem Salat, Tomate und Gurke mit Tahini-Zitronen-Sauce servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lentil-soup-classic",
+      "dish_id": "lentil-soup",
+      "title": {
+        "en": "Mercimek Çorbası",
+        "de": "Mercimek Çorbası"
+      },
+      "blurb": {
+        "en": "Red lentils, carrot and potato cooked soft and blended smooth, finished with a sizzle of pul biber butter and dried mint.",
+        "de": "Rote Linsen, Karotte und Kartoffel weich gekocht und glatt püriert, vollendet mit brutzelnder Pul-Biber-Butter und getrockneter Minze."
+      },
+      "note": {
+        "en": "lemon at the table. lots of it.",
+        "de": "zitrone am tisch. viel davon."
+      },
+      "cuisine": "turkish",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 380,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 18,
+        "carbs_g": 54,
+        "fat_g": 11
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "lunch",
+        "meal-prep",
+        "one-pot",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "red-lentils",
+        "onion",
+        "carrot",
+        "potato",
+        "garlic",
+        "tomato-paste",
+        "pepper-paste",
+        "cumin",
+        "vegetable-stock",
+        "butter",
+        "pul-biber",
+        "mint",
+        "lemon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "potato",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "pepper-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "mint",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "dried",
+            "de": "getrocknet"
+          }
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften onion, carrot and potato in a little butter, then stir in garlic, both pastes and cumin.",
+            "de": "Zwiebel, Karotte und Kartoffel in etwas Butter andünsten, dann Knoblauch, beide Pasten und Kreuzkümmel einrühren."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Add rinsed lentils and stock and simmer until everything is falling apart.",
+            "de": "Gewaschene Linsen und Brühe dazugeben und köcheln, bis alles zerfällt."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Blend until smooth and season with salt.",
+            "de": "Glatt pürieren und salzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the remaining butter until foaming, add pul biber and mint, and drizzle over each bowl. Serve with lemon.",
+            "de": "Restliche Butter aufschäumen, Pul Biber und Minze dazugeben und über jede Schale träufeln. Mit Zitrone servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lentil-soup-vegan",
+      "dish_id": "lentil-soup",
+      "title": {
+        "en": "Vegan Red Lentil Soup",
+        "de": "Vegane rote Linsensuppe"
+      },
+      "blurb": {
+        "en": "The same velvety bowl with a chili-mint olive oil on top — and it keeps for days.",
+        "de": "Die gleiche samtige Schale, mit Chili-Minz-Olivenöl obendrauf — und sie hält sich tagelang."
+      },
+      "note": {
+        "en": "freezes like a dream.",
+        "de": "lässt sich traumhaft einfrieren."
+      },
+      "cuisine": "turkish",
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 350,
+      "calorie_bucket": "<=400",
+      "macros": {
+        "protein_g": 17,
+        "carbs_g": 54,
+        "fat_g": 8
+      },
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "<=400",
+        "<=60",
+        "budget",
+        "dinner",
+        "easy",
+        "lunch",
+        "meal-prep",
+        "one-pot",
+        "sauté",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "easy",
+        "calorie_level": "<=400"
+      },
+      "ingredient_ids": [
+        "red-lentils",
+        "onion",
+        "carrot",
+        "potato",
+        "garlic",
+        "tomato-paste",
+        "cumin",
+        "vegetable-stock",
+        "olive-oil",
+        "pul-biber",
+        "mint",
+        "lemon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "red-lentils",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "potato",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cumin",
+          "qty": 2,
+          "unit": "tsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "mint",
+          "qty": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "dried",
+            "de": "getrocknet"
+          }
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soften the vegetables in two tablespoons of oil, then add garlic, tomato paste and cumin.",
+            "de": "Gemüse in zwei Esslöffeln Öl andünsten, dann Knoblauch, Tomatenmark und Kreuzkümmel dazugeben."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Add lentils and stock and simmer until soft.",
+            "de": "Linsen und Brühe dazugeben und weich köcheln."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Blend smooth and season.",
+            "de": "Glatt pürieren und abschmecken."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the remaining oil with pul biber and mint and swirl over the soup. Lemon on the side.",
+            "de": "Restliches Öl mit Pul Biber und Minze erwärmen und über die Suppe träufeln. Zitrone dazu."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lentil-soup-koefte",
+      "dish_id": "lentil-soup",
+      "title": {
+        "en": "Lentil Soup with Lamb Köfte",
+        "de": "Linsensuppe mit Lamm-Köfte"
+      },
+      "blurb": {
+        "en": "Tiny cumin-spiced lamb meatballs dropped into the soup make it a whole, hearty dinner.",
+        "de": "Winzige Lammbällchen mit Kreuzkümmel, in die Suppe gesetzt, machen daraus ein ganzes, deftiges Abendessen."
+      },
+      "note": {
+        "en": "wet hands = neat little köfte.",
+        "de": "nasse hände = hübsche kleine köfte."
+      },
+      "cuisine": "turkish",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 55,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 52,
+        "fat_g": 24
+      },
+      "contains": [
+        "celery",
+        "high-fodmap",
+        "lamb",
+        "meat"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "classic",
+        "dinner",
+        "high-protein",
+        "medium",
+        "pan-fry",
+        "simmer"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "soup",
+          "de": "suppe"
+        },
+        {
+          "en": "hearty",
+          "de": "deftig"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "ground-lamb",
+        "cumin",
+        "allspice",
+        "parsley",
+        "red-lentils",
+        "onion",
+        "carrot",
+        "garlic",
+        "tomato-paste",
+        "vegetable-stock",
+        "olive-oil",
+        "pul-biber",
+        "lemon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "id": "ground-lamb",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "cumin",
+          "qty": 3,
+          "unit": "tsp"
+        },
+        {
+          "id": "allspice",
+          "qty": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "id": "parsley",
+          "qty": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "id": "red-lentils",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 1.5,
+          "unit": "l"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "pul-biber",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Mix the lamb with one teaspoon cumin, the allspice, chopped parsley and salt. Roll into marble-sized köfte and brown in a tablespoon of oil.",
+            "de": "Lamm mit einem Teelöffel Kreuzkümmel, Piment, gehackter Petersilie und Salz mischen. Zu murmelgroßen Köfte rollen und in einem Esslöffel Öl anbraten."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "In the same pot soften onion, carrot and garlic, add tomato paste and the rest of the cumin.",
+            "de": "Im selben Topf Zwiebel, Karotte und Knoblauch andünsten, Tomatenmark und restlichen Kreuzkümmel dazugeben."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Add lentils and stock, simmer until soft, and blend.",
+            "de": "Linsen und Brühe dazugeben, weich köcheln und pürieren."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Return the köfte and simmer until cooked through. Finish with pul biber oil and lemon.",
+            "de": "Köfte zurückgeben und garziehen lassen. Mit Pul-Biber-Öl und Zitrone vollenden."
+          },
+          "timer_seconds": 480
+        }
+      ]
+    }
+  ]
+}

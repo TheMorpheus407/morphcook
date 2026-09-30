@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.09.1",
+  "dishes": [
+    {
+      "id": "doener",
+      "name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero": {
+        "en": "the late-night classic, written out for every body.",
+        "de": "der Klassiker nach Mitternacht, für jeden Körper aufgeschrieben."
+      },
+      "caption": {
+        "en": "fig. 1 — döner, still warm, wrapped in paper",
+        "de": "abb. 1 — döner, noch warm, in papier gewickelt"
+      },
+      "stripe_color": "#D9826A",
+      "cuisine": "turkish",
+      "variants": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto-bowl",
+        "doener-halal-chicken"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "alfredo",
+      "name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "hero": {
+        "en": "butter, cheese, pasta water — and a little patience.",
+        "de": "butter, käse, nudelwasser — und ein bisschen geduld."
+      },
+      "caption": {
+        "en": "fig. 2 — ribbons, glossy, a fork mid-twirl",
+        "de": "abb. 2 — bandnudeln, glänzend, gabel mitten im drehen"
+      },
+      "stripe_color": "#D7A84B",
+      "cuisine": "italian",
+      "variants": [
+        "alfredo-classic",
+        "alfredo-light",
+        "alfredo-gluten-free",
+        "alfredo-vegan"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "pad-thai",
+      "name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero": {
+        "en": "sweet, sour, salty, a little smoky — all in one pan.",
+        "de": "süß, sauer, salzig, ein bisschen rauchig — alles in einer pfanne."
+      },
+      "caption": {
+        "en": "fig. 3 — noodles, lime wedge, a scatter of crushed nuts",
+        "de": "abb. 3 — nudeln, limettenspalte, gehackte nüsse darüber"
+      },
+      "stripe_color": "#5F9C95",
+      "cuisine": "thai",
+      "variants": [
+        "pad-thai-classic",
+        "pad-thai-weeknight",
+        "pad-thai-vegan",
+        "pad-thai-nut-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "thai"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "shakshuka",
+      "name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero": {
+        "en": "a pan of spiced tomatoes and something soft to dip into it.",
+        "de": "eine pfanne gewürzter tomaten und etwas weiches zum eintauchen."
+      },
+      "caption": {
+        "en": "fig. 4 — cast iron, steam, bread torn at the edge",
+        "de": "abb. 4 — gusseisen, dampf, brot am rand gerissen"
+      },
+      "stripe_color": "#C8664F",
+      "cuisine": "north-african",
+      "variants": [
+        "shakshuka-classic",
+        "shakshuka-slow",
+        "shakshuka-vegan",
+        "shakshuka-low-fodmap"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "north-african"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "pancakes",
+      "name": {
+        "en": "Pancakes",
+        "de": "Pancakes"
+      },
+      "hero": {
+        "en": "a tall, soft stack for slow mornings.",
+        "de": "ein hoher, weicher stapel für langsame morgen."
+      },
+      "caption": {
+        "en": "fig. 5 — stack of five, syrup mid-drip",
+        "de": "abb. 5 — stapel aus fünf, sirup im tropfen"
+      },
+      "stripe_color": "#C9A0A0",
+      "cuisine": "american",
+      "variants": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-protein"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "chili",
+      "name": {
+        "en": "Chili",
+        "de": "Chili"
+      },
+      "hero": {
+        "en": "one pot, a slow bubble, better on day two.",
+        "de": "ein topf, leises blubbern, am zweiten tag noch besser."
+      },
+      "caption": {
+        "en": "fig. 6 — enamel pot, wooden spoon, a dollop on top",
+        "de": "abb. 6 — emailletopf, holzlöffel, ein klecks obenauf"
+      },
+      "stripe_color": "#B5543C",
+      "cuisine": "mexican",
+      "variants": [
+        "chili-classic",
+        "chili-weeknight",
+        "chili-slow",
+        "chili-sin-carne"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "overnight-oats",
+      "name": {
+        "en": "Overnight Oats",
+        "de": "Overnight Oats"
+      },
+      "hero": {
+        "en": "breakfast made by last-night you, for this-morning you.",
+        "de": "frühstück von gestern-abend-du für heute-morgen-du."
+      },
+      "caption": {
+        "en": "fig. 7 — jam jar, spoon standing up, berries",
+        "de": "abb. 7 — einmachglas, löffel steht, beeren"
+      },
+      "stripe_color": "#98A77F",
+      "cuisine": "british",
+      "variants": [
+        "oats-classic",
+        "oats-vegan",
+        "oats-gluten-free",
+        "oats-sugar-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "british"
+      ],
+      "frequency_tier": "high"
+    },
+    {
+      "id": "bolognese",
+      "name": {
+        "en": "Bolognese",
+        "de": "Bolognese"
+      },
+      "hero": {
+        "en": "the sauce that makes the whole flat smell like sunday.",
+        "de": "die sauce, die die ganze wohnung nach sonntag riechen lässt."
+      },
+      "caption": {
+        "en": "fig. 8 — ragù, ribbons, a snowfall of cheese",
+        "de": "abb. 8 — ragù, bandnudeln, ein schneefall aus käse"
+      },
+      "stripe_color": "#B86B4B",
+      "cuisine": "italian",
+      "variants": [
+        "bolognese-classic",
+        "bolognese-weeknight",
+        "bolognese-lentil",
+        "bolognese-low-carb"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [
+        "core"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "risotto",
+      "name": {
+        "en": "Mushroom Risotto",
+        "de": "Pilzrisotto"
+      },
+      "hero": {
+        "en": "twenty minutes of stirring is a kind of meditation.",
+        "de": "zwanzig minuten rühren sind eine art meditation."
+      },
+      "caption": {
+        "en": "fig. 9 — a shallow bowl, the rice flowing like a wave",
+        "de": "abb. 9 — ein flacher teller, der reis fließt wie eine welle"
+      },
+      "stripe_color": "#C9B27C",
+      "cuisine": "italian",
+      "variants": [
+        "risotto-classic",
+        "risotto-oven",
+        "risotto-vegan",
+        "risotto-alcohol-free"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "ramen",
+      "name": {
+        "en": "Ramen",
+        "de": "Ramen"
+      },
+      "hero": {
+        "en": "a steaming bowl you can lean over and disappear into.",
+        "de": "eine dampfende schüssel, über die man sich beugen und verschwinden kann."
+      },
+      "caption": {
+        "en": "fig. 10 — deep bowl, jammy egg, chopsticks resting",
+        "de": "abb. 10 — tiefe schale, wachsweiches ei, stäbchen liegen quer"
+      },
+      "stripe_color": "#6E7F8D",
+      "cuisine": "japanese",
+      "variants": [
+        "ramen-pork",
+        "ramen-quick-chicken",
+        "ramen-miso-vegan",
+        "ramen-gluten-free"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "japanese"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "green-curry",
+      "name": {
+        "en": "Green Curry",
+        "de": "Grünes Curry"
+      },
+      "hero": {
+        "en": "coconut, lime leaf heat, and rice to soak it up.",
+        "de": "kokos, frische schärfe und reis zum aufsaugen."
+      },
+      "caption": {
+        "en": "fig. 11 — enamel bowl, basil leaves, a lime cheek",
+        "de": "abb. 11 — emailleschale, basilikumblätter, eine limettenhälfte"
+      },
+      "stripe_color": "#7FA07A",
+      "cuisine": "thai",
+      "variants": [
+        "curry-classic",
+        "curry-vegan",
+        "curry-shrimp",
+        "curry-low-fodmap"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "thai"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "falafel",
+      "name": {
+        "en": "Falafel",
+        "de": "Falafel"
+      },
+      "hero": {
+        "en": "crackling outside, bright green inside.",
+        "de": "außen knusprig, innen leuchtend grün."
+      },
+      "caption": {
+        "en": "fig. 12 — a paper cone, tahini dripping",
+        "de": "abb. 12 — eine papiertüte, tahini tropft"
+      },
+      "stripe_color": "#8C9A5B",
+      "cuisine": "levantine",
+      "variants": [
+        "falafel-classic",
+        "falafel-baked",
+        "falafel-gluten-free"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "levantine"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "lentil-soup",
+      "name": {
+        "en": "Red Lentil Soup",
+        "de": "Rote Linsensuppe"
+      },
+      "hero": {
+        "en": "mercimek çorbası — the soup every grandmother agrees on.",
+        "de": "mercimek çorbası — die suppe, auf die sich alle omas einigen."
+      },
+      "caption": {
+        "en": "fig. 13 — orange soup, red butter swirl, lemon",
+        "de": "abb. 13 — orange suppe, roter butterstrudel, zitrone"
+      },
+      "stripe_color": "#D39A4A",
+      "cuisine": "turkish",
+      "variants": [
+        "lentil-soup-classic",
+        "lentil-soup-vegan",
+        "lentil-soup-koefte"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "turkish"
+      ],
+      "frequency_tier": "medium"
+    },
+    {
+      "id": "caesar",
+      "name": {
+        "en": "Caesar Salad",
+        "de": "Caesar Salad"
+      },
+      "hero": {
+        "en": "crunchy, salty, lemony — a salad that eats like a meal.",
+        "de": "knackig, salzig, zitronig — ein salat, der satt macht."
+      },
+      "caption": {
+        "en": "fig. 14 — romaine hearts, shaved cheese, big croutons",
+        "de": "abb. 14 — römersalatherzen, gehobelter käse, große croûtons"
+      },
+      "stripe_color": "#A7B98F",
+      "cuisine": "american",
+      "variants": [
+        "caesar-classic",
+        "caesar-vegan",
+        "caesar-chicken-gf"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "brownies",
+      "name": {
+        "en": "Brownies",
+        "de": "Brownies"
+      },
+      "hero": {
+        "en": "crackly top, fudgy middle, corner pieces for the patient.",
+        "de": "rissige kruste, schokoladige mitte, eckstücke für die geduldigen."
+      },
+      "caption": {
+        "en": "fig. 15 — a tray, a knife, crumbs everywhere",
+        "de": "abb. 15 — ein blech, ein messer, überall krümel"
+      },
+      "stripe_color": "#7A5A4A",
+      "cuisine": "american",
+      "variants": [
+        "brownies-classic",
+        "brownies-vegan",
+        "brownies-sugar-free",
+        "brownies-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "low"
+    },
+    {
+      "id": "schnitzel",
+      "name": {
+        "en": "Schnitzel",
+        "de": "Schnitzel"
+      },
+      "hero": {
+        "en": "golden, rippled, bigger than the plate.",
+        "de": "golden, gewellt, größer als der teller."
+      },
+      "caption": {
+        "en": "fig. 16 — schnitzel, lemon wedge, potato salad in a bowl",
+        "de": "abb. 16 — schnitzel, zitronenspalte, kartoffelsalat in der schüssel"
+      },
+      "stripe_color": "#C9A45C",
+      "cuisine": "german",
+      "variants": [
+        "schnitzel-classic",
+        "schnitzel-chicken",
+        "schnitzel-celeriac",
+        "schnitzel-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german"
+      ],
+      "frequency_tier": "low"
+    }
+  ]
+}

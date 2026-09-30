@@ -1,0 +1,1445 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-italian",
+  "corpus_version": "2026.09.1",
+  "recipes": [
+    {
+      "id": "bolognese-classic",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "Slow Ragù Bolognese",
+        "de": "Langsames Ragù Bolognese"
+      },
+      "blurb": {
+        "en": "Soffritto sweated slowly, beef and pancetta, a splash of white wine and milk, and two unhurried hours on the lowest flame.",
+        "de": "Langsam angeschwitztes Soffritto, Rind und Pancetta, ein Schluck Weißwein und Milch — und zwei gemächliche Stunden auf kleinster Flamme."
+      },
+      "note": {
+        "en": "the milk goes in first. it makes the meat silky.",
+        "de": "die milch kommt zuerst. sie macht das fleisch seidig."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 150,
+      "time_bucket": ">60",
+      "servings": 4,
+      "calories_per_serving": 760,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 76,
+        "fat_g": 32
+      },
+      "contains": [
+        "alcohol",
+        "beef",
+        "celery",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lactose",
+        "meat",
+        "meat-dairy-combo",
+        "pork",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=800",
+        ">60",
+        "classic",
+        "dinner",
+        "hard",
+        "meal-prep",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "weekend",
+          "de": "wochenende"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "hard",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "butter",
+        "pancetta",
+        "onion",
+        "carrot",
+        "celery-stalk",
+        "ground-beef",
+        "whole-milk",
+        "white-wine",
+        "tomato-paste",
+        "canned-tomatoes",
+        "nutmeg",
+        "fettuccine",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "butter",
+          "qty": 20,
+          "unit": "g"
+        },
+        {
+          "id": "pancetta",
+          "qty": 100,
+          "unit": "g"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "celery-stalk",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "ground-beef",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "whole-milk",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "white-wine",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "nutmeg",
+          "qty": 1,
+          "unit": "pinch"
+        },
+        {
+          "id": "fettuccine",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Render the diced pancetta in oil and butter, then add finely chopped onion, carrot and celery and sweat gently.",
+            "de": "Gewürfelte Pancetta in Öl und Butter auslassen, dann fein gehackte Zwiebel, Karotte und Sellerie dazugeben und sanft anschwitzen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Add the beef and cook, breaking it up, until it loses its pink.",
+            "de": "Das Rind dazugeben und krümelig braten, bis es nicht mehr rosa ist."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Pour in the milk with a pinch of nutmeg and let it bubble away almost completely. Then the wine, same again.",
+            "de": "Milch mit einer Prise Muskat angießen und fast vollständig einkochen lassen. Dann den Wein, genauso."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Stir in tomato paste and tomatoes, season, and simmer on the lowest heat, half covered, stirring now and then.",
+            "de": "Tomatenmark und Tomaten einrühren, würzen und auf kleinster Stufe halb zugedeckt köcheln, ab und zu umrühren."
+          },
+          "timer_seconds": 7200
+        },
+        {
+          "text": {
+            "en": "Cook the pasta, toss it with the ragù and a splash of cooking water, and finish with parmesan.",
+            "de": "Nudeln garen, mit dem Ragù und einem Schluck Kochwasser schwenken und mit Parmesan vollenden."
+          },
+          "timer_seconds": 540
+        }
+      ]
+    },
+    {
+      "id": "bolognese-weeknight",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "Weeknight Spaghetti Bolognese",
+        "de": "Spaghetti Bolognese für unter der Woche"
+      },
+      "blurb": {
+        "en": "No wine, no pancetta, no waiting — just a quick, honest meat sauce your family will ask for again.",
+        "de": "Kein Wein, keine Pancetta, kein Warten — einfach eine schnelle, ehrliche Fleischsauce, nach der die Familie wieder fragt."
+      },
+      "note": {
+        "en": "grate the carrot. it melts right in.",
+        "de": "die karotte reiben. sie schmilzt einfach ein."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 690,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 38,
+        "carbs_g": 74,
+        "fat_g": 24
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "budget",
+        "classic",
+        "dinner",
+        "easy",
+        "kid-friendly",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "quick",
+          "de": "schnell"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "garlic",
+        "carrot",
+        "ground-beef",
+        "tomato-paste",
+        "canned-tomatoes",
+        "oregano",
+        "spaghetti",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "spaghetti",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Fry onion, garlic and grated carrot in the oil until soft.",
+            "de": "Zwiebel, Knoblauch und geriebene Karotte im Öl weich braten."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "en": "Add the beef and brown it well, then the tomato paste for a minute.",
+            "de": "Rind dazugeben und gut anbraten, dann eine Minute das Tomatenmark mitrösten."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "en": "Add tomatoes and oregano, season and simmer while the spaghetti cooks.",
+            "de": "Tomaten und Oregano dazugeben, würzen und köcheln, während die Spaghetti garen."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "en": "Toss pasta and sauce together and serve with parmesan.",
+            "de": "Nudeln und Sauce zusammen schwenken und mit Parmesan servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bolognese-lentil",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "Lentil & Mushroom Bolognese",
+        "de": "Linsen-Pilz-Bolognese"
+      },
+      "blurb": {
+        "en": "Brown lentils and finely chopped mushrooms give body and deep savouriness; a spoon of soy sauce does the rest.",
+        "de": "Braune Linsen und fein gehackte Pilze geben Körper und tiefe Würze; ein Löffel Sojasauce erledigt den Rest."
+      },
+      "note": {
+        "en": "chop the mushrooms tiny. like, tiny tiny.",
+        "de": "die pilze winzig hacken. wirklich winzig."
+      },
+      "cuisine": "italian",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 50,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 580,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 26,
+        "carbs_g": 96,
+        "fat_g": 10
+      },
+      "contains": [
+        "celery",
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "budget",
+        "dinner",
+        "meal-prep",
+        "medium",
+        "sauté",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "pasta",
+          "de": "pasta"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "carrot",
+        "celery-stalk",
+        "garlic",
+        "cremini",
+        "brown-lentils",
+        "tomato-paste",
+        "canned-tomatoes",
+        "soy-sauce",
+        "oregano",
+        "water",
+        "spaghetti",
+        "nutritional-yeast",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "carrot",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "celery-stalk",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "cremini",
+          "qty": 250,
+          "unit": "g"
+        },
+        {
+          "id": "brown-lentils",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 800,
+          "unit": "g"
+        },
+        {
+          "id": "soy-sauce",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "water",
+          "qty": 500,
+          "unit": "ml"
+        },
+        {
+          "id": "spaghetti",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "nutritional-yeast",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sweat onion, carrot, celery and garlic in the oil. Add the mushrooms and fry until their liquid has gone.",
+            "de": "Zwiebel, Karotte, Sellerie und Knoblauch im Öl anschwitzen. Pilze dazugeben und braten, bis ihre Flüssigkeit verdampft ist."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "en": "Stir in tomato paste, then lentils, tomatoes, soy sauce, oregano and water.",
+            "de": "Tomatenmark einrühren, dann Linsen, Tomaten, Sojasauce, Oregano und Wasser."
+          }
+        },
+        {
+          "text": {
+            "en": "Simmer until the lentils are tender, adding water if it gets too thick.",
+            "de": "Köcheln, bis die Linsen weich sind; bei Bedarf Wasser nachgießen."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "en": "Toss with cooked spaghetti and finish with nutritional yeast and pepper.",
+            "de": "Mit gegarten Spaghetti schwenken und mit Hefeflocken und Pfeffer vollenden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bolognese-low-carb",
+      "dish_id": "bolognese",
+      "title": {
+        "en": "Bolognese on Zucchini Ribbons",
+        "de": "Bolognese auf Zucchini-Bändern"
+      },
+      "blurb": {
+        "en": "All the sauce, over barely-warmed ribbons of zucchini that drink it up.",
+        "de": "Die ganze Sauce, über kaum erwärmten Zucchinibändern, die sie aufsaugen."
+      },
+      "note": {
+        "en": "salt the zucchini, wait, pat dry. no puddles.",
+        "de": "zucchini salzen, warten, trocken tupfen. keine pfützen."
+      },
+      "cuisine": "italian",
+      "diet": "low-carb",
+      "effort": "easy",
+      "time_minutes": 35,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 430,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 34,
+        "carbs_g": 16,
+        "fat_g": 26
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "meat",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "easy",
+        "high-protein",
+        "low-carb",
+        "lunch",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "low carb",
+          "de": "low carb"
+        },
+        {
+          "en": "light",
+          "de": "leicht"
+        }
+      ],
+      "dimensions": {
+        "diet": "low-carb",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "garlic",
+        "ground-beef",
+        "tomato-paste",
+        "canned-tomatoes",
+        "oregano",
+        "zucchini",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 2,
+          "unit": "clove"
+        },
+        {
+          "id": "ground-beef",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "id": "tomato-paste",
+          "qty": 1,
+          "unit": "tbsp"
+        },
+        {
+          "id": "canned-tomatoes",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "id": "oregano",
+          "qty": 1,
+          "unit": "tsp"
+        },
+        {
+          "id": "zucchini",
+          "qty": 4,
+          "unit": "pc"
+        },
+        {
+          "id": "parmesan",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Brown onion, garlic and beef in the oil, then add tomato paste, tomatoes and oregano and simmer.",
+            "de": "Zwiebel, Knoblauch und Rind im Öl anbraten, dann Tomatenmark, Tomaten und Oregano dazugeben und köcheln."
+          },
+          "timer_seconds": 1200
+        },
+        {
+          "text": {
+            "en": "Meanwhile cut the zucchini into ribbons, salt lightly and leave to drain, then pat dry.",
+            "de": "Inzwischen die Zucchini in Bänder schneiden, leicht salzen, abtropfen lassen und trocken tupfen."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "en": "Toss the ribbons in a hot pan for one minute only.",
+            "de": "Die Bänder nur eine Minute in einer heißen Pfanne schwenken."
+          },
+          "timer_seconds": 60
+        },
+        {
+          "text": {
+            "en": "Serve the sauce over the zucchini with parmesan.",
+            "de": "Sauce über die Zucchini geben und mit Parmesan servieren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "risotto-classic",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Mushroom Risotto",
+        "de": "Pilzrisotto"
+      },
+      "blurb": {
+        "en": "Golden mushrooms, a glass of white wine, and a final beating of butter and parmesan until it flows.",
+        "de": "Goldene Pilze, ein Glas Weißwein und zum Schluss kräftig Butter und Parmesan untergeschlagen, bis es fließt."
+      },
+      "note": {
+        "en": "keep the stock hot. cold stock = sulky rice.",
+        "de": "die brühe heiß halten. kalte brühe = beleidigter reis."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 620,
+      "calorie_bucket": "<=800",
+      "macros": {
+        "protein_g": 17,
+        "carbs_g": 78,
+        "fat_g": 24
+      },
+      "contains": [
+        "alcohol",
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=800",
+        "classic",
+        "dinner",
+        "medium",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "rice",
+          "de": "reis"
+        },
+        {
+          "en": "comfort food",
+          "de": "soulfood"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "medium",
+        "calorie_level": "<=800"
+      },
+      "ingredient_ids": [
+        "vegetable-stock",
+        "olive-oil",
+        "cremini",
+        "thyme",
+        "shallot",
+        "garlic",
+        "arborio-rice",
+        "white-wine",
+        "butter",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "vegetable-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cremini",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "id": "white-wine",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the stock and keep it at a gentle simmer.",
+            "de": "Brühe erhitzen und leise simmern lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Fry the sliced mushrooms and thyme in half the oil until golden. Season and set aside.",
+            "de": "Pilzscheiben und Thymian in der Hälfte des Öls goldbraun braten. Würzen und beiseitestellen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Soften shallot and garlic in the remaining oil, add the rice and toast until the grains turn translucent at the edges.",
+            "de": "Schalotte und Knoblauch im restlichen Öl anschwitzen, Reis dazugeben und rösten, bis die Körner am Rand glasig werden."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Pour in the wine and stir until absorbed. Then add stock a ladle at a time, stirring, until the rice is creamy and just tender.",
+            "de": "Wein angießen und rühren, bis er aufgesogen ist. Dann kellenweise Brühe zugeben und rühren, bis der Reis cremig und gerade gar ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "Off the heat, beat in butter, parmesan and most of the mushrooms. Rest two minutes, then serve topped with the rest.",
+            "de": "Vom Herd nehmen, Butter, Parmesan und die meisten Pilze kräftig unterschlagen. Zwei Minuten ruhen lassen, mit den restlichen Pilzen servieren."
+          },
+          "timer_seconds": 120
+        }
+      ]
+    },
+    {
+      "id": "risotto-oven",
+      "dish_id": "risotto",
+      "title": {
+        "en": "No-stir Oven Risotto",
+        "de": "Ofenrisotto ohne Rühren"
+      },
+      "blurb": {
+        "en": "Everything goes into one lidded pot and into the oven. A brisk stir at the end brings the creaminess.",
+        "de": "Alles in einen Topf mit Deckel und ab in den Ofen. Kräftiges Rühren am Ende bringt die Cremigkeit."
+      },
+      "note": {
+        "en": "the final stir is the whole trick.",
+        "de": "das rühren am schluss ist der ganze trick."
+      },
+      "cuisine": "italian",
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 40,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 560,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 16,
+        "carbs_g": 76,
+        "fat_g": 20
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "bake",
+        "classic",
+        "dinner",
+        "easy",
+        "one-pot",
+        "sauté"
+      ],
+      "techniques": [
+        "bake",
+        "sauté"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "rice",
+          "de": "reis"
+        },
+        {
+          "en": "hands-off",
+          "de": "nebenbei"
+        }
+      ],
+      "dimensions": {
+        "diet": "classic",
+        "effort": "easy",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "olive-oil",
+        "onion",
+        "garlic",
+        "cremini",
+        "arborio-rice",
+        "vegetable-stock",
+        "butter",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "onion",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "cremini",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "arborio-rice",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "vegetable-stock",
+          "qty": 1,
+          "unit": "l"
+        },
+        {
+          "id": "butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Heat the oven to 200 °C. In an ovenproof pot, fry onion, garlic and mushrooms in the oil.",
+            "de": "Ofen auf 200 °C vorheizen. In einem ofenfesten Topf Zwiebel, Knoblauch und Pilze im Öl braten."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "en": "Stir in the rice and hot stock, cover and bake.",
+            "de": "Reis und heiße Brühe einrühren, zudecken und backen."
+          },
+          "timer_seconds": 1500
+        },
+        {
+          "text": {
+            "en": "Take out, add butter and parmesan and stir vigorously for a minute until creamy.",
+            "de": "Herausnehmen, Butter und Parmesan dazugeben und eine Minute kräftig rühren, bis es cremig ist."
+          }
+        }
+      ]
+    },
+    {
+      "id": "risotto-vegan",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Vegan Two-Mushroom Risotto",
+        "de": "Veganes Risotto mit zweierlei Pilzen"
+      },
+      "blurb": {
+        "en": "Shiitake and cremini for depth, plant butter and nutritional yeast for that final creamy, savoury finish.",
+        "de": "Shiitake und Champignons für Tiefe, Pflanzenbutter und Hefeflocken für das cremige, würzige Finale."
+      },
+      "note": {
+        "en": "a squeeze of lemon wakes it up.",
+        "de": "ein spritzer zitrone weckt es auf."
+      },
+      "cuisine": "italian",
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 540,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 14,
+        "carbs_g": 80,
+        "fat_g": 17
+      },
+      "contains": [
+        "alcohol",
+        "celery",
+        "high-fodmap",
+        "sulphites"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "medium",
+        "sauté",
+        "simmer",
+        "vegan"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "rice",
+          "de": "reis"
+        },
+        {
+          "en": "plant based",
+          "de": "pflanzlich"
+        }
+      ],
+      "dimensions": {
+        "diet": "vegan",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "vegetable-stock",
+        "olive-oil",
+        "cremini",
+        "shiitake",
+        "thyme",
+        "shallot",
+        "garlic",
+        "arborio-rice",
+        "white-wine",
+        "vegan-butter",
+        "nutritional-yeast",
+        "lemon",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "vegetable-stock",
+          "qty": 1.2,
+          "unit": "l"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cremini",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "id": "shiitake",
+          "qty": 150,
+          "unit": "g"
+        },
+        {
+          "id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "id": "white-wine",
+          "qty": 150,
+          "unit": "ml"
+        },
+        {
+          "id": "vegan-butter",
+          "qty": 30,
+          "unit": "g"
+        },
+        {
+          "id": "nutritional-yeast",
+          "qty": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "lemon",
+          "qty": 0.5,
+          "unit": "pc"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Keep the stock hot. Fry both mushrooms with thyme in half the oil until browned; set aside.",
+            "de": "Brühe heiß halten. Beide Pilzsorten mit Thymian in der Hälfte des Öls bräunen; beiseitestellen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Soften shallot and garlic, toast the rice, then add the wine.",
+            "de": "Schalotte und Knoblauch anschwitzen, Reis rösten, dann den Wein angießen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Add stock ladle by ladle, stirring, until creamy and tender.",
+            "de": "Brühe kellenweise zugeben und rühren, bis der Reis cremig und gar ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "Beat in plant butter, nutritional yeast, lemon juice and most of the mushrooms. Top with the rest.",
+            "de": "Pflanzenbutter, Hefeflocken, Zitronensaft und die meisten Pilze unterschlagen. Mit dem Rest belegen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "risotto-alcohol-free",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Mushroom Risotto with Lemon",
+        "de": "Pilzrisotto mit Zitrone"
+      },
+      "blurb": {
+        "en": "No wine needed: lemon juice and a little extra stock bring the brightness. Made with halal-compatible ingredients.",
+        "de": "Ganz ohne Wein: Zitronensaft und etwas mehr Brühe bringen die Frische. Mit halal-kompatiblen Zutaten."
+      },
+      "note": {
+        "en": "zest first, then juice.",
+        "de": "erst abreiben, dann auspressen."
+      },
+      "cuisine": "italian",
+      "diet": "halal",
+      "effort": "medium",
+      "time_minutes": 45,
+      "time_bucket": "<=60",
+      "servings": 4,
+      "calories_per_serving": 600,
+      "calorie_bucket": "<=600",
+      "macros": {
+        "protein_g": 17,
+        "carbs_g": 78,
+        "fat_g": 23
+      },
+      "contains": [
+        "celery",
+        "dairy",
+        "high-fodmap",
+        "lactose"
+      ],
+      "attributes": [
+        "<=60",
+        "<=600",
+        "dinner",
+        "halal",
+        "medium",
+        "sauté",
+        "simmer"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "meal_types": [
+        "dinner"
+      ],
+      "tags": [
+        {
+          "en": "rice",
+          "de": "reis"
+        },
+        {
+          "en": "alcohol-free",
+          "de": "alkoholfrei"
+        }
+      ],
+      "dimensions": {
+        "diet": "halal",
+        "effort": "medium",
+        "calorie_level": "<=600"
+      },
+      "ingredient_ids": [
+        "vegetable-stock",
+        "olive-oil",
+        "cremini",
+        "thyme",
+        "shallot",
+        "garlic",
+        "arborio-rice",
+        "lemon",
+        "butter",
+        "parmesan",
+        "salt",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "vegetable-stock",
+          "qty": 1.35,
+          "unit": "l"
+        },
+        {
+          "id": "olive-oil",
+          "qty": 2,
+          "unit": "tbsp"
+        },
+        {
+          "id": "cremini",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "id": "thyme",
+          "qty": 4,
+          "unit": "sprig"
+        },
+        {
+          "id": "shallot",
+          "qty": 2,
+          "unit": "pc"
+        },
+        {
+          "id": "garlic",
+          "qty": 1,
+          "unit": "clove"
+        },
+        {
+          "id": "arborio-rice",
+          "qty": 320,
+          "unit": "g"
+        },
+        {
+          "id": "lemon",
+          "qty": 1,
+          "unit": "pc"
+        },
+        {
+          "id": "butter",
+          "qty": 40,
+          "unit": "g"
+        },
+        {
+          "id": "parmesan",
+          "qty": 60,
+          "unit": "g"
+        },
+        {
+          "id": "salt",
+          "qty": null,
+          "unit": "to-taste"
+        },
+        {
+          "id": "black-pepper",
+          "qty": null,
+          "unit": "to-taste"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Keep the stock hot. Brown the mushrooms with thyme in half the oil and set aside.",
+            "de": "Brühe heiß halten. Pilze mit Thymian in der Hälfte des Öls bräunen und beiseitestellen."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Soften shallot and garlic, toast the rice, then add the first ladle of stock with the lemon juice.",
+            "de": "Schalotte und Knoblauch anschwitzen, Reis rösten, dann die erste Kelle Brühe mit dem Zitronensaft angießen."
+          },
+          "timer_seconds": 180
+        },
+        {
+          "text": {
+            "en": "Keep adding stock and stirring until creamy.",
+            "de": "Weiter Brühe zugeben und rühren, bis es cremig ist."
+          },
+          "timer_seconds": 1080
+        },
+        {
+          "text": {
+            "en": "Beat in butter, parmesan, lemon zest and the mushrooms.",
+            "de": "Butter, Parmesan, Zitronenschale und die Pilze unterschlagen."
+          }
+        }
+      ]
+    }
+  ]
+}
