@@ -1,0 +1,4281 @@
+{
+ "schema_version": 1,
+ "nodes": [
+  {
+   "id": "dairy",
+   "parent": null,
+   "name": {
+    "en": "dairy",
+    "de": "Milchprodukte"
+   },
+   "aisle": "dairy-eggs",
+   "flags": [
+    "dairy"
+   ]
+  },
+  {
+   "id": "cow-milk",
+   "parent": "dairy",
+   "name": {
+    "en": "cow's milk",
+    "de": "Kuhmilch"
+   },
+   "aliases": {
+    "en": [
+     "milk"
+    ],
+    "de": [
+     "Milch"
+    ]
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "whole-milk",
+   "parent": "cow-milk",
+   "name": {
+    "en": "whole milk",
+    "de": "Vollmilch"
+   },
+   "aliases": {
+    "en": [
+     "milk"
+    ],
+    "de": [
+     "Milch"
+    ]
+   },
+   "density": 1.03
+  },
+  {
+   "id": "skim-milk",
+   "parent": "cow-milk",
+   "name": {
+    "en": "skim milk",
+    "de": "fettarme Milch"
+   },
+   "aliases": {
+    "en": [
+     "low-fat milk"
+    ],
+    "de": [
+     "Magermilch"
+    ]
+   },
+   "density": 1.03
+  },
+  {
+   "id": "buttermilk",
+   "parent": "cow-milk",
+   "name": {
+    "en": "buttermilk",
+    "de": "Buttermilch"
+   },
+   "density": 1.03
+  },
+  {
+   "id": "goat-milk",
+   "parent": "dairy",
+   "name": {
+    "en": "goat's milk",
+    "de": "Ziegenmilch"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "cream",
+   "parent": "dairy",
+   "name": {
+    "en": "cream",
+    "de": "Sahne"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "heavy-cream",
+   "parent": "cream",
+   "name": {
+    "en": "heavy cream",
+    "de": "Schlagsahne"
+   },
+   "aliases": {
+    "en": [
+     "whipping cream",
+     "double cream"
+    ],
+    "de": [
+     "Sahne",
+     "Schlagobers"
+    ]
+   },
+   "density": 1.0
+  },
+  {
+   "id": "sour-cream",
+   "parent": "cream",
+   "name": {
+    "en": "sour cream",
+    "de": "Schmand"
+   },
+   "aliases": {
+    "de": [
+     "saure Sahne"
+    ]
+   },
+   "density": 1.0
+  },
+  {
+   "id": "creme-fraiche",
+   "parent": "cream",
+   "name": {
+    "en": "crème fraîche",
+    "de": "Crème fraîche"
+   },
+   "density": 1.0
+  },
+  {
+   "id": "butter",
+   "parent": "dairy",
+   "name": {
+    "en": "butter",
+    "de": "Butter"
+   },
+   "density": 0.91
+  },
+  {
+   "id": "ghee",
+   "parent": "butter",
+   "name": {
+    "en": "ghee",
+    "de": "Ghee"
+   },
+   "aliases": {
+    "de": [
+     "Butterschmalz"
+    ]
+   },
+   "density": 0.9
+  },
+  {
+   "id": "yogurt",
+   "parent": "dairy",
+   "name": {
+    "en": "yogurt",
+    "de": "Joghurt"
+   },
+   "aliases": {
+    "en": [
+     "yoghurt"
+    ]
+   },
+   "flags": [
+    "lactose"
+   ],
+   "density": 1.03
+  },
+  {
+   "id": "plain-yogurt",
+   "parent": "yogurt",
+   "name": {
+    "en": "plain yogurt",
+    "de": "Naturjoghurt"
+   },
+   "aliases": {
+    "de": [
+     "Joghurt natur"
+    ]
+   },
+   "density": 1.03
+  },
+  {
+   "id": "greek-yogurt",
+   "parent": "yogurt",
+   "name": {
+    "en": "Greek yogurt",
+    "de": "griechischer Joghurt"
+   },
+   "density": 1.05
+  },
+  {
+   "id": "skyr",
+   "parent": "yogurt",
+   "name": {
+    "en": "skyr",
+    "de": "Skyr"
+   },
+   "density": 1.05
+  },
+  {
+   "id": "cheese",
+   "parent": "dairy",
+   "name": {
+    "en": "cheese",
+    "de": "Käse"
+   }
+  },
+  {
+   "id": "parmesan",
+   "parent": "cheese",
+   "name": {
+    "en": "parmesan",
+    "de": "Parmesan"
+   },
+   "aliases": {
+    "en": [
+     "parmigiano",
+     "grana padano"
+    ]
+   }
+  },
+  {
+   "id": "pecorino",
+   "parent": "cheese",
+   "name": {
+    "en": "pecorino",
+    "de": "Pecorino"
+   },
+   "aliases": {
+    "en": [
+     "pecorino romano"
+    ]
+   }
+  },
+  {
+   "id": "mozzarella",
+   "parent": "cheese",
+   "name": {
+    "en": "mozzarella",
+    "de": "Mozzarella"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "feta",
+   "parent": "cheese",
+   "name": {
+    "en": "feta",
+    "de": "Feta"
+   },
+   "aliases": {
+    "de": [
+     "Schafskäse",
+     "Hirtenkäse"
+    ]
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "cheddar",
+   "parent": "cheese",
+   "name": {
+    "en": "cheddar",
+    "de": "Cheddar"
+   }
+  },
+  {
+   "id": "emmental",
+   "parent": "cheese",
+   "name": {
+    "en": "Emmental",
+    "de": "Emmentaler"
+   },
+   "aliases": {
+    "en": [
+     "swiss cheese"
+    ],
+    "de": [
+     "Schweizer Käse"
+    ]
+   }
+  },
+  {
+   "id": "ricotta",
+   "parent": "cheese",
+   "name": {
+    "en": "ricotta",
+    "de": "Ricotta"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "mascarpone",
+   "parent": "cheese",
+   "name": {
+    "en": "mascarpone",
+    "de": "Mascarpone"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "cream-cheese",
+   "parent": "cheese",
+   "name": {
+    "en": "cream cheese",
+    "de": "Frischkäse"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "eggs",
+   "parent": null,
+   "name": {
+    "en": "eggs",
+    "de": "Eier"
+   },
+   "aisle": "dairy-eggs",
+   "flags": [
+    "egg"
+   ]
+  },
+  {
+   "id": "egg",
+   "parent": "eggs",
+   "name": {
+    "en": "egg",
+    "de": "Ei"
+   },
+   "plural": {
+    "en": "eggs",
+    "de": "Eier"
+   }
+  },
+  {
+   "id": "egg-yolk",
+   "parent": "eggs",
+   "name": {
+    "en": "egg yolk",
+    "de": "Eigelb"
+   },
+   "plural": {
+    "en": "egg yolks",
+    "de": "Eigelbe"
+   }
+  },
+  {
+   "id": "egg-white",
+   "parent": "eggs",
+   "name": {
+    "en": "egg white",
+    "de": "Eiweiß"
+   },
+   "plural": {
+    "en": "egg whites",
+    "de": "Eiweiße"
+   }
+  },
+  {
+   "id": "meat",
+   "parent": null,
+   "name": {
+    "en": "meat",
+    "de": "Fleisch"
+   },
+   "aisle": "meat-fish"
+  },
+  {
+   "id": "pork",
+   "parent": "meat",
+   "name": {
+    "en": "pork",
+    "de": "Schweinefleisch"
+   },
+   "flags": [
+    "pork"
+   ]
+  },
+  {
+   "id": "pork-cutlet",
+   "parent": "pork",
+   "name": {
+    "en": "pork cutlet",
+    "de": "Schweineschnitzel"
+   },
+   "plural": {
+    "en": "pork cutlets",
+    "de": "Schweineschnitzel"
+   }
+  },
+  {
+   "id": "pork-loin",
+   "parent": "pork",
+   "name": {
+    "en": "pork loin",
+    "de": "Schweinefilet"
+   }
+  },
+  {
+   "id": "pork-mince",
+   "parent": "pork",
+   "name": {
+    "en": "ground pork",
+    "de": "Schweinehack"
+   },
+   "aliases": {
+    "en": [
+     "minced pork"
+    ],
+    "de": [
+     "Hackfleisch"
+    ]
+   }
+  },
+  {
+   "id": "pork-belly",
+   "parent": "pork",
+   "name": {
+    "en": "pork belly",
+    "de": "Schweinebauch"
+   }
+  },
+  {
+   "id": "bacon",
+   "parent": "pork",
+   "name": {
+    "en": "bacon",
+    "de": "Speck"
+   },
+   "aliases": {
+    "en": [
+     "streaky bacon"
+    ],
+    "de": [
+     "Bauchspeck"
+    ]
+   }
+  },
+  {
+   "id": "guanciale",
+   "parent": "pork",
+   "name": {
+    "en": "guanciale",
+    "de": "Guanciale"
+   },
+   "aliases": {
+    "en": [
+     "pork cheek"
+    ],
+    "de": [
+     "Schweinebacke"
+    ]
+   }
+  },
+  {
+   "id": "ham",
+   "parent": "pork",
+   "name": {
+    "en": "ham",
+    "de": "Schinken"
+   }
+  },
+  {
+   "id": "beef",
+   "parent": "meat",
+   "name": {
+    "en": "beef",
+    "de": "Rindfleisch"
+   },
+   "flags": [
+    "beef"
+   ]
+  },
+  {
+   "id": "beef-mince",
+   "parent": "beef",
+   "name": {
+    "en": "ground beef",
+    "de": "Rinderhack"
+   },
+   "aliases": {
+    "en": [
+     "minced beef"
+    ],
+    "de": [
+     "Hackfleisch"
+    ]
+   }
+  },
+  {
+   "id": "beef-steak",
+   "parent": "beef",
+   "name": {
+    "en": "beef steak",
+    "de": "Rindersteak"
+   }
+  },
+  {
+   "id": "beef-bacon",
+   "parent": "beef",
+   "name": {
+    "en": "beef bacon",
+    "de": "Rinderspeck"
+   }
+  },
+  {
+   "id": "veal-cutlet",
+   "parent": "beef",
+   "name": {
+    "en": "veal cutlet",
+    "de": "Kalbsschnitzel"
+   },
+   "plural": {
+    "en": "veal cutlets",
+    "de": "Kalbsschnitzel"
+   }
+  },
+  {
+   "id": "lamb",
+   "parent": "meat",
+   "name": {
+    "en": "lamb",
+    "de": "Lammfleisch"
+   },
+   "flags": [
+    "lamb"
+   ]
+  },
+  {
+   "id": "lamb-shoulder",
+   "parent": "lamb",
+   "name": {
+    "en": "lamb shoulder",
+    "de": "Lammschulter"
+   }
+  },
+  {
+   "id": "lamb-mince",
+   "parent": "lamb",
+   "name": {
+    "en": "ground lamb",
+    "de": "Lammhack"
+   },
+   "aliases": {
+    "en": [
+     "minced lamb"
+    ],
+    "de": [
+     "Hackfleisch"
+    ]
+   }
+  },
+  {
+   "id": "poultry",
+   "parent": "meat",
+   "name": {
+    "en": "poultry",
+    "de": "Geflügel"
+   },
+   "flags": [
+    "poultry"
+   ]
+  },
+  {
+   "id": "chicken-breast",
+   "parent": "poultry",
+   "name": {
+    "en": "chicken breast",
+    "de": "Hähnchenbrust"
+   },
+   "plural": {
+    "en": "chicken breasts",
+    "de": "Hähnchenbrüste"
+   }
+  },
+  {
+   "id": "chicken-thigh",
+   "parent": "poultry",
+   "name": {
+    "en": "chicken thigh",
+    "de": "Hähnchenschenkel"
+   },
+   "plural": {
+    "en": "chicken thighs",
+    "de": "Hähnchenschenkel"
+   },
+   "aliases": {
+    "de": [
+     "Hähnchenkeule"
+    ]
+   }
+  },
+  {
+   "id": "turkey-breast",
+   "parent": "poultry",
+   "name": {
+    "en": "turkey breast",
+    "de": "Putenbrust"
+   }
+  },
+  {
+   "id": "turkey-mince",
+   "parent": "poultry",
+   "name": {
+    "en": "ground turkey",
+    "de": "Putenhack"
+   },
+   "aliases": {
+    "en": [
+     "minced turkey"
+    ],
+    "de": [
+     "Hackfleisch"
+    ]
+   }
+  },
+  {
+   "id": "turkey-bacon",
+   "parent": "poultry",
+   "name": {
+    "en": "turkey bacon",
+    "de": "Putenspeck"
+   }
+  },
+  {
+   "id": "seafood",
+   "parent": null,
+   "name": {
+    "en": "fish & seafood",
+    "de": "Fisch & Meeresfrüchte"
+   },
+   "aisle": "meat-fish"
+  },
+  {
+   "id": "fish",
+   "parent": "seafood",
+   "name": {
+    "en": "fish",
+    "de": "Fisch"
+   },
+   "flags": [
+    "fish"
+   ]
+  },
+  {
+   "id": "anchovy",
+   "parent": "fish",
+   "name": {
+    "en": "anchovy fillets",
+    "de": "Sardellenfilets"
+   },
+   "plural": {
+    "en": "anchovy fillets",
+    "de": "Sardellenfilets"
+   },
+   "aliases": {
+    "en": [
+     "anchovies"
+    ],
+    "de": [
+     "Sardellen"
+    ]
+   }
+  },
+  {
+   "id": "salmon",
+   "parent": "fish",
+   "name": {
+    "en": "salmon",
+    "de": "Lachs"
+   }
+  },
+  {
+   "id": "cod",
+   "parent": "fish",
+   "name": {
+    "en": "cod",
+    "de": "Kabeljau"
+   }
+  },
+  {
+   "id": "shellfish",
+   "parent": "seafood",
+   "name": {
+    "en": "shellfish",
+    "de": "Krebstiere"
+   },
+   "flags": [
+    "shellfish"
+   ]
+  },
+  {
+   "id": "shrimp",
+   "parent": "shellfish",
+   "name": {
+    "en": "shrimp",
+    "de": "Garnelen"
+   },
+   "aliases": {
+    "en": [
+     "prawns",
+     "shrimps"
+    ],
+    "de": [
+     "Riesengarnelen"
+    ]
+   }
+  },
+  {
+   "id": "molluscs",
+   "parent": "seafood",
+   "name": {
+    "en": "molluscs",
+    "de": "Weichtiere"
+   },
+   "flags": [
+    "molluscs"
+   ]
+  },
+  {
+   "id": "mussels",
+   "parent": "molluscs",
+   "name": {
+    "en": "mussels",
+    "de": "Miesmuscheln"
+   }
+  },
+  {
+   "id": "squid",
+   "parent": "molluscs",
+   "name": {
+    "en": "squid",
+    "de": "Tintenfisch"
+   },
+   "aliases": {
+    "en": [
+     "calamari"
+    ],
+    "de": [
+     "Calamari"
+    ]
+   }
+  },
+  {
+   "id": "nuts",
+   "parent": null,
+   "name": {
+    "en": "nuts",
+    "de": "Nüsse"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "tree-nuts",
+   "parent": "nuts",
+   "name": {
+    "en": "tree nuts",
+    "de": "Baumnüsse"
+   },
+   "flags": [
+    "tree-nuts"
+   ]
+  },
+  {
+   "id": "almonds",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "almonds",
+    "de": "Mandeln"
+   },
+   "aliases": {
+    "en": [
+     "almond"
+    ],
+    "de": [
+     "Mandel"
+    ]
+   },
+   "flags": [
+    "almonds"
+   ]
+  },
+  {
+   "id": "walnuts",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "walnuts",
+    "de": "Walnüsse"
+   },
+   "aliases": {
+    "en": [
+     "walnut"
+    ],
+    "de": [
+     "Walnuss"
+    ]
+   },
+   "flags": [
+    "walnuts"
+   ]
+  },
+  {
+   "id": "hazelnuts",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "hazelnuts",
+    "de": "Haselnüsse"
+   },
+   "aliases": {
+    "en": [
+     "hazelnut"
+    ],
+    "de": [
+     "Haselnuss"
+    ]
+   },
+   "flags": [
+    "hazelnuts"
+   ]
+  },
+  {
+   "id": "cashews",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "cashews",
+    "de": "Cashewkerne"
+   },
+   "aliases": {
+    "en": [
+     "cashew"
+    ],
+    "de": [
+     "Cashewkern"
+    ]
+   },
+   "flags": [
+    "cashews"
+   ]
+  },
+  {
+   "id": "pistachios",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "pistachios",
+    "de": "Pistazien"
+   },
+   "aliases": {
+    "en": [
+     "pistachio"
+    ],
+    "de": [
+     "Pistazie"
+    ]
+   },
+   "flags": [
+    "pistachios"
+   ]
+  },
+  {
+   "id": "pecans",
+   "parent": "tree-nuts",
+   "name": {
+    "en": "pecans",
+    "de": "Pekannüsse"
+   },
+   "flags": [
+    "pecans"
+   ]
+  },
+  {
+   "id": "peanuts",
+   "parent": "nuts",
+   "name": {
+    "en": "peanuts",
+    "de": "Erdnüsse"
+   },
+   "aliases": {
+    "en": [
+     "peanut"
+    ],
+    "de": [
+     "Erdnuss"
+    ]
+   },
+   "flags": [
+    "peanuts"
+   ]
+  },
+  {
+   "id": "peanut-butter",
+   "parent": "peanuts",
+   "name": {
+    "en": "peanut butter",
+    "de": "Erdnussbutter"
+   },
+   "density": 1.1
+  },
+  {
+   "id": "seeds",
+   "parent": null,
+   "name": {
+    "en": "seeds",
+    "de": "Samen & Kerne"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "sesame-seeds",
+   "parent": "seeds",
+   "name": {
+    "en": "sesame seeds",
+    "de": "Sesam"
+   },
+   "aliases": {
+    "en": [
+     "sesame"
+    ],
+    "de": [
+     "Sesamsamen"
+    ]
+   },
+   "flags": [
+    "sesame"
+   ]
+  },
+  {
+   "id": "tahini",
+   "parent": "sesame-seeds",
+   "name": {
+    "en": "tahini",
+    "de": "Tahini"
+   },
+   "aliases": {
+    "de": [
+     "Sesampaste",
+     "Tahin"
+    ]
+   },
+   "density": 1.0
+  },
+  {
+   "id": "sunflower-seeds",
+   "parent": "seeds",
+   "name": {
+    "en": "sunflower seeds",
+    "de": "Sonnenblumenkerne"
+   }
+  },
+  {
+   "id": "sunflower-seed-butter",
+   "parent": "sunflower-seeds",
+   "name": {
+    "en": "sunflower seed butter",
+    "de": "Sonnenblumenkernmus"
+   },
+   "density": 1.0
+  },
+  {
+   "id": "pumpkin-seeds",
+   "parent": "seeds",
+   "name": {
+    "en": "pumpkin seeds",
+    "de": "Kürbiskerne"
+   }
+  },
+  {
+   "id": "chia-seeds",
+   "parent": "seeds",
+   "name": {
+    "en": "chia seeds",
+    "de": "Chiasamen"
+   }
+  },
+  {
+   "id": "flaxseed",
+   "parent": "seeds",
+   "name": {
+    "en": "flaxseed",
+    "de": "Leinsamen"
+   },
+   "aliases": {
+    "en": [
+     "flax seeds"
+    ],
+    "de": [
+     "Leinsaat"
+    ]
+   }
+  },
+  {
+   "id": "grains",
+   "parent": null,
+   "name": {
+    "en": "grains & flours",
+    "de": "Getreide & Mehle"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "wheat-flour",
+   "parent": "grains",
+   "name": {
+    "en": "wheat flour",
+    "de": "Weizenmehl"
+   },
+   "aliases": {
+    "en": [
+     "plain flour",
+     "all-purpose flour"
+    ],
+    "de": [
+     "Mehl",
+     "Mehl Type 405"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.53
+  },
+  {
+   "id": "whole-wheat-flour",
+   "parent": "grains",
+   "name": {
+    "en": "whole wheat flour",
+    "de": "Vollkornmehl"
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.55
+  },
+  {
+   "id": "buckwheat-flour",
+   "parent": "grains",
+   "name": {
+    "en": "buckwheat flour",
+    "de": "Buchweizenmehl"
+   },
+   "density": 0.6
+  },
+  {
+   "id": "chickpea-flour",
+   "parent": "grains",
+   "name": {
+    "en": "chickpea flour",
+    "de": "Kichererbsenmehl"
+   },
+   "aliases": {
+    "en": [
+     "gram flour",
+     "besan"
+    ],
+    "de": [
+     "Besan"
+    ]
+   },
+   "density": 0.55
+  },
+  {
+   "id": "rice-flour",
+   "parent": "grains",
+   "name": {
+    "en": "rice flour",
+    "de": "Reismehl"
+   },
+   "density": 0.6
+  },
+  {
+   "id": "coconut-flour",
+   "parent": "grains",
+   "name": {
+    "en": "coconut flour",
+    "de": "Kokosmehl"
+   },
+   "density": 0.5
+  },
+  {
+   "id": "almond-flour",
+   "parent": "grains",
+   "name": {
+    "en": "almond flour",
+    "de": "Mandelmehl"
+   },
+   "aliases": {
+    "en": [
+     "ground almonds"
+    ],
+    "de": [
+     "gemahlene Mandeln"
+    ]
+   },
+   "flags": [
+    "almonds"
+   ],
+   "density": 0.4
+  },
+  {
+   "id": "gluten-free-flour",
+   "parent": "grains",
+   "name": {
+    "en": "gluten-free flour blend",
+    "de": "glutenfreie Mehlmischung"
+   },
+   "density": 0.55
+  },
+  {
+   "id": "cornstarch",
+   "parent": "grains",
+   "name": {
+    "en": "cornstarch",
+    "de": "Speisestärke"
+   },
+   "aliases": {
+    "en": [
+     "corn starch",
+     "cornflour"
+    ],
+    "de": [
+     "Maisstärke"
+    ]
+   },
+   "density": 0.6
+  },
+  {
+   "id": "rolled-oats",
+   "parent": "grains",
+   "name": {
+    "en": "rolled oats",
+    "de": "Haferflocken"
+   },
+   "aliases": {
+    "en": [
+     "oats",
+     "porridge oats"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.35
+  },
+  {
+   "id": "gluten-free-oats",
+   "parent": "grains",
+   "name": {
+    "en": "gluten-free oats",
+    "de": "glutenfreie Haferflocken"
+   },
+   "density": 0.35
+  },
+  {
+   "id": "bulgur",
+   "parent": "grains",
+   "name": {
+    "en": "bulgur",
+    "de": "Bulgur"
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.7
+  },
+  {
+   "id": "couscous",
+   "parent": "grains",
+   "name": {
+    "en": "couscous",
+    "de": "Couscous"
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.7
+  },
+  {
+   "id": "quinoa",
+   "parent": "grains",
+   "name": {
+    "en": "quinoa",
+    "de": "Quinoa"
+   },
+   "density": 0.75
+  },
+  {
+   "id": "breadcrumbs",
+   "parent": "grains",
+   "name": {
+    "en": "breadcrumbs",
+    "de": "Paniermehl"
+   },
+   "aliases": {
+    "en": [
+     "panko"
+    ],
+    "de": [
+     "Semmelbrösel"
+    ]
+   },
+   "aisle": "bakery",
+   "flags": [
+    "gluten"
+   ],
+   "density": 0.45
+  },
+  {
+   "id": "gluten-free-breadcrumbs",
+   "parent": "grains",
+   "name": {
+    "en": "gluten-free breadcrumbs",
+    "de": "glutenfreies Paniermehl"
+   },
+   "aisle": "bakery",
+   "density": 0.45
+  },
+  {
+   "id": "pasta",
+   "parent": "grains",
+   "name": {
+    "en": "pasta",
+    "de": "Nudeln"
+   }
+  },
+  {
+   "id": "spaghetti",
+   "parent": "pasta",
+   "name": {
+    "en": "spaghetti",
+    "de": "Spaghetti"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "fettuccine",
+   "parent": "pasta",
+   "name": {
+    "en": "fettuccine",
+    "de": "Fettuccine"
+   },
+   "aliases": {
+    "en": [
+     "tagliatelle"
+    ],
+    "de": [
+     "Tagliatelle",
+     "Bandnudeln"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "penne",
+   "parent": "pasta",
+   "name": {
+    "en": "penne",
+    "de": "Penne"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "lasagne-sheets",
+   "parent": "pasta",
+   "name": {
+    "en": "lasagne sheets",
+    "de": "Lasagneblätter"
+   },
+   "plural": {
+    "en": "lasagne sheets",
+    "de": "Lasagneblätter"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "gluten-free-spaghetti",
+   "parent": "pasta",
+   "name": {
+    "en": "gluten-free spaghetti",
+    "de": "glutenfreie Spaghetti"
+   },
+   "aliases": {
+    "en": [
+     "gluten-free pasta"
+    ],
+    "de": [
+     "glutenfreie Nudeln"
+    ]
+   }
+  },
+  {
+   "id": "gluten-free-fettuccine",
+   "parent": "pasta",
+   "name": {
+    "en": "gluten-free fettuccine",
+    "de": "glutenfreie Bandnudeln"
+   }
+  },
+  {
+   "id": "gluten-free-lasagne-sheets",
+   "parent": "pasta",
+   "name": {
+    "en": "gluten-free lasagne sheets",
+    "de": "glutenfreie Lasagneblätter"
+   }
+  },
+  {
+   "id": "rice-noodles",
+   "parent": "pasta",
+   "name": {
+    "en": "rice noodles",
+    "de": "Reisnudeln"
+   }
+  },
+  {
+   "id": "ramen-noodles",
+   "parent": "pasta",
+   "name": {
+    "en": "ramen noodles",
+    "de": "Ramen-Nudeln"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "rice",
+   "parent": "grains",
+   "name": {
+    "en": "rice",
+    "de": "Reis"
+   }
+  },
+  {
+   "id": "basmati-rice",
+   "parent": "rice",
+   "name": {
+    "en": "basmati rice",
+    "de": "Basmatireis"
+   },
+   "density": 0.85
+  },
+  {
+   "id": "jasmine-rice",
+   "parent": "rice",
+   "name": {
+    "en": "jasmine rice",
+    "de": "Jasminreis"
+   },
+   "density": 0.85
+  },
+  {
+   "id": "arborio-rice",
+   "parent": "rice",
+   "name": {
+    "en": "risotto rice",
+    "de": "Risottoreis"
+   },
+   "aliases": {
+    "en": [
+     "arborio rice"
+    ]
+   },
+   "density": 0.85
+  },
+  {
+   "id": "bread",
+   "parent": null,
+   "name": {
+    "en": "bread & baked goods",
+    "de": "Brot & Backwaren"
+   },
+   "aisle": "bakery"
+  },
+  {
+   "id": "pita",
+   "parent": "bread",
+   "name": {
+    "en": "pita bread",
+    "de": "Fladenbrot"
+   },
+   "aliases": {
+    "en": [
+     "flatbread",
+     "pita"
+    ],
+    "de": [
+     "Pita",
+     "Dürüm"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "tortilla-wrap",
+   "parent": "bread",
+   "name": {
+    "en": "tortilla wrap",
+    "de": "Wrap"
+   },
+   "aliases": {
+    "en": [
+     "tortilla"
+    ],
+    "de": [
+     "Tortilla"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "sourdough-bread",
+   "parent": "bread",
+   "name": {
+    "en": "sourdough bread",
+    "de": "Sauerteigbrot"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "gluten-free-bread",
+   "parent": "bread",
+   "name": {
+    "en": "gluten-free bread",
+    "de": "glutenfreies Brot"
+   }
+  },
+  {
+   "id": "burger-bun",
+   "parent": "bread",
+   "name": {
+    "en": "burger bun",
+    "de": "Burgerbrötchen"
+   },
+   "plural": {
+    "en": "burger buns",
+    "de": "Burgerbrötchen"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "gluten-free-bun",
+   "parent": "bread",
+   "name": {
+    "en": "gluten-free burger bun",
+    "de": "glutenfreies Burgerbrötchen"
+   },
+   "plural": {
+    "en": "gluten-free burger buns",
+    "de": "glutenfreie Burgerbrötchen"
+   }
+  },
+  {
+   "id": "croutons",
+   "parent": "bread",
+   "name": {
+    "en": "croutons",
+    "de": "Croûtons"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "ladyfingers",
+   "parent": "bread",
+   "name": {
+    "en": "ladyfingers",
+    "de": "Löffelbiskuits"
+   },
+   "aliases": {
+    "en": [
+     "savoiardi"
+    ],
+    "de": [
+     "Biskuits"
+    ]
+   },
+   "flags": [
+    "gluten",
+    "egg",
+    "added-sugar"
+   ]
+  },
+  {
+   "id": "gluten-free-ladyfingers",
+   "parent": "bread",
+   "name": {
+    "en": "gluten-free ladyfingers",
+    "de": "glutenfreie Löffelbiskuits"
+   },
+   "flags": [
+    "egg",
+    "added-sugar"
+   ]
+  },
+  {
+   "id": "naan",
+   "parent": "bread",
+   "name": {
+    "en": "naan",
+    "de": "Naan"
+   },
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "legumes",
+   "parent": null,
+   "name": {
+    "en": "legumes",
+    "de": "Hülsenfrüchte"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "chickpeas",
+   "parent": "legumes",
+   "name": {
+    "en": "chickpeas",
+    "de": "Kichererbsen"
+   },
+   "aliases": {
+    "en": [
+     "canned chickpeas"
+    ],
+    "de": [
+     "Kichererbsen (Dose)"
+    ]
+   }
+  },
+  {
+   "id": "dried-chickpeas",
+   "parent": "legumes",
+   "name": {
+    "en": "dried chickpeas",
+    "de": "getrocknete Kichererbsen"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "red-lentils",
+   "parent": "legumes",
+   "name": {
+    "en": "red lentils",
+    "de": "rote Linsen"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "green-lentils",
+   "parent": "legumes",
+   "name": {
+    "en": "green lentils",
+    "de": "grüne Linsen"
+   },
+   "aliases": {
+    "en": [
+     "brown lentils"
+    ],
+    "de": [
+     "Berglinsen",
+     "Tellerlinsen"
+    ]
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "canned-lentils",
+   "parent": "legumes",
+   "name": {
+    "en": "canned lentils",
+    "de": "Linsen (Dose)"
+   }
+  },
+  {
+   "id": "black-beans",
+   "parent": "legumes",
+   "name": {
+    "en": "black beans",
+    "de": "schwarze Bohnen"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "kidney-beans",
+   "parent": "legumes",
+   "name": {
+    "en": "kidney beans",
+    "de": "Kidneybohnen"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "white-beans",
+   "parent": "legumes",
+   "name": {
+    "en": "white beans",
+    "de": "weiße Bohnen"
+   },
+   "aliases": {
+    "en": [
+     "cannellini beans"
+    ],
+    "de": [
+     "Cannellini-Bohnen"
+    ]
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "peas",
+   "parent": "legumes",
+   "name": {
+    "en": "peas",
+    "de": "Erbsen"
+   },
+   "aliases": {
+    "en": [
+     "green peas"
+    ],
+    "de": [
+     "grüne Erbsen"
+    ]
+   },
+   "aisle": "frozen",
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "soy-products",
+   "parent": null,
+   "name": {
+    "en": "soy products",
+    "de": "Sojaprodukte"
+   },
+   "aisle": "dairy-eggs",
+   "flags": [
+    "soy"
+   ]
+  },
+  {
+   "id": "tofu",
+   "parent": "soy-products",
+   "name": {
+    "en": "tofu",
+    "de": "Tofu"
+   },
+   "aliases": {
+    "en": [
+     "bean curd"
+    ]
+   }
+  },
+  {
+   "id": "silken-tofu",
+   "parent": "soy-products",
+   "name": {
+    "en": "silken tofu",
+    "de": "Seidentofu"
+   }
+  },
+  {
+   "id": "smoked-tofu",
+   "parent": "soy-products",
+   "name": {
+    "en": "smoked tofu",
+    "de": "Räuchertofu"
+   }
+  },
+  {
+   "id": "tempeh",
+   "parent": "soy-products",
+   "name": {
+    "en": "tempeh",
+    "de": "Tempeh"
+   }
+  },
+  {
+   "id": "edamame",
+   "parent": "soy-products",
+   "name": {
+    "en": "edamame",
+    "de": "Edamame"
+   },
+   "aisle": "frozen"
+  },
+  {
+   "id": "textured-soy",
+   "parent": "soy-products",
+   "name": {
+    "en": "textured soy protein",
+    "de": "Sojagranulat"
+   },
+   "aliases": {
+    "en": [
+     "soy mince",
+     "TVP"
+    ]
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "plant-proteins",
+   "parent": null,
+   "name": {
+    "en": "plant proteins",
+    "de": "Pflanzliche Proteine"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "seitan",
+   "parent": "plant-proteins",
+   "name": {
+    "en": "seitan",
+    "de": "Seitan"
+   },
+   "aliases": {
+    "en": [
+     "wheat meat"
+    ],
+    "de": [
+     "Weizeneiweiß"
+    ]
+   },
+   "aisle": "dairy-eggs",
+   "flags": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "young-jackfruit",
+   "parent": "plant-proteins",
+   "name": {
+    "en": "young jackfruit",
+    "de": "junge Jackfrucht"
+   }
+  },
+  {
+   "id": "vegetables",
+   "parent": null,
+   "name": {
+    "en": "vegetables",
+    "de": "Gemüse"
+   },
+   "aisle": "produce"
+  },
+  {
+   "id": "alliums",
+   "parent": "vegetables",
+   "name": {
+    "en": "alliums",
+    "de": "Zwiebelgewächse"
+   }
+  },
+  {
+   "id": "onion",
+   "parent": "alliums",
+   "name": {
+    "en": "onion",
+    "de": "Zwiebel"
+   },
+   "plural": {
+    "en": "onions",
+    "de": "Zwiebeln"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "red-onion",
+   "parent": "alliums",
+   "name": {
+    "en": "red onion",
+    "de": "rote Zwiebel"
+   },
+   "plural": {
+    "en": "red onions",
+    "de": "rote Zwiebeln"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "shallot",
+   "parent": "alliums",
+   "name": {
+    "en": "shallot",
+    "de": "Schalotte"
+   },
+   "plural": {
+    "en": "shallots",
+    "de": "Schalotten"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "garlic",
+   "parent": "alliums",
+   "name": {
+    "en": "garlic",
+    "de": "Knoblauch"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "spring-onion",
+   "parent": "alliums",
+   "name": {
+    "en": "spring onion",
+    "de": "Frühlingszwiebel"
+   },
+   "plural": {
+    "en": "spring onions",
+    "de": "Frühlingszwiebeln"
+   },
+   "aliases": {
+    "en": [
+     "scallion",
+     "green onion"
+    ],
+    "de": [
+     "Lauchzwiebel"
+    ]
+   }
+  },
+  {
+   "id": "leek",
+   "parent": "alliums",
+   "name": {
+    "en": "leek",
+    "de": "Lauch"
+   },
+   "plural": {
+    "en": "leeks",
+    "de": "Lauchstangen"
+   },
+   "aliases": {
+    "de": [
+     "Porree"
+    ]
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "nightshades",
+   "parent": "vegetables",
+   "name": {
+    "en": "nightshades",
+    "de": "Nachtschattengewächse"
+   }
+  },
+  {
+   "id": "tomato",
+   "parent": "nightshades",
+   "name": {
+    "en": "tomato",
+    "de": "Tomate"
+   },
+   "plural": {
+    "en": "tomatoes",
+    "de": "Tomaten"
+   }
+  },
+  {
+   "id": "cherry-tomato",
+   "parent": "tomato",
+   "name": {
+    "en": "cherry tomatoes",
+    "de": "Kirschtomaten"
+   },
+   "plural": {
+    "en": "cherry tomatoes",
+    "de": "Kirschtomaten"
+   },
+   "aliases": {
+    "en": [
+     "cherry tomato",
+     "grape tomatoes"
+    ],
+    "de": [
+     "Cocktailtomaten"
+    ]
+   }
+  },
+  {
+   "id": "bell-pepper",
+   "parent": "nightshades",
+   "name": {
+    "en": "bell pepper",
+    "de": "Paprika"
+   },
+   "plural": {
+    "en": "bell peppers",
+    "de": "Paprika"
+   },
+   "aliases": {
+    "en": [
+     "capsicum",
+     "sweet pepper"
+    ],
+    "de": [
+     "Paprikaschote"
+    ]
+   }
+  },
+  {
+   "id": "red-bell-pepper",
+   "parent": "bell-pepper",
+   "name": {
+    "en": "red bell pepper",
+    "de": "rote Paprika"
+   },
+   "plural": {
+    "en": "red bell peppers",
+    "de": "rote Paprika"
+   }
+  },
+  {
+   "id": "eggplant",
+   "parent": "nightshades",
+   "name": {
+    "en": "eggplant",
+    "de": "Aubergine"
+   },
+   "plural": {
+    "en": "eggplants",
+    "de": "Auberginen"
+   },
+   "aliases": {
+    "en": [
+     "aubergine"
+    ],
+    "de": [
+     "Melanzani"
+    ]
+   }
+  },
+  {
+   "id": "potato",
+   "parent": "nightshades",
+   "name": {
+    "en": "potato",
+    "de": "Kartoffel"
+   },
+   "plural": {
+    "en": "potatoes",
+    "de": "Kartoffeln"
+   }
+  },
+  {
+   "id": "chili-pepper",
+   "parent": "nightshades",
+   "name": {
+    "en": "chili pepper",
+    "de": "Chilischote"
+   },
+   "plural": {
+    "en": "chili peppers",
+    "de": "Chilischoten"
+   },
+   "aliases": {
+    "en": [
+     "chilli",
+     "red chili"
+    ],
+    "de": [
+     "Chili"
+    ]
+   }
+  },
+  {
+   "id": "roots",
+   "parent": "vegetables",
+   "name": {
+    "en": "root vegetables",
+    "de": "Wurzelgemüse"
+   }
+  },
+  {
+   "id": "carrot",
+   "parent": "roots",
+   "name": {
+    "en": "carrot",
+    "de": "Karotte"
+   },
+   "plural": {
+    "en": "carrots",
+    "de": "Karotten"
+   },
+   "aliases": {
+    "de": [
+     "Möhre"
+    ]
+   }
+  },
+  {
+   "id": "celeriac",
+   "parent": "roots",
+   "name": {
+    "en": "celeriac",
+    "de": "Knollensellerie"
+   },
+   "aliases": {
+    "en": [
+     "celery root"
+    ]
+   },
+   "flags": [
+    "celery"
+   ]
+  },
+  {
+   "id": "beetroot",
+   "parent": "roots",
+   "name": {
+    "en": "beetroot",
+    "de": "Rote Bete"
+   },
+   "plural": {
+    "en": "beetroots",
+    "de": "Rote Bete"
+   },
+   "aliases": {
+    "en": [
+     "beet"
+    ]
+   }
+  },
+  {
+   "id": "sweet-potato",
+   "parent": "roots",
+   "name": {
+    "en": "sweet potato",
+    "de": "Süßkartoffel"
+   },
+   "plural": {
+    "en": "sweet potatoes",
+    "de": "Süßkartoffeln"
+   }
+  },
+  {
+   "id": "ginger",
+   "parent": "roots",
+   "name": {
+    "en": "ginger",
+    "de": "Ingwer"
+   }
+  },
+  {
+   "id": "brassicas",
+   "parent": "vegetables",
+   "name": {
+    "en": "cabbages",
+    "de": "Kohlgemüse"
+   }
+  },
+  {
+   "id": "cauliflower",
+   "parent": "brassicas",
+   "name": {
+    "en": "cauliflower",
+    "de": "Blumenkohl"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "broccoli",
+   "parent": "brassicas",
+   "name": {
+    "en": "broccoli",
+    "de": "Brokkoli"
+   }
+  },
+  {
+   "id": "red-cabbage",
+   "parent": "brassicas",
+   "name": {
+    "en": "red cabbage",
+    "de": "Rotkohl"
+   },
+   "aliases": {
+    "en": [
+     "purple cabbage"
+    ],
+    "de": [
+     "Blaukraut"
+    ]
+   }
+  },
+  {
+   "id": "white-cabbage",
+   "parent": "brassicas",
+   "name": {
+    "en": "white cabbage",
+    "de": "Weißkohl"
+   }
+  },
+  {
+   "id": "gourds",
+   "parent": "vegetables",
+   "name": {
+    "en": "gourds",
+    "de": "Kürbisgewächse"
+   }
+  },
+  {
+   "id": "zucchini",
+   "parent": "gourds",
+   "name": {
+    "en": "zucchini",
+    "de": "Zucchini"
+   },
+   "plural": {
+    "en": "zucchini",
+    "de": "Zucchini"
+   },
+   "aliases": {
+    "en": [
+     "courgette"
+    ],
+    "de": [
+     "Courgette"
+    ]
+   }
+  },
+  {
+   "id": "cucumber",
+   "parent": "gourds",
+   "name": {
+    "en": "cucumber",
+    "de": "Gurke"
+   },
+   "plural": {
+    "en": "cucumbers",
+    "de": "Gurken"
+   }
+  },
+  {
+   "id": "pumpkin",
+   "parent": "gourds",
+   "name": {
+    "en": "pumpkin",
+    "de": "Kürbis"
+   },
+   "aliases": {
+    "en": [
+     "butternut squash"
+    ],
+    "de": [
+     "Hokkaido"
+    ]
+   }
+  },
+  {
+   "id": "leafy-greens",
+   "parent": "vegetables",
+   "name": {
+    "en": "leafy greens",
+    "de": "Blattgemüse"
+   }
+  },
+  {
+   "id": "spinach",
+   "parent": "leafy-greens",
+   "name": {
+    "en": "spinach",
+    "de": "Spinat"
+   }
+  },
+  {
+   "id": "romaine-lettuce",
+   "parent": "leafy-greens",
+   "name": {
+    "en": "romaine lettuce",
+    "de": "Romanasalat"
+   },
+   "aliases": {
+    "en": [
+     "cos lettuce"
+    ]
+   }
+  },
+  {
+   "id": "mixed-salad-greens",
+   "parent": "leafy-greens",
+   "name": {
+    "en": "mixed salad greens",
+    "de": "gemischter Blattsalat"
+   }
+  },
+  {
+   "id": "arugula",
+   "parent": "leafy-greens",
+   "name": {
+    "en": "arugula",
+    "de": "Rucola"
+   },
+   "aliases": {
+    "en": [
+     "rocket"
+    ]
+   }
+  },
+  {
+   "id": "bok-choy",
+   "parent": "leafy-greens",
+   "name": {
+    "en": "bok choy",
+    "de": "Pak Choi"
+   },
+   "aliases": {
+    "en": [
+     "pak choi"
+    ]
+   }
+  },
+  {
+   "id": "bean-sprouts",
+   "parent": "vegetables",
+   "name": {
+    "en": "bean sprouts",
+    "de": "Sojasprossen"
+   },
+   "aliases": {
+    "en": [
+     "mung bean sprouts"
+    ],
+    "de": [
+     "Mungbohnensprossen"
+    ]
+   }
+  },
+  {
+   "id": "celery-stalks",
+   "parent": "vegetables",
+   "name": {
+    "en": "celery stalks",
+    "de": "Staudensellerie"
+   },
+   "aliases": {
+    "en": [
+     "celery"
+    ],
+    "de": [
+     "Sellerie"
+    ]
+   },
+   "flags": [
+    "celery"
+   ]
+  },
+  {
+   "id": "fennel",
+   "parent": "vegetables",
+   "name": {
+    "en": "fennel",
+    "de": "Fenchel"
+   },
+   "aliases": {
+    "en": [
+     "fennel bulb"
+    ],
+    "de": [
+     "Fenchelknolle"
+    ]
+   }
+  },
+  {
+   "id": "sweet-corn",
+   "parent": "vegetables",
+   "name": {
+    "en": "sweet corn",
+    "de": "Zuckermais"
+   },
+   "aliases": {
+    "en": [
+     "corn"
+    ],
+    "de": [
+     "Mais"
+    ]
+   }
+  },
+  {
+   "id": "mushrooms",
+   "parent": "vegetables",
+   "name": {
+    "en": "mushrooms",
+    "de": "Pilze"
+   }
+  },
+  {
+   "id": "button-mushrooms",
+   "parent": "mushrooms",
+   "name": {
+    "en": "button mushrooms",
+    "de": "Champignons"
+   },
+   "aliases": {
+    "en": [
+     "mushrooms"
+    ],
+    "de": [
+     "Pilze"
+    ]
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "oyster-mushrooms",
+   "parent": "mushrooms",
+   "name": {
+    "en": "oyster mushrooms",
+    "de": "Austernpilze"
+   },
+   "aliases": {
+    "en": [
+     "king oyster mushrooms"
+    ],
+    "de": [
+     "Kräuterseitlinge"
+    ]
+   }
+  },
+  {
+   "id": "shiitake",
+   "parent": "mushrooms",
+   "name": {
+    "en": "shiitake mushrooms",
+    "de": "Shiitake-Pilze"
+   }
+  },
+  {
+   "id": "dried-shiitake",
+   "parent": "mushrooms",
+   "name": {
+    "en": "dried shiitake",
+    "de": "getrocknete Shiitake"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "olives",
+   "parent": "vegetables",
+   "name": {
+    "en": "olives",
+    "de": "Oliven"
+   },
+   "aliases": {
+    "en": [
+     "black olives",
+     "green olives"
+    ],
+    "de": [
+     "schwarze Oliven",
+     "grüne Oliven"
+    ]
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "pickles",
+   "parent": "vegetables",
+   "name": {
+    "en": "pickled cucumbers",
+    "de": "Gewürzgurken"
+   },
+   "aliases": {
+    "en": [
+     "gherkins"
+    ],
+    "de": [
+     "Essiggurken"
+    ]
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "pickled-chili",
+   "parent": "vegetables",
+   "name": {
+    "en": "pickled chilies",
+    "de": "eingelegte Peperoni"
+   },
+   "aliases": {
+    "en": [
+     "pepperoncini"
+    ],
+    "de": [
+     "Peperoncini"
+    ]
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "fruits",
+   "parent": null,
+   "name": {
+    "en": "fruit",
+    "de": "Obst"
+   },
+   "aisle": "produce"
+  },
+  {
+   "id": "citrus",
+   "parent": "fruits",
+   "name": {
+    "en": "citrus",
+    "de": "Zitrusfrüchte"
+   }
+  },
+  {
+   "id": "lemon",
+   "parent": "citrus",
+   "name": {
+    "en": "lemon",
+    "de": "Zitrone"
+   },
+   "plural": {
+    "en": "lemons",
+    "de": "Zitronen"
+   }
+  },
+  {
+   "id": "lemon-juice",
+   "parent": "lemon",
+   "name": {
+    "en": "lemon juice",
+    "de": "Zitronensaft"
+   },
+   "density": 1.03
+  },
+  {
+   "id": "lime",
+   "parent": "citrus",
+   "name": {
+    "en": "lime",
+    "de": "Limette"
+   },
+   "plural": {
+    "en": "limes",
+    "de": "Limetten"
+   }
+  },
+  {
+   "id": "orange",
+   "parent": "citrus",
+   "name": {
+    "en": "orange",
+    "de": "Orange"
+   },
+   "plural": {
+    "en": "oranges",
+    "de": "Orangen"
+   }
+  },
+  {
+   "id": "pome-fruit",
+   "parent": "fruits",
+   "name": {
+    "en": "pome fruit",
+    "de": "Kernobst"
+   }
+  },
+  {
+   "id": "apple",
+   "parent": "pome-fruit",
+   "name": {
+    "en": "apple",
+    "de": "Apfel"
+   },
+   "plural": {
+    "en": "apples",
+    "de": "Äpfel"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "pear",
+   "parent": "pome-fruit",
+   "name": {
+    "en": "pear",
+    "de": "Birne"
+   },
+   "plural": {
+    "en": "pears",
+    "de": "Birnen"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "berries",
+   "parent": "fruits",
+   "name": {
+    "en": "berries",
+    "de": "Beeren"
+   }
+  },
+  {
+   "id": "strawberry",
+   "parent": "berries",
+   "name": {
+    "en": "strawberries",
+    "de": "Erdbeeren"
+   },
+   "aliases": {
+    "en": [
+     "strawberry"
+    ],
+    "de": [
+     "Erdbeere"
+    ]
+   }
+  },
+  {
+   "id": "blueberry",
+   "parent": "berries",
+   "name": {
+    "en": "blueberries",
+    "de": "Blaubeeren"
+   },
+   "aliases": {
+    "en": [
+     "blueberry"
+    ],
+    "de": [
+     "Blaubeere",
+     "Heidelbeeren"
+    ]
+   }
+  },
+  {
+   "id": "raspberry",
+   "parent": "berries",
+   "name": {
+    "en": "raspberries",
+    "de": "Himbeeren"
+   },
+   "aliases": {
+    "en": [
+     "raspberry"
+    ],
+    "de": [
+     "Himbeere"
+    ]
+   }
+  },
+  {
+   "id": "mixed-berries",
+   "parent": "berries",
+   "name": {
+    "en": "mixed berries",
+    "de": "Beerenmischung"
+   },
+   "aisle": "frozen"
+  },
+  {
+   "id": "tropical",
+   "parent": "fruits",
+   "name": {
+    "en": "tropical fruit",
+    "de": "Tropenfrüchte"
+   }
+  },
+  {
+   "id": "banana",
+   "parent": "tropical",
+   "name": {
+    "en": "banana",
+    "de": "Banane"
+   },
+   "plural": {
+    "en": "bananas",
+    "de": "Bananen"
+   }
+  },
+  {
+   "id": "mango",
+   "parent": "tropical",
+   "name": {
+    "en": "mango",
+    "de": "Mango"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "pineapple",
+   "parent": "tropical",
+   "name": {
+    "en": "pineapple",
+    "de": "Ananas"
+   }
+  },
+  {
+   "id": "avocado",
+   "parent": "fruits",
+   "name": {
+    "en": "avocado",
+    "de": "Avocado"
+   },
+   "plural": {
+    "en": "avocados",
+    "de": "Avocados"
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "dried-fruit",
+   "parent": "fruits",
+   "name": {
+    "en": "dried fruit",
+    "de": "Trockenfrüchte"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "raisins",
+   "parent": "dried-fruit",
+   "name": {
+    "en": "raisins",
+    "de": "Rosinen"
+   },
+   "aliases": {
+    "en": [
+     "sultanas"
+    ],
+    "de": [
+     "Sultaninen"
+    ]
+   }
+  },
+  {
+   "id": "dates",
+   "parent": "dried-fruit",
+   "name": {
+    "en": "dates",
+    "de": "Datteln"
+   },
+   "aliases": {
+    "en": [
+     "medjool dates"
+    ],
+    "de": [
+     "Medjool-Datteln"
+    ]
+   },
+   "flags": [
+    "high-fodmap"
+   ]
+  },
+  {
+   "id": "herbs",
+   "parent": null,
+   "name": {
+    "en": "fresh herbs",
+    "de": "frische Kräuter"
+   },
+   "aisle": "produce"
+  },
+  {
+   "id": "parsley",
+   "parent": "herbs",
+   "name": {
+    "en": "parsley",
+    "de": "Petersilie"
+   },
+   "aliases": {
+    "en": [
+     "flat-leaf parsley"
+    ],
+    "de": [
+     "glatte Petersilie"
+    ]
+   }
+  },
+  {
+   "id": "cilantro",
+   "parent": "herbs",
+   "name": {
+    "en": "cilantro",
+    "de": "Koriandergrün"
+   },
+   "aliases": {
+    "en": [
+     "coriander leaves",
+     "coriander"
+    ],
+    "de": [
+     "Koriander",
+     "frischer Koriander"
+    ]
+   }
+  },
+  {
+   "id": "mint",
+   "parent": "herbs",
+   "name": {
+    "en": "mint",
+    "de": "Minze"
+   }
+  },
+  {
+   "id": "basil",
+   "parent": "herbs",
+   "name": {
+    "en": "basil",
+    "de": "Basilikum"
+   }
+  },
+  {
+   "id": "thai-basil",
+   "parent": "herbs",
+   "name": {
+    "en": "Thai basil",
+    "de": "Thai-Basilikum"
+   }
+  },
+  {
+   "id": "dill",
+   "parent": "herbs",
+   "name": {
+    "en": "dill",
+    "de": "Dill"
+   }
+  },
+  {
+   "id": "thyme",
+   "parent": "herbs",
+   "name": {
+    "en": "thyme",
+    "de": "Thymian"
+   }
+  },
+  {
+   "id": "rosemary",
+   "parent": "herbs",
+   "name": {
+    "en": "rosemary",
+    "de": "Rosmarin"
+   }
+  },
+  {
+   "id": "oregano",
+   "parent": "herbs",
+   "name": {
+    "en": "oregano",
+    "de": "Oregano"
+   }
+  },
+  {
+   "id": "sage",
+   "parent": "herbs",
+   "name": {
+    "en": "sage",
+    "de": "Salbei"
+   }
+  },
+  {
+   "id": "chives",
+   "parent": "herbs",
+   "name": {
+    "en": "chives",
+    "de": "Schnittlauch"
+   }
+  },
+  {
+   "id": "lemongrass",
+   "parent": "herbs",
+   "name": {
+    "en": "lemongrass",
+    "de": "Zitronengras"
+   },
+   "aliases": {
+    "en": [
+     "lemon grass"
+    ]
+   }
+  },
+  {
+   "id": "makrut-lime-leaves",
+   "parent": "herbs",
+   "name": {
+    "en": "makrut lime leaves",
+    "de": "Kaffirlimettenblätter"
+   },
+   "aliases": {
+    "en": [
+     "kaffir lime leaves"
+    ]
+   }
+  },
+  {
+   "id": "bay-leaf",
+   "parent": "herbs",
+   "name": {
+    "en": "bay leaf",
+    "de": "Lorbeerblatt"
+   },
+   "plural": {
+    "en": "bay leaves",
+    "de": "Lorbeerblätter"
+   },
+   "aisle": "spices"
+  },
+  {
+   "id": "spices",
+   "parent": null,
+   "name": {
+    "en": "herbs & spices",
+    "de": "Gewürze"
+   },
+   "aisle": "spices"
+  },
+  {
+   "id": "salt",
+   "parent": "spices",
+   "name": {
+    "en": "salt",
+    "de": "Salz"
+   },
+   "aliases": {
+    "en": [
+     "sea salt"
+    ],
+    "de": [
+     "Meersalz"
+    ]
+   },
+   "density": 1.2
+  },
+  {
+   "id": "black-pepper",
+   "parent": "spices",
+   "name": {
+    "en": "black pepper",
+    "de": "schwarzer Pfeffer"
+   },
+   "aliases": {
+    "en": [
+     "pepper"
+    ],
+    "de": [
+     "Pfeffer"
+    ]
+   }
+  },
+  {
+   "id": "cumin",
+   "parent": "spices",
+   "name": {
+    "en": "cumin",
+    "de": "Kreuzkümmel"
+   },
+   "aliases": {
+    "en": [
+     "ground cumin"
+    ],
+    "de": [
+     "Cumin"
+    ]
+   }
+  },
+  {
+   "id": "paprika-powder",
+   "parent": "spices",
+   "name": {
+    "en": "paprika powder",
+    "de": "Paprikapulver"
+   },
+   "aliases": {
+    "en": [
+     "sweet paprika"
+    ],
+    "de": [
+     "edelsüßes Paprikapulver"
+    ]
+   }
+  },
+  {
+   "id": "smoked-paprika",
+   "parent": "spices",
+   "name": {
+    "en": "smoked paprika",
+    "de": "geräuchertes Paprikapulver"
+   },
+   "aliases": {
+    "en": [
+     "pimentón"
+    ],
+    "de": [
+     "Pimentón"
+    ]
+   }
+  },
+  {
+   "id": "turmeric",
+   "parent": "spices",
+   "name": {
+    "en": "turmeric",
+    "de": "Kurkuma"
+   },
+   "aliases": {
+    "de": [
+     "Curcuma"
+    ]
+   }
+  },
+  {
+   "id": "cinnamon",
+   "parent": "spices",
+   "name": {
+    "en": "cinnamon",
+    "de": "Zimt"
+   }
+  },
+  {
+   "id": "ground-coriander",
+   "parent": "spices",
+   "name": {
+    "en": "ground coriander",
+    "de": "Koriander gemahlen"
+   },
+   "aliases": {
+    "en": [
+     "coriander seeds"
+    ],
+    "de": [
+     "Koriandersamen"
+    ]
+   }
+  },
+  {
+   "id": "chili-flakes",
+   "parent": "spices",
+   "name": {
+    "en": "chili flakes",
+    "de": "Chiliflocken"
+   },
+   "aliases": {
+    "en": [
+     "red pepper flakes"
+    ],
+    "de": [
+     "Pfefferflocken"
+    ]
+   }
+  },
+  {
+   "id": "cayenne",
+   "parent": "spices",
+   "name": {
+    "en": "cayenne pepper",
+    "de": "Cayennepfeffer"
+   }
+  },
+  {
+   "id": "garam-masala",
+   "parent": "spices",
+   "name": {
+    "en": "garam masala",
+    "de": "Garam Masala"
+   }
+  },
+  {
+   "id": "curry-powder",
+   "parent": "spices",
+   "name": {
+    "en": "curry powder",
+    "de": "Currypulver"
+   }
+  },
+  {
+   "id": "nutmeg",
+   "parent": "spices",
+   "name": {
+    "en": "nutmeg",
+    "de": "Muskatnuss"
+   },
+   "aliases": {
+    "de": [
+     "Muskat"
+    ]
+   }
+  },
+  {
+   "id": "sumac",
+   "parent": "spices",
+   "name": {
+    "en": "sumac",
+    "de": "Sumach"
+   }
+  },
+  {
+   "id": "cardamom",
+   "parent": "spices",
+   "name": {
+    "en": "cardamom",
+    "de": "Kardamom"
+   }
+  },
+  {
+   "id": "allspice",
+   "parent": "spices",
+   "name": {
+    "en": "allspice",
+    "de": "Piment"
+   }
+  },
+  {
+   "id": "star-anise",
+   "parent": "spices",
+   "name": {
+    "en": "star anise",
+    "de": "Sternanis"
+   }
+  },
+  {
+   "id": "mustard-seeds",
+   "parent": "spices",
+   "name": {
+    "en": "mustard seeds",
+    "de": "Senfkörner"
+   },
+   "flags": [
+    "mustard"
+   ]
+  },
+  {
+   "id": "dried-oregano",
+   "parent": "spices",
+   "name": {
+    "en": "dried oregano",
+    "de": "getrockneter Oregano"
+   }
+  },
+  {
+   "id": "dried-thyme",
+   "parent": "spices",
+   "name": {
+    "en": "dried thyme",
+    "de": "getrockneter Thymian"
+   }
+  },
+  {
+   "id": "dried-mint",
+   "parent": "spices",
+   "name": {
+    "en": "dried mint",
+    "de": "getrocknete Minze"
+   }
+  },
+  {
+   "id": "kala-namak",
+   "parent": "spices",
+   "name": {
+    "en": "black salt (kala namak)",
+    "de": "Kala Namak"
+   },
+   "aliases": {
+    "en": [
+     "black salt"
+    ],
+    "de": [
+     "Schwarzsalz"
+    ]
+   }
+  },
+  {
+   "id": "za-atar",
+   "parent": "spices",
+   "name": {
+    "en": "za'atar",
+    "de": "Za'atar"
+   },
+   "aliases": {
+    "en": [
+     "zaatar"
+    ]
+   },
+   "flags": [
+    "sesame"
+   ]
+  },
+  {
+   "id": "oils",
+   "parent": null,
+   "name": {
+    "en": "oils & fats",
+    "de": "Öle & Fette"
+   },
+   "aisle": "condiments"
+  },
+  {
+   "id": "olive-oil",
+   "parent": "oils",
+   "name": {
+    "en": "olive oil",
+    "de": "Olivenöl"
+   },
+   "density": 0.91
+  },
+  {
+   "id": "sunflower-oil",
+   "parent": "oils",
+   "name": {
+    "en": "sunflower oil",
+    "de": "Sonnenblumenöl"
+   },
+   "aliases": {
+    "en": [
+     "neutral oil"
+    ],
+    "de": [
+     "Pflanzenöl",
+     "Rapsöl"
+    ]
+   },
+   "density": 0.92
+  },
+  {
+   "id": "sesame-oil",
+   "parent": "oils",
+   "name": {
+    "en": "sesame oil",
+    "de": "Sesamöl"
+   },
+   "flags": [
+    "sesame"
+   ],
+   "density": 0.92
+  },
+  {
+   "id": "coconut-oil",
+   "parent": "oils",
+   "name": {
+    "en": "coconut oil",
+    "de": "Kokosöl"
+   },
+   "density": 0.92
+  },
+  {
+   "id": "garlic-oil",
+   "parent": "oils",
+   "name": {
+    "en": "garlic-infused oil",
+    "de": "Knoblauchöl"
+   },
+   "density": 0.91
+  },
+  {
+   "id": "condiments",
+   "parent": null,
+   "name": {
+    "en": "sauces & condiments",
+    "de": "Saucen & Würzmittel"
+   },
+   "aisle": "condiments"
+  },
+  {
+   "id": "soy-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "soy sauce",
+    "de": "Sojasauce"
+   },
+   "aliases": {
+    "en": [
+     "shoyu"
+    ],
+    "de": [
+     "Shoyu"
+    ]
+   },
+   "flags": [
+    "soy",
+    "gluten"
+   ],
+   "density": 1.15
+  },
+  {
+   "id": "tamari",
+   "parent": "condiments",
+   "name": {
+    "en": "tamari",
+    "de": "Tamari"
+   },
+   "aliases": {
+    "en": [
+     "gluten-free soy sauce"
+    ],
+    "de": [
+     "glutenfreie Sojasauce"
+    ]
+   },
+   "flags": [
+    "soy"
+   ],
+   "density": 1.15
+  },
+  {
+   "id": "fish-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "fish sauce",
+    "de": "Fischsauce"
+   },
+   "flags": [
+    "fish"
+   ],
+   "density": 1.2
+  },
+  {
+   "id": "oyster-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "oyster sauce",
+    "de": "Austernsauce"
+   },
+   "flags": [
+    "molluscs",
+    "gluten"
+   ],
+   "density": 1.2
+  },
+  {
+   "id": "worcestershire-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "Worcestershire sauce",
+    "de": "Worcestershire-Sauce"
+   },
+   "flags": [
+    "fish",
+    "gluten"
+   ],
+   "density": 1.1
+  },
+  {
+   "id": "hoisin-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "hoisin sauce",
+    "de": "Hoisinsauce"
+   },
+   "flags": [
+    "soy",
+    "gluten",
+    "sesame",
+    "added-sugar"
+   ],
+   "density": 1.2
+  },
+  {
+   "id": "miso-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "miso paste",
+    "de": "Misopaste"
+   },
+   "aliases": {
+    "en": [
+     "miso"
+    ]
+   },
+   "flags": [
+    "soy"
+   ],
+   "density": 1.1
+  },
+  {
+   "id": "tomato-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "tomato paste",
+    "de": "Tomatenmark"
+   },
+   "aliases": {
+    "en": [
+     "tomato purée"
+    ],
+    "de": [
+     "Tomatenpüree"
+    ]
+   },
+   "aisle": "pantry",
+   "density": 1.1
+  },
+  {
+   "id": "passata",
+   "parent": "condiments",
+   "name": {
+    "en": "passata",
+    "de": "passierte Tomaten"
+   },
+   "aliases": {
+    "en": [
+     "strained tomatoes"
+    ]
+   },
+   "aisle": "pantry",
+   "density": 1.03
+  },
+  {
+   "id": "canned-tomatoes",
+   "parent": "condiments",
+   "name": {
+    "en": "canned tomatoes",
+    "de": "Dosentomaten"
+   },
+   "aliases": {
+    "en": [
+     "chopped tomatoes",
+     "crushed tomatoes"
+    ],
+    "de": [
+     "gehackte Tomaten",
+     "stückige Tomaten"
+    ]
+   },
+   "aisle": "pantry",
+   "density": 1.03
+  },
+  {
+   "id": "balsamic-vinegar",
+   "parent": "condiments",
+   "name": {
+    "en": "balsamic vinegar",
+    "de": "Balsamico"
+   },
+   "aliases": {
+    "en": [
+     "balsamic"
+    ],
+    "de": [
+     "Aceto Balsamico"
+    ]
+   },
+   "flags": [
+    "sulphites"
+   ],
+   "density": 1.05
+  },
+  {
+   "id": "red-wine-vinegar",
+   "parent": "condiments",
+   "name": {
+    "en": "red wine vinegar",
+    "de": "Rotweinessig"
+   },
+   "flags": [
+    "sulphites"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "apple-cider-vinegar",
+   "parent": "condiments",
+   "name": {
+    "en": "apple cider vinegar",
+    "de": "Apfelessig"
+   },
+   "density": 1.0
+  },
+  {
+   "id": "rice-vinegar",
+   "parent": "condiments",
+   "name": {
+    "en": "rice vinegar",
+    "de": "Reisessig"
+   },
+   "density": 1.0
+  },
+  {
+   "id": "dijon-mustard",
+   "parent": "condiments",
+   "name": {
+    "en": "Dijon mustard",
+    "de": "Dijon-Senf"
+   },
+   "aliases": {
+    "en": [
+     "mustard"
+    ],
+    "de": [
+     "Senf"
+    ]
+   },
+   "flags": [
+    "mustard"
+   ],
+   "density": 1.05
+  },
+  {
+   "id": "mayonnaise",
+   "parent": "condiments",
+   "name": {
+    "en": "mayonnaise",
+    "de": "Mayonnaise"
+   },
+   "aliases": {
+    "en": [
+     "mayo"
+    ]
+   },
+   "flags": [
+    "egg",
+    "mustard"
+   ],
+   "density": 0.95
+  },
+  {
+   "id": "vegan-mayonnaise",
+   "parent": "condiments",
+   "name": {
+    "en": "vegan mayonnaise",
+    "de": "vegane Mayonnaise"
+   },
+   "aliases": {
+    "en": [
+     "vegan mayo"
+    ]
+   },
+   "density": 0.95
+  },
+  {
+   "id": "ketchup",
+   "parent": "condiments",
+   "name": {
+    "en": "ketchup",
+    "de": "Ketchup"
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 1.1
+  },
+  {
+   "id": "harissa",
+   "parent": "condiments",
+   "name": {
+    "en": "harissa",
+    "de": "Harissa"
+   },
+   "density": 1.05
+  },
+  {
+   "id": "sriracha",
+   "parent": "condiments",
+   "name": {
+    "en": "sriracha",
+    "de": "Sriracha"
+   },
+   "aliases": {
+    "en": [
+     "chili sauce"
+    ],
+    "de": [
+     "Chilisauce"
+    ]
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 1.1
+  },
+  {
+   "id": "sweet-chili-sauce",
+   "parent": "condiments",
+   "name": {
+    "en": "sweet chili sauce",
+    "de": "süße Chilisauce"
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 1.2
+  },
+  {
+   "id": "tamarind-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "tamarind paste",
+    "de": "Tamarindenpaste"
+   },
+   "density": 1.1
+  },
+  {
+   "id": "red-curry-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "red curry paste",
+    "de": "rote Currypaste"
+   },
+   "aliases": {
+    "en": [
+     "curry paste"
+    ],
+    "de": [
+     "Currypaste"
+    ]
+   },
+   "density": 1.1
+  },
+  {
+   "id": "green-curry-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "green curry paste",
+    "de": "grüne Currypaste"
+   },
+   "aliases": {
+    "en": [
+     "Thai green curry paste"
+    ]
+   },
+   "flags": [
+    "shellfish"
+   ],
+   "density": 1.1
+  },
+  {
+   "id": "vegan-green-curry-paste",
+   "parent": "condiments",
+   "name": {
+    "en": "vegan green curry paste",
+    "de": "vegane grüne Currypaste"
+   },
+   "density": 1.1
+  },
+  {
+   "id": "capers",
+   "parent": "condiments",
+   "name": {
+    "en": "capers",
+    "de": "Kapern"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "mirin",
+   "parent": "condiments",
+   "name": {
+    "en": "mirin",
+    "de": "Mirin"
+   },
+   "flags": [
+    "alcohol",
+    "added-sugar"
+   ],
+   "density": 1.2
+  },
+  {
+   "id": "kombu",
+   "parent": "condiments",
+   "name": {
+    "en": "kombu",
+    "de": "Kombu-Alge"
+   },
+   "aliases": {
+    "en": [
+     "kelp"
+    ]
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "chicken-stock",
+   "parent": "condiments",
+   "name": {
+    "en": "chicken stock",
+    "de": "Hühnerbrühe"
+   },
+   "aliases": {
+    "en": [
+     "chicken broth"
+    ],
+    "de": [
+     "Hähnchenbrühe"
+    ]
+   },
+   "aisle": "pantry",
+   "flags": [
+    "poultry",
+    "celery"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "beef-stock",
+   "parent": "condiments",
+   "name": {
+    "en": "beef stock",
+    "de": "Rinderbrühe"
+   },
+   "aliases": {
+    "en": [
+     "beef broth"
+    ]
+   },
+   "aisle": "pantry",
+   "flags": [
+    "beef",
+    "celery"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "vegetable-stock",
+   "parent": "condiments",
+   "name": {
+    "en": "vegetable stock",
+    "de": "Gemüsebrühe"
+   },
+   "aliases": {
+    "en": [
+     "vegetable broth"
+    ],
+    "de": [
+     "Gemüsebouillon"
+    ]
+   },
+   "aisle": "pantry",
+   "flags": [
+    "celery"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "sweeteners",
+   "parent": null,
+   "name": {
+    "en": "sweeteners",
+    "de": "Süßungsmittel"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "sugar",
+   "parent": "sweeteners",
+   "name": {
+    "en": "sugar",
+    "de": "Zucker"
+   },
+   "aliases": {
+    "en": [
+     "white sugar"
+    ]
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 0.85
+  },
+  {
+   "id": "brown-sugar",
+   "parent": "sweeteners",
+   "name": {
+    "en": "brown sugar",
+    "de": "brauner Zucker"
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 0.8
+  },
+  {
+   "id": "powdered-sugar",
+   "parent": "sweeteners",
+   "name": {
+    "en": "powdered sugar",
+    "de": "Puderzucker"
+   },
+   "aliases": {
+    "en": [
+     "icing sugar"
+    ]
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 0.56
+  },
+  {
+   "id": "honey",
+   "parent": "sweeteners",
+   "name": {
+    "en": "honey",
+    "de": "Honig"
+   },
+   "flags": [
+    "honey",
+    "added-sugar"
+   ],
+   "density": 1.4
+  },
+  {
+   "id": "maple-syrup",
+   "parent": "sweeteners",
+   "name": {
+    "en": "maple syrup",
+    "de": "Ahornsirup"
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 1.33
+  },
+  {
+   "id": "agave-syrup",
+   "parent": "sweeteners",
+   "name": {
+    "en": "agave syrup",
+    "de": "Agavendicksaft"
+   },
+   "flags": [
+    "added-sugar"
+   ],
+   "density": 1.35
+  },
+  {
+   "id": "erythritol",
+   "parent": "sweeteners",
+   "name": {
+    "en": "erythritol",
+    "de": "Erythrit"
+   },
+   "aliases": {
+    "en": [
+     "sugar substitute"
+    ],
+    "de": [
+     "Zuckerersatz"
+    ]
+   },
+   "density": 0.8
+  },
+  {
+   "id": "baking",
+   "parent": null,
+   "name": {
+    "en": "baking",
+    "de": "Backzutaten"
+   },
+   "aisle": "pantry"
+  },
+  {
+   "id": "baking-powder",
+   "parent": "baking",
+   "name": {
+    "en": "baking powder",
+    "de": "Backpulver"
+   }
+  },
+  {
+   "id": "baking-soda",
+   "parent": "baking",
+   "name": {
+    "en": "baking soda",
+    "de": "Natron"
+   },
+   "aliases": {
+    "en": [
+     "bicarbonate of soda"
+    ]
+   }
+  },
+  {
+   "id": "yeast",
+   "parent": "baking",
+   "name": {
+    "en": "dry yeast",
+    "de": "Trockenhefe"
+   }
+  },
+  {
+   "id": "vanilla-pod",
+   "parent": "baking",
+   "name": {
+    "en": "vanilla pod",
+    "de": "Vanilleschote"
+   },
+   "plural": {
+    "en": "vanilla pods",
+    "de": "Vanilleschoten"
+   },
+   "aliases": {
+    "en": [
+     "vanilla"
+    ],
+    "de": [
+     "Vanille"
+    ]
+   }
+  },
+  {
+   "id": "cocoa-powder",
+   "parent": "baking",
+   "name": {
+    "en": "cocoa powder",
+    "de": "Kakaopulver"
+   },
+   "aliases": {
+    "en": [
+     "cacao"
+    ],
+    "de": [
+     "Kakao"
+    ]
+   },
+   "density": 0.5
+  },
+  {
+   "id": "dark-chocolate",
+   "parent": "baking",
+   "name": {
+    "en": "dark chocolate",
+    "de": "Zartbitterschokolade"
+   },
+   "flags": [
+    "added-sugar"
+   ]
+  },
+  {
+   "id": "gelatin",
+   "parent": "baking",
+   "name": {
+    "en": "gelatin",
+    "de": "Gelatine"
+   },
+   "flags": [
+    "gelatin-non-halal",
+    "gelatin-non-kosher"
+   ]
+  },
+  {
+   "id": "agar-agar",
+   "parent": "baking",
+   "name": {
+    "en": "agar-agar",
+    "de": "Agar-Agar"
+   }
+  },
+  {
+   "id": "drinks",
+   "parent": null,
+   "name": {
+    "en": "drinks",
+    "de": "Getränke"
+   },
+   "aisle": "drinks"
+  },
+  {
+   "id": "water",
+   "parent": "drinks",
+   "name": {
+    "en": "water",
+    "de": "Wasser"
+   },
+   "aisle": "other",
+   "shopping": false
+  },
+  {
+   "id": "white-wine",
+   "parent": "drinks",
+   "name": {
+    "en": "white wine",
+    "de": "Weißwein"
+   },
+   "flags": [
+    "alcohol",
+    "sulphites"
+   ],
+   "density": 0.99
+  },
+  {
+   "id": "red-wine",
+   "parent": "drinks",
+   "name": {
+    "en": "red wine",
+    "de": "Rotwein"
+   },
+   "flags": [
+    "alcohol",
+    "sulphites"
+   ],
+   "density": 0.99
+  },
+  {
+   "id": "marsala-wine",
+   "parent": "drinks",
+   "name": {
+    "en": "Marsala wine",
+    "de": "Marsala"
+   },
+   "aliases": {
+    "en": [
+     "marsala"
+    ]
+   },
+   "flags": [
+    "alcohol",
+    "sulphites"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "beer",
+   "parent": "drinks",
+   "name": {
+    "en": "beer",
+    "de": "Bier"
+   },
+   "flags": [
+    "alcohol",
+    "gluten"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "coffee",
+   "parent": "drinks",
+   "name": {
+    "en": "coffee",
+    "de": "Kaffee"
+   },
+   "aliases": {
+    "en": [
+     "espresso"
+    ],
+    "de": [
+     "Espresso"
+    ]
+   },
+   "flags": [
+    "caffeine"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "black-tea",
+   "parent": "drinks",
+   "name": {
+    "en": "black tea",
+    "de": "Schwarztee"
+   },
+   "flags": [
+    "caffeine"
+   ]
+  },
+  {
+   "id": "plant-based",
+   "parent": null,
+   "name": {
+    "en": "plant-based alternatives",
+    "de": "Pflanzliche Alternativen"
+   },
+   "aisle": "dairy-eggs"
+  },
+  {
+   "id": "oat-milk",
+   "parent": "plant-based",
+   "name": {
+    "en": "oat milk",
+    "de": "Haferdrink"
+   },
+   "aliases": {
+    "en": [
+     "oat drink"
+    ],
+    "de": [
+     "Hafermilch"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 1.03
+  },
+  {
+   "id": "soy-milk",
+   "parent": "plant-based",
+   "name": {
+    "en": "soy milk",
+    "de": "Sojadrink"
+   },
+   "aliases": {
+    "en": [
+     "soy drink"
+    ],
+    "de": [
+     "Sojamilch"
+    ]
+   },
+   "flags": [
+    "soy"
+   ],
+   "density": 1.03
+  },
+  {
+   "id": "almond-milk",
+   "parent": "plant-based",
+   "name": {
+    "en": "almond milk",
+    "de": "Mandeldrink"
+   },
+   "aliases": {
+    "en": [
+     "almond drink"
+    ],
+    "de": [
+     "Mandelmilch"
+    ]
+   },
+   "flags": [
+    "almonds"
+   ],
+   "density": 1.03
+  },
+  {
+   "id": "coconut-milk",
+   "parent": "plant-based",
+   "name": {
+    "en": "coconut milk",
+    "de": "Kokosmilch"
+   },
+   "aisle": "pantry",
+   "density": 0.97
+  },
+  {
+   "id": "coconut-cream",
+   "parent": "plant-based",
+   "name": {
+    "en": "coconut cream",
+    "de": "Kokoscreme"
+   },
+   "aisle": "pantry",
+   "density": 1.0
+  },
+  {
+   "id": "oat-cream",
+   "parent": "plant-based",
+   "name": {
+    "en": "oat cream",
+    "de": "Haferkochcreme"
+   },
+   "aliases": {
+    "en": [
+     "plant cream"
+    ],
+    "de": [
+     "Pflanzensahne"
+    ]
+   },
+   "flags": [
+    "gluten"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "vegan-butter",
+   "parent": "plant-based",
+   "name": {
+    "en": "vegan butter",
+    "de": "vegane Butter"
+   },
+   "aliases": {
+    "en": [
+     "margarine"
+    ],
+    "de": [
+     "Margarine"
+    ]
+   },
+   "density": 0.92
+  },
+  {
+   "id": "vegan-mozzarella",
+   "parent": "plant-based",
+   "name": {
+    "en": "vegan mozzarella",
+    "de": "veganer Mozzarella"
+   },
+   "aliases": {
+    "de": [
+     "Pizzaschmelz"
+    ]
+   }
+  },
+  {
+   "id": "nutritional-yeast",
+   "parent": "plant-based",
+   "name": {
+    "en": "nutritional yeast",
+    "de": "Hefeflocken"
+   },
+   "aisle": "pantry",
+   "density": 0.25
+  },
+  {
+   "id": "cashew-cream",
+   "parent": "plant-based",
+   "name": {
+    "en": "cashew cream",
+    "de": "Cashewcreme"
+   },
+   "flags": [
+    "cashews"
+   ],
+   "density": 1.0
+  },
+  {
+   "id": "lactose-free-cream",
+   "parent": "dairy",
+   "name": {
+    "en": "lactose-free cream",
+    "de": "laktosefreie Sahne"
+   },
+   "density": 1.0
+  },
+  {
+   "id": "lactose-free-milk",
+   "parent": "dairy",
+   "name": {
+    "en": "lactose-free milk",
+    "de": "laktosefreie Milch"
+   },
+   "density": 1.03
+  },
+  {
+   "id": "lactose-free-mozzarella",
+   "parent": "cheese",
+   "name": {
+    "en": "lactose-free mozzarella",
+    "de": "laktosefreier Mozzarella"
+   }
+  },
+  {
+   "id": "paneer",
+   "parent": "cheese",
+   "name": {
+    "en": "paneer",
+    "de": "Paneer"
+   },
+   "flags": [
+    "lactose"
+   ]
+  },
+  {
+   "id": "soy-yogurt",
+   "parent": "plant-based",
+   "name": {
+    "en": "soy yogurt",
+    "de": "Sojajoghurt"
+   },
+   "flags": [
+    "soy"
+   ],
+   "density": 1.03
+  },
+  {
+   "id": "coconut-yogurt",
+   "parent": "plant-based",
+   "name": {
+    "en": "coconut yogurt",
+    "de": "Kokosjoghurt"
+   },
+   "density": 1.03
+  },
+  {
+   "id": "vegan-ladyfingers",
+   "parent": "bread",
+   "name": {
+    "en": "vegan ladyfingers",
+    "de": "vegane Löffelbiskuits"
+   },
+   "aliases": {
+    "en": [
+     "vegan savoiardi"
+    ],
+    "de": [
+     "vegane Biskuits"
+    ]
+   },
+   "flags": [
+    "gluten",
+    "added-sugar"
+   ]
+  },
+  {
+   "id": "coconut-aminos",
+   "parent": "condiments",
+   "name": {
+    "en": "coconut aminos",
+    "de": "Kokos-Aminos"
+   },
+   "aliases": {
+    "en": [
+     "soy-free soy sauce"
+    ],
+    "de": [
+     "Kokosaminos",
+     "sojafreie Sojasauce"
+    ]
+   },
+   "density": 1.1
+  }
+ ]
+}

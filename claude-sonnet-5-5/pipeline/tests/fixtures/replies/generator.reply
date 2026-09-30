@@ -1,0 +1,135 @@
+Here is the recipe you asked for:
+
+```json
+{
+  "id": "porridge-vegan",
+  "dish_id": "porridge",
+  "title": {
+    "en": "Vegan Porridge",
+    "de": "Veganer Haferbrei"
+  },
+  "blurb": {
+    "en": "oats and oat milk simmered until creamy, with toasted walnuts and maple syrup.",
+    "de": "Haferflocken und Hafermilch, cremig eingekocht, mit gerösteten Walnüssen und Ahornsirup."
+  },
+  "tip": {
+    "en": "psst: toast the walnuts in a dry pan first. they turn from bitter to buttery.",
+    "de": "psst: die Walnüsse zuerst in der trockenen Pfanne rösten. dann schmecken sie buttrig statt bitter."
+  },
+  "diet": "vegan",
+  "effort": "easy",
+  "time_minutes": 15,
+  "servings": 2,
+  "calories_per_serving": 450,
+  "macros": {
+    "protein": 13,
+    "carbs": 60,
+    "fat": 17
+  },
+  "meal": [
+    "breakfast"
+  ],
+  "techniques": [
+    "simmer"
+  ],
+  "tags": [
+    "comfort"
+  ],
+  "ingredients": [
+    {
+      "id": "rolled-oats",
+      "unit": "g",
+      "amount": 80,
+      "group": {
+        "en": "porridge",
+        "de": "Haferbrei"
+      }
+    },
+    {
+      "id": "oat-milk",
+      "unit": "ml",
+      "amount": 300,
+      "group": {
+        "en": "porridge",
+        "de": "Haferbrei"
+      }
+    },
+    {
+      "id": "salt",
+      "unit": "pinch",
+      "amount": 1,
+      "group": {
+        "en": "porridge",
+        "de": "Haferbrei"
+      }
+    },
+    {
+      "id": "banana",
+      "unit": "piece",
+      "amount": 1,
+      "note": {
+        "en": "sliced",
+        "de": "in Scheiben"
+      },
+      "group": {
+        "en": "to serve",
+        "de": "zum Servieren"
+      }
+    },
+    {
+      "id": "walnuts",
+      "unit": "g",
+      "amount": 20,
+      "note": {
+        "en": "roughly chopped",
+        "de": "grob gehackt"
+      },
+      "group": {
+        "en": "to serve",
+        "de": "zum Servieren"
+      }
+    },
+    {
+      "id": "maple-syrup",
+      "unit": "tbsp",
+      "amount": 1,
+      "group": {
+        "en": "to serve",
+        "de": "zum Servieren"
+      }
+    },
+    {
+      "id": "cinnamon",
+      "unit": "pinch",
+      "amount": 1,
+      "group": {
+        "en": "to serve",
+        "de": "zum Servieren"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "text": {
+        "en": "Simmer the oats with the oat milk and the salt for 8 minutes, stirring often, until creamy.",
+        "de": "Koche die Haferflocken mit der Hafermilch und dem Salz 8 Minuten unter häufigem Rühren, bis sie cremig sind."
+      },
+      "timer_seconds": 480
+    },
+    {
+      "text": {
+        "en": "Toast the walnuts in a dry pan until they smell nutty, and slice the banana.",
+        "de": "Röste die Walnüsse in einer trockenen Pfanne, bis sie nussig duften, und schneide die Banane in Scheiben."
+      }
+    },
+    {
+      "text": {
+        "en": "Spoon the porridge into bowls and top with banana, walnuts, cinnamon and maple syrup.",
+        "de": "Fülle den Haferbrei in Schalen und gib Banane, Walnüsse, Zimt und Ahornsirup obenauf."
+      }
+    }
+  ]
+}
+```
+
+Enjoy the porridge!

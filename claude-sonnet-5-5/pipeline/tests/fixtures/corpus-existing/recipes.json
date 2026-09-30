@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "id": "porridge-classic",
+      "dish_id": "porridge",
+      "title": {
+        "en": "Classic Porridge",
+        "de": "Klassischer Haferbrei"
+      },
+      "blurb": {
+        "en": "oats simmered slowly in milk until they turn creamy. banana and a spoon of honey on top.",
+        "de": "Haferflocken, langsam in Milch gekocht, bis sie cremig werden. obendrauf Banane und ein Löffel Honig."
+      },
+      "tip": {
+        "en": "psst: stir in the salt early. it makes the oats taste sweeter.",
+        "de": "psst: das Salz früh einrühren. dann schmecken die Haferflocken süßer."
+      },
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 15,
+      "servings": 2,
+      "calories_per_serving": 420,
+      "macros": {
+        "protein": 14,
+        "carbs": 62,
+        "fat": 12
+      },
+      "meal": [
+        "breakfast"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "tags": [
+        "comfort"
+      ],
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "gluten",
+        "honey",
+        "lactose"
+      ],
+      "attributes": [
+        "classic",
+        "comfort",
+        "easy",
+        "halal",
+        "kosher",
+        "low-fodmap",
+        "nut-free",
+        "pescatarian",
+        "sesame-free",
+        "simmer",
+        "soy-free",
+        "vegetarian",
+        "≤15",
+        "≤600"
+      ],
+      "ingredient_ids": [
+        "banana",
+        "honey",
+        "rolled-oats",
+        "salt",
+        "whole-milk"
+      ],
+      "time_bucket": "≤15",
+      "calorie_bucket": "≤600",
+      "ingredients": [
+        {
+          "id": "rolled-oats",
+          "unit": "g",
+          "amount": 80,
+          "group": {
+            "en": "porridge",
+            "de": "Haferbrei"
+          }
+        },
+        {
+          "id": "whole-milk",
+          "unit": "ml",
+          "amount": 300,
+          "group": {
+            "en": "porridge",
+            "de": "Haferbrei"
+          }
+        },
+        {
+          "id": "salt",
+          "unit": "pinch",
+          "amount": 1,
+          "group": {
+            "en": "porridge",
+            "de": "Haferbrei"
+          }
+        },
+        {
+          "id": "banana",
+          "unit": "piece",
+          "amount": 1,
+          "note": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          },
+          "group": {
+            "en": "to serve",
+            "de": "zum Servieren"
+          }
+        },
+        {
+          "id": "honey",
+          "unit": "tbsp",
+          "amount": 1,
+          "group": {
+            "en": "to serve",
+            "de": "zum Servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Simmer the oats with the milk and the salt for 8 minutes, stirring often, until creamy.",
+            "de": "Koche die Haferflocken mit der Milch und dem Salz 8 Minuten unter häufigem Rühren, bis sie cremig sind."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "en": "Slice the banana while the porridge rests for a minute.",
+            "de": "Schneide die Banane, während der Haferbrei eine Minute ruht."
+          }
+        },
+        {
+          "text": {
+            "en": "Spoon the porridge into bowls and top with the banana and the honey.",
+            "de": "Fülle den Haferbrei in Schalen und gib Banane und Honig obenauf."
+          }
+        }
+      ]
+    }
+  ]
+}

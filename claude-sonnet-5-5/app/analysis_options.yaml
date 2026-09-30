@@ -1,0 +1,17 @@
+# Static analysis for the MorphCook app. `flutter analyze` must stay clean.
+include: package:flutter_lints/flutter.yaml
+
+formatter:
+  page_width: 120
+
+analyzer:
+  exclude:
+    - build/**
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    unawaited_futures: true
+    avoid_print: true
+    always_declare_return_types: true
+    prefer_final_locals: true

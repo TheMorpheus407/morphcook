@@ -1,0 +1,6 @@
+tags:
+  visual:
+    description: >
+      Renders real screens with the bundled fonts and writes PNGs to build/screenshots
+      for design review. They run with the regular suite as well. To run only these:
+      flutter test --tags visual test/visual

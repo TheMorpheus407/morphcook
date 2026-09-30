@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/dish.schema.json",
+  "title": "MorphCook dish",
+  "description": "A dish concept. Its variants are separate recipes linked by id; partition fields route the recipes to a bundled file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "hero", "cap", "stripe", "recipes", "partition_id", "secondary_partitions", "cuisine_tags", "frequency_tier"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "$ref": "#/$defs/localizedText" },
+    "hero": { "$ref": "#/$defs/localizedText" },
+    "cap": { "$ref": "#/$defs/localizedText" },
+    "stripe": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "recipes": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+    "partition_id": { "type": "string", "description": "Partition file that stores the recipes of this dish." },
+    "secondary_partitions": { "type": "array", "items": { "type": "string" }, "description": "Cuisine partitions that also list the dish for discovery. Derived by normalize." },
+    "cuisine_tags": { "type": "array", "items": { "type": "string" } },
+    "frequency_tier": { "type": "string", "enum": ["core", "extended"] }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}

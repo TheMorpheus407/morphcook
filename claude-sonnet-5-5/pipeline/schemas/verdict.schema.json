@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/verdict.schema.json",
+  "title": "Stage verdict",
+  "description": "The reply of the flag-verifier and the reviewer. `reject` needs at least one issue, and the issues go back to the generator as feedback.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "issues"],
+  "properties": {
+    "verdict": { "type": "string", "enum": ["approve", "reject"] },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "detail"],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "missing-flag", "contradiction", "diet-claim", "hidden-ingredient", "allergen",
+              "integrity", "style", "language", "safety", "duplicate", "other"
+            ]
+          },
+          "detail": { "type": "string", "minLength": 8, "description": "What is wrong and what to change, specific enough to act on." },
+          "where": { "type": "string", "description": "Field or step, for example `steps[2]` or `ingredients[4]`." }
+        }
+      }
+    },
+    "notes": { "type": "string", "description": "Optional remarks that do not block the recipe." }
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "pancakes",
+      "name": {
+        "en": "Pancakes",
+        "de": "Pfannkuchen"
+      },
+      "hero": {
+        "en": "sunday morning, any day of the week.",
+        "de": "Sonntagsmorgen, an jedem Wochentag."
+      },
+      "cap": {
+        "en": "photo: a tall stack, syrup mid-drip",
+        "de": "Foto: ein hoher Stapel, Sirup mitten im Tropfen"
+      },
+      "stripe": "#e2b26b",
+      "recipes": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-keto",
+        "pancakes-souffle"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "overnight-oats",
+      "name": {
+        "en": "Overnight Oats",
+        "de": "Overnight Oats"
+      },
+      "hero": {
+        "en": "breakfast that makes itself while you sleep.",
+        "de": "Frühstück, das sich im Schlaf selbst macht."
+      },
+      "cap": {
+        "en": "photo: a jam jar, oats, berries, morning light",
+        "de": "Foto: ein Marmeladenglas, Haferflocken, Beeren, Morgenlicht"
+      },
+      "stripe": "#c9b8e0",
+      "recipes": [
+        "overnight-oats-classic",
+        "overnight-oats-vegan",
+        "overnight-oats-gluten-free",
+        "overnight-oats-high-protein",
+        "overnight-oats-baked",
+        "overnight-oats-sugar-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "shakshuka",
+      "name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero": {
+        "en": "eggs poached in a pan of spiced tomatoes.",
+        "de": "Eier, pochiert in einer Pfanne voll gewürzter Tomaten."
+      },
+      "cap": {
+        "en": "photo: one pan, bubbling red, bread on the side",
+        "de": "Foto: eine Pfanne, blubbernd rot, Brot daneben"
+      },
+      "stripe": "#d9705a",
+      "recipes": [
+        "shakshuka-classic",
+        "shakshuka-easy",
+        "shakshuka-vegan",
+        "shakshuka-dairy-free",
+        "shakshuka-low-fodmap"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "avocado-toast",
+      "name": {
+        "en": "Avocado Toast",
+        "de": "Avocado-Toast"
+      },
+      "hero": {
+        "en": "the brunch classic, for everyone at the table.",
+        "de": "der Brunch-Klassiker, für alle am Tisch."
+      },
+      "cap": {
+        "en": "photo: green on golden toast, one perfect egg",
+        "de": "Foto: Grün auf goldenem Toast, ein perfektes Ei"
+      },
+      "stripe": "#9db08f",
+      "recipes": [
+        "avocado-toast-classic",
+        "avocado-toast-vegan",
+        "avocado-toast-gluten-free",
+        "avocado-toast-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "caesar-salad",
+      "name": {
+        "en": "Caesar Salad",
+        "de": "Caesar Salad"
+      },
+      "hero": {
+        "en": "crisp romaine, a dressing worth whisking, and a version for everyone.",
+        "de": "knackiger Romana, ein Dressing, das sich lohnt, und eine Version für jede und jeden."
+      },
+      "cap": {
+        "en": "photo: cracked pepper over a bowl of cold green leaves",
+        "de": "Foto: Pfeffer über einer Schüssel kalter grüner Blätter"
+      },
+      "stripe": "#a8c0a0",
+      "recipes": [
+        "caesar-salad-classic",
+        "caesar-salad-vegetarian",
+        "caesar-salad-vegan",
+        "caesar-salad-gluten-free",
+        "caesar-salad-keto",
+        "caesar-salad-chicken"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "tomato-soup",
+      "name": {
+        "en": "Tomato Soup",
+        "de": "Tomatensuppe"
+      },
+      "hero": {
+        "en": "a bowl that feels like being looked after.",
+        "de": "eine Schüssel, die sich anfühlt, als würde man sich um dich kümmern."
+      },
+      "cap": {
+        "en": "photo: red soup, a swirl of cream, torn basil",
+        "de": "Foto: rote Suppe, ein Sahnewirbel, gezupftes Basilikum"
+      },
+      "stripe": "#d87a5f",
+      "recipes": [
+        "tomato-soup-classic",
+        "tomato-soup-vegan",
+        "tomato-soup-low-fodmap",
+        "tomato-soup-roasted"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "falafel",
+      "name": {
+        "en": "Falafel",
+        "de": "Falafel"
+      },
+      "hero": {
+        "en": "green inside, crisp outside, and open to everyone.",
+        "de": "innen grün, außen knusprig und offen für alle."
+      },
+      "cap": {
+        "en": "photo: golden balls on a paper-lined plate",
+        "de": "Foto: goldene Bällchen auf einem papierbelegten Teller"
+      },
+      "stripe": "#b7a76a",
+      "recipes": [
+        "falafel-classic",
+        "falafel-baked",
+        "falafel-gluten-free",
+        "falafel-sesame-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "hummus",
+      "name": {
+        "en": "Hummus",
+        "de": "Hummus"
+      },
+      "hero": {
+        "en": "smooth enough to scoop with a spoon, gentle enough for every table.",
+        "de": "glatt genug zum Löffeln, sanft genug für jeden Tisch."
+      },
+      "cap": {
+        "en": "photo: a swirled bowl, olive oil pooling, paprika dust",
+        "de": "Foto: eine gewirbelte Schale, Olivenöl in der Mulde, Paprikastaub"
+      },
+      "stripe": "#d4b27a",
+      "recipes": [
+        "hummus-classic",
+        "hummus-sesame-free",
+        "hummus-low-fodmap",
+        "hummus-beetroot"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "tabbouleh",
+      "name": {
+        "en": "Tabbouleh",
+        "de": "Taboulé"
+      },
+      "hero": {
+        "en": "more parsley than grain, as it should be.",
+        "de": "mehr Petersilie als Getreide, wie es sein soll."
+      },
+      "cap": {
+        "en": "photo: a bowl of green, lemon wedges, a wooden spoon",
+        "de": "Foto: eine grüne Schüssel, Zitronenspalten, ein Holzlöffel"
+      },
+      "stripe": "#9fbf8a",
+      "recipes": [
+        "tabbouleh-classic",
+        "tabbouleh-gluten-free",
+        "tabbouleh-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "alfredo",
+      "name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "hero": {
+        "en": "butter, cream, cheese and a plate of ribbons. comfort with a version for every kitchen.",
+        "de": "Butter, Sahne, Käse und ein Teller Bandnudeln. Seelenfutter mit einer Version für jede Küche."
+      },
+      "cap": {
+        "en": "photo: glossy ribbons twirled on a fork",
+        "de": "Foto: glänzende Bandnudeln auf einer Gabel"
+      },
+      "stripe": "#e8c98a",
+      "recipes": [
+        "alfredo-classic",
+        "alfredo-gluten-free",
+        "alfredo-vegan",
+        "alfredo-lactose-free",
+        "alfredo-chicken",
+        "alfredo-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "carbonara",
+      "name": {
+        "en": "Spaghetti Carbonara",
+        "de": "Spaghetti Carbonara"
+      },
+      "hero": {
+        "en": "egg, cheese, pepper and pasta water. four things that become a sauce.",
+        "de": "Ei, Käse, Pfeffer und Nudelwasser. vier Dinge, die zur Sauce werden."
+      },
+      "cap": {
+        "en": "photo: a fork lifting a nest of spaghetti, black pepper flecks",
+        "de": "Foto: eine Gabel hebt ein Nest Spaghetti, schwarze Pfefferflecken"
+      },
+      "stripe": "#dcb56e",
+      "recipes": [
+        "carbonara-classic",
+        "carbonara-easy",
+        "carbonara-halal",
+        "carbonara-vegetarian",
+        "carbonara-vegan",
+        "carbonara-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "bolognese",
+      "name": {
+        "en": "Ragù alla Bolognese",
+        "de": "Ragù alla Bolognese"
+      },
+      "hero": {
+        "en": "a pot that perfumes the whole house, in every version.",
+        "de": "ein Topf, der das ganze Haus duften lässt, in jeder Version."
+      },
+      "cap": {
+        "en": "photo: a dark red ragù, a spoon, steam",
+        "de": "Foto: dunkelrotes Ragù, ein Löffel, Dampf"
+      },
+      "stripe": "#b5503a",
+      "recipes": [
+        "bolognese-classic",
+        "bolognese-easy",
+        "bolognese-halal",
+        "bolognese-vegan",
+        "bolognese-gluten-free",
+        "bolognese-keto",
+        "bolognese-low-fodmap"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "margherita",
+      "name": {
+        "en": "Pizza Margherita",
+        "de": "Pizza Margherita"
+      },
+      "hero": {
+        "en": "tomato, mozzarella, basil. simple enough to be perfect for everyone.",
+        "de": "Tomate, Mozzarella, Basilikum. einfach genug, um für alle perfekt zu sein."
+      },
+      "cap": {
+        "en": "photo: blistered crust, torn basil, a slice lifted",
+        "de": "Foto: blasige Kruste, gezupftes Basilikum, ein angehobenes Stück"
+      },
+      "stripe": "#e0a15a",
+      "recipes": [
+        "margherita-classic",
+        "margherita-easy",
+        "margherita-vegan",
+        "margherita-gluten-free",
+        "margherita-lactose-free",
+        "margherita-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "pad-thai",
+      "name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero": {
+        "en": "sweet, sour, salty and a handful of crunch. nut-free, vegan or classic, it is still pad thai.",
+        "de": "süß, sauer, salzig und eine Handvoll Crunch. nussfrei, vegan oder klassisch, es bleibt Pad Thai."
+      },
+      "cap": {
+        "en": "photo: a wok, a wedge of lime, crushed peanuts",
+        "de": "Foto: ein Wok, eine Limettenspalte, gehackte Erdnüsse"
+      },
+      "stripe": "#d98b4a",
+      "recipes": [
+        "pad-thai-classic",
+        "pad-thai-easy",
+        "pad-thai-nut-free",
+        "pad-thai-vegan",
+        "pad-thai-sugar-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "thai"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "butter-chicken",
+      "name": {
+        "en": "Butter Chicken",
+        "de": "Butter Chicken"
+      },
+      "hero": {
+        "en": "velvety tomato-cream curry, in versions that welcome every diet.",
+        "de": "samtiges Tomaten-Sahne-Curry, in Versionen, die jede Ernährung willkommen heißen."
+      },
+      "cap": {
+        "en": "photo: an orange curry, a swirl of cream, naan torn",
+        "de": "Foto: ein oranges Curry, ein Sahnewirbel, gezupftes Naan"
+      },
+      "stripe": "#d9803f",
+      "recipes": [
+        "butter-chicken-classic",
+        "butter-chicken-easy",
+        "butter-chicken-lactose-free",
+        "butter-chicken-vegan",
+        "butter-chicken-keto",
+        "butter-chicken-vegetarian"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "indian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "schnitzel",
+      "name": {
+        "en": "Schnitzel",
+        "de": "Schnitzel"
+      },
+      "hero": {
+        "en": "golden, crackling and thin as a plate. every crust has a version.",
+        "de": "goldbraun, knusprig und dünn wie ein Teller. jede Panade hat eine Version."
+      },
+      "cap": {
+        "en": "photo: a schnitzel bigger than the plate, a lemon wedge",
+        "de": "Foto: ein Schnitzel größer als der Teller, eine Zitronenspalte"
+      },
+      "stripe": "#dfb45f",
+      "recipes": [
+        "schnitzel-classic",
+        "schnitzel-easy",
+        "schnitzel-halal",
+        "schnitzel-vegan",
+        "schnitzel-gluten-free",
+        "schnitzel-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "fried-rice",
+      "name": {
+        "en": "Fried Rice",
+        "de": "Gebratener Reis"
+      },
+      "hero": {
+        "en": "leftover rice, a hot pan and whatever is in the fridge.",
+        "de": "Reis vom Vortag, eine heiße Pfanne und was der Kühlschrank hergibt."
+      },
+      "cap": {
+        "en": "photo: a wok, steam, a fried egg on top",
+        "de": "Foto: ein Wok, Dampf, ein Spiegelei obenauf"
+      },
+      "stripe": "#d9b45a",
+      "recipes": [
+        "fried-rice-classic",
+        "fried-rice-vegan",
+        "fried-rice-gluten-free",
+        "fried-rice-shrimp",
+        "fried-rice-keto",
+        "fried-rice-soy-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "chili",
+      "name": {
+        "en": "Chili",
+        "de": "Chili"
+      },
+      "hero": {
+        "en": "a big pot for the table, in versions for every guest.",
+        "de": "ein großer Topf für den Tisch, in Versionen für jeden Gast."
+      },
+      "cap": {
+        "en": "photo: a dark red pot, a spoon standing up, lime on the side",
+        "de": "Foto: ein dunkelroter Topf, ein aufrecht stehender Löffel, Limette daneben"
+      },
+      "stripe": "#b8503a",
+      "recipes": [
+        "chili-classic",
+        "chili-easy",
+        "chili-halal",
+        "chili-vegan",
+        "chili-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "american",
+        "mexican"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "lasagne",
+      "name": {
+        "en": "Lasagne",
+        "de": "Lasagne"
+      },
+      "hero": {
+        "en": "layers of patience, one for every kind of table.",
+        "de": "Schichten voller Geduld, eine für jede Art von Tisch."
+      },
+      "cap": {
+        "en": "photo: a square cut, steam, a crisp corner",
+        "de": "Foto: ein quadratisches Stück, Dampf, eine knusprige Ecke"
+      },
+      "stripe": "#c56a4a",
+      "recipes": [
+        "lasagne-classic",
+        "lasagne-easy",
+        "lasagne-vegetarian",
+        "lasagne-vegan",
+        "lasagne-gluten-free",
+        "lasagne-keto"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "risotto",
+      "name": {
+        "en": "Mushroom Risotto",
+        "de": "Pilzrisotto"
+      },
+      "hero": {
+        "en": "creamy without a drop of cream. stir, and it gives you everything.",
+        "de": "cremig ohne einen Tropfen Sahne. rühre, und es gibt dir alles."
+      },
+      "cap": {
+        "en": "photo: a shallow bowl, glossy rice, thyme leaves",
+        "de": "Foto: eine flache Schale, glänzender Reis, Thymianblätter"
+      },
+      "stripe": "#c9a77a",
+      "recipes": [
+        "risotto-classic",
+        "risotto-easy",
+        "risotto-halal",
+        "risotto-vegan"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "tiramisu",
+      "name": {
+        "en": "Tiramisu",
+        "de": "Tiramisu"
+      },
+      "hero": {
+        "en": "coffee, cream and cocoa, for everyone who says pick me up.",
+        "de": "Kaffee, Creme und Kakao, für alle, die „zieh mich hoch“ sagen."
+      },
+      "cap": {
+        "en": "photo: a slice, a cocoa dusting, a small spoon",
+        "de": "Foto: ein Stück, ein Hauch Kakao, ein kleiner Löffel"
+      },
+      "stripe": "#a98461",
+      "recipes": [
+        "tiramisu-classic",
+        "tiramisu-easy",
+        "tiramisu-halal",
+        "tiramisu-gluten-free",
+        "tiramisu-vegan"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "panna-cotta",
+      "name": {
+        "en": "Panna Cotta",
+        "de": "Panna Cotta"
+      },
+      "hero": {
+        "en": "a wobble that holds its shape. four ways to set it.",
+        "de": "ein Wackeln, das seine Form hält. vier Arten, es zu stocken."
+      },
+      "cap": {
+        "en": "photo: a pale dome, a spoon of red fruit",
+        "de": "Foto: eine helle Kuppel, ein Löffel rote Früchte"
+      },
+      "stripe": "#e6d3b0",
+      "recipes": [
+        "panna-cotta-classic",
+        "panna-cotta-agar",
+        "panna-cotta-vegan",
+        "panna-cotta-sugar-free"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "ramen",
+      "name": {
+        "en": "Ramen",
+        "de": "Ramen"
+      },
+      "hero": {
+        "en": "a bowl of broth, noodles and a soft egg. every diet gets a slurp.",
+        "de": "eine Schüssel Brühe, Nudeln und ein weiches Ei. jede Ernährung darf schlürfen."
+      },
+      "cap": {
+        "en": "photo: steam, glossy noodles, a halved egg",
+        "de": "Foto: Dampf, glänzende Nudeln, ein halbiertes Ei"
+      },
+      "stripe": "#d9a05b",
+      "recipes": [
+        "ramen-classic",
+        "ramen-easy",
+        "ramen-halal",
+        "ramen-vegan",
+        "ramen-gluten-free",
+        "ramen-soy-free"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian",
+        "japanese"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "green-curry",
+      "name": {
+        "en": "Thai Green Curry",
+        "de": "Thailändisches grünes Curry"
+      },
+      "hero": {
+        "en": "fragrant, coconut-soft and hot enough to wake you up.",
+        "de": "duftend, kokosweich und scharf genug, um dich aufzuwecken."
+      },
+      "cap": {
+        "en": "photo: a green pool, thai basil, a lime",
+        "de": "Foto: ein grüner See, Thai-Basilikum, eine Limette"
+      },
+      "stripe": "#8fae7a",
+      "recipes": [
+        "green-curry-classic",
+        "green-curry-easy",
+        "green-curry-vegan",
+        "green-curry-shrimp",
+        "green-curry-sugar-free"
+      ],
+      "partition_id": "cuisine-asian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "asian",
+        "thai"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "kofta",
+      "name": {
+        "en": "Kofta",
+        "de": "Kofta"
+      },
+      "hero": {
+        "en": "spiced, herby and grilled until it crackles. skewers for every guest.",
+        "de": "gewürzt, kräuterig und gegrillt, bis es knistert. Spieße für jeden Gast."
+      },
+      "cap": {
+        "en": "photo: skewers on a griddle, a heap of parsley",
+        "de": "Foto: Spieße auf dem Grill, ein Haufen Petersilie"
+      },
+      "stripe": "#c98b5f",
+      "recipes": [
+        "kofta-classic",
+        "kofta-easy",
+        "kofta-halal",
+        "kofta-vegan",
+        "kofta-gluten-free",
+        "kofta-keto"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "moussaka",
+      "name": {
+        "en": "Moussaka",
+        "de": "Moussaka"
+      },
+      "hero": {
+        "en": "eggplant, spiced meat or lentils, and a golden crown.",
+        "de": "Aubergine, gewürztes Fleisch oder Linsen und eine goldene Krone."
+      },
+      "cap": {
+        "en": "photo: a golden lid, a square cut, layers showing",
+        "de": "Foto: ein goldener Deckel, ein quadratisches Stück, sichtbare Schichten"
+      },
+      "stripe": "#b98457",
+      "recipes": [
+        "moussaka-classic",
+        "moussaka-easy",
+        "moussaka-vegan",
+        "moussaka-gluten-free",
+        "moussaka-keto"
+      ],
+      "partition_id": "cuisine-middle-eastern",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "middle-eastern",
+        "greek"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "kaesespaetzle",
+      "name": {
+        "en": "Käsespätzle",
+        "de": "Käsespätzle"
+      },
+      "hero": {
+        "en": "soft noodles, melted cheese and a crown of fried onions.",
+        "de": "weiche Nudeln, geschmolzener Käse und eine Krone aus Röstzwiebeln."
+      },
+      "cap": {
+        "en": "photo: a pan of golden noodles, strings of cheese",
+        "de": "Foto: eine Pfanne goldener Nudeln, Käsefäden"
+      },
+      "stripe": "#e2b968",
+      "recipes": [
+        "kaesespaetzle-classic",
+        "kaesespaetzle-vegan",
+        "kaesespaetzle-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "doener",
+      "name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero": {
+        "en": "the late-night wrap, rewritten for every body.",
+        "de": "der Klassiker für spät abends, neu geschrieben für jeden Körper."
+      },
+      "cap": {
+        "en": "photo: shaved meat, warm bread, a little chaos",
+        "de": "Foto: dünn geschnittenes Fleisch, warmes Brot, ein bisschen Chaos"
+      },
+      "stripe": "#c98b5f",
+      "recipes": [
+        "doener-classic",
+        "doener-classic-easy",
+        "doener-halal",
+        "doener-vegan",
+        "doener-vegan-light",
+        "doener-gluten-free",
+        "doener-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "turkish",
+        "german"
+      ],
+      "frequency_tier": "core"
+    }
+  ]
+}

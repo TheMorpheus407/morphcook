@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/recipe.schema.json",
+  "title": "MorphCook recipe",
+  "description": "One fully authored variant of a dish. The derived fields (contains, attributes, ingredient_ids, time_bucket, calorie_bucket) are filled by `dart run tool/corpus_tool.dart normalize` and cross-checked by `validate`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "dish_id", "title", "blurb", "diet", "effort", "time_minutes", "servings",
+    "calories_per_serving", "macros", "meal", "techniques", "tags",
+    "contains", "attributes", "ingredient_ids", "time_bucket", "calorie_bucket",
+    "ingredients", "steps"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)+$", "description": "`<dish_id>-<variant>`" },
+    "dish_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "$ref": "#/$defs/localizedText" },
+    "blurb": { "$ref": "#/$defs/localizedText" },
+    "tip": { "$ref": "#/$defs/localizedText" },
+    "diet": { "type": "string", "minLength": 2, "description": "Diet label of this variant (classic, vegan, keto, ...). Must exist in the ontology's diet dimension." },
+    "effort": { "type": "string", "enum": ["easy", "medium", "hard"] },
+    "time_minutes": { "type": "integer", "minimum": 5, "maximum": 600 },
+    "servings": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "calories_per_serving": { "type": "integer", "minimum": 50, "maximum": 2500 },
+    "macros": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protein", "carbs", "fat"],
+      "properties": {
+        "protein": { "type": "number", "minimum": 0, "maximum": 300 },
+        "carbs": { "type": "number", "minimum": 0, "maximum": 400 },
+        "fat": { "type": "number", "minimum": 0, "maximum": 300 }
+      }
+    },
+    "meal": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+    "techniques": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "axes": { "type": "object", "additionalProperties": { "type": "string" }, "description": "Values for future switcher dimensions, keyed by axis name." },
+    "contains_extra": { "type": "array", "items": { "type": "string" }, "description": "Authored flags the ingredients do not bring on their own." },
+    "contains": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "attributes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "ingredient_ids": { "type": "array", "minItems": 3, "items": { "type": "string" }, "uniqueItems": true },
+    "time_bucket": { "type": "string" },
+    "calorie_bucket": { "type": "string" },
+    "ingredients": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "unit"],
+        "properties": {
+          "id": { "type": "string", "minLength": 2 },
+          "amount": { "type": "number", "minimum": 0 },
+          "unit": { "type": "string", "minLength": 1 },
+          "note": { "$ref": "#/$defs/localizedText" },
+          "group": { "$ref": "#/$defs/localizedText" },
+          "optional": { "type": "boolean" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text"],
+        "properties": {
+          "text": { "$ref": "#/$defs/localizedText" },
+          "timer_seconds": { "type": "integer", "minimum": 5, "maximum": 43200 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "description": "Map<lang, String>. `en` and `de` are required at launch; more languages are a data addition.",
+      "required": ["en", "de"],
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/nutrition.schema.json",
+  "title": "Nutrition estimate",
+  "description": "The reply of the nutrition agent: numbers per serving and how they were reached.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["calories_per_serving", "macros", "basis"],
+  "properties": {
+    "calories_per_serving": { "type": "integer", "minimum": 50, "maximum": 2500 },
+    "macros": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protein", "carbs", "fat"],
+      "properties": {
+        "protein": { "type": "number", "minimum": 0, "maximum": 300 },
+        "carbs": { "type": "number", "minimum": 0, "maximum": 400 },
+        "fat": { "type": "number", "minimum": 0, "maximum": 300 }
+      }
+    },
+    "basis": { "type": "string", "minLength": 20, "description": "Sources, raw versus cooked weights and the assumptions behind the numbers." }
+  }
+}

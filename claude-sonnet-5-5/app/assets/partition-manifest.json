@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "corpus_version": "1",
+  "description": "Partition registry of the bundled recipe corpus. See docs/asset-partitioning-strategy.md.",
+  "loading_strategy": {
+    "launch": [
+      "core"
+    ],
+    "on_demand": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern"
+    ],
+    "search": "One index chunk per partition (search/<id>.json). The chunk of the launch partition answers first; further chunks are fetched as the reader scrolls past its last result.",
+    "recipe_lookup": "dishes.json lists every recipe id of a dish and the partition that stores them, so a recipe is found without opening any partition."
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "kind": "frequency",
+      "load": "launch",
+      "search_index": "search/core.json",
+      "dish_count": 19,
+      "recipe_count": 101
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "kind": "frequency",
+      "load": "on_demand",
+      "search_index": "search/extended.json",
+      "dish_count": 1,
+      "recipe_count": 3
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "kind": "cuisine",
+      "load": "on_demand",
+      "cuisine": "italian",
+      "search_index": "search/cuisine-italian.json",
+      "dish_count": 4,
+      "recipe_count": 19
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "kind": "cuisine",
+      "load": "on_demand",
+      "cuisine": "asian",
+      "search_index": "search/cuisine-asian.json",
+      "dish_count": 2,
+      "recipe_count": 11
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "kind": "cuisine",
+      "load": "on_demand",
+      "cuisine": "middle-eastern",
+      "search_index": "search/cuisine-middle-eastern.json",
+      "dish_count": 2,
+      "recipe_count": 11
+    }
+  ],
+  "cross_references": {
+    "cuisine-italian": [
+      "tomato-soup",
+      "alfredo",
+      "carbonara",
+      "bolognese",
+      "margherita"
+    ],
+    "cuisine-asian": [
+      "pad-thai",
+      "butter-chicken",
+      "fried-rice"
+    ],
+    "cuisine-middle-eastern": [
+      "shakshuka",
+      "falafel",
+      "hummus",
+      "tabbouleh",
+      "doener"
+    ]
+  }
+}

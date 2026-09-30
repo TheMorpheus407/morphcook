@@ -1,0 +1,1517 @@
+{
+ "schema_version": 1,
+ "strings": {
+  "common.back": {
+   "en": "back",
+   "de": "zurück"
+  },
+  "common.cancel": {
+   "en": "cancel",
+   "de": "abbrechen"
+  },
+  "common.clear": {
+   "en": "clear",
+   "de": "leeren"
+  },
+  "common.close": {
+   "en": "close",
+   "de": "schließen"
+  },
+  "common.edit": {
+   "en": "edit",
+   "de": "ändern"
+  },
+  "common.error": {
+   "en": "something slipped. try again?",
+   "de": "hier ist etwas schiefgelaufen. nochmal versuchen?"
+  },
+  "common.more": {
+   "en": "more",
+   "de": "mehr"
+  },
+  "common.next": {
+   "en": "next",
+   "de": "weiter"
+  },
+  "common.remove": {
+   "en": "remove",
+   "de": "entfernen"
+  },
+  "common.retry": {
+   "en": "try again",
+   "de": "nochmal"
+  },
+  "common.skip": {
+   "en": "skip",
+   "de": "überspringen"
+  },
+  "common.undo": {
+   "en": "undo",
+   "de": "rückgängig"
+  },
+  "brand.tagline": {
+   "en": "a cookbook for every body.",
+   "de": "ein Kochbuch für jeden Körper."
+  },
+  "home.title": {
+   "en": "morphcook",
+   "de": "morphcook"
+  },
+  "nav.today": {
+   "en": "today",
+   "de": "heute"
+  },
+  "nav.search": {
+   "en": "search",
+   "de": "suche"
+  },
+  "nav.cookbook": {
+   "en": "cookbook",
+   "de": "kochbuch"
+  },
+  "nav.plan": {
+   "en": "plan",
+   "de": "plan"
+  },
+  "nav.list": {
+   "en": "list",
+   "de": "liste"
+  },
+  "nav.help": {
+   "en": "help",
+   "de": "hilfe"
+  },
+  "nav.settings": {
+   "en": "settings",
+   "de": "einstellungen"
+  },
+  "unit.min": {
+   "en": "{n} min",
+   "de": "{n} Min."
+  },
+  "unit.kcal": {
+   "en": "{n} kcal",
+   "de": "{n} kcal"
+  },
+  "unit.sec": {
+   "en": "{n} s",
+   "de": "{n} Sek."
+  },
+  "unit.hours": {
+   "en": "{n} h",
+   "de": "{n} Std."
+  },
+  "unit.toTaste": {
+   "en": "to taste",
+   "de": "nach Geschmack"
+  },
+  "recipe.optional": {
+   "en": "optional",
+   "de": "optional"
+  },
+  "date.wd.l.1": {
+   "en": "monday",
+   "de": "Montag"
+  },
+  "date.wd.l.2": {
+   "en": "tuesday",
+   "de": "Dienstag"
+  },
+  "date.wd.l.3": {
+   "en": "wednesday",
+   "de": "Mittwoch"
+  },
+  "date.wd.l.4": {
+   "en": "thursday",
+   "de": "Donnerstag"
+  },
+  "date.wd.l.5": {
+   "en": "friday",
+   "de": "Freitag"
+  },
+  "date.wd.l.6": {
+   "en": "saturday",
+   "de": "Samstag"
+  },
+  "date.wd.l.7": {
+   "en": "sunday",
+   "de": "Sonntag"
+  },
+  "date.wd.s.1": {
+   "en": "mon",
+   "de": "Mo"
+  },
+  "date.wd.s.2": {
+   "en": "tue",
+   "de": "Di"
+  },
+  "date.wd.s.3": {
+   "en": "wed",
+   "de": "Mi"
+  },
+  "date.wd.s.4": {
+   "en": "thu",
+   "de": "Do"
+  },
+  "date.wd.s.5": {
+   "en": "fri",
+   "de": "Fr"
+  },
+  "date.wd.s.6": {
+   "en": "sat",
+   "de": "Sa"
+  },
+  "date.wd.s.7": {
+   "en": "sun",
+   "de": "So"
+  },
+  "date.m.l.1": {
+   "en": "january",
+   "de": "Januar"
+  },
+  "date.m.l.2": {
+   "en": "february",
+   "de": "Februar"
+  },
+  "date.m.l.3": {
+   "en": "march",
+   "de": "März"
+  },
+  "date.m.l.4": {
+   "en": "april",
+   "de": "April"
+  },
+  "date.m.l.5": {
+   "en": "may",
+   "de": "Mai"
+  },
+  "date.m.l.6": {
+   "en": "june",
+   "de": "Juni"
+  },
+  "date.m.l.7": {
+   "en": "july",
+   "de": "Juli"
+  },
+  "date.m.l.8": {
+   "en": "august",
+   "de": "August"
+  },
+  "date.m.l.9": {
+   "en": "september",
+   "de": "September"
+  },
+  "date.m.l.10": {
+   "en": "october",
+   "de": "Oktober"
+  },
+  "date.m.l.11": {
+   "en": "november",
+   "de": "November"
+  },
+  "date.m.l.12": {
+   "en": "december",
+   "de": "Dezember"
+  },
+  "date.m.s.1": {
+   "en": "jan",
+   "de": "Jan"
+  },
+  "date.m.s.2": {
+   "en": "feb",
+   "de": "Feb"
+  },
+  "date.m.s.3": {
+   "en": "mar",
+   "de": "Mär"
+  },
+  "date.m.s.4": {
+   "en": "apr",
+   "de": "Apr"
+  },
+  "date.m.s.5": {
+   "en": "may",
+   "de": "Mai"
+  },
+  "date.m.s.6": {
+   "en": "jun",
+   "de": "Jun"
+  },
+  "date.m.s.7": {
+   "en": "jul",
+   "de": "Jul"
+  },
+  "date.m.s.8": {
+   "en": "aug",
+   "de": "Aug"
+  },
+  "date.m.s.9": {
+   "en": "sep",
+   "de": "Sep"
+  },
+  "date.m.s.10": {
+   "en": "oct",
+   "de": "Okt"
+  },
+  "date.m.s.11": {
+   "en": "nov",
+   "de": "Nov"
+  },
+  "date.m.s.12": {
+   "en": "dec",
+   "de": "Dez"
+  },
+  "onboarding.progress": {
+   "en": "step {n} of {total}",
+   "de": "Schritt {n} von {total}"
+  },
+  "onboarding.language.title": {
+   "en": "hello, and welcome.",
+   "de": "hallo und willkommen."
+  },
+  "onboarding.language.body": {
+   "en": "which language should your cookbook speak?",
+   "de": "in welcher Sprache soll dein Kochbuch mit dir reden?"
+  },
+  "onboarding.name.title": {
+   "en": "what should we call you?",
+   "de": "wie sollen wir dich nennen?"
+  },
+  "onboarding.name.note": {
+   "en": "just for the greeting. skip it if you like.",
+   "de": "nur für die Begrüßung. gern überspringen."
+  },
+  "onboarding.name.hint": {
+   "en": "your name or a nickname",
+   "de": "dein Name oder ein Spitzname"
+  },
+  "onboarding.diet.title": {
+   "en": "how do you eat?",
+   "de": "wie isst du?"
+  },
+  "onboarding.diet.note": {
+   "en": "tell us once, we remember.",
+   "de": "einmal sagen, wir merken es uns."
+  },
+  "onboarding.pace.title": {
+   "en": "how do you like to cook?",
+   "de": "wie kochst du am liebsten?"
+  },
+  "onboarding.pace.note": {
+   "en": "all of this can change any time.",
+   "de": "das lässt sich jederzeit ändern."
+  },
+  "onboarding.confirm.title": {
+   "en": "here you are, {name}.",
+   "de": "das bist du, {name}."
+  },
+  "onboarding.confirm.titleNoName": {
+   "en": "here you are.",
+   "de": "das bist du."
+  },
+  "onboarding.confirm.note": {
+   "en": "does everything look right?",
+   "de": "passt alles so?"
+  },
+  "onboarding.start": {
+   "en": "start cooking",
+   "de": "los kochen"
+  },
+  "profile.diet.title": {
+   "en": "eating style",
+   "de": "ernährungsweise"
+  },
+  "profile.avoid.title": {
+   "en": "what stays out",
+   "de": "was draußen bleibt"
+  },
+  "profile.ingredients.title": {
+   "en": "specific ingredients",
+   "de": "bestimmte Zutaten"
+  },
+  "profile.ingredients.note": {
+   "en": "apples, cilantro, bell peppers. type it, pick it.",
+   "de": "Äpfel, Koriander, Paprika. tippen, auswählen."
+  },
+  "profile.ingredientHint": {
+   "en": "type an ingredient",
+   "de": "Zutat eintippen"
+  },
+  "profile.includesMore": {
+   "en": "incl. {n} more",
+   "de": "inkl. {n} weitere"
+  },
+  "profile.required.title": {
+   "en": "it has to be",
+   "de": "es muss sein"
+  },
+  "profile.effort.title": {
+   "en": "effort",
+   "de": "aufwand"
+  },
+  "profile.time.title": {
+   "en": "time budget",
+   "de": "zeitbudget"
+  },
+  "profile.calories.title": {
+   "en": "calories",
+   "de": "kalorien"
+  },
+  "profile.calorieSwitch": {
+   "en": "aim for a calorie target",
+   "de": "ein Kalorienziel setzen"
+  },
+  "profile.kcalPerMeal": {
+   "en": "kcal per meal",
+   "de": "kcal pro Mahlzeit"
+  },
+  "profile.tolerance": {
+   "en": "flexibility",
+   "de": "spielraum"
+  },
+  "profile.calorieExplain": {
+   "en": "dishes far from this number stay out of your feed. for a single dish you can lift that.",
+   "de": "Gerichte weit von dieser Zahl bleiben aus deinem Feed. für ein einzelnes Gericht kannst du das aufheben."
+  },
+  "profile.noLimit": {
+   "en": "no limit",
+   "de": "kein Limit"
+  },
+  "profile.halalNote": {
+   "en": "halal and kosher here mean halal-compatible and kosher-compatible ingredients. certification depends on sourcing and supervision, which a recipe text cannot promise.",
+   "de": "halal und koscher bedeuten hier halal-kompatible und koscher-kompatible Zutaten. eine Zertifizierung hängt von Herkunft und Aufsicht ab, und die kann ein Rezepttext nicht zusichern."
+  },
+  "profile.summary.language": {
+   "en": "language",
+   "de": "sprache"
+  },
+  "profile.summary.name": {
+   "en": "name",
+   "de": "name"
+  },
+  "profile.summary.noName": {
+   "en": "not shared",
+   "de": "nicht angegeben"
+  },
+  "profile.summary.eats": {
+   "en": "eats",
+   "de": "isst"
+  },
+  "profile.summary.everything": {
+   "en": "everything",
+   "de": "alles"
+  },
+  "profile.summary.skips": {
+   "en": "skips",
+   "de": "lässt weg"
+  },
+  "profile.summary.nothing": {
+   "en": "nothing",
+   "de": "nichts"
+  },
+  "profile.summary.mustBe": {
+   "en": "must be",
+   "de": "muss sein"
+  },
+  "profile.summary.calories": {
+   "en": "calories",
+   "de": "kalorien"
+  },
+  "profile.summary.noTarget": {
+   "en": "no target",
+   "de": "kein Ziel"
+  },
+  "profile.summary.time": {
+   "en": "time",
+   "de": "zeit"
+  },
+  "profile.summary.upTo": {
+   "en": "up to {time}",
+   "de": "bis zu {time}"
+  },
+  "profile.summary.effort": {
+   "en": "effort",
+   "de": "aufwand"
+  },
+  "help.howMatchingWorks": {
+   "en": "how does matching work?",
+   "de": "wie funktioniert die Auswahl?"
+  },
+  "help.scaling": {
+   "en": "how does scaling work?",
+   "de": "wie funktioniert das Umrechnen?"
+  },
+  "help.whyNothing": {
+   "en": "why is nothing showing?",
+   "de": "warum sehe ich nichts?"
+  },
+  "help.whySeeing": {
+   "en": "why am I seeing this?",
+   "de": "warum sehe ich das?"
+  },
+  "help.calorieFilter": {
+   "en": "how does the calorie filter work?",
+   "de": "wie funktioniert der Kalorienfilter?"
+  },
+  "help.backup": {
+   "en": "how does backup work?",
+   "de": "wie funktioniert die Sicherung?"
+  },
+  "home.edition": {
+   "en": "vol. {vol} · no. {no}",
+   "de": "Jg. {vol} · Nr. {no}"
+  },
+  "home.greeting.morning": {
+   "en": "good morning.",
+   "de": "guten Morgen."
+  },
+  "home.greeting.afternoon": {
+   "en": "good afternoon.",
+   "de": "guten Tag."
+  },
+  "home.greeting.evening": {
+   "en": "good evening.",
+   "de": "guten Abend."
+  },
+  "home.greeting.night": {
+   "en": "still up?",
+   "de": "noch wach?"
+  },
+  "home.greetingName.morning": {
+   "en": "good morning, {name}.",
+   "de": "guten Morgen, {name}."
+  },
+  "home.greetingName.afternoon": {
+   "en": "good afternoon, {name}.",
+   "de": "guten Tag, {name}."
+  },
+  "home.greetingName.evening": {
+   "en": "good evening, {name}.",
+   "de": "guten Abend, {name}."
+  },
+  "home.greetingName.night": {
+   "en": "still up, {name}?",
+   "de": "noch wach, {name}?"
+  },
+  "home.effortToday": {
+   "en": "effort today:",
+   "de": "aufwand heute:"
+  },
+  "home.featured": {
+   "en": "on the front page",
+   "de": "auf der Titelseite"
+  },
+  "home.readRecipe": {
+   "en": "read the recipe",
+   "de": "Rezept lesen"
+  },
+  "home.section.morning": {
+   "en": "this morning",
+   "de": "heute Morgen"
+  },
+  "home.section.morning.note": {
+   "en": "start slow, eat well.",
+   "de": "langsam starten, gut essen."
+  },
+  "home.section.midday": {
+   "en": "at lunchtime",
+   "de": "zur Mittagszeit"
+  },
+  "home.section.midday.note": {
+   "en": "something worth stopping for.",
+   "de": "etwas, für das man innehält."
+  },
+  "home.section.afternoon": {
+   "en": "this afternoon",
+   "de": "heute Nachmittag"
+  },
+  "home.section.afternoon.note": {
+   "en": "a little something.",
+   "de": "eine Kleinigkeit."
+  },
+  "home.section.evening": {
+   "en": "tonight",
+   "de": "heute Abend"
+  },
+  "home.section.evening.note": {
+   "en": "dinner, sorted.",
+   "de": "Abendessen, geklärt."
+  },
+  "home.section.late": {
+   "en": "late & quiet",
+   "de": "spät & leise"
+  },
+  "home.section.late.note": {
+   "en": "gentle food for late hours.",
+   "de": "sanftes Essen für späte Stunden."
+  },
+  "home.section.quick": {
+   "en": "quick & easy",
+   "de": "schnell & einfach"
+  },
+  "home.section.quick.note": {
+   "en": "thirty minutes or less.",
+   "de": "dreißig Minuten oder weniger."
+  },
+  "home.section.back": {
+   "en": "back on the table",
+   "de": "wieder auf dem Tisch"
+  },
+  "home.section.back.note": {
+   "en": "you have not cooked these in a while.",
+   "de": "die hast du länger nicht gekocht."
+  },
+  "home.section.cuisine": {
+   "en": "from the {cuisine} shelf",
+   "de": "aus dem Regal: {cuisine}"
+  },
+  "home.todayPlan": {
+   "en": "on the plan today",
+   "de": "heute im Plan"
+  },
+  "home.resume.title": {
+   "en": "keep cooking",
+   "de": "weiterkochen"
+  },
+  "home.resume.step": {
+   "en": "step {n} of {total}",
+   "de": "Schritt {n} von {total}"
+  },
+  "home.empty.note": {
+   "en": "nothing fits right now.",
+   "de": "gerade passt nichts."
+  },
+  "home.empty.body": {
+   "en": "your filters are strict today. loosen one and the cookbook fills up again.",
+   "de": "deine Filter sind heute streng. lockere einen, dann füllt sich das Kochbuch wieder."
+  },
+  "home.empty.action": {
+   "en": "adjust my profile",
+   "de": "Profil anpassen"
+  },
+  "home.footer": {
+   "en": "{n} dishes and counting. each one comes in your version.",
+   "de": "{n} Gerichte und es werden mehr. jedes davon in deiner Version."
+  },
+  "dish.save": {
+   "en": "save to cookbook",
+   "de": "im Kochbuch speichern"
+  },
+  "dish.unsave": {
+   "en": "remove from cookbook",
+   "de": "aus dem Kochbuch entfernen"
+  },
+  "dish.saved": {
+   "en": "saved: {title}",
+   "de": "gespeichert: {title}"
+  },
+  "dish.removed": {
+   "en": "removed from your cookbook",
+   "de": "aus deinem Kochbuch entfernt"
+  },
+  "dish.addToList": {
+   "en": "add to shopping list",
+   "de": "auf die Einkaufsliste"
+  },
+  "dish.addedToList": {
+   "en": "added to your list",
+   "de": "zur Liste hinzugefügt"
+  },
+  "dish.viewList": {
+   "en": "view list",
+   "de": "Liste ansehen"
+  },
+  "dish.plan": {
+   "en": "add to plan",
+   "de": "in den Plan"
+  },
+  "dish.cook": {
+   "en": "start cooking",
+   "de": "los kochen"
+  },
+  "dish.tab.ingredients": {
+   "en": "ingredients",
+   "de": "zutaten"
+  },
+  "dish.tab.method": {
+   "en": "method",
+   "de": "zubereitung"
+  },
+  "dish.tab.macros": {
+   "en": "macros",
+   "de": "nährwerte"
+  },
+  "dish.servingsFor": {
+   "en": "for",
+   "de": "für"
+  },
+  "dish.people.one": {
+   "en": "{n} person",
+   "de": "{n} Person"
+  },
+  "dish.people.other": {
+   "en": "{n} people",
+   "de": "{n} Personen"
+  },
+  "dish.fewer": {
+   "en": "fewer servings",
+   "de": "weniger Portionen"
+  },
+  "dish.more": {
+   "en": "more servings",
+   "de": "mehr Portionen"
+  },
+  "dish.calorieOverride": {
+   "en": "show versions outside my ~{target} kcal target",
+   "de": "auch Versionen außerhalb meines Ziels (~{target} kcal) zeigen"
+  },
+  "dish.outside.title": {
+   "en": "this one sits outside your profile",
+   "de": "diese Version liegt außerhalb deines Profils"
+  },
+  "dish.outside.contains": {
+   "en": "contains {items}, which you skip",
+   "de": "enthält {items}, das du weglässt"
+  },
+  "dish.outside.missing": {
+   "en": "missing what you asked for: {items}",
+   "de": "es fehlt, was du verlangt hast: {items}"
+  },
+  "dish.outside.time": {
+   "en": "takes longer than your time budget",
+   "de": "dauert länger als dein Zeitbudget"
+  },
+  "dish.outside.calories": {
+   "en": "outside your calorie target",
+   "de": "außerhalb deines Kalorienziels"
+  },
+  "variant.noCombo": {
+   "en": "no {a} × {b} version yet",
+   "de": "noch keine Version {a} × {b}"
+  },
+  "variant.noComboGeneric": {
+   "en": "no {a} version with your other picks yet",
+   "de": "noch keine Version {a} mit deinen anderen Wünschen"
+  },
+  "variant.rowSemantics": {
+   "en": "{axis}: {value}. double tap to see alternatives.",
+   "de": "{axis}: {value}. Doppeltippen für Alternativen."
+  },
+  "variant.rowOnly": {
+   "en": "{axis}: {value}. the only option.",
+   "de": "{axis}: {value}. die einzige Option."
+  },
+  "guide.learnMore": {
+   "en": "learn more",
+   "de": "mehr erfahren"
+  },
+  "guide.kicker": {
+   "en": "kitchen reference",
+   "de": "küchenlexikon"
+  },
+  "guide.what": {
+   "en": "what it is",
+   "de": "was es ist"
+  },
+  "guide.use": {
+   "en": "how to use it",
+   "de": "so verwendest du es"
+  },
+  "guide.store": {
+   "en": "keeping it",
+   "de": "aufbewahren"
+  },
+  "guide.find": {
+   "en": "where to find it",
+   "de": "wo du es findest"
+  },
+  "guide.none": {
+   "en": "no notes on this one yet.",
+   "de": "zu dieser Zutat gibt es noch keine Notizen."
+  },
+  "macros.protein": {
+   "en": "protein",
+   "de": "eiweiß"
+  },
+  "macros.carbs": {
+   "en": "carbs",
+   "de": "kohlenhydrate"
+  },
+  "macros.fat": {
+   "en": "fat",
+   "de": "fett"
+  },
+  "macros.kcalPerServing": {
+   "en": "kcal per serving",
+   "de": "kcal pro Portion"
+  },
+  "macros.note": {
+   "en": "estimates per serving, rounded the way a friend would round.",
+   "de": "Schätzwerte pro Portion, so gerundet, wie ein Freund es täte."
+  },
+  "cook.loading": {
+   "en": "warming up…",
+   "de": "wird warm …"
+  },
+  "cook.leave": {
+   "en": "leave and keep my place",
+   "de": "verlassen, Stand merken"
+  },
+  "cook.pause": {
+   "en": "pause",
+   "de": "pausieren"
+  },
+  "cook.resume": {
+   "en": "resume",
+   "de": "weiter"
+  },
+  "cook.paused": {
+   "en": "paused.",
+   "de": "pausiert."
+  },
+  "cook.pausedNote": {
+   "en": "the timers are holding their breath.",
+   "de": "die Timer halten den Atem an."
+  },
+  "cook.stepOf": {
+   "en": "step {n} of {total}",
+   "de": "Schritt {n} von {total}"
+  },
+  "cook.stepShort": {
+   "en": "step {n}",
+   "de": "Schritt {n}"
+  },
+  "cook.ingredients": {
+   "en": "ingredients",
+   "de": "zutaten"
+  },
+  "cook.next": {
+   "en": "next",
+   "de": "weiter"
+  },
+  "cook.previous": {
+   "en": "previous step",
+   "de": "vorheriger Schritt"
+  },
+  "cook.finish": {
+   "en": "finish",
+   "de": "fertig"
+  },
+  "cook.quickTapHint": {
+   "en": "tap anywhere on the text for the next step",
+   "de": "irgendwo auf den Text tippen für den nächsten Schritt"
+  },
+  "cook.tapAnywhere": {
+   "en": "tap the text for the next step",
+   "de": "tippe auf den Text für den nächsten Schritt"
+  },
+  "cook.timerStart": {
+   "en": "start timer",
+   "de": "Timer starten"
+  },
+  "cook.timerPause": {
+   "en": "pause timer",
+   "de": "Timer anhalten"
+  },
+  "cook.timerResume": {
+   "en": "resume timer",
+   "de": "Timer fortsetzen"
+  },
+  "cook.timerAgain": {
+   "en": "again",
+   "de": "nochmal"
+  },
+  "cook.timerReset": {
+   "en": "reset timer",
+   "de": "Timer zurücksetzen"
+  },
+  "cook.timerSemantics": {
+   "en": "timer, {time} left",
+   "de": "Timer, noch {time}"
+  },
+  "cook.timerDone": {
+   "en": "timer done: step {n}",
+   "de": "Timer fertig: Schritt {n}"
+  },
+  "cook.dismiss": {
+   "en": "got it",
+   "de": "verstanden"
+  },
+  "cook.done.title": {
+   "en": "well done.",
+   "de": "gut gemacht."
+  },
+  "cook.done.note": {
+   "en": "how did it taste?",
+   "de": "wie hat es geschmeckt?"
+  },
+  "cook.done.logged": {
+   "en": "saved to your history.",
+   "de": "in deinem Verlauf gespeichert."
+  },
+  "cook.done.log": {
+   "en": "log this cook",
+   "de": "als gekocht eintragen"
+  },
+  "cook.done.skip": {
+   "en": "leave without logging",
+   "de": "ohne Eintrag verlassen"
+  },
+  "cook.done.inCookbook": {
+   "en": "in your cookbook",
+   "de": "in deinem Kochbuch"
+  },
+  "cook.resume.title": {
+   "en": "pick up where you left off?",
+   "de": "dort weitermachen, wo du warst?"
+  },
+  "cook.resume.body": {
+   "en": "you were on step {n}.",
+   "de": "du warst bei Schritt {n}."
+  },
+  "cook.resume.fresh": {
+   "en": "start over",
+   "de": "neu starten"
+  },
+  "cook.resume.continue": {
+   "en": "continue",
+   "de": "weiter"
+  },
+  "cookbook.title": {
+   "en": "cookbook",
+   "de": "kochbuch"
+  },
+  "cookbook.note": {
+   "en": "your versions, kept close.",
+   "de": "deine Versionen, griffbereit."
+  },
+  "cookbook.tab.saved": {
+   "en": "saved",
+   "de": "gespeichert"
+  },
+  "cookbook.tab.history": {
+   "en": "cooked",
+   "de": "gekocht"
+  },
+  "cookbook.empty.title": {
+   "en": "nothing saved yet.",
+   "de": "noch nichts gespeichert."
+  },
+  "cookbook.empty.body": {
+   "en": "tap the bookmark on any dish to keep your version here.",
+   "de": "tippe bei einem Gericht auf das Lesezeichen, um deine Version hier zu behalten."
+  },
+  "cookbook.empty.action": {
+   "en": "find something to cook",
+   "de": "etwas zum Kochen finden"
+  },
+  "cookbook.gone": {
+   "en": "this recipe is no longer in the book",
+   "de": "dieses Rezept ist nicht mehr im Buch"
+  },
+  "cookbook.savedOn": {
+   "en": "saved {date}",
+   "de": "gespeichert {date}"
+  },
+  "cookbook.warning": {
+   "en": "contains {items}",
+   "de": "enthält {items}"
+  },
+  "history.empty.title": {
+   "en": "nothing cooked yet.",
+   "de": "noch nichts gekocht."
+  },
+  "history.empty.body": {
+   "en": "finish a recipe in cook mode and it shows up here, sorted by week.",
+   "de": "schließe ein Rezept im Kochmodus ab, dann erscheint es hier, nach Wochen sortiert."
+  },
+  "history.thisWeek": {
+   "en": "this week",
+   "de": "diese Woche"
+  },
+  "history.lastWeek": {
+   "en": "last week",
+   "de": "letzte Woche"
+  },
+  "history.weekOf": {
+   "en": "week of {date}",
+   "de": "Woche ab {date}"
+  },
+  "history.cooked": {
+   "en": "cooked {date} · for {n}",
+   "de": "gekocht {date} · für {n}"
+  },
+  "history.again": {
+   "en": "cook again",
+   "de": "nochmal kochen"
+  },
+  "search.title": {
+   "en": "search",
+   "de": "suche"
+  },
+  "search.note": {
+   "en": "everything that fits you, findable.",
+   "de": "alles, was zu dir passt, auffindbar."
+  },
+  "search.hint": {
+   "en": "dish, ingredient, mood…",
+   "de": "Gericht, Zutat, Stimmung …"
+  },
+  "search.filters": {
+   "en": "filters",
+   "de": "filter"
+  },
+  "search.filtersCount": {
+   "en": "filters ({n})",
+   "de": "Filter ({n})"
+  },
+  "search.clearFilters": {
+   "en": "clear filters",
+   "de": "Filter löschen"
+  },
+  "search.apply": {
+   "en": "show results",
+   "de": "Ergebnisse zeigen"
+  },
+  "search.idleNote": {
+   "en": "your best matches come first.",
+   "de": "deine besten Treffer zuerst."
+  },
+  "search.empty.title": {
+   "en": "nothing for “{query}” yet.",
+   "de": "noch nichts für „{query}“."
+  },
+  "search.empty.body": {
+   "en": "we jotted it on the wish list. it may show up in a later release.",
+   "de": "wir haben es auf die Wunschliste geschrieben. vielleicht kommt es in einer späteren Version."
+  },
+  "search.empty.filters": {
+   "en": "no dish matches these filters.",
+   "de": "kein Gericht passt zu diesen Filtern."
+  },
+  "search.empty.filtersBody": {
+   "en": "try dropping one of them.",
+   "de": "versuch, einen davon wegzulassen."
+  },
+  "plan.title": {
+   "en": "plan",
+   "de": "plan"
+  },
+  "plan.note": {
+   "en": "the week, penciled in.",
+   "de": "die Woche, mit Bleistift eingetragen."
+  },
+  "plan.thisWeek": {
+   "en": "this week",
+   "de": "diese Woche"
+  },
+  "plan.weekN": {
+   "en": "week {n}",
+   "de": "Woche {n}"
+  },
+  "plan.previous": {
+   "en": "previous week",
+   "de": "vorige Woche"
+  },
+  "plan.next": {
+   "en": "next week",
+   "de": "nächste Woche"
+  },
+  "plan.today": {
+   "en": "today",
+   "de": "heute"
+  },
+  "plan.dragHint": {
+   "en": "long-press a meal and drag it to move it",
+   "de": "Mahlzeit lange drücken und ziehen zum Verschieben"
+  },
+  "plan.export": {
+   "en": "to shopping list",
+   "de": "auf die Liste"
+  },
+  "plan.export.empty": {
+   "en": "nothing planned this week yet.",
+   "de": "diese Woche ist noch nichts geplant."
+  },
+  "plan.export.done.one": {
+   "en": "added {n} meal to your list",
+   "de": "{n} Mahlzeit zur Liste hinzugefügt"
+  },
+  "plan.export.done.other": {
+   "en": "added {n} meals to your list",
+   "de": "{n} Mahlzeiten zur Liste hinzugefügt"
+  },
+  "plan.added": {
+   "en": "added to your plan",
+   "de": "in den Plan aufgenommen"
+  },
+  "plan.emptySlot": {
+   "en": "{slot}, empty. double tap to choose a recipe.",
+   "de": "{slot}, leer. Doppeltippen, um ein Rezept zu wählen."
+  },
+  "plan.action.open": {
+   "en": "open recipe",
+   "de": "Rezept öffnen"
+  },
+  "plan.action.change": {
+   "en": "choose another",
+   "de": "anderes wählen"
+  },
+  "plan.action.remove": {
+   "en": "remove from plan",
+   "de": "aus dem Plan entfernen"
+  },
+  "plan.meal.breakfast": {
+   "en": "breakfast",
+   "de": "frühstück"
+  },
+  "plan.meal.lunch": {
+   "en": "lunch",
+   "de": "mittag"
+  },
+  "plan.meal.dinner": {
+   "en": "dinner",
+   "de": "abend"
+  },
+  "plan.pick.title": {
+   "en": "which day?",
+   "de": "an welchem Tag?"
+  },
+  "plan.pick.note": {
+   "en": "and which meal.",
+   "de": "und zu welcher Mahlzeit."
+  },
+  "plan.pick.confirm": {
+   "en": "add to plan",
+   "de": "in den Plan"
+  },
+  "plan.picker.title": {
+   "en": "choose a recipe",
+   "de": "Rezept wählen"
+  },
+  "plan.picker.note": {
+   "en": "from your cookbook or straight from search.",
+   "de": "aus deinem Kochbuch oder direkt aus der Suche."
+  },
+  "shopping.title": {
+   "en": "list",
+   "de": "liste"
+  },
+  "shopping.note": {
+   "en": "one list, sorted by aisle.",
+   "de": "eine Liste, nach Gängen sortiert."
+  },
+  "shopping.empty.title": {
+   "en": "your list is empty.",
+   "de": "deine Liste ist leer."
+  },
+  "shopping.empty.body": {
+   "en": "add a dish from any recipe page, or send a week over from the plan.",
+   "de": "füge auf einer Rezeptseite ein Gericht hinzu oder schick eine Woche aus dem Plan herüber."
+  },
+  "shopping.empty.action": {
+   "en": "add an item",
+   "de": "etwas hinzufügen"
+  },
+  "shopping.cooking": {
+   "en": "on the list",
+   "de": "auf der Liste"
+  },
+  "shopping.for": {
+   "en": "for {items}",
+   "de": "für {items}"
+  },
+  "shopping.addItem": {
+   "en": "add item",
+   "de": "hinzufügen"
+  },
+  "shopping.clearChecked": {
+   "en": "clear ticked",
+   "de": "Erledigtes löschen"
+  },
+  "shopping.startOver": {
+   "en": "start over",
+   "de": "neu beginnen"
+  },
+  "shopping.startOver.title": {
+   "en": "start a fresh list?",
+   "de": "neue Liste beginnen?"
+  },
+  "shopping.startOver.body": {
+   "en": "recipes and items come off the list. your insights history stays.",
+   "de": "Rezepte und Einträge verschwinden von der Liste. dein Einkaufsverlauf bleibt."
+  },
+  "shopping.add.title": {
+   "en": "add an item",
+   "de": "etwas hinzufügen"
+  },
+  "shopping.add.hint": {
+   "en": "milk, lemons, birthday candles…",
+   "de": "Milch, Zitronen, Geburtstagskerzen …"
+  },
+  "shopping.add.amount": {
+   "en": "amount",
+   "de": "Menge"
+  },
+  "shopping.add.confirm": {
+   "en": "add",
+   "de": "hinzufügen"
+  },
+  "insights.title": {
+   "en": "insights",
+   "de": "einblicke"
+  },
+  "insights.note": {
+   "en": "what your shopping says about you.",
+   "de": "was dein Einkaufen über dich verrät."
+  },
+  "insights.empty.title": {
+   "en": "nothing to read yet.",
+   "de": "noch nichts zu lesen."
+  },
+  "insights.empty.body": {
+   "en": "put a recipe on your list and this page starts to fill.",
+   "de": "setz ein Rezept auf deine Liste, dann füllt sich diese Seite."
+  },
+  "insights.variety.label": {
+   "en": "variety score",
+   "de": "Vielfaltswert"
+  },
+  "insights.variety.body": {
+   "en": "unique ingredients across {n} additions.",
+   "de": "verschiedene Zutaten bei {n} Einträgen."
+  },
+  "insights.variety.semantics": {
+   "en": "variety score: {n} unique ingredients",
+   "de": "Vielfaltswert: {n} verschiedene Zutaten"
+  },
+  "insights.level.starting": {
+   "en": "just getting started",
+   "de": "gerade am Anfang"
+  },
+  "insights.level.growing": {
+   "en": "growing nicely",
+   "de": "wächst schön"
+  },
+  "insights.level.varied": {
+   "en": "wonderfully varied",
+   "de": "wunderbar vielfältig"
+  },
+  "insights.level.adventurous": {
+   "en": "properly adventurous",
+   "de": "richtig abenteuerlustig"
+  },
+  "insights.top.title": {
+   "en": "most added",
+   "de": "am häufigsten"
+  },
+  "insights.top.note": {
+   "en": "your pantry favorites.",
+   "de": "deine Vorratslieblinge."
+  },
+  "insights.months.title": {
+   "en": "through the year",
+   "de": "durch das Jahr"
+  },
+  "insights.months.note": {
+   "en": "what lands on your list, month by month.",
+   "de": "was Monat für Monat auf deiner Liste landet."
+  },
+  "settings.title": {
+   "en": "settings",
+   "de": "einstellungen"
+  },
+  "settings.note": {
+   "en": "all of it can change any time.",
+   "de": "alles lässt sich jederzeit ändern."
+  },
+  "settings.you": {
+   "en": "you",
+   "de": "du"
+  },
+  "settings.language": {
+   "en": "language",
+   "de": "sprache"
+  },
+  "settings.adaptation.title": {
+   "en": "how the book behaves",
+   "de": "wie sich das Buch verhält"
+  },
+  "settings.adaptation.note": {
+   "en": "small preferences, big difference.",
+   "de": "kleine Vorlieben, große Wirkung."
+  },
+  "settings.showTags": {
+   "en": "show variant tags",
+   "de": "Varianten-Labels zeigen"
+  },
+  "settings.showTags.body": {
+   "en": "small labels like “vegan” or “45 min” on cards and pages.",
+   "de": "kleine Labels wie „vegan“ oder „45 Min.“ auf Karten und Seiten."
+  },
+  "settings.reduceMotion": {
+   "en": "animation",
+   "de": "animationen"
+  },
+  "settings.motion.system": {
+   "en": "follow system",
+   "de": "System folgen"
+  },
+  "settings.motion.reduce": {
+   "en": "reduced",
+   "de": "reduziert"
+  },
+  "settings.motion.full": {
+   "en": "full",
+   "de": "voll"
+  },
+  "settings.cook.title": {
+   "en": "cook mode",
+   "de": "kochmodus"
+  },
+  "settings.visualAlert": {
+   "en": "flash when a timer ends",
+   "de": "blinken, wenn ein Timer abläuft"
+  },
+  "settings.visualAlert.body": {
+   "en": "a slow coral and teal flash across the screen, made for noisy kitchens and quiet ears. it follows your motion setting.",
+   "de": "ein langsames Blinken in Koralle und Türkis über den ganzen Bildschirm, gemacht für laute Küchen und leise Ohren. es richtet sich nach deiner Animationseinstellung."
+  },
+  "settings.timerSound": {
+   "en": "timer sound",
+   "de": "Timerton"
+  },
+  "settings.timerSound.body": {
+   "en": "a short chime plus a vibration.",
+   "de": "ein kurzer Ton plus Vibration."
+  },
+  "settings.quickTap": {
+   "en": "tap to advance",
+   "de": "Tippen zum Weiterschalten"
+  },
+  "settings.quickTap.body": {
+   "en": "one tap on the step text moves to the next step, handy with one hand free. accidental double taps are ignored.",
+   "de": "ein Tipp auf den Schritttext geht zum nächsten Schritt, praktisch mit einer freien Hand. versehentliche Doppeltipps werden ignoriert."
+  },
+  "settings.data.title": {
+   "en": "your data",
+   "de": "deine Daten"
+  },
+  "settings.data.note": {
+   "en": "everything lives on this phone.",
+   "de": "alles liegt auf diesem Handy."
+  },
+  "settings.insights.body": {
+   "en": "variety score, top ingredients, seasons.",
+   "de": "Vielfaltswert, Lieblingszutaten, Jahreszeiten."
+  },
+  "settings.backup.body": {
+   "en": "export and restore a backup file.",
+   "de": "Sicherung exportieren und wiederherstellen."
+  },
+  "settings.wishes.one": {
+   "en": "{n} search noted for the wish list",
+   "de": "{n} Suche für die Wunschliste notiert"
+  },
+  "settings.wishes.other": {
+   "en": "{n} searches noted for the wish list",
+   "de": "{n} Suchen für die Wunschliste notiert"
+  },
+  "settings.help.title": {
+   "en": "help",
+   "de": "hilfe"
+  },
+  "settings.help.body": {
+   "en": "answers, searchable.",
+   "de": "Antworten, durchsuchbar."
+  },
+  "settings.about.title": {
+   "en": "about",
+   "de": "über"
+  },
+  "settings.about.body": {
+   "en": "MorphCook lives entirely on your phone. the recipes are written ahead of time and ship inside the app, so it works in a kitchen without signal, and nothing you do is sent anywhere.",
+   "de": "MorphCook lebt komplett auf deinem Handy. die Rezepte sind vorab geschrieben und stecken in der App, sie funktioniert also auch in einer Küche ohne Empfang, und nichts, was du tust, wird irgendwohin gesendet."
+  },
+  "settings.about.version": {
+   "en": "version",
+   "de": "Version"
+  },
+  "settings.licenses": {
+   "en": "licenses",
+   "de": "Lizenzen"
+  },
+  "settings.danger.title": {
+   "en": "start from scratch",
+   "de": "von vorn beginnen"
+  },
+  "settings.danger.body": {
+   "en": "removes your profile, cookbook, plan, history and lists from this phone.",
+   "de": "entfernt dein Profil, Kochbuch, Plan, Verlauf und Listen von diesem Handy."
+  },
+  "settings.danger.action": {
+   "en": "delete all my data",
+   "de": "alle meine Daten löschen"
+  },
+  "settings.danger.confirm": {
+   "en": "this cannot be undone. export a backup first if you might want it back.",
+   "de": "das lässt sich nicht rückgängig machen. exportiere vorher eine Sicherung, falls du sie zurückhaben könntest."
+  },
+  "backup.title": {
+   "en": "backup & restore",
+   "de": "sicherung & wiederherstellung"
+  },
+  "backup.note": {
+   "en": "two files, your choice.",
+   "de": "zwei Dateien, du entscheidest."
+  },
+  "backup.intro": {
+   "en": "MorphCook writes your profile, cookbook, plan, history and shopping list into a file that you keep. the recipe corpus is bundled with the app, so it never travels along. an export creates a readable .json and a compressed .json.gz; save whichever you prefer.",
+   "de": "MorphCook schreibt dein Profil, Kochbuch, deinen Plan, Verlauf und deine Einkaufsliste in eine Datei, die du behältst. das Rezeptarchiv steckt in der App und reist deshalb nie mit. ein Export erzeugt eine lesbare .json und eine komprimierte .json.gz; speichere, welche dir lieber ist."
+  },
+  "backup.export.title": {
+   "en": "export",
+   "de": "exportieren"
+  },
+  "backup.export.body": {
+   "en": "with a password the .json file is encrypted with AES-256. the .gz file stays unencrypted so any tool can open it, so keep that one somewhere safe.",
+   "de": "mit Passwort wird die .json-Datei mit AES-256 verschlüsselt. die .gz-Datei bleibt unverschlüsselt, damit sie jedes Werkzeug öffnen kann, bewahre sie also sicher auf."
+  },
+  "backup.export.password": {
+   "en": "password (optional)",
+   "de": "Passwort (optional)"
+  },
+  "backup.export.confirm": {
+   "en": "repeat password",
+   "de": "Passwort wiederholen"
+  },
+  "backup.export.encryptedNote": {
+   "en": "you will need this password to restore the .json file.",
+   "de": "dieses Passwort brauchst du, um die .json-Datei wiederherzustellen."
+  },
+  "backup.export.mismatch": {
+   "en": "the passwords do not match.",
+   "de": "die Passwörter stimmen nicht überein."
+  },
+  "backup.export.action": {
+   "en": "export backup",
+   "de": "Sicherung exportieren"
+  },
+  "backup.export.done": {
+   "en": "shared: json {json}, gz {gz} ({saving}% smaller)",
+   "de": "geteilt: json {json}, gz {gz} ({saving}% kleiner)"
+  },
+  "backup.export.failed": {
+   "en": "the export did not work. please try again.",
+   "de": "der Export hat nicht geklappt. bitte versuch es nochmal."
+  },
+  "backup.showPassword": {
+   "en": "show password",
+   "de": "Passwort anzeigen"
+  },
+  "backup.hidePassword": {
+   "en": "hide password",
+   "de": "Passwort verbergen"
+  },
+  "backup.import.heading": {
+   "en": "restore",
+   "de": "wiederherstellen"
+  },
+  "backup.import.body": {
+   "en": "choose a MorphCook backup, .json or .json.gz. encryption and compression are detected automatically.",
+   "de": "wähle eine MorphCook-Sicherung, .json oder .json.gz. Verschlüsselung und Komprimierung werden automatisch erkannt."
+  },
+  "backup.import.action": {
+   "en": "choose backup file",
+   "de": "Sicherung auswählen"
+  },
+  "backup.import.title": {
+   "en": "restore this backup?",
+   "de": "diese Sicherung wiederherstellen?"
+  },
+  "backup.import.contents": {
+   "en": "{saved} saved · {history} cooked · {plan} planned",
+   "de": "{saved} gespeichert · {history} gekocht · {plan} geplant"
+  },
+  "backup.import.mergeBody": {
+   "en": "merge adds what is missing and never overwrites what you have.",
+   "de": "Zusammenführen ergänzt, was fehlt, und überschreibt nichts."
+  },
+  "backup.import.replaceBody": {
+   "en": "replace makes this phone match the backup.",
+   "de": "Ersetzen macht dieses Handy zum Abbild der Sicherung."
+  },
+  "backup.import.merge": {
+   "en": "merge",
+   "de": "zusammenführen"
+  },
+  "backup.import.replace": {
+   "en": "replace",
+   "de": "ersetzen"
+  },
+  "backup.import.done": {
+   "en": "restored: {saved} saved, {history} cooked, {plan} planned",
+   "de": "wiederhergestellt: {saved} gespeichert, {history} gekocht, {plan} geplant"
+  },
+  "backup.password.title": {
+   "en": "password needed",
+   "de": "Passwort erforderlich"
+  },
+  "backup.password.body": {
+   "en": "this backup is encrypted.",
+   "de": "diese Sicherung ist verschlüsselt."
+  },
+  "backup.password.unlock": {
+   "en": "unlock",
+   "de": "entsperren"
+  },
+  "backup.err.wrongPassword": {
+   "en": "Incorrect password. Please try again.",
+   "de": "Falsches Passwort. Bitte versuch es noch einmal."
+  },
+  "backup.err.corrupted": {
+   "en": "Backup file is corrupted and cannot be restored.",
+   "de": "Die Sicherungsdatei ist beschädigt und kann nicht wiederhergestellt werden."
+  },
+  "backup.err.invalidFormat": {
+   "en": "This file is not a valid MorphCook backup.",
+   "de": "Diese Datei ist keine gültige MorphCook-Sicherung."
+  },
+  "backup.err.passwordRequired": {
+   "en": "This backup is password-protected. Enter its password to restore it.",
+   "de": "Diese Sicherung ist passwortgeschützt. Gib das Passwort ein, um sie wiederherzustellen."
+  },
+  "backup.err.unsupportedVersion": {
+   "en": "This backup was created by a newer version of MorphCook. Please update the app.",
+   "de": "Diese Sicherung stammt aus einer neueren Version von MorphCook. Bitte aktualisiere die App."
+  },
+  "faq.title": {
+   "en": "help center",
+   "de": "Hilfe-Center"
+  },
+  "faq.note": {
+   "en": "ask the cookbook.",
+   "de": "frag das Kochbuch."
+  },
+  "faq.search": {
+   "en": "search the help…",
+   "de": "Hilfe durchsuchen …"
+  },
+  "faq.all": {
+   "en": "all",
+   "de": "alle"
+  },
+  "faq.related": {
+   "en": "read next",
+   "de": "weiterlesen"
+  },
+  "faq.empty.title": {
+   "en": "no answer found.",
+   "de": "keine Antwort gefunden."
+  },
+  "faq.empty.body": {
+   "en": "try other words, or pick a different category.",
+   "de": "versuch andere Wörter oder eine andere Kategorie."
+  }
+ }
+}

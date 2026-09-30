@@ -1,0 +1,1193 @@
+{
+ "schema_version": 1,
+ "categories": [
+  {
+   "id": "matching",
+   "name": {
+    "en": "eating & matching",
+    "de": "essen & auswahl"
+   }
+  },
+  {
+   "id": "visibility",
+   "name": {
+    "en": "what you see",
+    "de": "was du siehst"
+   }
+  },
+  {
+   "id": "cooking",
+   "name": {
+    "en": "cooking",
+    "de": "kochen"
+   }
+  },
+  {
+   "id": "planning",
+   "name": {
+    "en": "plan & shop",
+    "de": "planen & einkaufen"
+   }
+  },
+  {
+   "id": "data",
+   "name": {
+    "en": "your data",
+    "de": "deine daten"
+   }
+  },
+  {
+   "id": "access",
+   "name": {
+    "en": "accessibility",
+    "de": "barrierefreiheit"
+   }
+  },
+  {
+   "id": "trouble",
+   "name": {
+    "en": "troubleshooting",
+    "de": "hilfe bei problemen"
+   }
+  }
+ ],
+ "entries": [
+  {
+   "id": "dietary-matching",
+   "category": "matching",
+   "question": {
+    "en": "How does MorphCook match recipes to my diet?",
+    "de": "Wie passt MorphCook die Rezepte an meine Ernährung an?"
+   },
+   "answer": {
+    "en": "Every dish exists in many versions, and each version is a complete recipe of its own. Your profile lists what to leave out and what you need. A recipe shows up when nothing in it clashes with your leave-out list, no avoided ingredient is in it, it has every attribute you asked for, and it fits your time budget and calorie target. You never see the versions that do not fit, and you never have to swap anything yourself.",
+    "de": "Jedes Gericht gibt es in vielen Versionen, und jede Version ist ein vollständiges eigenes Rezept. Dein Profil sagt, was wegbleibt und was du brauchst. Ein Rezept erscheint, wenn nichts darin mit deiner Weglassliste kollidiert, keine vermiedene Zutat enthalten ist, alle gewünschten Eigenschaften vorhanden sind und es zu Zeitbudget und Kalorienziel passt. Versionen, die nicht passen, siehst du gar nicht, und du musst nie selbst etwas austauschen."
+   },
+   "keywords": {
+    "en": [
+     "match",
+     "filter",
+     "diet",
+     "profile",
+     "leave out",
+     "hidden"
+    ],
+    "de": [
+     "Auswahl",
+     "Filter",
+     "Ernährung",
+     "Profil",
+     "weglassen",
+     "versteckt"
+    ]
+   },
+   "related": [
+    "diet-shortcuts",
+    "allergens-safety",
+    "recipe-visibility"
+   ]
+  },
+  {
+   "id": "diet-shortcuts",
+   "category": "matching",
+   "question": {
+    "en": "What do vegan, vegetarian, halal and the other diet shortcuts leave out?",
+    "de": "Was lassen vegan, vegetarisch, halal und die anderen Ernährungsweisen weg?"
+   },
+   "answer": {
+    "en": "A diet shortcut is a bundle of leave-outs. Vegan leaves out meat, fish, shellfish, molluscs, egg, dairy, honey and animal gelatin. Vegetarian leaves out meat, fish, shellfish, molluscs and gelatin. Pescatarian leaves out meat and gelatin but keeps fish. Halal leaves out pork, alcohol and gelatin that is not halal. Kosher leaves out pork, shellfish, molluscs, meat and dairy together, and gelatin that is not kosher. Low FODMAP leaves out high-FODMAP ingredients, sugar-free leaves out added sugar, and lactose-free leaves out lactose.",
+    "de": "Eine Ernährungsweise ist ein Bündel aus Weglassregeln. Vegan lässt Fleisch, Fisch, Krebs- und Weichtiere, Ei, Milchprodukte, Honig und tierische Gelatine weg. Vegetarisch lässt Fleisch, Fisch, Krebs- und Weichtiere und Gelatine weg. Pescetarisch lässt Fleisch und Gelatine weg, behält aber Fisch. Halal lässt Schweinefleisch, Alkohol und nicht halale Gelatine weg. Koscher lässt Schwein, Krebstiere, Weichtiere, Fleisch und Milch zusammen sowie nicht koschere Gelatine weg. Low FODMAP lässt FODMAP-reiche Zutaten weg, zuckerfrei lässt zugesetzten Zucker weg, laktosefrei lässt Laktose weg."
+   },
+   "keywords": {
+    "en": [
+     "vegan",
+     "vegetarian",
+     "pescatarian",
+     "halal",
+     "kosher",
+     "fodmap",
+     "lactose",
+     "sugar"
+    ],
+    "de": [
+     "vegan",
+     "vegetarisch",
+     "pescetarisch",
+     "halal",
+     "koscher",
+     "FODMAP",
+     "Laktose",
+     "Zucker"
+    ]
+   },
+   "related": [
+    "halal-kosher",
+    "dietary-matching"
+   ]
+  },
+  {
+   "id": "allergens-safety",
+   "category": "matching",
+   "question": {
+    "en": "Can I rely on MorphCook for an allergy?",
+    "de": "Kann ich mich bei einer Allergie auf MorphCook verlassen?"
+   },
+   "answer": {
+    "en": "MorphCook checks the ingredients each recipe lists, and it does that carefully. Treat it as a helpful first check. Products differ between brands, and traces or cross-contact can hide where a recipe cannot see them. With a severe allergy, read the packaging every time and talk to your doctor about what is safe for you.",
+    "de": "MorphCook prüft die Zutaten, die jedes Rezept aufführt, und das gründlich. Sieh darin eine hilfreiche erste Kontrolle. Produkte unterscheiden sich je nach Marke, und Spuren oder Kreuzkontakt können sich dort verstecken, wo ein Rezept sie nicht sieht. Bei einer schweren Allergie lies jedes Mal die Verpackung und sprich mit deiner Ärztin oder deinem Arzt darüber, was für dich sicher ist."
+   },
+   "keywords": {
+    "en": [
+     "allergy",
+     "allergen",
+     "safe",
+     "nuts",
+     "gluten",
+     "trace",
+     "cross contamination"
+    ],
+    "de": [
+     "Allergie",
+     "Allergen",
+     "sicher",
+     "Nüsse",
+     "Gluten",
+     "Spuren",
+     "Kreuzkontamination"
+    ]
+   },
+   "related": [
+    "dietary-matching",
+    "ingredient-avoidance"
+   ]
+  },
+  {
+   "id": "ingredient-avoidance",
+   "category": "matching",
+   "question": {
+    "en": "How do I avoid one specific ingredient?",
+    "de": "Wie vermeide ich eine bestimmte Zutat?"
+   },
+   "answer": {
+    "en": "In your profile, open “specific ingredients” and start typing, for example apple, cilantro or bell pepper. Pick a match from the list. You can pick any level of the tree: choosing “cheese” also avoids parmesan, feta and every other cheese below it. Recipes with an avoided ingredient disappear from your feed, your search and your suggestions.",
+    "de": "Öffne in deinem Profil „bestimmte Zutaten“ und tippe los, zum Beispiel Apfel, Koriander oder Paprika. Wähle einen Treffer aus der Liste. Du kannst jede Ebene des Baums wählen: „Käse“ vermeidet auch Parmesan, Feta und jeden anderen Käse darunter. Rezepte mit einer vermiedenen Zutat verschwinden aus Feed, Suche und Vorschlägen."
+   },
+   "keywords": {
+    "en": [
+     "ingredient",
+     "avoid",
+     "dislike",
+     "cilantro",
+     "apple",
+     "pepper"
+    ],
+    "de": [
+     "Zutat",
+     "vermeiden",
+     "mag ich nicht",
+     "Koriander",
+     "Apfel",
+     "Paprika"
+    ]
+   },
+   "related": [
+    "dietary-matching",
+    "required-attributes"
+   ]
+  },
+  {
+   "id": "required-attributes",
+   "category": "matching",
+   "question": {
+    "en": "What does “it has to be” do?",
+    "de": "Was bewirkt „es muss sein“?"
+   },
+   "answer": {
+    "en": "These are things a recipe must have, such as keto, low-carb, high-protein, one-pot or meal prep. A recipe only shows up if it carries every one you pick. Use it sparingly: each choice narrows the cookbook.",
+    "de": "Das sind Dinge, die ein Rezept haben muss, etwa keto, low carb, proteinreich, One-Pot oder Meal Prep. Ein Rezept erscheint nur, wenn es alle deine Auswahlen erfüllt. Setz es sparsam ein: jede Auswahl verkleinert das Kochbuch."
+   },
+   "keywords": {
+    "en": [
+     "keto",
+     "high protein",
+     "one-pot",
+     "meal prep",
+     "require"
+    ],
+    "de": [
+     "keto",
+     "proteinreich",
+     "One-Pot",
+     "Meal Prep",
+     "verlangen"
+    ]
+   },
+   "related": [
+    "dietary-matching"
+   ]
+  },
+  {
+   "id": "halal-kosher",
+   "category": "matching",
+   "question": {
+    "en": "What do halal and kosher mean in MorphCook?",
+    "de": "Was bedeuten halal und koscher in MorphCook?"
+   },
+   "answer": {
+    "en": "MorphCook works with halal-compatible and kosher-compatible ingredients. Halal leaves out pork, alcohol and non-halal gelatin. Kosher leaves out pork, shellfish, molluscs, meat and dairy together, and non-kosher gelatin. Certification depends on sourcing, slaughter and supervision, which a recipe text cannot promise, so the app never calls anything certified.",
+    "de": "MorphCook arbeitet mit halal-kompatiblen und koscher-kompatiblen Zutaten: Halal lässt Schweinefleisch, Alkohol und nicht halale Gelatine weg. Koscher lässt Schwein, Krebs- und Weichtiere, Fleisch und Milch zusammen sowie nicht koschere Gelatine weg. Eine Zertifizierung hängt von Herkunft, Schlachtung und Aufsicht ab, und das kann ein Rezepttext nicht zusichern, deshalb nennt die App nichts zertifiziert."
+   },
+   "keywords": {
+    "en": [
+     "halal",
+     "kosher",
+     "koscher",
+     "certified",
+     "pork",
+     "alcohol"
+    ],
+    "de": [
+     "halal",
+     "koscher",
+     "zertifiziert",
+     "Schwein",
+     "Alkohol"
+    ]
+   },
+   "related": [
+    "diet-shortcuts"
+   ]
+  },
+  {
+   "id": "recipe-visibility",
+   "category": "visibility",
+   "question": {
+    "en": "Why is a dish or recipe missing?",
+    "de": "Warum fehlt ein Gericht oder Rezept?"
+   },
+   "answer": {
+    "en": "Something in your profile filters it out: a leave-out or avoided ingredient, a required attribute, your time budget or your calorie target. Open Settings to see or loosen those. A dish can also be missing because none of its versions fits your combination yet. New versions arrive with app updates, and the searches that found nothing are noted on your phone so they can be added someday.",
+    "de": "Etwas in deinem Profil filtert es heraus: eine Weglassregel oder vermiedene Zutat, eine geforderte Eigenschaft, dein Zeitbudget oder dein Kalorienziel. In den Einstellungen siehst du das und kannst es lockern. Ein Gericht kann auch fehlen, weil noch keine seiner Versionen zu deiner Kombination passt. Neue Versionen kommen mit App-Updates, und Suchen ohne Treffer werden auf deinem Handy notiert, damit sie irgendwann ergänzt werden können."
+   },
+   "keywords": {
+    "en": [
+     "missing",
+     "not showing",
+     "empty",
+     "hidden",
+     "filtered",
+     "gone"
+    ],
+    "de": [
+     "fehlt",
+     "nicht sichtbar",
+     "leer",
+     "versteckt",
+     "gefiltert",
+     "weg"
+    ]
+   },
+   "related": [
+    "calorie-target",
+    "time-budget",
+    "wish-list"
+   ]
+  },
+  {
+   "id": "calorie-target",
+   "category": "visibility",
+   "question": {
+    "en": "How does the calorie target work?",
+    "de": "Wie funktioniert das Kalorienziel?"
+   },
+   "answer": {
+    "en": "Your target is per meal, with some flexibility around it (you can set that under Settings). Versions far from it stay out of your feed and search. On any dish page a switch lets you show the versions outside your target for that dish only, so one exception never changes the rest of the app.",
+    "de": "Dein Ziel gilt pro Mahlzeit, mit etwas Spielraum drumherum (den stellst du in den Einstellungen ein). Versionen weit davon entfernt bleiben aus Feed und Suche. Auf jeder Gerichtsseite kannst du mit einem Schalter die Versionen außerhalb des Ziels nur für dieses Gericht zeigen, sodass eine Ausnahme nie den Rest der App verändert."
+   },
+   "keywords": {
+    "en": [
+     "calories",
+     "kcal",
+     "target",
+     "override",
+     "outside"
+    ],
+    "de": [
+     "Kalorien",
+     "kcal",
+     "Ziel",
+     "Ausnahme",
+     "außerhalb"
+    ]
+   },
+   "related": [
+    "recipe-visibility",
+    "best-variant"
+   ]
+  },
+  {
+   "id": "time-budget",
+   "category": "visibility",
+   "question": {
+    "en": "How does the time budget work?",
+    "de": "Wie funktioniert das Zeitbudget?"
+   },
+   "answer": {
+    "en": "The budget is the longest a dish may take in total, from the first chop to the plate. Recipes that take longer stay hidden. Pick “no limit” under Settings to see everything, and use the effort chips on the front page for a lighter or more ambitious day.",
+    "de": "Das Budget ist die längste Gesamtdauer, die ein Gericht haben darf, vom ersten Schnitt bis zum Teller. Rezepte, die länger dauern, bleiben verborgen. Wähle in den Einstellungen „kein Limit“, um alles zu sehen, und nutze die Aufwand-Chips auf der Startseite für einen leichteren oder ehrgeizigeren Tag."
+   },
+   "keywords": {
+    "en": [
+     "time",
+     "minutes",
+     "budget",
+     "quick"
+    ],
+    "de": [
+     "Zeit",
+     "Minuten",
+     "Budget",
+     "schnell"
+    ]
+   },
+   "related": [
+    "recipe-visibility",
+    "best-variant"
+   ]
+  },
+  {
+   "id": "saved-warning",
+   "category": "visibility",
+   "question": {
+    "en": "Why does a saved recipe show a warning?",
+    "de": "Warum zeigt ein gespeichertes Rezept eine Warnung?"
+   },
+   "answer": {
+    "en": "You saved it before your profile changed. The cookbook keeps every recipe you saved, and it flags the ones that now contain something you leave out, so an old favorite never sneaks past a new allergy. The recipe page explains exactly what clashes.",
+    "de": "Du hast es gespeichert, bevor sich dein Profil geändert hat. Das Kochbuch behält jedes gespeicherte Rezept und markiert die, die jetzt etwas enthalten, das du weglässt, damit ein alter Favorit nie an einer neuen Allergie vorbeirutscht. Die Rezeptseite erklärt genau, was kollidiert."
+   },
+   "keywords": {
+    "en": [
+     "saved",
+     "warning",
+     "cookbook",
+     "allergy changed"
+    ],
+    "de": [
+     "gespeichert",
+     "Warnung",
+     "Kochbuch",
+     "Allergie geändert"
+    ]
+   },
+   "related": [
+    "allergens-safety"
+   ]
+  },
+  {
+   "id": "best-variant",
+   "category": "visibility",
+   "question": {
+    "en": "How does MorphCook choose which version I see first?",
+    "de": "Wie wählt MorphCook die Version, die ich zuerst sehe?"
+   },
+   "answer": {
+    "en": "Among the versions that fit you, it prefers the one that matches your required attributes, then your effort mood, then your time budget, then your calorie target. On top of that it nudges the ranking with the moment: breakfast dishes rise in the morning, dinner in the evening, and more ambitious cooking on weekends. Dishes you have not cooked for a month or more get a small boost, so old friends come back around.",
+    "de": "Unter den Versionen, die zu dir passen, bevorzugt sie die, die deine geforderten Eigenschaften erfüllt, dann deine Aufwandsstimmung, dann dein Zeitbudget, dann dein Kalorienziel. Obendrauf verschiebt der Moment das Ranking: Frühstück steigt morgens, Abendessen abends, aufwendigeres Kochen am Wochenende. Gerichte, die du einen Monat oder länger nicht gekocht hast, bekommen einen kleinen Schub, damit alte Bekannte wiederkommen."
+   },
+   "keywords": {
+    "en": [
+     "ranking",
+     "order",
+     "first",
+     "morning",
+     "weekend",
+     "suggest"
+    ],
+    "de": [
+     "Reihenfolge",
+     "zuerst",
+     "morgens",
+     "Wochenende",
+     "Vorschlag"
+    ]
+   },
+   "related": [
+    "variants",
+    "calorie-target"
+   ]
+  },
+  {
+   "id": "variants",
+   "category": "cooking",
+   "question": {
+    "en": "What are the rows under the recipe title?",
+    "de": "Was sind die Zeilen unter dem Rezepttitel?"
+   },
+   "answer": {
+    "en": "Each row is one way a dish can differ: diet, effort, calorie level. A row shows your current pick. Tap it to see the alternatives and tap one to switch in place; the ingredients flash where they changed and the method redraws. Every combination is a separate, fully written recipe.",
+    "de": "Jede Zeile ist eine Art, wie sich ein Gericht unterscheiden kann: Ernährung, Aufwand, Kalorienstufe. Eine Zeile zeigt deine aktuelle Wahl. Tippe darauf, um Alternativen zu sehen, und tippe eine an, um an Ort und Stelle zu wechseln; die Zutaten blinken dort, wo sie sich geändert haben, und die Zubereitung wird neu gezeichnet. Jede Kombination ist ein eigenes, komplett geschriebenes Rezept."
+   },
+   "keywords": {
+    "en": [
+     "variant",
+     "switch",
+     "diet",
+     "effort",
+     "calorie level",
+     "version"
+    ],
+    "de": [
+     "Variante",
+     "wechseln",
+     "Ernährung",
+     "Aufwand",
+     "Kalorienstufe",
+     "Version"
+    ]
+   },
+   "related": [
+    "disabled-options",
+    "best-variant"
+   ]
+  },
+  {
+   "id": "disabled-options",
+   "category": "cooking",
+   "question": {
+    "en": "Why are some options greyed out?",
+    "de": "Warum sind manche Optionen ausgegraut?"
+   },
+   "answer": {
+    "en": "Greyed-out options are combinations that do not exist yet, for example no vegan × keto version. They stay visible so you know the gap is real, and a short note names the combination. Change another row first and the option may light up. If a dish has no move at all from where you stand, tapping an option jumps to the closest version instead of leaving you stuck.",
+    "de": "Ausgegraute Optionen sind Kombinationen, die es noch nicht gibt, etwa keine Version vegan × keto. Sie bleiben sichtbar, damit du weißt, dass die Lücke echt ist, und eine kurze Notiz nennt die Kombination. Ändere zuerst eine andere Zeile, dann wird die Option vielleicht frei. Gibt es von deiner Stelle aus gar keinen Schritt, springt ein Tipp auf eine Option zur nächstliegenden Version, statt dich festsitzen zu lassen."
+   },
+   "keywords": {
+    "en": [
+     "disabled",
+     "greyed",
+     "unavailable",
+     "combination",
+     "missing version"
+    ],
+    "de": [
+     "deaktiviert",
+     "ausgegraut",
+     "nicht verfügbar",
+     "Kombination",
+     "fehlende Version"
+    ]
+   },
+   "related": [
+    "variants"
+   ]
+  },
+  {
+   "id": "servings-scaling",
+   "category": "cooking",
+   "question": {
+    "en": "How does changing the number of people work?",
+    "de": "Wie funktioniert das Ändern der Personenzahl?"
+   },
+   "answer": {
+    "en": "The plus and minus next to “for” scale every amount in the ingredient list, and the shopping list and cook mode use the same number. Spoons and counts turn into kitchen fractions like 1½, and grams round the way a cook would. The method text never repeats quantities, so it stays right at any size. Cooking times stay as written; big batches may need a little longer.",
+    "de": "Plus und Minus neben „für“ rechnen jede Menge in der Zutatenliste um, und Einkaufsliste und Kochmodus verwenden dieselbe Zahl. Löffel und Stückzahlen werden zu Küchenbrüchen wie 1½, Gramm werden gerundet, wie ein Koch es täte. Der Zubereitungstext wiederholt keine Mengen und stimmt deshalb bei jeder Größe. Garzeiten bleiben wie geschrieben, große Mengen brauchen eventuell etwas länger."
+   },
+   "keywords": {
+    "en": [
+     "servings",
+     "scale",
+     "people",
+     "portions",
+     "amounts",
+     "double"
+    ],
+    "de": [
+     "Portionen",
+     "umrechnen",
+     "Personen",
+     "Mengen",
+     "verdoppeln"
+    ]
+   },
+   "related": [
+    "shopping-list",
+    "cook-mode"
+   ]
+  },
+  {
+   "id": "ingredient-guide",
+   "category": "cooking",
+   "question": {
+    "en": "What is the info button next to an ingredient?",
+    "de": "Was ist der Info-Knopf neben einer Zutat?"
+   },
+   "answer": {
+    "en": "It opens the kitchen reference for that ingredient: what it is, how to use it, how to keep it and where to find it. It appears for ingredients that are unusual or easy to get wrong, like tahini, sumac or seitan.",
+    "de": "Er öffnet das Küchenlexikon zu dieser Zutat: was sie ist, wie du sie verwendest, wie du sie aufbewahrst und wo du sie findest. Er erscheint bei Zutaten, die ungewöhnlich sind oder leicht falsch eingesetzt werden, wie Tahini, Sumach oder Seitan."
+   },
+   "keywords": {
+    "en": [
+     "ingredient",
+     "learn more",
+     "reference",
+     "tahini",
+     "substitute"
+    ],
+    "de": [
+     "Zutat",
+     "mehr erfahren",
+     "Lexikon",
+     "Tahini",
+     "Ersatz"
+    ]
+   },
+   "related": [
+    "variants"
+   ]
+  },
+  {
+   "id": "cook-mode",
+   "category": "cooking",
+   "question": {
+    "en": "How does cook mode work?",
+    "de": "Wie funktioniert der Kochmodus?"
+   },
+   "answer": {
+    "en": "Cook mode shows one step at a time on a dark, full-screen page that stays awake. Swipe or use the buttons to move between steps, open the ingredient sheet to change the number of people, and pause whenever the phone rings. Leaving the screen keeps your place, and “keep cooking” waits for you on the front page. At the end you can log the cook to your history.",
+    "de": "Der Kochmodus zeigt immer einen Schritt auf einer dunklen Vollbildseite, die wach bleibt. Wische oder nutze die Knöpfe, um zwischen Schritten zu wechseln, öffne das Zutatenblatt, um die Personenzahl zu ändern, und pausiere, wenn das Telefon klingelt. Beim Verlassen bleibt dein Stand erhalten, und „weiterkochen“ wartet auf der Startseite auf dich. Am Ende kannst du das Kochen in deinen Verlauf eintragen."
+   },
+   "keywords": {
+    "en": [
+     "cook mode",
+     "step",
+     "pause",
+     "resume",
+     "screen",
+     "history"
+    ],
+    "de": [
+     "Kochmodus",
+     "Schritt",
+     "Pause",
+     "weiter",
+     "Bildschirm",
+     "Verlauf"
+    ]
+   },
+   "related": [
+    "timers",
+    "quick-tap",
+    "screen-sleeps"
+   ]
+  },
+  {
+   "id": "timers",
+   "category": "cooking",
+   "question": {
+    "en": "How do the step timers work?",
+    "de": "Wie funktionieren die Schritt-Timer?"
+   },
+   "answer": {
+    "en": "Steps that need waiting have a timer with the time already set. Start it and move on: it keeps running while you read other steps, and a chip at the top shows every timer that is still going. Timers note the moment they end, so they stay accurate if the app sits in the background. When one finishes you get a chime, a vibration and, if switched on, a slow coral and teal flash.",
+    "de": "Schritte mit Wartezeit haben einen Timer mit vorgegebener Zeit. Starte ihn und mach weiter: er läuft, während du andere Schritte liest, und oben zeigt ein Chip jeden Timer, der noch läuft. Timer merken sich den Moment, an dem sie enden, und bleiben deshalb genau, auch wenn die App im Hintergrund liegt. Wenn einer fertig ist, gibt es einen Ton, Vibration und, falls aktiviert, ein langsames Blinken in Koralle und Türkis."
+   },
+   "keywords": {
+    "en": [
+     "timer",
+     "countdown",
+     "alarm",
+     "background",
+     "chime"
+    ],
+    "de": [
+     "Timer",
+     "Countdown",
+     "Alarm",
+     "Hintergrund",
+     "Ton"
+    ]
+   },
+   "related": [
+    "visual-alert",
+    "timer-silent"
+   ]
+  },
+  {
+   "id": "visual-alert",
+   "category": "access",
+   "question": {
+    "en": "What is the flashing alert when a timer ends?",
+    "de": "Was ist das Blinken, wenn ein Timer abläuft?"
+   },
+   "answer": {
+    "en": "It is a visual signal for people who cannot hear the chime, and for loud kitchens: the whole screen washes slowly between coral and teal until you tap “got it”. It pulses gently, well below a flashing rate that could bother photosensitive readers. With reduced motion switched on it does not move at all and shows a still banner instead. You can turn it off under Settings, cook mode.",
+    "de": "Es ist ein visuelles Signal für Menschen, die den Ton nicht hören, und für laute Küchen: der ganze Bildschirm wechselt langsam zwischen Koralle und Türkis, bis du „verstanden“ tippst. Es pulsiert sanft und weit unter einer Blinkrate, die lichtempfindliche Menschen stören könnte. Bei aktivierter reduzierter Animation bewegt es sich gar nicht und zeigt stattdessen ein ruhiges Banner. Ausschalten kannst du es in den Einstellungen unter Kochmodus."
+   },
+   "keywords": {
+    "en": [
+     "flash",
+     "visual alert",
+     "deaf",
+     "hard of hearing",
+     "accessibility",
+     "coral"
+    ],
+    "de": [
+     "Blinken",
+     "visueller Alarm",
+     "gehörlos",
+     "schwerhörig",
+     "Barrierefreiheit",
+     "Koralle"
+    ]
+   },
+   "related": [
+    "reduce-motion",
+    "timers"
+   ]
+  },
+  {
+   "id": "quick-tap",
+   "category": "access",
+   "question": {
+    "en": "What is tap to advance?",
+    "de": "Was ist Tippen zum Weiterschalten?"
+   },
+   "answer": {
+    "en": "An optional cook mode setting for one-handed cooking. When it is on, a single tap on the step text moves to the next step and gives a small vibration. Taps closer than a third of a second are ignored, so a flour-dusted double tap does not skip a step. With reduced motion on, the step simply swaps without sliding.",
+    "de": "Eine optionale Kochmodus-Einstellung fürs Kochen mit einer Hand. Ist sie an, geht ein einzelner Tipp auf den Schritttext zum nächsten Schritt und vibriert kurz. Tipps im Abstand von weniger als einer Drittelsekunde werden ignoriert, damit ein mehliger Doppeltipp keinen Schritt überspringt. Bei reduzierter Animation wechselt der Schritt ohne Schiebeeffekt."
+   },
+   "keywords": {
+    "en": [
+     "tap",
+     "one hand",
+     "advance",
+     "next step",
+     "haptic"
+    ],
+    "de": [
+     "Tippen",
+     "eine Hand",
+     "weiter",
+     "nächster Schritt",
+     "Vibration"
+    ]
+   },
+   "related": [
+    "cook-mode",
+    "reduce-motion"
+   ]
+  },
+  {
+   "id": "reduce-motion",
+   "category": "access",
+   "question": {
+    "en": "How do I reduce animation?",
+    "de": "Wie reduziere ich Animationen?"
+   },
+   "answer": {
+    "en": "Under Settings, choose “reduced” for animation. “Follow system” uses your phone’s own setting. Reduced motion shortens or removes slides, fades and flashes, swaps steps instantly in cook mode and turns the timer flash into a still banner.",
+    "de": "Wähle in den Einstellungen bei Animationen „reduziert“. „System folgen“ nutzt die Einstellung deines Telefons. Reduzierte Animation verkürzt oder entfernt Schiebe-, Überblend- und Blinkeffekte, wechselt im Kochmodus Schritte sofort und macht aus dem Timer-Blinken ein ruhiges Banner."
+   },
+   "keywords": {
+    "en": [
+     "motion",
+     "animation",
+     "accessibility",
+     "vestibular",
+     "reduce"
+    ],
+    "de": [
+     "Bewegung",
+     "Animation",
+     "Barrierefreiheit",
+     "reduzieren"
+    ]
+   },
+   "related": [
+    "visual-alert",
+    "quick-tap"
+   ]
+  },
+  {
+   "id": "meal-plan",
+   "category": "planning",
+   "question": {
+    "en": "How does the meal plan work?",
+    "de": "Wie funktioniert der Wochenplan?"
+   },
+   "answer": {
+    "en": "The plan is a week grid: Monday to Sunday, with breakfast, lunch and dinner. Tap an empty slot to pick a recipe from your cookbook or from search, tap a filled one for its actions. Swipe between weeks. The plan does not add up macros and it does not plan for you; it is a place to pencil in your own week.",
+    "de": "Der Plan ist ein Wochenraster: Montag bis Sonntag mit Frühstück, Mittag und Abend. Tippe auf einen leeren Platz, um ein Rezept aus deinem Kochbuch oder der Suche zu wählen, tippe auf einen belegten für seine Aktionen. Wische zwischen den Wochen. Der Plan rechnet keine Nährwerte zusammen und plant nicht für dich; er ist ein Ort, um deine eigene Woche mit Bleistift einzutragen."
+   },
+   "keywords": {
+    "en": [
+     "plan",
+     "week",
+     "calendar",
+     "slot",
+     "breakfast",
+     "dinner"
+    ],
+    "de": [
+     "Plan",
+     "Woche",
+     "Kalender",
+     "Platz",
+     "Frühstück",
+     "Abendessen"
+    ]
+   },
+   "related": [
+    "plan-drag",
+    "shopping-list"
+   ]
+  },
+  {
+   "id": "plan-drag",
+   "category": "planning",
+   "question": {
+    "en": "How do I move a meal to another day?",
+    "de": "Wie verschiebe ich eine Mahlzeit auf einen anderen Tag?"
+   },
+   "answer": {
+    "en": "Press and hold a filled slot for a moment, then drag it onto another slot. Dropping onto an empty slot moves the meal; dropping onto a filled one swaps the two. Near the top or bottom edge the page scrolls along with your finger.",
+    "de": "Halte einen belegten Platz einen Moment gedrückt und ziehe ihn auf einen anderen Platz. Auf einem leeren Platz wird die Mahlzeit verschoben, auf einem belegten tauschen beide die Plätze. Am oberen oder unteren Rand scrollt die Seite mit deinem Finger mit."
+   },
+   "keywords": {
+    "en": [
+     "drag",
+     "move",
+     "swap",
+     "drop"
+    ],
+    "de": [
+     "ziehen",
+     "verschieben",
+     "tauschen",
+     "ablegen"
+    ]
+   },
+   "related": [
+    "meal-plan"
+   ]
+  },
+  {
+   "id": "shopping-list",
+   "category": "planning",
+   "question": {
+    "en": "How does the shopping list combine ingredients?",
+    "de": "Wie fasst die Einkaufsliste Zutaten zusammen?"
+   },
+   "answer": {
+    "en": "Every recipe on the list adds its ingredients, scaled to the number of people. Identical ingredients merge into one line: garlic 2 cloves plus garlic 3 cloves becomes 5 cloves. Lines sit under the aisle where you would find them, ticked lines drop to the bottom, and a swipe hides a line you already have. The lines under “on the list” show which recipes feed it, and you can change their servings or remove them.",
+    "de": "Jedes Rezept auf der Liste fügt seine Zutaten hinzu, auf die Personenzahl umgerechnet. Gleiche Zutaten werden zu einer Zeile: Knoblauch 2 Zehen plus Knoblauch 3 Zehen wird zu 5 Zehen. Die Zeilen stehen unter dem Gang, in dem du sie findest, abgehakte rutschen nach unten, und ein Wischen blendet eine Zeile aus, die du schon hast. Unter „auf der Liste“ siehst du, welche Rezepte sie speisen, und kannst deren Portionen ändern oder sie entfernen."
+   },
+   "keywords": {
+    "en": [
+     "shopping",
+     "list",
+     "aisle",
+     "merge",
+     "combine",
+     "groceries"
+    ],
+    "de": [
+     "Einkauf",
+     "Liste",
+     "Gang",
+     "zusammenfassen",
+     "Lebensmittel"
+    ]
+   },
+   "related": [
+    "shopping-units",
+    "servings-scaling"
+   ]
+  },
+  {
+   "id": "shopping-units",
+   "category": "planning",
+   "question": {
+    "en": "Why did an amount change its unit?",
+    "de": "Warum hat eine Menge ihre Einheit gewechselt?"
+   },
+   "answer": {
+    "en": "Amounts of the same ingredient are converted so they can be added: milliliters, liters, teaspoons, tablespoons and cups are all volumes, and grams and kilograms are weights. When an ingredient has a known density, a weight and a volume add up too. Counts such as cloves or pieces only add up with the same unit. The result is shown in the unit that reads most naturally.",
+    "de": "Mengen derselben Zutat werden umgerechnet, damit sie sich addieren lassen: Milliliter, Liter, Teelöffel, Esslöffel und Tassen sind Volumen, Gramm und Kilogramm sind Gewichte. Kennt die Zutat ihre Dichte, lassen sich auch Gewicht und Volumen addieren. Stückangaben wie Zehen oder Stück addieren sich nur mit derselben Einheit. Das Ergebnis erscheint in der Einheit, die sich am natürlichsten liest."
+   },
+   "keywords": {
+    "en": [
+     "units",
+     "convert",
+     "tablespoon",
+     "ml",
+     "grams",
+     "cups"
+    ],
+    "de": [
+     "Einheiten",
+     "umrechnen",
+     "Esslöffel",
+     "ml",
+     "Gramm",
+     "Tassen"
+    ]
+   },
+   "related": [
+    "shopping-list"
+   ]
+  },
+  {
+   "id": "insights",
+   "category": "planning",
+   "question": {
+    "en": "What do the shopping insights measure?",
+    "de": "Was messen die Einkaufseinblicke?"
+   },
+   "answer": {
+    "en": "Insights count what you put on your shopping list. The variety score is the number of different ingredients you have ever added. The top list shows which ingredients you add most often, and the month view groups additions by calendar month so you can see your seasons. Everything is calculated on your phone.",
+    "de": "Die Einblicke zählen, was du auf deine Einkaufsliste setzt. Der Vielfaltswert ist die Anzahl verschiedener Zutaten, die du je hinzugefügt hast. Die Topliste zeigt, welche Zutaten du am häufigsten hinzufügst, und die Monatsansicht gruppiert Einträge nach Kalendermonat, damit du deine Jahreszeiten siehst. Alles wird auf deinem Handy berechnet."
+   },
+   "keywords": {
+    "en": [
+     "insights",
+     "variety",
+     "statistics",
+     "season",
+     "top ingredients"
+    ],
+    "de": [
+     "Einblicke",
+     "Vielfalt",
+     "Statistik",
+     "Saison",
+     "Lieblingszutaten"
+    ]
+   },
+   "related": [
+    "shopping-list"
+   ]
+  },
+  {
+   "id": "backup-restore",
+   "category": "data",
+   "question": {
+    "en": "How do I back up and restore my data?",
+    "de": "Wie sichere ich meine Daten und stelle sie wieder her?"
+   },
+   "answer": {
+    "en": "Open Settings, then backup and restore, and choose export. MorphCook creates two files and opens your phone’s share sheet: a readable morphcook-backup.json and a compressed morphcook-backup.json.gz, often 70 to 90 percent smaller. Save whichever you prefer. To restore, choose the file; encryption and compression are detected automatically. Merge adds what is missing and never overwrites, replace makes the phone match the backup.",
+    "de": "Öffne die Einstellungen, dann Sicherung und Wiederherstellung, und wähle Exportieren. MorphCook erzeugt zwei Dateien und öffnet das Teilen-Menü deines Telefons: eine lesbare morphcook-backup.json und eine komprimierte morphcook-backup.json.gz, oft 70 bis 90 Prozent kleiner. Speichere, welche dir lieber ist. Zum Wiederherstellen wähle die Datei; Verschlüsselung und Komprimierung werden automatisch erkannt. Zusammenführen ergänzt, was fehlt, und überschreibt nichts, Ersetzen macht das Telefon zum Abbild der Sicherung."
+   },
+   "keywords": {
+    "en": [
+     "backup",
+     "restore",
+     "export",
+     "import",
+     "json",
+     "gz",
+     "share sheet"
+    ],
+    "de": [
+     "Sicherung",
+     "Wiederherstellung",
+     "Export",
+     "Import",
+     "json",
+     "gz",
+     "Teilen"
+    ]
+   },
+   "related": [
+    "backup-password",
+    "import-failed",
+    "privacy"
+   ]
+  },
+  {
+   "id": "backup-password",
+   "category": "data",
+   "question": {
+    "en": "Should I use a backup password, and what if I forget it?",
+    "de": "Sollte ich ein Sicherungspasswort nutzen, und was, wenn ich es vergesse?"
+   },
+   "answer": {
+    "en": "A password encrypts the .json file with AES-256, which protects your dietary preferences and plans if the file is shared. The password cannot be recovered: nobody, including us, can open the encrypted file without it. The .gz file always stays unencrypted so any tool can read it; keep it as private as you would the .json file. If you forget the password, the .gz copy of the same export still restores everything.",
+    "de": "Ein Passwort verschlüsselt die .json-Datei mit AES-256 und schützt deine Ernährungsvorlieben und Pläne, falls die Datei weitergegeben wird. Das Passwort lässt sich nicht wiederherstellen: niemand, auch wir nicht, kann die verschlüsselte Datei ohne es öffnen. Die .gz-Datei bleibt immer unverschlüsselt, damit jedes Werkzeug sie lesen kann; behandle sie so privat wie die .json-Datei. Vergisst du das Passwort, stellt die .gz-Kopie desselben Exports trotzdem alles wieder her."
+   },
+   "keywords": {
+    "en": [
+     "password",
+     "encrypt",
+     "aes",
+     "forgot",
+     "secure"
+    ],
+    "de": [
+     "Passwort",
+     "verschlüsseln",
+     "AES",
+     "vergessen",
+     "sicher"
+    ]
+   },
+   "related": [
+    "backup-restore",
+    "import-failed"
+   ]
+  },
+  {
+   "id": "privacy",
+   "category": "data",
+   "question": {
+    "en": "Does MorphCook send my data anywhere?",
+    "de": "Sendet MorphCook meine Daten irgendwohin?"
+   },
+   "answer": {
+    "en": "Your profile, cookbook, plan, history and lists stay on this phone. Everything stays local. There is no account to create, nothing syncs to a cloud, and the app makes no network calls while you use it. The recipes were written ahead of time and ship inside the app. The only way data leaves is a backup file that you choose to share yourself.",
+    "de": "Dein Profil, Kochbuch, Plan, Verlauf und deine Listen bleiben auf diesem Handy. Alles bleibt lokal. Es gibt kein Konto anzulegen, nichts wird in eine Cloud synchronisiert, und die App macht während der Nutzung keine Netzwerkaufrufe. Die Rezepte wurden vorab geschrieben und stecken in der App. Daten verlassen das Handy nur über eine Sicherungsdatei, die du selbst teilst."
+   },
+   "keywords": {
+    "en": [
+     "privacy",
+     "tracking",
+     "cloud",
+     "account",
+     "offline",
+     "data"
+    ],
+    "de": [
+     "Datenschutz",
+     "Tracking",
+     "Cloud",
+     "Konto",
+     "offline",
+     "Daten"
+    ]
+   },
+   "related": [
+    "backup-restore",
+    "delete-data"
+   ]
+  },
+  {
+   "id": "wish-list",
+   "category": "data",
+   "question": {
+    "en": "What are the searches noted for the wish list?",
+    "de": "Was sind die für die Wunschliste notierten Suchen?"
+   },
+   "answer": {
+    "en": "When a search finds nothing, MorphCook keeps the words on your phone so the people who write the recipes can see which dishes are missing. The list is never sent by the app. It travels only inside a backup file, if you share one, and you can clear it any time by deleting your data.",
+    "de": "Wenn eine Suche nichts findet, behält MorphCook die Worte auf deinem Handy, damit die Menschen, die die Rezepte schreiben, sehen können, welche Gerichte fehlen. Die Liste wird von der App nie gesendet. Sie reist nur in einer Sicherungsdatei mit, falls du eine teilst, und du kannst sie jederzeit löschen, indem du deine Daten löschst."
+   },
+   "keywords": {
+    "en": [
+     "wish list",
+     "search",
+     "missing dish",
+     "content request"
+    ],
+    "de": [
+     "Wunschliste",
+     "Suche",
+     "fehlendes Gericht",
+     "Wunsch"
+    ]
+   },
+   "related": [
+    "recipe-visibility",
+    "backup-restore"
+   ]
+  },
+  {
+   "id": "delete-data",
+   "category": "data",
+   "question": {
+    "en": "How do I delete everything?",
+    "de": "Wie lösche ich alles?"
+   },
+   "answer": {
+    "en": "Settings, at the bottom: “delete all my data”. It removes your profile, cookbook, plan, history, lists and insights from this phone, and the app starts over with the welcome screens. Export a backup first if you might want it back.",
+    "de": "Einstellungen, ganz unten: „alle meine Daten löschen“. Das entfernt Profil, Kochbuch, Plan, Verlauf, Listen und Einblicke von diesem Handy, und die App beginnt wieder mit den Willkommensseiten. Exportiere vorher eine Sicherung, falls du sie zurückhaben könntest."
+   },
+   "keywords": {
+    "en": [
+     "delete",
+     "reset",
+     "erase",
+     "start over"
+    ],
+    "de": [
+     "löschen",
+     "zurücksetzen",
+     "neu anfangen"
+    ]
+   },
+   "related": [
+    "backup-restore",
+    "privacy"
+   ]
+  },
+  {
+   "id": "timer-silent",
+   "category": "trouble",
+   "question": {
+    "en": "My timer did not make a sound.",
+    "de": "Mein Timer hat keinen Ton gemacht."
+   },
+   "answer": {
+    "en": "Check that timer sound is on under Settings, cook mode, and that your phone is not on silent. The chime plays through the media volume on some phones. The vibration and the visual flash work without sound; if you want the flash as well, switch it on in the same place.",
+    "de": "Prüfe, ob der Timerton in den Einstellungen unter Kochmodus aktiviert ist und dein Telefon nicht stumm geschaltet ist. Auf manchen Telefonen läuft der Ton über die Medienlautstärke. Vibration und visuelles Blinken funktionieren ohne Ton; wenn du das Blinken auch möchtest, aktiviere es an derselben Stelle."
+   },
+   "keywords": {
+    "en": [
+     "sound",
+     "silent",
+     "volume",
+     "timer",
+     "no alarm"
+    ],
+    "de": [
+     "Ton",
+     "stumm",
+     "Lautstärke",
+     "Timer",
+     "kein Alarm"
+    ]
+   },
+   "related": [
+    "timers",
+    "visual-alert"
+   ]
+  },
+  {
+   "id": "screen-sleeps",
+   "category": "trouble",
+   "question": {
+    "en": "The screen turns off while I cook.",
+    "de": "Der Bildschirm geht beim Kochen aus."
+   },
+   "answer": {
+    "en": "Cook mode asks your phone to keep the screen awake. Battery saver modes or a strict screen timeout on some phones can override that. Turn off battery saver while cooking, or raise the screen timeout in your phone’s settings. Your place and your timers are saved either way, so opening the app again picks up where you were.",
+    "de": "Der Kochmodus bittet dein Telefon, den Bildschirm anzulassen. Energiesparmodi oder ein strenges Zeitlimit können das auf manchen Telefonen überstimmen. Schalte den Energiesparmodus beim Kochen aus oder erhöhe das Bildschirm-Zeitlimit in den Telefoneinstellungen. Dein Stand und deine Timer sind in jedem Fall gespeichert, beim erneuten Öffnen geht es dort weiter, wo du warst."
+   },
+   "keywords": {
+    "en": [
+     "screen",
+     "sleep",
+     "lock",
+     "timeout",
+     "battery"
+    ],
+    "de": [
+     "Bildschirm",
+     "Ruhezustand",
+     "sperren",
+     "Zeitlimit",
+     "Akku"
+    ]
+   },
+   "related": [
+    "cook-mode"
+   ]
+  },
+  {
+   "id": "import-failed",
+   "category": "trouble",
+   "question": {
+    "en": "My backup will not import.",
+    "de": "Meine Sicherung lässt sich nicht importieren."
+   },
+   "answer": {
+    "en": "Three messages cover almost every case. “Incorrect password” means the password does not match; try again, exactly as you typed it at export. “Backup file is corrupted” means the file was cut short or changed on the way, so export again or use the .gz copy. “This file is not a valid MorphCook backup” means the file is something else. A backup from a newer app version asks you to update first.",
+    "de": "Drei Meldungen decken fast jeden Fall ab. „Falsches Passwort“ heißt, das Passwort passt nicht; versuche es genau so, wie du es beim Export getippt hast. „Die Sicherungsdatei ist beschädigt“ heißt, die Datei wurde unterwegs abgeschnitten oder verändert, exportiere neu oder nutze die .gz-Kopie. „Diese Datei ist keine gültige MorphCook-Sicherung“ heißt, die Datei ist etwas anderes. Eine Sicherung aus einer neueren App-Version verlangt vorher ein Update."
+   },
+   "keywords": {
+    "en": [
+     "import",
+     "error",
+     "corrupted",
+     "wrong password",
+     "invalid"
+    ],
+    "de": [
+     "Import",
+     "Fehler",
+     "beschädigt",
+     "falsches Passwort",
+     "ungültig"
+    ]
+   },
+   "related": [
+    "backup-restore",
+    "backup-password"
+   ]
+  },
+  {
+   "id": "language",
+   "category": "trouble",
+   "question": {
+    "en": "How do I change the language?",
+    "de": "Wie ändere ich die Sprache?"
+   },
+   "answer": {
+    "en": "Settings, “you”, then choose English or Deutsch. The whole app, every recipe and every note switch at once. The recipes are written in both languages, so nothing is machine-translated on the fly.",
+    "de": "Einstellungen, „du“, dann English oder Deutsch wählen. Die ganze App, jedes Rezept und jede Notiz wechseln sofort. Die Rezepte sind in beiden Sprachen geschrieben, es wird also nichts spontan maschinell übersetzt."
+   },
+   "keywords": {
+    "en": [
+     "language",
+     "german",
+     "english",
+     "deutsch",
+     "translate"
+    ],
+    "de": [
+     "Sprache",
+     "Deutsch",
+     "Englisch",
+     "übersetzen"
+    ]
+   },
+   "related": [
+    "privacy"
+   ]
+  },
+  {
+   "id": "nothing-found",
+   "category": "trouble",
+   "question": {
+    "en": "I cannot find a dish I know exists.",
+    "de": "Ich finde ein Gericht nicht, von dem ich weiß, dass es das gibt."
+   },
+   "answer": {
+    "en": "Search finds dishes by name, ingredient, cuisine and mood, in both languages, and ignores accents, so döner and doener both work. If nothing shows up, a filter of your profile may be hiding it, or the dish is not in this release yet. Try the same word without filters, check the profile filters in Settings and know that your search is noted for the wish list.",
+    "de": "Die Suche findet Gerichte nach Name, Zutat, Küche und Stimmung in beiden Sprachen und ignoriert Akzente, sodass döner und doener beide funktionieren. Wenn nichts erscheint, blendet vielleicht ein Filter deines Profils es aus, oder das Gericht ist in dieser Version noch nicht enthalten. Probiere dasselbe Wort ohne Filter, prüfe die Profilfilter in den Einstellungen und wisse, dass deine Suche für die Wunschliste notiert wird."
+   },
+   "keywords": {
+    "en": [
+     "search",
+     "not found",
+     "missing",
+     "spelling",
+     "accent"
+    ],
+    "de": [
+     "Suche",
+     "nicht gefunden",
+     "fehlt",
+     "Schreibweise",
+     "Akzent"
+    ]
+   },
+   "related": [
+    "recipe-visibility",
+    "wish-list"
+   ]
+  }
+ ]
+}
