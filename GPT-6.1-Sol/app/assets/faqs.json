@@ -1,0 +1,194 @@
+[
+  {
+    "id": "matching",
+    "category": "diet",
+    "question": {
+      "en": "How does my cookbook match my diet?",
+      "de": "Wie passt mein Kochbuch zu meiner Ernährung?"
+    },
+    "answer": {
+      "en": "Every dish has complete separate recipes. Your diet, allergies, avoided ingredients, time budget and calorie range decide what appears. Avoiding an ingredient family excludes all its children.",
+      "de": "Jedes Gericht hat vollständige eigenständige Rezepte. Ernährung, Allergien, Zutatenvermeidung, Zeitbudget und Kalorienbereich bestimmen die Auswahl. Vermiedene Zutatenfamilien schließen alle Untergruppen aus."
+    }
+  },
+  {
+    "id": "visibility",
+    "category": "diet",
+    "question": {
+      "en": "Why can’t I see a recipe?",
+      "de": "Warum sehe ich ein Rezept nicht?"
+    },
+    "answer": {
+      "en": "It may contain an avoided ingredient, take too long or fall outside your calorie range. Review My kitchen in Settings. Other calorie levels on a dish relaxes only calories. Saved recipes remain saved and show a compatibility note after profile changes.",
+      "de": "Es kann eine vermiedene Zutat enthalten, zu lange dauern oder außerhalb des Kalorienbereichs liegen. Prüfe Meine Küche in Einstellungen. Andere Kalorienbereiche lockert nur Kalorien. Gespeicherte Rezepte bleiben mit Kompatibilitätshinweis erhalten."
+    }
+  },
+  {
+    "id": "variants",
+    "category": "recipes",
+    "question": {
+      "en": "How do recipe choices work?",
+      "de": "Wie funktionieren die Rezeptauswahlen?"
+    },
+    "answer": {
+      "en": "Tap a row for diet, effort or appetite. Each choice opens a complete recipe. Unavailable combinations stay visible with a note. Saving keeps your exact selected recipe.",
+      "de": "Tippe auf eine Zeile für Ernährung, Aufwand oder Appetit. Jede Auswahl öffnet ein vollständiges Rezept. Fehlende Kombinationen bleiben mit Hinweis sichtbar. Speichern behält das genaue ausgewählte Rezept."
+    }
+  },
+  {
+    "id": "halal",
+    "category": "diet",
+    "question": {
+      "en": "Are these halal- or kosher-certified?",
+      "de": "Sind die Rezepte halal- oder koscher-zertifiziert?"
+    },
+    "answer": {
+      "en": "We describe halal-compatible or kosher-compatible ingredients. Certification depends on sourcing, slaughter and supervision. Choose appropriately sourced products and follow your requirements; recipe text cannot certify a meal.",
+      "de": "Wir beschreiben halal- oder koscher-kompatible Zutaten. Zertifizierung hängt von Herkunft, Schlachtung und Aufsicht ab. Wähle entsprechend bezogene Produkte und beachte deine Anforderungen; Rezepttext kann kein Gericht zertifizieren."
+    }
+  },
+  {
+    "id": "shopping",
+    "category": "shopping",
+    "question": {
+      "en": "How are shopping quantities combined?",
+      "de": "Wie werden Einkaufsmengen kombiniert?"
+    },
+    "answer": {
+      "en": "Matching ingredients combine: 2 garlic cloves plus 3 become 5. Compatible liquids convert teaspoons and tablespoons to 5 ml and 15 ml. Grams and millilitres stay separate. Serving counts apply first; items group by aisle.",
+      "de": "Gleiche Zutaten werden addiert: 2 und 3 Knoblauchzehen ergeben 5. Flüssigkeiten rechnen TL und EL zu 5 ml und 15 ml um. Gramm und Milliliter bleiben getrennt. Portionen gelten zuerst; alles wird nach Bereichen gruppiert."
+    }
+  },
+  {
+    "id": "planning",
+    "category": "planning",
+    "question": {
+      "en": "How do I plan the week?",
+      "de": "Wie plane ich die Woche?"
+    },
+    "answer": {
+      "en": "Tap a slot, choose a saved recipe or search. Hold and drag a filled slot to move it; two filled slots swap. The shopping button adds the week at your chosen servings. Adding it again adds those quantities again.",
+      "de": "Platz antippen und gespeichertes Rezept wählen oder suchen. Halten und ziehen verschiebt gefüllte Plätze; zwei gefüllte Plätze tauschen. Der Einkaufsbutton fügt die Woche mit gewählten Portionen hinzu. Erneutes Hinzufügen addiert erneut."
+    }
+  },
+  {
+    "id": "backup",
+    "category": "backup",
+    "question": {
+      "en": "Where do my backups go?",
+      "de": "Wohin gehen Backups?"
+    },
+    "answer": {
+      "en": "Export opens the OS share sheet with JSON and GZip files. You choose where to save. A password encrypts JSON using AES-256-GCM. GZip always stays unencrypted; choose the encrypted file for private data. Nothing is uploaded.",
+      "de": "Export öffnet das Teilen-Menü mit JSON und GZip. Du wählst den Speicherort. Ein Passwort verschlüsselt JSON mit AES-256-GCM. GZip bleibt unverschlüsselt; für private Daten die verschlüsselte Datei wählen. Nichts wird hochgeladen."
+    }
+  },
+  {
+    "id": "restore",
+    "category": "backup",
+    "question": {
+      "en": "Can I merge a backup?",
+      "de": "Kann ich ein Backup zusammenführen?"
+    },
+    "answer": {
+      "en": "Merge keeps your profile, unions saved recipes and deduplicates history. Current meal slots win conflicts. Identical shopping lines use the larger quantity. Replace restores everything from the backup. Validation happens before changes.",
+      "de": "Zusammenführen behält dein Profil, vereint gespeicherte Rezepte und dedupliziert Verlauf. Aktuelle Essensplätze haben Vorrang. Gleiche Einkaufszeilen nutzen die größere Menge. Ersetzen übernimmt das Backup. Vor Änderungen wird geprüft."
+    }
+  },
+  {
+    "id": "timer",
+    "category": "cooking",
+    "question": {
+      "en": "What if I leave cook mode?",
+      "de": "Was passiert beim Verlassen des Kochmodus?"
+    },
+    "answer": {
+      "en": "Pause & save pauses the timer and keeps your place. Continue cooking appears on Home. A running timer uses a deadline so background time is retained; completed timer alerts appear when you return.",
+      "de": "Pause & speichern hält den Timer an und behält den Fortschritt. Weiterkochen erscheint auf der Startseite. Laufende Timer nutzen einen Endzeitpunkt und behalten Hintergrundzeit; Hinweise erscheinen bei Rückkehr."
+    }
+  },
+  {
+    "id": "accessibility",
+    "category": "cooking",
+    "question": {
+      "en": "Can I cook one-handed or without sound?",
+      "de": "Kann ich einhändig oder ohne Ton kochen?"
+    },
+    "answer": {
+      "en": "Enable Tap the step to continue in Settings. Taps have a 300 ms debounce. Visual timer alerts are on by default. Reduced motion uses a steady alert and disables gesture haptics.",
+      "de": "Schritt antippen zum Weitergehen in Einstellungen aktivieren. Zwischen Tipps liegen mindestens 300 ms. Visuelle Timerhinweise sind an. Reduzierte Bewegung nutzt ruhige Hinweise und deaktiviert Gesten-Haptik."
+    }
+  },
+  {
+    "id": "offline",
+    "category": "help",
+    "question": {
+      "en": "Does this need internet?",
+      "de": "Braucht die App Internet?"
+    },
+    "answer": {
+      "en": "Recipes, search, planning, shopping, fonts and help work offline. New collections arrive with app-store updates. There are no accounts, cloud services, telemetry or live AI.",
+      "de": "Rezepte, Suche, Planung, Einkauf, Schriften und Hilfe funktionieren offline. Neue Sammlungen kommen mit App-Store-Updates. Es gibt keine Konten, Cloud, Telemetrie oder Live-KI."
+    }
+  },
+  {
+    "id": "calories",
+    "category": "diet",
+    "question": {
+      "en": "How does the calorie range work?",
+      "de": "Wie funktioniert der Kalorienbereich?"
+    },
+    "answer": {
+      "en": "Your target and tolerance form a hard per-meal range. Nutrition is estimated per serving from ingredients; brands and preparation vary. Other calorie levels on a dish shows recipes outside the range without changing your profile.",
+      "de": "Ziel und Toleranz bilden einen festen Bereich pro Mahlzeit. Nährwerte sind Schätzungen pro Portion anhand der Zutaten; Marken und Zubereitung variieren. Andere Kalorienbereiche zeigt Rezepte außerhalb, ohne dein Profil zu ändern."
+    }
+  },
+  {
+    "id": "time",
+    "category": "recipes",
+    "question": {
+      "en": "Does recipe time include chilling?",
+      "de": "Enthält die Zeitangabe Kühlzeiten?"
+    },
+    "answer": {
+      "en": "Times estimate active preparation and cooking. Extra resting or overnight chilling is clearly stated in the method. Plan ahead for overnight oats.",
+      "de": "Zeitangaben schätzen aktive Zubereitung und Garen. Zusätzliche Ruhe- oder Kühlzeit steht klar in der Methode. Overnight Oats rechtzeitig vorbereiten."
+    }
+  },
+  {
+    "id": "insights",
+    "category": "shopping",
+    "question": {
+      "en": "What do Shopping Insights count?",
+      "de": "Was zählt die Einkaufsübersicht?"
+    },
+    "answer": {
+      "en": "Variety counts unique ingredients ever added. Frequency counts recipe and manual additions. Monthly groups show when you added ingredients, not their natural harvest season. History stays on your device and in backups.",
+      "de": "Vielfalt zählt jemals hinzugefügte verschiedene Zutaten. Häufigkeit zählt Rezept- und manuelle Hinzufügungen. Monatsgruppen zeigen Einkaufszeiten, nicht Erntesaison. Verlauf bleibt auf Gerät und in Backups."
+    }
+  },
+  {
+    "id": "missing",
+    "category": "help",
+    "question": {
+      "en": "What if my dish is missing?",
+      "de": "Was, wenn mein Wunschgericht fehlt?"
+    },
+    "answer": {
+      "en": "Searches without results become local recipe wishes. Review or delete them in Settings, or export in a backup to share with the recipe team. Nothing is sent automatically. Try a shorter search or fewer tags first.",
+      "de": "Suchen ohne Ergebnis werden lokale Rezeptwünsche. In Einstellungen ansehen oder löschen, oder im Backup mit dem Rezeptteam teilen. Nichts wird automatisch gesendet. Zuerst kürzer suchen oder weniger Tags nutzen."
+    }
+  },
+  {
+    "id": "allergens",
+    "category": "diet",
+    "question": {
+      "en": "Can I avoid a whole ingredient family?",
+      "de": "Kann ich eine Zutatenfamilie vermeiden?"
+    },
+    "answer": {
+      "en": "Yes. Search for dairy, nuts or vegetables in your profile. Avoiding a parent excludes all descendants. Package labels and cross-contact depend on your purchased ingredients.",
+      "de": "Ja. Im Profil nach Milchprodukten, Nüssen oder Gemüse suchen. Übergeordnete Einträge schließen Untergruppen aus. Verpackungsangaben und Kreuzkontakt hängen von gekauften Zutaten ab."
+    }
+  }
+]

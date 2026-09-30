@@ -1,0 +1,2040 @@
+[
+  {
+    "id": "dairy",
+    "name": {
+      "en": "All dairy",
+      "de": "Alle Milchprodukte"
+    },
+    "parent": null,
+    "flags": [
+      "dairy"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "cow-milk",
+    "name": {
+      "en": "Cow's milk",
+      "de": "Kuhmilch"
+    },
+    "parent": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "whole-milk",
+    "name": {
+      "en": "Whole milk",
+      "de": "Vollmilch"
+    },
+    "parent": "cow-milk",
+    "flags": [],
+    "aisle": "dairy",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3.4,
+      "carbs": 4.8,
+      "fat": 3.6
+    }
+  },
+  {
+    "id": "skim-milk",
+    "name": {
+      "en": "Skim milk",
+      "de": "Magermilch"
+    },
+    "parent": "cow-milk",
+    "flags": [],
+    "aisle": "dairy",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3.4,
+      "carbs": 5,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "goat-milk",
+    "name": {
+      "en": "Goat's milk",
+      "de": "Ziegenmilch"
+    },
+    "parent": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3.6,
+      "carbs": 4.5,
+      "fat": 4.1
+    }
+  },
+  {
+    "id": "cheese",
+    "name": {
+      "en": "Cheese",
+      "de": "Käse"
+    },
+    "parent": "dairy",
+    "flags": [],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "parmesan",
+    "name": {
+      "en": "Parmesan",
+      "de": "Parmesan"
+    },
+    "parent": "cheese",
+    "flags": [],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 35,
+      "carbs": 0,
+      "fat": 28
+    }
+  },
+  {
+    "id": "feta",
+    "name": {
+      "en": "Feta",
+      "de": "Feta"
+    },
+    "parent": "cheese",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 14,
+      "carbs": 4,
+      "fat": 21
+    }
+  },
+  {
+    "id": "cream",
+    "name": {
+      "en": "Cream",
+      "de": "Sahne"
+    },
+    "parent": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2.2,
+      "carbs": 3,
+      "fat": 30
+    }
+  },
+  {
+    "id": "yogurt",
+    "name": {
+      "en": "Plain yogurt",
+      "de": "Naturjoghurt"
+    },
+    "parent": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 4,
+      "carbs": 4.7,
+      "fat": 3
+    }
+  },
+  {
+    "id": "butter",
+    "name": {
+      "en": "Butter",
+      "de": "Butter"
+    },
+    "parent": "dairy",
+    "flags": [
+      "lactose"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 0.5,
+      "fat": 82
+    }
+  },
+  {
+    "id": "nuts",
+    "name": {
+      "en": "All nuts",
+      "de": "Alle Nüsse"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "tree-nuts",
+    "name": {
+      "en": "Tree nuts",
+      "de": "Schalenfrüchte"
+    },
+    "parent": "nuts",
+    "flags": [
+      "tree-nuts"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "walnuts",
+    "name": {
+      "en": "Walnuts",
+      "de": "Walnüsse"
+    },
+    "parent": "tree-nuts",
+    "flags": [
+      "walnuts"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 15,
+      "carbs": 14,
+      "fat": 65
+    }
+  },
+  {
+    "id": "almonds",
+    "name": {
+      "en": "Almonds",
+      "de": "Mandeln"
+    },
+    "parent": "tree-nuts",
+    "flags": [
+      "almonds"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 21,
+      "carbs": 22,
+      "fat": 50
+    }
+  },
+  {
+    "id": "pistachios",
+    "name": {
+      "en": "Pistachios",
+      "de": "Pistazien"
+    },
+    "parent": "tree-nuts",
+    "flags": [
+      "pistachios"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 20,
+      "carbs": 28,
+      "fat": 45
+    }
+  },
+  {
+    "id": "cashews",
+    "name": {
+      "en": "Cashews",
+      "de": "Cashews"
+    },
+    "parent": "tree-nuts",
+    "flags": [
+      "cashews"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 18,
+      "carbs": 30,
+      "fat": 44
+    }
+  },
+  {
+    "id": "hazelnuts",
+    "name": {
+      "en": "Hazelnuts",
+      "de": "Haselnüsse"
+    },
+    "parent": "tree-nuts",
+    "flags": [
+      "hazelnuts"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 15,
+      "carbs": 17,
+      "fat": 61
+    }
+  },
+  {
+    "id": "peanuts",
+    "name": {
+      "en": "Peanuts",
+      "de": "Erdnüsse"
+    },
+    "parent": "nuts",
+    "flags": [
+      "peanuts"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 26,
+      "carbs": 16,
+      "fat": 49
+    }
+  },
+  {
+    "id": "peanut-butter",
+    "name": {
+      "en": "Peanut butter",
+      "de": "Erdnussmus"
+    },
+    "parent": "peanuts",
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 25,
+      "carbs": 20,
+      "fat": 50
+    }
+  },
+  {
+    "id": "meat",
+    "name": {
+      "en": "Meat",
+      "de": "Fleisch"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "chicken",
+    "name": {
+      "en": "Chicken breast",
+      "de": "Hähnchenbrust"
+    },
+    "parent": "meat",
+    "flags": [
+      "poultry"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 23,
+      "carbs": 0,
+      "fat": 2.5
+    }
+  },
+  {
+    "id": "beef",
+    "name": {
+      "en": "Minced beef",
+      "de": "Rinderhack"
+    },
+    "parent": "meat",
+    "flags": [
+      "beef"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 20,
+      "carbs": 0,
+      "fat": 15
+    }
+  },
+  {
+    "id": "pork",
+    "name": {
+      "en": "Pork",
+      "de": "Schweinefleisch"
+    },
+    "parent": "meat",
+    "flags": [
+      "pork"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 20,
+      "carbs": 0,
+      "fat": 15
+    }
+  },
+  {
+    "id": "lamb",
+    "name": {
+      "en": "Lamb",
+      "de": "Lamm"
+    },
+    "parent": "meat",
+    "flags": [
+      "lamb"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 20,
+      "carbs": 0,
+      "fat": 20
+    }
+  },
+  {
+    "id": "fish",
+    "name": {
+      "en": "All fish",
+      "de": "Alle Fische"
+    },
+    "parent": null,
+    "flags": [
+      "fish"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "salmon",
+    "name": {
+      "en": "Salmon",
+      "de": "Lachs"
+    },
+    "parent": "fish",
+    "flags": [],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 20,
+      "carbs": 0,
+      "fat": 13
+    }
+  },
+  {
+    "id": "shellfish",
+    "name": {
+      "en": "All shellfish",
+      "de": "Alle Krebstiere"
+    },
+    "parent": null,
+    "flags": [
+      "shellfish"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "shrimp",
+    "name": {
+      "en": "Shrimp",
+      "de": "Garnelen"
+    },
+    "parent": "shellfish",
+    "flags": [],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 24,
+      "carbs": 0,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "molluscs",
+    "name": {
+      "en": "Molluscs",
+      "de": "Weichtiere"
+    },
+    "parent": null,
+    "flags": [
+      "molluscs"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "egg",
+    "name": {
+      "en": "Eggs",
+      "de": "Eier"
+    },
+    "parent": null,
+    "flags": [
+      "egg"
+    ],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 50,
+    "nutrition_per_100g": {
+      "protein": 13,
+      "carbs": 1,
+      "fat": 11
+    }
+  },
+  {
+    "id": "tofu",
+    "name": {
+      "en": "Firm tofu",
+      "de": "Fester Tofu"
+    },
+    "parent": null,
+    "flags": [
+      "soy"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 15,
+      "carbs": 2,
+      "fat": 8
+    }
+  },
+  {
+    "id": "chickpeas",
+    "name": {
+      "en": "Cooked chickpeas",
+      "de": "Gekochte Kichererbsen"
+    },
+    "parent": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 8.9,
+      "carbs": 27,
+      "fat": 2.6
+    }
+  },
+  {
+    "id": "lentils",
+    "name": {
+      "en": "Red lentils (dry)",
+      "de": "Rote Linsen (trocken)"
+    },
+    "parent": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 24,
+      "carbs": 60,
+      "fat": 1.5
+    }
+  },
+  {
+    "id": "black-beans",
+    "name": {
+      "en": "Cooked black beans",
+      "de": "Gekochte schwarze Bohnen"
+    },
+    "parent": null,
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 9,
+      "carbs": 24,
+      "fat": 0.5
+    }
+  },
+  {
+    "id": "seitan",
+    "name": {
+      "en": "Seitan",
+      "de": "Seitan"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "protein",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 25,
+      "carbs": 12,
+      "fat": 2
+    }
+  },
+  {
+    "id": "flour",
+    "name": {
+      "en": "Wheat flour",
+      "de": "Weizenmehl"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 10,
+      "carbs": 76,
+      "fat": 1
+    }
+  },
+  {
+    "id": "rice-flour",
+    "name": {
+      "en": "Rice flour",
+      "de": "Reismehl"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 6,
+      "carbs": 80,
+      "fat": 1
+    }
+  },
+  {
+    "id": "pasta",
+    "name": {
+      "en": "Wheat pasta (dry)",
+      "de": "Weizenpasta (trocken)"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 13,
+      "carbs": 72,
+      "fat": 1.5
+    }
+  },
+  {
+    "id": "gf-pasta",
+    "name": {
+      "en": "Gluten-free pasta (dry)",
+      "de": "Glutenfreie Pasta (trocken)"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 7,
+      "carbs": 79,
+      "fat": 1
+    }
+  },
+  {
+    "id": "rice-noodles",
+    "name": {
+      "en": "Rice noodles (dry)",
+      "de": "Reisnudeln (trocken)"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 6,
+      "carbs": 80,
+      "fat": 1
+    }
+  },
+  {
+    "id": "ramen-noodles",
+    "name": {
+      "en": "Wheat ramen noodles (dry)",
+      "de": "Weizen-Ramen (trocken)"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 12,
+      "carbs": 70,
+      "fat": 2
+    }
+  },
+  {
+    "id": "white-rice",
+    "name": {
+      "en": "White rice (dry)",
+      "de": "Weißer Reis (trocken)"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 7,
+      "carbs": 80,
+      "fat": 1
+    }
+  },
+  {
+    "id": "risotto-rice",
+    "name": {
+      "en": "Arborio rice (dry)",
+      "de": "Arborio-Reis (trocken)"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 7,
+      "carbs": 79,
+      "fat": 1
+    }
+  },
+  {
+    "id": "quinoa",
+    "name": {
+      "en": "Quinoa (dry)",
+      "de": "Quinoa (trocken)"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 14,
+      "carbs": 64,
+      "fat": 6
+    }
+  },
+  {
+    "id": "oats",
+    "name": {
+      "en": "Certified gluten-free oats",
+      "de": "Zertifizierte glutenfreie Haferflocken"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 13,
+      "carbs": 67,
+      "fat": 7
+    }
+  },
+  {
+    "id": "bread",
+    "name": {
+      "en": "Sourdough bread",
+      "de": "Sauerteigbrot"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "bakery",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 9,
+      "carbs": 49,
+      "fat": 2
+    }
+  },
+  {
+    "id": "pita",
+    "name": {
+      "en": "Pita bread",
+      "de": "Pitafladen"
+    },
+    "parent": null,
+    "flags": [
+      "gluten"
+    ],
+    "aisle": "bakery",
+    "volume_compatible": false,
+    "grams_per_unit": 80,
+    "nutrition_per_100g": {
+      "protein": 9,
+      "carbs": 55,
+      "fat": 1.2
+    }
+  },
+  {
+    "id": "corn-tortillas",
+    "name": {
+      "en": "Pure corn tortillas",
+      "de": "Reine Maistortillas"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "bakery",
+    "volume_compatible": false,
+    "grams_per_unit": 25,
+    "nutrition_per_100g": {
+      "protein": 6,
+      "carbs": 45,
+      "fat": 3
+    }
+  },
+  {
+    "id": "vegetables",
+    "name": {
+      "en": "All vegetables",
+      "de": "Alle Gemüse"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "tomato",
+    "name": {
+      "en": "Tomatoes",
+      "de": "Tomaten"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 120,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 4,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "cucumber",
+    "name": {
+      "en": "Cucumber",
+      "de": "Gurke"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 250,
+    "nutrition_per_100g": {
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "lettuce",
+    "name": {
+      "en": "Lettuce",
+      "de": "Salat"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 100,
+    "nutrition_per_100g": {
+      "protein": 1.4,
+      "carbs": 3,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "onion",
+    "name": {
+      "en": "Onion",
+      "de": "Zwiebel"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 100,
+    "nutrition_per_100g": {
+      "protein": 1.1,
+      "carbs": 9,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "garlic",
+    "name": {
+      "en": "Garlic",
+      "de": "Knoblauch"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 3,
+    "nutrition_per_100g": {
+      "protein": 6,
+      "carbs": 33,
+      "fat": 0.5
+    }
+  },
+  {
+    "id": "carrot",
+    "name": {
+      "en": "Carrots",
+      "de": "Karotten"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 80,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "zucchini",
+    "name": {
+      "en": "Zucchini",
+      "de": "Zucchini"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 200,
+    "nutrition_per_100g": {
+      "protein": 1.2,
+      "carbs": 3,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "bell-peppers",
+    "name": {
+      "en": "Bell peppers",
+      "de": "Paprika"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 160,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "spinach",
+    "name": {
+      "en": "Spinach",
+      "de": "Spinat"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 4,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "mushrooms",
+    "name": {
+      "en": "Mushrooms",
+      "de": "Champignons"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 3,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "oyster-mushrooms",
+    "name": {
+      "en": "Oyster mushrooms",
+      "de": "Austernpilze"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 6,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "broccoli",
+    "name": {
+      "en": "Broccoli",
+      "de": "Brokkoli"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2.8,
+      "carbs": 7,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "cauliflower",
+    "name": {
+      "en": "Cauliflower",
+      "de": "Blumenkohl"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2,
+      "carbs": 5,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "sweet-potato",
+    "name": {
+      "en": "Sweet potato",
+      "de": "Süßkartoffel"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1.6,
+      "carbs": 20,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "potato",
+    "name": {
+      "en": "Potatoes",
+      "de": "Kartoffeln"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "cabbage",
+    "name": {
+      "en": "Red cabbage",
+      "de": "Rotkohl"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1.4,
+      "carbs": 7,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "spring-onion-greens",
+    "name": {
+      "en": "Spring onion greens",
+      "de": "Frühlingszwiebelgrün"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1.8,
+      "carbs": 7,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "bean-sprouts",
+    "name": {
+      "en": "Bean sprouts",
+      "de": "Mungobohnensprossen"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 6,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "peas",
+    "name": {
+      "en": "Peas",
+      "de": "Erbsen"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 5,
+      "carbs": 14,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "pumpkin",
+    "name": {
+      "en": "Pumpkin",
+      "de": "Kürbis"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 7,
+      "fat": 0.1
+    }
+  },
+  {
+    "id": "corn",
+    "name": {
+      "en": "Sweetcorn",
+      "de": "Mais"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 19,
+      "fat": 1
+    }
+  },
+  {
+    "id": "ginger",
+    "name": {
+      "en": "Fresh ginger",
+      "de": "Frischer Ingwer"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1.8,
+      "carbs": 18,
+      "fat": 0.8
+    }
+  },
+  {
+    "id": "cilantro",
+    "name": {
+      "en": "Cilantro",
+      "de": "Koriandergrün"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2,
+      "carbs": 4,
+      "fat": 0.5
+    }
+  },
+  {
+    "id": "basil",
+    "name": {
+      "en": "Fresh basil",
+      "de": "Frisches Basilikum"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 3,
+      "fat": 0.6
+    }
+  },
+  {
+    "id": "parsley",
+    "name": {
+      "en": "Fresh parsley",
+      "de": "Frische Petersilie"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 6,
+      "fat": 0.8
+    }
+  },
+  {
+    "id": "chives",
+    "name": {
+      "en": "Chives",
+      "de": "Schnittlauch"
+    },
+    "parent": "vegetables",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 4,
+      "fat": 0.7
+    }
+  },
+  {
+    "id": "celery",
+    "name": {
+      "en": "Celery",
+      "de": "Sellerie"
+    },
+    "parent": "vegetables",
+    "flags": [
+      "celery"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 3,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "fruit",
+    "name": {
+      "en": "All fruit",
+      "de": "Alle Früchte"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "apples",
+    "name": {
+      "en": "Apples",
+      "de": "Äpfel"
+    },
+    "parent": "fruit",
+    "flags": [
+      "high-fodmap"
+    ],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 180,
+    "nutrition_per_100g": {
+      "protein": 0.3,
+      "carbs": 14,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "banana",
+    "name": {
+      "en": "Banana",
+      "de": "Banane"
+    },
+    "parent": "fruit",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 120,
+    "nutrition_per_100g": {
+      "protein": 1.1,
+      "carbs": 23,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "berries",
+    "name": {
+      "en": "Berries",
+      "de": "Beeren"
+    },
+    "parent": "fruit",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "lemon",
+    "name": {
+      "en": "Lemon",
+      "de": "Zitrone"
+    },
+    "parent": "fruit",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 60,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 9,
+      "fat": 0.3
+    }
+  },
+  {
+    "id": "lime",
+    "name": {
+      "en": "Lime",
+      "de": "Limette"
+    },
+    "parent": "fruit",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 50,
+    "nutrition_per_100g": {
+      "protein": 0.7,
+      "carbs": 11,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "avocado",
+    "name": {
+      "en": "Avocado",
+      "de": "Avocado"
+    },
+    "parent": "fruit",
+    "flags": [],
+    "aisle": "produce",
+    "volume_compatible": false,
+    "grams_per_unit": 140,
+    "nutrition_per_100g": {
+      "protein": 2,
+      "carbs": 9,
+      "fat": 15
+    }
+  },
+  {
+    "id": "olive-oil",
+    "name": {
+      "en": "Olive oil",
+      "de": "Olivenöl"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 0.91,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100
+    }
+  },
+  {
+    "id": "sesame-oil",
+    "name": {
+      "en": "Sesame oil",
+      "de": "Sesamöl"
+    },
+    "parent": null,
+    "flags": [
+      "sesame"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 0.91,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100
+    }
+  },
+  {
+    "id": "coconut-milk",
+    "name": {
+      "en": "Coconut milk",
+      "de": "Kokosmilch"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 2,
+      "carbs": 3,
+      "fat": 18
+    }
+  },
+  {
+    "id": "oat-milk",
+    "name": {
+      "en": "Gluten-free oat milk",
+      "de": "Glutenfreier Haferdrink"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 7,
+      "fat": 1.5
+    }
+  },
+  {
+    "id": "coconut-yogurt",
+    "name": {
+      "en": "Unsweetened coconut yogurt",
+      "de": "Ungesüßter Kokosjoghurt"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "dairy",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1,
+      "carbs": 4,
+      "fat": 8
+    }
+  },
+  {
+    "id": "tahini",
+    "name": {
+      "en": "Tahini",
+      "de": "Tahini"
+    },
+    "parent": null,
+    "flags": [
+      "sesame"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 17,
+      "carbs": 21,
+      "fat": 54
+    }
+  },
+  {
+    "id": "miso",
+    "name": {
+      "en": "Gluten-free rice miso",
+      "de": "Glutenfreies Reis-Miso"
+    },
+    "parent": null,
+    "flags": [
+      "soy"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 12,
+      "carbs": 26,
+      "fat": 6
+    }
+  },
+  {
+    "id": "soy-sauce",
+    "name": {
+      "en": "Soy sauce",
+      "de": "Sojasauce"
+    },
+    "parent": null,
+    "flags": [
+      "soy",
+      "gluten"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 8,
+      "carbs": 5,
+      "fat": 0
+    }
+  },
+  {
+    "id": "tamari",
+    "name": {
+      "en": "Gluten-free tamari",
+      "de": "Glutenfreie Tamari"
+    },
+    "parent": null,
+    "flags": [
+      "soy"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 8,
+      "carbs": 5,
+      "fat": 0
+    }
+  },
+  {
+    "id": "fish-sauce",
+    "name": {
+      "en": "Fish sauce",
+      "de": "Fischsauce"
+    },
+    "parent": null,
+    "flags": [
+      "fish"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 5,
+      "carbs": 3,
+      "fat": 0
+    }
+  },
+  {
+    "id": "tamarind",
+    "name": {
+      "en": "Tamarind paste",
+      "de": "Tamarindenpaste"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 3,
+      "carbs": 50,
+      "fat": 0.5
+    }
+  },
+  {
+    "id": "tomato-passata",
+    "name": {
+      "en": "Tomato passata",
+      "de": "Passierte Tomaten"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 1.5,
+      "carbs": 5,
+      "fat": 0.2
+    }
+  },
+  {
+    "id": "vegetable-stock",
+    "name": {
+      "en": "Celery-free vegetable stock",
+      "de": "Selleriefreie Gemüsebrühe"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0.2,
+      "carbs": 0.5,
+      "fat": 0
+    }
+  },
+  {
+    "id": "nutritional-yeast",
+    "name": {
+      "en": "Nutritional yeast",
+      "de": "Hefeflocken"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 45,
+      "carbs": 35,
+      "fat": 5
+    }
+  },
+  {
+    "id": "maple-syrup",
+    "name": {
+      "en": "Maple syrup",
+      "de": "Ahornsirup"
+    },
+    "parent": null,
+    "flags": [
+      "added-sugar"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": true,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 67,
+      "fat": 0
+    }
+  },
+  {
+    "id": "sugar",
+    "name": {
+      "en": "Sugar",
+      "de": "Zucker"
+    },
+    "parent": null,
+    "flags": [
+      "added-sugar"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 100,
+      "fat": 0
+    }
+  },
+  {
+    "id": "honey",
+    "name": {
+      "en": "Honey",
+      "de": "Honig"
+    },
+    "parent": null,
+    "flags": [
+      "honey",
+      "added-sugar"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 82,
+      "fat": 0
+    }
+  },
+  {
+    "id": "chia",
+    "name": {
+      "en": "Chia seeds",
+      "de": "Chiasamen"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 17,
+      "carbs": 42,
+      "fat": 31
+    }
+  },
+  {
+    "id": "flaxseed",
+    "name": {
+      "en": "Ground flaxseed",
+      "de": "Geschrotete Leinsamen"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 18,
+      "carbs": 29,
+      "fat": 42
+    }
+  },
+  {
+    "id": "pumpkin-seeds",
+    "name": {
+      "en": "Pumpkin seeds",
+      "de": "Kürbiskerne"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 30,
+      "carbs": 11,
+      "fat": 49
+    }
+  },
+  {
+    "id": "sunflower-seeds",
+    "name": {
+      "en": "Sunflower seeds",
+      "de": "Sonnenblumenkerne"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 21,
+      "carbs": 20,
+      "fat": 51
+    }
+  },
+  {
+    "id": "sesame",
+    "name": {
+      "en": "Sesame seeds",
+      "de": "Sesam"
+    },
+    "parent": null,
+    "flags": [
+      "sesame"
+    ],
+    "aisle": "pantry",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 18,
+      "carbs": 23,
+      "fat": 50
+    }
+  },
+  {
+    "id": "salt",
+    "name": {
+      "en": "Salt",
+      "de": "Salz"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "pepper",
+    "name": {
+      "en": "Black pepper",
+      "de": "Schwarzer Pfeffer"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "cumin",
+    "name": {
+      "en": "Ground cumin",
+      "de": "Gemahlener Kreuzkümmel"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "paprika",
+    "name": {
+      "en": "Smoked paprika",
+      "de": "Geräuchertes Paprikapulver"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "cinnamon",
+    "name": {
+      "en": "Cinnamon",
+      "de": "Zimt"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "turmeric",
+    "name": {
+      "en": "Turmeric",
+      "de": "Kurkuma"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "chili",
+    "name": {
+      "en": "Chili flakes",
+      "de": "Chiliflocken"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  },
+  {
+    "id": "baking-powder",
+    "name": {
+      "en": "Gluten-free baking powder",
+      "de": "Glutenfreies Backpulver"
+    },
+    "parent": null,
+    "flags": [],
+    "aisle": "spices",
+    "volume_compatible": false,
+    "grams_per_unit": 1,
+    "nutrition_per_100g": {
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    }
+  }
+]

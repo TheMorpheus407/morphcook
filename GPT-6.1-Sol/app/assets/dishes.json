@@ -1,0 +1,450 @@
+[
+  {
+    "id": "doener",
+    "canonical_name": {
+      "en": "Döner",
+      "de": "Döner"
+    },
+    "hero_text": {
+      "en": "a little street-food magic, at home.",
+      "de": "ein bisschen Streetfood-Magie, zu Hause."
+    },
+    "cap_caption": {
+      "en": "wrapped up in a good evening",
+      "de": "ein guter Abend, eingewickelt"
+    },
+    "stripe_color": "#88A89D",
+    "variant_recipe_ids": [
+      "doener-classic",
+      "doener-mushroom",
+      "doener-bowl",
+      "doener-falafel"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "middle-eastern"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "alfredo",
+    "canonical_name": {
+      "en": "Alfredo",
+      "de": "Alfredo"
+    },
+    "hero_text": {
+      "en": "the softest landing after a long day.",
+      "de": "die sanfteste Landung nach einem langen Tag."
+    },
+    "cap_caption": {
+      "en": "a bowl & a deep breath",
+      "de": "eine Schale & ein tiefer Atemzug"
+    },
+    "stripe_color": "#D5B998",
+    "variant_recipe_ids": [
+      "alfredo-classic",
+      "alfredo-cauliflower",
+      "alfredo-rice",
+      "alfredo-cashew"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "italian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "pad-thai",
+    "canonical_name": {
+      "en": "Pad Thai",
+      "de": "Pad Thai"
+    },
+    "hero_text": {
+      "en": "tangy, tangled, terribly good.",
+      "de": "säuerlich, verschlungen, wunderbar gut."
+    },
+    "cap_caption": {
+      "en": "a happy little tangle",
+      "de": "ein fröhliches kleines Durcheinander"
+    },
+    "stripe_color": "#C9967C",
+    "variant_recipe_ids": [
+      "pad-thai-shrimp",
+      "pad-thai-tofu",
+      "pad-thai-seeds",
+      "pad-thai-salad"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "asian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "tomato-soup",
+    "canonical_name": {
+      "en": "Tomato soup",
+      "de": "Tomatensuppe"
+    },
+    "hero_text": {
+      "en": "a bowl of the good old days.",
+      "de": "eine Schale voller guter alter Tage."
+    },
+    "cap_caption": {
+      "en": "best with a rainy window",
+      "de": "am besten mit Regen am Fenster"
+    },
+    "stripe_color": "#C97B68",
+    "variant_recipe_ids": [
+      "tomato-soup-toast",
+      "tomato-soup-lentil",
+      "tomato-soup-roasted",
+      "tomato-soup-cream"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "italian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "pancakes",
+    "canonical_name": {
+      "en": "Pancakes",
+      "de": "Pancakes"
+    },
+    "hero_text": {
+      "en": "slow mornings are a small luxury.",
+      "de": "langsame Morgen sind ein kleiner Luxus."
+    },
+    "cap_caption": {
+      "en": "please pass the maple syrup",
+      "de": "reich mir bitte den Ahornsirup"
+    },
+    "stripe_color": "#D4AE7C",
+    "variant_recipe_ids": [
+      "pancakes-classic",
+      "pancakes-banana",
+      "pancakes-rice",
+      "pancakes-spinach"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "seasonal"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "overnight-oats",
+    "canonical_name": {
+      "en": "Overnight oats",
+      "de": "Overnight Oats"
+    },
+    "hero_text": {
+      "en": "tomorrow, taken care of tonight.",
+      "de": "morgen, schon heute Abend versorgt."
+    },
+    "cap_caption": {
+      "en": "a note to your future self",
+      "de": "eine Notiz an dein zukünftiges Ich"
+    },
+    "stripe_color": "#B0B7CF",
+    "variant_recipe_ids": [
+      "overnight-oats-berry",
+      "overnight-oats-apple",
+      "overnight-oats-banana",
+      "overnight-oats-seeds"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "seasonal"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "shakshuka",
+    "canonical_name": {
+      "en": "Shakshuka",
+      "de": "Shakshuka"
+    },
+    "hero_text": {
+      "en": "a skillet worth gathering around.",
+      "de": "eine Pfanne, um die man sich gern versammelt."
+    },
+    "cap_caption": {
+      "en": "break bread, take your time",
+      "de": "Brot teilen, Zeit lassen"
+    },
+    "stripe_color": "#BE8C7A",
+    "variant_recipe_ids": [
+      "shakshuka-eggs",
+      "shakshuka-chickpea",
+      "shakshuka-green",
+      "shakshuka-tofu"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "middle-eastern"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "lemon-pasta",
+    "canonical_name": {
+      "en": "Lemon pasta",
+      "de": "Zitronenpasta"
+    },
+    "hero_text": {
+      "en": "sunlight, twirled around a fork.",
+      "de": "Sonnenlicht, um eine Gabel gedreht."
+    },
+    "cap_caption": {
+      "en": "when life gives you lemons",
+      "de": "wenn das Leben dir Zitronen gibt"
+    },
+    "stripe_color": "#CFBB74",
+    "variant_recipe_ids": [
+      "lemon-pasta-classic",
+      "lemon-pasta-greens",
+      "lemon-pasta-rice",
+      "lemon-pasta-chickpea"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "italian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "mushroom-risotto",
+    "canonical_name": {
+      "en": "Mushroom risotto",
+      "de": "Pilzrisotto"
+    },
+    "hero_text": {
+      "en": "stir a little. stay a little.",
+      "de": "ein bisschen rühren. ein bisschen bleiben."
+    },
+    "cap_caption": {
+      "en": "the patient kind of comfort",
+      "de": "die geduldige Art von Geborgenheit"
+    },
+    "stripe_color": "#A59F91",
+    "variant_recipe_ids": [
+      "mushroom-risotto-classic",
+      "mushroom-risotto-oyster",
+      "mushroom-risotto-oven",
+      "mushroom-risotto-croquettes"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "italian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "lentil-dal",
+    "canonical_name": {
+      "en": "Lentil dal",
+      "de": "Linsen-Dal"
+    },
+    "hero_text": {
+      "en": "warm spices, a quieter evening.",
+      "de": "warme Gewürze, ein ruhigerer Abend."
+    },
+    "cap_caption": {
+      "en": "a spoonful of staying in",
+      "de": "ein Löffel Zuhausebleiben"
+    },
+    "stripe_color": "#C6A26C",
+    "variant_recipe_ids": [
+      "lentil-dal-coconut",
+      "lentil-dal-spinach",
+      "lentil-dal-pumpkin",
+      "lentil-dal-yogurt"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "asian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "roasted-bowl",
+    "canonical_name": {
+      "en": "Roasted bowl",
+      "de": "Ofengemüse-Bowl"
+    },
+    "hero_text": {
+      "en": "a handful of colour, a little care.",
+      "de": "eine Handvoll Farbe, ein wenig Sorgfalt."
+    },
+    "cap_caption": {
+      "en": "eat the colours you love",
+      "de": "iss die Farben, die du liebst"
+    },
+    "stripe_color": "#92A78A",
+    "variant_recipe_ids": [
+      "roasted-bowl-chickpea",
+      "roasted-bowl-chicken",
+      "roasted-bowl-seeds",
+      "roasted-bowl-feta"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "seasonal"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "crispy-tacos",
+    "canonical_name": {
+      "en": "Crispy tacos",
+      "de": "Knusprige Tacos"
+    },
+    "hero_text": {
+      "en": "little pockets of a very good evening.",
+      "de": "kleine Taschen für einen sehr guten Abend."
+    },
+    "cap_caption": {
+      "en": "a little messy is a little happy",
+      "de": "ein bisschen unordentlich macht glücklich"
+    },
+    "stripe_color": "#CFA587",
+    "variant_recipe_ids": [
+      "crispy-tacos-beef",
+      "crispy-tacos-beans",
+      "crispy-tacos-mushroom",
+      "crispy-tacos-chicken"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "middle-eastern"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "pesto-pasta",
+    "canonical_name": {
+      "en": "Pesto pasta",
+      "de": "Pesto-Pasta"
+    },
+    "hero_text": {
+      "en": "a green little love letter to lunch.",
+      "de": "ein grüner Liebesbrief ans Mittagessen."
+    },
+    "cap_caption": {
+      "en": "green looks good on you",
+      "de": "Grün steht dir gut"
+    },
+    "stripe_color": "#719B88",
+    "variant_recipe_ids": [
+      "pesto-pasta-basil",
+      "pesto-pasta-sunflower",
+      "pesto-pasta-rice",
+      "pesto-pasta-baked"
+    ],
+    "partition_id": "core",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "italian"
+    ],
+    "frequency_tier": "core"
+  },
+  {
+    "id": "banana-bread",
+    "canonical_name": {
+      "en": "Banana bread",
+      "de": "Bananenbrot"
+    },
+    "hero_text": {
+      "en": "something warm to put the kettle on for.",
+      "de": "etwas Warmes, um Tee dazu zu kochen."
+    },
+    "cap_caption": {
+      "en": "a slice, a cup, a quiet minute",
+      "de": "eine Scheibe, eine Tasse, ein ruhiger Moment"
+    },
+    "stripe_color": "#BFA078",
+    "variant_recipe_ids": [
+      "banana-bread-classic",
+      "banana-bread-oat",
+      "banana-bread-almond",
+      "banana-bread-pancakes"
+    ],
+    "partition_id": "extended",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "seasonal"
+    ],
+    "frequency_tier": "extended"
+  },
+  {
+    "id": "miso-ramen",
+    "canonical_name": {
+      "en": "Miso ramen",
+      "de": "Miso-Ramen"
+    },
+    "hero_text": {
+      "en": "a warm bowl, a softer world.",
+      "de": "eine warme Schale, eine weichere Welt."
+    },
+    "cap_caption": {
+      "en": "let the steam slow you down",
+      "de": "lass den Dampf dich entschleunigen"
+    },
+    "stripe_color": "#A99FBD",
+    "variant_recipe_ids": [
+      "miso-ramen-egg",
+      "miso-ramen-tofu",
+      "miso-ramen-rice",
+      "miso-ramen-weekend"
+    ],
+    "partition_id": "cuisine-asian",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "asian"
+    ],
+    "frequency_tier": "extended"
+  },
+  {
+    "id": "apple-crumble",
+    "canonical_name": {
+      "en": "Apple crumble",
+      "de": "Apfelcrumble"
+    },
+    "hero_text": {
+      "en": "the smell of coming home.",
+      "de": "der Duft des Nachhausekommens."
+    },
+    "cap_caption": {
+      "en": "with love & a little cinnamon",
+      "de": "mit Liebe & ein wenig Zimt"
+    },
+    "stripe_color": "#C3A19B",
+    "variant_recipe_ids": [
+      "apple-crumble-classic",
+      "apple-crumble-oat",
+      "apple-crumble-berries",
+      "apple-crumble-rice"
+    ],
+    "partition_id": "extended",
+    "secondary_partitions": [],
+    "cuisine_tags": [
+      "seasonal"
+    ],
+    "frequency_tier": "extended"
+  }
+]

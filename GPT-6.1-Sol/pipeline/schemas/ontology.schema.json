@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook Ontology",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "contains_flags",
+    "compound_flags",
+    "attributes",
+    "diets",
+    "dimensions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "contains_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "en",
+          "de"
+        ],
+        "additionalProperties": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "compound_flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "diets": {
+      "type": "object"
+    },
+    "dimensions": {
+      "type": "object"
+    }
+  }
+}

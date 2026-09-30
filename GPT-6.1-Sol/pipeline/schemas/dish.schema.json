@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MorphCook Dish",
+  "type": "object",
+  "required": [
+    "id",
+    "canonical_name",
+    "hero_text",
+    "cap_caption",
+    "stripe_color",
+    "variant_recipe_ids",
+    "partition_id",
+    "secondary_partitions",
+    "cuisine_tags",
+    "frequency_tier"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_name": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "hero_text": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "cap_caption": {
+      "type": "object",
+      "required": [
+        "en",
+        "de"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stripe_color": {
+      "type": "string",
+      "pattern": "^#[a-fA-F0-9]{6}$"
+    },
+    "variant_recipe_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "partition_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "secondary_partitions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "cuisine_tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "frequency_tier": {
+      "enum": [
+        "core",
+        "extended"
+      ]
+    }
+  }
+}

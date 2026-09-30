@@ -1,0 +1,1873 @@
+[
+  {
+    "id": "doener-classic",
+    "dish_id": "doener",
+    "title": {
+      "en": "The weeknight chicken döner",
+      "de": "Hähnchen-Döner für jeden Abend"
+    },
+    "description": {
+      "en": "Crisp cabbage, warm bread, garlic-yogurt drizzle.",
+      "de": "Knackiger Kohl, warmes Brot, Knoblauchjoghurt."
+    },
+    "contains": [
+      "dairy",
+      "gluten",
+      "high-fodmap",
+      "lactose",
+      "meat-dairy-combo",
+      "poultry"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "pan-fry",
+      "≤30"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "classic",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 522,
+    "macros": {
+      "protein": 45.2,
+      "carbs": 55.3,
+      "fat": 13.3
+    },
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "pita",
+        "quantity": 2.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "yogurt",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cabbage",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cucumber",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "garlic",
+        "quantity": 2.0,
+        "unit": "clove",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Slice chicken thinly and coat with oil and paprika",
+          "de": "Hähnchen dünn schneiden, mit Öl und Paprika mischen"
+        },
+        "text": {
+          "en": "Slice chicken thinly and coat with oil and paprika. Shred cabbage and slice cucumber.",
+          "de": "Hähnchen dünn schneiden, mit Öl und Paprika mischen. Kohl hobeln, Gurke schneiden."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Fry chicken in a hot pan for 10 minutes, turning often, until the centre reaches 74°C",
+          "de": "Hähnchen in heißer Pfanne 10 Minuten unter Wenden braten, bis innen 74 °C erreicht sind"
+        },
+        "text": {
+          "en": "Fry chicken in a hot pan for 10 minutes, turning often, until the centre reaches 74°C.",
+          "de": "Hähnchen in heißer Pfanne 10 Minuten unter Wenden braten, bis innen 74 °C erreicht sind."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Mix crushed garlic and lemon juice into yogurt",
+          "de": "Knoblauch und Zitronensaft in Joghurt rühren"
+        },
+        "text": {
+          "en": "Mix crushed garlic and lemon juice into yogurt. Warm pitas and fill with vegetables, chicken and sauce.",
+          "de": "Knoblauch und Zitronensaft in Joghurt rühren. Pitas erwärmen und mit Gemüse, Hähnchen und Sauce füllen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Choose appropriately sourced meat for halal-compatible cooking. Chicken must reach 74°C; ground beef 71°C.",
+      "de": "Für halal-kompatibles Kochen entsprechend bezogenes Fleisch wählen. Hähnchen muss 74 °C, Rinderhack 71 °C erreichen."
+    }
+  },
+  {
+    "id": "doener-mushroom",
+    "dish_id": "doener",
+    "title": {
+      "en": "Smoky oyster-mushroom döner",
+      "de": "Rauchiger Austernpilz-Döner"
+    },
+    "description": {
+      "en": "Golden mushrooms with lemony cream.",
+      "de": "Goldbraune Pilze mit zitroniger Creme."
+    },
+    "contains": [
+      "gluten"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "pan-fry",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 433,
+    "macros": {
+      "protein": 13.9,
+      "carbs": 64.0,
+      "fat": 13.5
+    },
+    "ingredients": [
+      {
+        "id": "oyster-mushrooms",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "pita",
+        "quantity": 2.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "coconut-yogurt",
+        "quantity": 120.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cabbage",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato",
+        "quantity": 120.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Tear mushrooms into strips and coat with oil, cumin and paprika",
+          "de": "Pilze zupfen und mit Öl, Kreuzkümmel und Paprika mischen"
+        },
+        "text": {
+          "en": "Tear mushrooms into strips and coat with oil, cumin and paprika. Slice tomato and cabbage.",
+          "de": "Pilze zupfen und mit Öl, Kreuzkümmel und Paprika mischen. Tomate und Kohl schneiden."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Sear mushrooms in a wide pan for 12 minutes",
+          "de": "Pilze in großer Pfanne 12 Minuten braten"
+        },
+        "text": {
+          "en": "Sear mushrooms in a wide pan for 12 minutes. Leave still between turns so the edges become golden.",
+          "de": "Pilze in großer Pfanne 12 Minuten braten. Zwischen dem Wenden liegen lassen, damit die Ränder golden werden."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Mix coconut yogurt with lemon",
+          "de": "Kokosjoghurt mit Zitrone mischen"
+        },
+        "text": {
+          "en": "Mix coconut yogurt with lemon. Warm pitas and layer with cabbage, mushrooms, tomato and lemon sauce.",
+          "de": "Kokosjoghurt mit Zitrone mischen. Warme Pitas mit Kohl, Pilzen, Tomate und Zitronensauce füllen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "doener-bowl",
+    "dish_id": "doener",
+    "title": {
+      "en": "The green chicken döner bowl",
+      "de": "Grüne Hähnchen-Döner-Bowl"
+    },
+    "description": {
+      "en": "All the good bits, with room to breathe.",
+      "de": "Alles Gute, mit Platz zum Durchatmen."
+    },
+    "contains": [
+      "poultry"
+    ],
+    "attributes": [
+      "easy",
+      "gluten-free",
+      "halal",
+      "keto",
+      "kosher",
+      "≤30"
+    ],
+    "tags": [
+      "dinner",
+      "fresh",
+      "lunch",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "keto",
+      "effort": "easy",
+      "calorie-level": "light"
+    },
+    "time_minutes": 20,
+    "servings": 2,
+    "calories_per_serving": 349,
+    "macros": {
+      "protein": 37.0,
+      "carbs": 10.1,
+      "fat": 17.8
+    },
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lettuce",
+        "quantity": 120.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cucumber",
+        "quantity": 160.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato",
+        "quantity": 120.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 2.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "parsley",
+        "quantity": 10.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Cube chicken and toss with half the oil and cumin",
+          "de": "Hähnchen würfeln, mit halbem Öl und Kreuzkümmel mischen"
+        },
+        "text": {
+          "en": "Cube chicken and toss with half the oil and cumin. Chop the salad vegetables.",
+          "de": "Hähnchen würfeln, mit halbem Öl und Kreuzkümmel mischen. Salatgemüse schneiden."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Fry chicken for 10 minutes until cooked through and at least 74°C in the centre",
+          "de": "Hähnchen 10 Minuten braten, bis es durchgegart ist und innen mindestens 74 °C erreicht"
+        },
+        "text": {
+          "en": "Fry chicken for 10 minutes until cooked through and at least 74°C in the centre.",
+          "de": "Hähnchen 10 Minuten braten, bis es durchgegart ist und innen mindestens 74 °C erreicht."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Whisk remaining oil with lemon juice and parsley",
+          "de": "Restliches Öl mit Zitronensaft und Petersilie verrühren"
+        },
+        "text": {
+          "en": "Whisk remaining oil with lemon juice and parsley. Arrange in bowls and spoon over the dressing.",
+          "de": "Restliches Öl mit Zitronensaft und Petersilie verrühren. Alles in Schalen anrichten und Dressing darübergeben."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Choose appropriately sourced meat for halal-compatible cooking. Chicken must reach 74°C; ground beef 71°C.",
+      "de": "Für halal-kompatibles Kochen entsprechend bezogenes Fleisch wählen. Hähnchen muss 74 °C, Rinderhack 71 °C erreichen."
+    }
+  },
+  {
+    "id": "doener-falafel",
+    "dish_id": "doener",
+    "title": {
+      "en": "Little oven-falafel pockets",
+      "de": "Kleine Ofen-Falafel-Taschen"
+    },
+    "description": {
+      "en": "Little golden things, worth the wait.",
+      "de": "Kleine goldene Dinge, das Warten wert."
+    },
+    "contains": [
+      "gluten",
+      "high-fodmap",
+      "sesame"
+    ],
+    "attributes": [
+      "bake",
+      "halal",
+      "kosher",
+      "medium",
+      "vegan",
+      "vegetarian",
+      "≤60"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "medium",
+      "calorie-level": "hearty"
+    },
+    "time_minutes": 40,
+    "servings": 2,
+    "calories_per_serving": 717,
+    "macros": {
+      "protein": 27.4,
+      "carbs": 108.0,
+      "fat": 19.5
+    },
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "quantity": 350.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "pita",
+        "quantity": 2.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "parsley",
+        "quantity": 25.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "flour",
+        "quantity": 25.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tahini",
+        "quantity": 25.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lettuce",
+        "quantity": 80.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Heat oven to 210°C",
+          "de": "Ofen auf 210 °C vorheizen"
+        },
+        "text": {
+          "en": "Heat oven to 210°C. Pat chickpeas dry, mash roughly and mix with parsley, cumin and flour.",
+          "de": "Ofen auf 210 °C vorheizen. Kichererbsen trocknen, grob zerdrücken und mit Petersilie, Kreuzkümmel und Mehl mischen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Shape eight small patties, brush with oil and bake on a lined tray for 25 minutes, turning halfway",
+          "de": "Acht Taler formen, mit Öl bepinseln und auf belegtem Blech 25 Minuten backen"
+        },
+        "text": {
+          "en": "Shape eight small patties, brush with oil and bake on a lined tray for 25 minutes, turning halfway.",
+          "de": "Acht Taler formen, mit Öl bepinseln und auf belegtem Blech 25 Minuten backen. Nach der Hälfte wenden."
+        },
+        "timer_seconds": 1500
+      },
+      {
+        "title": {
+          "en": "Whisk tahini and lemon with water until pourable",
+          "de": "Tahini und Zitrone mit Wasser flüssig rühren"
+        },
+        "text": {
+          "en": "Whisk tahini and lemon with water until pourable. Fill warm pitas with falafel, lettuce and sauce.",
+          "de": "Tahini und Zitrone mit Wasser flüssig rühren. Warme Pitas mit Falafel, Salat und Sauce füllen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "shakshuka-eggs",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "The little red breakfast skillet",
+      "de": "Die kleine rote Frühstückspfanne"
+    },
+    "description": {
+      "en": "Eggs nestled in sweet peppers and tomatoes.",
+      "de": "Eier, eingebettet in süße Paprika und Tomaten."
+    },
+    "contains": [
+      "egg",
+      "gluten",
+      "high-fodmap"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "breakfast",
+      "dinner",
+      "middle-eastern",
+      "one-pot",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegetarian",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 30,
+    "servings": 2,
+    "calories_per_serving": 439,
+    "macros": {
+      "protein": 21.8,
+      "carbs": 43.9,
+      "fat": 19.5
+    },
+    "ingredients": [
+      {
+        "id": "egg",
+        "quantity": 4.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato-passata",
+        "quantity": 400.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "onion",
+        "quantity": 80.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "bread",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "parsley",
+        "quantity": 10.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Soften diced onion and pepper in oil for 7 minutes",
+          "de": "Zwiebel und Paprika 7 Minuten in Öl dünsten"
+        },
+        "text": {
+          "en": "Soften diced onion and pepper in oil for 7 minutes. Stir in cumin.",
+          "de": "Zwiebel und Paprika 7 Minuten in Öl dünsten. Kreuzkümmel einrühren."
+        },
+        "timer_seconds": 420
+      },
+      {
+        "title": {
+          "en": "Add passata and simmer for 10 minutes",
+          "de": "Passata zugeben und 10 Minuten köcheln"
+        },
+        "text": {
+          "en": "Add passata and simmer for 10 minutes. Make four hollows and crack in the eggs.",
+          "de": "Passata zugeben und 10 Minuten köcheln. Vier Mulden formen und Eier hineingeben."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Cover for 7–9 minutes until whites and yolks are set",
+          "de": "7–9 Minuten abdecken, bis Eiweiß und Eigelb fest sind"
+        },
+        "text": {
+          "en": "Cover for 7–9 minutes until whites and yolks are set. Top with parsley and serve with bread.",
+          "de": "7–9 Minuten abdecken, bis Eiweiß und Eigelb fest sind. Mit Petersilie und Brot servieren."
+        },
+        "timer_seconds": 480
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "shakshuka-chickpea",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Chickpeas in a tomato skillet",
+      "de": "Kichererbsen-Tomaten-Pfanne"
+    },
+    "description": {
+      "en": "A red skillet with chickpeas at its heart.",
+      "de": "Eine rote Pfanne mit Kichererbsen im Herzen."
+    },
+    "contains": [
+      "gluten",
+      "high-fodmap"
+    ],
+    "attributes": [
+      "easy",
+      "halal",
+      "kosher",
+      "simmer",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "breakfast",
+      "dinner",
+      "middle-eastern",
+      "one-pot",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 519,
+    "macros": {
+      "protein": 21.8,
+      "carbs": 80.0,
+      "fat": 12.4
+    },
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato-passata",
+        "quantity": 400.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "bread",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "parsley",
+        "quantity": 15.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Soften sliced pepper in oil for 6 minutes",
+          "de": "Paprika in Öl 6 Minuten dünsten"
+        },
+        "text": {
+          "en": "Soften sliced pepper in oil for 6 minutes. Stir in cumin and paprika.",
+          "de": "Paprika in Öl 6 Minuten dünsten. Kreuzkümmel und Paprika einrühren."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "Add passata and chickpeas",
+          "de": "Passata und Kichererbsen zugeben"
+        },
+        "text": {
+          "en": "Add passata and chickpeas. Simmer uncovered for 12 minutes, stirring occasionally.",
+          "de": "Passata und Kichererbsen zugeben. Offen 12 Minuten unter gelegentlichem Rühren köcheln."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Season, scatter parsley and bring the pan to the table with warm bread",
+          "de": "Würzen, Petersilie darüberstreuen und die Pfanne mit warmem Brot auf den Tisch bringen"
+        },
+        "text": {
+          "en": "Season, scatter parsley and bring the pan to the table with warm bread.",
+          "de": "Würzen, Petersilie darüberstreuen und die Pfanne mit warmem Brot auf den Tisch bringen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "shakshuka-green",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Green spinach & feta shakshuka",
+      "de": "Grüne Spinat-Feta-Shakshuka"
+    },
+    "description": {
+      "en": "A greener breakfast, bright with lemon.",
+      "de": "Ein grüneres Frühstück, frisch mit Zitrone."
+    },
+    "contains": [
+      "dairy",
+      "egg",
+      "lactose"
+    ],
+    "attributes": [
+      "easy",
+      "gluten-free",
+      "halal",
+      "keto",
+      "kosher",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "breakfast",
+      "dinner",
+      "fresh",
+      "middle-eastern",
+      "one-pot",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "keto",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 20,
+    "servings": 2,
+    "calories_per_serving": 404,
+    "macros": {
+      "protein": 24.3,
+      "carbs": 11.6,
+      "fat": 28.9
+    },
+    "ingredients": [
+      {
+        "id": "egg",
+        "quantity": 4.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "spinach",
+        "quantity": 250.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "feta",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "spring-onion-greens",
+        "quantity": 25.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lemon",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Warm oil and soften spring onion greens",
+          "de": "Öl erwärmen, Frühlingszwiebelgrün dünsten"
+        },
+        "text": {
+          "en": "Warm oil and soften spring onion greens. Add spinach in handfuls and let it wilt.",
+          "de": "Öl erwärmen, Frühlingszwiebelgrün dünsten. Spinat portionsweise zusammenfallen lassen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Make four hollows, crack in eggs and crumble feta around them",
+          "de": "Vier Mulden formen, Eier hineingeben und Feta darum bröseln"
+        },
+        "text": {
+          "en": "Make four hollows, crack in eggs and crumble feta around them. Cover for 8 minutes until eggs are set.",
+          "de": "Vier Mulden formen, Eier hineingeben und Feta darum bröseln. 8 Minuten abdecken, bis Eier fest sind."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Finish with lemon zest and juice",
+          "de": "Mit Zitronenabrieb und Saft abschließen"
+        },
+        "text": {
+          "en": "Finish with lemon zest and juice. Serve warm, with a spoon for the greens.",
+          "de": "Mit Zitronenabrieb und Saft abschließen. Warm servieren, mit einem Löffel für das Grün."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "shakshuka-tofu",
+    "dish_id": "shakshuka",
+    "title": {
+      "en": "Golden tofu breakfast skillet",
+      "de": "Goldene Tofu-Frühstückspfanne"
+    },
+    "description": {
+      "en": "A savoury breakfast with a warm golden heart.",
+      "de": "Ein herzhaftes Frühstück mit warmem goldenem Herzen."
+    },
+    "contains": [
+      "soy"
+    ],
+    "attributes": [
+      "gluten-free",
+      "halal",
+      "kosher",
+      "medium",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "breakfast",
+      "dinner",
+      "middle-eastern",
+      "one-pot",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "medium",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 30,
+    "servings": 2,
+    "calories_per_serving": 431,
+    "macros": {
+      "protein": 25.5,
+      "carbs": 39.5,
+      "fat": 18.9
+    },
+    "ingredients": [
+      {
+        "id": "tofu",
+        "quantity": 250.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato-passata",
+        "quantity": 400.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "bell-peppers",
+        "quantity": 150.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "turmeric",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn-tortillas",
+        "quantity": 4.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Press tofu dry and crumble into large pieces",
+          "de": "Tofu trocknen und grob zerbröseln"
+        },
+        "text": {
+          "en": "Press tofu dry and crumble into large pieces. Fry in oil with turmeric for 6 minutes, then set aside.",
+          "de": "Tofu trocknen und grob zerbröseln. Mit Kurkuma 6 Minuten in Öl braten und beiseitestellen."
+        },
+        "timer_seconds": 360
+      },
+      {
+        "title": {
+          "en": "Soften sliced pepper in the same pan",
+          "de": "Paprika in derselben Pfanne dünsten"
+        },
+        "text": {
+          "en": "Soften sliced pepper in the same pan. Add passata and cumin; simmer for 12 minutes.",
+          "de": "Paprika in derselben Pfanne dünsten. Passata und Kreuzkümmel zugeben; 12 Minuten köcheln."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Return tofu to the sauce and heat through",
+          "de": "Tofu zurück in die Sauce geben und erwärmen"
+        },
+        "text": {
+          "en": "Return tofu to the sauce and heat through. Serve with warm corn tortillas.",
+          "de": "Tofu zurück in die Sauce geben und erwärmen. Mit warmen Maistortillas servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "crispy-tacos-beef",
+    "dish_id": "crispy-tacos",
+    "title": {
+      "en": "Crispy beef & tomato tacos",
+      "de": "Knusprige Rind-Tomaten-Tacos"
+    },
+    "description": {
+      "en": "Small corn tortillas, generously filled.",
+      "de": "Kleine Maistortillas, großzügig gefüllt."
+    },
+    "contains": [
+      "beef"
+    ],
+    "attributes": [
+      "easy",
+      "gluten-free",
+      "halal",
+      "kosher",
+      "≤30"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "classic",
+      "effort": "easy",
+      "calorie-level": "hearty"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 668,
+    "macros": {
+      "protein": 32.5,
+      "carbs": 47.6,
+      "fat": 38.6
+    },
+    "ingredients": [
+      {
+        "id": "beef",
+        "quantity": 250.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn-tortillas",
+        "quantity": 6.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato",
+        "quantity": 180.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lettuce",
+        "quantity": 80.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "avocado",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Chop tomato and lettuce",
+          "de": "Tomate und Salat schneiden"
+        },
+        "text": {
+          "en": "Chop tomato and lettuce. Mash avocado with lime. Warm tortillas in a dry pan.",
+          "de": "Tomate und Salat schneiden. Avocado mit Limette zerdrücken. Tortillas trocken erwärmen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Brown beef with cumin in oil for 8 minutes, breaking it up, until its centre reaches 71°C",
+          "de": "Hack mit Kreuzkümmel 8 Minuten in Öl krümelig braten, bis innen 71 °C erreicht sind"
+        },
+        "text": {
+          "en": "Brown beef with cumin in oil for 8 minutes, breaking it up, until its centre reaches 71°C.",
+          "de": "Hack mit Kreuzkümmel 8 Minuten in Öl krümelig braten, bis innen 71 °C erreicht sind."
+        },
+        "timer_seconds": 480
+      },
+      {
+        "title": {
+          "en": "Fill tortillas with beef, vegetables and avocado",
+          "de": "Tortillas mit Hack, Gemüse und Avocado füllen, vorsichtig falten und warm servieren"
+        },
+        "text": {
+          "en": "Fill tortillas with beef, vegetables and avocado. Fold gently and serve warm.",
+          "de": "Tortillas mit Hack, Gemüse und Avocado füllen, vorsichtig falten und warm servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Choose appropriately sourced meat for halal-compatible cooking. Chicken must reach 74°C; ground beef 71°C.",
+      "de": "Für halal-kompatibles Kochen entsprechend bezogenes Fleisch wählen. Hähnchen muss 74 °C, Rinderhack 71 °C erreichen."
+    }
+  },
+  {
+    "id": "crispy-tacos-beans",
+    "dish_id": "crispy-tacos",
+    "title": {
+      "en": "Crispy black-bean tacos",
+      "de": "Knusprige Schwarze-Bohnen-Tacos"
+    },
+    "description": {
+      "en": "Crisp outside, soft beans within, lime all over.",
+      "de": "Außen knusprig, innen weich, überall Limette."
+    },
+    "contains": [
+      "high-fodmap"
+    ],
+    "attributes": [
+      "easy",
+      "gluten-free",
+      "halal",
+      "kosher",
+      "pan-fry",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "easy",
+      "calorie-level": "hearty"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 643,
+    "macros": {
+      "protein": 21.9,
+      "carbs": 91.5,
+      "fat": 21.0
+    },
+    "ingredients": [
+      {
+        "id": "black-beans",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn-tortillas",
+        "quantity": 6.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn",
+        "quantity": 100.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato",
+        "quantity": 160.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "avocado",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cumin",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Mash half the beans, mix with whole beans, corn and cumin",
+          "de": "Halbe Bohnen zerdrücken, mit ganzen Bohnen, Mais und Kreuzkümmel mischen"
+        },
+        "text": {
+          "en": "Mash half the beans, mix with whole beans, corn and cumin. Chop tomato; mash avocado with lime.",
+          "de": "Halbe Bohnen zerdrücken, mit ganzen Bohnen, Mais und Kreuzkümmel mischen. Tomate schneiden, Avocado mit Limette zerdrücken."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Warm tortillas, fill with beans and fold",
+          "de": "Tortillas erwärmen, mit Bohnen füllen und falten"
+        },
+        "text": {
+          "en": "Warm tortillas, fill with beans and fold. Brush with oil and fry 3 minutes per side until crisp.",
+          "de": "Tortillas erwärmen, mit Bohnen füllen und falten. Mit Öl bepinseln und je Seite 3 Minuten knusprig braten."
+        },
+        "timer_seconds": 180
+      },
+      {
+        "title": {
+          "en": "Serve with tomato, avocado and a squeeze of lime",
+          "de": "Mit Tomate, Avocado und einem Spritzer Limette servieren"
+        },
+        "text": {
+          "en": "Serve with tomato, avocado and a squeeze of lime.",
+          "de": "Mit Tomate, Avocado und einem Spritzer Limette servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "crispy-tacos-mushroom",
+    "dish_id": "crispy-tacos",
+    "title": {
+      "en": "Smoky mushroom & cabbage tacos",
+      "de": "Rauchige Pilz-Kohl-Tacos"
+    },
+    "description": {
+      "en": "Smoke, crunch and a little lime cream.",
+      "de": "Rauch, Knuspern und ein wenig Limettencreme."
+    },
+    "contains": [],
+    "attributes": [
+      "gluten-free",
+      "halal",
+      "kosher",
+      "medium",
+      "pan-fry",
+      "vegan",
+      "vegetarian",
+      "≤30"
+    ],
+    "tags": [
+      "cozy",
+      "dinner",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "vegan",
+      "effort": "medium",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 30,
+    "servings": 2,
+    "calories_per_serving": 432,
+    "macros": {
+      "protein": 10.7,
+      "carbs": 52.6,
+      "fat": 19.9
+    },
+    "ingredients": [
+      {
+        "id": "oyster-mushrooms",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn-tortillas",
+        "quantity": 6.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cabbage",
+        "quantity": 150.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "coconut-yogurt",
+        "quantity": 80.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 2.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "cilantro",
+        "quantity": 10.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Shred cabbage and squeeze with half the lime",
+          "de": "Kohl hobeln, mit halber Limette kneten"
+        },
+        "text": {
+          "en": "Shred cabbage and squeeze with half the lime. Tear mushrooms and coat with oil and paprika.",
+          "de": "Kohl hobeln, mit halber Limette kneten. Pilze zupfen und mit Öl und Paprika mischen."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Sear mushrooms in two batches for 12 minutes total until crisp",
+          "de": "Pilze in zwei Portionen insgesamt 12 Minuten knusprig braten"
+        },
+        "text": {
+          "en": "Sear mushrooms in two batches for 12 minutes total until crisp. Warm tortillas separately.",
+          "de": "Pilze in zwei Portionen insgesamt 12 Minuten knusprig braten. Tortillas separat erwärmen."
+        },
+        "timer_seconds": 720
+      },
+      {
+        "title": {
+          "en": "Mix yogurt with remaining lime",
+          "de": "Joghurt mit restlicher Limette mischen"
+        },
+        "text": {
+          "en": "Mix yogurt with remaining lime. Fill tortillas with mushrooms, cabbage, yogurt and cilantro.",
+          "de": "Joghurt mit restlicher Limette mischen. Tortillas mit Pilzen, Kohl, Joghurt und Koriander füllen."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Read the whole method before you begin. Salt and water are pantry basics; season to taste.",
+      "de": "Lies die Zubereitung vor dem Start durch. Salz und Wasser sind Vorratsgrundlagen; nach Geschmack würzen."
+    }
+  },
+  {
+    "id": "crispy-tacos-chicken",
+    "dish_id": "crispy-tacos",
+    "title": {
+      "en": "Chicken & avocado corn tacos",
+      "de": "Hähnchen-Avocado-Maistacos"
+    },
+    "description": {
+      "en": "Warm chicken, cool avocado, corn tortillas.",
+      "de": "Warmes Hähnchen, kühle Avocado, Maistortillas."
+    },
+    "contains": [
+      "poultry"
+    ],
+    "attributes": [
+      "easy",
+      "gluten-free",
+      "halal",
+      "kosher",
+      "≤30"
+    ],
+    "tags": [
+      "dinner",
+      "fresh",
+      "middle-eastern",
+      "quick"
+    ],
+    "dimensions": {
+      "diet": "halal",
+      "effort": "easy",
+      "calorie-level": "balanced"
+    },
+    "time_minutes": 25,
+    "servings": 2,
+    "calories_per_serving": 563,
+    "macros": {
+      "protein": 41.5,
+      "carbs": 46.4,
+      "fat": 23.6
+    },
+    "ingredients": [
+      {
+        "id": "chicken",
+        "quantity": 300.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "corn-tortillas",
+        "quantity": 6.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "avocado",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "tomato",
+        "quantity": 180.0,
+        "unit": "g",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "lime",
+        "quantity": 1.0,
+        "unit": "piece",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "olive-oil",
+        "quantity": 1.0,
+        "unit": "tbsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      },
+      {
+        "id": "paprika",
+        "quantity": 1.0,
+        "unit": "tsp",
+        "note": {
+          "en": "",
+          "de": ""
+        }
+      }
+    ],
+    "steps": [
+      {
+        "title": {
+          "en": "Slice chicken, toss with oil and paprika",
+          "de": "Hähnchen schneiden, mit Öl und Paprika mischen"
+        },
+        "text": {
+          "en": "Slice chicken, toss with oil and paprika. Dice tomato and mash avocado with lime.",
+          "de": "Hähnchen schneiden, mit Öl und Paprika mischen. Tomate würfeln, Avocado mit Limette zerdrücken."
+        },
+        "timer_seconds": 0
+      },
+      {
+        "title": {
+          "en": "Fry chicken for 10 minutes until it reaches 74°C",
+          "de": "Hähnchen 10 Minuten auf 74 °C braten"
+        },
+        "text": {
+          "en": "Fry chicken for 10 minutes until it reaches 74°C. Choose appropriately sourced chicken for halal-compatible ingredients.",
+          "de": "Hähnchen 10 Minuten auf 74 °C braten. Für halal-kompatible Zutaten entsprechend bezogenes Hähnchen wählen."
+        },
+        "timer_seconds": 600
+      },
+      {
+        "title": {
+          "en": "Warm tortillas and fill with chicken, tomato and avocado",
+          "de": "Tortillas erwärmen und mit Hähnchen, Tomate und Avocado füllen"
+        },
+        "text": {
+          "en": "Warm tortillas and fill with chicken, tomato and avocado. Serve with extra lime juice.",
+          "de": "Tortillas erwärmen und mit Hähnchen, Tomate und Avocado füllen. Mit zusätzlichem Limettensaft servieren."
+        },
+        "timer_seconds": 0
+      }
+    ],
+    "note": {
+      "en": "Choose appropriately sourced meat for halal-compatible cooking. Chicken must reach 74°C; ground beef 71°C.",
+      "de": "Für halal-kompatibles Kochen entsprechend bezogenes Fleisch wählen. Hähnchen muss 74 °C, Rinderhack 71 °C erreichen."
+    }
+  }
+]
