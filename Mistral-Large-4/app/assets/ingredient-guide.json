@@ -1,0 +1,995 @@
+{
+  "corpus_version": 1,
+  "source": "MorphCook recipe generation pipeline (see pipeline/)",
+  "entries": [
+    {
+      "ingredient_id": "seitan",
+      "name": {
+        "en": "seitan",
+        "de": "Seitan (Weizenfleisch)"
+      },
+      "description": {
+        "en": "A chewy, meaty plant protein made from wheat gluten. The classic stand-in for döner and stir-fry meat.",
+        "de": "Ein zähes, fleischiges Pflanzenprotein aus Weizengluten. Der klassische Ersatz für Döner- und Pfannenfleisch."
+      },
+      "usage_tips": {
+        "en": "Slice it thin and sear in a hot pan for crisp edges. It loves long, gentle simmers in sauce. Avoid a hard boil — it turns spongy.",
+        "de": "Dünn schneiden und in heißer Pfanne knusprig anbraten. Schmort wunderbar in Sauce. Nicht stark kochen — wird schwammig."
+      },
+      "storage": {
+        "en": "Keeps a few days refrigerated after opening; freezes very well in portions.",
+        "de": "Nach dem Öffnen wenige Tage gekühlt; lässt sich portionsweise sehr gut einfrieren."
+      },
+      "where_to_find": {
+        "en": "Refrigerated vegan section of the supermarket, or an Asian grocery.",
+        "de": "Kühlregal der Veganer-Ecke, oder asiatischer Supermarkt."
+      }
+    },
+    {
+      "ingredient_id": "tahini",
+      "name": {
+        "en": "tahini",
+        "de": "Tahini (Sesampaste)"
+      },
+      "description": {
+        "en": "A paste of ground sesame seeds — nutty, slightly bitter, deeply savory. The backbone of hummus and our döner sauce.",
+        "de": "Eine Paste aus gemahlenen Sesamsamen — nussig, leicht bitter, herzhaft. Das Rückgrat von Hummus und unserer Döner-Sauce."
+      },
+      "usage_tips": {
+        "en": "The oil separates — stir well before using. Thins into a pourable sauce with lemon juice and a splash of water.",
+        "de": "Das Öl setzt sich ab — vor dem Gebrauch gut umrühren. Wird mit Zitronensaft und etwas Wasser zu einer gießfähigen Sauce."
+      },
+      "storage": {
+        "en": "Keeps for months in the pantry; stir the oil back in after opening.",
+        "de": "Hält sich monatelang im Vorratsschrank; nach dem Öffnen das Öl wieder einrühren."
+      },
+      "where_to_find": {
+        "en": "Middle-Eastern aisle, or next to the nut butters.",
+        "de": "Orientalische Abteilung, oder bei den Nussmusen."
+      }
+    },
+    {
+      "ingredient_id": "kasuri-methi",
+      "name": {
+        "en": "kasuri methi (dried fenugreek leaves)",
+        "de": "Kasuri Methi (getrocknete Bockshornkleeblätter)"
+      },
+      "description": {
+        "en": "Dried fenugreek leaves with a warm, slightly bitter, maple-like aroma. The secret finish of proper butter chicken.",
+        "de": "Getrocknete Bockshornkleeblätter mit warmem, leicht bitterem, ahornähnlichem Aroma. Der geheime Schlussakkord eines richtigen Butter Chicken."
+      },
+      "usage_tips": {
+        "en": "Crush the leaves between your palms and sprinkle over the dish at the very end — heat wakes them up, boiling kills them.",
+        "de": "Die Blätter zwischen den Handflächen zerreiben und erst ganz zum Schluss darüber streuen — Hitze weckt sie, Kochen zerstört sie."
+      },
+      "storage": {
+        "en": "Airtight jar, away from light. Best within a year.",
+        "de": "Luftdicht und dunkel aufbewahren. Innerhalb eines Jahres am besten."
+      },
+      "where_to_find": {
+        "en": "Indian grocery, spice aisle.",
+        "de": "Indischer Laden, Gewürzabteilung."
+      }
+    },
+    {
+      "ingredient_id": "miso-paste",
+      "name": {
+        "en": "miso paste",
+        "de": "Miso-Paste"
+      },
+      "description": {
+        "en": "Fermented soybean paste — salty, savory, alive with umami. White (shiro) miso is mild and sweet; red (aka) miso is deeper and stronger.",
+        "de": "Fermentierte Sojabohnenpaste — salzig, herzhaft, voll Umami. Weiße (Shiro-)Miso ist mild und süßlich; rote (Aka-) tiefer und kräftiger."
+      },
+      "usage_tips": {
+        "en": "Never boil miso — the heat kills the aroma. Whisk it with a ladle of warm liquid first, then stir it back in. Also wonderful in dressings. Some miso contains barley — check the label if you eat gluten-free.",
+        "de": "Miso nie kochen — die Hitze tötet das Aroma. Erst mit einer Kelle warmer Flüssigkeit anrühren, dann zurückrühren. Auch wunderbar in Dressings. Manche Miso enthält Gerste — bei glutenfreier Ernährung das Etikett prüfen."
+      },
+      "storage": {
+        "en": "Refrigerated after opening; keeps for months.",
+        "de": "Nach dem Öffnen gekühlt; hält sich monatelang."
+      },
+      "where_to_find": {
+        "en": "Refrigerated Asian section, or a Japanese grocery.",
+        "de": "Kühlregal der asiatischen Abteilung, oder japanischer Laden."
+      }
+    },
+    {
+      "ingredient_id": "dashi",
+      "name": {
+        "en": "dashi",
+        "de": "Dashi (japanische Brühe)"
+      },
+      "description": {
+        "en": "The quiet foundation of Japanese cooking — a light stock of kombu (kelp) and bonito (dried fish flakes).",
+        "de": "Das stille Fundament der japanischen Küche — eine leichte Brühe aus Kombu (Kelp) und Bonito (getrockneten Fischflocken)."
+      },
+      "usage_tips": {
+        "en": "Bring to a gentle simmer, never a rolling boil. Instant dashi powder is a fine weeknight shortcut. For a vegan version, simmer kombu alone.",
+        "de": "Nur leicht köcheln lassen, nie stark aufkochen. Instant-Dashi-Pulver ist ein feiner Alltags-Trick. Vegane Version: Kombu allein köcheln lassen."
+      },
+      "storage": {
+        "en": "3–4 days refrigerated, or freeze in portions.",
+        "de": "3–4 Tage gekühlt, oder portionsweise einfrieren."
+      },
+      "where_to_find": {
+        "en": "Asian aisle, or a Japanese grocery.",
+        "de": "Asiatische Abteilung, oder japanischer Laden."
+      }
+    },
+    {
+      "ingredient_id": "kombu",
+      "name": {
+        "en": "kombu (dried kelp)",
+        "de": "Kombu (getrockneter Kelp)"
+      },
+      "description": {
+        "en": "Dried kelp — a strip of it turns plain water into dashi and adds deep umami to soups and beans.",
+        "de": "Getrockneter Kelp — ein Streifen davon verwandelt Wasser in Dashi und gibt Suppen und Bohnen tiefen Umami."
+      },
+      "usage_tips": {
+        "en": "Wipe gently with a damp cloth — don't rinse, and leave the white powdery bloom on, it is pure flavor. Soak in cold water, then heat slowly and remove before boiling.",
+        "de": "Vorsichtig mit einem feuchten Tuch abwischen — nicht abspülen, und den weißen Belag nicht entfernen, er ist purer Geschmack. In kaltem Wasser einweichen, langsam erhitzen, vor dem Kochen entfernen."
+      },
+      "storage": {
+        "en": "Airtight in the pantry; keeps for many months.",
+        "de": "Luftdicht im Vorratsschrank; hält viele Monate."
+      },
+      "where_to_find": {
+        "en": "Asian aisle, dried-goods section.",
+        "de": "Asiatische Abteilung, Trockenwaren."
+      }
+    },
+    {
+      "ingredient_id": "wakame",
+      "name": {
+        "en": "wakame (dried seaweed)",
+        "de": "Wakame (getrockneter Seetang)"
+      },
+      "description": {
+        "en": "A mild, silky dried seaweed that blooms into dark green ribbons — the classic miso soup green.",
+        "de": "Ein milder, seidiger getrockneter Seetang, der zu dunkelgrünen Bändern aufquillt — das klassische Grün in der Misosuppe."
+      },
+      "usage_tips": {
+        "en": "A small handful is plenty — it expands enormously. Soak 5 minutes in warm water, then add to soup without boiling.",
+        "de": "Eine kleine Handvoll reicht — er quillt enorm auf. 5 Minuten in warmem Wasser einweichen, dann ohne Kochen in die Suppe geben."
+      },
+      "storage": {
+        "en": "Airtight in the pantry; keeps for many months.",
+        "de": "Luftdicht im Vorratsschrank; hält viele Monate."
+      },
+      "where_to_find": {
+        "en": "Asian aisle, dried-goods section.",
+        "de": "Asiatische Abteilung, Trockenwaren."
+      }
+    },
+    {
+      "ingredient_id": "nori",
+      "name": {
+        "en": "nori (roasted seaweed sheets)",
+        "de": "Nori (geröstete Seetangblätter)"
+      },
+      "description": {
+        "en": "Paper-thin roasted seaweed sheets — the wrapper of sushi, and our favorite soup garnish.",
+        "de": "Hauchdünne geröstete Seetangblätter — die Hülle des Sushi und unser liebstes Suppen-Topping."
+      },
+      "usage_tips": {
+        "en": "Tear into pieces and scatter over soup at the last second. Toast a sheet briefly in a dry pan for extra crunch.",
+        "de": "In Stücke reißen und erst zum Schluss über die Suppe streuen. Ein Blatt kurz in der trockenen Pfanne rösten für mehr Crunch."
+      },
+      "storage": {
+        "en": "Airtight with the desiccant packet — moisture is its enemy.",
+        "de": "Luftdicht mit dem Trockenmittelpäckchen — Feuchtigkeit ist sein Feind."
+      },
+      "where_to_find": {
+        "en": "Asian aisle, sushi section.",
+        "de": "Asiatische Abteilung, Sushi-Ecke."
+      }
+    },
+    {
+      "ingredient_id": "shiitake",
+      "name": {
+        "en": "shiitake",
+        "de": "Shiitake"
+      },
+      "description": {
+        "en": "A meaty, deeply savory mushroom whose caps hold sauce like little bowls.",
+        "de": "Ein fleischiger, tief herzhafter Pilz, dessen Hüte Sauce wie kleine Schälchen aufnehmen."
+      },
+      "usage_tips": {
+        "en": "Twist off the stems (save for broth). Sauté the caps cut-side down until golden, then flip.",
+        "de": "Stiele abdrehen (für Brühe aufheben). Die Hüte mit der Schnittfläche nach unten goldbraun anbraten, dann wenden."
+      },
+      "storage": {
+        "en": "Paper bag in the fridge, 5–7 days. Dried shiitake keeps in the pantry.",
+        "de": "Papiertüte im Kühlschrank, 5–7 Tage. Getrocknete Shiitake halten im Vorratsschrank."
+      },
+      "where_to_find": {
+        "en": "Produce section, next to the button mushrooms.",
+        "de": "Gemüseabteilung, neben den Champignons."
+      }
+    },
+    {
+      "ingredient_id": "bok-choy",
+      "name": {
+        "en": "bok choy (Chinese cabbage)",
+        "de": "Pak Choi (Chinakohl)"
+      },
+      "description": {
+        "en": "A tender Chinese cabbage — crunchy white stems, soft dark leaves, ready in minutes.",
+        "de": "Ein zarter Chinakohl — knackige weiße Stiele, weiche dunkle Blätter, in Minuten fertig."
+      },
+      "usage_tips": {
+        "en": "Separate stems from leaves. Stems go into the pan first; leaves wilt in at the very end over high heat.",
+        "de": "Stiele von Blättern trennen. Stiele zuerst in die Pfanne; Blätter erst ganz zum Schluss bei starker Hitze dazu — sie welken sofort."
+      },
+      "storage": {
+        "en": "Loosely wrapped in the fridge, 3–4 days.",
+        "de": "Locker eingewickelt im Kühlschrank, 3–4 Tage."
+      },
+      "where_to_find": {
+        "en": "Produce section, or an Asian grocery.",
+        "de": "Gemüseabteilung, oder asiatischer Laden."
+      }
+    },
+    {
+      "ingredient_id": "bean-sprouts",
+      "name": {
+        "en": "bean sprouts",
+        "de": "Bohnensprossen"
+      },
+      "description": {
+        "en": "Crisp, watery sprouts — the fresh crunch on top of pad thai and in quick stir-fries.",
+        "de": "Knackige, wässrige Sprossen — der frische Crunch auf Pad Thai und in schnellen Pfannengerichten."
+      },
+      "usage_tips": {
+        "en": "Rinse well, keep the cooking short and the heat high, and add them at the very end so they stay crisp.",
+        "de": "Gut abspülen, kurz und heiß garen, erst zum Schluss dazugeben — dann bleiben sie knackig."
+      },
+      "storage": {
+        "en": "Fridge, 1–2 days. They don't like to wait.",
+        "de": "Kühlschrank, 1–2 Tage. Sie mögen nicht warten."
+      },
+      "where_to_find": {
+        "en": "Produce section, or an Asian grocery.",
+        "de": "Gemüseabteilung, oder asiatischer Laden."
+      }
+    },
+    {
+      "ingredient_id": "edamame",
+      "name": {
+        "en": "edamame (young soybeans)",
+        "de": "Edamame (junge Sojabohnen)"
+      },
+      "description": {
+        "en": "Young soybeans in their fuzzy pods — a snack, a side, a salad. Sold frozen, mostly.",
+        "de": "Junge Sojabohnen in ihren flaumigen Schoten — ein Snack, eine Beilage, ein Salat. Meist tiefgefroren erhältlich."
+      },
+      "usage_tips": {
+        "en": "Boil the pods in well-salted water for 3–4 minutes, drain, salt again while hot. Squeeze the beans out with your teeth.",
+        "de": "Die Schoten 3–4 Minuten in kräftig gesalzenem Wasser kochen, abgießen, heiß nachsalzen. Die Bohnen mit den Zähnen aus der Schote drücken."
+      },
+      "storage": {
+        "en": "Freezer — keeps for months.",
+        "de": "Gefrierfach — hält monatelang."
+      },
+      "where_to_find": {
+        "en": "Freezer section, Asian aisle.",
+        "de": "Tiefkühltruhe, asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "tamari",
+      "name": {
+        "en": "tamari (gluten-free soy sauce)",
+        "de": "Tamari (glutenfreie Sojasauce)"
+      },
+      "description": {
+        "en": "Soy sauce's gluten-free sibling — fermented without wheat. Deeper, smoother, a touch less salty.",
+        "de": "Das glutenfreie Geschwisterchen der Sojasauce — ohne Weizen fermentiert. Tiefer, milder, etwas weniger salzig."
+      },
+      "usage_tips": {
+        "en": "Use it anywhere soy sauce goes — it is what makes our gluten-free pad thai work. Check the bottle says gluten-free.",
+        "de": "Überall dort verwenden, wo Sojasauce hingehört — es ist das, was unser glutenfreies Pad Thai möglich macht. Auf die Aufschrift „glutenfrei“ achten."
+      },
+      "storage": {
+        "en": "Pantry unopened; refrigerate after opening for longest life.",
+        "de": "Ungeöffnet im Vorratsschrank; nach dem Öffnen kühl stellen."
+      },
+      "where_to_find": {
+        "en": "Gluten-free aisle, or Asian section.",
+        "de": "Glutenfreie Abteilung, oder asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "soy-sauce",
+      "name": {
+        "en": "soy sauce",
+        "de": "Sojasauce"
+      },
+      "description": {
+        "en": "The classic fermented soy-and-wheat sauce. Salty, dark, a little sweet — a few drops color a whole pan.",
+        "de": "Die klassische fermentierte Sauce aus Soja und Weizen. Salzig, dunkel, leicht süß — ein paar Tropfen färben eine ganze Pfanne."
+      },
+      "usage_tips": {
+        "en": "Pour it along the hot side of the pan, not directly onto the food, for even browning. Note: regular soy sauce contains wheat (gluten).",
+        "de": "An den heißen Pfannenrand gießen, nicht direkt aufs Essen — so bräunt es gleichmäßig. Hinweis: normale Sojasauce enthält Weizen (Gluten)."
+      },
+      "storage": {
+        "en": "Pantry — keeps for a year or more.",
+        "de": "Vorratsschrank — hält ein Jahr und länger."
+      },
+      "where_to_find": {
+        "en": "Asian aisle of any supermarket.",
+        "de": "Asiatische Abteilung jedes Supermarkts."
+      }
+    },
+    {
+      "ingredient_id": "fish-sauce",
+      "name": {
+        "en": "fish sauce",
+        "de": "Fischsauce"
+      },
+      "description": {
+        "en": "A fermented, salty, funky liquid made from fish and salt. Invisible in the final dish — it just makes everything taste more like itself.",
+        "de": "Eine fermentierte, salzige, intensive Flüssigkeit aus Fisch und Salz. Im fertigen Gericht unsichtbar — sie lässt alles nur mehr nach sich selbst schmecken."
+      },
+      "usage_tips": {
+        "en": "A dash is plenty — it seasons, it doesn't drown. For a vegetarian version, combine soy sauce with a squeeze of lime and a pinch of sugar.",
+        "de": "Ein Schuss reicht — sie würzt, sie überschwemmt nicht. Vegetarische Version: Sojasauce mit einem Spritzer Limette und einer Prise Zucker."
+      },
+      "storage": {
+        "en": "Pantry unopened; refrigerate after opening.",
+        "de": "Ungeöffnet im Vorratsschrank; nach dem Öffnen kühl stellen."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "tamarind-paste",
+      "name": {
+        "en": "tamarind paste",
+        "de": "Tamarindenpaste"
+      },
+      "description": {
+        "en": "Sour-sweet pulp from the tamarind pod — the backbone of pad thai's sweet-sour balance.",
+        "de": "Säuerlich-süßes Fruchtfleisch der Tamarinden Schote — das Rückgrat der süß-sauren Balance im Pad Thai."
+      },
+      "usage_tips": {
+        "en": "Soak a block in warm water, then strain out the seeds and fibers. Or use ready-made concentrate — taste and adjust.",
+        "de": "Einen Block in warmem Wasser einweichen, dann Samen und Fasern abseihen. Oder fertiges Konzentrat verwenden — abschmecken und anpassen."
+      },
+      "storage": {
+        "en": "Refrigerate after opening; keeps for months.",
+        "de": "Nach dem Öffnen gekühlt; hält monatelang."
+      },
+      "where_to_find": {
+        "en": "Asian or Indian aisle.",
+        "de": "Asiatische oder indische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "palm-sugar",
+      "name": {
+        "en": "palm sugar",
+        "de": "Palmzucker"
+      },
+      "description": {
+        "en": "Unrefined sugar from the sap of palm trees — soft, caramel-like, only gently sweet.",
+        "de": "Unraffinierter Zucker aus dem Saft von Palmen — weich, karamellig, nur dezent süß."
+      },
+      "usage_tips": {
+        "en": "Sold in hard discs — grate it, or soften a chunk in warm water. In pad thai it brings a round, caramel sweetness that white sugar can't.",
+        "de": "Wird in harten Scheiben verkauft — raspeln oder ein Stück in warmem Wasser weich werden lassen. Im Pad Thai bringt er eine runde, karamellige Süße, die weißer Zucker nicht kann."
+      },
+      "storage": {
+        "en": "Airtight in the pantry; keeps indefinitely.",
+        "de": "Luftdicht im Vorratsschrank; hält praktisch ewig."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "mirin",
+      "name": {
+        "en": "mirin",
+        "de": "Mirin"
+      },
+      "description": {
+        "en": "A sweet Japanese rice wine made for cooking — gentle sweetness and a soft glaze, never the sharpness of drinking wine.",
+        "de": "Ein süßer japanischer Reiswein zum Kochen — dezente Süße und ein weicher Glanz, nie die Schärfe eines Trinkweins."
+      },
+      "usage_tips": {
+        "en": "Simmer gently — the alcohol cooks off quickly and the sugar burns easily. A splash brightens dressings and teriyaki glazes.",
+        "de": "Nur leicht köcheln — der Alkohol verdampft schnell und der Zucker brennt leicht an. Ein Schuss hellt Dressings und Teriyaki-Glasuren auf."
+      },
+      "storage": {
+        "en": "Pantry unopened; refrigerate after opening.",
+        "de": "Ungeöffnet im Vorratsschrank; nach dem Öffnen kühl stellen."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "chili-oil",
+      "name": {
+        "en": "chili oil",
+        "de": "Chiliöl"
+      },
+      "description": {
+        "en": "Oil steeped with dried chilies — heat, fragrance and a little crunch in one jar. A condiment, not a cooking oil.",
+        "de": "Öl, in dem getrocknete Chilis gezogen wurden — Schärfe, Aroma und ein bisschen Crunch in einem Glas. Eine Würze, kein Bratöl."
+      },
+      "usage_tips": {
+        "en": "Drizzle over finished dishes — noodles, eggs, soup. The sediment at the bottom is the best part.",
+        "de": "Über fertige Gerichte träufeln — Nudeln, Eier, Suppe. Der Satz am Boden ist der beste Teil."
+      },
+      "storage": {
+        "en": "Pantry — keeps for months.",
+        "de": "Vorratsschrank — hält monatelang."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "sesame-oil",
+      "name": {
+        "en": "sesame oil (toasted)",
+        "de": "Sesamöl (geröstet)"
+      },
+      "description": {
+        "en": "Oil pressed from toasted sesame seeds — intense, nutty, a finishing oil with a low smoke point.",
+        "de": "Öl aus gerösteten Sesamsamen — intensiv, nussig, ein Abschlussöl mit niedrigem Rauchpunkt."
+      },
+      "usage_tips": {
+        "en": "A few drops at the very end — it is a perfume, not a frying fat. Never heat it hard or it turns bitter.",
+        "de": "Ein paar Tropfen erst ganz zum Schluss — es ist ein Parfum, kein Bratfett. Nie stark erhitzen, sonst wird es bitter."
+      },
+      "storage": {
+        "en": "Pantry, away from light; refrigerate after opening to keep it fresh longer.",
+        "de": "Vorratsschrank, dunkel; nach dem Öffnen kühl stellen, dann hält es länger."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "coconut-cream",
+      "name": {
+        "en": "coconut cream",
+        "de": "Kokoscreme"
+      },
+      "description": {
+        "en": "The thick, spoonable top layer of a can of coconut milk — the body of a curry, dairy-free.",
+        "de": "Die dicke, löffelbare Schicht oben in der Kokosmilchdose — das Rückgrat eines Currys, ganz ohne Milchprodukte."
+      },
+      "usage_tips": {
+        "en": "Don't shake the can — chill it and spoon out the thick cream from the top. To make coconut milk instead, shake and thin with water.",
+        "de": "Die Dose nicht schütteln — kühlen und die feste Creme oben ablöffeln. Für Kokosmilch stattdessen schütteln und mit Wasser verdünnen."
+      },
+      "storage": {
+        "en": "Refrigerate after opening; use within a few days.",
+        "de": "Nach dem Öffnen gekühlt; innerhalb weniger Tage verwenden."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "vegan-butter",
+      "name": {
+        "en": "vegan butter",
+        "de": "Vegane Butter"
+      },
+      "description": {
+        "en": "A plant-based butter — coconut and oil based — that browns, creams and bakes like the original.",
+        "de": "Eine Butter auf Pflanzenbasis — kokos- und ölbasiert — die bräunt, cremig macht und backt wie das Original."
+      },
+      "usage_tips": {
+        "en": "It browns faster than dairy butter — lower the heat a notch and watch it. Works 1:1 in almost every recipe.",
+        "de": "Sie bräunt schneller als Milchbutter — die Hitze eine Stufe zurücknehmen und beobachten. Funktioniert 1:1 in fast jedem Rezept."
+      },
+      "storage": {
+        "en": "Refrigerate; many brands freeze well.",
+        "de": "Kühl stellen; viele Marken lassen sich gut einfrieren."
+      },
+      "where_to_find": {
+        "en": "Vegan / dairy-free section, refrigerated.",
+        "de": "Vegane / laktosefreie Abteilung, Kühlregal."
+      }
+    },
+    {
+      "ingredient_id": "nutritional-yeast",
+      "name": {
+        "en": "nutritional yeast",
+        "de": "Nährhefe"
+      },
+      "description": {
+        "en": "Deactivated yeast flakes with a cheesy, nutty, savory taste — the vegan kitchen's parmesan.",
+        "de": "Deaktivierte Hefeflocken mit käsig-nussigem, herzhaftem Geschmack — das Parmesan der veganen Küche."
+      },
+      "usage_tips": {
+        "en": "Sprinkle over popcorn, pasta, sauces — it melts into warm dishes and adds a deep, cheesy umami.",
+        "de": "Über Popcorn, Pasta, Saucen streuen — sie schmilzt in warmen Gerichten und gibt tiefen, käsigen Umami."
+      },
+      "storage": {
+        "en": "Airtight, cool and dark. Keeps for months.",
+        "de": "Luftdicht, kühl und dunkel. Hält monatelang."
+      },
+      "where_to_find": {
+        "en": "Health-food section, baking aisle.",
+        "de": "Bio-/Gesundheitsabteilung, Backabteilung."
+      }
+    },
+    {
+      "ingredient_id": "almond-flour",
+      "name": {
+        "en": "almond flour",
+        "de": "Mandelmehl"
+      },
+      "description": {
+        "en": "Finely ground almonds — the base of keto baking, naturally gluten-free and rich.",
+        "de": "Fein gemahlene Mandeln — die Basis des Keto-Backens, von Natur aus glutenfrei und reichhaltig."
+      },
+      "usage_tips": {
+        "en": "It dries out faster than wheat flour — don't overbake, and let batters rest so it can drink. Goes rancid — keep it cold.",
+        "de": "Es trocknet schneller aus als Weizenmehl — nicht zu lange backen, Teige ruhen lassen, damit es Flüssigkeit aufnehmen kann. Wird ranzig — kalt lagern."
+      },
+      "storage": {
+        "en": "Fridge or freezer — it keeps much longer cold.",
+        "de": "Kühlschrank oder Gefrierfach — dort hält es sich viel länger."
+      },
+      "where_to_find": {
+        "en": "Baking aisle, gluten-free section.",
+        "de": "Backabteilung, glutenfreie Ecke."
+      }
+    },
+    {
+      "ingredient_id": "chickpea-flour",
+      "name": {
+        "en": "chickpea flour (besan)",
+        "de": "Kichererbsenmehl (Besan)"
+      },
+      "description": {
+        "en": "Ground chickpeas — the binder of falafel, the base of socca, naturally gluten-free and high in protein.",
+        "de": "Gemahlene Kichererbsen — das Bindemittel von Falafel, die Basis von Socca, von Natur aus glutenfrei und proteinreich."
+      },
+      "usage_tips": {
+        "en": "Whisk into cold water first so it doesn't lump, and let the batter rest 30 minutes. It fries beautifully crisp.",
+        "de": "Zuerst in kaltem Wasser anrühren, damit es nicht klumpt, und den Teig 30 Minuten ruhen lassen. Wird wunderbar knusprig ausgebacken."
+      },
+      "storage": {
+        "en": "Airtight in the pantry; keeps for months.",
+        "de": "Luftdicht im Vorratsschrank; hält monatelang."
+      },
+      "where_to_find": {
+        "en": "Indian aisle, or gluten-free section.",
+        "de": "Indische Abteilung, oder glutenfreie Ecke."
+      }
+    },
+    {
+      "ingredient_id": "cauliflower-rice",
+      "name": {
+        "en": "cauliflower rice",
+        "de": "Blumenkohlreis"
+      },
+      "description": {
+        "en": "Cauliflower pulsed into rice-sized grains — the light, low-carb base under curries and bowls.",
+        "de": "Blumenkohl zu reisgroßen Körnern zerkleinert — die leichte, kohlenhydratarme Basis unter Currys und Bowls."
+      },
+      "usage_tips": {
+        "en": "Don't overcrowd the pan or it steams instead of sautéing. Fresh or frozen both work — frozen is actually drier and easier.",
+        "de": "Die Pfanne nicht überfüllen, sonst schwitzt er statt zu braten. Frisch oder tiefgefroren — tiefgefroren ist tatsächlich trockener und einfacher."
+      },
+      "storage": {
+        "en": "Fridge 2–3 days, or use frozen straight from the bag.",
+        "de": "Kühlschrank 2–3 Tage, oder tiefgefroren direkt aus der Tüte in die Pfanne."
+      },
+      "where_to_find": {
+        "en": "Produce section, or freezer.",
+        "de": "Gemüseabteilung, oder Tiefkühltruhe."
+      }
+    },
+    {
+      "ingredient_id": "smoked-tofu",
+      "name": {
+        "en": "smoked tofu",
+        "de": "Räuchertofu"
+      },
+      "description": {
+        "en": "Tofu smoked over wood — firm, meaty, ready to eat straight from the pack. The star of our ramen.",
+        "de": "Über Holz geräucherter Tofu — fest, fleischig, direkt aus der Packung essbereit. Der Star unseres Ramen."
+      },
+      "usage_tips": {
+        "en": "Cube it and crisp the edges in a hot pan — the smoke deepens. No pressing needed, it is already firm.",
+        "de": "Würfeln und in heißer Pfanne knusprig anbraten — der Rauch wird tiefer. Auspressen ist nicht nötig, er ist schon fest."
+      },
+      "storage": {
+        "en": "Refrigerated, in its liquid; change the water if you keep it several days.",
+        "de": "Gekühlt in seiner Lake; bei längerer Aufbewahrung das Wasser wechseln."
+      },
+      "where_to_find": {
+        "en": "Vegan / refrigerated section.",
+        "de": "Vegane Abteilung, Kühlregal."
+      }
+    },
+    {
+      "ingredient_id": "guanciale",
+      "name": {
+        "en": "guanciale",
+        "de": "Guanciale"
+      },
+      "description": {
+        "en": "Cured pork jowl — the soul of a proper carbonara. Fatty, salty, deeply porky.",
+        "de": "Luftgetrocknete Schweinebacke — die Seele einer richtigen Carbonara. Fett, salzig, tief schweinig."
+      },
+      "usage_tips": {
+        "en": "Cut into small strips and render slowly — the fat is liquid gold for the sauce. Pancetta is the common substitute.",
+        "de": "In kleine Streifen schneiden und langsam auslassen — das Fett ist flüssiges Gold für die Sauce. Pancetta ist der gängige Ersatz."
+      },
+      "storage": {
+        "en": "Refrigerated, wrapped; freezes well.",
+        "de": "Gekühlt, eingewickelt; lässt sich gut einfrieren."
+      },
+      "where_to_find": {
+        "en": "Italian deli counter, or the cheese counter.",
+        "de": "Italienische Feinkost, oder die Käsetheke."
+      }
+    },
+    {
+      "ingredient_id": "pecorino",
+      "name": {
+        "en": "pecorino",
+        "de": "Pecorino"
+      },
+      "description": {
+        "en": "A salty, sharp sheep's-milk cheese — half of carbonara's heart (the other half is the egg).",
+        "de": "Ein salziger, scharfer Schafskäse — die Hälfte des Carbonara-Herzens (die andere ist das Ei)."
+      },
+      "usage_tips": {
+        "en": "Grate it finely and stir it in off the heat — too much heat and it clumps. Parmesan works in a pinch, but pecorino is sharper.",
+        "de": "Fein reiben und vom Herd nehmen, bevor man ihn einrührt — bei zu viel Hitze klumpt er. Parmesan geht zur Not, aber Pecorino ist sharfer."
+      },
+      "storage": {
+        "en": "Wrapped in the fridge; keeps for weeks.",
+        "de": "Eingewickelt im Kühlschrank; hält wochenlang."
+      },
+      "where_to_find": {
+        "en": "Cheese counter, Italian section.",
+        "de": "Käsetheke, italienische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "emmental",
+      "name": {
+        "en": "emmental",
+        "de": "Emmentaler"
+      },
+      "description": {
+        "en": "An Alpine cow's-milk cheese that melts into long, silky strings — the crown of Käsespätzle.",
+        "de": "Ein Alpen-Kuhmilchkäse, der zu langen, seidigen Fäden schmilzt — die Krone der Käsespätzle."
+      },
+      "usage_tips": {
+        "en": "Grate it yourself — pre-grated never melts as beautifully. Layer it with the Spätzle and finish under the grill until bubbling.",
+        "de": "Selbst reiben — fertig geriebener schmilzt nie so schön. Mit den Spätzle schichten und unter dem Grill blubbernd überbacken."
+      },
+      "storage": {
+        "en": "Wrapped in the fridge; keeps for weeks.",
+        "de": "Eingewickelt im Kühlschrank; hält wochenlang."
+      },
+      "where_to_find": {
+        "en": "Cheese counter.",
+        "de": "Käsetheke, Kühlregal."
+      }
+    },
+    {
+      "ingredient_id": "feta",
+      "name": {
+        "en": "feta",
+        "de": "Feta"
+      },
+      "description": {
+        "en": "A brined sheep's (and goat's) milk cheese — salty, crumbly, the taste of Greece.",
+        "de": "Ein Schafs- (und Ziegen-)milchkäse in Lake — salzig, krümelig, der Geschmack Griechenlands."
+      },
+      "usage_tips": {
+        "en": "Buy a block in brine, not pre-crumbled — it tastes fresher and crumbles better. Crumble it over the salad at the end.",
+        "de": "Einen Block in Lake kaufen, nicht vorgkrümelt — er schmeckt frischer und krümelt besser. Erst zum Schluss über den Salat bröseln."
+      },
+      "storage": {
+        "en": "Keep submerged in its brine in the fridge.",
+        "de": "In seiner Lake im Kühlschrank aufbewahren."
+      },
+      "where_to_find": {
+        "en": "Cheese counter, Mediterranean section, or olive bar.",
+        "de": "Käsetheke, mediterrane Abteilung, oder Oliventheke."
+      }
+    },
+    {
+      "ingredient_id": "ricotta",
+      "name": {
+        "en": "ricotta",
+        "de": "Ricotta"
+      },
+      "description": {
+        "en": "A fresh, mild whey cheese — soft, slightly sweet, the gentle layer in a lasagne.",
+        "de": "Ein frischer, milder Molkekäse — weich, leicht süßlich, die sanfte Schicht in der Lasagne."
+      },
+      "usage_tips": {
+        "en": "Spoon it in soft dollops between the layers. It doesn't brown much — that is fine, it stays creamy.",
+        "de": "In weichen Häufchen zwischen die Schichten löffeln. Er bräunt kaum — das ist in Ordnung, er bleibt cremig."
+      },
+      "storage": {
+        "en": "Fridge, 3–5 days. Best very fresh.",
+        "de": "Kühlschrank, 3–5 Tage. Am besten ganz frisch."
+      },
+      "where_to_find": {
+        "en": "Cheese counter, refrigerated.",
+        "de": "Käsetheke, Kühlregal."
+      }
+    },
+    {
+      "ingredient_id": "garam-masala",
+      "name": {
+        "en": "garam masala",
+        "de": "Garam Masala"
+      },
+      "description": {
+        "en": "A warm Indian spice blend — cinnamon, cardamom, clove, cumin. \"Garam\" means warm (in temperature), not chili-hot.",
+        "de": "Eine warme indische Gewürzmischung — Zimt, Kardamom, Nelke, Kreuzkümmel. „Garam“ heißt warm (an Temperatur), nicht chili-scharf."
+      },
+      "usage_tips": {
+        "en": "Bloom it in hot fat for 30 seconds before adding liquids. Whole spices, toasted and ground at home, are a revelation.",
+        "de": "30 Sekunden in heißem Fett aufblühen lassen, bevor Flüssigkeit dazukommt. Ganze Gewürze, zu Hause geröstet und gemahlen, sind eine Offenbarung."
+      },
+      "storage": {
+        "en": "Airtight jar, away from light. Best within 3 months of grinding.",
+        "de": "Luftdicht und dunkel aufbewahren. Frisch gemahlen innerhalb von 3 Monaten am besten."
+      },
+      "where_to_find": {
+        "en": "Indian aisle, or the spice aisle.",
+        "de": "Indische Abteilung, oder Gewürzabteilung."
+      }
+    },
+    {
+      "ingredient_id": "gluten-free-flour",
+      "name": {
+        "en": "gluten-free flour blend",
+        "de": "Glutenfreies Mehl (Backmischung)"
+      },
+      "description": {
+        "en": "A 1:1 baking blend of rice, potato and tapioca starch with xanthan gum — the easiest way to bake gluten-free.",
+        "de": "Eine 1:1-Backmischung aus Reis-, Kartoffel- und Tapiokastärke mit Xanthan — der einfachste Weg, glutenfrei zu backen."
+      },
+      "usage_tips": {
+        "en": "Let batters rest 10 minutes so the starches hydrate. Xanthan gum is the binder — don't skip resting. Works cup-for-cup in most recipes.",
+        "de": "Teige 10 Minuten ruhen lassen, damit die Stärken quellen. Xanthan ist das Bindemittel — das Ruhen nicht überspringen. Funktioniert in den meisten Rezepten 1:1."
+      },
+      "storage": {
+        "en": "Airtight, in a cool place. Xanthan keeps it stable for months.",
+        "de": "Luftdicht und kühl. Das Xanthan hält sie monatelang stabil."
+      },
+      "where_to_find": {
+        "en": "Gluten-free aisle, baking section.",
+        "de": "Glutenfreie Abteilung, Backwaren."
+      }
+    },
+    {
+      "ingredient_id": "gluten-free-spaghetti",
+      "name": {
+        "en": "gluten-free spaghetti",
+        "de": "Glutenfreie Spaghetti"
+      },
+      "description": {
+        "en": "Spaghetti made from rice and corn — the weeknight carbonara carrier, no compromise on the silky texture.",
+        "de": "Spaghetti aus Reis und Mais — der Wochentags-Carbonara-Träger, ohne Kompromiss bei der seidigen Textur."
+      },
+      "usage_tips": {
+        "en": "Cook 1 minute less than the package says and finish in the sauce — gluten-free pasta turns mushy fast. Don't rinse.",
+        "de": "Eine Minute kürzer kochen als auf der Packung steht und in der Sauce fertig ziehen lassen — glutenfreie Pasta wird schnell matschig. Nicht abschrecken."
+      },
+      "storage": {
+        "en": "Pantry — keeps for a year.",
+        "de": "Vorratsschrank — hält ein Jahr."
+      },
+      "where_to_find": {
+        "en": "Gluten-free aisle.",
+        "de": "Glutenfreie Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "gluten-free-fettuccine",
+      "name": {
+        "en": "gluten-free fettuccine",
+        "de": "Glutenfreie Fettuccine"
+      },
+      "description": {
+        "en": "Wide rice-and-corn ribbons that hold creamy sauces every bit as well as wheat — our alfredo's stage.",
+        "de": "Breite Reis-Mais-Bänder, die cremige Saucen genauso gut tragen wie Weizen — die Bühne unseres Alfedo."
+      },
+      "usage_tips": {
+        "en": "Toss with the sauce off the heat — the residual warmth is enough, and the noodles stay silky.",
+        "de": "Vom Herd nehmen und in der Sauce wenden — die Restwärme reicht, die Nudeln bleiben seidig."
+      },
+      "storage": {
+        "en": "Pantry — keeps for a year.",
+        "de": "Vorratsschrank — hält ein Jahr."
+      },
+      "where_to_find": {
+        "en": "Gluten-free aisle.",
+        "de": "Glutenfreie Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "gluten-free-lasagne-sheets",
+      "name": {
+        "en": "gluten-free lasagne sheets",
+        "de": "Glutenfreie Lasagneblätter"
+      },
+      "description": {
+        "en": "Rice-based lasagne sheets that layer and bake like the original — check the box for no-boil or pre-cook instructions.",
+        "de": "Lasagneblätter aus Reis, die sich genauso schichten und backen wie das Original — auf der Packung nach „kein Vorkochen“ oder „vorkochen“ schauen."
+      },
+      "usage_tips": {
+        "en": "A generous layer of sauce keeps them tender — gluten-free sheets dry out faster at the edges. Cover the dish for most of the bake.",
+        "de": "Eine großzügige Schicht Sauce hält sie zart — glutenfreie Blätter trocknen an den Rändern schneller aus. Das Gericht die meiste Zeit abdecken."
+      },
+      "storage": {
+        "en": "Pantry — keeps for a year.",
+        "de": "Vorratsschrank — hält ein Jahr."
+      },
+      "where_to_find": {
+        "en": "Gluten-free aisle.",
+        "de": "Glutenfreie Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "doener-meat",
+      "name": {
+        "en": "döner meat (spiced, pre-cooked)",
+        "de": "Dönerfleisch (gewürzt, vorgegart)"
+      },
+      "description": {
+        "en": "Thinly stacked, seasoned veal (often with lamb or beef) — the spiced heart of the döner, sold pre-cooked at Turkish delis.",
+        "de": "Dünn geschichtetes, gewürztes Kalbfleisch (oft mit Lamm oder Rind) — das gewürzte Herz des Döners, vorgegart bei türkischen Metzgern erhältlich."
+      },
+      "usage_tips": {
+        "en": "Slice against the grain, as thin as you can. Sear in a very hot pan, in batches — crowded meat steams instead of browning.",
+        "de": "Gegen die Faser möglichst dünn schneiden. In sehr heißer Pfanne portionsweise scharf anbraten — zu viel Fleisch schwitzt statt zu bräunen."
+      },
+      "storage": {
+        "en": "Fridge 1–2 days, or freeze in portions.",
+        "de": "Kühlschrank 1–2 Tage, oder portionsweise einfrieren."
+      },
+      "where_to_find": {
+        "en": "Turkish supermarket, deli counter.",
+        "de": "Türkischer Supermarkt, Frischetheke."
+      }
+    },
+    {
+      "ingredient_id": "ramen-noodles",
+      "name": {
+        "en": "ramen noodles",
+        "de": "Ramen-Nudeln"
+      },
+      "description": {
+        "en": "Wheat noodles with that characteristic spring — fresh or dried, the soul of the bowl.",
+        "de": "Weizennudeln mit der typischen Federkraft — frisch oder getrocknet, die Seele der Schüssel."
+      },
+      "usage_tips": {
+        "en": "Cook them in the last 2 minutes only, in plenty of water, and transfer straight into the bowl. Fresh noodles need barely a minute.",
+        "de": "Erst in den letzten 2 Minuten in reichlich Wasser kochen und direkt in die Schüssel heben. Frische Nudeln brauchen kaum eine Minute."
+      },
+      "storage": {
+        "en": "Dried: pantry. Fresh: fridge, 2–3 days.",
+        "de": "Getrocknet: Vorratsschrank. Frisch: Kühlschrank, 2–3 Tage."
+      },
+      "where_to_find": {
+        "en": "Asian aisle — dried; refrigerated for fresh.",
+        "de": "Asiatische Abteilung — getrocknet; frisch im Kühlregal."
+      }
+    },
+    {
+      "ingredient_id": "rice-noodles",
+      "name": {
+        "en": "rice noodles (stick noodles)",
+        "de": "Reisnudeln (Stäbchennudeln)"
+      },
+      "description": {
+        "en": "Flat or round noodles of pure rice — naturally gluten-free, the base of pad thai.",
+        "de": "Flache oder runde Nudeln aus reinem Reis — von Natur aus glutenfrei, die Basis von Pad Thai."
+      },
+      "usage_tips": {
+        "en": "Soak in warm water until soft — never boil — then toss in the wok for the last minute over high heat.",
+        "de": "In warmem Wasser einweichen, bis sie biegsam sind — nie kochen — dann in der letzten Minute bei starker Hitze im Wok durchschwenken."
+      },
+      "storage": {
+        "en": "Pantry — keeps for a year.",
+        "de": "Vorratsschrank — hält ein Jahr."
+      },
+      "where_to_find": {
+        "en": "Asian aisle.",
+        "de": "Asiatische Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "cornstarch",
+      "name": {
+        "en": "cornstarch",
+        "de": "Speisestärke (Mais)"
+      },
+      "description": {
+        "en": "A fine white powder that turns thin liquids into silky, glossy sauces — the secret of restaurant stir-fries.",
+        "de": "Ein feines weißes Pulver, das dünne Flüssigkeiten in seidige, glänzende Saucen verwandelt — das Geheimnis von Restaurant-Pfannengerichten."
+      },
+      "usage_tips": {
+        "en": "Always mix with cold water first (a slurry), stir it in at the end, and let it bubble for 30 seconds to lose the raw taste.",
+        "de": "Immer zuerst mit kaltem Wasser anrühren (Schlämme), zum Schluss einrühren und 30 Sekunden köcheln lassen, damit der rohe Geschmack vergeht."
+      },
+      "storage": {
+        "en": "Airtight in the pantry; keeps for a year.",
+        "de": "Luftdicht im Vorratsschrank; hält ein Jahr."
+      },
+      "where_to_find": {
+        "en": "Baking aisle, next to the flour.",
+        "de": "Backabteilung, neben dem Mehl."
+      }
+    },
+    {
+      "ingredient_id": "kalamata-olives",
+      "name": {
+        "en": "kalamata olives",
+        "de": "Kalamata-Oliven"
+      },
+      "description": {
+        "en": "Deep purple, almond-shaped Greek olives, cured in red-wine vinegar — briny, fruity, unmistakable.",
+        "de": "Tiefviolette, mandelförmige griechische Oliven, in Rotweinessig eingelegt — salzig, fruchtig, unverwechselbar."
+      },
+      "usage_tips": {
+        "en": "Buy them whole and pit them yourself — the flesh stays firmer and tastier. A jagged tear beats a clean cut.",
+        "de": "Ganze Oliven kaufen und selbst entsteinen — das Fruchtfleisch bleibt fester und aromatischer. Ein gezackter Riss schlägt einen sauberen Schnitt."
+      },
+      "storage": {
+        "en": "Keep submerged in brine in the fridge.",
+        "de": "In Lake im Kühlschrank aufbewahren."
+      },
+      "where_to_find": {
+        "en": "Olive bar, or the Mediterranean section.",
+        "de": "Oliventheke, oder mediterrane Abteilung."
+      }
+    },
+    {
+      "ingredient_id": "tofu",
+      "name": {
+        "en": "tofu (soybean curd)",
+        "de": "Tofu (Sojabohnenquark)"
+      },
+      "description": {
+        "en": "Fresh soybean curd — mild, clean, a sponge for flavor. Silken for soups, firm for everything else.",
+        "de": "Frischer Sojabohnenquark — mild, sauber, ein Schwamm für Geschmack. Seidentofu für Suppen, fester für alles andere."
+      },
+      "usage_tips": {
+        "en": "Press firm tofu 15 minutes wrapped in a clean towel with a weight on top — it then browns instead of steaming. Cube it and crisp the edges in a hot pan.",
+        "de": "Festen Tofu 15 Minuten in ein sauberes Tuch gewickelt mit einem Gewicht auspressen — dann brät er, statt zu dünsten. Würfeln und in heißer Pfanne knusprig anbraten."
+      },
+      "storage": {
+        "en": "Keep in water in the fridge, change the water daily. Lasts about a week.",
+        "de": "In Wasser im Kühlschrank aufbewahren, Wasser täglich wechseln. Hält etwa eine Woche."
+      },
+      "where_to_find": {
+        "en": "Vegan / refrigerated section.",
+        "de": "Vegane Abteilung, Kühlregal."
+      }
+    }
+  ]
+}

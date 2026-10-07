@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>morphcook — a calm cookbook</title>
+<!-- Visual reference prototype. The Flutter app (app/) is the codebase; this
+     file only sketches the tumblr-era cookbook look: paper grain, Playfair
+     Display, Caveat, JetBrains Mono, striped placeholders, polaroid cards,
+     dashed rules, lowercase display. Fonts load from Google here; the app
+     bundles them in assets/google_fonts/. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#F6F1E5; --paper-deep:#EFE7D4; --ink:#2B2620; --ink-soft:#6B6156;
+    --ink-faint:#A69B8C; --line:#D8CDB8; --coral:#C1543C; --teal:#3E7C7B;
+    --mustard:#E9B44C; --sage:#8F9E4F;
+    --cook-bg:#191511; --cook-panel:#241E18; --cook-paper:#EFE7D4;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body {
+    background-color:var(--paper);
+    /* paper grain: faint ink dots on a 7px grid + horizontal fibers every 26px */
+    background-image:
+      radial-gradient(circle, rgba(166,155,140,.05) .6px, transparent .7px),
+      repeating-linear-gradient(0deg, rgba(166,155,140,.03) 0 1px, transparent 1px 26px);
+    background-size:7px 7px, auto;
+    color:var(--ink);
+    font-family:'Playfair Display', serif;
+    min-height:100vh;
+  }
+  body.reduce-motion, body.reduce-motion * { animation:none !important; transition:none !important; }
+  .wrap { max-width:680px; margin:0 auto; padding:0 20px 80px; }
+  .display { font-family:'Playfair Display', serif; font-style:italic; font-weight:600; letter-spacing:-.5px; }
+  .mono { font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:1.2px; color:var(--ink-soft); }
+  .hand { font-family:'Caveat', cursive; }
+  .dashed { height:1px; background:repeating-linear-gradient(90deg, var(--line) 0 5px, transparent 5px 9px); border:0; }
+  hr.dashed { margin:14px 0; }
+
+  /* masthead */
+  .masthead { padding-top:14px; }
+  .masthead .inkbar { height:7px; background:var(--ink); }
+  .masthead h1 { font-size:40px; text-align:center; margin-top:10px; text-transform:lowercase; }
+  .masthead .tagline { text-align:center; margin-top:6px; text-transform:uppercase; }
+  .masthead .dateline { display:flex; justify-content:space-between; padding:4px 0; color:var(--ink-faint); }
+  .masthead .tools { display:flex; justify-content:space-between; align-items:center; padding:8px 0; }
+  .lang button, .motion button {
+    font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:1.2px;
+    background:none; border:1px solid var(--line); color:var(--ink-soft);
+    padding:5px 9px; cursor:pointer; text-transform:uppercase;
+  }
+  .lang button.on, .motion button.on { background:var(--teal); border-color:var(--teal); color:var(--paper); }
+
+  /* striped plate placeholder */
+  .plate {
+    width:100%; border-radius:4px; position:relative; overflow:hidden;
+    background:
+      repeating-linear-gradient(115deg,
+        transparent 0 26px,
+        color-mix(in srgb, var(--c) 80%, transparent) 26px 37px,
+        transparent 37px 52px,
+        color-mix(in srgb, var(--c) 47%, transparent) 52px 63px,
+        transparent 63px 78px,
+        color-mix(in srgb, var(--c) 47%, transparent) 78px 89px,
+        transparent 89px 104px,
+        color-mix(in srgb, var(--c) 47%, transparent) 104px 115px,
+        transparent 115px 130px,
+        color-mix(in srgb, var(--c) 80%, transparent) 130px 141px),
+      linear-gradient(color-mix(in srgb, var(--c) 13%, transparent), color-mix(in srgb, var(--c) 13%, transparent));
+  }
+  .plate .caption {
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    background:rgba(246,241,229,.93); padding:6px 14px; font-style:italic; font-size:15px;
+    color:var(--ink); text-align:center; max-width:85%;
+  }
+
+  /* polaroid card */
+  .polaroid {
+    background:var(--paper); border:1px solid var(--line); border-radius:2px;
+    box-shadow:2px 4px 10px rgba(43,38,32,.10); padding:10px; cursor:pointer;
+    transition:transform .18s ease;
+  }
+  .polaroid:hover { transform:rotate(0deg) !important; }
+  .polaroid .name { font-size:21px; margin-top:8px; }
+  .polaroid .sub { font-style:italic; color:var(--ink-soft); font-size:14px; margin-top:2px; }
+  .polaroid .meta { margin-top:6px; color:var(--ink-faint); }
+  .tilt-l { transform:rotate(-.7deg); }
+  .tilt-r { transform:rotate(.8deg); }
+
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:14px; }
+  @media (max-width:520px) { .grid { grid-template-columns:1fr; } }
+
+  section h2 { font-size:24px; margin-top:34px; text-transform:lowercase; }
+  .section-note { color:var(--ink-faint); margin-top:2px; }
+
+  .featured { margin-top:22px; }
+  .featured .polaroid { cursor:default; }
+  .featured .polaroid:hover { transform:none; }
+
+  /* variant switcher */
+  .switcher { margin-top:16px; }
+  .vrow { padding:10px 0; border-top:1px dashed var(--line); }
+  .vrow .vlabel { text-transform:uppercase; color:var(--ink-faint); display:block; margin-bottom:6px; }
+  .chip {
+    font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:1.2px;
+    border:1.3px solid var(--line); background:var(--paper); color:var(--ink-soft);
+    padding:6px 10px; margin:0 6px 6px 0; cursor:pointer; text-transform:lowercase;
+  }
+  .chip.on { background:var(--teal); border-color:var(--teal); color:var(--paper); }
+  .chip:disabled { opacity:.45; cursor:not-allowed; }
+  .vnote { color:var(--coral); margin-top:2px; }
+
+  /* ingredients + steps */
+  .twocol { display:grid; grid-template-columns:1fr 1.2fr; gap:24px; margin-top:16px; }
+  @media (max-width:560px) { .twocol { grid-template-columns:1fr; } }
+  .colhead { text-transform:uppercase; color:var(--ink-faint); margin-bottom:8px; }
+  ul.ingredients { list-style:none; }
+  ul.ingredients li { padding:5px 0; border-bottom:1px dashed var(--line); font-size:15px; }
+  ul.ingredients li .amt { font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--ink-soft); display:inline-block; min-width:74px; }
+  ul.ingredients li.flash { animation:flash .9s ease; }
+  @keyframes flash { 0% { background:rgba(193,84,60,.28); } 100% { background:transparent; } }
+  ol.steps { padding-left:20px; }
+  ol.steps li { padding:5px 0; font-size:15px; color:var(--ink-soft); }
+  .learn { color:var(--coral); font-family:'JetBrains Mono', monospace; font-size:9.5px; letter-spacing:1px; text-decoration:none; text-transform:uppercase; }
+  .learn:hover { text-decoration:underline; }
+
+  .btn {
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+    background:var(--ink); color:var(--paper); border:0; padding:11px 18px; cursor:pointer; margin-top:16px;
+  }
+  .btn.ghost { background:none; color:var(--ink); border:1px solid var(--line); }
+  .btnrow { display:flex; gap:10px; flex-wrap:wrap; }
+
+  .search { width:100%; margin-top:26px; padding:10px 12px; font-family:'JetBrains Mono', monospace; font-size:12px;
+    background:var(--paper); border:1px solid var(--line); color:var(--ink); }
+  .search::placeholder { color:var(--ink-faint); }
+
+  footer { margin-top:48px; text-align:center; color:var(--ink-faint); }
+
+  /* cook mode overlay */
+  #cook {
+    position:fixed; inset:0; background:var(--cook-bg); color:var(--cook-paper);
+    display:none; z-index:50; overflow:auto;
+  }
+  #cook.open { display:block; }
+  #cook .inner { max-width:560px; margin:0 auto; padding:32px 22px 60px; }
+  #cook .kicker { color:var(--mustard); }
+  #cook h2 { font-size:30px; margin-top:8px; text-transform:lowercase; }
+  #cook .stepnum { color:var(--ink-faint); margin-top:26px; }
+  #cook .steptext { font-size:20px; line-height:1.5; margin-top:8px; font-style:italic; }
+  #cook .timer { margin-top:22px; font-family:'JetBrains Mono', monospace; font-size:34px; color:var(--mustard); letter-spacing:2px; }
+  #cook .btn { background:var(--mustard); color:var(--cook-bg); }
+  #cook .btn.ghost { background:none; color:var(--cook-paper); border-color:#4a4238; }
+  #cook.flash { animation:cookflash .42s ease; }
+  @keyframes cookflash {
+    0%,100% { background:var(--cook-bg); }
+    50% { background:var(--coral); }
+  }
+  #cook.flash.alt { animation-name:cookflash-alt; }
+  @keyframes cookflash-alt {
+    0%,100% { background:var(--cook-bg); }
+    50% { background:var(--teal); }
+  }
+  .serv { display:flex; align-items:center; gap:10px; margin-top:14px; color:var(--ink-faint); }
+  .serv button { width:30px; height:30px; border:1px solid #4a4238; background:none; color:var(--cook-paper); cursor:pointer; font-family:'JetBrains Mono', monospace; }
+  .done { text-align:center; padding-top:18vh; }
+  .done .hand { font-size:44px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="inkbar"></div>
+    <h1 class="display">morphcook</h1>
+    <p class="mono tagline" data-i18n="tagline">a calm cookbook · no. 001 — vol. i</p>
+    <hr class="dashed">
+    <div class="dateline mono">
+      <span id="dateline-left">no. 001 — vol. i</span>
+      <span id="dateline-right"></span>
+    </div>
+    <hr class="dashed">
+    <div class="tools">
+      <div class="lang">
+        <button data-lang="en" class="on">EN</button><button data-lang="de">DE</button>
+      </div>
+      <div class="motion">
+        <button id="motionToggle" data-i18n="reduceMotion">reduce motion</button>
+      </div>
+    </div>
+  </header>
+
+  <input class="search" id="search" data-i18n-ph="searchPh" placeholder="search the shelf — try “ramen” or “vegan”…">
+
+  <section class="featured" id="featured"></section>
+
+  <section>
+    <h2 class="display" data-i18n="shelf">the kitchen shelf</h2>
+    <p class="mono section-note" data-i18n="shelfNote">polaroids from this week's cooking</p>
+    <hr class="dashed">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>
+    <hr class="dashed">
+    <p class="mono">morphcook — offline · bilingual · striped placeholders stay</p>
+  </footer>
+</div>
+
+<!-- cook mode overlay -->
+<div id="cook">
+  <div class="inner" id="cookInner"></div>
+</div>
+
+<script>
+"use strict";
+/* ── i18n (chrome only; dish data ships bilingual in the real app) ── */
+const I18N = {
+  en: { tagline:"a calm cookbook · no. 001 — vol. i", shelf:"the kitchen shelf",
+        shelfNote:"polaroids from this week's cooking", reduceMotion:"reduce motion",
+        searchPh:"search the shelf — try “ramen” or “vegan”…",
+        ingredients:"ingredients", method:"method", cookMode:"cook mode",
+        servings:"servings", done:"bon appétit — that's the dish.",
+        startTimer:"start timer", pause:"pause", noVersion:"no {combo} version yet",
+        weekdays:["sunday","monday","tuesday","wednesday","thursday","friday","saturday"],
+        months:["january","february","march","april","may","june","july","august","september","october","november","december"] },
+  de: { tagline:"ein ruhiges kochbuch · nr. 001 — band i", shelf:"das küchenregal",
+        shelfNote:"polaroids von dieser woche", reduceMotion:"bewegungen reduzieren",
+        searchPh:"regal durchsuchen — probier „ramen“ oder „vegan“…",
+        ingredients:"zutaten", method:"zubereitung", cookMode:"kochmodus",
+        servings:"portionen", done:"guten appetit — das gericht ist fertig.",
+        startTimer:"timer starten", pause:"pause", noVersion:"noch keine {combo}-version",
+        weekdays:["sonntag","montag","dienstag","mittwoch","donnerstag","freitag","samstag"],
+        months:["januar","februar","märz","april","mai","juni","juli","august","september","oktober","november","dezember"] },
+};
+let lang = "en";
+const t = (k, vars) => {
+  let s = (I18N[lang][k] ?? I18N.en[k] ?? k);
+  if (vars && vars.combo) s = s.replaceAll("{combo}", vars.combo);
+  return s;
+};
+const applyI18n = () => {
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => el.placeholder = t(el.dataset.i18nPh));
+  document.documentElement.lang = lang;
+};
+document.querySelectorAll(".lang button").forEach(b =>
+  b.addEventListener("click", () => {
+    lang = b.dataset.lang;
+    document.querySelectorAll(".lang button").forEach(x => x.classList.toggle("on", x === b));
+    applyI18n(); renderDateline(); renderFeatured();
+  }));
+
+/* dateline */
+const renderDateline = () => {
+  const d = new Date();
+  document.getElementById("dateline-right").textContent =
+    `${I18N[lang].weekdays[d.getDay()]}, ${I18N[lang].months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+};
+renderDateline();
+
+/* reduce motion */
+document.getElementById("motionToggle").addEventListener("click", e => {
+  document.body.classList.toggle("reduce-motion");
+  e.currentTarget.classList.toggle("on");
+});
+
+/* ── data (subset of app/assets; bilingual there, EN here) ── */
+const DISHES = [
+  { id:"doener", name:"döner kebab", sub:"the late-night classic", color:"#C1543C", tier:"core",
+    caption:"wrapped, sauced, remembered",
+    recipes:[
+      { id:"doener-classic", diet:"classic", effort:"medium", kcal:"high", time:35, kcalNum:780, tags:["street food","quick"],
+        ingredients:[["flatbread","1","piece"],["lamb","300","g"],["yogurt","150","g"],["garlic","2","cloves"],["cucumber","1","piece"],["tomato","2","pieces"],["red onion","1","piece"],["parsley","1","bunch"],["cumin","1","tsp"],["paprika","1","tsp"]],
+        steps:["Marinate the lamb in yogurt, garlic and spices for 20 minutes.","Sear the lamb in a hot pan until browned at the edges.","Warm the flatbread, then layer lamb, cucumber, tomato and onion.","Roll tightly, slice in half, and serve with a spoon of yogurt on the side."] },
+      { id:"doener-vegan", diet:"vegan", effort:"medium", kcal:"high", time:35, kcalNum:690, tags:["street food","plant-based"],
+        ingredients:[["flatbread","1","piece"],["chickpeas","240","g"],["oat cream","150","ml"],["garlic","2","cloves"],["cucumber","1","piece"],["tomato","2","pieces"],["red onion","1","piece"],["parsley","1","bunch"],["cumin","1","tsp"],["smoked paprika","1","tsp"]],
+        steps:["Roast the chickpeas with cumin and smoked paprika until crisp.","Blend oat cream with garlic and a pinch of salt into a sauce.","Warm the flatbread, then layer chickpeas, cucumber, tomato and onion.","Roll tightly, slice in half, and serve with the garlic sauce."] },
+      { id:"doener-keto", diet:"keto", effort:"medium", kcal:"high", time:35, kcalNum:640, tags:["low-carb","street food"],
+        ingredients:[["lettuce","1","head"],["lamb","300","g"],["yogurt","150","g"],["garlic","2","cloves"],["cucumber","1","piece"],["tomato","2","pieces"],["red onion","1","piece"],["parsley","1","bunch"],["cumin","1","tsp"],["olive oil","2","tbsp"]],
+        steps:["Marinate the lamb in yogurt, garlic and cumin for 20 minutes.","Sear the lamb in olive oil until browned at the edges.","Chop cucumber, tomato and onion into a rough salad.","Serve the lamb over lettuce cups with a spoon of yogurt."] },
+    ]},
+  { id:"carbonara", name:"spaghetti carbonara", sub:"roman, creamy, no cream", color:"#E9B44C", tier:"core",
+    caption:"guanciale, egg, pepper — that's it",
+    recipes:[
+      { id:"carbonara-classic", diet:"classic", effort:"medium", kcal:"high", time:25, kcalNum:820, tags:["pasta","italian"],
+        ingredients:[["spaghetti","400","g"],["guanciale","150","g"],["egg yolks","4","pieces"],["pecorino","80","g"],["black pepper","2","tsp"]],
+        steps:["Boil the spaghetti in salted water until al dente.","Fry the guanciale until crisp; keep the fat.","Whisk yolks with grated pecorino and plenty of black pepper.","Toss the hot pasta with the yolk mixture off the heat — the residual warmth makes the sauce."] },
+      { id:"carbonara-vegan", diet:"vegan", effort:"medium", kcal:"medium", time:25, kcalNum:610, tags:["pasta","plant-based"],
+        ingredients:[["spaghetti","400","g"],["smoked tofu","200","g"],["egg yolks","0","pieces"],["cashews","80","g"],["nutritional yeast","3","tbsp"],["black pepper","2","tsp"]],
+        steps:["Blend soaked cashews with nutritional yeast and water into a cream.","Fry the smoked tofu cubes until crisp; keep them warm.","Boil the spaghetti in salted water until al dente.","Toss the hot pasta with the cashew cream and tofu off the heat; finish with pepper."] },
+    ]},
+  { id:"pad-thai", name:"pad thai", sub:"the tamarind wok classic", color:"#3E7C7B", tier:"core",
+    caption:"sweet, sour, a little fiery",
+    recipes:[
+      { id:"pad-thai-classic", diet:"classic", effort:"medium", kcal:"medium", time:30, kcalNum:640, tags:["noodles","thai"],
+        ingredients:[["rice noodles","250","g"],["shrimp","200","g"],["egg","2","pieces"],["tofu","150","g"],["bean sprouts","100","g"],["tamarind paste","3","tbsp"],["fish sauce","2","tbsp"],["peanuts","60","g"]],
+        steps:["Soak the rice noodles in warm water until pliable.","Stir-fry shrimp and tofu until just cooked; push aside.","Scramble the egg in the wok, then add noodles and tamarind.","Toss everything with fish sauce and bean sprouts; top with crushed peanuts."] },
+      { id:"pad-thai-vegan", diet:"vegan", effort:"medium", kcal:"medium", time:30, kcalNum:560, tags:["noodles","plant-based"],
+        ingredients:[["rice noodles","250","g"],["tofu","250","g"],["egg","0","pieces"],["bean sprouts","100","g"],["tamarind paste","3","tbsp"],["soy sauce","2","tbsp"],["lime","1","piece"],["peanuts","60","g"]],
+        steps:["Soak the rice noodles in warm water until pliable.","Press and cube the tofu; fry until golden.","Stir-fry noodles with tamarind and soy sauce until glossy.","Fold in bean sprouts, squeeze over lime, and top with peanuts."] },
+    ]},
+  { id:"pancakes", name:"pancakes", sub:"sunday morning, buttered", color:"#8F9E4F", tier:"core",
+    caption:"stacked, syrup, no rush",
+    recipes:[
+      { id:"pancakes-classic", diet:"classic", effort:"easy", kcal:"medium", time:20, kcalNum:520, tags:["breakfast","sweet"],
+        ingredients:[["flour","250","g"],["milk","300","ml"],["egg","2","pieces"],["butter","30","g"],["baking powder","2","tsp"],["sugar","1","tbsp"],["salt","1","pinch"]],
+        steps:["Whisk flour, baking powder, sugar and salt.","Add milk and eggs; beat until just smooth.","Melt butter in a pan; pour small rounds and cook until bubbly.","Flip, cook 1 minute more, and stack. Serve with syrup."] },
+      { id:"pancakes-vegan", diet:"vegan", effort:"easy", kcal:"medium", time:20, kcalNum:440, tags:["breakfast","plant-based"],
+        ingredients:[["flour","250","g"],["oat milk","300","ml"],["egg","0","pieces"],["apple sauce","80","g"],["baking powder","2","tsp"],["coconut oil","30","g"],["salt","1","pinch"]],
+        steps:["Whisk flour, baking powder and salt.","Stir in oat milk and apple sauce until just smooth.","Melt coconut oil in a pan; pour small rounds and cook until bubbly.","Flip, cook 1 minute more, and stack. Serve with syrup."] },
+    ]},
+  { id:"falafel", name:"falafel", sub:"crispy, herby, green inside", color:"#8F9E4F", tier:"core",
+    caption:"fried chickpeas, tahini drizzle",
+    recipes:[
+      { id:"falafel-classic", diet:"classic", effort:"medium", kcal:"medium", time:40, kcalNum:580, tags:["vegetarian","middle eastern"],
+        ingredients:[["chickpeas","400","g"],["parsley","1","bunch"],["cilantro","1","bunch"],["garlic","4","cloves"],["cumin","2","tsp"],["flour","3","tbsp"],["oil","500","ml"]],
+        steps:["Blend soaked chickpeas with herbs, garlic and cumin — keep it coarse.","Mix in flour, rest the mix 30 minutes in the fridge.","Form small balls and fry in hot oil until deep golden.","Serve in a pocket with salad and tahini sauce."] },
+      { id:"falafel-vegan", diet:"vegan", effort:"medium", kcal:"medium", time:40, kcalNum:580, tags:["plant-based","middle eastern"],
+        ingredients:[["chickpeas","400","g"],["parsley","1","bunch"],["cilantro","1","bunch"],["garlic","4","cloves"],["cumin","2","tsp"],["chickpea flour","3","tbsp"],["oil","500","ml"]],
+        steps:["Blend soaked chickpeas with herbs, garlic and cumin — keep it coarse.","Mix in chickpea flour, rest the mix 30 minutes in the fridge.","Form small balls and fry in hot oil until deep golden.","Serve in a pocket with salad and tahini sauce."] },
+    ]},
+  { id:"ramen", name:"miso ramen", sub:"broth first, everything else after", color:"#2B2620", tier:"core",
+    caption:"slurp. it's soup weather.",
+    recipes:[
+      { id:"ramen-classic", diet:"classic", effort:"hard", kcal:"medium", time:50, kcalNum:690, tags:["noodles","japanese","soup"],
+        ingredients:[["ramen noodles","300","g"],["miso paste","3","tbsp"],["pork belly","200","g"],["egg","2","pieces"],["nori","2","sheets"],["spring onion","2","pieces"],["corn","100","g"]],
+        steps:["Simmer pork belly in water with ginger for 90 minutes; slice thin.","Soft-boil the eggs for 6 minutes; chill and halve.","Cook noodles; warm dashi and whisk in miso off the boil.","Assemble: noodles, broth, pork, egg, nori, corn, spring onion."] },
+      { id:"ramen-vegan", diet:"vegan", effort:"hard", kcal:"medium", time:50, kcalNum:540, tags:["noodles","soup","plant-based"],
+        ingredients:[["ramen noodles","300","g"],["miso paste","3","tbsp"],["shiitake","150","g"],["egg","0","pieces"],["nori","2","sheets"],["spring onion","2","pieces"],["corn","100","g"],["tofu","150","g"]],
+        steps:["Simmer shiitake with kombu and ginger for 40 minutes to build the broth.","Press the tofu and pan-fry cubes until golden.","Cook noodles; warm the broth and whisk in miso off the boil.","Assemble: noodles, broth, tofu, nori, corn, spring onion."] },
+    ]},
+];
+const DIMENSIONS = ["diet", "effort", "kcal"];
+
+/* ── rendering ── */
+const plate = (dish, h, withCaption) =>
+  `<div class="plate" style="--c:${dish.color};height:${h}px">${withCaption ? `<div class="caption">${dish.caption}</div>` : ""}</div>`;
+
+const meta = r => `${r.time} min · ${r.kcalNum} kcal · ${r.effort}`;
+
+let current = DISHES[0];
+const selection = { diet:null, effort:null, kcal:null };
+
+const findRecipe = dish => {
+  const hit = dish.recipes.find(r =>
+    (!selection.diet || r.diet === selection.diet) &&
+    (!selection.effort || r.effort === selection.effort) &&
+    (!selection.kcal || r.kcal === selection.kcal));
+  return hit ?? dish.recipes[0];
+};
+
+const renderGrid = () => {
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  DISHES.forEach((d, i) => {
+    const hay = (d.name + " " + d.sub + " " + d.recipes.map(r => r.tags.join(" ") + " " + r.diet).join(" ")).toLowerCase();
+    if (q && !hay.includes(q)) { return; }
+    const r = d.recipes[0];
+    const el = document.createElement("div");
+    el.className = "polaroid " + (i % 2 ? "tilt-r" : "tilt-l");
+    el.innerHTML = `${plate(d, 110)}<div class="name hand">${d.name}</div>
+      <div class="sub">${d.sub}</div><div class="meta mono">${meta(r)}</div>`;
+    el.addEventListener("click", () => { selectDish(d); });
+    grid.appendChild(el);
+  });
+};
+
+const renderFeatured = () => {
+  const d = current;
+  // default selection from the dish's first recipe
+  if (!selection.diet) { selection.diet = d.recipes[0].diet; selection.effort = d.recipes[0].effort; selection.kcal = d.recipes[0].kcal; }
+  const r = findRecipe(d);
+  const el = document.getElementById("featured");
+  el.innerHTML = `
+    <h2 class="display" style="margin-top:26px">${d.name}</h2>
+    <p class="mono section-note">${d.sub} · ${r.tags.join(" · ")}</p>
+    <hr class="dashed">
+    <div class="polaroid">${plate(d, 190, true)}</div>
+    <div class="switcher" id="switcher"></div>
+    <div class="twocol">
+      <div><div class="mono colhead">${t("ingredients")}</div><ul class="ingredients" id="ing"></ul></div>
+      <div><div class="mono colhead">${t("method")}</div><ol class="steps" id="steps"></ol></div>
+    </div>
+    <div class="btnrow">
+      <button class="btn" id="cookBtn">${t("cookMode")}</button>
+      <button class="btn ghost" id="saveBtn">♡ save this version</button>
+    </div>`;
+  renderSwitcher();
+  renderRecipe(r);
+  document.getElementById("cookBtn").addEventListener("click", () => openCook(r));
+  document.getElementById("saveBtn").addEventListener("click", e => {
+    e.currentTarget.textContent = "♡ saved — your " + d.name;
+  });
+};
+
+const renderSwitcher = () => {
+  const d = current;
+  const host = document.getElementById("switcher");
+  host.innerHTML = "";
+  DIMENSIONS.forEach(dim => {
+    const values = [...new Set(d.recipes.map(r => r[dim]))];
+    const row = document.createElement("div");
+    row.className = "vrow";
+    row.innerHTML = `<span class="mono vlabel">${dim}</span>`;
+    values.forEach(v => {
+      const b = document.createElement("button");
+      b.className = "chip" + (selection[dim] === v ? " on" : "");
+      b.textContent = v;
+      b.addEventListener("click", () => {
+        const prev = selection[dim];
+        selection[dim] = v;
+        if (!d.recipes.some(r => DIMENSIONS.every(x => !selection[x] || r[x] === selection[x]))) {
+          selection[dim] = prev;
+          row.querySelectorAll(".vnote").forEach(n => n.remove());
+          const note = document.createElement("div");
+          note.className = "mono vnote";
+          note.textContent = t("noVersion", { combo:`${dim}=${v}` });
+          row.appendChild(note);
+        } else {
+          renderFeatured();
+        }
+      });
+      row.appendChild(b);
+    });
+    host.appendChild(row);
+  });
+};
+
+const renderRecipe = r => {
+  const old = document.querySelectorAll("#ing li");
+  const ul = document.getElementById("ing");
+  ul.innerHTML = "";
+  r.ingredients.forEach((ing, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="amt">${ing[1]} ${ing[2]}</span>${ing[0]} <a class="learn" href="#" title="kitchen reference">· learn</a>`;
+    li.querySelector(".learn").addEventListener("click", e => { e.preventDefault(); alert("kitchen reference — see assets/ingredient-guide.json in the app"); });
+    ul.appendChild(li);
+    const prevText = old[i] ? old[i].textContent : "";
+    if (prevText.replace(/·.*$/, "").trim() !== `${ing[1]} ${ing[2]} ${ing[0]}`.trim()) {
+      setTimeout(() => li.classList.add("flash"), 30 + i * 40);
+    }
+  });
+  const ol = document.getElementById("steps");
+  ol.innerHTML = r.steps.map(s => `<li>${s}</li>`).join("");
+};
+
+const selectDish = d => {
+  current = d;
+  selection.diet = null; selection.effort = null; selection.kcal = null;
+  renderFeatured();
+  window.scrollTo({ top:0, behavior: document.body.classList.contains("reduce-motion") ? "auto" : "smooth" });
+};
+
+document.getElementById("search").addEventListener("input", renderGrid);
+
+/* ── cook mode ── */
+let cook = null;
+const openCook = r => {
+  cook = { recipe:r, step:0, servings:2, baseServings:2, remaining:0, running:false, timer:null, flashes:0 };
+  renderCook();
+  document.getElementById("cook").classList.add("open");
+};
+const scaleAmt = (amt, servings) => {
+  const n = parseFloat(amt);
+  if (isNaN(n)) return amt;
+  const v = n * servings / cook.baseServings;
+  return (Math.round(v * 100) / 100).toString();
+};
+const renderCook = () => {
+  if (!cook) return;
+  const { recipe, step } = cook;
+  const inner = document.getElementById("cookInner");
+  if (step >= recipe.steps.length) {
+    inner.innerHTML = `<div class="done"><div class="hand">${t("done")}</div>
+      <p class="mono" style="margin-top:10px">${recipe.id} · ${cook.servings} ${t("servings")}</p>
+      <button class="btn" id="cookClose">← back</button></div>`;
+    document.getElementById("cookClose").addEventListener("click", closeCook);
+    return;
+  }
+  const mins = [5, 10, 8, 6, 4, 3][step] ?? 5;
+  if (!cook.remaining) cook.remaining = mins * 60;
+  const ingList = recipe.ingredients
+    .filter(ing => parseFloat(ing[1]) > 0)
+    .map(ing => `<li style="padding:4px 0;border-bottom:1px dashed #4a4238;font-size:14px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#A69B8C;display:inline-block;min-width:70px">${scaleAmt(ing[1], cook.servings)} ${ing[2]}</span>${ing[0]}</li>`)
+    .join("");
+  inner.innerHTML = `
+    <div class="mono kicker">${recipe.id} · ${t("cookMode").toLowerCase()}</div>
+    <h2 class="display">${current.name}</h2>
+    <div class="serv mono"><span>${t("servings")}</span>
+      <button id="servDown">−</button><span id="servNum">${cook.servings}</span><button id="servUp">+</button></div>
+    <div class="mono stepnum">step ${step + 1} / ${recipe.steps.length}</div>
+    <p class="steptext">${recipe.steps[step]}</p>
+    <div class="timer" id="timer">${fmt(cook.remaining)}</div>
+    <div class="btnrow">
+      <button class="btn" id="timerBtn">${cook.running ? t("pause") : t("startTimer")}</button>
+      <button class="btn ghost" id="prevBtn" ${step === 0 ? "disabled" : ""}>← prev</button>
+      <button class="btn ghost" id="nextBtn">next →</button>
+    </div>
+    <div class="mono colhead" style="margin-top:26px;color:#A69B8C">${t("ingredients")}</div>
+    <ul style="list-style:none">${ingList}</ul>
+    <button class="btn ghost" id="cookExit" style="margin-top:26px">exit cook mode</button>`;
+  const tb = document.getElementById("timerBtn");
+  tb.onclick = () => {
+    cook.running = !cook.running;
+    if (cook.running) {
+      tb.textContent = t("pause");
+      cook.timer = setInterval(() => {
+        cook.remaining -= 1;
+        if (cook.remaining <= 0) {
+          cook.remaining = 0; cook.running = false; clearInterval(cook.timer);
+          tb.textContent = t("startTimer");
+          flashTimer();
+        }
+        const el = document.getElementById("timer");
+        if (el) el.textContent = fmt(cook.remaining);
+      }, 1000);
+    } else { clearInterval(cook.timer); tb.textContent = t("startTimer"); }
+  };
+  document.getElementById("prevBtn").onclick = () => { if (cook.step > 0) { cook.step--; cook.remaining = 0; cook.running = false; clearInterval(cook.timer); renderCook(); } };
+  document.getElementById("nextBtn").onclick = () => { cook.step++; cook.remaining = 0; cook.running = false; clearInterval(cook.timer); renderCook(); };
+  document.getElementById("cookExit").onclick = closeCook;
+  document.getElementById("servDown").onclick = () => { if (cook.servings > 1) { cook.servings--; renderCook(); } };
+  document.getElementById("servUp").onclick = () => { cook.servings++; renderCook(); };
+};
+const fmt = s => `${String(Math.floor(s / 60)).padStart(2,"0")}:${String(s % 60).padStart(2,"0")}`;
+const flashTimer = () => {
+  // coral/teal alternation for deaf / hard-of-hearing users
+  const el = document.getElementById("cook");
+  const reduced = document.body.classList.contains("reduce-motion");
+  const toggles = reduced ? 2 : 6;
+  const total = reduced ? 500 : 2500;
+  let n = 0;
+  const tick = () => {
+    n++;
+    el.classList.remove("flash", "alt");
+    void el.offsetWidth;
+    el.classList.add(n % 2 ? "flash" : "alt");
+    if (n < toggles) setTimeout(tick, total / toggles / 2);
+    else setTimeout(() => el.classList.remove("flash", "alt"), total / toggles / 2);
+  };
+  tick();
+};
+const closeCook = () => {
+  if (cook && cook.timer) clearInterval(cook.timer);
+  cook = null;
+  document.getElementById("cook").classList.remove("open");
+};
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeCook();
+});
+
+/* ── boot ── */
+renderGrid();
+renderFeatured();
+applyI18n();
+</script>
+</body>
+</html>

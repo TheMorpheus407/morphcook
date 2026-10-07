@@ -1,0 +1,368 @@
+{
+  "corpus_version": 1,
+  "source": "MorphCook recipe generation pipeline (see pipeline/)",
+  "entries": [
+    {
+      "id": "dietary-how-matching-works",
+      "category": "dietary",
+      "question": {
+        "en": "How does MorphCook decide which recipes I may eat?",
+        "de": "Wie entscheidet MorphCook, welche Rezepte ich essen darf?"
+      },
+      "answer": {
+        "en": "Every recipe carries contains-flags derived from its ingredients (dairy, gluten, pork, nuts, …). Your avoid-flags — single classes or compound shortcuts like vegan, halal or kosher — are expanded and checked against them: any overlap hides the recipe. On top of that, your required attributes must be present, and your time budget and calorie target act as hard filters. What survives is what you see.",
+        "de": "Jedes Rezept trägt Contains-Flags, die aus seinen Zutaten abgeleitet werden (Milchprodukte, Gluten, Schwein, Nüsse, …). Deine Vermeidungs-Flags — einzelne Klassen oder Sammel-Shortcuts wie vegan, halal oder koscher — werden expandiert und dagegen geprüft: jede Überschneidung blendet das Rezept aus. Darüber hinaus müssen deine erforderlichen Attribute vorhanden sein, und Zeitbudget und Kalorienziel wirken als harte Filter. Was übrig bleibt, ist das, was du siehst."
+      },
+      "tags": [
+        "matching",
+        "filters",
+        "avoid",
+        "flags",
+        "profile"
+      ]
+    },
+    {
+      "id": "dietary-halal-kosher",
+      "category": "dietary",
+      "question": {
+        "en": "What do the halal and kosher labels actually mean?",
+        "de": "Was bedeuten die Halal- und Koscher-Labels wirklich?"
+      },
+      "answer": {
+        "en": "They mean compatible ingredients — nothing more. A halal-labelled recipe contains no pork, no alcohol and no non-halal gelatin, and avoids beef and lamb unless they are halal-slaughtered. A kosher-labelled recipe contains no pork, shellfish or molluscs, and never mixes meat with dairy. Certification, however, is a property of sourcing — slaughter, supervision, processing — not of a recipe text. For certified peace of mind, buy certified meat and dairy from a trusted butcher and check every packaged label.",
+        "de": "Sie bedeuten kompatible Zutaten — nicht mehr. Ein halal-gekennzeichnetes Rezept enthält kein Schwein, keinen Alkohol und keine nicht-halal Gelatine und verzichtet auf Rind und Lamm, sofern nicht halal geschlachtet. Ein koscher-gekennzeichnetes Rezept enthält kein Schwein, keine Schalentiere und Weichtiere und mischt nie Fleisch mit Milchprodukten. Zertifizierung ist jedoch eine Eigenschaft der Herkunft — Schlachtung, Aufsicht, Verarbeitung — nicht eines Rezepttextes. Für zertifizierte Sicherheit kaufe zertifiziertes Fleisch und Milchprodukte bei einem vertrauenswürdigen Metzger und prüfe jedes Etikett."
+      },
+      "tags": [
+        "halal",
+        "kosher",
+        "certification",
+        "sourcing",
+        "trust"
+      ]
+    },
+    {
+      "id": "dietary-vegan-vegetarian",
+      "category": "dietary",
+      "question": {
+        "en": "What is the difference between the vegan and vegetarian variants?",
+        "de": "Was ist der Unterschied zwischen der veganen und der vegetarischen Variante?"
+      },
+      "answer": {
+        "en": "Vegetarian recipes contain no meat and no fish, but may contain egg, dairy or honey. Vegan recipes contain no animal products at all. Every vegan variant is therefore also vegetarian-compatible — but not the other way round. The variant switcher on each dish page shows exactly which diets are available.",
+        "de": "Vegetarische Rezepte enthalten kein Fleisch und keinen Fisch, dürfen aber Ei, Milchprodukte oder Honig enthalten. Vegane Rezepte enthalten überhaupt keine tierischen Produkte. Jede vegane Variante ist deshalb auch vegetarisch verträglich — aber nicht umgekehrt. Der Varianten-Switcher auf jeder Gerichtseite zeigt genau, welche Ernährungsweisen verfügbar sind."
+      },
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "variants",
+        "diet"
+      ]
+    },
+    {
+      "id": "dietary-calorie-target",
+      "category": "dietary",
+      "question": {
+        "en": "Why do recipes disappear when I change my calorie target?",
+        "de": "Warum verschwinden Rezepte, wenn ich mein Kalorienziel ändere?"
+      },
+      "answer": {
+        "en": "The calorie target is a hard filter with a tolerance of ±150 kcal per meal. A 680 kcal döner simply does not belong to a 400 kcal meal, so it is hidden. On the dish page you can toggle “show versions outside my target” to peek at the full variant list anyway — and light dishes like miso soup stay visible even at the lowest targets.",
+        "de": "Das Kalorienziel ist ein harter Filter mit einer Toleranz von ±150 kcal pro Mahlzeit. Ein Döner mit 680 kcal gehört einfach nicht zu einer 400-kcal-Mahlzeit und wird deshalb ausgeblendet. Auf der Gerichtseite kannst du „Versionen außerhalb meines Ziels zeigen“ umschalten, um trotzdem die volle Variantenliste zu sehen — und leichte Gerichte wie Misosuppe bleiben auch beim niedrigsten Ziel sichtbar."
+      },
+      "tags": [
+        "calories",
+        "target",
+        "filter",
+        "tolerance"
+      ]
+    },
+    {
+      "id": "dietary-gluten-free",
+      "category": "dietary",
+      "question": {
+        "en": "Are the gluten-free recipes safe if I have celiac disease?",
+        "de": "Sind die glutenfreien Rezepte sicher, wenn ich Zöliakie habe?"
+      },
+      "answer": {
+        "en": "The recipes themselves avoid gluten-containing ingredients — tamari instead of soy sauce, rice noodles instead of wheat, corn tortillas instead of wheat. But the app cannot control your kitchen: some miso contains barley (check the label), and cross-contamination from shared toasters, pans or flour dust is a real risk. When in doubt, cook with clean tools and certified gluten-free products.",
+        "de": "Die Rezepte selbst meiden glutenhaltige Zutaten — Tamari statt Sojasauce, Reisnudeln statt Weizen, Maistortillas statt Weizentortillas. Aber die App kann deine Küche nicht kontrollieren: manches Miso enthält Gerste (Etikett prüfen), und Kreuzkontamination durch gemeinsame Toaster, Pfannen oder Mehlstaub ist ein echtes Risiko. Im Zweifel mit sauberen Utensilien und zertifiziert glutenfreien Produkten kochen."
+      },
+      "tags": [
+        "gluten-free",
+        "celiac",
+        "labels",
+        "cross-contamination",
+        "safety"
+      ]
+    },
+    {
+      "id": "visibility-why-hidden",
+      "category": "visibility",
+      "question": {
+        "en": "Why can't I see all the recipes of a dish?",
+        "de": "Warum sehe ich nicht alle Rezepte eines Gerichts?"
+      },
+      "answer": {
+        "en": "By default a dish page shows only the variants that pass all of your filters. A variant that clashes with your avoid-flags is never shown; a variant outside your calorie target is hidden until you flip the “show versions outside my target” toggle. This keeps the page calm and relevant — if a variant is missing, one of your filters is hiding it, and settings is the place to relax them.",
+        "de": "Standardmäßig zeigt eine Gerichtseite nur die Varianten, die all deine Filter bestehen. Eine Variante, die mit deinen Vermeidungs-Flags kollidiert, wird nie angezeigt; eine Variante außerhalb deines Kalorienziels bleibt ausgeblendet, bis du den Schalter „Versionen außerhalb meines Ziels zeigen“ umlegst. So bleibt die Seite ruhig und relevant — fehlt eine Variante, blendet einer deiner Filter sie aus, und in den Einstellungen kannst du sie lockern."
+      },
+      "tags": [
+        "visibility",
+        "hidden",
+        "variants",
+        "target",
+        "filters"
+      ]
+    },
+    {
+      "id": "visibility-time-budget",
+      "category": "visibility",
+      "question": {
+        "en": "How does the time budget work?",
+        "de": "Wie funktioniert das Zeitbudget?"
+      },
+      "answer": {
+        "en": "Your time budget (max time in settings) is a hard filter: a recipe that takes longer than your budget is hidden everywhere — home, search, meal plan. Every recipe shows its total time, so you always know what you are committing to before you tap. Raise the budget in settings when you have a slow evening.",
+        "de": "Dein Zeitbudget (Maximalzeit in den Einstellungen) ist ein harter Filter: Ein Rezept, das länger braucht, wird überall ausgeblendet — Startseite, Suche, Wochenplan. Jedes Rezept zeigt seine Gesamtzeit, damit du weißt, worauf du dich einlässt, bevor du tippst. Erhöhe das Budget in den Einstellungen, wenn du einen entspannten Abend hast."
+      },
+      "tags": [
+        "time",
+        "budget",
+        "filter",
+        "settings"
+      ]
+    },
+    {
+      "id": "visibility-avoid-ingredients",
+      "category": "visibility",
+      "question": {
+        "en": "How do I exclude one specific ingredient, like cilantro?",
+        "de": "Wie schließe ich eine einzelne Zutat aus, zum Beispiel Koriander?"
+      },
+      "answer": {
+        "en": "In settings, under “avoid specific ingredients”, a typeahead lets you pick exact ingredients from the ingredient dictionary — cilantro, apples, whatever you dislike. Avoiding a family (say, citrus) hides all of its children at once, and a specific pick always wins over a class-level flag you also set.",
+        "de": "In den Einstellungen kannst du unter „bestimmte Zutaten meiden“ über eine Autovervollständigung exakte Zutaten aus dem Zutatenverzeichnis auswählen — Koriander, Äpfel, was immer du nicht magst. Wenn du eine Familie meidest (zum Beispiel Zitrusfrüchte), werden alle ihre Kinder auf einmal ausgeblendet, und eine spezifische Auswahl schlägt immer eine ebenfalls gesetzte Klassen-Flag."
+      },
+      "tags": [
+        "avoid",
+        "ingredients",
+        "typeahead",
+        "family",
+        "children"
+      ]
+    },
+    {
+      "id": "features-variants",
+      "category": "features",
+      "question": {
+        "en": "What are recipe variants?",
+        "de": "Was sind Rezept-Varianten?"
+      },
+      "answer": {
+        "en": "One dish, several complete recipes. A döner exists as classic, vegan, keto and halal — each variant is a full recipe with its own ingredient list, steps and macros, linked to the same dish. Switch variants on the dish page; ingredients that changed flash briefly so you can see exactly what differs.",
+        "de": "Ein Gericht, mehrere vollständige Rezepte. Ein Döner existiert als klassisch, vegan, keto und halal — jede Variante ist ein vollwertiges Rezept mit eigener Zutatenliste, Schritten und Makros, verknüpft mit demselben Gericht. Varianten wechselst du auf der Gerichtseite; Zutaten, die sich geändert haben, blinken kurz auf, damit du genau siehst, was sich unterscheidet."
+      },
+      "tags": [
+        "variants",
+        "dish",
+        "diet",
+        "switch",
+        "flash"
+      ]
+    },
+    {
+      "id": "features-shopping",
+      "category": "features",
+      "question": {
+        "en": "How does the shopping list work?",
+        "de": "Wie funktioniert die Einkaufsliste?"
+      },
+      "answer": {
+        "en": "Add any recipe's ingredients to the shopping list from its dish page. Amounts are aggregated across recipes with unit awareness: 200 g of flour plus 300 g of flour becomes one line of 500 g, and cloves or pieces are summed. Units are never merged blindly — millilitres stay millilitres, grams stay grams — and the list groups everything by supermarket aisle so one pass through the store covers it.",
+        "de": "Füge die Zutaten eines beliebigen Rezepts von seiner Gerichtseite zur Einkaufsliste hinzu. Mengen werden rezeptübergreifend mit Einheitenbewusstsein zusammengefasst: 200 g Mehl plus 300 g Mehl werden zu einer Zeile mit 500 g, und Nelken oder Stückzahlen werden addiert. Einheiten werden nie blind vermischt — Milliliter bleiben Milliliter, Gramm bleiben Gramm — und die Liste gruppiert alles nach Supermarktgang, damit ein Rundgang alles abdeckt."
+      },
+      "tags": [
+        "shopping",
+        "list",
+        "aggregation",
+        "units",
+        "aisle"
+      ]
+    },
+    {
+      "id": "features-cook-mode",
+      "category": "features",
+      "question": {
+        "en": "How does cook mode work?",
+        "de": "Wie funktioniert der Kochmodus?"
+      },
+      "answer": {
+        "en": "Cook mode is a dark, full-screen, step-by-step view of the recipe. Steps with a duration get a one-tap timer with pause and resume; when it ends, the screen flashes as a visual alert (a calm app stays calm — there is no sound). Servings can be scaled and every amount adjusts. Enable quick-tap in settings to advance steps with a double tap — handy with floury fingers.",
+        "de": "Der Kochmodus ist eine dunkle, bildschirmfüllende Schritt-für-Schritt-Ansicht des Rezepts. Schritte mit Dauer bekommen einen Timer per Fingertipp mit Pause und Fortsetzen; wenn er endet, blinkt der Bildschirm als visueller Alarm (eine ruhige App bleibt ruhig — es gibt keinen Ton). Portionen lassen sich skalieren, alle Mengen passen sich an. Aktiviere in den Einstellungen den Schnell-Tipp, um Schritte mit einem Doppeltipp weiterzuschalten — praktisch mit mehligen Fingern."
+      },
+      "tags": [
+        "cook",
+        "timer",
+        "alert",
+        "quick-tap",
+        "servings",
+        "steps"
+      ]
+    },
+    {
+      "id": "features-meal-plan",
+      "category": "features",
+      "question": {
+        "en": "How is the weekly meal plan generated?",
+        "de": "Wie wird der Wochenplan erstellt?"
+      },
+      "answer": {
+        "en": "Seven days are filled from your currently visible recipes — only what passes your filters appears. Meal type, time budget and calorie target are all respected, and breakfast, lunch and dinner slots follow the meal type of each recipe. Regenerate any day you don't like; once you cook a meal, it moves into your history.",
+        "de": "Sieben Tage werden mit deinen aktuell sichtbaren Rezepten gefüllt — nur was deine Filter besteht, erscheint. Mahlzeittyp, Zeitbudget und Kalorienziel werden respektiert, und die Slots für Frühstück, Mittag- und Abendessen folgen dem Mahlzeittyp jedes Rezepts. Generiere jeden Tag neu, der dir nicht gefällt; sobald du ein Gericht gekocht hast, wandert es in deinen Verlauf."
+      },
+      "tags": [
+        "plan",
+        "week",
+        "meal-type",
+        "history",
+        "generate"
+      ]
+    },
+    {
+      "id": "features-insights",
+      "category": "features",
+      "question": {
+        "en": "What do the insights show?",
+        "de": "Was zeigen die Erkenntnisse (Insights)?"
+      },
+      "answer": {
+        "en": "Your cooking life at a glance: streaks of consecutive cooking days, your most-cooked dishes, and your calorie intake over time, all computed from your local history. Everything stays on your device — there is no account and nothing is ever uploaded.",
+        "de": "Dein Küchenleben auf einen Blick: Serien aufeinanderfolgender Kochtage, deine meistgekochten Gerichte und deine Kalorienzufuhr über die Zeit — alles aus deinem lokalen Verlauf berechnet. Alles bleibt auf deinem Gerät — es gibt kein Konto und es wird nie etwas hochgeladen."
+      },
+      "tags": [
+        "insights",
+        "history",
+        "streak",
+        "calories",
+        "privacy"
+      ]
+    },
+    {
+      "id": "troubleshooting-no-results",
+      "category": "troubleshooting",
+      "question": {
+        "en": "The home screen shows no suggestions — what now?",
+        "de": "Die Startseite zeigt keine Vorschläge — was tun?"
+      },
+      "answer": {
+        "en": "Your filters may simply be narrow. The empty state tells you which filter to relax: raise the calorie target or the time budget in settings, or remove a required attribute that no recipe satisfies. If everything feels off, reset the profile filters — your saved recipes and history are untouched.",
+        "de": "Deine Filter sind vielleicht einfach zu eng. Der Leerzustand sagt dir, welchen Filter du lockern sollst: Erhöhe das Kalorienziel oder das Zeitbudget in den Einstellungen, oder entferne ein erforderliches Attribut, das kein Rezept erfüllt. Wenn alles merkwürdig wirkt, setze die Profil-Filter zurück — deine gespeicherten Rezepte und dein Verlauf bleiben unberührt."
+      },
+      "tags": [
+        "empty",
+        "filters",
+        "reset",
+        "home",
+        "suggestions"
+      ]
+    },
+    {
+      "id": "troubleshooting-search",
+      "category": "troubleshooting",
+      "question": {
+        "en": "Why doesn't search find my recipe?",
+        "de": "Warum findet die Suche mein Rezept nicht?"
+      },
+      "answer": {
+        "en": "Search covers titles, subtitles, tags and ingredient names in both languages — try “miso” or “Misosuppe”. The core partition loads instantly; other partitions are fetched on demand, so give the first search a second. Remember that profile filters apply after matching: a recipe hidden by your filters won't appear even when the words match.",
+        "de": "Die Suche durchsucht Titel, Untertitel, Tags und Zutatennamen in beiden Sprachen — versuch „Miso“ oder „Misosuppe“. Die Kern-Partition lädt sofort; andere Partitionen werden bei Bedarf nachgeladen — gib der ersten Suche eine Sekunde. Denk daran: Profil-Filter greifen nach dem Matching — ein Rezept, das deine Filter ausblendet, erscheint nicht, auch wenn die Wörter passen."
+      },
+      "tags": [
+        "search",
+        "index",
+        "partitions",
+        "languages",
+        "filters"
+      ]
+    },
+    {
+      "id": "troubleshooting-timer-alert",
+      "category": "troubleshooting",
+      "question": {
+        "en": "The timer ended but nothing happened.",
+        "de": "Der Timer ist abgelaufen, aber nichts ist passiert."
+      },
+      "answer": {
+        "en": "By design there is no sound — the alert is a visual flash of the screen (coral and teal), so a quiet kitchen stays quiet. Check settings → visual alert is switched on, and note that the reduce-motion preference softens the flash into a gentler pulse. Timers pause when the app goes to the background and resume exactly where they left off.",
+        "de": "Es gibt absichtlich keinen Ton — der Alarm ist ein visuelles Blinken des Bildschirms (koralle und türkis), damit eine ruhige Küche ruhig bleibt. Prüfe in den Einstellungen, ob der visuelle Alarm eingeschaltet ist, und beachte: die Einstellung für reduzierte Bewegung macht das Blinken zu einem sanfteren Puls. Timer pausieren, wenn die App in den Hintergrund geht, und laufen genau dort weiter, wo sie aufgehört haben."
+      },
+      "tags": [
+        "timer",
+        "alert",
+        "sound",
+        "visual",
+        "reduce-motion",
+        "background"
+      ]
+    },
+    {
+      "id": "privacy-data",
+      "category": "privacy",
+      "question": {
+        "en": "Where is my data stored?",
+        "de": "Wo werden meine Daten gespeichert?"
+      },
+      "answer": {
+        "en": "Everything lives on your device: profile, history, meal plan and shopping list in local storage. The app requests no network permission and never phones home — it works offline, always. Uninstalling the app deletes everything; export a backup first if you want to keep your history.",
+        "de": "Alles bleibt auf deinem Gerät: Profil, Verlauf, Wochenplan und Einkaufsliste in lokalem Speicher. Die App verlangt keine Netzwerk-Berechtigung und funkt nie nach Hause — sie funktioniert immer offline. Wenn du die App deinstallierst, ist alles weg; exportiere vorher ein Backup, wenn du deinen Verlauf behalten möchtest."
+      },
+      "tags": [
+        "privacy",
+        "storage",
+        "offline",
+        "device",
+        "network"
+      ]
+    },
+    {
+      "id": "privacy-backup",
+      "category": "privacy",
+      "question": {
+        "en": "How do backups work?",
+        "de": "Wie funktionieren Backups?"
+      },
+      "answer": {
+        "en": "Export creates a morphcook-backup.json file (optionally compressed as .json.gz) containing your profile, history, meal plan, shopping list and your zero-result search queries. Import restores it on any device. An optional password encrypts the file with AES-256-GCM — encrypted backups start with the ENC magic bytes. Sharing goes through your OS share sheet; nothing is uploaded anywhere.",
+        "de": "Der Export erzeugt eine Datei morphcook-backup.json (optional komprimiert als .json.gz) mit deinem Profil, Verlauf, Wochenplan, Einkaufsliste und deinen Suchanfragen ohne Treffer. Der Import stellt sie auf jedem Gerät wieder her. Ein optionales Passwort verschlüsselt die Datei mit AES-256-GCM — verschlüsselte Backups beginnen mit den ENC-Magic-Bytes. Das Teilen läuft über das Teilen-Menü deines Betriebssystems; es wird nirgendwohin hochgeladen."
+      },
+      "tags": [
+        "backup",
+        "export",
+        "import",
+        "encryption",
+        "aes",
+        "gzip",
+        "share"
+      ]
+    },
+    {
+      "id": "privacy-content-requests",
+      "category": "privacy",
+      "question": {
+        "en": "What are the content_requests in my backup?",
+        "de": "Was sind die content_requests in meinem Backup?"
+      },
+      "answer": {
+        "en": "When a search returns zero results, the query is logged locally in content_requests — “sushi”, “sourdough”, whatever you were looking for. It exists to tell the corpus team which dishes to add next, and it only ever leaves your device inside your own backup export. Nothing is sent automatically.",
+        "de": "Wenn eine Suche keine Treffer liefert, wird die Anfrage lokal in content_requests protokolliert — „Sushi“, „Sauerteig“, wonach auch immer du gesucht hast. Sie existiert, um dem Corpus-Team zu sagen, welche Gerichte als Nächstes kommen sollen, und sie verlässt dein Gerät nur innerhalb deines eigenen Backup-Exports. Es wird nie automatisch etwas gesendet."
+      },
+      "tags": [
+        "privacy",
+        "content-requests",
+        "search",
+        "corpus",
+        "backup"
+      ]
+    }
+  ]
+}

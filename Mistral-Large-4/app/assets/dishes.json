@@ -1,0 +1,436 @@
+{
+  "dishes": [
+    {
+      "id": "doener",
+      "name": {
+        "en": "döner",
+        "de": "döner"
+      },
+      "hero": {
+        "en": "the street classic, written for your way of eating",
+        "de": "der street-klassiker, geschrieben für deine art zu essen"
+      },
+      "cap_caption": {
+        "en": "late night, wrapped in paper",
+        "de": "spät nachts, eingewickelt in papier"
+      },
+      "stripe_color": "#C1543C",
+      "variant_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "turkish",
+        "street-food",
+        "middle-eastern"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "name": {
+        "en": "fettuccine alfredo",
+        "de": "fettuccine alfredo"
+      },
+      "hero": {
+        "en": "creamy, peppery, unapologetic",
+        "de": "cremig, pfeffrig, kompromisslos"
+      },
+      "cap_caption": {
+        "en": "one sauce, every table",
+        "de": "eine sauce, jeder tisch"
+      },
+      "stripe_color": "#E9B44C",
+      "variant_ids": [
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free",
+        "alfredo-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "comfort"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "pad-thai",
+      "name": {
+        "en": "pad thai",
+        "de": "pad thai"
+      },
+      "hero": {
+        "en": "sweet, sour, salty, crunchy — one pan, one plate",
+        "de": "süß, sauer, salzig, knusprig — eine pfanne, ein teller"
+      },
+      "cap_caption": {
+        "en": "the wok does the talking",
+        "de": "der wok spricht für sich"
+      },
+      "stripe_color": "#3E7C7B",
+      "variant_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "thai",
+        "noodles",
+        "street-food"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "pancakes",
+      "name": {
+        "en": "pancakes",
+        "de": "pfannkuchen"
+      },
+      "hero": {
+        "en": "sunday morning in a stack",
+        "de": "sonntagmorgen im stapel"
+      },
+      "cap_caption": {
+        "en": "butter, syrup, no rules",
+        "de": "butter, sirup, keine regeln"
+      },
+      "stripe_color": "#E9B44C",
+      "variant_ids": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "american"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "falafel",
+      "name": {
+        "en": "falafel",
+        "de": "falafel"
+      },
+      "hero": {
+        "en": "crispy outside, herb-green inside",
+        "de": "knusprig außen, kräutergrün innen"
+      },
+      "cap_caption": {
+        "en": "the original street food",
+        "de": "das ursprüngliche street food"
+      },
+      "stripe_color": "#8F9E4F",
+      "variant_ids": [
+        "falafel-classic",
+        "falafel-vegan",
+        "falafel-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "vegetarian",
+        "street-food"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "butter-chicken",
+      "name": {
+        "en": "butter chicken",
+        "de": "butter chicken (murgh makhani)"
+      },
+      "hero": {
+        "en": "tomato, cream, and a little patience",
+        "de": "tomate, sahne und ein bisschen geduld"
+      },
+      "cap_caption": {
+        "en": "the red gravy, rewritten for you",
+        "de": "die rote gravy, neu geschrieben für dich"
+      },
+      "stripe_color": "#C1543C",
+      "variant_ids": [
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-keto",
+        "butter-chicken-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "indian",
+        "curry",
+        "comfort"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "shakshuka",
+      "name": {
+        "en": "shakshuka",
+        "de": "shakshuka"
+      },
+      "hero": {
+        "en": "eggs poached in spiced tomato",
+        "de": "eier pochiert in gewürzter tomate"
+      },
+      "cap_caption": {
+        "en": "one pan, all morning",
+        "de": "eine pfanne, den ganzen morgen"
+      },
+      "stripe_color": "#C1543C",
+      "variant_ids": [
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-keto",
+        "shakshuka-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "north-african",
+        "eggs"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "ramen",
+      "name": {
+        "en": "ramen",
+        "de": "ramen"
+      },
+      "hero": {
+        "en": "a bowl, a broth, a whole evening",
+        "de": "eine schüssel, eine brühe, ein ganzer abend"
+      },
+      "cap_caption": {
+        "en": "slurp optional, joy mandatory",
+        "de": "schlürfen optional, freude pflicht"
+      },
+      "stripe_color": "#3E7C7B",
+      "variant_ids": [
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "japanese",
+        "noodles",
+        "soup"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "miso-soup",
+      "name": {
+        "en": "miso soup",
+        "de": "miso-suppe"
+      },
+      "hero": {
+        "en": "the quiet start to everything",
+        "de": "der stille anfang von allem"
+      },
+      "cap_caption": {
+        "en": "five minutes, one pot",
+        "de": "fünf minuten, ein topf"
+      },
+      "stripe_color": "#3E7C7B",
+      "variant_ids": [
+        "miso-soup-classic",
+        "miso-soup-vegan",
+        "miso-soup-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "japanese",
+        "soup",
+        "light"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "carbonara",
+      "name": {
+        "en": "spaghetti carbonara",
+        "de": "spaghetti carbonara"
+      },
+      "hero": {
+        "en": "egg, cheese, pepper — no cream, ever",
+        "de": "ei, käse, pfeffer — nie sahne"
+      },
+      "cap_caption": {
+        "en": "the roman original",
+        "de": "das römische original"
+      },
+      "stripe_color": "#9C6B4F",
+      "variant_ids": [
+        "carbonara-classic",
+        "carbonara-vegan",
+        "carbonara-gluten-free",
+        "carbonara-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "roman"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "tacos",
+      "name": {
+        "en": "tacos",
+        "de": "tacos"
+      },
+      "hero": {
+        "en": "three bites, full stop",
+        "de": "drei bissen, punkt"
+      },
+      "cap_caption": {
+        "en": "the tortilla is the plate",
+        "de": "die tortilla ist der teller"
+      },
+      "stripe_color": "#C98A3D",
+      "variant_ids": [
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-gluten-free",
+        "tacos-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "mexican",
+        "street-food"
+      ],
+      "frequency_tier": "core"
+    },
+    {
+      "id": "greek-salad",
+      "name": {
+        "en": "greek salad",
+        "de": "griechischer salat"
+      },
+      "hero": {
+        "en": "tomato, cucumber, feta — no lettuce, no apologies",
+        "de": "tomate, gurke, feta — kein salatblatt, keine ausreden"
+      },
+      "cap_caption": {
+        "en": "the salad that is a meal",
+        "de": "der salat, der eine mahlzeit ist"
+      },
+      "stripe_color": "#8F9E4F",
+      "variant_ids": [
+        "greek-salad-classic",
+        "greek-salad-vegan",
+        "greek-salad-keto",
+        "greek-salad-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "greek",
+        "mediterranean",
+        "salad"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "lasagne",
+      "name": {
+        "en": "lasagne",
+        "de": "lasagne"
+      },
+      "hero": {
+        "en": "layers of sunday",
+        "de": "schichten vom sonntag"
+      },
+      "cap_caption": {
+        "en": "the baked one, perfected",
+        "de": "die gebackene, perfektioniert"
+      },
+      "stripe_color": "#9C6B4F",
+      "variant_ids": [
+        "lasagne-classic",
+        "lasagne-vegan",
+        "lasagne-gluten-free",
+        "lasagne-keto"
+      ],
+      "partition_id": "cuisine-italian",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "italian",
+        "baked",
+        "family"
+      ],
+      "frequency_tier": "extended"
+    },
+    {
+      "id": "kaesespaetzle",
+      "name": {
+        "en": "käsespätzle",
+        "de": "käsespätzle"
+      },
+      "hero": {
+        "en": "cheese, soft noodles, caramelized onion",
+        "de": "käse, weiche nudeln, karamellisierte zwiebel"
+      },
+      "cap_caption": {
+        "en": "the alpine hug",
+        "de": "die alpine umarmung"
+      },
+      "stripe_color": "#7D6B8A",
+      "variant_ids": [
+        "kaesespaetzle-classic",
+        "kaesespaetzle-vegan",
+        "kaesespaetzle-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "german",
+        "austrian",
+        "alpine",
+        "vegetarian"
+      ],
+      "frequency_tier": "extended"
+    }
+  ]
+}

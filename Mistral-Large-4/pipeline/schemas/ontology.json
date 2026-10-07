@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.local/schemas/ontology.json",
+  "title": "Ontology",
+  "description": "The flag taxonomy: contains-flags (what a recipe has), compound avoid-flags (user-facing shortcuts that expand transitively), attributes (positive descriptors), diet options. Extending is purely additive — one line here, never a migration.",
+  "type": "object",
+  "required": ["contains_flags", "compound_avoid_flags", "attributes", "diet_options"],
+  "additionalProperties": false,
+  "properties": {
+    "contains_flags": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Flags a recipe may contain, derived from its ingredients."
+    },
+    "compound_avoid_flags": {
+      "type": "object",
+      "description": "User-facing avoid/require shortcuts. Each expands (transitively) to member contains-flags. Keys double as required-attribute chips.",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "description": "Positive descriptor vocabularies, grouped by dimension (effort, time_bucket, calorie_bucket, technique).",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string" }
+      }
+    },
+    "diet_options": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "classic",
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "keto",
+          "halal",
+          "kosher",
+          "gluten-free",
+          "sugar-free",
+          "low-fodmap",
+          "lactose-free"
+        ]
+      },
+      "description": "Ordered diet options for the variant switcher."
+    }
+  }
+}

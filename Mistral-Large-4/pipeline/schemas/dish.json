@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.local/schemas/dish.json",
+  "title": "Dish",
+  "description": "A dish concept. Variants are sibling recipes linked by id; routing fields drive corpus partitioning (see docs/asset-partitioning-strategy.md).",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "hero",
+    "cap_caption",
+    "stripe_color",
+    "variant_ids",
+    "partition_id",
+    "secondary_partitions",
+    "cuisine_tags",
+    "frequency_tier"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "$ref": "#/definitions/localized" },
+    "hero": { "$ref": "#/definitions/localized" },
+    "cap_caption": { "$ref": "#/definitions/localized" },
+    "stripe_color": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Masthead stripe color for the dish card."
+    },
+    "variant_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Every variant recipe of this dish, in display order."
+    },
+    "partition_id": {
+      "type": "string",
+      "description": "Primary corpus partition (core | extended | cuisine-*)."
+    },
+    "secondary_partitions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Cuisine discovery overlays this dish also appears in."
+    },
+    "cuisine_tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "frequency_tier": { "type": "string", "enum": ["core", "extended"] }
+  },
+  "definitions": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

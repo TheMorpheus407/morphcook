@@ -1,0 +1,53 @@
+name: morphcook
+description: "MorphCook — the same dish exists for every body. A complete recipe book for every way of eating."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.5
+  hive_ce: ^2.20.1
+  hive_ce_flutter: ^2.3.4
+  google_fonts: ^8.2.1
+  flutter_animate: ^4.5.2
+  cryptography: ^2.9.0
+  share_plus: ^13.3.0
+  file_picker: ^13.1.0
+  path_provider: ^2.1.6
+  wakelock_plus: ^1.7.0
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Corpus, partitioned (see docs/asset-partitioning-strategy.md).
+    # assets/recipes.json is the maintainer's master copy; it is NOT bundled.
+    - assets/partition-manifest.json
+    - assets/dishes.json
+    - assets/ontology.json
+    - assets/ingredients.json
+    - assets/ingredient-guide.json
+    - assets/faqs.json
+    - assets/core-recipes.json
+    - assets/extended-recipes.json
+    - assets/cuisine-italian.json
+    - assets/cuisine-asian.json
+    - assets/cuisine-middle-eastern.json
+    - assets/search/
+    # Playfair Display, JetBrains Mono, Caveat — bundled, never fetched at runtime.
+    - assets/google_fonts/

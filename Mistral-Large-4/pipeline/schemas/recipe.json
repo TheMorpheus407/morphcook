@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.local/schemas/recipe.json",
+  "title": "Recipe",
+  "description": "One complete recipe — a single variant of a dish. Variants are separate recipes linked by dish_id.",
+  "type": "object",
+  "required": [
+    "id",
+    "dish_id",
+    "title",
+    "subtitle",
+    "diet",
+    "effort",
+    "time_minutes",
+    "calories_per_serving",
+    "servings",
+    "meal_type",
+    "ingredients",
+    "steps",
+    "macros",
+    "contains",
+    "attributes",
+    "tags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique, conventionally <dish_id>-<variant>."
+    },
+    "dish_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "$ref": "#/definitions/localized" },
+    "subtitle": { "$ref": "#/definitions/localized" },
+    "diet": {
+      "type": "string",
+      "enum": [
+        "classic",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "keto",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "sugar-free",
+        "low-fodmap",
+        "lactose-free"
+      ]
+    },
+    "effort": { "type": "string", "enum": ["easy", "medium", "hard"] },
+    "time_minutes": { "type": "integer", "minimum": 5, "maximum": 180 },
+    "calories_per_serving": { "type": "integer", "minimum": 100, "maximum": 1200 },
+    "servings": { "type": "integer", "minimum": 1, "maximum": 8 },
+    "meal_type": { "type": "string", "enum": ["breakfast", "lunch", "dinner"] },
+    "ingredients": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "required": ["ingredient_id", "amount", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "ingredient_id": { "type": "string" },
+          "amount": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": {
+            "type": "string",
+            "enum": [
+              "g", "kg", "ml", "l", "tbsp", "tsp",
+              "clove", "cloves", "piece", "pieces", "slice", "slices",
+              "pinch", "bunch", "can", "cans", "pack", "packs"
+            ]
+          },
+          "note": { "$ref": "#/definitions/localized" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "$ref": "#/definitions/localized" },
+          "timer_minutes": { "type": "integer", "minimum": 1, "maximum": 60 }
+        }
+      }
+    },
+    "macros": {
+      "type": "object",
+      "required": ["kcal", "protein_g", "carbs_g", "fat_g"],
+      "additionalProperties": false,
+      "properties": {
+        "kcal": { "type": "integer", "minimum": 0 },
+        "protein_g": { "type": "number", "minimum": 0 },
+        "carbs_g": { "type": "number", "minimum": 0 },
+        "fat_g": { "type": "number", "minimum": 0 }
+      }
+    },
+    "contains": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Contains-flags, exactly the union of the ingredient nodes' flags."
+    },
+    "attributes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Positive descriptors: effort, time/calorie bucket, technique tags, and satisfied required-attribute chips (vegan, halal, kosher, …)."
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    }
+  },
+  "definitions": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

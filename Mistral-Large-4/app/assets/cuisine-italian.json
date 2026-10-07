@@ -1,0 +1,1898 @@
+{
+  "partition_id": "cuisine-italian",
+  "recipes": [
+    {
+      "id": "alfredo-classic",
+      "dish_id": "fettuccine-alfredo",
+      "title": {
+        "en": "Classic Fettuccine Alfredo",
+        "de": "Klassische Fettuccine Alfredo"
+      },
+      "subtitle": {
+        "en": "butter, cream, parmesan — no shortcuts",
+        "de": "butter, sahne, parmesan — keine kompromisse"
+      },
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 20,
+      "calories_per_serving": 720,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "fettuccine",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "chopped, for garnish",
+            "de": "gehackt, zum garnieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring a large pot of salted water to a boil and cook the fettuccine until al dente.",
+            "de": "Einen großen Topf Salzwasser aufkochen, die Fettuccine al dente kochen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "Meanwhile, melt the butter in a large pan over medium heat.",
+            "de": "Inzwischen die Butter in einer großen Pfanne bei mittlerer Hitze schmelzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir in the cream and let it simmer gently for 2 minutes.",
+            "de": "Die Sahne einrühren und 2 Minuten leicht köcheln lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Drain the pasta, reserving 120 ml of the starchy cooking water.",
+            "de": "Die Pasta abgießen, dabei 120 ml stärkehaltiges Kochwasser auffangen."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the pasta in the pan with the butter-cream, adding parmesan and pasta water little by little until the sauce is glossy.",
+            "de": "Die Pasta in die Pfanne geben, Parmesan und nach und nach Kochwasser zugeben, bis die Sauce glänzt."
+          }
+        },
+        {
+          "text": {
+            "en": "Season generously with black pepper and a pinch of nutmeg, garnish with parsley.",
+            "de": "Reichlich mit Pfeffer und einer Prise Muskat abschmecken, mit Petersilie garnieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 720,
+        "protein_g": 22,
+        "carbs_g": 74,
+        "fat_g": 36
+      },
+      "tags": [
+        "italian",
+        "pasta",
+        "creamy",
+        "comfort",
+        "dinner",
+        "quick"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "fettuccine-alfredo",
+      "title": {
+        "en": "Vegan Fettuccine Alfredo",
+        "de": "Vegane Fettuccine Alfredo"
+      },
+      "subtitle": {
+        "en": "cashew cream, nutritional yeast, all the gloss",
+        "de": "cashew-sahne, hefeflocken, voller glanz"
+      },
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 20,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "fettuccine",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cashews",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "soaked 30 minutes",
+            "de": "30 minuten eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "coconut-cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "chopped, for garnish",
+            "de": "gehackt, zum garnieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Blend the soaked cashews with 120 ml of water until completely smooth.",
+            "de": "Die eingeweichten Cashews mit 120 ml Wasser ganz glatt pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook the fettuccine in salted water until al dente.",
+            "de": "Die Fettuccine in Salzwasser al dente kochen."
+          },
+          "timer_minutes": 9
+        },
+        {
+          "text": {
+            "en": "Melt the vegan butter in a pan, add the garlic, then the cashew cream and coconut cream.",
+            "de": "Die vegane Butter in einer Pfanne schmelzen, den Knoblauch dazugeben, dann Cashew-Sahne und Kokoscreme."
+          }
+        },
+        {
+          "text": {
+            "en": "Simmer the sauce for 3 minutes, then toss in the drained pasta with nutritional yeast.",
+            "de": "Die Sauce 3 Minuten köcheln lassen, dann die abgetropfte Pasta mit den Hefeflocken unterheben."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Season with black pepper, nutmeg and salt; the sauce should coat the pasta, not pool.",
+            "de": "Mit Pfeffer, Muskat und Salz abschmecken; die Sauce soll die Pasta umhüllen, nicht baden."
+          }
+        },
+        {
+          "text": {
+            "en": "Garnish with parsley and serve immediately.",
+            "de": "Mit Petersilie garnieren und sofort servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 640,
+        "protein_g": 18,
+        "carbs_g": 70,
+        "fat_g": 30
+      },
+      "tags": [
+        "italian",
+        "pasta",
+        "creamy",
+        "vegan",
+        "comfort",
+        "dinner"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "pan-fry",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "fettuccine-alfredo",
+      "title": {
+        "en": "Gluten-Free Fettuccine Alfredo",
+        "de": "Glutenfreie Fettuccine Alfredo"
+      },
+      "subtitle": {
+        "en": "the same sauce, rice-based pasta",
+        "de": "dieselbe sauce, nudeln aus reis"
+      },
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 20,
+      "calories_per_serving": 700,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-fettuccine",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "chopped, for garnish",
+            "de": "gehackt, zum garnieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cook the gluten-free fettuccine in salted water until al dente — rice pasta goes soft fast, so watch it.",
+            "de": "Die glutenfreien Fettuccine in Salzwasser al dente kochen — Reisnudeln werden schnell weich, also aufpassen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a large pan over medium heat.",
+            "de": "Die Butter in einer großen Pfanne bei mittlerer Hitze schmelzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Add the cream and simmer gently for 2 minutes.",
+            "de": "Die Sahne dazugeben und 2 Minuten leicht köcheln lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Drain the pasta, reserving 120 ml of cooking water.",
+            "de": "Die Pasta abgießen, dabei 120 ml Kochwasser auffangen."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss pasta with the butter-cream, parmesan and pasta water until glossy.",
+            "de": "Pasta mit Butter-Sahne, Parmesan und Kochwasser glänzend vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Season with black pepper and nutmeg, garnish with parsley.",
+            "de": "Mit Pfeffer und Muskat abschmecken, mit Petersilie garnieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 700,
+        "protein_g": 22,
+        "carbs_g": 72,
+        "fat_g": 34
+      },
+      "tags": [
+        "italian",
+        "pasta",
+        "creamy",
+        "gluten-free",
+        "comfort",
+        "dinner"
+      ],
+      "contains": [
+        "dairy"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "low-fodmap",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "alfredo-keto",
+      "dish_id": "fettuccine-alfredo",
+      "title": {
+        "en": "Keto Alfredo",
+        "de": "Keto-Alfredo"
+      },
+      "subtitle": {
+        "en": "zucchini noodles under a parmesan cream",
+        "de": "zucchini-nudeln unter parmesan-sahne"
+      },
+      "diet": "keto",
+      "effort": "medium",
+      "time_minutes": 25,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "zucchini",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "spiralized into noodles",
+            "de": "zu nudeln spiraliert"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Spiralize the zucchini into noodles; if you have a mandoline, cut long ribbons instead.",
+            "de": "Die Zucchini zu Nudeln spiralieren; mit einem Hobel gehen auch lange Streifen."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the butter in a large pan, sauté the garlic for 30 seconds.",
+            "de": "Die Butter in einer großen Pfanne schmelzen, den Knoblauch 30 Sekunden anschwitzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Add the cream and simmer for 3 minutes until slightly thickened.",
+            "de": "Die Sahne dazugeben und 3 Minuten köcheln lassen, bis sie leicht eindickt."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Add the zucchini noodles and toss for 2 minutes only — they should stay al dente.",
+            "de": "Die Zucchini-Nudeln dazugeben und nur 2 Minuten schwenken — sie sollen bissfest bleiben."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Off the heat, stir in the parmesan — the zucchini gives off enough liquid.",
+            "de": "Vom Herd nehmen, den Parmesan unterrühren — die Zucchini gibt genug Flüssigkeit ab."
+          }
+        },
+        {
+          "text": {
+            "en": "Season with black pepper, nutmeg and salt.",
+            "de": "Mit Pfeffer, Muskat und Salz abschmecken."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 680,
+        "protein_g": 24,
+        "carbs_g": 14,
+        "fat_g": 58
+      },
+      "tags": [
+        "italian",
+        "pasta",
+        "creamy",
+        "keto",
+        "low-carb",
+        "dinner"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Classic Carbonara",
+        "de": "Klassische Carbonara"
+      },
+      "subtitle": {
+        "en": "guanciale, egg, pecorino — no cream, ever",
+        "de": "guanciale, ei, pecorino — nie sahne"
+      },
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 25,
+      "calories_per_serving": 750,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "guanciale",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "2 yolks + 1 whole",
+            "de": "2 eigelb + 1 ganzes"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "pecorino",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the spaghetti in salted water until al dente.",
+            "de": "Die Spaghetti in Salzwasser al dente kochen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Render the guanciale in a pan until crisp, keeping the fat.",
+            "de": "Den Guanciale in einer Pfanne knusprig auslassen, das Fett auffangen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the eggs, both cheeses and plenty of black pepper in a bowl.",
+            "de": "Eier, beide Käsesorten und reichlich Pfeffer in einer Schüssel verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Drain the pasta and toss it immediately with the hot guanciale fat, off the heat.",
+            "de": "Die Pasta abgießen und sofort mit dem heißen Guancialefett vermengen, vom Herd nehmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir in the egg mixture quickly — the residual heat makes the sauce, no cream.",
+            "de": "Die Eimischung rasch unterrühren — die Restwärme macht die Sauce, keine Sahne."
+          }
+        },
+        {
+          "text": {
+            "en": "Add a splash of pasta water if needed, serve with more pepper and cheese.",
+            "de": "Nach Bedarf etwas Nudelwasser dazugeben, mit mehr Pfeffer und Käse servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 750,
+        "protein_g": 30,
+        "carbs_g": 72,
+        "fat_g": 38
+      },
+      "tags": [
+        "italian",
+        "roman",
+        "pasta",
+        "eggs",
+        "comfort",
+        "quick"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "pork"
+      ],
+      "attributes": [
+        "fry",
+        "medium",
+        "pan-fry",
+        "sugar-free",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "carbonara-vegan",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Vegan Carbonara",
+        "de": "Vegane Carbonara"
+      },
+      "subtitle": {
+        "en": "smoked tofu, cashew cream, black pepper",
+        "de": "räuchertofu, cashew-sahne, pfeffer"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 25,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "spaghetti",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "smoked-tofu",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "diced small",
+            "de": "klein gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "cashews",
+          "amount": 80,
+          "unit": "g",
+          "note": {
+            "en": "soaked 30 minutes",
+            "de": "30 minuten eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "amount": 4,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pan-fry the diced smoked tofu in vegan butter until crisp at the edges.",
+            "de": "Die Räuchertofu-Würfel in veganer Butter knusprig braten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Blend the soaked cashews with 100 ml of water and the nutritional yeast into a cream.",
+            "de": "Die eingeweichten Cashews mit 100 ml Wasser und den Hefeflocken zu einer Sahne pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Boil the spaghetti in salted water until al dente.",
+            "de": "Die Spaghetti in Salzwasser al dente kochen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Drain the pasta, toss with the tofu, then off the heat stir in the cashew cream.",
+            "de": "Die Pasta abgießen, mit dem Tofu vermengen, dann vom Herd die Cashew-Sahne unterrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "The residual heat should make it glossy — add pasta water if it looks dry.",
+            "de": "Die Restwärme soll alles glänzend machen — bei Bedarf etwas Nudelwasser dazugeben."
+          }
+        },
+        {
+          "text": {
+            "en": "Finish with a heavy hand of black pepper.",
+            "de": "Mit reichlich Pfeffer abschließen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 640,
+        "protein_g": 24,
+        "carbs_g": 74,
+        "fat_g": 28
+      },
+      "tags": [
+        "italian",
+        "roman",
+        "pasta",
+        "vegan",
+        "comfort",
+        "quick"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "fry",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pan-fry",
+        "pescatarian",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "carbonara-gluten-free",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Gluten-Free Carbonara",
+        "de": "Glutenfreie Carbonara"
+      },
+      "subtitle": {
+        "en": "rice spaghetti, same roman soul",
+        "de": "reis-spaghetti, dieselbe römische seele"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 25,
+      "calories_per_serving": 730,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-spaghetti",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "guanciale",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "2 yolks + 1 whole",
+            "de": "2 eigelb + 1 ganzes"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "pecorino",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Boil the gluten-free spaghetti until al dente — taste early, rice pasta turns fast.",
+            "de": "Die glutenfreien Spaghetti al dente kochen — früh probieren, Reisnudeln werden schnell weich."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Render the guanciale in a pan until crisp, keeping the fat.",
+            "de": "Den Guanciale in einer Pfanne knusprig auslassen, das Fett auffangen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the eggs, both cheeses and plenty of black pepper.",
+            "de": "Eier, beide Käsesorten und reichlich Pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Drain the pasta, toss immediately with the hot fat, off the heat.",
+            "de": "Die Pasta abgießen, sofort mit dem heißen Fett vermengen, vom Herd nehmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Stir in the egg mixture quickly — residual heat makes the sauce.",
+            "de": "Die Eimischung rasch unterrühren — die Restwärme macht die Sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "Serve with more pepper and cheese.",
+            "de": "Mit mehr Pfeffer und Käse servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 730,
+        "protein_g": 30,
+        "carbs_g": 70,
+        "fat_g": 37
+      },
+      "tags": [
+        "italian",
+        "roman",
+        "pasta",
+        "gluten-free",
+        "comfort",
+        "quick"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "pork"
+      ],
+      "attributes": [
+        "fry",
+        "low-fodmap",
+        "medium",
+        "pan-fry",
+        "sugar-free",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "carbonara-keto",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Keto Carbonara",
+        "de": "Keto-Carbonara"
+      },
+      "subtitle": {
+        "en": "zucchini ribbons, guanciale, egg yolk",
+        "de": "zucchini-streifen, guanciale, eigelb"
+      },
+      "diet": "keto",
+      "effort": "medium",
+      "time_minutes": 25,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "zucchini",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "cut into ribbons",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "guanciale",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "2 yolks + 1 whole",
+            "de": "2 eigelb + 1 ganzes"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 60,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "pecorino",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "finely grated",
+            "de": "fein gerieben"
+          }
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 2,
+          "unit": "tsp",
+          "note": {
+            "en": "freshly cracked",
+            "de": "frisch gemahlen"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Cut the zucchini into long ribbons with a peeler; salt lightly and set aside.",
+            "de": "Die Zucchini mit einem Sparschäler in lange Streifen hobeln, leicht salzen, beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "Render the guanciale until crisp, keeping the fat.",
+            "de": "Den Guanciale knusprig auslassen, das Fett auffangen."
+          }
+        },
+        {
+          "text": {
+            "en": "Sauté the zucchini ribbons in the guanciale fat for 2 minutes only.",
+            "de": "Die Zucchinistreifen 2 Minuten im Guancialefett anschwitzen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Whisk the eggs, both cheeses and plenty of black pepper.",
+            "de": "Eier, beide Käsesorten und reichlich Pfeffer verquirlen."
+          }
+        },
+        {
+          "text": {
+            "en": "Off the heat, toss the zucchini with the egg mixture — the residual heat makes the sauce.",
+            "de": "Vom Herd nehmen, die Zucchini mit der Eimischung schwenken — die Restwärme macht die Sauce."
+          }
+        },
+        {
+          "text": {
+            "en": "Serve immediately with more pepper.",
+            "de": "Sofort mit mehr Pfeffer servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 620,
+        "protein_g": 28,
+        "carbs_g": 12,
+        "fat_g": 46
+      },
+      "tags": [
+        "italian",
+        "roman",
+        "keto",
+        "low-carb",
+        "comfort",
+        "quick"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "pork"
+      ],
+      "attributes": [
+        "fry",
+        "low-fodmap",
+        "medium",
+        "sauté",
+        "sugar-free",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "lasagne-classic",
+      "dish_id": "lasagne",
+      "title": {
+        "en": "Classic Lasagne",
+        "de": "Klassische Lasagne"
+      },
+      "subtitle": {
+        "en": "ragù, béchamel, sunday layers",
+        "de": "ragù, béchamel, sonntags-schichten"
+      },
+      "diet": "classic",
+      "effort": "hard",
+      "time_minutes": 60,
+      "calories_per_serving": 580,
+      "servings": 6,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "lasagne-sheets",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "carrots",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "800 g total",
+            "de": "insgesamt 800 g"
+          }
+        },
+        {
+          "ingredient_id": "milk",
+          "amount": 500,
+          "unit": "ml",
+          "note": {
+            "en": "warm",
+            "de": "warm"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "torn",
+            "de": "gezupft"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion, carrot and garlic in olive oil until soft.",
+            "de": "Zwiebel, Karotte und Knoblauch in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the beef, brown it, then pour in the tomatoes. Simmer the ragù.",
+            "de": "Das Hackfleisch dazugeben, anbraten, dann die Tomaten dazugeben. Das Ragù köcheln lassen."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "Make the béchamel: melt the butter, whisk in the flour, then gradually add the warm milk until smooth.",
+            "de": "Die Béchamel machen: Butter schmelzen, Mehl einrühren, dann die warme Milch nach und nach dazugeben, bis sie glatt ist."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Layer in a baking dish: ragù, béchamel, sheets — repeat, finishing with béchamel and both cheeses.",
+            "de": "In eine Form schichten: Ragù, Béchamel, Blätter — wiederholen, mit Béchamel und beiden Käsesorten abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake until bubbling and golden on top.",
+            "de": "Backen, bis es blubbert und oben goldbraun ist."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "Let it rest before cutting, then scatter fresh basil.",
+            "de": "Vor dem Anschneiden ruhen lassen, dann frisches Basilikum darüber streuen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 580,
+        "protein_g": 28,
+        "carbs_g": 52,
+        "fat_g": 26
+      },
+      "tags": [
+        "italian",
+        "baked",
+        "family",
+        "comfort",
+        "pasta",
+        "dinner",
+        "make-ahead"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "hard",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "lasagne-vegan",
+      "dish_id": "lasagne",
+      "title": {
+        "en": "Vegan Lasagne",
+        "de": "Vegane Lasagne"
+      },
+      "subtitle": {
+        "en": "lentil ragù, cashew béchamel",
+        "de": "linsen-ragù, cashew-béchamel"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 60,
+      "calories_per_serving": 540,
+      "servings": 6,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "lasagne-sheets",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "red-lentils",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "dry",
+            "de": "trocken"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "carrots",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "800 g total",
+            "de": "insgesamt 800 g"
+          }
+        },
+        {
+          "ingredient_id": "tomato-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cashews",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "soaked 30 minutes",
+            "de": "30 minuten eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "amount": 6,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegetable-broth",
+          "amount": 300,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion, carrot and garlic in olive oil until soft.",
+            "de": "Zwiebel, Karotte und Knoblauch in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the lentils, tomato paste, tomatoes and vegetable broth, simmer until the lentils are tender and the ragù is thick.",
+            "de": "Die Linsen, das Tomatenmark, die Tomaten und die Brühe dazugeben, köcheln lassen, bis die Linsen weich und das Ragù dick ist."
+          },
+          "timer_minutes": 30
+        },
+        {
+          "text": {
+            "en": "Blend the soaked cashews with 200 ml of water and the nutritional yeast into a béchamel.",
+            "de": "Die eingeweichten Cashews mit 200 ml Wasser und den Hefeflocken zu einer Béchamel pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Melt the vegan butter and whisk it into the cashew béchamel.",
+            "de": "Die vegane Butter schmelzen und in die Cashew-Béchamel rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Layer ragù, cashew béchamel and sheets, finishing with béchamel on top.",
+            "de": "Ragù, Cashew-Béchamel und Blätter schichten, mit Béchamel abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake until bubbling and golden, let rest, then scatter basil.",
+            "de": "Backen, bis es blubbert und goldbraun ist, ruhen lassen, dann Basilikum streuen."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "macros": {
+        "kcal": 540,
+        "protein_g": 24,
+        "carbs_g": 60,
+        "fat_g": 20
+      },
+      "tags": [
+        "italian",
+        "baked",
+        "vegan",
+        "family",
+        "comfort",
+        "dinner",
+        "make-ahead"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "bake",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "lasagne-gluten-free",
+      "dish_id": "lasagne",
+      "title": {
+        "en": "Gluten-Free Lasagne",
+        "de": "Glutenfreie Lasagne"
+      },
+      "subtitle": {
+        "en": "rice sheets, cornstarch béchamel",
+        "de": "reisblätter, stärke-béchamel"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 60,
+      "calories_per_serving": 570,
+      "servings": 6,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-lasagne-sheets",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "carrots",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "800 g total",
+            "de": "insgesamt 800 g"
+          }
+        },
+        {
+          "ingredient_id": "milk",
+          "amount": 500,
+          "unit": "ml",
+          "note": {
+            "en": "warm",
+            "de": "warm"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cornstarch",
+          "amount": 30,
+          "unit": "g",
+          "note": {
+            "en": "for the béchamel",
+            "de": "für die béchamel"
+          }
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "torn",
+            "de": "gezupft"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion, carrot and garlic in olive oil until soft.",
+            "de": "Zwiebel, Karotte und Knoblauch in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the beef, brown it, then pour in the tomatoes and simmer the ragù.",
+            "de": "Das Hackfleisch dazugeben, anbraten, dann die Tomaten dazugeben und das Ragù köcheln lassen."
+          },
+          "timer_minutes": 25
+        },
+        {
+          "text": {
+            "en": "Make the béchamel: melt the butter, whisk in the cornstarch, then gradually add the warm milk.",
+            "de": "Die Béchamel machen: Butter schmelzen, Stärke einrühren, dann die warme Milch nach und nach dazugeben."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Layer ragù, béchamel and rice sheets, finishing with béchamel and both cheeses.",
+            "de": "Ragù, Béchamel und Reisblätter schichten, mit Béchamel und beiden Käsesorten abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake until bubbling and golden, let rest, scatter basil.",
+            "de": "Backen, bis es blubbert und goldbraun ist, ruhen lassen, Basilikum streuen."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "macros": {
+        "kcal": 570,
+        "protein_g": 28,
+        "carbs_g": 48,
+        "fat_g": 26
+      },
+      "tags": [
+        "italian",
+        "baked",
+        "gluten-free",
+        "family",
+        "comfort",
+        "dinner",
+        "make-ahead"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "medium",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "lasagne-keto",
+      "dish_id": "lasagne",
+      "title": {
+        "en": "Keto Lasagne",
+        "de": "Keto-Lasagne"
+      },
+      "subtitle": {
+        "en": "zucchini sheets, extra cheese",
+        "de": "zucchini-blätter, extra käse"
+      },
+      "diet": "keto",
+      "effort": "medium",
+      "time_minutes": 60,
+      "calories_per_serving": 520,
+      "servings": 6,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "zucchini",
+          "amount": 1200,
+          "unit": "g",
+          "note": {
+            "en": "sliced lengthwise into sheets",
+            "de": "längs in blätter geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "ground-beef",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "800 g total",
+            "de": "insgesamt 800 g"
+          }
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 400,
+          "unit": "ml",
+          "note": {
+            "en": "warm",
+            "de": "warm"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "amount": 120,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "amount": 250,
+          "unit": "g",
+          "note": {
+            "en": "torn",
+            "de": "gezupft"
+          }
+        },
+        {
+          "ingredient_id": "ricotta",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "basil",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "black-pepper",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Salt the zucchini sheets lightly and let them drain on paper for 15 minutes, then pat dry.",
+            "de": "Die Zucchiniblätter leicht salzen, 15 Minuten abtropfen lassen, dann trocken tupfen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Sauté the onion and garlic in olive oil, add the beef and brown it.",
+            "de": "Zwiebel und Knoblauch in Olivenöl anschwitzen, das Hackfleisch dazugeben und anbraten."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the tomatoes and simmer the ragù until thick.",
+            "de": "Die Tomaten dazugeben und das Ragù einköcheln lassen."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Make the white sauce: melt the butter, whisk in the cream, then stir in the ricotta and half the parmesan.",
+            "de": "Die weiße Sauce machen: Butter schmelzen, Sahne einrühren, dann Ricotta und die Hälfte des Parmesans unterheben."
+          }
+        },
+        {
+          "text": {
+            "en": "Layer zucchini sheets, ragù and white sauce, finishing with mozzarella and the rest of the parmesan.",
+            "de": "Zucchiniblätter, Ragù und weiße Sauce schichten, mit Mozzarella und dem restlichen Parmesan abschließen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bake until bubbling and golden, let rest, scatter basil.",
+            "de": "Backen, bis es blubbert und goldbraun ist, ruhen lassen, Basilikum streuen."
+          },
+          "timer_minutes": 30
+        }
+      ],
+      "macros": {
+        "kcal": 520,
+        "protein_g": 30,
+        "carbs_g": 18,
+        "fat_g": 38
+      },
+      "tags": [
+        "italian",
+        "baked",
+        "keto",
+        "low-carb",
+        "family",
+        "dinner",
+        "make-ahead"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "medium",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤600"
+      ]
+    }
+  ]
+}

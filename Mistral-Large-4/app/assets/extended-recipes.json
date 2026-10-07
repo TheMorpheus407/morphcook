@@ -1,0 +1,1020 @@
+{
+  "partition_id": "extended",
+  "recipes": [
+    {
+      "id": "greek-salad-classic",
+      "dish_id": "greek-salad",
+      "title": {
+        "en": "Classic Greek Salad",
+        "de": "Klassischer Griechischer Salat"
+      },
+      "subtitle": {
+        "en": "tomato, cucumber, feta — a meal, not a side",
+        "de": "tomate, gurke, feta — eine mahlzeit, keine beilage"
+      },
+      "diet": "vegetarian",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 500,
+      "servings": 2,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "tomato",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "kalamata-olives",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-wine-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Chop the tomato, cucumber, bell pepper and red onion into rough chunks.",
+            "de": "Tomate, Gurke, Paprika und rote Zwiebel in grobe Stücke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk olive oil, vinegar, oregano and salt into a dressing.",
+            "de": "Olivenöl, Essig, Oregano und Salz zu einem Dressing verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the raw vegetables and chickpeas with the dressing.",
+            "de": "Das rohe Gemüse und die Kichererbsen mit dem Dressing vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the pita briefly in a dry pan.",
+            "de": "Das Pita kurz in einer trockenen Pfanne erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with crumbled feta and olives, serve with warm pita.",
+            "de": "Mit Feta und Oliven toppen, mit warmem Pita servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 500,
+        "protein_g": 16,
+        "carbs_g": 38,
+        "fat_g": 28
+      },
+      "tags": [
+        "greek",
+        "mediterranean",
+        "salad",
+        "lunch",
+        "vegetarian",
+        "fresh",
+        "raw"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "raw",
+        "sugar-free",
+        "vegetarian",
+        "≤15",
+        "≤600"
+      ]
+    },
+    {
+      "id": "greek-salad-vegan",
+      "dish_id": "greek-salad",
+      "title": {
+        "en": "Vegan Greek Salad",
+        "de": "Veganer Griechischer Salat"
+      },
+      "subtitle": {
+        "en": "marinated tofu stands in for feta",
+        "de": "eingelegter tofu steht für feta"
+      },
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 460,
+      "servings": 2,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "tomato",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "pressed, cubed, marinated in lemon and oregano",
+            "de": "ausgepresst, gewürfelt, in zitrone und oregano mariniert"
+          }
+        },
+        {
+          "ingredient_id": "kalamata-olives",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "pita",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-wine-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Press the tofu, cube it and marinate in lemon juice and oregano for 10 minutes.",
+            "de": "Den Tofu auspressen, würfeln und 10 Minuten in Zitronensaft und Oregano marinieren."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Chop the vegetables into rough chunks.",
+            "de": "Das Gemüse in grobe Stücke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk olive oil, vinegar, oregano and salt into a dressing.",
+            "de": "Olivenöl, Essig, Oregano und Salz zu einem Dressing verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the raw vegetables, chickpeas and tofu with the dressing.",
+            "de": "Das rohe Gemüse, die Kichererbsen und den Tofu mit dem Dressing vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with olives, serve with warm pita.",
+            "de": "Mit Oliven toppen, mit warmem Pita servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 460,
+        "protein_g": 18,
+        "carbs_g": 40,
+        "fat_g": 24
+      },
+      "tags": [
+        "greek",
+        "mediterranean",
+        "salad",
+        "lunch",
+        "vegan",
+        "fresh",
+        "raw"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "pescatarian",
+        "raw",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤15",
+        "≤600"
+      ]
+    },
+    {
+      "id": "greek-salad-keto",
+      "dish_id": "greek-salad",
+      "title": {
+        "en": "Keto Greek Salad",
+        "de": "Keto-Griechischer Salat"
+      },
+      "subtitle": {
+        "en": "no chickpeas, extra feta and avocado",
+        "de": "keine kichererbsen, extra feta und avocado"
+      },
+      "diet": "keto",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 450,
+      "servings": 2,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "tomato",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "kalamata-olives",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "avocado",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-wine-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Chop the tomato, cucumber and bell pepper into chunks.",
+            "de": "Tomate, Gurke und Paprika in Stücke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk olive oil, vinegar, oregano and salt into a dressing.",
+            "de": "Olivenöl, Essig, Oregano und Salz zu einem Dressing verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the raw vegetables with the dressing.",
+            "de": "Das rohe Gemüse mit dem Dressing vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Slice the avocado.",
+            "de": "Die Avocado in Scheiben schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with crumbled feta, olives and avocado slices.",
+            "de": "Mit Feta, Oliven und Avocadoscheiben toppen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 450,
+        "protein_g": 14,
+        "carbs_g": 22,
+        "fat_g": 32
+      },
+      "tags": [
+        "greek",
+        "mediterranean",
+        "salad",
+        "lunch",
+        "keto",
+        "low-carb",
+        "fresh",
+        "raw"
+      ],
+      "contains": [
+        "dairy",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "low-fodmap",
+        "pescatarian",
+        "raw",
+        "sugar-free",
+        "vegetarian",
+        "≤15",
+        "≤600"
+      ]
+    },
+    {
+      "id": "greek-salad-gluten-free",
+      "dish_id": "greek-salad",
+      "title": {
+        "en": "Gluten-Free Greek Salad",
+        "de": "Glutenfreier Griechischer Salat"
+      },
+      "subtitle": {
+        "en": "corn tortillas on the side",
+        "de": "maistortillas dazu"
+      },
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 490,
+      "servings": 2,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "tomato",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "kalamata-olives",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "corn-tortillas",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "red-wine-vinegar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Chop the vegetables into rough chunks.",
+            "de": "Das Gemüse in grobe Stücke schneiden."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk olive oil, vinegar, oregano and salt into a dressing.",
+            "de": "Olivenöl, Essig, Oregano und Salz zu einem Dressing verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Toss the raw vegetables and chickpeas with the dressing.",
+            "de": "Das rohe Gemüse und die Kichererbsen mit dem Dressing vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the corn tortillas briefly in a dry pan.",
+            "de": "Die Maistortillas kurz in einer trockenen Pfanne erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Top with crumbled feta and olives, serve with warm corn tortillas.",
+            "de": "Mit Feta und Oliven toppen, mit warmen Maistortillas servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 490,
+        "protein_g": 16,
+        "carbs_g": 36,
+        "fat_g": 28
+      },
+      "tags": [
+        "greek",
+        "mediterranean",
+        "salad",
+        "lunch",
+        "gluten-free",
+        "fresh",
+        "raw"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "sulphites"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "raw",
+        "sugar-free",
+        "vegetarian",
+        "≤15",
+        "≤600"
+      ]
+    },
+    {
+      "id": "kaesespaetzle-classic",
+      "dish_id": "kaesespaetzle",
+      "title": {
+        "en": "Classic Käsespätzle",
+        "de": "Klassische Käsespätzle"
+      },
+      "subtitle": {
+        "en": "soft noodles, molten emmental, crisp onions",
+        "de": "weiche nudeln, geschmolzener emmentaler, knusprige zwiebeln"
+      },
+      "diet": "vegetarian",
+      "effort": "medium",
+      "time_minutes": 45,
+      "calories_per_serving": 640,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "milk",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "emmental",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "sliced into rings",
+            "de": "in ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Whisk flour, eggs, milk, salt and nutmeg into a thick, elastic dough; rest for 15 minutes.",
+            "de": "Mehl, Eier, Milch, Salz und Muskat zu einem zäh-elastischen Teig verrühren, 15 Minuten ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Bring a large pot of salted water to a boil.",
+            "de": "Einen großen Topf Salzwasser aufkochen."
+          }
+        },
+        {
+          "text": {
+            "en": "Press the dough through a Spätzle maker into the boiling water; cook until the Spätzle float.",
+            "de": "Den Teig durch die Spätzlepresse ins kochende Wasser drücken, aufkochen lassen, bis die Spätzle oben schwimmen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Meanwhile, caramelize the onion rings slowly in butter until deep golden.",
+            "de": "Inzwischen die Zwiebelringe in Butter langsam tief goldbraun karamellisieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Layer the Spätzle and emmental in a buttered dish, top with more cheese, and bake briefly until molten.",
+            "de": "Die Spätzle und den Emmentaler in eine gebutterte Form schichten, mit Käse abschließen und kurz überbacken, bis er geschmolzen ist."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Serve topped with the caramelized onions.",
+            "de": "Mit den karamellisierten Zwiebeln servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 640,
+        "protein_g": 26,
+        "carbs_g": 68,
+        "fat_g": 26
+      },
+      "tags": [
+        "german",
+        "alpine",
+        "vegetarian",
+        "comfort",
+        "baked",
+        "dinner",
+        "cheesy"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "halal",
+        "kosher",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegetarian",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "kaesespaetzle-vegan",
+      "dish_id": "kaesespaetzle",
+      "title": {
+        "en": "Vegan Käsespätzle",
+        "de": "Vegane Käsespätzle"
+      },
+      "subtitle": {
+        "en": "cashew cheese sauce, onions in vegan butter",
+        "de": "cashew-käsesauce, zwiebeln in veganer butter"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 45,
+      "calories_per_serving": 580,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "wheat-flour",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "water",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "cashews",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "soaked 30 minutes",
+            "de": "30 minuten eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "amount": 6,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "sliced into rings",
+            "de": "in ringe geschnitten"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Whisk flour, water, olive oil, salt and nutmeg into a thick, elastic dough; rest for 15 minutes.",
+            "de": "Mehl, Wasser, Olivenöl, Salz und Muskat zu einem zäh-elastischen Teig verrühren, 15 Minuten ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Press the dough into boiling salted water; cook until the Spätzle float.",
+            "de": "Den Teig in kochendes Salzwasser drücken, aufkochen lassen, bis die Spätzle oben schwimmen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Blend the soaked cashews with 200 ml of water and the nutritional yeast into a cheese sauce.",
+            "de": "Die eingeweichten Cashews mit 200 ml Wasser und den Hefeflocken zu einer Käsesauce pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Caramelize the onion rings slowly in vegan butter until deep golden.",
+            "de": "Die Zwiebelringe in veganer Butter langsam tief goldbraun karamellisieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Layer the Spätzle in a buttered dish, pour the cheese sauce over, and bake briefly until bubbling.",
+            "de": "Die Spätzle in eine gebutterte Form schichten, die Käsesauce darüber gießen und kurz überbacken, bis es blubbert."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Serve topped with the caramelized onions.",
+            "de": "Mit den karamellisierten Zwiebeln servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 580,
+        "protein_g": 22,
+        "carbs_g": 70,
+        "fat_g": 22
+      },
+      "tags": [
+        "german",
+        "alpine",
+        "vegan",
+        "comfort",
+        "baked",
+        "dinner",
+        "cheesy"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": [
+        "bake",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "kaesespaetzle-gluten-free",
+      "dish_id": "kaesespaetzle",
+      "title": {
+        "en": "Gluten-Free Käsespätzle",
+        "de": "Glutenfreie Käsespätzle"
+      },
+      "subtitle": {
+        "en": "rice flour dough, same alpine hug",
+        "de": "reismehl-teig, dieselbe alpine umarmung"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 45,
+      "calories_per_serving": 610,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "gluten-free-flour",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "milk",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutmeg",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "ingredient_id": "emmental",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 3,
+          "unit": "piece",
+          "note": {
+            "en": "sliced into rings",
+            "de": "in ringe geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Whisk the gluten-free flour, eggs, milk, salt and nutmeg into a thick dough; rest for 15 minutes.",
+            "de": "Das glutenfreie Mehl, Eier, Milch, Salz und Muskat zu einem zähen Teig verrühren, 15 Minuten ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Press the dough into boiling salted water; cook until the Spätzle float.",
+            "de": "Den Teig in kochendes Salzwasser drücken, aufkochen lassen, bis die Spätzle oben schwimmen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Caramelize the onion rings slowly in butter until deep golden.",
+            "de": "Die Zwiebelringe in Butter langsam tief goldbraun karamellisieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Layer the Spätzle and emmental in a buttered dish, top with more cheese, bake briefly until molten.",
+            "de": "Die Spätzle und den Emmentaler in eine gebutterte Form schichten, mit Käse abschließen und kurz überbacken, bis er geschmolzen ist."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Serve topped with the caramelized onions.",
+            "de": "Mit den karamellisierten Zwiebeln servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 610,
+        "protein_g": 26,
+        "carbs_g": 62,
+        "fat_g": 26
+      },
+      "tags": [
+        "german",
+        "alpine",
+        "vegetarian",
+        "gluten-free",
+        "comfort",
+        "baked",
+        "dinner",
+        "cheesy"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "bake",
+        "halal",
+        "kosher",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegetarian",
+        "≤60",
+        "≤800"
+      ]
+    }
+  ]
+}

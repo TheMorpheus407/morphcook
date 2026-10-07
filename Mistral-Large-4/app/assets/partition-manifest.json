@@ -1,0 +1,178 @@
+{
+  "corpus_version": 1,
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "type": "core",
+      "loads_at_launch": true,
+      "dish_ids": [
+        "butter-chicken",
+        "carbonara",
+        "doener",
+        "falafel",
+        "fettuccine-alfredo",
+        "miso-soup",
+        "pad-thai",
+        "pancakes",
+        "ramen",
+        "shakshuka",
+        "tacos"
+      ],
+      "recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal",
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free",
+        "alfredo-keto",
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free",
+        "pancakes-keto",
+        "falafel-classic",
+        "falafel-vegan",
+        "falafel-gluten-free",
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-keto",
+        "butter-chicken-gluten-free",
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-keto",
+        "shakshuka-gluten-free",
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-gluten-free",
+        "miso-soup-classic",
+        "miso-soup-vegan",
+        "miso-soup-gluten-free",
+        "carbonara-classic",
+        "carbonara-vegan",
+        "carbonara-gluten-free",
+        "carbonara-keto",
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-gluten-free",
+        "tacos-keto"
+      ]
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "type": "extended",
+      "loads_at_launch": false,
+      "dish_ids": [
+        "greek-salad",
+        "kaesespaetzle"
+      ],
+      "recipe_ids": [
+        "greek-salad-classic",
+        "greek-salad-vegan",
+        "greek-salad-keto",
+        "greek-salad-gluten-free",
+        "kaesespaetzle-classic",
+        "kaesespaetzle-vegan",
+        "kaesespaetzle-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "type": "cuisine",
+      "loads_at_launch": false,
+      "dish_ids": [
+        "carbonara",
+        "fettuccine-alfredo",
+        "lasagne"
+      ],
+      "recipe_ids": [
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free",
+        "alfredo-keto",
+        "carbonara-classic",
+        "carbonara-vegan",
+        "carbonara-gluten-free",
+        "carbonara-keto",
+        "lasagne-classic",
+        "lasagne-vegan",
+        "lasagne-gluten-free",
+        "lasagne-keto"
+      ]
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "type": "cuisine",
+      "loads_at_launch": false,
+      "dish_ids": [
+        "butter-chicken",
+        "miso-soup",
+        "pad-thai",
+        "ramen"
+      ],
+      "recipe_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "butter-chicken-classic",
+        "butter-chicken-vegan",
+        "butter-chicken-keto",
+        "butter-chicken-gluten-free",
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-gluten-free",
+        "miso-soup-classic",
+        "miso-soup-vegan",
+        "miso-soup-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "type": "cuisine",
+      "loads_at_launch": false,
+      "dish_ids": [
+        "doener",
+        "falafel",
+        "shakshuka"
+      ],
+      "recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal",
+        "falafel-classic",
+        "falafel-vegan",
+        "falafel-gluten-free",
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-keto",
+        "shakshuka-gluten-free"
+      ]
+    }
+  ],
+  "cross_references": {
+    "core": [
+      "cuisine-asian",
+      "cuisine-italian",
+      "cuisine-middle-eastern"
+    ],
+    "cuisine-italian": [
+      "core"
+    ],
+    "cuisine-asian": [
+      "core"
+    ],
+    "cuisine-middle-eastern": [
+      "core"
+    ]
+  },
+  "loading_strategy": "launch-core-then-on-demand"
+}

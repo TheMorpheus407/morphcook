@@ -1,0 +1,1858 @@
+{
+  "partition_id": "cuisine-middle-eastern",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "Classic Döner",
+        "de": "Klassischer Döner"
+      },
+      "subtitle": {
+        "en": "the original, with yogurt sauce",
+        "de": "das original, mit joghurtsauce"
+      },
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 35,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "doener-meat",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "wheat-tortillas",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "large",
+            "de": "groß"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Slice the döner meat thinly. Toss with olive oil, cumin, smoked paprika, oregano and salt.",
+            "de": "Das Dönerfleisch dünn schneiden. Mit Olivenöl, Kreuzkümmel, Paprika, Oregano und Salz vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat a pan over high heat and sear the meat in batches until browned and crisp at the edges.",
+            "de": "Eine Pfanne stark erhitzen, das Fleisch portionsweise scharf anbraten, bis es gebräunt und knusprig ist."
+          }
+        },
+        {
+          "text": {
+            "en": "Dice cucumber and tomato, slice the red onion thinly, chop the parsley.",
+            "de": "Gurke und Tomate würfeln, die rote Zwiebel dünn schneiden, die Petersilie hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the yogurt with crushed garlic, a squeeze of lemon and a pinch of salt.",
+            "de": "Den Joghurt mit gepresstem Knoblauch, einem Spritzer Zitrone und einer Prise Salz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the tortillas in a dry pan, 30 seconds per side.",
+            "de": "Die Tortillas in einer trockenen Pfanne von beiden Seiten 30 Sekunden erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Assemble: sauce, salad, meat — fold and eat with your hands.",
+            "de": "Servieren: Sauce, Salat, Fleisch — falten und mit den Händen essen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 680,
+        "protein_g": 38,
+        "carbs_g": 52,
+        "fat_g": 32
+      },
+      "tags": [
+        "street-food",
+        "turkish",
+        "wrap",
+        "grill",
+        "dinner",
+        "quick"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "sauté",
+        "sugar-free",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "Vegan Döner",
+        "de": "Veganer Döner"
+      },
+      "subtitle": {
+        "en": "seitan, spiced and crisp — tahini on the side",
+        "de": "seitan, gewürzt und knusprig — tahini dazu"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 30,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "seitan",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "sliced into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "wheat-tortillas",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "large",
+            "de": "groß"
+          }
+        },
+        {
+          "ingredient_id": "tahini",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Toss the seitan strips with olive oil, cumin, smoked paprika and salt.",
+            "de": "Die Seitanstreifen mit Olivenöl, Kreuzkümmel, Paprika und Salz vermengen."
+          }
+        },
+        {
+          "text": {
+            "en": "Sear the seitan in a hot pan until crisp at the edges; warm the chickpeas alongside.",
+            "de": "Den Seitan in einer heißen Pfanne knusprig anbraten, die Kichererbsen daneben erwärmen."
+          }
+        },
+        {
+          "text": {
+            "en": "Thin the tahini with lemon juice, crushed garlic and a splash of water into a pourable sauce.",
+            "de": "Das Tahini mit Zitronensaft, gepresstem Knoblauch und etwas Wasser zu einer gießfähigen Sauce rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Dice cucumber and tomato, slice the red onion, chop the parsley.",
+            "de": "Gurke und Tomate würfeln, die rote Zwiebel in Streifen schneiden, die Petersilie hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the tortillas in a dry pan, then assemble: tahini sauce, salad, seitan, chickpeas.",
+            "de": "Die Tortillas in einer trockenen Pfanne erwärmen, dann füllen: Tahini-Sauce, Salat, Seitan, Kichererbsen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 620,
+        "protein_g": 34,
+        "carbs_g": 58,
+        "fat_g": 24
+      },
+      "tags": [
+        "street-food",
+        "turkish",
+        "wrap",
+        "vegan",
+        "dinner",
+        "quick"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "title": {
+        "en": "Keto Döner Bowl",
+        "de": "Keto-Döner-Bowl"
+      },
+      "subtitle": {
+        "en": "no tortilla, all the flavor — cauliflower rice base",
+        "de": "ohne tortilla, voller geschmack — blumenkohlreis als basis"
+      },
+      "diet": "keto",
+      "effort": "medium",
+      "time_minutes": 35,
+      "calories_per_serving": 640,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "doener-meat",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "cauliflower-rice",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "lettuce",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "little gem hearts",
+            "de": "kleine romasalat-Herzen"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sear the döner meat in a hot pan with olive oil, cumin, smoked paprika, oregano, salt and pepper.",
+            "de": "Das Dönerfleisch in einer heißen Pfanne mit Olivenöl, Kreuzkümmel, Paprika, Oregano und Salz anbraten."
+          }
+        },
+        {
+          "text": {
+            "en": "Sauté the cauliflower rice in the same pan until just tender, 4 minutes.",
+            "de": "Den Blumenkohlreis in derselben Pfanne 4 Minuten anschwitzen, bis er gerade weich ist."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "Whisk yogurt with crushed garlic and lemon into a sauce.",
+            "de": "Joghurt mit gepresstem Knoblauch und Zitrone zu einer Sauce verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Dice cucumber and tomato, slice the red onion, shred the lettuce.",
+            "de": "Gurke und Tomate würfeln, die rote Zwiebel in Streifen schneiden, den Salat zerpflücken."
+          }
+        },
+        {
+          "text": {
+            "en": "Assemble the bowl: cauliflower rice, meat, salad, a spoon of yogurt sauce.",
+            "de": "Die Bowl anrichten: Blumenkohlreis, Fleisch, Salat, ein Löffel Joghurtsauce."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 640,
+        "protein_g": 36,
+        "carbs_g": 12,
+        "fat_g": 44
+      },
+      "tags": [
+        "street-food",
+        "turkish",
+        "bowl",
+        "keto",
+        "low-carb",
+        "dinner"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "high-fodmap",
+        "lamb"
+      ],
+      "attributes": [
+        "medium",
+        "sauté",
+        "sugar-free",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "Chicken Döner, halal-compatible",
+        "de": "Hähnchen-Döner, halal-kompatibel"
+      },
+      "subtitle": {
+        "en": "poultry only — halal-compatible ingredients",
+        "de": "nur geflügel — halal-kompatible zutaten"
+      },
+      "diet": "halal",
+      "effort": "medium",
+      "time_minutes": 35,
+      "calories_per_serving": 660,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thighs",
+          "amount": 400,
+          "unit": "g",
+          "note": {
+            "en": "sliced into strips",
+            "de": "in streifen geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "wheat-tortillas",
+          "amount": 4,
+          "unit": "piece",
+          "note": {
+            "en": "large",
+            "de": "groß"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "red-onion",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "thinly sliced",
+            "de": "dünn geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "oregano",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Marinate the chicken strips in half the yogurt, cumin, smoked paprika, oregano and salt for 15 minutes.",
+            "de": "Die Hähnchenstreifen in der Hälfte des Joghurts, Kreuzkümmel, Paprika, Oregano und Salz 15 Minuten marinieren."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Sear the chicken in olive oil over high heat until browned and cooked through.",
+            "de": "Das Hähnchen in Olivenöl stark erhitzen, bis es gebräunt und gar ist."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the rest of the yogurt with crushed garlic and lemon into a sauce.",
+            "de": "Den restlichen Joghurt mit gepresstem Knoblauch und Zitrone zu einer Sauce verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Dice cucumber and tomato, slice the red onion, chop the parsley.",
+            "de": "Gurke und Tomate würfeln, die rote Zwiebel in Streifen schneiden, die Petersilie hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the tortillas and assemble: sauce, salad, chicken.",
+            "de": "Die Tortillas erwärmen und füllen: Sauce, Salat, Hähnchen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 660,
+        "protein_g": 40,
+        "carbs_g": 50,
+        "fat_g": 30
+      },
+      "tags": [
+        "street-food",
+        "turkish",
+        "wrap",
+        "halal",
+        "dinner",
+        "grill"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "halal",
+        "medium",
+        "sugar-free",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Classic Falafel",
+        "de": "Klassischer Falafel"
+      },
+      "subtitle": {
+        "en": "herbs, chickpeas, yogurt in warm pita",
+        "de": "kräuter, kichererbsen, joghurt im warmen pita"
+      },
+      "diet": "vegetarian",
+      "effort": "medium",
+      "time_minutes": 40,
+      "calories_per_serving": 520,
+      "servings": 4,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "coriander",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "amount": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "as binder",
+            "de": "als binder"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 300,
+          "unit": "ml",
+          "note": {
+            "en": "for frying",
+            "de": "zum frittieren"
+          }
+        },
+        {
+          "ingredient_id": "pita",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Drain the chickpeas and pat them dry. Pulse with parsley, cilantro, garlic, cumin, coriander, baking soda and salt into coarse crumbs — never a purée.",
+            "de": "Die Kichererbsen abtropfen und trocken tupfen. Mit Petersilie, Koriander, Knoblauch, Kreuzkümmel, Korianderpulver, Natron und Salz zu groben Krümeln hacken — niemals pürieren."
+          }
+        },
+        {
+          "text": {
+            "en": "Fold in the flour and rest the mixture in the fridge for 15 minutes.",
+            "de": "Das Mehl unterheben und die Masse 15 Minuten im Kühlschrank ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Form walnut-sized balls and press them slightly flat.",
+            "de": "Walnussgroße Bällchen formen und leicht flach drücken."
+          }
+        },
+        {
+          "text": {
+            "en": "Deep-fry in hot oil until deep golden, 3-4 minutes per batch.",
+            "de": "In heißem Öl goldbraun frittieren, 3-4 Minuten pro Portion."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "Whisk the yogurt with lemon juice and a pinch of salt.",
+            "de": "Den Joghurt mit Zitronensaft und einer Prise Salz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Stuff the pitas with falafel, diced tomato and the yogurt sauce.",
+            "de": "Die Pitas mit Falafel, Tomatenwürfeln und der Joghurtsauce füllen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 520,
+        "protein_g": 16,
+        "carbs_g": 58,
+        "fat_g": 22
+      },
+      "tags": [
+        "middle-eastern",
+        "vegetarian",
+        "street-food",
+        "fry",
+        "lunch",
+        "herbs"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "deep-fry",
+        "fry",
+        "halal",
+        "kosher",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "falafel-vegan",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Vegan Falafel",
+        "de": "Veganer Falafel"
+      },
+      "subtitle": {
+        "en": "tahini sauce instead of yogurt — still green inside",
+        "de": "tahini-sauce statt joghurt — innen noch grün"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 40,
+      "calories_per_serving": 480,
+      "servings": 4,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "coriander",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "wheat-flour",
+          "amount": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "as binder",
+            "de": "als binder"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 300,
+          "unit": "ml",
+          "note": {
+            "en": "for frying",
+            "de": "zum frittieren"
+          }
+        },
+        {
+          "ingredient_id": "pita",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tahini",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 2,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pulse drained chickpeas with parsley, cilantro, garlic, cumin, coriander, baking soda and salt into coarse crumbs.",
+            "de": "Abgetropfte Kichererbsen mit Petersilie, Koriander, Knoblauch, Kreuzkümmel, Korianderpulver, Natron und Salz zu groben Krümeln hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Fold in the flour and rest the mixture for 15 minutes.",
+            "de": "Das Mehl unterheben und die Masse 15 Minuten ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Form the falafel and deep-fry until deep golden, 3-4 minutes per batch.",
+            "de": "Die Falafel formen und goldbraun frittieren, 3-4 Minuten pro Portion."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "Thin the tahini with lemon juice, crushed garlic and water into a sauce.",
+            "de": "Das Tahini mit Zitronensaft, gepresstem Knoblauch und Wasser zu einer Sauce rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Stuff the pitas with falafel, tomato and a generous drizzle of tahini sauce.",
+            "de": "Die Pitas mit Falafel, Tomate und reichlich Tahini-Sauce füllen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 480,
+        "protein_g": 15,
+        "carbs_g": 56,
+        "fat_g": 20
+      },
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "street-food",
+        "fry",
+        "lunch",
+        "herbs"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "sesame"
+      ],
+      "attributes": [
+        "deep-fry",
+        "fry",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "falafel-gluten-free",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Gluten-Free Falafel",
+        "de": "Glutenfreier Falafel"
+      },
+      "subtitle": {
+        "en": "chickpea flour binds, corn tortillas wrap",
+        "de": "kichererbsenmehl bindet, maistortillas wickeln"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 40,
+      "calories_per_serving": 500,
+      "servings": 4,
+      "meal_type": "lunch",
+      "ingredients": [
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 2,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "coriander",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "baking-soda",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chickpea-flour",
+          "amount": 3,
+          "unit": "tbsp",
+          "note": {
+            "en": "as binder",
+            "de": "als binder"
+          }
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 300,
+          "unit": "ml",
+          "note": {
+            "en": "for frying",
+            "de": "zum frittieren"
+          }
+        },
+        {
+          "ingredient_id": "corn-tortillas",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tomato",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "lemon",
+          "amount": 1,
+          "unit": "piece"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Pulse drained chickpeas with parsley, cilantro, garlic, spices, baking soda and salt into coarse crumbs.",
+            "de": "Abgetropfte Kichererbsen mit Petersilie, Koriander, Knoblauch, Gewürzen, Natron und Salz zu groben Krümeln hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Fold in the chickpea flour and rest the mixture for 15 minutes.",
+            "de": "Das Kichererbsenmehl unterheben und die Masse 15 Minuten ruhen lassen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Form the falafel and deep-fry until deep golden, 3-4 minutes per batch.",
+            "de": "Die Falafel formen und goldbraun frittieren, 3-4 Minuten pro Portion."
+          },
+          "timer_minutes": 4
+        },
+        {
+          "text": {
+            "en": "Whisk the yogurt with lemon juice and salt.",
+            "de": "Den Joghurt mit Zitronensaft und Salz verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Warm the corn tortillas and fill with falafel, tomato and yogurt sauce.",
+            "de": "Die Maistortillas erwärmen und mit Falafel, Tomate und Joghurtsauce füllen."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 500,
+        "protein_g": 16,
+        "carbs_g": 54,
+        "fat_g": 22
+      },
+      "tags": [
+        "middle-eastern",
+        "vegetarian",
+        "street-food",
+        "fry",
+        "lunch",
+        "gluten-free"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "deep-fry",
+        "fry",
+        "halal",
+        "kosher",
+        "medium",
+        "pescatarian",
+        "sugar-free",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Classic Shakshuka",
+        "de": "Klassische Shakshuka"
+      },
+      "subtitle": {
+        "en": "eggs poached in spiced tomato, feta on top",
+        "de": "eier in gewürzter tomate pochiert, feta oben drauf"
+      },
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 30,
+      "calories_per_serving": 520,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "bread",
+          "amount": 2,
+          "unit": "slice",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion and bell pepper in olive oil until soft.",
+            "de": "Zwiebel und Paprika in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the garlic and spices, cook until fragrant.",
+            "de": "Knoblauch und Gewürze dazugeben, duften lassen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Pour in the tomatoes, crush them with a spoon and simmer until the sauce is thick.",
+            "de": "Die Tomaten dazugeben, mit einem Löffel zerdrücken und zu einer dicken Sauce köcheln lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "Make four wells in the sauce and crack an egg into each.",
+            "de": "Vier Mulden in die Sauce drücken und je ein Ei hineinschlagen."
+          }
+        },
+        {
+          "text": {
+            "en": "Cover and poach until the whites are set but the yolks still run.",
+            "de": "Zugedeckt pochieren, bis das Eiweiß gestockt ist, das Eigelb aber noch weich."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "Crumble the feta over the top, scatter parsley, serve with bread.",
+            "de": "Den Feta darüber bröseln, Petersilie streuen, mit Brot servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 520,
+        "protein_g": 20,
+        "carbs_g": 26,
+        "fat_g": 30
+      },
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "one-pan",
+        "breakfast",
+        "brunch",
+        "vegetarian"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "poach",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤600"
+      ]
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Vegan Shakshuka",
+        "de": "Vegane Shakshuka"
+      },
+      "subtitle": {
+        "en": "smoked tofu crumbled like eggs",
+        "de": "räuchertofu, wie ei zerbröselt"
+      },
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 30,
+      "calories_per_serving": 460,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "smoked-tofu",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "crumbled",
+            "de": "zerbröselt"
+          }
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "turmeric",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nutritional-yeast",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        },
+        {
+          "ingredient_id": "bread",
+          "amount": 2,
+          "unit": "slice",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion and bell pepper in olive oil until soft.",
+            "de": "Zwiebel und Paprika in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the garlic and spices, cook until fragrant.",
+            "de": "Knoblauch und Gewürze dazugeben, duften lassen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Pour in the tomatoes and simmer until the sauce is thick.",
+            "de": "Die Tomaten dazugeben und zu einer dicken Sauce köcheln lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "Crumble the smoked tofu into the sauce, season with turmeric, nutritional yeast and salt.",
+            "de": "Den Räuchertofu in die Sauce bröseln, mit Kurkuma, Hefeflocken und Salz würzen."
+          }
+        },
+        {
+          "text": {
+            "en": "Simmer for 5 minutes so the tofu soaks up the sauce.",
+            "de": "5 Minuten köcheln lassen, damit der Tofu die Sauce aufnimmt."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Scatter parsley over the top and serve with bread.",
+            "de": "Petersilie darüber streuen und mit Brot servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 460,
+        "protein_g": 20,
+        "carbs_g": 28,
+        "fat_g": 22
+      },
+      "tags": [
+        "middle-eastern",
+        "vegan",
+        "one-pan",
+        "breakfast",
+        "brunch",
+        "tofu"
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "pescatarian",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤30",
+        "≤600"
+      ]
+    },
+    {
+      "id": "shakshuka-keto",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Keto Shakshuka",
+        "de": "Keto-Shakshuka"
+      },
+      "subtitle": {
+        "en": "no bread — extra feta, olives, avocado",
+        "de": "kein brot — extra feta, oliven, avocado"
+      },
+      "diet": "keto",
+      "effort": "easy",
+      "time_minutes": 30,
+      "calories_per_serving": 560,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "kalamata-olives",
+          "amount": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "avocado",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "sliced, to serve",
+            "de": "in scheiben, zum servieren"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion and bell pepper in olive oil until soft.",
+            "de": "Zwiebel und Paprika in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the garlic and spices, cook until fragrant.",
+            "de": "Knoblauch und Gewürze dazugeben, duften lassen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Pour in the tomatoes and simmer until the sauce is thick.",
+            "de": "Die Tomaten dazugeben und zu einer dicken Sauce köcheln lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "Make four wells and crack an egg into each; cover and poach until the whites are set.",
+            "de": "Vier Mulden drücken, je ein Ei hineinschlagen; zugedeckt pochieren, bis das Eiweiß gestockt ist."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "Top with crumbled feta, olives, avocado slices and parsley — no bread needed.",
+            "de": "Mit Feta, Oliven, Avocadoscheiben und Petersilie toppen — ganz ohne Brot."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 560,
+        "protein_g": 22,
+        "carbs_g": 14,
+        "fat_g": 44
+      },
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "one-pan",
+        "breakfast",
+        "keto",
+        "low-carb"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "poach",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤600"
+      ]
+    },
+    {
+      "id": "shakshuka-gluten-free",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Gluten-Free Shakshuka",
+        "de": "Glutenfreie Shakshuka"
+      },
+      "subtitle": {
+        "en": "the pan, minus the bread",
+        "de": "die pfanne, ohne das brot"
+      },
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 30,
+      "calories_per_serving": 480,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "bell-pepper",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 3,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 4,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "olive-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "smoked-paprika",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "feta",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "diced, on the side",
+            "de": "gewürfelt, dazu"
+          }
+        },
+        {
+          "ingredient_id": "parsley",
+          "amount": 1,
+          "unit": "bunch"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Sauté the onion and bell pepper in olive oil until soft.",
+            "de": "Zwiebel und Paprika in Olivenöl weich anschwitzen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Add the garlic and spices, cook until fragrant.",
+            "de": "Knoblauch und Gewürze dazugeben, duften lassen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Pour in the tomatoes and simmer until the sauce is thick.",
+            "de": "Die Tomaten dazugeben und zu einer dicken Sauce köcheln lassen."
+          },
+          "timer_minutes": 12
+        },
+        {
+          "text": {
+            "en": "Make four wells and crack an egg into each; cover and poach until the whites are set.",
+            "de": "Vier Mulden drücken, je ein Ei hineinschlagen; zugedeckt pochieren, bis das Eiweiß gestockt ist."
+          },
+          "timer_minutes": 6
+        },
+        {
+          "text": {
+            "en": "Crumble the feta over the top, scatter parsley, serve with diced cucumber on the side.",
+            "de": "Den Feta darüber bröseln, Petersilie streuen, mit Gurkenwürfeln servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 480,
+        "protein_g": 20,
+        "carbs_g": 22,
+        "fat_g": 28
+      },
+      "tags": [
+        "middle-eastern",
+        "eggs",
+        "one-pan",
+        "breakfast",
+        "gluten-free"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "pescatarian",
+        "poach",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegetarian",
+        "≤30",
+        "≤600"
+      ]
+    }
+  ]
+}

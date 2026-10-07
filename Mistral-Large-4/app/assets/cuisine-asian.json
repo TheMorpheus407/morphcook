@@ -1,0 +1,2212 @@
+{
+  "partition_id": "cuisine-asian",
+  "recipes": [
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Classic Pad Thai",
+        "de": "Klassisches Pad Thai"
+      },
+      "subtitle": {
+        "en": "sweet, sour, salty — with shrimp and egg",
+        "de": "süß, sauer, salzig — mit garnelen und ei"
+      },
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 30,
+      "calories_per_serving": 690,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shrimp",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "peeled",
+            "de": "geschält"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "cut into 5 cm pieces",
+            "de": "in 5 cm stücke geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "peanuts",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "roughly crushed",
+            "de": "grob zerstoßen"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the rice noodles in warm water until soft, about 30 minutes, then drain.",
+            "de": "Die Reisnudeln etwa 30 Minuten in warmem Wasser einweichen, dann abgießen."
+          }
+        },
+        {
+          "text": {
+            "en": "Mix tamarind paste, fish sauce, soy sauce, palm sugar and 3 tbsp of water into a sauce.",
+            "de": "Tamarindenpaste, Fischsauce, Sojasauce, Palmzucker und 3 EL Wasser zu einer Sauce verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat the oil in a wok over high heat. Stir-fry the garlic and tofu until golden.",
+            "de": "Das Öl im Wok stark erhitzen. Knoblauch und Tofu goldbraun anbraten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Push everything to the side, add the shrimp and cook until pink.",
+            "de": "Alles zur Seite schieben, die Garnelen dazugeben und rosa braten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Add the drained noodles and the sauce, toss everything together over high heat.",
+            "de": "Die abgetropften Nudeln und die Sauce dazugeben, alles bei starker Hitze durchschwenken."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Push to the side again, scramble the eggs in the free space, then fold everything together.",
+            "de": "Wieder zur Seite schieben, die Eier im freien Platz zu Rührei stocken lassen, dann alles vermengen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Serve topped with bean sprouts, spring onion, crushed peanuts and a squeeze of lime.",
+            "de": "Mit Sprossen, Frühlingszwiebeln, Erdnüssen und Limette servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 690,
+        "protein_g": 34,
+        "carbs_g": 78,
+        "fat_g": 26
+      },
+      "tags": [
+        "thai",
+        "asian",
+        "noodles",
+        "stir-fry",
+        "street-food",
+        "seafood"
+      ],
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "gluten",
+        "high-fodmap",
+        "peanuts",
+        "shellfish",
+        "soy"
+      ],
+      "attributes": [
+        "fry",
+        "halal",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "stir-fry",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Vegan Pad Thai",
+        "de": "Veganes Pad Thai"
+      },
+      "subtitle": {
+        "en": "tofu and edamame, tamarind does the rest",
+        "de": "tofu und edamame, tamarinde macht den rest"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 30,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 250,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "edamame",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "cut into 5 cm pieces",
+            "de": "in 5 cm stücke geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "peanuts",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "roughly crushed",
+            "de": "grob zerstoßen"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the rice noodles in warm water until soft, about 30 minutes, then drain.",
+            "de": "Die Reisnudeln etwa 30 Minuten in warmem Wasser einweichen, dann abgießen."
+          }
+        },
+        {
+          "text": {
+            "en": "Mix tamarind paste, soy sauce, palm sugar and 3 tbsp of water into a sauce.",
+            "de": "Tamarindenpaste, Sojasauce, Palmzucker und 3 EL Wasser zu einer Sauce verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat the oil in a wok over high heat. Stir-fry the garlic and tofu until golden on all sides.",
+            "de": "Das Öl im Wok stark erhitzen. Knoblauch und Tofu von allen Seiten goldbraun anbraten."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Add the edamame and toss for 1 minute.",
+            "de": "Die Edamame dazugeben und 1 Minute mitbraten."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Add the drained noodles and the sauce, toss everything together over high heat.",
+            "de": "Die abgetropften Nudeln und die Sauce dazugeben, alles bei starker Hitze durchschwenken."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Serve topped with bean sprouts, spring onion, crushed peanuts and lime.",
+            "de": "Mit Sprossen, Frühlingszwiebeln, Erdnüssen und Limette servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 620,
+        "protein_g": 26,
+        "carbs_g": 80,
+        "fat_g": 20
+      },
+      "tags": [
+        "thai",
+        "asian",
+        "noodles",
+        "stir-fry",
+        "vegan",
+        "street-food"
+      ],
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "high-fodmap",
+        "peanuts",
+        "soy"
+      ],
+      "attributes": [
+        "fry",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "stir-fry",
+        "vegan",
+        "vegetarian",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "pad-thai-gluten-free",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Gluten-Free Pad Thai",
+        "de": "Glutenfreies Pad Thai"
+      },
+      "subtitle": {
+        "en": "tamari instead of soy sauce, rice noodles throughout",
+        "de": "tamari statt sojasauce, durchgehend reisnudeln"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 30,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shrimp",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "peeled",
+            "de": "geschält"
+          }
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "bean-sprouts",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "cut into 5 cm pieces",
+            "de": "in 5 cm stücke geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "tamarind-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "fish-sauce",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tamari",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "palm-sugar",
+          "amount": 1.5,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "lime",
+          "amount": 1,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "peanuts",
+          "amount": 40,
+          "unit": "g",
+          "note": {
+            "en": "roughly crushed",
+            "de": "grob zerstoßen"
+          }
+        },
+        {
+          "ingredient_id": "vegetable-oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Soak the rice noodles in warm water until soft, about 30 minutes, then drain.",
+            "de": "Die Reisnudeln etwa 30 Minuten in warmem Wasser einweichen, dann abgießen."
+          }
+        },
+        {
+          "text": {
+            "en": "Mix tamarind paste, fish sauce, tamari, palm sugar and 3 tbsp of water into a sauce.",
+            "de": "Tamarindenpaste, Fischsauce, Tamari, Palmzucker und 3 EL Wasser zu einer Sauce verrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Heat the oil in a wok over high heat. Stir-fry the garlic and tofu until golden.",
+            "de": "Das Öl im Wok stark erhitzen. Knoblauch und Tofu goldbraun anbraten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Push everything to the side, add the shrimp and cook until pink.",
+            "de": "Alles zur Seite schieben, die Garnelen dazugeben und rosa braten."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Add the drained noodles and the sauce, toss everything together over high heat.",
+            "de": "Die abgetropften Nudeln und die Sauce dazugeben, alles bei starker Hitze durchschwenken."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Push to the side, scramble the eggs, then fold everything together.",
+            "de": "Zur Seite schieben, die Eier zu Rührei stocken lassen, dann alles vermengen."
+          },
+          "timer_minutes": 1
+        },
+        {
+          "text": {
+            "en": "Serve with bean sprouts, spring onion, peanuts and lime.",
+            "de": "Mit Sprossen, Frühlingszwiebeln, Erdnüssen und Limette servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 680,
+        "protein_g": 34,
+        "carbs_g": 76,
+        "fat_g": 25
+      },
+      "tags": [
+        "thai",
+        "asian",
+        "noodles",
+        "stir-fry",
+        "gluten-free",
+        "street-food"
+      ],
+      "contains": [
+        "added-sugar",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "peanuts",
+        "shellfish",
+        "soy"
+      ],
+      "attributes": [
+        "fry",
+        "halal",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "sauté",
+        "stir-fry",
+        "≤30",
+        "≤800"
+      ]
+    },
+    {
+      "id": "butter-chicken-classic",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "Classic Butter Chicken",
+        "de": "Klassisches Butter Chicken"
+      },
+      "subtitle": {
+        "en": "murgh makhani — tomato, cream, kasuri methi",
+        "de": "murgh makhani — tomate, sahne, kasuri methi"
+      },
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 50,
+      "calories_per_serving": 640,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thighs",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "for the marinade",
+            "de": "für die marinade"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "kasuri-methi",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "for garnish",
+            "de": "zum garnieren"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Marinate the chicken in yogurt, half the garlic and ginger, chili powder and salt for at least 20 minutes.",
+            "de": "Das Hähnchen in Joghurt, der Hälfte des Knoblauchs und Ingwers, Chilipulver und Salz mindestens 20 Minuten marinieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Sear the chicken in butter until golden, then set aside.",
+            "de": "Das Hähnchen in Butter goldbraun anbraten, dann beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "In the same pan, sauté the onion, remaining garlic and ginger until soft.",
+            "de": "In derselben Pfanne Zwiebel, restlichen Knoblauch und Ingwer weich anschwitzen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Add the tomatoes and garam masala, simmer until the sauce thickens.",
+            "de": "Tomaten und Garam Masala dazugeben, köcheln lassen, bis die Sauce eindickt."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Stir in the cream and crushed kasuri methi, return the chicken and simmer until done.",
+            "de": "Sahne und zerstoßene Bockshornkleeblätter einrühren, das Hähnchen zurückgeben und gar köcheln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Meanwhile, cook the basmati rice in salted water.",
+            "de": "Inzwischen den Basmatireis in Salzwasser kochen."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Serve the curry over rice, garnished with cilantro.",
+            "de": "Das Curry über den Reis geben, mit Koriander garnieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 640,
+        "protein_g": 42,
+        "carbs_g": 48,
+        "fat_g": 34
+      },
+      "tags": [
+        "indian",
+        "curry",
+        "comfort",
+        "creamy",
+        "dinner",
+        "chicken"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "halal",
+        "medium",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "butter-chicken-vegan",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "Vegan Butter Chicken",
+        "de": "Veganes Butter Chicken"
+      },
+      "subtitle": {
+        "en": "cauliflower and chickpeas in makhani sauce",
+        "de": "blumenkohl und kichererbsen in makhani-sauce"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 45,
+      "calories_per_serving": 560,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "cauliflower",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "into florets",
+            "de": "in röschen"
+          }
+        },
+        {
+          "ingredient_id": "chickpeas",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "coconut-cream",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "kasuri-methi",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "vegan-butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "for garnish",
+            "de": "zum garnieren"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Roast the cauliflower florets at 200°C until browned at the edges, about 20 minutes.",
+            "de": "Die Blumenkohlröschen bei 200°C rösten, bis die Ränder gebräunt sind, etwa 20 Minuten."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Sauté onion, garlic and ginger in vegan butter until soft.",
+            "de": "Zwiebel, Knoblauch und Ingwer in veganer Butter weich anschwitzen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Add tomatoes, garam masala and chili powder, simmer until the sauce thickens.",
+            "de": "Tomaten, Garam Masala und Chilipulver dazugeben, köcheln lassen, bis die Sauce eindickt."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Stir in the coconut cream, add the roasted cauliflower and chickpeas, simmer gently.",
+            "de": "Kokoscreme einrühren, Blumenkohl und Kichererbsen dazugeben, leicht köcheln lassen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Crush the kasuri methi over the top, cook the rice, serve garnished with cilantro.",
+            "de": "Die Bockshornkleeblätter darüber zerstoßen, den Reis kochen, mit Koriander garniert servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 560,
+        "protein_g": 16,
+        "carbs_g": 62,
+        "fat_g": 22
+      },
+      "tags": [
+        "indian",
+        "curry",
+        "vegan",
+        "comfort",
+        "dinner",
+        "cauliflower"
+      ],
+      "contains": [
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "roast",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "butter-chicken-keto",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "Keto Butter Chicken",
+        "de": "Keto-Butter-Chicken"
+      },
+      "subtitle": {
+        "en": "the gravy, over cauliflower rice",
+        "de": "die gravy, über blumenkohlreis"
+      },
+      "diet": "keto",
+      "effort": "medium",
+      "time_minutes": 50,
+      "calories_per_serving": 580,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thighs",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "for the marinade",
+            "de": "für die marinade"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 250,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "kasuri-methi",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cauliflower-rice",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "for garnish",
+            "de": "zum garnieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Marinate the chicken in yogurt, half the garlic and ginger, chili powder and salt for 20 minutes.",
+            "de": "Das Hähnchen in Joghurt, der Hälfte des Knoblauchs und Ingwers, Chilipulver und Salz 20 Minuten marinieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Sear the chicken in butter until golden, then set aside.",
+            "de": "Das Hähnchen in Butter goldbraun anbraten, dann beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "Sauté onion, remaining garlic and ginger until soft.",
+            "de": "Zwiebel, restlichen Knoblauch und Ingwer weich anschwitzen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Add tomatoes and garam masala, simmer until thick.",
+            "de": "Tomaten und Garam Masala dazugeben, köcheln lassen, bis die Sauce eindickt."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Stir in the cream and kasuri methi, return the chicken and simmer until done.",
+            "de": "Sahne und Bockshornkleeblätter einrühren, das Hähnchen zurückgeben und gar köcheln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Serve over cauliflower rice instead of grain rice, garnished with cilantro.",
+            "de": "Über Blumenkohlreis statt Reis servieren, mit Koriander garnieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 580,
+        "protein_g": 42,
+        "carbs_g": 14,
+        "fat_g": 38
+      },
+      "tags": [
+        "indian",
+        "curry",
+        "keto",
+        "low-carb",
+        "dinner",
+        "chicken"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "halal",
+        "medium",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤600"
+      ]
+    },
+    {
+      "id": "butter-chicken-gluten-free",
+      "dish_id": "butter-chicken",
+      "title": {
+        "en": "Gluten-Free Butter Chicken",
+        "de": "Glutenfreies Butter Chicken"
+      },
+      "subtitle": {
+        "en": "rice instead of anything wheat",
+        "de": "reis statt allem mit weizen"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 50,
+      "calories_per_serving": 630,
+      "servings": 4,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "chicken-thighs",
+          "amount": 600,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "yogurt",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "for the marinade",
+            "de": "für die marinade"
+          }
+        },
+        {
+          "ingredient_id": "butter",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cream",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "canned-tomatoes",
+          "amount": 1,
+          "unit": "can",
+          "note": {
+            "en": "400 g",
+            "de": "400 g"
+          }
+        },
+        {
+          "ingredient_id": "onion",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garam-masala",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "kasuri-methi",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "chili-powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "cilantro",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "for garnish",
+            "de": "zum garnieren"
+          }
+        },
+        {
+          "ingredient_id": "basmati-rice",
+          "amount": 300,
+          "unit": "g",
+          "note": {
+            "en": "to serve",
+            "de": "zum servieren"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Marinate the chicken in yogurt, half the garlic and ginger, chili powder and salt for 20 minutes.",
+            "de": "Das Hähnchen in Joghurt, der Hälfte des Knoblauchs und Ingwers, Chilipulver und Salz 20 Minuten marinieren."
+          },
+          "timer_minutes": 20
+        },
+        {
+          "text": {
+            "en": "Sear the chicken in butter until golden, then set aside.",
+            "de": "Das Hähnchen in Butter goldbraun anbraten, dann beiseitestellen."
+          }
+        },
+        {
+          "text": {
+            "en": "Sauté onion, remaining garlic and ginger until soft.",
+            "de": "Zwiebel, restlichen Knoblauch und Ingwer weich anschwitzen."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Add tomatoes and garam masala, simmer until the sauce thickens.",
+            "de": "Tomaten und Garam Masala dazugeben, köcheln lassen, bis die Sauce eindickt."
+          },
+          "timer_minutes": 15
+        },
+        {
+          "text": {
+            "en": "Stir in the cream and kasuri methi, return the chicken and simmer until done.",
+            "de": "Sahne und Bockshornkleeblätter einrühren, das Hähnchen zurückgeben und gar köcheln."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Cook the basmati rice and serve the curry over it, garnished with cilantro.",
+            "de": "Den Basmatireis kochen und das Curry darüber geben, mit Koriander garnieren."
+          },
+          "timer_minutes": 15
+        }
+      ],
+      "macros": {
+        "kcal": 630,
+        "protein_g": 42,
+        "carbs_g": 46,
+        "fat_g": 34
+      },
+      "tags": [
+        "indian",
+        "curry",
+        "gluten-free",
+        "comfort",
+        "dinner",
+        "chicken"
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap",
+        "poultry"
+      ],
+      "attributes": [
+        "halal",
+        "medium",
+        "sauté",
+        "simmer",
+        "sugar-free",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Classic Shoyu Ramen",
+        "de": "Klassische Shoyu-Ramen"
+      },
+      "subtitle": {
+        "en": "dashi broth, egg, nori — slurp optional",
+        "de": "dashi-brühe, ei, nori — schlürfen optional"
+      },
+      "diet": "classic",
+      "effort": "medium",
+      "time_minutes": 55,
+      "calories_per_serving": 680,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "ramen-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dashi",
+          "amount": 1,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "shiitake",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "bok-choy",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in ringen"
+          }
+        },
+        {
+          "ingredient_id": "fresh-corn",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 20,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nori",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sheets",
+            "de": "blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring the dashi to a gentle simmer with ginger and garlic.",
+            "de": "Die Dashi-Brühe mit Ingwer und Knoblauch leicht köcheln lassen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Add the soy sauce and mirin, keep the broth at a bare simmer.",
+            "de": "Sojasauce und Mirin dazugeben, die Brühe kaum köcheln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook the noodles separately according to the package, then drain.",
+            "de": "Die Nudeln separat nach Packungsanweisung kochen, dann abgießen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Blanch the bok choy and shiitake in the broth for 2 minutes.",
+            "de": "Pak Choi und Shiitake 2 Minuten in der Brühe blanchieren."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Soft-boil the eggs: 6 ½ minutes in boiling water, then into an ice bath.",
+            "de": "Die Eier weich kochen: 6 ½ Minuten in kochendem Wasser, dann ins Eisbad."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "Assemble the bowls: noodles, broth, halved eggs, vegetables, corn, nori, spring onion and a drop of sesame oil.",
+            "de": "Die Schüsseln anrichten: Nudeln, Brühe, halbierte Eier, Gemüse, Mais, Nori, Frühlingszwiebel und ein Tropfen Sesamöl."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 680,
+        "protein_g": 30,
+        "carbs_g": 84,
+        "fat_g": 24
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "noodle-soup",
+        "dinner",
+        "comfort",
+        "egg"
+      ],
+      "contains": [
+        "added-sugar",
+        "alcohol",
+        "egg",
+        "fish",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "blanch",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "simmer",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "ramen-vegan",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Vegan Miso Ramen",
+        "de": "Vegane Miso-Ramen"
+      },
+      "subtitle": {
+        "en": "kombu broth, miso depth, seared tofu",
+        "de": "kombu-brühe, miso-tiefe, gebratener tofu"
+      },
+      "diet": "vegan",
+      "effort": "medium",
+      "time_minutes": 50,
+      "calories_per_serving": 620,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "ramen-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "vegetable-broth",
+          "amount": 1,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "kombu",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "soy-sauce",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "shiitake",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "bok-choy",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 200,
+          "unit": "g",
+          "note": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "wakame",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fresh-corn",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in ringen"
+          }
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "chili-oil",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Put the kombu into the cold vegetable broth, bring to a simmer, then remove the kombu.",
+            "de": "Den Kombu in die kalte Gemüsebrühe geben, aufkochen, dann den Kombu entfernen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Whisk the miso with a ladle of warm broth, stir it back in, then add soy sauce and mirin.",
+            "de": "Das Miso mit einer Kelle Brühe anrühren, zurückrühren, dann Sojasauce und Mirin dazugeben."
+          }
+        },
+        {
+          "text": {
+            "en": "Pan-fry the tofu cubes in sesame oil until golden on all sides.",
+            "de": "Die Tofuwürfel in Sesamöl von allen Seiten goldbraun braten."
+          },
+          "timer_minutes": 5
+        },
+        {
+          "text": {
+            "en": "Cook the noodles separately, then drain.",
+            "de": "Die Nudeln separat kochen, dann abgießen."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Blanch the bok choy, shiitake and wakame in the broth for 2 minutes.",
+            "de": "Pak Choi, Shiitake und Wakame 2 Minuten in der Brühe blanchieren."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Assemble: noodles, broth, tofu, vegetables, corn, spring onion and a drizzle of chili oil.",
+            "de": "Anrichten: Nudeln, Brühe, Tofu, Gemüse, Mais, Frühlingszwiebel und einen Schuss Chiliöl."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 620,
+        "protein_g": 24,
+        "carbs_g": 82,
+        "fat_g": 22
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "noodle-soup",
+        "vegan",
+        "dinner",
+        "comfort"
+      ],
+      "contains": [
+        "added-sugar",
+        "alcohol",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "blanch",
+        "fry",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pan-fry",
+        "pescatarian",
+        "simmer",
+        "vegan",
+        "vegetarian",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "ramen-gluten-free",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Gluten-Free Ramen",
+        "de": "Glutenfreie Ramen"
+      },
+      "subtitle": {
+        "en": "rice noodles, tamari broth",
+        "de": "reisnudeln, tamari-brühe"
+      },
+      "diet": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 55,
+      "calories_per_serving": 660,
+      "servings": 2,
+      "meal_type": "dinner",
+      "ingredients": [
+        {
+          "ingredient_id": "rice-noodles",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dashi",
+          "amount": 1,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "tamari",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "mirin",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "shiitake",
+          "amount": 100,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "bok-choy",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "egg",
+          "amount": 2,
+          "unit": "piece"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in ringen"
+          }
+        },
+        {
+          "ingredient_id": "fresh-corn",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "ginger",
+          "amount": 20,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "garlic",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "ingredient_id": "sesame-oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "nori",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sheets",
+            "de": "blätter"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Bring the dashi to a gentle simmer with ginger and garlic.",
+            "de": "Die Dashi-Brühe mit Ingwer und Knoblauch leicht köcheln lassen."
+          },
+          "timer_minutes": 10
+        },
+        {
+          "text": {
+            "en": "Add the tamari and mirin, keep the broth at a bare simmer.",
+            "de": "Tamari und Mirin dazugeben, die Brühe kaum köcheln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Cook the rice noodles separately — they only need 3 minutes.",
+            "de": "Die Reisnudeln separat kochen — sie brauchen nur 3 Minuten."
+          },
+          "timer_minutes": 3
+        },
+        {
+          "text": {
+            "en": "Blanch the bok choy and shiitake in the broth for 2 minutes.",
+            "de": "Pak Choi und Shiitake 2 Minuten in der Brühe blanchieren."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Soft-boil the eggs for 6 ½ minutes, then into an ice bath.",
+            "de": "Die Eier 6 ½ Minuten weich kochen, dann ins Eisbad."
+          },
+          "timer_minutes": 7
+        },
+        {
+          "text": {
+            "en": "Assemble: noodles, broth, halved eggs, vegetables, corn, nori, spring onion, sesame oil.",
+            "de": "Anrichten: Nudeln, Brühe, halbierte Eier, Gemüse, Mais, Nori, Frühlingszwiebel, Sesamöl."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 660,
+        "protein_g": 30,
+        "carbs_g": 78,
+        "fat_g": 24
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "noodle-soup",
+        "gluten-free",
+        "dinner",
+        "comfort"
+      ],
+      "contains": [
+        "added-sugar",
+        "alcohol",
+        "egg",
+        "fish",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "attributes": [
+        "blanch",
+        "kosher",
+        "lactose-free",
+        "medium",
+        "pescatarian",
+        "simmer",
+        "≤60",
+        "≤800"
+      ]
+    },
+    {
+      "id": "miso-soup-classic",
+      "dish_id": "miso-soup",
+      "title": {
+        "en": "Classic Miso Soup",
+        "de": "Klassische Misosuppe"
+      },
+      "subtitle": {
+        "en": "dashi, miso, tofu — five minutes",
+        "de": "dashi, miso, tofu — fünf minuten"
+      },
+      "diet": "classic",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 180,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "dashi",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "wakame",
+          "amount": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in ringen"
+          }
+        },
+        {
+          "ingredient_id": "nori",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "torn",
+            "de": "zerzupft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Dice the tofu, slice the spring onion, tear the nori into pieces.",
+            "de": "Den Tofu würfeln, die Frühlingszwiebel in Ringe schneiden, den Nori zerzupfen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the dashi to a gentle simmer — never let miso boil.",
+            "de": "Die Dashi-Brühe leicht köcheln lassen — Miso nie kochen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the miso paste with a ladle of warm dashi, then stir it back into the pot.",
+            "de": "Die Misopaste mit einer Kelle warmer Brühe anrühren, dann zurück in den Topf rühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Add the diced tofu and wakame, warm through for 2 minutes.",
+            "de": "Die Tofuwürfel und den Wakame dazugeben, 2 Minuten ziehen lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Serve sprinkled with spring onion and torn nori.",
+            "de": "Mit Frühlingszwiebel und Noristreifen servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 180,
+        "protein_g": 12,
+        "carbs_g": 10,
+        "fat_g": 10
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "soup",
+        "breakfast",
+        "light",
+        "quick"
+      ],
+      "contains": [
+        "fish",
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "≤15",
+        "≤400"
+      ]
+    },
+    {
+      "id": "miso-soup-vegan",
+      "dish_id": "miso-soup",
+      "title": {
+        "en": "Vegan Miso Soup",
+        "de": "Vegane Misosuppe"
+      },
+      "subtitle": {
+        "en": "kombu instead of dashi",
+        "de": "kombu statt dashi"
+      },
+      "diet": "vegan",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 160,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "vegetable-broth",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "kombu",
+          "amount": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "wakame",
+          "amount": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shiitake",
+          "amount": 50,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "chives",
+          "amount": 1,
+          "unit": "bunch",
+          "note": {
+            "en": "chopped",
+            "de": "gehackt"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Dice the tofu, slice the shiitake, chop the chives.",
+            "de": "Den Tofu würfeln, die Shiitake in Scheiben schneiden, den Schnittlauch hacken."
+          }
+        },
+        {
+          "text": {
+            "en": "Put the kombu into the cold broth, bring to a simmer, then remove it.",
+            "de": "Den Kombu in die kalte Brühe geben, aufkochen, dann entfernen."
+          },
+          "timer_minutes": 8
+        },
+        {
+          "text": {
+            "en": "Whisk the miso with a ladle of warm broth, then stir it back in — never boil.",
+            "de": "Das Miso mit einer Kelle Brühe anrühren, zurückrühren — nie kochen."
+          }
+        },
+        {
+          "text": {
+            "en": "Add tofu, wakame and shiitake, warm through for 2 minutes.",
+            "de": "Tofu, Wakame und Shiitake dazugeben, 2 Minuten ziehen lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Serve sprinkled with chives.",
+            "de": "Mit Schnittlauch bestreut servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 160,
+        "protein_g": 11,
+        "carbs_g": 12,
+        "fat_g": 8
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "soup",
+        "vegan",
+        "breakfast",
+        "light",
+        "quick"
+      ],
+      "contains": [
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "low-fodmap",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤15",
+        "≤400"
+      ]
+    },
+    {
+      "id": "miso-soup-gluten-free",
+      "dish_id": "miso-soup",
+      "title": {
+        "en": "Gluten-Free Miso Soup",
+        "de": "Glutenfreie Misosuppe"
+      },
+      "subtitle": {
+        "en": "check the miso, the rest is free",
+        "de": "das miso prüfen, der rest ist frei"
+      },
+      "diet": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 15,
+      "calories_per_serving": 170,
+      "servings": 2,
+      "meal_type": "breakfast",
+      "ingredients": [
+        {
+          "ingredient_id": "vegetable-broth",
+          "amount": 500,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "miso-paste",
+          "amount": 2,
+          "unit": "tbsp",
+          "note": {
+            "en": "check the label — some miso contains barley",
+            "de": "etikett prüfen — manche miso enthalten gerste"
+          }
+        },
+        {
+          "ingredient_id": "tofu",
+          "amount": 150,
+          "unit": "g",
+          "note": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "wakame",
+          "amount": 5,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shiitake",
+          "amount": 50,
+          "unit": "g",
+          "note": {
+            "en": "sliced",
+            "de": "in scheiben"
+          }
+        },
+        {
+          "ingredient_id": "spring-onion",
+          "amount": 2,
+          "unit": "piece",
+          "note": {
+            "en": "sliced",
+            "de": "in ringen"
+          }
+        },
+        {
+          "ingredient_id": "nori",
+          "amount": 1,
+          "unit": "piece",
+          "note": {
+            "en": "torn",
+            "de": "zerzupft"
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Dice the tofu, slice the shiitake and spring onion, tear the nori.",
+            "de": "Den Tofu würfeln, Shiitake und Frühlingszwiebel in Scheiben schneiden, den Nori zerzupfen."
+          }
+        },
+        {
+          "text": {
+            "en": "Bring the vegetable broth to a gentle simmer.",
+            "de": "Die Gemüsebrühe leicht köcheln lassen."
+          }
+        },
+        {
+          "text": {
+            "en": "Whisk the miso with a ladle of warm broth, then stir it back in.",
+            "de": "Das Miso mit einer Kelle Brühe anrühren, dann zurückrühren."
+          }
+        },
+        {
+          "text": {
+            "en": "Add tofu, wakame and shiitake, warm through for 2 minutes.",
+            "de": "Tofu, Wakame und Shiitake dazugeben, 2 Minuten ziehen lassen."
+          },
+          "timer_minutes": 2
+        },
+        {
+          "text": {
+            "en": "Serve with spring onion and torn nori.",
+            "de": "Mit Frühlingszwiebel und Noristreifen servieren."
+          }
+        }
+      ],
+      "macros": {
+        "kcal": 170,
+        "protein_g": 11,
+        "carbs_g": 10,
+        "fat_g": 9
+      },
+      "tags": [
+        "japanese",
+        "asian",
+        "soup",
+        "gluten-free",
+        "breakfast",
+        "light",
+        "quick"
+      ],
+      "contains": [
+        "high-fodmap",
+        "soy"
+      ],
+      "attributes": [
+        "easy",
+        "halal",
+        "kosher",
+        "lactose-free",
+        "pescatarian",
+        "simmer",
+        "sugar-free",
+        "vegan",
+        "vegetarian",
+        "≤15",
+        "≤400"
+      ]
+    }
+  ]
+}
