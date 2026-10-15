@@ -1,0 +1,2700 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-middle-eastern",
+  "recipes": [
+    {
+      "id": "doener-classic",
+      "dish_id": "doener",
+      "title": {
+        "en": "Classic Berlin Street Döner",
+        "de": "Klassischer Berliner Straßen-Döner"
+      },
+      "subtitle": {
+        "en": "Charred spiced beef, crisp pocket bread, garlicky yogurt & sumac red cabbage.",
+        "de": "Würzig gebratenes Rindfleisch, knuspriges Fladenbrot, Knoblauchjoghurt & Sumach-Rotkohl."
+      },
+      "diet_dimension": "classic",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 680,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 680,
+        "protein_g": 42,
+        "carbs_g": 58,
+        "fat_g": 28,
+        "fiber_g": 6
+      },
+      "contains": [
+        "beef",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo",
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "medium",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "grill",
+        "lunch",
+        "dinner",
+        "halal"
+      ],
+      "techniques": [
+        "pan-fry",
+        "grill"
+      ],
+      "ingredient_ids": [
+        "beef-strips",
+        "flatbread",
+        "yogurt",
+        "garlic",
+        "red-cabbage",
+        "cucumber",
+        "tomatoes",
+        "onion",
+        "sumac",
+        "cumin",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "beef-strips",
+          "name": {
+            "en": "Spiced Beef Strips",
+            "de": "Gewürzte Rinderstreifen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "flatbread",
+          "name": {
+            "en": "Turkish Flatbread",
+            "de": "Türkisches Fladenbrot"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "Greek Yogurt",
+            "de": "Griechischer Joghurt"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "Red Cabbage",
+            "de": "Rotkohl"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "Ground Sumac",
+            "de": "Gemahlener Sumach"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Pickle the Cabbage & Sumac Onions",
+            "de": "Rotkohl & Sumach-Zwiebeln marinieren"
+          },
+          "instruction": {
+            "en": "Finely shred the red cabbage and thinly slice the onion. Toss the onion rings with ground sumac and a pinch of salt until ruby-tinted and fragrant.",
+            "de": "Rotkohl fein hobeln und die Zwiebel in dünne Ringe schneiden. Die Zwiebelringe mit Sumach und einer Prise Salz verkneten, bis sie rubinrot duften."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Massage the cabbage with your fingertips for 60 seconds so it softens like street-cart slaw.",
+            "de": "Den Rotkohl 60 Sekunden mit den Fingerspitzen kneten, damit er zart und saftig wird."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Whisk the Kräuter-Knoblauch Sauce",
+            "de": "Kräuter-Knoblauch-Sauce rühren"
+          },
+          "instruction": {
+            "en": "Grate the garlic cloves into the Greek yogurt with a drizzle of olive oil, salt, and cracked pepper. Let it rest while heating the skillet.",
+            "de": "Knoblauchzehen fein in den griechischen Joghurt reiben, mit etwas Olivenöl, Salz und Pfeffer glattrühren und kurz durchziehen lassen."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "A tiny splash of cold water makes the sauce drizzle just like the corner Imbiss.",
+            "de": "Ein kleiner Spritzer kaltes Wasser macht die Sauce perfekt flüssig zum Beträufeln."
+          }
+        },
+        {
+          "step_number": 3,
+          "title": {
+            "en": "Sear the Spiced Beef & Toast the Bread",
+            "de": "Rinderstreifen scharf anbraten & Brot rösten"
+          },
+          "instruction": {
+            "en": "Flash-sear the cumin-spiced beef strips in a smoking-hot cast-iron skillet for 4 minutes until deeply caramelized at the edges. Warm the flatbread pockets over the pan, slather both sides with garlic yogurt, and pack generously with meat, cabbage, cucumber, tomatoes, and sumac onions.",
+            "de": "Die mit Kreuzkümmel gewürzten Rinderstreifen 4 Minuten in einer sehr heißen Pfanne scharf anbraten, bis knusprige Ränder entstehen. Fladenbrot anrösten, beide Innenseiten mit Knoblauchjoghurt bestreichen und prall mit Fleisch, Rotkohl, Gurke, Tomaten und Sumach-Zwiebeln füllen."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Don’t crowd the pan—let the strips sit undisturbed for the first 90 seconds.",
+            "de": "Die Streifen in den ersten 90 Sekunden nicht wenden, damit echte Röstaromen entstehen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "doener",
+          "kebab",
+          "berlin",
+          "beef",
+          "flatbread",
+          "street food"
+        ],
+        "de": [
+          "döner",
+          "kebab",
+          "berlin",
+          "rind",
+          "fladenbrot",
+          "streetfood"
+        ]
+      }
+    },
+    {
+      "id": "doener-vegan",
+      "dish_id": "doener",
+      "title": {
+        "en": "Kreuzberg Vegan Seitan Döner",
+        "de": "Kreuzberger Veganer Seitan-Döner"
+      },
+      "subtitle": {
+        "en": "Paper-thin charred seitan ribbons, silky lemon-garlic tahini & crisp winter slaw in warm flatbread.",
+        "de": "Hauchdünn gebratener Seitan, seidige Zitronen-Tahini-Creme & knackiger Krautsalat im warmen Fladenbrot."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 520,
+        "protein_g": 31,
+        "carbs_g": 54,
+        "fat_g": 19,
+        "fiber_g": 8
+      },
+      "contains": [
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "seitan",
+        "flatbread",
+        "tahini",
+        "lemon",
+        "garlic",
+        "red-cabbage",
+        "cucumber",
+        "tomatoes",
+        "onion",
+        "sumac",
+        "paprika",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "seitan",
+          "name": {
+            "en": "Shaved Seitan",
+            "de": "Geschnittener Seitan"
+          },
+          "amount": 280,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "flatbread",
+          "name": {
+            "en": "Turkish Flatbread",
+            "de": "Türkisches Fladenbrot"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "Red Cabbage",
+            "de": "Rotkohl"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "Ground Sumac",
+            "de": "Gemahlener Sumach"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "paprika",
+          "name": {
+            "en": "Smoked Paprika",
+            "de": "Geräuchertes Paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Emulsify the Garlic-Lemon Tahini",
+            "de": "Knoblauch-Zitronen-Tahini aufschlagen"
+          },
+          "instruction": {
+            "en": "Whisk sesame tahini with lemon juice, grated garlic, salt, and 3 tablespoons of ice-cold water until it turns pale and billowy.",
+            "de": "Sesam-Tahini mit Zitronensaft, geriebenem Knoblauch, Salz und 3 EL eiskaltem Wasser aufschlagen, bis eine helle, luftige Creme entsteht."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Cold water is the secret to turning dense tahini into a cloud-light drizzle.",
+            "de": "Eiskaltes Wasser verwandelt dichtes Tahini in eine wolkenleichte Sauce."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Char the Shaved Seitan Ribbons",
+            "de": "Seitan-Streifen knusprig braten"
+          },
+          "instruction": {
+            "en": "Toss the shaved seitan with olive oil and smoked paprika. Sear in a hot skillet for 5 minutes until the edges curl and blister.",
+            "de": "Den fein geschnittenen Seitan mit Olivenöl und geräuchertem Paprikapulver mischen und 5 Minuten bei starker Hitze knusprig braten."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Slice the seitan while cold so you get paper-thin rotary-spit curls.",
+            "de": "Seitan direkt aus dem Kühlschrank schneiden, damit hauchdünne Streifen gelingen."
+          }
+        },
+        {
+          "step_number": 3,
+          "title": {
+            "en": "Build the Pocket",
+            "de": "Fladenbrot schichten"
+          },
+          "instruction": {
+            "en": "Warm the flatbread triangles, coat generously with garlic tahini, and layer crispy seitan with shredded red cabbage, cucumber, tomatoes, and sumac onions.",
+            "de": "Fladenbrot erwärmen, großzügig mit Knoblauch-Tahini bestreichen und abwechselnd mit knusprigem Seitan, Rotkohl, Gurke, Tomaten und Sumach-Zwiebeln füllen."
+          },
+          "timer_seconds": 90,
+          "tip": {
+            "en": "Sauce the bread first AND finish with a ribbon on top.",
+            "de": "Zuerst das Brot bestreichen und zum Schluss noch einen Klecks Sauce darübergeben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "doener",
+          "vegan",
+          "seitan",
+          "tahini",
+          "berlin",
+          "plant-based"
+        ],
+        "de": [
+          "döner",
+          "vegan",
+          "seitan",
+          "tahini",
+          "berlin",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "doener-keto",
+      "dish_id": "doener",
+      "title": {
+        "en": "Keto Spiced Döner Platter Bowl",
+        "de": "Keto Döner-Teller mit Kräuter-Dip"
+      },
+      "subtitle": {
+        "en": "Flame-seared chicken thighs over crisp herb-cabbage slaw with garlic-olive tahini—zero bread, all the street-cart soul.",
+        "de": "Scharf angebratene Hähnchenstreifen auf knackigem Krautsalat mit Knoblauch-Tahini – ohne Brot, voller Geschmack."
+      },
+      "diet_dimension": "keto",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 440,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 440,
+        "protein_g": 38,
+        "carbs_g": 9,
+        "fat_g": 28,
+        "fiber_g": 4
+      },
+      "contains": [
+        "poultry",
+        "sesame"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "halal",
+        "kosher",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "chicken-thigh",
+        "tahini",
+        "garlic-oil",
+        "lemon",
+        "red-cabbage",
+        "cucumber",
+        "tomatoes",
+        "parsley",
+        "sumac",
+        "cumin"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-thigh",
+          "name": {
+            "en": "Chicken Thigh",
+            "de": "Hähnchenschenkel"
+          },
+          "amount": 320,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic-oil",
+          "name": {
+            "en": "Garlic-Infused Olive Oil",
+            "de": "Knoblauch-Olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "Red Cabbage",
+            "de": "Rotkohl"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "Ground Sumac",
+            "de": "Gemahlener Sumach"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Season & Sear the Chicken",
+            "de": "Hähnchen würzen & scharf anbraten"
+          },
+          "instruction": {
+            "en": "Slice chicken thighs into thin strips, coat in garlic-infused olive oil, cumin, and sumac, and sear over high heat for 6 minutes until golden-brown.",
+            "de": "Hähnchenschenkel in feine Streifen schneiden, mit Knoblauch-Olivenöl, Kreuzkümmel und Sumach mischen und 6 Minuten goldbraun und knusprig braten."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Thigh meat stays juicy even when charred hard at the edges.",
+            "de": "Schenkelfleisch bleibt wunderbar saftig, selbst wenn die Ränder kross braten."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Assemble the Crisp Slaw & Tahini Drizzle",
+            "de": "Krautsalat & Tahini-Dressing anrichten"
+          },
+          "instruction": {
+            "en": "Arrange shredded cabbage, diced cucumber, tomatoes, and fresh parsley in warm bowls. Top with sizzling chicken strips and lemon-tahini dressing.",
+            "de": "Gehobelten Rotkohl, gewürfelte Gurke, Tomaten und glatte Petersilie in Schalen anrichten, das heiße Hähnchen daraufgeben und mit Zitronen-Tahini beträufeln."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Dust with extra sumac right at the table for a citrus pop.",
+            "de": "Direkt am Tisch noch etwas Sumach darüberstäuben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "doener",
+          "keto",
+          "low-carb",
+          "gluten-free",
+          "chicken",
+          "bowl"
+        ],
+        "de": [
+          "döner",
+          "keto",
+          "low-carb",
+          "glutenfrei",
+          "hähnchen",
+          "teller"
+        ]
+      }
+    },
+    {
+      "id": "doener-halal",
+      "dish_id": "doener",
+      "title": {
+        "en": "Anatolian Slow-Marinated Halal Lamb Döner",
+        "de": "Anatolischer Halal-Lamm-Döner mit Sumach"
+      },
+      "subtitle": {
+        "en": "Spiced lamb shoulder ribbons marinated in onion juice & cumin, tucked into blistered flatbread with mint-garlic yogurt.",
+        "de": "Zarte Lammstreifen in Zwiebel-Kreuzkümmel-Marinade, serviert im gerösteten Fladenbrot mit Minz-Knoblauch-Joghurt."
+      },
+      "diet_dimension": "halal",
+      "effort": "hard",
+      "time_minutes": 55,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 640,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 640,
+        "protein_g": 40,
+        "carbs_g": 52,
+        "fat_g": 29,
+        "fiber_g": 6
+      },
+      "contains": [
+        "lamb",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "nut-free",
+        "sugar-free",
+        "hard",
+        "≤60",
+        "≤800",
+        "grill",
+        "roast",
+        "dinner"
+      ],
+      "techniques": [
+        "grill",
+        "roast"
+      ],
+      "ingredient_ids": [
+        "lamb-mince",
+        "flatbread",
+        "yogurt",
+        "mint",
+        "garlic",
+        "onion",
+        "tomatoes",
+        "red-cabbage",
+        "sumac",
+        "cumin",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "lamb-mince",
+          "name": {
+            "en": "Spiced Lamb",
+            "de": "Gewürztes Lammfleisch"
+          },
+          "amount": 320,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "flatbread",
+          "name": {
+            "en": "Turkish Flatbread",
+            "de": "Türkisches Fladenbrot"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "Greek Yogurt",
+            "de": "Griechischer Joghurt"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "mint",
+          "name": {
+            "en": "Fresh Mint",
+            "de": "Frische Minze"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "Red Cabbage",
+            "de": "Rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "Ground Sumac",
+            "de": "Gemahlener Sumach"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Marinate & Chill the Spiced Lamb Slab",
+            "de": "Lamm würzen & kompakt marinieren"
+          },
+          "instruction": {
+            "en": "Knead spiced lamb with grated onion, cumin, olive oil, and flaky salt until cohesive. Shape into a tight log and chill for 25 minutes so it shaves cleanly.",
+            "de": "Das Lammfleisch mit geriebener Zwiebel, Kreuzkümmel, Olivenöl und Meersalz kräftig verkneten, kompakt formen und 25 Minuten kühlen, damit es sich hauchdünn schneiden lässt."
+          },
+          "timer_seconds": 1500,
+          "tip": {
+            "en": "Compacting the meat firmly replicates the dense texture of a vertical rotisserie cone.",
+            "de": "Durch das feste Andrücken entsteht die typische Textur eines echten Drehspießes."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Shave & Broil Until Crisp",
+            "de": "Dünn schneiden & knusprig grillen"
+          },
+          "instruction": {
+            "en": "Slice paper-thin ribbons from the chilled lamb and broil or sear in cast iron for 6 minutes until browned. Serve in warm flatbread with mint-garlic yogurt and sumac onions.",
+            "de": "Hauchdünne Streifen abschneiden und 6 Minuten in der heißen Gusseisenpfanne knusprig braten. Im warmen Fladenbrot mit Minz-Knoblauch-Joghurt und Sumach-Zwiebeln servieren."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Baste the flatbread lightly with the pan drippings before filling.",
+            "de": "Die Schnittflächen des Fladenbrots kurz in die heiße Pfanne drücken."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "doener",
+          "halal",
+          "lamb",
+          "anatolian",
+          "middle-eastern"
+        ],
+        "de": [
+          "döner",
+          "halal",
+          "lamm",
+          "anatolisch",
+          "orientalisch"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-classic",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Classic Skillet Shakshuka with Feta & Cilantro",
+        "de": "Klassische Pfannen-Shakshuka mit Feta & Koriander"
+      },
+      "subtitle": {
+        "en": "Pasture-raised eggs gently poached in a smoky cumin, roasted bell pepper & rose harissa tomato sauce.",
+        "de": "Sanft pochierte Freilandeier in rauchiger Kreuzkümmel-, Paprika- & Rosen-Harissa-Tomatensauce mit Feta."
+      },
+      "diet_dimension": "vegetarian",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 420,
+        "protein_g": 20,
+        "carbs_g": 22,
+        "fat_g": 28,
+        "fiber_g": 6
+      },
+      "contains": [
+        "egg",
+        "dairy",
+        "lactose",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "poach",
+        "breakfast",
+        "lunch"
+      ],
+      "techniques": [
+        "simmer",
+        "poach"
+      ],
+      "ingredient_ids": [
+        "chicken-egg",
+        "tomatoes",
+        "bell-peppers",
+        "onion",
+        "garlic",
+        "feta",
+        "harissa",
+        "cumin",
+        "cilantro",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bell-peppers",
+          "name": {
+            "en": "Bell Peppers",
+            "de": "Paprikaschoten"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "feta",
+          "name": {
+            "en": "Feta",
+            "de": "Feta-Käse"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "Rose Harissa",
+            "de": "Rosen-Harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cilantro",
+          "name": {
+            "en": "Cilantro",
+            "de": "Koriandergrün"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Sweat Peppers, Onion & Rose Harissa",
+            "de": "Paprika, Zwiebel & Rosen-Harissa schmoren"
+          },
+          "instruction": {
+            "en": "Soften sliced onion and bell peppers in olive oil for 7 minutes. Stir in garlic, cumin, and rose harissa for 30 seconds until fragrant, then add crushed tomatoes and simmer for 8 minutes.",
+            "de": "Zwiebel- und Paprikastreifen 7 Minuten in Olivenöl weich dünsten. Knoblauch, Kreuzkümmel und Rosen-Harissa 30 Sekunden mitrösten, Tomaten zugeben und 8 Minuten dicklich einkochen."
+          },
+          "timer_seconds": 900,
+          "tip": {
+            "en": "Simmer until a wooden spoon leaves a slow trail across the pan.",
+            "de": "So lange köcheln, bis die Sauce sämig ist und Mulden für die Eier hält."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Poach the Eggs & Crumble Feta",
+            "de": "Eier pochieren & Feta darüberbröseln"
+          },
+          "instruction": {
+            "en": "Make four wells in the bubbling tomato sauce, crack in the eggs, crumble feta around them, and cover for 5 minutes until whites are set and yolks remain jammy. Scatter with fresh cilantro.",
+            "de": "Vier Mulden in die Sauce drücken, Eier hineingeben, Feta darüberbröseln und zugedeckt 5 Minuten garen, bis das Eiweiß fest und das Eigelb noch wachsweich ist. Mit Koriander bestreuen."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Jiggle the skillet gently to check when the egg whites just set.",
+            "de": "Kurz an der Pfanne rütteln, um den perfekten Punkt für wachsweiche Eigelbe zu erkennen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "shakshuka",
+          "breakfast",
+          "eggs",
+          "feta",
+          "vegetarian",
+          "middle-eastern"
+        ],
+        "de": [
+          "shakshuka",
+          "frühstück",
+          "eier",
+          "feta",
+          "vegetarisch",
+          "orientalisch"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-vegan",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Silken Tofu & Chickpea Ember Shakshuka",
+        "de": "Vegane Shakshuka mit Seidentofu & Kichererbsen"
+      },
+      "subtitle": {
+        "en": "Custardy silken tofu medallions & tender chickpeas nestled in smoky harissa-cumin tomato ragù.",
+        "de": "Zarte Seidentofu-Medaillons & Kichererbsen in rauchigem Harissa-Kreuzkümmel-Tomatenragout."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 360,
+      "calorie_bucket": "≤400",
+      "macros": {
+        "calories": 360,
+        "protein_g": 16,
+        "carbs_g": 34,
+        "fat_g": 16,
+        "fiber_g": 8
+      },
+      "contains": [
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤400",
+        "≤600",
+        "simmer",
+        "breakfast",
+        "lunch"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "silken-tofu",
+        "chickpeas",
+        "tomatoes",
+        "bell-peppers",
+        "onion",
+        "garlic",
+        "harissa",
+        "cumin",
+        "parsley",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "silken-tofu",
+          "name": {
+            "en": "Silken Tofu",
+            "de": "Seidentofu"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bell-peppers",
+          "name": {
+            "en": "Bell Peppers",
+            "de": "Paprikaschoten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "Rose Harissa",
+            "de": "Rosen-Harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Braise Chickpeas in Spiced Tomato Sauce",
+            "de": "Kichererbsen in Gewürztomatensauce schmoren"
+          },
+          "instruction": {
+            "en": "Sauté onion, bell peppers, and garlic in olive oil with cumin and rose harissa. Add tomatoes and chickpeas and simmer for 12 minutes.",
+            "de": "Zwiebel, Paprika und Knoblauch in Olivenöl mit Kreuzkümmel und Rosen-Harissa anschwitzen. Tomaten und Kichererbsen zugeben und 12 Minuten sanft schmoren."
+          },
+          "timer_seconds": 720,
+          "tip": {
+            "en": "Chickpeas give body to the sauce and soak up the smoky spice.",
+            "de": "Die Kichererbsen machen die Sauce herrlich sämig und nehmen die Gewürze auf."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Nestle the Silken Tofu Medallions",
+            "de": "Seidentofu-Medaillons einbetten"
+          },
+          "instruction": {
+            "en": "Spoon rounded medallions of silken tofu into the bubbling sauce, cover for 4 minutes until warmed through, and finish with flat-leaf parsley and olive oil.",
+            "de": "Mit einem Esslöffel runde Medaillons vom Seidentofu abstechen, in die blubbernde Sauce setzen, 4 Minuten erwärmen und mit glatter Petersilie servieren."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Scoop silken tofu with a large soup spoon for natural poached-egg contours.",
+            "de": "Mit einem großen Esslöffel abgestochen wirkt der Seidentofu wie pochierte Eier."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "shakshuka",
+          "vegan",
+          "tofu",
+          "chickpeas",
+          "breakfast",
+          "cilantro-free"
+        ],
+        "de": [
+          "shakshuka",
+          "vegan",
+          "tofu",
+          "kichererbsen",
+          "frühstück"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-low-fodmap",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Gentle Low-FODMAP Carrot & Herb Shakshuka",
+        "de": "Sanfte Low-FODMAP Karotten-Kräuter-Shakshuka"
+      },
+      "subtitle": {
+        "en": "Infused garlic-oil, sweet roasted carrots, vine tomatoes & poached eggs—crafted without onion, garlic bulbs, or bell peppers.",
+        "de": "Knoblauch-Olivenöl, süße Röstkarotten, Strauchtomaten & pochierte Eier – ganz ohne Zwiebeln und Paprika."
+      },
+      "diet_dimension": "low-fodmap",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 390,
+      "calorie_bucket": "≤400",
+      "macros": {
+        "calories": 390,
+        "protein_g": 17,
+        "carbs_g": 18,
+        "fat_g": 27,
+        "fiber_g": 5
+      },
+      "contains": [
+        "egg"
+      ],
+      "attributes": [
+        "low-fodmap",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "medium",
+        "≤30",
+        "≤400",
+        "≤600",
+        "simmer",
+        "poach",
+        "breakfast",
+        "lunch"
+      ],
+      "techniques": [
+        "simmer",
+        "poach"
+      ],
+      "ingredient_ids": [
+        "chicken-egg",
+        "tomatoes",
+        "carrots",
+        "spinach",
+        "garlic-oil",
+        "scallions",
+        "cumin",
+        "paprika",
+        "parsley"
+      ],
+      "ingredients": [
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 4,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic-oil",
+          "name": {
+            "en": "Garlic-Infused Olive Oil",
+            "de": "Knoblauch-Olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "paprika",
+          "name": {
+            "en": "Smoked Paprika",
+            "de": "Geräuchertes Paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Simmer Finely Grated Carrots in Garlic Oil",
+            "de": "Fein geriebene Karotten im Knoblauchöl schmoren"
+          },
+          "instruction": {
+            "en": "Sauté finely grated carrots and scallion greens in garlic-infused olive oil with cumin and smoked paprika for 5 minutes, then add tomatoes and spinach and simmer for 10 minutes.",
+            "de": "Fein geriebene Karotten und Frühlingszwiebelgrün 5 Minuten in Knoblauch-Olivenöl mit Kreuzkümmel und Paprika anschwitzen, Tomaten und Spinat zugeben und 10 Minuten köcheln."
+          },
+          "timer_seconds": 900,
+          "tip": {
+            "en": "Grated carrot lends natural sweetness without onion fructans.",
+            "de": "Geriebene Karotte bringt feine Süße ganz ohne Zwiebel-Fruktane."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Poach the Eggs Gently",
+            "de": "Eier sanft pochieren"
+          },
+          "instruction": {
+            "en": "Crack the eggs into the sauce, cover for 5 minutes until softly set, and garnish with parsley.",
+            "de": "Eier in die Sauce schlagen, zugedeckt 5 Minuten sanft pochieren und mit glatter Petersilie bestreuen."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Drizzle a final thread of garlic-infused oil at the table.",
+            "de": "Beim Servieren noch einige Tropfen Knoblauchöl darübergeben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "shakshuka",
+          "low-fodmap",
+          "dairy-free",
+          "breakfast",
+          "gentle"
+        ],
+        "de": [
+          "shakshuka",
+          "fodmap-arm",
+          "milchfrei",
+          "frühstück",
+          "bekömmlich"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka-halal",
+      "dish_id": "shakshuka",
+      "title": {
+        "en": "Spiced Lamb Kefta & Poached Egg Shakshuka",
+        "de": "Halal Lamm-Kefta & Ei Shakshuka"
+      },
+      "subtitle": {
+        "en": "Juicy cumin-spiced halal lamb kefta meatballs simmered in charred tomato-harissa sauce with poached eggs.",
+        "de": "Saftige Halal-Lammbällchen mit Kreuzkümmel, geschmort in würziger Tomaten-Harissa-Sauce mit pochierten Eiern."
+      },
+      "diet_dimension": "halal",
+      "effort": "hard",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 580,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 580,
+        "protein_g": 36,
+        "carbs_g": 19,
+        "fat_g": 39,
+        "fiber_g": 5
+      },
+      "contains": [
+        "lamb",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "hard",
+        "≤60",
+        "≤600",
+        "pan-fry",
+        "simmer",
+        "poach",
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer",
+        "poach"
+      ],
+      "ingredient_ids": [
+        "lamb-mince",
+        "chicken-egg",
+        "tomatoes",
+        "bell-peppers",
+        "onion",
+        "garlic",
+        "harissa",
+        "cumin",
+        "parsley",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "lamb-mince",
+          "name": {
+            "en": "Spiced Lamb",
+            "de": "Gewürztes Lammfleisch"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 400,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bell-peppers",
+          "name": {
+            "en": "Bell Peppers",
+            "de": "Paprikaschoten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "harissa",
+          "name": {
+            "en": "Rose Harissa",
+            "de": "Rosen-Harissa"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Roll & Sear the Lamb Kefta",
+            "de": "Lamm-Kefta formen & anbraten"
+          },
+          "instruction": {
+            "en": "Roll spiced lamb with chopped parsley and cumin into walnut-sized meatballs and brown in olive oil for 6 minutes.",
+            "de": "Gewürztes Lammfleisch mit Petersilie und Kreuzkümmel zu walnussgroßen Bällchen formen und 6 Minuten in Olivenöl rundherum anbraten."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Leave the kefta drippings in the skillet to flavor the tomatoes.",
+            "de": "Den Bratensatz unbedingt in der Pfanne lassen – er gibt den Tomaten tiefe Würze."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Braise in Harissa Tomatoes & Poach Eggs",
+            "de": "In Harissa-Tomaten schmoren & Eier pochieren"
+          },
+          "instruction": {
+            "en": "Add onion, peppers, garlic, harissa, and tomatoes around the kefta. Simmer 15 minutes, then crack in the eggs and cover for 5 minutes.",
+            "de": "Zwiebel, Paprika, Knoblauch, Harissa und Tomaten zugeben, 15 Minuten schmoren, dann Eier hineingeben und zugedeckt 5 Minuten pochieren."
+          },
+          "timer_seconds": 1200,
+          "tip": {
+            "en": "Serve straight from the cast-iron skillet.",
+            "de": "Direkt in der Gusseisenpfanne auf den Tisch stellen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "shakshuka",
+          "halal",
+          "lamb",
+          "kefta",
+          "high-protein"
+        ],
+        "de": [
+          "shakshuka",
+          "halal",
+          "lamm",
+          "kefta",
+          "proteinreich"
+        ]
+      }
+    },
+    {
+      "id": "falafel-classic",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Crisp Green-Herb Falafel & Warm Pita Platter",
+        "de": "Knuspriger Kräuter-Falafel-Teller mit warmem Pitabrot"
+      },
+      "subtitle": {
+        "en": "Crunchy chickpea fritters packed with parsley, mint & cumin, served with warm pita, lemon tahini & pickled cabbage.",
+        "de": "Knusprige Kichererbsenbällchen voller Petersilie, Minze & Kreuzkümmel mit warmem Pitabrot und Zitronen-Tahini."
+      },
+      "diet_dimension": "vegan",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 560,
+        "protein_g": 20,
+        "carbs_g": 64,
+        "fat_g": 24,
+        "fiber_g": 11
+      },
+      "contains": [
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "medium",
+        "≤60",
+        "≤600",
+        "pan-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "chickpeas",
+        "pita",
+        "parsley",
+        "mint",
+        "tahini",
+        "lemon",
+        "garlic",
+        "onion",
+        "red-cabbage",
+        "cumin",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "Warm Pita Bread",
+            "de": "Warmes Pitabrot"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mint",
+          "name": {
+            "en": "Fresh Mint",
+            "de": "Frische Minze"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "onion",
+          "name": {
+            "en": "Onion",
+            "de": "Zwiebel"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "red-cabbage",
+          "name": {
+            "en": "Red Cabbage",
+            "de": "Rotkohl"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Pulse the Emerald Herb-Chickpea Mix",
+            "de": "Smaragdgrünen Kräuter-Kichererbsen-Teig mixen"
+          },
+          "instruction": {
+            "en": "Pulse chickpeas, parsley, mint, garlic, onion, and cumin into a coarse, sandy grain—never a smooth purée. Shape into 8 small patties.",
+            "de": "Kichererbsen, Petersilie, Minze, Knoblauch, Zwiebel und Kreuzkümmel körnig mixen – nicht fein pürieren. Zu 8 kleinen Talern formen."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "A coarse texture keeps the inside fluffy and emerald green.",
+            "de": "Die körnige Struktur hält die Falafel innen locker und leuchtend grün."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Crisp in Olive Oil & Plate with Tahini",
+            "de": "In Olivenöl knusprig braten & mit Tahini anrichten"
+          },
+          "instruction": {
+            "en": "Pan-fry the falafel in olive oil for 4 minutes per side until deeply crusted. Serve with warm pita, whipped lemon tahini, and shredded cabbage.",
+            "de": "Falafel in Olivenöl je Seite 4 Minuten knusprig braten. Mit warmem Pitabrot, aufgeschlagenem Zitronen-Tahini und Rotkohl servieren."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Let the crust set for 3 full minutes before flipping.",
+            "de": "Vor dem ersten Wenden 3 Minuten ruhen lassen, damit eine feste Kruste entsteht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "falafel",
+          "vegan",
+          "chickpeas",
+          "tahini",
+          "pita",
+          "middle-eastern"
+        ],
+        "de": [
+          "falafel",
+          "vegan",
+          "kichererbsen",
+          "tahini",
+          "pita",
+          "orientalisch"
+        ]
+      }
+    },
+    {
+      "id": "falafel-gluten-free",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Oven-Crisped Gluten-Free Herb Falafel Salad Bowl",
+        "de": "Ofenknusprige Glutenfreie Kräuter-Falafel-Bowl"
+      },
+      "subtitle": {
+        "en": "Golden baked herb chickpea falafel over lemon-cucumber & tomato salad with sesame tahini.",
+        "de": "Im Ofen gebackene Kräuter-Falafel auf Zitronen-Gurken-Tomaten-Salat mit Sesam-Tahini."
+      },
+      "diet_dimension": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 460,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 460,
+        "protein_g": 17,
+        "carbs_g": 44,
+        "fat_g": 23,
+        "fiber_g": 10
+      },
+      "contains": [
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "gluten-free",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤600",
+        "bake",
+        "roast",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "bake",
+        "roast"
+      ],
+      "ingredient_ids": [
+        "chickpeas",
+        "parsley",
+        "mint",
+        "tahini",
+        "lemon",
+        "cucumber",
+        "tomatoes",
+        "lettuce",
+        "cumin",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "amount": 300,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mint",
+          "name": {
+            "en": "Fresh Mint",
+            "de": "Frische Minze"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "Crisp Lettuce",
+            "de": "Knackiger Salat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Shape & Bake on a Hot Oiled Sheet",
+            "de": "Formen & auf heißem Blech backen"
+          },
+          "instruction": {
+            "en": "Pulse chickpeas, parsley, mint, cumin, and olive oil into coarse crumbs. Shape into discs and bake at 210°C for 18 minutes, flipping halfway.",
+            "de": "Kichererbsen, Petersilie, Minze, Kreuzkümmel und Olivenöl körnig mixen, zu Talern formen und bei 210 °C 18 Minuten goldbraun backen."
+          },
+          "timer_seconds": 1080,
+          "tip": {
+            "en": "Preheating the baking sheet for 3 minutes gives a fried-style bottom crust.",
+            "de": "Das Backblech kurz mit vorheizen – so wird die Unterseite besonders knusprig."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Toss the Chopped Salad & Tahini",
+            "de": "Salat & Tahini-Dressing anrichten"
+          },
+          "instruction": {
+            "en": "Toss diced cucumber, tomatoes, and crisp lettuce with lemon juice, then crown with hot baked falafel and tahini.",
+            "de": "Gewürfelte Gurke, Tomaten und knackigen Salat mit Zitronensaft mischen und mit den heißen Falafel sowie Tahini servieren."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Salt the cucumbers right before serving so they stay crisp.",
+            "de": "Die Gurkenwürfel erst kurz vor dem Servieren salzen, damit sie knackig bleiben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "falafel",
+          "gluten-free",
+          "vegan",
+          "baked",
+          "salad-bowl"
+        ],
+        "de": [
+          "falafel",
+          "glutenfrei",
+          "vegan",
+          "gebacken",
+          "bowl"
+        ]
+      }
+    },
+    {
+      "id": "falafel-low-fodmap",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Golden Millet, Carrot & Herb Low-FODMAP Croquettes",
+        "de": "Goldene Hirse-Kräuter-Falafel (Low-FODMAP)"
+      },
+      "subtitle": {
+        "en": "Crisp golden millet, grated carrot, parsley & cumin fritters brushed with garlic-oil and lemon tahini.",
+        "de": "Knusprige Goldhirse-Karotten-Kräuter-Taler mit Knoblauch-Olivenöl und Zitronen-Tahini."
+      },
+      "diet_dimension": "low-fodmap",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 420,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 420,
+        "protein_g": 12,
+        "carbs_g": 46,
+        "fat_g": 20,
+        "fiber_g": 6
+      },
+      "contains": [
+        "sesame"
+      ],
+      "attributes": [
+        "low-fodmap",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "millet",
+        "carrots",
+        "parsley",
+        "mint",
+        "tahini",
+        "lemon",
+        "garlic-oil",
+        "cucumber",
+        "lettuce",
+        "cumin",
+        "sesame-seeds"
+      ],
+      "ingredients": [
+        {
+          "id": "millet",
+          "name": {
+            "en": "Golden Millet",
+            "de": "Goldhirse"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mint",
+          "name": {
+            "en": "Fresh Mint",
+            "de": "Frische Minze"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic-oil",
+          "name": {
+            "en": "Garlic-Infused Olive Oil",
+            "de": "Knoblauch-Olivenöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lettuce",
+          "name": {
+            "en": "Crisp Lettuce",
+            "de": "Knackiger Salat"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cumin",
+          "name": {
+            "en": "Ground Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": {
+            "en": "Toasted Sesame Seeds",
+            "de": "Geröstete Sesamsamen"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Fold Cooked Millet with Herbs & Carrot",
+            "de": "Gegarte Goldhirse mit Kräutern & Karotte mischen"
+          },
+          "instruction": {
+            "en": "Combine fluffy cooked millet with finely grated carrot, chopped parsley, mint, cumin, and sesame seeds. Press into compact patties.",
+            "de": "Lockere Goldhirse mit fein geriebener Karotte, gehackter Petersilie, Minze, Kreuzkümmel und Sesam verkneten und zu kompakten Talern formen."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Golden millet gives the exact nutty crunch of falafel without legume galactans.",
+            "de": "Goldhirse sorgt für den nussigen Falafel-Crunch ganz ohne Hülsenfrüchte."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Crisp in Garlic-Infused Olive Oil",
+            "de": "In Knoblauch-Olivenöl knusprig braten"
+          },
+          "instruction": {
+            "en": "Sear patties in garlic-infused olive oil for 4 minutes per side until golden and serve over crisp lettuce and cucumber with lemon tahini.",
+            "de": "Taler in Knoblauch-Olivenöl je Seite 4 Minuten goldbraun braten und auf knackigem Salat mit Gurke und Zitronen-Tahini anrichten."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Roll the edges in sesame seeds before frying for extra crunch.",
+            "de": "Die Ränder vor dem Braten in Sesamsamen wälzen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "falafel",
+          "low-fodmap",
+          "vegan",
+          "gluten-free",
+          "millet"
+        ],
+        "de": [
+          "falafel",
+          "fodmap-arm",
+          "vegan",
+          "glutenfrei",
+          "hirse"
+        ]
+      }
+    },
+    {
+      "id": "falafel-high-protein",
+      "dish_id": "falafel",
+      "title": {
+        "en": "Crisp Falafel & Seared Halloumi Feast Platter",
+        "de": "Knusprige Falafel & Gebratener Halloumi Festteller"
+      },
+      "subtitle": {
+        "en": "Herb chickpea falafel paired with golden-seared halloumi slices, yogurt-tahini sauce & sumac onions.",
+        "de": "Kräuter-Falafel kombiniert mit goldbraun gebratenem Halloumi, Joghurt-Tahini-Sauce & Sumach-Zwiebeln."
+      },
+      "diet_dimension": "vegetarian",
+      "effort": "hard",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 690,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 690,
+        "protein_g": 34,
+        "carbs_g": 58,
+        "fat_g": 35,
+        "fiber_g": 10
+      },
+      "contains": [
+        "dairy",
+        "lactose",
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "hard",
+        "≤60",
+        "≤800",
+        "pan-fry",
+        "grill",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "grill"
+      ],
+      "ingredient_ids": [
+        "chickpeas",
+        "halloumi",
+        "pita",
+        "yogurt",
+        "tahini",
+        "parsley",
+        "mint",
+        "tomatoes",
+        "cucumber",
+        "sumac",
+        "olive-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpeas",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "halloumi",
+          "name": {
+            "en": "Halloumi",
+            "de": "Halloumi"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "pita",
+          "name": {
+            "en": "Warm Pita Bread",
+            "de": "Warmes Pitabrot"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "bakery"
+        },
+        {
+          "id": "yogurt",
+          "name": {
+            "en": "Greek Yogurt",
+            "de": "Griechischer Joghurt"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "parsley",
+          "name": {
+            "en": "Flat-Leaf Parsley",
+            "de": "Glatte Petersilie"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mint",
+          "name": {
+            "en": "Fresh Mint",
+            "de": "Frische Minze"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tomatoes",
+          "name": {
+            "en": "Tomatoes",
+            "de": "Tomaten"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sumac",
+          "name": {
+            "en": "Ground Sumac",
+            "de": "Gemahlener Sumach"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Fry the Herb Falafel",
+            "de": "Kräuter-Falafel goldbraun ausbacken"
+          },
+          "instruction": {
+            "en": "Pulse chickpeas with parsley and mint, shape into patties, and pan-fry in olive oil for 8 minutes until deeply golden.",
+            "de": "Kichererbsen mit Petersilie und Minze körnig mixen, zu Talern formen und 8 Minuten in Olivenöl knusprig ausbacken."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Keep finished falafel uncovered on a wire rack so they stay crisp.",
+            "de": "Fertige Falafel offen auf einem Gitter ruhen lassen, damit sie knusprig bleiben."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Sear the Halloumi & Whisk Yogurt-Tahini",
+            "de": "Halloumi braten & Joghurt-Tahini rühren"
+          },
+          "instruction": {
+            "en": "Sear thick halloumi slices for 2 minutes per side until blistered. Serve alongside falafel, warm pita, cucumber-tomato salad, and yogurt-tahini sauce dusted with sumac.",
+            "de": "Halloumischeiben je Seite 2 Minuten goldbraun anbraten und mit Falafel, warmem Pitabrot, Salat und Sumach-Joghurt-Tahini servieren."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Squeeze lemon over the hot halloumi right in the pan.",
+            "de": "Einen Spritzer Zitrone direkt in der Pfanne über den heißen Halloumi geben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "falafel",
+          "halloumi",
+          "vegetarian",
+          "middle-eastern",
+          "platter"
+        ],
+        "de": [
+          "falafel",
+          "halloumi",
+          "vegetarisch",
+          "orientalisch",
+          "teller"
+        ]
+      }
+    }
+  ]
+}

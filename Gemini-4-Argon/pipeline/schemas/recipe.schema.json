@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/recipe.schema.json",
+  "title": "MorphCook Recipe Variant",
+  "type": "object",
+  "required": [
+    "id",
+    "dish_id",
+    "dimension_diet",
+    "dimension_effort",
+    "dimension_calorie",
+    "title",
+    "description",
+    "prep_minutes",
+    "cook_minutes",
+    "servings",
+    "nutrition",
+    "flags",
+    "ingredients",
+    "steps"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "dish_id": { "type": "string", "minLength": 1 },
+    "dimension_diet": {
+      "type": "string",
+      "enum": ["omni", "vegetarian", "vegan", "pescatarian", "keto"]
+    },
+    "dimension_effort": {
+      "type": "string",
+      "enum": ["quick", "classic", "weekend"]
+    },
+    "dimension_calorie": {
+      "type": "string",
+      "enum": ["light", "balanced", "hearty"]
+    },
+    "title": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    },
+    "description": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    },
+    "prep_minutes": { "type": "integer", "minimum": 1 },
+    "cook_minutes": { "type": "integer", "minimum": 0 },
+    "servings": { "type": "integer", "minimum": 1 },
+    "nutrition": {
+      "type": "object",
+      "required": ["kcal", "protein_g", "carbs_g", "fat_g", "fiber_g"],
+      "properties": {
+        "kcal": { "type": "integer", "minimum": 0 },
+        "protein_g": { "type": "number", "minimum": 0 },
+        "carbs_g": { "type": "number", "minimum": 0 },
+        "fat_g": { "type": "number", "minimum": 0 },
+        "fiber_g": { "type": "number", "minimum": 0 }
+      }
+    },
+    "flags": {
+      "type": "object",
+      "required": ["dietary", "allergens_present", "medical_compatible"],
+      "properties": {
+        "dietary": { "type": "array", "items": { "type": "string" } },
+        "allergens_present": { "type": "array", "items": { "type": "string" } },
+        "medical_compatible": { "type": "array", "items": { "type": "string" } },
+        "texture": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ingredient_id", "name", "amount", "unit", "aisle"],
+        "properties": {
+          "ingredient_id": { "type": "string" },
+          "name": {
+            "type": "object",
+            "required": ["en", "de"],
+            "properties": {
+              "en": { "type": "string" },
+              "de": { "type": "string" }
+            }
+          },
+          "amount": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "type": "string" },
+          "aisle": { "type": "string" },
+          "prep_note": { "type": "object" },
+          "substitutes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["number", "title", "instruction"],
+        "properties": {
+          "number": { "type": "integer", "minimum": 1 },
+          "title": {
+            "type": "object",
+            "required": ["en", "de"]
+          },
+          "instruction": {
+            "type": "object",
+            "required": ["en", "de"]
+          },
+          "timer_seconds": { "type": ["integer", "null"] },
+          "tip": { "type": ["object", "null"] }
+        }
+      }
+    }
+  }
+}

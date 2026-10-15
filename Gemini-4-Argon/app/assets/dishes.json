@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": {
+        "en": "Berlin Street Döner",
+        "de": "Berliner Straßen-Döner"
+      },
+      "hero_text": {
+        "en": "Crisp flatbread, charred spiced ribbons, cool herb sauce & sumac onions—written for your table.",
+        "de": "Knuspriges Fladenbrot, würzig gebratene Streifen, kühle Kräutersauce & Sumach-Zwiebeln – für deinen Tisch."
+      },
+      "cap_caption": {
+        "en": "late night kreuzberg corner, 1998 — extra garlic sauce",
+        "de": "Spätnachts in Kreuzberg, 1998 — mit extra Knoblauchsauce"
+      },
+      "stripe_color": "#C86D51",
+      "variant_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-keto",
+        "doener-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "turkish",
+        "street-food"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "alfredo",
+      "canonical_name": {
+        "en": "Fettuccine Alfredo",
+        "de": "Fettuccine Alfredo"
+      },
+      "hero_text": {
+        "en": "Ribbons spun in a glossy, peppery emulsion that clings to every strand.",
+        "de": "Bandnudeln in einer seidigen, pfeffrigen Emulsion, die jede Nudel umhüllt."
+      },
+      "cap_caption": {
+        "en": "via della scrofa, rainy tuesday supper",
+        "de": "Via della Scrofa, ein verregneter Dienstagabend"
+      },
+      "stripe_color": "#D4A359",
+      "variant_ids": [
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free",
+        "alfredo-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "comfort"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": {
+        "en": "Tamarind Street Pad Thai",
+        "de": "Tamarinden-Straßen-Pad-Thai"
+      },
+      "hero_text": {
+        "en": "High-heat wok ribbons glazed in bright tamarind, lime leaf & toasted crunch.",
+        "de": "Bei hoher Wok-Hitze geschwenkte Bänder in leuchtender Tamarinde, Limette & Röst-Crunch."
+      },
+      "cap_caption": {
+        "en": "charoen krung alley wok — squeeze the lime twice",
+        "de": "Wok in der Charoen Krung Gasse — zweimal Limette drücken"
+      },
+      "stripe_color": "#BF7B3F",
+      "variant_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-nut-free",
+        "pad-thai-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "thai",
+        "noodles"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "canonical_name": {
+        "en": "Morning Ember Shakshuka",
+        "de": "Morgen-Glut Shakshuka"
+      },
+      "hero_text": {
+        "en": "Slow-simmered ruby tomatoes, cumin & rose harissa cradling tender medallions.",
+        "de": "Sanft geschmorte Rubintomaten, Kreuzkümmel & Rosen-Harissa aus einer gusseisernen Pfanne."
+      },
+      "cap_caption": {
+        "en": "sunday 9am skillet — tear the bread, skip the forks",
+        "de": "Sonntag 9 Uhr in der Pfanne — Brot brechen statt Gabeln"
+      },
+      "stripe_color": "#B84A39",
+      "variant_ids": [
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-low-fodmap",
+        "shakshuka-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "levantine",
+        "breakfast"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast",
+        "lunch"
+      ]
+    },
+    {
+      "id": "ramen",
+      "canonical_name": {
+        "en": "Midnight Miso & Broth Ramen",
+        "de": "Mitternachts-Miso-Ramen"
+      },
+      "hero_text": {
+        "en": "Deep umami broth, springy noodles, aromatic sesame oil & charred toppings.",
+        "de": "Tiefe Umami-Brühe, bissfeste Nudeln, duftendes Sesamöl & geröstete Toppings."
+      },
+      "cap_caption": {
+        "en": "steamed windows, wooden ladle, 11pm comfort",
+        "de": "Beschlagene Fenster, Holzkelle, 23-Uhr-Seelenwärmer"
+      },
+      "stripe_color": "#5B7A72",
+      "variant_ids": [
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal",
+        "ramen-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "japanese",
+        "soup"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "risotto",
+      "canonical_name": {
+        "en": "Golden Saffron & Wild Mushroom Risotto",
+        "de": "Goldenes Safran-Waldpilz-Risotto"
+      },
+      "hero_text": {
+        "en": "Patient ladle-by-ladle alchemy until every grain gleams in golden saffron silk.",
+        "de": "Geduldige Kelle-für-Kelle-Alchemie, bis jedes Korn in goldenem Safranglanz schimmert."
+      },
+      "cap_caption": {
+        "en": "stirring quietly with a wooden spoon & a paperback nearby",
+        "de": "Ruhiges Rühren mit dem Holzlöffel & einem Taschenbuch daneben"
+      },
+      "stripe_color": "#D99B26",
+      "variant_ids": [
+        "risotto-classic",
+        "risotto-vegan",
+        "risotto-halal",
+        "risotto-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "rice",
+        "dinner"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "falafel",
+      "canonical_name": {
+        "en": "Crisp Herb Falafel Platter",
+        "de": "Knuspriger Kräuter-Falafel-Teller"
+      },
+      "hero_text": {
+        "en": "Emerald-green parsley & mint fritters with velvety lemon tahini and pickled cabbage.",
+        "de": "Smaragdgrüne Petersilien-Minz-Bällchen mit samtigem Zitronen-Tahini und Rotkohl."
+      },
+      "cap_caption": {
+        "en": "market basket overflowing with parsley & mint bundles",
+        "de": "Marktkorb voller frischer Petersilien- und Minzbündel"
+      },
+      "stripe_color": "#5F8565",
+      "variant_ids": [
+        "falafel-classic",
+        "falafel-gluten-free",
+        "falafel-low-fodmap",
+        "falafel-high-protein"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern",
+        "herbs",
+        "plant-forward"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "pancakes",
+      "canonical_name": {
+        "en": "Sunday Morning Griddle Stack",
+        "de": "Sonntags-Pfannkuchen-Turm"
+      },
+      "hero_text": {
+        "en": "Golden-ringed griddle cakes kissed with cinnamon, warm berries & amber maple.",
+        "de": "Goldbraun gebackene Pfannkuchen mit einem Hauch Ceylon-Zimt, warmen Beeren & Ahorn."
+      },
+      "cap_caption": {
+        "en": "coffee percolating, sunlight on the wooden table",
+        "de": "Kaffeeduft in der Küche, Morgensonne auf dem Holztisch"
+      },
+      "stripe_color": "#C58B4E",
+      "variant_ids": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-keto",
+        "pancakes-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [
+        "breakfast",
+        "baking",
+        "sweet"
+      ],
+      "frequency_tier": "core",
+      "meal_types": [
+        "breakfast"
+      ]
+    },
+    {
+      "id": "carbonara",
+      "canonical_name": {
+        "en": "Roman Trattoria Carbonara",
+        "de": "Römische Trattoria-Carbonara"
+      },
+      "hero_text": {
+        "en": "Cracked black pepper, smoky crisps, and a satin golden coat without a drop of heavy cream.",
+        "de": "Grob gestoßener Pfeffer, rauchiger Crunch und eine goldene Emulsion ganz ohne Sahne."
+      },
+      "cap_caption": {
+        "en": "trastevere notebook margin: off the heat before mixing!",
+        "de": "Notiz aus Trastevere: erst vom Herd ziehen, dann mischen!"
+      },
+      "stripe_color": "#8C6249",
+      "variant_ids": [
+        "carbonara-classic",
+        "carbonara-vegan",
+        "carbonara-halal",
+        "carbonara-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian",
+        "pasta",
+        "roman"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "bibimbap",
+      "canonical_name": {
+        "en": "Sizzling Stone-Pot Bibimbap",
+        "de": "Knuspriges Steintopf-Bibimbap"
+      },
+      "hero_text": {
+        "en": "Toasted sesame rice crowned with jewel-bright seasoned greens and savory glaze.",
+        "de": "Gerösteter Sesamreis, gekrönt von buntem Marktgemüse und herzhafter Glasur."
+      },
+      "cap_caption": {
+        "en": "listen for the rice crackling against hot cast iron",
+        "de": "Hör zu, wie der Reis am heißen Gusseisen knistert"
+      },
+      "stripe_color": "#6F7D5C",
+      "variant_ids": [
+        "bibimbap-classic",
+        "bibimbap-vegan",
+        "bibimbap-keto",
+        "bibimbap-low-fodmap"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian",
+        "korean",
+        "rice-bowl"
+      ],
+      "frequency_tier": "extended",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ]
+    }
+  ]
+}

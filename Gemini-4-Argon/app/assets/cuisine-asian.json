@@ -1,0 +1,2623 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-asian",
+  "recipes": [
+    {
+      "id": "pad-thai-classic",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Bangkok Night-Market Shrimp Pad Thai",
+        "de": "Bangkok Nachtmarkt Garnelen-Pad-Thai"
+      },
+      "subtitle": {
+        "en": "Chewy flat rice noodles, wild shrimp, tamarind-fish-sauce glaze, bean sprouts & crushed roasted peanuts.",
+        "de": "Breite Reisnudeln, Wildfang-Garnelen, Tamarinden-Fischsaucen-Glasur, Sprossen & geröstete Erdnüsse."
+      },
+      "diet_dimension": "classic",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 610,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 610,
+        "protein_g": 32,
+        "carbs_g": 68,
+        "fat_g": 22,
+        "fiber_g": 5
+      },
+      "contains": [
+        "shellfish",
+        "fish",
+        "egg",
+        "peanuts",
+        "added-sugar",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "pescatarian",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "halal",
+        "medium",
+        "≤30",
+        "≤800",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "rice-noodles",
+        "shrimp",
+        "chicken-egg",
+        "tamarind-paste",
+        "fish-sauce",
+        "maple-syrup",
+        "peanuts",
+        "bean-sprouts",
+        "scallions",
+        "lime",
+        "garlic"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "name": {
+            "en": "Flat Rice Noodles",
+            "de": "Breite Reisnudeln"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "shrimp",
+          "name": {
+            "en": "Wild Shrimp",
+            "de": "Wildfang-Garnelen"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tamarind-paste",
+          "name": {
+            "en": "Tamarind Paste",
+            "de": "Tamarindenpaste"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "fish-sauce",
+          "name": {
+            "en": "Fish Sauce",
+            "de": "Fischsauce"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "maple-syrup",
+          "name": {
+            "en": "Pure Maple Syrup",
+            "de": "Reiner Ahornsirup"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "peanuts",
+          "name": {
+            "en": "Peanuts",
+            "de": "Erdnüsse"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "Lime",
+            "de": "Limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Soak Noodles Cold, Never Boil",
+            "de": "Reisnudeln lauwarm einweichen, nicht kochen"
+          },
+          "instruction": {
+            "en": "Soak the flat rice noodles in warm tap water for 15 minutes until pliable but still firm. Whisk tamarind paste, fish sauce, and maple syrup in a small bowl.",
+            "de": "Breite Reisnudeln 15 Minuten in warmem Wasser einweichen, bis sie biegsam, aber noch fest sind. Tamarindenpaste, Fischsauce und Ahornsirup verrühren."
+          },
+          "timer_seconds": 900,
+          "tip": {
+            "en": "Boiling rice noodles makes them clump in the wok; soaking lets them drink the tamarind sauce directly.",
+            "de": "Nicht vorkochen – eingeweichte Nudeln saugen im Wok die Tamarindensauce direkt auf."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "High-Heat Wok Toss",
+            "de": "Bei starker Hitze im Wok schwenken"
+          },
+          "instruction": {
+            "en": "Sear shrimp and garlic for 2 minutes, push aside, scramble the eggs, then toss in drained noodles and tamarind glaze until absorbed. Fold in bean sprouts, scallions, crushed peanuts, and fresh lime.",
+            "de": "Garnelen und Knoblauch 2 Minuten scharf anbraten, an den Rand schieben, Eier stocken lassen, dann Reisnudeln und Tamarindensauce zugeben. Mit Sprossen, Frühlingszwiebeln, Erdnüssen und Limette servieren."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Save half the raw bean sprouts for crunch on top.",
+            "de": "Die Hälfte der Sprossen erst ganz zum Schluss roh für den Crunch unterheben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pad-thai",
+          "thai",
+          "shrimp",
+          "noodles",
+          "tamarind",
+          "peanuts"
+        ],
+        "de": [
+          "pad-thai",
+          "thailändisch",
+          "garnelen",
+          "nudeln",
+          "tamarinde",
+          "erdnüsse"
+        ]
+      }
+    },
+    {
+      "id": "pad-thai-vegan",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Golden Tofu & Toasted Pepita Vegan Pad Thai",
+        "de": "Veganes Pad Thai mit Knuspertofu & Kürbiskernen"
+      },
+      "subtitle": {
+        "en": "Crisp golden tofu, tangy tamarind-tamari reduction & toasted pumpkin seeds—100% plant-based and nut-free.",
+        "de": "Goldbrauner Knuspertofu, würzige Tamarinden-Tamari-Glasur & geröstete Kürbiskerne – rein pflanzlich und nussfrei."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 490,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 490,
+        "protein_g": 21,
+        "carbs_g": 60,
+        "fat_g": 18,
+        "fiber_g": 6
+      },
+      "contains": [
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤600",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "rice-noodles",
+        "tofu",
+        "tamarind-paste",
+        "tamari",
+        "pumpkin-seeds",
+        "bean-sprouts",
+        "scallions",
+        "lime",
+        "sesame-oil",
+        "carrots"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "name": {
+            "en": "Flat Rice Noodles",
+            "de": "Breite Reisnudeln"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tofu",
+          "name": {
+            "en": "Firm Tofu",
+            "de": "Fester Tofu"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tamarind-paste",
+          "name": {
+            "en": "Tamarind Paste",
+            "de": "Tamarindenpaste"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "pumpkin-seeds",
+          "name": {
+            "en": "Toasted Pumpkin Seeds",
+            "de": "Geröstete Kürbiskerne"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "Lime",
+            "de": "Limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Blister the Tofu Cubes & Toast Pepitas",
+            "de": "Tofuwürfel knusprig braten & Kerne rösten"
+          },
+          "instruction": {
+            "en": "Dry-toast the pumpkin seeds in the wok for 2 minutes and set aside. Crisp the pressed tofu cubes in toasted sesame oil until golden on all sides.",
+            "de": "Kürbiskerne im trockenen Wok 2 Minuten rösten und herausnehmen. Den ausgepressten Tofu im Sesamöl rundherum goldbraun anbraten."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Crushing half the toasted pumpkin seeds in a mortar gives that classic sandy-crunchy texture without nuts.",
+            "de": "Die Hälfte der gerösteten Kürbiskerne grob zerstoßen – das sorgt für den typischen Pad-Thai-Crunch ganz ohne Nüsse."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Glaze the Rice Ribbons",
+            "de": "Reisnudeln in Tamarinde glasieren"
+          },
+          "instruction": {
+            "en": "Add soaked rice noodles, julienned carrots, tamarind paste, and tamari to the hot wok. Toss for 3 minutes until glossy, then finish with bean sprouts, scallion greens, lime, and crushed pepitas.",
+            "de": "Eingeweichte Reisnudeln, feine Karottenstreifen, Tamarindenpaste und Tamari zugeben. 3 Minuten glänzend schwenken und mit Sprossen, Frühlingszwiebeln, Limette und Kürbiskernen anrichten."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Use only the green tops of scallions to keep it gentle and low-FODMAP.",
+            "de": "Nur das frische Grün der Frühlingszwiebeln verwenden – aromatisch und besonders bekömmlich."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pad-thai",
+          "vegan",
+          "nut-free",
+          "gluten-free",
+          "tofu",
+          "thai"
+        ],
+        "de": [
+          "pad-thai",
+          "vegan",
+          "nussfrei",
+          "glutenfrei",
+          "tofu",
+          "thailändisch"
+        ]
+      }
+    },
+    {
+      "id": "pad-thai-nut-free",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Crispy Shallot &Pepita Nut-Free Pad Thai",
+        "de": "Nussfreies Garnelen-Pad-Thai mit Röstschalotten"
+      },
+      "subtitle": {
+        "en": "Wild shrimp and rice ribbons topped with glass-crisp golden shallots and toasted pumpkin seeds instead of peanuts.",
+        "de": "Wildfang-Garnelen und Reisnudeln mit knusprig gebratenen Schalottenringen und gerösteten Kürbiskernen statt Erdnüssen."
+      },
+      "diet_dimension": "pescatarian",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 530,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 530,
+        "protein_g": 30,
+        "carbs_g": 62,
+        "fat_g": 17,
+        "fiber_g": 4
+      },
+      "contains": [
+        "shellfish",
+        "fish",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "pescatarian",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "halal",
+        "easy",
+        "≤30",
+        "≤600",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "rice-noodles",
+        "shrimp",
+        "chicken-egg",
+        "tamarind-paste",
+        "fish-sauce",
+        "shallots",
+        "pumpkin-seeds",
+        "bean-sprouts",
+        "lime"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "name": {
+            "en": "Flat Rice Noodles",
+            "de": "Breite Reisnudeln"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "shrimp",
+          "name": {
+            "en": "Wild Shrimp",
+            "de": "Wildfang-Garnelen"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tamarind-paste",
+          "name": {
+            "en": "Tamarind Paste",
+            "de": "Tamarindenpaste"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "fish-sauce",
+          "name": {
+            "en": "Fish Sauce",
+            "de": "Fischsauce"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "shallots",
+          "name": {
+            "en": "Shallots",
+            "de": "Schalotten"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "pumpkin-seeds",
+          "name": {
+            "en": "Toasted Pumpkin Seeds",
+            "de": "Geröstete Kürbiskerne"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "Lime",
+            "de": "Limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Shallots & Seeds",
+            "de": "Schalottenringe & Kürbiskerne rösten"
+          },
+          "instruction": {
+            "en": "Fry thinly sliced shallots and pumpkin seeds in the wok for 3 minutes until golden and crisp, then drain on paper.",
+            "de": "Fein geschnittene Schalotten und Kürbiskerne 3 Minuten goldbraun und knusprig braten und herausnehmen."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Shallots keep darkening after leaving the wok—pull them at pale gold.",
+            "de": "Schalotten ziehen nach dem Herausnehmen nach – schon bei hellem Goldbraun aus der Pfanne heben."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Stir-Fry Shrimp, Egg & Tamarind Noodles",
+            "de": "Garnelen, Ei & Tamarindennudeln schwenken"
+          },
+          "instruction": {
+            "en": "Sear shrimp, scramble eggs in the center, and toss with soaked rice noodles, tamarind, and fish sauce. Crown with crispy shallots, pepitas, sprouts, and lime.",
+            "de": "Garnelen anbraten, Eier stocken lassen und mit eingeweichten Reisnudeln, Tamarinde und Fischsauce schwenken. Mit Röstschalotten, Kürbiskernen, Sprossen und Limette servieren."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Squeeze fresh lime juice right before eating.",
+            "de": "Frischen Limettensaft erst direkt vor dem Essen darüberträufeln."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pad-thai",
+          "nut-free",
+          "pescatarian",
+          "shrimp",
+          "thai"
+        ],
+        "de": [
+          "pad-thai",
+          "nussfrei",
+          "pescetarisch",
+          "garnelen",
+          "thailändisch"
+        ]
+      }
+    },
+    {
+      "id": "pad-thai-keto",
+      "dish_id": "pad-thai",
+      "title": {
+        "en": "Keto Shirataki & Ginger-Lime Chicken Pad Thai",
+        "de": "Keto Shirataki-Pad-Thai mit Ingwer-Limetten-Hähnchen"
+      },
+      "subtitle": {
+        "en": "Bouncy shirataki and shredded cabbage wok-seared with chicken thigh, ginger, lime & toasted sesame.",
+        "de": "Bissfeste Shirataki-Nudeln und feine Kohlstreifen aus dem Wok mit Hähnchen, Ingwer, Limette & Sesam."
+      },
+      "diet_dimension": "keto",
+      "effort": "medium",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 380,
+      "calorie_bucket": "≤400",
+      "macros": {
+        "calories": 380,
+        "protein_g": 34,
+        "carbs_g": 8,
+        "fat_g": 23,
+        "fiber_g": 5
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "halal",
+        "kosher",
+        "medium",
+        "≤30",
+        "≤400",
+        "≤600",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "shirataki-noodles",
+        "chicken-thigh",
+        "chicken-egg",
+        "tamari",
+        "ginger",
+        "lime",
+        "bean-sprouts",
+        "scallions",
+        "sesame-oil",
+        "sesame-seeds"
+      ],
+      "ingredients": [
+        {
+          "id": "shirataki-noodles",
+          "name": {
+            "en": "Shirataki Noodles",
+            "de": "Shirataki-Nudeln"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-thigh",
+          "name": {
+            "en": "Chicken Thigh",
+            "de": "Hähnchenschenkel"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "lime",
+          "name": {
+            "en": "Lime",
+            "de": "Limette"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": {
+            "en": "Toasted Sesame Seeds",
+            "de": "Geröstete Sesamsamen"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Dry-Sear Shirataki &Sear Ginger Chicken",
+            "de": "Shirataki trocken rösten & Hähnchen anbraten"
+          },
+          "instruction": {
+            "en": "Dry-roast rinsed shirataki noodles for 3 minutes, then add sesame oil, sliced chicken thigh, and grated ginger. Stir-fry for 5 minutes until golden.",
+            "de": "Abgespülte Shirataki-Nudeln 3 Minuten trocken anrösten, dann Sesamöl, Hähnchenstreifen und frisch geriebenen Ingwer zugeben und 5 Minuten braten."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Fresh ginger and lime zest give bright tang without sugary sauces.",
+            "de": "Frischer Ingwer und Limettenabrieb liefern intensive Frische ganz ohne Zucker."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Fold in Eggs, Tamari & Crisp Sprouts",
+            "de": "Ei, Tamari & knackige Sprossen unterheben"
+          },
+          "instruction": {
+            "en": "Crack in the eggs, toss ribbons through the soft curds with tamari and lime juice, and top with bean sprouts, scallions, and toasted sesame seeds.",
+            "de": "Eier zugeben, kurz stocken lassen, mit Tamari und Limettensaft durchschwenken und mit Sprossen, Frühlingszwiebeln und Sesam bestreuen."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Serve piping hot straight from the wok.",
+            "de": "Direkt heiß aus dem Wok servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "pad-thai",
+          "keto",
+          "sugar-free",
+          "low-carb",
+          "chicken",
+          "shirataki"
+        ],
+        "de": [
+          "pad-thai",
+          "keto",
+          "zuckerfrei",
+          "low-carb",
+          "hähnchen",
+          "shirataki"
+        ]
+      }
+    },
+    {
+      "id": "ramen-classic",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Midnight Tonkotsu-Miso Pork Belly Ramen",
+        "de": "Mitternachts-Tonkotsu-Miso-Ramen mit Schweinebauch"
+      },
+      "subtitle": {
+        "en": "Rich pork broth whisked with white miso, charred chashu pork belly, jammy egg & springy wheat noodles.",
+        "de": "Kräftige Tonkotsu-Brühe mit weißem Miso, gebratenem Schweinebauch, wachsweichem Ei & Weizen-Ramennudeln."
+      },
+      "diet_dimension": "classic",
+      "effort": "hard",
+      "time_minutes": 55,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 760,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 760,
+        "protein_g": 39,
+        "carbs_g": 64,
+        "fat_g": 38,
+        "fiber_g": 4
+      },
+      "contains": [
+        "pork",
+        "egg",
+        "gluten",
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "hard",
+        "≤60",
+        "≤800",
+        "simmer",
+        "pan-fry",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "ramen-noodles",
+        "pork-belly",
+        "pork-broth",
+        "miso-paste",
+        "chicken-egg",
+        "scallions",
+        "mushrooms",
+        "ginger",
+        "garlic",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "ramen-noodles",
+          "name": {
+            "en": "Wheat Ramen Noodles",
+            "de": "Weizen-Ramennudeln"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "pork-belly",
+          "name": {
+            "en": "Pork Belly",
+            "de": "Schweinebauch"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "pork-broth",
+          "name": {
+            "en": "Tonkotsu Pork Broth",
+            "de": "Tonkotsu-Schweinebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "miso-paste",
+          "name": {
+            "en": "White Miso Paste",
+            "de": "Helle Misopaste"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Char the Pork Belly & Soft-Boil Eggs",
+            "de": "Schweinebauch karamellisieren & Eier kochen"
+          },
+          "instruction": {
+            "en": "Sear sliced pork belly and mushrooms in a hot pan for 6 minutes until golden. Meanwhile, boil eggs for exactly 6 minutes 30 seconds and plunge into cold water.",
+            "de": "Schweinebauchscheiben und Pilze 6 Minuten kräftig anbraten. Parallel die Eier exakt 6,5 Minuten kochen und kalt abschrecken."
+          },
+          "timer_seconds": 390,
+          "tip": {
+            "en": "6.5 minutes gives a set white and liquid-gold ramen yolk.",
+            "de": "Exakt 6,5 Minuten sorgen für das perfekte wachsweiche Ramen-Eigelb."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Infuse the Broth & Whisk Miso Tare",
+            "de": "Brühe aromatisieren & Miso-Tare einrühren"
+          },
+          "instruction": {
+            "en": "Simmer pork broth with grated ginger and garlic for 10 minutes. Take off the heat, whisk in white miso and sesame oil, and ladle over freshly boiled ramen noodles, pork belly, halved eggs, and scallions.",
+            "de": "Brühe mit Ingwer und Knoblauch 10 Minuten simmern lassen. Vom Herd ziehen, helles Miso und Sesamöl einrühren und über die frisch gekochten Nudeln, Schweinebauch, Eier und Frühlingszwiebeln gießen."
+          },
+          "timer_seconds": 600,
+          "tip": {
+            "en": "Always boil ramen noodles in a separate pot so the broth stays clean.",
+            "de": "Ramennudeln immer separat kochen, damit die Brühe klar und sämig bleibt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "ramen",
+          "japanese",
+          "pork",
+          "miso",
+          "noodle-soup",
+          "dinner"
+        ],
+        "de": [
+          "ramen",
+          "japanisch",
+          "schweinebauch",
+          "miso",
+          "nudelsuppe",
+          "abendessen"
+        ]
+      }
+    },
+    {
+      "id": "ramen-vegan",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Creamy Roasted Sesame & Shiitake Vegan Tantan-Miso Ramen",
+        "de": "Cremige Vegane Sesam-Miso-Ramen mit Röstpilzen"
+      },
+      "subtitle": {
+        "en": "Velvety tahini-miso vegetable dashi crowned with blistered tofu, mushrooms, spinach & toasted sesame.",
+        "de": "Samtige Tahini-Miso-Gemüsebrühe mit knusprigem Tofu, gerösteten Pilzen, Spinat & Sesam."
+      },
+      "diet_dimension": "vegan",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 510,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 510,
+        "protein_g": 22,
+        "carbs_g": 56,
+        "fat_g": 21,
+        "fiber_g": 7
+      },
+      "contains": [
+        "gluten",
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "medium",
+        "≤30",
+        "≤600",
+        "simmer",
+        "pan-fry",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "ramen-noodles",
+        "tofu",
+        "vegetable-broth",
+        "miso-paste",
+        "tahini",
+        "mushrooms",
+        "spinach",
+        "scallions",
+        "ginger",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "ramen-noodles",
+          "name": {
+            "en": "Wheat Ramen Noodles",
+            "de": "Weizen-Ramennudeln"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tofu",
+          "name": {
+            "en": "Firm Tofu",
+            "de": "Fester Tofu"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "Rich Vegetable Stock",
+            "de": "Kräftige Gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "miso-paste",
+          "name": {
+            "en": "White Miso Paste",
+            "de": "Helle Misopaste"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tahini",
+          "name": {
+            "en": "Sesame Tahini",
+            "de": "Sesam-Tahini"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Mushrooms & Tofu",
+            "de": "Pilze & Tofu knusprig braten"
+          },
+          "instruction": {
+            "en": "Pan-fry sliced mushrooms and crumbled firm tofu in toasted sesame oil and ginger for 6 minutes until deeply golden.",
+            "de": "Geschnittene Pilze und zerkrümelten Tofu in geröstetem Sesamöl mit Ingwer 6 Minuten kräftig anbraten."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Crumbling the tofu gives jagged edges that catch the creamy broth.",
+            "de": "Zerkrümelter Tofu bekommt besonders viele knusprige Kanten für die Brühe."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Whisk the Tahini-Miso Broth",
+            "de": "Tahini-Miso-Brühe aufschlagen"
+          },
+          "instruction": {
+            "en": "Whisk white miso and tahini with hot vegetable stock until velvety and opaque. Pour over warm ramen noodles and top with spinach, crispy tofu-mushrooms, and scallions.",
+            "de": "Helles Miso und Tahini mit heißer Gemüsebrühe samtig aufschlagen. Über die gekochten Ramennudeln gießen und mit Spinat, Knuspertofu, Pilzen und Frühlingszwiebeln anrichten."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Tahini emulsifies the vegetable broth into rich tonkotsu-style body.",
+            "de": "Tahini verleiht der pflanzlichen Brühe die cremige Fülle einer langen Knochenbrühe."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "ramen",
+          "vegan",
+          "miso",
+          "tahini",
+          "mushroom",
+          "tofu"
+        ],
+        "de": [
+          "ramen",
+          "vegan",
+          "miso",
+          "tahini",
+          "pilze",
+          "tofu"
+        ]
+      }
+    },
+    {
+      "id": "ramen-halal",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Golden Ginger Chicken Tori-Paitan Halal Ramen",
+        "de": "Goldene Ingwer-Hähnchen Tori-Paitan Halal-Ramen"
+      },
+      "subtitle": {
+        "en": "Aromatic halal chicken & ginger broth with seared chicken thigh, soft egg & scallions.",
+        "de": "Aromatische Halal-Hühner-Ingwer-Brühe mit knusprigem Hähnchenschenkel, wachsweichem Ei & Frühlingszwiebeln."
+      },
+      "diet_dimension": "halal",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 590,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 590,
+        "protein_g": 41,
+        "carbs_g": 54,
+        "fat_g": 22,
+        "fiber_g": 4
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "gluten",
+        "soy",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "pan-fry",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "ramen-noodles",
+        "chicken-thigh",
+        "chicken-broth",
+        "soy-sauce",
+        "chicken-egg",
+        "ginger",
+        "garlic",
+        "scallions",
+        "spinach",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "ramen-noodles",
+          "name": {
+            "en": "Wheat Ramen Noodles",
+            "de": "Weizen-Ramennudeln"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-thigh",
+          "name": {
+            "en": "Chicken Thigh",
+            "de": "Hähnchenschenkel"
+          },
+          "amount": 240,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-broth",
+          "name": {
+            "en": "Golden Chicken Stock",
+            "de": "Goldene Hühnerbrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "soy-sauce",
+          "name": {
+            "en": "Soy Sauce",
+            "de": "Sojasauce"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 20,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Chicken Thigh & Aromatics",
+            "de": "Hähnchenschenkel knusprig braten"
+          },
+          "instruction": {
+            "en": "Sear chicken thighs skin-side down for 7 minutes until crisp, slice into medallions, and sauté ginger and garlic in the rendered fat.",
+            "de": "Hähnchenschenkel 7 Minuten goldbraun und knusprig braten, in Tranchen schneiden und im Bratfett Ingwer und Knoblauch anschwitzen."
+          },
+          "timer_seconds": 420,
+          "tip": {
+            "en": "Building the broth right on top of the chicken fond gives restaurant depth.",
+            "de": "Die Brühe direkt auf dem Hähnchen-Bratensatz aufgießen für maximales Aroma."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Simmer Tori Broth & Assemble Bowls",
+            "de": "Tori-Brühe simmern & Schalen anrichten"
+          },
+          "instruction": {
+            "en": "Pour chicken stock and soy sauce into the pot and simmer 8 minutes. Ladle over cooked noodles with sliced chicken, soft-boiled eggs, spinach, scallions, and sesame oil.",
+            "de": "Hühnerbrühe und Sojasauce angießen und 8 Minuten simmern lassen. Über die Nudeln geben und mit Hähnchentranchen, wachsweichem Ei, Spinat und Sesamöl krönen."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Slice scallions on a sharp diagonal for delicate ribbons.",
+            "de": "Frühlingszwiebeln schräg in feine Ringe schneiden."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "ramen",
+          "halal",
+          "chicken",
+          "tori-paitan",
+          "japanese"
+        ],
+        "de": [
+          "ramen",
+          "halal",
+          "hähnchen",
+          "tori-paitan",
+          "japanisch"
+        ]
+      }
+    },
+    {
+      "id": "ramen-gluten-free",
+      "dish_id": "ramen",
+      "title": {
+        "en": "Tamari-Miso & Edamame Gluten-Free Rice Ramen",
+        "de": "Glutenfreie Tamari-Miso-Ramen mit Edamame"
+      },
+      "subtitle": {
+        "en": "Clean ginger-tamari broth with springy rice noodles, emerald edamame, mushrooms & sesame.",
+        "de": "Klare Ingwer-Tamari-Miso-Brühe mit Reisnudeln, grünen Edamame, Pilzen & geröstetem Sesam."
+      },
+      "diet_dimension": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 430,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 430,
+        "protein_g": 19,
+        "carbs_g": 54,
+        "fat_g": 14,
+        "fiber_g": 6
+      },
+      "contains": [
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "gluten-free",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "rice-noodles",
+        "vegetable-broth",
+        "tamari",
+        "miso-paste",
+        "edamame",
+        "mushrooms",
+        "spinach",
+        "ginger",
+        "scallions",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-noodles",
+          "name": {
+            "en": "Flat Rice Noodles",
+            "de": "Breite Reisnudeln"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "Rich Vegetable Stock",
+            "de": "Kräftige Gemüsebrühe"
+          },
+          "amount": 800,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "miso-paste",
+          "name": {
+            "en": "White Miso Paste",
+            "de": "Helle Misopaste"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "edamame",
+          "name": {
+            "en": "Edamame",
+            "de": "Edamame"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Simmer Ginger, Mushrooms & Edamame",
+            "de": "Ingwer, Pilze & Edamame sanft garen"
+          },
+          "instruction": {
+            "en": "Simmer vegetable stock with sliced mushrooms, grated ginger, tamari, and edamame for 6 minutes.",
+            "de": "Gemüsebrühe mit geschnittenen Pilzen, geriebenem Ingwer, Tamari und Edamame 6 Minuten sanft köcheln."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Gluten-free tamari brings deeper umami than standard soy sauce.",
+            "de": "Glutenfreies Tamari hat ein noch runderes Umami-Aroma als normale Sojasauce."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Stir in Miso & Pour Over Rice Noodles",
+            "de": "Miso einrühren & über Reisnudeln gießen"
+          },
+          "instruction": {
+            "en": "Whisk in white miso off the heat, ladle over tender rice noodles and baby spinach, and finish with toasted sesame oil and scallions.",
+            "de": "Helles Miso abseits der Hitze einrühren, über Reisnudeln und jungen Spinat gießen und mit Sesamöl und Frühlingszwiebeln vollenden."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Baby spinach wilts instantly from the heat of the ladle.",
+            "de": "Der junge Spinat fällt allein durch die heiße Brühe perfekt zusammen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "ramen",
+          "gluten-free",
+          "vegan",
+          "edamame",
+          "tamari"
+        ],
+        "de": [
+          "ramen",
+          "glutenfrei",
+          "vegan",
+          "edamame",
+          "tamari"
+        ]
+      }
+    },
+    {
+      "id": "bibimbap-classic",
+      "dish_id": "bibimbap",
+      "title": {
+        "en": "Sizzling Cast-Iron Beef & Crispy Rice Bibimbap",
+        "de": "Knuspriges Gusseisen-Rindfleisch-Bibimbap"
+      },
+      "subtitle": {
+        "en": "Sesame-crusted jasmine rice with seared beef, sautéed spinach, julienned carrots, mushrooms & a crispy-edged egg.",
+        "de": "In Sesamöl knusprig gebratener Jasminreis mit Rinderstreifen, Spinat, Karotten, Pilzen & Spiegelei."
+      },
+      "diet_dimension": "classic",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 630,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 630,
+        "protein_g": 34,
+        "carbs_g": 66,
+        "fat_g": 25,
+        "fiber_g": 5
+      },
+      "contains": [
+        "beef",
+        "egg",
+        "soy",
+        "gluten",
+        "sesame",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "halal",
+        "kosher",
+        "medium",
+        "≤60",
+        "≤800",
+        "pan-fry",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "jasmine-rice",
+        "beef-strips",
+        "chicken-egg",
+        "spinach",
+        "carrots",
+        "mushrooms",
+        "soy-sauce",
+        "sesame-oil",
+        "sesame-seeds",
+        "garlic",
+        "scallions"
+      ],
+      "ingredients": [
+        {
+          "id": "jasmine-rice",
+          "name": {
+            "en": "Jasmine Rice",
+            "de": "Jasminreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "beef-strips",
+          "name": {
+            "en": "Spiced Beef Strips",
+            "de": "Gewürzte Rinderstreifen"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "soy-sauce",
+          "name": {
+            "en": "Soy Sauce",
+            "de": "Sojasauce"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": {
+            "en": "Toasted Sesame Seeds",
+            "de": "Geröstete Sesamsamen"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 2,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Sear the Namul Vegetables & Garlic Beef",
+            "de": "Marktgemüse & Knoblauch-Rind anbraten"
+          },
+          "instruction": {
+            "en": "Quickly sauté carrots, mushrooms, and spinach separately with a drop of sesame oil. Sear beef strips with garlic and soy sauce for 3 minutes.",
+            "de": "Karottenstreifen, Pilze und Spinat nacheinander kurz mit etwas Sesamöl schwenken. Rinderstreifen mit Knoblauch und Sojasauce 3 Minuten scharf anbraten."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Keeping each vegetable separate makes the bowl glow like a jewel box.",
+            "de": "Jedes Gemüse einzeln anrichten – so leuchtet die Schale in allen Farben."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Crisp the Rice Crust in Cast Iron",
+            "de": "Reiskruste in der Gusseisenpfanne rösten"
+          },
+          "instruction": {
+            "en": "Coat a hot cast-iron skillet with toasted sesame oil, press in cooked jasmine rice, and let it crackle for 5 minutes until a golden crust (nurungji) forms. Arrange beef, vegetables, a sunny-side egg, and sesame seeds on top.",
+            "de": "Eine heiße Gusseisenpfanne mit Sesamöl ausstreichen, den gegarten Jasminreis hineindrücken und 5 Minuten knistern lassen, bis eine goldene Kruste entsteht. Rind, Gemüse, Spiegelei und Sesam darauf anrichten."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Listen for the steady crackle—resist stirring until serving!",
+            "de": "Erst direkt am Tisch alles kräftig untereinandermischen!"
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bibimbap",
+          "korean",
+          "beef",
+          "rice-bowl",
+          "sesame",
+          "cast-iron"
+        ],
+        "de": [
+          "bibimbap",
+          "koreanisch",
+          "rind",
+          "reisschale",
+          "sesam",
+          "gusseisen"
+        ]
+      }
+    },
+    {
+      "id": "bibimbap-vegan",
+      "dish_id": "bibimbap",
+      "title": {
+        "en": "Crispy Glazed Tofu & Sesame-Rice Vegan Bibimbap",
+        "de": "Veganes Steintopf-Bibimbap mit Knuspertofu & Sesam"
+      },
+      "subtitle": {
+        "en": "Crackling sesame jasmine rice topped with ginger-tamari glazed tofu, spinach, mushrooms, carrots & bean sprouts.",
+        "de": "Knuspriger Sesam-Jasminreis mit Ingwer-Tamari-Tofu, Spinat, Pilzen, Karotten & Sojasprossen."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 490,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 490,
+        "protein_g": 20,
+        "carbs_g": 64,
+        "fat_g": 17,
+        "fiber_g": 6
+      },
+      "contains": [
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "jasmine-rice",
+        "tofu",
+        "tamari",
+        "ginger",
+        "spinach",
+        "carrots",
+        "mushrooms",
+        "bean-sprouts",
+        "sesame-oil",
+        "sesame-seeds"
+      ],
+      "ingredients": [
+        {
+          "id": "jasmine-rice",
+          "name": {
+            "en": "Jasmine Rice",
+            "de": "Jasminreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tofu",
+          "name": {
+            "en": "Firm Tofu",
+            "de": "Fester Tofu"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": {
+            "en": "Toasted Sesame Seeds",
+            "de": "Geröstete Sesamsamen"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Glaze the Tofu & Wilt the Greens",
+            "de": "Tofu glasieren & Gemüse schwenken"
+          },
+          "instruction": {
+            "en": "Pan-fry cubed tofu until crisp, then toss with grated ginger and gluten-free tamari. Wilt spinach, carrots, mushrooms, and bean sprouts with sesame oil.",
+            "de": "Tofuwürfel knusprig anbraten und mit geriebenem Ingwer sowie Tamari glasieren. Spinat, Karotten, Pilze und Sprossen kurz in Sesamöl schwenken."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Add the tamari at the very end so it caramelizes onto the tofu.",
+            "de": "Tamari erst ganz zum Schluss in die heiße Pfanne geben, damit es sofort karamellisiert."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Sizzle the Rice & Crown with Veggies",
+            "de": "Reis knusprig braten & bunt belegen"
+          },
+          "instruction": {
+            "en": "Press cooked jasmine rice into a sesame-oiled skillet for 4 minutes until crisp underneath, then arrange the glazed tofu and vegetables in color wheels on top.",
+            "de": "Gegarten Jasminreis 4 Minuten in der mit Sesamöl bestrichenen Pfanne knusprig braten und Tofu sowie Gemüse fächerförmig darauf anrichten."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Shower generously with toasted sesame seeds.",
+            "de": "Großzügig mit geröstetem Sesam bestreuen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bibimbap",
+          "vegan",
+          "gluten-free",
+          "tofu",
+          "korean"
+        ],
+        "de": [
+          "bibimbap",
+          "vegan",
+          "glutenfrei",
+          "tofu",
+          "koreanisch"
+        ]
+      }
+    },
+    {
+      "id": "bibimbap-keto",
+      "dish_id": "bibimbap",
+      "title": {
+        "en": "Keto Toasted Cauliflower Rice & Sesame Beef Bibimbap",
+        "de": "Keto Blumenkohlreis-Bibimbap mit Sesam-Rind & Ei"
+      },
+      "subtitle": {
+        "en": "Charred sesame cauliflower rice topped with seared beef strips, spinach, mushrooms, cucumber & a fried egg.",
+        "de": "Gerösteter Sesam-Blumenkohlreis mit Rinderstreifen, Spinat, Pilzen, Gurke & knusprigem Spiegelei."
+      },
+      "diet_dimension": "keto",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 410,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 410,
+        "protein_g": 34,
+        "carbs_g": 9,
+        "fat_g": 26,
+        "fiber_g": 4
+      },
+      "contains": [
+        "beef",
+        "egg",
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "halal",
+        "kosher",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "cauliflower-rice",
+        "beef-strips",
+        "chicken-egg",
+        "tamari",
+        "spinach",
+        "mushrooms",
+        "cucumber",
+        "sesame-oil",
+        "sesame-seeds"
+      ],
+      "ingredients": [
+        {
+          "id": "cauliflower-rice",
+          "name": {
+            "en": "Riced Cauliflower",
+            "de": "Blumenkohlreis"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "beef-strips",
+          "name": {
+            "en": "Spiced Beef Strips",
+            "de": "Gewürzte Rinderstreifen"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cucumber",
+          "name": {
+            "en": "Cucumber",
+            "de": "Gurke"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": {
+            "en": "Toasted Sesame Seeds",
+            "de": "Geröstete Sesamsamen"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Roast the Sesame Cauliflower Rice",
+            "de": "Sesam-Blumenkohlreis trocken rösten"
+          },
+          "instruction": {
+            "en": "Stir-fry riced cauliflower in toasted sesame oil over high heat for 5 minutes until nutty and lightly browned.",
+            "de": "Blumenkohlreis 5 Minuten bei starker Hitze in geröstetem Sesamöl braten, bis er nussig duftet und leicht bräunt."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "High heat gives cauliflower rice a toasted grain texture.",
+            "de": "Hohe Hitze verleiht dem Blumenkohlreis eine körnige Röstaromatik."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Top with Tamari Beef, Greens & Sunny Egg",
+            "de": "Mit Tamari-Rind, Gemüse & Spiegelei krönen"
+          },
+          "instruction": {
+            "en": "Sear beef strips with tamari, wilt spinach and mushrooms, and assemble over the hot cauliflower rice with crisp cucumber, fried eggs, and sesame seeds.",
+            "de": "Rinderstreifen mit Tamari braten, Spinat und Pilze schwenken und mit Gurkenstreifen, Spiegelei und Sesam auf dem heißen Blumenkohlreis anrichten."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Break the runny yolk directly into the warm sesame cauliflower rice.",
+            "de": "Das flüssige Eigelb direkt am Tisch unter den warmen Sesam-Blumenkohlreis mischen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bibimbap",
+          "keto",
+          "low-carb",
+          "gluten-free",
+          "beef",
+          "korean"
+        ],
+        "de": [
+          "bibimbap",
+          "keto",
+          "low-carb",
+          "glutenfrei",
+          "rind",
+          "koreanisch"
+        ]
+      }
+    },
+    {
+      "id": "bibimbap-low-fodmap",
+      "dish_id": "bibimbap",
+      "title": {
+        "en": "Ginger-Scallion Chicken Low-FODMAP Stone-Pot Bibimbap",
+        "de": "Sanftes Ingwer-Hähnchen-Bibimbap (Low-FODMAP)"
+      },
+      "subtitle": {
+        "en": "Crispy jasmine rice with ginger-tamari chicken thigh, carrots, spinach, bean sprouts & garlic-infused oil.",
+        "de": "Knuspriger Jasminreis mit Ingwer-Tamari-Hähnchen, Karotten, Spinat, Sprossen & Knoblauch-Olivenöl."
+      },
+      "diet_dimension": "low-fodmap",
+      "effort": "medium",
+      "time_minutes": 30,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 520,
+        "protein_g": 33,
+        "carbs_g": 58,
+        "fat_g": 17,
+        "fiber_g": 4
+      },
+      "contains": [
+        "poultry",
+        "egg",
+        "soy",
+        "sesame"
+      ],
+      "attributes": [
+        "low-fodmap",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "nut-free",
+        "sugar-free",
+        "halal",
+        "kosher",
+        "medium",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "stir-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "stir-fry"
+      ],
+      "ingredient_ids": [
+        "jasmine-rice",
+        "chicken-thigh",
+        "chicken-egg",
+        "tamari",
+        "ginger",
+        "garlic-oil",
+        "carrots",
+        "spinach",
+        "bean-sprouts",
+        "scallions",
+        "sesame-oil"
+      ],
+      "ingredients": [
+        {
+          "id": "jasmine-rice",
+          "name": {
+            "en": "Jasmine Rice",
+            "de": "Jasminreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-thigh",
+          "name": {
+            "en": "Chicken Thigh",
+            "de": "Hähnchenschenkel"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 2,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "ginger",
+          "name": {
+            "en": "Fresh Ginger",
+            "de": "Frischer Ingwer"
+          },
+          "amount": 15,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "garlic-oil",
+          "name": {
+            "en": "Garlic-Infused Olive Oil",
+            "de": "Knoblauch-Olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "carrots",
+          "name": {
+            "en": "Carrots",
+            "de": "Karotten"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "spinach",
+          "name": {
+            "en": "Spinach",
+            "de": "Spinat"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": {
+            "en": "Bean Sprouts",
+            "de": "Sojasprossen"
+          },
+          "amount": 80,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "scallions",
+          "name": {
+            "en": "Scallions",
+            "de": "Frühlingszwiebeln"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "sesame-oil",
+          "name": {
+            "en": "Toasted Sesame Oil",
+            "de": "Geröstetes Sesamöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Sear Ginger-Tamari Chicken in Garlic Oil",
+            "de": "Ingwer-Tamari-Hähnchen in Knoblauchöl braten"
+          },
+          "instruction": {
+            "en": "Sear sliced chicken thigh in garlic-infused oil with grated ginger, scallion greens, and gluten-free tamari for 6 minutes.",
+            "de": "Hähnchenstreifen in Knoblauch-Olivenöl mit geriebenem Ingwer, Frühlingszwiebelgrün und glutenfreiem Tamari 6 Minuten goldbraun braten."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Garlic-infused oil gives full savory depth while staying strictly low-FODMAP.",
+            "de": "Knoblauchöl sorgt für volles Aroma und bleibt dabei streng FODMAP-arm."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Crisp the Rice & Arrange the Bowl",
+            "de": "Reis knusprig rösten & Schale anrichten"
+          },
+          "instruction": {
+            "en": "Crisp jasmine rice in sesame oil, then top with ginger chicken, sautéed carrots, spinach, bean sprouts, and a fried egg.",
+            "de": "Jasminreis in Sesamöl knusprig braten und mit Ingwer-Hähnchen, Karotten, Spinat, Sprossen und Spiegelei krönen."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Drizzle with extra toasted sesame oil at the table.",
+            "de": "Am Tisch mit etwas geröstetem Sesamöl beträufeln."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "bibimbap",
+          "low-fodmap",
+          "gluten-free",
+          "chicken",
+          "korean"
+        ],
+        "de": [
+          "bibimbap",
+          "fodmap-arm",
+          "glutenfrei",
+          "hähnchen",
+          "koreanisch"
+        ]
+      }
+    }
+  ]
+}

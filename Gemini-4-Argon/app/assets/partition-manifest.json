@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.10.1",
+  "loading_strategy": {
+    "startup_partitions": [
+      "core"
+    ],
+    "lazy_partitions": [
+      "extended",
+      "cuisine-italian",
+      "cuisine-asian",
+      "cuisine-middle-eastern"
+    ]
+  },
+  "partitions": {
+    "core": {
+      "id": "core",
+      "file": "assets/core-recipes.json",
+      "tier": "core",
+      "recipe_count": 32,
+      "dish_ids": [
+        "doener",
+        "alfredo",
+        "pad-thai",
+        "shakshuka",
+        "ramen",
+        "risotto",
+        "falafel",
+        "pancakes"
+      ]
+    },
+    "extended": {
+      "id": "extended",
+      "file": "assets/extended-recipes.json",
+      "tier": "extended",
+      "recipe_count": 8,
+      "dish_ids": [
+        "carbonara",
+        "bibimbap"
+      ]
+    },
+    "cuisine-italian": {
+      "id": "cuisine-italian",
+      "file": "assets/cuisine-italian.json",
+      "tier": "cuisine",
+      "recipe_count": 12,
+      "dish_ids": [
+        "alfredo",
+        "risotto",
+        "carbonara"
+      ]
+    },
+    "cuisine-asian": {
+      "id": "cuisine-asian",
+      "file": "assets/cuisine-asian.json",
+      "tier": "cuisine",
+      "recipe_count": 12,
+      "dish_ids": [
+        "pad-thai",
+        "ramen",
+        "bibimbap"
+      ]
+    },
+    "cuisine-middle-eastern": {
+      "id": "cuisine-middle-eastern",
+      "file": "assets/cuisine-middle-eastern.json",
+      "tier": "cuisine",
+      "recipe_count": 12,
+      "dish_ids": [
+        "doener",
+        "shakshuka",
+        "falafel"
+      ]
+    }
+  }
+}

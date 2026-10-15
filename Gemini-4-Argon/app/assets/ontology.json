@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "contains_flags": {
+    "pork": { "en": "Pork", "de": "Schweinefleisch" },
+    "beef": { "en": "Beef", "de": "Rindfleisch" },
+    "lamb": { "en": "Lamb", "de": "Lammfleisch" },
+    "poultry": { "en": "Poultry", "de": "Geflügel" },
+    "fish": { "en": "Fish", "de": "Fisch" },
+    "shellfish": { "en": "Shellfish", "de": "Krustentiere" },
+    "molluscs": { "en": "Molluscs", "de": "Weichtiere" },
+    "egg": { "en": "Egg", "de": "Ei" },
+    "dairy": { "en": "Dairy", "de": "Milchprodukte" },
+    "lactose": { "en": "Lactose", "de": "Laktose" },
+    "meat-dairy-combo": { "en": "Meat + Dairy Combo", "de": "Fleisch-Milch-Kombination" },
+    "gluten": { "en": "Gluten", "de": "Gluten" },
+    "soy": { "en": "Soy", "de": "Soja" },
+    "peanuts": { "en": "Peanuts", "de": "Erdnüsse" },
+    "tree-nuts": { "en": "Tree Nuts", "de": "Schalenfrüchte" },
+    "almonds": { "en": "Almonds", "de": "Mandeln" },
+    "walnuts": { "en": "Walnuts", "de": "Walnüsse" },
+    "pistachios": { "en": "Pistachios", "de": "Pistazien" },
+    "cashews": { "en": "Cashews", "de": "Cashewkerne" },
+    "hazelnuts": { "en": "Hazelnuts", "de": "Haselnüsse" },
+    "sesame": { "en": "Sesame", "de": "Sesam" },
+    "mustard": { "en": "Mustard", "de": "Senf" },
+    "celery": { "en": "Celery", "de": "Sellerie" },
+    "lupin": { "en": "Lupin", "de": "Lupinen" },
+    "sulphites": { "en": "Sulphites", "de": "Sulfite" },
+    "alcohol": { "en": "Alcohol", "de": "Alkohol" },
+    "caffeine": { "en": "Caffeine", "de": "Koffein" },
+    "added-sugar": { "en": "Added Sugar", "de": "Zugesetzter Zucker" },
+    "high-fodmap": { "en": "High FODMAP", "de": "Hoher FODMAP-Gehalt" },
+    "gelatin": { "en": "Gelatin", "de": "Gelatine" },
+    "gelatin-non-halal": { "en": "Non-Halal Gelatin", "de": "Nicht-halale Gelatine" },
+    "gelatin-non-kosher": { "en": "Non-Kosher Gelatin", "de": "Nicht-koschere Gelatine" },
+    "honey": { "en": "Honey", "de": "Honig" }
+  },
+  "compound_avoid_flags": {
+    "vegan": {
+      "label": { "en": "Vegan", "de": "Vegan" },
+      "description": {
+        "en": "Excludes all animal-derived ingredients including meat, fish, dairy, eggs, gelatin, and honey.",
+        "de": "Schließt alle tierischen Zutaten wie Fleisch, Fisch, Milchprodukte, Eier, Gelatine und Honig aus."
+      },
+      "expands_to": [
+        "pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs",
+        "egg", "dairy", "lactose", "meat-dairy-combo", "gelatin",
+        "gelatin-non-halal", "gelatin-non-kosher", "honey"
+      ]
+    },
+    "vegetarian": {
+      "label": { "en": "Vegetarian", "de": "Vegetarisch" },
+      "description": {
+        "en": "Excludes meat, poultry, fish, shellfish, and animal gelatin.",
+        "de": "Schließt Fleisch, Geflügel, Fisch, Krustentiere und tierische Gelatine aus."
+      },
+      "expands_to": [
+        "pork", "beef", "lamb", "poultry", "fish", "shellfish", "molluscs",
+        "gelatin", "gelatin-non-halal", "gelatin-non-kosher"
+      ]
+    },
+    "pescatarian": {
+      "label": { "en": "Pescatarian", "de": "Pescetarisch" },
+      "description": {
+        "en": "Excludes land meats and non-halal gelatin; fish and seafood remain included.",
+        "de": "Schließt Fleisch und Geflügel aus; Fisch und Meeresfrüchte bleiben enthalten."
+      },
+      "expands_to": [
+        "pork", "beef", "lamb", "poultry", "gelatin", "gelatin-non-halal", "gelatin-non-kosher"
+      ]
+    },
+    "halal": {
+      "label": { "en": "Halal-compatible", "de": "Halal-kompatibel" },
+      "description": {
+        "en": "Surfaces halal-compatible ingredients only (excludes pork, alcohol, and non-halal gelatin).",
+        "de": "Zeigt ausschließlich halal-kompatible Zutaten (ohne Schwein, Alkohol und nicht-halale Gelatine)."
+      },
+      "expands_to": ["pork", "alcohol", "gelatin-non-halal"]
+    },
+    "kosher": {
+      "label": { "en": "Kosher-compatible", "de": "Koscher-kompatibel" },
+      "description": {
+        "en": "Surfaces kosher-compatible ingredients (excludes pork, shellfish, meat-dairy combinations, and non-kosher gelatin).",
+        "de": "Zeigt koscher-kompatible Zutaten (ohne Schwein, Krustentiere, Fleisch-Milch-Kombinationen und nicht-koschere Gelatine)."
+      },
+      "expands_to": ["pork", "shellfish", "molluscs", "meat-dairy-combo", "gelatin-non-kosher"]
+    },
+    "low-fodmap": {
+      "label": { "en": "Low FODMAP", "de": "FODMAP-arm" },
+      "description": {
+        "en": "Excludes high-FODMAP triggers like raw garlic, onion bulbs, and wheat.",
+        "de": "Schließt FODMAP-reiche Auslöser wie Zwiebeln, Knoblauchknollen und Weizen aus."
+      },
+      "expands_to": ["high-fodmap"]
+    },
+    "sugar-free": {
+      "label": { "en": "Sugar-Free", "de": "Zuckerfrei" },
+      "description": {
+        "en": "Excludes recipes with added refined sugars or syrups.",
+        "de": "Schließt Rezepte mit zugesetztem Zucker oder Sirup aus."
+      },
+      "expands_to": ["added-sugar"]
+    },
+    "lactose-free": {
+      "label": { "en": "Lactose-Free", "de": "Laktosefrei" },
+      "description": {
+        "en": "Excludes lactose-containing dairy ingredients.",
+        "de": "Schließt laktosehaltige Milchprodukte aus."
+      },
+      "expands_to": ["lactose", "dairy"]
+    },
+    "gluten-free": {
+      "label": { "en": "Gluten-Free", "de": "Glutenfrei" },
+      "description": {
+        "en": "Excludes wheat, barley, rye, and gluten-containing grains.",
+        "de": "Schließt Weizen, Gerste, Roggen und glutenhaltiges Getreide aus."
+      },
+      "expands_to": ["gluten"]
+    },
+    "dairy-free": {
+      "label": { "en": "Dairy-Free", "de": "Milchfrei" },
+      "description": {
+        "en": "Excludes all milk, cheese, butter, cream, and yogurt.",
+        "de": "Schließt alle Milch-, Käse-, Butter-, Sahne- und Joghurtprodukte aus."
+      },
+      "expands_to": ["dairy", "lactose", "meat-dairy-combo"]
+    },
+    "nut-free": {
+      "label": { "en": "Nut-Free", "de": "Nussfrei" },
+      "description": {
+        "en": "Excludes both peanuts and all tree nuts.",
+        "de": "Schließt sowohl Erdnüsse als auch alle Schalenfrüchte aus."
+      },
+      "expands_to": ["peanuts", "tree-nuts", "almonds", "walnuts", "pistachios", "cashews", "hazelnuts"]
+    }
+  },
+  "attributes": {
+    "effort": {
+      "easy": { "en": "Easy", "de": "Einfach" },
+      "medium": { "en": "Medium", "de": "Mittel" },
+      "hard": { "en": "Project", "de": "Anspruchsvoll" }
+    },
+    "time_bucket": {
+      "≤15": { "en": "≤ 15 min", "de": "≤ 15 Min." },
+      "≤30": { "en": "≤ 30 min", "de": "≤ 30 Min." },
+      "≤60": { "en": "≤ 60 min", "de": "≤ 60 Min." },
+      ">60": { "en": "> 60 min", "de": "> 60 Min." }
+    },
+    "calorie_bucket": {
+      "≤400": { "en": "Light (≤ 400 kcal)", "de": "Leicht (≤ 400 kcal)" },
+      "≤600": { "en": "Balanced (≤ 600 kcal)", "de": "Ausgewogen (≤ 600 kcal)" },
+      "≤800": { "en": "Hearty (≤ 800 kcal)", "de": "Herzhaft (≤ 800 kcal)" },
+      ">800": { "en": "Feast (> 800 kcal)", "de": "Festmahl (> 800 kcal)" }
+    },
+    "technique": {
+      "bake": { "en": "Bake", "de": "Backen" },
+      "sauté": { "en": "Sauté", "de": "Sautieren" },
+      "simmer": { "en": "Simmer", "de": "Köcheln" },
+      "raw": { "en": "Raw / Fresh", "de": "Roh / Frisch" },
+      "grill": { "en": "Grill", "de": "Grillen" },
+      "fry": { "en": "Fry", "de": "Braten" },
+      "steam": { "en": "Steam", "de": "Dämpfen" },
+      "roast": { "en": "Roast", "de": "Rösten" },
+      "broil": { "en": "Broil", "de": "Überbacken" },
+      "pan-fry": { "en": "Pan-Fry", "de": "Pfannenbraten" },
+      "deep-fry": { "en": "Deep-Fry", "de": "Frittieren" },
+      "stir-fry": { "en": "Stir-Fry", "de": "Wok-Braten" },
+      "poach": { "en": "Poach", "de": "Pochieren" },
+      "blanch": { "en": "Blanch", "de": "Blanchieren" }
+    }
+  }
+}

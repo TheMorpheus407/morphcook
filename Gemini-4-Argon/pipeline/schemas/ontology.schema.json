@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://morphcook.app/schemas/ontology.schema.json",
+  "title": "MorphCook Dietary & Medical Ontology",
+  "type": "object",
+  "required": [
+    "version",
+    "dietary_flags",
+    "allergen_flags",
+    "medical_flags",
+    "compound_flags",
+    "effort_levels",
+    "calorie_tiers",
+    "cuisines"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "dietary_flags": { "type": "array", "items": { "type": "object" } },
+    "allergen_flags": { "type": "array", "items": { "type": "object" } },
+    "medical_flags": { "type": "array", "items": { "type": "object" } },
+    "compound_flags": { "type": "object" },
+    "effort_levels": { "type": "array", "items": { "type": "object" } },
+    "calorie_tiers": { "type": "array", "items": { "type": "object" } },
+    "cuisines": { "type": "array", "items": { "type": "object" } }
+  }
+}

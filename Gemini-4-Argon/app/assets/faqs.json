@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "categories": {
+    "dietary_matching": { "en": "Dietary Matching", "de": "Ernährungs-Matching" },
+    "recipe_visibility": { "en": "Recipe Visibility", "de": "Rezept-Sichtbarkeit" },
+    "features": { "en": "Features & Cook Mode", "de": "Funktionen & Kochmodus" },
+    "troubleshooting": { "en": "Troubleshooting & Backup", "de": "Fehlerbehebung & Backup" }
+  },
+  "entries": [
+    {
+      "id": "faq-same-dish-every-body",
+      "category": "dietary_matching",
+      "context_key": "variant_switcher",
+      "question": {
+        "en": "How does MorphCook handle dietary needs without removing dishes?",
+        "de": "Wie berücksichtigt MorphCook Ernährungsweisen, ohne Gerichte auszublenden?"
+      },
+      "answer": {
+        "en": "Instead of filtering dishes out of your cookbook or doing clumsy ingredient swaps, each dish concept (like Döner or Alfredo) has multiple standalone, fully authored recipe variants. Your profile automatically selects the variant written specifically for your way of eating.",
+        "de": "Anstatt Gerichte aus deinem Kochbuch zu streichen oder Zutaten notdürftig zu ersetzen, besitzt jedes Gericht (wie Döner oder Alfredo) mehrere eigenständige, vollständig ausgearbeitete Rezeptvarianten. Dein Profil wählt automatisch die Variante, die für deine Ernährungsweise geschrieben wurde."
+      },
+      "tags": {
+        "en": ["variants", "diet", "vegan", "gluten-free", "philosophy"],
+        "de": ["varianten", "ernährung", "vegan", "glutenfrei", "philosophie"]
+      }
+    },
+    {
+      "id": "faq-halal-kosher-note",
+      "category": "dietary_matching",
+      "context_key": "halal_kosher",
+      "question": {
+        "en": "What does 'halal-compatible' or 'kosher-compatible' mean in MorphCook?",
+        "de": "Was bedeutet 'halal-kompatibel' oder 'koscher-kompatibel' in MorphCook?"
+      },
+      "answer": {
+        "en": "We never claim 'halal-certified' or 'kosher-certified' in UI copy. We surface halal-compatible and kosher-compatible ingredients only (e.g., excluding pork, alcohol, shellfish, meat-dairy combinations, and non-compliant gelatin). True certification is a property of ingredient sourcing, slaughter, and kitchen supervision—not of a recipe text.",
+        "de": "Wir behaupten niemals, dass ein Rezept 'halal-zertifiziert' oder 'koscher-zertifiziert' ist. Wir zeigen ausschließlich halal- bzw. koscher-kompatible Zutaten an (z. B. ohne Schwein, Alkohol, Krustentiere, Fleisch-Milch-Kombinationen). Eine Zertifizierung betrifft die Herkunft, Schlachtung und Aufsicht beim Einkauf – nicht den Rezepttext."
+      },
+      "tags": {
+        "en": ["halal", "kosher", "sourcing", "ingredients", "certification"],
+        "de": ["halal", "koscher", "herkunft", "zutaten", "zertifizierung"]
+      }
+    },
+    {
+      "id": "faq-ingredient-tree-avoidance",
+      "category": "dietary_matching",
+      "context_key": "ingredient_avoidance",
+      "question": {
+        "en": "How do class avoidance and specific ingredient avoidance work together?",
+        "de": "Wie funktionieren Kategorien-Ausschluss und spezifischer Zutaten-Ausschluss zusammen?"
+      },
+      "answer": {
+        "en": "MorphCook combines broad class flags (like 'all dairy' or 'all nuts') with a hierarchical ingredient tree. If you avoid a parent ingredient like 'cheese' or 'tree-nuts' in the typeahead search, MorphCook automatically excludes all child ingredients (such as Parmesan, Feta, Walnuts, or Almonds).",
+        "de": "MorphCook kombiniert allgemeine Kategorien (wie 'alle Milchprodukte' oder 'alle Nüsse') mit einem hierarchischen Zutatenbaum. Wenn du einen Oberbegriff wie 'Käse' oder 'Schalenfrüchte' ausschließt, werden automatisch auch alle Unterzutaten (wie Parmesan, Feta, Walnüsse oder Mandeln) ausgeschlossen."
+      },
+      "tags": {
+        "en": ["allergy", "avoidance", "tree", "dairy", "nuts", "cilantro"],
+        "de": ["allergie", "ausschluss", "baum", "milch", "nüsse", "koriander"]
+      }
+    },
+    {
+      "id": "faq-calorie-override",
+      "category": "recipe_visibility",
+      "context_key": "calorie_filter",
+      "question": {
+        "en": "Why are some variants greyed out or hidden under my calorie target?",
+        "de": "Warum sind manche Varianten bei meinem Kalorienziel ausgegraut?"
+      },
+      "answer": {
+        "en": "Your profile calorie target acts as a hard filter (± tolerance) so everyday browsing matches your goals. On any dish page, you can flip the 'Show all calorie levels' override switch to inspect heartier or lighter variants of that dish without changing your global profile.",
+        "de": "Dein Kalorienziel im Profil wirkt als fester Filter (± Toleranz). Auf jeder Gericht-Detailseite kannst du jedoch den Schalter 'Alle Kalorien-Stufen zeigen' aktivieren, um auch reichhaltigere oder leichtere Varianten dieses Gerichts anzusehen."
+      },
+      "tags": {
+        "en": ["calories", "filter", "override", "visibility", "unreachable"],
+        "de": ["kalorien", "filter", "überschreiben", "sichtbarkeit"]
+      }
+    },
+    {
+      "id": "faq-unreachable-variants",
+      "category": "recipe_visibility",
+      "context_key": "unreachable_combo",
+      "question": {
+        "en": "Why does a variant chip say 'no version yet' instead of disappearing?",
+        "de": "Warum zeigt ein Varianten-Chip 'noch keine Version', statt zu verschwinden?"
+      },
+      "answer": {
+        "en": "When you combine dimensions (for example, Diet = Keto and Effort = Project), if our kitchen corpus doesn't have that exact intersection yet, we keep the chip visible in a disabled state with an honest note so you never wonder where an option went.",
+        "de": "Wenn du Dimensionen kombinierst (z. B. Ernährung = Keto und Aufwand = Anspruchsvoll) und genau diese Kombination noch nicht im Korpus existiert, bleibt der Chip mit einem ehrlichen Hinweis sichtbar, statt rätselhaft zu verschwinden."
+      },
+      "tags": {
+        "en": ["disabled", "combinations", "dimensions", "effort", "diet"],
+        "de": ["deaktiviert", "kombinationen", "dimensionen", "aufwand"]
+      }
+    },
+    {
+      "id": "faq-smart-shopping-units",
+      "category": "features",
+      "context_key": "shopping_list",
+      "question": {
+        "en": "How does the Smart Shopping List combine ingredients with different units?",
+        "de": "Wie fasst die Einkaufsliste Zutaten mit unterschiedlichen Einheiten zusammen?"
+      },
+      "answer": {
+        "en": "When you add multiple recipes or export a weekly meal plan, MorphCook merges identical ingredients by aisle and automatically converts compatible volume and weight units (such as ml ↔ tbsp ↔ tsp and g ↔ kg).",
+        "de": "Wenn du mehrere Rezepte hinzufügst oder deinen Wochenplan exportierst, führt MorphCook gleiche Zutaten nach Supermarkt-Abteilung zusammen und rechnet kompatible Volumen- und Gewichtseinheiten (wie ml ↔ EL ↔ TL und g ↔ kg) automatisch um."
+      },
+      "tags": {
+        "en": ["shopping", "units", "conversion", "aisle", "aggregation"],
+        "de": ["einkaufsliste", "einheiten", "umrechnung", "abteilung"]
+      }
+    },
+    {
+      "id": "faq-cook-mode-accessibility",
+      "category": "features",
+      "context_key": "cook_mode",
+      "question": {
+        "en": "How do Visual Flash Alerts and One-Handed Quick-Tap work in Cook Mode?",
+        "de": "Wie funktionieren der visuelle Blitz-Alarm und das Einhand-Tippen im Kochmodus?"
+      },
+      "answer": {
+        "en": "Cook Mode includes a Coral/Teal visual flash alert when a step timer completes (designed for deaf/hard-of-hearing cooks and noisy kitchens) and an optional One-Handed Quick-Tap mode that advances to the next step with a single tap on the step card (with a 300ms debounce to prevent accidental double-taps). Both respect your Reduce Motion preference.",
+        "de": "Der Kochmodus bietet einen visuellen Korall/Blaugrün-Farbalarm bei abgelaufenem Timer (ideal für gehörlose/schwerhörige Köche und laute Küchen) sowie einen optionalen Einhand-Tipp-Modus, der mit einem einfachen Tippen auf den Schritt weiterblättert (mit 300 ms Entprellung). Beide respektieren die Einstellung 'Bewegung reduzieren'."
+      },
+      "tags": {
+        "en": ["cook mode", "timer", "accessibility", "deaf", "one-handed", "reduce motion"],
+        "de": ["kochmodus", "timer", "barrierefreiheit", "einhand", "bewegung reduzieren"]
+      }
+    },
+    {
+      "id": "faq-backup-encryption",
+      "category": "troubleshooting",
+      "context_key": "backup_restore",
+      "question": {
+        "en": "How do offline backups and password encryption work?",
+        "de": "Wie funktionieren Offline-Backups und die Passwort-Verschlüsselung?"
+      },
+      "answer": {
+        "en": "MorphCook is 100% offline. Exporting writes two files: `morphcook-backup.json` and a compressed `morphcook-backup.json.gz` (70–90% smaller). If you enter a password, the `.json` file is encrypted using AES-256-GCM (PBKDF2-SHA256, 10,000 iterations) with the `ENC` magic header, while the `.json.gz` file remains unencrypted for universal compatibility. On import, MorphCook auto-detects encrypted, GZip, or plain JSON files.",
+        "de": "MorphCook arbeitet 100 % offline. Beim Export werden zwei Dateien erstellt: `morphcook-backup.json` und die komprimierte `morphcook-backup.json.gz` (70–90 % kleiner). Mit Passwort wird die `.json`-Datei per AES-256-GCM (PBKDF2-SHA256, 10.000 Iterationen) mit `ENC`-Header verschlüsselt, während `.json.gz` für Kompatibilität unverschlüsselt bleibt."
+      },
+      "tags": {
+        "en": ["backup", "restore", "encryption", "password", "gzip", "offline"],
+        "de": ["backup", "wiederherstellen", "verschlüsselung", "passwort", "gzip", "offline"]
+      }
+    }
+  ]
+}

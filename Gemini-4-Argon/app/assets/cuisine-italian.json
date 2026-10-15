@@ -1,0 +1,2225 @@
+{
+  "schema_version": 1,
+  "partition_id": "cuisine-italian",
+  "recipes": [
+    {
+      "id": "alfredo-classic",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Roman Butter & Parmigiano Fettuccine Alfredo",
+        "de": "Römische Butter-Parmigiano Fettuccine Alfredo"
+      },
+      "subtitle": {
+        "en": "The pure three-ingredient Roman original: fresh egg fettuccine, sweet cultured butter & 24-month Parmigiano.",
+        "de": "Das römische Original aus drei Zutaten: frische Fettuccine, Süßrahmbutter & 24 Monate gereifter Parmigiano."
+      },
+      "diet_dimension": "classic",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 740,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 740,
+        "protein_g": 26,
+        "carbs_g": 64,
+        "fat_g": 42,
+        "fiber_g": 3
+      },
+      "contains": [
+        "dairy",
+        "lactose",
+        "gluten",
+        "egg",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤800",
+        "simmer",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "fettuccine",
+        "butter",
+        "parmesan",
+        "black-pepper",
+        "sea-salt"
+      ],
+      "ingredients": [
+        {
+          "id": "fettuccine",
+          "name": {
+            "en": "Fresh Fettuccine",
+            "de": "Frische Fettuccine"
+          },
+          "amount": 250,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "amount": 90,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "sea-salt",
+          "name": {
+            "en": "Flaky Sea Salt",
+            "de": "Meersalzflocken"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Boil in Moderately Salted Water",
+            "de": "Pasta in wenig Salzwasser garen"
+          },
+          "instruction": {
+            "en": "Cook the fettuccine in a wide pot with slightly less water than usual so the starchy cooking water becomes extra concentrated.",
+            "de": "Die Fettuccine in einem weiten Topf mit etwas weniger Wasser als üblich garen, damit das Nudelwasser besonders stärkehaltig wird."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "Save a full mug of pasta water before draining!",
+            "de": "Vor dem Abgießen unbedingt eine ganze Tasse Nudelwasser auffangen!"
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Mantecatura: Toss Into Silk",
+            "de": "Mantecatura: Zur Seiden-Emulsion schwenken"
+          },
+          "instruction": {
+            "en": "Transfer dripping pasta onto room-temperature butter in a warm platter. Shower with finely snowed Parmigiano and splashes of hot pasta water, tossing vigorously until a glossy cream forms.",
+            "de": "Die tropfnasse Pasta auf die zimmerwarme Butter geben, den fein geriebenen Parmesan darüberstreuen und mit heißem Nudelwasser kräftig durchschwenken, bis eine glänzende Creme entsteht."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Grate the cheese on a microplane—coarse shreds will clump instead of melting.",
+            "de": "Den Parmesan hauchfein reiben, damit er sofort schmilzt und keine Fäden zieht."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "alfredo",
+          "pasta",
+          "italian",
+          "fettuccine",
+          "parmesan",
+          "vegetarian"
+        ],
+        "de": [
+          "alfredo",
+          "pasta",
+          "italienisch",
+          "fettuccine",
+          "parmesan",
+          "vegetarisch"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-vegan",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Roasted Garlic & Cashew-Silk Vegan Alfredo",
+        "de": "Vegane Alfredo mit Röstknoblauch & Cashew-Seide"
+      },
+      "subtitle": {
+        "en": "Velvety roasted cauliflower & cashew cream infused with nutritional yeast, white miso, and cracked pepper.",
+        "de": "Samtige Creme aus geröstetem Blumenkohl, Cashew-Sahne, Hefeflocken, weißem Miso und schwarzem Pfeffer."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 510,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 510,
+        "protein_g": 17,
+        "carbs_g": 62,
+        "fat_g": 21,
+        "fiber_g": 6
+      },
+      "contains": [
+        "gluten",
+        "tree-nuts",
+        "cashews",
+        "soy",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "sugar-free",
+        "easy",
+        "≤30",
+        "≤600",
+        "simmer",
+        "sauté",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "ingredient_ids": [
+        "spaghetti",
+        "cashew-cream",
+        "cauliflower",
+        "nutritional-yeast",
+        "miso-paste",
+        "garlic",
+        "olive-oil",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "name": {
+            "en": "Bronze-Die Spaghetti",
+            "de": "Spaghetti (Bronzematrize)"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "Cashew Cream",
+            "de": "Cashew-Sahne"
+          },
+          "amount": 120,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "cauliflower",
+          "name": {
+            "en": "Cauliflower",
+            "de": "Blumenkohl"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "Nutritional Yeast",
+            "de": "Hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "miso-paste",
+          "name": {
+            "en": "White Miso Paste",
+            "de": "Helle Misopaste"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "amount": 3,
+          "unit": "cloves",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Simmer Cauliflower & Sweet Garlic",
+            "de": "Blumenkohl & Knoblauch weich garen"
+          },
+          "instruction": {
+            "en": "Boil small cauliflower florets and peeled garlic cloves in salted pasta water for 8 minutes until fork-tender, then lift them out with a slotted spoon and add the pasta to the same pot.",
+            "de": "Kleine Blumenkohlröschen und geschälte Knoblauchzehen 8 Minuten im gesalzenen Wasser weich kochen, mit einer Schaumkelle herausheben und die Pasta im selben Wasser garen."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Cooking the cauliflower first enriches the pasta water with natural sweetness.",
+            "de": "Das Blumenkohlwasser gibt der Pasta direkt beim Kochen zusätzlichen Geschmack."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Blend the Umami Cream & Toss",
+            "de": "Umami-Creme pürieren & schwenken"
+          },
+          "instruction": {
+            "en": "Blend the tender cauliflower, garlic, cashew cream, nutritional yeast, white miso, olive oil, and a splash of pasta water until satin-smooth. Toss with hot al dente noodles and cracked black pepper.",
+            "de": "Weichen Blumenkohl, Knoblauch, Cashew-Sahne, Hefeflocken, helles Miso, Olivenöl und einen Schuss Nudelwasser seidig pürieren. Mit der heißen Pasta und schwarzem Pfeffer vermengen."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "White miso adds the exact fermented tang of aged Parmigiano.",
+            "de": "Helles Miso sorgt für genau die gereifte Tiefe, die man von gutem Hartkäse kennt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "alfredo",
+          "vegan",
+          "pasta",
+          "cashew",
+          "dairy-free",
+          "italian"
+        ],
+        "de": [
+          "alfredo",
+          "vegan",
+          "pasta",
+          "cashew",
+          "milchfrei",
+          "italienisch"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-gluten-free",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Artisanal Chickpea Fettuccine & Sage Alfredo",
+        "de": "Glutenfreie Kichererbsen-Fettuccine mit Salbei-Alfredo"
+      },
+      "subtitle": {
+        "en": "Nutty chickpea ribbons tossed with browned sage butter and aged Pecorino.",
+        "de": "Nussige Kichererbsen-Bandnudeln in gebräunter Salbeibutter und gereiftem Pecorino."
+      },
+      "diet_dimension": "gluten-free",
+      "effort": "medium",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 560,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 560,
+        "protein_g": 29,
+        "carbs_g": 46,
+        "fat_g": 28,
+        "fiber_g": 9
+      },
+      "contains": [
+        "dairy",
+        "lactose"
+      ],
+      "attributes": [
+        "gluten-free",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "medium",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "simmer",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "chickpea-pasta",
+        "butter",
+        "pecorino",
+        "sage",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpea-pasta",
+          "name": {
+            "en": "Chickpea Fettuccine",
+            "de": "Kichererbsen-Fettuccine"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "pecorino",
+          "name": {
+            "en": "Pecorino Romano",
+            "de": "Pecorino Romano"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "sage",
+          "name": {
+            "en": "Fresh Sage",
+            "de": "Frischer Salbei"
+          },
+          "amount": 10,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Sage in Hazelnut-Brown Butter",
+            "de": "Salbei in Nussbutter knusprig braten"
+          },
+          "instruction": {
+            "en": "Melt the butter gently with whole sage leaves for 3 minutes until the milk solids toast to a hazelnut aroma.",
+            "de": "Die Butter mit ganzen Salbeiblättern 3 Minuten sanft aufschäumen lassen, bis sie nussig duftet und goldbraun schimmert."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Pull the skillet off the burner the moment the foam smells like toasted nuts.",
+            "de": "Die Pfanne sofort vom Herd ziehen, sobald die Butter nach gerösteten Nüssen duftet."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Emulsify with Chickpea Fettuccine",
+            "de": "Mit Kichererbsen-Fettuccine emulgieren"
+          },
+          "instruction": {
+            "en": "Boil chickpea pasta for 6 minutes, transfer directly into the sage butter with a splash of cooking water, and fold in finely grated Pecorino off the heat.",
+            "de": "Kichererbsen-Pasta 6 Minuten garen, tropfnass in die Salbeibutter heben und abseits der Hitze den fein geriebenen Pecorino unterheben."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Undercook legume pasta by 1 minute so it finishes firm in the emulsion.",
+            "de": "Hülsenfrucht-Pasta 1 Minute kürzer kochen, damit sie in der Sauce bissfest bleibt."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "alfredo",
+          "gluten-free",
+          "chickpea",
+          "sage",
+          "pecorino"
+        ],
+        "de": [
+          "alfredo",
+          "glutenfrei",
+          "kichererbsen",
+          "salbei",
+          "pecorino"
+        ]
+      }
+    },
+    {
+      "id": "alfredo-keto",
+      "dish_id": "alfredo",
+      "title": {
+        "en": "Zucchini Ribbon & Shirataki Brown-Butter Alfredo",
+        "de": "Keto Zucchini-Shirataki-Alfredo in Nussbutter"
+      },
+      "subtitle": {
+        "en": "Dry-roasted shirataki and tender zucchini ribbons wrapped in rich cream, butter & aged Parmesan.",
+        "de": "Trocken angeröstete Shirataki-Nudeln und zarte Zucchini-Bänder in Rahm, Butter & gereiftem Parmesan."
+      },
+      "diet_dimension": "keto",
+      "effort": "easy",
+      "time_minutes": 15,
+      "time_bucket": "≤15",
+      "servings": 2,
+      "calories_per_serving": 390,
+      "calorie_bucket": "≤400",
+      "macros": {
+        "calories": 390,
+        "protein_g": 16,
+        "carbs_g": 7,
+        "fat_g": 33,
+        "fiber_g": 4
+      },
+      "contains": [
+        "dairy",
+        "lactose"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤15",
+        "≤30",
+        "≤400",
+        "≤600",
+        "pan-fry",
+        "lunch",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry"
+      ],
+      "ingredient_ids": [
+        "shirataki-noodles",
+        "zucchini",
+        "butter",
+        "heavy-cream",
+        "parmesan",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "shirataki-noodles",
+          "name": {
+            "en": "Shirataki Noodles",
+            "de": "Shirataki-Nudeln"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "zucchini",
+          "name": {
+            "en": "Zucchini",
+            "de": "Zucchini"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "heavy-cream",
+          "name": {
+            "en": "Heavy Cream",
+            "de": "Schlagsahne"
+          },
+          "amount": 60,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Dry-Roast the Shirataki Ribbons",
+            "de": "Shirataki-Nudeln trocken anrösten"
+          },
+          "instruction": {
+            "en": "Rinse shirataki noodles well, then toss in a dry hot skillet for 3 minutes until all surface moisture evaporates.",
+            "de": "Shirataki-Nudeln gründlich abspülen und 3 Minuten in einer trockenen heißen Pfanne rösten, bis die Feuchtigkeit verdampft ist."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Dry-roasting gives shirataki a firm pasta bite that drinks up the sauce.",
+            "de": "Durch das trockene Anrösten nehmen die Nudeln die Sauce doppelt so gut auf."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Fold in Zucchini Ribbons, Cream & Parmesan",
+            "de": "Zucchini-Bänder, Sahne & Parmesan unterheben"
+          },
+          "instruction": {
+            "en": "Add butter, heavy cream, and shaved zucchini ribbons to the pan. Simmer 2 minutes, then fold in grated Parmesan and black pepper.",
+            "de": "Butter, Sahne und gehobelte Zucchini-Bänder dazugeben, 2 Minuten sämig einkochen und mit Parmesan sowie schwarzem Pfeffer vollenden."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Keep the zucchini ribbons barely tender so they retain their bite.",
+            "de": "Die Zucchini-Bänder nur kurz schwenken, damit sie knackig bleiben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "alfredo",
+          "keto",
+          "low-carb",
+          "gluten-free",
+          "shirataki",
+          "zucchini"
+        ],
+        "de": [
+          "alfredo",
+          "keto",
+          "low-carb",
+          "glutenfrei",
+          "shirataki",
+          "zucchini"
+        ]
+      }
+    },
+    {
+      "id": "risotto-classic",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Milanese Saffron & Wild Mushroom Risotto",
+        "de": "Mailänder Safran-Waldpilz-Risotto"
+      },
+      "subtitle": {
+        "en": "Arborio rice slowly coaxed with saffron threads, dry white wine, seared mushrooms, butter & aged Parmigiano.",
+        "de": "Arborio-Reis mit echten Safranfäden, trockenem Weißwein, gebratenen Waldpilzen, Butter & Parmigiano."
+      },
+      "diet_dimension": "vegetarian",
+      "effort": "medium",
+      "time_minutes": 40,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 620,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 620,
+        "protein_g": 18,
+        "carbs_g": 74,
+        "fat_g": 24,
+        "fiber_g": 4
+      },
+      "contains": [
+        "dairy",
+        "lactose",
+        "alcohol",
+        "sulphites",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegetarian",
+        "pescatarian",
+        "kosher",
+        "gluten-free",
+        "nut-free",
+        "sugar-free",
+        "medium",
+        "≤60",
+        "≤800",
+        "simmer",
+        "sauté",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "ingredient_ids": [
+        "arborio-rice",
+        "vegetable-broth",
+        "mushrooms",
+        "white-wine",
+        "saffron",
+        "butter",
+        "parmesan",
+        "shallots",
+        "thyme"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "name": {
+            "en": "Arborio Risotto Rice",
+            "de": "Arborio-Risottoreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "Rich Vegetable Stock",
+            "de": "Kräftige Gemüsebrühe"
+          },
+          "amount": 750,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "white-wine",
+          "name": {
+            "en": "Dry White Wine",
+            "de": "Trockener Weißwein"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "Saffron Threads",
+            "de": "Safranfäden"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "shallots",
+          "name": {
+            "en": "Shallots",
+            "de": "Schalotten"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "Fresh Thyme",
+            "de": "Frischer Thymian"
+          },
+          "amount": 5,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Steep Saffron & Toast the Arborio Rice",
+            "de": "Safran ziehen lassen & Arborio-Reis anrösten"
+          },
+          "instruction": {
+            "en": "Steep saffron threads in warm vegetable stock. Sear mushrooms with thyme and set aside. Sweat shallots in half the butter, toast Arborio rice for 2 minutes until translucent at the edges, and deglaze with white wine.",
+            "de": "Safranfäden in warmer Brühe ziehen lassen. Pilze mit Thymian anbraten und beiseitestellen. Schalotten in der Hälfte der Butter dünsten, Reis 2 Minuten glasig rösten und mit Weißwein ablöschen."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Warm stock is non-negotiable—cold stock stalls the starch release.",
+            "de": "Die Brühe muss heiß sein, damit der Reis gleichmäßig seine Stärke abgibt."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Ladle by Ladle & Final Mantecatura",
+            "de": "Kelle für Kelle rühren & Mantecatura"
+          },
+          "instruction": {
+            "en": "Add saffron stock one ladle at a time over 18 minutes, stirring gently. Take off the heat, beat in cold butter and grated Parmesan, cover for 2 minutes, and top with seared mushrooms.",
+            "de": "18 Minuten lang Kelle für Kelle Safranbrühe unter Rühren angießen. Vom Herd nehmen, kalte Butter und Parmesan kräftig unterrühren, 2 Minuten ruhen lassen und mit den Pilzen krönen."
+          },
+          "timer_seconds": 1080,
+          "tip": {
+            "en": "Cold butter beaten in off the heat creates the classic wave (all’onda).",
+            "de": "Eiskalte Butter abseits der Hitze sorgt für die perfekte cremige Welle (all’onda)."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "risotto",
+          "italian",
+          "saffron",
+          "mushroom",
+          "vegetarian",
+          "gluten-free"
+        ],
+        "de": [
+          "risotto",
+          "italienisch",
+          "safran",
+          "pilze",
+          "vegetarisch",
+          "glutenfrei"
+        ]
+      }
+    },
+    {
+      "id": "risotto-vegan",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Golden Saffron & Cashew-Mantecatura Vegan Risotto",
+        "de": "Veganes Safran-Pilz-Risotto mit Cashew-Mantecatura"
+      },
+      "subtitle": {
+        "en": "Alcohol-free saffron stock reduction finished with lemon brightness, nutritional yeast & silky cashew cream.",
+        "de": "Alkoholfreie Safran-Reduktion, vollendet mit Zitronenfrische, Hefeflocken & seidiger Cashew-Creme."
+      },
+      "diet_dimension": "vegan",
+      "effort": "medium",
+      "time_minutes": 35,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 480,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 480,
+        "protein_g": 13,
+        "carbs_g": 68,
+        "fat_g": 17,
+        "fiber_g": 5
+      },
+      "contains": [
+        "tree-nuts",
+        "cashews",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "gluten-free",
+        "dairy-free",
+        "lactose-free",
+        "sugar-free",
+        "medium",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "ingredient_ids": [
+        "arborio-rice",
+        "vegetable-broth",
+        "mushrooms",
+        "saffron",
+        "cashew-cream",
+        "nutritional-yeast",
+        "lemon",
+        "olive-oil",
+        "shallots",
+        "thyme"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "name": {
+            "en": "Arborio Risotto Rice",
+            "de": "Arborio-Risottoreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "vegetable-broth",
+          "name": {
+            "en": "Rich Vegetable Stock",
+            "de": "Kräftige Gemüsebrühe"
+          },
+          "amount": 750,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "Saffron Threads",
+            "de": "Safranfäden"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "Cashew Cream",
+            "de": "Cashew-Sahne"
+          },
+          "amount": 60,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "Nutritional Yeast",
+            "de": "Hefeflocken"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "shallots",
+          "name": {
+            "en": "Shallots",
+            "de": "Schalotten"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "Fresh Thyme",
+            "de": "Frischer Thymian"
+          },
+          "amount": 5,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Toast Arborio & Deglaze with Lemon Broth",
+            "de": "Reis anrösten & mit Zitronenbrühe ablöschen"
+          },
+          "instruction": {
+            "en": "Sauté shallots in olive oil, toast Arborio rice for 2 minutes, and deglaze with a squeeze of fresh lemon juice and warm saffron stock instead of wine.",
+            "de": "Schalotten in Olivenöl anschwitzen, Arborio-Reis 2 Minuten glasig rösten und mit einem Spritzer Zitronensaft sowie warmer Safranbrühe ablöschen."
+          },
+          "timer_seconds": 240,
+          "tip": {
+            "en": "A splash of lemon juice in warm stock gives the exact acidity of dry white wine.",
+            "de": "Ein Spritzer Zitronensaft in warmer Brühe ersetzt die feine Säure von Weißwein perfekt."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Simmer & Whip in Cashew-Yeast Mantecatura",
+            "de": "Simmern & Cashew-Hefeflocken-Mantecatura"
+          },
+          "instruction": {
+            "en": "Ladle saffron stock gradually for 18 minutes. Off the heat, fold in cashew cream, nutritional yeast, and seared thyme mushrooms.",
+            "de": "18 Minuten lang nach und nach Safranbrühe angießen. Abseits der Hitze Cashew-Sahne, Hefeflocken und gebratene Thymianpilze unterheben."
+          },
+          "timer_seconds": 1080,
+          "tip": {
+            "en": "Let it rest covered for 90 seconds before plating.",
+            "de": "Vor dem Servieren 90 Sekunden zugedeckt ruhen lassen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "risotto",
+          "vegan",
+          "alcohol-free",
+          "saffron",
+          "mushroom",
+          "gluten-free"
+        ],
+        "de": [
+          "risotto",
+          "vegan",
+          "alkoholfrei",
+          "safran",
+          "pilze",
+          "glutenfrei"
+        ]
+      }
+    },
+    {
+      "id": "risotto-halal",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Halal Golden Chicken & Saffron Risotto (No Wine)",
+        "de": "Halal Safran-Pilz-Risotto mit Goldener Brühe (Alkoholfrei)"
+      },
+      "subtitle": {
+        "en": "Simmered in golden chicken-saffron stock with lemon brightness, seared wild mushrooms & aged Parmesan.",
+        "de": "Gegart in goldener Safran-Hühnerbrühe mit Zitronenfrische, gebratenen Waldpilzen & gereiftem Parmesan."
+      },
+      "diet_dimension": "halal",
+      "effort": "hard",
+      "time_minutes": 45,
+      "time_bucket": "≤60",
+      "servings": 2,
+      "calories_per_serving": 590,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 590,
+        "protein_g": 22,
+        "carbs_g": 72,
+        "fat_g": 23,
+        "fiber_g": 4
+      },
+      "contains": [
+        "dairy",
+        "lactose",
+        "high-fodmap"
+      ],
+      "attributes": [
+        "halal",
+        "gluten-free",
+        "nut-free",
+        "sugar-free",
+        "hard",
+        "≤60",
+        "≤600",
+        "simmer",
+        "sauté",
+        "dinner"
+      ],
+      "techniques": [
+        "simmer",
+        "sauté"
+      ],
+      "ingredient_ids": [
+        "arborio-rice",
+        "chicken-broth",
+        "mushrooms",
+        "saffron",
+        "butter",
+        "parmesan",
+        "lemon",
+        "shallots",
+        "thyme"
+      ],
+      "ingredients": [
+        {
+          "id": "arborio-rice",
+          "name": {
+            "en": "Arborio Risotto Rice",
+            "de": "Arborio-Risottoreis"
+          },
+          "amount": 180,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "chicken-broth",
+          "name": {
+            "en": "Golden Chicken Stock",
+            "de": "Goldene Hühnerbrühe"
+          },
+          "amount": 750,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "Saffron Threads",
+            "de": "Safranfäden"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 35,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "amount": 1,
+          "unit": "pcs",
+          "aisle": "produce"
+        },
+        {
+          "id": "shallots",
+          "name": {
+            "en": "Shallots",
+            "de": "Schalotten"
+          },
+          "amount": 40,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "Fresh Thyme",
+            "de": "Frischer Thymian"
+          },
+          "amount": 5,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Bloom Saffron in Golden Stock",
+            "de": "Safran in goldener Brühe aufgießen"
+          },
+          "instruction": {
+            "en": "Infuse warm chicken stock with crushed saffron threads. Toast Arborio rice with shallots in butter and brighten with fresh lemon juice instead of wine.",
+            "de": "Warme Hühnerbrühe mit Safranfäden aromatisieren. Arborio-Reis mit Schalotten in Butter glasig schwitzen und mit Zitronensaft statt Wein ablöschen."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Crushing saffron between your fingers before steeping releases twice the gold.",
+            "de": "Safranfäden vor dem Aufgießen leicht zwischen den Fingern zerreiben."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Slow Ladle & Parmesan Finish",
+            "de": "Sanftes Rühren & Parmesan-Finish"
+          },
+          "instruction": {
+            "en": "Stir in warm saffron stock ladle by ladle for 20 minutes, then finish with butter, Parmesan, and roasted thyme mushrooms.",
+            "de": "20 Minuten lang Kelle für Kelle Safranbrühe einrühren und mit Butter, Parmesan und gerösteten Thymianpilzen vollenden."
+          },
+          "timer_seconds": 1200,
+          "tip": {
+            "en": "Keep the simmer gentle so grains stay whole.",
+            "de": "Nur sanft simmern lassen, damit die Reiskörner ganz bleiben."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "risotto",
+          "halal",
+          "alcohol-free",
+          "saffron",
+          "italian"
+        ],
+        "de": [
+          "risotto",
+          "halal",
+          "alkoholfrei",
+          "safran",
+          "italienisch"
+        ]
+      }
+    },
+    {
+      "id": "risotto-keto",
+      "dish_id": "risotto",
+      "title": {
+        "en": "Keto Cauliflower & Wild Mushroom Saffron Risotto",
+        "de": "Keto Blumenkohl-Risotto mit Safran & Waldpilzen"
+      },
+      "subtitle": {
+        "en": "Riced cauliflower gently reduced in saffron cream, butter, thyme mushrooms & aged Parmigiano.",
+        "de": "Blumenkohlreis, sanft eingekocht in Safranrahm, Butter, Thymianpilzen & gereiftem Parmigiano."
+      },
+      "diet_dimension": "keto",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 370,
+      "calorie_bucket": "≤400",
+      "macros": {
+        "calories": 370,
+        "protein_g": 15,
+        "carbs_g": 9,
+        "fat_g": 30,
+        "fiber_g": 4
+      },
+      "contains": [
+        "dairy",
+        "lactose"
+      ],
+      "attributes": [
+        "keto",
+        "gluten-free",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤400",
+        "≤600",
+        "sauté",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "sauté",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "cauliflower-rice",
+        "mushrooms",
+        "heavy-cream",
+        "butter",
+        "parmesan",
+        "saffron",
+        "garlic-oil",
+        "thyme"
+      ],
+      "ingredients": [
+        {
+          "id": "cauliflower-rice",
+          "name": {
+            "en": "Riced Cauliflower",
+            "de": "Blumenkohlreis"
+          },
+          "amount": 350,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 150,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "heavy-cream",
+          "name": {
+            "en": "Heavy Cream",
+            "de": "Schlagsahne"
+          },
+          "amount": 80,
+          "unit": "ml",
+          "aisle": "dairy"
+        },
+        {
+          "id": "butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "amount": 30,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "amount": 50,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "saffron",
+          "name": {
+            "en": "Saffron Threads",
+            "de": "Safranfäden"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "garlic-oil",
+          "name": {
+            "en": "Garlic-Infused Olive Oil",
+            "de": "Knoblauch-Olivenöl"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "thyme",
+          "name": {
+            "en": "Fresh Thyme",
+            "de": "Frischer Thymian"
+          },
+          "amount": 5,
+          "unit": "g",
+          "aisle": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Dry-Sauté the Cauliflower Grains",
+            "de": "Blumenkohlreis trocken anrösten"
+          },
+          "instruction": {
+            "en": "Sauté mushrooms in butter and garlic oil with thyme, then add riced cauliflower and cook over medium-high heat for 5 minutes so excess moisture evaporates.",
+            "de": "Pilze in Butter und Knoblauchöl mit Thymian anbraten, Blumenkohlreis zugeben und 5 Minuten kräftig dünsten, damit er körnig bleibt."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Cooking off the water first keeps cauliflower risotto al dente, never mushy.",
+            "de": "Durch das Anrösten behält der Blumenkohlreis einen feinen Biss."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Fold in Saffron Cream & Parmesan",
+            "de": "Safranrahm & Parmesan unterheben"
+          },
+          "instruction": {
+            "en": "Pour in warm heavy cream infused with saffron threads, simmer 3 minutes until thick, and fold in grated Parmesan.",
+            "de": "Warme Safran-Sahne angießen, 3 Minuten cremig einkochen und den geriebenen Parmesan unterheben."
+          },
+          "timer_seconds": 180,
+          "tip": {
+            "en": "Finish with fresh thyme leaves and cracked black pepper.",
+            "de": "Mit frischen Thymianblättchen und schwarzem Pfeffer servieren."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "risotto",
+          "keto",
+          "low-carb",
+          "cauliflower",
+          "saffron",
+          "gluten-free"
+        ],
+        "de": [
+          "risotto",
+          "keto",
+          "low-carb",
+          "blumenkohl",
+          "safran",
+          "glutenfrei"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-classic",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Authentic Roman Guanciale & Pecorino Carbonara",
+        "de": "Klassische Römische Carbonara mit Guanciale & Pecorino"
+      },
+      "subtitle": {
+        "en": "Bronze-die spaghetti coated in rendered guanciale, pasture-raised egg yolks, aged Pecorino & toasted black pepper.",
+        "de": "Spaghetti in ausgelassenem Guanciale, Eigelb, gereiftem Pecorino Romano & frisch gemörsertem Pfeffer."
+      },
+      "diet_dimension": "classic",
+      "effort": "medium",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 720,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 720,
+        "protein_g": 31,
+        "carbs_g": 64,
+        "fat_g": 37,
+        "fiber_g": 3
+      },
+      "contains": [
+        "pork",
+        "egg",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo",
+        "gluten"
+      ],
+      "attributes": [
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "medium",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "spaghetti",
+        "guanciale",
+        "chicken-egg",
+        "pecorino",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "name": {
+            "en": "Bronze-Die Spaghetti",
+            "de": "Spaghetti (Bronzematrize)"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "guanciale",
+          "name": {
+            "en": "Guanciale",
+            "de": "Guanciale"
+          },
+          "amount": 120,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "pecorino",
+          "name": {
+            "en": "Pecorino Romano",
+            "de": "Pecorino Romano"
+          },
+          "amount": 70,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Render the Guanciale & Whisk the Carbocrema",
+            "de": "Guanciale knusprig auslassen & Carbocrema rühren"
+          },
+          "instruction": {
+            "en": "Crisp cubed guanciale in a cold skillet over medium-low heat for 8 minutes. Meanwhile, whisk egg yolks, grated Pecorino, and toasted cracked pepper into a thick paste.",
+            "de": "Guanciale-Würfel in einer kalten Pfanne starten und 8 Minuten bei mittlerer Hitze knusprig auslassen. Eigelb, geriebenen Pecorino und gestoßenen Pfeffer zu einer dicken Paste verrühren."
+          },
+          "timer_seconds": 480,
+          "tip": {
+            "en": "Temper the egg-cheese paste with a spoonful of warm rendered fat.",
+            "de": "Einen Löffel warmes Guanciale-Fett in die Ei-Käse-Paste rühren."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Toss Off the Heat for Satin Gloss",
+            "de": "Abseits der Hitze seidig emulgieren"
+          },
+          "instruction": {
+            "en": "Remove the skillet from the burner, toss in hot spaghetti with a splash of pasta water, wait 20 seconds, then vigorously fold in the egg-Pecorino paste until glossy.",
+            "de": "Pfanne vom Herd nehmen, heiße Spaghetti mit etwas Nudelwasser zugeben, 20 Sekunden warten und die Ei-Pecorino-Creme kräftig unterrühren, bis sie seidig glänzt."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Never return the pan to the flame after adding the eggs!",
+            "de": "Nach dem Zugeben der Eier die Pfanne auf keinen Fall zurück auf die Herdplatte stellen!"
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "carbonara",
+          "roman",
+          "italian",
+          "pasta",
+          "guanciale",
+          "pecorino"
+        ],
+        "de": [
+          "carbonara",
+          "römisch",
+          "italienisch",
+          "pasta",
+          "guanciale",
+          "pecorino"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-vegan",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Smoky Shiitake & Golden Cashew-Turmeric Vegan Carbonara",
+        "de": "Vegane Carbonara mit Rauch-Shiitake & Goldener Cashew-Seide"
+      },
+      "subtitle": {
+        "en": "Crisp smoked-paprika mushrooms and spaghetti spun in a golden turmeric, cashew & nutritional yeast emulsion.",
+        "de": "Knusprige Rauchpaprika-Pilze und Spaghetti in einer goldenen Kurkuma-, Cashew- & Hefeflocken-Emulsion."
+      },
+      "diet_dimension": "vegan",
+      "effort": "easy",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 520,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 520,
+        "protein_g": 16,
+        "carbs_g": 64,
+        "fat_g": 21,
+        "fiber_g": 6
+      },
+      "contains": [
+        "gluten",
+        "tree-nuts",
+        "cashews",
+        "soy"
+      ],
+      "attributes": [
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "dairy-free",
+        "lactose-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "spaghetti",
+        "mushrooms",
+        "cashew-cream",
+        "nutritional-yeast",
+        "tamari",
+        "paprika",
+        "turmeric",
+        "olive-oil",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "name": {
+            "en": "Bronze-Die Spaghetti",
+            "de": "Spaghetti (Bronzematrize)"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "mushrooms",
+          "name": {
+            "en": "Mushrooms",
+            "de": "Pilze"
+          },
+          "amount": 160,
+          "unit": "g",
+          "aisle": "produce"
+        },
+        {
+          "id": "cashew-cream",
+          "name": {
+            "en": "Cashew Cream",
+            "de": "Cashew-Sahne"
+          },
+          "amount": 100,
+          "unit": "ml",
+          "aisle": "pantry"
+        },
+        {
+          "id": "nutritional-yeast",
+          "name": {
+            "en": "Nutritional Yeast",
+            "de": "Hefeflocken"
+          },
+          "amount": 3,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "tamari",
+          "name": {
+            "en": "Gluten-Free Tamari",
+            "de": "Glutenfreies Tamari"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "paprika",
+          "name": {
+            "en": "Smoked Paprika",
+            "de": "Geräuchertes Paprikapulver"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "turmeric",
+          "name": {
+            "en": "Ground Turmeric",
+            "de": "Kurkuma"
+          },
+          "amount": 1,
+          "unit": "tsp",
+          "aisle": "spices"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Smoky Mushroom Lardons",
+            "de": "Rauchige Pilz-Lardons knusprig braten"
+          },
+          "instruction": {
+            "en": "Sear diced mushrooms in olive oil for 6 minutes until browned, then glaze with tamari and smoked paprika for chewy, bacon-crisp bites.",
+            "de": "Gewürfelte Pilze 6 Minuten in Olivenöl kräftig braten und mit Tamari sowie geräuchertem Paprikapulver knusprig glasieren."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Let the mushrooms shrink and crisp before adding tamari.",
+            "de": "Erst das Tamari zugeben, wenn die Pilze bereits schön gebräunt sind."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Toss in the Golden Cashew Emulsion",
+            "de": "In der goldenen Cashew-Emulsion schwenken"
+          },
+          "instruction": {
+            "en": "Whisk cashew cream, nutritional yeast, a pinch of turmeric, and starchy pasta water. Toss with hot spaghetti, smoky mushrooms, and lots of cracked black pepper.",
+            "de": "Cashew-Sahne, Hefeflocken, eine Prise Kurkuma und stärkehaltiges Nudelwasser verrühren. Mit heißen Spaghetti, Rauchpilzen und viel schwarzem Pfeffer vermengen."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "A tiny pinch of turmeric gives the exact golden hue of pasture-raised yolks.",
+            "de": "Eine winzige Prise Kurkuma verleiht der Sauce das warme Gold von Land-Eigelb."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "carbonara",
+          "vegan",
+          "mushroom",
+          "italian",
+          "pasta"
+        ],
+        "de": [
+          "carbonara",
+          "vegan",
+          "pilze",
+          "italienisch",
+          "pasta"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-halal",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Crispy Smoked Halal Beef & Pecorino Carbonara",
+        "de": "Halal Carbonara mit Knusprigem Räucherrind & Pecorino"
+      },
+      "subtitle": {
+        "en": "Crisp smoked beef strips rendered in olive oil with traditional egg yolk, Pecorino & cracked black pepper.",
+        "de": "Knusprig ausgelassene Räucherrind-Streifen in einer klassischen Eigelb-, Pecorino- & Pfeffer-Emulsion."
+      },
+      "diet_dimension": "halal",
+      "effort": "medium",
+      "time_minutes": 25,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 640,
+      "calorie_bucket": "≤800",
+      "macros": {
+        "calories": 640,
+        "protein_g": 36,
+        "carbs_g": 62,
+        "fat_g": 27,
+        "fiber_g": 3
+      },
+      "contains": [
+        "beef",
+        "egg",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo",
+        "gluten"
+      ],
+      "attributes": [
+        "halal",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "medium",
+        "≤30",
+        "≤800",
+        "pan-fry",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "spaghetti",
+        "smoked-beef",
+        "chicken-egg",
+        "pecorino",
+        "olive-oil",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "spaghetti",
+          "name": {
+            "en": "Bronze-Die Spaghetti",
+            "de": "Spaghetti (Bronzematrize)"
+          },
+          "amount": 220,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "smoked-beef",
+          "name": {
+            "en": "Smoked Beef Crisp",
+            "de": "Geräucherte Rinderstreifen"
+          },
+          "amount": 110,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "pecorino",
+          "name": {
+            "en": "Pecorino Romano",
+            "de": "Pecorino Romano"
+          },
+          "amount": 65,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 2,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Crisp the Smoked Beef in Olive Oil",
+            "de": "Räucherrind in Olivenöl knusprig braten"
+          },
+          "instruction": {
+            "en": "Sauté diced smoked beef in extra-virgin olive oil with cracked black pepper for 5 minutes until crisp at the edges.",
+            "de": "Gewürfeltes Räucherrind in Olivenöl mit gestoßenem schwarzem Pfeffer 5 Minuten knusprig anbraten."
+          },
+          "timer_seconds": 300,
+          "tip": {
+            "en": "Olive oil bridges the leaner smoked beef so the emulsion stays lush.",
+            "de": "Gutes Olivenöl ergänzt das magere Räucherrind für eine perfekte Emulsion."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Emulsify with Egg Yolks & Pecorino",
+            "de": "Mit Eigelb & Pecorino seidig binden"
+          },
+          "instruction": {
+            "en": "Toss hot al dente spaghetti into the warm beef pan off the heat, then fold in whisked eggs, Pecorino, and a splash of pasta water.",
+            "de": "Heiße Spaghetti abseits der Hitze in die Pfanne geben und mit verquirltem Ei, Pecorino und einem Schuss Nudelwasser cremig rühren."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Serve immediately on warm plates.",
+            "de": "Sofort auf vorgewärmten Tellern anrichten."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "carbonara",
+          "halal",
+          "smoked-beef",
+          "pasta",
+          "italian"
+        ],
+        "de": [
+          "carbonara",
+          "halal",
+          "räucherrind",
+          "pasta",
+          "italienisch"
+        ]
+      }
+    },
+    {
+      "id": "carbonara-gluten-free",
+      "dish_id": "carbonara",
+      "title": {
+        "en": "Gluten-Free Chickpea Ribbons & Smoked Beef Carbonara",
+        "de": "Glutenfreie Carbonara mit Kichererbsen-Bandnudeln"
+      },
+      "subtitle": {
+        "en": "Nutty gluten-free ribbons tossed with crisp smoked beef, pasture-raised yolks & aged Pecorino.",
+        "de": "Nussige glutenfreie Bandnudeln mit knusprigem Räucherrind, Freilandeigelb & gereiftem Pecorino."
+      },
+      "diet_dimension": "gluten-free",
+      "effort": "easy",
+      "time_minutes": 20,
+      "time_bucket": "≤30",
+      "servings": 2,
+      "calories_per_serving": 580,
+      "calorie_bucket": "≤600",
+      "macros": {
+        "calories": 580,
+        "protein_g": 38,
+        "carbs_g": 44,
+        "fat_g": 28,
+        "fiber_g": 8
+      },
+      "contains": [
+        "beef",
+        "egg",
+        "dairy",
+        "lactose",
+        "meat-dairy-combo"
+      ],
+      "attributes": [
+        "gluten-free",
+        "halal",
+        "nut-free",
+        "sugar-free",
+        "low-fodmap",
+        "easy",
+        "≤30",
+        "≤600",
+        "pan-fry",
+        "simmer",
+        "dinner"
+      ],
+      "techniques": [
+        "pan-fry",
+        "simmer"
+      ],
+      "ingredient_ids": [
+        "chickpea-pasta",
+        "smoked-beef",
+        "chicken-egg",
+        "pecorino",
+        "olive-oil",
+        "black-pepper"
+      ],
+      "ingredients": [
+        {
+          "id": "chickpea-pasta",
+          "name": {
+            "en": "Chickpea Fettuccine",
+            "de": "Kichererbsen-Fettuccine"
+          },
+          "amount": 200,
+          "unit": "g",
+          "aisle": "pantry"
+        },
+        {
+          "id": "smoked-beef",
+          "name": {
+            "en": "Smoked Beef Crisp",
+            "de": "Geräucherte Rinderstreifen"
+          },
+          "amount": 100,
+          "unit": "g",
+          "aisle": "meat_seafood"
+        },
+        {
+          "id": "chicken-egg",
+          "name": {
+            "en": "Pasture-Raised Egg",
+            "de": "Freilandei"
+          },
+          "amount": 3,
+          "unit": "pcs",
+          "aisle": "dairy"
+        },
+        {
+          "id": "pecorino",
+          "name": {
+            "en": "Pecorino Romano",
+            "de": "Pecorino Romano"
+          },
+          "amount": 60,
+          "unit": "g",
+          "aisle": "dairy"
+        },
+        {
+          "id": "olive-oil",
+          "name": {
+            "en": "Extra-Virgin Olive Oil",
+            "de": "Natives Olivenöl extra"
+          },
+          "amount": 1,
+          "unit": "tbsp",
+          "aisle": "pantry"
+        },
+        {
+          "id": "black-pepper",
+          "name": {
+            "en": "Cracked Black Pepper",
+            "de": "Grob gemahlener schwarzer Pfeffer"
+          },
+          "amount": 2,
+          "unit": "tsp",
+          "aisle": "spices"
+        }
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "title": {
+            "en": "Boil Ribbons & Crisp Smoked Beef",
+            "de": "Nudeln garen & Räucherrind braten"
+          },
+          "instruction": {
+            "en": "Boil chickpea pasta for 6 minutes while crisping smoked beef strips in olive oil with black pepper.",
+            "de": "Kichererbsen-Fettuccine 6 Minuten kochen und parallel das Räucherrind in Olivenöl mit Pfeffer knusprig braten."
+          },
+          "timer_seconds": 360,
+          "tip": {
+            "en": "Save 4 tablespoons of cooking water before draining.",
+            "de": "4 Esslöffel Kochwasser vor dem Abgießen aufbewahren."
+          }
+        },
+        {
+          "step_number": 2,
+          "title": {
+            "en": "Coat Off the Flame",
+            "de": "Abseits der Flamme cremig schwenken"
+          },
+          "instruction": {
+            "en": "Fold hot ribbons into the whisked egg and Pecorino mixture off the heat until every strand gleams.",
+            "de": "Die heißen Bandnudeln abseits der Hitze mit der Ei-Pecorino-Mischung seidig durchschwenken."
+          },
+          "timer_seconds": 120,
+          "tip": {
+            "en": "Top with an extra shower of Pecorino and black pepper.",
+            "de": "Mit extra Pecorino und frisch gemahlenem Pfeffer krönen."
+          }
+        }
+      ],
+      "tags": {
+        "en": [
+          "carbonara",
+          "gluten-free",
+          "halal",
+          "high-protein",
+          "pasta"
+        ],
+        "de": [
+          "carbonara",
+          "glutenfrei",
+          "halal",
+          "proteinreich",
+          "pasta"
+        ]
+      }
+    }
+  ]
+}
