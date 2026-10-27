@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ingredients.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ingredients"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "ingredients": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ingredient"}
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "de": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "ingredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "flags", "aisle", "children"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"$ref": "#/$defs/localizedText"},
+        "flags": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "aisle": {"type": "string", "minLength": 1},
+        "children": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/ingredient"}
+        }
+      }
+    }
+  }
+}

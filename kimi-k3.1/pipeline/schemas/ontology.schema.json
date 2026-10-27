@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ontology.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contains_flags", "avoid_flags", "attributes", "dimensions"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "tags": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/containsFlag"}
+    },
+    "contains_flags": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/containsFlag"}
+    },
+    "avoid_flags": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/avoidFlag"}
+    },
+    "attributes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/attribute"}
+    },
+    "dimensions": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/dimension"}
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "de": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "containsFlag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"$ref": "#/$defs/localizedText"}
+      }
+    },
+    "avoidFlag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "expands_to"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"$ref": "#/$defs/localizedText"},
+        "kind": {"type": "string", "minLength": 1},
+        "expands_to": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        }
+      }
+    },
+    "attribute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kind"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"$ref": "#/$defs/localizedText"},
+        "kind": {"type": "string", "minLength": 1}
+      }
+    },
+    "dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "values"],
+      "properties": {
+        "name": {"$ref": "#/$defs/localizedText"},
+        "values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "name": {"$ref": "#/$defs/localizedText"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

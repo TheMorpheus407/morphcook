@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "search-index.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "entries"],
+  "properties": {
+    "schema_version": {"type": "integer", "enum": [1]},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["recipe_id", "dish_id", "partition_id", "tokens_by_lang", "tags"],
+        "properties": {
+          "recipe_id": {"type": "string", "minLength": 1},
+          "dish_id": {"type": "string", "minLength": 1},
+          "partition_id": {"type": "string", "minLength": 1},
+          "tokens_by_lang": {
+            "type": "object",
+            "required": ["en", "de"],
+            "properties": {
+              "en": {"$ref": "#/$defs/tokens"},
+              "de": {"$ref": "#/$defs/tokens"}
+            },
+            "additionalProperties": {"$ref": "#/$defs/tokens"}
+          },
+          "tags": {
+            "type": "array",
+            "items": {"type": "string", "minLength": 1},
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "tokens": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "entries": [
+    {
+      "id": "matching-how-it-works",
+      "category": "matching",
+      "question": {
+        "en": "How does MorphCook decide which recipes I can see?",
+        "de": "Wie entscheidet MorphCook, welche Rezepte ich sehe?"
+      },
+      "answer": {
+        "en": "A recipe is visible only when none of its contains-flags or ingredients conflict with your avoidances, all your required attributes are present, and its time and calories fit your profile limits. These rules also apply after a text search, so matching is consistent across Home, Search, and dish pages.",
+        "de": "Ein Rezept ist nur sichtbar, wenn weder seine Enthält-Merkmale noch seine Zutaten mit deinen Vermeidungen kollidieren, alle geforderten Attribute vorhanden sind und Zeit sowie Kalorien zu deinen Profilgrenzen passen. Diese Regeln gelten auch nach einer Textsuche und damit einheitlich in Start, Suche und Gerichtseiten."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "diet",
+          "matching",
+          "allergy",
+          "profile",
+          "filters"
+        ],
+        "de": [
+          "ernährung",
+          "abgleich",
+          "allergie",
+          "profil",
+          "filter"
+        ]
+      },
+      "related_route": "/settings/profile"
+    },
+    {
+      "id": "matching-class-and-specific",
+      "category": "matching",
+      "question": {
+        "en": "What is the difference between avoiding a class and one ingredient?",
+        "de": "Was unterscheidet das Vermeiden einer Klasse von einer einzelnen Zutat?"
+      },
+      "answer": {
+        "en": "A class avoidance covers a whole branch, such as all dairy or all nuts, including every child ingredient in that branch. A specific avoidance targets only the item you select, such as cilantro or bell pepper. Both kinds are combined when recipes are matched.",
+        "de": "Eine Klassenvermeidung deckt einen ganzen Zweig ab, etwa alle Milchprodukte oder alle Nüsse, einschließlich jeder untergeordneten Zutat. Eine gezielte Vermeidung betrifft nur den gewählten Eintrag, etwa Koriander oder Paprika. Beide Arten werden beim Rezeptabgleich kombiniert."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "ingredient",
+          "class",
+          "nuts",
+          "dairy",
+          "avoidance"
+        ],
+        "de": [
+          "zutat",
+          "klasse",
+          "nüsse",
+          "milch",
+          "vermeidung"
+        ]
+      },
+      "related_route": "/settings/profile"
+    },
+    {
+      "id": "matching-recipe-disappeared",
+      "category": "matching",
+      "question": {
+        "en": "Why did a recipe or search result disappear?",
+        "de": "Warum ist ein Rezept oder Suchergebnis verschwunden?"
+      },
+      "answer": {
+        "en": "Usually a profile rule is excluding it: an avoided flag or ingredient, a missing required attribute, too much time, or calories outside your target. Check your active filters and time budget. On a dish page, the calorie override can also reveal versions outside the calorie target without changing other dietary rules.",
+        "de": "Meist schließt eine Profilregel es aus: ein vermiedenes Merkmal oder eine Zutat, ein fehlendes Pflichtattribut, zu viel Zeit oder Kalorien außerhalb deines Ziels. Prüfe aktive Filter und dein Zeitbudget. Auf einer Gerichteseite kann die Kalorien-Ausnahme zusätzlich Versionen außerhalb des Kalorienziels zeigen, ohne andere Ernährungsregeln zu ändern."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "missing",
+          "disappeared",
+          "search results",
+          "hidden"
+        ],
+        "de": [
+          "fehlt",
+          "verschwunden",
+          "suchergebnisse",
+          "ausgeblendet"
+        ]
+      },
+      "related_route": "/search"
+    },
+    {
+      "id": "matching-variant-availability",
+      "category": "matching",
+      "question": {
+        "en": "Why are some dimension combinations unavailable?",
+        "de": "Warum sind manche Kombinationen der Varianten nicht verfügbar?"
+      },
+      "answer": {
+        "en": "Each variant is a complete recipe with its own diet, effort, and calorie dimensions. Changing one axis finds a sibling recipe when that exact combination exists. Unreachable combinations are disabled with a note rather than silently hidden; this keeps the current recipe and the available path through its variants understandable.",
+        "de": "Jede Variante ist ein vollständiges Rezept mit eigenen Dimensionen für Ernährungsstil, Aufwand und Kalorien. Beim Ändern einer Achse wird ein passendes Schwesterrezept gesucht, sofern diese genaue Kombination existiert. Nicht erreichbare Kombinationen werden mit Hinweis deaktiviert statt still ausgeblendet; so bleiben aktuelles Rezept und erreichbare Varianten nachvollziehbar."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "variants",
+          "dimensions",
+          "disabled",
+          "combination"
+        ],
+        "de": [
+          "varianten",
+          "dimensionen",
+          "deaktiviert",
+          "kombination"
+        ]
+      },
+      "related_route": "/dish"
+    },
+    {
+      "id": "recipes-calorie-override",
+      "category": "recipes",
+      "question": {
+        "en": "How does the per-dish calorie override work?",
+        "de": "Wie funktioniert die Kalorien-Ausnahme für ein einzelnes Gericht?"
+      },
+      "answer": {
+        "en": "Your profile calorie target is normally a hard filter. Turn on the override on one dish page to show that dish's variants outside the target; it does not change your saved profile or other dishes. Avoidances, required attributes, and the time limit still apply.",
+        "de": "Dein Kalorienziel im Profil ist normalerweise eine feste Grenze. Aktiviere die Ausnahme auf einer Gerichteseite, um für genau dieses Gericht auch Varianten außerhalb des Ziels zu sehen; dein gespeichertes Profil und andere Gerichte ändern sich nicht. Vermeidungen, Pflichtattribute und das Zeitlimit gelten weiterhin."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "calories",
+          "target",
+          "override",
+          "show more"
+        ],
+        "de": [
+          "kalorien",
+          "ziel",
+          "ausnahme",
+          "mehr anzeigen"
+        ]
+      },
+      "related_route": "/dish"
+    },
+    {
+      "id": "cookbook-specific-variant",
+      "category": "cookbook",
+      "question": {
+        "en": "Do I save a dish or a particular variant?",
+        "de": "Speichere ich ein Gericht oder eine bestimmte Variante?"
+      },
+      "answer": {
+        "en": "You save the exact recipe variant you are viewing, identified by its recipe ID. If you switch from Classic to Vegan or Light and want both, save each variant separately. This keeps the ingredients, method, and nutrition in your cookbook exactly as you chose them.",
+        "de": "Du speicherst genau die geöffnete Rezeptvariante, erkennbar an ihrer Rezept-ID. Wenn du von Klassisch zu Vegan oder Leicht wechselst und beide behalten möchtest, speichere jede Variante separat. So bleiben Zutaten, Zubereitung und Nährwerte im Kochbuch genau wie von dir gewählt."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "save",
+          "cookbook",
+          "variant",
+          "favorite"
+        ],
+        "de": [
+          "speichern",
+          "kochbuch",
+          "variante",
+          "favorit"
+        ]
+      },
+      "related_route": "/cookbook"
+    },
+    {
+      "id": "cooking-step-timers",
+      "category": "cooking",
+      "question": {
+        "en": "Can I pause a step timer and continue later?",
+        "de": "Kann ich einen Schritt-Timer pausieren und später fortsetzen?"
+      },
+      "answer": {
+        "en": "Yes. Start only the timers attached to steps that need them, then pause or resume from Cook mode. Cook-mode progress is persisted on the device, so returning to the recipe restores the current step and timer state. Previous and Next never require you to complete a timer first.",
+        "de": "Ja. Starte nur die Timer der Schritte, die einen besitzen, und pausiere oder setze sie im Kochmodus fort. Der Fortschritt wird auf dem Gerät gespeichert; beim Zurückkehren werden aktueller Schritt und Timerzustand wiederhergestellt. Zurück und Weiter funktionieren auch ohne abgelaufenen Timer."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "timer",
+          "pause",
+          "resume",
+          "progress"
+        ],
+        "de": [
+          "timer",
+          "pause",
+          "fortsetzen",
+          "fortschritt"
+        ]
+      },
+      "related_route": "/cook"
+    },
+    {
+      "id": "cooking-quick-next",
+      "category": "cooking",
+      "question": {
+        "en": "What does quick-next tap do in Cook mode?",
+        "de": "Was macht Tippen für schnelles Weiter im Kochmodus?"
+      },
+      "answer": {
+        "en": "When the opt-in setting is enabled, one tap on the step content advances to the next step with haptic feedback. A 300 ms debounce prevents accidental double advances. The gesture respects the reduce-motion preference, and ordinary Previous and Next controls remain available.",
+        "de": "Wenn du die Option aktivierst, wechselt ein einzelnes Tippen auf den Schrittinhalt mit haptischer Rückmeldung zum nächsten Schritt. Eine Sperrzeit von 300 ms verhindert versehentliches doppeltes Weiterschalten. Die Geste berücksichtigt die Einstellung für reduzierte Bewegung; normale Zurück- und Weiter-Steuerungen bleiben verfügbar."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "quick next",
+          "one handed",
+          "tap",
+          "haptic"
+        ],
+        "de": [
+          "schnell weiter",
+          "einhändig",
+          "tippen",
+          "haptisch"
+        ]
+      },
+      "related_route": "/settings/cook-mode"
+    },
+    {
+      "id": "cooking-visual-alerts",
+      "category": "cooking",
+      "question": {
+        "en": "How do visual timer alerts and reduced motion work together?",
+        "de": "Wie wirken visuelle Timer-Hinweise und reduzierte Bewegung zusammen?"
+      },
+      "answer": {
+        "en": "When visual alerts are enabled, a finished timer flashes the Cook-mode screen in coral and teal, providing a non-audio cue for deaf and hard-of-hearing cooks. The reduce-motion setting limits the animation treatment; timer completion still has a visible state. Both preferences can be changed in settings.",
+        "de": "Wenn visuelle Hinweise aktiviert sind, blinkt der Kochmodus bei Timerende in Koralle und Petrol und gibt so einen hörunabhängigen Hinweis für taube und schwerhörige Personen. Reduzierte Bewegung begrenzt die Animation; das Timerende bleibt dennoch sichtbar. Beide Einstellungen lassen sich in den Einstellungen ändern."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "visual alert",
+          "flash",
+          "deaf",
+          "reduce motion",
+          "accessibility"
+        ],
+        "de": [
+          "visueller hinweis",
+          "blinken",
+          "taub",
+          "reduzierte bewegung",
+          "barrierefreiheit"
+        ]
+      },
+      "related_route": "/settings/accessibility"
+    },
+    {
+      "id": "planning-assign-and-drag",
+      "category": "planning",
+      "question": {
+        "en": "How do I assign and rearrange meals in the weekly planner?",
+        "de": "Wie plane und verschiebe ich Mahlzeiten im Wochenplaner?"
+      },
+      "answer": {
+        "en": "Tap a breakfast, lunch, or dinner slot to assign a recipe from your cookbook or search. To rearrange the week, drag a filled slot to another day or meal slot. Saving the plan is local to the device; there is no automatic meal planner in this version.",
+        "de": "Tippe auf einen Platz für Frühstück, Mittag- oder Abendessen, um ein Rezept aus Kochbuch oder Suche zuzuweisen. Ziehe einen belegten Platz auf einen anderen Tag oder eine andere Mahlzeit, um die Woche umzusortieren. Der Plan wird lokal gespeichert; eine automatische Wochenplanung gibt es in dieser Version nicht."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "planner",
+          "week",
+          "drag",
+          "drop",
+          "slots"
+        ],
+        "de": [
+          "planer",
+          "woche",
+          "ziehen",
+          "ablegen",
+          "plätze"
+        ]
+      },
+      "related_route": "/planner"
+    },
+    {
+      "id": "planning-shopping-export",
+      "category": "planning",
+      "question": {
+        "en": "How do I turn my meal plan into a shopping list?",
+        "de": "Wie wird aus meinem Wochenplan eine Einkaufsliste?"
+      },
+      "answer": {
+        "en": "Use the planner's shopping-list export to add the ingredients from the planned recipe variants in one step. Quantities follow each recipe's current serving scaling. The export does not auto-plan meals or calculate weekly nutrition totals; you can review and edit the resulting list before shopping.",
+        "de": "Nutze den Einkaufslisten-Export des Planers, um die Zutaten der geplanten Rezeptvarianten in einem Schritt hinzuzufügen. Die Mengen folgen der aktuellen Portionsskalierung jedes Rezepts. Der Export plant keine Mahlzeiten automatisch und berechnet keine Wochen-Nährwerte; du kannst die Liste vor dem Einkauf prüfen und bearbeiten."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "meal plan",
+          "export",
+          "shopping list",
+          "servings"
+        ],
+        "de": [
+          "wochenplan",
+          "export",
+          "einkaufsliste",
+          "portionen"
+        ]
+      },
+      "related_route": "/planner"
+    },
+    {
+      "id": "shopping-unit-conversion",
+      "category": "shopping",
+      "question": {
+        "en": "How does the shopping list combine quantities and units?",
+        "de": "Wie fasst die Einkaufsliste Mengen und Einheiten zusammen?"
+      },
+      "answer": {
+        "en": "Identical ingredients are deduplicated and grouped by aisle. Compatible measures are converted before aggregation, such as millilitres and tablespoons for liquid ingredients; three cloves plus two cloves becomes five cloves. Incompatible units such as grams and pieces remain separate rather than inventing a weight conversion.",
+        "de": "Gleiche Zutaten werden zusammengeführt und nach Ladenbereich gruppiert. Kompatible Maße werden vor dem Zusammenrechnen umgewandelt, etwa Milliliter und Esslöffel bei flüssigen Zutaten; drei Zehen plus zwei Zehen ergeben fünf Zehen. Inkompatible Einheiten wie Gramm und Stück bleiben getrennt, statt eine Gewichtsumrechnung zu erfinden."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "shopping",
+          "units",
+          "aggregation",
+          "convert",
+          "aisle"
+        ],
+        "de": [
+          "einkauf",
+          "einheiten",
+          "zusammenfassen",
+          "umrechnen",
+          "regal"
+        ]
+      },
+      "related_route": "/shopping-list"
+    },
+    {
+      "id": "shopping-insights-meaning",
+      "category": "shopping",
+      "question": {
+        "en": "What do Shopping Insights tell me?",
+        "de": "Was zeigen mir die Einkaufs-Einblicke?"
+      },
+      "answer": {
+        "en": "The variety score counts unique ingredients you have added, the top-ingredients view shows frequency counts, and the seasonal view groups additions by month. These are insights into your shopping patterns, not dietary scores or nutrition advice. Everything is calculated locally from your own list history.",
+        "de": "Der Vielfaltswert zählt einzigartige hinzugefügte Zutaten, die Top-Zutaten zeigen Häufigkeiten und die saisonale Ansicht gruppiert Hinzufügungen nach Monat. Es sind Einblicke in deine Einkaufsmuster, keine Ernährungsbewertung oder -beratung. Alles wird lokal aus deinem eigenen Listenverlauf berechnet."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "insights",
+          "variety",
+          "seasonal",
+          "top ingredients"
+        ],
+        "de": [
+          "einblicke",
+          "vielfalt",
+          "saisonal",
+          "top zutaten"
+        ]
+      },
+      "related_route": "/settings/shopping-insights"
+    },
+    {
+      "id": "backup-json-and-gzip",
+      "category": "backup",
+      "question": {
+        "en": "Which backup file should I keep: JSON or GZip?",
+        "de": "Welche Sicherungsdatei sollte ich behalten: JSON oder GZip?"
+      },
+      "answer": {
+        "en": "Export offers both side by side. The human-readable JSON is useful for inspection, while the .json.gz file typically takes 70–90% less space and is convenient to share or store. Import auto-detects either format. Important: the GZip file is always unencrypted, even when you set a backup password; anyone who obtains it can read its contents.",
+        "de": "Der Export erstellt beide Dateien nebeneinander. Das lesbare JSON eignet sich zur Kontrolle, während die .json.gz-Datei typischerweise 70–90 % weniger Platz braucht und sich leicht teilen oder aufbewahren lässt. Der Import erkennt beide Formate automatisch. Wichtig: Die GZip-Datei ist immer unverschlüsselt, auch wenn du ein Sicherungskennwort setzt; jeder Besitzer der Datei kann ihren Inhalt lesen."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "backup",
+          "gzip",
+          "json",
+          "compressed",
+          "unencrypted"
+        ],
+        "de": [
+          "sicherung",
+          "gzip",
+          "json",
+          "komprimiert",
+          "unverschlüsselt"
+        ]
+      },
+      "related_route": "/settings/backup"
+    },
+    {
+      "id": "backup-password-protection",
+      "category": "backup",
+      "question": {
+        "en": "What does a backup password protect, and what if I forget it?",
+        "de": "Was schützt ein Sicherungskennwort, und was passiert bei Verlust?"
+      },
+      "answer": {
+        "en": "With a password, the JSON backup is encrypted using AES-256-GCM with a key derived through PBKDF2; each encryption uses a fresh salt and IV. The accompanying GZip remains unencrypted for compatibility. Keep the password somewhere safe: a wrong or forgotten password cannot be bypassed. Do not share the GZip if you need its contents protected.",
+        "de": "Mit Kennwort wird die JSON-Sicherung per AES-256-GCM verschlüsselt, wobei der Schlüssel über PBKDF2 abgeleitet wird; jede Verschlüsselung verwendet frisches Salt und IV. Die zugehörige GZip bleibt aus Kompatibilitätsgründen unverschlüsselt. Bewahre das Kennwort sicher auf: Ein falsches oder vergessenes Kennwort kann nicht umgangen werden. Teile die GZip nicht, wenn ihr Inhalt geschützt bleiben soll."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "password",
+          "encryption",
+          "aes",
+          "forgot",
+          "salt"
+        ],
+        "de": [
+          "kennwort",
+          "verschlüsselung",
+          "aes",
+          "vergessen",
+          "salt"
+        ]
+      },
+      "related_route": "/settings/backup"
+    },
+    {
+      "id": "backup-merge-or-replace",
+      "category": "backup",
+      "question": {
+        "en": "What happens to my current data when I restore a backup?",
+        "de": "Was passiert beim Wiederherstellen mit meinen aktuellen Daten?"
+      },
+      "answer": {
+        "en": "After validating the file and schema version, Restore asks whether to merge with or replace your current local data. Choose merge to retain existing entries alongside imported ones, or replace to make the imported backup the new local state. Restoring never modifies the bundled recipe corpus. Review your choice before confirming because replacement changes the current library and plan.",
+        "de": "Nach Prüfung von Datei und Schemaversion fragt die Wiederherstellung, ob aktuelle lokale Daten zusammengeführt oder ersetzt werden sollen. Zusammenführen behält vorhandene Einträge neben importierten; Ersetzen macht die importierte Sicherung zum neuen lokalen Stand. Die mitgelieferten Rezepte werden nie verändert. Prüfe die Auswahl vor dem Bestätigen, da Ersetzen aktuelle Bibliothek und Plan ändert."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "restore",
+          "merge",
+          "replace",
+          "local data"
+        ],
+        "de": [
+          "wiederherstellen",
+          "zusammenführen",
+          "ersetzen",
+          "lokale daten"
+        ]
+      },
+      "related_route": "/settings/backup"
+    },
+    {
+      "id": "cookbook-offline-no-account",
+      "category": "cookbook",
+      "question": {
+        "en": "Do I need an account or internet connection?",
+        "de": "Brauche ich ein Konto oder eine Internetverbindung?"
+      },
+      "answer": {
+        "en": "No. MorphCook works offline and has no account, cloud sync, telemetry, or live AI. The launch recipe corpus and help content are bundled with the app, and your profile and cookbook stay on the device. Use file backups if you want to move data or protect it against device loss; content updates arrive with app-store releases.",
+        "de": "Nein. MorphCook funktioniert offline und hat kein Konto, keine Cloud-Synchronisation, keine Telemetrie und keine Live-KI. Rezepte und Hilfe sind in der App enthalten; Profil und Kochbuch bleiben auf dem Gerät. Nutze Dateisicherungen zum Übertragen oder als Schutz bei Geräteverlust. Inhaltsaktualisierungen kommen mit App-Store-Versionen."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "offline",
+          "account",
+          "cloud",
+          "privacy",
+          "internet"
+        ],
+        "de": [
+          "offline",
+          "konto",
+          "cloud",
+          "datenschutz",
+          "internet"
+        ]
+      },
+      "related_route": "/settings"
+    },
+    {
+      "id": "troubleshooting-backup-import",
+      "category": "troubleshooting",
+      "question": {
+        "en": "Why won't my backup import?",
+        "de": "Warum lässt sich meine Sicherung nicht importieren?"
+      },
+      "answer": {
+        "en": "Confirm that the file is a MorphCook .json, encrypted backup, or .json.gz export rather than a renamed document. Encrypted files require the correct password; wrong-password, corrupted-data, and invalid-format messages need different fixes. Also check that the backup's schema version is supported. If GZip detection fails, use the original file instead of one edited by another app.",
+        "de": "Prüfe, ob die Datei wirklich eine MorphCook-.json, eine verschlüsselte Sicherung oder ein .json.gz-Export ist und kein umbenanntes Dokument. Verschlüsselte Dateien brauchen das richtige Kennwort; falsches Kennwort, beschädigte Daten und ungültiges Format erfordern unterschiedliche Lösungen. Prüfe außerdem, ob die Schemaversion unterstützt wird. Wenn die GZip-Erkennung scheitert, verwende die Originaldatei statt einer von einer anderen App bearbeiteten Kopie."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "import",
+          "corrupt",
+          "wrong password",
+          "invalid format",
+          "gzip"
+        ],
+        "de": [
+          "import",
+          "beschädigt",
+          "falsches kennwort",
+          "ungültiges format",
+          "gzip"
+        ]
+      },
+      "related_route": "/settings/backup"
+    },
+    {
+      "id": "troubleshooting-timer",
+      "category": "troubleshooting",
+      "question": {
+        "en": "A timer seems stuck or finished without a clear alert. What should I check?",
+        "de": "Ein Timer wirkt blockiert oder endete ohne deutlichen Hinweis. Was prüfen?"
+      },
+      "answer": {
+        "en": "Return to Cook mode and check whether the timer is paused, then use Resume or restart that step's timer. Enable visual alerts if you need a screen cue instead of relying on sound or haptics. If motion is reduced, look for the persistent completed state rather than expecting a large animation. Saved progress lets you leave and reopen the recipe without starting the whole method over.",
+        "de": "Kehre zum Kochmodus zurück und prüfe, ob der Timer pausiert ist; setze ihn fort oder starte den Timer dieses Schritts neu. Aktiviere visuelle Hinweise, wenn du einen Bildschirmhinweis statt Ton oder Haptik brauchst. Bei reduzierter Bewegung achte auf den dauerhaften Abgeschlossen-Zustand statt auf eine große Animation. Der gespeicherte Fortschritt erlaubt Verlassen und erneutes Öffnen, ohne die ganze Zubereitung von vorn zu beginnen."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "timer stuck",
+          "no alert",
+          "paused",
+          "notification"
+        ],
+        "de": [
+          "timer hängt",
+          "kein hinweis",
+          "pausiert",
+          "benachrichtigung"
+        ]
+      },
+      "related_route": "/cook"
+    },
+    {
+      "id": "troubleshooting-search",
+      "category": "troubleshooting",
+      "question": {
+        "en": "Why does search return nothing for a dish I expect to find?",
+        "de": "Warum findet die Suche ein erwartetes Gericht nicht?"
+      },
+      "answer": {
+        "en": "Search covers recipe titles, tags, and ingredient names in the selected language, then applies your profile filters. Try a shorter term, switch language for a multilingual ingredient name, or clear tag filters. Also review calorie and time limits: a matching title can still be filtered out. Zero-result queries may be stored locally as optional content requests and included only if you export them.",
+        "de": "Die Suche durchsucht Rezepttitel, Tags und Zutatennamen in der gewählten Sprache und wendet danach deine Profilfilter an. Versuche einen kürzeren Begriff, wechsle bei mehrsprachigen Zutatennamen die Sprache oder entferne Tag-Filter. Prüfe auch Kalorien- und Zeitgrenzen: Ein passender Titel kann trotzdem herausgefiltert werden. Ergebnislose Suchanfragen können lokal als optionale Inhaltswünsche gespeichert und nur von dir exportiert werden."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "search",
+          "no results",
+          "language",
+          "filters",
+          "content request"
+        ],
+        "de": [
+          "suche",
+          "keine ergebnisse",
+          "sprache",
+          "filter",
+          "inhaltswunsch"
+        ]
+      },
+      "related_route": "/search"
+    },
+    {
+      "id": "recipes-serving-scaling",
+      "category": "recipes",
+      "question": {
+        "en": "What changes when I scale the serving count?",
+        "de": "Was ändert sich beim Anpassen der Portionszahl?"
+      },
+      "answer": {
+        "en": "Cook mode scales ingredient quantities from the recipe's base servings so you can read the adjusted amounts while cooking. Cooking times are guidance rather than an automatic mathematical rescale: check browning, texture, and safe doneness, especially for baked goods and larger pans. The displayed base nutrition remains per serving of the original recipe.",
+        "de": "Der Kochmodus skaliert die Zutatenmengen anhand der Basisportionen, damit du die angepassten Mengen beim Kochen ablesen kannst. Garzeiten sind Richtwerte und werden nicht automatisch mathematisch skaliert: Achte auf Bräunung, Textur und sichere Garstufe, besonders bei Gebäck und größeren Formen. Die angezeigten Basis-Nährwerte bleiben pro Portion des Originalrezepts."
+      },
+      "keywords_by_lang": {
+        "en": [
+          "servings",
+          "scale",
+          "quantities",
+          "nutrition"
+        ],
+        "de": [
+          "portionen",
+          "skalieren",
+          "mengen",
+          "nährwerte"
+        ]
+      },
+      "related_route": "/cook"
+    }
+  ]
+}

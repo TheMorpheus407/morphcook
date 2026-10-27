@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recipes.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "recipes"],
+  "properties": {
+    "schema_version": {"type": "integer", "enum": [1]},
+    "recipes": {
+      "type": "array",
+      "items": {"$ref": "recipe.schema.json"}
+    }
+  }
+}

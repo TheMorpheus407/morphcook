@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dishes.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dishes"],
+  "properties": {
+    "schema_version": {"type": "integer", "enum": [1]},
+    "dishes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/dish"}
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "de"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "de": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "dish": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "canonical_name",
+        "hero_text",
+        "cap_caption",
+        "stripe_color",
+        "variant_ids",
+        "partition_id",
+        "secondary_partitions",
+        "cuisine_tags",
+        "frequency_tier",
+        "tags"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "canonical_name": {"$ref": "#/$defs/localizedText"},
+        "hero_text": {"$ref": "#/$defs/localizedText"},
+        "cap_caption": {"$ref": "#/$defs/localizedText"},
+        "stripe_color": {"type": "string", "minLength": 1},
+        "variant_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "partition_id": {"type": "string", "minLength": 1},
+        "secondary_partitions": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "cuisine_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "frequency_tier": {"type": "string", "minLength": 1},
+        "tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      }
+    }
+  }
+}

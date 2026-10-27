@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "launch_partitions": [
+    "core"
+  ],
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "recipe_count": 50,
+      "strategy": "launch"
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "recipe_count": 10,
+      "strategy": "on-demand"
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "recipe_count": 15,
+      "strategy": "discovery"
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "recipe_count": 15,
+      "strategy": "discovery"
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "recipe_count": 15,
+      "strategy": "discovery"
+    }
+  ],
+  "search_index": "search-index.json"
+}

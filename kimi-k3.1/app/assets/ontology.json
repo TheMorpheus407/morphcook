@@ -1,0 +1,1026 @@
+{
+  "schema_version": 1,
+  "contains_flags": [
+    {
+      "id": "pork",
+      "name": {
+        "en": "Pork",
+        "de": "Schweinefleisch"
+      }
+    },
+    {
+      "id": "beef",
+      "name": {
+        "en": "Beef",
+        "de": "Rindfleisch"
+      }
+    },
+    {
+      "id": "lamb",
+      "name": {
+        "en": "Lamb",
+        "de": "Lammfleisch"
+      }
+    },
+    {
+      "id": "poultry",
+      "name": {
+        "en": "Poultry",
+        "de": "Geflügel"
+      }
+    },
+    {
+      "id": "fish",
+      "name": {
+        "en": "Fish",
+        "de": "Fisch"
+      }
+    },
+    {
+      "id": "shellfish",
+      "name": {
+        "en": "Shellfish",
+        "de": "Krebstiere"
+      }
+    },
+    {
+      "id": "molluscs",
+      "name": {
+        "en": "Molluscs",
+        "de": "Weichtiere"
+      }
+    },
+    {
+      "id": "egg",
+      "name": {
+        "en": "Egg",
+        "de": "Ei"
+      }
+    },
+    {
+      "id": "dairy",
+      "name": {
+        "en": "Dairy",
+        "de": "Milchprodukte"
+      }
+    },
+    {
+      "id": "lactose",
+      "name": {
+        "en": "Lactose",
+        "de": "Laktose"
+      }
+    },
+    {
+      "id": "gluten",
+      "name": {
+        "en": "Gluten",
+        "de": "Gluten"
+      }
+    },
+    {
+      "id": "soy",
+      "name": {
+        "en": "Soy",
+        "de": "Soja"
+      }
+    },
+    {
+      "id": "nuts",
+      "name": {
+        "en": "Nuts and peanuts",
+        "de": "Nüsse und Erdnüsse"
+      }
+    },
+    {
+      "id": "peanuts",
+      "name": {
+        "en": "Peanuts",
+        "de": "Erdnüsse"
+      }
+    },
+    {
+      "id": "tree-nuts",
+      "name": {
+        "en": "Tree nuts",
+        "de": "Baumnüsse"
+      }
+    },
+    {
+      "id": "almonds",
+      "name": {
+        "en": "Almonds",
+        "de": "Mandeln"
+      }
+    },
+    {
+      "id": "walnuts",
+      "name": {
+        "en": "Walnuts",
+        "de": "Walnüsse"
+      }
+    },
+    {
+      "id": "pistachios",
+      "name": {
+        "en": "Pistachios",
+        "de": "Pistazien"
+      }
+    },
+    {
+      "id": "cashews",
+      "name": {
+        "en": "Cashews",
+        "de": "Cashewkerne"
+      }
+    },
+    {
+      "id": "sesame",
+      "name": {
+        "en": "Sesame",
+        "de": "Sesam"
+      }
+    },
+    {
+      "id": "mustard",
+      "name": {
+        "en": "Mustard",
+        "de": "Senf"
+      }
+    },
+    {
+      "id": "celery",
+      "name": {
+        "en": "Celery",
+        "de": "Sellerie"
+      }
+    },
+    {
+      "id": "lupin",
+      "name": {
+        "en": "Lupin",
+        "de": "Lupine"
+      }
+    },
+    {
+      "id": "sulphites",
+      "name": {
+        "en": "Sulphites",
+        "de": "Sulfite"
+      }
+    },
+    {
+      "id": "alcohol",
+      "name": {
+        "en": "Alcohol",
+        "de": "Alkohol"
+      }
+    },
+    {
+      "id": "caffeine",
+      "name": {
+        "en": "Caffeine",
+        "de": "Koffein"
+      }
+    },
+    {
+      "id": "added-sugar",
+      "name": {
+        "en": "Added sugar",
+        "de": "Zugesetzter Zucker"
+      }
+    },
+    {
+      "id": "high-fodmap",
+      "name": {
+        "en": "High-FODMAP ingredients",
+        "de": "FODMAP-reiche Zutaten"
+      }
+    },
+    {
+      "id": "honey",
+      "name": {
+        "en": "Honey",
+        "de": "Honig"
+      }
+    },
+    {
+      "id": "gelatin",
+      "name": {
+        "en": "Gelatin",
+        "de": "Gelatine"
+      }
+    },
+    {
+      "id": "gelatin-non-halal",
+      "name": {
+        "en": "Non-halal gelatin",
+        "de": "Nicht halal-kompatible Gelatine"
+      }
+    },
+    {
+      "id": "gelatin-non-kosher",
+      "name": {
+        "en": "Non-kosher gelatin",
+        "de": "Nicht koscher-kompatible Gelatine"
+      }
+    },
+    {
+      "id": "meat-dairy-combo",
+      "name": {
+        "en": "Meat and dairy together",
+        "de": "Fleisch und Milchprodukte zusammen"
+      }
+    }
+  ],
+  "avoid_flags": [
+    {
+      "id": "vegan",
+      "name": {
+        "en": "Vegan",
+        "de": "Vegan"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "fish",
+        "shellfish",
+        "molluscs",
+        "egg",
+        "dairy",
+        "lactose",
+        "honey",
+        "gelatin",
+        "gelatin-non-halal",
+        "gelatin-non-kosher",
+        "meat-dairy-combo"
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "name": {
+        "en": "Vegetarian",
+        "de": "Vegetarisch"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "fish",
+        "shellfish",
+        "molluscs",
+        "gelatin",
+        "gelatin-non-halal",
+        "gelatin-non-kosher"
+      ]
+    },
+    {
+      "id": "pescatarian",
+      "name": {
+        "en": "Pescatarian",
+        "de": "Pescetarisch"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "pork",
+        "beef",
+        "lamb",
+        "poultry",
+        "gelatin-non-halal"
+      ]
+    },
+    {
+      "id": "halal",
+      "name": {
+        "en": "Halal-compatible ingredients",
+        "de": "Halal-kompatible Zutaten"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "pork",
+        "alcohol",
+        "gelatin-non-halal"
+      ]
+    },
+    {
+      "id": "kosher",
+      "name": {
+        "en": "Kosher-compatible ingredients",
+        "de": "Koscher-kompatible Zutaten"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "pork",
+        "shellfish",
+        "meat-dairy-combo",
+        "gelatin-non-kosher"
+      ]
+    },
+    {
+      "id": "low-fodmap",
+      "name": {
+        "en": "Low FODMAP",
+        "de": "FODMAP-arm"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "high-fodmap"
+      ]
+    },
+    {
+      "id": "sugar-free",
+      "name": {
+        "en": "No added sugar",
+        "de": "Ohne zugesetzten Zucker"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "added-sugar"
+      ]
+    },
+    {
+      "id": "lactose-free",
+      "name": {
+        "en": "Lactose-free",
+        "de": "Laktosefrei"
+      },
+      "kind": "compound",
+      "expands_to": [
+        "lactose"
+      ]
+    },
+    {
+      "id": "gluten-free",
+      "name": {
+        "en": "Gluten-free",
+        "de": "Glutenfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "dairy-free",
+      "name": {
+        "en": "Dairy-free",
+        "de": "Ohne Milchprodukte"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "dairy",
+        "lactose"
+      ]
+    },
+    {
+      "id": "nut-free",
+      "name": {
+        "en": "Nut- and peanut-free",
+        "de": "Ohne Nüsse und Erdnüsse"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "nuts",
+        "tree-nuts",
+        "peanuts",
+        "almonds",
+        "walnuts",
+        "pistachios",
+        "cashews"
+      ]
+    },
+    {
+      "id": "peanut-free",
+      "name": {
+        "en": "Peanut-free",
+        "de": "Erdnussfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "peanuts"
+      ]
+    },
+    {
+      "id": "tree-nut-free",
+      "name": {
+        "en": "Tree-nut-free",
+        "de": "Ohne Baumnüsse"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "tree-nuts",
+        "almonds",
+        "walnuts",
+        "pistachios",
+        "cashews"
+      ]
+    },
+    {
+      "id": "soy-free",
+      "name": {
+        "en": "Soy-free",
+        "de": "Sojafrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "soy"
+      ]
+    },
+    {
+      "id": "egg-free",
+      "name": {
+        "en": "Egg-free",
+        "de": "Eifrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "egg"
+      ]
+    },
+    {
+      "id": "fish-free",
+      "name": {
+        "en": "Fish-free",
+        "de": "Fischfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "fish"
+      ]
+    },
+    {
+      "id": "shellfish-free",
+      "name": {
+        "en": "Shellfish- and mollusc-free",
+        "de": "Ohne Krebs- und Weichtiere"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "shellfish",
+        "molluscs"
+      ]
+    },
+    {
+      "id": "sesame-free",
+      "name": {
+        "en": "Sesame-free",
+        "de": "Sesamfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "sesame"
+      ]
+    },
+    {
+      "id": "mustard-free",
+      "name": {
+        "en": "Mustard-free",
+        "de": "Senffrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "mustard"
+      ]
+    },
+    {
+      "id": "celery-free",
+      "name": {
+        "en": "Celery-free",
+        "de": "Selleriefrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "celery"
+      ]
+    },
+    {
+      "id": "lupin-free",
+      "name": {
+        "en": "Lupin-free",
+        "de": "Lupinenfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "lupin"
+      ]
+    },
+    {
+      "id": "sulphite-free",
+      "name": {
+        "en": "Sulphite-free",
+        "de": "Sulfitfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "sulphites"
+      ]
+    },
+    {
+      "id": "alcohol-free",
+      "name": {
+        "en": "Alcohol-free",
+        "de": "Alkoholfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "alcohol"
+      ]
+    },
+    {
+      "id": "caffeine-free",
+      "name": {
+        "en": "Caffeine-free",
+        "de": "Koffeinfrei"
+      },
+      "kind": "simple",
+      "expands_to": [
+        "caffeine"
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "id": "easy",
+      "name": {
+        "en": "Easy",
+        "de": "Einfach"
+      },
+      "kind": "effort"
+    },
+    {
+      "id": "medium",
+      "name": {
+        "en": "Medium",
+        "de": "Mittel"
+      },
+      "kind": "effort"
+    },
+    {
+      "id": "hard",
+      "name": {
+        "en": "Hard",
+        "de": "Anspruchsvoll"
+      },
+      "kind": "effort"
+    },
+    {
+      "id": "time-15",
+      "name": {
+        "en": "Up to 15 minutes",
+        "de": "Bis 15 Minuten"
+      },
+      "kind": "time_bucket"
+    },
+    {
+      "id": "time-30",
+      "name": {
+        "en": "Up to 30 minutes",
+        "de": "Bis 30 Minuten"
+      },
+      "kind": "time_bucket"
+    },
+    {
+      "id": "time-60",
+      "name": {
+        "en": "Up to 60 minutes",
+        "de": "Bis 60 Minuten"
+      },
+      "kind": "time_bucket"
+    },
+    {
+      "id": "time-over-60",
+      "name": {
+        "en": "Over 60 minutes",
+        "de": "Über 60 Minuten"
+      },
+      "kind": "time_bucket"
+    },
+    {
+      "id": "cal-400",
+      "name": {
+        "en": "Up to 400 kcal",
+        "de": "Bis 400 kcal"
+      },
+      "kind": "calorie_bucket"
+    },
+    {
+      "id": "cal-600",
+      "name": {
+        "en": "Up to 600 kcal",
+        "de": "Bis 600 kcal"
+      },
+      "kind": "calorie_bucket"
+    },
+    {
+      "id": "cal-800",
+      "name": {
+        "en": "Up to 800 kcal",
+        "de": "Bis 800 kcal"
+      },
+      "kind": "calorie_bucket"
+    },
+    {
+      "id": "cal-over-800",
+      "name": {
+        "en": "Over 800 kcal",
+        "de": "Über 800 kcal"
+      },
+      "kind": "calorie_bucket"
+    },
+    {
+      "id": "bake",
+      "name": {
+        "en": "Bake",
+        "de": "Backen"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "sauté",
+      "name": {
+        "en": "Sauté",
+        "de": "Anbraten"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "simmer",
+      "name": {
+        "en": "Simmer",
+        "de": "Köcheln"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "raw",
+      "name": {
+        "en": "Raw",
+        "de": "Roh"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "grill",
+      "name": {
+        "en": "Grill",
+        "de": "Grillen"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "fry",
+      "name": {
+        "en": "Fry",
+        "de": "Frittieren"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "steam",
+      "name": {
+        "en": "Steam",
+        "de": "Dämpfen"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "roast",
+      "name": {
+        "en": "Roast",
+        "de": "Rösten"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "broil",
+      "name": {
+        "en": "Broil",
+        "de": "Überbacken"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "pan-fry",
+      "name": {
+        "en": "Pan-fry",
+        "de": "Pfannenbraten"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "deep-fry",
+      "name": {
+        "en": "Deep-fry",
+        "de": "Frittieren"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "stir-fry",
+      "name": {
+        "en": "Stir-fry",
+        "de": "Wokbraten"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "poach",
+      "name": {
+        "en": "Poach",
+        "de": "Pochieren"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "blanch",
+      "name": {
+        "en": "Blanch",
+        "de": "Blanchieren"
+      },
+      "kind": "technique"
+    },
+    {
+      "id": "breakfast",
+      "name": {
+        "en": "Breakfast",
+        "de": "Frühstück"
+      },
+      "kind": "meal"
+    },
+    {
+      "id": "lunch",
+      "name": {
+        "en": "Lunch",
+        "de": "Mittagessen"
+      },
+      "kind": "meal"
+    },
+    {
+      "id": "dinner",
+      "name": {
+        "en": "Dinner",
+        "de": "Abendessen"
+      },
+      "kind": "meal"
+    },
+    {
+      "id": "halal",
+      "name": {
+        "en": "Halal-compatible ingredients",
+        "de": "Halal-kompatible Zutaten"
+      },
+      "kind": "compatibility"
+    },
+    {
+      "id": "kosher",
+      "name": {
+        "en": "Kosher-compatible ingredients",
+        "de": "Koscher-kompatible Zutaten"
+      },
+      "kind": "compatibility"
+    }
+  ],
+  "dimensions": {
+    "diet": {
+      "name": {
+        "en": "Diet",
+        "de": "Ernährungsstil"
+      },
+      "values": [
+        {
+          "id": "classic",
+          "name": {
+            "en": "Classic",
+            "de": "Klassisch"
+          }
+        },
+        {
+          "id": "vegan",
+          "name": {
+            "en": "Vegan",
+            "de": "Vegan"
+          }
+        },
+        {
+          "id": "keto",
+          "name": {
+            "en": "Keto",
+            "de": "Keto"
+          }
+        }
+      ]
+    },
+    "effort": {
+      "name": {
+        "en": "Effort",
+        "de": "Aufwand"
+      },
+      "values": [
+        {
+          "id": "easy",
+          "name": {
+            "en": "Easy",
+            "de": "Einfach"
+          }
+        },
+        {
+          "id": "medium",
+          "name": {
+            "en": "Medium",
+            "de": "Mittel"
+          }
+        },
+        {
+          "id": "hard",
+          "name": {
+            "en": "Hard",
+            "de": "Anspruchsvoll"
+          }
+        }
+      ]
+    },
+    "calorie": {
+      "name": {
+        "en": "Calorie level",
+        "de": "Kalorienstufe"
+      },
+      "values": [
+        {
+          "id": "regular",
+          "name": {
+            "en": "Regular, about 400–650 kcal",
+            "de": "Regular, etwa 400–650 kcal"
+          }
+        },
+        {
+          "id": "light",
+          "name": {
+            "en": "Light, up to 400 kcal",
+            "de": "Leicht, bis 400 kcal"
+          }
+        }
+      ]
+    }
+  },
+  "tags": [
+    {
+      "id": "street-food",
+      "name": {
+        "en": "Street food",
+        "de": "Streetfood"
+      }
+    },
+    {
+      "id": "high-protein",
+      "name": {
+        "en": "High protein",
+        "de": "Proteinreich"
+      }
+    },
+    {
+      "id": "noodles",
+      "name": {
+        "en": "Noodles",
+        "de": "Nudeln"
+      }
+    },
+    {
+      "id": "stir-fry-favorite",
+      "name": {
+        "en": "Wok favorite",
+        "de": "Wok-Liebling"
+      }
+    },
+    {
+      "id": "pasta",
+      "name": {
+        "en": "Pasta",
+        "de": "Pasta"
+      }
+    },
+    {
+      "id": "comfort-food",
+      "name": {
+        "en": "Comfort food",
+        "de": "Comfort Food"
+      }
+    },
+    {
+      "id": "brunch",
+      "name": {
+        "en": "Brunch",
+        "de": "Brunch"
+      }
+    },
+    {
+      "id": "kid-friendly",
+      "name": {
+        "en": "Kid-friendly",
+        "de": "Kinderfreundlich"
+      }
+    },
+    {
+      "id": "soup",
+      "name": {
+        "en": "Soup",
+        "de": "Suppe"
+      }
+    },
+    {
+      "id": "one-pot",
+      "name": {
+        "en": "One pot",
+        "de": "Ein Topf"
+      }
+    },
+    {
+      "id": "curry",
+      "name": {
+        "en": "Curry",
+        "de": "Curry"
+      }
+    },
+    {
+      "id": "meal-prep",
+      "name": {
+        "en": "Meal prep",
+        "de": "Meal Prep"
+      }
+    },
+    {
+      "id": "shareable",
+      "name": {
+        "en": "Made to share",
+        "de": "Zum Teilen"
+      }
+    },
+    {
+      "id": "one-pan",
+      "name": {
+        "en": "One pan",
+        "de": "Eine Pfanne"
+      }
+    },
+    {
+      "id": "rice",
+      "name": {
+        "en": "Rice",
+        "de": "Reis"
+      }
+    },
+    {
+      "id": "legumes",
+      "name": {
+        "en": "Legumes",
+        "de": "Hülsenfrüchte"
+      }
+    },
+    {
+      "id": "baking",
+      "name": {
+        "en": "Baking",
+        "de": "Backen"
+      }
+    },
+    {
+      "id": "fresh",
+      "name": {
+        "en": "Fresh and bright",
+        "de": "Frisch und leicht"
+      }
+    },
+    {
+      "id": "crispy",
+      "name": {
+        "en": "Crispy",
+        "de": "Knusprig"
+      }
+    },
+    {
+      "id": "low-carb",
+      "name": {
+        "en": "Low carbohydrate",
+        "de": "Kohlenhydratarm"
+      }
+    },
+    {
+      "id": "nut-free",
+      "name": {
+        "en": "Nut-free",
+        "de": "Ohne Nüsse"
+      }
+    },
+    {
+      "id": "berry",
+      "name": {
+        "en": "Berry topped",
+        "de": "Mit Beeren"
+      }
+    }
+  ]
+}

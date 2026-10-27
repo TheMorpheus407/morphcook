@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "canonical_name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero_text": {
+        "en": "Charred edges, cool salad, and a sauce that ties every bite together.",
+        "de": "Röstaromen, kühler Salat und eine Sauce, die jeden Bissen zusammenhält."
+      },
+      "cap_caption": {
+        "en": "the late-night classic, rewritten for your table",
+        "de": "der Spätabend-Klassiker, neu für deinen Tisch geschrieben"
+      },
+      "stripe_color": "#D96C57",
+      "variant_ids": [
+        "doener-classic",
+        "doener-vegan-easy",
+        "doener-vegan-medium",
+        "doener-vegan-light",
+        "doener-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "street-food",
+        "high-protein"
+      ]
+    },
+    {
+      "id": "pad-thai",
+      "canonical_name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero_text": {
+        "en": "Springy noodles meet tamarind, lime, and the crunch of peanuts.",
+        "de": "Federnde Nudeln treffen auf Tamarinde, Limette und den Crunch von Erdnüssen."
+      },
+      "cap_caption": {
+        "en": "sweet, sour, salty — the wok has opinions",
+        "de": "süß, sauer, salzig — der Wok hat eine Meinung"
+      },
+      "stripe_color": "#D89B45",
+      "variant_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan-easy",
+        "pad-thai-vegan-medium",
+        "pad-thai-vegan-light",
+        "pad-thai-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "noodles",
+        "stir-fry-favorite"
+      ]
+    },
+    {
+      "id": "alfredo",
+      "canonical_name": {
+        "en": "Alfredo",
+        "de": "Alfredo"
+      },
+      "hero_text": {
+        "en": "Silky sauce, glossy noodles, and black pepper right to the edge.",
+        "de": "Seidige Sauce, glänzende Nudeln und schwarzer Pfeffer bis zum letzten Bissen."
+      },
+      "cap_caption": {
+        "en": "a little bowl of cream-colored comfort",
+        "de": "eine kleine Schüssel cremefarbener Trost"
+      },
+      "stripe_color": "#A99978",
+      "variant_ids": [
+        "alfredo-classic",
+        "alfredo-vegan-easy",
+        "alfredo-vegan-medium",
+        "alfredo-vegan-light",
+        "alfredo-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "pasta",
+        "comfort-food"
+      ]
+    },
+    {
+      "id": "pancakes",
+      "canonical_name": {
+        "en": "Pancakes",
+        "de": "Pancakes"
+      },
+      "hero_text": {
+        "en": "Golden edges and soft centers, ready for berries or a slow weekend.",
+        "de": "Goldene Ränder und weiche Mitten — bereit für Beeren oder ein langsames Wochenende."
+      },
+      "cap_caption": {
+        "en": "breakfast deserves a small ceremony",
+        "de": "das Frühstück verdient eine kleine Zeremonie"
+      },
+      "stripe_color": "#C98D5B",
+      "variant_ids": [
+        "pancakes-classic",
+        "pancakes-vegan-easy",
+        "pancakes-vegan-medium",
+        "pancakes-vegan-light",
+        "pancakes-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [],
+      "frequency_tier": "core",
+      "tags": [
+        "brunch",
+        "kid-friendly"
+      ]
+    },
+    {
+      "id": "tomato-soup",
+      "canonical_name": {
+        "en": "Tomato Soup",
+        "de": "Tomatensuppe"
+      },
+      "hero_text": {
+        "en": "Bright tomatoes simmered into a spoonable, deeply savory pause.",
+        "de": "Leuchtende Tomaten, zu einem tiefen, würzigen Innehalten eingeköchelt."
+      },
+      "cap_caption": {
+        "en": "red soup, warm bowl, exhale",
+        "de": "rote Suppe, warme Schüssel, durchatmen"
+      },
+      "stripe_color": "#C95745",
+      "variant_ids": [
+        "tomato-soup-classic",
+        "tomato-soup-vegan-easy",
+        "tomato-soup-vegan-medium",
+        "tomato-soup-vegan-light",
+        "tomato-soup-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "soup",
+        "one-pot"
+      ]
+    },
+    {
+      "id": "chickpea-curry",
+      "canonical_name": {
+        "en": "Chickpea Curry",
+        "de": "Kichererbsen-Curry"
+      },
+      "hero_text": {
+        "en": "A fragrant, tomato-rich curry with enough body for rice or a spoon alone.",
+        "de": "Ein duftendes, tomatiges Curry mit genug Substanz für Reis oder den Löffel allein."
+      },
+      "cap_caption": {
+        "en": "the pantry's answer to a long day",
+        "de": "die Antwort des Vorratsregals auf einen langen Tag"
+      },
+      "stripe_color": "#B47A35",
+      "variant_ids": [
+        "chickpea-curry-classic",
+        "chickpea-curry-vegan-easy",
+        "chickpea-curry-vegan-medium",
+        "chickpea-curry-vegan-light",
+        "chickpea-curry-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "curry",
+        "one-pot",
+        "meal-prep"
+      ]
+    },
+    {
+      "id": "tacos",
+      "canonical_name": {
+        "en": "Tacos",
+        "de": "Tacos"
+      },
+      "hero_text": {
+        "en": "Warm tortillas, crisp slaw, bright lime: dinner assembled in full color.",
+        "de": "Warme Tortillas, knackiger Slaw, frische Limette: Abendessen in voller Farbe."
+      },
+      "cap_caption": {
+        "en": "fold, squeeze, repeat",
+        "de": "falten, träufeln, wiederholen"
+      },
+      "stripe_color": "#5C9B78",
+      "variant_ids": [
+        "tacos-classic",
+        "tacos-vegan-easy",
+        "tacos-vegan-medium",
+        "tacos-vegan-light",
+        "tacos-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [],
+      "cuisine_tags": [],
+      "frequency_tier": "core",
+      "tags": [
+        "street-food",
+        "shareable"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "canonical_name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero_text": {
+        "en": "A bubbling pan of spiced tomatoes with a rich center and bread nearby.",
+        "de": "Eine blubbernde Pfanne würziger Tomaten mit reichhaltiger Mitte und Brot in Reichweite."
+      },
+      "cap_caption": {
+        "en": "bring the whole pan to the table",
+        "de": "stell die ganze Pfanne auf den Tisch"
+      },
+      "stripe_color": "#B95845",
+      "variant_ids": [
+        "shakshuka-classic",
+        "shakshuka-vegan-easy",
+        "shakshuka-vegan-medium",
+        "shakshuka-vegan-light",
+        "shakshuka-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "one-pan",
+        "brunch"
+      ]
+    },
+    {
+      "id": "mushroom-risotto",
+      "canonical_name": {
+        "en": "Mushroom Risotto",
+        "de": "Pilzrisotto"
+      },
+      "hero_text": {
+        "en": "Creamy rice, browned mushrooms, and the quiet rhythm of the wooden spoon.",
+        "de": "Cremiger Reis, gebräunte Pilze und der ruhige Rhythmus des Holzlöffels."
+      },
+      "cap_caption": {
+        "en": "stir slowly; dinner is happening",
+        "de": "langsam rühren; das Abendessen entsteht"
+      },
+      "stripe_color": "#88745D",
+      "variant_ids": [
+        "mushroom-risotto-classic",
+        "mushroom-risotto-vegan-easy",
+        "mushroom-risotto-vegan-medium",
+        "mushroom-risotto-vegan-light",
+        "mushroom-risotto-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "rice",
+        "comfort-food"
+      ]
+    },
+    {
+      "id": "falafel",
+      "canonical_name": {
+        "en": "Falafel",
+        "de": "Falafel"
+      },
+      "hero_text": {
+        "en": "Herb-green centers, crisp shells, and sesame sauce over everything.",
+        "de": "Kräutergrüne Mitten, knusprige Hüllen und Sesamsauce über allem."
+      },
+      "cap_caption": {
+        "en": "crunch first, then the herbs",
+        "de": "erst der Crunch, dann die Kräuter"
+      },
+      "stripe_color": "#5B8E68",
+      "variant_ids": [
+        "falafel-classic",
+        "falafel-vegan-easy",
+        "falafel-vegan-medium",
+        "falafel-vegan-light",
+        "falafel-keto"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": [
+        "street-food",
+        "legumes"
+      ]
+    },
+    {
+      "id": "ramen",
+      "canonical_name": {
+        "en": "Ramen",
+        "de": "Ramen"
+      },
+      "hero_text": {
+        "en": "A deep bowl of broth, noodles, and toppings arranged with intention.",
+        "de": "Eine tiefe Schüssel Brühe, Nudeln und Toppings, mit Sorgfalt arrangiert."
+      },
+      "cap_caption": {
+        "en": "steam rising, chopsticks ready",
+        "de": "Dampf steigt auf, Stäbchen bereit"
+      },
+      "stripe_color": "#697E91",
+      "variant_ids": [
+        "ramen-classic",
+        "ramen-vegan-easy",
+        "ramen-vegan-medium",
+        "ramen-vegan-light",
+        "ramen-keto"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "extended",
+      "tags": [
+        "noodles",
+        "soup"
+      ]
+    },
+    {
+      "id": "banana-bread",
+      "canonical_name": {
+        "en": "Banana Bread",
+        "de": "Bananenbrot"
+      },
+      "hero_text": {
+        "en": "Ripe bananas turn into a dark-edged loaf with a tender, fragrant crumb.",
+        "de": "Reife Bananen werden zu einem dunkel geränderten Laib mit zartem, duftendem Inneren."
+      },
+      "cap_caption": {
+        "en": "the good kind of brown bananas",
+        "de": "die gute Art brauner Bananen"
+      },
+      "stripe_color": "#A7784D",
+      "variant_ids": [
+        "banana-bread-classic",
+        "banana-bread-vegan-easy",
+        "banana-bread-vegan-medium",
+        "banana-bread-vegan-light",
+        "banana-bread-keto"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [],
+      "cuisine_tags": [],
+      "frequency_tier": "extended",
+      "tags": [
+        "baking",
+        "brunch"
+      ]
+    }
+  ]
+}

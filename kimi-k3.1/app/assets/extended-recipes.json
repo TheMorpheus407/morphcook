@@ -1,0 +1,2648 @@
+{
+  "partition_id": "extended",
+  "recipes": [
+    {
+      "attributes": [
+        "easy",
+        "time-60",
+        "cal-600",
+        "bake",
+        "breakfast",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 460,
+      "contains": [
+        "added-sugar",
+        "dairy",
+        "egg",
+        "gluten",
+        "high-fodmap"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "classic",
+        "effort": "easy"
+      },
+      "dish_id": "banana-bread",
+      "id": "banana-bread-classic",
+      "ingredient_ids": [
+        "banana",
+        "wheat-flour",
+        "butter",
+        "sugar",
+        "egg",
+        "baking-powder",
+        "baking-soda",
+        "cinnamon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "banana",
+          "name": {
+            "de": "Banane",
+            "en": "Banana"
+          },
+          "preparation": {
+            "de": "sehr reif und zerdrückt",
+            "en": "very ripe and mashed"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 220,
+          "id": "wheat-flour",
+          "name": {
+            "de": "Weizenmehl",
+            "en": "All-purpose wheat flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 110,
+          "id": "butter",
+          "name": {
+            "de": "Butter",
+            "en": "Butter"
+          },
+          "preparation": {
+            "de": "geschmolzen und abgekühlt",
+            "en": "melted and cooled"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 100,
+          "id": "sugar",
+          "name": {
+            "de": "Kristallzucker",
+            "en": "Granulated sugar"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 2,
+          "id": "egg",
+          "name": {
+            "de": "Ei",
+            "en": "Egg"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1.5,
+          "id": "baking-powder",
+          "name": {
+            "de": "Backpulver",
+            "en": "Baking powder"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 0.5,
+          "id": "baking-soda",
+          "name": {
+            "de": "Natron",
+            "en": "Baking soda"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "cinnamon",
+          "name": {
+            "de": "Gemahlener Zimt",
+            "en": "Ground cinnamon"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "salt",
+          "name": {
+            "de": "Salz",
+            "en": "Salt"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        }
+      ],
+      "macros": {
+        "carbs_g": 68,
+        "fat_g": 17.3,
+        "protein_g": 8
+      },
+      "servings": 6,
+      "steps": [
+        {
+          "text": {
+            "de": "Backofen auf 180 °C erhitzen und eine kleine 18-cm-Kastenform mit Backpapier auslegen; dabei einen Überstand zum Herausheben lassen.",
+            "en": "Heat the oven to 180°C and line a small 18 cm loaf tin with parchment, leaving an overhang for lifting."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Zerdrückte Banane, geschmolzene Butter, Zucker und Eier verrühren, bis die Mischung glänzt und gleichmäßig verbunden ist.",
+            "en": "Whisk mashed banana, melted butter, sugar, and eggs until the mixture looks glossy and evenly combined."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Mehl, Backpulver, Natron, Zimt und Salz nur so lange unterheben, bis keine trockenen Streifen mehr sichtbar sind.",
+            "en": "Fold in flour, baking powder, baking soda, cinnamon, and salt just until no dry streaks remain."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "In die Form streichen und backen, bis die Oberfläche dunkelgolden ist und an einem Holzstäbchen nur wenige feuchte Krümel haften.",
+            "en": "Scrape into the tin and bake until the top is deep golden and a skewer comes out with a few moist crumbs."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "de": "Zehn Minuten in der Form abkühlen lassen, dann herausheben und erst aufschneiden, wenn das Innere etwas fest geworden ist.",
+            "en": "Cool in the tin for ten minutes, then lift out and slice only when the crumb has settled."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "summary": {
+        "de": "Ein kleiner, mit Zimt duftender Laib mit dunkler Kruste und saftigem Bananeninneren.",
+        "en": "A small, cinnamon-scented loaf with a dark crust and moist banana crumb."
+      },
+      "tags": [
+        "baking",
+        "brunch"
+      ],
+      "time_minutes": 45,
+      "title": {
+        "de": "Klassisches Bananenbrot",
+        "en": "Classic Banana Bread"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-400",
+        "bake",
+        "breakfast",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 390,
+      "contains": [
+        "almonds",
+        "dairy",
+        "egg",
+        "nuts",
+        "tree-nuts"
+      ],
+      "dimensions": {
+        "calorie": "light",
+        "diet": "keto",
+        "effort": "medium"
+      },
+      "dish_id": "banana-bread",
+      "id": "banana-bread-keto",
+      "ingredient_ids": [
+        "almond-flour",
+        "egg",
+        "butter",
+        "banana",
+        "coconut-milk",
+        "erythritol",
+        "baking-powder",
+        "cinnamon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 250,
+          "id": "almond-flour",
+          "name": {
+            "de": "Mandelmehl",
+            "en": "Almond flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 4,
+          "id": "egg",
+          "name": {
+            "de": "Ei",
+            "en": "Egg"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 100,
+          "id": "butter",
+          "name": {
+            "de": "Butter",
+            "en": "Butter"
+          },
+          "preparation": {
+            "de": "geschmolzen und abgekühlt",
+            "en": "melted and cooled"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 1,
+          "id": "banana",
+          "name": {
+            "de": "Banane",
+            "en": "Banana"
+          },
+          "preparation": {
+            "de": "sehr reif und zerdrückt",
+            "en": "very ripe and mashed"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 100,
+          "id": "coconut-milk",
+          "name": {
+            "de": "Kokosmilch",
+            "en": "Coconut milk"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "ml"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 80,
+          "id": "erythritol",
+          "name": {
+            "de": "Erythrit",
+            "en": "Erythritol"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "baking-powder",
+          "name": {
+            "de": "Backpulver",
+            "en": "Baking powder"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "cinnamon",
+          "name": {
+            "de": "Gemahlener Zimt",
+            "en": "Ground cinnamon"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "salt",
+          "name": {
+            "de": "Salz",
+            "en": "Salt"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        }
+      ],
+      "macros": {
+        "carbs_g": 13,
+        "fat_g": 32.7,
+        "protein_g": 11
+      },
+      "servings": 8,
+      "steps": [
+        {
+          "text": {
+            "de": "Backofen auf 170 °C erhitzen und eine kleine Kastenform auslegen; Mandelmehl bräunt schneller als Weizenmehl, daher die niedrigere Temperatur wählen.",
+            "en": "Heat the oven to 170°C and line a small loaf tin; almond flour browns faster than wheat flour, so use the lower temperature."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Eier, zerdrückte Banane, geschmolzene Butter, Kokosmilch und Erythrit glatt verrühren.",
+            "en": "Whisk eggs, mashed banana, melted butter, coconut milk, and erythritol until smooth."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Mandelmehl, Backpulver, Zimt und Salz unterheben und den dicken Teig fünf Minuten ruhen lassen.",
+            "en": "Fold in almond flour, baking powder, cinnamon, and salt and rest the thick batter for five minutes."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Backen, bis die Oberfläche fest ist und ein Holzstäbchen sauber herauskommt; bei zu früher Bräunung locker mit Backpapier abdecken.",
+            "en": "Bake until the top is firm and a skewer comes out clean; tent loosely with parchment if it browns early."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "de": "Fünfzehn Minuten in der Form abkühlen lassen, dann herausheben und für eine saubere, zarte Scheibe vollständig auskühlen lassen.",
+            "en": "Cool in the tin for fifteen minutes, then lift out and cool completely for a clean, tender slice."
+          },
+          "timer_seconds": 900
+        }
+      ],
+      "summary": {
+        "de": "Eine reife Banane gibt einem Mandelmehl-Laib Aroma, ohne einen zuckerreichen Teig.",
+        "en": "One ripe banana perfumes an almond-flour loaf without a sugar-heavy batter."
+      },
+      "tags": [
+        "baking",
+        "brunch",
+        "low-carb"
+      ],
+      "time_minutes": 55,
+      "title": {
+        "de": "Keto-Mandel-Bananenbrot",
+        "en": "Keto Almond Banana Bread"
+      }
+    },
+    {
+      "attributes": [
+        "easy",
+        "time-60",
+        "cal-600",
+        "bake",
+        "breakfast",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 450,
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "high-fodmap"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "vegan",
+        "effort": "easy"
+      },
+      "dish_id": "banana-bread",
+      "id": "banana-bread-vegan-easy",
+      "ingredient_ids": [
+        "banana",
+        "wheat-flour",
+        "oat-milk",
+        "coconut-oil",
+        "brown-sugar",
+        "maple-syrup",
+        "flaxseed",
+        "baking-powder",
+        "baking-soda",
+        "cinnamon",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "banana",
+          "name": {
+            "de": "Banane",
+            "en": "Banana"
+          },
+          "preparation": {
+            "de": "sehr reif und zerdrückt",
+            "en": "very ripe and mashed"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 220,
+          "id": "wheat-flour",
+          "name": {
+            "de": "Weizenmehl",
+            "en": "All-purpose wheat flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 120,
+          "id": "oat-milk",
+          "name": {
+            "de": "Ungesüßter Haferdrink",
+            "en": "Unsweetened oat milk"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "ml"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 90,
+          "id": "coconut-oil",
+          "name": {
+            "de": "Kokosöl",
+            "en": "Coconut oil"
+          },
+          "preparation": {
+            "de": "geschmolzen und abgekühlt",
+            "en": "melted and cooled"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 100,
+          "id": "brown-sugar",
+          "name": {
+            "de": "Brauner Zucker",
+            "en": "Brown sugar"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 30,
+          "id": "maple-syrup",
+          "name": {
+            "de": "Ahornsirup",
+            "en": "Maple syrup"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "flaxseed",
+          "name": {
+            "de": "Gemahlene Leinsamen",
+            "en": "Ground flaxseed"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1.5,
+          "id": "baking-powder",
+          "name": {
+            "de": "Backpulver",
+            "en": "Baking powder"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 0.5,
+          "id": "baking-soda",
+          "name": {
+            "de": "Natron",
+            "en": "Baking soda"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "cinnamon",
+          "name": {
+            "de": "Gemahlener Zimt",
+            "en": "Ground cinnamon"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "salt",
+          "name": {
+            "de": "Salz",
+            "en": "Salt"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        }
+      ],
+      "macros": {
+        "carbs_g": 70,
+        "fat_g": 15.8,
+        "protein_g": 7
+      },
+      "servings": 6,
+      "steps": [
+        {
+          "text": {
+            "de": "Backofen auf 180 °C erhitzen und eine kleine Kastenform auslegen. Leinsamen mit Haferdrink verrühren und fünf Minuten gelieren lassen.",
+            "en": "Heat the oven to 180°C and line a small loaf tin. Mix flaxseed with oat milk and leave to gel for five minutes."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Banane, Kokosöl, braunen Zucker, Ahornsirup und die angedickten Leinsamen glatt verrühren.",
+            "en": "Whisk banana, coconut oil, brown sugar, maple syrup, and the thickened flax until smooth."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Mehl, Backpulver, Natron, Zimt und Salz unterheben, ohne den Teig zu lange zu bearbeiten.",
+            "en": "Fold in flour, baking powder, baking soda, cinnamon, and salt without overworking the batter."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "In die Form füllen und backen, bis der Laib gut aufgegangen, an den Rändern dunkel und in der Mitte beim Test gerade sauber ist.",
+            "en": "Fill the tin and bake until well risen, dark at the edges, and just clean when tested in the center."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "de": "Zehn Minuten in der Form ruhen lassen, dann herauslösen; für saubere Scheiben weiter abkühlen lassen.",
+            "en": "Rest in the tin for ten minutes before unmolding; cool further for neat slices."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "summary": {
+        "de": "Leinsamen, Banane und Kokosöl machen einen weichen pflanzlichen Laib mit knusprigen Rändern.",
+        "en": "Flax, banana, and coconut oil make a soft plant-based loaf with crisp edges."
+      },
+      "tags": [
+        "baking",
+        "brunch"
+      ],
+      "time_minutes": 45,
+      "title": {
+        "de": "Einfaches veganes Bananenbrot",
+        "en": "Easy Vegan Banana Bread"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-400",
+        "bake",
+        "breakfast",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 380,
+      "contains": [
+        "added-sugar"
+      ],
+      "dimensions": {
+        "calorie": "light",
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "dish_id": "banana-bread",
+      "id": "banana-bread-vegan-light",
+      "ingredient_ids": [
+        "banana",
+        "oat-flour",
+        "rolled-oats",
+        "oat-milk",
+        "maple-syrup",
+        "coconut-oil",
+        "flaxseed",
+        "cinnamon",
+        "baking-powder",
+        "baking-soda",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "banana",
+          "name": {
+            "de": "Banane",
+            "en": "Banana"
+          },
+          "preparation": {
+            "de": "sehr reif und zerdrückt",
+            "en": "very ripe and mashed"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 180,
+          "id": "oat-flour",
+          "name": {
+            "de": "Hafermehl",
+            "en": "Oat flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 60,
+          "id": "rolled-oats",
+          "name": {
+            "de": "Haferflocken",
+            "en": "Rolled oats"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 180,
+          "id": "oat-milk",
+          "name": {
+            "de": "Ungesüßter Haferdrink",
+            "en": "Unsweetened oat milk"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "ml"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 40,
+          "id": "maple-syrup",
+          "name": {
+            "de": "Ahornsirup",
+            "en": "Maple syrup"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 60,
+          "id": "coconut-oil",
+          "name": {
+            "de": "Kokosöl",
+            "en": "Coconut oil"
+          },
+          "preparation": {
+            "de": "geschmolzen",
+            "en": "melted"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "flaxseed",
+          "name": {
+            "de": "Gemahlene Leinsamen",
+            "en": "Ground flaxseed"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "cinnamon",
+          "name": {
+            "de": "Gemahlener Zimt",
+            "en": "Ground cinnamon"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "baking-powder",
+          "name": {
+            "de": "Backpulver",
+            "en": "Baking powder"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 0.5,
+          "id": "baking-soda",
+          "name": {
+            "de": "Natron",
+            "en": "Baking soda"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "salt",
+          "name": {
+            "de": "Salz",
+            "en": "Salt"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        }
+      ],
+      "macros": {
+        "carbs_g": 58,
+        "fat_g": 12.4,
+        "protein_g": 9
+      },
+      "servings": 6,
+      "steps": [
+        {
+          "text": {
+            "de": "Backofen auf 180 °C erhitzen und eine kleine Kastenform auslegen. Leinsamen in den Haferdrink rühren und andicken lassen.",
+            "en": "Heat the oven to 180°C and line a small loaf tin. Stir flaxseed into oat milk and leave to thicken."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Banane, Ahornsirup, Kokosöl und Leinsamenmischung gleichmäßig verrühren.",
+            "en": "Whisk banana, maple syrup, coconut oil, and the flax mixture until evenly blended."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Hafermehl, Haferflocken, Zimt, Backpulver, Natron und Salz unterheben; fünf Minuten ruhen lassen, damit der Hafer quillt.",
+            "en": "Fold in oat flour, rolled oats, cinnamon, baking powder, baking soda, and salt; rest for five minutes so the oats hydrate."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Backen, bis der Laib in der Mitte federt und am Holzstäbchen nur feuchte Krümel haften.",
+            "en": "Bake until the loaf feels springy in the center and a tester shows only moist crumbs."
+          },
+          "timer_seconds": 1800
+        },
+        {
+          "text": {
+            "de": "Zehn Minuten in der Form abkühlen lassen, dann herausnehmen und vor dem Schneiden weiter abkühlen, damit er nicht bröselt.",
+            "en": "Cool for ten minutes in the tin, then remove and cool further before slicing to prevent crumbling."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "summary": {
+        "de": "Ein von Hafer geprägter Laib, der vor allem mit reifen Bananen und etwas Ahorn gesüßt ist.",
+        "en": "An oat-forward loaf sweetened mostly with ripe bananas and a little maple."
+      },
+      "tags": [
+        "baking",
+        "brunch"
+      ],
+      "time_minutes": 45,
+      "title": {
+        "de": "Leichtes Bananen-Haferbrot",
+        "en": "Light Banana Oat Bread"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-600",
+        "bake",
+        "breakfast",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 520,
+      "contains": [
+        "added-sugar",
+        "gluten",
+        "high-fodmap",
+        "nuts",
+        "tree-nuts",
+        "walnuts"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "dish_id": "banana-bread",
+      "id": "banana-bread-vegan-medium",
+      "ingredient_ids": [
+        "banana",
+        "wheat-flour",
+        "oat-flour",
+        "walnuts",
+        "coconut-oil",
+        "brown-sugar",
+        "oat-milk",
+        "flaxseed",
+        "maple-syrup",
+        "cinnamon",
+        "nutmeg",
+        "baking-powder",
+        "baking-soda",
+        "salt"
+      ],
+      "ingredients": [
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "banana",
+          "name": {
+            "de": "Banane",
+            "en": "Banana"
+          },
+          "preparation": {
+            "de": "sehr reif und zerdrückt",
+            "en": "very ripe and mashed"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 180,
+          "id": "wheat-flour",
+          "name": {
+            "de": "Weizenmehl",
+            "en": "All-purpose wheat flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 60,
+          "id": "oat-flour",
+          "name": {
+            "de": "Hafermehl",
+            "en": "Oat flour"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 80,
+          "id": "walnuts",
+          "name": {
+            "de": "Walnüsse",
+            "en": "Walnuts"
+          },
+          "preparation": {
+            "de": "grob gehackt",
+            "en": "roughly chopped"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 80,
+          "id": "coconut-oil",
+          "name": {
+            "de": "Kokosöl",
+            "en": "Coconut oil"
+          },
+          "preparation": {
+            "de": "geschmolzen",
+            "en": "melted"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 100,
+          "id": "brown-sugar",
+          "name": {
+            "de": "Brauner Zucker",
+            "en": "Brown sugar"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 150,
+          "id": "oat-milk",
+          "name": {
+            "de": "Ungesüßter Haferdrink",
+            "en": "Unsweetened oat milk"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "ml"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "flaxseed",
+          "name": {
+            "de": "Gemahlene Leinsamen",
+            "en": "Ground flaxseed"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 30,
+          "id": "maple-syrup",
+          "name": {
+            "de": "Ahornsirup",
+            "en": "Maple syrup"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "cinnamon",
+          "name": {
+            "de": "Gemahlener Zimt",
+            "en": "Ground cinnamon"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "nutmeg",
+          "name": {
+            "de": "Gemahlene Muskatnuss",
+            "en": "Ground nutmeg"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1.5,
+          "id": "baking-powder",
+          "name": {
+            "de": "Backpulver",
+            "en": "Baking powder"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 0.5,
+          "id": "baking-soda",
+          "name": {
+            "de": "Natron",
+            "en": "Baking soda"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "spices",
+          "amount": 1,
+          "id": "salt",
+          "name": {
+            "de": "Salz",
+            "en": "Salt"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "pinch"
+        }
+      ],
+      "macros": {
+        "carbs_g": 72,
+        "fat_g": 21.3,
+        "protein_g": 10
+      },
+      "servings": 6,
+      "steps": [
+        {
+          "text": {
+            "de": "Backofen auf 180 °C erhitzen. Walnüsse auf einem trockenen Blech rösten, bis sie duften; abkühlen lassen und eine Handvoll für die Oberfläche aufheben. Kastenform auslegen.",
+            "en": "Heat the oven to 180°C. Toast walnuts on a dry tray until fragrant, then cool and reserve a handful for the top. Line a loaf tin."
+          },
+          "timer_seconds": 360
+        },
+        {
+          "text": {
+            "de": "Leinsamen und Haferdrink verrühren und fünf Minuten stehen lassen, dann mit Banane, Kokosöl, braunem Zucker und Ahornsirup verrühren.",
+            "en": "Mix flaxseed and oat milk and leave for five minutes, then whisk with banana, coconut oil, brown sugar, and maple syrup."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Beide Mehlsorten, Zimt, Muskat, Backpulver, Natron, Salz und die größere Portion Walnüsse unterheben.",
+            "en": "Fold in both flours, cinnamon, nutmeg, baking powder, baking soda, salt, and the larger portion of walnuts."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "In die Form füllen, übrige Walnüsse darüberstreuen und backen, bis ein Holzstäbchen aus der Mitte fast sauber herauskommt.",
+            "en": "Fill the tin, scatter over reserved walnuts, and bake until a skewer in the center comes out nearly clean."
+          },
+          "timer_seconds": 2100
+        },
+        {
+          "text": {
+            "de": "Zehn Minuten in der Form abkühlen lassen, dann auf ein Gitter setzen, damit die Walnussoberfläche knusprig bleibt.",
+            "en": "Cool in the tin for ten minutes, then transfer to a rack so the walnut top stays crisp."
+          },
+          "timer_seconds": 600
+        }
+      ],
+      "summary": {
+        "de": "Zwei Mehlsorten und geröstete Walnüsse sorgen für ein nussigeres Inneres und eine rustikale Oberfläche.",
+        "en": "Two flours and toasted walnuts bring a deeper, nutty crumb and a textured top."
+      },
+      "tags": [
+        "baking",
+        "brunch"
+      ],
+      "time_minutes": 55,
+      "title": {
+        "de": "Bananenbrot mit gerösteten Walnüssen",
+        "en": "Toasted Walnut Banana Bread"
+      }
+    },
+    {
+      "attributes": [
+        "easy",
+        "time-60",
+        "cal-800",
+        "simmer",
+        "poach",
+        "lunch",
+        "dinner",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 620,
+      "contains": [
+        "celery",
+        "egg",
+        "gluten",
+        "high-fodmap",
+        "poultry",
+        "sesame",
+        "soy"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "classic",
+        "effort": "easy"
+      },
+      "dish_id": "ramen",
+      "id": "ramen-classic",
+      "ingredient_ids": [
+        "ramen-noodles",
+        "chicken-breast",
+        "chicken-stock",
+        "egg",
+        "soy-sauce",
+        "sesame-oil",
+        "fresh-ginger",
+        "garlic",
+        "scallion",
+        "spinach",
+        "corn",
+        "nori"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 200,
+          "id": "ramen-noodles",
+          "name": {
+            "de": "Ramen-Nudeln",
+            "en": "Ramen noodles"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "meat",
+          "amount": 300,
+          "id": "chicken-breast",
+          "name": {
+            "de": "Hähnchenbrust",
+            "en": "Chicken breast"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "chicken-stock",
+          "name": {
+            "de": "Hühnerbrühe",
+            "en": "Chicken stock"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "l"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 2,
+          "id": "egg",
+          "name": {
+            "de": "Ei",
+            "en": "Egg"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 4,
+          "id": "soy-sauce",
+          "name": {
+            "de": "Sojasauce",
+            "en": "Soy sauce"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "sesame-oil",
+          "name": {
+            "de": "Geröstetes Sesamöl",
+            "en": "Toasted sesame oil"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "produce",
+          "amount": 15,
+          "id": "fresh-ginger",
+          "name": {
+            "de": "Frischer Ingwer",
+            "en": "Fresh ginger"
+          },
+          "preparation": {
+            "de": "in Scheiben geschnitten",
+            "en": "sliced"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "garlic",
+          "name": {
+            "de": "Knoblauch",
+            "en": "Garlic"
+          },
+          "preparation": {
+            "de": "angeschlagen",
+            "en": "bruised"
+          },
+          "unit": "clove"
+        },
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "scallion",
+          "name": {
+            "de": "Frühlingszwiebel",
+            "en": "Spring onion"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "produce",
+          "amount": 150,
+          "id": "spinach",
+          "name": {
+            "de": "Spinat",
+            "en": "Spinach"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 100,
+          "id": "corn",
+          "name": {
+            "de": "Mais",
+            "en": "Sweetcorn"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "nori",
+          "name": {
+            "de": "Nori-Blätter",
+            "en": "Nori sheets"
+          },
+          "preparation": {
+            "de": "in Streifen geschnitten",
+            "en": "cut into strips"
+          },
+          "unit": "piece"
+        }
+      ],
+      "macros": {
+        "carbs_g": 72,
+        "fat_g": 16.9,
+        "protein_g": 45
+      },
+      "servings": 2,
+      "steps": [
+        {
+          "text": {
+            "de": "Hühnerbrühe mit Ingwer, Knoblauch und Sojasauce sanft aufkochen. Hähnchenbrust zufügen und gerade durchgaren.",
+            "en": "Bring chicken stock, ginger, garlic, and soy sauce to a gentle simmer. Add chicken breast and poach until just cooked through."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "de": "Hähnchen herausnehmen, ruhen lassen und aufschneiden. Brühe sehr sanft köcheln lassen und Ingwer sowie Knoblauch für eine klare Brühe entfernen.",
+            "en": "Remove chicken, rest it, and slice. Keep the broth at a bare simmer and discard ginger and garlic if you prefer a clear finish."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Eier in einem separaten Topf sieben Minuten köcheln, in kaltem Wasser abkühlen, schälen und halbieren.",
+            "en": "Simmer eggs in a separate pan for seven minutes, cool in cold water, peel, and halve."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "de": "Ramen-Nudeln nach Packungsangabe federnd garen, abgießen und auf tiefe Schüsseln verteilen.",
+            "en": "Cook ramen noodles according to their packet until springy, then drain and divide between deep bowls."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "de": "Spinat und Mais eine Minute in die heiße Brühe geben. Brühe über die Nudeln geben und mit Hähnchen, Eiern, Frühlingszwiebeln, Nori und Sesamöl toppen.",
+            "en": "Add spinach and corn to the hot broth for one minute. Ladle broth over noodles and top with chicken, eggs, scallion, nori, and sesame oil."
+          },
+          "timer_seconds": 60
+        }
+      ],
+      "summary": {
+        "de": "Mit Sojasauce gewürzte Hühnerbrühe mit Nudeln, weich gekochten Eiern, Spinat und Mais.",
+        "en": "Soy-seasoned chicken broth with noodles, jammy eggs, spinach, and corn."
+      },
+      "tags": [
+        "noodles",
+        "soup",
+        "high-protein"
+      ],
+      "time_minutes": 45,
+      "title": {
+        "de": "Klassisches Chicken-Shoyu-Ramen",
+        "en": "Classic Chicken Shoyu Ramen"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-400",
+        "simmer",
+        "poach",
+        "lunch",
+        "dinner",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 400,
+      "contains": [
+        "celery",
+        "egg",
+        "high-fodmap",
+        "poultry",
+        "sesame",
+        "soy"
+      ],
+      "dimensions": {
+        "calorie": "light",
+        "diet": "keto",
+        "effort": "medium"
+      },
+      "dish_id": "ramen",
+      "id": "ramen-keto",
+      "ingredient_ids": [
+        "shirataki-noodles",
+        "chicken-thigh",
+        "chicken-stock",
+        "egg",
+        "tamari",
+        "sesame-oil",
+        "fresh-ginger",
+        "garlic",
+        "spinach",
+        "scallion",
+        "nori"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 400,
+          "id": "shirataki-noodles",
+          "name": {
+            "de": "Shirataki-Nudeln",
+            "en": "Shirataki noodles"
+          },
+          "preparation": {
+            "de": "abgetropft und gründlich abgespült",
+            "en": "drained and thoroughly rinsed"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "meat",
+          "amount": 250,
+          "id": "chicken-thigh",
+          "name": {
+            "de": "Hähnchenschenkel ohne Knochen",
+            "en": "Boneless chicken thighs"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "chicken-stock",
+          "name": {
+            "de": "Hühnerbrühe",
+            "en": "Chicken stock"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "l"
+        },
+        {
+          "aisle": "dairy",
+          "amount": 2,
+          "id": "egg",
+          "name": {
+            "de": "Ei",
+            "en": "Egg"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "tamari",
+          "name": {
+            "de": "Tamari",
+            "en": "Tamari"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "sesame-oil",
+          "name": {
+            "de": "Geröstetes Sesamöl",
+            "en": "Toasted sesame oil"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "produce",
+          "amount": 15,
+          "id": "fresh-ginger",
+          "name": {
+            "de": "Frischer Ingwer",
+            "en": "Fresh ginger"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "garlic",
+          "name": {
+            "de": "Knoblauch",
+            "en": "Garlic"
+          },
+          "preparation": {
+            "de": "angeschlagen",
+            "en": "bruised"
+          },
+          "unit": "clove"
+        },
+        {
+          "aisle": "produce",
+          "amount": 150,
+          "id": "spinach",
+          "name": {
+            "de": "Spinat",
+            "en": "Spinach"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "scallion",
+          "name": {
+            "de": "Frühlingszwiebel",
+            "en": "Spring onion"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "nori",
+          "name": {
+            "de": "Nori-Blätter",
+            "en": "Nori sheets"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        }
+      ],
+      "macros": {
+        "carbs_g": 12,
+        "fat_g": 24.0,
+        "protein_g": 34
+      },
+      "servings": 2,
+      "steps": [
+        {
+          "text": {
+            "de": "Abgespülte Shirataki ohne Fett erhitzen, bis sie quietschen und die Oberfläche trocken ist; beiseitestellen.",
+            "en": "Dry-fry the rinsed shirataki until squeaky and dry at the surface; set aside."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Hühnerbrühe mit Ingwer, Knoblauch und Tamari köcheln. Hähnchenschenkel zufügen und zart sowie vollständig durchgaren.",
+            "en": "Simmer chicken stock with ginger, garlic, and tamari. Add chicken thighs and poach until tender and cooked through."
+          },
+          "timer_seconds": 720
+        },
+        {
+          "text": {
+            "de": "Unterdessen Eier sieben Minuten köcheln, kurz abkühlen, schälen und halbieren. Das ruhende Hähnchen aufschneiden.",
+            "en": "Meanwhile simmer eggs for seven minutes, chill briefly, peel, and halve. Slice the rested chicken."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "de": "Shirataki und Spinat in die Brühe geben und erwärmen, bis der Spinat zusammenfällt; mit Sesamöl vollenden.",
+            "en": "Add shirataki and spinach to the broth and warm until the spinach wilts; finish with sesame oil."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "de": "Nudeln und Brühe auf Schüsseln verteilen und mit Hähnchen, Eihälften, Frühlingszwiebeln und Nori toppen.",
+            "en": "Divide noodles and broth between bowls and top with chicken, egg halves, scallion, and nori."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "summary": {
+        "de": "Shirataki und aufgeschnittenes Hähnchen in Ingwerbrühe mit weichen Eiern und Blattgrün.",
+        "en": "Shirataki and sliced chicken in ginger broth with soft eggs and greens."
+      },
+      "tags": [
+        "noodles",
+        "soup",
+        "low-carb",
+        "high-protein"
+      ],
+      "time_minutes": 40,
+      "title": {
+        "de": "Keto-Chicken-Ramen-Bowl",
+        "en": "Keto Chicken Ramen Bowl"
+      }
+    },
+    {
+      "attributes": [
+        "easy",
+        "time-60",
+        "cal-600",
+        "simmer",
+        "pan-fry",
+        "lunch",
+        "dinner",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 540,
+      "contains": [
+        "celery",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "vegan",
+        "effort": "easy"
+      },
+      "dish_id": "ramen",
+      "id": "ramen-vegan-easy",
+      "ingredient_ids": [
+        "ramen-noodles",
+        "tofu",
+        "vegetable-stock",
+        "miso",
+        "tamari",
+        "sesame-oil",
+        "fresh-ginger",
+        "garlic",
+        "scallion",
+        "spinach",
+        "corn",
+        "nori"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 160,
+          "id": "ramen-noodles",
+          "name": {
+            "de": "Ramen-Nudeln",
+            "en": "Ramen noodles"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 250,
+          "id": "tofu",
+          "name": {
+            "de": "Fester Tofu",
+            "en": "Firm tofu"
+          },
+          "preparation": {
+            "de": "ausgedrückt und gewürfelt",
+            "en": "pressed and cubed"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "vegetable-stock",
+          "name": {
+            "de": "Gemüsebrühe",
+            "en": "Vegetable stock"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "l"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 3,
+          "id": "miso",
+          "name": {
+            "de": "Helles Miso",
+            "en": "White miso"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "tamari",
+          "name": {
+            "de": "Tamari",
+            "en": "Tamari"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "sesame-oil",
+          "name": {
+            "de": "Geröstetes Sesamöl",
+            "en": "Toasted sesame oil"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "produce",
+          "amount": 15,
+          "id": "fresh-ginger",
+          "name": {
+            "de": "Frischer Ingwer",
+            "en": "Fresh ginger"
+          },
+          "preparation": {
+            "de": "gerieben",
+            "en": "grated"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "garlic",
+          "name": {
+            "de": "Knoblauch",
+            "en": "Garlic"
+          },
+          "preparation": {
+            "de": "gerieben",
+            "en": "grated"
+          },
+          "unit": "clove"
+        },
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "scallion",
+          "name": {
+            "de": "Frühlingszwiebel",
+            "en": "Spring onion"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "produce",
+          "amount": 150,
+          "id": "spinach",
+          "name": {
+            "de": "Spinat",
+            "en": "Spinach"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 100,
+          "id": "corn",
+          "name": {
+            "de": "Mais",
+            "en": "Sweetcorn"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "nori",
+          "name": {
+            "de": "Nori-Blätter",
+            "en": "Nori sheets"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        }
+      ],
+      "macros": {
+        "carbs_g": 66,
+        "fat_g": 19.1,
+        "protein_g": 26
+      },
+      "servings": 2,
+      "steps": [
+        {
+          "text": {
+            "de": "Tofu in der Hälfte des Sesamöls von mehreren Seiten goldgelb braten und beiseitestellen.",
+            "en": "Sear tofu in half the sesame oil until golden on several sides, then set aside."
+          },
+          "timer_seconds": 420
+        },
+        {
+          "text": {
+            "de": "Gemüsebrühe mit Ingwer, Knoblauch und Tamari erwärmen und acht Minuten sanft köcheln.",
+            "en": "Warm vegetable stock with ginger, garlic, and tamari; simmer gently for eight minutes."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "de": "Miso in einer kleinen Schüssel mit einer Kelle warmer Brühe glatt rühren und nicht mehr kochend wieder einrühren, damit das Aroma erhalten bleibt.",
+            "en": "Whisk miso with a ladle of warm broth in a small bowl, then stir it back in off the boil to preserve its aroma."
+          },
+          "timer_seconds": null
+        },
+        {
+          "text": {
+            "de": "Nudeln separat federnd garen, abgießen und auf Schüsseln verteilen. Spinat in der Brühe gerade zusammenfallen lassen.",
+            "en": "Cook noodles separately until springy, drain, and divide between bowls. Add spinach to the broth just until wilted."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "de": "Brühe und Spinat über die Nudeln geben und mit Tofu, Mais, Frühlingszwiebeln, Nori und übrigem Sesamöl vollenden.",
+            "en": "Ladle broth and spinach over noodles and add tofu, corn, scallion, nori, and remaining sesame oil."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "summary": {
+        "de": "Schnelle Misobrühe mit goldenem Tofu, federnden Nudeln und grünen Toppings.",
+        "en": "A quick miso broth with golden tofu, springy noodles, and green toppings."
+      },
+      "tags": [
+        "noodles",
+        "soup"
+      ],
+      "time_minutes": 35,
+      "title": {
+        "de": "Einfaches Miso-Tofu-Ramen",
+        "en": "Easy Miso Tofu Ramen"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-400",
+        "simmer",
+        "lunch",
+        "dinner",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 350,
+      "contains": [
+        "celery",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "dimensions": {
+        "calorie": "light",
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "dish_id": "ramen",
+      "id": "ramen-vegan-light",
+      "ingredient_ids": [
+        "shirataki-noodles",
+        "tofu",
+        "vegetable-stock",
+        "miso",
+        "tamari",
+        "zucchini",
+        "carrot",
+        "button-mushrooms",
+        "spinach",
+        "scallion",
+        "fresh-ginger",
+        "garlic",
+        "sesame-oil",
+        "nori"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 400,
+          "id": "shirataki-noodles",
+          "name": {
+            "de": "Shirataki-Nudeln",
+            "en": "Shirataki noodles"
+          },
+          "preparation": {
+            "de": "abgetropft und gründlich abgespült",
+            "en": "drained and thoroughly rinsed"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 250,
+          "id": "tofu",
+          "name": {
+            "de": "Fester Tofu",
+            "en": "Firm tofu"
+          },
+          "preparation": {
+            "de": "gewürfelt",
+            "en": "cubed"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "vegetable-stock",
+          "name": {
+            "de": "Gemüsebrühe",
+            "en": "Vegetable stock"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "l"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 3,
+          "id": "miso",
+          "name": {
+            "de": "Helles Miso",
+            "en": "White miso"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "tamari",
+          "name": {
+            "de": "Tamari",
+            "en": "Tamari"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "produce",
+          "amount": 200,
+          "id": "zucchini",
+          "name": {
+            "de": "Zucchini",
+            "en": "Zucchini"
+          },
+          "preparation": {
+            "de": "in Halbmonde schneiden",
+            "en": "cut into half-moons"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 1,
+          "id": "carrot",
+          "name": {
+            "de": "Karotte",
+            "en": "Carrot"
+          },
+          "preparation": {
+            "de": "in feine Bänder schneiden",
+            "en": "cut into fine ribbons"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "produce",
+          "amount": 200,
+          "id": "button-mushrooms",
+          "name": {
+            "de": "Champignons",
+            "en": "Button mushrooms"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 150,
+          "id": "spinach",
+          "name": {
+            "de": "Spinat",
+            "en": "Spinach"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "scallion",
+          "name": {
+            "de": "Frühlingszwiebel",
+            "en": "Spring onion"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "produce",
+          "amount": 15,
+          "id": "fresh-ginger",
+          "name": {
+            "de": "Frischer Ingwer",
+            "en": "Fresh ginger"
+          },
+          "preparation": {
+            "de": "gerieben",
+            "en": "grated"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "garlic",
+          "name": {
+            "de": "Knoblauch",
+            "en": "Garlic"
+          },
+          "preparation": {
+            "de": "gerieben",
+            "en": "grated"
+          },
+          "unit": "clove"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "sesame-oil",
+          "name": {
+            "de": "Geröstetes Sesamöl",
+            "en": "Toasted sesame oil"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "nori",
+          "name": {
+            "de": "Nori-Blätter",
+            "en": "Nori sheets"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        }
+      ],
+      "macros": {
+        "carbs_g": 28,
+        "fat_g": 15.8,
+        "protein_g": 24
+      },
+      "servings": 2,
+      "steps": [
+        {
+          "text": {
+            "de": "Shirataki ohne Fett erhitzen, bis die Oberflächenfeuchtigkeit verdampft ist, dann beiseitestellen.",
+            "en": "Dry-fry shirataki until their surface moisture evaporates, then set aside."
+          },
+          "timer_seconds": 300
+        },
+        {
+          "text": {
+            "de": "Gemüsebrühe mit Ingwer, Knoblauch, Tamari, Pilzen und Karotte acht Minuten köcheln.",
+            "en": "Simmer vegetable stock with ginger, garlic, tamari, mushrooms, and carrot for eight minutes."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "de": "Tofu und Zucchini zufügen und köcheln, bis die Zucchini gerade weich ist.",
+            "en": "Add tofu and zucchini and simmer until the zucchini is just tender."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "de": "Miso mit etwas warmer Brühe glatt rühren und nicht mehr kochend zurück in den Topf geben; Shirataki und Spinat darin erwärmen.",
+            "en": "Stir miso with a little warm broth until smooth and return it to the pot off the boil; add shirataki and spinach to warm."
+          },
+          "timer_seconds": 120
+        },
+        {
+          "text": {
+            "de": "Nudeln, Tofu, Gemüse und Brühe auf Schüsseln verteilen und mit Frühlingszwiebeln, Nori und Sesamöl vollenden.",
+            "en": "Divide noodles, tofu, vegetables, and broth between bowls and finish with scallion, nori, and sesame oil."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "summary": {
+        "de": "Eine feine Brühe mit Shirataki, Tofu und Gemüse sowie einem klaren Miso-Finish.",
+        "en": "A brothy bowl of shirataki, tofu, and vegetables with a clean miso finish."
+      },
+      "tags": [
+        "noodles",
+        "soup",
+        "fresh"
+      ],
+      "time_minutes": 40,
+      "title": {
+        "de": "Leichtes Gemüse-Miso-Ramen",
+        "en": "Light Miso Vegetable Ramen"
+      }
+    },
+    {
+      "attributes": [
+        "medium",
+        "time-60",
+        "cal-800",
+        "simmer",
+        "pan-fry",
+        "lunch",
+        "dinner",
+        "halal",
+        "kosher"
+      ],
+      "calories_per_serving": 610,
+      "contains": [
+        "added-sugar",
+        "celery",
+        "gluten",
+        "high-fodmap",
+        "sesame",
+        "soy"
+      ],
+      "dimensions": {
+        "calorie": "regular",
+        "diet": "vegan",
+        "effort": "medium"
+      },
+      "dish_id": "ramen",
+      "id": "ramen-vegan-medium",
+      "ingredient_ids": [
+        "ramen-noodles",
+        "king-oyster-mushrooms",
+        "dried-porcini",
+        "vegetable-stock",
+        "soy-milk",
+        "miso",
+        "gochujang",
+        "tamari",
+        "tahini",
+        "sesame-oil",
+        "fresh-ginger",
+        "garlic",
+        "scallion",
+        "spinach",
+        "nori"
+      ],
+      "ingredients": [
+        {
+          "aisle": "pantry",
+          "amount": 200,
+          "id": "ramen-noodles",
+          "name": {
+            "de": "Ramen-Nudeln",
+            "en": "Ramen noodles"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 300,
+          "id": "king-oyster-mushrooms",
+          "name": {
+            "de": "Kräuterseitlinge",
+            "en": "King oyster mushrooms"
+          },
+          "preparation": {
+            "de": "in Streifen gezupft",
+            "en": "torn into strips"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 15,
+          "id": "dried-porcini",
+          "name": {
+            "de": "Getrocknete Steinpilze",
+            "en": "Dried porcini"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "vegetable-stock",
+          "name": {
+            "de": "Gemüsebrühe",
+            "en": "Vegetable stock"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "l"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 200,
+          "id": "soy-milk",
+          "name": {
+            "de": "Ungesüßter Sojadrink",
+            "en": "Unsweetened soy milk"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "ml"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 4,
+          "id": "miso",
+          "name": {
+            "de": "Helles Miso",
+            "en": "White miso"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "gochujang",
+          "name": {
+            "de": "Gochujang",
+            "en": "Gochujang"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "tamari",
+          "name": {
+            "de": "Tamari",
+            "en": "Tamari"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "tahini",
+          "name": {
+            "de": "Tahini",
+            "en": "Tahini"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tbsp"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 2,
+          "id": "sesame-oil",
+          "name": {
+            "de": "Geröstetes Sesamöl",
+            "en": "Toasted sesame oil"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "tsp"
+        },
+        {
+          "aisle": "produce",
+          "amount": 15,
+          "id": "fresh-ginger",
+          "name": {
+            "de": "Frischer Ingwer",
+            "en": "Fresh ginger"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "produce",
+          "amount": 2,
+          "id": "garlic",
+          "name": {
+            "de": "Knoblauch",
+            "en": "Garlic"
+          },
+          "preparation": {
+            "de": "gerieben",
+            "en": "grated"
+          },
+          "unit": "clove"
+        },
+        {
+          "aisle": "produce",
+          "amount": 3,
+          "id": "scallion",
+          "name": {
+            "de": "Frühlingszwiebel",
+            "en": "Spring onion"
+          },
+          "preparation": {
+            "de": "geschnitten",
+            "en": "sliced"
+          },
+          "unit": "piece"
+        },
+        {
+          "aisle": "produce",
+          "amount": 150,
+          "id": "spinach",
+          "name": {
+            "de": "Spinat",
+            "en": "Spinach"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "g"
+        },
+        {
+          "aisle": "pantry",
+          "amount": 1,
+          "id": "nori",
+          "name": {
+            "de": "Nori-Blätter",
+            "en": "Nori sheets"
+          },
+          "preparation": {
+            "de": "",
+            "en": ""
+          },
+          "unit": "piece"
+        }
+      ],
+      "macros": {
+        "carbs_g": 72,
+        "fat_g": 24.2,
+        "protein_g": 26
+      },
+      "servings": 2,
+      "steps": [
+        {
+          "text": {
+            "de": "Getrocknete Steinpilze fünfzehn Minuten in 250 ml heißem Wasser einweichen, dann hacken und die Flüssigkeit durch ein feines Sieb in die Gemüsebrühe geben.",
+            "en": "Soak dried porcini in 250 ml hot water for fifteen minutes, then chop them and strain the liquid into the vegetable stock."
+          },
+          "timer_seconds": 900
+        },
+        {
+          "text": {
+            "de": "Kräuterseitlinge und gehackte Steinpilze in Sesamöl bräunen; einige Streifen als Topping aufheben.",
+            "en": "Sear king oyster mushrooms and chopped porcini in sesame oil until browned; reserve a few strips for topping."
+          },
+          "timer_seconds": 480
+        },
+        {
+          "text": {
+            "de": "Brühe mit Ingwer, Knoblauch und Tamari zehn Minuten köcheln. Miso, Gochujang und Tahini mit Sojadrink verrühren und ohne Kochen einrühren.",
+            "en": "Simmer stock with ginger, garlic, and tamari for ten minutes. Whisk miso, gochujang, and tahini with soy milk, then stir in without boiling."
+          },
+          "timer_seconds": 600
+        },
+        {
+          "text": {
+            "de": "Nudeln federnd garen und auf Schüsseln verteilen; Spinat in der heißen Brühe zusammenfallen lassen.",
+            "en": "Cook noodles until springy and divide between bowls; wilt spinach in the hot broth."
+          },
+          "timer_seconds": 240
+        },
+        {
+          "text": {
+            "de": "Cremige Pilzbrühe darübergeben und mit Pilzen, Frühlingszwiebeln, Nori und den aufgehobenen knusprigen Streifen vollenden.",
+            "en": "Ladle over the creamy mushroom broth and finish with mushrooms, scallion, nori, and the reserved crisp strips."
+          },
+          "timer_seconds": null
+        }
+      ],
+      "summary": {
+        "de": "Mit Steinpilzen veredelte Brühe, Gochujang-Schärfe und zwei Sorten gebräunte Pilze.",
+        "en": "Porcini-enriched broth, gochujang heat, and two kinds of browned mushrooms."
+      },
+      "tags": [
+        "noodles",
+        "soup"
+      ],
+      "time_minutes": 55,
+      "title": {
+        "de": "Würziges Pilz-Miso-Ramen",
+        "en": "Spicy Mushroom Miso Ramen"
+      }
+    }
+  ],
+  "schema_version": 1
+}
