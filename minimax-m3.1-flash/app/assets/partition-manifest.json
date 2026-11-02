@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "corpus_version": "1.0.0",
+  "generated_at": "2026-04-18T12:00:00Z",
+  "strategy": {
+    "default": "load-core-first",
+    "prefetch": [
+      "cuisine-index"
+    ],
+    "note": "The core partition holds the most-used recipes and is loaded at launch. The extended partition is fetched the first time a dish in it is opened. Cuisine partitions are indexes used for discovery, not copies of the recipes."
+  },
+  "partitions": [
+    {
+      "id": "core",
+      "file": "core-recipes.json",
+      "type": "recipes",
+      "frequency_tier": "high",
+      "description": "The recipes used most often. Loaded at launch.",
+      "recipe_count": 40
+    },
+    {
+      "id": "extended",
+      "file": "extended-recipes.json",
+      "type": "recipes",
+      "frequency_tier": "low",
+      "description": "The long tail. Loaded on demand.",
+      "recipe_count": 9
+    },
+    {
+      "id": "cuisine-american",
+      "file": "cuisine-american.json",
+      "type": "index",
+      "frequency_tier": "standard",
+      "description": "Cuisine index for american",
+      "recipe_ids": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-asian",
+      "file": "cuisine-asian.json",
+      "type": "index",
+      "frequency_tier": "standard",
+      "description": "Cuisine index for asian",
+      "recipe_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free",
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal",
+        "coconut-curry-classic",
+        "coconut-curry-vegan",
+        "coconut-curry-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-italian",
+      "file": "cuisine-italian.json",
+      "type": "index",
+      "frequency_tier": "standard",
+      "description": "Cuisine index for italian",
+      "recipe_ids": [
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free",
+        "margherita-classic",
+        "margherita-vegan",
+        "margherita-gluten-free",
+        "caesar-classic",
+        "caesar-vegan",
+        "caesar-gluten-free",
+        "risotto-classic",
+        "risotto-vegan",
+        "risotto-gluten-free",
+        "shroom-pasta-classic",
+        "shroom-pasta-vegan",
+        "shroom-pasta-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-mexican",
+      "file": "cuisine-mexican.json",
+      "type": "index",
+      "frequency_tier": "standard",
+      "description": "Cuisine index for mexican",
+      "recipe_ids": [
+        "chilli-classic",
+        "chili-vegetarian",
+        "chili-vegan",
+        "chili-gluten-free"
+      ]
+    },
+    {
+      "id": "cuisine-middle-eastern",
+      "file": "cuisine-middle-eastern.json",
+      "type": "index",
+      "frequency_tier": "standard",
+      "description": "Cuisine index for middle-eastern",
+      "recipe_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-halal",
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-gluten-free",
+        "falafel-wrap-classic",
+        "falafel-wrap-halal",
+        "falafel-wrap-gluten-free",
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-halal",
+        "buddha-bowl-classic",
+        "buddha-bowl-vegan",
+        "buddha-bowl-gluten-free",
+        "lentil-soup-classic",
+        "lentil-soup-vegan",
+        "lentil-soup-gluten-free"
+      ]
+    }
+  ],
+  "cross_references": {
+    "recipe_to_partition": {
+      "doener-classic": "core",
+      "doener-vegan": "core",
+      "doener-halal": "core",
+      "pad-thai-classic": "core",
+      "pad-thai-vegan": "core",
+      "pad-thai-gluten-free": "core",
+      "alfredo-classic": "core",
+      "alfredo-vegan": "core",
+      "alfredo-gluten-free": "core",
+      "margherita-classic": "core",
+      "margherita-vegan": "core",
+      "margherita-gluten-free": "core",
+      "caesar-classic": "core",
+      "caesar-vegan": "core",
+      "caesar-gluten-free": "core",
+      "shakshuka-classic": "core",
+      "shakshuka-vegan": "core",
+      "shakshuka-gluten-free": "core",
+      "falafel-wrap-classic": "core",
+      "falafel-wrap-halal": "core",
+      "falafel-wrap-gluten-free": "core",
+      "ramen-classic": "core",
+      "ramen-vegan": "core",
+      "ramen-halal": "core",
+      "tacos-classic": "core",
+      "tacos-vegan": "core",
+      "tacos-halal": "core",
+      "risotto-classic": "core",
+      "risotto-vegan": "core",
+      "risotto-gluten-free": "core",
+      "coconut-curry-classic": "core",
+      "coconut-curry-vegan": "core",
+      "coconut-curry-gluten-free": "core",
+      "pancakes-classic": "core",
+      "pancakes-vegan": "core",
+      "pancakes-gluten-free": "core",
+      "chilli-classic": "core",
+      "chili-vegetarian": "core",
+      "chili-vegan": "core",
+      "chili-gluten-free": "core",
+      "buddha-bowl-classic": "extended",
+      "buddha-bowl-vegan": "extended",
+      "buddha-bowl-gluten-free": "extended",
+      "shroom-pasta-classic": "extended",
+      "shroom-pasta-vegan": "extended",
+      "shroom-pasta-gluten-free": "extended",
+      "lentil-soup-classic": "extended",
+      "lentil-soup-vegan": "extended",
+      "lentil-soup-gluten-free": "extended"
+    },
+    "dish_to_partition": {
+      "doener": "core",
+      "pad-thai": "core",
+      "alfredo": "core",
+      "margherita": "core",
+      "caesar": "core",
+      "shakshuka": "core",
+      "falafel-wrap": "core",
+      "ramen": "core",
+      "tacos": "core",
+      "risotto": "core",
+      "coconut-curry": "core",
+      "pancakes": "core",
+      "chili": "core",
+      "buddha-bowl": "extended",
+      "shroom-pasta": "extended",
+      "lentil-soup": "extended"
+    }
+  }
+}

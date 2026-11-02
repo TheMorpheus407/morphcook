@@ -1,0 +1,2627 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "produce",
+      "label": {
+        "en": "Produce",
+        "de": "Obst & Gemüse"
+      },
+      "parent": null,
+      "aisle": "produce",
+      "unit_system": "any",
+      "aliases": [
+        "veggies",
+        "gemüse"
+      ]
+    },
+    {
+      "id": "produce.tomato",
+      "label": {
+        "en": "Tomato",
+        "de": "Tomate"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "tomaten"
+      ]
+    },
+    {
+      "id": "produce.tomato.cherry",
+      "label": {
+        "en": "Cherry tomatoes",
+        "de": "Cherrytomaten"
+      },
+      "parent": "produce.tomato",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.tomato.plum",
+      "label": {
+        "en": "Plum tomatoes",
+        "de": "Strauchtomaten"
+      },
+      "parent": "produce.tomato",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.onion",
+      "label": {
+        "en": "Onion",
+        "de": "Zwiebel"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "zwiebeln",
+        "onion"
+      ]
+    },
+    {
+      "id": "produce.onion.red",
+      "label": {
+        "en": "Red onion",
+        "de": "Rote Zwiebel"
+      },
+      "parent": "produce.onion",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.onion.yellow",
+      "label": {
+        "en": "Brown onion",
+        "de": "Zwiebel"
+      },
+      "parent": "produce.onion",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.onion.spring",
+      "label": {
+        "en": "Spring onions",
+        "de": "Frühlingszwiebeln"
+      },
+      "parent": "produce.onion",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "frühlingszwiebel"
+      ]
+    },
+    {
+      "id": "produce.garlic",
+      "label": {
+        "en": "Garlic",
+        "de": "Knoblauch"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "knoblauch"
+      ]
+    },
+    {
+      "id": "produce.pepper",
+      "label": {
+        "en": "Bell pepper",
+        "de": "Paprika"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "paprika",
+        "bell pepper"
+      ]
+    },
+    {
+      "id": "produce.pepper.red",
+      "label": {
+        "en": "Red pepper",
+        "de": "Rote Paprika"
+      },
+      "parent": "produce.pepper",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.pepper.yellow",
+      "label": {
+        "en": "Yellow pepper",
+        "de": "Gelbe Paprika"
+      },
+      "parent": "produce.pepper",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.pepper.green",
+      "label": {
+        "en": "Green pepper",
+        "de": "Grüne Paprika"
+      },
+      "parent": "produce.pepper",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.pepper.chili",
+      "label": {
+        "en": "Chilli",
+        "de": "Chilischote"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "chilli",
+        "chili"
+      ]
+    },
+    {
+      "id": "produce.herbs",
+      "label": {
+        "en": "Fresh herbs",
+        "de": "Frische Kräuter"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "kräuter"
+      ]
+    },
+    {
+      "id": "produce.herbs.cilantro",
+      "label": {
+        "en": "Coriander",
+        "de": "Koriander"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "cilantro"
+      ]
+    },
+    {
+      "id": "produce.herbs.basil",
+      "label": {
+        "en": "Basil",
+        "de": "Basilikum"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.herbs.parsley",
+      "label": {
+        "en": "Parsley",
+        "de": "Petersilie"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.herbs.thyme",
+      "label": {
+        "en": "Thyme",
+        "de": "Thymian"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.herbs.rosemary",
+      "label": {
+        "en": "Rosemary",
+        "de": "Rosmarin"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.herbs.mint",
+      "label": {
+        "en": "Mint",
+        "de": "Minze"
+      },
+      "parent": "produce.herbs",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.potato",
+      "label": {
+        "en": "Potato",
+        "de": "Kartoffel"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "kartoffeln"
+      ]
+    },
+    {
+      "id": "produce.potato.baby",
+      "label": {
+        "en": "Baby potatoes",
+        "de": "Babykartoffeln"
+      },
+      "parent": "produce.potato",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.carrot",
+      "label": {
+        "en": "Carrot",
+        "de": "Karotte"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "möhre",
+        "karotte"
+      ]
+    },
+    {
+      "id": "produce.eggplant",
+      "label": {
+        "en": "Aubergine",
+        "de": "Aubergine"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "eggplant"
+      ]
+    },
+    {
+      "id": "produce.zucchini",
+      "label": {
+        "en": "Courgette",
+        "de": "Zucchini"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "zucchini"
+      ]
+    },
+    {
+      "id": "produce.lemon",
+      "label": {
+        "en": "Lemon",
+        "de": "Zitrone"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "zitrone"
+      ]
+    },
+    {
+      "id": "produce.lime",
+      "label": {
+        "en": "Lime",
+        "de": "Limette"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "limette"
+      ]
+    },
+    {
+      "id": "produce.apple",
+      "label": {
+        "en": "Apple",
+        "de": "Apfel"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "apfel"
+      ]
+    },
+    {
+      "id": "produce.banana",
+      "label": {
+        "en": "Banana",
+        "de": "Banane"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.mushroom",
+      "label": {
+        "en": "Mushroom",
+        "de": "Pilze"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "champignons"
+      ]
+    },
+    {
+      "id": "produce.mushroom.chestnut",
+      "label": {
+        "en": "Chestnut mushrooms",
+        "de": "Riesenchampignons"
+      },
+      "parent": "produce.mushroom",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.lettuce",
+      "label": {
+        "en": "Lettuce",
+        "de": "Salat"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.lettuce.romaine",
+      "label": {
+        "en": "Romaine",
+        "de": "Römersalat"
+      },
+      "parent": "produce.lettuce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.spinach",
+      "label": {
+        "en": "Spinach",
+        "de": "Spinat"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.kale",
+      "label": {
+        "en": "Kale",
+        "de": "Grünkohl"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.ginger",
+      "label": {
+        "en": "Ginger",
+        "de": "Ingwer"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "ingwer"
+      ]
+    },
+    {
+      "id": "produce.cucumber",
+      "label": {
+        "en": "Cucumber",
+        "de": "Gurke"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "gurke"
+      ]
+    },
+    {
+      "id": "produce.pineapple",
+      "label": {
+        "en": "Pineapple",
+        "de": "Ananas"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.avocado",
+      "label": {
+        "en": "Avocado",
+        "de": "Avocado"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.corn",
+      "label": {
+        "en": "Sweetcorn",
+        "de": "Mais"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.pea",
+      "label": {
+        "en": "Peas",
+        "de": "Erbsen"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.pomegranate",
+      "label": {
+        "en": "Pomegranate",
+        "de": "Granatapfel"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.olive",
+      "label": {
+        "en": "Olives",
+        "de": "Oliven"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "oliven"
+      ]
+    },
+    {
+      "id": "produce.olive.black",
+      "label": {
+        "en": "Black olives",
+        "de": "Schwarze Oliven"
+      },
+      "parent": "produce.olive",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.cabbage",
+      "label": {
+        "en": "Cabbage",
+        "de": "Kohl"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.cabbage.red",
+      "label": {
+        "en": "Red cabbage",
+        "de": "Rotkohl"
+      },
+      "parent": "produce.cabbage",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "produce.celery",
+      "label": {
+        "en": "Celery",
+        "de": "Sellerie"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "sellerie"
+      ]
+    },
+    {
+      "id": "produce.sweet-potato",
+      "label": {
+        "en": "Sweet potato",
+        "de": "Süßkartoffel"
+      },
+      "parent": "produce",
+      "aisle": "produce",
+      "unit_system": "count",
+      "aliases": [
+        "süßkartoffel"
+      ]
+    },
+    {
+      "id": "dairy",
+      "label": {
+        "en": "Dairy",
+        "de": "Milchprodukte"
+      },
+      "parent": null,
+      "aisle": "dairy",
+      "unit_system": "any",
+      "aliases": [
+        "milk products",
+        "milchprodukte"
+      ]
+    },
+    {
+      "id": "dairy.milk",
+      "label": {
+        "en": "Milk",
+        "de": "Milch"
+      },
+      "parent": "dairy",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": [
+        "milch"
+      ]
+    },
+    {
+      "id": "dairy.milk.whole",
+      "label": {
+        "en": "Whole milk",
+        "de": "Vollmilch"
+      },
+      "parent": "dairy.milk",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": [
+        "vollmilch"
+      ]
+    },
+    {
+      "id": "dairy.milk.skim",
+      "label": {
+        "en": "Skimmed milk",
+        "de": "Magermilch"
+      },
+      "parent": "dairy.milk",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": [
+        "magermilch"
+      ]
+    },
+    {
+      "id": "dairy.milk.semi-skimmed",
+      "label": {
+        "en": "Semi-skimmed milk",
+        "de": "Halbfettmilch"
+      },
+      "parent": "dairy.milk",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.milk.buttermilk",
+      "label": {
+        "en": "Buttermilk",
+        "de": "Buttermilch"
+      },
+      "parent": "dairy.milk",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese",
+      "label": {
+        "en": "Cheese",
+        "de": "Käse"
+      },
+      "parent": "dairy",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": [
+        "käse",
+        "cheese"
+      ]
+    },
+    {
+      "id": "dairy.cheese.parmesan",
+      "label": {
+        "en": "Parmesan",
+        "de": "Parmesan"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.feta",
+      "label": {
+        "en": "Feta",
+        "de": "Feta"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.mozzarella",
+      "label": {
+        "en": "Mozzarella",
+        "de": "Mozzarella"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.cheddar",
+      "label": {
+        "en": "Cheddar",
+        "de": "Cheddar"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.ricotta",
+      "label": {
+        "en": "Ricotta",
+        "de": "Ricotta"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.gruyere",
+      "label": {
+        "en": "Gruyère",
+        "de": "Gruyère"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cheese.halloumi",
+      "label": {
+        "en": "Halloumi",
+        "de": "Halloumi"
+      },
+      "parent": "dairy.cheese",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "dairy.butter",
+      "label": {
+        "en": "Butter",
+        "de": "Butter"
+      },
+      "parent": "dairy",
+      "aisle": "dairy",
+      "unit_system": "mass",
+      "aliases": [
+        "butter"
+      ]
+    },
+    {
+      "id": "dairy.cream",
+      "label": {
+        "en": "Cream",
+        "de": "Sahne"
+      },
+      "parent": "dairy",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": [
+        "sahne",
+        "cream"
+      ]
+    },
+    {
+      "id": "dairy.cream.heavy",
+      "label": {
+        "en": "Double cream",
+        "de": "Schlagsahne"
+      },
+      "parent": "dairy.cream",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cream.sour",
+      "label": {
+        "en": "Sour cream",
+        "de": "Sauerrahm"
+      },
+      "parent": "dairy.cream",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.cream.crame-fraiche",
+      "label": {
+        "en": "Crème fraîche",
+        "de": "Crème fraîche"
+      },
+      "parent": "dairy.cream",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.yogurt",
+      "label": {
+        "en": "Yoghurt",
+        "de": "Joghurt"
+      },
+      "parent": "dairy",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": [
+        "joghurt",
+        "yogurt"
+      ]
+    },
+    {
+      "id": "dairy.yogurt.greek",
+      "label": {
+        "en": "Greek yoghurt",
+        "de": "Griechischer Joghurt"
+      },
+      "parent": "dairy.yogurt",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "dairy.yogurt.plain",
+      "label": {
+        "en": "Plain yoghurt",
+        "de": "Naturjoghurt"
+      },
+      "parent": "dairy.yogurt",
+      "aisle": "dairy",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "proteins",
+      "label": {
+        "en": "Protein",
+        "de": "Eiweiß"
+      },
+      "parent": null,
+      "aisle": "meat-seafood",
+      "unit_system": "any",
+      "aliases": []
+    },
+    {
+      "id": "proteins.egg",
+      "label": {
+        "en": "Egg",
+        "de": "Ei"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": [
+        "eier",
+        "eggs"
+      ]
+    },
+    {
+      "id": "proteins.chicken",
+      "label": {
+        "en": "Chicken",
+        "de": "Hähnchen"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "hähnchen",
+        "chicken"
+      ]
+    },
+    {
+      "id": "proteins.chicken.breast",
+      "label": {
+        "en": "Chicken breast",
+        "de": "Hähnchenbrust"
+      },
+      "parent": "proteins.chicken",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.chicken.thigh",
+      "label": {
+        "en": "Chicken thigh",
+        "de": "Hähnchenschenkel"
+      },
+      "parent": "proteins.chicken",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.beef",
+      "label": {
+        "en": "Beef",
+        "de": "Rindfleisch"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "rindfleisch",
+        "beef"
+      ]
+    },
+    {
+      "id": "proteins.beef.mince",
+      "label": {
+        "en": "Beef mince",
+        "de": "Hackfleisch"
+      },
+      "parent": "proteins.beef",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.pork",
+      "label": {
+        "en": "Pork",
+        "de": "Schweinefleisch"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "schweinefleisch",
+        "pork"
+      ]
+    },
+    {
+      "id": "proteins.pork.mince",
+      "label": {
+        "en": "Pork mince",
+        "de": "Schweinehack"
+      },
+      "parent": "proteins.pork",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.lamb",
+      "label": {
+        "en": "Lamb",
+        "de": "Lammfleisch"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "lamm",
+        "lamb"
+      ]
+    },
+    {
+      "id": "proteins.turkey",
+      "label": {
+        "en": "Turkey",
+        "de": "Truthahn"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.tofu",
+      "label": {
+        "en": "Tofu",
+        "de": "Tofu"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "tofu"
+      ]
+    },
+    {
+      "id": "proteins.tofu.firm",
+      "label": {
+        "en": "Firm tofu",
+        "de": "Fester Tofu"
+      },
+      "parent": "proteins.tofu",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.tofu.silken",
+      "label": {
+        "en": "Silken tofu",
+        "de": "Seidiger Tofu"
+      },
+      "parent": "proteins.tofu",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.tempeh",
+      "label": {
+        "en": "Tempeh",
+        "de": "Tempeh"
+      },
+      "parent": "proteins",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "proteins.plant-mince",
+      "label": {
+        "en": "Plant mince",
+        "de": "Sojageschrot"
+      },
+      "parent": "proteins",
+      "aisle": "frozen",
+      "unit_system": "mass",
+      "aliases": [
+        "vegan mince",
+        "sojageschrot"
+      ]
+    },
+    {
+      "id": "seafood",
+      "label": {
+        "en": "Seafood",
+        "de": "Fisch & Meeresfrüchte"
+      },
+      "parent": null,
+      "aisle": "meat-seafood",
+      "unit_system": "any",
+      "aliases": []
+    },
+    {
+      "id": "seafood.fish",
+      "label": {
+        "en": "Fish",
+        "de": "Fisch"
+      },
+      "parent": "seafood",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": [
+        "fisch",
+        "fish"
+      ]
+    },
+    {
+      "id": "seafood.fish.salmon",
+      "label": {
+        "en": "Salmon",
+        "de": "Lachs"
+      },
+      "parent": "seafood.fish",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.fish.tuna",
+      "label": {
+        "en": "Tuna",
+        "de": "Thunfisch"
+      },
+      "parent": "seafood.fish",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.fish.cod",
+      "label": {
+        "en": "Cod",
+        "de": "Kabeljau"
+      },
+      "parent": "seafood.fish",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.fish.tilapia",
+      "label": {
+        "en": "Tilapia",
+        "de": "Tilapia"
+      },
+      "parent": "seafood.fish",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.fish.anchovy",
+      "label": {
+        "en": "Anchovies",
+        "de": "Anchovis"
+      },
+      "parent": "seafood.fish",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.shellfish",
+      "label": {
+        "en": "Shellfish",
+        "de": "Schalentiere"
+      },
+      "parent": "seafood",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": [
+        "schalentiere"
+      ]
+    },
+    {
+      "id": "seafood.shellfish.shrimp",
+      "label": {
+        "en": "Prawns",
+        "de": "Garnelen"
+      },
+      "parent": "seafood.shellfish",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": [
+        "garnelen"
+      ]
+    },
+    {
+      "id": "seafood.shellfish.crab",
+      "label": {
+        "en": "Crab",
+        "de": "Krabbe"
+      },
+      "parent": "seafood.shellfish",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "seafood.shellfish.mussel",
+      "label": {
+        "en": "Mussels",
+        "de": "Muscheln"
+      },
+      "parent": "seafood.shellfish",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "seafood.shellfish.scallop",
+      "label": {
+        "en": "Scallops",
+        "de": "JakobsMuscheln"
+      },
+      "parent": "seafood.shellfish",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "seafood.mollusc",
+      "label": {
+        "en": "Molluscs",
+        "de": "Weichtiere"
+      },
+      "parent": "seafood",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.mollusc.squid",
+      "label": {
+        "en": "Squid",
+        "de": "Kalamaro"
+      },
+      "parent": "seafood.mollusc",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.mollusc.octopus",
+      "label": {
+        "en": "Octopus",
+        "de": "Oktopus"
+      },
+      "parent": "seafood.mollusc",
+      "aisle": "meat-seafood",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "seafood.mollusc.clam",
+      "label": {
+        "en": "Clams",
+        "de": "Venusmuscheln"
+      },
+      "parent": "seafood.mollusc",
+      "aisle": "meat-seafood",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery",
+      "label": {
+        "en": "Bakery",
+        "de": "Bäckerei"
+      },
+      "parent": null,
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": [
+        "bäckerei"
+      ]
+    },
+    {
+      "id": "bakery.bread",
+      "label": {
+        "en": "Bread",
+        "de": "Brot"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": [
+        "brot"
+      ]
+    },
+    {
+      "id": "bakery.bread.sourdough",
+      "label": {
+        "en": "Sourdough",
+        "de": "Sauerteigbrot"
+      },
+      "parent": "bakery.bread",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.bread.wholegrain",
+      "label": {
+        "en": "Wholegrain bread",
+        "de": "Vollkornbrot"
+      },
+      "parent": "bakery.bread",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.bagel",
+      "label": {
+        "en": "Bagel",
+        "de": "Bagel"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.pita",
+      "label": {
+        "en": "Pita",
+        "de": "Pitabrot"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.tortilla",
+      "label": {
+        "en": "Tortilla",
+        "de": "Tortilla"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": [
+        "tortillas"
+      ]
+    },
+    {
+      "id": "bakery.tortilla.flour",
+      "label": {
+        "en": "Flour tortilla",
+        "de": "Weizen-Tortilla"
+      },
+      "parent": "bakery.tortilla",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.tortilla.corn",
+      "label": {
+        "en": "Corn tortilla",
+        "de": "Maistortilla"
+      },
+      "parent": "bakery.tortilla",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.bun",
+      "label": {
+        "en": "Bun",
+        "de": "Brötchen"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.cracker",
+      "label": {
+        "en": "Crackers",
+        "de": "Cracker"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "count",
+      "aliases": []
+    },
+    {
+      "id": "bakery.puff-pastry",
+      "label": {
+        "en": "Puff pastry",
+        "de": "Blätterteig"
+      },
+      "parent": "bakery",
+      "aisle": "bakery",
+      "unit_system": "mass",
+      "aliases": [
+        "blätterteig"
+      ]
+    },
+    {
+      "id": "pantry",
+      "label": {
+        "en": "Pantry",
+        "de": "Vorratsschrank"
+      },
+      "parent": null,
+      "aisle": "pantry",
+      "unit_system": "any",
+      "aliases": [
+        "vorrat"
+      ]
+    },
+    {
+      "id": "pantry.flour",
+      "label": {
+        "en": "Flour",
+        "de": "Mehl"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "mehl"
+      ]
+    },
+    {
+      "id": "pantry.flour.plain",
+      "label": {
+        "en": "Plain flour",
+        "de": "Weizenmehl"
+      },
+      "parent": "pantry.flour",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.flour.wholegrain",
+      "label": {
+        "en": "Wholegrain flour",
+        "de": "Vollkornmehl"
+      },
+      "parent": "pantry.flour",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.flour.gluten-free",
+      "label": {
+        "en": "Gluten-free flour blend",
+        "de": "Glutenfreie Mehlmischung"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "glutenfreies mehl"
+      ]
+    },
+    {
+      "id": "pantry.rice",
+      "label": {
+        "en": "Rice",
+        "de": "Reis"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "reis"
+      ]
+    },
+    {
+      "id": "pantry.rice.basmati",
+      "label": {
+        "en": "Basmati rice",
+        "de": "Basmati-Reis"
+      },
+      "parent": "pantry.rice",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.rice.brown",
+      "label": {
+        "en": "Brown rice",
+        "de": "Vollkornreis"
+      },
+      "parent": "pantry.rice",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.rice.arborio",
+      "label": {
+        "en": "Arborio rice",
+        "de": "Risotto-Reis"
+      },
+      "parent": "pantry.rice",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pasta",
+      "label": {
+        "en": "Pasta",
+        "de": "Nudeln"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "nudeln",
+        "pasta"
+      ]
+    },
+    {
+      "id": "pantry.pasta.spaghetti",
+      "label": {
+        "en": "Spaghetti",
+        "de": "Spaghetti"
+      },
+      "parent": "pantry.pasta",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pasta.penne",
+      "label": {
+        "en": "Penne",
+        "de": "Penne"
+      },
+      "parent": "pantry.pasta",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pasta.rigatoni",
+      "label": {
+        "en": "Rigatoni",
+        "de": "Rigatoni"
+      },
+      "parent": "pantry.pasta",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pasta.lasagna-sheet",
+      "label": {
+        "en": "Lasagne sheets",
+        "de": "Lasagneblätter"
+      },
+      "parent": "pantry.pasta",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pasta.rice",
+      "label": {
+        "en": "Rice pasta",
+        "de": "Reispasta"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "reispasta"
+      ]
+    },
+    {
+      "id": "pantry.legume",
+      "label": {
+        "en": "Pulses",
+        "de": "Hülsenfrüchte"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "hülsenfrüchte"
+      ]
+    },
+    {
+      "id": "pantry.legume.lentil-red",
+      "label": {
+        "en": "Red lentils",
+        "de": "Rote Linsen"
+      },
+      "parent": "pantry.legume",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.legume.lentil-green",
+      "label": {
+        "en": "Green lentils",
+        "de": "Grüne Linsen"
+      },
+      "parent": "pantry.legume",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.legume.chickpea",
+      "label": {
+        "en": "Chickpeas",
+        "de": "Kichererbsen"
+      },
+      "parent": "pantry.legume",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.legume.black-bean",
+      "label": {
+        "en": "Black beans",
+        "de": "Schwarze Bohnen"
+      },
+      "parent": "pantry.legume",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.legume.kidney-bean",
+      "label": {
+        "en": "Kidney beans",
+        "de": "Kidneybohnen"
+      },
+      "parent": "pantry.legume",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut",
+      "label": {
+        "en": "Nuts",
+        "de": "Nüsse"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "nüsse",
+        "nuts"
+      ]
+    },
+    {
+      "id": "pantry.nut.walnut",
+      "label": {
+        "en": "Walnuts",
+        "de": "Walnüsse"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut.almond",
+      "label": {
+        "en": "Almonds",
+        "de": "Mandeln"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut.cashew",
+      "label": {
+        "en": "Cashews",
+        "de": "Cashewkerne"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut.pistachio",
+      "label": {
+        "en": "Pistachios",
+        "de": "Pistazien"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut.hazelnut",
+      "label": {
+        "en": "Hazelnuts",
+        "de": "Haselnüsse"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nut.peanut",
+      "label": {
+        "en": "Peanuts",
+        "de": "Erdnüsse"
+      },
+      "parent": "pantry.nut",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "erdnüsse"
+      ]
+    },
+    {
+      "id": "pantry.seed",
+      "label": {
+        "en": "Seeds",
+        "de": "Samen"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "samen"
+      ]
+    },
+    {
+      "id": "pantry.seed.sesame",
+      "label": {
+        "en": "Sesame seeds",
+        "de": "Sesamsamen"
+      },
+      "parent": "pantry.seed",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.seed.pumpkin",
+      "label": {
+        "en": "Pumpkin seeds",
+        "de": "Kürbiskerne"
+      },
+      "parent": "pantry.seed",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.seed.sunflower",
+      "label": {
+        "en": "Sunflower seeds",
+        "de": "Sonnenblumenkerne"
+      },
+      "parent": "pantry.seed",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.seed.flax",
+      "label": {
+        "en": "Flax seeds",
+        "de": "Leinsamen"
+      },
+      "parent": "pantry.seed",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.seed.chia",
+      "label": {
+        "en": "Chia seeds",
+        "de": "Chiasamen"
+      },
+      "parent": "pantry.seed",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.oil",
+      "label": {
+        "en": "Oil",
+        "de": "Öl"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": [
+        "öl"
+      ]
+    },
+    {
+      "id": "pantry.oil.olive",
+      "label": {
+        "en": "Olive oil",
+        "de": "Olivenöl"
+      },
+      "parent": "pantry.oil",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.oil.sunflower",
+      "label": {
+        "en": "Sunflower oil",
+        "de": "Sonnenblumenöl"
+      },
+      "parent": "pantry.oil",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.oil.sesame",
+      "label": {
+        "en": "Sesame oil",
+        "de": "Sesamöl"
+      },
+      "parent": "pantry.oil",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.oil.rapeseed",
+      "label": {
+        "en": "Rapeseed oil",
+        "de": "Rapsöl"
+      },
+      "parent": "pantry.oil",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.sugar",
+      "label": {
+        "en": "Sugar",
+        "de": "Zucker"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "zucker"
+      ]
+    },
+    {
+      "id": "pantry.sugar.caster",
+      "label": {
+        "en": "Caster sugar",
+        "de": "Feiner Zucker"
+      },
+      "parent": "pantry.sugar",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.sugar.brown",
+      "label": {
+        "en": "Brown sugar",
+        "de": "Brauner Zucker"
+      },
+      "parent": "pantry.sugar",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.honey",
+      "label": {
+        "en": "Honey",
+        "de": "Honig"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": [
+        "honig",
+        "honey"
+      ]
+    },
+    {
+      "id": "pantry.maple-syrup",
+      "label": {
+        "en": "Maple syrup",
+        "de": "Ahornsyrup"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.salt",
+      "label": {
+        "en": "Salt",
+        "de": "Salz"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "salz",
+        "salt"
+      ]
+    },
+    {
+      "id": "pantry.salt.sea",
+      "label": {
+        "en": "Sea salt",
+        "de": "Meersalz"
+      },
+      "parent": "pantry.salt",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.pepper",
+      "label": {
+        "en": "Pepper",
+        "de": "Pfeffer"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "pfeffer",
+        "pepper"
+      ]
+    },
+    {
+      "id": "pantry.pepper.black",
+      "label": {
+        "en": "Black pepper",
+        "de": "Schwarzer Pfeffer"
+      },
+      "parent": "pantry.pepper",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.stock",
+      "label": {
+        "en": "Stock",
+        "de": "Brühe"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": [
+        "brühe",
+        "stock"
+      ]
+    },
+    {
+      "id": "pantry.stock.vegetable",
+      "label": {
+        "en": "Vegetable stock",
+        "de": "Gemüsebrühe"
+      },
+      "parent": "pantry.stock",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.stock.chicken",
+      "label": {
+        "en": "Chicken stock",
+        "de": "Hühnerbrühe"
+      },
+      "parent": "pantry.stock",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.stock.pork",
+      "label": {
+        "en": "Pork stock",
+        "de": "Schweinebrühe"
+      },
+      "parent": "pantry.stock",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.canned-tomato",
+      "label": {
+        "en": "Tinned tomatoes",
+        "de": "Dosentomaten"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.coconut-milk",
+      "label": {
+        "en": "Coconut milk",
+        "de": "Kokosmilch"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.tahini",
+      "label": {
+        "en": "Tahini",
+        "de": "Tahini"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.miso",
+      "label": {
+        "en": "Miso",
+        "de": "Miso"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.soy-sauce",
+      "label": {
+        "en": "Soy sauce",
+        "de": "Sojasauce"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.vinegar",
+      "label": {
+        "en": "Vinegar",
+        "de": "Essig"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": [
+        "essig"
+      ]
+    },
+    {
+      "id": "pantry.vinegar.cider",
+      "label": {
+        "en": "Cider vinegar",
+        "de": "Apfelessig"
+      },
+      "parent": "pantry.vinegar",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.vinegar.balsamic",
+      "label": {
+        "en": "Balsamic vinegar",
+        "de": "Balsamico"
+      },
+      "parent": "pantry.vinegar",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.vinegar.rice",
+      "label": {
+        "en": "Rice vinegar",
+        "de": "Reisessig"
+      },
+      "parent": "pantry.vinegar",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.mustard",
+      "label": {
+        "en": "Mustard",
+        "de": "Senf"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "senf",
+        "mustard"
+      ]
+    },
+    {
+      "id": "pantry.mustard.dijon",
+      "label": {
+        "en": "Dijon mustard",
+        "de": "Dijon"
+      },
+      "parent": "pantry.mustard",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.mustard.wholegrain",
+      "label": {
+        "en": "Wholegrain mustard",
+        "de": "Grobkörniger Senf"
+      },
+      "parent": "pantry.mustard",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.ketchup",
+      "label": {
+        "en": "Ketchup",
+        "de": "Ketchup"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.baking-powder",
+      "label": {
+        "en": "Baking powder",
+        "de": "Backpulver"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.baking-soda",
+      "label": {
+        "en": "Baking soda",
+        "de": "Natron"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.vanilla",
+      "label": {
+        "en": "Vanilla",
+        "de": "Vanille"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.cinnamon",
+      "label": {
+        "en": "Cinnamon",
+        "de": "Zimt"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.cumin",
+      "label": {
+        "en": "Cumin",
+        "de": "Kreuzkümmel"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.paprika",
+      "label": {
+        "en": "Paprika",
+        "de": "Paprikapulver"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.oregano",
+      "label": {
+        "en": "Oregano",
+        "de": "Oregano"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.curry-powder",
+      "label": {
+        "en": "Curry powder",
+        "de": "Currypulver"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.coriander-seed",
+      "label": {
+        "en": "Coriander seeds",
+        "de": "Koriandersamen"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.turmeric",
+      "label": {
+        "en": "Turmeric",
+        "de": "Kurkuma"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nutmeg",
+      "label": {
+        "en": "Nutmeg",
+        "de": "Muskatnuss"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.capers",
+      "label": {
+        "en": "Capers",
+        "de": "Kapern"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.cornstarch",
+      "label": {
+        "en": "Cornstarch",
+        "de": "Speisestärke"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.breadcrumbs",
+      "label": {
+        "en": "Breadcrumbs",
+        "de": "Semmelbrösel"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.panko",
+      "label": {
+        "en": "Panko breadcrumbs",
+        "de": "Panko"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.chocolate",
+      "label": {
+        "en": "Dark chocolate",
+        "de": "Dunkle Schokolade"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.cocoa",
+      "label": {
+        "en": "Cocoa powder",
+        "de": "Kakaopulver"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.nutritional-yeast",
+      "label": {
+        "en": "Nutritional yeast",
+        "de": "Hefepulver"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.palm-sugar",
+      "label": {
+        "en": "Palm sugar",
+        "de": "Palmzucker"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.tamari",
+      "label": {
+        "en": "Tamari",
+        "de": "Tamari"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "pantry.tamarind",
+      "label": {
+        "en": "Tamarind paste",
+        "de": "Tamarindenpaste"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "pantry.rice-noodle",
+      "label": {
+        "en": "Rice noodles",
+        "de": "Reisnudeln"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "reisnudeln"
+      ]
+    },
+    {
+      "id": "pantry.ramen-noodle",
+      "label": {
+        "en": "Ramen noodles",
+        "de": "Ramennudeln"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "ramennudeln"
+      ]
+    },
+    {
+      "id": "pantry.nori",
+      "label": {
+        "en": "Nori seaweed",
+        "de": "Nori-Algen"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "nori",
+        "algen"
+      ]
+    },
+    {
+      "id": "pantry.bay-leaf",
+      "label": {
+        "en": "Bay leaves",
+        "de": "Lorbeerblätter"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "count",
+      "aliases": [
+        "lorbeerblatt"
+      ]
+    },
+    {
+      "id": "pantry.smoked-paprika",
+      "label": {
+        "en": "Smoked paprika",
+        "de": "Geräucherte Paprika"
+      },
+      "parent": "pantry",
+      "aisle": "pantry",
+      "unit_system": "mass",
+      "aliases": [
+        "räucherpaprika"
+      ]
+    },
+    {
+      "id": "beverages",
+      "label": {
+        "en": "Drinks",
+        "de": "Getränke"
+      },
+      "parent": null,
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": [
+        "getränke"
+      ]
+    },
+    {
+      "id": "beverages.coffee",
+      "label": {
+        "en": "Coffee",
+        "de": "Kaffee"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": [
+        "kaffee"
+      ]
+    },
+    {
+      "id": "beverages.black-tea",
+      "label": {
+        "en": "Black tea",
+        "de": "Schwarzer Tee"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.green-tea",
+      "label": {
+        "en": "Green tea",
+        "de": "Grüner Tee"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.wine",
+      "label": {
+        "en": "Wine",
+        "de": "Wein"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": [
+        "wein",
+        "wine"
+      ]
+    },
+    {
+      "id": "beverages.wine.red",
+      "label": {
+        "en": "Red wine",
+        "de": "Rotwein"
+      },
+      "parent": "beverages.wine",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.wine.white",
+      "label": {
+        "en": "White wine",
+        "de": "Weißwein"
+      },
+      "parent": "beverages.wine",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.beer",
+      "label": {
+        "en": "Beer",
+        "de": "Bier"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": [
+        "bier"
+      ]
+    },
+    {
+      "id": "beverages.apple-juice",
+      "label": {
+        "en": "Apple juice",
+        "de": "Apfelsaft"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.sparkling-water",
+      "label": {
+        "en": "Sparkling water",
+        "de": "Sprudelwasser"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.soy-milk",
+      "label": {
+        "en": "Soy milk",
+        "de": "Sojamilch"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.almond-milk",
+      "label": {
+        "en": "Almond milk",
+        "de": "Mandelmilch"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "beverages.oat-milk",
+      "label": {
+        "en": "Oat milk",
+        "de": "Hafermilch"
+      },
+      "parent": "beverages",
+      "aisle": "beverages",
+      "unit_system": "volume",
+      "aliases": []
+    },
+    {
+      "id": "frozen",
+      "label": {
+        "en": "Frozen",
+        "de": "Tiefkühl"
+      },
+      "parent": null,
+      "aisle": "frozen",
+      "unit_system": "count",
+      "aliases": [
+        "tiefkühl"
+      ]
+    },
+    {
+      "id": "frozen.pea",
+      "label": {
+        "en": "Frozen peas",
+        "de": "Tiefkühlerbsen"
+      },
+      "parent": "frozen",
+      "aisle": "frozen",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "frozen.berry",
+      "label": {
+        "en": "Frozen berries",
+        "de": "Tiefkühlbeeren"
+      },
+      "parent": "frozen",
+      "aisle": "frozen",
+      "unit_system": "mass",
+      "aliases": []
+    },
+    {
+      "id": "frozen.spinach",
+      "label": {
+        "en": "Frozen spinach",
+        "de": "Tiefkühlsalat"
+      },
+      "parent": "frozen",
+      "aisle": "frozen",
+      "unit_system": "mass",
+      "aliases": []
+    }
+  ]
+}

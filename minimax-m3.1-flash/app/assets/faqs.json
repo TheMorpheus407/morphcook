@@ -1,0 +1,492 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "dietary-how-matching-works",
+      "category": "dietary",
+      "question": {
+        "en": "How does MorphCook decide what I can see?",
+        "de": "Wie entscheidet MorphCook, was ich sehe?"
+      },
+      "answer": {
+        "en": "Every recipe carries flags for what it contains. Your profile carries flags for what you avoid. A recipe is visible when the two sets do not overlap, when it uses no ingredient you have singled out, when it carries the attributes you require, when it fits your time budget, and when it sits inside your calorie target.",
+        "de": "Jedes Rezept trägt Markierungen für das, was es enthält. Dein Profil trägt Markierungen für das, was du meidest. Ein Rezept ist sichtbar, wenn sich die beiden Mengen nicht überschneiden, wenn es keine einzelne Zutat verwendet, die du ausgeschlossen hast, wenn es die geforderten Eigenschaften trägt, in dein Zeitbudget passt und in deinem Kalorienziel liegt."
+      },
+      "keywords": [
+        "matching",
+        "visibility",
+        "flags",
+        "regeln",
+        "sichtbarkeit"
+      ],
+      "related": [
+        "dietary-vegan-vs-vegetarian",
+        "visibility-why-missing",
+        "dietary-specific-avoidance"
+      ]
+    },
+    {
+      "id": "dietary-vegan-vs-vegetarian",
+      "category": "dietary",
+      "question": {
+        "en": "What is the difference between vegan and vegetarian here?",
+        "de": "Was ist hier der Unterschied zwischen vegan und vegetarisch?"
+      },
+      "answer": {
+        "en": "Vegetarian excludes meat, fish and shellfish. Vegan also excludes eggs, dairy, honey and animal gelatins. Both are shortcuts: choosing one expands into the individual ingredients it covers, and you can still avoid individual ingredients on top.",
+        "de": "Vegetarisch schließt Fleisch, Fisch und Schalentiere aus. Vegan schließt zusätzlich Eier, Milchprodukte, Honig und tierische Gelatinen aus. Beides sind Kurzwege: Wer eines auswählt, bekommt die einzelnen Zutaten dahinter aufgeklappt — einzelne Zutaten kannst du zusätzlich weiter ausschließen."
+      },
+      "keywords": [
+        "vegan",
+        "vegetarian",
+        "diet",
+        "ernährung",
+        "vegetarisch"
+      ],
+      "related": [
+        "dietary-how-matching-works",
+        "dietary-halal-kosher"
+      ]
+    },
+    {
+      "id": "dietary-halal-kosher",
+      "category": "dietary",
+      "question": {
+        "en": "Does MorphCook certify anything as halal or kosher?",
+        "de": "Zertifiziert MorphCook etwas als halal oder koscher?"
+      },
+      "answer": {
+        "en": "No — and it never will. Certification is a property of sourcing and supervision, not of a recipe text. MorphCook only tells you that a recipe uses halal-compatible ingredients.",
+        "de": "Nein — und wird es auch nie. Zertifizierung ist eine Eigenschaft der Beschaffung und der Aufsicht, nicht des Rezepts. MorphCook sagt dir nur, dass ein Rezept halal-kompatible Zutaten verwendet."
+      },
+      "keywords": [
+        "halal",
+        "kosher",
+        "certification",
+        "zertifizierung"
+      ],
+      "related": [
+        "dietary-how-matching-works"
+      ]
+    },
+    {
+      "id": "dietary-specific-avoidance",
+      "category": "dietary",
+      "question": {
+        "en": "Can I avoid a single ingredient?",
+        "de": "Kann ich eine einzelne Zutat ausschließen?"
+      },
+      "answer": {
+        "en": "Yes. Type into the ingredient field in settings. If you pick a parent — say, dairy — everything beneath it is excluded too: milk, cheese, butter, all of it.",
+        "de": "Ja. Tippe im Einstellungsmenü in das Zutatenfeld. Wählst du eine übergeordnete Zutat — etwa Milchprodukte — fällt alles darunter weg: Milch, Käse, Butter, alles."
+      },
+      "keywords": [
+        "ingredient",
+        "allergy",
+        "avoid",
+        "zutat",
+        "allergie",
+        "milchprodukte"
+      ],
+      "related": [
+        "dietary-how-matching-works",
+        "visibility-why-missing"
+      ]
+    },
+    {
+      "id": "visibility-why-missing",
+      "category": "visibility",
+      "question": {
+        "en": "Why can I not find a dish I know exists?",
+        "de": "Warum finde ich ein Gericht nicht, von dem ich weiß, dass es existiert?"
+      },
+      "answer": {
+        "en": "The dish is almost certainly in the app — but every version of it sits outside your filters. Open it from search or from a cuisine section: the app will show you the version and explain which filter it breaks, and you can loosen that single dish with the override switch.",
+        "de": "Das Gericht ist mit ziemlicher Sicherheit in der App — aber jede Version davon liegt außerhalb deiner Filter. Öffne es aus der Suche oder aus einer Küchen-Sektion: die App zeigt dir die Version und erklärt, welchen Filter sie verletzt, und du kannst dieses eine Gericht mit dem Überschreiben-Schalter freigeben."
+      },
+      "keywords": [
+        "missing",
+        "hidden",
+        "not showing",
+        "fehlt",
+        "versteckt"
+      ],
+      "related": [
+        "dietary-how-matching-works",
+        "features-variant-switcher"
+      ]
+    },
+    {
+      "id": "visibility-variant-disabled",
+      "category": "visibility",
+      "question": {
+        "en": "Why is a version greyed out?",
+        "de": "Warum ist eine Version ausgegraut?"
+      },
+      "answer": {
+        "en": "Because no recipe has been written for that combination yet. MorphCook does not hide it — the disabled chip tells you exactly which pairing is missing. Writing that version is a matter of adding a recipe file, not of changing any code.",
+        "de": "Weil für diese Kombination noch kein Rezept geschrieben wurde. MorphCook versteckt sie nicht — die ausgegraute Marke nennt dir genau, welche Kombination fehlt. Diese Version zu schreiben heißt: eine Rezeptdatei ergänzen, nicht Code ändern."
+      },
+      "keywords": [
+        "disabled",
+        "greyed out",
+        "unavailable",
+        "ausgegraut",
+        "nicht verfügbar"
+      ],
+      "related": [
+        "features-variant-switcher",
+        "visibility-why-missing"
+      ]
+    },
+    {
+      "id": "features-variant-switcher",
+      "category": "features",
+      "question": {
+        "en": "How do the version rows work?",
+        "de": "Wie funktionieren die Versions-Zeilen?"
+      },
+      "answer": {
+        "en": "Each row is one axis — diet, effort, calorie level. A collapsed row shows only what you have selected. Tap it to reveal the alternatives. Switching one axis narrows the others; when a combination has no recipe, that option is shown disabled with a note rather than silently removed.",
+        "de": "Jede Zeile ist eine Achse — Ernährung, Aufwand, Kalorienniveau. Eine zugeklappte Zeile zeigt nur deine Auswahl. Tippe sie an, um die Alternativen zu sehen. Eine Achse einzugrenzen grenzt die anderen ein; gibt es für eine Kombination kein Rezept, wird sie ausgegraut mit einem Hinweis gezeigt statt stillschweigend entfernt."
+      },
+      "keywords": [
+        "switcher",
+        "versions",
+        "rows",
+        "wechseln",
+        "versionen"
+      ],
+      "related": [
+        "visibility-variant-disabled",
+        "features-saving-variants"
+      ]
+    },
+    {
+      "id": "features-saving-variants",
+      "category": "features",
+      "question": {
+        "en": "Do I save the dish or the version?",
+        "de": "Speichere ich das Gericht oder die Version?"
+      },
+      "answer": {
+        "en": "The version. You save your Döner, not Döner in general. Two people with different diets can each save their own version of the same dish, and neither sees the other's.",
+        "de": "Die Version. Du speicherst deinen Döner, nicht Döner allgemein. Zwei Menschen mit unterschiedlichen Ernährungsweisen können jede ihre eigene Version desselben Gerichts speichern — und keine sieht die der anderen."
+      },
+      "keywords": [
+        "save",
+        "cookbook",
+        "speichern",
+        "kochbuch"
+      ],
+      "related": [
+        "features-variant-switcher"
+      ]
+    },
+    {
+      "id": "features-cook-mode",
+      "category": "features",
+      "question": {
+        "en": "What happens in cook mode?",
+        "de": "Was passiert im Kochmodus?"
+      },
+      "answer": {
+        "en": "Cook mode is dark, full-bleed and step by step: a timer on the steps that need one, a scaler for the number of portions, and your progress is saved if you close the app. When a timer ends the screen flashes — you can turn that off in settings, and there is a single-tap shortcut for advancing a step when your hands are busy.",
+        "de": "Der Kochmodus ist dunkel, randlos und Schritt für Schritt: ein Timer bei den Schritten, die einen brauchen, ein Regler für die Anzahl der Portionen, und dein Fortschritt wird gespeichert, wenn du die App schließt. Endet ein Timer, blinkt der Bildschirm — das lässt sich in den Einstellungen abschalten, und es gibt einen Einzel-Tipp zum Überspringen eines Schritts, wenn die Hände beschäftigt sind."
+      },
+      "keywords": [
+        "cook mode",
+        "timer",
+        "step",
+        "kochmodus",
+        "timer",
+        "schritt"
+      ],
+      "related": [
+        "features-visual-alerts",
+        "features-one-handed"
+      ]
+    },
+    {
+      "id": "features-visual-alerts",
+      "category": "features",
+      "question": {
+        "en": "What is the flashing screen for?",
+        "de": "Wofür ist das blinkende Bildschirmfenster?"
+      },
+      "answer": {
+        "en": "It is for people who cannot hear a timer finish — deaf and hard-of-hearing cooks, or anyone cooking in a loud room. The screen flashes coral and teal when a timer ends. You can switch it off, and if you have reduced motion switched on, it shows a calm banner instead of a flash.",
+        "de": "Es ist für Menschen, die ein Timerende nicht hören können — taub und schwerhörig kochende Menschen, oder alle in einer lauten Küche. Der Bildschirm blinkt korall und teal, wenn ein Timer endet. Du kannst es abschalten, und wenn du Bewegung reduziert hast, erscheint statt des Blinkens ein ruhiges Banner."
+      },
+      "keywords": [
+        "flash",
+        "alert",
+        "accessibility",
+        "blinken",
+        "barrierefrei",
+        "taub"
+      ],
+      "related": [
+        "features-cook-mode",
+        "features-reduce-motion"
+      ]
+    },
+    {
+      "id": "features-one-handed",
+      "category": "features",
+      "question": {
+        "en": "Can I skip a step with one tap?",
+        "de": "Kann ich einen Schritt mit einem Tipp überspringen?"
+      },
+      "answer": {
+        "en": "Yes — switch on “tap to skip a step” in settings. A single tap on the step text moves to the next one, with a small vibration so you know it registered. A short debounce stops a double tap from skipping two steps.",
+        "de": "Ja — aktiviere „tippen, um einen schritt zu überspringen“ in den Einstellungen. Ein einzelner Tipp auf den Schritttext geht zum nächsten, mit einer kleinen Vibration als Bestätigung. Eine kurze Sperre verhindert, dass ein Doppeltipp zwei Schritte überspringt."
+      },
+      "keywords": [
+        "tap",
+        "quick",
+        "one handed",
+        "tipp",
+        "einhand",
+        "schnell"
+      ],
+      "related": [
+        "features-cook-mode",
+        "features-reduce-motion"
+      ]
+    },
+    {
+      "id": "features-reduce-motion",
+      "category": "features",
+      "question": {
+        "en": "What does reduce motion change?",
+        "de": "Was ändert „Bewegung reduzieren“?"
+      },
+      "answer": {
+        "en": "Animations collapse to instant changes: the ingredient list swaps without a fade, the timer banner replaces the flash, and the step transition is immediate. The setting can follow your system preference or be pinned on.",
+        "de": "Animationen werden zu sofortigen Wechseln: die Zutatenliste tauscht sich ohne Überblendung, das Timer-Banner ersetzt das Blinken, und der Schrittwechsel ist unmittelbar. Die Einstellung kann deiner Systemeinstellung folgen oder fest eingestellt sein."
+      },
+      "keywords": [
+        "motion",
+        "animation",
+        "accessibility",
+        "bewegung",
+        "animation",
+        "barrierefrei"
+      ],
+      "related": [
+        "features-visual-alerts",
+        "features-one-handed"
+      ]
+    },
+    {
+      "id": "features-shopping-list",
+      "category": "features",
+      "question": {
+        "en": "How does the shopping list combine recipes?",
+        "de": "Wie fasst die Einkaufsliste Rezepte zusammen?"
+      },
+      "answer": {
+        "en": "Ingredients with the same name are merged and their quantities added: two cloves of garlic plus three cloves makes five cloves. Where two recipes measure the same thing in compatible units — millilitres and tablespoons — the smaller one is converted and folded in. Anything that cannot be converted stays on its own line rather than being guessed at.",
+        "de": "Zutaten mit gleichem Namen werden zusammengefasst und ihre Mengen addiert: zwei Knoblauchzehen plus drei ergeben fünf Zehen. Messen zwei Rezepte dasselbe in verträglichen Einheiten — Milliliter und Esslöffel — wird die kleinere umgerechnet und mitgezählt. Was sich nicht umrechnen lässt, bleibt in einer eigenen Zeile, statt geraten zu werden."
+      },
+      "keywords": [
+        "shopping",
+        "list",
+        "aggregate",
+        "einkaufsliste",
+        "liste",
+        "umrechnen"
+      ],
+      "related": [
+        "features-meal-plan",
+        "features-insights"
+      ]
+    },
+    {
+      "id": "features-meal-plan",
+      "category": "features",
+      "question": {
+        "en": "Can I plan my week?",
+        "de": "Kann ich meine Woche planen?"
+      },
+      "answer": {
+        "en": "Yes — the plan is a Monday-to-Sunday grid with breakfast, lunch and dinner. Tap a slot to assign a recipe, drag one slot onto another to move it, and send the whole week to the shopping list in one tap. There is no auto-planning and no nutrition maths; you decide.",
+        "de": "Ja — die Planung ist ein Raster von Montag bis Sonntag mit Frühstück, Mittag- und Abendessen. Tippe ein Feld an, um ein Rezept zuzuweisen, ziehe ein Feld auf ein anderes, um es zu verschieben, und schicke die ganze Woche mit einem Tipp auf die Einkaufsliste. Es gibt keine automatische Planung und keine Nährwertrechnung — du entscheidest."
+      },
+      "keywords": [
+        "plan",
+        "week",
+        "meal plan",
+        "planung",
+        "woche",
+        "essensplan"
+      ],
+      "related": [
+        "features-shopping-list"
+      ]
+    },
+    {
+      "id": "features-insights",
+      "category": "features",
+      "question": {
+        "en": "What do the shopping insights show?",
+        "de": "Was zeigen die Einkaufsanalysen?"
+      },
+      "answer": {
+        "en": "Three things: a variety score — how many distinct ingredients you reach for — the ingredients you use most often, and a month-by-month breakdown of what you cooked, so seasonal habits become visible.",
+        "de": "Drei Dinge: einen Vielfaltswert — wie viele verschiedene Zutaten du verwendest — die am häufigsten genutzten Zutaten und eine Aufschlüsselung nach Monaten dessen, was du gekocht hast, damit saisonale Gewohnheiten sichtbar werden."
+      },
+      "keywords": [
+        "insights",
+        "analytics",
+        "statistics",
+        "analysen",
+        "statistik"
+      ],
+      "related": [
+        "features-shopping-list"
+      ]
+    },
+    {
+      "id": "features-offline",
+      "category": "features",
+      "question": {
+        "en": "Does MorphCook need an internet connection?",
+        "de": "Braucht MorphCook eine Internetverbindung?"
+      },
+      "answer": {
+        "en": "No. The whole cookbook ships inside the app. There is no account, no cloud and no tracking — your recipes and your preferences never leave the device unless you export them yourself.",
+        "de": "Nein. Das gesamte Kochbuch steckt in der App. Es gibt kein Konto, keine Cloud und kein Tracking — deine Rezepte und Einstellungen verlassen das Gerät nur, wenn du sie selbst exportierst."
+      },
+      "keywords": [
+        "offline",
+        "privacy",
+        "network",
+        "offline",
+        "privatsphäre",
+        "netzwerk"
+      ],
+      "related": [
+        "backup-export",
+        "backup-import"
+      ]
+    },
+    {
+      "id": "backup-export",
+      "category": "backup",
+      "question": {
+        "en": "How do I back up my data?",
+        "de": "Wie sichere ich meine Daten?"
+      },
+      "answer": {
+        "en": "Open settings and choose export. Two files are written side by side: a readable JSON file and a compressed one that is roughly 70–90% smaller. Save whichever you prefer — or both. You can add a password, which encrypts the JSON file with AES-256-GCM.",
+        "de": "Öffne die Einstellungen und wähle Export. Es werden zwei Dateien nebeneinander geschrieben: eine lesbare JSON-Datei und eine komprimierte, die rund 70–90 % kleiner ist. Nimm, was dir lieber ist — oder beides. Du kannst ein Passwort setzen, das die JSON-Datei mit AES-256-GCM verschlüsselt."
+      },
+      "keywords": [
+        "backup",
+        "export",
+        "save",
+        "sichern",
+        "export",
+        "teilen"
+      ],
+      "related": [
+        "backup-import",
+        "backup-password"
+      ]
+    },
+    {
+      "id": "backup-import",
+      "category": "backup",
+      "question": {
+        "en": "How do I restore a backup?",
+        "de": "Wie stelle ich ein Backup wieder her?"
+      },
+      "answer": {
+        "en": "In settings, choose restore and pick the file. MorphCook works out the format on its own — plain, compressed or encrypted. You then choose whether to merge the backup into your data or replace it. The bundled cookbook is never touched.",
+        "de": "In den Einstellungen „Backup einspielen“ wählen und die Datei auswählen. MorphCook erkennt das Format selbst — unkomprimiert, komprimiert oder verschlüsselt. Danach entscheidest du, ob du das Backup in deine Daten einfließt oder ersetzt. Das mitgelieferte Kochbuch wird nie angetastet."
+      },
+      "keywords": [
+        "restore",
+        "import",
+        "wiederherstellen",
+        "einspielen"
+      ],
+      "related": [
+        "backup-export",
+        "backup-password"
+      ]
+    },
+    {
+      "id": "backup-password",
+      "category": "backup",
+      "question": {
+        "en": "What happens if I forget my backup password?",
+        "de": "Was passiert, wenn ich mein Backup-Passwort vergesse?"
+      },
+      "answer": {
+        "en": "The password protects the JSON file, and it cannot be recovered — that is the point of the encryption. The compressed file is never encrypted, so keep a copy of the .gz file if the profile data matters to you.",
+        "de": "Das Passwort schützt die JSON-Datei und kann nicht wiederhergestellt werden — genau das ist der Zweck der Verschlüsselung. Die komprimierte Datei wird nie verschlüsselt; behalte also eine Kopie der .gz-Datei, wenn dir die Profildaten wichtig sind."
+      },
+      "keywords": [
+        "password",
+        "encrypt",
+        "forgot",
+        "passwort",
+        "verschlüsselt",
+        "vergessen"
+      ],
+      "related": [
+        "backup-export",
+        "backup-import"
+      ]
+    },
+    {
+      "id": "troubleshooting-missing-dish",
+      "category": "troubleshooting",
+      "question": {
+        "en": "A dish is missing from search. What now?",
+        "de": "Ein Gericht fehlt in der Suche. Und nun?"
+      },
+      "answer": {
+        "en": "Tell the app. If a search returns nothing, MorphCook writes the query down locally and offers to log it. Those requests travel inside your backup file, which tells the cookbook team exactly what people are looking for and cannot find.",
+        "de": "Sag es der App. Wenn eine Suche nichts findet, schreibt MorphCook die Anfrage lokal auf und bietet an, sie zu erfassen. Diese Anfragen reisen in deiner Backup-Datei mit — und sagen dem Kochbuch-Team genau, wonach Leute suchen und es nicht finden."
+      },
+      "keywords": [
+        "missing",
+        "search",
+        "content request",
+        "fehlt",
+        "suche",
+        "wunsch"
+      ],
+      "related": [
+        "visibility-why-missing",
+        "backup-export"
+      ]
+    },
+    {
+      "id": "troubleshooting-slow-search",
+      "category": "troubleshooting",
+      "question": {
+        "en": "Search feels slow. What can I do?",
+        "de": "Die Suche fühlt sich langsam an. Was kann ich tun?"
+      },
+      "answer": {
+        "en": "Results are paginated — twenty at a time, prefetching ahead of your scroll — so a long list never blocks the interface. If the app has just been updated, the first search also has to load the extended part of the cookbook; after that it is instant.",
+        "de": "Die Ergebnisse sind seitenweise geladen — zwanzig auf einmal, mit Vorausladen vor deinem Scrollen — damit eine lange Liste die Oberfläche nie blockiert. Wurde die App gerade aktualisiert, muss die erste Suche zusätzlich den erweiterten Teil des Kochbuchs laden; danach geht es sofort."
+      },
+      "keywords": [
+        "slow",
+        "performance",
+        "lag",
+        "langsam",
+        "performance"
+      ],
+      "related": [
+        "features-variant-switcher"
+      ]
+    }
+  ]
+}

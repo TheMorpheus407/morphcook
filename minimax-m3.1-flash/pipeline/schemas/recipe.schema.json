@@ -1,0 +1,224 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.app/schemas/recipe.schema.json",
+  "title": "MorphCook recipe",
+  "description": "A complete recipe. One recipe is one variant of a dish.",
+  "type": "object",
+  "required": [
+    "id",
+    "dish_id",
+    "diet",
+    "title",
+    "hero_text",
+    "cap_caption",
+    "stripe_color",
+    "ingredients",
+    "steps",
+    "contains",
+    "attributes",
+    "time_minutes",
+    "calories_per_serving",
+    "macros",
+    "servings",
+    "tags",
+    "meal_slots"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "dish_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "diet": {
+      "type": "string",
+      "enum": [
+        "classic",
+        "vegan",
+        "vegetarian",
+        "pescatarian",
+        "halal",
+        "kosher",
+        "keto",
+        "gluten-free",
+        "dairy-free"
+      ]
+    },
+    "title": { "$ref": "#/definitions/localized" },
+    "hero_text": { "$ref": "#/definitions/localized" },
+    "cap_caption": { "$ref": "#/definitions/localized" },
+    "stripe_color": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "ingredient_id",
+          "name",
+          "quantity",
+          "unit"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "ingredient_id": { "type": "string" },
+          "name": { "$ref": "#/definitions/localized" },
+          "quantity": { "type": "number", "exclusiveMinimum": 0 },
+          "unit": { "type": "string" },
+          "preparation": { "$ref": "#/definitions/localized" },
+          "note": { "$ref": "#/definitions/localized" },
+          "optional": { "type": "boolean" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["instruction"],
+        "additionalProperties": false,
+        "properties": {
+          "instruction": { "$ref": "#/definitions/localized" },
+          "title": { "$ref": "#/definitions/localized" },
+          "timer_seconds": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7200
+          }
+        }
+      }
+    },
+    "contains": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string" }
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["effort", "time_bucket", "calorie_bucket"],
+      "additionalProperties": false,
+      "properties": {
+        "effort": {
+          "anyOf": [
+            { "type": "string", "enum": ["easy", "medium", "hard"] },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "enum": ["easy", "medium", "hard"] }
+            }
+          ]
+        },
+        "time_bucket": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["≤15", "≤30", "≤60", ">60"]
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "enum": ["≤15", "≤30", "≤60", ">60"]
+              }
+            }
+          ]
+        },
+        "calorie_bucket": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["≤400", "≤600", "≤800", ">800"]
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "enum": ["≤400", "≤600", "≤800", ">800"]
+              }
+            }
+          ]
+        },
+        "technique": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "bake",
+              "sauté",
+              "simmer",
+              "raw",
+              "grill",
+              "fry",
+              "steam",
+              "roast",
+              "broil",
+              "pan-fry",
+              "deep-fry",
+              "stir-fry",
+              "poach",
+              "blanch",
+              "boil"
+            ]
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "vegan",
+              "vegetarian",
+              "pescatarian",
+              "halal",
+              "kosher"
+            ]
+          }
+        }
+      }
+    },
+    "time_minutes": { "type": "integer", "minimum": 1, "maximum": 600 },
+    "calories_per_serving": { "type": "integer", "minimum": 1, "maximum": 3000 },
+    "macros": {
+      "type": "object",
+      "required": ["calories", "protein_g", "carbs_g", "fat_g"],
+      "additionalProperties": false,
+      "properties": {
+        "calories": { "type": "integer", "minimum": 0 },
+        "protein_g": { "type": "number", "minimum": 0 },
+        "carbs_g": { "type": "number", "minimum": 0 },
+        "fat_g": { "type": "number", "minimum": 0 }
+      }
+    },
+    "servings": { "type": "integer", "minimum": 1, "maximum": 24 },
+    "tags": { "$ref": "#/definitions/localized" },
+    "meal_slots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["breakfast", "lunch", "dinner"]
+      }
+    }
+  },
+  "definitions": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": { "type": "string" },
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

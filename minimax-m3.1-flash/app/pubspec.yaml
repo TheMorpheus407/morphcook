@@ -1,0 +1,99 @@
+name: morphcook
+description: "MorphCook — every body deserves a complete cookbook."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Typography — bundled locally, never fetched at runtime.
+  google_fonts: ^6.3.3
+  flutter_animate: ^4.5.2
+
+  # State management — deliberately boring.
+  provider: ^6.1.5
+
+  # Local state.
+  shared_preferences: ^2.5.3
+  hive_ce: ^2.11.3
+  hive_ce_flutter: ^2.3.3
+
+  # Backup / restore (share sheet + file picker).
+  path_provider: ^2.1.5
+  file_picker: ^10.3.10
+  share_plus: ^11.1.0
+
+  # AES-256-GCM backup encryption (PBKDF2 key derivation).
+  cryptography: ^2.7.0
+
+  # Date formatting for EN + DE.
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/partition-manifest.json
+    - assets/core-recipes.json
+    - assets/extended-recipes.json
+    - assets/cuisine-italian.json
+    - assets/cuisine-asian.json
+    - assets/cuisine-middle-eastern.json
+    - assets/cuisine-american.json
+    - assets/cuisine-mexican.json
+    - assets/dishes.json
+    - assets/ontology.json
+    - assets/ingredients.json
+    - assets/ingredient-guide.json
+    - assets/faqs.json
+    - assets/fonts/
+
+  fonts:
+    # Declared as well as bundled so the engine can resolve them directly and
+    # so the assets land in the manifest that google_fonts scans.
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlayfairDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/JetBrainsMono-Italic.ttf
+          weight: 400
+          style: italic
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Caveat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Caveat-Bold.ttf
+          weight: 700

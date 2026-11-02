@@ -1,0 +1,1872 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "buddha-bowl-classic",
+      "dish_id": "buddha-bowl",
+      "diet": "classic",
+      "title": {
+        "en": "Classic Buddha Bowl",
+        "de": "Klassische Buddha-Bowl"
+      },
+      "hero_text": {
+        "en": "Quinoa, roasted vegetables, chickpeas and a lemon-tahini dressing.",
+        "de": "Quinoa, geröstetes Gemüse, Kichererbsen und ein Zitronen-Tahini-Dressing."
+      },
+      "cap_caption": {
+        "en": "roast, whisk, eat",
+        "de": "rösten, rühren, essen"
+      },
+      "stripe_color": "#D9A441",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.rice.brown",
+          "name": {
+            "en": "Quinoa",
+            "de": "Quinoa"
+          },
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pantry.legume.chickpea",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "quantity": 300,
+          "unit": "g",
+          "preparation": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "produce.sweet-potato",
+          "name": {
+            "en": "Sweet potato",
+            "de": "Süßkartoffel"
+          },
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.kale",
+          "name": {
+            "en": "Kale",
+            "de": "Grünkohl"
+          },
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "torn",
+            "de": "in Streifen gerissen"
+          }
+        },
+        {
+          "ingredient_id": "produce.avocado",
+          "name": {
+            "en": "Avocado",
+            "de": "Avocado"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.tahini",
+          "name": {
+            "en": "Tahini",
+            "de": "Tahini"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.maple-syrup",
+          "name": {
+            "en": "Maple syrup",
+            "de": "Ahornsyrup"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Rinse the quinoa well, then simmer it in twice its volume of water for 15 minutes until fluffy.",
+            "de": "Spüle die Quinoa gründlich und koche sie dann 15 Minuten in der doppelten Menge Wasser, bis sie locker ist."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Toss the sweet potato and chickpeas with oil, cumin and salt, and roast at 220°C for 25 minutes until the edges caramelise.",
+            "de": "Wende Süßkartoffel und Kichererbsen in Öl, Kreuzkümmel und Salz und röste sie 25 Minuten bei 220 °C, bis die Ränder karamellisieren."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Massage the kale with a little olive oil and salt to soften it.",
+            "de": "Massiere den Grünkohl mit etwas Olivenöl und Salz, damit er weich wird."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Whisk the tahini with the lemon juice, maple syrup and enough cold water to make a pourable dressing.",
+            "de": "Rühre Tahini, Zitronensaft und Ahornsyrup mit genug kaltem Wasser cremig."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Build the bowls: quinoa first, then the roasted vegetables and chickpeas, kale and avocado.",
+            "de": "Baue die Schalen: zuerst Quinoa, dann das geröstete Gemüse und die Kichererbsen, Grünkohl und Avocado."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Drizzle over the tahini dressing and serve.",
+            "de": "Gieße das Tahini-Dressing darüber und serviere."
+          }
+        }
+      ],
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "roast",
+          "simmer"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 40,
+      "calories_per_serving": 520,
+      "macros": {
+        "calories": 520,
+        "protein_g": 19.0,
+        "carbs_g": 68.0,
+        "fat_g": 20.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "bowl",
+          "weekday"
+        ],
+        "de": [
+          "bowl",
+          "wochentag"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "buddha-bowl-vegan",
+      "dish_id": "buddha-bowl",
+      "diet": "vegan",
+      "title": {
+        "en": "Vegan Buddha Bowl",
+        "de": "Vegane Buddha-Bowl"
+      },
+      "hero_text": {
+        "en": "The same bowl with tempeh instead of chickpeas, and a little more heat.",
+        "de": "Dieselbe Schale mit Tempeh statt Kichererbsen und etwas mehr Schärfe."
+      },
+      "cap_caption": {
+        "en": "tempeh, heat, lime",
+        "de": "tempeh, feuer, limette"
+      },
+      "stripe_color": "#9AAF8B",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.rice.brown",
+          "name": {
+            "en": "Quinoa",
+            "de": "Quinoa"
+          },
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "proteins.tempeh",
+          "name": {
+            "en": "Tempeh",
+            "de": "Tempeh"
+          },
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "cubed",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.sweet-potato",
+          "name": {
+            "en": "Sweet potato",
+            "de": "Süßkartoffel"
+          },
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.kale",
+          "name": {
+            "en": "Kale",
+            "de": "Grünkohl"
+          },
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "torn",
+            "de": "in Streifen gerissen"
+          }
+        },
+        {
+          "ingredient_id": "produce.avocado",
+          "name": {
+            "en": "Avocado",
+            "de": "Avocado"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.tahini",
+          "name": {
+            "en": "Tahini",
+            "de": "Tahini"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.maple-syrup",
+          "name": {
+            "en": "Maple syrup",
+            "de": "Ahornsyrup"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "produce.pepper.chili",
+          "name": {
+            "en": "Chilli",
+            "de": "Chilischote"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Rinse the quinoa and simmer it in twice its volume of water for 15 minutes.",
+            "de": "Spüle die Quinoa und koche sie 15 Minuten in der doppelten Menge Wasser."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Toss the tempeh and sweet potato with oil, cumin and chilli, and roast at 220°C for 25 minutes.",
+            "de": "Wende Tempeh und Süßkartoffel in Öl, Kreuzkümmel und Chili und röste sie 25 Minuten bei 220 °C."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Massage the kale with olive oil and salt to soften it.",
+            "de": "Massiere den Grünkohl mit Olivenöl und Salz, damit er weich wird."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Whisk the tahini with lemon juice, maple syrup and cold water until pourable.",
+            "de": "Rühre Tahini, Zitronensaft, Ahornsyrup und kaltes Wasser cremig."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Build the bowls and drizzle over the dressing.",
+            "de": "Baue die Schalen und gieße das Dressing darüber."
+          }
+        }
+      ],
+      "contains": [
+        "added-sugar",
+        "soy"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "roast",
+          "simmer"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 40,
+      "calories_per_serving": 540,
+      "macros": {
+        "calories": 540,
+        "protein_g": 24.0,
+        "carbs_g": 62.0,
+        "fat_g": 22.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "bowl",
+          "plant based"
+        ],
+        "de": [
+          "bowl",
+          "pflanzlich"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "buddha-bowl-gluten-free",
+      "dish_id": "buddha-bowl",
+      "diet": "gluten-free",
+      "title": {
+        "en": "Gluten-Free Buddha Bowl",
+        "de": "Glutenfreie Buddha-Bowl"
+      },
+      "hero_text": {
+        "en": "Brown rice instead of quinoa, and a bowl that still holds together.",
+        "de": "Brauner Reis statt Quinoa — und eine Schale, die trotzdem hält."
+      },
+      "cap_caption": {
+        "en": "no wheat, still whole",
+        "de": "ohne weizen, trotzdem vollwertig"
+      },
+      "stripe_color": "#67849F",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.rice.brown",
+          "name": {
+            "en": "Brown rice",
+            "de": "Vollkornreis"
+          },
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pantry.legume.chickpea",
+          "name": {
+            "en": "Chickpeas",
+            "de": "Kichererbsen"
+          },
+          "quantity": 300,
+          "unit": "g",
+          "preparation": {
+            "en": "drained",
+            "de": "abgetropft"
+          }
+        },
+        {
+          "ingredient_id": "produce.sweet-potato",
+          "name": {
+            "en": "Sweet potato",
+            "de": "Süßkartoffel"
+          },
+          "quantity": 250,
+          "unit": "g",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.kale",
+          "name": {
+            "en": "Kale",
+            "de": "Grünkohl"
+          },
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "torn",
+            "de": "in Streifen gerissen"
+          }
+        },
+        {
+          "ingredient_id": "produce.avocado",
+          "name": {
+            "en": "Avocado",
+            "de": "Avocado"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.tahini",
+          "name": {
+            "en": "Tahini",
+            "de": "Tahini"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.maple-syrup",
+          "name": {
+            "en": "Maple syrup",
+            "de": "Ahornsyrup"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Rinse the rice and simmer it in twice its volume of water for 20 minutes.",
+            "de": "Spüle den Reis und koche ihn 20 Minuten in der doppelten Menge Wasser."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Toss the sweet potato and chickpeas with oil, cumin and salt, and roast at 220°C for 25 minutes.",
+            "de": "Wende Süßkartoffel und Kichererbsen in Öl, Kreuzkümmel und Salz und röste sie 25 Minuten bei 220 °C."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Massage the kale with olive oil and salt.",
+            "de": "Massiere den Grünkohl mit Olivenöl und Salz."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Whisk the tahini with lemon juice, maple syrup and cold water.",
+            "de": "Rühre Tahini, Zitronensaft, Ahornsyrup und kaltes Wasser cremig."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Build the bowls and drizzle over the dressing.",
+            "de": "Baue die Schalen und gieße das Dressing darüber."
+          }
+        }
+      ],
+      "contains": [
+        "added-sugar"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "roast",
+          "simmer"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 40,
+      "calories_per_serving": 510,
+      "macros": {
+        "calories": 510,
+        "protein_g": 19.0,
+        "carbs_g": 68.0,
+        "fat_g": 19.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "bowl",
+          "gluten free"
+        ],
+        "de": [
+          "bowl",
+          "glutenfrei"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "shroom-pasta-classic",
+      "dish_id": "shroom-pasta",
+      "diet": "classic",
+      "title": {
+        "en": "Classic Mushroom Pasta",
+        "de": "Klassische Pilzpasta"
+      },
+      "hero_text": {
+        "en": "Mushrooms browned until they squeak, garlic, thyme, and pasta water.",
+        "de": "Bis sie quietschen gebräunte Pilze, Knoblauch, Thymian und Pastawasser."
+      },
+      "cap_caption": {
+        "en": "brown them properly",
+        "de": "bräune sie richtig"
+      },
+      "stripe_color": "#8A6A82",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.pasta.penne",
+          "name": {
+            "en": "Penne",
+            "de": "Penne"
+          },
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.mushroom.chestnut",
+          "name": {
+            "en": "Chestnut mushrooms",
+            "de": "Riesenchampignons"
+          },
+          "quantity": 400,
+          "unit": "g",
+          "preparation": {
+            "en": "sliced thickly",
+            "de": "dick geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "dairy.butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dairy.cheese.parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "quantity": 50,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "produce.herbs.thyme",
+          "name": {
+            "en": "Thyme",
+            "de": "Thymian"
+          },
+          "quantity": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pantry.salt.sea",
+          "name": {
+            "en": "Sea salt",
+            "de": "Meersalz"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Fry the mushrooms in olive oil over high heat in a single layer, in batches, until deeply golden. Salt them only at the end.",
+            "de": "Brate die Pilze in Olivenöl über starker Hitze in einer Schicht, portionsweise, bis sie tief goldbraun sind. Salze sie erst am Ende."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Cook the penne in well-salted water until al dente, keeping a cup of the water.",
+            "de": "Koche die Penne in gut gesalzenem Wasser al dente und hebe eine Tasse Wasser auf."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Melt the butter in the pan, add the garlic and thyme, and cook for one minute until fragrant.",
+            "de": "Schmelze die Butter in der Pfanne, gib Knoblauch und Thymian dazu und koche eine Minute, bis es duftet."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the pasta and a good splash of pasta water and toss hard until the sauce clings to every penne.",
+            "de": "Gib die Nudeln und einen guten Schuss Pastawasser dazu und schwenke kräftig, bis die Sauce an jeder Penne hängt."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Off the heat, fold in the parmesan and more pasta water, then serve at once.",
+            "de": "Nimm die Pfanne von der Platte, rühre den Parmesan und mehr Pastawasser ein und serviere sofort."
+          }
+        }
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤30"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "pan-fry",
+          "boil"
+        ],
+        "certifications": [
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 30,
+      "calories_per_serving": 560,
+      "macros": {
+        "calories": 560,
+        "protein_g": 19.0,
+        "carbs_g": 72.0,
+        "fat_g": 20.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "pasta",
+          "comfort"
+        ],
+        "de": [
+          "pasta",
+          "trost"
+        ]
+      },
+      "meal_slots": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "shroom-pasta-vegan",
+      "dish_id": "shroom-pasta",
+      "diet": "vegan",
+      "title": {
+        "en": "Vegan Mushroom Pasta",
+        "de": "Vegane Pilzpasta"
+      },
+      "hero_text": {
+        "en": "Cashew cream for the sauce, and the mushrooms do all the seasoning.",
+        "de": "Cashewcreme für die Sauce — und die Pilze übernehmen das Würzen."
+      },
+      "cap_caption": {
+        "en": "mushrooms, cashew, thyme",
+        "de": "pilze, cashew, thymian"
+      },
+      "stripe_color": "#9AAF8B",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.pasta.penne",
+          "name": {
+            "en": "Penne",
+            "de": "Penne"
+          },
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.mushroom.chestnut",
+          "name": {
+            "en": "Chestnut mushrooms",
+            "de": "Riesenchampignons"
+          },
+          "quantity": 400,
+          "unit": "g",
+          "preparation": {
+            "en": "sliced thickly",
+            "de": "dick geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.nut.cashew",
+          "name": {
+            "en": "Cashews",
+            "de": "Cashewkerne"
+          },
+          "quantity": 100,
+          "unit": "g",
+          "preparation": {
+            "en": "soaked 2 hours",
+            "de": "2 Stunden eingeweicht"
+          }
+        },
+        {
+          "ingredient_id": "beverages.oat-milk",
+          "name": {
+            "en": "Oat milk",
+            "de": "Hafermilch"
+          },
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "pantry.nutritional-yeast",
+          "name": {
+            "en": "Nutritional yeast",
+            "de": "Hefepulver"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "produce.herbs.thyme",
+          "name": {
+            "en": "Thyme",
+            "de": "Thymian"
+          },
+          "quantity": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 3,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Blend the soaked cashews with the oat milk and nutritional yeast into a smooth cream.",
+            "de": "Blendе die eingeweichten Cashews mit Hafermilch und Hefepulver zu einer glatten Creme."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Fry the mushrooms in olive oil over high heat, in batches, until deeply golden.",
+            "de": "Brate die Pilze in Olivenöl über starker Hitze portionsweise, bis sie tief goldbraun sind."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Cook the penne until al dente, keeping a cup of the water.",
+            "de": "Koche die Penne al dente und hebe eine Tasse Wasser auf."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the garlic and thyme to the mushroom pan for a minute, then pour in the cashew cream and let it bubble.",
+            "de": "Gib Knoblauch und Thymian eine Minute in die Pilzpfanne, dann gieße die Cashewcreme dazu und lass sie blubbern."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Toss the pasta through with pasta water until the sauce clings.",
+            "de": "Schwenke die Nudeln mit Pastawasser durch, bis die Sauce haftet."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Serve at once, with a thread of olive oil and more thyme.",
+            "de": "Serviere sofort mit einem Faden Olivenöl und mehr Thymian."
+          }
+        }
+      ],
+      "contains": [
+        "gluten",
+        "high-fodmap",
+        "tree-nuts"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "pan-fry",
+          "boil"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 35,
+      "calories_per_serving": 510,
+      "macros": {
+        "calories": 510,
+        "protein_g": 16.0,
+        "carbs_g": 72.0,
+        "fat_g": 18.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "pasta",
+          "plant based"
+        ],
+        "de": [
+          "pasta",
+          "pflanzlich"
+        ]
+      },
+      "meal_slots": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "shroom-pasta-gluten-free",
+      "dish_id": "shroom-pasta",
+      "diet": "gluten-free",
+      "title": {
+        "en": "Gluten-Free Mushroom Pasta",
+        "de": "Glutenfreie Pilzpasta"
+      },
+      "hero_text": {
+        "en": "Rice penne, browned mushrooms and butter. Nothing else has changed.",
+        "de": "Reispenne, gebräunte Pilze und Butter. Sonst hat sich nichts geändert."
+      },
+      "cap_caption": {
+        "en": "no wheat, all brown",
+        "de": "ohne weizen, alles gebräunt"
+      },
+      "stripe_color": "#67849F",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.pasta.rice",
+          "name": {
+            "en": "Rice penne",
+            "de": "Reispenne"
+          },
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.mushroom.chestnut",
+          "name": {
+            "en": "Chestnut mushrooms",
+            "de": "Riesenchampignons"
+          },
+          "quantity": 400,
+          "unit": "g",
+          "preparation": {
+            "en": "sliced thickly",
+            "de": "dick geschnitten"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "sliced",
+            "de": "in Scheiben"
+          }
+        },
+        {
+          "ingredient_id": "dairy.butter",
+          "name": {
+            "en": "Butter",
+            "de": "Butter"
+          },
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "dairy.cheese.parmesan",
+          "name": {
+            "en": "Parmesan",
+            "de": "Parmesan"
+          },
+          "quantity": 50,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "produce.herbs.thyme",
+          "name": {
+            "en": "Thyme",
+            "de": "Thymian"
+          },
+          "quantity": 8,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "ingredient_id": "pantry.salt.sea",
+          "name": {
+            "en": "Sea salt",
+            "de": "Meersalz"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Fry the mushrooms in olive oil over high heat until deeply golden.",
+            "de": "Brate die Pilze in Olivenöl über starker Hitze, bis sie tief goldbraun sind."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Cook the rice penne until al dente, keeping a cup of the water.",
+            "de": "Koche die Reispenne al dente und hebe eine Tasse Wasser auf."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Melt the butter, add the garlic and thyme and cook for a minute.",
+            "de": "Schmelze die Butter, gib Knoblauch und Thymian dazu und koche eine Minute."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the pasta and pasta water and toss hard until the sauce clings.",
+            "de": "Gib Nudeln und Pastawasser dazu und schwenke kräftig, bis die Sauce haftet."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Off the heat, fold in the parmesan and serve.",
+            "de": "Nimm die Pfanne von der Platte, rühre den Parmesan ein und serviere."
+          }
+        }
+      ],
+      "contains": [
+        "dairy",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "effort": [
+          "medium"
+        ],
+        "time_bucket": [
+          "≤30"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "pan-fry",
+          "boil"
+        ],
+        "certifications": [
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 30,
+      "calories_per_serving": 550,
+      "macros": {
+        "calories": 550,
+        "protein_g": 18.0,
+        "carbs_g": 72.0,
+        "fat_g": 21.0
+      },
+      "servings": 2,
+      "tags": {
+        "en": [
+          "pasta",
+          "gluten free"
+        ],
+        "de": [
+          "pasta",
+          "glutenfrei"
+        ]
+      },
+      "meal_slots": [
+        "dinner"
+      ]
+    },
+    {
+      "id": "lentil-soup-classic",
+      "dish_id": "lentil-soup",
+      "diet": "classic",
+      "title": {
+        "en": "Classic Lentil Soup",
+        "de": "Klassische Linsensuppe"
+      },
+      "hero_text": {
+        "en": "Browned onions, cumin, and red lentils that collapse into the broth.",
+        "de": "Gebräunte Zwiebeln, Kreuzkümmel und rote Linsen, die in der Brühe zerfallen."
+      },
+      "cap_caption": {
+        "en": "the pot that works for you",
+        "de": "der topf, der für dich arbeitet"
+      },
+      "stripe_color": "#C29A42",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.legume.lentil-red",
+          "name": {
+            "en": "Red lentils",
+            "de": "Rote Linsen"
+          },
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.onion.yellow",
+          "name": {
+            "en": "Brown onion",
+            "de": "Zwiebel"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.carrot",
+          "name": {
+            "en": "Carrot",
+            "de": "Karotte"
+          },
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.celery",
+          "name": {
+            "en": "Celery",
+            "de": "Sellerie"
+          },
+          "quantity": 2,
+          "unit": "stick",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "produce.ginger",
+          "name": {
+            "en": "Ginger",
+            "de": "Ingwer"
+          },
+          "quantity": 15,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.turmeric",
+          "name": {
+            "en": "Turmeric",
+            "de": "Kurkuma"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.stock.vegetable",
+          "name": {
+            "en": "Vegetable stock",
+            "de": "Gemüsebrühe"
+          },
+          "quantity": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Soften the onion, carrot and celery in oil for 10 minutes until completely soft.",
+            "de": "Dünne Zwiebel, Karotte und Sellerie zehn Minuten in Öl, bis sie ganz weich sind."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the garlic, ginger, cumin and turmeric and stir for a minute.",
+            "de": "Gib Knoblauch, Ingwer, Kreuzkümmel und Kurkuma dazu und rühre eine Minute."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the lentils and the stock, bring to a simmer and cook for 25 minutes until the lentils break down.",
+            "de": "Gib Linsen und Brühe dazu, bringe es zum Köcheln und koche 25 Minuten, bis die Linsen zerfallen."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Blend a third of the soup and stir it back in — that is what makes it velvet rather than thin.",
+            "de": "Blendiere ein Drittel der Suppe und rühre sie zurück — das macht sie samtig statt dünn."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Season with salt and a squeeze of lemon, and leave it alone for ten minutes before serving.",
+            "de": "Würze mit Salz und einem Spritzer Zitrone und lass sie vor dem Servieren zehn Minuten ruhen."
+          }
+        }
+      ],
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "effort": [
+          "easy"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤400"
+        ],
+        "technique": [
+          "simmer",
+          "sauté"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 45,
+      "calories_per_serving": 390,
+      "macros": {
+        "calories": 390,
+        "protein_g": 21.0,
+        "carbs_g": 56.0,
+        "fat_g": 8.0
+      },
+      "servings": 4,
+      "tags": {
+        "en": [
+          "soup",
+          "batch"
+        ],
+        "de": [
+          "suppe",
+          "vorrat"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "lentil-soup-vegan",
+      "dish_id": "lentil-soup",
+      "diet": "vegan",
+      "title": {
+        "en": "Vegan Lentil Soup",
+        "de": "Vegane Linsensuppe"
+      },
+      "hero_text": {
+        "en": "The same soup, with coconut milk instead of cream stirred in at the end.",
+        "de": "Dieselbe Suppe, mit Kokosmilch statt Sahne am Ende untergerührt."
+      },
+      "cap_caption": {
+        "en": "coconut, cumin, time",
+        "de": "kokos, kreuzkümmel, zeit"
+      },
+      "stripe_color": "#9AAF8B",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.legume.lentil-red",
+          "name": {
+            "en": "Red lentils",
+            "de": "Rote Linsen"
+          },
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.onion.yellow",
+          "name": {
+            "en": "Brown onion",
+            "de": "Zwiebel"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.carrot",
+          "name": {
+            "en": "Carrot",
+            "de": "Karotte"
+          },
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.celery",
+          "name": {
+            "en": "Celery",
+            "de": "Sellerie"
+          },
+          "quantity": 2,
+          "unit": "stick",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "produce.ginger",
+          "name": {
+            "en": "Ginger",
+            "de": "Ingwer"
+          },
+          "quantity": 15,
+          "unit": "g",
+          "preparation": {
+            "en": "grated",
+            "de": "gerieben"
+          }
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.turmeric",
+          "name": {
+            "en": "Turmeric",
+            "de": "Kurkuma"
+          },
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.stock.vegetable",
+          "name": {
+            "en": "Vegetable stock",
+            "de": "Gemüsebrühe"
+          },
+          "quantity": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "pantry.coconut-milk",
+          "name": {
+            "en": "Coconut milk",
+            "de": "Kokosmilch"
+          },
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Soften the onion, carrot and celery in oil for 10 minutes.",
+            "de": "Dünne Zwiebel, Karotte und Sellerie zehn Minuten in Öl."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the garlic, ginger, cumin and turmeric and stir for a minute.",
+            "de": "Gib Knoblauch, Ingwer, Kreuzkümmel und Kurkuma dazu und rühre eine Minute."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the lentils and the stock and simmer for 25 minutes until the lentils break down.",
+            "de": "Gib Linsen und Brühe dazu und lasse 25 Minuten köcheln, bis die Linsen zerfallen."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Blend a third of the soup and stir it back in.",
+            "de": "Blendiere ein Drittel der Suppe und rühre sie zurück."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Stir in the coconut milk, season with salt and lemon, and rest for ten minutes.",
+            "de": "Rühre die Kokosmilch ein, würze mit Salz und Zitrone und lass die Suppe zehn Minuten ziehen."
+          }
+        }
+      ],
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "effort": [
+          "easy"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤600"
+        ],
+        "technique": [
+          "simmer",
+          "sauté"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 45,
+      "calories_per_serving": 420,
+      "macros": {
+        "calories": 420,
+        "protein_g": 19.0,
+        "carbs_g": 54.0,
+        "fat_g": 12.0
+      },
+      "servings": 4,
+      "tags": {
+        "en": [
+          "soup",
+          "plant based"
+        ],
+        "de": [
+          "suppe",
+          "pflanzlich"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    },
+    {
+      "id": "lentil-soup-gluten-free",
+      "dish_id": "lentil-soup",
+      "diet": "gluten-free",
+      "title": {
+        "en": "Gluten-Free Lentil Soup",
+        "de": "Glutenfreie Linsensuppe"
+      },
+      "hero_text": {
+        "en": "The same pot, with stock you have checked the label on.",
+        "de": "Derselbe Topf, mit einer Brühe, auf deren Etikett du geschaut hast."
+      },
+      "cap_caption": {
+        "en": "check the stock label",
+        "de": "auf das etikett der brühe schauen"
+      },
+      "stripe_color": "#67849F",
+      "ingredients": [
+        {
+          "ingredient_id": "pantry.legume.lentil-red",
+          "name": {
+            "en": "Red lentils",
+            "de": "Rote Linsen"
+          },
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "produce.onion.yellow",
+          "name": {
+            "en": "Brown onion",
+            "de": "Zwiebel"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.carrot",
+          "name": {
+            "en": "Carrot",
+            "de": "Karotte"
+          },
+          "quantity": 2,
+          "unit": "piece",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.celery",
+          "name": {
+            "en": "Celery",
+            "de": "Sellerie"
+          },
+          "quantity": 2,
+          "unit": "stick",
+          "preparation": {
+            "en": "diced",
+            "de": "gewürfelt"
+          }
+        },
+        {
+          "ingredient_id": "produce.garlic",
+          "name": {
+            "en": "Garlic",
+            "de": "Knoblauch"
+          },
+          "quantity": 3,
+          "unit": "clove",
+          "preparation": {
+            "en": "minced",
+            "de": "fein gehackt"
+          }
+        },
+        {
+          "ingredient_id": "pantry.cumin",
+          "name": {
+            "en": "Cumin",
+            "de": "Kreuzkümmel"
+          },
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "ingredient_id": "pantry.stock.vegetable",
+          "name": {
+            "en": "Gluten-free vegetable stock",
+            "de": "Glutenfreie Gemüsebrühe"
+          },
+          "quantity": 1.2,
+          "unit": "l"
+        },
+        {
+          "ingredient_id": "produce.lemon",
+          "name": {
+            "en": "Lemon",
+            "de": "Zitrone"
+          },
+          "quantity": 1,
+          "unit": "piece",
+          "preparation": {
+            "en": "juice only",
+            "de": "nur Saft"
+          }
+        },
+        {
+          "ingredient_id": "pantry.oil.olive",
+          "name": {
+            "en": "Olive oil",
+            "de": "Olivenöl"
+          },
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "instruction": {
+            "en": "Soften the onion, carrot and celery in oil for 10 minutes.",
+            "de": "Dünne Zwiebel, Karotte und Sellerie zehn Minuten in Öl."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the garlic and cumin and stir for a minute.",
+            "de": "Gib Knoblauch und Kreuzkümmel dazu und rühre eine Minute."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Add the lentils and the gluten-free stock and simmer for 25 minutes.",
+            "de": "Gib Linsen und die glutenfreie Brühe dazu und lasse 25 Minuten köcheln."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Blend a third of the soup and stir it back in.",
+            "de": "Blendiere ein Drittel der Suppe und rühre sie zurück."
+          }
+        },
+        {
+          "instruction": {
+            "en": "Season with salt and lemon and let it rest for ten minutes.",
+            "de": "Würze mit Salz und Zitrone und lass sie zehn Minuten ziehen."
+          }
+        }
+      ],
+      "contains": [
+        "celery",
+        "high-fodmap"
+      ],
+      "attributes": {
+        "effort": [
+          "easy"
+        ],
+        "time_bucket": [
+          "≤60"
+        ],
+        "calorie_bucket": [
+          "≤400"
+        ],
+        "technique": [
+          "simmer",
+          "sauté"
+        ],
+        "certifications": [
+          "vegan",
+          "vegetarian",
+          "pescatarian",
+          "halal",
+          "kosher"
+        ]
+      },
+      "time_minutes": 45,
+      "calories_per_serving": 400,
+      "macros": {
+        "calories": 400,
+        "protein_g": 20.0,
+        "carbs_g": 56.0,
+        "fat_g": 10.0
+      },
+      "servings": 4,
+      "tags": {
+        "en": [
+          "soup",
+          "gluten free"
+        ],
+        "de": [
+          "suppe",
+          "glutenfrei"
+        ]
+      },
+      "meal_slots": [
+        "lunch",
+        "dinner"
+      ]
+    }
+  ]
+}

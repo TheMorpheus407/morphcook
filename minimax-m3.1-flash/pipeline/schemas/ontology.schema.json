@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://morphcook.app/schemas/ontology.schema.json",
+  "title": "MorphCook ontology",
+  "description": "The flag taxonomy. Extending it is purely additive — a new flag is a new line, never a migration.",
+  "type": "object",
+  "required": [
+    "version",
+    "contains_flags",
+    "avoid_flags",
+    "certifications",
+    "attributes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "updated_at": { "type": "string" },
+    "contains_flags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "category"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "label": { "$ref": "#/definitions/localized" },
+          "category": { "type": "string" }
+        }
+      }
+    },
+    "avoid_flags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "category", "expands"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "label": { "$ref": "#/definitions/localized" },
+          "description": { "$ref": "#/definitions/localized" },
+          "category": { "type": "string", "enum": ["diet", "class"] },
+          "compound": { "type": "boolean" },
+          "expands": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "attributes": {
+      "type": "object",
+      "required": ["effort", "time_bucket", "calorie_bucket", "technique"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "values"],
+        "properties": {
+          "label": { "$ref": "#/definitions/localized" },
+          "multi_valued": { "type": "boolean" },
+          "values": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["id", "label"],
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "$ref": "#/definitions/localized" },
+                "symbol": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "de"],
+      "additionalProperties": { "type": "string" },
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

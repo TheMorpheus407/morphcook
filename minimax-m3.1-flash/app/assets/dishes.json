@@ -1,0 +1,630 @@
+{
+  "version": 1,
+  "dishes": [
+    {
+      "id": "doener",
+      "name": {
+        "en": "Döner",
+        "de": "Döner"
+      },
+      "hero_text": {
+        "en": "Spiced meat, shaved salad, warm flatbread — the one everyone argues about.",
+        "de": "Gewürztes Fleisch, feiner Salat, warmes Fladenbrot — das streitet jeder."
+      },
+      "cap_caption": {
+        "en": "rolled tight, sliced thin",
+        "de": "fest gerollt, dünn geschnitten"
+      },
+      "stripe_color": "#C4694D",
+      "variant_ids": [
+        "doener-classic",
+        "doener-vegan",
+        "doener-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "street food",
+          "sandwich"
+        ],
+        "de": [
+          "street food",
+          "belegtes brot"
+        ]
+      }
+    },
+    {
+      "id": "pad-thai",
+      "name": {
+        "en": "Pad Thai",
+        "de": "Pad Thai"
+      },
+      "hero_text": {
+        "en": "A wok dinner that tastes like it took far longer than it did.",
+        "de": "Ein Wok-Abend, der wirkt, als hätte er ewig gedauert."
+      },
+      "cap_caption": {
+        "en": "sweet, sour, a little smoky",
+        "de": "süß, säuerlich, leicht rauchig"
+      },
+      "stripe_color": "#D9A441",
+      "variant_ids": [
+        "pad-thai-classic",
+        "pad-thai-vegan",
+        "pad-thai-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "noodles",
+          "wok"
+        ],
+        "de": [
+          "nudeln",
+          "wok"
+        ]
+      }
+    },
+    {
+      "id": "alfredo",
+      "name": {
+        "en": "Alfredo",
+        "de": "Alfredo"
+      },
+      "hero_text": {
+        "en": "A white sauce that turns glossy in the pan, not from cream alone.",
+        "de": "Eine weiße Sauce, die in der Pfanne glänzt — nicht nur durch Sahne."
+      },
+      "cap_caption": {
+        "en": "silky, garlicky, quick",
+        "de": "seidig, knoblauchig, schnell"
+      },
+      "stripe_color": "#E7B49F",
+      "variant_ids": [
+        "alfredo-classic",
+        "alfredo-vegan",
+        "alfredo-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "pasta",
+          "comfort"
+        ],
+        "de": [
+          "pasta",
+          "trost"
+        ]
+      }
+    },
+    {
+      "id": "margherita",
+      "name": {
+        "en": "Margherita",
+        "de": "Margherita"
+      },
+      "hero_text": {
+        "en": "Blistered dough, torn mozzarella, and basil added after the heat.",
+        "de": "Blaseniger Teig, gerissener Mozzarella und Basilikum nach dem Ofen."
+      },
+      "cap_caption": {
+        "en": "three ingredients, no debate",
+        "de": "drei zutaten, keine diskussion"
+      },
+      "stripe_color": "#D96F4E",
+      "variant_ids": [
+        "margherita-classic",
+        "margherita-vegan",
+        "margherita-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "pizza",
+          "baking"
+        ],
+        "de": [
+          "pizza",
+          "backen"
+        ]
+      }
+    },
+    {
+      "id": "caesar",
+      "name": {
+        "en": "Caesar Salad",
+        "de": "Caesar Salad"
+      },
+      "hero_text": {
+        "en": "Romaine, shaved parmesan, and a dressing you make in the jar.",
+        "de": "Römersalat, gehobelter Parmesan und eine Sauce, die du im glas machst."
+      },
+      "cap_caption": {
+        "en": "crisp, salty, sharp",
+        "de": "knusprig, salzig, kräftig"
+      },
+      "stripe_color": "#8FA486",
+      "variant_ids": [
+        "caesar-classic",
+        "caesar-vegan",
+        "caesar-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "salad",
+          "quick"
+        ],
+        "de": [
+          "salat",
+          "schnell"
+        ]
+      }
+    },
+    {
+      "id": "shakshuka",
+      "name": {
+        "en": "Shakshuka",
+        "de": "Shakshuka"
+      },
+      "hero_text": {
+        "en": "Eggs poached in a spiced tomato base, eaten straight from the pan.",
+        "de": "Eier in gewürzten Tomaten pochiert, direkt aus der Pfanne."
+      },
+      "cap_caption": {
+        "en": "brunch, one pan, no spatula",
+        "de": "brunch, eine pfanne, kein pfannenwender"
+      },
+      "stripe_color": "#B5533F",
+      "variant_ids": [
+        "shakshuka-classic",
+        "shakshuka-vegan",
+        "shakshuka-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "brunch",
+          "one pan"
+        ],
+        "de": [
+          "brunch",
+          "eine pfanne"
+        ]
+      }
+    },
+    {
+      "id": "falafel-wrap",
+      "name": {
+        "en": "Falafel Wrap",
+        "de": "Falafel-Wrap"
+      },
+      "hero_text": {
+        "en": "Herbs, chickpeas and a tahini sauce sharp enough to wake you up.",
+        "de": "Kräuter, Kichererbsen und eine Tahinisauce, die dich wach macht."
+      },
+      "cap_caption": {
+        "en": "crisp outside, bright inside",
+        "de": "knusprig außen, hell innen"
+      },
+      "stripe_color": "#9AAF8B",
+      "variant_ids": [
+        "falafel-wrap-classic",
+        "falafel-wrap-halal",
+        "falafel-wrap-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "street food",
+          "wrap"
+        ],
+        "de": [
+          "street food",
+          "wrap"
+        ]
+      }
+    },
+    {
+      "id": "ramen",
+      "name": {
+        "en": "Ramen",
+        "de": "Ramen"
+      },
+      "hero_text": {
+        "en": "A bowl you assemble yourself: broth, noodles, toppings, patience.",
+        "de": "Eine Schale, die du selbst zusammenstellst: Brühe, Nudeln, Belag, Geduld."
+      },
+      "cap_caption": {
+        "en": "build it, don't stir it",
+        "de": "baue sie, rühre sie nicht"
+      },
+      "stripe_color": "#C29A42",
+      "variant_ids": [
+        "ramen-classic",
+        "ramen-vegan",
+        "ramen-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "soup",
+          "noodles"
+        ],
+        "de": [
+          "suppe",
+          "nudeln"
+        ]
+      }
+    },
+    {
+      "id": "tacos",
+      "name": {
+        "en": "Tacos",
+        "de": "Tacos"
+      },
+      "hero_text": {
+        "en": "Warm corn tortillas, a filling you can eat with two hands, lime on the side.",
+        "de": "Warme Maistortillas, eine Füllung für zwei Hände, Limette daneben."
+      },
+      "cap_caption": {
+        "en": "eat them standing up",
+        "de": "stehend essen"
+      },
+      "stripe_color": "#D96F4E",
+      "variant_ids": [
+        "tacos-classic",
+        "tacos-vegan",
+        "tacos-halal"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "street food",
+          "sharing"
+        ],
+        "de": [
+          "street food",
+          "zum teilen"
+        ]
+      }
+    },
+    {
+      "id": "risotto",
+      "name": {
+        "en": "Risotto",
+        "de": "Risotto"
+      },
+      "hero_text": {
+        "en": "Stirred, not stirred — ladled, rested, stirred again. It rewards patience.",
+        "de": "Gerührt, nicht gerührt — geklopft, geruht, wieder gerührt. Es belohnt Geduld."
+      },
+      "cap_caption": {
+        "en": "all stirring, no shortcuts",
+        "de": "nur rühren, keine abkürzungen"
+      },
+      "stripe_color": "#E4CE9B",
+      "variant_ids": [
+        "risotto-classic",
+        "risotto-vegan",
+        "risotto-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "comfort",
+          "slow"
+        ],
+        "de": [
+          "trost",
+          "langsam"
+        ]
+      }
+    },
+    {
+      "id": "coconut-curry",
+      "name": {
+        "en": "Coconut Curry",
+        "de": "Kokos-Curry"
+      },
+      "hero_text": {
+        "en": "Coconut milk, toasted spices, and enough lime to cut straight through it.",
+        "de": "Kokosmilch, geröstete Gewürze und genug Limette, um alles zu durchdringen."
+      },
+      "cap_caption": {
+        "en": "thick, fragrant, bright",
+        "de": "cremig, duftig, frisch"
+      },
+      "stripe_color": "#E7B49F",
+      "variant_ids": [
+        "coconut-curry-classic",
+        "coconut-curry-vegan",
+        "coconut-curry-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-asian"
+      ],
+      "cuisine_tags": [
+        "asian"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "comfort",
+          "one pot"
+        ],
+        "de": [
+          "trost",
+          "ein topf"
+        ]
+      }
+    },
+    {
+      "id": "pancakes",
+      "name": {
+        "en": "Pancakes",
+        "de": "Pfannkuchen"
+      },
+      "hero_text": {
+        "en": "A Sunday stack, and the patience to let the batter rest.",
+        "de": "Ein Sonntagsstapel — und die Geduld, den Teig ruhen zu lassen."
+      },
+      "cap_caption": {
+        "en": "Sunday morning, stacked high",
+        "de": "sonntagmorgen, hoch gestapelt"
+      },
+      "stripe_color": "#D9A441",
+      "variant_ids": [
+        "pancakes-classic",
+        "pancakes-vegan",
+        "pancakes-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-american"
+      ],
+      "cuisine_tags": [
+        "american"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "breakfast",
+          "slow weekend"
+        ],
+        "de": [
+          "frühstück",
+          "langes wochenende"
+        ]
+      }
+    },
+    {
+      "id": "chili",
+      "name": {
+        "en": "Chilli Con Carne",
+        "de": "Chilli con Carne"
+      },
+      "hero_text": {
+        "en": "A pot that improves overnight, and tastes better the next day.",
+        "de": "Ein Topf, der über Nacht besser wird — und am nächsten Tag noch besser schmeckt."
+      },
+      "cap_caption": {
+        "en": "better the next day",
+        "de": "besser am nächsten tag"
+      },
+      "stripe_color": "#B5533F",
+      "variant_ids": [
+        "chilli-classic",
+        "chili-vegetarian",
+        "chili-vegan",
+        "chili-gluten-free"
+      ],
+      "partition_id": "core",
+      "secondary_partitions": [
+        "cuisine-mexican"
+      ],
+      "cuisine_tags": [
+        "mexican"
+      ],
+      "frequency_tier": "core",
+      "tags": {
+        "en": [
+          "comfort",
+          "batch"
+        ],
+        "de": [
+          "trost",
+          "vorrat"
+        ]
+      }
+    },
+    {
+      "id": "buddha-bowl",
+      "name": {
+        "en": "Buddha Bowl",
+        "de": "Buddha-Bowl"
+      },
+      "hero_text": {
+        "en": "Quinoa, roasted vegetables and a dressing you will want on everything.",
+        "de": "Quinoa, geröstetes Gemüse und ein Dressing, das du auf alles kleben willst."
+      },
+      "cap_caption": {
+        "en": "a bowl you build",
+        "de": "eine schale, die du baust"
+      },
+      "stripe_color": "#9AAF8B",
+      "variant_ids": [
+        "buddha-bowl-classic",
+        "buddha-bowl-vegan",
+        "buddha-bowl-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "extended",
+      "tags": {
+        "en": [
+          "bowl",
+          "plant based"
+        ],
+        "de": [
+          "bowl",
+          "pflanzlich"
+        ]
+      }
+    },
+    {
+      "id": "shroom-pasta",
+      "name": {
+        "en": "Mushroom Pasta",
+        "de": "Pilzpasta"
+      },
+      "hero_text": {
+        "en": "Mushrooms browned hard, garlic, thyme, and pasta water to finish.",
+        "de": "Hart gebräunte Pilze, Knoblauch, Thymian und Pastawasser zum Abschluss."
+      },
+      "cap_caption": {
+        "en": "brown the mushrooms properly",
+        "de": "bräune die pilze richtig"
+      },
+      "stripe_color": "#8A6A82",
+      "variant_ids": [
+        "shroom-pasta-classic",
+        "shroom-pasta-vegan",
+        "shroom-pasta-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-italian"
+      ],
+      "cuisine_tags": [
+        "italian"
+      ],
+      "frequency_tier": "extended",
+      "tags": {
+        "en": [
+          "pasta",
+          "comfort"
+        ],
+        "de": [
+          "pasta",
+          "trost"
+        ]
+      }
+    },
+    {
+      "id": "lentil-soup",
+      "name": {
+        "en": "Lentil Soup",
+        "de": "Linsensuppe"
+      },
+      "hero_text": {
+        "en": "The soup that tastes like it was simmering since yesterday.",
+        "de": "Die Suppe, die schmeckt, als würde sie seit gestern köcheln."
+      },
+      "cap_caption": {
+        "en": "better the next day",
+        "de": "besser am nächsten tag"
+      },
+      "stripe_color": "#C29A42",
+      "variant_ids": [
+        "lentil-soup-classic",
+        "lentil-soup-vegan",
+        "lentil-soup-gluten-free"
+      ],
+      "partition_id": "extended",
+      "secondary_partitions": [
+        "cuisine-middle-eastern"
+      ],
+      "cuisine_tags": [
+        "middle-eastern"
+      ],
+      "frequency_tier": "extended",
+      "tags": {
+        "en": [
+          "soup",
+          "batch"
+        ],
+        "de": [
+          "suppe",
+          "vorrat"
+        ]
+      }
+    }
+  ]
+}
